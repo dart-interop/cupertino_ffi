@@ -1,3 +1,5 @@
+[![Pub Package](https://img.shields.io/pub/v/cupertino_ffi.svg)](https://pub.dartlang.org/packages/cupertino_ffi)
+
 # Overview
 
 This package provides C bindings with various APIs in Apple devices (iOS, Mac OS X, etc.). The

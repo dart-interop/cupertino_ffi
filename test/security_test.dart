@@ -42,26 +42,29 @@ void main() {
     });
 
     test("SecKeyCreateRandomKey (RSA)", () {
-      final errorPtrPtr = Pointer<Pointer<CFError>>.allocate();
-      errorPtrPtr.cast<IntPtr>().store(0);
-      expect(errorPtrPtr.cast<IntPtr>().load<int>(), 0);
+      // Catch randomly occurring segfault.
+      for (var i = 0; i < 10; i++) {
+        final errorPtrPtr = Pointer<Pointer<CFError>>.allocate();
+        errorPtrPtr.store(Pointer<CFError>.fromAddress(0));
+        expect(errorPtrPtr.cast<IntPtr>().load<int>(), 0);
 
-      final attributes = CFDictionary.fromPointerMap({
-        kSecAttrKeyType: kSecAttrKeyTypeRSA,
-        kSecAttrKeySizeInBits: CFNumber.fromDartInt(2048),
-        kSecPrivateKeyAttrs: CFDictionary.fromPointerMap({
-          kSecAttrIsPermanent: CFBoolean.fromDart(true),
-          kSecAttrApplicationTag: CFData.fromDart([65, 65, 65]),
-        }),
-      });
+        final attributes = CFDictionary.fromPointerMap({
+          kSecAttrKeyType: kSecAttrKeyTypeRSA,
+          kSecAttrKeySizeInBits: CFNumber.fromDartInt(2048),
+          kSecPrivateKeyAttrs: CFDictionary.fromPointerMap({
+            kSecAttrIsPermanent: CFBoolean.fromDart(true),
+            kSecAttrApplicationTag: CFData.fromDart([65, 65, 65]),
+          }),
+        });
 
-      final secKey = SecKeyCreateRandomKey(attributes, errorPtrPtr);
-      final error = CFError.toDart(errorPtrPtr.load<Pointer<CFError>>());
-      if (error != null) {
-        throw error;
-      }
-      if (secKey.address == 0) {
-        fail("Error");
+        final secKey = SecKeyCreateRandomKey(attributes, errorPtrPtr);
+        final error = CFError.toDart(errorPtrPtr.load<Pointer<CFError>>());
+        if (error != null) {
+          throw error;
+        }
+        if (secKey.address == 0) {
+          fail("Error");
+        }
       }
     });
   });

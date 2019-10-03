@@ -25,6 +25,7 @@ import 'dart:convert';
 import 'dart:ffi';
 import 'dart:typed_data';
 
+import 'package:cupertino_ffi/core_foundation.dart';
 import 'package:cupertino_ffi/objective_c.dart';
 import 'package:ffi/ffi.dart';
 
@@ -59,7 +60,7 @@ class BindingsGenerator {
 
 class SystemMirror {
   static SystemMirror get() {
-    final allocations = <Pointer>[];
+    arcPush();
     try {
       final result = SystemMirror();
       final listCapacity = 100000;
@@ -76,8 +77,15 @@ class SystemMirror {
           result.libraries[libraryName] = library;
         }
 
-        // Class
+        // Get class name
         final klassName = Utf8.fromUtf8(class_getName(klass));
+
+        // Ignore private names
+        if (klassName.startsWith("_")) {
+          continue;
+        }
+
+        // Create class
         final classInfo = ClassMirror(klassName);
         library.classes[klassName] = classInfo;
 
@@ -93,34 +101,35 @@ class SystemMirror {
           final selectorNamePtr = sel_getName(selector);
           final methodName = _fromUtf8(selectorNamePtr);
 
-          // Get return type
-          final returnTypePtr = method_copyReturnType(method);
-          final returnType = _fromUtf8(returnTypePtr);
-          returnTypePtr.free();
+          //
+          // THIS DOES NOT WORK
+          //
 
-          // Get parameters
-          final parametersLength = method_getNumberOfArguments(method);
-          final parameters = List<ParameterMirror>(parametersLength);
-          for (var i = 0; i < parametersLength; i++) {
-            final parameterNamePtr = method_copyArgumentType(method, i);
-            final parameterName = _fromUtf8(parameterNamePtr);
-            parameterNamePtr.free();
-            parameters[i] = ParameterMirror(parameterName);
-          }
+          // Get return type
+//          final returnTypePtr = method_copyReturnType(method);
+//          final returnType = _fromUtf8(returnTypePtr);
+//
+//          // Get parameters
+//          final parametersLength = method_getNumberOfArguments(method);
+//          final parameters = List<ParameterMirror>(parametersLength);
+//          for (var i = 0; i < parametersLength; i++) {
+//            final parameterNamePtr = method_copyArgumentType(method, i);
+//            final parameterName = _fromUtf8(parameterNamePtr);
+//            parameterNamePtr.free();
+//            parameters[i] = ParameterMirror(parameterName);
+//          }
 
           // We got all information
           classInfo.methods[methodName] = MethodMirror(
             methodName,
-            returnType,
-            parameters,
+            null, // returnType,
+            null, // parameters,
           );
         }
       }
       return result;
     } finally {
-      for (var allocation in allocations) {
-        allocation.free();
-      }
+      arcPop();
     }
   }
 

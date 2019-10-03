@@ -1,57 +1,83 @@
-import '_framework.dart';
+// Copyright (c) 2019 cupertino_ffi authors.
+//
+// Permission is hereby granted, free of charge, to any person obtaining a copy
+// of this software and associated documentation files (the "Software"), to deal
+// in the Software without restriction, including without limitation the rights
+// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+// copies of the Software, and to permit persons to whom the Software is
+// furnished to do so, subject to the following conditions:
+//
+// The above copyright notice and this permission notice shall be included in all
+// copies or substantial portions of the Software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+// EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+// MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+// IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+// DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+// OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE
+// OR OTHER DEALINGS IN THE SOFTWARE.
+
+import 'package:ffi_tool/c.dart';
 
 final libraryForSecurity = Library(
-  resultFile: "lib/src/security/generated.dart",
   importedUris: [
     "package:cupertino_ffi/core_foundation.dart",
     "package:cupertino_ffi/security.dart",
   ],
-  identifier: "dlForSecurity",
-  path:
+  dynamicLibraryIdentifier: "dlForSecurity",
+  dynamicLibraryPath:
       "/System/Library/Frameworks/Security.framework/Versions/Current/Security",
-  members: _members,
+  elements: _elements,
 );
 
-final _members = <String, Member>{
+final _elements = <Element>[
   //
   // Functions
   //
-  "SecAccessControlCreateWithFlags": Func(
+  Func(
+    name: "SecAccessControlCreateWithFlags",
     parameterTypes: ["*CFAllocator", "*void", "Int64", "**CFError"],
     parameterNames: ["allocator", "protection", "flags", "error"],
     returnType: "*SecAccessControl",
     arc: true,
   ),
 
-  "SecItemAdd": Func(
+  Func(
+    name: "SecItemAdd",
     parameterTypes: ["*CFDictionary", "**CFType"],
     returnType: "IntPtr",
   ),
 
-  "SecItemCopyMatching": Func(
+  Func(
+    name: "SecItemCopyMatching",
     parameterTypes: ["*CFDictionary", "**CFType"],
     parameterNames: ["query", "result"],
     returnType: "IntPtr",
   ),
 
-  "SecItemUpdate": Func(
+  Func(
+    name: "SecItemUpdate",
     parameterTypes: ["*CFDictionary", "*CFDictionary"],
     returnType: "IntPtr",
   ),
 
-  "SecItemDelete": Func(
+  Func(
+    name: "SecItemDelete",
     parameterTypes: ["*CFDictionary"],
     returnType: "IntPtr",
   ),
 
-  "SecKeyCopyPublicKey": Func(
+  Func(
+    name: "SecKeyCopyPublicKey",
     parameterTypes: ["*SecKey"],
     parameterNames: ["key"],
     returnType: "*SecKey",
     arc: true,
   ),
 
-  "SecKeyCopyKeyExchangeResult": Func(
+  Func(
+    name: "SecKeyCopyKeyExchangeResult",
     parameterTypes: [
       "*SecKey",
       "*CFString",
@@ -60,36 +86,62 @@ final _members = <String, Member>{
       "**CFError"
     ],
     parameterNames: [
-      "privateKey, algorithm, publicKey, parameters, error",
+      "privateKey",
+      "algorithm",
+      "publicKey",
+      "parameters",
+      "error",
     ],
     returnType: "*CFData",
     arc: true,
   ),
 
-  "SecKeyCreateSignature": Func(
-    parameterTypes: ["*SecKey", "*CFString", "*CFData", "**CFError"],
+  Func(
+    name: "SecKeyCreateSignature",
+    parameterTypes: [
+      "*SecKey",
+      "*CFString",
+      "*CFData",
+      "**CFError",
+    ],
     parameterNames: [
-      "key, algorithm, dataToSign, error",
+      "key",
+      "algorithm",
+      "dataToSign",
+      "error",
     ],
     returnType: "*CFData",
     arc: true,
   ),
 
-  "SecKeyCreateDecryptedData": Func(
-    parameterTypes: ["*SecKey", "IntPtr", "*CFData", "**CFError"],
-    parameterNames: ["key", "algorithm", "ciphertext", "error"],
+  Func(
+    name: "SecKeyCreateDecryptedData",
+    parameterTypes: [
+      "*SecKey",
+      "IntPtr",
+      "*CFData",
+      "**CFError",
+    ],
+    parameterNames: [
+      "key",
+      "algorithm",
+      "ciphertext",
+      "error",
+    ],
     returnType: "*CFData",
     arc: true,
   ),
 
-  "SecKeyCreateEncryptedData": Func(
+  Func(
+    name: "SecKeyCreateEncryptedData",
     parameterTypes: ["*SecKey", "IntPtr", "*CFData", "**CFError"],
     parameterNames: ["key", "algorithm", "plaintext", "error"],
     returnType: "*CFData",
     arc: true,
   ),
 
-  "SecKeyCreateRandomKey": Func(
+  Func(
+    name: "SecKeyCreateRandomKey",
     parameterTypes: ["*CFDictionary", "**CFError"],
     returnType: "*SecKey",
     arc: true,
@@ -99,123 +151,279 @@ final _members = <String, Member>{
   // Key attributes
   //
 
-  "kSecClass": Variable("*CFString"),
+  Global(
+    name: "kSecClass",
+    type: "*CFString",
+  ),
 
-  "kSecPrivateKeyAttrs": Variable("*CFString"),
+  Global(
+    name: "kSecPrivateKeyAttrs",
+    type: "*CFString",
+  ),
 
-  "kSecPublicKeyAttrs": Variable("*CFString"),
+  Global(
+    name: "kSecPublicKeyAttrs",
+    type: "*CFString",
+  ),
 
-  "kSecValueData": Variable("*CFString"),
+  Global(
+    name: "kSecValueData",
+    type: "*CFString",
+  ),
 
-//
-// Security attributes
-//
+  //
+  // Security attributes
+  //
 
-  "kSecAttrAccessComment": Variable("*CFString"),
+  Global(
+    name: "kSecAttrAccessComment",
+    type: "*CFString",
+  ),
 
-  "kSecAttrAccessControl": Variable("*CFString"),
+  Global(
+    name: "kSecAttrAccessControl",
+    type: "*CFString",
+  ),
 
-  "kSecAttrAccessible": Variable("*CFString"),
+  Global(
+    name: "kSecAttrAccessible",
+    type: "*CFString",
+  ),
 
-  "kSecAttrAccount": Variable("*CFString"),
+  Global(
+    name: "kSecAttrAccount",
+    type: "*CFString",
+  ),
 
-  "kSecAttrApplicationTag": Variable("*CFString"),
+  Global(
+    name: "kSecAttrApplicationTag",
+    type: "*CFString",
+  ),
 
-  "kSecAttrCanDecrypt": Variable("*CFString"),
+  Global(
+    name: "kSecAttrCanDecrypt",
+    type: "*CFString",
+  ),
 
-  "kSecAttrCanDrive": Variable("*CFString"),
+  Global(
+    name: "kSecAttrCanDrive",
+    type: "*CFString",
+  ),
 
-  "kSecAttrCanEncrypt": Variable("*CFString"),
+  Global(
+    name: "kSecAttrCanEncrypt",
+    type: "*CFString",
+  ),
 
-  "kSecAttrCanSign": Variable("*CFString"),
+  Global(
+    name: "kSecAttrCanSign",
+    type: "*CFString",
+  ),
 
-  "kSecAttrCanUnwrap": Variable("*CFString"),
+  Global(
+    name: "kSecAttrCanUnwrap",
+    type: "*CFString",
+  ),
 
-  "kSecAttrCanWrap": Variable("*CFString"),
+  Global(
+    name: "kSecAttrCanWrap",
+    type: "*CFString",
+  ),
 
-  "kSecAttrCertificateType": Variable("*CFString"),
+  Global(
+    name: "kSecAttrCertificateType",
+    type: "*CFString",
+  ),
 
-  "kSecAttrDescription": Variable("*CFString"),
+  Global(
+    name: "kSecAttrDescription",
+    type: "*CFString",
+  ),
 
-  "kSecAttrEffectiveKeySize": Variable("*CFString"),
+  Global(
+    name: "kSecAttrEffectiveKeySize",
+    type: "*CFString",
+  ),
 
-  "kSecAttrIsPermanent": Variable("*CFString"),
+  Global(
+    name: "kSecAttrIsPermanent",
+    type: "*CFString",
+  ),
 
-  "kSecAttrKeySizeInBits": Variable("*CFString"),
+  Global(
+    name: "kSecAttrKeySizeInBits",
+    type: "*CFString",
+  ),
 
-  "kSecAttrKeyType": Variable("*CFString"),
+  Global(
+    name: "kSecAttrKeyType",
+    type: "*CFString",
+  ),
 
-  "kSecAttrLabel": Variable("*CFString"),
+  Global(
+    name: "kSecAttrLabel",
+    type: "*CFString",
+  ),
 
-  "kSecAttrModificationDate": Variable("*CFString"),
+  Global(
+    name: "kSecAttrModificationDate",
+    type: "*CFString",
+  ),
 
-  "kSecAttrPRF": Variable("*CFString"),
+  Global(
+    name: "kSecAttrPRF",
+    type: "*CFString",
+  ),
 
-  "kSecAttrProtocol": Variable("*CFString"),
+  Global(
+    name: "kSecAttrProtocol",
+    type: "*CFString",
+  ),
 
-  "kSecAttrRounds": Variable("*CFString"),
+  Global(
+    name: "kSecAttrRounds",
+    type: "*CFString",
+  ),
 
-  "kSecAttrSalt": Variable("*CFString"),
+  Global(
+    name: "kSecAttrSalt",
+    type: "*CFString",
+  ),
 
-  "kSecAttrServer": Variable("*CFString"),
+  Global(
+    name: "kSecAttrServer",
+    type: "*CFString",
+  ),
 
-  "kSecAttrSynchronizable": Variable("*CFString"),
+  Global(
+    name: "kSecAttrSynchronizable",
+    type: "*CFString",
+  ),
 
-  "kSecAttrTokenID": Variable("*CFString"),
+  Global(
+    name: "kSecAttrTokenID",
+    type: "*CFString",
+  ),
 
-  "kSecAttrTokenIDSecureEnclave": Variable("*CFString"),
+  Global(
+    name: "kSecAttrTokenIDSecureEnclave",
+    type: "*CFString",
+  ),
 
-  "kSecAttrType": Variable("*CFString"),
+  Global(
+    name: "kSecAttrType",
+    type: "*CFString",
+  ),
 
   //
   // Accessible values
   //
 
-  "kSecAttrAccessibleAfterFirstUnlock": Variable("*CFString"),
+  Global(
+    name: "kSecAttrAccessibleAfterFirstUnlock",
+    type: "*CFString",
+  ),
 
-  "kSecAttrAccessibleAfterFirstUnlockThisDeviceOnly": Variable("*CFString"),
+  Global(
+    name: "kSecAttrAccessibleAfterFirstUnlockThisDeviceOnly",
+    type: "*CFString",
+  ),
 
-  "kSecAttrAccessibleWhenPasscodeSetThisDeviceOnly": Variable("*CFString"),
+  Global(
+    name: "kSecAttrAccessibleWhenPasscodeSetThisDeviceOnly",
+    type: "*CFString",
+  ),
 
-  "kSecAttrAccessibleWhenUnlocked": Variable("*CFString"),
+  Global(
+    name: "kSecAttrAccessibleWhenUnlocked",
+    type: "*CFString",
+  ),
 
-  "kSecAttrAccessibleWhenUnlockedThisDeviceOnly": Variable("*CFString"),
+  Global(
+    name: "kSecAttrAccessibleWhenUnlockedThisDeviceOnly",
+    type: "*CFString",
+  ),
 
   //
   // Security classes
   //
 
-  "kSecClassCertificate": Variable("*CFString"),
+  Global(
+    name: "kSecClassCertificate",
+    type: "*CFString",
+  ),
 
-  "kSecClassGenericPassword": Variable("*CFString"),
+  Global(
+    name: "kSecClassGenericPassword",
+    type: "*CFString",
+  ),
 
-  "kSecClassIdentity": Variable("*CFString"),
+  Global(
+    name: "kSecClassIdentity",
+    type: "*CFString",
+  ),
 
-  "kSecClassInternetPassword": Variable("*CFString"),
+  Global(
+    name: "kSecClassInternetPassword",
+    type: "*CFString",
+  ),
 
-  "kSecClassKey": Variable("*CFString"),
+  Global(
+    name: "kSecClassKey",
+    type: "*CFString",
+  ),
 
   //
   // Security key types
   //
 
-  "kSecAttrKeyType3DES": Variable("*CFString"),
+  Global(
+    name: "kSecAttrKeyType3DES",
+    type: "*CFString",
+  ),
 
-  "kSecAttrKeyTypeAES": Variable("*CFString"),
+  Global(
+    name: "kSecAttrKeyTypeAES",
+    type: "*CFString",
+  ),
 
-  "kSecAttrKeyTypeCAST": Variable("*CFString"),
+  Global(
+    name: "kSecAttrKeyTypeCAST",
+    type: "*CFString",
+  ),
 
-  "kSecAttrKeyTypeDES": Variable("*CFString"),
+  Global(
+    name: "kSecAttrKeyTypeDES",
+    type: "*CFString",
+  ),
 
-  "kSecAttrKeyTypeDSA": Variable("*CFString"),
+  Global(
+    name: "kSecAttrKeyTypeDSA",
+    type: "*CFString",
+  ),
 
-  "kSecAttrTypeECDSA": Variable("*CFString"),
+  Global(
+    name: "kSecAttrTypeECDSA",
+    type: "*CFString",
+  ),
 
-  "kSecAttrKeyTypeECSECPrimeRandom": Variable("*CFString"),
+  Global(
+    name: "kSecAttrKeyTypeECSECPrimeRandom",
+    type: "*CFString",
+  ),
 
-  "kSecAttrKeyTypeRC2": Variable("*CFString"),
+  Global(
+    name: "kSecAttrKeyTypeRC2",
+    type: "*CFString",
+  ),
 
-  "kSecAttrKeyTypeRC4": Variable("*CFString"),
+  Global(
+    name: "kSecAttrKeyTypeRC4",
+    type: "*CFString",
+  ),
 
-  "kSecAttrKeyTypeRSA": Variable("*CFString"),
-};
+  Global(
+    name: "kSecAttrKeyTypeRSA",
+    type: "*CFString",
+  ),
+];

@@ -62,13 +62,9 @@ Flutter plugins are:
     * _Foundation_ types (NSString, etc.) and _Core Foundation_ types (CFString,
     etc.) are ["toll-free" bridged types](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFDesignConcepts/Articles/tollFreeBridgedTypes.html).
     This means that `Pointer<CFString>` can be used as `Pointer<NSString>` , and vice-versa.
-
-### A missing feature in 'dart:ffi'
-Calling Objective-C methods would require calling C function 'objc_msgSend'. Unfortunately it's a
-variadic C function and 'dart:ffi' doesn't support variadic C functions (yet).
-
-See:
-  * [Dart SDK issue #38578](https://github.com/dart-lang/sdk/issues/38578) ("dart:ffi: Support variadic C functions")
+    * The other APIs are automatically generated (work-in-progress).
+  * Core Data
+    * Automatically generated (work-in-progress).
 
 ## Memory management patterns
 ### Calling APIs that return ARC pointers

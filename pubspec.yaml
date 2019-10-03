@@ -1,8 +1,8 @@
 name: cupertino_ffi
-version: 0.1.1
+version: 0.1.2
 description:
-  Provides C bindings ('dart:ffi') for various APIs by Apple. These include Core Foundation
-  (CFDictionary, etc.), Security (cryptography, biometrics, etc.), and Objective-C runtime.
+  Provides C bindings ('dart:ffi') for various APIs by Apple. These include Core Foundation,
+  Security framework, and Objective-C runtime.
 homepage: https://github.com/dart-interop/cupertino_ffi
 author: terrier989 <terrier989@gmail.com>
 
@@ -14,5 +14,6 @@ dependencies:
   meta: ^1.1.0
 
 dev_dependencies:
+  ffi_tool: any
   pedantic: ^1.8.0
   test: ^1.6.0

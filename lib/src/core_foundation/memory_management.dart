@@ -25,8 +25,8 @@ import 'package:cupertino_ffi/core_foundation.dart';
 final List<Pointer<NativeType>> _arcPointers = <Pointer<NativeType>>[];
 final List<int> _arcPointersLengths = <int>[];
 
-/// Adds the ARC pointer to the list of released pointers in the current ARC
-/// frame.
+/// Adds the ARC pointer the ARC frame. The reference count will be decremented
+/// when [arcPop] is called.
 Pointer<R> arcAdd<R extends NativeType>(Pointer<R> pointer) {
   // Check that someone up in the caller chain called 'arcPush'
   if (_arcPointersLengths.isEmpty) {
@@ -71,7 +71,7 @@ void arcAddNoARC<R extends NativeType>(Pointer<R> pointer) {
   }
 }
 
-/// Marks the ARC pointer as a return value of the function.
+/// Puts an ARC pointer into parent ARC frame.
 Pointer<R> arcReturn<R extends NativeType>(Pointer<R> pointer) {
   // Check that someone up in the caller chain called 'arcPush'
   if (_arcPointersLengths.isEmpty) {
@@ -101,7 +101,8 @@ void arcPush() {
   _arcPointersLengths.add(_arcPointers.length);
 }
 
-/// Pops ARC stack frame. Releases pointers in the frame.
+/// Pops ARC stack frame. Decrements reference count of every pointer in the
+/// frame.
 void arcPop() {
   // Get old length of ARC stack
   final length = _arcPointersLengths.removeLast();
@@ -130,6 +131,7 @@ void arcPop() {
   }
 }
 
+/// Increments reference counter if the reference is non-zero.
 Pointer<T> arcFieldGet<T extends NativeType>(Pointer<T> pointer) {
   if (pointer != null) {
     retain(pointer);
@@ -138,6 +140,8 @@ Pointer<T> arcFieldGet<T extends NativeType>(Pointer<T> pointer) {
   return pointer;
 }
 
+/// Decrements reference counter of old value and increments reference counter
+/// of the value.
 Pointer<T> arcFieldSet<T extends NativeType>(
     Pointer<T> oldPointer, Pointer<T> newPointer) {
   if (oldPointer != null) {
@@ -149,7 +153,7 @@ Pointer<T> arcFieldSet<T extends NativeType>(
   return newPointer;
 }
 
-/// Retains an ARC pointer.
+/// Increments a reference counter.
 ///
 /// This means that reference count is incremented. It must be later decremented
 /// with [release].
@@ -157,7 +161,7 @@ void retain<R extends NativeType>(Pointer<R> pointer) {
   _retain(pointer);
 }
 
-/// Releases an ARC pointer.
+/// Decrements a reference counter.
 ///
 ///
 /// This means that reference count is decremented. If it reaches zero, the

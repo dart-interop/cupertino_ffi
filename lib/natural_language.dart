@@ -1,4 +1,4 @@
-/// [Natural Language](https://developer.apple.com/documentation/naturallanguage?language=objc) (Objective-C library).
+/// Automatically generated API for [Natural Language](https://developer.apple.com/documentation/naturallanguage?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 library cupertino_ffi.natural_language;
@@ -7,6 +7,8 @@ import 'dart:ffi';
 import 'package:ffi/ffi.dart';
 import 'package:meta/meta.dart';
 import 'package:cupertino_ffi/objective_c.dart' as _objc;
+export 'package:cupertino_ffi/core_foundation.dart'
+    show arcPush, arcPop, arcReturn, arcFieldGet, arcFieldSet;
 
 bool _isDynamicLibraryOpened = false;
 
@@ -19,11 +21,9 @@ void _openDynamicLibrary() {
   }
 }
 
-/// Objective-C class _NLClassifierModel_.
+/// Automatically generated API. Part of [Natural Language](https://developer.apple.com/documentation/naturallanguage?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/naturallanguage?language=objc).
 @unsized
 class NLClassifierModel extends Struct<NLClassifierModel> {
   factory NLClassifierModel._() {
@@ -35,11 +35,9 @@ class NLClassifierModel extends Struct<NLClassifierModel> {
   }
 }
 
-/// Objective-C class _NLClassifierModelDataInstance_.
+/// Automatically generated API. Part of [Natural Language](https://developer.apple.com/documentation/naturallanguage?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/naturallanguage?language=objc).
 @unsized
 class NLClassifierModelDataInstance
     extends Struct<NLClassifierModelDataInstance> {
@@ -53,10 +51,10 @@ class NLClassifierModelDataInstance
         .cast<NLClassifierModelDataInstance>();
   }
 
-  static Pointer<Void> formattedLineWithLabelMap(
+  static Pointer formattedLineWithLabelMap(
     Pointer<NLClassifierModelDataInstance> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> vocabularyMap,
+    Pointer arg, {
+    @required Pointer vocabularyMap,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -67,10 +65,10 @@ class NLClassifierModelDataInstance
     );
   }
 
-  static Pointer<Void> initWithLine(
+  static Pointer initWithLine(
     Pointer<NLClassifierModelDataInstance> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> tokenizer,
+    Pointer arg, {
+    @required Pointer<Pointer> tokenizer,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -81,11 +79,11 @@ class NLClassifierModelDataInstance
     );
   }
 
-  static Pointer<Void> initWithString$label$tokenizer$(
+  static Pointer initWithString$label$tokenizer$(
     Pointer<NLClassifierModelDataInstance> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> label,
-    @required Pointer<Pointer<Void>> tokenizer,
+    Pointer arg, {
+    @required Pointer label,
+    @required Pointer<Pointer> tokenizer,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -97,10 +95,10 @@ class NLClassifierModelDataInstance
     );
   }
 
-  static Pointer<Void> initWithString$label$(
+  static Pointer initWithString$label$(
     Pointer<NLClassifierModelDataInstance> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> label,
+    Pointer arg, {
+    @required Pointer label,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -111,7 +109,7 @@ class NLClassifierModelDataInstance
     );
   }
 
-  static Pointer<Pointer<Void>> instanceDictionary(
+  static Pointer<Pointer> instanceDictionary(
     Pointer<NLClassifierModelDataInstance> _self,
   ) {
     _openDynamicLibrary();
@@ -121,7 +119,7 @@ class NLClassifierModelDataInstance
     );
   }
 
-  static Pointer<Void> label(
+  static Pointer label(
     Pointer<NLClassifierModelDataInstance> _self,
   ) {
     _openDynamicLibrary();
@@ -131,7 +129,7 @@ class NLClassifierModelDataInstance
     );
   }
 
-  static Pointer<Void> labels(
+  static Pointer labels(
     Pointer<NLClassifierModelDataInstance> _self,
   ) {
     _openDynamicLibrary();
@@ -141,12 +139,12 @@ class NLClassifierModelDataInstance
     );
   }
 
-  static Pointer<Void> locatorsWithIndex(
+  static Pointer locatorsWithIndex(
     Pointer<NLClassifierModelDataInstance> _self,
     int arg, {
-    @required Pointer<Void> parameters,
-    @required Pointer<Void> tagger,
-    @required Pointer<Pointer<Void>> tokenizer,
+    @required Pointer parameters,
+    @required Pointer tagger,
+    @required Pointer<Pointer> tokenizer,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_Uint64_p_p_p_returns_p(
@@ -159,7 +157,7 @@ class NLClassifierModelDataInstance
     );
   }
 
-  static Pointer<Void> string(
+  static Pointer string(
     Pointer<NLClassifierModelDataInstance> _self,
   ) {
     _openDynamicLibrary();
@@ -169,10 +167,10 @@ class NLClassifierModelDataInstance
     );
   }
 
-  static Pointer<Void> subInstanceWithLocator(
+  static Pointer subInstanceWithLocator(
     Pointer<NLClassifierModelDataInstance> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> tokenizer,
+    Pointer arg, {
+    @required Pointer<Pointer> tokenizer,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -183,7 +181,7 @@ class NLClassifierModelDataInstance
     );
   }
 
-  static Pointer<Void> tokens(
+  static Pointer tokens(
     Pointer<NLClassifierModelDataInstance> _self,
   ) {
     _openDynamicLibrary();
@@ -194,11 +192,9 @@ class NLClassifierModelDataInstance
   }
 }
 
-/// Objective-C class _NLConcatenatedDataProvider_.
+/// Automatically generated API. Part of [Natural Language](https://developer.apple.com/documentation/naturallanguage?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/naturallanguage?language=objc).
 @unsized
 class NLConcatenatedDataProvider extends Struct<NLConcatenatedDataProvider> {
   factory NLConcatenatedDataProvider._() {
@@ -211,7 +207,7 @@ class NLConcatenatedDataProvider extends Struct<NLConcatenatedDataProvider> {
         .cast<NLConcatenatedDataProvider>();
   }
 
-  static Pointer<Void> configuration(
+  static Pointer configuration(
     Pointer<NLConcatenatedDataProvider> _self,
   ) {
     _openDynamicLibrary();
@@ -221,7 +217,7 @@ class NLConcatenatedDataProvider extends Struct<NLConcatenatedDataProvider> {
     );
   }
 
-  static Pointer<Void> documentFrequencyMap(
+  static Pointer documentFrequencyMap(
     Pointer<NLConcatenatedDataProvider> _self,
   ) {
     _openDynamicLibrary();
@@ -231,9 +227,9 @@ class NLConcatenatedDataProvider extends Struct<NLConcatenatedDataProvider> {
     );
   }
 
-  static Pointer<Void> initWithDataProviders(
+  static Pointer initWithDataProviders(
     Pointer<NLConcatenatedDataProvider> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -243,7 +239,7 @@ class NLConcatenatedDataProvider extends Struct<NLConcatenatedDataProvider> {
     );
   }
 
-  static Pointer<Void> instanceAtIndex(
+  static Pointer instanceAtIndex(
     Pointer<NLConcatenatedDataProvider> _self,
     int arg,
   ) {
@@ -255,7 +251,7 @@ class NLConcatenatedDataProvider extends Struct<NLConcatenatedDataProvider> {
     );
   }
 
-  static Pointer<Void> inverseLabelMap(
+  static Pointer inverseLabelMap(
     Pointer<NLConcatenatedDataProvider> _self,
   ) {
     _openDynamicLibrary();
@@ -265,7 +261,7 @@ class NLConcatenatedDataProvider extends Struct<NLConcatenatedDataProvider> {
     );
   }
 
-  static Pointer<Void> labelMap(
+  static Pointer labelMap(
     Pointer<NLConcatenatedDataProvider> _self,
   ) {
     _openDynamicLibrary();
@@ -305,7 +301,7 @@ class NLConcatenatedDataProvider extends Struct<NLConcatenatedDataProvider> {
     );
   }
 
-  static Pointer<Pointer<Void>> tokenizer(
+  static Pointer<Pointer> tokenizer(
     Pointer<NLConcatenatedDataProvider> _self,
   ) {
     _openDynamicLibrary();
@@ -315,7 +311,7 @@ class NLConcatenatedDataProvider extends Struct<NLConcatenatedDataProvider> {
     );
   }
 
-  static Pointer<Void> vocabularyMap(
+  static Pointer vocabularyMap(
     Pointer<NLConcatenatedDataProvider> _self,
   ) {
     _openDynamicLibrary();
@@ -326,11 +322,9 @@ class NLConcatenatedDataProvider extends Struct<NLConcatenatedDataProvider> {
   }
 }
 
-/// Objective-C class _NLConstrainedDataProvider_.
+/// Automatically generated API. Part of [Natural Language](https://developer.apple.com/documentation/naturallanguage?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/naturallanguage?language=objc).
 @unsized
 class NLConstrainedDataProvider extends Struct<NLConstrainedDataProvider> {
   factory NLConstrainedDataProvider._() {
@@ -343,7 +337,7 @@ class NLConstrainedDataProvider extends Struct<NLConstrainedDataProvider> {
         .cast<NLConstrainedDataProvider>();
   }
 
-  static Pointer<Void> configuration(
+  static Pointer configuration(
     Pointer<NLConstrainedDataProvider> _self,
   ) {
     _openDynamicLibrary();
@@ -353,7 +347,7 @@ class NLConstrainedDataProvider extends Struct<NLConstrainedDataProvider> {
     );
   }
 
-  static Pointer<Void> documentFrequencyMap(
+  static Pointer documentFrequencyMap(
     Pointer<NLConstrainedDataProvider> _self,
   ) {
     _openDynamicLibrary();
@@ -363,11 +357,11 @@ class NLConstrainedDataProvider extends Struct<NLConstrainedDataProvider> {
     );
   }
 
-  static Pointer<Void> initWithDataProvider(
+  static Pointer initWithDataProvider(
     Pointer<NLConstrainedDataProvider> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> parameters,
-    @required Pointer<Void> modelTrainer,
+    Pointer arg, {
+    @required Pointer parameters,
+    @required Pointer modelTrainer,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -379,7 +373,7 @@ class NLConstrainedDataProvider extends Struct<NLConstrainedDataProvider> {
     );
   }
 
-  static Pointer<Void> instanceAtIndex(
+  static Pointer instanceAtIndex(
     Pointer<NLConstrainedDataProvider> _self,
     int arg,
   ) {
@@ -391,7 +385,7 @@ class NLConstrainedDataProvider extends Struct<NLConstrainedDataProvider> {
     );
   }
 
-  static Pointer<Void> inverseLabelMap(
+  static Pointer inverseLabelMap(
     Pointer<NLConstrainedDataProvider> _self,
   ) {
     _openDynamicLibrary();
@@ -401,7 +395,7 @@ class NLConstrainedDataProvider extends Struct<NLConstrainedDataProvider> {
     );
   }
 
-  static Pointer<Void> labelMap(
+  static Pointer labelMap(
     Pointer<NLConstrainedDataProvider> _self,
   ) {
     _openDynamicLibrary();
@@ -441,7 +435,7 @@ class NLConstrainedDataProvider extends Struct<NLConstrainedDataProvider> {
     );
   }
 
-  static Pointer<Pointer<Void>> tokenizer(
+  static Pointer<Pointer> tokenizer(
     Pointer<NLConstrainedDataProvider> _self,
   ) {
     _openDynamicLibrary();
@@ -451,7 +445,7 @@ class NLConstrainedDataProvider extends Struct<NLConstrainedDataProvider> {
     );
   }
 
-  static Pointer<Void> vocabularyMap(
+  static Pointer vocabularyMap(
     Pointer<NLConstrainedDataProvider> _self,
   ) {
     _openDynamicLibrary();
@@ -462,11 +456,9 @@ class NLConstrainedDataProvider extends Struct<NLConstrainedDataProvider> {
   }
 }
 
-/// Objective-C class _NLDataEnumerator_.
+/// Automatically generated API. Part of [Natural Language](https://developer.apple.com/documentation/naturallanguage?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/naturallanguage?language=objc).
 @unsized
 class NLDataEnumerator extends Struct<NLDataEnumerator> {
   factory NLDataEnumerator._() {
@@ -477,9 +469,9 @@ class NLDataEnumerator extends Struct<NLDataEnumerator> {
     return _objc.allocate("NLDataEnumerator").cast<NLDataEnumerator>();
   }
 
-  static Pointer<Void> initWithDataProvider(
+  static Pointer initWithDataProvider(
     Pointer<NLDataEnumerator> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -489,7 +481,7 @@ class NLDataEnumerator extends Struct<NLDataEnumerator> {
     );
   }
 
-  static Pointer<Void> nextInstance(
+  static Pointer nextInstance(
     Pointer<NLDataEnumerator> _self,
   ) {
     _openDynamicLibrary();
@@ -500,11 +492,9 @@ class NLDataEnumerator extends Struct<NLDataEnumerator> {
   }
 }
 
-/// Objective-C class _NLDataInstance_.
+/// Automatically generated API. Part of [Natural Language](https://developer.apple.com/documentation/naturallanguage?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/naturallanguage?language=objc).
 @unsized
 class NLDataInstance extends Struct<NLDataInstance> {
   factory NLDataInstance._() {
@@ -515,10 +505,10 @@ class NLDataInstance extends Struct<NLDataInstance> {
     return _objc.allocate("NLDataInstance").cast<NLDataInstance>();
   }
 
-  static Pointer<Void> formattedLineWithLabelMap(
+  static Pointer formattedLineWithLabelMap(
     Pointer<NLDataInstance> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> vocabularyMap,
+    Pointer arg, {
+    @required Pointer vocabularyMap,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -529,10 +519,10 @@ class NLDataInstance extends Struct<NLDataInstance> {
     );
   }
 
-  static Pointer<Void> initWithLine(
+  static Pointer initWithLine(
     Pointer<NLDataInstance> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> tokenizer,
+    Pointer arg, {
+    @required Pointer<Pointer> tokenizer,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -543,10 +533,10 @@ class NLDataInstance extends Struct<NLDataInstance> {
     );
   }
 
-  static Pointer<Void> initWithString(
+  static Pointer initWithString(
     Pointer<NLDataInstance> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> label,
+    Pointer arg, {
+    @required Pointer label,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -557,7 +547,7 @@ class NLDataInstance extends Struct<NLDataInstance> {
     );
   }
 
-  static Pointer<Pointer<Void>> instanceDictionary(
+  static Pointer<Pointer> instanceDictionary(
     Pointer<NLDataInstance> _self,
   ) {
     _openDynamicLibrary();
@@ -567,7 +557,7 @@ class NLDataInstance extends Struct<NLDataInstance> {
     );
   }
 
-  static Pointer<Void> label(
+  static Pointer label(
     Pointer<NLDataInstance> _self,
   ) {
     _openDynamicLibrary();
@@ -577,7 +567,7 @@ class NLDataInstance extends Struct<NLDataInstance> {
     );
   }
 
-  static Pointer<Void> labels(
+  static Pointer labels(
     Pointer<NLDataInstance> _self,
   ) {
     _openDynamicLibrary();
@@ -587,12 +577,12 @@ class NLDataInstance extends Struct<NLDataInstance> {
     );
   }
 
-  static Pointer<Void> locatorsWithIndex(
+  static Pointer locatorsWithIndex(
     Pointer<NLDataInstance> _self,
     int arg, {
-    @required Pointer<Void> parameters,
-    @required Pointer<Void> tagger,
-    @required Pointer<Pointer<Void>> tokenizer,
+    @required Pointer parameters,
+    @required Pointer tagger,
+    @required Pointer<Pointer> tokenizer,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_Uint64_p_p_p_returns_p(
@@ -605,7 +595,7 @@ class NLDataInstance extends Struct<NLDataInstance> {
     );
   }
 
-  static Pointer<Void> string(
+  static Pointer string(
     Pointer<NLDataInstance> _self,
   ) {
     _openDynamicLibrary();
@@ -615,10 +605,10 @@ class NLDataInstance extends Struct<NLDataInstance> {
     );
   }
 
-  static Pointer<Void> subInstanceWithLocator(
+  static Pointer subInstanceWithLocator(
     Pointer<NLDataInstance> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> tokenizer,
+    Pointer arg, {
+    @required Pointer<Pointer> tokenizer,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -629,7 +619,7 @@ class NLDataInstance extends Struct<NLDataInstance> {
     );
   }
 
-  static Pointer<Void> tokens(
+  static Pointer tokens(
     Pointer<NLDataInstance> _self,
   ) {
     _openDynamicLibrary();
@@ -640,11 +630,9 @@ class NLDataInstance extends Struct<NLDataInstance> {
   }
 }
 
-/// Objective-C class _NLDataInstanceLocator_.
+/// Automatically generated API. Part of [Natural Language](https://developer.apple.com/documentation/naturallanguage?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/naturallanguage?language=objc).
 @unsized
 class NLDataInstanceLocator extends Struct<NLDataInstanceLocator> {
   factory NLDataInstanceLocator._() {
@@ -657,7 +645,7 @@ class NLDataInstanceLocator extends Struct<NLDataInstanceLocator> {
         .cast<NLDataInstanceLocator>();
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<NLDataInstanceLocator> _self,
   ) {
     _openDynamicLibrary();
@@ -667,11 +655,11 @@ class NLDataInstanceLocator extends Struct<NLDataInstanceLocator> {
     );
   }
 
-  static Pointer<Void> initWithInstanceIndex(
+  static Pointer initWithInstanceIndex(
     Pointer<NLDataInstanceLocator> _self,
     int arg, {
-    @required Pointer<Void> rangeOfCharacters,
-    @required Pointer<Void> rangeOfTokens,
+    @required Pointer rangeOfCharacters,
+    @required Pointer rangeOfTokens,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_Uint64_p_p_returns_p(
@@ -694,7 +682,7 @@ class NLDataInstanceLocator extends Struct<NLDataInstanceLocator> {
     );
   }
 
-  static Pointer<Void> rangeOfCharacters(
+  static Pointer rangeOfCharacters(
     Pointer<NLDataInstanceLocator> _self,
   ) {
     _openDynamicLibrary();
@@ -704,7 +692,7 @@ class NLDataInstanceLocator extends Struct<NLDataInstanceLocator> {
     );
   }
 
-  static Pointer<Void> rangeOfTokens(
+  static Pointer rangeOfTokens(
     Pointer<NLDataInstanceLocator> _self,
   ) {
     _openDynamicLibrary();
@@ -715,11 +703,9 @@ class NLDataInstanceLocator extends Struct<NLDataInstanceLocator> {
   }
 }
 
-/// Objective-C class _NLDataProvider_.
+/// Automatically generated API. Part of [Natural Language](https://developer.apple.com/documentation/naturallanguage?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/naturallanguage?language=objc).
 @unsized
 class NLDataProvider extends Struct<NLDataProvider> {
   factory NLDataProvider._() {
@@ -730,7 +716,7 @@ class NLDataProvider extends Struct<NLDataProvider> {
     return _objc.allocate("NLDataProvider").cast<NLDataProvider>();
   }
 
-  static Pointer<Void> configuration(
+  static Pointer configuration(
     Pointer<NLDataProvider> _self,
   ) {
     _openDynamicLibrary();
@@ -750,7 +736,7 @@ class NLDataProvider extends Struct<NLDataProvider> {
     );
   }
 
-  static Pointer<Void> documentFrequencyMap(
+  static Pointer documentFrequencyMap(
     Pointer<NLDataProvider> _self,
   ) {
     _openDynamicLibrary();
@@ -762,7 +748,7 @@ class NLDataProvider extends Struct<NLDataProvider> {
 
   static void generateMapsWithModelTrainer(
     Pointer<NLDataProvider> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -772,10 +758,10 @@ class NLDataProvider extends Struct<NLDataProvider> {
     );
   }
 
-  static Pointer<Void> initWithConfiguration(
+  static Pointer initWithConfiguration(
     Pointer<NLDataProvider> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> dataURL,
+    Pointer arg, {
+    @required Pointer dataURL,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -786,7 +772,7 @@ class NLDataProvider extends Struct<NLDataProvider> {
     );
   }
 
-  static Pointer<Void> instanceAtIndex(
+  static Pointer instanceAtIndex(
     Pointer<NLDataProvider> _self,
     int arg,
   ) {
@@ -798,7 +784,7 @@ class NLDataProvider extends Struct<NLDataProvider> {
     );
   }
 
-  static Pointer<Void> inverseLabelMap(
+  static Pointer inverseLabelMap(
     Pointer<NLDataProvider> _self,
   ) {
     _openDynamicLibrary();
@@ -808,7 +794,7 @@ class NLDataProvider extends Struct<NLDataProvider> {
     );
   }
 
-  static Pointer<Void> labelMap(
+  static Pointer labelMap(
     Pointer<NLDataProvider> _self,
   ) {
     _openDynamicLibrary();
@@ -858,7 +844,7 @@ class NLDataProvider extends Struct<NLDataProvider> {
     );
   }
 
-  static Pointer<Pointer<Void>> tokenizer(
+  static Pointer<Pointer> tokenizer(
     Pointer<NLDataProvider> _self,
   ) {
     _openDynamicLibrary();
@@ -868,7 +854,7 @@ class NLDataProvider extends Struct<NLDataProvider> {
     );
   }
 
-  static Pointer<Void> vocabularyMap(
+  static Pointer vocabularyMap(
     Pointer<NLDataProvider> _self,
   ) {
     _openDynamicLibrary();
@@ -879,11 +865,9 @@ class NLDataProvider extends Struct<NLDataProvider> {
   }
 }
 
-/// Objective-C class _NLDataSet_.
+/// Automatically generated API. Part of [Natural Language](https://developer.apple.com/documentation/naturallanguage?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/naturallanguage?language=objc).
 @unsized
 class NLDataSet extends Struct<NLDataSet> {
   factory NLDataSet._() {
@@ -894,7 +878,7 @@ class NLDataSet extends Struct<NLDataSet> {
     return _objc.allocate("NLDataSet").cast<NLDataSet>();
   }
 
-  static Pointer<Void> configuration(
+  static Pointer configuration(
     Pointer<NLDataSet> _self,
   ) {
     _openDynamicLibrary();
@@ -904,7 +888,7 @@ class NLDataSet extends Struct<NLDataSet> {
     );
   }
 
-  static Pointer<Void> dataProviderOfType(
+  static Pointer dataProviderOfType(
     Pointer<NLDataSet> _self,
     int arg,
   ) {
@@ -916,7 +900,7 @@ class NLDataSet extends Struct<NLDataSet> {
     );
   }
 
-  static Pointer<Void> documentFrequencyMap(
+  static Pointer documentFrequencyMap(
     Pointer<NLDataSet> _self,
   ) {
     _openDynamicLibrary();
@@ -926,13 +910,13 @@ class NLDataSet extends Struct<NLDataSet> {
     );
   }
 
-  static Pointer<Void>
+  static Pointer
       initWithConfiguration$trainingDataURL$validationDataURL$testDataURL$(
     Pointer<NLDataSet> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> trainingDataURL,
-    @required Pointer<Void> validationDataURL,
-    @required Pointer<Void> testDataURL,
+    Pointer arg, {
+    @required Pointer trainingDataURL,
+    @required Pointer validationDataURL,
+    @required Pointer testDataURL,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_returns_p(
@@ -946,13 +930,13 @@ class NLDataSet extends Struct<NLDataSet> {
     );
   }
 
-  static Pointer<Void>
+  static Pointer
       initWithConfiguration$trainingDataProvider$validationDataProvider$testDataProvider$(
     Pointer<NLDataSet> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> trainingDataProvider,
-    @required Pointer<Void> validationDataProvider,
-    @required Pointer<Void> testDataProvider,
+    Pointer arg, {
+    @required Pointer trainingDataProvider,
+    @required Pointer validationDataProvider,
+    @required Pointer testDataProvider,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_returns_p(
@@ -966,11 +950,11 @@ class NLDataSet extends Struct<NLDataSet> {
     );
   }
 
-  static Pointer<Void>
+  static Pointer
       initWithConfiguration$dataProvider$validationSplit$testingSplit$(
     Pointer<NLDataSet> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> dataProvider,
+    Pointer arg, {
+    @required Pointer dataProvider,
     @required double validationSplit,
     @required double testingSplit,
   }) {
@@ -986,7 +970,7 @@ class NLDataSet extends Struct<NLDataSet> {
     );
   }
 
-  static Pointer<Void> inverseLabelMap(
+  static Pointer inverseLabelMap(
     Pointer<NLDataSet> _self,
   ) {
     _openDynamicLibrary();
@@ -996,7 +980,7 @@ class NLDataSet extends Struct<NLDataSet> {
     );
   }
 
-  static Pointer<Void> labelMap(
+  static Pointer labelMap(
     Pointer<NLDataSet> _self,
   ) {
     _openDynamicLibrary();
@@ -1056,7 +1040,7 @@ class NLDataSet extends Struct<NLDataSet> {
     );
   }
 
-  static Pointer<Void> testInstanceAtIndex(
+  static Pointer testInstanceAtIndex(
     Pointer<NLDataSet> _self,
     int arg,
   ) {
@@ -1068,7 +1052,7 @@ class NLDataSet extends Struct<NLDataSet> {
     );
   }
 
-  static Pointer<Void> trainingInstanceAtIndex(
+  static Pointer trainingInstanceAtIndex(
     Pointer<NLDataSet> _self,
     int arg,
   ) {
@@ -1080,7 +1064,7 @@ class NLDataSet extends Struct<NLDataSet> {
     );
   }
 
-  static Pointer<Void> validationInstanceAtIndex(
+  static Pointer validationInstanceAtIndex(
     Pointer<NLDataSet> _self,
     int arg,
   ) {
@@ -1092,7 +1076,7 @@ class NLDataSet extends Struct<NLDataSet> {
     );
   }
 
-  static Pointer<Void> vocabularyMap(
+  static Pointer vocabularyMap(
     Pointer<NLDataSet> _self,
   ) {
     _openDynamicLibrary();
@@ -1103,11 +1087,9 @@ class NLDataSet extends Struct<NLDataSet> {
   }
 }
 
-/// Objective-C class _NLLanguageModel_.
+/// Automatically generated API. Part of [Natural Language](https://developer.apple.com/documentation/naturallanguage?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/naturallanguage?language=objc).
 @unsized
 class NLLanguageModel extends Struct<NLLanguageModel> {
   factory NLLanguageModel._() {
@@ -1120,8 +1102,8 @@ class NLLanguageModel extends Struct<NLLanguageModel> {
 
   static double conditionalProbabilityForEntry(
     Pointer<NLLanguageModel> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> context,
+    Pointer arg, {
+    @required Pointer context,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_float64(
@@ -1134,8 +1116,8 @@ class NLLanguageModel extends Struct<NLLanguageModel> {
 
   static double conditionalProbabilityForWord(
     Pointer<NLLanguageModel> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> context,
+    Pointer arg, {
+    @required Pointer context,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_float64(
@@ -1156,7 +1138,7 @@ class NLLanguageModel extends Struct<NLLanguageModel> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<NLLanguageModel> _self,
   ) {
     _openDynamicLibrary();
@@ -1169,9 +1151,9 @@ class NLLanguageModel extends Struct<NLLanguageModel> {
   static void
       enumeratePredictionsForContext$maxEntriesPerPrediction$usingBlock$(
     Pointer<NLLanguageModel> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int maxEntriesPerPrediction,
-    @required Pointer<Void> usingBlock,
+    @required Pointer usingBlock,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_Uint64_p_returns_void(
@@ -1186,9 +1168,9 @@ class NLLanguageModel extends Struct<NLLanguageModel> {
 
   static void enumeratePredictionsForContext$maxWordsPerPrediction$usingBlock$(
     Pointer<NLLanguageModel> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int maxWordsPerPrediction,
-    @required Pointer<Void> usingBlock,
+    @required Pointer usingBlock,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_Uint64_p_returns_void(
@@ -1220,9 +1202,9 @@ class NLLanguageModel extends Struct<NLLanguageModel> {
     );
   }
 
-  static Pointer<Void> initWithLocalization(
+  static Pointer initWithLocalization(
     Pointer<NLLanguageModel> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -1232,7 +1214,7 @@ class NLLanguageModel extends Struct<NLLanguageModel> {
     );
   }
 
-  static Pointer<Void> lexicon(
+  static Pointer lexicon(
     Pointer<NLLanguageModel> _self,
   ) {
     _openDynamicLibrary();
@@ -1242,7 +1224,7 @@ class NLLanguageModel extends Struct<NLLanguageModel> {
     );
   }
 
-  static Pointer<Void> localization(
+  static Pointer localization(
     Pointer<NLLanguageModel> _self,
   ) {
     _openDynamicLibrary();
@@ -1253,11 +1235,9 @@ class NLLanguageModel extends Struct<NLLanguageModel> {
   }
 }
 
-/// Objective-C class _NLLanguageRecognizer_.
+/// Automatically generated API. Part of [Natural Language](https://developer.apple.com/documentation/naturallanguage?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/naturallanguage?language=objc).
 @unsized
 class NLLanguageRecognizer extends Struct<NLLanguageRecognizer> {
   factory NLLanguageRecognizer._() {
@@ -1278,7 +1258,7 @@ class NLLanguageRecognizer extends Struct<NLLanguageRecognizer> {
     );
   }
 
-  static Pointer<Void> dominantLanguage(
+  static Pointer dominantLanguage(
     Pointer<NLLanguageRecognizer> _self,
   ) {
     _openDynamicLibrary();
@@ -1288,7 +1268,7 @@ class NLLanguageRecognizer extends Struct<NLLanguageRecognizer> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<NLLanguageRecognizer> _self,
   ) {
     _openDynamicLibrary();
@@ -1298,7 +1278,7 @@ class NLLanguageRecognizer extends Struct<NLLanguageRecognizer> {
     );
   }
 
-  static Pointer<Void> languageConstraints(
+  static Pointer languageConstraints(
     Pointer<NLLanguageRecognizer> _self,
   ) {
     _openDynamicLibrary();
@@ -1308,7 +1288,7 @@ class NLLanguageRecognizer extends Struct<NLLanguageRecognizer> {
     );
   }
 
-  static Pointer<Void> languageHints(
+  static Pointer languageHints(
     Pointer<NLLanguageRecognizer> _self,
   ) {
     _openDynamicLibrary();
@@ -1318,7 +1298,7 @@ class NLLanguageRecognizer extends Struct<NLLanguageRecognizer> {
     );
   }
 
-  static Pointer<Void> languageHypothesesWithMaximum(
+  static Pointer languageHypothesesWithMaximum(
     Pointer<NLLanguageRecognizer> _self,
     int arg,
   ) {
@@ -1332,8 +1312,8 @@ class NLLanguageRecognizer extends Struct<NLLanguageRecognizer> {
 
   static void processString$range$(
     Pointer<NLLanguageRecognizer> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> range,
+    Pointer arg, {
+    @required Pointer range,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -1346,7 +1326,7 @@ class NLLanguageRecognizer extends Struct<NLLanguageRecognizer> {
 
   static void processString$(
     Pointer<NLLanguageRecognizer> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -1368,7 +1348,7 @@ class NLLanguageRecognizer extends Struct<NLLanguageRecognizer> {
 
   static void setLanguageConstraints(
     Pointer<NLLanguageRecognizer> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -1380,7 +1360,7 @@ class NLLanguageRecognizer extends Struct<NLLanguageRecognizer> {
 
   static void setLanguageHints(
     Pointer<NLLanguageRecognizer> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -1391,11 +1371,9 @@ class NLLanguageRecognizer extends Struct<NLLanguageRecognizer> {
   }
 }
 
-/// Objective-C class _NLLexicon_.
+/// Automatically generated API. Part of [Natural Language](https://developer.apple.com/documentation/naturallanguage?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/naturallanguage?language=objc).
 @unsized
 class NLLexicon extends Struct<NLLexicon> {
   factory NLLexicon._() {
@@ -1416,7 +1394,7 @@ class NLLexicon extends Struct<NLLexicon> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<NLLexicon> _self,
   ) {
     _openDynamicLibrary();
@@ -1426,9 +1404,9 @@ class NLLexicon extends Struct<NLLexicon> {
     );
   }
 
-  static Pointer<Void> entryForString(
+  static Pointer entryForString(
     Pointer<NLLexicon> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -1438,7 +1416,7 @@ class NLLexicon extends Struct<NLLexicon> {
     );
   }
 
-  static Pointer<Void> entryForTokenID(
+  static Pointer entryForTokenID(
     Pointer<NLLexicon> _self,
     int arg,
   ) {
@@ -1452,8 +1430,8 @@ class NLLexicon extends Struct<NLLexicon> {
 
   static void enumerateCompletionsForPrefix(
     Pointer<NLLexicon> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> usingBlock,
+    Pointer arg, {
+    @required Pointer usingBlock,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -1466,7 +1444,7 @@ class NLLexicon extends Struct<NLLexicon> {
 
   static int getProbabilityForString(
     Pointer<NLLexicon> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required Pointer<Float> probability,
   }) {
     _openDynamicLibrary();
@@ -1492,9 +1470,9 @@ class NLLexicon extends Struct<NLLexicon> {
     );
   }
 
-  static Pointer<Void> initWithLocalization(
+  static Pointer initWithLocalization(
     Pointer<NLLexicon> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -1504,7 +1482,7 @@ class NLLexicon extends Struct<NLLexicon> {
     );
   }
 
-  static Pointer<Pointer<Void>> lexicon(
+  static Pointer<Pointer> lexicon(
     Pointer<NLLexicon> _self,
   ) {
     _openDynamicLibrary();
@@ -1514,7 +1492,7 @@ class NLLexicon extends Struct<NLLexicon> {
     );
   }
 
-  static Pointer<Void> localization(
+  static Pointer localization(
     Pointer<NLLexicon> _self,
   ) {
     _openDynamicLibrary();
@@ -1525,11 +1503,9 @@ class NLLexicon extends Struct<NLLexicon> {
   }
 }
 
-/// Objective-C class _NLLexiconCompletion_.
+/// Automatically generated API. Part of [Natural Language](https://developer.apple.com/documentation/naturallanguage?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/naturallanguage?language=objc).
 @unsized
 class NLLexiconCompletion extends Struct<NLLexiconCompletion> {
   factory NLLexiconCompletion._() {
@@ -1540,7 +1516,7 @@ class NLLexiconCompletion extends Struct<NLLexiconCompletion> {
     return _objc.allocate("NLLexiconCompletion").cast<NLLexiconCompletion>();
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<NLLexiconCompletion> _self,
   ) {
     _openDynamicLibrary();
@@ -1550,7 +1526,7 @@ class NLLexiconCompletion extends Struct<NLLexiconCompletion> {
     );
   }
 
-  static Pointer<Void> initWithTokenID(
+  static Pointer initWithTokenID(
     Pointer<NLLexiconCompletion> _self,
     int arg, {
     @required double score,
@@ -1585,11 +1561,9 @@ class NLLexiconCompletion extends Struct<NLLexiconCompletion> {
   }
 }
 
-/// Objective-C class _NLLexiconCursor_.
+/// Automatically generated API. Part of [Natural Language](https://developer.apple.com/documentation/naturallanguage?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/naturallanguage?language=objc).
 @unsized
 class NLLexiconCursor extends Struct<NLLexiconCursor> {
   factory NLLexiconCursor._() {
@@ -1600,9 +1574,9 @@ class NLLexiconCursor extends Struct<NLLexiconCursor> {
     return _objc.allocate("NLLexiconCursor").cast<NLLexiconCursor>();
   }
 
-  static Pointer<Void> cursorByAdvancingWithString(
+  static Pointer cursorByAdvancingWithString(
     Pointer<NLLexiconCursor> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -1624,7 +1598,7 @@ class NLLexiconCursor extends Struct<NLLexiconCursor> {
 
   static void enumerateChildrenUsingBlock(
     Pointer<NLLexiconCursor> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -1636,7 +1610,7 @@ class NLLexiconCursor extends Struct<NLLexiconCursor> {
 
   static void enumerateCompletionsUsingBlock(
     Pointer<NLLexiconCursor> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -1648,7 +1622,7 @@ class NLLexiconCursor extends Struct<NLLexiconCursor> {
 
   static void enumerateEntriesUsingBlock(
     Pointer<NLLexiconCursor> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -1678,10 +1652,10 @@ class NLLexiconCursor extends Struct<NLLexiconCursor> {
     );
   }
 
-  static Pointer<Void> initWithLexicon$cursor$(
+  static Pointer initWithLexicon$cursor$(
     Pointer<NLLexiconCursor> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> cursor,
+    Pointer arg, {
+    @required Pointer<Pointer> cursor,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -1692,10 +1666,10 @@ class NLLexiconCursor extends Struct<NLLexiconCursor> {
     );
   }
 
-  static Pointer<Void> initWithLexicon$string$(
+  static Pointer initWithLexicon$string$(
     Pointer<NLLexiconCursor> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> string,
+    Pointer arg, {
+    @required Pointer string,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -1726,7 +1700,7 @@ class NLLexiconCursor extends Struct<NLLexiconCursor> {
     );
   }
 
-  static Pointer<Void> traversedString(
+  static Pointer traversedString(
     Pointer<NLLexiconCursor> _self,
   ) {
     _openDynamicLibrary();
@@ -1737,11 +1711,9 @@ class NLLexiconCursor extends Struct<NLLexiconCursor> {
   }
 }
 
-/// Objective-C class _NLLexiconEntry_.
+/// Automatically generated API. Part of [Natural Language](https://developer.apple.com/documentation/naturallanguage?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/naturallanguage?language=objc).
 @unsized
 class NLLexiconEntry extends Struct<NLLexiconEntry> {
   factory NLLexiconEntry._() {
@@ -1762,9 +1734,9 @@ class NLLexiconEntry extends Struct<NLLexiconEntry> {
     );
   }
 
-  static Pointer<Void> initWithString(
+  static Pointer initWithString(
     Pointer<NLLexiconEntry> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int tokenID,
     @required int flags,
     @required double probability,
@@ -1790,7 +1762,7 @@ class NLLexiconEntry extends Struct<NLLexiconEntry> {
     );
   }
 
-  static Pointer<Void> string(
+  static Pointer string(
     Pointer<NLLexiconEntry> _self,
   ) {
     _openDynamicLibrary();
@@ -1811,11 +1783,9 @@ class NLLexiconEntry extends Struct<NLLexiconEntry> {
   }
 }
 
-/// Objective-C class _NLLogCategory_.
+/// Automatically generated API. Part of [Natural Language](https://developer.apple.com/documentation/naturallanguage?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/naturallanguage?language=objc).
 @unsized
 class NLLogCategory extends Struct<NLLogCategory> {
   factory NLLogCategory._() {
@@ -1826,10 +1796,10 @@ class NLLogCategory extends Struct<NLLogCategory> {
     return _objc.allocate("NLLogCategory").cast<NLLogCategory>();
   }
 
-  static Pointer<Void> initCategory(
+  static Pointer initCategory(
     Pointer<NLLogCategory> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> inSubsystem,
+    Pointer arg, {
+    @required Pointer inSubsystem,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -1840,7 +1810,7 @@ class NLLogCategory extends Struct<NLLogCategory> {
     );
   }
 
-  static Pointer<Void> internal(
+  static Pointer internal(
     Pointer<NLLogCategory> _self,
   ) {
     _openDynamicLibrary();
@@ -1850,7 +1820,7 @@ class NLLogCategory extends Struct<NLLogCategory> {
     );
   }
 
-  static Pointer<Void> loggingCategory(
+  static Pointer loggingCategory(
     Pointer<NLLogCategory> _self,
   ) {
     _openDynamicLibrary();
@@ -1860,7 +1830,7 @@ class NLLogCategory extends Struct<NLLogCategory> {
     );
   }
 
-  static Pointer<Void> loggingSubsystem(
+  static Pointer loggingSubsystem(
     Pointer<NLLogCategory> _self,
   ) {
     _openDynamicLibrary();
@@ -1871,11 +1841,9 @@ class NLLogCategory extends Struct<NLLogCategory> {
   }
 }
 
-/// Objective-C class _NLModel_.
+/// Automatically generated API. Part of [Natural Language](https://developer.apple.com/documentation/naturallanguage?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/naturallanguage?language=objc).
 @unsized
 class NLModel extends Struct<NLModel> {
   factory NLModel._() {
@@ -1886,9 +1854,9 @@ class NLModel extends Struct<NLModel> {
     return _objc.allocate("NLModel").cast<NLModel>();
   }
 
-  static Pointer<Void> classifierTestResultsWithDataProvider(
+  static Pointer classifierTestResultsWithDataProvider(
     Pointer<NLModel> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -1898,7 +1866,7 @@ class NLModel extends Struct<NLModel> {
     );
   }
 
-  static Pointer<Void> configuration(
+  static Pointer configuration(
     Pointer<NLModel> _self,
   ) {
     _openDynamicLibrary();
@@ -1908,7 +1876,7 @@ class NLModel extends Struct<NLModel> {
     );
   }
 
-  static Pointer<Void> data(
+  static Pointer data(
     Pointer<NLModel> _self,
   ) {
     _openDynamicLibrary();
@@ -1928,7 +1896,7 @@ class NLModel extends Struct<NLModel> {
     );
   }
 
-  static Pointer<Void> documentFrequencyMap(
+  static Pointer documentFrequencyMap(
     Pointer<NLModel> _self,
   ) {
     _openDynamicLibrary();
@@ -1938,9 +1906,9 @@ class NLModel extends Struct<NLModel> {
     );
   }
 
-  static Pointer<Void> initWithClassifierMLModel(
+  static Pointer initWithClassifierMLModel(
     Pointer<NLModel> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -1950,10 +1918,10 @@ class NLModel extends Struct<NLModel> {
     );
   }
 
-  static Pointer<Void> initWithConfiguration(
+  static Pointer initWithConfiguration(
     Pointer<NLModel> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> modelImpl,
+    Pointer arg, {
+    @required Pointer modelImpl,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -1964,10 +1932,10 @@ class NLModel extends Struct<NLModel> {
     );
   }
 
-  static Pointer<Void> initWithContentsOfURL(
+  static Pointer initWithContentsOfURL(
     Pointer<NLModel> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -1978,10 +1946,10 @@ class NLModel extends Struct<NLModel> {
     );
   }
 
-  static Pointer<Void> initWithData$error$(
+  static Pointer initWithData$error$(
     Pointer<NLModel> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -1992,11 +1960,11 @@ class NLModel extends Struct<NLModel> {
     );
   }
 
-  static Pointer<Void> initWithData$mlModel$error$(
+  static Pointer initWithData$mlModel$error$(
     Pointer<NLModel> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> mlModel,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer mlModel,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -2008,10 +1976,10 @@ class NLModel extends Struct<NLModel> {
     );
   }
 
-  static Pointer<Void> initWithMLModel(
+  static Pointer initWithMLModel(
     Pointer<NLModel> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -2022,7 +1990,7 @@ class NLModel extends Struct<NLModel> {
     );
   }
 
-  static Pointer<Void> labelMap(
+  static Pointer labelMap(
     Pointer<NLModel> _self,
   ) {
     _openDynamicLibrary();
@@ -2032,7 +2000,7 @@ class NLModel extends Struct<NLModel> {
     );
   }
 
-  static Pointer<Void> mlModel(
+  static Pointer mlModel(
     Pointer<NLModel> _self,
   ) {
     _openDynamicLibrary();
@@ -2042,9 +2010,9 @@ class NLModel extends Struct<NLModel> {
     );
   }
 
-  static Pointer<Void> predictedLabelForString(
+  static Pointer predictedLabelForString(
     Pointer<NLModel> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -2054,9 +2022,9 @@ class NLModel extends Struct<NLModel> {
     );
   }
 
-  static Pointer<Void> predictedLabelsForTokens(
+  static Pointer predictedLabelsForTokens(
     Pointer<NLModel> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -2066,9 +2034,9 @@ class NLModel extends Struct<NLModel> {
     );
   }
 
-  static Pointer<Void> sequenceTestResultsWithDataProvider(
+  static Pointer sequenceTestResultsWithDataProvider(
     Pointer<NLModel> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -2078,9 +2046,9 @@ class NLModel extends Struct<NLModel> {
     );
   }
 
-  static Pointer<Void> testResultsWithDataProvider(
+  static Pointer testResultsWithDataProvider(
     Pointer<NLModel> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -2090,9 +2058,9 @@ class NLModel extends Struct<NLModel> {
     );
   }
 
-  static Pointer<Void> testResultsWithDataSet(
+  static Pointer testResultsWithDataSet(
     Pointer<NLModel> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -2102,7 +2070,7 @@ class NLModel extends Struct<NLModel> {
     );
   }
 
-  static Pointer<Void> vocabularyMap(
+  static Pointer vocabularyMap(
     Pointer<NLModel> _self,
   ) {
     _openDynamicLibrary();
@@ -2114,9 +2082,9 @@ class NLModel extends Struct<NLModel> {
 
   static int writeMLModelToURL$options$error$(
     Pointer<NLModel> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> options,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer options,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_Int8(
@@ -2130,9 +2098,9 @@ class NLModel extends Struct<NLModel> {
 
   static int writeMLModelToURL$atomically$error$(
     Pointer<NLModel> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int atomically,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_Int8_p_returns_Int8(
@@ -2146,9 +2114,9 @@ class NLModel extends Struct<NLModel> {
 
   static int writeToURL(
     Pointer<NLModel> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int atomically,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_Int8_p_returns_Int8(
@@ -2161,11 +2129,9 @@ class NLModel extends Struct<NLModel> {
   }
 }
 
-/// Objective-C class _NLModelConfiguration_.
+/// Automatically generated API. Part of [Natural Language](https://developer.apple.com/documentation/naturallanguage?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/naturallanguage?language=objc).
 @unsized
 class NLModelConfiguration extends Struct<NLModelConfiguration> {
   factory NLModelConfiguration._() {
@@ -2176,9 +2142,9 @@ class NLModelConfiguration extends Struct<NLModelConfiguration> {
     return _objc.allocate("NLModelConfiguration").cast<NLModelConfiguration>();
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<NLModelConfiguration> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -2190,7 +2156,7 @@ class NLModelConfiguration extends Struct<NLModelConfiguration> {
 
   static void encodeWithCoder(
     Pointer<NLModelConfiguration> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -2210,9 +2176,9 @@ class NLModelConfiguration extends Struct<NLModelConfiguration> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<NLModelConfiguration> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -2222,11 +2188,11 @@ class NLModelConfiguration extends Struct<NLModelConfiguration> {
     );
   }
 
-  static Pointer<Void> initWithModelType(
+  static Pointer initWithModelType(
     Pointer<NLModelConfiguration> _self,
     int arg, {
-    @required Pointer<Void> options,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer options,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_Int64_p_p_returns_p(
@@ -2240,7 +2206,7 @@ class NLModelConfiguration extends Struct<NLModelConfiguration> {
 
   static int isEqual(
     Pointer<NLModelConfiguration> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -2250,7 +2216,7 @@ class NLModelConfiguration extends Struct<NLModelConfiguration> {
     );
   }
 
-  static Pointer<Void> language(
+  static Pointer language(
     Pointer<NLModelConfiguration> _self,
   ) {
     _openDynamicLibrary();
@@ -2260,7 +2226,7 @@ class NLModelConfiguration extends Struct<NLModelConfiguration> {
     );
   }
 
-  static Pointer<Void> options(
+  static Pointer options(
     Pointer<NLModelConfiguration> _self,
   ) {
     _openDynamicLibrary();
@@ -2291,11 +2257,9 @@ class NLModelConfiguration extends Struct<NLModelConfiguration> {
   }
 }
 
-/// Objective-C class _NLModelImpl_.
+/// Automatically generated API. Part of [Natural Language](https://developer.apple.com/documentation/naturallanguage?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/naturallanguage?language=objc).
 @unsized
 class NLModelImpl extends Struct<NLModelImpl> {
   factory NLModelImpl._() {
@@ -2306,7 +2270,7 @@ class NLModelImpl extends Struct<NLModelImpl> {
     return _objc.allocate("NLModelImpl").cast<NLModelImpl>();
   }
 
-  static Pointer<Void> configuration(
+  static Pointer configuration(
     Pointer<NLModelImpl> _self,
   ) {
     _openDynamicLibrary();
@@ -2316,7 +2280,7 @@ class NLModelImpl extends Struct<NLModelImpl> {
     );
   }
 
-  static Pointer<Void> documentFrequencyMap(
+  static Pointer documentFrequencyMap(
     Pointer<NLModelImpl> _self,
   ) {
     _openDynamicLibrary();
@@ -2326,13 +2290,13 @@ class NLModelImpl extends Struct<NLModelImpl> {
     );
   }
 
-  static Pointer<Void> initWithModelData(
+  static Pointer initWithModelData(
     Pointer<NLModelImpl> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> configuration,
-    @required Pointer<Void> labelMap,
-    @required Pointer<Void> vocabularyMap,
-    @required Pointer<Void> documentFrequencyMap,
+    Pointer arg, {
+    @required Pointer configuration,
+    @required Pointer labelMap,
+    @required Pointer vocabularyMap,
+    @required Pointer documentFrequencyMap,
     @required int numberOfTrainingInstances,
   }) {
     _openDynamicLibrary();
@@ -2349,9 +2313,9 @@ class NLModelImpl extends Struct<NLModelImpl> {
     );
   }
 
-  static Pointer<Void> initWithModelTrainer(
+  static Pointer initWithModelTrainer(
     Pointer<NLModelImpl> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -2361,7 +2325,7 @@ class NLModelImpl extends Struct<NLModelImpl> {
     );
   }
 
-  static Pointer<Void> labelMap(
+  static Pointer labelMap(
     Pointer<NLModelImpl> _self,
   ) {
     _openDynamicLibrary();
@@ -2371,7 +2335,7 @@ class NLModelImpl extends Struct<NLModelImpl> {
     );
   }
 
-  static Pointer<Void> modelData(
+  static Pointer modelData(
     Pointer<NLModelImpl> _self,
   ) {
     _openDynamicLibrary();
@@ -2391,9 +2355,9 @@ class NLModelImpl extends Struct<NLModelImpl> {
     );
   }
 
-  static Pointer<Void> predictedLabelForString(
+  static Pointer predictedLabelForString(
     Pointer<NLModelImpl> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -2403,9 +2367,9 @@ class NLModelImpl extends Struct<NLModelImpl> {
     );
   }
 
-  static Pointer<Void> predictedLabelsForTokens(
+  static Pointer predictedLabelsForTokens(
     Pointer<NLModelImpl> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -2415,7 +2379,7 @@ class NLModelImpl extends Struct<NLModelImpl> {
     );
   }
 
-  static Pointer<Void> vocabularyMap(
+  static Pointer vocabularyMap(
     Pointer<NLModelImpl> _self,
   ) {
     _openDynamicLibrary();
@@ -2426,11 +2390,9 @@ class NLModelImpl extends Struct<NLModelImpl> {
   }
 }
 
-/// Objective-C class _NLModelImplL_.
+/// Automatically generated API. Part of [Natural Language](https://developer.apple.com/documentation/naturallanguage?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/naturallanguage?language=objc).
 @unsized
 class NLModelImplL extends Struct<NLModelImplL> {
   factory NLModelImplL._() {
@@ -2441,7 +2403,7 @@ class NLModelImplL extends Struct<NLModelImplL> {
     return _objc.allocate("NLModelImplL").cast<NLModelImplL>();
   }
 
-  static Pointer<Void> configuration(
+  static Pointer configuration(
     Pointer<NLModelImplL> _self,
   ) {
     _openDynamicLibrary();
@@ -2461,7 +2423,7 @@ class NLModelImplL extends Struct<NLModelImplL> {
     );
   }
 
-  static Pointer<Void> documentFrequencyMap(
+  static Pointer documentFrequencyMap(
     Pointer<NLModelImplL> _self,
   ) {
     _openDynamicLibrary();
@@ -2471,13 +2433,13 @@ class NLModelImplL extends Struct<NLModelImplL> {
     );
   }
 
-  static Pointer<Void> initWithModelData(
+  static Pointer initWithModelData(
     Pointer<NLModelImplL> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> configuration,
-    @required Pointer<Void> labelMap,
-    @required Pointer<Void> vocabularyMap,
-    @required Pointer<Void> documentFrequencyMap,
+    Pointer arg, {
+    @required Pointer configuration,
+    @required Pointer labelMap,
+    @required Pointer vocabularyMap,
+    @required Pointer documentFrequencyMap,
     @required int numberOfTrainingInstances,
   }) {
     _openDynamicLibrary();
@@ -2494,9 +2456,9 @@ class NLModelImplL extends Struct<NLModelImplL> {
     );
   }
 
-  static Pointer<Void> initWithModelTrainer(
+  static Pointer initWithModelTrainer(
     Pointer<NLModelImplL> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -2506,13 +2468,13 @@ class NLModelImplL extends Struct<NLModelImplL> {
     );
   }
 
-  static Pointer<Void> initWithOwnedModelObject(
+  static Pointer initWithOwnedModelObject(
     Pointer<NLModelImplL> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> configuration,
-    @required Pointer<Void> labelMap,
-    @required Pointer<Void> vocabularyMap,
-    @required Pointer<Void> documentFrequencyMap,
+    Pointer arg, {
+    @required Pointer configuration,
+    @required Pointer labelMap,
+    @required Pointer vocabularyMap,
+    @required Pointer documentFrequencyMap,
     @required int numberOfTrainingInstances,
   }) {
     _openDynamicLibrary();
@@ -2529,7 +2491,7 @@ class NLModelImplL extends Struct<NLModelImplL> {
     );
   }
 
-  static Pointer<Void> labelMap(
+  static Pointer labelMap(
     Pointer<NLModelImplL> _self,
   ) {
     _openDynamicLibrary();
@@ -2539,7 +2501,7 @@ class NLModelImplL extends Struct<NLModelImplL> {
     );
   }
 
-  static Pointer<Void> modelData(
+  static Pointer modelData(
     Pointer<NLModelImplL> _self,
   ) {
     _openDynamicLibrary();
@@ -2559,9 +2521,9 @@ class NLModelImplL extends Struct<NLModelImplL> {
     );
   }
 
-  static Pointer<Void> predictedLabelForString(
+  static Pointer predictedLabelForString(
     Pointer<NLModelImplL> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -2571,9 +2533,9 @@ class NLModelImplL extends Struct<NLModelImplL> {
     );
   }
 
-  static Pointer<Void> predictedLabelsForTokens(
+  static Pointer predictedLabelsForTokens(
     Pointer<NLModelImplL> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -2583,7 +2545,7 @@ class NLModelImplL extends Struct<NLModelImplL> {
     );
   }
 
-  static Pointer<Void> vocabularyMap(
+  static Pointer vocabularyMap(
     Pointer<NLModelImplL> _self,
   ) {
     _openDynamicLibrary();
@@ -2594,11 +2556,9 @@ class NLModelImplL extends Struct<NLModelImplL> {
   }
 }
 
-/// Objective-C class _NLModelImplLC_.
+/// Automatically generated API. Part of [Natural Language](https://developer.apple.com/documentation/naturallanguage?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/naturallanguage?language=objc).
 @unsized
 class NLModelImplLC extends Struct<NLModelImplLC> {
   factory NLModelImplLC._() {
@@ -2609,7 +2569,7 @@ class NLModelImplLC extends Struct<NLModelImplLC> {
     return _objc.allocate("NLModelImplLC").cast<NLModelImplLC>();
   }
 
-  static Pointer<Void> configuration(
+  static Pointer configuration(
     Pointer<NLModelImplLC> _self,
   ) {
     _openDynamicLibrary();
@@ -2629,7 +2589,7 @@ class NLModelImplLC extends Struct<NLModelImplLC> {
     );
   }
 
-  static Pointer<Void> documentFrequencyMap(
+  static Pointer documentFrequencyMap(
     Pointer<NLModelImplLC> _self,
   ) {
     _openDynamicLibrary();
@@ -2639,13 +2599,13 @@ class NLModelImplLC extends Struct<NLModelImplLC> {
     );
   }
 
-  static Pointer<Void> initWithModelData(
+  static Pointer initWithModelData(
     Pointer<NLModelImplLC> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> configuration,
-    @required Pointer<Void> labelMap,
-    @required Pointer<Void> vocabularyMap,
-    @required Pointer<Void> documentFrequencyMap,
+    Pointer arg, {
+    @required Pointer configuration,
+    @required Pointer labelMap,
+    @required Pointer vocabularyMap,
+    @required Pointer documentFrequencyMap,
     @required int numberOfTrainingInstances,
   }) {
     _openDynamicLibrary();
@@ -2662,9 +2622,9 @@ class NLModelImplLC extends Struct<NLModelImplLC> {
     );
   }
 
-  static Pointer<Void> initWithModelTrainer(
+  static Pointer initWithModelTrainer(
     Pointer<NLModelImplLC> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -2674,7 +2634,7 @@ class NLModelImplLC extends Struct<NLModelImplLC> {
     );
   }
 
-  static Pointer<Void> labelMap(
+  static Pointer labelMap(
     Pointer<NLModelImplLC> _self,
   ) {
     _openDynamicLibrary();
@@ -2684,7 +2644,7 @@ class NLModelImplLC extends Struct<NLModelImplLC> {
     );
   }
 
-  static Pointer<Void> modelData(
+  static Pointer modelData(
     Pointer<NLModelImplLC> _self,
   ) {
     _openDynamicLibrary();
@@ -2704,9 +2664,9 @@ class NLModelImplLC extends Struct<NLModelImplLC> {
     );
   }
 
-  static Pointer<Void> predictedLabelForString(
+  static Pointer predictedLabelForString(
     Pointer<NLModelImplLC> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -2716,9 +2676,9 @@ class NLModelImplLC extends Struct<NLModelImplLC> {
     );
   }
 
-  static Pointer<Void> predictedLabelsForTokens(
+  static Pointer predictedLabelsForTokens(
     Pointer<NLModelImplLC> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -2728,7 +2688,7 @@ class NLModelImplLC extends Struct<NLModelImplLC> {
     );
   }
 
-  static Pointer<Void> vocabularyMap(
+  static Pointer vocabularyMap(
     Pointer<NLModelImplLC> _self,
   ) {
     _openDynamicLibrary();
@@ -2739,11 +2699,9 @@ class NLModelImplLC extends Struct<NLModelImplLC> {
   }
 }
 
-/// Objective-C class _NLModelImplM_.
+/// Automatically generated API. Part of [Natural Language](https://developer.apple.com/documentation/naturallanguage?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/naturallanguage?language=objc).
 @unsized
 class NLModelImplM extends Struct<NLModelImplM> {
   factory NLModelImplM._() {
@@ -2754,7 +2712,7 @@ class NLModelImplM extends Struct<NLModelImplM> {
     return _objc.allocate("NLModelImplM").cast<NLModelImplM>();
   }
 
-  static Pointer<Void> configuration(
+  static Pointer configuration(
     Pointer<NLModelImplM> _self,
   ) {
     _openDynamicLibrary();
@@ -2774,7 +2732,7 @@ class NLModelImplM extends Struct<NLModelImplM> {
     );
   }
 
-  static Pointer<Void> documentFrequencyMap(
+  static Pointer documentFrequencyMap(
     Pointer<NLModelImplM> _self,
   ) {
     _openDynamicLibrary();
@@ -2784,13 +2742,13 @@ class NLModelImplM extends Struct<NLModelImplM> {
     );
   }
 
-  static Pointer<Void> initWithModelData(
+  static Pointer initWithModelData(
     Pointer<NLModelImplM> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> configuration,
-    @required Pointer<Void> labelMap,
-    @required Pointer<Void> vocabularyMap,
-    @required Pointer<Void> documentFrequencyMap,
+    Pointer arg, {
+    @required Pointer configuration,
+    @required Pointer labelMap,
+    @required Pointer vocabularyMap,
+    @required Pointer documentFrequencyMap,
     @required int numberOfTrainingInstances,
   }) {
     _openDynamicLibrary();
@@ -2807,9 +2765,9 @@ class NLModelImplM extends Struct<NLModelImplM> {
     );
   }
 
-  static Pointer<Void> initWithModelTrainer(
+  static Pointer initWithModelTrainer(
     Pointer<NLModelImplM> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -2819,12 +2777,12 @@ class NLModelImplM extends Struct<NLModelImplM> {
     );
   }
 
-  static Pointer<Void> initWithOwnedModelObject(
+  static Pointer initWithOwnedModelObject(
     Pointer<NLModelImplM> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> configuration,
-    @required Pointer<Void> labelMap,
-    @required Pointer<Void> vocabularyMap,
+    Pointer arg, {
+    @required Pointer configuration,
+    @required Pointer labelMap,
+    @required Pointer vocabularyMap,
     @required int numberOfTrainingInstances,
   }) {
     _openDynamicLibrary();
@@ -2840,7 +2798,7 @@ class NLModelImplM extends Struct<NLModelImplM> {
     );
   }
 
-  static Pointer<Void> labelMap(
+  static Pointer labelMap(
     Pointer<NLModelImplM> _self,
   ) {
     _openDynamicLibrary();
@@ -2850,7 +2808,7 @@ class NLModelImplM extends Struct<NLModelImplM> {
     );
   }
 
-  static Pointer<Void> modelData(
+  static Pointer modelData(
     Pointer<NLModelImplM> _self,
   ) {
     _openDynamicLibrary();
@@ -2870,9 +2828,9 @@ class NLModelImplM extends Struct<NLModelImplM> {
     );
   }
 
-  static Pointer<Void> predictedLabelForString(
+  static Pointer predictedLabelForString(
     Pointer<NLModelImplM> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -2882,9 +2840,9 @@ class NLModelImplM extends Struct<NLModelImplM> {
     );
   }
 
-  static Pointer<Void> predictedLabelsForTokens(
+  static Pointer predictedLabelsForTokens(
     Pointer<NLModelImplM> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -2894,7 +2852,7 @@ class NLModelImplM extends Struct<NLModelImplM> {
     );
   }
 
-  static Pointer<Void> vocabularyMap(
+  static Pointer vocabularyMap(
     Pointer<NLModelImplM> _self,
   ) {
     _openDynamicLibrary();
@@ -2905,11 +2863,9 @@ class NLModelImplM extends Struct<NLModelImplM> {
   }
 }
 
-/// Objective-C class _NLModelImplML_.
+/// Automatically generated API. Part of [Natural Language](https://developer.apple.com/documentation/naturallanguage?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/naturallanguage?language=objc).
 @unsized
 class NLModelImplML extends Struct<NLModelImplML> {
   factory NLModelImplML._() {
@@ -2920,7 +2876,7 @@ class NLModelImplML extends Struct<NLModelImplML> {
     return _objc.allocate("NLModelImplML").cast<NLModelImplML>();
   }
 
-  static Pointer<Void> configuration(
+  static Pointer configuration(
     Pointer<NLModelImplML> _self,
   ) {
     _openDynamicLibrary();
@@ -2930,10 +2886,10 @@ class NLModelImplML extends Struct<NLModelImplML> {
     );
   }
 
-  static Pointer<Void> initWithMLModel(
+  static Pointer initWithMLModel(
     Pointer<NLModelImplML> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> configuration,
+    Pointer arg, {
+    @required Pointer configuration,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -2944,13 +2900,13 @@ class NLModelImplML extends Struct<NLModelImplML> {
     );
   }
 
-  static Pointer<Void> initWithModelData(
+  static Pointer initWithModelData(
     Pointer<NLModelImplML> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> configuration,
-    @required Pointer<Void> labelMap,
-    @required Pointer<Void> vocabularyMap,
-    @required Pointer<Void> documentFrequencyMap,
+    Pointer arg, {
+    @required Pointer configuration,
+    @required Pointer labelMap,
+    @required Pointer vocabularyMap,
+    @required Pointer documentFrequencyMap,
     @required int numberOfTrainingInstances,
   }) {
     _openDynamicLibrary();
@@ -2967,9 +2923,9 @@ class NLModelImplML extends Struct<NLModelImplML> {
     );
   }
 
-  static Pointer<Void> initWithModelTrainer(
+  static Pointer initWithModelTrainer(
     Pointer<NLModelImplML> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -2979,7 +2935,7 @@ class NLModelImplML extends Struct<NLModelImplML> {
     );
   }
 
-  static Pointer<Void> modelData(
+  static Pointer modelData(
     Pointer<NLModelImplML> _self,
   ) {
     _openDynamicLibrary();
@@ -2989,9 +2945,9 @@ class NLModelImplML extends Struct<NLModelImplML> {
     );
   }
 
-  static Pointer<Void> predictedLabelForString(
+  static Pointer predictedLabelForString(
     Pointer<NLModelImplML> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -3001,9 +2957,9 @@ class NLModelImplML extends Struct<NLModelImplML> {
     );
   }
 
-  static Pointer<Void> predictedLabelsForTokens(
+  static Pointer predictedLabelsForTokens(
     Pointer<NLModelImplML> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -3014,11 +2970,9 @@ class NLModelImplML extends Struct<NLModelImplML> {
   }
 }
 
-/// Objective-C class _NLModelImplN_.
+/// Automatically generated API. Part of [Natural Language](https://developer.apple.com/documentation/naturallanguage?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/naturallanguage?language=objc).
 @unsized
 class NLModelImplN extends Struct<NLModelImplN> {
   factory NLModelImplN._() {
@@ -3029,7 +2983,7 @@ class NLModelImplN extends Struct<NLModelImplN> {
     return _objc.allocate("NLModelImplN").cast<NLModelImplN>();
   }
 
-  static Pointer<Void> configuration(
+  static Pointer configuration(
     Pointer<NLModelImplN> _self,
   ) {
     _openDynamicLibrary();
@@ -3049,7 +3003,7 @@ class NLModelImplN extends Struct<NLModelImplN> {
     );
   }
 
-  static Pointer<Void> documentFrequencyMap(
+  static Pointer documentFrequencyMap(
     Pointer<NLModelImplN> _self,
   ) {
     _openDynamicLibrary();
@@ -3059,13 +3013,13 @@ class NLModelImplN extends Struct<NLModelImplN> {
     );
   }
 
-  static Pointer<Void> initWithModelData(
+  static Pointer initWithModelData(
     Pointer<NLModelImplN> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> configuration,
-    @required Pointer<Void> labelMap,
-    @required Pointer<Void> vocabularyMap,
-    @required Pointer<Void> documentFrequencyMap,
+    Pointer arg, {
+    @required Pointer configuration,
+    @required Pointer labelMap,
+    @required Pointer vocabularyMap,
+    @required Pointer documentFrequencyMap,
     @required int numberOfTrainingInstances,
   }) {
     _openDynamicLibrary();
@@ -3082,9 +3036,9 @@ class NLModelImplN extends Struct<NLModelImplN> {
     );
   }
 
-  static Pointer<Void> initWithModelTrainer(
+  static Pointer initWithModelTrainer(
     Pointer<NLModelImplN> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -3094,7 +3048,7 @@ class NLModelImplN extends Struct<NLModelImplN> {
     );
   }
 
-  static Pointer<Void> labelMap(
+  static Pointer labelMap(
     Pointer<NLModelImplN> _self,
   ) {
     _openDynamicLibrary();
@@ -3104,7 +3058,7 @@ class NLModelImplN extends Struct<NLModelImplN> {
     );
   }
 
-  static Pointer<Void> modelData(
+  static Pointer modelData(
     Pointer<NLModelImplN> _self,
   ) {
     _openDynamicLibrary();
@@ -3124,9 +3078,9 @@ class NLModelImplN extends Struct<NLModelImplN> {
     );
   }
 
-  static Pointer<Void> predictedLabelForString(
+  static Pointer predictedLabelForString(
     Pointer<NLModelImplN> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -3136,9 +3090,9 @@ class NLModelImplN extends Struct<NLModelImplN> {
     );
   }
 
-  static Pointer<Void> predictedLabelsDictionaryForString(
+  static Pointer predictedLabelsDictionaryForString(
     Pointer<NLModelImplN> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -3148,9 +3102,9 @@ class NLModelImplN extends Struct<NLModelImplN> {
     );
   }
 
-  static Pointer<Void> predictedLabelsForTokens(
+  static Pointer predictedLabelsForTokens(
     Pointer<NLModelImplN> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -3160,7 +3114,7 @@ class NLModelImplN extends Struct<NLModelImplN> {
     );
   }
 
-  static Pointer<Void> vocabularyMap(
+  static Pointer vocabularyMap(
     Pointer<NLModelImplN> _self,
   ) {
     _openDynamicLibrary();
@@ -3171,11 +3125,9 @@ class NLModelImplN extends Struct<NLModelImplN> {
   }
 }
 
-/// Objective-C class _NLModelTrainer_.
+/// Automatically generated API. Part of [Natural Language](https://developer.apple.com/documentation/naturallanguage?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/naturallanguage?language=objc).
 @unsized
 class NLModelTrainer extends Struct<NLModelTrainer> {
   factory NLModelTrainer._() {
@@ -3186,7 +3138,7 @@ class NLModelTrainer extends Struct<NLModelTrainer> {
     return _objc.allocate("NLModelTrainer").cast<NLModelTrainer>();
   }
 
-  static Pointer<Void> configuration(
+  static Pointer configuration(
     Pointer<NLModelTrainer> _self,
   ) {
     _openDynamicLibrary();
@@ -3196,7 +3148,7 @@ class NLModelTrainer extends Struct<NLModelTrainer> {
     );
   }
 
-  static Pointer<Void> dataSet(
+  static Pointer dataSet(
     Pointer<NLModelTrainer> _self,
   ) {
     _openDynamicLibrary();
@@ -3206,7 +3158,7 @@ class NLModelTrainer extends Struct<NLModelTrainer> {
     );
   }
 
-  static Pointer<Void> delegate(
+  static Pointer delegate(
     Pointer<NLModelTrainer> _self,
   ) {
     _openDynamicLibrary();
@@ -3216,12 +3168,12 @@ class NLModelTrainer extends Struct<NLModelTrainer> {
     );
   }
 
-  static Pointer<Void> initWithConfiguration(
+  static Pointer initWithConfiguration(
     Pointer<NLModelTrainer> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> dataSet,
-    @required Pointer<Void> options,
-    @required Pointer<Void> delegate,
+    Pointer arg, {
+    @required Pointer dataSet,
+    @required Pointer options,
+    @required Pointer delegate,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_returns_p(
@@ -3236,7 +3188,7 @@ class NLModelTrainer extends Struct<NLModelTrainer> {
 
   static void logMessage(
     Pointer<NLModelTrainer> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -3246,7 +3198,7 @@ class NLModelTrainer extends Struct<NLModelTrainer> {
     );
   }
 
-  static Pointer<Void> model(
+  static Pointer model(
     Pointer<NLModelTrainer> _self,
   ) {
     _openDynamicLibrary();
@@ -3256,7 +3208,7 @@ class NLModelTrainer extends Struct<NLModelTrainer> {
     );
   }
 
-  static Pointer<Void> modelImplClass(
+  static Pointer modelImplClass(
     Pointer<NLModelTrainer> _self,
   ) {
     _openDynamicLibrary();
@@ -3266,7 +3218,7 @@ class NLModelTrainer extends Struct<NLModelTrainer> {
     );
   }
 
-  static Pointer<Void> options(
+  static Pointer options(
     Pointer<NLModelTrainer> _self,
   ) {
     _openDynamicLibrary();
@@ -3278,7 +3230,7 @@ class NLModelTrainer extends Struct<NLModelTrainer> {
 
   static void setModel(
     Pointer<NLModelTrainer> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -3298,7 +3250,7 @@ class NLModelTrainer extends Struct<NLModelTrainer> {
     );
   }
 
-  static Pointer<Void> testResults(
+  static Pointer testResults(
     Pointer<NLModelTrainer> _self,
   ) {
     _openDynamicLibrary();
@@ -3318,7 +3270,7 @@ class NLModelTrainer extends Struct<NLModelTrainer> {
     );
   }
 
-  static Pointer<Void> trainedModel(
+  static Pointer trainedModel(
     Pointer<NLModelTrainer> _self,
   ) {
     _openDynamicLibrary();
@@ -3330,8 +3282,8 @@ class NLModelTrainer extends Struct<NLModelTrainer> {
 
   static void trainer(
     Pointer<NLModelTrainer> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> logMessage,
+    Pointer arg, {
+    @required Pointer logMessage,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -3344,7 +3296,7 @@ class NLModelTrainer extends Struct<NLModelTrainer> {
 
   static int trainerShouldStop(
     Pointer<NLModelTrainer> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -3355,11 +3307,9 @@ class NLModelTrainer extends Struct<NLModelTrainer> {
   }
 }
 
-/// Objective-C class _NLModelTrainingDataSet_.
+/// Automatically generated API. Part of [Natural Language](https://developer.apple.com/documentation/naturallanguage?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/naturallanguage?language=objc).
 @unsized
 class NLModelTrainingDataSet extends Struct<NLModelTrainingDataSet> {
   factory NLModelTrainingDataSet._() {
@@ -3372,7 +3322,7 @@ class NLModelTrainingDataSet extends Struct<NLModelTrainingDataSet> {
         .cast<NLModelTrainingDataSet>();
   }
 
-  static Pointer<Void> dataProviderOfType(
+  static Pointer dataProviderOfType(
     Pointer<NLModelTrainingDataSet> _self,
     int arg,
   ) {
@@ -3384,14 +3334,14 @@ class NLModelTrainingDataSet extends Struct<NLModelTrainingDataSet> {
     );
   }
 
-  static Pointer<Void> initWithConfiguration(
+  static Pointer initWithConfiguration(
     Pointer<NLModelTrainingDataSet> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int numberOfTrainingInstances,
     @required int numberOfValidationInstances,
-    @required Pointer<Void> trainingDataSource,
-    @required Pointer<Void> validationDataSource,
-    @required Pointer<Void> instanceDataProvider,
+    @required Pointer trainingDataSource,
+    @required Pointer validationDataSource,
+    @required Pointer instanceDataProvider,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_Uint64_Uint64_p_p_p_returns_p(
@@ -3408,11 +3358,9 @@ class NLModelTrainingDataSet extends Struct<NLModelTrainingDataSet> {
   }
 }
 
-/// Objective-C class _NLNumberGenerator_.
+/// Automatically generated API. Part of [Natural Language](https://developer.apple.com/documentation/naturallanguage?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/naturallanguage?language=objc).
 @unsized
 class NLNumberGenerator extends Struct<NLNumberGenerator> {
   factory NLNumberGenerator._() {
@@ -3423,7 +3371,7 @@ class NLNumberGenerator extends Struct<NLNumberGenerator> {
     return _objc.allocate("NLNumberGenerator").cast<NLNumberGenerator>();
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<NLNumberGenerator> _self,
   ) {
     _openDynamicLibrary();
@@ -3435,7 +3383,7 @@ class NLNumberGenerator extends Struct<NLNumberGenerator> {
 
   static int numberInRange(
     Pointer<NLNumberGenerator> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Uint64(
@@ -3468,11 +3416,9 @@ class NLNumberGenerator extends Struct<NLNumberGenerator> {
   }
 }
 
-/// Objective-C class _NLPMLClassifierModel_.
+/// Automatically generated API. Part of [Natural Language](https://developer.apple.com/documentation/naturallanguage?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/naturallanguage?language=objc).
 @unsized
 class NLPMLClassifierModel extends Struct<NLPMLClassifierModel> {
   factory NLPMLClassifierModel._() {
@@ -3483,11 +3429,11 @@ class NLPMLClassifierModel extends Struct<NLPMLClassifierModel> {
     return _objc.allocate("NLPMLClassifierModel").cast<NLPMLClassifierModel>();
   }
 
-  static Pointer<Void> initWithModelDescription(
+  static Pointer initWithModelDescription(
     Pointer<NLPMLClassifierModel> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> parameterDictionary,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer parameterDictionary,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -3499,7 +3445,7 @@ class NLPMLClassifierModel extends Struct<NLPMLClassifierModel> {
     );
   }
 
-  static Pointer<Void> modelDescription(
+  static Pointer modelDescription(
     Pointer<NLPMLClassifierModel> _self,
   ) {
     _openDynamicLibrary();
@@ -3509,11 +3455,11 @@ class NLPMLClassifierModel extends Struct<NLPMLClassifierModel> {
     );
   }
 
-  static Pointer<Void> predictionFromFeatures(
+  static Pointer predictionFromFeatures(
     Pointer<NLPMLClassifierModel> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> options,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer options,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -3526,11 +3472,9 @@ class NLPMLClassifierModel extends Struct<NLPMLClassifierModel> {
   }
 }
 
-/// Objective-C class _NLPMLSequenceModel_.
+/// Automatically generated API. Part of [Natural Language](https://developer.apple.com/documentation/naturallanguage?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/naturallanguage?language=objc).
 @unsized
 class NLPMLSequenceModel extends Struct<NLPMLSequenceModel> {
   factory NLPMLSequenceModel._() {
@@ -3541,11 +3485,11 @@ class NLPMLSequenceModel extends Struct<NLPMLSequenceModel> {
     return _objc.allocate("NLPMLSequenceModel").cast<NLPMLSequenceModel>();
   }
 
-  static Pointer<Void> initWithModelDescription(
+  static Pointer initWithModelDescription(
     Pointer<NLPMLSequenceModel> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> parameterDictionary,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer parameterDictionary,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -3557,7 +3501,7 @@ class NLPMLSequenceModel extends Struct<NLPMLSequenceModel> {
     );
   }
 
-  static Pointer<Void> modelDescription(
+  static Pointer modelDescription(
     Pointer<NLPMLSequenceModel> _self,
   ) {
     _openDynamicLibrary();
@@ -3567,11 +3511,11 @@ class NLPMLSequenceModel extends Struct<NLPMLSequenceModel> {
     );
   }
 
-  static Pointer<Void> predictionFromFeatures(
+  static Pointer predictionFromFeatures(
     Pointer<NLPMLSequenceModel> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> options,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer options,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -3584,11 +3528,9 @@ class NLPMLSequenceModel extends Struct<NLPMLSequenceModel> {
   }
 }
 
-/// Objective-C class _NLPModelTrainingDataProvider_.
+/// Automatically generated API. Part of [Natural Language](https://developer.apple.com/documentation/naturallanguage?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/naturallanguage?language=objc).
 @unsized
 class NLPModelTrainingDataProvider
     extends Struct<NLPModelTrainingDataProvider> {
@@ -3602,12 +3544,12 @@ class NLPModelTrainingDataProvider
         .cast<NLPModelTrainingDataProvider>();
   }
 
-  static Pointer<Void> initWithConfiguration(
+  static Pointer initWithConfiguration(
     Pointer<NLPModelTrainingDataProvider> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int numberOfInstances,
-    @required Pointer<Void> dataSource,
-    @required Pointer<Void> instanceDataProvider,
+    @required Pointer dataSource,
+    @required Pointer instanceDataProvider,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_Uint64_p_p_returns_p(
@@ -3621,7 +3563,7 @@ class NLPModelTrainingDataProvider
     );
   }
 
-  static Pointer<Void> instanceAtIndex(
+  static Pointer instanceAtIndex(
     Pointer<NLPModelTrainingDataProvider> _self,
     int arg,
   ) {
@@ -3644,11 +3586,9 @@ class NLPModelTrainingDataProvider
   }
 }
 
-/// Objective-C class _NLPModelTrainingDelegate_.
+/// Automatically generated API. Part of [Natural Language](https://developer.apple.com/documentation/naturallanguage?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/naturallanguage?language=objc).
 @unsized
 class NLPModelTrainingDelegate extends Struct<NLPModelTrainingDelegate> {
   factory NLPModelTrainingDelegate._() {
@@ -3661,9 +3601,9 @@ class NLPModelTrainingDelegate extends Struct<NLPModelTrainingDelegate> {
         .cast<NLPModelTrainingDelegate>();
   }
 
-  static Pointer<Void> initWithLogHandler(
+  static Pointer initWithLogHandler(
     Pointer<NLPModelTrainingDelegate> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -3675,8 +3615,8 @@ class NLPModelTrainingDelegate extends Struct<NLPModelTrainingDelegate> {
 
   static void modelTrainer(
     Pointer<NLPModelTrainingDelegate> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> logMessage,
+    Pointer arg, {
+    @required Pointer logMessage,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -3689,7 +3629,7 @@ class NLPModelTrainingDelegate extends Struct<NLPModelTrainingDelegate> {
 
   static int modelTrainerShouldStop(
     Pointer<NLPModelTrainingDelegate> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -3700,11 +3640,9 @@ class NLPModelTrainingDelegate extends Struct<NLPModelTrainingDelegate> {
   }
 }
 
-/// Objective-C class _NLSequenceModel_.
+/// Automatically generated API. Part of [Natural Language](https://developer.apple.com/documentation/naturallanguage?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/naturallanguage?language=objc).
 @unsized
 class NLSequenceModel extends Struct<NLSequenceModel> {
   factory NLSequenceModel._() {
@@ -3716,11 +3654,9 @@ class NLSequenceModel extends Struct<NLSequenceModel> {
   }
 }
 
-/// Objective-C class _NLSequenceModelDataInstance_.
+/// Automatically generated API. Part of [Natural Language](https://developer.apple.com/documentation/naturallanguage?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/naturallanguage?language=objc).
 @unsized
 class NLSequenceModelDataInstance extends Struct<NLSequenceModelDataInstance> {
   factory NLSequenceModelDataInstance._() {
@@ -3733,10 +3669,10 @@ class NLSequenceModelDataInstance extends Struct<NLSequenceModelDataInstance> {
         .cast<NLSequenceModelDataInstance>();
   }
 
-  static Pointer<Void> formattedLineWithLabelMap(
+  static Pointer formattedLineWithLabelMap(
     Pointer<NLSequenceModelDataInstance> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> vocabularyMap,
+    Pointer arg, {
+    @required Pointer vocabularyMap,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -3747,10 +3683,10 @@ class NLSequenceModelDataInstance extends Struct<NLSequenceModelDataInstance> {
     );
   }
 
-  static Pointer<Void> initWithLine(
+  static Pointer initWithLine(
     Pointer<NLSequenceModelDataInstance> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> tokenizer,
+    Pointer arg, {
+    @required Pointer<Pointer> tokenizer,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -3761,10 +3697,10 @@ class NLSequenceModelDataInstance extends Struct<NLSequenceModelDataInstance> {
     );
   }
 
-  static Pointer<Void> initWithTokens(
+  static Pointer initWithTokens(
     Pointer<NLSequenceModelDataInstance> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> labels,
+    Pointer arg, {
+    @required Pointer labels,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -3775,7 +3711,7 @@ class NLSequenceModelDataInstance extends Struct<NLSequenceModelDataInstance> {
     );
   }
 
-  static Pointer<Pointer<Void>> instanceDictionary(
+  static Pointer<Pointer> instanceDictionary(
     Pointer<NLSequenceModelDataInstance> _self,
   ) {
     _openDynamicLibrary();
@@ -3785,7 +3721,7 @@ class NLSequenceModelDataInstance extends Struct<NLSequenceModelDataInstance> {
     );
   }
 
-  static Pointer<Void> label(
+  static Pointer label(
     Pointer<NLSequenceModelDataInstance> _self,
   ) {
     _openDynamicLibrary();
@@ -3795,7 +3731,7 @@ class NLSequenceModelDataInstance extends Struct<NLSequenceModelDataInstance> {
     );
   }
 
-  static Pointer<Void> labels(
+  static Pointer labels(
     Pointer<NLSequenceModelDataInstance> _self,
   ) {
     _openDynamicLibrary();
@@ -3805,12 +3741,12 @@ class NLSequenceModelDataInstance extends Struct<NLSequenceModelDataInstance> {
     );
   }
 
-  static Pointer<Void> locatorsWithIndex(
+  static Pointer locatorsWithIndex(
     Pointer<NLSequenceModelDataInstance> _self,
     int arg, {
-    @required Pointer<Void> parameters,
-    @required Pointer<Void> tagger,
-    @required Pointer<Pointer<Void>> tokenizer,
+    @required Pointer parameters,
+    @required Pointer tagger,
+    @required Pointer<Pointer> tokenizer,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_Uint64_p_p_p_returns_p(
@@ -3823,7 +3759,7 @@ class NLSequenceModelDataInstance extends Struct<NLSequenceModelDataInstance> {
     );
   }
 
-  static Pointer<Void> string(
+  static Pointer string(
     Pointer<NLSequenceModelDataInstance> _self,
   ) {
     _openDynamicLibrary();
@@ -3833,10 +3769,10 @@ class NLSequenceModelDataInstance extends Struct<NLSequenceModelDataInstance> {
     );
   }
 
-  static Pointer<Void> subInstanceWithLocator(
+  static Pointer subInstanceWithLocator(
     Pointer<NLSequenceModelDataInstance> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> tokenizer,
+    Pointer arg, {
+    @required Pointer<Pointer> tokenizer,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -3847,7 +3783,7 @@ class NLSequenceModelDataInstance extends Struct<NLSequenceModelDataInstance> {
     );
   }
 
-  static Pointer<Void> tokens(
+  static Pointer tokens(
     Pointer<NLSequenceModelDataInstance> _self,
   ) {
     _openDynamicLibrary();
@@ -3858,11 +3794,9 @@ class NLSequenceModelDataInstance extends Struct<NLSequenceModelDataInstance> {
   }
 }
 
-/// Objective-C class _NLSplitDataProvider_.
+/// Automatically generated API. Part of [Natural Language](https://developer.apple.com/documentation/naturallanguage?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/naturallanguage?language=objc).
 @unsized
 class NLSplitDataProvider extends Struct<NLSplitDataProvider> {
   factory NLSplitDataProvider._() {
@@ -3873,7 +3807,7 @@ class NLSplitDataProvider extends Struct<NLSplitDataProvider> {
     return _objc.allocate("NLSplitDataProvider").cast<NLSplitDataProvider>();
   }
 
-  static Pointer<Void> configuration(
+  static Pointer configuration(
     Pointer<NLSplitDataProvider> _self,
   ) {
     _openDynamicLibrary();
@@ -3883,7 +3817,7 @@ class NLSplitDataProvider extends Struct<NLSplitDataProvider> {
     );
   }
 
-  static Pointer<Void> documentFrequencyMap(
+  static Pointer documentFrequencyMap(
     Pointer<NLSplitDataProvider> _self,
   ) {
     _openDynamicLibrary();
@@ -3893,10 +3827,10 @@ class NLSplitDataProvider extends Struct<NLSplitDataProvider> {
     );
   }
 
-  static Pointer<Void> initWithDataProvider(
+  static Pointer initWithDataProvider(
     Pointer<NLSplitDataProvider> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> indexes,
+    Pointer arg, {
+    @required Pointer indexes,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -3907,7 +3841,7 @@ class NLSplitDataProvider extends Struct<NLSplitDataProvider> {
     );
   }
 
-  static Pointer<Void> instanceAtIndex(
+  static Pointer instanceAtIndex(
     Pointer<NLSplitDataProvider> _self,
     int arg,
   ) {
@@ -3919,7 +3853,7 @@ class NLSplitDataProvider extends Struct<NLSplitDataProvider> {
     );
   }
 
-  static Pointer<Void> inverseLabelMap(
+  static Pointer inverseLabelMap(
     Pointer<NLSplitDataProvider> _self,
   ) {
     _openDynamicLibrary();
@@ -3929,7 +3863,7 @@ class NLSplitDataProvider extends Struct<NLSplitDataProvider> {
     );
   }
 
-  static Pointer<Void> labelMap(
+  static Pointer labelMap(
     Pointer<NLSplitDataProvider> _self,
   ) {
     _openDynamicLibrary();
@@ -3969,7 +3903,7 @@ class NLSplitDataProvider extends Struct<NLSplitDataProvider> {
     );
   }
 
-  static Pointer<Pointer<Void>> tokenizer(
+  static Pointer<Pointer> tokenizer(
     Pointer<NLSplitDataProvider> _self,
   ) {
     _openDynamicLibrary();
@@ -3979,7 +3913,7 @@ class NLSplitDataProvider extends Struct<NLSplitDataProvider> {
     );
   }
 
-  static Pointer<Void> vocabularyMap(
+  static Pointer vocabularyMap(
     Pointer<NLSplitDataProvider> _self,
   ) {
     _openDynamicLibrary();
@@ -3990,11 +3924,9 @@ class NLSplitDataProvider extends Struct<NLSplitDataProvider> {
   }
 }
 
-/// Objective-C class _NLTagger_.
+/// Automatically generated API. Part of [Natural Language](https://developer.apple.com/documentation/naturallanguage?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/naturallanguage?language=objc).
 @unsized
 class NLTagger extends Struct<NLTagger> {
   factory NLTagger._() {
@@ -4015,7 +3947,7 @@ class NLTagger extends Struct<NLTagger> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<NLTagger> _self,
   ) {
     _openDynamicLibrary();
@@ -4025,7 +3957,7 @@ class NLTagger extends Struct<NLTagger> {
     );
   }
 
-  static Pointer<Void> dominantLanguage(
+  static Pointer dominantLanguage(
     Pointer<NLTagger> _self,
   ) {
     _openDynamicLibrary();
@@ -4037,11 +3969,11 @@ class NLTagger extends Struct<NLTagger> {
 
   static void enumerateTagsInRange(
     Pointer<NLTagger> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int unit,
-    @required Pointer<Void> scheme,
+    @required Pointer scheme,
     @required int options,
-    @required Pointer<Void> usingBlock,
+    @required Pointer usingBlock,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_Int64_p_Uint64_p_returns_void(
@@ -4055,9 +3987,9 @@ class NLTagger extends Struct<NLTagger> {
     );
   }
 
-  static Pointer<Void> initWithTagSchemes(
+  static Pointer initWithTagSchemes(
     Pointer<NLTagger> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -4067,9 +3999,9 @@ class NLTagger extends Struct<NLTagger> {
     );
   }
 
-  static Pointer<Void> modelsForTagScheme(
+  static Pointer modelsForTagScheme(
     Pointer<NLTagger> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -4079,9 +4011,9 @@ class NLTagger extends Struct<NLTagger> {
     );
   }
 
-  static Pointer<Void> sentenceRangeForRange(
+  static Pointer sentenceRangeForRange(
     Pointer<NLTagger> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -4093,8 +4025,8 @@ class NLTagger extends Struct<NLTagger> {
 
   static void setLanguage(
     Pointer<NLTagger> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> range,
+    Pointer arg, {
+    @required Pointer range,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -4107,8 +4039,8 @@ class NLTagger extends Struct<NLTagger> {
 
   static void setModels(
     Pointer<NLTagger> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> forTagScheme,
+    Pointer arg, {
+    @required Pointer forTagScheme,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -4121,8 +4053,8 @@ class NLTagger extends Struct<NLTagger> {
 
   static void setOrthography(
     Pointer<NLTagger> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> range,
+    Pointer arg, {
+    @required Pointer range,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -4135,7 +4067,7 @@ class NLTagger extends Struct<NLTagger> {
 
   static void setString(
     Pointer<NLTagger> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -4145,7 +4077,7 @@ class NLTagger extends Struct<NLTagger> {
     );
   }
 
-  static Pointer<Void> string(
+  static Pointer string(
     Pointer<NLTagger> _self,
   ) {
     _openDynamicLibrary();
@@ -4157,7 +4089,7 @@ class NLTagger extends Struct<NLTagger> {
 
   static void stringEditedInRange(
     Pointer<NLTagger> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int changeInLength,
   }) {
     _openDynamicLibrary();
@@ -4169,12 +4101,12 @@ class NLTagger extends Struct<NLTagger> {
     );
   }
 
-  static Pointer<Void> tagAtIndex(
+  static Pointer tagAtIndex(
     Pointer<NLTagger> _self,
     int arg, {
     @required int unit,
-    @required Pointer<Void> scheme,
-    @required Pointer<Pointer<Void>> tokenRange,
+    @required Pointer scheme,
+    @required Pointer<Pointer> tokenRange,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_Uint64_Int64_p_p_returns_p(
@@ -4187,7 +4119,7 @@ class NLTagger extends Struct<NLTagger> {
     );
   }
 
-  static Pointer<Void> tagSchemes(
+  static Pointer tagSchemes(
     Pointer<NLTagger> _self,
   ) {
     _openDynamicLibrary();
@@ -4197,13 +4129,13 @@ class NLTagger extends Struct<NLTagger> {
     );
   }
 
-  static Pointer<Void> tagsInRange(
+  static Pointer tagsInRange(
     Pointer<NLTagger> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int unit,
-    @required Pointer<Void> scheme,
+    @required Pointer scheme,
     @required int options,
-    @required Pointer<Pointer<Void>> tokenRanges,
+    @required Pointer<Pointer> tokenRanges,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_Int64_p_Uint64_p_returns_p(
@@ -4217,7 +4149,7 @@ class NLTagger extends Struct<NLTagger> {
     );
   }
 
-  static Pointer<Void> tokenRangeAtIndex(
+  static Pointer tokenRangeAtIndex(
     Pointer<NLTagger> _self,
     int arg, {
     @required int unit,
@@ -4232,11 +4164,9 @@ class NLTagger extends Struct<NLTagger> {
   }
 }
 
-/// Objective-C class _NLTokenizer_.
+/// Automatically generated API. Part of [Natural Language](https://developer.apple.com/documentation/naturallanguage?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/naturallanguage?language=objc).
 @unsized
 class NLTokenizer extends Struct<NLTokenizer> {
   factory NLTokenizer._() {
@@ -4259,8 +4189,8 @@ class NLTokenizer extends Struct<NLTokenizer> {
 
   static void enumerateTokensInRange(
     Pointer<NLTokenizer> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> usingBlock,
+    Pointer arg, {
+    @required Pointer usingBlock,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -4271,7 +4201,7 @@ class NLTokenizer extends Struct<NLTokenizer> {
     );
   }
 
-  static Pointer<Void> initWithUnit(
+  static Pointer initWithUnit(
     Pointer<NLTokenizer> _self,
     int arg,
   ) {
@@ -4283,7 +4213,7 @@ class NLTokenizer extends Struct<NLTokenizer> {
     );
   }
 
-  static Pointer<Void> language(
+  static Pointer language(
     Pointer<NLTokenizer> _self,
   ) {
     _openDynamicLibrary();
@@ -4295,7 +4225,7 @@ class NLTokenizer extends Struct<NLTokenizer> {
 
   static void setLanguage(
     Pointer<NLTokenizer> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -4307,7 +4237,7 @@ class NLTokenizer extends Struct<NLTokenizer> {
 
   static void setString(
     Pointer<NLTokenizer> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -4317,7 +4247,7 @@ class NLTokenizer extends Struct<NLTokenizer> {
     );
   }
 
-  static Pointer<Void> string(
+  static Pointer string(
     Pointer<NLTokenizer> _self,
   ) {
     _openDynamicLibrary();
@@ -4327,7 +4257,7 @@ class NLTokenizer extends Struct<NLTokenizer> {
     );
   }
 
-  static Pointer<Void> tokenRangeAtIndex(
+  static Pointer tokenRangeAtIndex(
     Pointer<NLTokenizer> _self,
     int arg,
   ) {
@@ -4339,9 +4269,9 @@ class NLTokenizer extends Struct<NLTokenizer> {
     );
   }
 
-  static Pointer<Void> tokensForRange(
+  static Pointer tokensForRange(
     Pointer<NLTokenizer> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(

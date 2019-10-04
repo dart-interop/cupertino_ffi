@@ -6,66 +6,139 @@ import 'package:meta/meta.dart';
 final system = SystemMirror.get(private: false);
 
 void main() {
-  generateAll([
-    ObjcLibrary(
-      generatedPath: "lib/cloudkit.dart",
-      libraryName: "cupertino_ffi.cloudkit",
-      libraryPath:
-          "/System/Library/Frameworks/CloudKit.framework/Versions/A/CloudKit",
-      productName: "CloudKit",
-      uri: "https://developer.apple.com/documentation/cloudkit?language=objc",
-    ),
-    ObjcLibrary(
-      generatedPath: "lib/core_data.dart",
-      libraryName: "cupertino_ffi.foundation",
-      libraryPath:
-          "/System/Library/Frameworks/CoreData.framework/Versions/A/CoreData",
-      productName: "Core Data",
-      uri: "https://developer.apple.com/documentation/coredata?language=objc",
-    ),
-    ObjcLibrary(
-      generatedPath: "lib/core_ml.dart",
-      libraryName: "cupertino_ffi.core_ml",
-      libraryPath:
-          "/System/Library/Frameworks/CoreML.framework/Versions/A/CoreML",
-      productName: "Core ML",
-      uri: "https://developer.apple.com/documentation/coreml?language=objc",
-    ),
-    ObjcLibrary(
-      generatedPath: "lib/contacts.dart",
-      libraryName: "cupertino_ffi.contacts",
-      libraryPath:
-          "/System/Library/Frameworks/Contacts.framework/Versions/A/Contacts",
-      productName: "Contacts",
-      uri: "https://developer.apple.com/documentation/contacts?language=objc",
-    ),
-    ObjcLibrary(
-      generatedPath: "lib/foundation.dart",
-      libraryName: "cupertino_ffi.foundation",
-      libraryPath:
-          "/System/Library/Frameworks/Foundation.framework/Versions/C/Foundation",
-      productName: "Foundation",
-      uri: "https://developer.apple.com/documentation/foundation?language=objc",
-    ),
-    ObjcLibrary(
-      generatedPath: "lib/natural_language.dart",
-      libraryName: "cupertino_ffi.natural_language",
-      libraryPath:
-          "/System/Library/Frameworks/NaturalLanguage.framework/Versions/A/NaturalLanguage",
-      productName: "Natural Language",
-      uri:
-          "https://developer.apple.com/documentation/naturallanguage?language=objc",
-    ),
-    ObjcLibrary(
-      generatedPath: "lib/vision.dart",
-      libraryName: "cupertino_ffi.vision",
-      libraryPath:
-          "/System/Library/Frameworks/Vision.framework/Versions/A/Vision",
-      productName: "Vision",
-      uri: "https://developer.apple.com/documentation/vision?language=objc",
-    ),
-  ]);
+  generateAll(libraries);
 }
+
+final libraries = [
+  ObjcLibrary(
+    productName: "CloudKit",
+    uri: "https://developer.apple.com/documentation/cloudkit?language=objc",
+    generatedPath: "lib/cloudkit.dart",
+    libraryName: "cupertino_ffi.cloudkit",
+    libraryPath:
+        "/System/Library/Frameworks/CloudKit.framework/Versions/A/CloudKit",
+  ),
+  ObjcLibrary(
+    productName: "Core Data",
+    uri: "https://developer.apple.com/documentation/coredata?language=objc",
+    generatedPath: "lib/core_data.dart",
+    libraryName: "cupertino_ffi.foundation",
+    libraryPath:
+        "/System/Library/Frameworks/CoreData.framework/Versions/A/CoreData",
+  ),
+  ObjcLibrary(
+    productName: "Core Location",
+    uri: "https://developer.apple.com/documentation/corelocation?language=objc",
+    generatedPath: "lib/core_location.dart",
+    libraryName: "cupertino_ffi.core_location",
+    libraryPath:
+        "/System/Library/Frameworks/CoreLocation.framework/Versions/A/CoreLocation",
+  ),
+  ObjcLibrary(
+    productName: "Core ML",
+    uri: "https://developer.apple.com/documentation/coreml?language=objc",
+    generatedPath: "lib/core_ml.dart",
+    libraryName: "cupertino_ffi.core_ml",
+    libraryPath:
+        "/System/Library/Frameworks/CoreML.framework/Versions/A/CoreML",
+  ),
+  ObjcLibrary(
+    productName: "Core Spotlight",
+    uri:
+        "https://developer.apple.com/documentation/corespotlight?language=objc",
+    generatedPath: "lib/core_spotlight.dart",
+    libraryName: "cupertino_ffi.core_spotlight",
+    libraryPath:
+        "/System/Library/Frameworks/CoreSpotlight.framework/Versions/A/CoreSpotlight",
+  ),
+  ObjcLibrary(
+    productName: "Contacts",
+    uri: "https://developer.apple.com/documentation/contacts?language=objc",
+    generatedPath: "lib/contacts.dart",
+    libraryName: "cupertino_ffi.contacts",
+    libraryPath:
+        "/System/Library/Frameworks/Contacts.framework/Versions/A/Contacts",
+  ),
+  ObjcLibrary(
+    productName: "EventKit",
+    uri: "https://developer.apple.com/documentation/cloudkit?language=objc",
+    generatedPath: "lib/eventkit.dart",
+    libraryName: "cupertino_ffi.eventkit",
+    libraryPath:
+        "/System/Library/Frameworks/EventKit.framework/Versions/A/EventKit",
+  ),
+
+  // No classes found?
+//  ObjcLibrary(
+//    productName: "GameKit",
+//    uri: "https://developer.apple.com/documentation/gamekit?language=objc",
+//    generatedPath: "lib/gamekit.dart",
+//    libraryName: "cupertino_ffi.gamekit",
+//    libraryPath:
+//        "/System/Library/Frameworks/GameKit.framework/Versions/A/GameKit",
+//  ),
+
+  ObjcLibrary(
+    productName: "Foundation",
+    uri: "https://developer.apple.com/documentation/foundation?language=objc",
+    generatedPath: "lib/foundation.dart",
+    libraryName: "cupertino_ffi.foundation",
+    libraryPath:
+        "/System/Library/Frameworks/Foundation.framework/Versions/C/Foundation",
+  ),
+
+  // TODO: Add iOS library
+//  ObjcLibrary(
+//    productName: "HealthKit",
+//    uri: "https://developer.apple.com/documentation/healthkit?language=objc",
+//    generatedPath: "lib/healthkit.dart",
+//    libraryName: "cupertino_ffi.healthkit",
+//    libraryPath:
+//        "/System/Library/Frameworks/HealthKit.framework/Versions/A/HealthKit",
+//  ),
+
+  ObjcLibrary(
+    productName: "HomeKit",
+    uri: "https://developer.apple.com/documentation/homekit?language=objc",
+    generatedPath: "lib/healthkit.dart",
+    libraryName: "cupertino_ffi.homekit",
+    libraryPath:
+        "/System/Library/PrivateFrameworks/HomeKit.framework/Versions/A/HomeKit",
+  ),
+  ObjcLibrary(
+    productName: "Natural Language",
+    uri:
+        "https://developer.apple.com/documentation/naturallanguage?language=objc",
+    generatedPath: "lib/natural_language.dart",
+    libraryName: "cupertino_ffi.natural_language",
+    libraryPath:
+        "/System/Library/Frameworks/NaturalLanguage.framework/Versions/A/NaturalLanguage",
+  ),
+  ObjcLibrary(
+    productName: "PassKit",
+    uri: "https://developer.apple.com/documentation/passkit?language=objc",
+    generatedPath: "lib/passkit.dart",
+    libraryName: "cupertino_ffi.passkit",
+    libraryPath:
+        "/System/Library/PrivateFrameworks/PassKit.framework/Versions/A/PassKit",
+  ),
+  ObjcLibrary(
+    productName: "StoreKit",
+    uri: "https://developer.apple.com/documentation/storekit?language=objc",
+    generatedPath: "lib/storekit.dart",
+    libraryName: "cupertino_ffi.storekit",
+    libraryPath:
+        "/System/Library/Frameworks/StoreKit.framework/Versions/A/StoreKit",
+  ),
+  ObjcLibrary(
+    productName: "Vision",
+    uri: "https://developer.apple.com/documentation/vision?language=objc",
+    generatedPath: "lib/vision.dart",
+    libraryName: "cupertino_ffi.vision",
+    libraryPath:
+        "/System/Library/Frameworks/Vision.framework/Versions/A/Vision",
+  ),
+];
 
 void generateAll(List<ObjcLibrary> libraries) {
   // Validate
@@ -101,14 +174,16 @@ class ObjcLibrary {
   final String libraryName;
   final String libraryPath;
   final String productName;
+  final Set<String> exports;
   final String uri;
 
   ObjcLibrary({
+    @required this.productName,
+    @required this.uri,
     @required this.generatedPath,
     @required this.libraryName,
     @required this.libraryPath,
-    @required this.productName,
-    @required this.uri,
+    this.exports = const {},
   });
 
   void validate() {
@@ -121,7 +196,7 @@ class ObjcLibrary {
   String generateBindings() {
     final sb = StringBuffer();
     sb.writeln("""
-/// [$productName]($uri) (Objective-C library).
+/// Automatically generated API for [$productName]($uri).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 library $libraryName;
@@ -135,8 +210,17 @@ library $libraryName;
     for (var uri in imports.toList()..sort()) {
       sb.writeln("import '$uri';");
     }
+    for (var uri in exports) {
+      sb.writeln("export '$uri';");
+    }
     sb.writeln("""
 import 'package:cupertino_ffi/objective_c.dart' as _objc;
+export 'package:cupertino_ffi/core_foundation.dart' show
+  arcPush,
+  arcPop,
+  arcReturn,
+  arcFieldGet,
+  arcFieldSet;
 
 bool _isDynamicLibraryOpened = false;
 
@@ -155,13 +239,12 @@ void _openDynamicLibrary() {
     final library = LibraryMirror.getForPath(libraryPath);
     for (var className in library.classes.keys.toList()..sort()) {
       final klass = library.classes[className];
-      sb.writeln("""
+      try {
+        sb.writeln("""
 
-/// Objective-C class _${className}_.
+/// Automatically generated API. Part of [$productName]($uri).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website]($uri).
 @unsized
 class $className extends Struct<$className> {
   factory $className._() { throw UnimplementedError(); }
@@ -170,6 +253,9 @@ class $className extends Struct<$className> {
     return _objc.allocate(\"$className\").cast<$className>();
   }
 """);
+      } catch (e, s) {
+        print(s);
+      }
       for (var methodName in klass.methodsByName.keys.toList()..sort()) {
         final methods = klass.methodsByName[methodName];
         for (var method in methods) {

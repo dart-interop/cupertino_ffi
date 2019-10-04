@@ -18,11 +18,11 @@ Pointer dlopen(
 final _dlopen_Dart _dlopen = dlForLibc.lookupFunction<_dlopen_C, _dlopen_Dart>(
   "dlopen",
 );
-typedef Pointer _dlopen_C(
+typedef _dlopen_C = Pointer Function(
   Pointer<Utf8> arg0,
   Uint32 arg1,
 );
-typedef Pointer _dlopen_Dart(
+typedef _dlopen_Dart = Pointer Function(
   Pointer<Utf8> arg0,
   int arg1,
 );

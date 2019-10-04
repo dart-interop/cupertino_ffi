@@ -1,4 +1,4 @@
-/// [Core ML](https://developer.apple.com/documentation/coreml?language=objc) (Objective-C library).
+/// Automatically generated API for [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 library cupertino_ffi.core_ml;
@@ -7,6 +7,8 @@ import 'dart:ffi';
 import 'package:ffi/ffi.dart';
 import 'package:meta/meta.dart';
 import 'package:cupertino_ffi/objective_c.dart' as _objc;
+export 'package:cupertino_ffi/core_foundation.dart'
+    show arcPush, arcPop, arcReturn, arcFieldGet, arcFieldSet;
 
 bool _isDynamicLibraryOpened = false;
 
@@ -19,11 +21,9 @@ void _openDynamicLibrary() {
   }
 }
 
-/// Objective-C class _CoreMLVersion_.
+/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/coreml?language=objc).
 @unsized
 class CoreMLVersion extends Struct<CoreMLVersion> {
   factory CoreMLVersion._() {
@@ -34,7 +34,7 @@ class CoreMLVersion extends Struct<CoreMLVersion> {
     return _objc.allocate("CoreMLVersion").cast<CoreMLVersion>();
   }
 
-  static Pointer<Void> frameworkVersionNumber(
+  static Pointer frameworkVersionNumber(
     Pointer<CoreMLVersion> _self,
   ) {
     _openDynamicLibrary();
@@ -44,7 +44,7 @@ class CoreMLVersion extends Struct<CoreMLVersion> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CoreMLVersion> _self,
   ) {
     _openDynamicLibrary();
@@ -56,7 +56,7 @@ class CoreMLVersion extends Struct<CoreMLVersion> {
 
   static void setFrameworkVersionNumber(
     Pointer<CoreMLVersion> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -67,11 +67,9 @@ class CoreMLVersion extends Struct<CoreMLVersion> {
   }
 }
 
-/// Objective-C class _MLAppleImageFeatureExtractor_.
+/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/coreml?language=objc).
 @unsized
 class MLAppleImageFeatureExtractor
     extends Struct<MLAppleImageFeatureExtractor> {
@@ -85,12 +83,12 @@ class MLAppleImageFeatureExtractor
         .cast<MLAppleImageFeatureExtractor>();
   }
 
-  static Pointer<Void> computeScenePrintFeatures(
+  static Pointer computeScenePrintFeatures(
     Pointer<MLAppleImageFeatureExtractor> _self,
-    Pointer<Pointer<Void>> arg, {
-    @required Pointer<Void> handle,
+    Pointer<Pointer> arg, {
+    @required Pointer handle,
     @required int useCPUOnly,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_Int8_p_returns_p(
@@ -103,9 +101,9 @@ class MLAppleImageFeatureExtractor
     );
   }
 
-  static Pointer<Void> featureValueFromScenePrint(
+  static Pointer featureValueFromScenePrint(
     Pointer<MLAppleImageFeatureExtractor> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int elementSize,
   }) {
     _openDynamicLibrary();
@@ -117,13 +115,13 @@ class MLAppleImageFeatureExtractor
     );
   }
 
-  static Pointer<Void> initWithParameters(
+  static Pointer initWithParameters(
     Pointer<MLAppleImageFeatureExtractor> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> modelDescription,
+    Pointer arg, {
+    @required Pointer modelDescription,
     @required int featureExtractorType,
-    @required Pointer<Void> configuration,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer configuration,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_Int32_p_p_returns_p(
@@ -138,7 +136,7 @@ class MLAppleImageFeatureExtractor
     );
   }
 
-  static Pointer<Void> parameters(
+  static Pointer parameters(
     Pointer<MLAppleImageFeatureExtractor> _self,
   ) {
     _openDynamicLibrary();
@@ -148,11 +146,11 @@ class MLAppleImageFeatureExtractor
     );
   }
 
-  static Pointer<Void> predictionFromFeatures(
+  static Pointer predictionFromFeatures(
     Pointer<MLAppleImageFeatureExtractor> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> options,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer options,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -165,11 +163,9 @@ class MLAppleImageFeatureExtractor
   }
 }
 
-/// Objective-C class _MLAppleImageFeatureExtractorParameters_.
+/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/coreml?language=objc).
 @unsized
 class MLAppleImageFeatureExtractorParameters
     extends Struct<MLAppleImageFeatureExtractorParameters> {
@@ -183,7 +179,7 @@ class MLAppleImageFeatureExtractorParameters
         .cast<MLAppleImageFeatureExtractorParameters>();
   }
 
-  static Pointer<Void> featureExtractorParameters(
+  static Pointer featureExtractorParameters(
     Pointer<MLAppleImageFeatureExtractorParameters> _self,
   ) {
     _openDynamicLibrary();
@@ -193,10 +189,10 @@ class MLAppleImageFeatureExtractorParameters
     );
   }
 
-  static Pointer<Void> initWithScenePrintParameters(
+  static Pointer initWithScenePrintParameters(
     Pointer<MLAppleImageFeatureExtractorParameters> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -208,11 +204,9 @@ class MLAppleImageFeatureExtractorParameters
   }
 }
 
-/// Objective-C class _MLAppleImageFeatureExtractorScenePrintParameters_.
+/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/coreml?language=objc).
 @unsized
 class MLAppleImageFeatureExtractorScenePrintParameters
     extends Struct<MLAppleImageFeatureExtractorScenePrintParameters> {
@@ -226,10 +220,10 @@ class MLAppleImageFeatureExtractorScenePrintParameters
         .cast<MLAppleImageFeatureExtractorScenePrintParameters>();
   }
 
-  static Pointer<Void> initWithSpec(
+  static Pointer initWithSpec(
     Pointer<MLAppleImageFeatureExtractorScenePrintParameters> _self,
-    Pointer<Pointer<Void>> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer<Pointer> arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -263,11 +257,9 @@ class MLAppleImageFeatureExtractorScenePrintParameters
   }
 }
 
-/// Objective-C class _MLAppleTextClassifier_.
+/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/coreml?language=objc).
 @unsized
 class MLAppleTextClassifier extends Struct<MLAppleTextClassifier> {
   factory MLAppleTextClassifier._() {
@@ -280,13 +272,13 @@ class MLAppleTextClassifier extends Struct<MLAppleTextClassifier> {
         .cast<MLAppleTextClassifier>();
   }
 
-  static Pointer<Void> initWithParameters(
+  static Pointer initWithParameters(
     Pointer<MLAppleTextClassifier> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> modelDescription,
-    @required Pointer<Void> nlpHandle,
-    @required Pointer<Void> configuration,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer modelDescription,
+    @required Pointer nlpHandle,
+    @required Pointer configuration,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_p_returns_p(
@@ -301,7 +293,7 @@ class MLAppleTextClassifier extends Struct<MLAppleTextClassifier> {
     );
   }
 
-  static Pointer<Void> parameters(
+  static Pointer parameters(
     Pointer<MLAppleTextClassifier> _self,
   ) {
     _openDynamicLibrary();
@@ -311,11 +303,11 @@ class MLAppleTextClassifier extends Struct<MLAppleTextClassifier> {
     );
   }
 
-  static Pointer<Void> predictionFromFeatures(
+  static Pointer predictionFromFeatures(
     Pointer<MLAppleTextClassifier> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> options,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer options,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -328,11 +320,9 @@ class MLAppleTextClassifier extends Struct<MLAppleTextClassifier> {
   }
 }
 
-/// Objective-C class _MLAppleTextClassifierParameters_.
+/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/coreml?language=objc).
 @unsized
 class MLAppleTextClassifierParameters
     extends Struct<MLAppleTextClassifierParameters> {
@@ -346,15 +336,15 @@ class MLAppleTextClassifierParameters
         .cast<MLAppleTextClassifierParameters>();
   }
 
-  static Pointer<Void> initWithData(
+  static Pointer initWithData(
     Pointer<MLAppleTextClassifierParameters> _self,
     int arg, {
-    @required Pointer<Void> language,
-    @required Pointer<Void> inputFeatureName,
-    @required Pointer<Void> outputFeatureName,
-    @required Pointer<Void> modelData,
-    @required Pointer<Void> labelNames,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer language,
+    @required Pointer inputFeatureName,
+    @required Pointer outputFeatureName,
+    @required Pointer modelData,
+    @required Pointer labelNames,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_Uint64_p_p_p_p_p_p_returns_p(
@@ -371,7 +361,7 @@ class MLAppleTextClassifierParameters
     );
   }
 
-  static Pointer<Void> inputFeatureName(
+  static Pointer inputFeatureName(
     Pointer<MLAppleTextClassifierParameters> _self,
   ) {
     _openDynamicLibrary();
@@ -381,7 +371,7 @@ class MLAppleTextClassifierParameters
     );
   }
 
-  static Pointer<Void> labelNames(
+  static Pointer labelNames(
     Pointer<MLAppleTextClassifierParameters> _self,
   ) {
     _openDynamicLibrary();
@@ -391,7 +381,7 @@ class MLAppleTextClassifierParameters
     );
   }
 
-  static Pointer<Void> language(
+  static Pointer language(
     Pointer<MLAppleTextClassifierParameters> _self,
   ) {
     _openDynamicLibrary();
@@ -401,7 +391,7 @@ class MLAppleTextClassifierParameters
     );
   }
 
-  static Pointer<Void> modelParameterData(
+  static Pointer modelParameterData(
     Pointer<MLAppleTextClassifierParameters> _self,
   ) {
     _openDynamicLibrary();
@@ -411,7 +401,7 @@ class MLAppleTextClassifierParameters
     );
   }
 
-  static Pointer<Void> outputFeatureName(
+  static Pointer outputFeatureName(
     Pointer<MLAppleTextClassifierParameters> _self,
   ) {
     _openDynamicLibrary();
@@ -433,7 +423,7 @@ class MLAppleTextClassifierParameters
 
   static void setInputFeatureName(
     Pointer<MLAppleTextClassifierParameters> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -445,7 +435,7 @@ class MLAppleTextClassifierParameters
 
   static void setLabelNames(
     Pointer<MLAppleTextClassifierParameters> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -457,7 +447,7 @@ class MLAppleTextClassifierParameters
 
   static void setLanguage(
     Pointer<MLAppleTextClassifierParameters> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -469,7 +459,7 @@ class MLAppleTextClassifierParameters
 
   static void setModelParameterData(
     Pointer<MLAppleTextClassifierParameters> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -481,7 +471,7 @@ class MLAppleTextClassifierParameters
 
   static void setOutputFeatureName(
     Pointer<MLAppleTextClassifierParameters> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -504,11 +494,9 @@ class MLAppleTextClassifierParameters
   }
 }
 
-/// Objective-C class _MLAppleWordTagger_.
+/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/coreml?language=objc).
 @unsized
 class MLAppleWordTagger extends Struct<MLAppleWordTagger> {
   factory MLAppleWordTagger._() {
@@ -519,13 +507,13 @@ class MLAppleWordTagger extends Struct<MLAppleWordTagger> {
     return _objc.allocate("MLAppleWordTagger").cast<MLAppleWordTagger>();
   }
 
-  static Pointer<Void> initWithParameters(
+  static Pointer initWithParameters(
     Pointer<MLAppleWordTagger> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> modelDescription,
-    @required Pointer<Void> nlpHandle,
-    @required Pointer<Void> configuration,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer modelDescription,
+    @required Pointer nlpHandle,
+    @required Pointer configuration,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_p_returns_p(
@@ -540,7 +528,7 @@ class MLAppleWordTagger extends Struct<MLAppleWordTagger> {
     );
   }
 
-  static Pointer<Void> parameters(
+  static Pointer parameters(
     Pointer<MLAppleWordTagger> _self,
   ) {
     _openDynamicLibrary();
@@ -550,11 +538,11 @@ class MLAppleWordTagger extends Struct<MLAppleWordTagger> {
     );
   }
 
-  static Pointer<Void> predictionFromFeatures(
+  static Pointer predictionFromFeatures(
     Pointer<MLAppleWordTagger> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> options,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer options,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -567,11 +555,9 @@ class MLAppleWordTagger extends Struct<MLAppleWordTagger> {
   }
 }
 
-/// Objective-C class _MLAppleWordTaggerParameters_.
+/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/coreml?language=objc).
 @unsized
 class MLAppleWordTaggerParameters extends Struct<MLAppleWordTaggerParameters> {
   factory MLAppleWordTaggerParameters._() {
@@ -584,18 +570,18 @@ class MLAppleWordTaggerParameters extends Struct<MLAppleWordTaggerParameters> {
         .cast<MLAppleWordTaggerParameters>();
   }
 
-  static Pointer<Void> initWithData(
+  static Pointer initWithData(
     Pointer<MLAppleWordTaggerParameters> _self,
     int arg, {
-    @required Pointer<Void> language,
-    @required Pointer<Void> inputFeatureName,
-    @required Pointer<Void> tokensFeatureName,
-    @required Pointer<Void> tokenTagsFeatureName,
-    @required Pointer<Void> tokenLocationsFeatureName,
-    @required Pointer<Void> tokenLengthsFeatureName,
-    @required Pointer<Void> modelData,
-    @required Pointer<Void> tagNames,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer language,
+    @required Pointer inputFeatureName,
+    @required Pointer tokensFeatureName,
+    @required Pointer tokenTagsFeatureName,
+    @required Pointer tokenLocationsFeatureName,
+    @required Pointer tokenLengthsFeatureName,
+    @required Pointer modelData,
+    @required Pointer tagNames,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_Uint64_p_p_p_p_p_p_p_p_p_returns_p(
@@ -615,7 +601,7 @@ class MLAppleWordTaggerParameters extends Struct<MLAppleWordTaggerParameters> {
     );
   }
 
-  static Pointer<Void> inputFeatureName(
+  static Pointer inputFeatureName(
     Pointer<MLAppleWordTaggerParameters> _self,
   ) {
     _openDynamicLibrary();
@@ -625,7 +611,7 @@ class MLAppleWordTaggerParameters extends Struct<MLAppleWordTaggerParameters> {
     );
   }
 
-  static Pointer<Void> language(
+  static Pointer language(
     Pointer<MLAppleWordTaggerParameters> _self,
   ) {
     _openDynamicLibrary();
@@ -635,7 +621,7 @@ class MLAppleWordTaggerParameters extends Struct<MLAppleWordTaggerParameters> {
     );
   }
 
-  static Pointer<Void> modelParameterData(
+  static Pointer modelParameterData(
     Pointer<MLAppleWordTaggerParameters> _self,
   ) {
     _openDynamicLibrary();
@@ -657,7 +643,7 @@ class MLAppleWordTaggerParameters extends Struct<MLAppleWordTaggerParameters> {
 
   static void setInputFeatureName(
     Pointer<MLAppleWordTaggerParameters> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -669,7 +655,7 @@ class MLAppleWordTaggerParameters extends Struct<MLAppleWordTaggerParameters> {
 
   static void setLanguage(
     Pointer<MLAppleWordTaggerParameters> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -681,7 +667,7 @@ class MLAppleWordTaggerParameters extends Struct<MLAppleWordTaggerParameters> {
 
   static void setModelParameterData(
     Pointer<MLAppleWordTaggerParameters> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -705,7 +691,7 @@ class MLAppleWordTaggerParameters extends Struct<MLAppleWordTaggerParameters> {
 
   static void setTagNames(
     Pointer<MLAppleWordTaggerParameters> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -717,7 +703,7 @@ class MLAppleWordTaggerParameters extends Struct<MLAppleWordTaggerParameters> {
 
   static void setTokenLengthsOutputFeatureName(
     Pointer<MLAppleWordTaggerParameters> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -729,7 +715,7 @@ class MLAppleWordTaggerParameters extends Struct<MLAppleWordTaggerParameters> {
 
   static void setTokenLocationsOutputFeatureName(
     Pointer<MLAppleWordTaggerParameters> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -741,7 +727,7 @@ class MLAppleWordTaggerParameters extends Struct<MLAppleWordTaggerParameters> {
 
   static void setTokenTagsOutputFeatureName(
     Pointer<MLAppleWordTaggerParameters> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -753,7 +739,7 @@ class MLAppleWordTaggerParameters extends Struct<MLAppleWordTaggerParameters> {
 
   static void setTokensOutputFeatureName(
     Pointer<MLAppleWordTaggerParameters> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -763,7 +749,7 @@ class MLAppleWordTaggerParameters extends Struct<MLAppleWordTaggerParameters> {
     );
   }
 
-  static Pointer<Void> tagNames(
+  static Pointer tagNames(
     Pointer<MLAppleWordTaggerParameters> _self,
   ) {
     _openDynamicLibrary();
@@ -773,7 +759,7 @@ class MLAppleWordTaggerParameters extends Struct<MLAppleWordTaggerParameters> {
     );
   }
 
-  static Pointer<Void> tokenLengthsOutputFeatureName(
+  static Pointer tokenLengthsOutputFeatureName(
     Pointer<MLAppleWordTaggerParameters> _self,
   ) {
     _openDynamicLibrary();
@@ -783,7 +769,7 @@ class MLAppleWordTaggerParameters extends Struct<MLAppleWordTaggerParameters> {
     );
   }
 
-  static Pointer<Void> tokenLocationsOutputFeatureName(
+  static Pointer tokenLocationsOutputFeatureName(
     Pointer<MLAppleWordTaggerParameters> _self,
   ) {
     _openDynamicLibrary();
@@ -793,7 +779,7 @@ class MLAppleWordTaggerParameters extends Struct<MLAppleWordTaggerParameters> {
     );
   }
 
-  static Pointer<Void> tokenTagsOutputFeatureName(
+  static Pointer tokenTagsOutputFeatureName(
     Pointer<MLAppleWordTaggerParameters> _self,
   ) {
     _openDynamicLibrary();
@@ -803,7 +789,7 @@ class MLAppleWordTaggerParameters extends Struct<MLAppleWordTaggerParameters> {
     );
   }
 
-  static Pointer<Void> tokensOutputFeatureName(
+  static Pointer tokensOutputFeatureName(
     Pointer<MLAppleWordTaggerParameters> _self,
   ) {
     _openDynamicLibrary();
@@ -814,11 +800,9 @@ class MLAppleWordTaggerParameters extends Struct<MLAppleWordTaggerParameters> {
   }
 }
 
-/// Objective-C class _MLArrayBatchProvider_.
+/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/coreml?language=objc).
 @unsized
 class MLArrayBatchProvider extends Struct<MLArrayBatchProvider> {
   factory MLArrayBatchProvider._() {
@@ -829,7 +813,7 @@ class MLArrayBatchProvider extends Struct<MLArrayBatchProvider> {
     return _objc.allocate("MLArrayBatchProvider").cast<MLArrayBatchProvider>();
   }
 
-  static Pointer<Void> array(
+  static Pointer array(
     Pointer<MLArrayBatchProvider> _self,
   ) {
     _openDynamicLibrary();
@@ -849,7 +833,7 @@ class MLArrayBatchProvider extends Struct<MLArrayBatchProvider> {
     );
   }
 
-  static Pointer<Void> featuresAtIndex(
+  static Pointer featuresAtIndex(
     Pointer<MLArrayBatchProvider> _self,
     int arg,
   ) {
@@ -861,10 +845,10 @@ class MLArrayBatchProvider extends Struct<MLArrayBatchProvider> {
     );
   }
 
-  static Pointer<Void> initWithDictionary(
+  static Pointer initWithDictionary(
     Pointer<MLArrayBatchProvider> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -875,9 +859,9 @@ class MLArrayBatchProvider extends Struct<MLArrayBatchProvider> {
     );
   }
 
-  static Pointer<Void> initWithFeatureProviderArray(
+  static Pointer initWithFeatureProviderArray(
     Pointer<MLArrayBatchProvider> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -888,11 +872,9 @@ class MLArrayBatchProvider extends Struct<MLArrayBatchProvider> {
   }
 }
 
-/// Objective-C class _MLArrayFeatureExtractor_.
+/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/coreml?language=objc).
 @unsized
 class MLArrayFeatureExtractor extends Struct<MLArrayFeatureExtractor> {
   factory MLArrayFeatureExtractor._() {
@@ -905,7 +887,7 @@ class MLArrayFeatureExtractor extends Struct<MLArrayFeatureExtractor> {
         .cast<MLArrayFeatureExtractor>();
   }
 
-  static Pointer<Void> arrayColumnName(
+  static Pointer arrayColumnName(
     Pointer<MLArrayFeatureExtractor> _self,
   ) {
     _openDynamicLibrary();
@@ -915,7 +897,7 @@ class MLArrayFeatureExtractor extends Struct<MLArrayFeatureExtractor> {
     );
   }
 
-  static Pointer<Void> extractIndices(
+  static Pointer extractIndices(
     Pointer<MLArrayFeatureExtractor> _self,
   ) {
     _openDynamicLibrary();
@@ -925,16 +907,16 @@ class MLArrayFeatureExtractor extends Struct<MLArrayFeatureExtractor> {
     );
   }
 
-  static Pointer<Void> initWith(
+  static Pointer initWith(
     Pointer<MLArrayFeatureExtractor> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> indices,
-    @required Pointer<Void> dataTransformerName,
-    @required Pointer<Void> inputDescription,
-    @required Pointer<Void> outputDescription,
-    @required Pointer<Void> orderedInputFeatureNames,
-    @required Pointer<Void> orderedOutputFeatureNames,
-    @required Pointer<Void> configuration,
+    Pointer arg, {
+    @required Pointer indices,
+    @required Pointer dataTransformerName,
+    @required Pointer inputDescription,
+    @required Pointer outputDescription,
+    @required Pointer orderedInputFeatureNames,
+    @required Pointer orderedOutputFeatureNames,
+    @required Pointer configuration,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_p_p_p_p_returns_p(
@@ -962,11 +944,11 @@ class MLArrayFeatureExtractor extends Struct<MLArrayFeatureExtractor> {
     );
   }
 
-  static Pointer<Void> predictionFromFeatures(
+  static Pointer predictionFromFeatures(
     Pointer<MLArrayFeatureExtractor> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> options,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer options,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -979,11 +961,9 @@ class MLArrayFeatureExtractor extends Struct<MLArrayFeatureExtractor> {
   }
 }
 
-/// Objective-C class _MLBatchProviderUtils_.
+/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/coreml?language=objc).
 @unsized
 class MLBatchProviderUtils extends Struct<MLBatchProviderUtils> {
   factory MLBatchProviderUtils._() {
@@ -995,11 +975,9 @@ class MLBatchProviderUtils extends Struct<MLBatchProviderUtils> {
   }
 }
 
-/// Objective-C class _MLBayesianProbitRegression_.
+/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/coreml?language=objc).
 @unsized
 class MLBayesianProbitRegression extends Struct<MLBayesianProbitRegression> {
   factory MLBayesianProbitRegression._() {
@@ -1022,12 +1000,12 @@ class MLBayesianProbitRegression extends Struct<MLBayesianProbitRegression> {
     );
   }
 
-  static Pointer<Void> convertOutputFeatureToPredictionValues(
+  static Pointer convertOutputFeatureToPredictionValues(
     Pointer<MLBayesianProbitRegression> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> event,
+    Pointer arg, {
+    @required Pointer<Pointer> event,
     @required Pointer<Float> importance,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_returns_p(
@@ -1051,9 +1029,9 @@ class MLBayesianProbitRegression extends Struct<MLBayesianProbitRegression> {
     );
   }
 
-  static Pointer<Void> createRegressorResult(
+  static Pointer createRegressorResult(
     Pointer<MLBayesianProbitRegression> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -1063,9 +1041,9 @@ class MLBayesianProbitRegression extends Struct<MLBayesianProbitRegression> {
     );
   }
 
-  static Pointer<Void> getArrayFeatureValue(
+  static Pointer getArrayFeatureValue(
     Pointer<MLBayesianProbitRegression> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -1077,8 +1055,8 @@ class MLBayesianProbitRegression extends Struct<MLBayesianProbitRegression> {
 
   static double getFeatureValue(
     Pointer<MLBayesianProbitRegression> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> forName,
+    Pointer arg, {
+    @required Pointer forName,
     @required int withType,
   }) {
     _openDynamicLibrary();
@@ -1091,10 +1069,10 @@ class MLBayesianProbitRegression extends Struct<MLBayesianProbitRegression> {
     );
   }
 
-  static Pointer<Void> getOneHotFeatureValues(
+  static Pointer getOneHotFeatureValues(
     Pointer<MLBayesianProbitRegression> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -1107,7 +1085,7 @@ class MLBayesianProbitRegression extends Struct<MLBayesianProbitRegression> {
 
   static double getOptimism(
     Pointer<MLBayesianProbitRegression> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_float64(
@@ -1119,7 +1097,7 @@ class MLBayesianProbitRegression extends Struct<MLBayesianProbitRegression> {
 
   static double getSamplingScale(
     Pointer<MLBayesianProbitRegression> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_float64(
@@ -1131,7 +1109,7 @@ class MLBayesianProbitRegression extends Struct<MLBayesianProbitRegression> {
 
   static double getSamplingTruncation(
     Pointer<MLBayesianProbitRegression> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_float64(
@@ -1141,20 +1119,20 @@ class MLBayesianProbitRegression extends Struct<MLBayesianProbitRegression> {
     );
   }
 
-  static Pointer<Void>
+  static Pointer
       initWithDescription$numberOfFeatures$priorMean$regressionInputName$optimismInputName$samplingScaleInputName$samplingTruncationInputName$meanOutputName$varianceOutputName$pessimisticProbabilityOutputName$sampledProbabilityOutputName$(
     Pointer<MLBayesianProbitRegression> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int numberOfFeatures,
-    @required Pointer<Void> priorMean,
-    @required Pointer<Void> regressionInputName,
-    @required Pointer<Void> optimismInputName,
-    @required Pointer<Void> samplingScaleInputName,
-    @required Pointer<Void> samplingTruncationInputName,
-    @required Pointer<Void> meanOutputName,
-    @required Pointer<Void> varianceOutputName,
-    @required Pointer<Void> pessimisticProbabilityOutputName,
-    @required Pointer<Void> sampledProbabilityOutputName,
+    @required Pointer priorMean,
+    @required Pointer regressionInputName,
+    @required Pointer optimismInputName,
+    @required Pointer samplingScaleInputName,
+    @required Pointer samplingTruncationInputName,
+    @required Pointer meanOutputName,
+    @required Pointer varianceOutputName,
+    @required Pointer pessimisticProbabilityOutputName,
+    @required Pointer sampledProbabilityOutputName,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_Int64_p_p_p_p_p_p_p_p_p_returns_p(
@@ -1175,11 +1153,11 @@ class MLBayesianProbitRegression extends Struct<MLBayesianProbitRegression> {
     );
   }
 
-  static Pointer<Void> initWithDescription$numberOfFeatures$priorMean$(
+  static Pointer initWithDescription$numberOfFeatures$priorMean$(
     Pointer<MLBayesianProbitRegression> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int numberOfFeatures,
-    @required Pointer<Void> priorMean,
+    @required Pointer priorMean,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_Int64_p_returns_p(
@@ -1191,11 +1169,11 @@ class MLBayesianProbitRegression extends Struct<MLBayesianProbitRegression> {
     );
   }
 
-  static Pointer<Void> initWithSpecification(
+  static Pointer initWithSpecification(
     Pointer<MLBayesianProbitRegression> _self,
-    Pointer<Pointer<Void>> arg, {
-    @required Pointer<Void> configuration,
-    @required Pointer<Pointer<Void>> error,
+    Pointer<Pointer> arg, {
+    @required Pointer configuration,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -1209,7 +1187,7 @@ class MLBayesianProbitRegression extends Struct<MLBayesianProbitRegression> {
 
   static int isEqual(
     Pointer<MLBayesianProbitRegression> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -1221,7 +1199,7 @@ class MLBayesianProbitRegression extends Struct<MLBayesianProbitRegression> {
 
   static int isEqualToBopr(
     Pointer<MLBayesianProbitRegression> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -1231,7 +1209,7 @@ class MLBayesianProbitRegression extends Struct<MLBayesianProbitRegression> {
     );
   }
 
-  static Pointer<Void> model(
+  static Pointer model(
     Pointer<MLBayesianProbitRegression> _self,
   ) {
     _openDynamicLibrary();
@@ -1241,11 +1219,11 @@ class MLBayesianProbitRegression extends Struct<MLBayesianProbitRegression> {
     );
   }
 
-  static Pointer<Void> regress(
+  static Pointer regress(
     Pointer<MLBayesianProbitRegression> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> options,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer options,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -1269,7 +1247,7 @@ class MLBayesianProbitRegression extends Struct<MLBayesianProbitRegression> {
 
   static void resetToLastCheckpointBeforeDate(
     Pointer<MLBayesianProbitRegression> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -1279,9 +1257,9 @@ class MLBayesianProbitRegression extends Struct<MLBayesianProbitRegression> {
     );
   }
 
-  static Pointer<Pointer<Void>> saveModelToSpecification(
+  static Pointer<Pointer> saveModelToSpecification(
     Pointer<MLBayesianProbitRegression> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -1303,10 +1281,10 @@ class MLBayesianProbitRegression extends Struct<MLBayesianProbitRegression> {
     );
   }
 
-  static Pointer<Void> setInputFeatureName(
+  static Pointer setInputFeatureName(
     Pointer<MLBayesianProbitRegression> _self,
-    Pointer<Pointer<Void>> arg, {
-    @required Pointer<Void> to,
+    Pointer<Pointer> arg, {
+    @required Pointer to,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -1317,10 +1295,10 @@ class MLBayesianProbitRegression extends Struct<MLBayesianProbitRegression> {
     );
   }
 
-  static Pointer<Void> setOutputFeatureName(
+  static Pointer setOutputFeatureName(
     Pointer<MLBayesianProbitRegression> _self,
-    Pointer<Pointer<Void>> arg, {
-    @required Pointer<Void> to,
+    Pointer<Pointer> arg, {
+    @required Pointer to,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -1333,9 +1311,9 @@ class MLBayesianProbitRegression extends Struct<MLBayesianProbitRegression> {
 
   static void updateModelFromFeatures$toTarget$error$(
     Pointer<MLBayesianProbitRegression> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toTarget,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer toTarget,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_void(
@@ -1349,10 +1327,10 @@ class MLBayesianProbitRegression extends Struct<MLBayesianProbitRegression> {
 
   static void updateModelFromFeatures$toTarget$options$error$(
     Pointer<MLBayesianProbitRegression> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toTarget,
-    @required Pointer<Void> options,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer toTarget,
+    @required Pointer options,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_returns_void(
@@ -1366,11 +1344,9 @@ class MLBayesianProbitRegression extends Struct<MLBayesianProbitRegression> {
   }
 }
 
-/// Objective-C class _MLCategoricalMapping_.
+/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/coreml?language=objc).
 @unsized
 class MLCategoricalMapping extends Struct<MLCategoricalMapping> {
   factory MLCategoricalMapping._() {
@@ -1381,16 +1357,16 @@ class MLCategoricalMapping extends Struct<MLCategoricalMapping> {
     return _objc.allocate("MLCategoricalMapping").cast<MLCategoricalMapping>();
   }
 
-  static Pointer<Void> initWithMapping(
+  static Pointer initWithMapping(
     Pointer<MLCategoricalMapping> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> valueOnUnknown,
-    @required Pointer<Void> dataTransformerName,
-    @required Pointer<Void> inputDescription,
-    @required Pointer<Void> outputDescription,
-    @required Pointer<Void> orderedInputFeatureNames,
-    @required Pointer<Void> orderedOutputFeatureNames,
-    @required Pointer<Void> configuration,
+    Pointer arg, {
+    @required Pointer valueOnUnknown,
+    @required Pointer dataTransformerName,
+    @required Pointer inputDescription,
+    @required Pointer outputDescription,
+    @required Pointer orderedInputFeatureNames,
+    @required Pointer orderedOutputFeatureNames,
+    @required Pointer configuration,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_p_p_p_p_returns_p(
@@ -1408,10 +1384,10 @@ class MLCategoricalMapping extends Struct<MLCategoricalMapping> {
     );
   }
 
-  static Pointer<Void> mapFeature(
+  static Pointer mapFeature(
     Pointer<MLCategoricalMapping> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -1422,7 +1398,7 @@ class MLCategoricalMapping extends Struct<MLCategoricalMapping> {
     );
   }
 
-  static Pointer<Void> mapping(
+  static Pointer mapping(
     Pointer<MLCategoricalMapping> _self,
   ) {
     _openDynamicLibrary();
@@ -1432,11 +1408,11 @@ class MLCategoricalMapping extends Struct<MLCategoricalMapping> {
     );
   }
 
-  static Pointer<Void> predictionFromFeatures(
+  static Pointer predictionFromFeatures(
     Pointer<MLCategoricalMapping> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> options,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer options,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -1448,7 +1424,7 @@ class MLCategoricalMapping extends Struct<MLCategoricalMapping> {
     );
   }
 
-  static Pointer<Void> valueOnUnknown(
+  static Pointer valueOnUnknown(
     Pointer<MLCategoricalMapping> _self,
   ) {
     _openDynamicLibrary();
@@ -1459,11 +1435,9 @@ class MLCategoricalMapping extends Struct<MLCategoricalMapping> {
   }
 }
 
-/// Objective-C class _MLClassifier_.
+/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/coreml?language=objc).
 @unsized
 class MLClassifier extends Struct<MLClassifier> {
   factory MLClassifier._() {
@@ -1474,7 +1448,7 @@ class MLClassifier extends Struct<MLClassifier> {
     return _objc.allocate("MLClassifier").cast<MLClassifier>();
   }
 
-  static Pointer<Void> classLabels(
+  static Pointer classLabels(
     Pointer<MLClassifier> _self,
   ) {
     _openDynamicLibrary();
@@ -1484,10 +1458,10 @@ class MLClassifier extends Struct<MLClassifier> {
     );
   }
 
-  static Pointer<Void> classifierResultFromOutputFeatures(
+  static Pointer classifierResultFromOutputFeatures(
     Pointer<MLClassifier> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -1498,11 +1472,11 @@ class MLClassifier extends Struct<MLClassifier> {
     );
   }
 
-  static Pointer<Void> classify(
+  static Pointer classify(
     Pointer<MLClassifier> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> options,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer options,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -1514,11 +1488,11 @@ class MLClassifier extends Struct<MLClassifier> {
     );
   }
 
-  static Pointer<Void> initDescriptionOnlyWithSpecification(
+  static Pointer initDescriptionOnlyWithSpecification(
     Pointer<MLClassifier> _self,
-    Pointer<Pointer<Void>> arg, {
-    @required Pointer<Void> configuration,
-    @required Pointer<Pointer<Void>> error,
+    Pointer<Pointer> arg, {
+    @required Pointer configuration,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -1531,12 +1505,12 @@ class MLClassifier extends Struct<MLClassifier> {
     );
   }
 
-  static Pointer<Void> initWithInterface(
+  static Pointer initWithInterface(
     Pointer<MLClassifier> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> metadata,
-    @required Pointer<Void> configuration,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer metadata,
+    @required Pointer configuration,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_returns_p(
@@ -1549,11 +1523,11 @@ class MLClassifier extends Struct<MLClassifier> {
     );
   }
 
-  static Pointer<Void> predictionFromFeatures(
+  static Pointer predictionFromFeatures(
     Pointer<MLClassifier> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> options,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer options,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -1566,11 +1540,9 @@ class MLClassifier extends Struct<MLClassifier> {
   }
 }
 
-/// Objective-C class _MLClassifierResult_.
+/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/coreml?language=objc).
 @unsized
 class MLClassifierResult extends Struct<MLClassifierResult> {
   factory MLClassifierResult._() {
@@ -1581,7 +1553,7 @@ class MLClassifierResult extends Struct<MLClassifierResult> {
     return _objc.allocate("MLClassifierResult").cast<MLClassifierResult>();
   }
 
-  static Pointer<Void> additionalFeatures(
+  static Pointer additionalFeatures(
     Pointer<MLClassifierResult> _self,
   ) {
     _openDynamicLibrary();
@@ -1591,10 +1563,10 @@ class MLClassifierResult extends Struct<MLClassifierResult> {
     );
   }
 
-  static Pointer<Void> asFeatureDictionaryWithPredictedClassDescription(
+  static Pointer asFeatureDictionaryWithPredictedClassDescription(
     Pointer<MLClassifierResult> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> classProbabilityDescription,
+    Pointer arg, {
+    @required Pointer classProbabilityDescription,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -1606,7 +1578,7 @@ class MLClassifierResult extends Struct<MLClassifierResult> {
     );
   }
 
-  static Pointer<Void> classProbability(
+  static Pointer classProbability(
     Pointer<MLClassifierResult> _self,
   ) {
     _openDynamicLibrary();
@@ -1616,11 +1588,11 @@ class MLClassifierResult extends Struct<MLClassifierResult> {
     );
   }
 
-  static Pointer<Void> initWithClassProbability(
+  static Pointer initWithClassProbability(
     Pointer<MLClassifierResult> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> additionalFeatures,
-    @required Pointer<Void> classLabelOfMaxProbability,
+    Pointer arg, {
+    @required Pointer additionalFeatures,
+    @required Pointer classLabelOfMaxProbability,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -1633,11 +1605,11 @@ class MLClassifierResult extends Struct<MLClassifierResult> {
     );
   }
 
-  static Pointer<Void> initWithIntClassProbability(
+  static Pointer initWithIntClassProbability(
     Pointer<MLClassifierResult> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int classFeatureType,
-    @required Pointer<Void> additionalFeatures,
+    @required Pointer additionalFeatures,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_Int64_p_returns_p(
@@ -1650,11 +1622,11 @@ class MLClassifierResult extends Struct<MLClassifierResult> {
     );
   }
 
-  static Pointer<Void> initWithStringClassProbability(
+  static Pointer initWithStringClassProbability(
     Pointer<MLClassifierResult> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int classFeatureType,
-    @required Pointer<Void> additionalFeatures,
+    @required Pointer additionalFeatures,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_Int64_p_returns_p(
@@ -1667,7 +1639,7 @@ class MLClassifierResult extends Struct<MLClassifierResult> {
     );
   }
 
-  static Pointer<Void> predictedClass(
+  static Pointer predictedClass(
     Pointer<MLClassifierResult> _self,
   ) {
     _openDynamicLibrary();
@@ -1688,11 +1660,9 @@ class MLClassifierResult extends Struct<MLClassifierResult> {
   }
 }
 
-/// Objective-C class _MLCompiler_.
+/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/coreml?language=objc).
 @unsized
 class MLCompiler extends Struct<MLCompiler> {
   factory MLCompiler._() {
@@ -1704,11 +1674,9 @@ class MLCompiler extends Struct<MLCompiler> {
   }
 }
 
-/// Objective-C class _MLCompilerOptions_.
+/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/coreml?language=objc).
 @unsized
 class MLCompilerOptions extends Struct<MLCompilerOptions> {
   factory MLCompilerOptions._() {
@@ -1729,7 +1697,7 @@ class MLCompilerOptions extends Struct<MLCompilerOptions> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<MLCompilerOptions> _self,
   ) {
     _openDynamicLibrary();
@@ -1739,7 +1707,7 @@ class MLCompilerOptions extends Struct<MLCompilerOptions> {
     );
   }
 
-  static Pointer<Void> platform(
+  static Pointer platform(
     Pointer<MLCompilerOptions> _self,
   ) {
     _openDynamicLibrary();
@@ -1749,7 +1717,7 @@ class MLCompilerOptions extends Struct<MLCompilerOptions> {
     );
   }
 
-  static Pointer<Void> platformVersion(
+  static Pointer platformVersion(
     Pointer<MLCompilerOptions> _self,
   ) {
     _openDynamicLibrary();
@@ -1773,7 +1741,7 @@ class MLCompilerOptions extends Struct<MLCompilerOptions> {
 
   static void setPlatform(
     Pointer<MLCompilerOptions> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -1785,7 +1753,7 @@ class MLCompilerOptions extends Struct<MLCompilerOptions> {
 
   static void setPlatformVersion(
     Pointer<MLCompilerOptions> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -1796,11 +1764,9 @@ class MLCompilerOptions extends Struct<MLCompilerOptions> {
   }
 }
 
-/// Objective-C class _MLCompilerResult_.
+/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/coreml?language=objc).
 @unsized
 class MLCompilerResult extends Struct<MLCompilerResult> {
   factory MLCompilerResult._() {
@@ -1811,7 +1777,7 @@ class MLCompilerResult extends Struct<MLCompilerResult> {
     return _objc.allocate("MLCompilerResult").cast<MLCompilerResult>();
   }
 
-  static Pointer<Void> outputFiles(
+  static Pointer outputFiles(
     Pointer<MLCompilerResult> _self,
   ) {
     _openDynamicLibrary();
@@ -1823,7 +1789,7 @@ class MLCompilerResult extends Struct<MLCompilerResult> {
 
   static void setOutputFiles(
     Pointer<MLCompilerResult> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -1834,11 +1800,9 @@ class MLCompilerResult extends Struct<MLCompilerResult> {
   }
 }
 
-/// Objective-C class _MLCustomLayerWrapper_.
+/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/coreml?language=objc).
 @unsized
 class MLCustomLayerWrapper extends Struct<MLCustomLayerWrapper> {
   factory MLCustomLayerWrapper._() {
@@ -1849,7 +1813,7 @@ class MLCustomLayerWrapper extends Struct<MLCustomLayerWrapper> {
     return _objc.allocate("MLCustomLayerWrapper").cast<MLCustomLayerWrapper>();
   }
 
-  static Pointer<Void> className(
+  static Pointer className(
     Pointer<MLCustomLayerWrapper> _self,
   ) {
     _openDynamicLibrary();
@@ -1861,8 +1825,8 @@ class MLCustomLayerWrapper extends Struct<MLCustomLayerWrapper> {
 
   static void computeOnCPUWithInputTensors(
     Pointer<MLCustomLayerWrapper> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> outputTensors,
+    Pointer arg, {
+    @required Pointer outputTensors,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -1873,7 +1837,7 @@ class MLCustomLayerWrapper extends Struct<MLCustomLayerWrapper> {
     );
   }
 
-  static Pointer<Void> customImpl(
+  static Pointer customImpl(
     Pointer<MLCustomLayerWrapper> _self,
   ) {
     _openDynamicLibrary();
@@ -1885,9 +1849,9 @@ class MLCustomLayerWrapper extends Struct<MLCustomLayerWrapper> {
 
   static void encodeToMetalCommandBuffer(
     Pointer<MLCustomLayerWrapper> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> inputTensors,
-    @required Pointer<Void> outputTensors,
+    Pointer arg, {
+    @required Pointer inputTensors,
+    @required Pointer outputTensors,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_void(
@@ -1910,9 +1874,9 @@ class MLCustomLayerWrapper extends Struct<MLCustomLayerWrapper> {
     );
   }
 
-  static Pointer<Void> initWithParameters(
+  static Pointer initWithParameters(
     Pointer<MLCustomLayerWrapper> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -1924,7 +1888,7 @@ class MLCustomLayerWrapper extends Struct<MLCustomLayerWrapper> {
 
   static void setCustomImpl(
     Pointer<MLCustomLayerWrapper> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -1936,7 +1900,7 @@ class MLCustomLayerWrapper extends Struct<MLCustomLayerWrapper> {
 
   static void setMappedWeights(
     Pointer<MLCustomLayerWrapper> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int sizeInBytes,
   }) {
     _openDynamicLibrary();
@@ -1948,10 +1912,10 @@ class MLCustomLayerWrapper extends Struct<MLCustomLayerWrapper> {
     );
   }
 
-  static Pointer<Void> setupForInputShapes(
+  static Pointer setupForInputShapes(
     Pointer<MLCustomLayerWrapper> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> withParameters,
+    Pointer arg, {
+    @required Pointer withParameters,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -1963,11 +1927,9 @@ class MLCustomLayerWrapper extends Struct<MLCustomLayerWrapper> {
   }
 }
 
-/// Objective-C class _MLCustomModelLoader_.
+/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/coreml?language=objc).
 @unsized
 class MLCustomModelLoader extends Struct<MLCustomModelLoader> {
   factory MLCustomModelLoader._() {
@@ -1979,11 +1941,9 @@ class MLCustomModelLoader extends Struct<MLCustomModelLoader> {
   }
 }
 
-/// Objective-C class _MLCustomModelWrapper_.
+/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/coreml?language=objc).
 @unsized
 class MLCustomModelWrapper extends Struct<MLCustomModelWrapper> {
   factory MLCustomModelWrapper._() {
@@ -1994,7 +1954,7 @@ class MLCustomModelWrapper extends Struct<MLCustomModelWrapper> {
     return _objc.allocate("MLCustomModelWrapper").cast<MLCustomModelWrapper>();
   }
 
-  static Pointer<Void> customModel(
+  static Pointer customModel(
     Pointer<MLCustomModelWrapper> _self,
   ) {
     _openDynamicLibrary();
@@ -2004,11 +1964,11 @@ class MLCustomModelWrapper extends Struct<MLCustomModelWrapper> {
     );
   }
 
-  static Pointer<Void> initWithModelDescription(
+  static Pointer initWithModelDescription(
     Pointer<MLCustomModelWrapper> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> customModel,
-    @required Pointer<Void> configuration,
+    Pointer arg, {
+    @required Pointer customModel,
+    @required Pointer configuration,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -2020,11 +1980,11 @@ class MLCustomModelWrapper extends Struct<MLCustomModelWrapper> {
     );
   }
 
-  static Pointer<Void> predictionFromFeatures(
+  static Pointer predictionFromFeatures(
     Pointer<MLCustomModelWrapper> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> options,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer options,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -2036,11 +1996,11 @@ class MLCustomModelWrapper extends Struct<MLCustomModelWrapper> {
     );
   }
 
-  static Pointer<Void> predictionsFromBatch(
+  static Pointer predictionsFromBatch(
     Pointer<MLCustomModelWrapper> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> options,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer options,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -2054,7 +2014,7 @@ class MLCustomModelWrapper extends Struct<MLCustomModelWrapper> {
 
   static void setCustomModel(
     Pointer<MLCustomModelWrapper> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -2065,11 +2025,9 @@ class MLCustomModelWrapper extends Struct<MLCustomModelWrapper> {
   }
 }
 
-/// Objective-C class _MLDefaultCustomLayerFactory_.
+/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/coreml?language=objc).
 @unsized
 class MLDefaultCustomLayerFactory extends Struct<MLDefaultCustomLayerFactory> {
   factory MLDefaultCustomLayerFactory._() {
@@ -2082,11 +2040,11 @@ class MLDefaultCustomLayerFactory extends Struct<MLDefaultCustomLayerFactory> {
         .cast<MLDefaultCustomLayerFactory>();
   }
 
-  static Pointer<Void> createCustomLayer(
+  static Pointer createCustomLayer(
     Pointer<MLDefaultCustomLayerFactory> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> withParameters,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer withParameters,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -2099,11 +2057,9 @@ class MLDefaultCustomLayerFactory extends Struct<MLDefaultCustomLayerFactory> {
   }
 }
 
-/// Objective-C class _MLDefaultCustomModelFactory_.
+/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/coreml?language=objc).
 @unsized
 class MLDefaultCustomModelFactory extends Struct<MLDefaultCustomModelFactory> {
   factory MLDefaultCustomModelFactory._() {
@@ -2116,12 +2072,12 @@ class MLDefaultCustomModelFactory extends Struct<MLDefaultCustomModelFactory> {
         .cast<MLDefaultCustomModelFactory>();
   }
 
-  static Pointer<Void> customModelWithName(
+  static Pointer customModelWithName(
     Pointer<MLDefaultCustomModelFactory> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> modelDescription,
-    @required Pointer<Void> parameterDictionary,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer modelDescription,
+    @required Pointer parameterDictionary,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_returns_p(
@@ -2136,11 +2092,9 @@ class MLDefaultCustomModelFactory extends Struct<MLDefaultCustomModelFactory> {
   }
 }
 
-/// Objective-C class _MLDictVectorizer_.
+/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/coreml?language=objc).
 @unsized
 class MLDictVectorizer extends Struct<MLDictVectorizer> {
   factory MLDictVectorizer._() {
@@ -2151,7 +2105,7 @@ class MLDictVectorizer extends Struct<MLDictVectorizer> {
     return _objc.allocate("MLDictVectorizer").cast<MLDictVectorizer>();
   }
 
-  static Pointer<Void> categoryName(
+  static Pointer categoryName(
     Pointer<MLDictVectorizer> _self,
   ) {
     _openDynamicLibrary();
@@ -2161,10 +2115,10 @@ class MLDictVectorizer extends Struct<MLDictVectorizer> {
     );
   }
 
-  static Pointer<Void> constructDictionary(
+  static Pointer constructDictionary(
     Pointer<MLDictVectorizer> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -2175,16 +2129,16 @@ class MLDictVectorizer extends Struct<MLDictVectorizer> {
     );
   }
 
-  static Pointer<Void> initWith(
+  static Pointer initWith(
     Pointer<MLDictVectorizer> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> dataTransformerName,
-    @required Pointer<Void> inputDescription,
-    @required Pointer<Void> outputDescription,
-    @required Pointer<Void> orderedInputFeatureNames,
-    @required Pointer<Void> orderedOutputFeatureNames,
-    @required Pointer<Void> configuration,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer dataTransformerName,
+    @required Pointer inputDescription,
+    @required Pointer outputDescription,
+    @required Pointer orderedInputFeatureNames,
+    @required Pointer orderedOutputFeatureNames,
+    @required Pointer configuration,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_p_p_p_p_returns_p(
@@ -2202,11 +2156,11 @@ class MLDictVectorizer extends Struct<MLDictVectorizer> {
     );
   }
 
-  static Pointer<Void> predictionFromFeatures(
+  static Pointer predictionFromFeatures(
     Pointer<MLDictVectorizer> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> options,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer options,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -2219,11 +2173,9 @@ class MLDictVectorizer extends Struct<MLDictVectorizer> {
   }
 }
 
-/// Objective-C class _MLDictionaryConstraint_.
+/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/coreml?language=objc).
 @unsized
 class MLDictionaryConstraint extends Struct<MLDictionaryConstraint> {
   factory MLDictionaryConstraint._() {
@@ -2236,9 +2188,9 @@ class MLDictionaryConstraint extends Struct<MLDictionaryConstraint> {
         .cast<MLDictionaryConstraint>();
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<MLDictionaryConstraint> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -2248,7 +2200,7 @@ class MLDictionaryConstraint extends Struct<MLDictionaryConstraint> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<MLDictionaryConstraint> _self,
   ) {
     _openDynamicLibrary();
@@ -2258,7 +2210,7 @@ class MLDictionaryConstraint extends Struct<MLDictionaryConstraint> {
     );
   }
 
-  static Pointer<Void> initWithKeyType(
+  static Pointer initWithKeyType(
     Pointer<MLDictionaryConstraint> _self,
     int arg,
   ) {
@@ -2272,8 +2224,8 @@ class MLDictionaryConstraint extends Struct<MLDictionaryConstraint> {
 
   static int isAllowedValue(
     Pointer<MLDictionaryConstraint> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -2295,11 +2247,9 @@ class MLDictionaryConstraint extends Struct<MLDictionaryConstraint> {
   }
 }
 
-/// Objective-C class _MLDictionaryFeatureProvider_.
+/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/coreml?language=objc).
 @unsized
 class MLDictionaryFeatureProvider extends Struct<MLDictionaryFeatureProvider> {
   factory MLDictionaryFeatureProvider._() {
@@ -2314,8 +2264,8 @@ class MLDictionaryFeatureProvider extends Struct<MLDictionaryFeatureProvider> {
 
   static int countByEnumeratingWithState(
     Pointer<MLDictionaryFeatureProvider> _self,
-    Pointer<Pointer<Void>> arg, {
-    @required Pointer<Pointer<Void>> objects,
+    Pointer<Pointer> arg, {
+    @required Pointer<Pointer> objects,
     @required int count,
   }) {
     _openDynamicLibrary();
@@ -2328,7 +2278,7 @@ class MLDictionaryFeatureProvider extends Struct<MLDictionaryFeatureProvider> {
     );
   }
 
-  static Pointer<Void> dictionary(
+  static Pointer dictionary(
     Pointer<MLDictionaryFeatureProvider> _self,
   ) {
     _openDynamicLibrary();
@@ -2338,7 +2288,7 @@ class MLDictionaryFeatureProvider extends Struct<MLDictionaryFeatureProvider> {
     );
   }
 
-  static Pointer<Void> featureNames(
+  static Pointer featureNames(
     Pointer<MLDictionaryFeatureProvider> _self,
   ) {
     _openDynamicLibrary();
@@ -2348,9 +2298,9 @@ class MLDictionaryFeatureProvider extends Struct<MLDictionaryFeatureProvider> {
     );
   }
 
-  static Pointer<Void> featureValueForName(
+  static Pointer featureValueForName(
     Pointer<MLDictionaryFeatureProvider> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -2360,10 +2310,10 @@ class MLDictionaryFeatureProvider extends Struct<MLDictionaryFeatureProvider> {
     );
   }
 
-  static Pointer<Void> initWithDictionary(
+  static Pointer initWithDictionary(
     Pointer<MLDictionaryFeatureProvider> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -2374,9 +2324,9 @@ class MLDictionaryFeatureProvider extends Struct<MLDictionaryFeatureProvider> {
     );
   }
 
-  static Pointer<Void> initWithFeatureProvider$(
+  static Pointer initWithFeatureProvider$(
     Pointer<MLDictionaryFeatureProvider> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -2386,10 +2336,10 @@ class MLDictionaryFeatureProvider extends Struct<MLDictionaryFeatureProvider> {
     );
   }
 
-  static Pointer<Void> initWithFeatureProvider$featureNames$(
+  static Pointer initWithFeatureProvider$featureNames$(
     Pointer<MLDictionaryFeatureProvider> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> featureNames,
+    Pointer arg, {
+    @required Pointer featureNames,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -2400,9 +2350,9 @@ class MLDictionaryFeatureProvider extends Struct<MLDictionaryFeatureProvider> {
     );
   }
 
-  static Pointer<Void> initWithFeatureValueDictionary(
+  static Pointer initWithFeatureValueDictionary(
     Pointer<MLDictionaryFeatureProvider> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -2412,9 +2362,9 @@ class MLDictionaryFeatureProvider extends Struct<MLDictionaryFeatureProvider> {
     );
   }
 
-  static Pointer<Void> objectForKeyedSubscript(
+  static Pointer objectForKeyedSubscript(
     Pointer<MLDictionaryFeatureProvider> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -2426,7 +2376,7 @@ class MLDictionaryFeatureProvider extends Struct<MLDictionaryFeatureProvider> {
 
   static void setDictionary(
     Pointer<MLDictionaryFeatureProvider> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -2437,11 +2387,9 @@ class MLDictionaryFeatureProvider extends Struct<MLDictionaryFeatureProvider> {
   }
 }
 
-/// Objective-C class _MLFeatureDescription_.
+/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/coreml?language=objc).
 @unsized
 class MLFeatureDescription extends Struct<MLFeatureDescription> {
   factory MLFeatureDescription._() {
@@ -2454,7 +2402,7 @@ class MLFeatureDescription extends Struct<MLFeatureDescription> {
 
   static int allowsValuesWithDescription(
     Pointer<MLFeatureDescription> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -2464,9 +2412,9 @@ class MLFeatureDescription extends Struct<MLFeatureDescription> {
     );
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<MLFeatureDescription> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -2476,7 +2424,7 @@ class MLFeatureDescription extends Struct<MLFeatureDescription> {
     );
   }
 
-  static Pointer<Void> debugQuickLookObject(
+  static Pointer debugQuickLookObject(
     Pointer<MLFeatureDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -2486,7 +2434,7 @@ class MLFeatureDescription extends Struct<MLFeatureDescription> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<MLFeatureDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -2496,7 +2444,7 @@ class MLFeatureDescription extends Struct<MLFeatureDescription> {
     );
   }
 
-  static Pointer<Void> dictionaryConstraint(
+  static Pointer dictionaryConstraint(
     Pointer<MLFeatureDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -2506,7 +2454,7 @@ class MLFeatureDescription extends Struct<MLFeatureDescription> {
     );
   }
 
-  static Pointer<Void> dictionaryConstraintCached(
+  static Pointer dictionaryConstraintCached(
     Pointer<MLFeatureDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -2516,7 +2464,7 @@ class MLFeatureDescription extends Struct<MLFeatureDescription> {
     );
   }
 
-  static Pointer<Void> imageConstraint(
+  static Pointer imageConstraint(
     Pointer<MLFeatureDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -2526,7 +2474,7 @@ class MLFeatureDescription extends Struct<MLFeatureDescription> {
     );
   }
 
-  static Pointer<Void> imageConstraintCached(
+  static Pointer imageConstraintCached(
     Pointer<MLFeatureDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -2536,12 +2484,12 @@ class MLFeatureDescription extends Struct<MLFeatureDescription> {
     );
   }
 
-  static Pointer<Void> initWithName(
+  static Pointer initWithName(
     Pointer<MLFeatureDescription> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int type,
     @required int optional,
-    @required Pointer<Void> contraints,
+    @required Pointer contraints,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_Int64_Int8_p_returns_p(
@@ -2556,8 +2504,8 @@ class MLFeatureDescription extends Struct<MLFeatureDescription> {
 
   static int isAllowedValue$error$(
     Pointer<MLFeatureDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -2570,7 +2518,7 @@ class MLFeatureDescription extends Struct<MLFeatureDescription> {
 
   static int isAllowedValue$(
     Pointer<MLFeatureDescription> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -2590,7 +2538,7 @@ class MLFeatureDescription extends Struct<MLFeatureDescription> {
     );
   }
 
-  static Pointer<Void> multiArrayConstraint(
+  static Pointer multiArrayConstraint(
     Pointer<MLFeatureDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -2600,7 +2548,7 @@ class MLFeatureDescription extends Struct<MLFeatureDescription> {
     );
   }
 
-  static Pointer<Void> multiArrayConstraintCached(
+  static Pointer multiArrayConstraintCached(
     Pointer<MLFeatureDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -2610,7 +2558,7 @@ class MLFeatureDescription extends Struct<MLFeatureDescription> {
     );
   }
 
-  static Pointer<Void> name(
+  static Pointer name(
     Pointer<MLFeatureDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -2620,7 +2568,7 @@ class MLFeatureDescription extends Struct<MLFeatureDescription> {
     );
   }
 
-  static Pointer<Void> sequenceConstraint(
+  static Pointer sequenceConstraint(
     Pointer<MLFeatureDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -2630,7 +2578,7 @@ class MLFeatureDescription extends Struct<MLFeatureDescription> {
     );
   }
 
-  static Pointer<Void> sequenceConstraintCached(
+  static Pointer sequenceConstraintCached(
     Pointer<MLFeatureDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -2642,7 +2590,7 @@ class MLFeatureDescription extends Struct<MLFeatureDescription> {
 
   static void setValueConstraints(
     Pointer<MLFeatureDescription> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -2662,7 +2610,7 @@ class MLFeatureDescription extends Struct<MLFeatureDescription> {
     );
   }
 
-  static Pointer<Void> valueConstraints(
+  static Pointer valueConstraints(
     Pointer<MLFeatureDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -2673,11 +2621,9 @@ class MLFeatureDescription extends Struct<MLFeatureDescription> {
   }
 }
 
-/// Objective-C class _MLFeatureProviderUtils_.
+/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/coreml?language=objc).
 @unsized
 class MLFeatureProviderUtils extends Struct<MLFeatureProviderUtils> {
   factory MLFeatureProviderUtils._() {
@@ -2691,11 +2637,9 @@ class MLFeatureProviderUtils extends Struct<MLFeatureProviderUtils> {
   }
 }
 
-/// Objective-C class _MLFeatureTypeUtils_.
+/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/coreml?language=objc).
 @unsized
 class MLFeatureTypeUtils extends Struct<MLFeatureTypeUtils> {
   factory MLFeatureTypeUtils._() {
@@ -2707,11 +2651,9 @@ class MLFeatureTypeUtils extends Struct<MLFeatureTypeUtils> {
   }
 }
 
-/// Objective-C class _MLFeatureValue_.
+/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/coreml?language=objc).
 @unsized
 class MLFeatureValue extends Struct<MLFeatureValue> {
   factory MLFeatureValue._() {
@@ -2722,9 +2664,9 @@ class MLFeatureValue extends Struct<MLFeatureValue> {
     return _objc.allocate("MLFeatureValue").cast<MLFeatureValue>();
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<MLFeatureValue> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -2744,7 +2686,7 @@ class MLFeatureValue extends Struct<MLFeatureValue> {
     );
   }
 
-  static Pointer<Void> debugQuickLookObject(
+  static Pointer debugQuickLookObject(
     Pointer<MLFeatureValue> _self,
   ) {
     _openDynamicLibrary();
@@ -2754,7 +2696,7 @@ class MLFeatureValue extends Struct<MLFeatureValue> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<MLFeatureValue> _self,
   ) {
     _openDynamicLibrary();
@@ -2764,7 +2706,7 @@ class MLFeatureValue extends Struct<MLFeatureValue> {
     );
   }
 
-  static Pointer<Void> dictionaryValue(
+  static Pointer dictionaryValue(
     Pointer<MLFeatureValue> _self,
   ) {
     _openDynamicLibrary();
@@ -2784,9 +2726,9 @@ class MLFeatureValue extends Struct<MLFeatureValue> {
     );
   }
 
-  static Pointer<Void> getFeatureSize(
+  static Pointer getFeatureSize(
     Pointer<MLFeatureValue> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -2806,7 +2748,7 @@ class MLFeatureValue extends Struct<MLFeatureValue> {
     );
   }
 
-  static Pointer<Pointer<Void>> imageBufferValue(
+  static Pointer<Pointer> imageBufferValue(
     Pointer<MLFeatureValue> _self,
   ) {
     _openDynamicLibrary();
@@ -2816,7 +2758,7 @@ class MLFeatureValue extends Struct<MLFeatureValue> {
     );
   }
 
-  static Pointer<Void> initWithUndefinedValueAndType(
+  static Pointer initWithUndefinedValueAndType(
     Pointer<MLFeatureValue> _self,
     int arg,
   ) {
@@ -2828,9 +2770,9 @@ class MLFeatureValue extends Struct<MLFeatureValue> {
     );
   }
 
-  static Pointer<Void> initWithValue(
+  static Pointer initWithValue(
     Pointer<MLFeatureValue> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int type,
   }) {
     _openDynamicLibrary();
@@ -2854,7 +2796,7 @@ class MLFeatureValue extends Struct<MLFeatureValue> {
 
   static int isEqual(
     Pointer<MLFeatureValue> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -2866,7 +2808,7 @@ class MLFeatureValue extends Struct<MLFeatureValue> {
 
   static int isEqualToFeatureValue(
     Pointer<MLFeatureValue> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -2886,7 +2828,7 @@ class MLFeatureValue extends Struct<MLFeatureValue> {
     );
   }
 
-  static Pointer<Void> multiArrayValue(
+  static Pointer multiArrayValue(
     Pointer<MLFeatureValue> _self,
   ) {
     _openDynamicLibrary();
@@ -2896,7 +2838,7 @@ class MLFeatureValue extends Struct<MLFeatureValue> {
     );
   }
 
-  static Pointer<Void> objectValue(
+  static Pointer objectValue(
     Pointer<MLFeatureValue> _self,
   ) {
     _openDynamicLibrary();
@@ -2906,7 +2848,7 @@ class MLFeatureValue extends Struct<MLFeatureValue> {
     );
   }
 
-  static Pointer<Void> sequenceValue(
+  static Pointer sequenceValue(
     Pointer<MLFeatureValue> _self,
   ) {
     _openDynamicLibrary();
@@ -2918,7 +2860,7 @@ class MLFeatureValue extends Struct<MLFeatureValue> {
 
   static void setObjectValue(
     Pointer<MLFeatureValue> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -2930,7 +2872,7 @@ class MLFeatureValue extends Struct<MLFeatureValue> {
 
   static void setValue(
     Pointer<MLFeatureValue> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -2940,7 +2882,7 @@ class MLFeatureValue extends Struct<MLFeatureValue> {
     );
   }
 
-  static Pointer<Void> stringValue(
+  static Pointer stringValue(
     Pointer<MLFeatureValue> _self,
   ) {
     _openDynamicLibrary();
@@ -2960,7 +2902,7 @@ class MLFeatureValue extends Struct<MLFeatureValue> {
     );
   }
 
-  static Pointer<Void> value(
+  static Pointer value(
     Pointer<MLFeatureValue> _self,
   ) {
     _openDynamicLibrary();
@@ -2971,11 +2913,9 @@ class MLFeatureValue extends Struct<MLFeatureValue> {
   }
 }
 
-/// Objective-C class _MLFeatureVectorizer_.
+/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/coreml?language=objc).
 @unsized
 class MLFeatureVectorizer extends Struct<MLFeatureVectorizer> {
   factory MLFeatureVectorizer._() {
@@ -2986,7 +2926,7 @@ class MLFeatureVectorizer extends Struct<MLFeatureVectorizer> {
     return _objc.allocate("MLFeatureVectorizer").cast<MLFeatureVectorizer>();
   }
 
-  static Pointer<Void> columnNameEncoding(
+  static Pointer columnNameEncoding(
     Pointer<MLFeatureVectorizer> _self,
   ) {
     _openDynamicLibrary();
@@ -2996,7 +2936,7 @@ class MLFeatureVectorizer extends Struct<MLFeatureVectorizer> {
     );
   }
 
-  static Pointer<Void> dimensionEncoding(
+  static Pointer dimensionEncoding(
     Pointer<MLFeatureVectorizer> _self,
   ) {
     _openDynamicLibrary();
@@ -3006,16 +2946,16 @@ class MLFeatureVectorizer extends Struct<MLFeatureVectorizer> {
     );
   }
 
-  static Pointer<Void> initWith(
+  static Pointer initWith(
     Pointer<MLFeatureVectorizer> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> dimensionEncoding,
-    @required Pointer<Void> dataTransformerName,
-    @required Pointer<Void> inputDescription,
-    @required Pointer<Void> outputDescription,
-    @required Pointer<Void> orderedInputFeatureNames,
-    @required Pointer<Void> orderedOutputFeatureNames,
-    @required Pointer<Void> configuration,
+    Pointer arg, {
+    @required Pointer dimensionEncoding,
+    @required Pointer dataTransformerName,
+    @required Pointer inputDescription,
+    @required Pointer outputDescription,
+    @required Pointer orderedInputFeatureNames,
+    @required Pointer orderedOutputFeatureNames,
+    @required Pointer configuration,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_p_p_p_p_returns_p(
@@ -3033,11 +2973,11 @@ class MLFeatureVectorizer extends Struct<MLFeatureVectorizer> {
     );
   }
 
-  static Pointer<Void> predictionFromFeatures(
+  static Pointer predictionFromFeatures(
     Pointer<MLFeatureVectorizer> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> options,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer options,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -3049,11 +2989,11 @@ class MLFeatureVectorizer extends Struct<MLFeatureVectorizer> {
     );
   }
 
-  static Pointer<Void> vectorizeOneHotEncoderDict(
+  static Pointer vectorizeOneHotEncoderDict(
     Pointer<MLFeatureVectorizer> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int index,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_Uint64_p_returns_p(
@@ -3066,11 +3006,9 @@ class MLFeatureVectorizer extends Struct<MLFeatureVectorizer> {
   }
 }
 
-/// Objective-C class _MLGKDecisionTree_.
+/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/coreml?language=objc).
 @unsized
 class MLGKDecisionTree extends Struct<MLGKDecisionTree> {
   factory MLGKDecisionTree._() {
@@ -3093,7 +3031,7 @@ class MLGKDecisionTree extends Struct<MLGKDecisionTree> {
 
   static void set_attributes(
     Pointer<MLGKDecisionTree> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -3105,7 +3043,7 @@ class MLGKDecisionTree extends Struct<MLGKDecisionTree> {
 
   static void set_objectStore(
     Pointer<MLGKDecisionTree> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -3116,11 +3054,9 @@ class MLGKDecisionTree extends Struct<MLGKDecisionTree> {
   }
 }
 
-/// Objective-C class _MLGLMClassification_.
+/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/coreml?language=objc).
 @unsized
 class MLGLMClassification extends Struct<MLGLMClassification> {
   factory MLGLMClassification._() {
@@ -3131,11 +3067,11 @@ class MLGLMClassification extends Struct<MLGLMClassification> {
     return _objc.allocate("MLGLMClassification").cast<MLGLMClassification>();
   }
 
-  static Pointer<Void> calculateClassProbability(
+  static Pointer calculateClassProbability(
     Pointer<MLGLMClassification> _self,
     Pointer<Float> arg, {
-    @required Pointer<Void> input,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer input,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -3147,11 +3083,11 @@ class MLGLMClassification extends Struct<MLGLMClassification> {
     );
   }
 
-  static Pointer<Void> classify$options$error$(
+  static Pointer classify$options$error$(
     Pointer<MLGLMClassification> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> options,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer options,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -3163,10 +3099,10 @@ class MLGLMClassification extends Struct<MLGLMClassification> {
     );
   }
 
-  static Pointer<Void> classify$error$(
+  static Pointer classify$error$(
     Pointer<MLGLMClassification> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -3177,11 +3113,11 @@ class MLGLMClassification extends Struct<MLGLMClassification> {
     );
   }
 
-  static Pointer<Void> classify$topK$error$(
+  static Pointer classify$topK$error$(
     Pointer<MLGLMClassification> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int topK,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_Uint64_p_returns_p(
@@ -3193,11 +3129,11 @@ class MLGLMClassification extends Struct<MLGLMClassification> {
     );
   }
 
-  static Pointer<Void> initWithSpecification(
+  static Pointer initWithSpecification(
     Pointer<MLGLMClassification> _self,
-    Pointer<Pointer<Void>> arg, {
-    @required Pointer<Void> configuration,
-    @required Pointer<Pointer<Void>> error,
+    Pointer<Pointer> arg, {
+    @required Pointer configuration,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -3210,11 +3146,9 @@ class MLGLMClassification extends Struct<MLGLMClassification> {
   }
 }
 
-/// Objective-C class _MLGLMRegression_.
+/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/coreml?language=objc).
 @unsized
 class MLGLMRegression extends Struct<MLGLMRegression> {
   factory MLGLMRegression._() {
@@ -3225,11 +3159,11 @@ class MLGLMRegression extends Struct<MLGLMRegression> {
     return _objc.allocate("MLGLMRegression").cast<MLGLMRegression>();
   }
 
-  static Pointer<Void> initWithLRSpec(
+  static Pointer initWithLRSpec(
     Pointer<MLGLMRegression> _self,
-    Pointer<Pointer<Void>> arg, {
-    @required Pointer<Void> configuration,
-    @required Pointer<Pointer<Void>> error,
+    Pointer<Pointer> arg, {
+    @required Pointer configuration,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -3241,11 +3175,11 @@ class MLGLMRegression extends Struct<MLGLMRegression> {
     );
   }
 
-  static Pointer<Void> initWithSpecification(
+  static Pointer initWithSpecification(
     Pointer<MLGLMRegression> _self,
-    Pointer<Pointer<Void>> arg, {
-    @required Pointer<Void> configuration,
-    @required Pointer<Pointer<Void>> error,
+    Pointer<Pointer> arg, {
+    @required Pointer configuration,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -3257,11 +3191,11 @@ class MLGLMRegression extends Struct<MLGLMRegression> {
     );
   }
 
-  static Pointer<Void> regress(
+  static Pointer regress(
     Pointer<MLGLMRegression> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> options,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer options,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -3274,11 +3208,9 @@ class MLGLMRegression extends Struct<MLGLMRegression> {
   }
 }
 
-/// Objective-C class _MLIdentity_.
+/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/coreml?language=objc).
 @unsized
 class MLIdentity extends Struct<MLIdentity> {
   factory MLIdentity._() {
@@ -3289,7 +3221,7 @@ class MLIdentity extends Struct<MLIdentity> {
     return _objc.allocate("MLIdentity").cast<MLIdentity>();
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<MLIdentity> _self,
   ) {
     _openDynamicLibrary();
@@ -3299,11 +3231,11 @@ class MLIdentity extends Struct<MLIdentity> {
     );
   }
 
-  static Pointer<Void> predictionFromFeatures(
+  static Pointer predictionFromFeatures(
     Pointer<MLIdentity> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> options,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer options,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -3316,11 +3248,9 @@ class MLIdentity extends Struct<MLIdentity> {
   }
 }
 
-/// Objective-C class _MLImageConstraint_.
+/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/coreml?language=objc).
 @unsized
 class MLImageConstraint extends Struct<MLImageConstraint> {
   factory MLImageConstraint._() {
@@ -3331,9 +3261,9 @@ class MLImageConstraint extends Struct<MLImageConstraint> {
     return _objc.allocate("MLImageConstraint").cast<MLImageConstraint>();
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<MLImageConstraint> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -3343,7 +3273,7 @@ class MLImageConstraint extends Struct<MLImageConstraint> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<MLImageConstraint> _self,
   ) {
     _openDynamicLibrary();
@@ -3373,12 +3303,12 @@ class MLImageConstraint extends Struct<MLImageConstraint> {
     );
   }
 
-  static Pointer<Void> initWithPixelsWide(
+  static Pointer initWithPixelsWide(
     Pointer<MLImageConstraint> _self,
     int arg, {
     @required int pixelsHigh,
     @required int pixelType,
-    @required Pointer<Void> sizeConstraint,
+    @required Pointer sizeConstraint,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_Int64_Int64_Uint64_p_returns_p(
@@ -3394,8 +3324,8 @@ class MLImageConstraint extends Struct<MLImageConstraint> {
 
   static int isAllowedValue(
     Pointer<MLImageConstraint> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -3456,7 +3386,7 @@ class MLImageConstraint extends Struct<MLImageConstraint> {
     );
   }
 
-  static Pointer<Void> sizeConstraint(
+  static Pointer sizeConstraint(
     Pointer<MLImageConstraint> _self,
   ) {
     _openDynamicLibrary();
@@ -3467,11 +3397,9 @@ class MLImageConstraint extends Struct<MLImageConstraint> {
   }
 }
 
-/// Objective-C class _MLImageSize_.
+/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/coreml?language=objc).
 @unsized
 class MLImageSize extends Struct<MLImageSize> {
   factory MLImageSize._() {
@@ -3482,7 +3410,7 @@ class MLImageSize extends Struct<MLImageSize> {
     return _objc.allocate("MLImageSize").cast<MLImageSize>();
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<MLImageSize> _self,
   ) {
     _openDynamicLibrary();
@@ -3502,7 +3430,7 @@ class MLImageSize extends Struct<MLImageSize> {
     );
   }
 
-  static Pointer<Void> initWithPixelsWide(
+  static Pointer initWithPixelsWide(
     Pointer<MLImageSize> _self,
     int arg, {
     @required int pixelsHigh,
@@ -3518,7 +3446,7 @@ class MLImageSize extends Struct<MLImageSize> {
 
   static int isEqual(
     Pointer<MLImageSize> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -3530,7 +3458,7 @@ class MLImageSize extends Struct<MLImageSize> {
 
   static int isEqualToImageSize(
     Pointer<MLImageSize> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -3561,11 +3489,9 @@ class MLImageSize extends Struct<MLImageSize> {
   }
 }
 
-/// Objective-C class _MLImageSizeConstraint_.
+/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/coreml?language=objc).
 @unsized
 class MLImageSizeConstraint extends Struct<MLImageSizeConstraint> {
   factory MLImageSizeConstraint._() {
@@ -3578,7 +3504,7 @@ class MLImageSizeConstraint extends Struct<MLImageSizeConstraint> {
         .cast<MLImageSizeConstraint>();
   }
 
-  static Pointer<Void> allowedImageSizeClosestToPixelsWide(
+  static Pointer allowedImageSizeClosestToPixelsWide(
     Pointer<MLImageSizeConstraint> _self,
     int arg, {
     @required int pixelsHigh,
@@ -3597,7 +3523,7 @@ class MLImageSizeConstraint extends Struct<MLImageSizeConstraint> {
     );
   }
 
-  static Pointer<Void> enumeratedImageSizes(
+  static Pointer enumeratedImageSizes(
     Pointer<MLImageSizeConstraint> _self,
   ) {
     _openDynamicLibrary();
@@ -3607,7 +3533,7 @@ class MLImageSizeConstraint extends Struct<MLImageSizeConstraint> {
     );
   }
 
-  static Pointer<Void> imageSizeSet(
+  static Pointer imageSizeSet(
     Pointer<MLImageSizeConstraint> _self,
   ) {
     _openDynamicLibrary();
@@ -3617,7 +3543,7 @@ class MLImageSizeConstraint extends Struct<MLImageSizeConstraint> {
     );
   }
 
-  static Pointer<Void> initUnspecified(
+  static Pointer initUnspecified(
     Pointer<MLImageSizeConstraint> _self,
   ) {
     _openDynamicLibrary();
@@ -3627,9 +3553,9 @@ class MLImageSizeConstraint extends Struct<MLImageSizeConstraint> {
     );
   }
 
-  static Pointer<Void> initWithEnumeratedImageSizes(
+  static Pointer initWithEnumeratedImageSizes(
     Pointer<MLImageSizeConstraint> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -3639,10 +3565,10 @@ class MLImageSizeConstraint extends Struct<MLImageSizeConstraint> {
     );
   }
 
-  static Pointer<Void> initWithPixelsWideRange(
+  static Pointer initWithPixelsWideRange(
     Pointer<MLImageSizeConstraint> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> pixelsHighRange,
+    Pointer arg, {
+    @required Pointer pixelsHighRange,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -3655,8 +3581,8 @@ class MLImageSizeConstraint extends Struct<MLImageSizeConstraint> {
 
   static int isAllowedImageSize(
     Pointer<MLImageSizeConstraint> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -3667,7 +3593,7 @@ class MLImageSizeConstraint extends Struct<MLImageSizeConstraint> {
     );
   }
 
-  static Pointer<Void> pixelsHighRange(
+  static Pointer pixelsHighRange(
     Pointer<MLImageSizeConstraint> _self,
   ) {
     _openDynamicLibrary();
@@ -3677,7 +3603,7 @@ class MLImageSizeConstraint extends Struct<MLImageSizeConstraint> {
     );
   }
 
-  static Pointer<Void> pixelsWideRange(
+  static Pointer pixelsWideRange(
     Pointer<MLImageSizeConstraint> _self,
   ) {
     _openDynamicLibrary();
@@ -3698,11 +3624,9 @@ class MLImageSizeConstraint extends Struct<MLImageSizeConstraint> {
   }
 }
 
-/// Objective-C class _MLImputer_.
+/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/coreml?language=objc).
 @unsized
 class MLImputer extends Struct<MLImputer> {
   factory MLImputer._() {
@@ -3713,7 +3637,7 @@ class MLImputer extends Struct<MLImputer> {
     return _objc.allocate("MLImputer").cast<MLImputer>();
   }
 
-  static Pointer<Void> imputeValue(
+  static Pointer imputeValue(
     Pointer<MLImputer> _self,
   ) {
     _openDynamicLibrary();
@@ -3723,17 +3647,17 @@ class MLImputer extends Struct<MLImputer> {
     );
   }
 
-  static Pointer<Void> initWith(
+  static Pointer initWith(
     Pointer<MLImputer> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> imputeValue,
-    @required Pointer<Void> replaceValue,
-    @required Pointer<Void> inputDescription,
-    @required Pointer<Void> outputDescription,
-    @required Pointer<Void> orderedInputFeatureNames,
-    @required Pointer<Void> orderedOutputFeatureNames,
-    @required Pointer<Void> configuration,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer imputeValue,
+    @required Pointer replaceValue,
+    @required Pointer inputDescription,
+    @required Pointer outputDescription,
+    @required Pointer orderedInputFeatureNames,
+    @required Pointer orderedOutputFeatureNames,
+    @required Pointer configuration,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_p_p_p_p_p_returns_p(
@@ -3752,11 +3676,11 @@ class MLImputer extends Struct<MLImputer> {
     );
   }
 
-  static Pointer<Void> predictionFromFeatures(
+  static Pointer predictionFromFeatures(
     Pointer<MLImputer> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> options,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer options,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -3768,7 +3692,7 @@ class MLImputer extends Struct<MLImputer> {
     );
   }
 
-  static Pointer<Void> replaceValue(
+  static Pointer replaceValue(
     Pointer<MLImputer> _self,
   ) {
     _openDynamicLibrary();
@@ -3779,11 +3703,9 @@ class MLImputer extends Struct<MLImputer> {
   }
 }
 
-/// Objective-C class _MLIndexedBatchProvider_.
+/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/coreml?language=objc).
 @unsized
 class MLIndexedBatchProvider extends Struct<MLIndexedBatchProvider> {
   factory MLIndexedBatchProvider._() {
@@ -3806,7 +3728,7 @@ class MLIndexedBatchProvider extends Struct<MLIndexedBatchProvider> {
     );
   }
 
-  static Pointer<Void> featuresAtIndex(
+  static Pointer featuresAtIndex(
     Pointer<MLIndexedBatchProvider> _self,
     int arg,
   ) {
@@ -3818,7 +3740,7 @@ class MLIndexedBatchProvider extends Struct<MLIndexedBatchProvider> {
     );
   }
 
-  static Pointer<Void> fullBatch(
+  static Pointer fullBatch(
     Pointer<MLIndexedBatchProvider> _self,
   ) {
     _openDynamicLibrary();
@@ -3828,7 +3750,7 @@ class MLIndexedBatchProvider extends Struct<MLIndexedBatchProvider> {
     );
   }
 
-  static Pointer<Void> indices(
+  static Pointer indices(
     Pointer<MLIndexedBatchProvider> _self,
   ) {
     _openDynamicLibrary();
@@ -3838,11 +3760,11 @@ class MLIndexedBatchProvider extends Struct<MLIndexedBatchProvider> {
     );
   }
 
-  static Pointer<Void> initWithBatch(
+  static Pointer initWithBatch(
     Pointer<MLIndexedBatchProvider> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> indices,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer indices,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -3856,7 +3778,7 @@ class MLIndexedBatchProvider extends Struct<MLIndexedBatchProvider> {
 
   static void setFullBatch(
     Pointer<MLIndexedBatchProvider> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -3868,7 +3790,7 @@ class MLIndexedBatchProvider extends Struct<MLIndexedBatchProvider> {
 
   static void setIndices(
     Pointer<MLIndexedBatchProvider> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -3879,11 +3801,9 @@ class MLIndexedBatchProvider extends Struct<MLIndexedBatchProvider> {
   }
 }
 
-/// Objective-C class _MLInt64ProbabilityDictionary_.
+/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/coreml?language=objc).
 @unsized
 class MLInt64ProbabilityDictionary
     extends Struct<MLInt64ProbabilityDictionary> {
@@ -3897,7 +3817,7 @@ class MLInt64ProbabilityDictionary
         .cast<MLInt64ProbabilityDictionary>();
   }
 
-  static Pointer<Void> copy(
+  static Pointer copy(
     Pointer<MLInt64ProbabilityDictionary> _self,
   ) {
     _openDynamicLibrary();
@@ -3917,9 +3837,9 @@ class MLInt64ProbabilityDictionary
     );
   }
 
-  static Pointer<Void> initWithIntLabels(
+  static Pointer initWithIntLabels(
     Pointer<MLInt64ProbabilityDictionary> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -3929,7 +3849,7 @@ class MLInt64ProbabilityDictionary
     );
   }
 
-  static Pointer<Void> keyEnumerator(
+  static Pointer keyEnumerator(
     Pointer<MLInt64ProbabilityDictionary> _self,
   ) {
     _openDynamicLibrary();
@@ -3939,7 +3859,7 @@ class MLInt64ProbabilityDictionary
     );
   }
 
-  static Pointer<Void> mapIntLabelToIndex(
+  static Pointer mapIntLabelToIndex(
     Pointer<MLInt64ProbabilityDictionary> _self,
   ) {
     _openDynamicLibrary();
@@ -3949,9 +3869,9 @@ class MLInt64ProbabilityDictionary
     );
   }
 
-  static Pointer<Void> objectForKey(
+  static Pointer objectForKey(
     Pointer<MLInt64ProbabilityDictionary> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -3963,7 +3883,7 @@ class MLInt64ProbabilityDictionary
 
   static void removeObjectForKey(
     Pointer<MLInt64ProbabilityDictionary> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -3975,7 +3895,7 @@ class MLInt64ProbabilityDictionary
 
   static void setMapIntLabelToIndex(
     Pointer<MLInt64ProbabilityDictionary> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -3987,8 +3907,8 @@ class MLInt64ProbabilityDictionary
 
   static void setObject(
     Pointer<MLInt64ProbabilityDictionary> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> forKey,
+    Pointer arg, {
+    @required Pointer forKey,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -4000,11 +3920,9 @@ class MLInt64ProbabilityDictionary
   }
 }
 
-/// Objective-C class _MLInt64ProbabilityDictionaryEnumerator_.
+/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/coreml?language=objc).
 @unsized
 class MLInt64ProbabilityDictionaryEnumerator
     extends Struct<MLInt64ProbabilityDictionaryEnumerator> {
@@ -4018,9 +3936,9 @@ class MLInt64ProbabilityDictionaryEnumerator
         .cast<MLInt64ProbabilityDictionaryEnumerator>();
   }
 
-  static Pointer<Void> initWithIntMap(
+  static Pointer initWithIntMap(
     Pointer<MLInt64ProbabilityDictionaryEnumerator> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -4030,7 +3948,7 @@ class MLInt64ProbabilityDictionaryEnumerator
     );
   }
 
-  static Pointer<Void> iter(
+  static Pointer iter(
     Pointer<MLInt64ProbabilityDictionaryEnumerator> _self,
   ) {
     _openDynamicLibrary();
@@ -4040,7 +3958,7 @@ class MLInt64ProbabilityDictionaryEnumerator
     );
   }
 
-  static Pointer<Void> iterEnd(
+  static Pointer iterEnd(
     Pointer<MLInt64ProbabilityDictionaryEnumerator> _self,
   ) {
     _openDynamicLibrary();
@@ -4050,7 +3968,7 @@ class MLInt64ProbabilityDictionaryEnumerator
     );
   }
 
-  static Pointer<Void> nextObject(
+  static Pointer nextObject(
     Pointer<MLInt64ProbabilityDictionaryEnumerator> _self,
   ) {
     _openDynamicLibrary();
@@ -4062,7 +3980,7 @@ class MLInt64ProbabilityDictionaryEnumerator
 
   static void setIter(
     Pointer<MLInt64ProbabilityDictionaryEnumerator> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -4074,7 +3992,7 @@ class MLInt64ProbabilityDictionaryEnumerator
 
   static void setIterEnd(
     Pointer<MLInt64ProbabilityDictionaryEnumerator> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -4085,11 +4003,9 @@ class MLInt64ProbabilityDictionaryEnumerator
   }
 }
 
-/// Objective-C class _MLInternalSettings_.
+/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/coreml?language=objc).
 @unsized
 class MLInternalSettings extends Struct<MLInternalSettings> {
   factory MLInternalSettings._() {
@@ -4110,7 +4026,7 @@ class MLInternalSettings extends Struct<MLInternalSettings> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<MLInternalSettings> _self,
   ) {
     _openDynamicLibrary();
@@ -4198,11 +4114,9 @@ class MLInternalSettings extends Struct<MLInternalSettings> {
   }
 }
 
-/// Objective-C class _MLLazyUnionBatchProvider_.
+/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/coreml?language=objc).
 @unsized
 class MLLazyUnionBatchProvider extends Struct<MLLazyUnionBatchProvider> {
   factory MLLazyUnionBatchProvider._() {
@@ -4225,7 +4139,7 @@ class MLLazyUnionBatchProvider extends Struct<MLLazyUnionBatchProvider> {
     );
   }
 
-  static Pointer<Void> featuresAtIndex(
+  static Pointer featuresAtIndex(
     Pointer<MLLazyUnionBatchProvider> _self,
     int arg,
   ) {
@@ -4237,7 +4151,7 @@ class MLLazyUnionBatchProvider extends Struct<MLLazyUnionBatchProvider> {
     );
   }
 
-  static Pointer<Void> first(
+  static Pointer first(
     Pointer<MLLazyUnionBatchProvider> _self,
   ) {
     _openDynamicLibrary();
@@ -4247,11 +4161,11 @@ class MLLazyUnionBatchProvider extends Struct<MLLazyUnionBatchProvider> {
     );
   }
 
-  static Pointer<Void> initWithFeaturesFrom(
+  static Pointer initWithFeaturesFrom(
     Pointer<MLLazyUnionBatchProvider> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> addedToFeaturesFrom,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer addedToFeaturesFrom,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -4263,7 +4177,7 @@ class MLLazyUnionBatchProvider extends Struct<MLLazyUnionBatchProvider> {
     );
   }
 
-  static Pointer<Void> second(
+  static Pointer second(
     Pointer<MLLazyUnionBatchProvider> _self,
   ) {
     _openDynamicLibrary();
@@ -4275,7 +4189,7 @@ class MLLazyUnionBatchProvider extends Struct<MLLazyUnionBatchProvider> {
 
   static void setFirst(
     Pointer<MLLazyUnionBatchProvider> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -4287,7 +4201,7 @@ class MLLazyUnionBatchProvider extends Struct<MLLazyUnionBatchProvider> {
 
   static void setSecond(
     Pointer<MLLazyUnionBatchProvider> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -4298,11 +4212,9 @@ class MLLazyUnionBatchProvider extends Struct<MLLazyUnionBatchProvider> {
   }
 }
 
-/// Objective-C class _MLLazyUnionFeatureProvider_.
+/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/coreml?language=objc).
 @unsized
 class MLLazyUnionFeatureProvider extends Struct<MLLazyUnionFeatureProvider> {
   factory MLLazyUnionFeatureProvider._() {
@@ -4315,7 +4227,7 @@ class MLLazyUnionFeatureProvider extends Struct<MLLazyUnionFeatureProvider> {
         .cast<MLLazyUnionFeatureProvider>();
   }
 
-  static Pointer<Void> featureNames(
+  static Pointer featureNames(
     Pointer<MLLazyUnionFeatureProvider> _self,
   ) {
     _openDynamicLibrary();
@@ -4325,9 +4237,9 @@ class MLLazyUnionFeatureProvider extends Struct<MLLazyUnionFeatureProvider> {
     );
   }
 
-  static Pointer<Void> featureValueForName(
+  static Pointer featureValueForName(
     Pointer<MLLazyUnionFeatureProvider> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -4337,7 +4249,7 @@ class MLLazyUnionFeatureProvider extends Struct<MLLazyUnionFeatureProvider> {
     );
   }
 
-  static Pointer<Void> first(
+  static Pointer first(
     Pointer<MLLazyUnionFeatureProvider> _self,
   ) {
     _openDynamicLibrary();
@@ -4347,10 +4259,10 @@ class MLLazyUnionFeatureProvider extends Struct<MLLazyUnionFeatureProvider> {
     );
   }
 
-  static Pointer<Void> initWithFeaturesFrom(
+  static Pointer initWithFeaturesFrom(
     Pointer<MLLazyUnionFeatureProvider> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> addedToFeaturesFrom,
+    Pointer arg, {
+    @required Pointer addedToFeaturesFrom,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -4361,7 +4273,7 @@ class MLLazyUnionFeatureProvider extends Struct<MLLazyUnionFeatureProvider> {
     );
   }
 
-  static Pointer<Void> second(
+  static Pointer second(
     Pointer<MLLazyUnionFeatureProvider> _self,
   ) {
     _openDynamicLibrary();
@@ -4373,7 +4285,7 @@ class MLLazyUnionFeatureProvider extends Struct<MLLazyUnionFeatureProvider> {
 
   static void setFirst(
     Pointer<MLLazyUnionFeatureProvider> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -4385,7 +4297,7 @@ class MLLazyUnionFeatureProvider extends Struct<MLLazyUnionFeatureProvider> {
 
   static void setSecond(
     Pointer<MLLazyUnionFeatureProvider> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -4395,7 +4307,7 @@ class MLLazyUnionFeatureProvider extends Struct<MLLazyUnionFeatureProvider> {
     );
   }
 
-  static Pointer<Void> unionFeatureProvider(
+  static Pointer unionFeatureProvider(
     Pointer<MLLazyUnionFeatureProvider> _self,
   ) {
     _openDynamicLibrary();
@@ -4406,11 +4318,9 @@ class MLLazyUnionFeatureProvider extends Struct<MLLazyUnionFeatureProvider> {
   }
 }
 
-/// Objective-C class _MLLoader_.
+/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/coreml?language=objc).
 @unsized
 class MLLoader extends Struct<MLLoader> {
   factory MLLoader._() {
@@ -4422,11 +4332,9 @@ class MLLoader extends Struct<MLLoader> {
   }
 }
 
-/// Objective-C class _MLLogging_.
+/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/coreml?language=objc).
 @unsized
 class MLLogging extends Struct<MLLogging> {
   factory MLLogging._() {
@@ -4438,11 +4346,9 @@ class MLLogging extends Struct<MLLogging> {
   }
 }
 
-/// Objective-C class _MLModel_.
+/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/coreml?language=objc).
 @unsized
 class MLModel extends Struct<MLModel> {
   factory MLModel._() {
@@ -4453,7 +4359,7 @@ class MLModel extends Struct<MLModel> {
     return _objc.allocate("MLModel").cast<MLModel>();
   }
 
-  static Pointer<Void> configuration(
+  static Pointer configuration(
     Pointer<MLModel> _self,
   ) {
     _openDynamicLibrary();
@@ -4463,7 +4369,7 @@ class MLModel extends Struct<MLModel> {
     );
   }
 
-  static Pointer<Void> debugQuickLookObject(
+  static Pointer debugQuickLookObject(
     Pointer<MLModel> _self,
   ) {
     _openDynamicLibrary();
@@ -4473,7 +4379,7 @@ class MLModel extends Struct<MLModel> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<MLModel> _self,
   ) {
     _openDynamicLibrary();
@@ -4483,11 +4389,11 @@ class MLModel extends Struct<MLModel> {
     );
   }
 
-  static Pointer<Void> initDescriptionOnlyWithSpecification(
+  static Pointer initDescriptionOnlyWithSpecification(
     Pointer<MLModel> _self,
-    Pointer<Pointer<Void>> arg, {
-    @required Pointer<Void> configuration,
-    @required Pointer<Pointer<Void>> error,
+    Pointer<Pointer> arg, {
+    @required Pointer configuration,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -4500,10 +4406,10 @@ class MLModel extends Struct<MLModel> {
     );
   }
 
-  static Pointer<Void> initInterfaceAndMetadataWithCompiledArchive(
+  static Pointer initInterfaceAndMetadataWithCompiledArchive(
     Pointer<MLModel> _self,
-    Pointer<Pointer<Void>> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer<Pointer> arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -4514,9 +4420,9 @@ class MLModel extends Struct<MLModel> {
     );
   }
 
-  static Pointer<Void> initWithConfiguration(
+  static Pointer initWithConfiguration(
     Pointer<MLModel> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -4526,10 +4432,10 @@ class MLModel extends Struct<MLModel> {
     );
   }
 
-  static Pointer<Void> initWithDescription$configuration$(
+  static Pointer initWithDescription$configuration$(
     Pointer<MLModel> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> configuration,
+    Pointer arg, {
+    @required Pointer configuration,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -4540,9 +4446,9 @@ class MLModel extends Struct<MLModel> {
     );
   }
 
-  static Pointer<Void> initWithDescription$(
+  static Pointer initWithDescription$(
     Pointer<MLModel> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -4552,11 +4458,11 @@ class MLModel extends Struct<MLModel> {
     );
   }
 
-  static Pointer<Void> initWithInterface(
+  static Pointer initWithInterface(
     Pointer<MLModel> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> metadata,
-    @required Pointer<Void> configuration,
+    Pointer arg, {
+    @required Pointer metadata,
+    @required Pointer configuration,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -4568,14 +4474,14 @@ class MLModel extends Struct<MLModel> {
     );
   }
 
-  static Pointer<Void> initWithName(
+  static Pointer initWithName(
     Pointer<MLModel> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> inputDescription,
-    @required Pointer<Void> outputDescription,
-    @required Pointer<Void> orderedInputFeatureNames,
-    @required Pointer<Void> orderedOutputFeatureNames,
-    @required Pointer<Void> configuration,
+    Pointer arg, {
+    @required Pointer inputDescription,
+    @required Pointer outputDescription,
+    @required Pointer orderedInputFeatureNames,
+    @required Pointer orderedOutputFeatureNames,
+    @required Pointer configuration,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_p_p_returns_p(
@@ -4591,7 +4497,7 @@ class MLModel extends Struct<MLModel> {
     );
   }
 
-  static Pointer<Void> interface(
+  static Pointer interface(
     Pointer<MLModel> _self,
   ) {
     _openDynamicLibrary();
@@ -4601,7 +4507,7 @@ class MLModel extends Struct<MLModel> {
     );
   }
 
-  static Pointer<Void> metadata(
+  static Pointer metadata(
     Pointer<MLModel> _self,
   ) {
     _openDynamicLibrary();
@@ -4611,7 +4517,7 @@ class MLModel extends Struct<MLModel> {
     );
   }
 
-  static Pointer<Void> modelDescription(
+  static Pointer modelDescription(
     Pointer<MLModel> _self,
   ) {
     _openDynamicLibrary();
@@ -4621,7 +4527,7 @@ class MLModel extends Struct<MLModel> {
     );
   }
 
-  static Pointer<Void> objectBoundingBoxOutputDescription(
+  static Pointer objectBoundingBoxOutputDescription(
     Pointer<MLModel> _self,
   ) {
     _openDynamicLibrary();
@@ -4631,10 +4537,10 @@ class MLModel extends Struct<MLModel> {
     );
   }
 
-  static Pointer<Void> predictionFromFeatures$error$(
+  static Pointer predictionFromFeatures$error$(
     Pointer<MLModel> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -4645,11 +4551,11 @@ class MLModel extends Struct<MLModel> {
     );
   }
 
-  static Pointer<Void> predictionFromFeatures$options$error$(
+  static Pointer predictionFromFeatures$options$error$(
     Pointer<MLModel> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> options,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer options,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -4661,11 +4567,11 @@ class MLModel extends Struct<MLModel> {
     );
   }
 
-  static Pointer<Void> predictionsFromBatch(
+  static Pointer predictionsFromBatch(
     Pointer<MLModel> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> options,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer options,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -4679,7 +4585,7 @@ class MLModel extends Struct<MLModel> {
 
   static void setConfiguration(
     Pointer<MLModel> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -4691,7 +4597,7 @@ class MLModel extends Struct<MLModel> {
 
   static void setModelDescription(
     Pointer<MLModel> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -4701,10 +4607,10 @@ class MLModel extends Struct<MLModel> {
     );
   }
 
-  static Pointer<Void> vectorizeInput(
+  static Pointer vectorizeInput(
     Pointer<MLModel> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -4715,7 +4621,7 @@ class MLModel extends Struct<MLModel> {
     );
   }
 
-  static Pointer<Void> visionFeaturePrintInfo(
+  static Pointer visionFeaturePrintInfo(
     Pointer<MLModel> _self,
   ) {
     _openDynamicLibrary();
@@ -4726,11 +4632,9 @@ class MLModel extends Struct<MLModel> {
   }
 }
 
-/// Objective-C class _MLModelAsset_.
+/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/coreml?language=objc).
 @unsized
 class MLModelAsset extends Struct<MLModelAsset> {
   factory MLModelAsset._() {
@@ -4741,7 +4645,7 @@ class MLModelAsset extends Struct<MLModelAsset> {
     return _objc.allocate("MLModelAsset").cast<MLModelAsset>();
   }
 
-  static Pointer<Void> asset(
+  static Pointer asset(
     Pointer<MLModelAsset> _self,
   ) {
     _openDynamicLibrary();
@@ -4751,7 +4655,7 @@ class MLModelAsset extends Struct<MLModelAsset> {
     );
   }
 
-  static Pointer<Void> classifier(
+  static Pointer classifier(
     Pointer<MLModelAsset> _self,
   ) {
     _openDynamicLibrary();
@@ -4761,9 +4665,9 @@ class MLModelAsset extends Struct<MLModelAsset> {
     );
   }
 
-  static Pointer<Void> classifierWithError(
+  static Pointer classifierWithError(
     Pointer<MLModelAsset> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -4773,7 +4677,7 @@ class MLModelAsset extends Struct<MLModelAsset> {
     );
   }
 
-  static Pointer<Void> compiledURL(
+  static Pointer compiledURL(
     Pointer<MLModelAsset> _self,
   ) {
     _openDynamicLibrary();
@@ -4783,7 +4687,7 @@ class MLModelAsset extends Struct<MLModelAsset> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<MLModelAsset> _self,
   ) {
     _openDynamicLibrary();
@@ -4793,10 +4697,10 @@ class MLModelAsset extends Struct<MLModelAsset> {
     );
   }
 
-  static Pointer<Void> initWithURL$error$(
+  static Pointer initWithURL$error$(
     Pointer<MLModelAsset> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -4807,11 +4711,11 @@ class MLModelAsset extends Struct<MLModelAsset> {
     );
   }
 
-  static Pointer<Void> initWithURL$configuration$error$(
+  static Pointer initWithURL$configuration$error$(
     Pointer<MLModelAsset> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> configuration,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer configuration,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -4825,7 +4729,7 @@ class MLModelAsset extends Struct<MLModelAsset> {
 
   static int load(
     Pointer<MLModelAsset> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -4835,7 +4739,7 @@ class MLModelAsset extends Struct<MLModelAsset> {
     );
   }
 
-  static Pointer<Void> loadConfiguration(
+  static Pointer loadConfiguration(
     Pointer<MLModelAsset> _self,
   ) {
     _openDynamicLibrary();
@@ -4845,7 +4749,7 @@ class MLModelAsset extends Struct<MLModelAsset> {
     );
   }
 
-  static Pointer<Void> model(
+  static Pointer model(
     Pointer<MLModelAsset> _self,
   ) {
     _openDynamicLibrary();
@@ -4855,9 +4759,9 @@ class MLModelAsset extends Struct<MLModelAsset> {
     );
   }
 
-  static Pointer<Void> modelWithError(
+  static Pointer modelWithError(
     Pointer<MLModelAsset> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -4877,7 +4781,7 @@ class MLModelAsset extends Struct<MLModelAsset> {
     );
   }
 
-  static Pointer<Void> regressor(
+  static Pointer regressor(
     Pointer<MLModelAsset> _self,
   ) {
     _openDynamicLibrary();
@@ -4887,9 +4791,9 @@ class MLModelAsset extends Struct<MLModelAsset> {
     );
   }
 
-  static Pointer<Void> regressorWithError(
+  static Pointer regressorWithError(
     Pointer<MLModelAsset> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -4901,7 +4805,7 @@ class MLModelAsset extends Struct<MLModelAsset> {
 
   static void setAsset(
     Pointer<MLModelAsset> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -4924,11 +4828,9 @@ class MLModelAsset extends Struct<MLModelAsset> {
   }
 }
 
-/// Objective-C class _MLModelConfiguration_.
+/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/coreml?language=objc).
 @unsized
 class MLModelConfiguration extends Struct<MLModelConfiguration> {
   factory MLModelConfiguration._() {
@@ -4949,9 +4851,9 @@ class MLModelConfiguration extends Struct<MLModelConfiguration> {
     );
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<MLModelConfiguration> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -4971,7 +4873,7 @@ class MLModelConfiguration extends Struct<MLModelConfiguration> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<MLModelConfiguration> _self,
   ) {
     _openDynamicLibrary();
@@ -4981,7 +4883,7 @@ class MLModelConfiguration extends Struct<MLModelConfiguration> {
     );
   }
 
-  static Pointer<Void> initWithComputeUnits(
+  static Pointer initWithComputeUnits(
     Pointer<MLModelConfiguration> _self,
     int arg,
   ) {
@@ -4995,7 +4897,7 @@ class MLModelConfiguration extends Struct<MLModelConfiguration> {
 
   static int isEqual(
     Pointer<MLModelConfiguration> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -5007,7 +4909,7 @@ class MLModelConfiguration extends Struct<MLModelConfiguration> {
 
   static int isEqualToModelConfiguration(
     Pointer<MLModelConfiguration> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -5052,11 +4954,9 @@ class MLModelConfiguration extends Struct<MLModelConfiguration> {
   }
 }
 
-/// Objective-C class _MLModelDescription_.
+/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/coreml?language=objc).
 @unsized
 class MLModelDescription extends Struct<MLModelDescription> {
   factory MLModelDescription._() {
@@ -5067,7 +4967,7 @@ class MLModelDescription extends Struct<MLModelDescription> {
     return _objc.allocate("MLModelDescription").cast<MLModelDescription>();
   }
 
-  static Pointer<Void> debugQuickLookObject(
+  static Pointer debugQuickLookObject(
     Pointer<MLModelDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -5077,7 +4977,7 @@ class MLModelDescription extends Struct<MLModelDescription> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<MLModelDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -5087,13 +4987,13 @@ class MLModelDescription extends Struct<MLModelDescription> {
     );
   }
 
-  static Pointer<Void> initWithInputDescriptions(
+  static Pointer initWithInputDescriptions(
     Pointer<MLModelDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> outputDescriptions,
-    @required Pointer<Void> predictedFeatureName,
-    @required Pointer<Void> predictedProbabilitiesName,
-    @required Pointer<Void> metadata,
+    Pointer arg, {
+    @required Pointer outputDescriptions,
+    @required Pointer predictedFeatureName,
+    @required Pointer predictedProbabilitiesName,
+    @required Pointer metadata,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_p_returns_p(
@@ -5108,10 +5008,10 @@ class MLModelDescription extends Struct<MLModelDescription> {
     );
   }
 
-  static Pointer<Void> initWithModelDescriptionSpecification(
+  static Pointer initWithModelDescriptionSpecification(
     Pointer<MLModelDescription> _self,
-    Pointer<Pointer<Void>> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer<Pointer> arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -5122,7 +5022,7 @@ class MLModelDescription extends Struct<MLModelDescription> {
     );
   }
 
-  static Pointer<Void> inputDescriptionsByName(
+  static Pointer inputDescriptionsByName(
     Pointer<MLModelDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -5132,7 +5032,7 @@ class MLModelDescription extends Struct<MLModelDescription> {
     );
   }
 
-  static Pointer<Void> inputFeatureNames(
+  static Pointer inputFeatureNames(
     Pointer<MLModelDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -5144,7 +5044,7 @@ class MLModelDescription extends Struct<MLModelDescription> {
 
   static int isEqual(
     Pointer<MLModelDescription> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -5156,7 +5056,7 @@ class MLModelDescription extends Struct<MLModelDescription> {
 
   static int isEqualToDescription(
     Pointer<MLModelDescription> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -5166,7 +5066,7 @@ class MLModelDescription extends Struct<MLModelDescription> {
     );
   }
 
-  static Pointer<Void> metadata(
+  static Pointer metadata(
     Pointer<MLModelDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -5176,7 +5076,7 @@ class MLModelDescription extends Struct<MLModelDescription> {
     );
   }
 
-  static Pointer<Void> outputDescriptionsByName(
+  static Pointer outputDescriptionsByName(
     Pointer<MLModelDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -5186,7 +5086,7 @@ class MLModelDescription extends Struct<MLModelDescription> {
     );
   }
 
-  static Pointer<Void> outputFeatureNames(
+  static Pointer outputFeatureNames(
     Pointer<MLModelDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -5196,7 +5096,7 @@ class MLModelDescription extends Struct<MLModelDescription> {
     );
   }
 
-  static Pointer<Void> predictedFeatureName(
+  static Pointer predictedFeatureName(
     Pointer<MLModelDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -5206,7 +5106,7 @@ class MLModelDescription extends Struct<MLModelDescription> {
     );
   }
 
-  static Pointer<Void> predictedProbabilitiesName(
+  static Pointer predictedProbabilitiesName(
     Pointer<MLModelDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -5218,7 +5118,7 @@ class MLModelDescription extends Struct<MLModelDescription> {
 
   static void setInputFeatureNames(
     Pointer<MLModelDescription> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -5230,7 +5130,7 @@ class MLModelDescription extends Struct<MLModelDescription> {
 
   static void setOutputFeatureNames(
     Pointer<MLModelDescription> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -5242,8 +5142,8 @@ class MLModelDescription extends Struct<MLModelDescription> {
 
   static int verifyInput(
     Pointer<MLModelDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -5255,11 +5155,9 @@ class MLModelDescription extends Struct<MLModelDescription> {
   }
 }
 
-/// Objective-C class _MLModelDescriptionUtils_.
+/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/coreml?language=objc).
 @unsized
 class MLModelDescriptionUtils extends Struct<MLModelDescriptionUtils> {
   factory MLModelDescriptionUtils._() {
@@ -5273,11 +5171,9 @@ class MLModelDescriptionUtils extends Struct<MLModelDescriptionUtils> {
   }
 }
 
-/// Objective-C class _MLModelErrorUtils_.
+/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/coreml?language=objc).
 @unsized
 class MLModelErrorUtils extends Struct<MLModelErrorUtils> {
   factory MLModelErrorUtils._() {
@@ -5289,11 +5185,9 @@ class MLModelErrorUtils extends Struct<MLModelErrorUtils> {
   }
 }
 
-/// Objective-C class _MLModelIOUtils_.
+/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/coreml?language=objc).
 @unsized
 class MLModelIOUtils extends Struct<MLModelIOUtils> {
   factory MLModelIOUtils._() {
@@ -5305,11 +5199,9 @@ class MLModelIOUtils extends Struct<MLModelIOUtils> {
   }
 }
 
-/// Objective-C class _MLModelInterface_.
+/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/coreml?language=objc).
 @unsized
 class MLModelInterface extends Struct<MLModelInterface> {
   factory MLModelInterface._() {
@@ -5320,7 +5212,7 @@ class MLModelInterface extends Struct<MLModelInterface> {
     return _objc.allocate("MLModelInterface").cast<MLModelInterface>();
   }
 
-  static Pointer<Void> classProbabilityFeatureDescription(
+  static Pointer classProbabilityFeatureDescription(
     Pointer<MLModelInterface> _self,
   ) {
     _openDynamicLibrary();
@@ -5330,14 +5222,14 @@ class MLModelInterface extends Struct<MLModelInterface> {
     );
   }
 
-  static Pointer<Void> initWithInputDescription(
+  static Pointer initWithInputDescription(
     Pointer<MLModelInterface> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> outputDescription,
-    @required Pointer<Void> orderedInputFeatureNames,
-    @required Pointer<Void> orderedOutputFeatureNames,
-    @required Pointer<Void> predictedFeatureName,
-    @required Pointer<Void> predictedProbabilitiesName,
+    Pointer arg, {
+    @required Pointer outputDescription,
+    @required Pointer orderedInputFeatureNames,
+    @required Pointer orderedOutputFeatureNames,
+    @required Pointer predictedFeatureName,
+    @required Pointer predictedProbabilitiesName,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_p_p_returns_p(
@@ -5353,10 +5245,10 @@ class MLModelInterface extends Struct<MLModelInterface> {
     );
   }
 
-  static Pointer<Void> initWithInterfaceFormat(
+  static Pointer initWithInterfaceFormat(
     Pointer<MLModelInterface> _self,
-    Pointer<Pointer<Void>> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer<Pointer> arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -5367,10 +5259,10 @@ class MLModelInterface extends Struct<MLModelInterface> {
     );
   }
 
-  static Pointer<Void> initWithSpecification(
+  static Pointer initWithSpecification(
     Pointer<MLModelInterface> _self,
-    Pointer<Pointer<Void>> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer<Pointer> arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -5381,7 +5273,7 @@ class MLModelInterface extends Struct<MLModelInterface> {
     );
   }
 
-  static Pointer<Void> inputDescription(
+  static Pointer inputDescription(
     Pointer<MLModelInterface> _self,
   ) {
     _openDynamicLibrary();
@@ -5391,7 +5283,7 @@ class MLModelInterface extends Struct<MLModelInterface> {
     );
   }
 
-  static Pointer<Void> inputFeatureNames(
+  static Pointer inputFeatureNames(
     Pointer<MLModelInterface> _self,
   ) {
     _openDynamicLibrary();
@@ -5421,7 +5313,7 @@ class MLModelInterface extends Struct<MLModelInterface> {
     );
   }
 
-  static Pointer<Void> outputDescription(
+  static Pointer outputDescription(
     Pointer<MLModelInterface> _self,
   ) {
     _openDynamicLibrary();
@@ -5431,7 +5323,7 @@ class MLModelInterface extends Struct<MLModelInterface> {
     );
   }
 
-  static Pointer<Void> outputFeatureNames(
+  static Pointer outputFeatureNames(
     Pointer<MLModelInterface> _self,
   ) {
     _openDynamicLibrary();
@@ -5441,7 +5333,7 @@ class MLModelInterface extends Struct<MLModelInterface> {
     );
   }
 
-  static Pointer<Void> predictedClassFeatureDescription(
+  static Pointer predictedClassFeatureDescription(
     Pointer<MLModelInterface> _self,
   ) {
     _openDynamicLibrary();
@@ -5451,7 +5343,7 @@ class MLModelInterface extends Struct<MLModelInterface> {
     );
   }
 
-  static Pointer<Void> predictedFeatureName(
+  static Pointer predictedFeatureName(
     Pointer<MLModelInterface> _self,
   ) {
     _openDynamicLibrary();
@@ -5461,7 +5353,7 @@ class MLModelInterface extends Struct<MLModelInterface> {
     );
   }
 
-  static Pointer<Void> predictedProbabilitiesName(
+  static Pointer predictedProbabilitiesName(
     Pointer<MLModelInterface> _self,
   ) {
     _openDynamicLibrary();
@@ -5471,7 +5363,7 @@ class MLModelInterface extends Struct<MLModelInterface> {
     );
   }
 
-  static Pointer<Void> predictedValueFeatureDescription(
+  static Pointer predictedValueFeatureDescription(
     Pointer<MLModelInterface> _self,
   ) {
     _openDynamicLibrary();
@@ -5483,7 +5375,7 @@ class MLModelInterface extends Struct<MLModelInterface> {
 
   static int validateClassifierInterfaceWithError(
     Pointer<MLModelInterface> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -5495,7 +5387,7 @@ class MLModelInterface extends Struct<MLModelInterface> {
 
   static int validateRegressorInterfaceWithError(
     Pointer<MLModelInterface> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -5506,11 +5398,9 @@ class MLModelInterface extends Struct<MLModelInterface> {
   }
 }
 
-/// Objective-C class _MLModelMetadata_.
+/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/coreml?language=objc).
 @unsized
 class MLModelMetadata extends Struct<MLModelMetadata> {
   factory MLModelMetadata._() {
@@ -5521,7 +5411,7 @@ class MLModelMetadata extends Struct<MLModelMetadata> {
     return _objc.allocate("MLModelMetadata").cast<MLModelMetadata>();
   }
 
-  static Pointer<Void> author(
+  static Pointer author(
     Pointer<MLModelMetadata> _self,
   ) {
     _openDynamicLibrary();
@@ -5531,7 +5421,7 @@ class MLModelMetadata extends Struct<MLModelMetadata> {
     );
   }
 
-  static Pointer<Void> creatorDefined(
+  static Pointer creatorDefined(
     Pointer<MLModelMetadata> _self,
   ) {
     _openDynamicLibrary();
@@ -5541,7 +5431,7 @@ class MLModelMetadata extends Struct<MLModelMetadata> {
     );
   }
 
-  static Pointer<Void> debugDescription(
+  static Pointer debugDescription(
     Pointer<MLModelMetadata> _self,
   ) {
     _openDynamicLibrary();
@@ -5551,9 +5441,9 @@ class MLModelMetadata extends Struct<MLModelMetadata> {
     );
   }
 
-  static Pointer<Void> initWithName$(
+  static Pointer initWithName$(
     Pointer<MLModelMetadata> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -5563,15 +5453,15 @@ class MLModelMetadata extends Struct<MLModelMetadata> {
     );
   }
 
-  static Pointer<Void>
+  static Pointer
       initWithName$shortDescription$versionString$author$license$creatorDefined$(
     Pointer<MLModelMetadata> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> shortDescription,
-    @required Pointer<Void> versionString,
-    @required Pointer<Void> author,
-    @required Pointer<Void> license,
-    @required Pointer<Void> creatorDefined,
+    Pointer arg, {
+    @required Pointer shortDescription,
+    @required Pointer versionString,
+    @required Pointer author,
+    @required Pointer license,
+    @required Pointer creatorDefined,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_p_p_returns_p(
@@ -5587,7 +5477,7 @@ class MLModelMetadata extends Struct<MLModelMetadata> {
     );
   }
 
-  static Pointer<Void> license(
+  static Pointer license(
     Pointer<MLModelMetadata> _self,
   ) {
     _openDynamicLibrary();
@@ -5597,7 +5487,7 @@ class MLModelMetadata extends Struct<MLModelMetadata> {
     );
   }
 
-  static Pointer<Void> name(
+  static Pointer name(
     Pointer<MLModelMetadata> _self,
   ) {
     _openDynamicLibrary();
@@ -5607,7 +5497,7 @@ class MLModelMetadata extends Struct<MLModelMetadata> {
     );
   }
 
-  static Pointer<Void> shortDescription(
+  static Pointer shortDescription(
     Pointer<MLModelMetadata> _self,
   ) {
     _openDynamicLibrary();
@@ -5617,7 +5507,7 @@ class MLModelMetadata extends Struct<MLModelMetadata> {
     );
   }
 
-  static Pointer<Void> versionString(
+  static Pointer versionString(
     Pointer<MLModelMetadata> _self,
   ) {
     _openDynamicLibrary();
@@ -5628,11 +5518,9 @@ class MLModelMetadata extends Struct<MLModelMetadata> {
   }
 }
 
-/// Objective-C class _MLModelTypeRegistry_.
+/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/coreml?language=objc).
 @unsized
 class MLModelTypeRegistry extends Struct<MLModelTypeRegistry> {
   factory MLModelTypeRegistry._() {
@@ -5643,7 +5531,7 @@ class MLModelTypeRegistry extends Struct<MLModelTypeRegistry> {
     return _objc.allocate("MLModelTypeRegistry").cast<MLModelTypeRegistry>();
   }
 
-  static Pointer<Void> classForCompilingModelType(
+  static Pointer classForCompilingModelType(
     Pointer<MLModelTypeRegistry> _self,
     int arg,
   ) {
@@ -5655,7 +5543,7 @@ class MLModelTypeRegistry extends Struct<MLModelTypeRegistry> {
     );
   }
 
-  static Pointer<Void> classForLoadingModelType(
+  static Pointer classForLoadingModelType(
     Pointer<MLModelTypeRegistry> _self,
     int arg,
   ) {
@@ -5667,7 +5555,7 @@ class MLModelTypeRegistry extends Struct<MLModelTypeRegistry> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<MLModelTypeRegistry> _self,
   ) {
     _openDynamicLibrary();
@@ -5678,11 +5566,9 @@ class MLModelTypeRegistry extends Struct<MLModelTypeRegistry> {
   }
 }
 
-/// Objective-C class _MLModelVisionFeaturePrintInfo_.
+/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/coreml?language=objc).
 @unsized
 class MLModelVisionFeaturePrintInfo
     extends Struct<MLModelVisionFeaturePrintInfo> {
@@ -5696,7 +5582,7 @@ class MLModelVisionFeaturePrintInfo
         .cast<MLModelVisionFeaturePrintInfo>();
   }
 
-  static Pointer<Void> postVisionFeaturePrintModel(
+  static Pointer postVisionFeaturePrintModel(
     Pointer<MLModelVisionFeaturePrintInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -5708,7 +5594,7 @@ class MLModelVisionFeaturePrintInfo
 
   static void setPostVisionFeaturePrintModel(
     Pointer<MLModelVisionFeaturePrintInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -5741,11 +5627,9 @@ class MLModelVisionFeaturePrintInfo
   }
 }
 
-/// Objective-C class _MLMultiArray_.
+/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/coreml?language=objc).
 @unsized
 class MLMultiArray extends Struct<MLMultiArray> {
   factory MLMultiArray._() {
@@ -5758,8 +5642,8 @@ class MLMultiArray extends Struct<MLMultiArray> {
 
   static int copyIntoMultiArray(
     Pointer<MLMultiArray> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -5780,7 +5664,7 @@ class MLMultiArray extends Struct<MLMultiArray> {
     );
   }
 
-  static Pointer<Void> dataPointer(
+  static Pointer dataPointer(
     Pointer<MLMultiArray> _self,
   ) {
     _openDynamicLibrary();
@@ -5810,7 +5694,7 @@ class MLMultiArray extends Struct<MLMultiArray> {
     );
   }
 
-  static Pointer<Void> debugQuickLookObject(
+  static Pointer debugQuickLookObject(
     Pointer<MLMultiArray> _self,
   ) {
     _openDynamicLibrary();
@@ -5820,7 +5704,7 @@ class MLMultiArray extends Struct<MLMultiArray> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<MLMultiArray> _self,
   ) {
     _openDynamicLibrary();
@@ -5842,7 +5726,7 @@ class MLMultiArray extends Struct<MLMultiArray> {
 
   static int fillWithNumber(
     Pointer<MLMultiArray> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -5852,14 +5736,14 @@ class MLMultiArray extends Struct<MLMultiArray> {
     );
   }
 
-  static Pointer<Void> initWithDataPointer(
+  static Pointer initWithDataPointer(
     Pointer<MLMultiArray> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> shape,
+    Pointer arg, {
+    @required Pointer shape,
     @required int dataType,
-    @required Pointer<Void> strides,
-    @required Pointer<Void> deallocator,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer strides,
+    @required Pointer deallocator,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_Int64_p_p_p_returns_p(
@@ -5875,12 +5759,12 @@ class MLMultiArray extends Struct<MLMultiArray> {
     );
   }
 
-  static Pointer<Void> initWithShape$dataType$storageOrder$error$(
+  static Pointer initWithShape$dataType$storageOrder$error$(
     Pointer<MLMultiArray> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int dataType,
     @required int storageOrder,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_Int64_Int64_p_returns_p(
@@ -5893,11 +5777,11 @@ class MLMultiArray extends Struct<MLMultiArray> {
     );
   }
 
-  static Pointer<Void> initWithShape$dataType$error$(
+  static Pointer initWithShape$dataType$error$(
     Pointer<MLMultiArray> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int dataType,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_Int64_p_returns_p(
@@ -5933,7 +5817,7 @@ class MLMultiArray extends Struct<MLMultiArray> {
 
   static int isEqual(
     Pointer<MLMultiArray> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -5945,7 +5829,7 @@ class MLMultiArray extends Struct<MLMultiArray> {
 
   static int isEqualToMultiArray(
     Pointer<MLMultiArray> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -5965,7 +5849,7 @@ class MLMultiArray extends Struct<MLMultiArray> {
     );
   }
 
-  static Pointer<Void> multiArrayBuffer(
+  static Pointer multiArrayBuffer(
     Pointer<MLMultiArray> _self,
   ) {
     _openDynamicLibrary();
@@ -5975,7 +5859,7 @@ class MLMultiArray extends Struct<MLMultiArray> {
     );
   }
 
-  static Pointer<Void> numberArray(
+  static Pointer numberArray(
     Pointer<MLMultiArray> _self,
   ) {
     _openDynamicLibrary();
@@ -5985,7 +5869,7 @@ class MLMultiArray extends Struct<MLMultiArray> {
     );
   }
 
-  static Pointer<Void> numberAtOffset(
+  static Pointer numberAtOffset(
     Pointer<MLMultiArray> _self,
     int arg,
   ) {
@@ -6007,7 +5891,7 @@ class MLMultiArray extends Struct<MLMultiArray> {
     );
   }
 
-  static Pointer<Void> objectAtIndexedSubscript(
+  static Pointer objectAtIndexedSubscript(
     Pointer<MLMultiArray> _self,
     int arg,
   ) {
@@ -6019,9 +5903,9 @@ class MLMultiArray extends Struct<MLMultiArray> {
     );
   }
 
-  static Pointer<Void> objectForKeyedSubscript(
+  static Pointer objectForKeyedSubscript(
     Pointer<MLMultiArray> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -6033,7 +5917,7 @@ class MLMultiArray extends Struct<MLMultiArray> {
 
   static int offsetForKeyedSubscript(
     Pointer<MLMultiArray> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Uint64(
@@ -6043,7 +5927,7 @@ class MLMultiArray extends Struct<MLMultiArray> {
     );
   }
 
-  static Pointer<Void> sequeeze(
+  static Pointer sequeeze(
     Pointer<MLMultiArray> _self,
   ) {
     _openDynamicLibrary();
@@ -6053,10 +5937,10 @@ class MLMultiArray extends Struct<MLMultiArray> {
     );
   }
 
-  static Pointer<Void> sequeezeDimensions(
+  static Pointer sequeezeDimensions(
     Pointer<MLMultiArray> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -6069,7 +5953,7 @@ class MLMultiArray extends Struct<MLMultiArray> {
 
   static void setNumber(
     Pointer<MLMultiArray> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int atOffset,
   }) {
     _openDynamicLibrary();
@@ -6083,8 +5967,8 @@ class MLMultiArray extends Struct<MLMultiArray> {
 
   static void setObject$forKeyedSubscript$(
     Pointer<MLMultiArray> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> forKeyedSubscript,
+    Pointer arg, {
+    @required Pointer forKeyedSubscript,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -6097,7 +5981,7 @@ class MLMultiArray extends Struct<MLMultiArray> {
 
   static void setObject$atIndexedSubscript$(
     Pointer<MLMultiArray> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int atIndexedSubscript,
   }) {
     _openDynamicLibrary();
@@ -6111,9 +5995,9 @@ class MLMultiArray extends Struct<MLMultiArray> {
 
   static int setRangeWithRawData(
     Pointer<MLMultiArray> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int destIndex,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_Uint64_p_returns_Int8(
@@ -6125,7 +6009,7 @@ class MLMultiArray extends Struct<MLMultiArray> {
     );
   }
 
-  static Pointer<Void> shape(
+  static Pointer shape(
     Pointer<MLMultiArray> _self,
   ) {
     _openDynamicLibrary();
@@ -6135,12 +6019,12 @@ class MLMultiArray extends Struct<MLMultiArray> {
     );
   }
 
-  static Pointer<Void> sliceAtOrigin(
+  static Pointer sliceAtOrigin(
     Pointer<MLMultiArray> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> shape,
+    Pointer arg, {
+    @required Pointer shape,
     @required int squeeze,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_Int8_p_returns_p(
@@ -6153,7 +6037,7 @@ class MLMultiArray extends Struct<MLMultiArray> {
     );
   }
 
-  static Pointer<Void> strides(
+  static Pointer strides(
     Pointer<MLMultiArray> _self,
   ) {
     _openDynamicLibrary();
@@ -6165,9 +6049,9 @@ class MLMultiArray extends Struct<MLMultiArray> {
 
   static int vectorizeIntoMultiArray(
     Pointer<MLMultiArray> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int storageOrder,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_Int64_p_returns_Int8(
@@ -6180,11 +6064,9 @@ class MLMultiArray extends Struct<MLMultiArray> {
   }
 }
 
-/// Objective-C class _MLMultiArrayAsNSArrayWrapper_.
+/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/coreml?language=objc).
 @unsized
 class MLMultiArrayAsNSArrayWrapper
     extends Struct<MLMultiArrayAsNSArrayWrapper> {
@@ -6208,9 +6090,9 @@ class MLMultiArrayAsNSArrayWrapper
     );
   }
 
-  static Pointer<Void> initWrappingMultiArray(
+  static Pointer initWrappingMultiArray(
     Pointer<MLMultiArrayAsNSArrayWrapper> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -6220,7 +6102,7 @@ class MLMultiArrayAsNSArrayWrapper
     );
   }
 
-  static Pointer<Void> multiArray(
+  static Pointer multiArray(
     Pointer<MLMultiArrayAsNSArrayWrapper> _self,
   ) {
     _openDynamicLibrary();
@@ -6230,7 +6112,7 @@ class MLMultiArrayAsNSArrayWrapper
     );
   }
 
-  static Pointer<Void> objectAtIndex(
+  static Pointer objectAtIndex(
     Pointer<MLMultiArrayAsNSArrayWrapper> _self,
     int arg,
   ) {
@@ -6244,7 +6126,7 @@ class MLMultiArrayAsNSArrayWrapper
 
   static void setMultiArray(
     Pointer<MLMultiArrayAsNSArrayWrapper> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -6255,11 +6137,9 @@ class MLMultiArrayAsNSArrayWrapper
   }
 }
 
-/// Objective-C class _MLMultiArrayConstraint_.
+/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/coreml?language=objc).
 @unsized
 class MLMultiArrayConstraint extends Struct<MLMultiArrayConstraint> {
   factory MLMultiArrayConstraint._() {
@@ -6272,9 +6152,9 @@ class MLMultiArrayConstraint extends Struct<MLMultiArrayConstraint> {
         .cast<MLMultiArrayConstraint>();
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<MLMultiArrayConstraint> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -6294,7 +6174,7 @@ class MLMultiArrayConstraint extends Struct<MLMultiArrayConstraint> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<MLMultiArrayConstraint> _self,
   ) {
     _openDynamicLibrary();
@@ -6304,11 +6184,11 @@ class MLMultiArrayConstraint extends Struct<MLMultiArrayConstraint> {
     );
   }
 
-  static Pointer<Void> initWithShape(
+  static Pointer initWithShape(
     Pointer<MLMultiArrayConstraint> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int dataType,
-    @required Pointer<Void> shapeConstraint,
+    @required Pointer shapeConstraint,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_Int64_p_returns_p(
@@ -6323,7 +6203,7 @@ class MLMultiArrayConstraint extends Struct<MLMultiArrayConstraint> {
   static int isAllowedDataType(
     Pointer<MLMultiArrayConstraint> _self,
     int arg, {
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_Int64_p_returns_Int8(
@@ -6336,8 +6216,8 @@ class MLMultiArrayConstraint extends Struct<MLMultiArrayConstraint> {
 
   static int isAllowedShape(
     Pointer<MLMultiArrayConstraint> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -6350,8 +6230,8 @@ class MLMultiArrayConstraint extends Struct<MLMultiArrayConstraint> {
 
   static int isAllowedValue$error$(
     Pointer<MLMultiArrayConstraint> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -6364,9 +6244,9 @@ class MLMultiArrayConstraint extends Struct<MLMultiArrayConstraint> {
 
   static int isAllowedValue$neuralNetworkInput$error$(
     Pointer<MLMultiArrayConstraint> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int neuralNetworkInput,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_Int8_p_returns_Int8(
@@ -6378,7 +6258,7 @@ class MLMultiArrayConstraint extends Struct<MLMultiArrayConstraint> {
     );
   }
 
-  static Pointer<Void> shape(
+  static Pointer shape(
     Pointer<MLMultiArrayConstraint> _self,
   ) {
     _openDynamicLibrary();
@@ -6388,7 +6268,7 @@ class MLMultiArrayConstraint extends Struct<MLMultiArrayConstraint> {
     );
   }
 
-  static Pointer<Void> shapeConstraint(
+  static Pointer shapeConstraint(
     Pointer<MLMultiArrayConstraint> _self,
   ) {
     _openDynamicLibrary();
@@ -6399,11 +6279,9 @@ class MLMultiArrayConstraint extends Struct<MLMultiArrayConstraint> {
   }
 }
 
-/// Objective-C class _MLMultiArrayShapeConstraint_.
+/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/coreml?language=objc).
 @unsized
 class MLMultiArrayShapeConstraint extends Struct<MLMultiArrayShapeConstraint> {
   factory MLMultiArrayShapeConstraint._() {
@@ -6416,7 +6294,7 @@ class MLMultiArrayShapeConstraint extends Struct<MLMultiArrayShapeConstraint> {
         .cast<MLMultiArrayShapeConstraint>();
   }
 
-  static Pointer<Void> enumeratedShapes(
+  static Pointer enumeratedShapes(
     Pointer<MLMultiArrayShapeConstraint> _self,
   ) {
     _openDynamicLibrary();
@@ -6426,9 +6304,9 @@ class MLMultiArrayShapeConstraint extends Struct<MLMultiArrayShapeConstraint> {
     );
   }
 
-  static Pointer<Void> findAvailableShape(
+  static Pointer findAvailableShape(
     Pointer<MLMultiArrayShapeConstraint> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -6438,7 +6316,7 @@ class MLMultiArrayShapeConstraint extends Struct<MLMultiArrayShapeConstraint> {
     );
   }
 
-  static Pointer<Void> initUnspecified(
+  static Pointer initUnspecified(
     Pointer<MLMultiArrayShapeConstraint> _self,
   ) {
     _openDynamicLibrary();
@@ -6448,9 +6326,9 @@ class MLMultiArrayShapeConstraint extends Struct<MLMultiArrayShapeConstraint> {
     );
   }
 
-  static Pointer<Void> initWithEnumeratedShapes(
+  static Pointer initWithEnumeratedShapes(
     Pointer<MLMultiArrayShapeConstraint> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -6460,9 +6338,9 @@ class MLMultiArrayShapeConstraint extends Struct<MLMultiArrayShapeConstraint> {
     );
   }
 
-  static Pointer<Void> initWithSizeRangeForDimension(
+  static Pointer initWithSizeRangeForDimension(
     Pointer<MLMultiArrayShapeConstraint> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -6474,8 +6352,8 @@ class MLMultiArrayShapeConstraint extends Struct<MLMultiArrayShapeConstraint> {
 
   static int isAllowedShape(
     Pointer<MLMultiArrayShapeConstraint> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -6486,7 +6364,7 @@ class MLMultiArrayShapeConstraint extends Struct<MLMultiArrayShapeConstraint> {
     );
   }
 
-  static Pointer<Void> shapeSet(
+  static Pointer shapeSet(
     Pointer<MLMultiArrayShapeConstraint> _self,
   ) {
     _openDynamicLibrary();
@@ -6496,7 +6374,7 @@ class MLMultiArrayShapeConstraint extends Struct<MLMultiArrayShapeConstraint> {
     );
   }
 
-  static Pointer<Void> sizeRangeForDimension(
+  static Pointer sizeRangeForDimension(
     Pointer<MLMultiArrayShapeConstraint> _self,
   ) {
     _openDynamicLibrary();
@@ -6517,11 +6395,9 @@ class MLMultiArrayShapeConstraint extends Struct<MLMultiArrayShapeConstraint> {
   }
 }
 
-/// Objective-C class _MLMultiArrayUtils_.
+/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/coreml?language=objc).
 @unsized
 class MLMultiArrayUtils extends Struct<MLMultiArrayUtils> {
   factory MLMultiArrayUtils._() {
@@ -6533,11 +6409,9 @@ class MLMultiArrayUtils extends Struct<MLMultiArrayUtils> {
   }
 }
 
-/// Objective-C class _MLMultiArrayView_.
+/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/coreml?language=objc).
 @unsized
 class MLMultiArrayView extends Struct<MLMultiArrayView> {
   factory MLMultiArrayView._() {
@@ -6548,13 +6422,13 @@ class MLMultiArrayView extends Struct<MLMultiArrayView> {
     return _objc.allocate("MLMultiArrayView").cast<MLMultiArrayView>();
   }
 
-  static Pointer<Void> initSlicingMultiArray(
+  static Pointer initSlicingMultiArray(
     Pointer<MLMultiArrayView> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> origin,
-    @required Pointer<Void> shape,
+    Pointer arg, {
+    @required Pointer origin,
+    @required Pointer shape,
     @required int squeeze,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_Int8_p_returns_p(
@@ -6568,11 +6442,11 @@ class MLMultiArrayView extends Struct<MLMultiArrayView> {
     );
   }
 
-  static Pointer<Void> initSqueezingMultiArray(
+  static Pointer initSqueezingMultiArray(
     Pointer<MLMultiArrayView> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> dimensions,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer dimensions,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -6584,7 +6458,7 @@ class MLMultiArrayView extends Struct<MLMultiArrayView> {
     );
   }
 
-  static Pointer<Void> parent(
+  static Pointer parent(
     Pointer<MLMultiArrayView> _self,
   ) {
     _openDynamicLibrary();
@@ -6595,11 +6469,9 @@ class MLMultiArrayView extends Struct<MLMultiArrayView> {
   }
 }
 
-/// Objective-C class _MLNeuralNetworkEngine_.
+/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/coreml?language=objc).
 @unsized
 class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
   factory MLNeuralNetworkEngine._() {
@@ -6612,11 +6484,11 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
         .cast<MLNeuralNetworkEngine>();
   }
 
-  static Pointer<Void> addClassifierInformationToOutput(
+  static Pointer addClassifierInformationToOutput(
     Pointer<MLNeuralNetworkEngine> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> options,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer options,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -6628,7 +6500,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     );
   }
 
-  static Pointer<Void> batches(
+  static Pointer batches(
     Pointer<MLNeuralNetworkEngine> _self,
   ) {
     _openDynamicLibrary();
@@ -6640,10 +6512,10 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
 
   static int bindInputsAndOutputs(
     Pointer<MLNeuralNetworkEngine> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> allocatedImageData,
+    Pointer arg, {
+    @required Pointer<Pointer> allocatedImageData,
     @required int bufferIndex,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_Uint64_p_returns_Int8(
@@ -6657,7 +6529,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     );
   }
 
-  static Pointer<Void> bufferAvailable(
+  static Pointer bufferAvailable(
     Pointer<MLNeuralNetworkEngine> _self,
   ) {
     _openDynamicLibrary();
@@ -6667,7 +6539,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     );
   }
 
-  static Pointer<Void> bufferSemaphore(
+  static Pointer bufferSemaphore(
     Pointer<MLNeuralNetworkEngine> _self,
   ) {
     _openDynamicLibrary();
@@ -6677,7 +6549,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     );
   }
 
-  static Pointer<Void> classLabels(
+  static Pointer classLabels(
     Pointer<MLNeuralNetworkEngine> _self,
   ) {
     _openDynamicLibrary();
@@ -6687,7 +6559,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     );
   }
 
-  static Pointer<Void> classScoreVectorName(
+  static Pointer classScoreVectorName(
     Pointer<MLNeuralNetworkEngine> _self,
   ) {
     _openDynamicLibrary();
@@ -6697,11 +6569,11 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     );
   }
 
-  static Pointer<Void> classify(
+  static Pointer classify(
     Pointer<MLNeuralNetworkEngine> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> options,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer options,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -6713,7 +6585,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     );
   }
 
-  static Pointer<Void> configurationNames(
+  static Pointer configurationNames(
     Pointer<MLNeuralNetworkEngine> _self,
   ) {
     _openDynamicLibrary();
@@ -6723,7 +6595,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     );
   }
 
-  static Pointer<Void> context(
+  static Pointer context(
     Pointer<MLNeuralNetworkEngine> _self,
   ) {
     _openDynamicLibrary();
@@ -6733,11 +6605,11 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     );
   }
 
-  static Pointer<Void> convertPredictionToClassifierResult(
+  static Pointer convertPredictionToClassifierResult(
     Pointer<MLNeuralNetworkEngine> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> withOptions,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer withOptions,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -6750,7 +6622,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     );
   }
 
-  static Pointer<Void> currentConfigurationName(
+  static Pointer currentConfigurationName(
     Pointer<MLNeuralNetworkEngine> _self,
   ) {
     _openDynamicLibrary();
@@ -6780,7 +6652,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     );
   }
 
-  static Pointer<Void> espressoQueue(
+  static Pointer espressoQueue(
     Pointer<MLNeuralNetworkEngine> _self,
   ) {
     _openDynamicLibrary();
@@ -6790,10 +6662,10 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     );
   }
 
-  static Pointer<Void> evaluate(
+  static Pointer evaluate(
     Pointer<MLNeuralNetworkEngine> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -6804,11 +6676,11 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     );
   }
 
-  static Pointer<Void> evaluateBatch(
+  static Pointer evaluateBatch(
     Pointer<MLNeuralNetworkEngine> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> options,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer options,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -6820,10 +6692,10 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     );
   }
 
-  static Pointer<Void> evaluateNoAutoRelease(
+  static Pointer evaluateNoAutoRelease(
     Pointer<MLNeuralNetworkEngine> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -6836,7 +6708,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
 
   static int fillInInitialShapeFromEspressoNet(
     Pointer<MLNeuralNetworkEngine> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -6846,7 +6718,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     );
   }
 
-  static Pointer<Void> getAvailableOutputBlobList(
+  static Pointer getAvailableOutputBlobList(
     Pointer<MLNeuralNetworkEngine> _self,
   ) {
     _openDynamicLibrary();
@@ -6866,7 +6738,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     );
   }
 
-  static Pointer<Void> has1DConvOptional(
+  static Pointer has1DConvOptional(
     Pointer<MLNeuralNetworkEngine> _self,
   ) {
     _openDynamicLibrary();
@@ -6876,7 +6748,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     );
   }
 
-  static Pointer<Void> hasBidirectionalLayer(
+  static Pointer hasBidirectionalLayer(
     Pointer<MLNeuralNetworkEngine> _self,
   ) {
     _openDynamicLibrary();
@@ -6886,7 +6758,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     );
   }
 
-  static Pointer<Void> heights(
+  static Pointer heights(
     Pointer<MLNeuralNetworkEngine> _self,
   ) {
     _openDynamicLibrary();
@@ -6896,14 +6768,14 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     );
   }
 
-  static Pointer<Void>
+  static Pointer
       initWithSpec$classScoreVectorName$classLabels$configuration$error$(
     Pointer<MLNeuralNetworkEngine> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> classScoreVectorName,
-    @required Pointer<Void> classLabels,
-    @required Pointer<Void> configuration,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer classScoreVectorName,
+    @required Pointer classLabels,
+    @required Pointer configuration,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_p_returns_p(
@@ -6918,12 +6790,12 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     );
   }
 
-  static Pointer<Void> initWithSpec$classScoreVectorName$classLabels$error$(
+  static Pointer initWithSpec$classScoreVectorName$classLabels$error$(
     Pointer<MLNeuralNetworkEngine> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> classScoreVectorName,
-    @required Pointer<Void> classLabels,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer classScoreVectorName,
+    @required Pointer classLabels,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_returns_p(
@@ -6936,7 +6808,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     );
   }
 
-  static Pointer<Void> inputBuffers(
+  static Pointer inputBuffers(
     Pointer<MLNeuralNetworkEngine> _self,
   ) {
     _openDynamicLibrary();
@@ -6946,7 +6818,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     );
   }
 
-  static Pointer<Void> inputLayers(
+  static Pointer inputLayers(
     Pointer<MLNeuralNetworkEngine> _self,
   ) {
     _openDynamicLibrary();
@@ -6966,7 +6838,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     );
   }
 
-  static Pointer<Void> isEspresoBiasPreprocessingShared(
+  static Pointer isEspresoBiasPreprocessingShared(
     Pointer<MLNeuralNetworkEngine> _self,
   ) {
     _openDynamicLibrary();
@@ -6986,7 +6858,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     );
   }
 
-  static Pointer<Void> ks(
+  static Pointer ks(
     Pointer<MLNeuralNetworkEngine> _self,
   ) {
     _openDynamicLibrary();
@@ -6996,7 +6868,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     );
   }
 
-  static Pointer<Void> modelFilePath(
+  static Pointer modelFilePath(
     Pointer<MLNeuralNetworkEngine> _self,
   ) {
     _openDynamicLibrary();
@@ -7006,7 +6878,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     );
   }
 
-  static Pointer<Void> network(
+  static Pointer network(
     Pointer<MLNeuralNetworkEngine> _self,
   ) {
     _openDynamicLibrary();
@@ -7046,7 +6918,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     );
   }
 
-  static Pointer<Void> optionalInputTypes(
+  static Pointer optionalInputTypes(
     Pointer<MLNeuralNetworkEngine> _self,
   ) {
     _openDynamicLibrary();
@@ -7056,7 +6928,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     );
   }
 
-  static Pointer<Void> outputBuffers(
+  static Pointer outputBuffers(
     Pointer<MLNeuralNetworkEngine> _self,
   ) {
     _openDynamicLibrary();
@@ -7066,7 +6938,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     );
   }
 
-  static Pointer<Void> outputLayers(
+  static Pointer outputLayers(
     Pointer<MLNeuralNetworkEngine> _self,
   ) {
     _openDynamicLibrary();
@@ -7076,7 +6948,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     );
   }
 
-  static Pointer<Void> params(
+  static Pointer params(
     Pointer<MLNeuralNetworkEngine> _self,
   ) {
     _openDynamicLibrary();
@@ -7086,7 +6958,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     );
   }
 
-  static Pointer<Void> plan(
+  static Pointer plan(
     Pointer<MLNeuralNetworkEngine> _self,
   ) {
     _openDynamicLibrary();
@@ -7096,10 +6968,10 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     );
   }
 
-  static Pointer<Void> populateOutputs(
+  static Pointer populateOutputs(
     Pointer<MLNeuralNetworkEngine> _self,
     int arg, {
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_Uint64_p_returns_p(
@@ -7120,11 +6992,11 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     );
   }
 
-  static Pointer<Void> predictionFromFeatures(
+  static Pointer predictionFromFeatures(
     Pointer<MLNeuralNetworkEngine> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> options,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer options,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -7136,11 +7008,11 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     );
   }
 
-  static Pointer<Void> predictionsFromBatch(
+  static Pointer predictionsFromBatch(
     Pointer<MLNeuralNetworkEngine> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> options,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer options,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -7152,7 +7024,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     );
   }
 
-  static Pointer<Void> predictionsQueue(
+  static Pointer predictionsQueue(
     Pointer<MLNeuralNetworkEngine> _self,
   ) {
     _openDynamicLibrary();
@@ -7162,7 +7034,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     );
   }
 
-  static Pointer<Void> probDict(
+  static Pointer probDict(
     Pointer<MLNeuralNetworkEngine> _self,
   ) {
     _openDynamicLibrary();
@@ -7184,7 +7056,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
 
   static int rebuildPlan(
     Pointer<MLNeuralNetworkEngine> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -7194,11 +7066,11 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     );
   }
 
-  static Pointer<Void> regress(
+  static Pointer regress(
     Pointer<MLNeuralNetworkEngine> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> options,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer options,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -7224,8 +7096,8 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
 
   static int resetSizes(
     Pointer<MLNeuralNetworkEngine> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -7238,8 +7110,8 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
 
   static int resetSizesNoAutoRelease(
     Pointer<MLNeuralNetworkEngine> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -7252,8 +7124,8 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
 
   static int resetSizesWithEspressoConfigurations(
     Pointer<MLNeuralNetworkEngine> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -7266,7 +7138,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
 
   static int sequenceNamed(
     Pointer<MLNeuralNetworkEngine> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int32(
@@ -7276,7 +7148,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     );
   }
 
-  static Pointer<Void> sequences(
+  static Pointer sequences(
     Pointer<MLNeuralNetworkEngine> _self,
   ) {
     _openDynamicLibrary();
@@ -7288,7 +7160,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
 
   static void setBatches(
     Pointer<MLNeuralNetworkEngine> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -7300,7 +7172,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
 
   static void setBufferAvailable(
     Pointer<MLNeuralNetworkEngine> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -7312,7 +7184,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
 
   static void setBufferSemaphore(
     Pointer<MLNeuralNetworkEngine> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -7324,7 +7196,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
 
   static void setClassLabels(
     Pointer<MLNeuralNetworkEngine> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -7336,7 +7208,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
 
   static void setClassScoreVectorName(
     Pointer<MLNeuralNetworkEngine> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -7348,7 +7220,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
 
   static void setConfigurationNames(
     Pointer<MLNeuralNetworkEngine> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -7360,7 +7232,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
 
   static void setContext(
     Pointer<MLNeuralNetworkEngine> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -7372,7 +7244,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
 
   static void setCurrentConfigurationName(
     Pointer<MLNeuralNetworkEngine> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -7396,7 +7268,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
 
   static void setEspressoQueue(
     Pointer<MLNeuralNetworkEngine> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -7420,7 +7292,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
 
   static void setHas1DConvOptional(
     Pointer<MLNeuralNetworkEngine> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -7432,7 +7304,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
 
   static void setHasBidirectionalLayer(
     Pointer<MLNeuralNetworkEngine> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -7444,7 +7316,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
 
   static void setHeights(
     Pointer<MLNeuralNetworkEngine> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -7456,7 +7328,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
 
   static void setInputBuffers(
     Pointer<MLNeuralNetworkEngine> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -7480,7 +7352,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
 
   static void setIsEspresoBiasPreprocessingShared(
     Pointer<MLNeuralNetworkEngine> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -7504,7 +7376,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
 
   static void setKs(
     Pointer<MLNeuralNetworkEngine> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -7516,7 +7388,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
 
   static void setModelFilePath(
     Pointer<MLNeuralNetworkEngine> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -7528,7 +7400,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
 
   static void setNetwork(
     Pointer<MLNeuralNetworkEngine> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -7540,7 +7412,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
 
   static void setOptionalInputTypes(
     Pointer<MLNeuralNetworkEngine> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -7552,7 +7424,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
 
   static void setOutputBuffers(
     Pointer<MLNeuralNetworkEngine> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -7564,7 +7436,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
 
   static void setParams(
     Pointer<MLNeuralNetworkEngine> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -7576,7 +7448,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
 
   static void setPlan(
     Pointer<MLNeuralNetworkEngine> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -7600,7 +7472,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
 
   static void setPredictionsQueue(
     Pointer<MLNeuralNetworkEngine> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -7612,7 +7484,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
 
   static void setProbDict(
     Pointer<MLNeuralNetworkEngine> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -7636,7 +7508,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
 
   static void setSequences(
     Pointer<MLNeuralNetworkEngine> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -7648,7 +7520,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
 
   static void setSubmitSemaphore(
     Pointer<MLNeuralNetworkEngine> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -7672,7 +7544,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
 
   static void setWidths(
     Pointer<MLNeuralNetworkEngine> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -7682,11 +7554,11 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     );
   }
 
-  static Pointer<Void> sortBatchByShape(
+  static Pointer sortBatchByShape(
     Pointer<MLNeuralNetworkEngine> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> withMap,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> withMap,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -7698,7 +7570,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     );
   }
 
-  static Pointer<Void> submitSemaphore(
+  static Pointer submitSemaphore(
     Pointer<MLNeuralNetworkEngine> _self,
   ) {
     _openDynamicLibrary();
@@ -7710,8 +7582,8 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
 
   static int unlockCVPixelBuffers(
     Pointer<MLNeuralNetworkEngine> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -7742,10 +7614,10 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     );
   }
 
-  static Pointer<Void> verifyInputs(
+  static Pointer verifyInputs(
     Pointer<MLNeuralNetworkEngine> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -7756,7 +7628,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     );
   }
 
-  static Pointer<Void> widths(
+  static Pointer widths(
     Pointer<MLNeuralNetworkEngine> _self,
   ) {
     _openDynamicLibrary();
@@ -7767,11 +7639,9 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
   }
 }
 
-/// Objective-C class _MLNeuralNetworkSpecification_.
+/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/coreml?language=objc).
 @unsized
 class MLNeuralNetworkSpecification
     extends Struct<MLNeuralNetworkSpecification> {
@@ -7785,7 +7655,7 @@ class MLNeuralNetworkSpecification
         .cast<MLNeuralNetworkSpecification>();
   }
 
-  static Pointer<Void> blueBias(
+  static Pointer blueBias(
     Pointer<MLNeuralNetworkSpecification> _self,
   ) {
     _openDynamicLibrary();
@@ -7795,7 +7665,7 @@ class MLNeuralNetworkSpecification
     );
   }
 
-  static Pointer<Void> configurationNames(
+  static Pointer configurationNames(
     Pointer<MLNeuralNetworkSpecification> _self,
   ) {
     _openDynamicLibrary();
@@ -7815,7 +7685,7 @@ class MLNeuralNetworkSpecification
     );
   }
 
-  static Pointer<Void> grayBias(
+  static Pointer grayBias(
     Pointer<MLNeuralNetworkSpecification> _self,
   ) {
     _openDynamicLibrary();
@@ -7825,7 +7695,7 @@ class MLNeuralNetworkSpecification
     );
   }
 
-  static Pointer<Void> greenBias(
+  static Pointer greenBias(
     Pointer<MLNeuralNetworkSpecification> _self,
   ) {
     _openDynamicLibrary();
@@ -7835,14 +7705,14 @@ class MLNeuralNetworkSpecification
     );
   }
 
-  static Pointer<Void>
+  static Pointer
       initWithFeatureDescriptions$inputDesc$outputDesc$outputLayerNames$parameters$(
     Pointer<MLNeuralNetworkSpecification> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> inputDesc,
-    @required Pointer<Void> outputDesc,
-    @required Pointer<Void> outputLayerNames,
-    @required Pointer<Void> parameters,
+    Pointer arg, {
+    @required Pointer inputDesc,
+    @required Pointer outputDesc,
+    @required Pointer outputLayerNames,
+    @required Pointer parameters,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_p_returns_p(
@@ -7857,15 +7727,15 @@ class MLNeuralNetworkSpecification
     );
   }
 
-  static Pointer<Void>
+  static Pointer
       initWithFeatureDescriptions$inputDesc$outputDesc$outputLayerNames$parameters$configurations$(
     Pointer<MLNeuralNetworkSpecification> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> inputDesc,
-    @required Pointer<Void> outputDesc,
-    @required Pointer<Void> outputLayerNames,
-    @required Pointer<Void> parameters,
-    @required Pointer<Void> configurations,
+    Pointer arg, {
+    @required Pointer inputDesc,
+    @required Pointer outputDesc,
+    @required Pointer outputLayerNames,
+    @required Pointer parameters,
+    @required Pointer configurations,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_p_p_returns_p(
@@ -7881,12 +7751,12 @@ class MLNeuralNetworkSpecification
     );
   }
 
-  static Pointer<Void> initWithFilePath(
+  static Pointer initWithFilePath(
     Pointer<MLNeuralNetworkSpecification> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> inputLayerNames,
-    @required Pointer<Void> outputLayerNames,
-    @required Pointer<Void> parameters,
+    Pointer arg, {
+    @required Pointer inputLayerNames,
+    @required Pointer outputLayerNames,
+    @required Pointer parameters,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_returns_p(
@@ -7900,7 +7770,7 @@ class MLNeuralNetworkSpecification
     );
   }
 
-  static Pointer<Void> inputDescription(
+  static Pointer inputDescription(
     Pointer<MLNeuralNetworkSpecification> _self,
   ) {
     _openDynamicLibrary();
@@ -7910,7 +7780,7 @@ class MLNeuralNetworkSpecification
     );
   }
 
-  static Pointer<Void> inputLayerNames(
+  static Pointer inputLayerNames(
     Pointer<MLNeuralNetworkSpecification> _self,
   ) {
     _openDynamicLibrary();
@@ -7920,7 +7790,7 @@ class MLNeuralNetworkSpecification
     );
   }
 
-  static Pointer<Void> isBiasPreprocessingShared(
+  static Pointer isBiasPreprocessingShared(
     Pointer<MLNeuralNetworkSpecification> _self,
   ) {
     _openDynamicLibrary();
@@ -7930,7 +7800,7 @@ class MLNeuralNetworkSpecification
     );
   }
 
-  static Pointer<Void> isGrayScale(
+  static Pointer isGrayScale(
     Pointer<MLNeuralNetworkSpecification> _self,
   ) {
     _openDynamicLibrary();
@@ -7940,7 +7810,7 @@ class MLNeuralNetworkSpecification
     );
   }
 
-  static Pointer<Void> isOrderedBgr(
+  static Pointer isOrderedBgr(
     Pointer<MLNeuralNetworkSpecification> _self,
   ) {
     _openDynamicLibrary();
@@ -7950,7 +7820,7 @@ class MLNeuralNetworkSpecification
     );
   }
 
-  static Pointer<Void> modelFilePath(
+  static Pointer modelFilePath(
     Pointer<MLNeuralNetworkSpecification> _self,
   ) {
     _openDynamicLibrary();
@@ -7960,7 +7830,7 @@ class MLNeuralNetworkSpecification
     );
   }
 
-  static Pointer<Void> name(
+  static Pointer name(
     Pointer<MLNeuralNetworkSpecification> _self,
   ) {
     _openDynamicLibrary();
@@ -7970,7 +7840,7 @@ class MLNeuralNetworkSpecification
     );
   }
 
-  static Pointer<Void> outputDescription(
+  static Pointer outputDescription(
     Pointer<MLNeuralNetworkSpecification> _self,
   ) {
     _openDynamicLibrary();
@@ -7980,7 +7850,7 @@ class MLNeuralNetworkSpecification
     );
   }
 
-  static Pointer<Void> outputLayerNames(
+  static Pointer outputLayerNames(
     Pointer<MLNeuralNetworkSpecification> _self,
   ) {
     _openDynamicLibrary();
@@ -8010,7 +7880,7 @@ class MLNeuralNetworkSpecification
     );
   }
 
-  static Pointer<Void> redBias(
+  static Pointer redBias(
     Pointer<MLNeuralNetworkSpecification> _self,
   ) {
     _openDynamicLibrary();
@@ -8020,7 +7890,7 @@ class MLNeuralNetworkSpecification
     );
   }
 
-  static Pointer<Void> scale(
+  static Pointer scale(
     Pointer<MLNeuralNetworkSpecification> _self,
   ) {
     _openDynamicLibrary();
@@ -8032,7 +7902,7 @@ class MLNeuralNetworkSpecification
 
   static void setBlueBias(
     Pointer<MLNeuralNetworkSpecification> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -8044,7 +7914,7 @@ class MLNeuralNetworkSpecification
 
   static void setConfigurationNames(
     Pointer<MLNeuralNetworkSpecification> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -8068,7 +7938,7 @@ class MLNeuralNetworkSpecification
 
   static void setGrayBias(
     Pointer<MLNeuralNetworkSpecification> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -8080,7 +7950,7 @@ class MLNeuralNetworkSpecification
 
   static void setGreenBias(
     Pointer<MLNeuralNetworkSpecification> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -8092,7 +7962,7 @@ class MLNeuralNetworkSpecification
 
   static void setInputDescription(
     Pointer<MLNeuralNetworkSpecification> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -8104,7 +7974,7 @@ class MLNeuralNetworkSpecification
 
   static void setIsBiasPreprocessingShared(
     Pointer<MLNeuralNetworkSpecification> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -8116,7 +7986,7 @@ class MLNeuralNetworkSpecification
 
   static void setIsGrayScale(
     Pointer<MLNeuralNetworkSpecification> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -8128,7 +7998,7 @@ class MLNeuralNetworkSpecification
 
   static void setModelFilePath(
     Pointer<MLNeuralNetworkSpecification> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -8140,7 +8010,7 @@ class MLNeuralNetworkSpecification
 
   static void setName(
     Pointer<MLNeuralNetworkSpecification> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -8152,7 +8022,7 @@ class MLNeuralNetworkSpecification
 
   static void setOrderedBgr(
     Pointer<MLNeuralNetworkSpecification> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -8164,7 +8034,7 @@ class MLNeuralNetworkSpecification
 
   static void setOutputDescription(
     Pointer<MLNeuralNetworkSpecification> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -8200,7 +8070,7 @@ class MLNeuralNetworkSpecification
 
   static void setRedBias(
     Pointer<MLNeuralNetworkSpecification> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -8212,7 +8082,7 @@ class MLNeuralNetworkSpecification
 
   static void setScale(
     Pointer<MLNeuralNetworkSpecification> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -8223,11 +8093,9 @@ class MLNeuralNetworkSpecification
   }
 }
 
-/// Objective-C class _MLNonMaximumSuppression_.
+/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/coreml?language=objc).
 @unsized
 class MLNonMaximumSuppression extends Struct<MLNonMaximumSuppression> {
   factory MLNonMaximumSuppression._() {
@@ -8240,12 +8108,12 @@ class MLNonMaximumSuppression extends Struct<MLNonMaximumSuppression> {
         .cast<MLNonMaximumSuppression>();
   }
 
-  static Pointer<Void> initWithParameters(
+  static Pointer initWithParameters(
     Pointer<MLNonMaximumSuppression> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> modelDescription,
-    @required Pointer<Void> configuration,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer modelDescription,
+    @required Pointer configuration,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_returns_p(
@@ -8259,7 +8127,7 @@ class MLNonMaximumSuppression extends Struct<MLNonMaximumSuppression> {
     );
   }
 
-  static Pointer<Void> parameters(
+  static Pointer parameters(
     Pointer<MLNonMaximumSuppression> _self,
   ) {
     _openDynamicLibrary();
@@ -8269,11 +8137,11 @@ class MLNonMaximumSuppression extends Struct<MLNonMaximumSuppression> {
     );
   }
 
-  static Pointer<Void> predictionFromFeatures(
+  static Pointer predictionFromFeatures(
     Pointer<MLNonMaximumSuppression> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> options,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer options,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -8286,11 +8154,9 @@ class MLNonMaximumSuppression extends Struct<MLNonMaximumSuppression> {
   }
 }
 
-/// Objective-C class _MLNonMaximumSuppressionParameters_.
+/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/coreml?language=objc).
 @unsized
 class MLNonMaximumSuppressionParameters
     extends Struct<MLNonMaximumSuppressionParameters> {
@@ -8304,7 +8170,7 @@ class MLNonMaximumSuppressionParameters
         .cast<MLNonMaximumSuppressionParameters>();
   }
 
-  static Pointer<Void> confidenceInputFeatureName(
+  static Pointer confidenceInputFeatureName(
     Pointer<MLNonMaximumSuppressionParameters> _self,
   ) {
     _openDynamicLibrary();
@@ -8314,7 +8180,7 @@ class MLNonMaximumSuppressionParameters
     );
   }
 
-  static Pointer<Void> confidenceOutputFeatureName(
+  static Pointer confidenceOutputFeatureName(
     Pointer<MLNonMaximumSuppressionParameters> _self,
   ) {
     _openDynamicLibrary();
@@ -8334,7 +8200,7 @@ class MLNonMaximumSuppressionParameters
     );
   }
 
-  static Pointer<Void> confidenceThresholdInputFeatureName(
+  static Pointer confidenceThresholdInputFeatureName(
     Pointer<MLNonMaximumSuppressionParameters> _self,
   ) {
     _openDynamicLibrary();
@@ -8344,7 +8210,7 @@ class MLNonMaximumSuppressionParameters
     );
   }
 
-  static Pointer<Void> coordinatesInputFeatureName(
+  static Pointer coordinatesInputFeatureName(
     Pointer<MLNonMaximumSuppressionParameters> _self,
   ) {
     _openDynamicLibrary();
@@ -8354,7 +8220,7 @@ class MLNonMaximumSuppressionParameters
     );
   }
 
-  static Pointer<Void> coordinatesOutputFeatureName(
+  static Pointer coordinatesOutputFeatureName(
     Pointer<MLNonMaximumSuppressionParameters> _self,
   ) {
     _openDynamicLibrary();
@@ -8374,7 +8240,7 @@ class MLNonMaximumSuppressionParameters
     );
   }
 
-  static Pointer<Void> iouThresholdInputFeatureName(
+  static Pointer iouThresholdInputFeatureName(
     Pointer<MLNonMaximumSuppressionParameters> _self,
   ) {
     _openDynamicLibrary();
@@ -8384,7 +8250,7 @@ class MLNonMaximumSuppressionParameters
     );
   }
 
-  static Pointer<Void> labelNames(
+  static Pointer labelNames(
     Pointer<MLNonMaximumSuppressionParameters> _self,
   ) {
     _openDynamicLibrary();
@@ -8424,7 +8290,7 @@ class MLNonMaximumSuppressionParameters
     );
   }
 
-  static Pointer<Void> objectBoundingBoxOutputDescription(
+  static Pointer objectBoundingBoxOutputDescription(
     Pointer<MLNonMaximumSuppressionParameters> _self,
   ) {
     _openDynamicLibrary();
@@ -8434,7 +8300,7 @@ class MLNonMaximumSuppressionParameters
     );
   }
 
-  static Pointer<Void> perClass(
+  static Pointer perClass(
     Pointer<MLNonMaximumSuppressionParameters> _self,
   ) {
     _openDynamicLibrary();
@@ -8446,7 +8312,7 @@ class MLNonMaximumSuppressionParameters
 
   static void setConfidenceInputFeatureName(
     Pointer<MLNonMaximumSuppressionParameters> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -8458,7 +8324,7 @@ class MLNonMaximumSuppressionParameters
 
   static void setConfidenceOutputFeatureName(
     Pointer<MLNonMaximumSuppressionParameters> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -8482,7 +8348,7 @@ class MLNonMaximumSuppressionParameters
 
   static void setConfidenceThresholdInputFeatureName(
     Pointer<MLNonMaximumSuppressionParameters> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -8494,7 +8360,7 @@ class MLNonMaximumSuppressionParameters
 
   static void setCoordinatesInputFeatureName(
     Pointer<MLNonMaximumSuppressionParameters> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -8506,7 +8372,7 @@ class MLNonMaximumSuppressionParameters
 
   static void setCoordinatesOutputFeatureName(
     Pointer<MLNonMaximumSuppressionParameters> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -8530,7 +8396,7 @@ class MLNonMaximumSuppressionParameters
 
   static void setIouThresholdInputFeatureName(
     Pointer<MLNonMaximumSuppressionParameters> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -8542,7 +8408,7 @@ class MLNonMaximumSuppressionParameters
 
   static void setLabelNames(
     Pointer<MLNonMaximumSuppressionParameters> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -8590,7 +8456,7 @@ class MLNonMaximumSuppressionParameters
 
   static void setPerClass(
     Pointer<MLNonMaximumSuppressionParameters> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -8623,11 +8489,9 @@ class MLNonMaximumSuppressionParameters
   }
 }
 
-/// Objective-C class _MLNormalizer_.
+/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/coreml?language=objc).
 @unsized
 class MLNormalizer extends Struct<MLNormalizer> {
   factory MLNormalizer._() {
@@ -8652,15 +8516,15 @@ class MLNormalizer extends Struct<MLNormalizer> {
     );
   }
 
-  static Pointer<Void> initWith(
+  static Pointer initWith(
     Pointer<MLNormalizer> _self,
     int arg, {
-    @required Pointer<Void> dataTransformerName,
-    @required Pointer<Void> inputDescription,
-    @required Pointer<Void> outputDescription,
-    @required Pointer<Void> orderedInputFeatureNames,
-    @required Pointer<Void> orderedOutputFeatureNames,
-    @required Pointer<Void> configuration,
+    @required Pointer dataTransformerName,
+    @required Pointer inputDescription,
+    @required Pointer outputDescription,
+    @required Pointer orderedInputFeatureNames,
+    @required Pointer orderedOutputFeatureNames,
+    @required Pointer configuration,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_Int32_p_p_p_p_p_p_returns_p(
@@ -8687,11 +8551,11 @@ class MLNormalizer extends Struct<MLNormalizer> {
     );
   }
 
-  static Pointer<Void> predictionFromFeatures(
+  static Pointer predictionFromFeatures(
     Pointer<MLNormalizer> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> options,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer options,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -8704,11 +8568,9 @@ class MLNormalizer extends Struct<MLNormalizer> {
   }
 }
 
-/// Objective-C class _MLObjectBoundingBoxOutputDescription_.
+/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/coreml?language=objc).
 @unsized
 class MLObjectBoundingBoxOutputDescription
     extends Struct<MLObjectBoundingBoxOutputDescription> {
@@ -8722,7 +8584,7 @@ class MLObjectBoundingBoxOutputDescription
         .cast<MLObjectBoundingBoxOutputDescription>();
   }
 
-  static Pointer<Void> confidenceFeatureName(
+  static Pointer confidenceFeatureName(
     Pointer<MLObjectBoundingBoxOutputDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -8732,7 +8594,7 @@ class MLObjectBoundingBoxOutputDescription
     );
   }
 
-  static Pointer<Void> coordinatesFeatureName(
+  static Pointer coordinatesFeatureName(
     Pointer<MLObjectBoundingBoxOutputDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -8752,7 +8614,7 @@ class MLObjectBoundingBoxOutputDescription
     );
   }
 
-  static Pointer<Void> labelNames(
+  static Pointer labelNames(
     Pointer<MLObjectBoundingBoxOutputDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -8764,7 +8626,7 @@ class MLObjectBoundingBoxOutputDescription
 
   static void setConfidenceFeatureName(
     Pointer<MLObjectBoundingBoxOutputDescription> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -8776,7 +8638,7 @@ class MLObjectBoundingBoxOutputDescription
 
   static void setCoordinatesFeatureName(
     Pointer<MLObjectBoundingBoxOutputDescription> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -8800,7 +8662,7 @@ class MLObjectBoundingBoxOutputDescription
 
   static void setLabelNames(
     Pointer<MLObjectBoundingBoxOutputDescription> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -8811,11 +8673,9 @@ class MLObjectBoundingBoxOutputDescription
   }
 }
 
-/// Objective-C class _MLOneHotEncoder_.
+/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/coreml?language=objc).
 @unsized
 class MLOneHotEncoder extends Struct<MLOneHotEncoder> {
   factory MLOneHotEncoder._() {
@@ -8826,9 +8686,9 @@ class MLOneHotEncoder extends Struct<MLOneHotEncoder> {
     return _objc.allocate("MLOneHotEncoder").cast<MLOneHotEncoder>();
   }
 
-  static Pointer<Void> encodeFeatureValue(
+  static Pointer encodeFeatureValue(
     Pointer<MLOneHotEncoder> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -8838,7 +8698,7 @@ class MLOneHotEncoder extends Struct<MLOneHotEncoder> {
     );
   }
 
-  static Pointer<Void> encodeFeatureValueIntString(
+  static Pointer encodeFeatureValueIntString(
     Pointer<MLOneHotEncoder> _self,
     int arg,
   ) {
@@ -8850,7 +8710,7 @@ class MLOneHotEncoder extends Struct<MLOneHotEncoder> {
     );
   }
 
-  static Pointer<Void> featureEncoding(
+  static Pointer featureEncoding(
     Pointer<MLOneHotEncoder> _self,
   ) {
     _openDynamicLibrary();
@@ -8870,17 +8730,17 @@ class MLOneHotEncoder extends Struct<MLOneHotEncoder> {
     );
   }
 
-  static Pointer<Void> initWith(
+  static Pointer initWith(
     Pointer<MLOneHotEncoder> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> dataTransformerName,
+    Pointer arg, {
+    @required Pointer dataTransformerName,
     @required int ouputSparse,
     @required int handleUnknown,
-    @required Pointer<Void> inputDescription,
-    @required Pointer<Void> outputDescription,
-    @required Pointer<Void> orderedInputFeatureNames,
-    @required Pointer<Void> orderedOutputFeatureNames,
-    @required Pointer<Void> configuration,
+    @required Pointer inputDescription,
+    @required Pointer outputDescription,
+    @required Pointer orderedInputFeatureNames,
+    @required Pointer orderedOutputFeatureNames,
+    @required Pointer configuration,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_Int8_Int8_p_p_p_p_p_returns_p(
@@ -8909,11 +8769,11 @@ class MLOneHotEncoder extends Struct<MLOneHotEncoder> {
     );
   }
 
-  static Pointer<Void> predictionFromFeatures(
+  static Pointer predictionFromFeatures(
     Pointer<MLOneHotEncoder> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> options,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer options,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -8925,7 +8785,7 @@ class MLOneHotEncoder extends Struct<MLOneHotEncoder> {
     );
   }
 
-  static Pointer<Void> unknownDenseVector(
+  static Pointer unknownDenseVector(
     Pointer<MLOneHotEncoder> _self,
   ) {
     _openDynamicLibrary();
@@ -8936,11 +8796,9 @@ class MLOneHotEncoder extends Struct<MLOneHotEncoder> {
   }
 }
 
-/// Objective-C class _MLPipeline_.
+/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/coreml?language=objc).
 @unsized
 class MLPipeline extends Struct<MLPipeline> {
   factory MLPipeline._() {
@@ -8951,14 +8809,14 @@ class MLPipeline extends Struct<MLPipeline> {
     return _objc.allocate("MLPipeline").cast<MLPipeline>();
   }
 
-  static Pointer<Void> initModelFromMetadataAndArchive(
+  static Pointer initModelFromMetadataAndArchive(
     Pointer<MLPipeline> _self,
-    Pointer<Pointer<Void>> arg, {
-    @required Pointer<Void> versionInfo,
-    @required Pointer<Void> interface,
-    @required Pointer<Void> metadata,
-    @required Pointer<Void> configuration,
-    @required Pointer<Pointer<Void>> error,
+    Pointer<Pointer> arg, {
+    @required Pointer versionInfo,
+    @required Pointer interface,
+    @required Pointer metadata,
+    @required Pointer configuration,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_p_p_returns_p(
@@ -8974,7 +8832,7 @@ class MLPipeline extends Struct<MLPipeline> {
     );
   }
 
-  static Pointer<Void> models(
+  static Pointer models(
     Pointer<MLPipeline> _self,
   ) {
     _openDynamicLibrary();
@@ -8984,11 +8842,11 @@ class MLPipeline extends Struct<MLPipeline> {
     );
   }
 
-  static Pointer<Void> predictionFromFeatures(
+  static Pointer predictionFromFeatures(
     Pointer<MLPipeline> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> options,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer options,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -9000,11 +8858,11 @@ class MLPipeline extends Struct<MLPipeline> {
     );
   }
 
-  static Pointer<Void> predictionsFromBatch(
+  static Pointer predictionsFromBatch(
     Pointer<MLPipeline> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> options,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer options,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -9017,11 +8875,9 @@ class MLPipeline extends Struct<MLPipeline> {
   }
 }
 
-/// Objective-C class _MLPipelineClassifier_.
+/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/coreml?language=objc).
 @unsized
 class MLPipelineClassifier extends Struct<MLPipelineClassifier> {
   factory MLPipelineClassifier._() {
@@ -9032,11 +8888,11 @@ class MLPipelineClassifier extends Struct<MLPipelineClassifier> {
     return _objc.allocate("MLPipelineClassifier").cast<MLPipelineClassifier>();
   }
 
-  static Pointer<Void> classify(
+  static Pointer classify(
     Pointer<MLPipelineClassifier> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> options,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer options,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -9048,7 +8904,7 @@ class MLPipelineClassifier extends Struct<MLPipelineClassifier> {
     );
   }
 
-  static Pointer<Void> engine(
+  static Pointer engine(
     Pointer<MLPipelineClassifier> _self,
   ) {
     _openDynamicLibrary();
@@ -9058,13 +8914,13 @@ class MLPipelineClassifier extends Struct<MLPipelineClassifier> {
     );
   }
 
-  static Pointer<Void> initWithEngine(
+  static Pointer initWithEngine(
     Pointer<MLPipelineClassifier> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> interface,
-    @required Pointer<Void> metadata,
-    @required Pointer<Void> configuration,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer interface,
+    @required Pointer metadata,
+    @required Pointer configuration,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_p_returns_p(
@@ -9079,7 +8935,7 @@ class MLPipelineClassifier extends Struct<MLPipelineClassifier> {
     );
   }
 
-  static Pointer<Void> pipeline(
+  static Pointer pipeline(
     Pointer<MLPipelineClassifier> _self,
   ) {
     _openDynamicLibrary();
@@ -9091,7 +8947,7 @@ class MLPipelineClassifier extends Struct<MLPipelineClassifier> {
 
   static void setEngine(
     Pointer<MLPipelineClassifier> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -9102,11 +8958,9 @@ class MLPipelineClassifier extends Struct<MLPipelineClassifier> {
   }
 }
 
-/// Objective-C class _MLPipelineLoader_.
+/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/coreml?language=objc).
 @unsized
 class MLPipelineLoader extends Struct<MLPipelineLoader> {
   factory MLPipelineLoader._() {
@@ -9118,11 +8972,9 @@ class MLPipelineLoader extends Struct<MLPipelineLoader> {
   }
 }
 
-/// Objective-C class _MLPipelineRegressor_.
+/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/coreml?language=objc).
 @unsized
 class MLPipelineRegressor extends Struct<MLPipelineRegressor> {
   factory MLPipelineRegressor._() {
@@ -9133,7 +8985,7 @@ class MLPipelineRegressor extends Struct<MLPipelineRegressor> {
     return _objc.allocate("MLPipelineRegressor").cast<MLPipelineRegressor>();
   }
 
-  static Pointer<Void> engine(
+  static Pointer engine(
     Pointer<MLPipelineRegressor> _self,
   ) {
     _openDynamicLibrary();
@@ -9143,12 +8995,12 @@ class MLPipelineRegressor extends Struct<MLPipelineRegressor> {
     );
   }
 
-  static Pointer<Void> initWithEngine(
+  static Pointer initWithEngine(
     Pointer<MLPipelineRegressor> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> interface,
-    @required Pointer<Void> metadata,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer interface,
+    @required Pointer metadata,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_returns_p(
@@ -9161,7 +9013,7 @@ class MLPipelineRegressor extends Struct<MLPipelineRegressor> {
     );
   }
 
-  static Pointer<Void> pipeline(
+  static Pointer pipeline(
     Pointer<MLPipelineRegressor> _self,
   ) {
     _openDynamicLibrary();
@@ -9171,11 +9023,11 @@ class MLPipelineRegressor extends Struct<MLPipelineRegressor> {
     );
   }
 
-  static Pointer<Void> regress(
+  static Pointer regress(
     Pointer<MLPipelineRegressor> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> options,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer options,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -9189,7 +9041,7 @@ class MLPipelineRegressor extends Struct<MLPipelineRegressor> {
 
   static void setEngine(
     Pointer<MLPipelineRegressor> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -9200,11 +9052,9 @@ class MLPipelineRegressor extends Struct<MLPipelineRegressor> {
   }
 }
 
-/// Objective-C class _MLPredictionOptions_.
+/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/coreml?language=objc).
 @unsized
 class MLPredictionOptions extends Struct<MLPredictionOptions> {
   factory MLPredictionOptions._() {
@@ -9225,7 +9075,7 @@ class MLPredictionOptions extends Struct<MLPredictionOptions> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<MLPredictionOptions> _self,
   ) {
     _openDynamicLibrary();
@@ -9235,7 +9085,7 @@ class MLPredictionOptions extends Struct<MLPredictionOptions> {
     );
   }
 
-  static Pointer<Void> initWithUseCPUOnly(
+  static Pointer initWithUseCPUOnly(
     Pointer<MLPredictionOptions> _self,
     int arg,
   ) {
@@ -9247,7 +9097,7 @@ class MLPredictionOptions extends Struct<MLPredictionOptions> {
     );
   }
 
-  static Pointer<Void> initWithUsesCPUOnly(
+  static Pointer initWithUsesCPUOnly(
     Pointer<MLPredictionOptions> _self,
     int arg,
   ) {
@@ -9338,11 +9188,9 @@ class MLPredictionOptions extends Struct<MLPredictionOptions> {
   }
 }
 
-/// Objective-C class _MLProbabilityDictionary_.
+/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/coreml?language=objc).
 @unsized
 class MLProbabilityDictionary extends Struct<MLProbabilityDictionary> {
   factory MLProbabilityDictionary._() {
@@ -9355,9 +9203,9 @@ class MLProbabilityDictionary extends Struct<MLProbabilityDictionary> {
         .cast<MLProbabilityDictionary>();
   }
 
-  static Pointer<Void> classLabelOfMaxProbability(
+  static Pointer classLabelOfMaxProbability(
     Pointer<MLProbabilityDictionary> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -9367,10 +9215,10 @@ class MLProbabilityDictionary extends Struct<MLProbabilityDictionary> {
     );
   }
 
-  static Pointer<Void> initWithObjects(
+  static Pointer initWithObjects(
     Pointer<MLProbabilityDictionary> _self,
-    Pointer<Pointer<Void>> arg, {
-    @required Pointer<Pointer<Void>> forKeys,
+    Pointer<Pointer> arg, {
+    @required Pointer<Pointer> forKeys,
     @required int count,
   }) {
     _openDynamicLibrary();
@@ -9396,11 +9244,9 @@ class MLProbabilityDictionary extends Struct<MLProbabilityDictionary> {
   }
 }
 
-/// Objective-C class _MLRegressor_.
+/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/coreml?language=objc).
 @unsized
 class MLRegressor extends Struct<MLRegressor> {
   factory MLRegressor._() {
@@ -9411,11 +9257,11 @@ class MLRegressor extends Struct<MLRegressor> {
     return _objc.allocate("MLRegressor").cast<MLRegressor>();
   }
 
-  static Pointer<Void> initDescriptionOnlyWithSpecification(
+  static Pointer initDescriptionOnlyWithSpecification(
     Pointer<MLRegressor> _self,
-    Pointer<Pointer<Void>> arg, {
-    @required Pointer<Void> configuration,
-    @required Pointer<Pointer<Void>> error,
+    Pointer<Pointer> arg, {
+    @required Pointer configuration,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -9428,11 +9274,11 @@ class MLRegressor extends Struct<MLRegressor> {
     );
   }
 
-  static Pointer<Void> initWithInterface(
+  static Pointer initWithInterface(
     Pointer<MLRegressor> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> metadata,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer metadata,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -9444,11 +9290,11 @@ class MLRegressor extends Struct<MLRegressor> {
     );
   }
 
-  static Pointer<Void> predictionFromFeatures(
+  static Pointer predictionFromFeatures(
     Pointer<MLRegressor> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> options,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer options,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -9460,11 +9306,11 @@ class MLRegressor extends Struct<MLRegressor> {
     );
   }
 
-  static Pointer<Void> regress(
+  static Pointer regress(
     Pointer<MLRegressor> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> options,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer options,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -9476,10 +9322,10 @@ class MLRegressor extends Struct<MLRegressor> {
     );
   }
 
-  static Pointer<Void> regressorResultFromOutputFeatures(
+  static Pointer regressorResultFromOutputFeatures(
     Pointer<MLRegressor> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -9491,11 +9337,9 @@ class MLRegressor extends Struct<MLRegressor> {
   }
 }
 
-/// Objective-C class _MLRegressorResult_.
+/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/coreml?language=objc).
 @unsized
 class MLRegressorResult extends Struct<MLRegressorResult> {
   factory MLRegressorResult._() {
@@ -9506,7 +9350,7 @@ class MLRegressorResult extends Struct<MLRegressorResult> {
     return _objc.allocate("MLRegressorResult").cast<MLRegressorResult>();
   }
 
-  static Pointer<Void> additionalFeatures(
+  static Pointer additionalFeatures(
     Pointer<MLRegressorResult> _self,
   ) {
     _openDynamicLibrary();
@@ -9516,9 +9360,9 @@ class MLRegressorResult extends Struct<MLRegressorResult> {
     );
   }
 
-  static Pointer<Void> asFeatureDictionaryWithPredictedValueDescription(
+  static Pointer asFeatureDictionaryWithPredictedValueDescription(
     Pointer<MLRegressorResult> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -9528,10 +9372,10 @@ class MLRegressorResult extends Struct<MLRegressorResult> {
     );
   }
 
-  static Pointer<Void> initWithValue(
+  static Pointer initWithValue(
     Pointer<MLRegressorResult> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> additionalFeatures,
+    Pointer arg, {
+    @required Pointer additionalFeatures,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -9542,7 +9386,7 @@ class MLRegressorResult extends Struct<MLRegressorResult> {
     );
   }
 
-  static Pointer<Void> predictedValue(
+  static Pointer predictedValue(
     Pointer<MLRegressorResult> _self,
   ) {
     _openDynamicLibrary();
@@ -9553,11 +9397,9 @@ class MLRegressorResult extends Struct<MLRegressorResult> {
   }
 }
 
-/// Objective-C class _MLSVMEngine_.
+/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/coreml?language=objc).
 @unsized
 class MLSVMEngine extends Struct<MLSVMEngine> {
   factory MLSVMEngine._() {
@@ -9568,7 +9410,7 @@ class MLSVMEngine extends Struct<MLSVMEngine> {
     return _objc.allocate("MLSVMEngine").cast<MLSVMEngine>();
   }
 
-  static Pointer<Pointer<Void>> allocSVMNodeVector(
+  static Pointer<Pointer> allocSVMNodeVector(
     Pointer<MLSVMEngine> _self,
     int arg,
   ) {
@@ -9580,7 +9422,7 @@ class MLSVMEngine extends Struct<MLSVMEngine> {
     );
   }
 
-  static Pointer<Void> classLabels(
+  static Pointer classLabels(
     Pointer<MLSVMEngine> _self,
   ) {
     _openDynamicLibrary();
@@ -9602,7 +9444,7 @@ class MLSVMEngine extends Struct<MLSVMEngine> {
 
   static void deallocSVMNodeVector(
     Pointer<MLSVMEngine> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -9614,7 +9456,7 @@ class MLSVMEngine extends Struct<MLSVMEngine> {
 
   static void fillSVMNodeVector(
     Pointer<MLSVMEngine> _self,
-    Pointer<Pointer<Void>> arg, {
+    Pointer<Pointer> arg, {
     @required Pointer<Float> values,
     @required int count,
   }) {
@@ -9648,10 +9490,10 @@ class MLSVMEngine extends Struct<MLSVMEngine> {
     );
   }
 
-  static Pointer<Void> initWithLibSVMFile(
+  static Pointer initWithLibSVMFile(
     Pointer<MLSVMEngine> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> classLabels,
+    Pointer arg, {
+    @required Pointer classLabels,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -9662,13 +9504,13 @@ class MLSVMEngine extends Struct<MLSVMEngine> {
     );
   }
 
-  static Pointer<Void> initWithSVMModel(
+  static Pointer initWithSVMModel(
     Pointer<MLSVMEngine> _self,
-    Pointer<Pointer<Void>> arg, {
+    Pointer<Pointer> arg, {
     @required int freeOnDealloc,
     @required int isInputSizeLowerBoundOnly,
     @required int inputSize,
-    @required Pointer<Void> classLabels,
+    @required Pointer classLabels,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_Int8_Int8_Uint64_p_returns_p(
@@ -9703,7 +9545,7 @@ class MLSVMEngine extends Struct<MLSVMEngine> {
     );
   }
 
-  static Pointer<Pointer<Void>> model(
+  static Pointer<Pointer> model(
     Pointer<MLSVMEngine> _self,
   ) {
     _openDynamicLibrary();
@@ -9723,9 +9565,9 @@ class MLSVMEngine extends Struct<MLSVMEngine> {
     );
   }
 
-  static Pointer<Void> predict(
+  static Pointer predict(
     Pointer<MLSVMEngine> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -9737,7 +9579,7 @@ class MLSVMEngine extends Struct<MLSVMEngine> {
 
   static void predictProbabilities(
     Pointer<MLSVMEngine> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required Pointer<Float> probabilities,
   }) {
     _openDynamicLibrary();
@@ -9751,7 +9593,7 @@ class MLSVMEngine extends Struct<MLSVMEngine> {
 
   static void setClassLabels(
     Pointer<MLSVMEngine> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -9799,7 +9641,7 @@ class MLSVMEngine extends Struct<MLSVMEngine> {
 
   static void setModel(
     Pointer<MLSVMEngine> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -9810,11 +9652,9 @@ class MLSVMEngine extends Struct<MLSVMEngine> {
   }
 }
 
-/// Objective-C class _MLSVMLoader_.
+/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/coreml?language=objc).
 @unsized
 class MLSVMLoader extends Struct<MLSVMLoader> {
   factory MLSVMLoader._() {
@@ -9826,11 +9666,9 @@ class MLSVMLoader extends Struct<MLSVMLoader> {
   }
 }
 
-/// Objective-C class _MLSVREngine_.
+/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/coreml?language=objc).
 @unsized
 class MLSVREngine extends Struct<MLSVREngine> {
   factory MLSVREngine._() {
@@ -9841,7 +9679,7 @@ class MLSVREngine extends Struct<MLSVREngine> {
     return _objc.allocate("MLSVREngine").cast<MLSVREngine>();
   }
 
-  static Pointer<Pointer<Void>> allocSVMNodeVector(
+  static Pointer<Pointer> allocSVMNodeVector(
     Pointer<MLSVREngine> _self,
     int arg,
   ) {
@@ -9865,7 +9703,7 @@ class MLSVREngine extends Struct<MLSVREngine> {
 
   static void deallocSVMNodeVector(
     Pointer<MLSVREngine> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -9877,7 +9715,7 @@ class MLSVREngine extends Struct<MLSVREngine> {
 
   static void fillSVMNodeVector(
     Pointer<MLSVREngine> _self,
-    Pointer<Pointer<Void>> arg, {
+    Pointer<Pointer> arg, {
     @required Pointer<Float> values,
     @required int count,
   }) {
@@ -9901,9 +9739,9 @@ class MLSVREngine extends Struct<MLSVREngine> {
     );
   }
 
-  static Pointer<Void> initWithLibSVMFile(
+  static Pointer initWithLibSVMFile(
     Pointer<MLSVREngine> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -9913,9 +9751,9 @@ class MLSVREngine extends Struct<MLSVREngine> {
     );
   }
 
-  static Pointer<Void> initWithSVMModel(
+  static Pointer initWithSVMModel(
     Pointer<MLSVREngine> _self,
-    Pointer<Pointer<Void>> arg, {
+    Pointer<Pointer> arg, {
     @required int freeOnDealloc,
     @required int isInputSizeLowerBoundOnly,
     @required int inputSize,
@@ -9952,7 +9790,7 @@ class MLSVREngine extends Struct<MLSVREngine> {
     );
   }
 
-  static Pointer<Pointer<Void>> model(
+  static Pointer<Pointer> model(
     Pointer<MLSVREngine> _self,
   ) {
     _openDynamicLibrary();
@@ -9962,9 +9800,9 @@ class MLSVREngine extends Struct<MLSVREngine> {
     );
   }
 
-  static Pointer<Void> predict(
+  static Pointer predict(
     Pointer<MLSVREngine> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -9988,7 +9826,7 @@ class MLSVREngine extends Struct<MLSVREngine> {
 
   static void setModel(
     Pointer<MLSVREngine> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -9999,11 +9837,9 @@ class MLSVREngine extends Struct<MLSVREngine> {
   }
 }
 
-/// Objective-C class _MLSVRLoader_.
+/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/coreml?language=objc).
 @unsized
 class MLSVRLoader extends Struct<MLSVRLoader> {
   factory MLSVRLoader._() {
@@ -10015,11 +9851,9 @@ class MLSVRLoader extends Struct<MLSVRLoader> {
   }
 }
 
-/// Objective-C class _MLSaver_.
+/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/coreml?language=objc).
 @unsized
 class MLSaver extends Struct<MLSaver> {
   factory MLSaver._() {
@@ -10031,11 +9865,9 @@ class MLSaver extends Struct<MLSaver> {
   }
 }
 
-/// Objective-C class _MLScaler_.
+/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/coreml?language=objc).
 @unsized
 class MLScaler extends Struct<MLScaler> {
   factory MLScaler._() {
@@ -10046,17 +9878,17 @@ class MLScaler extends Struct<MLScaler> {
     return _objc.allocate("MLScaler").cast<MLScaler>();
   }
 
-  static Pointer<Void> initWith(
+  static Pointer initWith(
     Pointer<MLScaler> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> scaleValue,
-    @required Pointer<Void> dataTransformerName,
-    @required Pointer<Void> inputDescription,
-    @required Pointer<Void> outputDescription,
-    @required Pointer<Void> orderedInputFeatureNames,
-    @required Pointer<Void> orderedOutputFeatureNames,
-    @required Pointer<Void> configuration,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer scaleValue,
+    @required Pointer dataTransformerName,
+    @required Pointer inputDescription,
+    @required Pointer outputDescription,
+    @required Pointer orderedInputFeatureNames,
+    @required Pointer orderedOutputFeatureNames,
+    @required Pointer configuration,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_p_p_p_p_p_returns_p(
@@ -10075,11 +9907,11 @@ class MLScaler extends Struct<MLScaler> {
     );
   }
 
-  static Pointer<Void> predictionFromFeatures(
+  static Pointer predictionFromFeatures(
     Pointer<MLScaler> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> options,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer options,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -10091,7 +9923,7 @@ class MLScaler extends Struct<MLScaler> {
     );
   }
 
-  static Pointer<Void> scaleValue(
+  static Pointer scaleValue(
     Pointer<MLScaler> _self,
   ) {
     _openDynamicLibrary();
@@ -10101,7 +9933,7 @@ class MLScaler extends Struct<MLScaler> {
     );
   }
 
-  static Pointer<Void> shiftValue(
+  static Pointer shiftValue(
     Pointer<MLScaler> _self,
   ) {
     _openDynamicLibrary();
@@ -10112,11 +9944,9 @@ class MLScaler extends Struct<MLScaler> {
   }
 }
 
-/// Objective-C class _MLSequence_.
+/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/coreml?language=objc).
 @unsized
 class MLSequence extends Struct<MLSequence> {
   factory MLSequence._() {
@@ -10127,7 +9957,7 @@ class MLSequence extends Struct<MLSequence> {
     return _objc.allocate("MLSequence").cast<MLSequence>();
   }
 
-  static Pointer<Void> featureValues(
+  static Pointer featureValues(
     Pointer<MLSequence> _self,
   ) {
     _openDynamicLibrary();
@@ -10137,9 +9967,9 @@ class MLSequence extends Struct<MLSequence> {
     );
   }
 
-  static Pointer<Void> initWithArray(
+  static Pointer initWithArray(
     Pointer<MLSequence> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int type,
   }) {
     _openDynamicLibrary();
@@ -10151,7 +9981,7 @@ class MLSequence extends Struct<MLSequence> {
     );
   }
 
-  static Pointer<Void> int64Values(
+  static Pointer int64Values(
     Pointer<MLSequence> _self,
   ) {
     _openDynamicLibrary();
@@ -10161,7 +9991,7 @@ class MLSequence extends Struct<MLSequence> {
     );
   }
 
-  static Pointer<Void> stringValues(
+  static Pointer stringValues(
     Pointer<MLSequence> _self,
   ) {
     _openDynamicLibrary();
@@ -10181,7 +10011,7 @@ class MLSequence extends Struct<MLSequence> {
     );
   }
 
-  static Pointer<Void> values(
+  static Pointer values(
     Pointer<MLSequence> _self,
   ) {
     _openDynamicLibrary();
@@ -10192,11 +10022,9 @@ class MLSequence extends Struct<MLSequence> {
   }
 }
 
-/// Objective-C class _MLSequenceConstraint_.
+/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/coreml?language=objc).
 @unsized
 class MLSequenceConstraint extends Struct<MLSequenceConstraint> {
   factory MLSequenceConstraint._() {
@@ -10207,9 +10035,9 @@ class MLSequenceConstraint extends Struct<MLSequenceConstraint> {
     return _objc.allocate("MLSequenceConstraint").cast<MLSequenceConstraint>();
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<MLSequenceConstraint> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -10219,7 +10047,7 @@ class MLSequenceConstraint extends Struct<MLSequenceConstraint> {
     );
   }
 
-  static Pointer<Void> countRange(
+  static Pointer countRange(
     Pointer<MLSequenceConstraint> _self,
   ) {
     _openDynamicLibrary();
@@ -10229,10 +10057,10 @@ class MLSequenceConstraint extends Struct<MLSequenceConstraint> {
     );
   }
 
-  static Pointer<Void> initWithValueDescription(
+  static Pointer initWithValueDescription(
     Pointer<MLSequenceConstraint> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> countRange,
+    Pointer arg, {
+    @required Pointer countRange,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -10245,8 +10073,8 @@ class MLSequenceConstraint extends Struct<MLSequenceConstraint> {
 
   static int isAllowedValue(
     Pointer<MLSequenceConstraint> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -10257,7 +10085,7 @@ class MLSequenceConstraint extends Struct<MLSequenceConstraint> {
     );
   }
 
-  static Pointer<Void> valueDescription(
+  static Pointer valueDescription(
     Pointer<MLSequenceConstraint> _self,
   ) {
     _openDynamicLibrary();
@@ -10268,11 +10096,9 @@ class MLSequenceConstraint extends Struct<MLSequenceConstraint> {
   }
 }
 
-/// Objective-C class _MLSequnceAsFeatureValueArray_.
+/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/coreml?language=objc).
 @unsized
 class MLSequnceAsFeatureValueArray
     extends Struct<MLSequnceAsFeatureValueArray> {
@@ -10296,9 +10122,9 @@ class MLSequnceAsFeatureValueArray
     );
   }
 
-  static Pointer<Void> initWrappingSequence(
+  static Pointer initWrappingSequence(
     Pointer<MLSequnceAsFeatureValueArray> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -10308,7 +10134,7 @@ class MLSequnceAsFeatureValueArray
     );
   }
 
-  static Pointer<Void> objectAtIndex(
+  static Pointer objectAtIndex(
     Pointer<MLSequnceAsFeatureValueArray> _self,
     int arg,
   ) {
@@ -10320,7 +10146,7 @@ class MLSequnceAsFeatureValueArray
     );
   }
 
-  static Pointer<Void> sequence(
+  static Pointer sequence(
     Pointer<MLSequnceAsFeatureValueArray> _self,
   ) {
     _openDynamicLibrary();
@@ -10331,11 +10157,9 @@ class MLSequnceAsFeatureValueArray
   }
 }
 
-/// Objective-C class _MLStringProbabilityDictionary_.
+/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/coreml?language=objc).
 @unsized
 class MLStringProbabilityDictionary
     extends Struct<MLStringProbabilityDictionary> {
@@ -10349,7 +10173,7 @@ class MLStringProbabilityDictionary
         .cast<MLStringProbabilityDictionary>();
   }
 
-  static Pointer<Void> copy(
+  static Pointer copy(
     Pointer<MLStringProbabilityDictionary> _self,
   ) {
     _openDynamicLibrary();
@@ -10369,9 +10193,9 @@ class MLStringProbabilityDictionary
     );
   }
 
-  static Pointer<Void> initWithStrLabels(
+  static Pointer initWithStrLabels(
     Pointer<MLStringProbabilityDictionary> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -10381,7 +10205,7 @@ class MLStringProbabilityDictionary
     );
   }
 
-  static Pointer<Void> keyEnumerator(
+  static Pointer keyEnumerator(
     Pointer<MLStringProbabilityDictionary> _self,
   ) {
     _openDynamicLibrary();
@@ -10391,7 +10215,7 @@ class MLStringProbabilityDictionary
     );
   }
 
-  static Pointer<Void> mapStrLabelToIndex(
+  static Pointer mapStrLabelToIndex(
     Pointer<MLStringProbabilityDictionary> _self,
   ) {
     _openDynamicLibrary();
@@ -10401,9 +10225,9 @@ class MLStringProbabilityDictionary
     );
   }
 
-  static Pointer<Void> objectForKey(
+  static Pointer objectForKey(
     Pointer<MLStringProbabilityDictionary> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -10415,7 +10239,7 @@ class MLStringProbabilityDictionary
 
   static void removeObjectForKey(
     Pointer<MLStringProbabilityDictionary> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -10427,7 +10251,7 @@ class MLStringProbabilityDictionary
 
   static void setMapStrLabelToIndex(
     Pointer<MLStringProbabilityDictionary> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -10439,8 +10263,8 @@ class MLStringProbabilityDictionary
 
   static void setObject(
     Pointer<MLStringProbabilityDictionary> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> forKey,
+    Pointer arg, {
+    @required Pointer forKey,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -10452,11 +10276,9 @@ class MLStringProbabilityDictionary
   }
 }
 
-/// Objective-C class _MLStringProbabilityDictionaryEnumerator_.
+/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/coreml?language=objc).
 @unsized
 class MLStringProbabilityDictionaryEnumerator
     extends Struct<MLStringProbabilityDictionaryEnumerator> {
@@ -10470,9 +10292,9 @@ class MLStringProbabilityDictionaryEnumerator
         .cast<MLStringProbabilityDictionaryEnumerator>();
   }
 
-  static Pointer<Void> initWithStrMap(
+  static Pointer initWithStrMap(
     Pointer<MLStringProbabilityDictionaryEnumerator> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -10482,7 +10304,7 @@ class MLStringProbabilityDictionaryEnumerator
     );
   }
 
-  static Pointer<Void> iter(
+  static Pointer iter(
     Pointer<MLStringProbabilityDictionaryEnumerator> _self,
   ) {
     _openDynamicLibrary();
@@ -10492,7 +10314,7 @@ class MLStringProbabilityDictionaryEnumerator
     );
   }
 
-  static Pointer<Void> iterEnd(
+  static Pointer iterEnd(
     Pointer<MLStringProbabilityDictionaryEnumerator> _self,
   ) {
     _openDynamicLibrary();
@@ -10502,7 +10324,7 @@ class MLStringProbabilityDictionaryEnumerator
     );
   }
 
-  static Pointer<Void> nextObject(
+  static Pointer nextObject(
     Pointer<MLStringProbabilityDictionaryEnumerator> _self,
   ) {
     _openDynamicLibrary();
@@ -10514,7 +10336,7 @@ class MLStringProbabilityDictionaryEnumerator
 
   static void setIter(
     Pointer<MLStringProbabilityDictionaryEnumerator> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -10526,7 +10348,7 @@ class MLStringProbabilityDictionaryEnumerator
 
   static void setIterEnd(
     Pointer<MLStringProbabilityDictionaryEnumerator> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -10537,11 +10359,9 @@ class MLStringProbabilityDictionaryEnumerator
   }
 }
 
-/// Objective-C class _MLSupervisedOnlineUpdateOptions_.
+/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/coreml?language=objc).
 @unsized
 class MLSupervisedOnlineUpdateOptions
     extends Struct<MLSupervisedOnlineUpdateOptions> {
@@ -10556,11 +10376,9 @@ class MLSupervisedOnlineUpdateOptions
   }
 }
 
-/// Objective-C class _MLSupportVectorClassifier_.
+/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/coreml?language=objc).
 @unsized
 class MLSupportVectorClassifier extends Struct<MLSupportVectorClassifier> {
   factory MLSupportVectorClassifier._() {
@@ -10573,11 +10391,11 @@ class MLSupportVectorClassifier extends Struct<MLSupportVectorClassifier> {
         .cast<MLSupportVectorClassifier>();
   }
 
-  static Pointer<Void> classify(
+  static Pointer classify(
     Pointer<MLSupportVectorClassifier> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> options,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer options,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -10589,7 +10407,7 @@ class MLSupportVectorClassifier extends Struct<MLSupportVectorClassifier> {
     );
   }
 
-  static Pointer<Void> engine(
+  static Pointer engine(
     Pointer<MLSupportVectorClassifier> _self,
   ) {
     _openDynamicLibrary();
@@ -10599,13 +10417,13 @@ class MLSupportVectorClassifier extends Struct<MLSupportVectorClassifier> {
     );
   }
 
-  static Pointer<Void> initWithEngine(
+  static Pointer initWithEngine(
     Pointer<MLSupportVectorClassifier> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> interface,
-    @required Pointer<Void> metadata,
-    @required Pointer<Void> configuration,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer interface,
+    @required Pointer metadata,
+    @required Pointer configuration,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_p_returns_p(
@@ -10622,7 +10440,7 @@ class MLSupportVectorClassifier extends Struct<MLSupportVectorClassifier> {
 
   static void setEngine(
     Pointer<MLSupportVectorClassifier> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -10633,11 +10451,9 @@ class MLSupportVectorClassifier extends Struct<MLSupportVectorClassifier> {
   }
 }
 
-/// Objective-C class _MLSupportVectorRegressor_.
+/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/coreml?language=objc).
 @unsized
 class MLSupportVectorRegressor extends Struct<MLSupportVectorRegressor> {
   factory MLSupportVectorRegressor._() {
@@ -10650,7 +10466,7 @@ class MLSupportVectorRegressor extends Struct<MLSupportVectorRegressor> {
         .cast<MLSupportVectorRegressor>();
   }
 
-  static Pointer<Void> engine(
+  static Pointer engine(
     Pointer<MLSupportVectorRegressor> _self,
   ) {
     _openDynamicLibrary();
@@ -10660,12 +10476,12 @@ class MLSupportVectorRegressor extends Struct<MLSupportVectorRegressor> {
     );
   }
 
-  static Pointer<Void> initWithEngine(
+  static Pointer initWithEngine(
     Pointer<MLSupportVectorRegressor> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> interface,
-    @required Pointer<Void> metadata,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer interface,
+    @required Pointer metadata,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_returns_p(
@@ -10678,11 +10494,11 @@ class MLSupportVectorRegressor extends Struct<MLSupportVectorRegressor> {
     );
   }
 
-  static Pointer<Void> regress(
+  static Pointer regress(
     Pointer<MLSupportVectorRegressor> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> options,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer options,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -10696,7 +10512,7 @@ class MLSupportVectorRegressor extends Struct<MLSupportVectorRegressor> {
 
   static void setEngine(
     Pointer<MLSupportVectorRegressor> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -10707,11 +10523,9 @@ class MLSupportVectorRegressor extends Struct<MLSupportVectorRegressor> {
   }
 }
 
-/// Objective-C class _MLTreeEnsembleClassifier_.
+/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/coreml?language=objc).
 @unsized
 class MLTreeEnsembleClassifier extends Struct<MLTreeEnsembleClassifier> {
   factory MLTreeEnsembleClassifier._() {
@@ -10724,11 +10538,11 @@ class MLTreeEnsembleClassifier extends Struct<MLTreeEnsembleClassifier> {
         .cast<MLTreeEnsembleClassifier>();
   }
 
-  static Pointer<Void> classify(
+  static Pointer classify(
     Pointer<MLTreeEnsembleClassifier> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> options,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer options,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -10741,11 +10555,9 @@ class MLTreeEnsembleClassifier extends Struct<MLTreeEnsembleClassifier> {
   }
 }
 
-/// Objective-C class _MLTreeEnsembleRegressor_.
+/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/coreml?language=objc).
 @unsized
 class MLTreeEnsembleRegressor extends Struct<MLTreeEnsembleRegressor> {
   factory MLTreeEnsembleRegressor._() {
@@ -10758,11 +10570,11 @@ class MLTreeEnsembleRegressor extends Struct<MLTreeEnsembleRegressor> {
         .cast<MLTreeEnsembleRegressor>();
   }
 
-  static Pointer<Void> regress(
+  static Pointer regress(
     Pointer<MLTreeEnsembleRegressor> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> options,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer options,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -10776,8 +10588,8 @@ class MLTreeEnsembleRegressor extends Struct<MLTreeEnsembleRegressor> {
 
   static double scalarRegress$error$(
     Pointer<MLTreeEnsembleRegressor> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_float64(
@@ -10815,11 +10627,9 @@ class MLTreeEnsembleRegressor extends Struct<MLTreeEnsembleRegressor> {
   }
 }
 
-/// Objective-C class _MLVersionInfo_.
+/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/coreml?language=objc).
 @unsized
 class MLVersionInfo extends Struct<MLVersionInfo> {
   factory MLVersionInfo._() {
@@ -10830,12 +10640,12 @@ class MLVersionInfo extends Struct<MLVersionInfo> {
     return _objc.allocate("MLVersionInfo").cast<MLVersionInfo>();
   }
 
-  static Pointer<Void> initWithMajor(
+  static Pointer initWithMajor(
     Pointer<MLVersionInfo> _self,
     int arg, {
     @required int minor,
     @required int patch,
-    @required Pointer<Void> variant,
+    @required Pointer variant,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_Int64_Int64_Int64_p_returns_p(
@@ -10870,7 +10680,7 @@ class MLVersionInfo extends Struct<MLVersionInfo> {
 
   static int olderThan(
     Pointer<MLVersionInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -10890,7 +10700,7 @@ class MLVersionInfo extends Struct<MLVersionInfo> {
     );
   }
 
-  static Pointer<Void> variantString(
+  static Pointer variantString(
     Pointer<MLVersionInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -10900,7 +10710,7 @@ class MLVersionInfo extends Struct<MLVersionInfo> {
     );
   }
 
-  static Pointer<Void> versionNumberString(
+  static Pointer versionNumberString(
     Pointer<MLVersionInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -10910,7 +10720,7 @@ class MLVersionInfo extends Struct<MLVersionInfo> {
     );
   }
 
-  static Pointer<Void> versionString(
+  static Pointer versionString(
     Pointer<MLVersionInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -10921,11 +10731,9 @@ class MLVersionInfo extends Struct<MLVersionInfo> {
   }
 }
 
-/// Objective-C class _MLWindowedBatchProvider_.
+/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/coreml?language=objc).
 @unsized
 class MLWindowedBatchProvider extends Struct<MLWindowedBatchProvider> {
   factory MLWindowedBatchProvider._() {
@@ -10948,7 +10756,7 @@ class MLWindowedBatchProvider extends Struct<MLWindowedBatchProvider> {
     );
   }
 
-  static Pointer<Void> featuresAtIndex(
+  static Pointer featuresAtIndex(
     Pointer<MLWindowedBatchProvider> _self,
     int arg,
   ) {
@@ -10960,7 +10768,7 @@ class MLWindowedBatchProvider extends Struct<MLWindowedBatchProvider> {
     );
   }
 
-  static Pointer<Void> fullBatch(
+  static Pointer fullBatch(
     Pointer<MLWindowedBatchProvider> _self,
   ) {
     _openDynamicLibrary();
@@ -10970,12 +10778,12 @@ class MLWindowedBatchProvider extends Struct<MLWindowedBatchProvider> {
     );
   }
 
-  static Pointer<Void> initWithBatch(
+  static Pointer initWithBatch(
     Pointer<MLWindowedBatchProvider> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int startIndex,
     @required int windowLength,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_Int64_Int64_p_returns_p(
@@ -10990,7 +10798,7 @@ class MLWindowedBatchProvider extends Struct<MLWindowedBatchProvider> {
 
   static void setFullBatch(
     Pointer<MLWindowedBatchProvider> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(

@@ -1,4 +1,4 @@
-/// [Contacts](https://developer.apple.com/documentation/contacts?language=objc) (Objective-C library).
+/// Automatically generated API for [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 library cupertino_ffi.contacts;
@@ -7,6 +7,8 @@ import 'dart:ffi';
 import 'package:ffi/ffi.dart';
 import 'package:meta/meta.dart';
 import 'package:cupertino_ffi/objective_c.dart' as _objc;
+export 'package:cupertino_ffi/core_foundation.dart'
+    show arcPush, arcPop, arcReturn, arcFieldGet, arcFieldSet;
 
 bool _isDynamicLibraryOpened = false;
 
@@ -19,11 +21,9 @@ void _openDynamicLibrary() {
   }
 }
 
-/// Objective-C class _CN_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CN extends Struct<CN> {
   factory CN._() {
@@ -35,11 +35,9 @@ class CN extends Struct<CN> {
   }
 }
 
-/// Objective-C class _CNABRemoteObjectsConverter_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNABRemoteObjectsConverter extends Struct<CNABRemoteObjectsConverter> {
   factory CNABRemoteObjectsConverter._() {
@@ -53,11 +51,9 @@ class CNABRemoteObjectsConverter extends Struct<CNABRemoteObjectsConverter> {
   }
 }
 
-/// Objective-C class _CNAbstractActivityAlertDescription_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNAbstractActivityAlertDescription
     extends Struct<CNAbstractActivityAlertDescription> {
@@ -71,7 +67,7 @@ class CNAbstractActivityAlertDescription
         .cast<CNAbstractActivityAlertDescription>();
   }
 
-  static Pointer<Void> activity(
+  static Pointer activity(
     Pointer<CNAbstractActivityAlertDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -83,8 +79,8 @@ class CNAbstractActivityAlertDescription
 
   static int canUnifyValue(
     Pointer<CNAbstractActivityAlertDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> withValue,
+    Pointer arg, {
+    @required Pointer withValue,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -97,8 +93,8 @@ class CNAbstractActivityAlertDescription
 
   static void setValue(
     Pointer<CNAbstractActivityAlertDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> onCoreDataContact,
+    Pointer arg, {
+    @required Pointer onCoreDataContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -109,7 +105,7 @@ class CNAbstractActivityAlertDescription
     );
   }
 
-  static Pointer<Void> valueClass(
+  static Pointer valueClass(
     Pointer<CNAbstractActivityAlertDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -119,9 +115,9 @@ class CNAbstractActivityAlertDescription
     );
   }
 
-  static Pointer<Void> valueFromCoreDataContact(
+  static Pointer valueFromCoreDataContact(
     Pointer<CNAbstractActivityAlertDescription> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -132,11 +128,9 @@ class CNAbstractActivityAlertDescription
   }
 }
 
-/// Objective-C class _CNAccount_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNAccount extends Struct<CNAccount> {
   factory CNAccount._() {
@@ -147,9 +141,9 @@ class CNAccount extends Struct<CNAccount> {
     return _objc.allocate("CNAccount").cast<CNAccount>();
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<CNAccount> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -159,7 +153,7 @@ class CNAccount extends Struct<CNAccount> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CNAccount> _self,
   ) {
     _openDynamicLibrary();
@@ -171,7 +165,7 @@ class CNAccount extends Struct<CNAccount> {
 
   static void encodeWithCoder(
     Pointer<CNAccount> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -181,7 +175,7 @@ class CNAccount extends Struct<CNAccount> {
     );
   }
 
-  static Pointer<Void> externalIdentifierString(
+  static Pointer externalIdentifierString(
     Pointer<CNAccount> _self,
   ) {
     _openDynamicLibrary();
@@ -201,7 +195,7 @@ class CNAccount extends Struct<CNAccount> {
     );
   }
 
-  static Pointer<Void> identifier(
+  static Pointer identifier(
     Pointer<CNAccount> _self,
   ) {
     _openDynamicLibrary();
@@ -211,7 +205,7 @@ class CNAccount extends Struct<CNAccount> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CNAccount> _self,
   ) {
     _openDynamicLibrary();
@@ -221,9 +215,9 @@ class CNAccount extends Struct<CNAccount> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CNAccount> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -233,9 +227,9 @@ class CNAccount extends Struct<CNAccount> {
     );
   }
 
-  static Pointer<Void> initWithExternalIdentifier(
+  static Pointer initWithExternalIdentifier(
     Pointer<CNAccount> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -245,10 +239,10 @@ class CNAccount extends Struct<CNAccount> {
     );
   }
 
-  static Pointer<Void> initWithIdentifier(
+  static Pointer initWithIdentifier(
     Pointer<CNAccount> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> externalIdentifier,
+    Pointer arg, {
+    @required Pointer externalIdentifier,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -261,7 +255,7 @@ class CNAccount extends Struct<CNAccount> {
 
   static int isEqual(
     Pointer<CNAccount> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -272,11 +266,9 @@ class CNAccount extends Struct<CNAccount> {
   }
 }
 
-/// Objective-C class _CNAccountIdentifierDescription_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNAccountIdentifierDescription
     extends Struct<CNAccountIdentifierDescription> {
@@ -290,9 +282,9 @@ class CNAccountIdentifierDescription
         .cast<CNAccountIdentifierDescription>();
   }
 
-  static Pointer<Void> CNValueForContact(
+  static Pointer CNValueForContact(
     Pointer<CNAccountIdentifierDescription> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -304,8 +296,8 @@ class CNAccountIdentifierDescription
 
   static void copyFromCoreDataContact(
     Pointer<CNAccountIdentifierDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toContact,
+    Pointer arg, {
+    @required Pointer toContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -316,7 +308,7 @@ class CNAccountIdentifierDescription
     );
   }
 
-  static Pointer<Void> coreDataKey(
+  static Pointer coreDataKey(
     Pointer<CNAccountIdentifierDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -328,8 +320,8 @@ class CNAccountIdentifierDescription
 
   static void decodeUsingCoder(
     Pointer<CNAccountIdentifierDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> contact,
+    Pointer arg, {
+    @required Pointer contact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -342,8 +334,8 @@ class CNAccountIdentifierDescription
 
   static void encodeUsingCoder(
     Pointer<CNAccountIdentifierDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> contact,
+    Pointer arg, {
+    @required Pointer contact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -354,7 +346,7 @@ class CNAccountIdentifierDescription
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CNAccountIdentifierDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -366,8 +358,8 @@ class CNAccountIdentifierDescription
 
   static int isEqualForContact(
     Pointer<CNAccountIdentifierDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> other,
+    Pointer arg, {
+    @required Pointer other,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -380,8 +372,8 @@ class CNAccountIdentifierDescription
 
   static int isEqualIgnoringIdentifiersForContact(
     Pointer<CNAccountIdentifierDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> other,
+    Pointer arg, {
+    @required Pointer other,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -404,8 +396,8 @@ class CNAccountIdentifierDescription
 
   static void setCNValue(
     Pointer<CNAccountIdentifierDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> onContact,
+    Pointer arg, {
+    @required Pointer onContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -418,8 +410,8 @@ class CNAccountIdentifierDescription
 
   static void setValue(
     Pointer<CNAccountIdentifierDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> onCoreDataContact,
+    Pointer arg, {
+    @required Pointer onCoreDataContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -430,7 +422,7 @@ class CNAccountIdentifierDescription
     );
   }
 
-  static Pointer<Void> valueClass(
+  static Pointer valueClass(
     Pointer<CNAccountIdentifierDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -441,11 +433,9 @@ class CNAccountIdentifierDescription
   }
 }
 
-/// Objective-C class _CNActivityAlert_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNActivityAlert extends Struct<CNActivityAlert> {
   factory CNActivityAlert._() {
@@ -456,9 +446,9 @@ class CNActivityAlert extends Struct<CNActivityAlert> {
     return _objc.allocate("CNActivityAlert").cast<CNActivityAlert>();
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<CNActivityAlert> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -468,7 +458,7 @@ class CNActivityAlert extends Struct<CNActivityAlert> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CNActivityAlert> _self,
   ) {
     _openDynamicLibrary();
@@ -480,7 +470,7 @@ class CNActivityAlert extends Struct<CNActivityAlert> {
 
   static void encodeWithCoder(
     Pointer<CNActivityAlert> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -510,9 +500,9 @@ class CNActivityAlert extends Struct<CNActivityAlert> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CNActivityAlert> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -522,10 +512,10 @@ class CNActivityAlert extends Struct<CNActivityAlert> {
     );
   }
 
-  static Pointer<Void> initWithSound$vibration$ignoreMute$(
+  static Pointer initWithSound$vibration$ignoreMute$(
     Pointer<CNActivityAlert> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> vibration,
+    Pointer arg, {
+    @required Pointer vibration,
     @required int ignoreMute,
   }) {
     _openDynamicLibrary();
@@ -538,12 +528,12 @@ class CNActivityAlert extends Struct<CNActivityAlert> {
     );
   }
 
-  static Pointer<Void> initWithSound$vibration$ignoreMute$userInfo$(
+  static Pointer initWithSound$vibration$ignoreMute$userInfo$(
     Pointer<CNActivityAlert> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> vibration,
+    Pointer arg, {
+    @required Pointer vibration,
     @required int ignoreMute,
-    @required Pointer<Void> userInfo,
+    @required Pointer userInfo,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_Int8_p_returns_p(
@@ -558,7 +548,7 @@ class CNActivityAlert extends Struct<CNActivityAlert> {
 
   static int isEqual(
     Pointer<CNActivityAlert> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -570,7 +560,7 @@ class CNActivityAlert extends Struct<CNActivityAlert> {
 
   static int isValid(
     Pointer<CNActivityAlert> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -580,9 +570,9 @@ class CNActivityAlert extends Struct<CNActivityAlert> {
     );
   }
 
-  static Pointer<Void> mutableCopyWithZone(
+  static Pointer mutableCopyWithZone(
     Pointer<CNActivityAlert> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -606,7 +596,7 @@ class CNActivityAlert extends Struct<CNActivityAlert> {
 
   static void setSound(
     Pointer<CNActivityAlert> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -618,7 +608,7 @@ class CNActivityAlert extends Struct<CNActivityAlert> {
 
   static void setUserInfo(
     Pointer<CNActivityAlert> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -630,7 +620,7 @@ class CNActivityAlert extends Struct<CNActivityAlert> {
 
   static void setVibration(
     Pointer<CNActivityAlert> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -640,7 +630,7 @@ class CNActivityAlert extends Struct<CNActivityAlert> {
     );
   }
 
-  static Pointer<Void> sound(
+  static Pointer sound(
     Pointer<CNActivityAlert> _self,
   ) {
     _openDynamicLibrary();
@@ -650,7 +640,7 @@ class CNActivityAlert extends Struct<CNActivityAlert> {
     );
   }
 
-  static Pointer<Void> userInfo(
+  static Pointer userInfo(
     Pointer<CNActivityAlert> _self,
   ) {
     _openDynamicLibrary();
@@ -660,7 +650,7 @@ class CNActivityAlert extends Struct<CNActivityAlert> {
     );
   }
 
-  static Pointer<Void> vibration(
+  static Pointer vibration(
     Pointer<CNActivityAlert> _self,
   ) {
     _openDynamicLibrary();
@@ -671,11 +661,9 @@ class CNActivityAlert extends Struct<CNActivityAlert> {
   }
 }
 
-/// Objective-C class _CNAddressFormats_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNAddressFormats extends Struct<CNAddressFormats> {
   factory CNAddressFormats._() {
@@ -687,11 +675,9 @@ class CNAddressFormats extends Struct<CNAddressFormats> {
   }
 }
 
-/// Objective-C class _CNAggregateContactStore_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNAggregateContactStore extends Struct<CNAggregateContactStore> {
   factory CNAggregateContactStore._() {
@@ -704,10 +690,10 @@ class CNAggregateContactStore extends Struct<CNAggregateContactStore> {
         .cast<CNAggregateContactStore>();
   }
 
-  static Pointer<Void> accountsMatchingPredicate(
+  static Pointer accountsMatchingPredicate(
     Pointer<CNAggregateContactStore> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -718,10 +704,10 @@ class CNAggregateContactStore extends Struct<CNAggregateContactStore> {
     );
   }
 
-  static Pointer<Void> changeHistoryWithFetchRequest(
+  static Pointer changeHistoryWithFetchRequest(
     Pointer<CNAggregateContactStore> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -734,9 +720,9 @@ class CNAggregateContactStore extends Struct<CNAggregateContactStore> {
 
   static int clearChangeHistoryForClientIdentifier(
     Pointer<CNAggregateContactStore> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toChangeAnchor,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer toChangeAnchor,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_Int8(
@@ -749,10 +735,10 @@ class CNAggregateContactStore extends Struct<CNAggregateContactStore> {
     );
   }
 
-  static Pointer<Void> contactCountForFetchRequest(
+  static Pointer contactCountForFetchRequest(
     Pointer<CNAggregateContactStore> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -763,7 +749,7 @@ class CNAggregateContactStore extends Struct<CNAggregateContactStore> {
     );
   }
 
-  static Pointer<Void> contactStores(
+  static Pointer contactStores(
     Pointer<CNAggregateContactStore> _self,
   ) {
     _openDynamicLibrary();
@@ -773,10 +759,10 @@ class CNAggregateContactStore extends Struct<CNAggregateContactStore> {
     );
   }
 
-  static Pointer<Void> contactWithUserActivityUserInfo(
+  static Pointer contactWithUserActivityUserInfo(
     Pointer<CNAggregateContactStore> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> keysToFetch,
+    Pointer arg, {
+    @required Pointer keysToFetch,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -787,10 +773,10 @@ class CNAggregateContactStore extends Struct<CNAggregateContactStore> {
     );
   }
 
-  static Pointer<Void> containersMatchingPredicate(
+  static Pointer containersMatchingPredicate(
     Pointer<CNAggregateContactStore> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -801,7 +787,7 @@ class CNAggregateContactStore extends Struct<CNAggregateContactStore> {
     );
   }
 
-  static Pointer<Void> defaultContainerIdentifier(
+  static Pointer defaultContainerIdentifier(
     Pointer<CNAggregateContactStore> _self,
   ) {
     _openDynamicLibrary();
@@ -813,9 +799,9 @@ class CNAggregateContactStore extends Struct<CNAggregateContactStore> {
 
   static void didFetchContacts(
     Pointer<CNAggregateContactStore> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> forPredicate,
-    @required Pointer<Void> fromStore,
+    Pointer arg, {
+    @required Pointer forPredicate,
+    @required Pointer fromStore,
     @required int unifiedFetch,
   }) {
     _openDynamicLibrary();
@@ -832,9 +818,9 @@ class CNAggregateContactStore extends Struct<CNAggregateContactStore> {
 
   static int enumerateContactsAndMatchInfoWithFetchRequest(
     Pointer<CNAggregateContactStore> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
-    @required Pointer<Void> usingBlock,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
+    @required Pointer usingBlock,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_Int8(
@@ -849,9 +835,9 @@ class CNAggregateContactStore extends Struct<CNAggregateContactStore> {
 
   static int enumerateNonUnifiedContactsWithFetchRequest(
     Pointer<CNAggregateContactStore> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
-    @required Pointer<Void> usingBlock,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
+    @required Pointer usingBlock,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_Int8(
@@ -864,11 +850,11 @@ class CNAggregateContactStore extends Struct<CNAggregateContactStore> {
     );
   }
 
-  static Pointer<Void> executeFetchRequest(
+  static Pointer executeFetchRequest(
     Pointer<CNAggregateContactStore> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> progressiveResults,
-    @required Pointer<Void> completion,
+    Pointer arg, {
+    @required Pointer progressiveResults,
+    @required Pointer completion,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -882,8 +868,8 @@ class CNAggregateContactStore extends Struct<CNAggregateContactStore> {
 
   static int executeSaveRequest(
     Pointer<CNAggregateContactStore> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -894,10 +880,10 @@ class CNAggregateContactStore extends Struct<CNAggregateContactStore> {
     );
   }
 
-  static Pointer<Void> groupWithIdentifier(
+  static Pointer groupWithIdentifier(
     Pointer<CNAggregateContactStore> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -908,10 +894,10 @@ class CNAggregateContactStore extends Struct<CNAggregateContactStore> {
     );
   }
 
-  static Pointer<Void> groupsMatchingPredicate(
+  static Pointer groupsMatchingPredicate(
     Pointer<CNAggregateContactStore> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -922,9 +908,9 @@ class CNAggregateContactStore extends Struct<CNAggregateContactStore> {
     );
   }
 
-  static Pointer<Void> initWithContactStores(
+  static Pointer initWithContactStores(
     Pointer<CNAggregateContactStore> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -934,7 +920,7 @@ class CNAggregateContactStore extends Struct<CNAggregateContactStore> {
     );
   }
 
-  static Pointer<Void> mainContactStore(
+  static Pointer mainContactStore(
     Pointer<CNAggregateContactStore> _self,
   ) {
     _openDynamicLibrary();
@@ -944,7 +930,7 @@ class CNAggregateContactStore extends Struct<CNAggregateContactStore> {
     );
   }
 
-  static Pointer<Void> mainStore(
+  static Pointer mainStore(
     Pointer<CNAggregateContactStore> _self,
   ) {
     _openDynamicLibrary();
@@ -954,9 +940,9 @@ class CNAggregateContactStore extends Struct<CNAggregateContactStore> {
     );
   }
 
-  static Pointer<Void> meContactIdentifiers(
+  static Pointer meContactIdentifiers(
     Pointer<CNAggregateContactStore> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -966,11 +952,11 @@ class CNAggregateContactStore extends Struct<CNAggregateContactStore> {
     );
   }
 
-  static Pointer<Void> membersOfGroupWithIdentifier(
+  static Pointer membersOfGroupWithIdentifier(
     Pointer<CNAggregateContactStore> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> keysToFetch,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer keysToFetch,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -982,10 +968,10 @@ class CNAggregateContactStore extends Struct<CNAggregateContactStore> {
     );
   }
 
-  static Pointer<Void> originForSuggestion(
+  static Pointer originForSuggestion(
     Pointer<CNAggregateContactStore> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -996,10 +982,10 @@ class CNAggregateContactStore extends Struct<CNAggregateContactStore> {
     );
   }
 
-  static Pointer<Void> policyForContainerWithIdentifier(
+  static Pointer policyForContainerWithIdentifier(
     Pointer<CNAggregateContactStore> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -1012,8 +998,8 @@ class CNAggregateContactStore extends Struct<CNAggregateContactStore> {
 
   static int registerChangeHistoryClientIdentifier(
     Pointer<CNAggregateContactStore> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -1024,7 +1010,7 @@ class CNAggregateContactStore extends Struct<CNAggregateContactStore> {
     );
   }
 
-  static Pointer<Void> requestAccessForEntityType(
+  static Pointer requestAccessForEntityType(
     Pointer<CNAggregateContactStore> _self,
     int arg,
   ) {
@@ -1036,10 +1022,10 @@ class CNAggregateContactStore extends Struct<CNAggregateContactStore> {
     );
   }
 
-  static Pointer<Void> serverSearchContainersMatchingPredicate(
+  static Pointer serverSearchContainersMatchingPredicate(
     Pointer<CNAggregateContactStore> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -1052,7 +1038,7 @@ class CNAggregateContactStore extends Struct<CNAggregateContactStore> {
 
   static void setContactStores(
     Pointer<CNAggregateContactStore> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -1064,8 +1050,8 @@ class CNAggregateContactStore extends Struct<CNAggregateContactStore> {
 
   static int setMeContact$error$(
     Pointer<CNAggregateContactStore> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -1078,9 +1064,9 @@ class CNAggregateContactStore extends Struct<CNAggregateContactStore> {
 
   static int setMeContact$forContainer$error$(
     Pointer<CNAggregateContactStore> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> forContainer,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer forContainer,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_Int8(
@@ -1094,8 +1080,8 @@ class CNAggregateContactStore extends Struct<CNAggregateContactStore> {
 
   static int store(
     Pointer<CNAggregateContactStore> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> supportsSelector,
+    Pointer arg, {
+    @required Pointer supportsSelector,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -1106,10 +1092,10 @@ class CNAggregateContactStore extends Struct<CNAggregateContactStore> {
     );
   }
 
-  static Pointer<Void> subgroupsOfGroupWithIdentifier(
+  static Pointer subgroupsOfGroupWithIdentifier(
     Pointer<CNAggregateContactStore> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -1122,7 +1108,7 @@ class CNAggregateContactStore extends Struct<CNAggregateContactStore> {
 
   static int supportsSaveRequest(
     Pointer<CNAggregateContactStore> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -1132,9 +1118,9 @@ class CNAggregateContactStore extends Struct<CNAggregateContactStore> {
     );
   }
 
-  static Pointer<Void> unifiedContactCountWithError(
+  static Pointer unifiedContactCountWithError(
     Pointer<CNAggregateContactStore> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -1144,11 +1130,11 @@ class CNAggregateContactStore extends Struct<CNAggregateContactStore> {
     );
   }
 
-  static Pointer<Void> unifiedContactsMatchingPredicate(
+  static Pointer unifiedContactsMatchingPredicate(
     Pointer<CNAggregateContactStore> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> keysToFetch,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer keysToFetch,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -1162,8 +1148,8 @@ class CNAggregateContactStore extends Struct<CNAggregateContactStore> {
 
   static int unregisterChangeHistoryClientIdentifier(
     Pointer<CNAggregateContactStore> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -1174,10 +1160,10 @@ class CNAggregateContactStore extends Struct<CNAggregateContactStore> {
     );
   }
 
-  static Pointer<Void> usedLabelsForPropertyWithKey(
+  static Pointer usedLabelsForPropertyWithKey(
     Pointer<CNAggregateContactStore> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -1188,9 +1174,9 @@ class CNAggregateContactStore extends Struct<CNAggregateContactStore> {
     );
   }
 
-  static Pointer<Void> userActivityUserInfoForContact(
+  static Pointer userActivityUserInfoForContact(
     Pointer<CNAggregateContactStore> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -1201,11 +1187,9 @@ class CNAggregateContactStore extends Struct<CNAggregateContactStore> {
   }
 }
 
-/// Objective-C class _CNAggregateKeyDescriptor_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNAggregateKeyDescriptor extends Struct<CNAggregateKeyDescriptor> {
   factory CNAggregateKeyDescriptor._() {
@@ -1218,9 +1202,9 @@ class CNAggregateKeyDescriptor extends Struct<CNAggregateKeyDescriptor> {
         .cast<CNAggregateKeyDescriptor>();
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<CNAggregateKeyDescriptor> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -1230,7 +1214,7 @@ class CNAggregateKeyDescriptor extends Struct<CNAggregateKeyDescriptor> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CNAggregateKeyDescriptor> _self,
   ) {
     _openDynamicLibrary();
@@ -1242,7 +1226,7 @@ class CNAggregateKeyDescriptor extends Struct<CNAggregateKeyDescriptor> {
 
   static void encodeWithCoder(
     Pointer<CNAggregateKeyDescriptor> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -1262,9 +1246,9 @@ class CNAggregateKeyDescriptor extends Struct<CNAggregateKeyDescriptor> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CNAggregateKeyDescriptor> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -1274,10 +1258,10 @@ class CNAggregateKeyDescriptor extends Struct<CNAggregateKeyDescriptor> {
     );
   }
 
-  static Pointer<Void> initWithKeyDescriptors(
+  static Pointer initWithKeyDescriptors(
     Pointer<CNAggregateKeyDescriptor> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> description,
+    Pointer arg, {
+    @required Pointer description,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -1290,7 +1274,7 @@ class CNAggregateKeyDescriptor extends Struct<CNAggregateKeyDescriptor> {
 
   static int isEqual(
     Pointer<CNAggregateKeyDescriptor> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -1300,7 +1284,7 @@ class CNAggregateKeyDescriptor extends Struct<CNAggregateKeyDescriptor> {
     );
   }
 
-  static Pointer<Void> keyDescriptors(
+  static Pointer keyDescriptors(
     Pointer<CNAggregateKeyDescriptor> _self,
   ) {
     _openDynamicLibrary();
@@ -1310,7 +1294,7 @@ class CNAggregateKeyDescriptor extends Struct<CNAggregateKeyDescriptor> {
     );
   }
 
-  static Pointer<Void> privateDescription(
+  static Pointer privateDescription(
     Pointer<CNAggregateKeyDescriptor> _self,
   ) {
     _openDynamicLibrary();
@@ -1322,7 +1306,7 @@ class CNAggregateKeyDescriptor extends Struct<CNAggregateKeyDescriptor> {
 
   static void setKeyDescriptors(
     Pointer<CNAggregateKeyDescriptor> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -1334,7 +1318,7 @@ class CNAggregateKeyDescriptor extends Struct<CNAggregateKeyDescriptor> {
 
   static void setPrivateDescription(
     Pointer<CNAggregateKeyDescriptor> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -1345,11 +1329,9 @@ class CNAggregateKeyDescriptor extends Struct<CNAggregateKeyDescriptor> {
   }
 }
 
-/// Objective-C class _CNAuthorization_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNAuthorization extends Struct<CNAuthorization> {
   factory CNAuthorization._() {
@@ -1361,11 +1343,9 @@ class CNAuthorization extends Struct<CNAuthorization> {
   }
 }
 
-/// Objective-C class _CNBirthdayDescription_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNBirthdayDescription extends Struct<CNBirthdayDescription> {
   factory CNBirthdayDescription._() {
@@ -1378,9 +1358,9 @@ class CNBirthdayDescription extends Struct<CNBirthdayDescription> {
         .cast<CNBirthdayDescription>();
   }
 
-  static Pointer<Void> CNValueForContact(
+  static Pointer CNValueForContact(
     Pointer<CNBirthdayDescription> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -1392,8 +1372,8 @@ class CNBirthdayDescription extends Struct<CNBirthdayDescription> {
 
   static int canUnifyValue(
     Pointer<CNBirthdayDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> withValue,
+    Pointer arg, {
+    @required Pointer withValue,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -1406,8 +1386,8 @@ class CNBirthdayDescription extends Struct<CNBirthdayDescription> {
 
   static void copyFromCoreDataContact(
     Pointer<CNBirthdayDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toContact,
+    Pointer arg, {
+    @required Pointer toContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -1420,8 +1400,8 @@ class CNBirthdayDescription extends Struct<CNBirthdayDescription> {
 
   static void copyValueFromContact(
     Pointer<CNBirthdayDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toRemotePerson,
+    Pointer arg, {
+    @required Pointer toRemotePerson,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -1434,8 +1414,8 @@ class CNBirthdayDescription extends Struct<CNBirthdayDescription> {
 
   static void copyValueFromRemotePerson(
     Pointer<CNBirthdayDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toContact,
+    Pointer arg, {
+    @required Pointer toContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -1446,7 +1426,7 @@ class CNBirthdayDescription extends Struct<CNBirthdayDescription> {
     );
   }
 
-  static Pointer<Void> coreDataKey(
+  static Pointer coreDataKey(
     Pointer<CNBirthdayDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -1458,8 +1438,8 @@ class CNBirthdayDescription extends Struct<CNBirthdayDescription> {
 
   static void decodeUsingCoder(
     Pointer<CNBirthdayDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> contact,
+    Pointer arg, {
+    @required Pointer contact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -1472,8 +1452,8 @@ class CNBirthdayDescription extends Struct<CNBirthdayDescription> {
 
   static void encodeUsingCoder(
     Pointer<CNBirthdayDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> contact,
+    Pointer arg, {
+    @required Pointer contact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -1484,7 +1464,7 @@ class CNBirthdayDescription extends Struct<CNBirthdayDescription> {
     );
   }
 
-  static Pointer<Void> fromPlistTransform(
+  static Pointer fromPlistTransform(
     Pointer<CNBirthdayDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -1494,7 +1474,7 @@ class CNBirthdayDescription extends Struct<CNBirthdayDescription> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CNBirthdayDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -1506,8 +1486,8 @@ class CNBirthdayDescription extends Struct<CNBirthdayDescription> {
 
   static int isEqualForContact(
     Pointer<CNBirthdayDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> other,
+    Pointer arg, {
+    @required Pointer other,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -1520,8 +1500,8 @@ class CNBirthdayDescription extends Struct<CNBirthdayDescription> {
 
   static int isValidValue(
     Pointer<CNBirthdayDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -1534,8 +1514,8 @@ class CNBirthdayDescription extends Struct<CNBirthdayDescription> {
 
   static int isValue(
     Pointer<CNBirthdayDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> preferredToUnifiedValue,
+    Pointer arg, {
+    @required Pointer preferredToUnifiedValue,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -1548,8 +1528,8 @@ class CNBirthdayDescription extends Struct<CNBirthdayDescription> {
 
   static void setCNValue(
     Pointer<CNBirthdayDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> onContact,
+    Pointer arg, {
+    @required Pointer onContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -1560,7 +1540,7 @@ class CNBirthdayDescription extends Struct<CNBirthdayDescription> {
     );
   }
 
-  static Pointer<Void> valueClass(
+  static Pointer valueClass(
     Pointer<CNBirthdayDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -1571,11 +1551,9 @@ class CNBirthdayDescription extends Struct<CNBirthdayDescription> {
   }
 }
 
-/// Objective-C class _CNCDAccessAuthorization_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNCDAccessAuthorization extends Struct<CNCDAccessAuthorization> {
   factory CNCDAccessAuthorization._() {
@@ -1589,11 +1567,9 @@ class CNCDAccessAuthorization extends Struct<CNCDAccessAuthorization> {
   }
 }
 
-/// Objective-C class _CNCDAllContactsPredicate_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNCDAllContactsPredicate extends Struct<CNCDAllContactsPredicate> {
   factory CNCDAllContactsPredicate._() {
@@ -1606,7 +1582,7 @@ class CNCDAllContactsPredicate extends Struct<CNCDAllContactsPredicate> {
         .cast<CNCDAllContactsPredicate>();
   }
 
-  static Pointer<Void> cn_coreDataPredicate(
+  static Pointer cn_coreDataPredicate(
     Pointer<CNCDAllContactsPredicate> _self,
   ) {
     _openDynamicLibrary();
@@ -1617,11 +1593,9 @@ class CNCDAllContactsPredicate extends Struct<CNCDAllContactsPredicate> {
   }
 }
 
-/// Objective-C class _CNCDAllContainersPredicate_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNCDAllContainersPredicate extends Struct<CNCDAllContainersPredicate> {
   factory CNCDAllContainersPredicate._() {
@@ -1634,7 +1608,7 @@ class CNCDAllContainersPredicate extends Struct<CNCDAllContainersPredicate> {
         .cast<CNCDAllContainersPredicate>();
   }
 
-  static Pointer<Void> cn_coreDataPredicate(
+  static Pointer cn_coreDataPredicate(
     Pointer<CNCDAllContainersPredicate> _self,
   ) {
     _openDynamicLibrary();
@@ -1644,7 +1618,7 @@ class CNCDAllContainersPredicate extends Struct<CNCDAllContainersPredicate> {
     );
   }
 
-  static Pointer<Void> cn_persistenceFilterRequest(
+  static Pointer cn_persistenceFilterRequest(
     Pointer<CNCDAllContainersPredicate> _self,
   ) {
     _openDynamicLibrary();
@@ -1654,7 +1628,7 @@ class CNCDAllContainersPredicate extends Struct<CNCDAllContainersPredicate> {
     );
   }
 
-  static Pointer<Void> cn_topLevelFilter(
+  static Pointer cn_topLevelFilter(
     Pointer<CNCDAllContainersPredicate> _self,
   ) {
     _openDynamicLibrary();
@@ -1665,11 +1639,9 @@ class CNCDAllContainersPredicate extends Struct<CNCDAllContainersPredicate> {
   }
 }
 
-/// Objective-C class _CNCDAllGroupsPredicate_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNCDAllGroupsPredicate extends Struct<CNCDAllGroupsPredicate> {
   factory CNCDAllGroupsPredicate._() {
@@ -1682,7 +1654,7 @@ class CNCDAllGroupsPredicate extends Struct<CNCDAllGroupsPredicate> {
         .cast<CNCDAllGroupsPredicate>();
   }
 
-  static Pointer<Void> cn_coreDataPredicate(
+  static Pointer cn_coreDataPredicate(
     Pointer<CNCDAllGroupsPredicate> _self,
   ) {
     _openDynamicLibrary();
@@ -1693,11 +1665,9 @@ class CNCDAllGroupsPredicate extends Struct<CNCDAllGroupsPredicate> {
   }
 }
 
-/// Objective-C class _CNCDContactFetchRequestBuilder_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNCDContactFetchRequestBuilder
     extends Struct<CNCDContactFetchRequestBuilder> {
@@ -1711,7 +1681,7 @@ class CNCDContactFetchRequestBuilder
         .cast<CNCDContactFetchRequestBuilder>();
   }
 
-  static Pointer<Void> buildFetchRequestDescription(
+  static Pointer buildFetchRequestDescription(
     Pointer<CNCDContactFetchRequestBuilder> _self,
   ) {
     _openDynamicLibrary();
@@ -1721,7 +1691,7 @@ class CNCDContactFetchRequestBuilder
     );
   }
 
-  static Pointer<Void> contactsByNameComparator(
+  static Pointer contactsByNameComparator(
     Pointer<CNCDContactFetchRequestBuilder> _self,
   ) {
     _openDynamicLibrary();
@@ -1731,7 +1701,7 @@ class CNCDContactFetchRequestBuilder
     );
   }
 
-  static Pointer<Void> effectiveKeysToFetch(
+  static Pointer effectiveKeysToFetch(
     Pointer<CNCDContactFetchRequestBuilder> _self,
   ) {
     _openDynamicLibrary();
@@ -1741,9 +1711,9 @@ class CNCDContactFetchRequestBuilder
     );
   }
 
-  static Pointer<Void> effectivePredicate(
+  static Pointer effectivePredicate(
     Pointer<CNCDContactFetchRequestBuilder> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -1753,9 +1723,9 @@ class CNCDContactFetchRequestBuilder
     );
   }
 
-  static Pointer<Void> initWithFetchRequest(
+  static Pointer initWithFetchRequest(
     Pointer<CNCDContactFetchRequestBuilder> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -1765,7 +1735,7 @@ class CNCDContactFetchRequestBuilder
     );
   }
 
-  static Pointer<Void> relationshipKeyPaths(
+  static Pointer relationshipKeyPaths(
     Pointer<CNCDContactFetchRequestBuilder> _self,
   ) {
     _openDynamicLibrary();
@@ -1775,9 +1745,9 @@ class CNCDContactFetchRequestBuilder
     );
   }
 
-  static Pointer<Void> relationshipKeyPathsForKeysToFetch(
+  static Pointer relationshipKeyPathsForKeysToFetch(
     Pointer<CNCDContactFetchRequestBuilder> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -1787,7 +1757,7 @@ class CNCDContactFetchRequestBuilder
     );
   }
 
-  static Pointer<Void> sortDescriptors(
+  static Pointer sortDescriptors(
     Pointer<CNCDContactFetchRequestBuilder> _self,
   ) {
     _openDynamicLibrary();
@@ -1807,10 +1777,10 @@ class CNCDContactFetchRequestBuilder
     );
   }
 
-  static Pointer<Void> validatePredicate(
+  static Pointer validatePredicate(
     Pointer<CNCDContactFetchRequestBuilder> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -1821,9 +1791,9 @@ class CNCDContactFetchRequestBuilder
     );
   }
 
-  static Pointer<Void> validatePredicateWithError(
+  static Pointer validatePredicateWithError(
     Pointer<CNCDContactFetchRequestBuilder> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -1834,11 +1804,9 @@ class CNCDContactFetchRequestBuilder
   }
 }
 
-/// Objective-C class _CNCDContactFetchRequestDescription_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNCDContactFetchRequestDescription
     extends Struct<CNCDContactFetchRequestDescription> {
@@ -1852,7 +1820,7 @@ class CNCDContactFetchRequestDescription
         .cast<CNCDContactFetchRequestDescription>();
   }
 
-  static Pointer<Void> contactsByNameComparator(
+  static Pointer contactsByNameComparator(
     Pointer<CNCDContactFetchRequestDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -1862,7 +1830,7 @@ class CNCDContactFetchRequestDescription
     );
   }
 
-  static Pointer<Void> effectiveKeysToFetch(
+  static Pointer effectiveKeysToFetch(
     Pointer<CNCDContactFetchRequestDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -1872,9 +1840,9 @@ class CNCDContactFetchRequestDescription
     );
   }
 
-  static Pointer<Void> initWithBuilder(
+  static Pointer initWithBuilder(
     Pointer<CNCDContactFetchRequestDescription> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -1884,7 +1852,7 @@ class CNCDContactFetchRequestDescription
     );
   }
 
-  static Pointer<Void> relationshipKeyPaths(
+  static Pointer relationshipKeyPaths(
     Pointer<CNCDContactFetchRequestDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -1894,7 +1862,7 @@ class CNCDContactFetchRequestDescription
     );
   }
 
-  static Pointer<Void> sortDescriptors(
+  static Pointer sortDescriptors(
     Pointer<CNCDContactFetchRequestDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -1914,9 +1882,9 @@ class CNCDContactFetchRequestDescription
     );
   }
 
-  static Pointer<Void> validatedPredicateWithError(
+  static Pointer validatedPredicateWithError(
     Pointer<CNCDContactFetchRequestDescription> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -1927,11 +1895,9 @@ class CNCDContactFetchRequestDescription
   }
 }
 
-/// Objective-C class _CNCDContactFetcher_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNCDContactFetcher extends Struct<CNCDContactFetcher> {
   factory CNCDContactFetcher._() {
@@ -1942,9 +1908,9 @@ class CNCDContactFetcher extends Struct<CNCDContactFetcher> {
     return _objc.allocate("CNCDContactFetcher").cast<CNCDContactFetcher>();
   }
 
-  static Pointer<Void> contactsFromCoreDataContacts(
+  static Pointer contactsFromCoreDataContacts(
     Pointer<CNCDContactFetcher> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -1954,10 +1920,10 @@ class CNCDContactFetcher extends Struct<CNCDContactFetcher> {
     );
   }
 
-  static Pointer<Void> executeFetchRequest(
+  static Pointer executeFetchRequest(
     Pointer<CNCDContactFetcher> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -1968,9 +1934,9 @@ class CNCDContactFetcher extends Struct<CNCDContactFetcher> {
     );
   }
 
-  static Pointer<Void> fetchContacts(
+  static Pointer fetchContacts(
     Pointer<CNCDContactFetcher> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -1980,10 +1946,10 @@ class CNCDContactFetcher extends Struct<CNCDContactFetcher> {
     );
   }
 
-  static Pointer<Void> fetchContactsWithLinkIdentifier(
+  static Pointer fetchContactsWithLinkIdentifier(
     Pointer<CNCDContactFetcher> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -1994,10 +1960,10 @@ class CNCDContactFetcher extends Struct<CNCDContactFetcher> {
     );
   }
 
-  static Pointer<Void> fetchContainerScopedContactsMatchingPredicate(
+  static Pointer fetchContainerScopedContactsMatchingPredicate(
     Pointer<CNCDContactFetcher> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -2008,10 +1974,10 @@ class CNCDContactFetcher extends Struct<CNCDContactFetcher> {
     );
   }
 
-  static Pointer<Void> fetchExchangeContactsMatchingPredicate(
+  static Pointer fetchExchangeContactsMatchingPredicate(
     Pointer<CNCDContactFetcher> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -2022,7 +1988,7 @@ class CNCDContactFetcher extends Struct<CNCDContactFetcher> {
     );
   }
 
-  static Pointer<Void> fetchRequestDescription(
+  static Pointer fetchRequestDescription(
     Pointer<CNCDContactFetcher> _self,
   ) {
     _openDynamicLibrary();
@@ -2032,9 +1998,9 @@ class CNCDContactFetcher extends Struct<CNCDContactFetcher> {
     );
   }
 
-  static Pointer<Void> fetchRequestWithPredicate$(
+  static Pointer fetchRequestWithPredicate$(
     Pointer<CNCDContactFetcher> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -2044,10 +2010,10 @@ class CNCDContactFetcher extends Struct<CNCDContactFetcher> {
     );
   }
 
-  static Pointer<Void> fetchRequestWithPredicate$fetchRange$(
+  static Pointer fetchRequestWithPredicate$fetchRange$(
     Pointer<CNCDContactFetcher> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> fetchRange,
+    Pointer arg, {
+    @required Pointer fetchRange,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -2058,11 +2024,11 @@ class CNCDContactFetcher extends Struct<CNCDContactFetcher> {
     );
   }
 
-  static Pointer<Void> fetchRequestWithPredicate$fetchRange$sortDescriptors$(
+  static Pointer fetchRequestWithPredicate$fetchRange$sortDescriptors$(
     Pointer<CNCDContactFetcher> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> fetchRange,
-    @required Pointer<Void> sortDescriptors,
+    Pointer arg, {
+    @required Pointer fetchRange,
+    @required Pointer sortDescriptors,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -2075,7 +2041,7 @@ class CNCDContactFetcher extends Struct<CNCDContactFetcher> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CNCDContactFetcher> _self,
   ) {
     _openDynamicLibrary();
@@ -2085,10 +2051,10 @@ class CNCDContactFetcher extends Struct<CNCDContactFetcher> {
     );
   }
 
-  static Pointer<Void> initWithFetchRequestDescription(
+  static Pointer initWithFetchRequestDescription(
     Pointer<CNCDContactFetcher> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> persistenceContext,
+    Pointer arg, {
+    @required Pointer persistenceContext,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -2099,9 +2065,9 @@ class CNCDContactFetcher extends Struct<CNCDContactFetcher> {
     );
   }
 
-  static Pointer<Void> linkedContacts(
+  static Pointer linkedContacts(
     Pointer<CNCDContactFetcher> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -2111,7 +2077,7 @@ class CNCDContactFetcher extends Struct<CNCDContactFetcher> {
     );
   }
 
-  static Pointer<Void> persistenceContext(
+  static Pointer persistenceContext(
     Pointer<CNCDContactFetcher> _self,
   ) {
     _openDynamicLibrary();
@@ -2121,9 +2087,9 @@ class CNCDContactFetcher extends Struct<CNCDContactFetcher> {
     );
   }
 
-  static Pointer<Void> unifyCoreDataContacts(
+  static Pointer unifyCoreDataContacts(
     Pointer<CNCDContactFetcher> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -2134,11 +2100,9 @@ class CNCDContactFetcher extends Struct<CNCDContactFetcher> {
   }
 }
 
-/// Objective-C class _CNCDContactSaveExecutor_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNCDContactSaveExecutor extends Struct<CNCDContactSaveExecutor> {
   factory CNCDContactSaveExecutor._() {
@@ -2161,7 +2125,7 @@ class CNCDContactSaveExecutor extends Struct<CNCDContactSaveExecutor> {
     );
   }
 
-  static Pointer<Void> allContactIdentifiers(
+  static Pointer allContactIdentifiers(
     Pointer<CNCDContactSaveExecutor> _self,
   ) {
     _openDynamicLibrary();
@@ -2173,9 +2137,9 @@ class CNCDContactSaveExecutor extends Struct<CNCDContactSaveExecutor> {
 
   static void applyDiff(
     Pointer<CNCDContactSaveExecutor> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toUnifiedContact,
-    @required Pointer<Void> withIdentifierMap,
+    Pointer arg, {
+    @required Pointer toUnifiedContact,
+    @required Pointer withIdentifierMap,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_void(
@@ -2199,7 +2163,7 @@ class CNCDContactSaveExecutor extends Struct<CNCDContactSaveExecutor> {
 
   static void enumerateAddedContacts(
     Pointer<CNCDContactSaveExecutor> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -2209,9 +2173,9 @@ class CNCDContactSaveExecutor extends Struct<CNCDContactSaveExecutor> {
     );
   }
 
-  static Pointer<Void> initWithSaveContext(
+  static Pointer initWithSaveContext(
     Pointer<CNCDContactSaveExecutor> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -2221,7 +2185,7 @@ class CNCDContactSaveExecutor extends Struct<CNCDContactSaveExecutor> {
     );
   }
 
-  static Pointer<Void> insertedContactIdentifiers(
+  static Pointer insertedContactIdentifiers(
     Pointer<CNCDContactSaveExecutor> _self,
   ) {
     _openDynamicLibrary();
@@ -2241,7 +2205,7 @@ class CNCDContactSaveExecutor extends Struct<CNCDContactSaveExecutor> {
     );
   }
 
-  static Pointer<Void> saveContext(
+  static Pointer saveContext(
     Pointer<CNCDContactSaveExecutor> _self,
   ) {
     _openDynamicLibrary();
@@ -2293,7 +2257,7 @@ class CNCDContactSaveExecutor extends Struct<CNCDContactSaveExecutor> {
 
   static void updateNonUnifiedContacts(
     Pointer<CNCDContactSaveExecutor> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -2305,7 +2269,7 @@ class CNCDContactSaveExecutor extends Struct<CNCDContactSaveExecutor> {
 
   static void updateUnifiedContacts(
     Pointer<CNCDContactSaveExecutor> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -2316,11 +2280,9 @@ class CNCDContactSaveExecutor extends Struct<CNCDContactSaveExecutor> {
   }
 }
 
-/// Objective-C class _CNCDContactWithNamePredicate_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNCDContactWithNamePredicate
     extends Struct<CNCDContactWithNamePredicate> {
@@ -2334,7 +2296,7 @@ class CNCDContactWithNamePredicate
         .cast<CNCDContactWithNamePredicate>();
   }
 
-  static Pointer<Void> cn_coreDataPredicate(
+  static Pointer cn_coreDataPredicate(
     Pointer<CNCDContactWithNamePredicate> _self,
   ) {
     _openDynamicLibrary();
@@ -2345,11 +2307,9 @@ class CNCDContactWithNamePredicate
   }
 }
 
-/// Objective-C class _CNCDContactsInContainerPredicate_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNCDContactsInContainerPredicate
     extends Struct<CNCDContactsInContainerPredicate> {
@@ -2363,7 +2323,7 @@ class CNCDContactsInContainerPredicate
         .cast<CNCDContactsInContainerPredicate>();
   }
 
-  static Pointer<Void> cn_coreDataExchangePredicate(
+  static Pointer cn_coreDataExchangePredicate(
     Pointer<CNCDContactsInContainerPredicate> _self,
   ) {
     _openDynamicLibrary();
@@ -2373,7 +2333,7 @@ class CNCDContactsInContainerPredicate
     );
   }
 
-  static Pointer<Void> cn_coreDataPredicate(
+  static Pointer cn_coreDataPredicate(
     Pointer<CNCDContactsInContainerPredicate> _self,
   ) {
     _openDynamicLibrary();
@@ -2383,7 +2343,7 @@ class CNCDContactsInContainerPredicate
     );
   }
 
-  static Pointer<Void> containerIdentifier(
+  static Pointer containerIdentifier(
     Pointer<CNCDContactsInContainerPredicate> _self,
   ) {
     _openDynamicLibrary();
@@ -2393,7 +2353,7 @@ class CNCDContactsInContainerPredicate
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CNCDContactsInContainerPredicate> _self,
   ) {
     _openDynamicLibrary();
@@ -2403,7 +2363,7 @@ class CNCDContactsInContainerPredicate
     );
   }
 
-  static Pointer<Void> identifier(
+  static Pointer identifier(
     Pointer<CNCDContactsInContainerPredicate> _self,
   ) {
     _openDynamicLibrary();
@@ -2413,9 +2373,9 @@ class CNCDContactsInContainerPredicate
     );
   }
 
-  static Pointer<Void> initWithIdentifier(
+  static Pointer initWithIdentifier(
     Pointer<CNCDContactsInContainerPredicate> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -2426,11 +2386,9 @@ class CNCDContactsInContainerPredicate
   }
 }
 
-/// Objective-C class _CNCDContactsInGroupPredicate_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNCDContactsInGroupPredicate
     extends Struct<CNCDContactsInGroupPredicate> {
@@ -2444,7 +2402,7 @@ class CNCDContactsInGroupPredicate
         .cast<CNCDContactsInGroupPredicate>();
   }
 
-  static Pointer<Void> cn_coreDataPredicate(
+  static Pointer cn_coreDataPredicate(
     Pointer<CNCDContactsInGroupPredicate> _self,
   ) {
     _openDynamicLibrary();
@@ -2454,7 +2412,7 @@ class CNCDContactsInGroupPredicate
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CNCDContactsInGroupPredicate> _self,
   ) {
     _openDynamicLibrary();
@@ -2464,7 +2422,7 @@ class CNCDContactsInGroupPredicate
     );
   }
 
-  static Pointer<Void> identifier(
+  static Pointer identifier(
     Pointer<CNCDContactsInGroupPredicate> _self,
   ) {
     _openDynamicLibrary();
@@ -2474,9 +2432,9 @@ class CNCDContactsInGroupPredicate
     );
   }
 
-  static Pointer<Void> initWithIdentifier(
+  static Pointer initWithIdentifier(
     Pointer<CNCDContactsInGroupPredicate> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -2487,11 +2445,9 @@ class CNCDContactsInGroupPredicate
   }
 }
 
-/// Objective-C class _CNCDContactsLinkedToContactPredicate_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNCDContactsLinkedToContactPredicate
     extends Struct<CNCDContactsLinkedToContactPredicate> {
@@ -2505,7 +2461,7 @@ class CNCDContactsLinkedToContactPredicate
         .cast<CNCDContactsLinkedToContactPredicate>();
   }
 
-  static Pointer<Void> cn_coreDataPredicate(
+  static Pointer cn_coreDataPredicate(
     Pointer<CNCDContactsLinkedToContactPredicate> _self,
   ) {
     _openDynamicLibrary();
@@ -2516,11 +2472,9 @@ class CNCDContactsLinkedToContactPredicate
   }
 }
 
-/// Objective-C class _CNCDContactsMatchingPredicate_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNCDContactsMatchingPredicate
     extends Struct<CNCDContactsMatchingPredicate> {
@@ -2534,7 +2488,7 @@ class CNCDContactsMatchingPredicate
         .cast<CNCDContactsMatchingPredicate>();
   }
 
-  static Pointer<Void> cn_coreDataPredicate(
+  static Pointer cn_coreDataPredicate(
     Pointer<CNCDContactsMatchingPredicate> _self,
   ) {
     _openDynamicLibrary();
@@ -2544,7 +2498,7 @@ class CNCDContactsMatchingPredicate
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CNCDContactsMatchingPredicate> _self,
   ) {
     _openDynamicLibrary();
@@ -2554,9 +2508,9 @@ class CNCDContactsMatchingPredicate
     );
   }
 
-  static Pointer<Void> initWithCoreDataPredicate(
+  static Pointer initWithCoreDataPredicate(
     Pointer<CNCDContactsMatchingPredicate> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -2567,11 +2521,9 @@ class CNCDContactsMatchingPredicate
   }
 }
 
-/// Objective-C class _CNCDContainerFetcher_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNCDContainerFetcher extends Struct<CNCDContainerFetcher> {
   factory CNCDContainerFetcher._() {
@@ -2582,11 +2534,11 @@ class CNCDContainerFetcher extends Struct<CNCDContainerFetcher> {
     return _objc.allocate("CNCDContainerFetcher").cast<CNCDContainerFetcher>();
   }
 
-  static Pointer<Void> containersMatchingPredicate(
+  static Pointer containersMatchingPredicate(
     Pointer<CNCDContainerFetcher> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> fromContainers,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer fromContainers,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -2598,9 +2550,9 @@ class CNCDContainerFetcher extends Struct<CNCDContainerFetcher> {
     );
   }
 
-  static Pointer<Void> effectivePredicate(
+  static Pointer effectivePredicate(
     Pointer<CNCDContainerFetcher> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -2610,11 +2562,11 @@ class CNCDContainerFetcher extends Struct<CNCDContainerFetcher> {
     );
   }
 
-  static Pointer<Void> exchangeSubContainersMatchingPredicate(
+  static Pointer exchangeSubContainersMatchingPredicate(
     Pointer<CNCDContainerFetcher> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> fromContainers,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer fromContainers,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -2627,9 +2579,9 @@ class CNCDContainerFetcher extends Struct<CNCDContainerFetcher> {
     );
   }
 
-  static Pointer<Void> fetchContainers(
+  static Pointer fetchContainers(
     Pointer<CNCDContainerFetcher> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -2639,9 +2591,9 @@ class CNCDContainerFetcher extends Struct<CNCDContainerFetcher> {
     );
   }
 
-  static Pointer<Void> fetchRequestWithPredicate(
+  static Pointer fetchRequestWithPredicate(
     Pointer<CNCDContainerFetcher> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -2651,7 +2603,7 @@ class CNCDContainerFetcher extends Struct<CNCDContainerFetcher> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CNCDContainerFetcher> _self,
   ) {
     _openDynamicLibrary();
@@ -2661,10 +2613,10 @@ class CNCDContainerFetcher extends Struct<CNCDContainerFetcher> {
     );
   }
 
-  static Pointer<Void> initWithPredicate(
+  static Pointer initWithPredicate(
     Pointer<CNCDContainerFetcher> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> persistenceContext,
+    Pointer arg, {
+    @required Pointer persistenceContext,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -2677,8 +2629,8 @@ class CNCDContainerFetcher extends Struct<CNCDContainerFetcher> {
 
   static int recurseOnPredicate(
     Pointer<CNCDContainerFetcher> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> forGroup,
+    Pointer arg, {
+    @required Pointer forGroup,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -2689,10 +2641,10 @@ class CNCDContainerFetcher extends Struct<CNCDContainerFetcher> {
     );
   }
 
-  static Pointer<Void> topLevelContainersMatchingPredicate(
+  static Pointer topLevelContainersMatchingPredicate(
     Pointer<CNCDContainerFetcher> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> fromContainers,
+    Pointer arg, {
+    @required Pointer fromContainers,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -2703,10 +2655,10 @@ class CNCDContainerFetcher extends Struct<CNCDContainerFetcher> {
     );
   }
 
-  static Pointer<Void> validatePredicate(
+  static Pointer validatePredicate(
     Pointer<CNCDContainerFetcher> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -2718,11 +2670,9 @@ class CNCDContainerFetcher extends Struct<CNCDContainerFetcher> {
   }
 }
 
-/// Objective-C class _CNCDCustomPropertySaveExecutor_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNCDCustomPropertySaveExecutor
     extends Struct<CNCDCustomPropertySaveExecutor> {
@@ -2737,11 +2687,9 @@ class CNCDCustomPropertySaveExecutor
   }
 }
 
-/// Objective-C class _CNCDCustomPropertyValueFetcher_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNCDCustomPropertyValueFetcher
     extends Struct<CNCDCustomPropertyValueFetcher> {
@@ -2755,9 +2703,9 @@ class CNCDCustomPropertyValueFetcher
         .cast<CNCDCustomPropertyValueFetcher>();
   }
 
-  static Pointer<Void> fetchCustomPropertyValues(
+  static Pointer fetchCustomPropertyValues(
     Pointer<CNCDCustomPropertyValueFetcher> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -2767,7 +2715,7 @@ class CNCDCustomPropertyValueFetcher
     );
   }
 
-  static Pointer<Void> identifier(
+  static Pointer identifier(
     Pointer<CNCDCustomPropertyValueFetcher> _self,
   ) {
     _openDynamicLibrary();
@@ -2777,10 +2725,10 @@ class CNCDCustomPropertyValueFetcher
     );
   }
 
-  static Pointer<Void> initWithRecordIdentifier(
+  static Pointer initWithRecordIdentifier(
     Pointer<CNCDCustomPropertyValueFetcher> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> persistenceContext,
+    Pointer arg, {
+    @required Pointer persistenceContext,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -2791,7 +2739,7 @@ class CNCDCustomPropertyValueFetcher
     );
   }
 
-  static Pointer<Void> persistenceContext(
+  static Pointer persistenceContext(
     Pointer<CNCDCustomPropertyValueFetcher> _self,
   ) {
     _openDynamicLibrary();
@@ -2802,11 +2750,9 @@ class CNCDCustomPropertyValueFetcher
   }
 }
 
-/// Objective-C class _CNCDGroupFetcher_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNCDGroupFetcher extends Struct<CNCDGroupFetcher> {
   factory CNCDGroupFetcher._() {
@@ -2817,9 +2763,9 @@ class CNCDGroupFetcher extends Struct<CNCDGroupFetcher> {
     return _objc.allocate("CNCDGroupFetcher").cast<CNCDGroupFetcher>();
   }
 
-  static Pointer<Void> effectivePredicate(
+  static Pointer effectivePredicate(
     Pointer<CNCDGroupFetcher> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -2829,10 +2775,10 @@ class CNCDGroupFetcher extends Struct<CNCDGroupFetcher> {
     );
   }
 
-  static Pointer<Void> executeFetchRequest(
+  static Pointer executeFetchRequest(
     Pointer<CNCDGroupFetcher> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -2843,10 +2789,10 @@ class CNCDGroupFetcher extends Struct<CNCDGroupFetcher> {
     );
   }
 
-  static Pointer<Void> fetchContainerScopedGroupsMatchingPredicate(
+  static Pointer fetchContainerScopedGroupsMatchingPredicate(
     Pointer<CNCDGroupFetcher> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -2857,10 +2803,10 @@ class CNCDGroupFetcher extends Struct<CNCDGroupFetcher> {
     );
   }
 
-  static Pointer<Void> fetchCoreDataGroupsMatchingPredicate(
+  static Pointer fetchCoreDataGroupsMatchingPredicate(
     Pointer<CNCDGroupFetcher> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -2871,10 +2817,10 @@ class CNCDGroupFetcher extends Struct<CNCDGroupFetcher> {
     );
   }
 
-  static Pointer<Void> fetchExchangeGroupsMatchingPredicate$error$(
+  static Pointer fetchExchangeGroupsMatchingPredicate$error$(
     Pointer<CNCDGroupFetcher> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -2885,9 +2831,9 @@ class CNCDGroupFetcher extends Struct<CNCDGroupFetcher> {
     );
   }
 
-  static Pointer<Void> fetchExchangeGroupsMatchingPredicate$(
+  static Pointer fetchExchangeGroupsMatchingPredicate$(
     Pointer<CNCDGroupFetcher> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -2897,9 +2843,9 @@ class CNCDGroupFetcher extends Struct<CNCDGroupFetcher> {
     );
   }
 
-  static Pointer<Void> fetchGroups(
+  static Pointer fetchGroups(
     Pointer<CNCDGroupFetcher> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -2909,9 +2855,9 @@ class CNCDGroupFetcher extends Struct<CNCDGroupFetcher> {
     );
   }
 
-  static Pointer<Void> fetchRequestWithPredicate(
+  static Pointer fetchRequestWithPredicate(
     Pointer<CNCDGroupFetcher> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -2921,7 +2867,7 @@ class CNCDGroupFetcher extends Struct<CNCDGroupFetcher> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CNCDGroupFetcher> _self,
   ) {
     _openDynamicLibrary();
@@ -2931,10 +2877,10 @@ class CNCDGroupFetcher extends Struct<CNCDGroupFetcher> {
     );
   }
 
-  static Pointer<Void> initWithPredicate(
+  static Pointer initWithPredicate(
     Pointer<CNCDGroupFetcher> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> persistenceContext,
+    Pointer arg, {
+    @required Pointer persistenceContext,
     @required int allowGenericPredicate,
   }) {
     _openDynamicLibrary();
@@ -2948,10 +2894,10 @@ class CNCDGroupFetcher extends Struct<CNCDGroupFetcher> {
     );
   }
 
-  static Pointer<Void> validatePredicate(
+  static Pointer validatePredicate(
     Pointer<CNCDGroupFetcher> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -2963,11 +2909,9 @@ class CNCDGroupFetcher extends Struct<CNCDGroupFetcher> {
   }
 }
 
-/// Objective-C class _CNCDGroupMembershipSaveExecutor_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNCDGroupMembershipSaveExecutor
     extends Struct<CNCDGroupMembershipSaveExecutor> {
@@ -2991,7 +2935,7 @@ class CNCDGroupMembershipSaveExecutor
     );
   }
 
-  static Pointer<Void> allContactIdentifiers(
+  static Pointer allContactIdentifiers(
     Pointer<CNCDGroupMembershipSaveExecutor> _self,
   ) {
     _openDynamicLibrary();
@@ -3001,7 +2945,7 @@ class CNCDGroupMembershipSaveExecutor
     );
   }
 
-  static Pointer<Void> allGroupIdentifiers(
+  static Pointer allGroupIdentifiers(
     Pointer<CNCDGroupMembershipSaveExecutor> _self,
   ) {
     _openDynamicLibrary();
@@ -3013,8 +2957,8 @@ class CNCDGroupMembershipSaveExecutor
 
   static void enumerateCoreDataGroupsAndMembers(
     Pointer<CNCDGroupMembershipSaveExecutor> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> withBlock,
+    Pointer arg, {
+    @required Pointer withBlock,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -3025,9 +2969,9 @@ class CNCDGroupMembershipSaveExecutor
     );
   }
 
-  static Pointer<Void> initWithSaveContext(
+  static Pointer initWithSaveContext(
     Pointer<CNCDGroupMembershipSaveExecutor> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -3047,7 +2991,7 @@ class CNCDGroupMembershipSaveExecutor
     );
   }
 
-  static Pointer<Void> saveContext(
+  static Pointer saveContext(
     Pointer<CNCDGroupMembershipSaveExecutor> _self,
   ) {
     _openDynamicLibrary();
@@ -3068,11 +3012,9 @@ class CNCDGroupMembershipSaveExecutor
   }
 }
 
-/// Objective-C class _CNCDGroupNamePredicateCreationHelper_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNCDGroupNamePredicateCreationHelper
     extends Struct<CNCDGroupNamePredicateCreationHelper> {
@@ -3087,11 +3029,9 @@ class CNCDGroupNamePredicateCreationHelper
   }
 }
 
-/// Objective-C class _CNCDGroupPredicate_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNCDGroupPredicate extends Struct<CNCDGroupPredicate> {
   factory CNCDGroupPredicate._() {
@@ -3102,7 +3042,7 @@ class CNCDGroupPredicate extends Struct<CNCDGroupPredicate> {
     return _objc.allocate("CNCDGroupPredicate").cast<CNCDGroupPredicate>();
   }
 
-  static Pointer<Void> cn_coreDataPredicate(
+  static Pointer cn_coreDataPredicate(
     Pointer<CNCDGroupPredicate> _self,
   ) {
     _openDynamicLibrary();
@@ -3113,11 +3053,9 @@ class CNCDGroupPredicate extends Struct<CNCDGroupPredicate> {
   }
 }
 
-/// Objective-C class _CNCDGroupSaveExecutor_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNCDGroupSaveExecutor extends Struct<CNCDGroupSaveExecutor> {
   factory CNCDGroupSaveExecutor._() {
@@ -3140,7 +3078,7 @@ class CNCDGroupSaveExecutor extends Struct<CNCDGroupSaveExecutor> {
     );
   }
 
-  static Pointer<Void> allGroupIdentifiers(
+  static Pointer allGroupIdentifiers(
     Pointer<CNCDGroupSaveExecutor> _self,
   ) {
     _openDynamicLibrary();
@@ -3162,7 +3100,7 @@ class CNCDGroupSaveExecutor extends Struct<CNCDGroupSaveExecutor> {
 
   static void enumerateAddedGroups(
     Pointer<CNCDGroupSaveExecutor> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -3172,9 +3110,9 @@ class CNCDGroupSaveExecutor extends Struct<CNCDGroupSaveExecutor> {
     );
   }
 
-  static Pointer<Void> initWithSaveContext(
+  static Pointer initWithSaveContext(
     Pointer<CNCDGroupSaveExecutor> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -3184,7 +3122,7 @@ class CNCDGroupSaveExecutor extends Struct<CNCDGroupSaveExecutor> {
     );
   }
 
-  static Pointer<Void> saveContext(
+  static Pointer saveContext(
     Pointer<CNCDGroupSaveExecutor> _self,
   ) {
     _openDynamicLibrary();
@@ -3225,11 +3163,9 @@ class CNCDGroupSaveExecutor extends Struct<CNCDGroupSaveExecutor> {
   }
 }
 
-/// Objective-C class _CNCDGroupsInContainerPredicate_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNCDGroupsInContainerPredicate
     extends Struct<CNCDGroupsInContainerPredicate> {
@@ -3243,7 +3179,7 @@ class CNCDGroupsInContainerPredicate
         .cast<CNCDGroupsInContainerPredicate>();
   }
 
-  static Pointer<Void> cn_coreDataExchangePredicate(
+  static Pointer cn_coreDataExchangePredicate(
     Pointer<CNCDGroupsInContainerPredicate> _self,
   ) {
     _openDynamicLibrary();
@@ -3253,7 +3189,7 @@ class CNCDGroupsInContainerPredicate
     );
   }
 
-  static Pointer<Void> cn_coreDataPredicate(
+  static Pointer cn_coreDataPredicate(
     Pointer<CNCDGroupsInContainerPredicate> _self,
   ) {
     _openDynamicLibrary();
@@ -3263,7 +3199,7 @@ class CNCDGroupsInContainerPredicate
     );
   }
 
-  static Pointer<Void> containerIdentifier(
+  static Pointer containerIdentifier(
     Pointer<CNCDGroupsInContainerPredicate> _self,
   ) {
     _openDynamicLibrary();
@@ -3273,7 +3209,7 @@ class CNCDGroupsInContainerPredicate
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CNCDGroupsInContainerPredicate> _self,
   ) {
     _openDynamicLibrary();
@@ -3283,7 +3219,7 @@ class CNCDGroupsInContainerPredicate
     );
   }
 
-  static Pointer<Void> identifier(
+  static Pointer identifier(
     Pointer<CNCDGroupsInContainerPredicate> _self,
   ) {
     _openDynamicLibrary();
@@ -3293,9 +3229,9 @@ class CNCDGroupsInContainerPredicate
     );
   }
 
-  static Pointer<Void> initWithIdentifier(
+  static Pointer initWithIdentifier(
     Pointer<CNCDGroupsInContainerPredicate> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -3306,11 +3242,9 @@ class CNCDGroupsInContainerPredicate
   }
 }
 
-/// Objective-C class _CNCDGroupsWithIdentifiersPredicate_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNCDGroupsWithIdentifiersPredicate
     extends Struct<CNCDGroupsWithIdentifiersPredicate> {
@@ -3324,7 +3258,7 @@ class CNCDGroupsWithIdentifiersPredicate
         .cast<CNCDGroupsWithIdentifiersPredicate>();
   }
 
-  static Pointer<Void> cn_coreDataPredicate(
+  static Pointer cn_coreDataPredicate(
     Pointer<CNCDGroupsWithIdentifiersPredicate> _self,
   ) {
     _openDynamicLibrary();
@@ -3334,7 +3268,7 @@ class CNCDGroupsWithIdentifiersPredicate
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CNCDGroupsWithIdentifiersPredicate> _self,
   ) {
     _openDynamicLibrary();
@@ -3344,7 +3278,7 @@ class CNCDGroupsWithIdentifiersPredicate
     );
   }
 
-  static Pointer<Void> identifiers(
+  static Pointer identifiers(
     Pointer<CNCDGroupsWithIdentifiersPredicate> _self,
   ) {
     _openDynamicLibrary();
@@ -3354,9 +3288,9 @@ class CNCDGroupsWithIdentifiersPredicate
     );
   }
 
-  static Pointer<Void> initWithIdentifiers(
+  static Pointer initWithIdentifiers(
     Pointer<CNCDGroupsWithIdentifiersPredicate> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -3367,11 +3301,9 @@ class CNCDGroupsWithIdentifiersPredicate
   }
 }
 
-/// Objective-C class _CNCDInfoFetcher_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNCDInfoFetcher extends Struct<CNCDInfoFetcher> {
   factory CNCDInfoFetcher._() {
@@ -3383,11 +3315,9 @@ class CNCDInfoFetcher extends Struct<CNCDInfoFetcher> {
   }
 }
 
-/// Objective-C class _CNCDInfoSaveExecutor_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNCDInfoSaveExecutor extends Struct<CNCDInfoSaveExecutor> {
   factory CNCDInfoSaveExecutor._() {
@@ -3399,11 +3329,9 @@ class CNCDInfoSaveExecutor extends Struct<CNCDInfoSaveExecutor> {
   }
 }
 
-/// Objective-C class _CNCDMeContactFetcher_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNCDMeContactFetcher extends Struct<CNCDMeContactFetcher> {
   factory CNCDMeContactFetcher._() {
@@ -3415,11 +3343,9 @@ class CNCDMeContactFetcher extends Struct<CNCDMeContactFetcher> {
   }
 }
 
-/// Objective-C class _CNCDRecordSaveCache_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNCDRecordSaveCache extends Struct<CNCDRecordSaveCache> {
   factory CNCDRecordSaveCache._() {
@@ -3432,8 +3358,8 @@ class CNCDRecordSaveCache extends Struct<CNCDRecordSaveCache> {
 
   static void enumerateCoreDataContactsMatchingContacts(
     Pointer<CNCDRecordSaveCache> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> withBlock,
+    Pointer arg, {
+    @required Pointer withBlock,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -3446,8 +3372,8 @@ class CNCDRecordSaveCache extends Struct<CNCDRecordSaveCache> {
 
   static void enumerateCoreDataGroupsMatchingGroups(
     Pointer<CNCDRecordSaveCache> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> withBlock,
+    Pointer arg, {
+    @required Pointer withBlock,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -3460,8 +3386,8 @@ class CNCDRecordSaveCache extends Struct<CNCDRecordSaveCache> {
 
   static int fetchAllIdentifiers(
     Pointer<CNCDRecordSaveCache> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -3472,10 +3398,10 @@ class CNCDRecordSaveCache extends Struct<CNCDRecordSaveCache> {
     );
   }
 
-  static Pointer<Void> fetchIndexedRecordsWithIdentifiers(
+  static Pointer fetchIndexedRecordsWithIdentifiers(
     Pointer<CNCDRecordSaveCache> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -3486,10 +3412,10 @@ class CNCDRecordSaveCache extends Struct<CNCDRecordSaveCache> {
     );
   }
 
-  static Pointer<Void> fetchRecordsWithIdentifiers(
+  static Pointer fetchRecordsWithIdentifiers(
     Pointer<CNCDRecordSaveCache> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -3500,10 +3426,10 @@ class CNCDRecordSaveCache extends Struct<CNCDRecordSaveCache> {
     );
   }
 
-  static Pointer<Void> initWithContext(
+  static Pointer initWithContext(
     Pointer<CNCDRecordSaveCache> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> entityName,
+    Pointer arg, {
+    @required Pointer entityName,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -3514,9 +3440,9 @@ class CNCDRecordSaveCache extends Struct<CNCDRecordSaveCache> {
     );
   }
 
-  static Pointer<Void> recordForIdentifier(
+  static Pointer recordForIdentifier(
     Pointer<CNCDRecordSaveCache> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -3526,9 +3452,9 @@ class CNCDRecordSaveCache extends Struct<CNCDRecordSaveCache> {
     );
   }
 
-  static Pointer<Void> recordsForIdentifiers(
+  static Pointer recordsForIdentifiers(
     Pointer<CNCDRecordSaveCache> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -3539,11 +3465,9 @@ class CNCDRecordSaveCache extends Struct<CNCDRecordSaveCache> {
   }
 }
 
-/// Objective-C class _CNCDSaveContext_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNCDSaveContext extends Struct<CNCDSaveContext> {
   factory CNCDSaveContext._() {
@@ -3554,7 +3478,7 @@ class CNCDSaveContext extends Struct<CNCDSaveContext> {
     return _objc.allocate("CNCDSaveContext").cast<CNCDSaveContext>();
   }
 
-  static Pointer<Void> contactCache(
+  static Pointer contactCache(
     Pointer<CNCDSaveContext> _self,
   ) {
     _openDynamicLibrary();
@@ -3564,7 +3488,7 @@ class CNCDSaveContext extends Struct<CNCDSaveContext> {
     );
   }
 
-  static Pointer<Void> context(
+  static Pointer context(
     Pointer<CNCDSaveContext> _self,
   ) {
     _openDynamicLibrary();
@@ -3574,7 +3498,7 @@ class CNCDSaveContext extends Struct<CNCDSaveContext> {
     );
   }
 
-  static Pointer<Void> groupCache(
+  static Pointer groupCache(
     Pointer<CNCDSaveContext> _self,
   ) {
     _openDynamicLibrary();
@@ -3584,11 +3508,11 @@ class CNCDSaveContext extends Struct<CNCDSaveContext> {
     );
   }
 
-  static Pointer<Void> initWithSaveRequest(
+  static Pointer initWithSaveRequest(
     Pointer<CNCDSaveContext> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> persistenceContext,
-    @required Pointer<Void> context,
+    Pointer arg, {
+    @required Pointer persistenceContext,
+    @required Pointer context,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -3600,7 +3524,7 @@ class CNCDSaveContext extends Struct<CNCDSaveContext> {
     );
   }
 
-  static Pointer<Void> persistenceContext(
+  static Pointer persistenceContext(
     Pointer<CNCDSaveContext> _self,
   ) {
     _openDynamicLibrary();
@@ -3610,7 +3534,7 @@ class CNCDSaveContext extends Struct<CNCDSaveContext> {
     );
   }
 
-  static Pointer<Void> saveRequest(
+  static Pointer saveRequest(
     Pointer<CNCDSaveContext> _self,
   ) {
     _openDynamicLibrary();
@@ -3621,11 +3545,9 @@ class CNCDSaveContext extends Struct<CNCDSaveContext> {
   }
 }
 
-/// Objective-C class _CNCDSaveRequestExecutor_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNCDSaveRequestExecutor extends Struct<CNCDSaveRequestExecutor> {
   factory CNCDSaveRequestExecutor._() {
@@ -3638,7 +3560,7 @@ class CNCDSaveRequestExecutor extends Struct<CNCDSaveRequestExecutor> {
         .cast<CNCDSaveRequestExecutor>();
   }
 
-  static Pointer<Void> allContactIdentifiers(
+  static Pointer allContactIdentifiers(
     Pointer<CNCDSaveRequestExecutor> _self,
   ) {
     _openDynamicLibrary();
@@ -3648,7 +3570,7 @@ class CNCDSaveRequestExecutor extends Struct<CNCDSaveRequestExecutor> {
     );
   }
 
-  static Pointer<Void> allGroupIdentifiers(
+  static Pointer allGroupIdentifiers(
     Pointer<CNCDSaveRequestExecutor> _self,
   ) {
     _openDynamicLibrary();
@@ -3660,7 +3582,7 @@ class CNCDSaveRequestExecutor extends Struct<CNCDSaveRequestExecutor> {
 
   static int executeSaveRequest(
     Pointer<CNCDSaveRequestExecutor> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -3670,7 +3592,7 @@ class CNCDSaveRequestExecutor extends Struct<CNCDSaveRequestExecutor> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CNCDSaveRequestExecutor> _self,
   ) {
     _openDynamicLibrary();
@@ -3680,11 +3602,11 @@ class CNCDSaveRequestExecutor extends Struct<CNCDSaveRequestExecutor> {
     );
   }
 
-  static Pointer<Void> initWithSaveRequest(
+  static Pointer initWithSaveRequest(
     Pointer<CNCDSaveRequestExecutor> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> persistenceContext,
-    @required Pointer<Void> context,
+    Pointer arg, {
+    @required Pointer persistenceContext,
+    @required Pointer context,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -3698,7 +3620,7 @@ class CNCDSaveRequestExecutor extends Struct<CNCDSaveRequestExecutor> {
 
   static int loadContactsCache(
     Pointer<CNCDSaveRequestExecutor> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -3710,7 +3632,7 @@ class CNCDSaveRequestExecutor extends Struct<CNCDSaveRequestExecutor> {
 
   static int loadGroupsCache(
     Pointer<CNCDSaveRequestExecutor> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -3722,7 +3644,7 @@ class CNCDSaveRequestExecutor extends Struct<CNCDSaveRequestExecutor> {
 
   static int updateContactsCache(
     Pointer<CNCDSaveRequestExecutor> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -3734,7 +3656,7 @@ class CNCDSaveRequestExecutor extends Struct<CNCDSaveRequestExecutor> {
 
   static int updateGroupsCache(
     Pointer<CNCDSaveRequestExecutor> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -3745,11 +3667,9 @@ class CNCDSaveRequestExecutor extends Struct<CNCDSaveRequestExecutor> {
   }
 }
 
-/// Objective-C class _CNCDSmartGroupFetcher_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNCDSmartGroupFetcher extends Struct<CNCDSmartGroupFetcher> {
   factory CNCDSmartGroupFetcher._() {
@@ -3763,11 +3683,9 @@ class CNCDSmartGroupFetcher extends Struct<CNCDSmartGroupFetcher> {
   }
 }
 
-/// Objective-C class _CNCDSubgroupsInGroupPredicate_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNCDSubgroupsInGroupPredicate
     extends Struct<CNCDSubgroupsInGroupPredicate> {
@@ -3781,7 +3699,7 @@ class CNCDSubgroupsInGroupPredicate
         .cast<CNCDSubgroupsInGroupPredicate>();
   }
 
-  static Pointer<Void> cn_coreDataPredicate(
+  static Pointer cn_coreDataPredicate(
     Pointer<CNCDSubgroupsInGroupPredicate> _self,
   ) {
     _openDynamicLibrary();
@@ -3791,7 +3709,7 @@ class CNCDSubgroupsInGroupPredicate
     );
   }
 
-  static Pointer<Void> identifier(
+  static Pointer identifier(
     Pointer<CNCDSubgroupsInGroupPredicate> _self,
   ) {
     _openDynamicLibrary();
@@ -3801,9 +3719,9 @@ class CNCDSubgroupsInGroupPredicate
     );
   }
 
-  static Pointer<Void> initWithIdentifier(
+  static Pointer initWithIdentifier(
     Pointer<CNCDSubgroupsInGroupPredicate> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -3814,11 +3732,9 @@ class CNCDSubgroupsInGroupPredicate
   }
 }
 
-/// Objective-C class _CNCFPhoneNumber_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNCFPhoneNumber extends Struct<CNCFPhoneNumber> {
   factory CNCFPhoneNumber._() {
@@ -3829,10 +3745,10 @@ class CNCFPhoneNumber extends Struct<CNCFPhoneNumber> {
     return _objc.allocate("CNCFPhoneNumber").cast<CNCFPhoneNumber>();
   }
 
-  static Pointer<Pointer<Void>> create(
+  static Pointer<Pointer> create(
     Pointer<CNCFPhoneNumber> _self,
-    Pointer<Void> _arg2,
-    Pointer<Void> _arg3,
+    Pointer _arg2,
+    Pointer _arg3,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -3844,11 +3760,9 @@ class CNCFPhoneNumber extends Struct<CNCFPhoneNumber> {
   }
 }
 
-/// Objective-C class _CNCalculatesContactDiff_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNCalculatesContactDiff extends Struct<CNCalculatesContactDiff> {
   factory CNCalculatesContactDiff._() {
@@ -3862,11 +3776,9 @@ class CNCalculatesContactDiff extends Struct<CNCalculatesContactDiff> {
   }
 }
 
-/// Objective-C class _CNCalculatesMultiValueDiff_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNCalculatesMultiValueDiff extends Struct<CNCalculatesMultiValueDiff> {
   factory CNCalculatesMultiValueDiff._() {
@@ -3929,10 +3841,10 @@ class CNCalculatesMultiValueDiff extends Struct<CNCalculatesMultiValueDiff> {
     );
   }
 
-  static Pointer<Void> initWithMultiValue1(
+  static Pointer initWithMultiValue1(
     Pointer<CNCalculatesMultiValueDiff> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> multiValue2,
+    Pointer arg, {
+    @required Pointer multiValue2,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -4003,7 +3915,7 @@ class CNCalculatesMultiValueDiff extends Struct<CNCalculatesMultiValueDiff> {
     );
   }
 
-  static Pointer<Void> updates(
+  static Pointer updates(
     Pointer<CNCalculatesMultiValueDiff> _self,
   ) {
     _openDynamicLibrary();
@@ -4014,11 +3926,9 @@ class CNCalculatesMultiValueDiff extends Struct<CNCalculatesMultiValueDiff> {
   }
 }
 
-/// Objective-C class _CNCalendarURIsDescription_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNCalendarURIsDescription extends Struct<CNCalendarURIsDescription> {
   factory CNCalendarURIsDescription._() {
@@ -4031,9 +3941,9 @@ class CNCalendarURIsDescription extends Struct<CNCalendarURIsDescription> {
         .cast<CNCalendarURIsDescription>();
   }
 
-  static Pointer<Void> CNValueForContact(
+  static Pointer CNValueForContact(
     Pointer<CNCalendarURIsDescription> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -4045,8 +3955,8 @@ class CNCalendarURIsDescription extends Struct<CNCalendarURIsDescription> {
 
   static void copyFromCoreDataContact(
     Pointer<CNCalendarURIsDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toContact,
+    Pointer arg, {
+    @required Pointer toContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -4059,8 +3969,8 @@ class CNCalendarURIsDescription extends Struct<CNCalendarURIsDescription> {
 
   static void copyFromLabeledValue(
     Pointer<CNCalendarURIsDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toOwnedObject,
+    Pointer arg, {
+    @required Pointer toOwnedObject,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -4073,8 +3983,8 @@ class CNCalendarURIsDescription extends Struct<CNCalendarURIsDescription> {
 
   static void copyValueFromContact(
     Pointer<CNCalendarURIsDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toRemotePerson,
+    Pointer arg, {
+    @required Pointer toRemotePerson,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -4087,8 +3997,8 @@ class CNCalendarURIsDescription extends Struct<CNCalendarURIsDescription> {
 
   static void copyValueFromRemotePerson(
     Pointer<CNCalendarURIsDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toContact,
+    Pointer arg, {
+    @required Pointer toContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -4099,7 +4009,7 @@ class CNCalendarURIsDescription extends Struct<CNCalendarURIsDescription> {
     );
   }
 
-  static Pointer<Void> coreDataKey(
+  static Pointer coreDataKey(
     Pointer<CNCalendarURIsDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -4109,7 +4019,7 @@ class CNCalendarURIsDescription extends Struct<CNCalendarURIsDescription> {
     );
   }
 
-  static Pointer<Void> coreDataOwnedEntityName(
+  static Pointer coreDataOwnedEntityName(
     Pointer<CNCalendarURIsDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -4121,8 +4031,8 @@ class CNCalendarURIsDescription extends Struct<CNCalendarURIsDescription> {
 
   static void decodeUsingCoder(
     Pointer<CNCalendarURIsDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> contact,
+    Pointer arg, {
+    @required Pointer contact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -4135,8 +4045,8 @@ class CNCalendarURIsDescription extends Struct<CNCalendarURIsDescription> {
 
   static void encodeUsingCoder(
     Pointer<CNCalendarURIsDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> contact,
+    Pointer arg, {
+    @required Pointer contact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -4147,7 +4057,7 @@ class CNCalendarURIsDescription extends Struct<CNCalendarURIsDescription> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CNCalendarURIsDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -4159,8 +4069,8 @@ class CNCalendarURIsDescription extends Struct<CNCalendarURIsDescription> {
 
   static int isEqualForContact(
     Pointer<CNCalendarURIsDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> other,
+    Pointer arg, {
+    @required Pointer other,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -4171,7 +4081,7 @@ class CNCalendarURIsDescription extends Struct<CNCalendarURIsDescription> {
     );
   }
 
-  static Pointer<Void> ownedObjectToLabeledValueValueTransform(
+  static Pointer ownedObjectToLabeledValueValueTransform(
     Pointer<CNCalendarURIsDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -4183,8 +4093,8 @@ class CNCalendarURIsDescription extends Struct<CNCalendarURIsDescription> {
 
   static void setCNValue(
     Pointer<CNCalendarURIsDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> onContact,
+    Pointer arg, {
+    @required Pointer onContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -4196,11 +4106,9 @@ class CNCalendarURIsDescription extends Struct<CNCalendarURIsDescription> {
   }
 }
 
-/// Objective-C class _CNCallAlertDescription_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNCallAlertDescription extends Struct<CNCallAlertDescription> {
   factory CNCallAlertDescription._() {
@@ -4213,9 +4121,9 @@ class CNCallAlertDescription extends Struct<CNCallAlertDescription> {
         .cast<CNCallAlertDescription>();
   }
 
-  static Pointer<Void> CNValueForContact(
+  static Pointer CNValueForContact(
     Pointer<CNCallAlertDescription> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -4225,7 +4133,7 @@ class CNCallAlertDescription extends Struct<CNCallAlertDescription> {
     );
   }
 
-  static Pointer<Void> activity(
+  static Pointer activity(
     Pointer<CNCallAlertDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -4237,8 +4145,8 @@ class CNCallAlertDescription extends Struct<CNCallAlertDescription> {
 
   static void copyFromCoreDataContact(
     Pointer<CNCallAlertDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toContact,
+    Pointer arg, {
+    @required Pointer toContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -4251,8 +4159,8 @@ class CNCallAlertDescription extends Struct<CNCallAlertDescription> {
 
   static void decodeUsingCoder(
     Pointer<CNCallAlertDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> contact,
+    Pointer arg, {
+    @required Pointer contact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -4265,8 +4173,8 @@ class CNCallAlertDescription extends Struct<CNCallAlertDescription> {
 
   static void encodeUsingCoder(
     Pointer<CNCallAlertDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> contact,
+    Pointer arg, {
+    @required Pointer contact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -4277,7 +4185,7 @@ class CNCallAlertDescription extends Struct<CNCallAlertDescription> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CNCallAlertDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -4289,8 +4197,8 @@ class CNCallAlertDescription extends Struct<CNCallAlertDescription> {
 
   static int isEqualForContact(
     Pointer<CNCallAlertDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> other,
+    Pointer arg, {
+    @required Pointer other,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -4303,8 +4211,8 @@ class CNCallAlertDescription extends Struct<CNCallAlertDescription> {
 
   static void setCNValue(
     Pointer<CNCallAlertDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> onContact,
+    Pointer arg, {
+    @required Pointer onContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -4316,11 +4224,9 @@ class CNCallAlertDescription extends Struct<CNCallAlertDescription> {
   }
 }
 
-/// Objective-C class _CNChangeHistoryAnchor_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNChangeHistoryAnchor extends Struct<CNChangeHistoryAnchor> {
   factory CNChangeHistoryAnchor._() {
@@ -4335,7 +4241,7 @@ class CNChangeHistoryAnchor extends Struct<CNChangeHistoryAnchor> {
 
   static int compare(
     Pointer<CNChangeHistoryAnchor> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int64(
@@ -4345,9 +4251,9 @@ class CNChangeHistoryAnchor extends Struct<CNChangeHistoryAnchor> {
     );
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<CNChangeHistoryAnchor> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -4357,7 +4263,7 @@ class CNChangeHistoryAnchor extends Struct<CNChangeHistoryAnchor> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CNChangeHistoryAnchor> _self,
   ) {
     _openDynamicLibrary();
@@ -4369,7 +4275,7 @@ class CNChangeHistoryAnchor extends Struct<CNChangeHistoryAnchor> {
 
   static void encodeWithCoder(
     Pointer<CNChangeHistoryAnchor> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -4379,9 +4285,9 @@ class CNChangeHistoryAnchor extends Struct<CNChangeHistoryAnchor> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CNChangeHistoryAnchor> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -4391,7 +4297,7 @@ class CNChangeHistoryAnchor extends Struct<CNChangeHistoryAnchor> {
     );
   }
 
-  static Pointer<Void> initWithSequenceNumber(
+  static Pointer initWithSequenceNumber(
     Pointer<CNChangeHistoryAnchor> _self,
     int arg,
   ) {
@@ -4414,11 +4320,9 @@ class CNChangeHistoryAnchor extends Struct<CNChangeHistoryAnchor> {
   }
 }
 
-/// Objective-C class _CNChangeHistoryContactChange_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNChangeHistoryContactChange
     extends Struct<CNChangeHistoryContactChange> {
@@ -4432,7 +4336,7 @@ class CNChangeHistoryContactChange
         .cast<CNChangeHistoryContactChange>();
   }
 
-  static Pointer<Void> changeAnchor(
+  static Pointer changeAnchor(
     Pointer<CNChangeHistoryContactChange> _self,
   ) {
     _openDynamicLibrary();
@@ -4452,7 +4356,7 @@ class CNChangeHistoryContactChange
     );
   }
 
-  static Pointer<Void> contact(
+  static Pointer contact(
     Pointer<CNChangeHistoryContactChange> _self,
   ) {
     _openDynamicLibrary();
@@ -4462,7 +4366,7 @@ class CNChangeHistoryContactChange
     );
   }
 
-  static Pointer<Void> contactIdentifier(
+  static Pointer contactIdentifier(
     Pointer<CNChangeHistoryContactChange> _self,
   ) {
     _openDynamicLibrary();
@@ -4472,7 +4376,7 @@ class CNChangeHistoryContactChange
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CNChangeHistoryContactChange> _self,
   ) {
     _openDynamicLibrary();
@@ -4484,7 +4388,7 @@ class CNChangeHistoryContactChange
 
   static void encodeWithCoder(
     Pointer<CNChangeHistoryContactChange> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -4494,9 +4398,9 @@ class CNChangeHistoryContactChange
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CNChangeHistoryContactChange> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -4506,11 +4410,11 @@ class CNChangeHistoryContactChange
     );
   }
 
-  static Pointer<Void> initWithIdentifier(
+  static Pointer initWithIdentifier(
     Pointer<CNChangeHistoryContactChange> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int changeType,
-    @required Pointer<Void> changeAnchor,
+    @required Pointer changeAnchor,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_Int64_p_returns_p(
@@ -4524,7 +4428,7 @@ class CNChangeHistoryContactChange
 
   static void setChangeAnchor(
     Pointer<CNChangeHistoryContactChange> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -4548,7 +4452,7 @@ class CNChangeHistoryContactChange
 
   static void setContact(
     Pointer<CNChangeHistoryContactChange> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -4559,11 +4463,9 @@ class CNChangeHistoryContactChange
   }
 }
 
-/// Objective-C class _CNChangeHistoryFetchRequest_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNChangeHistoryFetchRequest extends Struct<CNChangeHistoryFetchRequest> {
   factory CNChangeHistoryFetchRequest._() {
@@ -4576,7 +4478,7 @@ class CNChangeHistoryFetchRequest extends Struct<CNChangeHistoryFetchRequest> {
         .cast<CNChangeHistoryFetchRequest>();
   }
 
-  static Pointer<Void> clientIdentifier(
+  static Pointer clientIdentifier(
     Pointer<CNChangeHistoryFetchRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -4586,7 +4488,7 @@ class CNChangeHistoryFetchRequest extends Struct<CNChangeHistoryFetchRequest> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CNChangeHistoryFetchRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -4598,7 +4500,7 @@ class CNChangeHistoryFetchRequest extends Struct<CNChangeHistoryFetchRequest> {
 
   static void encodeWithCoder(
     Pointer<CNChangeHistoryFetchRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -4628,9 +4530,9 @@ class CNChangeHistoryFetchRequest extends Struct<CNChangeHistoryFetchRequest> {
     );
   }
 
-  static Pointer<Void> initWithClientIdentifier(
+  static Pointer initWithClientIdentifier(
     Pointer<CNChangeHistoryFetchRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -4640,9 +4542,9 @@ class CNChangeHistoryFetchRequest extends Struct<CNChangeHistoryFetchRequest> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CNChangeHistoryFetchRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -4699,11 +4601,9 @@ class CNChangeHistoryFetchRequest extends Struct<CNChangeHistoryFetchRequest> {
   }
 }
 
-/// Objective-C class _CNChangeHistoryGroupChange_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNChangeHistoryGroupChange extends Struct<CNChangeHistoryGroupChange> {
   factory CNChangeHistoryGroupChange._() {
@@ -4716,7 +4616,7 @@ class CNChangeHistoryGroupChange extends Struct<CNChangeHistoryGroupChange> {
         .cast<CNChangeHistoryGroupChange>();
   }
 
-  static Pointer<Void> changeAnchor(
+  static Pointer changeAnchor(
     Pointer<CNChangeHistoryGroupChange> _self,
   ) {
     _openDynamicLibrary();
@@ -4736,7 +4636,7 @@ class CNChangeHistoryGroupChange extends Struct<CNChangeHistoryGroupChange> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CNChangeHistoryGroupChange> _self,
   ) {
     _openDynamicLibrary();
@@ -4748,7 +4648,7 @@ class CNChangeHistoryGroupChange extends Struct<CNChangeHistoryGroupChange> {
 
   static void encodeWithCoder(
     Pointer<CNChangeHistoryGroupChange> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -4758,7 +4658,7 @@ class CNChangeHistoryGroupChange extends Struct<CNChangeHistoryGroupChange> {
     );
   }
 
-  static Pointer<Void> group(
+  static Pointer group(
     Pointer<CNChangeHistoryGroupChange> _self,
   ) {
     _openDynamicLibrary();
@@ -4768,7 +4668,7 @@ class CNChangeHistoryGroupChange extends Struct<CNChangeHistoryGroupChange> {
     );
   }
 
-  static Pointer<Void> groupIdentifier(
+  static Pointer groupIdentifier(
     Pointer<CNChangeHistoryGroupChange> _self,
   ) {
     _openDynamicLibrary();
@@ -4778,9 +4678,9 @@ class CNChangeHistoryGroupChange extends Struct<CNChangeHistoryGroupChange> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CNChangeHistoryGroupChange> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -4790,11 +4690,11 @@ class CNChangeHistoryGroupChange extends Struct<CNChangeHistoryGroupChange> {
     );
   }
 
-  static Pointer<Void> initWithIdentifier(
+  static Pointer initWithIdentifier(
     Pointer<CNChangeHistoryGroupChange> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int changeType,
-    @required Pointer<Void> changeAnchor,
+    @required Pointer changeAnchor,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_Int64_p_returns_p(
@@ -4808,7 +4708,7 @@ class CNChangeHistoryGroupChange extends Struct<CNChangeHistoryGroupChange> {
 
   static void setChangeAnchor(
     Pointer<CNChangeHistoryGroupChange> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -4832,7 +4732,7 @@ class CNChangeHistoryGroupChange extends Struct<CNChangeHistoryGroupChange> {
 
   static void setGroup(
     Pointer<CNChangeHistoryGroupChange> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -4843,11 +4743,9 @@ class CNChangeHistoryGroupChange extends Struct<CNChangeHistoryGroupChange> {
   }
 }
 
-/// Objective-C class _CNChangeHistoryResult_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNChangeHistoryResult extends Struct<CNChangeHistoryResult> {
   factory CNChangeHistoryResult._() {
@@ -4870,7 +4768,7 @@ class CNChangeHistoryResult extends Struct<CNChangeHistoryResult> {
     );
   }
 
-  static Pointer<Void> contactChanges(
+  static Pointer contactChanges(
     Pointer<CNChangeHistoryResult> _self,
   ) {
     _openDynamicLibrary();
@@ -4880,7 +4778,7 @@ class CNChangeHistoryResult extends Struct<CNChangeHistoryResult> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CNChangeHistoryResult> _self,
   ) {
     _openDynamicLibrary();
@@ -4892,7 +4790,7 @@ class CNChangeHistoryResult extends Struct<CNChangeHistoryResult> {
 
   static void encodeWithCoder(
     Pointer<CNChangeHistoryResult> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -4904,10 +4802,10 @@ class CNChangeHistoryResult extends Struct<CNChangeHistoryResult> {
 
   static int enumerateContactChangesWithKeysToFetch(
     Pointer<CNChangeHistoryResult> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> fromContactStore,
-    @required Pointer<Pointer<Void>> error,
-    @required Pointer<Void> usingBlock,
+    Pointer arg, {
+    @required Pointer fromContactStore,
+    @required Pointer<Pointer> error,
+    @required Pointer usingBlock,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_returns_Int8(
@@ -4923,9 +4821,9 @@ class CNChangeHistoryResult extends Struct<CNChangeHistoryResult> {
 
   static int enumerateGroupChangesFromContactStore(
     Pointer<CNChangeHistoryResult> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
-    @required Pointer<Void> usingBlock,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
+    @required Pointer usingBlock,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_Int8(
@@ -4938,7 +4836,7 @@ class CNChangeHistoryResult extends Struct<CNChangeHistoryResult> {
     );
   }
 
-  static Pointer<Void> groupChanges(
+  static Pointer groupChanges(
     Pointer<CNChangeHistoryResult> _self,
   ) {
     _openDynamicLibrary();
@@ -4948,9 +4846,9 @@ class CNChangeHistoryResult extends Struct<CNChangeHistoryResult> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CNChangeHistoryResult> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -4972,7 +4870,7 @@ class CNChangeHistoryResult extends Struct<CNChangeHistoryResult> {
     );
   }
 
-  static Pointer<Void> latestChangeAnchor(
+  static Pointer latestChangeAnchor(
     Pointer<CNChangeHistoryResult> _self,
   ) {
     _openDynamicLibrary();
@@ -4996,7 +4894,7 @@ class CNChangeHistoryResult extends Struct<CNChangeHistoryResult> {
 
   static void setContactChanges(
     Pointer<CNChangeHistoryResult> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -5008,7 +4906,7 @@ class CNChangeHistoryResult extends Struct<CNChangeHistoryResult> {
 
   static void setGroupChanges(
     Pointer<CNChangeHistoryResult> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -5020,7 +4918,7 @@ class CNChangeHistoryResult extends Struct<CNChangeHistoryResult> {
 
   static void setLatestChangeAnchor(
     Pointer<CNChangeHistoryResult> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -5053,11 +4951,9 @@ class CNChangeHistoryResult extends Struct<CNChangeHistoryResult> {
   }
 }
 
-/// Objective-C class _CNChangeNotifierDarwinWrapper_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNChangeNotifierDarwinWrapper
     extends Struct<CNChangeNotifierDarwinWrapper> {
@@ -5073,8 +4969,8 @@ class CNChangeNotifierDarwinWrapper
 
   static void addObserver(
     Pointer<CNChangeNotifierDarwinWrapper> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> notification,
+    Pointer arg, {
+    @required Pointer notification,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -5087,7 +4983,7 @@ class CNChangeNotifierDarwinWrapper
 
   static void postNotification(
     Pointer<CNChangeNotifierDarwinWrapper> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -5099,8 +4995,8 @@ class CNChangeNotifierDarwinWrapper
 
   static void removeObserver(
     Pointer<CNChangeNotifierDarwinWrapper> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> notification,
+    Pointer arg, {
+    @required Pointer notification,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -5112,11 +5008,9 @@ class CNChangeNotifierDarwinWrapper
   }
 }
 
-/// Objective-C class _CNChangeNotifierDistributedCenterWrapper_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNChangeNotifierDistributedCenterWrapper
     extends Struct<CNChangeNotifierDistributedCenterWrapper> {
@@ -5132,8 +5026,8 @@ class CNChangeNotifierDistributedCenterWrapper
 
   static void addObserver(
     Pointer<CNChangeNotifierDistributedCenterWrapper> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> notification,
+    Pointer arg, {
+    @required Pointer notification,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -5146,7 +5040,7 @@ class CNChangeNotifierDistributedCenterWrapper
 
   static void postNotification(
     Pointer<CNChangeNotifierDistributedCenterWrapper> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -5158,8 +5052,8 @@ class CNChangeNotifierDistributedCenterWrapper
 
   static void removeObserver(
     Pointer<CNChangeNotifierDistributedCenterWrapper> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> notification,
+    Pointer arg, {
+    @required Pointer notification,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -5171,11 +5065,9 @@ class CNChangeNotifierDistributedCenterWrapper
   }
 }
 
-/// Objective-C class _CNChangesNotifier_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNChangesNotifier extends Struct<CNChangesNotifier> {
   factory CNChangesNotifier._() {
@@ -5199,8 +5091,8 @@ class CNChangesNotifier extends Struct<CNChangesNotifier> {
   static void didChangeMeContactSuccessfully(
     Pointer<CNChangesNotifier> _self,
     int arg, {
-    @required Pointer<Void> fromContactStore,
-    @required Pointer<Void> requestIdentifier,
+    @required Pointer fromContactStore,
+    @required Pointer requestIdentifier,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_Int8_p_p_returns_void(
@@ -5216,8 +5108,8 @@ class CNChangesNotifier extends Struct<CNChangesNotifier> {
   static void didSaveChangesSuccessfully(
     Pointer<CNChangesNotifier> _self,
     int arg, {
-    @required Pointer<Void> fromContactStore,
-    @required Pointer<Void> requestIdentifier,
+    @required Pointer fromContactStore,
+    @required Pointer requestIdentifier,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_Int8_p_p_returns_void(
@@ -5240,7 +5132,7 @@ class CNChangesNotifier extends Struct<CNChangesNotifier> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CNChangesNotifier> _self,
   ) {
     _openDynamicLibrary();
@@ -5250,10 +5142,10 @@ class CNChangesNotifier extends Struct<CNChangesNotifier> {
     );
   }
 
-  static Pointer<Void> initWithNotificationWrapper(
+  static Pointer initWithNotificationWrapper(
     Pointer<CNChangesNotifier> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> schedulerProvider,
+    Pointer arg, {
+    @required Pointer schedulerProvider,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -5264,7 +5156,7 @@ class CNChangesNotifier extends Struct<CNChangesNotifier> {
     );
   }
 
-  static Pointer<Void> notifierProxy(
+  static Pointer notifierProxy(
     Pointer<CNChangesNotifier> _self,
   ) {
     _openDynamicLibrary();
@@ -5301,7 +5193,7 @@ class CNChangesNotifier extends Struct<CNChangesNotifier> {
 
   static void setNotifierProxy(
     Pointer<CNChangesNotifier> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -5332,11 +5224,9 @@ class CNChangesNotifier extends Struct<CNChangesNotifier> {
   }
 }
 
-/// Objective-C class _CNChangesNotifierProxy_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNChangesNotifierProxy extends Struct<CNChangesNotifierProxy> {
   factory CNChangesNotifierProxy._() {
@@ -5351,9 +5241,9 @@ class CNChangesNotifierProxy extends Struct<CNChangesNotifierProxy> {
 
   static void addListenerForNotificationName(
     Pointer<CNChangesNotifierProxy> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> registration,
-    @required Pointer<Void> removal,
+    Pointer arg, {
+    @required Pointer registration,
+    @required Pointer removal,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_void(
@@ -5367,8 +5257,8 @@ class CNChangesNotifierProxy extends Struct<CNChangesNotifierProxy> {
 
   static void addNotificationPoster(
     Pointer<CNChangesNotifierProxy> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> forNotificationName,
+    Pointer arg, {
+    @required Pointer forNotificationName,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -5381,7 +5271,7 @@ class CNChangesNotifierProxy extends Struct<CNChangesNotifierProxy> {
 
   static void coalesceNotificationName(
     Pointer<CNChangesNotifierProxy> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -5391,7 +5281,7 @@ class CNChangesNotifierProxy extends Struct<CNChangesNotifierProxy> {
     );
   }
 
-  static Pointer<Void> coalescingNotificationName(
+  static Pointer coalescingNotificationName(
     Pointer<CNChangesNotifierProxy> _self,
   ) {
     _openDynamicLibrary();
@@ -5401,7 +5291,7 @@ class CNChangesNotifierProxy extends Struct<CNChangesNotifierProxy> {
     );
   }
 
-  static Pointer<Void> coalescingTimer(
+  static Pointer coalescingTimer(
     Pointer<CNChangesNotifierProxy> _self,
   ) {
     _openDynamicLibrary();
@@ -5423,8 +5313,8 @@ class CNChangesNotifierProxy extends Struct<CNChangesNotifierProxy> {
 
   static void forwardNotificationName(
     Pointer<CNChangesNotifierProxy> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> asNotificationName,
+    Pointer arg, {
+    @required Pointer asNotificationName,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -5445,9 +5335,9 @@ class CNChangesNotifierProxy extends Struct<CNChangesNotifierProxy> {
     );
   }
 
-  static Pointer<Void> initWithSchedulerProvider(
+  static Pointer initWithSchedulerProvider(
     Pointer<CNChangesNotifierProxy> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -5457,7 +5347,7 @@ class CNChangesNotifierProxy extends Struct<CNChangesNotifierProxy> {
     );
   }
 
-  static Pointer<Void> notificationForwardingMapping(
+  static Pointer notificationForwardingMapping(
     Pointer<CNChangesNotifierProxy> _self,
   ) {
     _openDynamicLibrary();
@@ -5467,7 +5357,7 @@ class CNChangesNotifierProxy extends Struct<CNChangesNotifierProxy> {
     );
   }
 
-  static Pointer<Void> notificationsToBeSentOnceAllowed(
+  static Pointer notificationsToBeSentOnceAllowed(
     Pointer<CNChangesNotifierProxy> _self,
   ) {
     _openDynamicLibrary();
@@ -5477,7 +5367,7 @@ class CNChangesNotifierProxy extends Struct<CNChangesNotifierProxy> {
     );
   }
 
-  static Pointer<Void> notifierQueue(
+  static Pointer notifierQueue(
     Pointer<CNChangesNotifierProxy> _self,
   ) {
     _openDynamicLibrary();
@@ -5487,7 +5377,7 @@ class CNChangesNotifierProxy extends Struct<CNChangesNotifierProxy> {
     );
   }
 
-  static Pointer<Void> notifyingBlocks(
+  static Pointer notifyingBlocks(
     Pointer<CNChangesNotifierProxy> _self,
   ) {
     _openDynamicLibrary();
@@ -5497,13 +5387,13 @@ class CNChangesNotifierProxy extends Struct<CNChangesNotifierProxy> {
     );
   }
 
-  static Pointer<Void>
+  static Pointer
       postNotificationName$fromSender$saveIdentifier$userInfo$shouldForwardExternally$calledFromNotifierQueue$isFromExternalProcess$(
     Pointer<CNChangesNotifierProxy> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> fromSender,
-    @required Pointer<Void> saveIdentifier,
-    @required Pointer<Void> userInfo,
+    Pointer arg, {
+    @required Pointer fromSender,
+    @required Pointer saveIdentifier,
+    @required Pointer userInfo,
     @required int shouldForwardExternally,
     @required int calledFromNotifierQueue,
     @required int isFromExternalProcess,
@@ -5526,9 +5416,9 @@ class CNChangesNotifierProxy extends Struct<CNChangesNotifierProxy> {
   static void
       postNotificationName$fromSender$saveIdentifier$isFromExternalProcess$(
     Pointer<CNChangesNotifierProxy> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> fromSender,
-    @required Pointer<Void> saveIdentifier,
+    Pointer arg, {
+    @required Pointer fromSender,
+    @required Pointer saveIdentifier,
     @required int isFromExternalProcess,
   }) {
     _openDynamicLibrary();
@@ -5545,7 +5435,7 @@ class CNChangesNotifierProxy extends Struct<CNChangesNotifierProxy> {
 
   static void receiveExternalNotificationName(
     Pointer<CNChangesNotifierProxy> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -5555,13 +5445,13 @@ class CNChangesNotifierProxy extends Struct<CNChangesNotifierProxy> {
     );
   }
 
-  static Pointer<Void>
+  static Pointer
       receiveNotificationName$fromSender$saveIdentifier$userInfo$calledFromNotifierQueue$isFromExternalProcess$(
     Pointer<CNChangesNotifierProxy> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> fromSender,
-    @required Pointer<Void> saveIdentifier,
-    @required Pointer<Void> userInfo,
+    Pointer arg, {
+    @required Pointer fromSender,
+    @required Pointer saveIdentifier,
+    @required Pointer userInfo,
     @required int calledFromNotifierQueue,
     @required int isFromExternalProcess,
   }) {
@@ -5582,10 +5472,10 @@ class CNChangesNotifierProxy extends Struct<CNChangesNotifierProxy> {
   static void
       receiveNotificationName$fromSender$saveIdentifier$userInfo$isFromExternalProcess$(
     Pointer<CNChangesNotifierProxy> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> fromSender,
-    @required Pointer<Void> saveIdentifier,
-    @required Pointer<Void> userInfo,
+    Pointer arg, {
+    @required Pointer fromSender,
+    @required Pointer saveIdentifier,
+    @required Pointer userInfo,
     @required int isFromExternalProcess,
   }) {
     _openDynamicLibrary();
@@ -5601,7 +5491,7 @@ class CNChangesNotifierProxy extends Struct<CNChangesNotifierProxy> {
     );
   }
 
-  static Pointer<Void> removalBlocks(
+  static Pointer removalBlocks(
     Pointer<CNChangesNotifierProxy> _self,
   ) {
     _openDynamicLibrary();
@@ -5621,7 +5511,7 @@ class CNChangesNotifierProxy extends Struct<CNChangesNotifierProxy> {
     );
   }
 
-  static Pointer<Void> schedulerProvider(
+  static Pointer schedulerProvider(
     Pointer<CNChangesNotifierProxy> _self,
   ) {
     _openDynamicLibrary();
@@ -5633,7 +5523,7 @@ class CNChangesNotifierProxy extends Struct<CNChangesNotifierProxy> {
 
   static void setCoalescingNotificationName(
     Pointer<CNChangesNotifierProxy> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -5645,7 +5535,7 @@ class CNChangesNotifierProxy extends Struct<CNChangesNotifierProxy> {
 
   static void setCoalescingTimer(
     Pointer<CNChangesNotifierProxy> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -5682,7 +5572,7 @@ class CNChangesNotifierProxy extends Struct<CNChangesNotifierProxy> {
 
   static void setNotificationsToBeSentOnceAllowed(
     Pointer<CNChangesNotifierProxy> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -5694,7 +5584,7 @@ class CNChangesNotifierProxy extends Struct<CNChangesNotifierProxy> {
 
   static void setNotifierQueue(
     Pointer<CNChangesNotifierProxy> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -5706,7 +5596,7 @@ class CNChangesNotifierProxy extends Struct<CNChangesNotifierProxy> {
 
   static void setNotifyingBlocks(
     Pointer<CNChangesNotifierProxy> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -5718,7 +5608,7 @@ class CNChangesNotifierProxy extends Struct<CNChangesNotifierProxy> {
 
   static void setRemovalBlocks(
     Pointer<CNChangesNotifierProxy> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -5730,7 +5620,7 @@ class CNChangesNotifierProxy extends Struct<CNChangesNotifierProxy> {
 
   static void setSupressedNotificationNames(
     Pointer<CNChangesNotifierProxy> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -5742,7 +5632,7 @@ class CNChangesNotifierProxy extends Struct<CNChangesNotifierProxy> {
 
   static void stopSupressionOfNotificationName(
     Pointer<CNChangesNotifierProxy> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -5754,7 +5644,7 @@ class CNChangesNotifierProxy extends Struct<CNChangesNotifierProxy> {
 
   static void supressNotificationName(
     Pointer<CNChangesNotifierProxy> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -5764,7 +5654,7 @@ class CNChangesNotifierProxy extends Struct<CNChangesNotifierProxy> {
     );
   }
 
-  static Pointer<Void> supressedNotificationNames(
+  static Pointer supressedNotificationNames(
     Pointer<CNChangesNotifierProxy> _self,
   ) {
     _openDynamicLibrary();
@@ -5785,11 +5675,9 @@ class CNChangesNotifierProxy extends Struct<CNChangesNotifierProxy> {
   }
 }
 
-/// Objective-C class _CNCompoundMultiValuePropertyDescription_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNCompoundMultiValuePropertyDescription
     extends Struct<CNCompoundMultiValuePropertyDescription> {
@@ -5803,7 +5691,7 @@ class CNCompoundMultiValuePropertyDescription
         .cast<CNCompoundMultiValuePropertyDescription>();
   }
 
-  static Pointer<Void> dictionaryTransform(
+  static Pointer dictionaryTransform(
     Pointer<CNCompoundMultiValuePropertyDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -5813,7 +5701,7 @@ class CNCompoundMultiValuePropertyDescription
     );
   }
 
-  static Pointer<Void> fromDictionaryTransform(
+  static Pointer fromDictionaryTransform(
     Pointer<CNCompoundMultiValuePropertyDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -5823,7 +5711,7 @@ class CNCompoundMultiValuePropertyDescription
     );
   }
 
-  static Pointer<Void> fromPlistTransform(
+  static Pointer fromPlistTransform(
     Pointer<CNCompoundMultiValuePropertyDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -5833,7 +5721,7 @@ class CNCompoundMultiValuePropertyDescription
     );
   }
 
-  static Pointer<Void> plistTransform(
+  static Pointer plistTransform(
     Pointer<CNCompoundMultiValuePropertyDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -5843,9 +5731,9 @@ class CNCompoundMultiValuePropertyDescription
     );
   }
 
-  static Pointer<Void> stringForIndexingForContact(
+  static Pointer stringForIndexingForContact(
     Pointer<CNCompoundMultiValuePropertyDescription> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -5855,7 +5743,7 @@ class CNCompoundMultiValuePropertyDescription
     );
   }
 
-  static Pointer<Void> summarizationKeys(
+  static Pointer summarizationKeys(
     Pointer<CNCompoundMultiValuePropertyDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -5866,11 +5754,9 @@ class CNCompoundMultiValuePropertyDescription
   }
 }
 
-/// Objective-C class _CNContact_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNContact extends Struct<CNContact> {
   factory CNContact._() {
@@ -5881,7 +5767,7 @@ class CNContact extends Struct<CNContact> {
     return _objc.allocate("CNContact").cast<CNContact>();
   }
 
-  static Pointer<Void> accountIdentifier(
+  static Pointer accountIdentifier(
     Pointer<CNContact> _self,
   ) {
     _openDynamicLibrary();
@@ -5891,7 +5777,7 @@ class CNContact extends Struct<CNContact> {
     );
   }
 
-  static Pointer<Void> activityAlerts(
+  static Pointer activityAlerts(
     Pointer<CNContact> _self,
   ) {
     _openDynamicLibrary();
@@ -5901,9 +5787,29 @@ class CNContact extends Struct<CNContact> {
     );
   }
 
+  static Pointer allIDSDestinations(
+    Pointer<CNContact> _self,
+  ) {
+    _openDynamicLibrary();
+    return _call_objc_p_p_returns_p(
+      _self,
+      _objc.getSelector("allIDSDestinations"),
+    );
+  }
+
+  static Pointer anyDestinationID(
+    Pointer<CNContact> _self,
+  ) {
+    _openDynamicLibrary();
+    return _call_objc_p_p_returns_p(
+      _self,
+      _objc.getSelector("anyDestinationID"),
+    );
+  }
+
   static int areAllAvailableKeysEqualToContact(
     Pointer<CNContact> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int ignoringIdentifiers,
   }) {
     _openDynamicLibrary();
@@ -5918,7 +5824,7 @@ class CNContact extends Struct<CNContact> {
 
   static int areAllPropertiesButContactIdentifierEqualToContact(
     Pointer<CNContact> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -5930,7 +5836,7 @@ class CNContact extends Struct<CNContact> {
 
   static int areAllPropertiesEqualToContactIgnoringIdentifiers(
     Pointer<CNContact> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -5942,7 +5848,7 @@ class CNContact extends Struct<CNContact> {
 
   static int areKeysAvailable(
     Pointer<CNContact> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -5954,7 +5860,7 @@ class CNContact extends Struct<CNContact> {
 
   static void assertKeyIsAvailable(
     Pointer<CNContact> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -5966,7 +5872,7 @@ class CNContact extends Struct<CNContact> {
 
   static void assertKeysAreAvailable(
     Pointer<CNContact> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -5976,7 +5882,7 @@ class CNContact extends Struct<CNContact> {
     );
   }
 
-  static Pointer<Void> availableKeyDescriptor(
+  static Pointer availableKeyDescriptor(
     Pointer<CNContact> _self,
   ) {
     _openDynamicLibrary();
@@ -5986,7 +5892,7 @@ class CNContact extends Struct<CNContact> {
     );
   }
 
-  static Pointer<Void> availableKeys(
+  static Pointer availableKeys(
     Pointer<CNContact> _self,
   ) {
     _openDynamicLibrary();
@@ -5996,7 +5902,37 @@ class CNContact extends Struct<CNContact> {
     );
   }
 
-  static Pointer<Void> birthday(
+  static Pointer backingContact(
+    Pointer<CNContact> _self,
+  ) {
+    _openDynamicLibrary();
+    return _call_objc_p_p_returns_p(
+      _self,
+      _objc.getSelector("backingContact"),
+    );
+  }
+
+  static Pointer backingContactId(
+    Pointer<CNContact> _self,
+  ) {
+    _openDynamicLibrary();
+    return _call_objc_p_p_returns_p(
+      _self,
+      _objc.getSelector("backingContactId"),
+    );
+  }
+
+  static Pointer backingContactIdentifier(
+    Pointer<CNContact> _self,
+  ) {
+    _openDynamicLibrary();
+    return _call_objc_p_p_returns_p(
+      _self,
+      _objc.getSelector("backingContactIdentifier"),
+    );
+  }
+
+  static Pointer birthday(
     Pointer<CNContact> _self,
   ) {
     _openDynamicLibrary();
@@ -6006,7 +5942,7 @@ class CNContact extends Struct<CNContact> {
     );
   }
 
-  static Pointer<Void> calendarURIs(
+  static Pointer calendarURIs(
     Pointer<CNContact> _self,
   ) {
     _openDynamicLibrary();
@@ -6016,7 +5952,7 @@ class CNContact extends Struct<CNContact> {
     );
   }
 
-  static Pointer<Void> callAlert(
+  static Pointer callAlert(
     Pointer<CNContact> _self,
   ) {
     _openDynamicLibrary();
@@ -6026,7 +5962,17 @@ class CNContact extends Struct<CNContact> {
     );
   }
 
-  static Pointer<Void> cardDAVUID(
+  static Pointer callerId(
+    Pointer<CNContact> _self,
+  ) {
+    _openDynamicLibrary();
+    return _call_objc_p_p_returns_p(
+      _self,
+      _objc.getSelector("callerId"),
+    );
+  }
+
+  static Pointer cardDAVUID(
     Pointer<CNContact> _self,
   ) {
     _openDynamicLibrary();
@@ -6036,7 +5982,7 @@ class CNContact extends Struct<CNContact> {
     );
   }
 
-  static Pointer<Void> companyName(
+  static Pointer companyName(
     Pointer<CNContact> _self,
   ) {
     _openDynamicLibrary();
@@ -6046,13 +5992,23 @@ class CNContact extends Struct<CNContact> {
     );
   }
 
-  static Pointer<Void> contactRelations(
+  static Pointer contactRelations(
     Pointer<CNContact> _self,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_returns_p(
       _self,
       _objc.getSelector("contactRelations"),
+    );
+  }
+
+  static int contactSource(
+    Pointer<CNContact> _self,
+  ) {
+    _openDynamicLibrary();
+    return _call_objc_p_p_returns_Uint64(
+      _self,
+      _objc.getSelector("contactSource"),
     );
   }
 
@@ -6066,7 +6022,17 @@ class CNContact extends Struct<CNContact> {
     );
   }
 
-  static Pointer<Void> copyWithNoSuggestion(
+  static Pointer contactWithCleanedUpDistrict(
+    Pointer<CNContact> _self,
+  ) {
+    _openDynamicLibrary();
+    return _call_objc_p_p_returns_p(
+      _self,
+      _objc.getSelector("contactWithCleanedUpDistrict"),
+    );
+  }
+
+  static Pointer copyWithNoSuggestion(
     Pointer<CNContact> _self,
   ) {
     _openDynamicLibrary();
@@ -6076,9 +6042,9 @@ class CNContact extends Struct<CNContact> {
     );
   }
 
-  static Pointer<Void> copyWithPropertyKeys(
+  static Pointer copyWithPropertyKeys(
     Pointer<CNContact> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -6088,7 +6054,7 @@ class CNContact extends Struct<CNContact> {
     );
   }
 
-  static Pointer<Void> copyWithSelfAsSnapshot(
+  static Pointer copyWithSelfAsSnapshot(
     Pointer<CNContact> _self,
   ) {
     _openDynamicLibrary();
@@ -6098,9 +6064,9 @@ class CNContact extends Struct<CNContact> {
     );
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<CNContact> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -6110,7 +6076,7 @@ class CNContact extends Struct<CNContact> {
     );
   }
 
-  static Pointer<Void> creationDate(
+  static Pointer creationDate(
     Pointer<CNContact> _self,
   ) {
     _openDynamicLibrary();
@@ -6120,7 +6086,7 @@ class CNContact extends Struct<CNContact> {
     );
   }
 
-  static Pointer<Void> cropRect(
+  static Pointer cropRect(
     Pointer<CNContact> _self,
   ) {
     _openDynamicLibrary();
@@ -6130,7 +6096,7 @@ class CNContact extends Struct<CNContact> {
     );
   }
 
-  static Pointer<Void> dates(
+  static Pointer dates(
     Pointer<CNContact> _self,
   ) {
     _openDynamicLibrary();
@@ -6140,7 +6106,7 @@ class CNContact extends Struct<CNContact> {
     );
   }
 
-  static Pointer<Void> departmentName(
+  static Pointer departmentName(
     Pointer<CNContact> _self,
   ) {
     _openDynamicLibrary();
@@ -6150,7 +6116,7 @@ class CNContact extends Struct<CNContact> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CNContact> _self,
   ) {
     _openDynamicLibrary();
@@ -6160,15 +6126,35 @@ class CNContact extends Struct<CNContact> {
     );
   }
 
-  static Pointer<Void> diffToSnapshotAndReturnError(
+  static Pointer destinationId(
     Pointer<CNContact> _self,
-    Pointer<Pointer<Void>> arg,
+  ) {
+    _openDynamicLibrary();
+    return _call_objc_p_p_returns_p(
+      _self,
+      _objc.getSelector("destinationId"),
+    );
+  }
+
+  static Pointer diffToSnapshotAndReturnError(
+    Pointer<CNContact> _self,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
       _self,
       _objc.getSelector("diffToSnapshotAndReturnError:"),
       arg,
+    );
+  }
+
+  static Pointer displayName(
+    Pointer<CNContact> _self,
+  ) {
+    _openDynamicLibrary();
+    return _call_objc_p_p_returns_p(
+      _self,
+      _objc.getSelector("displayName"),
     );
   }
 
@@ -6182,7 +6168,17 @@ class CNContact extends Struct<CNContact> {
     );
   }
 
-  static Pointer<Void> emailAddresses(
+  static Pointer emailAddressStrings(
+    Pointer<CNContact> _self,
+  ) {
+    _openDynamicLibrary();
+    return _call_objc_p_p_returns_p(
+      _self,
+      _objc.getSelector("emailAddressStrings"),
+    );
+  }
+
+  static Pointer emailAddresses(
     Pointer<CNContact> _self,
   ) {
     _openDynamicLibrary();
@@ -6194,7 +6190,7 @@ class CNContact extends Struct<CNContact> {
 
   static void encodeWithCoder(
     Pointer<CNContact> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -6204,7 +6200,17 @@ class CNContact extends Struct<CNContact> {
     );
   }
 
-  static Pointer<Void> familyName(
+  static Pointer faceTimeQuicklookURL(
+    Pointer<CNContact> _self,
+  ) {
+    _openDynamicLibrary();
+    return _call_objc_p_p_returns_p(
+      _self,
+      _objc.getSelector("faceTimeQuicklookURL"),
+    );
+  }
+
+  static Pointer familyName(
     Pointer<CNContact> _self,
   ) {
     _openDynamicLibrary();
@@ -6214,7 +6220,7 @@ class CNContact extends Struct<CNContact> {
     );
   }
 
-  static Pointer<Void> firstName(
+  static Pointer firstName(
     Pointer<CNContact> _self,
   ) {
     _openDynamicLibrary();
@@ -6224,7 +6230,7 @@ class CNContact extends Struct<CNContact> {
     );
   }
 
-  static Pointer<Void> fullName(
+  static Pointer fullName(
     Pointer<CNContact> _self,
   ) {
     _openDynamicLibrary();
@@ -6234,7 +6240,7 @@ class CNContact extends Struct<CNContact> {
     );
   }
 
-  static Pointer<Void> fullscreenImageData(
+  static Pointer fullscreenImageData(
     Pointer<CNContact> _self,
   ) {
     _openDynamicLibrary();
@@ -6244,13 +6250,23 @@ class CNContact extends Struct<CNContact> {
     );
   }
 
-  static Pointer<Void> givenName(
+  static Pointer givenName(
     Pointer<CNContact> _self,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_returns_p(
       _self,
       _objc.getSelector("givenName"),
+    );
+  }
+
+  static Pointer handles(
+    Pointer<CNContact> _self,
+  ) {
+    _openDynamicLibrary();
+    return _call_objc_p_p_returns_p(
+      _self,
+      _objc.getSelector("handles"),
     );
   }
 
@@ -6304,7 +6320,7 @@ class CNContact extends Struct<CNContact> {
     );
   }
 
-  static Pointer<Void> identifier(
+  static Pointer identifier(
     Pointer<CNContact> _self,
   ) {
     _openDynamicLibrary();
@@ -6314,7 +6330,27 @@ class CNContact extends Struct<CNContact> {
     );
   }
 
-  static Pointer<Void> imageData(
+  static Pointer idsCanonicalDestination(
+    Pointer<CNContact> _self,
+  ) {
+    _openDynamicLibrary();
+    return _call_objc_p_p_returns_p(
+      _self,
+      _objc.getSelector("idsCanonicalDestination"),
+    );
+  }
+
+  static Pointer idsCanonicalDestinations(
+    Pointer<CNContact> _self,
+  ) {
+    _openDynamicLibrary();
+    return _call_objc_p_p_returns_p(
+      _self,
+      _objc.getSelector("idsCanonicalDestinations"),
+    );
+  }
+
+  static Pointer imageData(
     Pointer<CNContact> _self,
   ) {
     _openDynamicLibrary();
@@ -6334,7 +6370,7 @@ class CNContact extends Struct<CNContact> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CNContact> _self,
   ) {
     _openDynamicLibrary();
@@ -6344,9 +6380,9 @@ class CNContact extends Struct<CNContact> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CNContact> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -6356,9 +6392,9 @@ class CNContact extends Struct<CNContact> {
     );
   }
 
-  static Pointer<Void> initWithIdentifier$(
+  static Pointer initWithIdentifier$(
     Pointer<CNContact> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -6368,10 +6404,10 @@ class CNContact extends Struct<CNContact> {
     );
   }
 
-  static Pointer<Void> initWithIdentifier$availableKeyDescriptor$(
+  static Pointer initWithIdentifier$availableKeyDescriptor$(
     Pointer<CNContact> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> availableKeyDescriptor,
+    Pointer arg, {
+    @required Pointer availableKeyDescriptor,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -6382,7 +6418,7 @@ class CNContact extends Struct<CNContact> {
     );
   }
 
-  static Pointer<Void> instantMessageAddresses(
+  static Pointer instantMessageAddresses(
     Pointer<CNContact> _self,
   ) {
     _openDynamicLibrary();
@@ -6392,7 +6428,7 @@ class CNContact extends Struct<CNContact> {
     );
   }
 
-  static Pointer<Void> internalIdentifier(
+  static Pointer internalIdentifier(
     Pointer<CNContact> _self,
   ) {
     _openDynamicLibrary();
@@ -6404,7 +6440,7 @@ class CNContact extends Struct<CNContact> {
 
   static int isEqual(
     Pointer<CNContact> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -6416,7 +6452,7 @@ class CNContact extends Struct<CNContact> {
 
   static int isEqualIgnoringIdentifiers(
     Pointer<CNContact> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -6428,7 +6464,7 @@ class CNContact extends Struct<CNContact> {
 
   static int isKeyAvailable(
     Pointer<CNContact> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -6460,8 +6496,8 @@ class CNContact extends Struct<CNContact> {
 
   static int isProperty(
     Pointer<CNContact> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> equalToOtherIgnoreIdentifiers,
+    Pointer arg, {
+    @required Pointer equalToOtherIgnoreIdentifiers,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -6469,6 +6505,16 @@ class CNContact extends Struct<CNContact> {
       _objc.getSelector("isProperty:equalToOtherIgnoreIdentifiers:"),
       arg,
       equalToOtherIgnoreIdentifiers,
+    );
+  }
+
+  static int isSubsetOfMeCard(
+    Pointer<CNContact> _self,
+  ) {
+    _openDynamicLibrary();
+    return _call_objc_p_p_returns_Int8(
+      _self,
+      _objc.getSelector("isSubsetOfMeCard"),
     );
   }
 
@@ -6504,7 +6550,7 @@ class CNContact extends Struct<CNContact> {
 
   static int isUnifiedWithContactWithIdentifier(
     Pointer<CNContact> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -6516,7 +6562,7 @@ class CNContact extends Struct<CNContact> {
 
   static int isValid(
     Pointer<CNContact> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -6526,7 +6572,17 @@ class CNContact extends Struct<CNContact> {
     );
   }
 
-  static Pointer<Void> jobTitle(
+  static Pointer isoCountryCode(
+    Pointer<CNContact> _self,
+  ) {
+    _openDynamicLibrary();
+    return _call_objc_p_p_returns_p(
+      _self,
+      _objc.getSelector("isoCountryCode"),
+    );
+  }
+
+  static Pointer jobTitle(
     Pointer<CNContact> _self,
   ) {
     _openDynamicLibrary();
@@ -6536,7 +6592,7 @@ class CNContact extends Struct<CNContact> {
     );
   }
 
-  static Pointer<Void> keyVector(
+  static Pointer keyVector(
     Pointer<CNContact> _self,
   ) {
     _openDynamicLibrary();
@@ -6546,7 +6602,7 @@ class CNContact extends Struct<CNContact> {
     );
   }
 
-  static Pointer<Void> lastName(
+  static Pointer lastName(
     Pointer<CNContact> _self,
   ) {
     _openDynamicLibrary();
@@ -6556,7 +6612,7 @@ class CNContact extends Struct<CNContact> {
     );
   }
 
-  static Pointer<Void> linkIdentifier(
+  static Pointer linkIdentifier(
     Pointer<CNContact> _self,
   ) {
     _openDynamicLibrary();
@@ -6566,7 +6622,7 @@ class CNContact extends Struct<CNContact> {
     );
   }
 
-  static Pointer<Void> linkedContacts(
+  static Pointer linkedContacts(
     Pointer<CNContact> _self,
   ) {
     _openDynamicLibrary();
@@ -6576,9 +6632,9 @@ class CNContact extends Struct<CNContact> {
     );
   }
 
-  static Pointer<Void> linkedContactsFromStoreWithIdentifier(
+  static Pointer linkedContactsFromStoreWithIdentifier(
     Pointer<CNContact> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -6588,7 +6644,7 @@ class CNContact extends Struct<CNContact> {
     );
   }
 
-  static Pointer<Void> linkedIdentifierMap(
+  static Pointer linkedIdentifierMap(
     Pointer<CNContact> _self,
   ) {
     _openDynamicLibrary();
@@ -6598,10 +6654,10 @@ class CNContact extends Struct<CNContact> {
     );
   }
 
-  static Pointer<Void> loadDataWithTypeIdentifier(
+  static Pointer loadDataWithTypeIdentifier(
     Pointer<CNContact> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> forItemProviderCompletionHandler,
+    Pointer arg, {
+    @required Pointer forItemProviderCompletionHandler,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -6613,7 +6669,19 @@ class CNContact extends Struct<CNContact> {
     );
   }
 
-  static Pointer<Void> maidenName(
+  static Pointer localizedDisplayNameWithLabel(
+    Pointer<CNContact> _self,
+    Pointer arg,
+  ) {
+    _openDynamicLibrary();
+    return _call_objc_p_p_p_returns_p(
+      _self,
+      _objc.getSelector("localizedDisplayNameWithLabel:"),
+      arg,
+    );
+  }
+
+  static Pointer maidenName(
     Pointer<CNContact> _self,
   ) {
     _openDynamicLibrary();
@@ -6623,7 +6691,7 @@ class CNContact extends Struct<CNContact> {
     );
   }
 
-  static Pointer<Void> mainStoreLinkedContacts(
+  static Pointer mainStoreLinkedContacts(
     Pointer<CNContact> _self,
   ) {
     _openDynamicLibrary();
@@ -6633,7 +6701,7 @@ class CNContact extends Struct<CNContact> {
     );
   }
 
-  static Pointer<Void> mapsData(
+  static Pointer mapsData(
     Pointer<CNContact> _self,
   ) {
     _openDynamicLibrary();
@@ -6643,7 +6711,7 @@ class CNContact extends Struct<CNContact> {
     );
   }
 
-  static Pointer<Void> middleName(
+  static Pointer middleName(
     Pointer<CNContact> _self,
   ) {
     _openDynamicLibrary();
@@ -6653,7 +6721,7 @@ class CNContact extends Struct<CNContact> {
     );
   }
 
-  static Pointer<Void> modificationDate(
+  static Pointer modificationDate(
     Pointer<CNContact> _self,
   ) {
     _openDynamicLibrary();
@@ -6663,9 +6731,29 @@ class CNContact extends Struct<CNContact> {
     );
   }
 
-  static Pointer<Void> mutableCopyWithZone(
+  static int mostRecentCallType(
     Pointer<CNContact> _self,
-    Pointer<Pointer<Void>> arg,
+  ) {
+    _openDynamicLibrary();
+    return _call_objc_p_p_returns_Int64(
+      _self,
+      _objc.getSelector("mostRecentCallType"),
+    );
+  }
+
+  static int mostRecentCallWasMissed(
+    Pointer<CNContact> _self,
+  ) {
+    _openDynamicLibrary();
+    return _call_objc_p_p_returns_Int8(
+      _self,
+      _objc.getSelector("mostRecentCallWasMissed"),
+    );
+  }
+
+  static Pointer mutableCopyWithZone(
+    Pointer<CNContact> _self,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -6675,7 +6763,17 @@ class CNContact extends Struct<CNContact> {
     );
   }
 
-  static Pointer<Void> namePrefix(
+  static Pointer nameComponents(
+    Pointer<CNContact> _self,
+  ) {
+    _openDynamicLibrary();
+    return _call_objc_p_p_returns_p(
+      _self,
+      _objc.getSelector("nameComponents"),
+    );
+  }
+
+  static Pointer namePrefix(
     Pointer<CNContact> _self,
   ) {
     _openDynamicLibrary();
@@ -6685,7 +6783,7 @@ class CNContact extends Struct<CNContact> {
     );
   }
 
-  static Pointer<Void> nameSuffix(
+  static Pointer nameSuffix(
     Pointer<CNContact> _self,
   ) {
     _openDynamicLibrary();
@@ -6695,7 +6793,7 @@ class CNContact extends Struct<CNContact> {
     );
   }
 
-  static Pointer<Void> nameTitle(
+  static Pointer nameTitle(
     Pointer<CNContact> _self,
   ) {
     _openDynamicLibrary();
@@ -6705,7 +6803,7 @@ class CNContact extends Struct<CNContact> {
     );
   }
 
-  static Pointer<Void> nickname(
+  static Pointer nickname(
     Pointer<CNContact> _self,
   ) {
     _openDynamicLibrary();
@@ -6715,7 +6813,7 @@ class CNContact extends Struct<CNContact> {
     );
   }
 
-  static Pointer<Void> nonGregorianBirthday(
+  static Pointer nonGregorianBirthday(
     Pointer<CNContact> _self,
   ) {
     _openDynamicLibrary();
@@ -6725,7 +6823,7 @@ class CNContact extends Struct<CNContact> {
     );
   }
 
-  static Pointer<Void> note(
+  static Pointer note(
     Pointer<CNContact> _self,
   ) {
     _openDynamicLibrary();
@@ -6735,7 +6833,7 @@ class CNContact extends Struct<CNContact> {
     );
   }
 
-  static Pointer<Void> organizationName(
+  static Pointer organizationName(
     Pointer<CNContact> _self,
   ) {
     _openDynamicLibrary();
@@ -6745,7 +6843,27 @@ class CNContact extends Struct<CNContact> {
     );
   }
 
-  static Pointer<Void> phoneNumbers(
+  static Pointer personNameComponents(
+    Pointer<CNContact> _self,
+  ) {
+    _openDynamicLibrary();
+    return _call_objc_p_p_returns_p(
+      _self,
+      _objc.getSelector("personNameComponents"),
+    );
+  }
+
+  static Pointer phoneNumberStrings(
+    Pointer<CNContact> _self,
+  ) {
+    _openDynamicLibrary();
+    return _call_objc_p_p_returns_p(
+      _self,
+      _objc.getSelector("phoneNumberStrings"),
+    );
+  }
+
+  static Pointer phoneNumbers(
     Pointer<CNContact> _self,
   ) {
     _openDynamicLibrary();
@@ -6755,7 +6873,7 @@ class CNContact extends Struct<CNContact> {
     );
   }
 
-  static Pointer<Void> phonemeData(
+  static Pointer phonemeData(
     Pointer<CNContact> _self,
   ) {
     _openDynamicLibrary();
@@ -6765,7 +6883,7 @@ class CNContact extends Struct<CNContact> {
     );
   }
 
-  static Pointer<Void> phoneticCompanyName(
+  static Pointer phoneticCompanyName(
     Pointer<CNContact> _self,
   ) {
     _openDynamicLibrary();
@@ -6775,7 +6893,7 @@ class CNContact extends Struct<CNContact> {
     );
   }
 
-  static Pointer<Void> phoneticFamilyName(
+  static Pointer phoneticFamilyName(
     Pointer<CNContact> _self,
   ) {
     _openDynamicLibrary();
@@ -6785,7 +6903,7 @@ class CNContact extends Struct<CNContact> {
     );
   }
 
-  static Pointer<Void> phoneticFirstName(
+  static Pointer phoneticFirstName(
     Pointer<CNContact> _self,
   ) {
     _openDynamicLibrary();
@@ -6795,7 +6913,7 @@ class CNContact extends Struct<CNContact> {
     );
   }
 
-  static Pointer<Void> phoneticFullName(
+  static Pointer phoneticFullName(
     Pointer<CNContact> _self,
   ) {
     _openDynamicLibrary();
@@ -6805,7 +6923,7 @@ class CNContact extends Struct<CNContact> {
     );
   }
 
-  static Pointer<Void> phoneticGivenName(
+  static Pointer phoneticGivenName(
     Pointer<CNContact> _self,
   ) {
     _openDynamicLibrary();
@@ -6815,7 +6933,7 @@ class CNContact extends Struct<CNContact> {
     );
   }
 
-  static Pointer<Void> phoneticLastName(
+  static Pointer phoneticLastName(
     Pointer<CNContact> _self,
   ) {
     _openDynamicLibrary();
@@ -6825,7 +6943,7 @@ class CNContact extends Struct<CNContact> {
     );
   }
 
-  static Pointer<Void> phoneticMiddleName(
+  static Pointer phoneticMiddleName(
     Pointer<CNContact> _self,
   ) {
     _openDynamicLibrary();
@@ -6835,7 +6953,7 @@ class CNContact extends Struct<CNContact> {
     );
   }
 
-  static Pointer<Void> phoneticOrganizationName(
+  static Pointer phoneticOrganizationName(
     Pointer<CNContact> _self,
   ) {
     _openDynamicLibrary();
@@ -6845,7 +6963,156 @@ class CNContact extends Struct<CNContact> {
     );
   }
 
-  static Pointer<Void> postalAddresses(
+  static void pkAddLabeledValues(
+    Pointer<CNContact> _self,
+    Pointer arg, {
+    @required Pointer withProperty,
+  }) {
+    _openDynamicLibrary();
+    return _call_objc_p_p_p_p_returns_void(
+      _self,
+      _objc.getSelector("pkAddLabeledValues:withProperty:"),
+      arg,
+      withProperty,
+    );
+  }
+
+  static Pointer pkDeconstructContactUsingKey$(
+    Pointer<CNContact> _self,
+    Pointer arg,
+  ) {
+    _openDynamicLibrary();
+    return _call_objc_p_p_p_returns_p(
+      _self,
+      _objc.getSelector("pkDeconstructContactUsingKey:"),
+      arg,
+    );
+  }
+
+  static Pointer pkDeconstructContactUsingKey$substring$(
+    Pointer<CNContact> _self,
+    Pointer arg, {
+    @required Pointer substring,
+  }) {
+    _openDynamicLibrary();
+    return _call_objc_p_p_p_p_returns_p(
+      _self,
+      _objc.getSelector("pkDeconstructContactUsingKey:substring:"),
+      arg,
+      substring,
+    );
+  }
+
+  static Pointer pkDictionaryForProperty(
+    Pointer<CNContact> _self,
+    Pointer arg,
+  ) {
+    _openDynamicLibrary();
+    return _call_objc_p_p_p_returns_p(
+      _self,
+      _objc.getSelector("pkDictionaryForProperty:"),
+      arg,
+    );
+  }
+
+  static Pointer pkFormattedContactAddress(
+    Pointer<CNContact> _self,
+  ) {
+    _openDynamicLibrary();
+    return _call_objc_p_p_returns_p(
+      _self,
+      _objc.getSelector("pkFormattedContactAddress"),
+    );
+  }
+
+  static Pointer pkFormattedContactAddressIncludingPhoneticName$(
+    Pointer<CNContact> _self,
+    int arg,
+  ) {
+    _openDynamicLibrary();
+    return _call_objc_p_p_Int8_returns_p(
+      _self,
+      _objc.getSelector("pkFormattedContactAddressIncludingPhoneticName:"),
+      arg,
+    );
+  }
+
+  static Pointer pkFormattedContactAddressIncludingPhoneticName$showName$(
+    Pointer<CNContact> _self,
+    int arg, {
+    @required int showName,
+  }) {
+    _openDynamicLibrary();
+    return _call_objc_p_p_Int8_Int8_returns_p(
+      _self,
+      _objc.getSelector(
+          "pkFormattedContactAddressIncludingPhoneticName:showName:"),
+      arg,
+      showName,
+    );
+  }
+
+  static Pointer pkFormattedContactAddressWithoutName(
+    Pointer<CNContact> _self,
+  ) {
+    _openDynamicLibrary();
+    return _call_objc_p_p_returns_p(
+      _self,
+      _objc.getSelector("pkFormattedContactAddressWithoutName"),
+    );
+  }
+
+  static Pointer pkFullAndPhoneticName(
+    Pointer<CNContact> _self,
+  ) {
+    _openDynamicLibrary();
+    return _call_objc_p_p_returns_p(
+      _self,
+      _objc.getSelector("pkFullAndPhoneticName"),
+    );
+  }
+
+  static Pointer pkFullName(
+    Pointer<CNContact> _self,
+  ) {
+    _openDynamicLibrary();
+    return _call_objc_p_p_returns_p(
+      _self,
+      _objc.getSelector("pkFullName"),
+    );
+  }
+
+  static Pointer pkFullyQualifiedName(
+    Pointer<CNContact> _self,
+  ) {
+    _openDynamicLibrary();
+    return _call_objc_p_p_returns_p(
+      _self,
+      _objc.getSelector("pkFullyQualifiedName"),
+    );
+  }
+
+  static Pointer pkPhoneticName(
+    Pointer<CNContact> _self,
+  ) {
+    _openDynamicLibrary();
+    return _call_objc_p_p_returns_p(
+      _self,
+      _objc.getSelector("pkPhoneticName"),
+    );
+  }
+
+  static Pointer pkSingleLineFormattedContactAddress(
+    Pointer<CNContact> _self,
+  ) {
+    _openDynamicLibrary();
+    return _call_objc_p_p_returns_p(
+      _self,
+      _objc.getSelector("pkSingleLineFormattedContactAddress"),
+    );
+  }
+
+  static Pointer postalAddresses(
     Pointer<CNContact> _self,
   ) {
     _openDynamicLibrary();
@@ -6855,7 +7122,7 @@ class CNContact extends Struct<CNContact> {
     );
   }
 
-  static Pointer<Void> preferredApplePersonaIdentifier(
+  static Pointer preferredApplePersonaIdentifier(
     Pointer<CNContact> _self,
   ) {
     _openDynamicLibrary();
@@ -6865,7 +7132,7 @@ class CNContact extends Struct<CNContact> {
     );
   }
 
-  static Pointer<Void> preferredChannel(
+  static Pointer preferredChannel(
     Pointer<CNContact> _self,
   ) {
     _openDynamicLibrary();
@@ -6895,7 +7162,7 @@ class CNContact extends Struct<CNContact> {
     );
   }
 
-  static Pointer<Void> preferredLikenessSource(
+  static Pointer preferredLikenessSource(
     Pointer<CNContact> _self,
   ) {
     _openDynamicLibrary();
@@ -6905,7 +7172,7 @@ class CNContact extends Struct<CNContact> {
     );
   }
 
-  static Pointer<Void> previousFamilyName(
+  static Pointer previousFamilyName(
     Pointer<CNContact> _self,
   ) {
     _openDynamicLibrary();
@@ -6915,7 +7182,7 @@ class CNContact extends Struct<CNContact> {
     );
   }
 
-  static Pointer<Void> pronunciationFamilyName(
+  static Pointer pronunciationFamilyName(
     Pointer<CNContact> _self,
   ) {
     _openDynamicLibrary();
@@ -6925,7 +7192,7 @@ class CNContact extends Struct<CNContact> {
     );
   }
 
-  static Pointer<Void> pronunciationGivenName(
+  static Pointer pronunciationGivenName(
     Pointer<CNContact> _self,
   ) {
     _openDynamicLibrary();
@@ -6935,7 +7202,17 @@ class CNContact extends Struct<CNContact> {
     );
   }
 
-  static Pointer<Void> relatedNames(
+  static Pointer recentContact(
+    Pointer<CNContact> _self,
+  ) {
+    _openDynamicLibrary();
+    return _call_objc_p_p_returns_p(
+      _self,
+      _objc.getSelector("recentContact"),
+    );
+  }
+
+  static Pointer relatedNames(
     Pointer<CNContact> _self,
   ) {
     _openDynamicLibrary();
@@ -6945,7 +7222,17 @@ class CNContact extends Struct<CNContact> {
     );
   }
 
-  static Pointer<Void> searchIndex(
+  static Pointer sanitizedContact(
+    Pointer<CNContact> _self,
+  ) {
+    _openDynamicLibrary();
+    return _call_objc_p_p_returns_p(
+      _self,
+      _objc.getSelector("sanitizedContact"),
+    );
+  }
+
+  static Pointer searchIndex(
     Pointer<CNContact> _self,
   ) {
     _openDynamicLibrary();
@@ -6955,7 +7242,7 @@ class CNContact extends Struct<CNContact> {
     );
   }
 
-  static Pointer<Void> sectionForSortingByFamilyName(
+  static Pointer sectionForSortingByFamilyName(
     Pointer<CNContact> _self,
   ) {
     _openDynamicLibrary();
@@ -6965,7 +7252,7 @@ class CNContact extends Struct<CNContact> {
     );
   }
 
-  static Pointer<Void> sectionForSortingByGivenName(
+  static Pointer sectionForSortingByGivenName(
     Pointer<CNContact> _self,
   ) {
     _openDynamicLibrary();
@@ -6975,7 +7262,31 @@ class CNContact extends Struct<CNContact> {
     );
   }
 
-  static Pointer<Void> shortDebugDescription(
+  static void setContactSource(
+    Pointer<CNContact> _self,
+    int arg,
+  ) {
+    _openDynamicLibrary();
+    return _call_objc_p_p_Uint64_returns_void(
+      _self,
+      _objc.getSelector("setContactSource:"),
+      arg,
+    );
+  }
+
+  static void setRecentContact(
+    Pointer<CNContact> _self,
+    Pointer arg,
+  ) {
+    _openDynamicLibrary();
+    return _call_objc_p_p_p_returns_void(
+      _self,
+      _objc.getSelector("setRecentContact:"),
+      arg,
+    );
+  }
+
+  static Pointer shortDebugDescription(
     Pointer<CNContact> _self,
   ) {
     _openDynamicLibrary();
@@ -6985,7 +7296,7 @@ class CNContact extends Struct<CNContact> {
     );
   }
 
-  static Pointer<Void> snapshot(
+  static Pointer snapshot(
     Pointer<CNContact> _self,
   ) {
     _openDynamicLibrary();
@@ -6995,7 +7306,7 @@ class CNContact extends Struct<CNContact> {
     );
   }
 
-  static Pointer<Void> socialProfiles(
+  static Pointer socialProfiles(
     Pointer<CNContact> _self,
   ) {
     _openDynamicLibrary();
@@ -7005,7 +7316,7 @@ class CNContact extends Struct<CNContact> {
     );
   }
 
-  static Pointer<Void> sortingFamilyName(
+  static Pointer sortingFamilyName(
     Pointer<CNContact> _self,
   ) {
     _openDynamicLibrary();
@@ -7015,7 +7326,7 @@ class CNContact extends Struct<CNContact> {
     );
   }
 
-  static Pointer<Void> sortingGivenName(
+  static Pointer sortingGivenName(
     Pointer<CNContact> _self,
   ) {
     _openDynamicLibrary();
@@ -7025,7 +7336,7 @@ class CNContact extends Struct<CNContact> {
     );
   }
 
-  static Pointer<Void> storeIdentifier(
+  static Pointer storeIdentifier(
     Pointer<CNContact> _self,
   ) {
     _openDynamicLibrary();
@@ -7035,7 +7346,7 @@ class CNContact extends Struct<CNContact> {
     );
   }
 
-  static Pointer<Void> storeInfo(
+  static Pointer storeInfo(
     Pointer<CNContact> _self,
   ) {
     _openDynamicLibrary();
@@ -7045,7 +7356,7 @@ class CNContact extends Struct<CNContact> {
     );
   }
 
-  static Pointer<Void> stringForIndexing(
+  static Pointer stringForIndexing(
     Pointer<CNContact> _self,
   ) {
     _openDynamicLibrary();
@@ -7055,7 +7366,7 @@ class CNContact extends Struct<CNContact> {
     );
   }
 
-  static Pointer<Void> suggestionFoundInBundleId(
+  static Pointer suggestionFoundInBundleId(
     Pointer<CNContact> _self,
   ) {
     _openDynamicLibrary();
@@ -7065,7 +7376,7 @@ class CNContact extends Struct<CNContact> {
     );
   }
 
-  static Pointer<Void> suggestionRecordId(
+  static Pointer suggestionRecordId(
     Pointer<CNContact> _self,
   ) {
     _openDynamicLibrary();
@@ -7075,7 +7386,7 @@ class CNContact extends Struct<CNContact> {
     );
   }
 
-  static Pointer<Void> textAlert(
+  static Pointer textAlert(
     Pointer<CNContact> _self,
   ) {
     _openDynamicLibrary();
@@ -7085,7 +7396,7 @@ class CNContact extends Struct<CNContact> {
     );
   }
 
-  static Pointer<Void> thumbnailImageData(
+  static Pointer thumbnailImageData(
     Pointer<CNContact> _self,
   ) {
     _openDynamicLibrary();
@@ -7095,7 +7406,7 @@ class CNContact extends Struct<CNContact> {
     );
   }
 
-  static Pointer<Void> urlAddresses(
+  static Pointer urlAddresses(
     Pointer<CNContact> _self,
   ) {
     _openDynamicLibrary();
@@ -7105,7 +7416,7 @@ class CNContact extends Struct<CNContact> {
     );
   }
 
-  static Pointer<Void> writableTypeIdentifiersForItemProvider(
+  static Pointer writableTypeIdentifiersForItemProvider(
     Pointer<CNContact> _self,
   ) {
     _openDynamicLibrary();
@@ -7116,11 +7427,9 @@ class CNContact extends Struct<CNContact> {
   }
 }
 
-/// Objective-C class _CNContactChangeRequest_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNContactChangeRequest extends Struct<CNContactChangeRequest> {
   factory CNContactChangeRequest._() {
@@ -7133,7 +7442,7 @@ class CNContactChangeRequest extends Struct<CNContactChangeRequest> {
         .cast<CNContactChangeRequest>();
   }
 
-  static Pointer<Void> contactIdentifiers(
+  static Pointer contactIdentifiers(
     Pointer<CNContactChangeRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -7143,7 +7452,7 @@ class CNContactChangeRequest extends Struct<CNContactChangeRequest> {
     );
   }
 
-  static Pointer<Void> contacts(
+  static Pointer contacts(
     Pointer<CNContactChangeRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -7155,7 +7464,7 @@ class CNContactChangeRequest extends Struct<CNContactChangeRequest> {
 
   static void encodeWithCoder(
     Pointer<CNContactChangeRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -7165,9 +7474,9 @@ class CNContactChangeRequest extends Struct<CNContactChangeRequest> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CNContactChangeRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -7177,11 +7486,11 @@ class CNContactChangeRequest extends Struct<CNContactChangeRequest> {
     );
   }
 
-  static Pointer<Void> initWithKind(
+  static Pointer initWithKind(
     Pointer<CNContactChangeRequest> _self,
     int arg, {
-    @required Pointer<Void> contacts,
-    @required Pointer<Void> linkIdentifier,
+    @required Pointer contacts,
+    @required Pointer linkIdentifier,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_Int64_p_p_returns_p(
@@ -7203,7 +7512,7 @@ class CNContactChangeRequest extends Struct<CNContactChangeRequest> {
     );
   }
 
-  static Pointer<Void> linkIdentifier(
+  static Pointer linkIdentifier(
     Pointer<CNContactChangeRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -7214,11 +7523,9 @@ class CNContactChangeRequest extends Struct<CNContactChangeRequest> {
   }
 }
 
-/// Objective-C class _CNContactChangesFetcher_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNContactChangesFetcher extends Struct<CNContactChangesFetcher> {
   factory CNContactChangesFetcher._() {
@@ -7231,7 +7538,7 @@ class CNContactChangesFetcher extends Struct<CNContactChangesFetcher> {
         .cast<CNContactChangesFetcher>();
   }
 
-  static Pointer<Void> identifiers(
+  static Pointer identifiers(
     Pointer<CNContactChangesFetcher> _self,
   ) {
     _openDynamicLibrary();
@@ -7241,7 +7548,7 @@ class CNContactChangesFetcher extends Struct<CNContactChangesFetcher> {
     );
   }
 
-  static Pointer<Void> keysToFetch(
+  static Pointer keysToFetch(
     Pointer<CNContactChangesFetcher> _self,
   ) {
     _openDynamicLibrary();
@@ -7253,7 +7560,7 @@ class CNContactChangesFetcher extends Struct<CNContactChangesFetcher> {
 
   static void setIdentifiers(
     Pointer<CNContactChangesFetcher> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -7265,7 +7572,7 @@ class CNContactChangesFetcher extends Struct<CNContactChangesFetcher> {
 
   static void setKeysToFetch(
     Pointer<CNContactChangesFetcher> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -7298,11 +7605,9 @@ class CNContactChangesFetcher extends Struct<CNContactChangesFetcher> {
   }
 }
 
-/// Objective-C class _CNContactChangesNotifier_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNContactChangesNotifier extends Struct<CNContactChangesNotifier> {
   factory CNContactChangesNotifier._() {
@@ -7315,7 +7620,7 @@ class CNContactChangesNotifier extends Struct<CNContactChangesNotifier> {
         .cast<CNContactChangesNotifier>();
   }
 
-  static Pointer<Void> contactStore(
+  static Pointer contactStore(
     Pointer<CNContactChangesNotifier> _self,
   ) {
     _openDynamicLibrary();
@@ -7327,7 +7632,7 @@ class CNContactChangesNotifier extends Struct<CNContactChangesNotifier> {
 
   static void contactStoreDidChange(
     Pointer<CNContactChangesNotifier> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -7337,7 +7642,7 @@ class CNContactChangesNotifier extends Struct<CNContactChangesNotifier> {
     );
   }
 
-  static Pointer<Void> downstream(
+  static Pointer downstream(
     Pointer<CNContactChangesNotifier> _self,
   ) {
     _openDynamicLibrary();
@@ -7347,7 +7652,7 @@ class CNContactChangesNotifier extends Struct<CNContactChangesNotifier> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CNContactChangesNotifier> _self,
   ) {
     _openDynamicLibrary();
@@ -7357,11 +7662,11 @@ class CNContactChangesNotifier extends Struct<CNContactChangesNotifier> {
     );
   }
 
-  static Pointer<Void> initWithContactStore(
+  static Pointer initWithContactStore(
     Pointer<CNContactChangesNotifier> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> downstreamScheduler,
-    @required Pointer<Void> schedulerProvider,
+    Pointer arg, {
+    @required Pointer downstreamScheduler,
+    @required Pointer schedulerProvider,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -7386,9 +7691,9 @@ class CNContactChangesNotifier extends Struct<CNContactChangesNotifier> {
 
   static void registerObserver$forContact$keysToFetch$(
     Pointer<CNContactChangesNotifier> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> forContact,
-    @required Pointer<Void> keysToFetch,
+    Pointer arg, {
+    @required Pointer forContact,
+    @required Pointer keysToFetch,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_void(
@@ -7402,10 +7707,10 @@ class CNContactChangesNotifier extends Struct<CNContactChangesNotifier> {
 
   static void registerObserver$forContact$keysToFetch$completionHandler$(
     Pointer<CNContactChangesNotifier> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> forContact,
-    @required Pointer<Void> keysToFetch,
-    @required Pointer<Void> completionHandler,
+    Pointer arg, {
+    @required Pointer forContact,
+    @required Pointer keysToFetch,
+    @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_returns_void(
@@ -7421,8 +7726,8 @@ class CNContactChangesNotifier extends Struct<CNContactChangesNotifier> {
 
   static void registerObserver$forContact$(
     Pointer<CNContactChangesNotifier> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> forContact,
+    Pointer arg, {
+    @required Pointer forContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -7435,8 +7740,8 @@ class CNContactChangesNotifier extends Struct<CNContactChangesNotifier> {
 
   static void registerProxy(
     Pointer<CNContactChangesNotifier> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> identifier,
+    Pointer arg, {
+    @required Pointer identifier,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -7447,7 +7752,7 @@ class CNContactChangesNotifier extends Struct<CNContactChangesNotifier> {
     );
   }
 
-  static Pointer<Void> registeredObservers(
+  static Pointer registeredObservers(
     Pointer<CNContactChangesNotifier> _self,
   ) {
     _openDynamicLibrary();
@@ -7457,7 +7762,7 @@ class CNContactChangesNotifier extends Struct<CNContactChangesNotifier> {
     );
   }
 
-  static Pointer<Void> resourceLock(
+  static Pointer resourceLock(
     Pointer<CNContactChangesNotifier> _self,
   ) {
     _openDynamicLibrary();
@@ -7469,8 +7774,8 @@ class CNContactChangesNotifier extends Struct<CNContactChangesNotifier> {
 
   static int resourceLock_removeProxiesPassingTest(
     Pointer<CNContactChangesNotifier> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> forIdentifier,
+    Pointer arg, {
+    @required Pointer forIdentifier,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -7495,9 +7800,9 @@ class CNContactChangesNotifier extends Struct<CNContactChangesNotifier> {
 
   static void unregisterObserver$forContact$completionHandler$(
     Pointer<CNContactChangesNotifier> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> forContact,
-    @required Pointer<Void> completionHandler,
+    Pointer arg, {
+    @required Pointer forContact,
+    @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_void(
@@ -7511,8 +7816,8 @@ class CNContactChangesNotifier extends Struct<CNContactChangesNotifier> {
 
   static void unregisterObserver$forContact$(
     Pointer<CNContactChangesNotifier> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> forContact,
+    Pointer arg, {
+    @required Pointer forContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -7523,7 +7828,7 @@ class CNContactChangesNotifier extends Struct<CNContactChangesNotifier> {
     );
   }
 
-  static Pointer<Void> workQueue(
+  static Pointer workQueue(
     Pointer<CNContactChangesNotifier> _self,
   ) {
     _openDynamicLibrary();
@@ -7554,11 +7859,9 @@ class CNContactChangesNotifier extends Struct<CNContactChangesNotifier> {
   }
 }
 
-/// Objective-C class _CNContactChangesObserverProxy_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNContactChangesObserverProxy
     extends Struct<CNContactChangesObserverProxy> {
@@ -7572,7 +7875,7 @@ class CNContactChangesObserverProxy
         .cast<CNContactChangesObserverProxy>();
   }
 
-  static Pointer<Void> contactSnapshot(
+  static Pointer contactSnapshot(
     Pointer<CNContactChangesObserverProxy> _self,
   ) {
     _openDynamicLibrary();
@@ -7582,7 +7885,7 @@ class CNContactChangesObserverProxy
     );
   }
 
-  static Pointer<Void> keysToFetch(
+  static Pointer keysToFetch(
     Pointer<CNContactChangesObserverProxy> _self,
   ) {
     _openDynamicLibrary();
@@ -7592,7 +7895,7 @@ class CNContactChangesObserverProxy
     );
   }
 
-  static Pointer<Void> observer(
+  static Pointer observer(
     Pointer<CNContactChangesObserverProxy> _self,
   ) {
     _openDynamicLibrary();
@@ -7604,7 +7907,7 @@ class CNContactChangesObserverProxy
 
   static void setContactSnapshot(
     Pointer<CNContactChangesObserverProxy> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -7616,7 +7919,7 @@ class CNContactChangesObserverProxy
 
   static void setKeysToFetch(
     Pointer<CNContactChangesObserverProxy> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -7628,7 +7931,7 @@ class CNContactChangesObserverProxy
 
   static void setObserver(
     Pointer<CNContactChangesObserverProxy> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -7661,11 +7964,9 @@ class CNContactChangesObserverProxy
   }
 }
 
-/// Objective-C class _CNContactDiff_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNContactDiff extends Struct<CNContactDiff> {
   factory CNContactDiff._() {
@@ -7678,7 +7979,7 @@ class CNContactDiff extends Struct<CNContactDiff> {
 
   static void applyToABCDContact(
     Pointer<CNContactDiff> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -7690,8 +7991,8 @@ class CNContactDiff extends Struct<CNContactDiff> {
 
   static void applyToMutableContact(
     Pointer<CNContactDiff> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> withIdentifierMap,
+    Pointer arg, {
+    @required Pointer withIdentifierMap,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -7704,8 +8005,8 @@ class CNContactDiff extends Struct<CNContactDiff> {
 
   static void applyToMutableContacts(
     Pointer<CNContactDiff> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> withIdentifierMap,
+    Pointer arg, {
+    @required Pointer withIdentifierMap,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -7716,9 +8017,9 @@ class CNContactDiff extends Struct<CNContactDiff> {
     );
   }
 
-  static Pointer<Void> contactByApplyingUpdatesToContact(
+  static Pointer contactByApplyingUpdatesToContact(
     Pointer<CNContactDiff> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -7728,7 +8029,7 @@ class CNContactDiff extends Struct<CNContactDiff> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CNContactDiff> _self,
   ) {
     _openDynamicLibrary();
@@ -7738,9 +8039,9 @@ class CNContactDiff extends Struct<CNContactDiff> {
     );
   }
 
-  static Pointer<Void> initWithUpdates(
+  static Pointer initWithUpdates(
     Pointer<CNContactDiff> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -7750,7 +8051,7 @@ class CNContactDiff extends Struct<CNContactDiff> {
     );
   }
 
-  static Pointer<Void> updates(
+  static Pointer updates(
     Pointer<CNContactDiff> _self,
   ) {
     _openDynamicLibrary();
@@ -7761,11 +8062,9 @@ class CNContactDiff extends Struct<CNContactDiff> {
   }
 }
 
-/// Objective-C class _CNContactFetchRequest_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNContactFetchRequest extends Struct<CNContactFetchRequest> {
   factory CNContactFetchRequest._() {
@@ -7798,9 +8097,9 @@ class CNContactFetchRequest extends Struct<CNContactFetchRequest> {
     );
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<CNContactFetchRequest> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -7820,7 +8119,7 @@ class CNContactFetchRequest extends Struct<CNContactFetchRequest> {
     );
   }
 
-  static Pointer<Void> effectiveKeysToFetch(
+  static Pointer effectiveKeysToFetch(
     Pointer<CNContactFetchRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -7830,7 +8129,7 @@ class CNContactFetchRequest extends Struct<CNContactFetchRequest> {
     );
   }
 
-  static Pointer<Void> effectivePredicate(
+  static Pointer effectivePredicate(
     Pointer<CNContactFetchRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -7842,7 +8141,7 @@ class CNContactFetchRequest extends Struct<CNContactFetchRequest> {
 
   static void encodeWithCoder(
     Pointer<CNContactFetchRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -7852,7 +8151,7 @@ class CNContactFetchRequest extends Struct<CNContactFetchRequest> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CNContactFetchRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -7862,9 +8161,9 @@ class CNContactFetchRequest extends Struct<CNContactFetchRequest> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CNContactFetchRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -7874,9 +8173,9 @@ class CNContactFetchRequest extends Struct<CNContactFetchRequest> {
     );
   }
 
-  static Pointer<Void> initWithKeysToFetch(
+  static Pointer initWithKeysToFetch(
     Pointer<CNContactFetchRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -7886,7 +8185,7 @@ class CNContactFetchRequest extends Struct<CNContactFetchRequest> {
     );
   }
 
-  static Pointer<Void> keysToFetch(
+  static Pointer keysToFetch(
     Pointer<CNContactFetchRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -7916,7 +8215,7 @@ class CNContactFetchRequest extends Struct<CNContactFetchRequest> {
     );
   }
 
-  static Pointer<Void> predicate(
+  static Pointer predicate(
     Pointer<CNContactFetchRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -7984,7 +8283,7 @@ class CNContactFetchRequest extends Struct<CNContactFetchRequest> {
 
   static void setKeysToFetch(
     Pointer<CNContactFetchRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -8020,7 +8319,7 @@ class CNContactFetchRequest extends Struct<CNContactFetchRequest> {
 
   static void setPredicate(
     Pointer<CNContactFetchRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -8087,11 +8386,9 @@ class CNContactFetchRequest extends Struct<CNContactFetchRequest> {
   }
 }
 
-/// Objective-C class _CNContactFormatter_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNContactFormatter extends Struct<CNContactFormatter> {
   factory CNContactFormatter._() {
@@ -8102,10 +8399,10 @@ class CNContactFormatter extends Struct<CNContactFormatter> {
     return _objc.allocate("CNContactFormatter").cast<CNContactFormatter>();
   }
 
-  static Pointer<Void> abbreviatedNameForContact(
+  static Pointer abbreviatedNameForContact(
     Pointer<CNContactFormatter> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> attributes,
+    Pointer arg, {
+    @required Pointer attributes,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -8118,11 +8415,11 @@ class CNContactFormatter extends Struct<CNContactFormatter> {
 
   static void appendValue(
     Pointer<CNContactFormatter> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> derivedFromPropertyName,
-    @required Pointer<Void> toString,
-    @required Pointer<Void> delimiter,
-    @required Pointer<Void> attributes,
+    Pointer arg, {
+    @required Pointer derivedFromPropertyName,
+    @required Pointer toString,
+    @required Pointer delimiter,
+    @required Pointer attributes,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_p_returns_void(
@@ -8139,11 +8436,11 @@ class CNContactFormatter extends Struct<CNContactFormatter> {
 
   static void appendValueForProperties(
     Pointer<CNContactFormatter> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> fromContact,
-    @required Pointer<Void> toString,
-    @required Pointer<Void> delimiter,
-    @required Pointer<Void> attributes,
+    Pointer arg, {
+    @required Pointer fromContact,
+    @required Pointer toString,
+    @required Pointer delimiter,
+    @required Pointer attributes,
     @required int fallback,
   }) {
     _openDynamicLibrary();
@@ -8160,10 +8457,10 @@ class CNContactFormatter extends Struct<CNContactFormatter> {
     );
   }
 
-  static Pointer<Void> attributedStringForObjectValue(
+  static Pointer attributedStringForObjectValue(
     Pointer<CNContactFormatter> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> withDefaultAttributes,
+    Pointer arg, {
+    @required Pointer withDefaultAttributes,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -8175,10 +8472,10 @@ class CNContactFormatter extends Struct<CNContactFormatter> {
     );
   }
 
-  static Pointer<Void> attributedStringFromContact(
+  static Pointer attributedStringFromContact(
     Pointer<CNContactFormatter> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> defaultAttributes,
+    Pointer arg, {
+    @required Pointer defaultAttributes,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -8189,10 +8486,10 @@ class CNContactFormatter extends Struct<CNContactFormatter> {
     );
   }
 
-  static Pointer<Void> avatarNameForContact(
+  static Pointer avatarNameForContact(
     Pointer<CNContactFormatter> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> attributes,
+    Pointer arg, {
+    @required Pointer attributes,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -8203,9 +8500,9 @@ class CNContactFormatter extends Struct<CNContactFormatter> {
     );
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<CNContactFormatter> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -8215,7 +8512,7 @@ class CNContactFormatter extends Struct<CNContactFormatter> {
     );
   }
 
-  static Pointer<Void> descriptorForRequiredKeys(
+  static Pointer descriptorForRequiredKeys(
     Pointer<CNContactFormatter> _self,
   ) {
     _openDynamicLibrary();
@@ -8237,7 +8534,7 @@ class CNContactFormatter extends Struct<CNContactFormatter> {
 
   static void encodeWithCoder(
     Pointer<CNContactFormatter> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -8257,10 +8554,10 @@ class CNContactFormatter extends Struct<CNContactFormatter> {
     );
   }
 
-  static Pointer<Void> fullNameForContact(
+  static Pointer fullNameForContact(
     Pointer<CNContactFormatter> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> attributes,
+    Pointer arg, {
+    @required Pointer attributes,
     @required int style,
   }) {
     _openDynamicLibrary();
@@ -8275,9 +8572,9 @@ class CNContactFormatter extends Struct<CNContactFormatter> {
 
   static int getObjectValue(
     Pointer<CNContactFormatter> _self,
-    Pointer<Pointer<Void>> arg, {
-    @required Pointer<Void> forString,
-    @required Pointer<Pointer<Void>> errorDescription,
+    Pointer<Pointer> arg, {
+    @required Pointer forString,
+    @required Pointer<Pointer> errorDescription,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_Int8(
@@ -8309,7 +8606,7 @@ class CNContactFormatter extends Struct<CNContactFormatter> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CNContactFormatter> _self,
   ) {
     _openDynamicLibrary();
@@ -8319,9 +8616,9 @@ class CNContactFormatter extends Struct<CNContactFormatter> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CNContactFormatter> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -8331,7 +8628,7 @@ class CNContactFormatter extends Struct<CNContactFormatter> {
     );
   }
 
-  static Pointer<Void> nameFormatter(
+  static Pointer nameFormatter(
     Pointer<CNContactFormatter> _self,
   ) {
     _openDynamicLibrary();
@@ -8413,10 +8710,10 @@ class CNContactFormatter extends Struct<CNContactFormatter> {
     );
   }
 
-  static Pointer<Void> shortNameForContact(
+  static Pointer shortNameForContact(
     Pointer<CNContactFormatter> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> attributes,
+    Pointer arg, {
+    @required Pointer attributes,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -8437,9 +8734,9 @@ class CNContactFormatter extends Struct<CNContactFormatter> {
     );
   }
 
-  static Pointer<Void> stringForObjectValue(
+  static Pointer stringForObjectValue(
     Pointer<CNContactFormatter> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -8449,10 +8746,10 @@ class CNContactFormatter extends Struct<CNContactFormatter> {
     );
   }
 
-  static Pointer<Void> stringFromContact$attributes$(
+  static Pointer stringFromContact$attributes$(
     Pointer<CNContactFormatter> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> attributes,
+    Pointer arg, {
+    @required Pointer attributes,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -8463,9 +8760,9 @@ class CNContactFormatter extends Struct<CNContactFormatter> {
     );
   }
 
-  static Pointer<Void> stringFromContact$(
+  static Pointer stringFromContact$(
     Pointer<CNContactFormatter> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -8475,10 +8772,10 @@ class CNContactFormatter extends Struct<CNContactFormatter> {
     );
   }
 
-  static Pointer<Void> stringFromPotentiallySuggestedContact(
+  static Pointer stringFromPotentiallySuggestedContact(
     Pointer<CNContactFormatter> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> relatedToProperty,
+    Pointer arg, {
+    @required Pointer relatedToProperty,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -8501,11 +8798,9 @@ class CNContactFormatter extends Struct<CNContactFormatter> {
   }
 }
 
-/// Objective-C class _CNContactFormatterSmartFetcher_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNContactFormatterSmartFetcher
     extends Struct<CNContactFormatterSmartFetcher> {
@@ -8519,9 +8814,9 @@ class CNContactFormatterSmartFetcher
         .cast<CNContactFormatterSmartFetcher>();
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<CNContactFormatterSmartFetcher> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -8533,7 +8828,7 @@ class CNContactFormatterSmartFetcher
 
   static void encodeWithCoder(
     Pointer<CNContactFormatterSmartFetcher> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -8543,7 +8838,7 @@ class CNContactFormatterSmartFetcher
     );
   }
 
-  static Pointer<Void> fallBackNamePropertyByNameKey(
+  static Pointer fallBackNamePropertyByNameKey(
     Pointer<CNContactFormatterSmartFetcher> _self,
   ) {
     _openDynamicLibrary();
@@ -8583,7 +8878,7 @@ class CNContactFormatterSmartFetcher
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CNContactFormatterSmartFetcher> _self,
   ) {
     _openDynamicLibrary();
@@ -8593,9 +8888,9 @@ class CNContactFormatterSmartFetcher
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CNContactFormatterSmartFetcher> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -8607,7 +8902,7 @@ class CNContactFormatterSmartFetcher
 
   static int isEqual(
     Pointer<CNContactFormatterSmartFetcher> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -8617,7 +8912,7 @@ class CNContactFormatterSmartFetcher
     );
   }
 
-  static Pointer<Void> mandatoryNameProperties(
+  static Pointer mandatoryNameProperties(
     Pointer<CNContactFormatterSmartFetcher> _self,
   ) {
     _openDynamicLibrary();
@@ -8629,7 +8924,7 @@ class CNContactFormatterSmartFetcher
 
   static void setFallBackNamePropertyByNameKey(
     Pointer<CNContactFormatterSmartFetcher> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -8665,7 +8960,7 @@ class CNContactFormatterSmartFetcher
 
   static void setMandatoryNameProperties(
     Pointer<CNContactFormatterSmartFetcher> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -8686,11 +8981,9 @@ class CNContactFormatterSmartFetcher
   }
 }
 
-/// Objective-C class _CNContactKeyValueUpdate_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNContactKeyValueUpdate extends Struct<CNContactKeyValueUpdate> {
   factory CNContactKeyValueUpdate._() {
@@ -8705,7 +8998,7 @@ class CNContactKeyValueUpdate extends Struct<CNContactKeyValueUpdate> {
 
   static void applyToABCDContact(
     Pointer<CNContactKeyValueUpdate> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -8717,8 +9010,8 @@ class CNContactKeyValueUpdate extends Struct<CNContactKeyValueUpdate> {
 
   static void applyToMutableContact(
     Pointer<CNContactKeyValueUpdate> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> withIdentifierMap,
+    Pointer arg, {
+    @required Pointer withIdentifierMap,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -8729,7 +9022,7 @@ class CNContactKeyValueUpdate extends Struct<CNContactKeyValueUpdate> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CNContactKeyValueUpdate> _self,
   ) {
     _openDynamicLibrary();
@@ -8749,10 +9042,10 @@ class CNContactKeyValueUpdate extends Struct<CNContactKeyValueUpdate> {
     );
   }
 
-  static Pointer<Void> initWithProperty(
+  static Pointer initWithProperty(
     Pointer<CNContactKeyValueUpdate> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> value,
+    Pointer arg, {
+    @required Pointer value,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -8765,7 +9058,7 @@ class CNContactKeyValueUpdate extends Struct<CNContactKeyValueUpdate> {
 
   static int isEqual(
     Pointer<CNContactKeyValueUpdate> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -8775,7 +9068,7 @@ class CNContactKeyValueUpdate extends Struct<CNContactKeyValueUpdate> {
     );
   }
 
-  static Pointer<Void> property(
+  static Pointer property(
     Pointer<CNContactKeyValueUpdate> _self,
   ) {
     _openDynamicLibrary();
@@ -8785,7 +9078,7 @@ class CNContactKeyValueUpdate extends Struct<CNContactKeyValueUpdate> {
     );
   }
 
-  static Pointer<Void> value(
+  static Pointer value(
     Pointer<CNContactKeyValueUpdate> _self,
   ) {
     _openDynamicLibrary();
@@ -8796,11 +9089,9 @@ class CNContactKeyValueUpdate extends Struct<CNContactKeyValueUpdate> {
   }
 }
 
-/// Objective-C class _CNContactKeyVector_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNContactKeyVector extends Struct<CNContactKeyVector> {
   factory CNContactKeyVector._() {
@@ -8823,7 +9114,7 @@ class CNContactKeyVector extends Struct<CNContactKeyVector> {
 
   static int containsKey(
     Pointer<CNContactKeyVector> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -8833,9 +9124,9 @@ class CNContactKeyVector extends Struct<CNContactKeyVector> {
     );
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<CNContactKeyVector> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -8845,7 +9136,7 @@ class CNContactKeyVector extends Struct<CNContactKeyVector> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CNContactKeyVector> _self,
   ) {
     _openDynamicLibrary();
@@ -8857,7 +9148,7 @@ class CNContactKeyVector extends Struct<CNContactKeyVector> {
 
   static void encodeWithCoder(
     Pointer<CNContactKeyVector> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -8869,7 +9160,7 @@ class CNContactKeyVector extends Struct<CNContactKeyVector> {
 
   static void enumeratePropertiesUsingBlock(
     Pointer<CNContactKeyVector> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -8879,7 +9170,7 @@ class CNContactKeyVector extends Struct<CNContactKeyVector> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CNContactKeyVector> _self,
   ) {
     _openDynamicLibrary();
@@ -8889,7 +9180,7 @@ class CNContactKeyVector extends Struct<CNContactKeyVector> {
     );
   }
 
-  static Pointer<Void> initWithAllKeys(
+  static Pointer initWithAllKeys(
     Pointer<CNContactKeyVector> _self,
   ) {
     _openDynamicLibrary();
@@ -8899,9 +9190,9 @@ class CNContactKeyVector extends Struct<CNContactKeyVector> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CNContactKeyVector> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -8911,9 +9202,9 @@ class CNContactKeyVector extends Struct<CNContactKeyVector> {
     );
   }
 
-  static Pointer<Void> initWithKeys(
+  static Pointer initWithKeys(
     Pointer<CNContactKeyVector> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -8925,7 +9216,7 @@ class CNContactKeyVector extends Struct<CNContactKeyVector> {
 
   static int intersectsKeyVector(
     Pointer<CNContactKeyVector> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -8937,7 +9228,7 @@ class CNContactKeyVector extends Struct<CNContactKeyVector> {
 
   static int isEqual(
     Pointer<CNContactKeyVector> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -8949,7 +9240,7 @@ class CNContactKeyVector extends Struct<CNContactKeyVector> {
 
   static int isEqualToKeyVector(
     Pointer<CNContactKeyVector> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -8961,7 +9252,7 @@ class CNContactKeyVector extends Struct<CNContactKeyVector> {
 
   static int isSubsetOfKeyVector(
     Pointer<CNContactKeyVector> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -8971,9 +9262,9 @@ class CNContactKeyVector extends Struct<CNContactKeyVector> {
     );
   }
 
-  static Pointer<Void> keyVectorByAddingKey(
+  static Pointer keyVectorByAddingKey(
     Pointer<CNContactKeyVector> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -8983,9 +9274,9 @@ class CNContactKeyVector extends Struct<CNContactKeyVector> {
     );
   }
 
-  static Pointer<Void> keyVectorByAddingKeys(
+  static Pointer keyVectorByAddingKeys(
     Pointer<CNContactKeyVector> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -8995,9 +9286,9 @@ class CNContactKeyVector extends Struct<CNContactKeyVector> {
     );
   }
 
-  static Pointer<Void> keyVectorByAddingKeysFromKeyVector(
+  static Pointer keyVectorByAddingKeysFromKeyVector(
     Pointer<CNContactKeyVector> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -9007,9 +9298,9 @@ class CNContactKeyVector extends Struct<CNContactKeyVector> {
     );
   }
 
-  static Pointer<Void> mutableCopyWithZone(
+  static Pointer mutableCopyWithZone(
     Pointer<CNContactKeyVector> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -9020,11 +9311,9 @@ class CNContactKeyVector extends Struct<CNContactKeyVector> {
   }
 }
 
-/// Objective-C class _CNContactLocationVCardSummary_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNContactLocationVCardSummary
     extends Struct<CNContactLocationVCardSummary> {
@@ -9038,9 +9327,9 @@ class CNContactLocationVCardSummary
         .cast<CNContactLocationVCardSummary>();
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<CNContactLocationVCardSummary> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -9050,7 +9339,7 @@ class CNContactLocationVCardSummary
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CNContactLocationVCardSummary> _self,
   ) {
     _openDynamicLibrary();
@@ -9060,7 +9349,7 @@ class CNContactLocationVCardSummary
     );
   }
 
-  static Pointer<Void> descriptiveLabel(
+  static Pointer descriptiveLabel(
     Pointer<CNContactLocationVCardSummary> _self,
   ) {
     _openDynamicLibrary();
@@ -9072,7 +9361,7 @@ class CNContactLocationVCardSummary
 
   static void encodeWithCoder(
     Pointer<CNContactLocationVCardSummary> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -9092,9 +9381,9 @@ class CNContactLocationVCardSummary
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CNContactLocationVCardSummary> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -9104,10 +9393,10 @@ class CNContactLocationVCardSummary
     );
   }
 
-  static Pointer<Void> initWithData(
+  static Pointer initWithData(
     Pointer<CNContactLocationVCardSummary> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -9118,10 +9407,10 @@ class CNContactLocationVCardSummary
     );
   }
 
-  static Pointer<Void> initWithTitle(
+  static Pointer initWithTitle(
     Pointer<CNContactLocationVCardSummary> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> URLString,
+    Pointer arg, {
+    @required Pointer URLString,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -9134,7 +9423,7 @@ class CNContactLocationVCardSummary
 
   static int isEqual(
     Pointer<CNContactLocationVCardSummary> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -9144,7 +9433,7 @@ class CNContactLocationVCardSummary
     );
   }
 
-  static Pointer<Void> title(
+  static Pointer title(
     Pointer<CNContactLocationVCardSummary> _self,
   ) {
     _openDynamicLibrary();
@@ -9154,7 +9443,7 @@ class CNContactLocationVCardSummary
     );
   }
 
-  static Pointer<Void> urlString(
+  static Pointer urlString(
     Pointer<CNContactLocationVCardSummary> _self,
   ) {
     _openDynamicLibrary();
@@ -9165,11 +9454,9 @@ class CNContactLocationVCardSummary
   }
 }
 
-/// Objective-C class _CNContactMatchInfo_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNContactMatchInfo extends Struct<CNContactMatchInfo> {
   factory CNContactMatchInfo._() {
@@ -9182,7 +9469,7 @@ class CNContactMatchInfo extends Struct<CNContactMatchInfo> {
 
   static void encodeWithCoder(
     Pointer<CNContactMatchInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -9192,7 +9479,7 @@ class CNContactMatchInfo extends Struct<CNContactMatchInfo> {
     );
   }
 
-  static Pointer<Void> excerpt(
+  static Pointer excerpt(
     Pointer<CNContactMatchInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -9202,9 +9489,9 @@ class CNContactMatchInfo extends Struct<CNContactMatchInfo> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CNContactMatchInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -9224,7 +9511,7 @@ class CNContactMatchInfo extends Struct<CNContactMatchInfo> {
     );
   }
 
-  static Pointer<Void> matchedProperties(
+  static Pointer matchedProperties(
     Pointer<CNContactMatchInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -9234,7 +9521,7 @@ class CNContactMatchInfo extends Struct<CNContactMatchInfo> {
     );
   }
 
-  static Pointer<Void> relevanceScore(
+  static Pointer relevanceScore(
     Pointer<CNContactMatchInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -9246,7 +9533,7 @@ class CNContactMatchInfo extends Struct<CNContactMatchInfo> {
 
   static void setExcerpt(
     Pointer<CNContactMatchInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -9270,7 +9557,7 @@ class CNContactMatchInfo extends Struct<CNContactMatchInfo> {
 
   static void setMatchedProperties(
     Pointer<CNContactMatchInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -9282,7 +9569,7 @@ class CNContactMatchInfo extends Struct<CNContactMatchInfo> {
 
   static void setRelevanceScore(
     Pointer<CNContactMatchInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -9293,11 +9580,9 @@ class CNContactMatchInfo extends Struct<CNContactMatchInfo> {
   }
 }
 
-/// Objective-C class _CNContactMatchSummarizer_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNContactMatchSummarizer extends Struct<CNContactMatchSummarizer> {
   factory CNContactMatchSummarizer._() {
@@ -9310,10 +9595,10 @@ class CNContactMatchSummarizer extends Struct<CNContactMatchSummarizer> {
         .cast<CNContactMatchSummarizer>();
   }
 
-  static Pointer<Void> attributedStringForPropertyValueString(
+  static Pointer attributedStringForPropertyValueString(
     Pointer<CNContactMatchSummarizer> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> queryTerms,
+    Pointer arg, {
+    @required Pointer queryTerms,
     @required Pointer<Uint64> outMatchCount,
   }) {
     _openDynamicLibrary();
@@ -9337,7 +9622,7 @@ class CNContactMatchSummarizer extends Struct<CNContactMatchSummarizer> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CNContactMatchSummarizer> _self,
   ) {
     _openDynamicLibrary();
@@ -9347,12 +9632,12 @@ class CNContactMatchSummarizer extends Struct<CNContactMatchSummarizer> {
     );
   }
 
-  static Pointer<Void> summariesFutureForContactsIdentifiers(
+  static Pointer summariesFutureForContactsIdentifiers(
     Pointer<CNContactMatchSummarizer> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> matchInfos,
-    @required Pointer<Void> contactStore,
-    @required Pointer<Void> scheduler,
+    Pointer arg, {
+    @required Pointer matchInfos,
+    @required Pointer contactStore,
+    @required Pointer scheduler,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_returns_p(
@@ -9366,10 +9651,10 @@ class CNContactMatchSummarizer extends Struct<CNContactMatchSummarizer> {
     );
   }
 
-  static Pointer<Void> summaryForContact(
+  static Pointer summaryForContact(
     Pointer<CNContactMatchSummarizer> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> matchInfo,
+    Pointer arg, {
+    @required Pointer matchInfo,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -9381,11 +9666,9 @@ class CNContactMatchSummarizer extends Struct<CNContactMatchSummarizer> {
   }
 }
 
-/// Objective-C class _CNContactMultiValueDiffUpdate_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNContactMultiValueDiffUpdate
     extends Struct<CNContactMultiValueDiffUpdate> {
@@ -9401,7 +9684,7 @@ class CNContactMultiValueDiffUpdate
 
   static void applyToABCDContact(
     Pointer<CNContactMultiValueDiffUpdate> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -9413,8 +9696,8 @@ class CNContactMultiValueDiffUpdate
 
   static void applyToMutableContact(
     Pointer<CNContactMultiValueDiffUpdate> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> withIdentifierMap,
+    Pointer arg, {
+    @required Pointer withIdentifierMap,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -9425,7 +9708,7 @@ class CNContactMultiValueDiffUpdate
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CNContactMultiValueDiffUpdate> _self,
   ) {
     _openDynamicLibrary();
@@ -9435,7 +9718,7 @@ class CNContactMultiValueDiffUpdate
     );
   }
 
-  static Pointer<Void> diff(
+  static Pointer diff(
     Pointer<CNContactMultiValueDiffUpdate> _self,
   ) {
     _openDynamicLibrary();
@@ -9445,10 +9728,10 @@ class CNContactMultiValueDiffUpdate
     );
   }
 
-  static Pointer<Void> initWithProperty(
+  static Pointer initWithProperty(
     Pointer<CNContactMultiValueDiffUpdate> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> diff,
+    Pointer arg, {
+    @required Pointer diff,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -9459,7 +9742,7 @@ class CNContactMultiValueDiffUpdate
     );
   }
 
-  static Pointer<Void> property(
+  static Pointer property(
     Pointer<CNContactMultiValueDiffUpdate> _self,
   ) {
     _openDynamicLibrary();
@@ -9470,11 +9753,9 @@ class CNContactMultiValueDiffUpdate
   }
 }
 
-/// Objective-C class _CNContactNameOrderImpl_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNContactNameOrderImpl extends Struct<CNContactNameOrderImpl> {
   factory CNContactNameOrderImpl._() {
@@ -9497,7 +9778,7 @@ class CNContactNameOrderImpl extends Struct<CNContactNameOrderImpl> {
     );
   }
 
-  static Pointer<Void> nameProperties(
+  static Pointer nameProperties(
     Pointer<CNContactNameOrderImpl> _self,
   ) {
     _openDynamicLibrary();
@@ -9507,7 +9788,7 @@ class CNContactNameOrderImpl extends Struct<CNContactNameOrderImpl> {
     );
   }
 
-  static Pointer<Void> phoneticNameProperties(
+  static Pointer phoneticNameProperties(
     Pointer<CNContactNameOrderImpl> _self,
   ) {
     _openDynamicLibrary();
@@ -9517,7 +9798,7 @@ class CNContactNameOrderImpl extends Struct<CNContactNameOrderImpl> {
     );
   }
 
-  static Pointer<Void> sortingNameProperties(
+  static Pointer sortingNameProperties(
     Pointer<CNContactNameOrderImpl> _self,
   ) {
     _openDynamicLibrary();
@@ -9528,11 +9809,9 @@ class CNContactNameOrderImpl extends Struct<CNContactNameOrderImpl> {
   }
 }
 
-/// Objective-C class _CNContactNameSorting_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNContactNameSorting extends Struct<CNContactNameSorting> {
   factory CNContactNameSorting._() {
@@ -9544,11 +9823,9 @@ class CNContactNameSorting extends Struct<CNContactNameSorting> {
   }
 }
 
-/// Objective-C class _CNContactProperty_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNContactProperty extends Struct<CNContactProperty> {
   factory CNContactProperty._() {
@@ -9559,7 +9836,7 @@ class CNContactProperty extends Struct<CNContactProperty> {
     return _objc.allocate("CNContactProperty").cast<CNContactProperty>();
   }
 
-  static Pointer<Void> contact(
+  static Pointer contact(
     Pointer<CNContactProperty> _self,
   ) {
     _openDynamicLibrary();
@@ -9569,9 +9846,9 @@ class CNContactProperty extends Struct<CNContactProperty> {
     );
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<CNContactProperty> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -9581,7 +9858,7 @@ class CNContactProperty extends Struct<CNContactProperty> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CNContactProperty> _self,
   ) {
     _openDynamicLibrary();
@@ -9593,7 +9870,7 @@ class CNContactProperty extends Struct<CNContactProperty> {
 
   static void encodeWithCoder(
     Pointer<CNContactProperty> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -9613,7 +9890,7 @@ class CNContactProperty extends Struct<CNContactProperty> {
     );
   }
 
-  static Pointer<Void> identifier(
+  static Pointer identifier(
     Pointer<CNContactProperty> _self,
   ) {
     _openDynamicLibrary();
@@ -9623,9 +9900,9 @@ class CNContactProperty extends Struct<CNContactProperty> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CNContactProperty> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -9635,7 +9912,7 @@ class CNContactProperty extends Struct<CNContactProperty> {
     );
   }
 
-  static Pointer<Void> internalContact(
+  static Pointer internalContact(
     Pointer<CNContactProperty> _self,
   ) {
     _openDynamicLibrary();
@@ -9647,7 +9924,7 @@ class CNContactProperty extends Struct<CNContactProperty> {
 
   static int isEqual(
     Pointer<CNContactProperty> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -9667,7 +9944,7 @@ class CNContactProperty extends Struct<CNContactProperty> {
     );
   }
 
-  static Pointer<Void> key(
+  static Pointer key(
     Pointer<CNContactProperty> _self,
   ) {
     _openDynamicLibrary();
@@ -9677,7 +9954,7 @@ class CNContactProperty extends Struct<CNContactProperty> {
     );
   }
 
-  static Pointer<Void> label(
+  static Pointer label(
     Pointer<CNContactProperty> _self,
   ) {
     _openDynamicLibrary();
@@ -9687,7 +9964,7 @@ class CNContactProperty extends Struct<CNContactProperty> {
     );
   }
 
-  static Pointer<Void> labeledValue(
+  static Pointer labeledValue(
     Pointer<CNContactProperty> _self,
   ) {
     _openDynamicLibrary();
@@ -9697,9 +9974,9 @@ class CNContactProperty extends Struct<CNContactProperty> {
     );
   }
 
-  static Pointer<Void> labeledValueForContact(
+  static Pointer labeledValueForContact(
     Pointer<CNContactProperty> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -9709,7 +9986,7 @@ class CNContactProperty extends Struct<CNContactProperty> {
     );
   }
 
-  static Pointer<Void> primitiveValue(
+  static Pointer primitiveValue(
     Pointer<CNContactProperty> _self,
   ) {
     _openDynamicLibrary();
@@ -9721,7 +9998,7 @@ class CNContactProperty extends Struct<CNContactProperty> {
 
   static void setIdentifier(
     Pointer<CNContactProperty> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -9733,7 +10010,7 @@ class CNContactProperty extends Struct<CNContactProperty> {
 
   static void setInternalContact(
     Pointer<CNContactProperty> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -9745,7 +10022,7 @@ class CNContactProperty extends Struct<CNContactProperty> {
 
   static void setKey(
     Pointer<CNContactProperty> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -9755,7 +10032,7 @@ class CNContactProperty extends Struct<CNContactProperty> {
     );
   }
 
-  static Pointer<Void> sourceContact(
+  static Pointer sourceContact(
     Pointer<CNContactProperty> _self,
   ) {
     _openDynamicLibrary();
@@ -9765,7 +10042,7 @@ class CNContactProperty extends Struct<CNContactProperty> {
     );
   }
 
-  static Pointer<Void> value(
+  static Pointer value(
     Pointer<CNContactProperty> _self,
   ) {
     _openDynamicLibrary();
@@ -9776,11 +10053,9 @@ class CNContactProperty extends Struct<CNContactProperty> {
   }
 }
 
-/// Objective-C class _CNContactRelation_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNContactRelation extends Struct<CNContactRelation> {
   factory CNContactRelation._() {
@@ -9791,9 +10066,9 @@ class CNContactRelation extends Struct<CNContactRelation> {
     return _objc.allocate("CNContactRelation").cast<CNContactRelation>();
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<CNContactRelation> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -9803,7 +10078,7 @@ class CNContactRelation extends Struct<CNContactRelation> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CNContactRelation> _self,
   ) {
     _openDynamicLibrary();
@@ -9815,7 +10090,7 @@ class CNContactRelation extends Struct<CNContactRelation> {
 
   static void encodeWithCoder(
     Pointer<CNContactRelation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -9835,9 +10110,9 @@ class CNContactRelation extends Struct<CNContactRelation> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CNContactRelation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -9847,9 +10122,9 @@ class CNContactRelation extends Struct<CNContactRelation> {
     );
   }
 
-  static Pointer<Void> initWithName(
+  static Pointer initWithName(
     Pointer<CNContactRelation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -9861,7 +10136,7 @@ class CNContactRelation extends Struct<CNContactRelation> {
 
   static int isEqual(
     Pointer<CNContactRelation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -9873,7 +10148,7 @@ class CNContactRelation extends Struct<CNContactRelation> {
 
   static int isValid(
     Pointer<CNContactRelation> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -9883,7 +10158,7 @@ class CNContactRelation extends Struct<CNContactRelation> {
     );
   }
 
-  static Pointer<Void> name(
+  static Pointer name(
     Pointer<CNContactRelation> _self,
   ) {
     _openDynamicLibrary();
@@ -9895,7 +10170,7 @@ class CNContactRelation extends Struct<CNContactRelation> {
 
   static void setName(
     Pointer<CNContactRelation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -9906,11 +10181,9 @@ class CNContactRelation extends Struct<CNContactRelation> {
   }
 }
 
-/// Objective-C class _CNContactRelationsDescription_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNContactRelationsDescription
     extends Struct<CNContactRelationsDescription> {
@@ -9924,9 +10197,9 @@ class CNContactRelationsDescription
         .cast<CNContactRelationsDescription>();
   }
 
-  static Pointer<Void> CNValueForContact(
+  static Pointer CNValueForContact(
     Pointer<CNContactRelationsDescription> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -9938,8 +10211,8 @@ class CNContactRelationsDescription
 
   static int canUnifyValue(
     Pointer<CNContactRelationsDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> withValue,
+    Pointer arg, {
+    @required Pointer withValue,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -9952,8 +10225,8 @@ class CNContactRelationsDescription
 
   static void copyFromCoreDataContact(
     Pointer<CNContactRelationsDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toContact,
+    Pointer arg, {
+    @required Pointer toContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -9966,8 +10239,8 @@ class CNContactRelationsDescription
 
   static void copyFromLabeledValue(
     Pointer<CNContactRelationsDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toOwnedObject,
+    Pointer arg, {
+    @required Pointer toOwnedObject,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -9980,8 +10253,8 @@ class CNContactRelationsDescription
 
   static void copyValueFromContact(
     Pointer<CNContactRelationsDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toRemotePerson,
+    Pointer arg, {
+    @required Pointer toRemotePerson,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -9994,8 +10267,8 @@ class CNContactRelationsDescription
 
   static void copyValueFromRemotePerson(
     Pointer<CNContactRelationsDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toContact,
+    Pointer arg, {
+    @required Pointer toContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -10006,7 +10279,7 @@ class CNContactRelationsDescription
     );
   }
 
-  static Pointer<Void> coreDataKey(
+  static Pointer coreDataKey(
     Pointer<CNContactRelationsDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -10016,7 +10289,7 @@ class CNContactRelationsDescription
     );
   }
 
-  static Pointer<Void> coreDataOwnedEntityName(
+  static Pointer coreDataOwnedEntityName(
     Pointer<CNContactRelationsDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -10026,7 +10299,7 @@ class CNContactRelationsDescription
     );
   }
 
-  static Pointer<Void> coreDataRelationshipKeyPathsToFetch(
+  static Pointer coreDataRelationshipKeyPathsToFetch(
     Pointer<CNContactRelationsDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -10038,8 +10311,8 @@ class CNContactRelationsDescription
 
   static void decodeUsingCoder(
     Pointer<CNContactRelationsDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> contact,
+    Pointer arg, {
+    @required Pointer contact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -10052,8 +10325,8 @@ class CNContactRelationsDescription
 
   static void encodeUsingCoder(
     Pointer<CNContactRelationsDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> contact,
+    Pointer arg, {
+    @required Pointer contact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -10064,7 +10337,7 @@ class CNContactRelationsDescription
     );
   }
 
-  static Pointer<Void> fromPlistTransform(
+  static Pointer fromPlistTransform(
     Pointer<CNContactRelationsDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -10074,7 +10347,7 @@ class CNContactRelationsDescription
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CNContactRelationsDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -10086,8 +10359,8 @@ class CNContactRelationsDescription
 
   static int isEqualForContact(
     Pointer<CNContactRelationsDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> other,
+    Pointer arg, {
+    @required Pointer other,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -10108,7 +10381,7 @@ class CNContactRelationsDescription
     );
   }
 
-  static Pointer<Void> labeledValueClass(
+  static Pointer labeledValueClass(
     Pointer<CNContactRelationsDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -10118,7 +10391,7 @@ class CNContactRelationsDescription
     );
   }
 
-  static Pointer<Void> ownedObjectToLabeledValueValueTransform(
+  static Pointer ownedObjectToLabeledValueValueTransform(
     Pointer<CNContactRelationsDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -10128,7 +10401,7 @@ class CNContactRelationsDescription
     );
   }
 
-  static Pointer<Void> plistTransform(
+  static Pointer plistTransform(
     Pointer<CNContactRelationsDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -10140,8 +10413,8 @@ class CNContactRelationsDescription
 
   static void setCNValue(
     Pointer<CNContactRelationsDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> onContact,
+    Pointer arg, {
+    @required Pointer onContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -10152,7 +10425,7 @@ class CNContactRelationsDescription
     );
   }
 
-  static Pointer<Void> standardLabels(
+  static Pointer standardLabels(
     Pointer<CNContactRelationsDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -10162,7 +10435,7 @@ class CNContactRelationsDescription
     );
   }
 
-  static Pointer<Void> subCoreDataPredicatePropertiesByKey(
+  static Pointer subCoreDataPredicatePropertiesByKey(
     Pointer<CNContactRelationsDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -10173,11 +10446,9 @@ class CNContactRelationsDescription
   }
 }
 
-/// Objective-C class _CNContactSearchIndexFormatter_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNContactSearchIndexFormatter
     extends Struct<CNContactSearchIndexFormatter> {
@@ -10191,9 +10462,9 @@ class CNContactSearchIndexFormatter
         .cast<CNContactSearchIndexFormatter>();
   }
 
-  static Pointer<Void> auxiliaryIndexStringForContact(
+  static Pointer auxiliaryIndexStringForContact(
     Pointer<CNContactSearchIndexFormatter> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -10205,9 +10476,9 @@ class CNContactSearchIndexFormatter
 
   static int getObjectValue(
     Pointer<CNContactSearchIndexFormatter> _self,
-    Pointer<Pointer<Void>> arg, {
-    @required Pointer<Void> forString,
-    @required Pointer<Pointer<Void>> errorDescription,
+    Pointer<Pointer> arg, {
+    @required Pointer forString,
+    @required Pointer<Pointer> errorDescription,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_Int8(
@@ -10219,9 +10490,9 @@ class CNContactSearchIndexFormatter
     );
   }
 
-  static Pointer<Void> nameExpansionsForContact(
+  static Pointer nameExpansionsForContact(
     Pointer<CNContactSearchIndexFormatter> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -10231,9 +10502,9 @@ class CNContactSearchIndexFormatter
     );
   }
 
-  static Pointer<Void> stringForObjectValue(
+  static Pointer stringForObjectValue(
     Pointer<CNContactSearchIndexFormatter> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -10243,9 +10514,9 @@ class CNContactSearchIndexFormatter
     );
   }
 
-  static Pointer<Void> stringFromContact(
+  static Pointer stringFromContact(
     Pointer<CNContactSearchIndexFormatter> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -10256,11 +10527,9 @@ class CNContactSearchIndexFormatter
   }
 }
 
-/// Objective-C class _CNContactStore_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNContactStore extends Struct<CNContactStore> {
   factory CNContactStore._() {
@@ -10271,10 +10540,10 @@ class CNContactStore extends Struct<CNContactStore> {
     return _objc.allocate("CNContactStore").cast<CNContactStore>();
   }
 
-  static Pointer<Void> accountsMatchingPredicate(
+  static Pointer accountsMatchingPredicate(
     Pointer<CNContactStore> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -10285,10 +10554,10 @@ class CNContactStore extends Struct<CNContactStore> {
     );
   }
 
-  static Pointer<Void> changeHistoryWithFetchRequest(
+  static Pointer changeHistoryWithFetchRequest(
     Pointer<CNContactStore> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -10301,9 +10570,9 @@ class CNContactStore extends Struct<CNContactStore> {
 
   static int clearChangeHistoryForClientIdentifier(
     Pointer<CNContactStore> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toChangeAnchor,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer toChangeAnchor,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_Int8(
@@ -10316,10 +10585,10 @@ class CNContactStore extends Struct<CNContactStore> {
     );
   }
 
-  static Pointer<Void> contactCountForFetchRequest(
+  static Pointer contactCountForFetchRequest(
     Pointer<CNContactStore> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -10330,9 +10599,61 @@ class CNContactStore extends Struct<CNContactStore> {
     );
   }
 
-  static Pointer<Void> contactIdentifierWithMatchingDictionary(
+  static Pointer contactForDestinationId$keysToFetch$(
     Pointer<CNContactStore> _self,
-    Pointer<Void> arg,
+    Pointer arg, {
+    @required Pointer keysToFetch,
+  }) {
+    _openDynamicLibrary();
+    return _call_objc_p_p_p_p_returns_p(
+      _self,
+      _objc.getSelector("contactForDestinationId:keysToFetch:"),
+      arg,
+      keysToFetch,
+    );
+  }
+
+  static Pointer contactForDestinationId$(
+    Pointer<CNContactStore> _self,
+    Pointer arg,
+  ) {
+    _openDynamicLibrary();
+    return _call_objc_p_p_p_returns_p(
+      _self,
+      _objc.getSelector("contactForDestinationId:"),
+      arg,
+    );
+  }
+
+  static Pointer contactForIdentifier$(
+    Pointer<CNContactStore> _self,
+    Pointer arg,
+  ) {
+    _openDynamicLibrary();
+    return _call_objc_p_p_p_returns_p(
+      _self,
+      _objc.getSelector("contactForIdentifier:"),
+      arg,
+    );
+  }
+
+  static Pointer contactForIdentifier$keysToFetch$(
+    Pointer<CNContactStore> _self,
+    Pointer arg, {
+    @required Pointer keysToFetch,
+  }) {
+    _openDynamicLibrary();
+    return _call_objc_p_p_p_p_returns_p(
+      _self,
+      _objc.getSelector("contactForIdentifier:keysToFetch:"),
+      arg,
+      keysToFetch,
+    );
+  }
+
+  static Pointer contactIdentifierWithMatchingDictionary(
+    Pointer<CNContactStore> _self,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -10342,10 +10663,10 @@ class CNContactStore extends Struct<CNContactStore> {
     );
   }
 
-  static Pointer<Void> contactWithMatchingDictionary(
+  static Pointer contactWithMatchingDictionary(
     Pointer<CNContactStore> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> keysToFetch,
+    Pointer arg, {
+    @required Pointer keysToFetch,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -10356,10 +10677,10 @@ class CNContactStore extends Struct<CNContactStore> {
     );
   }
 
-  static Pointer<Void> contactWithUserActivityUserInfo(
+  static Pointer contactWithUserActivityUserInfo(
     Pointer<CNContactStore> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> keysToFetch,
+    Pointer arg, {
+    @required Pointer keysToFetch,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -10370,12 +10691,12 @@ class CNContactStore extends Struct<CNContactStore> {
     );
   }
 
-  static Pointer<Void> contactsMatchingPropertiesOfContact(
+  static Pointer contactsMatchingPropertiesOfContact(
     Pointer<CNContactStore> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int unifyResults,
-    @required Pointer<Void> keysToFetch,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer keysToFetch,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_Int8_p_p_returns_p(
@@ -10389,10 +10710,10 @@ class CNContactStore extends Struct<CNContactStore> {
     );
   }
 
-  static Pointer<Void> containersMatchingPredicate(
+  static Pointer containersMatchingPredicate(
     Pointer<CNContactStore> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -10403,7 +10724,7 @@ class CNContactStore extends Struct<CNContactStore> {
     );
   }
 
-  static Pointer<Void> defaultContainerIdentifier(
+  static Pointer defaultContainerIdentifier(
     Pointer<CNContactStore> _self,
   ) {
     _openDynamicLibrary();
@@ -10413,7 +10734,7 @@ class CNContactStore extends Struct<CNContactStore> {
     );
   }
 
-  static Pointer<Void> descriptorForRequiredKeysForMatchingDictionary(
+  static Pointer descriptorForRequiredKeysForMatchingDictionary(
     Pointer<CNContactStore> _self,
   ) {
     _openDynamicLibrary();
@@ -10425,9 +10746,9 @@ class CNContactStore extends Struct<CNContactStore> {
 
   static int enumerateContactsAndMatchInfoWithFetchRequest(
     Pointer<CNContactStore> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
-    @required Pointer<Void> usingBlock,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
+    @required Pointer usingBlock,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_Int8(
@@ -10442,9 +10763,9 @@ class CNContactStore extends Struct<CNContactStore> {
 
   static int enumerateContactsWithFetchRequest(
     Pointer<CNContactStore> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
-    @required Pointer<Void> usingBlock,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
+    @required Pointer usingBlock,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_Int8(
@@ -10458,9 +10779,9 @@ class CNContactStore extends Struct<CNContactStore> {
 
   static int enumerateNonUnifiedContactsWithFetchRequest(
     Pointer<CNContactStore> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
-    @required Pointer<Void> usingBlock,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
+    @required Pointer usingBlock,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_Int8(
@@ -10473,11 +10794,11 @@ class CNContactStore extends Struct<CNContactStore> {
     );
   }
 
-  static Pointer<Void> executeFetchRequest$progressiveResults$completion$(
+  static Pointer executeFetchRequest$progressiveResults$completion$(
     Pointer<CNContactStore> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> progressiveResults,
-    @required Pointer<Void> completion,
+    Pointer arg, {
+    @required Pointer progressiveResults,
+    @required Pointer completion,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -10489,10 +10810,10 @@ class CNContactStore extends Struct<CNContactStore> {
     );
   }
 
-  static Pointer<Void> executeFetchRequest$completion$(
+  static Pointer executeFetchRequest$completion$(
     Pointer<CNContactStore> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> completion,
+    Pointer arg, {
+    @required Pointer completion,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -10505,9 +10826,9 @@ class CNContactStore extends Struct<CNContactStore> {
 
   static int executeSaveRequest$response$error$(
     Pointer<CNContactStore> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> response,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> response,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_Int8(
@@ -10521,8 +10842,8 @@ class CNContactStore extends Struct<CNContactStore> {
 
   static int executeSaveRequest$error$(
     Pointer<CNContactStore> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -10533,10 +10854,10 @@ class CNContactStore extends Struct<CNContactStore> {
     );
   }
 
-  static Pointer<Void> groupWithIdentifier(
+  static Pointer groupWithIdentifier(
     Pointer<CNContactStore> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -10547,10 +10868,10 @@ class CNContactStore extends Struct<CNContactStore> {
     );
   }
 
-  static Pointer<Void> groupsMatchingPredicate(
+  static Pointer groupsMatchingPredicate(
     Pointer<CNContactStore> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -10561,9 +10882,9 @@ class CNContactStore extends Struct<CNContactStore> {
     );
   }
 
-  static Pointer<Void> identifierWithError(
+  static Pointer identifierWithError(
     Pointer<CNContactStore> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -10573,7 +10894,7 @@ class CNContactStore extends Struct<CNContactStore> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CNContactStore> _self,
   ) {
     _openDynamicLibrary();
@@ -10583,9 +10904,9 @@ class CNContactStore extends Struct<CNContactStore> {
     );
   }
 
-  static Pointer<Void> initWithEnvironment$options$(
+  static Pointer initWithEnvironment$options$(
     Pointer<CNContactStore> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int options,
   }) {
     _openDynamicLibrary();
@@ -10597,11 +10918,11 @@ class CNContactStore extends Struct<CNContactStore> {
     );
   }
 
-  static Pointer<Void> initWithEnvironment$options$managedConfiguration$(
+  static Pointer initWithEnvironment$options$managedConfiguration$(
     Pointer<CNContactStore> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int options,
-    @required Pointer<Void> managedConfiguration,
+    @required Pointer managedConfiguration,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_Uint64_p_returns_p(
@@ -10613,9 +10934,9 @@ class CNContactStore extends Struct<CNContactStore> {
     );
   }
 
-  static Pointer<Void> initWithEnvironment$(
+  static Pointer initWithEnvironment$(
     Pointer<CNContactStore> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -10625,7 +10946,7 @@ class CNContactStore extends Struct<CNContactStore> {
     );
   }
 
-  static Pointer<Void> mainContactStore(
+  static Pointer mainContactStore(
     Pointer<CNContactStore> _self,
   ) {
     _openDynamicLibrary();
@@ -10635,9 +10956,9 @@ class CNContactStore extends Struct<CNContactStore> {
     );
   }
 
-  static Pointer<Void> matchingDictionaryForContact(
+  static Pointer matchingDictionaryForContact(
     Pointer<CNContactStore> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -10647,9 +10968,9 @@ class CNContactStore extends Struct<CNContactStore> {
     );
   }
 
-  static Pointer<Void> meContactIdentifiers(
+  static Pointer meContactIdentifiers(
     Pointer<CNContactStore> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -10659,11 +10980,11 @@ class CNContactStore extends Struct<CNContactStore> {
     );
   }
 
-  static Pointer<Void> membersOfGroupWithIdentifier(
+  static Pointer membersOfGroupWithIdentifier(
     Pointer<CNContactStore> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> keysToFetch,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer keysToFetch,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -10675,10 +10996,10 @@ class CNContactStore extends Struct<CNContactStore> {
     );
   }
 
-  static Pointer<Void> originForSuggestion(
+  static Pointer originForSuggestion(
     Pointer<CNContactStore> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -10689,10 +11010,10 @@ class CNContactStore extends Struct<CNContactStore> {
     );
   }
 
-  static Pointer<Void> policyForContainerWithIdentifier(
+  static Pointer policyForContainerWithIdentifier(
     Pointer<CNContactStore> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -10705,8 +11026,8 @@ class CNContactStore extends Struct<CNContactStore> {
 
   static int registerChangeHistoryClientIdentifier(
     Pointer<CNContactStore> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -10717,7 +11038,7 @@ class CNContactStore extends Struct<CNContactStore> {
     );
   }
 
-  static Pointer<Void> requestAccessForEntityType$(
+  static Pointer requestAccessForEntityType$(
     Pointer<CNContactStore> _self,
     int arg,
   ) {
@@ -10732,7 +11053,7 @@ class CNContactStore extends Struct<CNContactStore> {
   static void requestAccessForEntityType$completionHandler$(
     Pointer<CNContactStore> _self,
     int arg, {
-    @required Pointer<Void> completionHandler,
+    @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_Int64_p_returns_void(
@@ -10743,10 +11064,10 @@ class CNContactStore extends Struct<CNContactStore> {
     );
   }
 
-  static Pointer<Void> serverSearchContainersMatchingPredicate(
+  static Pointer serverSearchContainersMatchingPredicate(
     Pointer<CNContactStore> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -10759,10 +11080,10 @@ class CNContactStore extends Struct<CNContactStore> {
 
   static int setBestMeIfNeededForGivenName(
     Pointer<CNContactStore> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> familyName,
-    @required Pointer<Void> email,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer familyName,
+    @required Pointer email,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_returns_Int8(
@@ -10778,8 +11099,8 @@ class CNContactStore extends Struct<CNContactStore> {
 
   static int setMeContact$error$(
     Pointer<CNContactStore> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -10792,9 +11113,9 @@ class CNContactStore extends Struct<CNContactStore> {
 
   static int setMeContact$forContainer$error$(
     Pointer<CNContactStore> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> forContainer,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer forContainer,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_Int8(
@@ -10806,10 +11127,10 @@ class CNContactStore extends Struct<CNContactStore> {
     );
   }
 
-  static Pointer<Void> subgroupsOfGroupWithIdentifier(
+  static Pointer subgroupsOfGroupWithIdentifier(
     Pointer<CNContactStore> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -10822,7 +11143,7 @@ class CNContactStore extends Struct<CNContactStore> {
 
   static int supportsSaveRequest(
     Pointer<CNContactStore> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -10832,9 +11153,9 @@ class CNContactStore extends Struct<CNContactStore> {
     );
   }
 
-  static Pointer<Void> unifiedContactCountWithError(
+  static Pointer unifiedContactCountWithError(
     Pointer<CNContactStore> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -10844,11 +11165,11 @@ class CNContactStore extends Struct<CNContactStore> {
     );
   }
 
-  static Pointer<Void> unifiedContactWithIdentifier(
+  static Pointer unifiedContactWithIdentifier(
     Pointer<CNContactStore> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> keysToFetch,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer keysToFetch,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -10860,11 +11181,11 @@ class CNContactStore extends Struct<CNContactStore> {
     );
   }
 
-  static Pointer<Void> unifiedContactsMatchingPredicate(
+  static Pointer unifiedContactsMatchingPredicate(
     Pointer<CNContactStore> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> keysToFetch,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer keysToFetch,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -10876,11 +11197,11 @@ class CNContactStore extends Struct<CNContactStore> {
     );
   }
 
-  static Pointer<Void> unifiedMeContactMatchingEmailAddress(
+  static Pointer unifiedMeContactMatchingEmailAddress(
     Pointer<CNContactStore> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> keysToFetch,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer keysToFetch,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -10893,11 +11214,11 @@ class CNContactStore extends Struct<CNContactStore> {
     );
   }
 
-  static Pointer<Void> unifiedMeContactMatchingEmailAddresses(
+  static Pointer unifiedMeContactMatchingEmailAddresses(
     Pointer<CNContactStore> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> keysToFetch,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer keysToFetch,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -10910,10 +11231,10 @@ class CNContactStore extends Struct<CNContactStore> {
     );
   }
 
-  static Pointer<Void> unifiedMeContactWithKeysToFetch(
+  static Pointer unifiedMeContactWithKeysToFetch(
     Pointer<CNContactStore> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -10926,8 +11247,8 @@ class CNContactStore extends Struct<CNContactStore> {
 
   static int unregisterChangeHistoryClientIdentifier(
     Pointer<CNContactStore> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -10938,10 +11259,10 @@ class CNContactStore extends Struct<CNContactStore> {
     );
   }
 
-  static Pointer<Void> usedLabelsForPropertyWithKey(
+  static Pointer usedLabelsForPropertyWithKey(
     Pointer<CNContactStore> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -10952,9 +11273,9 @@ class CNContactStore extends Struct<CNContactStore> {
     );
   }
 
-  static Pointer<Void> userActivityUserInfoForContact(
+  static Pointer userActivityUserInfoForContact(
     Pointer<CNContactStore> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -10965,11 +11286,9 @@ class CNContactStore extends Struct<CNContactStore> {
   }
 }
 
-/// Objective-C class _CNContactSuggestionMatch_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNContactSuggestionMatch extends Struct<CNContactSuggestionMatch> {
   factory CNContactSuggestionMatch._() {
@@ -10982,7 +11301,7 @@ class CNContactSuggestionMatch extends Struct<CNContactSuggestionMatch> {
         .cast<CNContactSuggestionMatch>();
   }
 
-  static Pointer<Void> contact(
+  static Pointer contact(
     Pointer<CNContactSuggestionMatch> _self,
   ) {
     _openDynamicLibrary();
@@ -10992,7 +11311,7 @@ class CNContactSuggestionMatch extends Struct<CNContactSuggestionMatch> {
     );
   }
 
-  static Pointer<Void> contactMatch(
+  static Pointer contactMatch(
     Pointer<CNContactSuggestionMatch> _self,
   ) {
     _openDynamicLibrary();
@@ -11002,7 +11321,7 @@ class CNContactSuggestionMatch extends Struct<CNContactSuggestionMatch> {
     );
   }
 
-  static Pointer<Void> mainStoreLinkedIdentifier(
+  static Pointer mainStoreLinkedIdentifier(
     Pointer<CNContactSuggestionMatch> _self,
   ) {
     _openDynamicLibrary();
@@ -11014,7 +11333,7 @@ class CNContactSuggestionMatch extends Struct<CNContactSuggestionMatch> {
 
   static void setContact(
     Pointer<CNContactSuggestionMatch> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -11026,7 +11345,7 @@ class CNContactSuggestionMatch extends Struct<CNContactSuggestionMatch> {
 
   static void setContactMatch(
     Pointer<CNContactSuggestionMatch> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -11038,7 +11357,7 @@ class CNContactSuggestionMatch extends Struct<CNContactSuggestionMatch> {
 
   static void setMainStoreLinkedIdentifier(
     Pointer<CNContactSuggestionMatch> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -11049,11 +11368,9 @@ class CNContactSuggestionMatch extends Struct<CNContactSuggestionMatch> {
   }
 }
 
-/// Objective-C class _CNContactTypeDescription_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNContactTypeDescription extends Struct<CNContactTypeDescription> {
   factory CNContactTypeDescription._() {
@@ -11066,9 +11383,9 @@ class CNContactTypeDescription extends Struct<CNContactTypeDescription> {
         .cast<CNContactTypeDescription>();
   }
 
-  static Pointer<Void> CNValueForContact(
+  static Pointer CNValueForContact(
     Pointer<CNContactTypeDescription> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -11088,7 +11405,7 @@ class CNContactTypeDescription extends Struct<CNContactTypeDescription> {
     );
   }
 
-  static Pointer<Void> coreDataBitMaskedValuesMap(
+  static Pointer coreDataBitMaskedValuesMap(
     Pointer<CNContactTypeDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -11098,7 +11415,7 @@ class CNContactTypeDescription extends Struct<CNContactTypeDescription> {
     );
   }
 
-  static Pointer<Void> coreDataKey(
+  static Pointer coreDataKey(
     Pointer<CNContactTypeDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -11110,8 +11427,8 @@ class CNContactTypeDescription extends Struct<CNContactTypeDescription> {
 
   static void decodeUsingCoder(
     Pointer<CNContactTypeDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> contact,
+    Pointer arg, {
+    @required Pointer contact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -11122,9 +11439,9 @@ class CNContactTypeDescription extends Struct<CNContactTypeDescription> {
     );
   }
 
-  static Pointer<Void> displayStyleFromFlags(
+  static Pointer displayStyleFromFlags(
     Pointer<CNContactTypeDescription> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -11136,8 +11453,8 @@ class CNContactTypeDescription extends Struct<CNContactTypeDescription> {
 
   static void encodeUsingCoder(
     Pointer<CNContactTypeDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> contact,
+    Pointer arg, {
+    @required Pointer contact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -11148,10 +11465,10 @@ class CNContactTypeDescription extends Struct<CNContactTypeDescription> {
     );
   }
 
-  static Pointer<Void> flagsWithFlags(
+  static Pointer flagsWithFlags(
     Pointer<CNContactTypeDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> displayStyle,
+    Pointer arg, {
+    @required Pointer displayStyle,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -11162,7 +11479,7 @@ class CNContactTypeDescription extends Struct<CNContactTypeDescription> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CNContactTypeDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -11174,8 +11491,8 @@ class CNContactTypeDescription extends Struct<CNContactTypeDescription> {
 
   static int isEqualForContact(
     Pointer<CNContactTypeDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> other,
+    Pointer arg, {
+    @required Pointer other,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -11188,8 +11505,8 @@ class CNContactTypeDescription extends Struct<CNContactTypeDescription> {
 
   static int isValidValue(
     Pointer<CNContactTypeDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -11200,7 +11517,7 @@ class CNContactTypeDescription extends Struct<CNContactTypeDescription> {
     );
   }
 
-  static Pointer<Void> nilValue(
+  static Pointer nilValue(
     Pointer<CNContactTypeDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -11212,8 +11529,8 @@ class CNContactTypeDescription extends Struct<CNContactTypeDescription> {
 
   static void setCNValue(
     Pointer<CNContactTypeDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> onContact,
+    Pointer arg, {
+    @required Pointer onContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -11226,8 +11543,8 @@ class CNContactTypeDescription extends Struct<CNContactTypeDescription> {
 
   static void setValue(
     Pointer<CNContactTypeDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> onCoreDataContact,
+    Pointer arg, {
+    @required Pointer onCoreDataContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -11238,7 +11555,7 @@ class CNContactTypeDescription extends Struct<CNContactTypeDescription> {
     );
   }
 
-  static Pointer<Void> valueClass(
+  static Pointer valueClass(
     Pointer<CNContactTypeDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -11248,9 +11565,9 @@ class CNContactTypeDescription extends Struct<CNContactTypeDescription> {
     );
   }
 
-  static Pointer<Void> valueFromCoreDataContact(
+  static Pointer valueFromCoreDataContact(
     Pointer<CNContactTypeDescription> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -11261,11 +11578,9 @@ class CNContactTypeDescription extends Struct<CNContactTypeDescription> {
   }
 }
 
-/// Objective-C class _CNContactUpdate_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNContactUpdate extends Struct<CNContactUpdate> {
   factory CNContactUpdate._() {
@@ -11277,11 +11592,9 @@ class CNContactUpdate extends Struct<CNContactUpdate> {
   }
 }
 
-/// Objective-C class _CNContactVCardParsedResultBuilder_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNContactVCardParsedResultBuilder
     extends Struct<CNContactVCardParsedResultBuilder> {
@@ -11295,7 +11608,7 @@ class CNContactVCardParsedResultBuilder
         .cast<CNContactVCardParsedResultBuilder>();
   }
 
-  static Pointer<Void> build(
+  static Pointer build(
     Pointer<CNContactVCardParsedResultBuilder> _self,
   ) {
     _openDynamicLibrary();
@@ -11307,7 +11620,7 @@ class CNContactVCardParsedResultBuilder
 
   static int canSetValueForProperty(
     Pointer<CNContactVCardParsedResultBuilder> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -11329,7 +11642,7 @@ class CNContactVCardParsedResultBuilder
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CNContactVCardParsedResultBuilder> _self,
   ) {
     _openDynamicLibrary();
@@ -11365,9 +11678,9 @@ class CNContactVCardParsedResultBuilder
 
   static int setImageData(
     Pointer<CNContactVCardParsedResultBuilder> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> forReference,
-    @required Pointer<Void> clipRects,
+    Pointer arg, {
+    @required Pointer forReference,
+    @required Pointer clipRects,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_Int8(
@@ -11393,7 +11706,7 @@ class CNContactVCardParsedResultBuilder
 
   static void setUnknownProperties(
     Pointer<CNContactVCardParsedResultBuilder> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -11405,8 +11718,8 @@ class CNContactVCardParsedResultBuilder
 
   static int setValue(
     Pointer<CNContactVCardParsedResultBuilder> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> forProperty,
+    Pointer arg, {
+    @required Pointer forProperty,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -11419,10 +11732,10 @@ class CNContactVCardParsedResultBuilder
 
   static int setValues(
     Pointer<CNContactVCardParsedResultBuilder> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> labels,
-    @required Pointer<Void> isPrimaries,
-    @required Pointer<Void> forProperty,
+    Pointer arg, {
+    @required Pointer labels,
+    @required Pointer isPrimaries,
+    @required Pointer forProperty,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_returns_Int8(
@@ -11435,7 +11748,7 @@ class CNContactVCardParsedResultBuilder
     );
   }
 
-  static Pointer<Void> validCountryCodes(
+  static Pointer validCountryCodes(
     Pointer<CNContactVCardParsedResultBuilder> _self,
   ) {
     _openDynamicLibrary();
@@ -11445,9 +11758,9 @@ class CNContactVCardParsedResultBuilder
     );
   }
 
-  static Pointer<Void> valueForProperty(
+  static Pointer valueForProperty(
     Pointer<CNContactVCardParsedResultBuilder> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -11458,11 +11771,9 @@ class CNContactVCardParsedResultBuilder
   }
 }
 
-/// Objective-C class _CNContactVCardParsedResultBuilderFactory_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNContactVCardParsedResultBuilderFactory
     extends Struct<CNContactVCardParsedResultBuilderFactory> {
@@ -11476,7 +11787,7 @@ class CNContactVCardParsedResultBuilderFactory
         .cast<CNContactVCardParsedResultBuilderFactory>();
   }
 
-  static Pointer<Void> makeBuilder(
+  static Pointer makeBuilder(
     Pointer<CNContactVCardParsedResultBuilderFactory> _self,
   ) {
     _openDynamicLibrary();
@@ -11487,11 +11798,9 @@ class CNContactVCardParsedResultBuilderFactory
   }
 }
 
-/// Objective-C class _CNContactVCardSerialization_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNContactVCardSerialization extends Struct<CNContactVCardSerialization> {
   factory CNContactVCardSerialization._() {
@@ -11505,11 +11814,9 @@ class CNContactVCardSerialization extends Struct<CNContactVCardSerialization> {
   }
 }
 
-/// Objective-C class _CNContactVCardSummary_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNContactVCardSummary extends Struct<CNContactVCardSummary> {
   factory CNContactVCardSummary._() {
@@ -11522,7 +11829,7 @@ class CNContactVCardSummary extends Struct<CNContactVCardSummary> {
         .cast<CNContactVCardSummary>();
   }
 
-  static Pointer<Void> avatarContacts(
+  static Pointer avatarContacts(
     Pointer<CNContactVCardSummary> _self,
   ) {
     _openDynamicLibrary();
@@ -11542,9 +11849,9 @@ class CNContactVCardSummary extends Struct<CNContactVCardSummary> {
     );
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<CNContactVCardSummary> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -11554,7 +11861,7 @@ class CNContactVCardSummary extends Struct<CNContactVCardSummary> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CNContactVCardSummary> _self,
   ) {
     _openDynamicLibrary();
@@ -11564,7 +11871,7 @@ class CNContactVCardSummary extends Struct<CNContactVCardSummary> {
     );
   }
 
-  static Pointer<Void> descriptiveLabel(
+  static Pointer descriptiveLabel(
     Pointer<CNContactVCardSummary> _self,
   ) {
     _openDynamicLibrary();
@@ -11576,7 +11883,7 @@ class CNContactVCardSummary extends Struct<CNContactVCardSummary> {
 
   static void encodeWithCoder(
     Pointer<CNContactVCardSummary> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -11596,9 +11903,9 @@ class CNContactVCardSummary extends Struct<CNContactVCardSummary> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CNContactVCardSummary> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -11608,10 +11915,10 @@ class CNContactVCardSummary extends Struct<CNContactVCardSummary> {
     );
   }
 
-  static Pointer<Void> initWithData(
+  static Pointer initWithData(
     Pointer<CNContactVCardSummary> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -11622,12 +11929,12 @@ class CNContactVCardSummary extends Struct<CNContactVCardSummary> {
     );
   }
 
-  static Pointer<Void> initWithTitle(
+  static Pointer initWithTitle(
     Pointer<CNContactVCardSummary> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> subtitle,
+    Pointer arg, {
+    @required Pointer subtitle,
     @required int contactCount,
-    @required Pointer<Void> avatarContacts,
+    @required Pointer avatarContacts,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_Uint64_p_returns_p(
@@ -11642,7 +11949,7 @@ class CNContactVCardSummary extends Struct<CNContactVCardSummary> {
 
   static int isEqual(
     Pointer<CNContactVCardSummary> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -11652,7 +11959,7 @@ class CNContactVCardSummary extends Struct<CNContactVCardSummary> {
     );
   }
 
-  static Pointer<Void> subtitle(
+  static Pointer subtitle(
     Pointer<CNContactVCardSummary> _self,
   ) {
     _openDynamicLibrary();
@@ -11662,7 +11969,7 @@ class CNContactVCardSummary extends Struct<CNContactVCardSummary> {
     );
   }
 
-  static Pointer<Void> title(
+  static Pointer title(
     Pointer<CNContactVCardSummary> _self,
   ) {
     _openDynamicLibrary();
@@ -11673,11 +11980,9 @@ class CNContactVCardSummary extends Struct<CNContactVCardSummary> {
   }
 }
 
-/// Objective-C class _CNContactVCardWritingAdapter_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNContactVCardWritingAdapter
     extends Struct<CNContactVCardWritingAdapter> {
@@ -11691,7 +11996,7 @@ class CNContactVCardWritingAdapter
         .cast<CNContactVCardWritingAdapter>();
   }
 
-  static Pointer<Void> activityAlerts(
+  static Pointer activityAlerts(
     Pointer<CNContactVCardWritingAdapter> _self,
   ) {
     _openDynamicLibrary();
@@ -11701,7 +12006,7 @@ class CNContactVCardWritingAdapter
     );
   }
 
-  static Pointer<Void> alternateBirthdayComponents(
+  static Pointer alternateBirthdayComponents(
     Pointer<CNContactVCardWritingAdapter> _self,
   ) {
     _openDynamicLibrary();
@@ -11711,7 +12016,7 @@ class CNContactVCardWritingAdapter
     );
   }
 
-  static Pointer<Void> birthdayComponents(
+  static Pointer birthdayComponents(
     Pointer<CNContactVCardWritingAdapter> _self,
   ) {
     _openDynamicLibrary();
@@ -11721,7 +12026,7 @@ class CNContactVCardWritingAdapter
     );
   }
 
-  static Pointer<Void> calendarURIs(
+  static Pointer calendarURIs(
     Pointer<CNContactVCardWritingAdapter> _self,
   ) {
     _openDynamicLibrary();
@@ -11731,7 +12036,7 @@ class CNContactVCardWritingAdapter
     );
   }
 
-  static Pointer<Void> cardDAVUID(
+  static Pointer cardDAVUID(
     Pointer<CNContactVCardWritingAdapter> _self,
   ) {
     _openDynamicLibrary();
@@ -11741,7 +12046,7 @@ class CNContactVCardWritingAdapter
     );
   }
 
-  static Pointer<Void> companyName(
+  static Pointer companyName(
     Pointer<CNContactVCardWritingAdapter> _self,
   ) {
     _openDynamicLibrary();
@@ -11751,7 +12056,7 @@ class CNContactVCardWritingAdapter
     );
   }
 
-  static Pointer<Void> department(
+  static Pointer department(
     Pointer<CNContactVCardWritingAdapter> _self,
   ) {
     _openDynamicLibrary();
@@ -11761,7 +12066,7 @@ class CNContactVCardWritingAdapter
     );
   }
 
-  static Pointer<Void> emailAddresses(
+  static Pointer emailAddresses(
     Pointer<CNContactVCardWritingAdapter> _self,
   ) {
     _openDynamicLibrary();
@@ -11771,7 +12076,7 @@ class CNContactVCardWritingAdapter
     );
   }
 
-  static Pointer<Void> firstName(
+  static Pointer firstName(
     Pointer<CNContactVCardWritingAdapter> _self,
   ) {
     _openDynamicLibrary();
@@ -11781,7 +12086,7 @@ class CNContactVCardWritingAdapter
     );
   }
 
-  static Pointer<Void> imageCropRects(
+  static Pointer imageCropRects(
     Pointer<CNContactVCardWritingAdapter> _self,
   ) {
     _openDynamicLibrary();
@@ -11791,7 +12096,7 @@ class CNContactVCardWritingAdapter
     );
   }
 
-  static Pointer<Void> imageData(
+  static Pointer imageData(
     Pointer<CNContactVCardWritingAdapter> _self,
   ) {
     _openDynamicLibrary();
@@ -11801,7 +12106,7 @@ class CNContactVCardWritingAdapter
     );
   }
 
-  static Pointer<Void> imageReferences(
+  static Pointer imageReferences(
     Pointer<CNContactVCardWritingAdapter> _self,
   ) {
     _openDynamicLibrary();
@@ -11811,9 +12116,9 @@ class CNContactVCardWritingAdapter
     );
   }
 
-  static Pointer<Void> initWithContact(
+  static Pointer initWithContact(
     Pointer<CNContactVCardWritingAdapter> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -11823,7 +12128,7 @@ class CNContactVCardWritingAdapter
     );
   }
 
-  static Pointer<Void> instantMessagingAddresses(
+  static Pointer instantMessagingAddresses(
     Pointer<CNContactVCardWritingAdapter> _self,
   ) {
     _openDynamicLibrary();
@@ -11853,7 +12158,7 @@ class CNContactVCardWritingAdapter
     );
   }
 
-  static Pointer<Void> jobTitle(
+  static Pointer jobTitle(
     Pointer<CNContactVCardWritingAdapter> _self,
   ) {
     _openDynamicLibrary();
@@ -11863,7 +12168,7 @@ class CNContactVCardWritingAdapter
     );
   }
 
-  static Pointer<Void> largeImageCropRects(
+  static Pointer largeImageCropRects(
     Pointer<CNContactVCardWritingAdapter> _self,
   ) {
     _openDynamicLibrary();
@@ -11873,7 +12178,7 @@ class CNContactVCardWritingAdapter
     );
   }
 
-  static Pointer<Void> largeImageData(
+  static Pointer largeImageData(
     Pointer<CNContactVCardWritingAdapter> _self,
   ) {
     _openDynamicLibrary();
@@ -11883,9 +12188,9 @@ class CNContactVCardWritingAdapter
     );
   }
 
-  static Pointer<Void> largeImageHashOfType(
+  static Pointer largeImageHashOfType(
     Pointer<CNContactVCardWritingAdapter> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -11895,7 +12200,7 @@ class CNContactVCardWritingAdapter
     );
   }
 
-  static Pointer<Void> lastName(
+  static Pointer lastName(
     Pointer<CNContactVCardWritingAdapter> _self,
   ) {
     _openDynamicLibrary();
@@ -11905,7 +12210,7 @@ class CNContactVCardWritingAdapter
     );
   }
 
-  static Pointer<Void> maidenName(
+  static Pointer maidenName(
     Pointer<CNContactVCardWritingAdapter> _self,
   ) {
     _openDynamicLibrary();
@@ -11915,7 +12220,7 @@ class CNContactVCardWritingAdapter
     );
   }
 
-  static Pointer<Void> middleName(
+  static Pointer middleName(
     Pointer<CNContactVCardWritingAdapter> _self,
   ) {
     _openDynamicLibrary();
@@ -11935,7 +12240,7 @@ class CNContactVCardWritingAdapter
     );
   }
 
-  static Pointer<Void> namesOfParentGroups(
+  static Pointer namesOfParentGroups(
     Pointer<CNContactVCardWritingAdapter> _self,
   ) {
     _openDynamicLibrary();
@@ -11945,7 +12250,7 @@ class CNContactVCardWritingAdapter
     );
   }
 
-  static Pointer<Void> nickname(
+  static Pointer nickname(
     Pointer<CNContactVCardWritingAdapter> _self,
   ) {
     _openDynamicLibrary();
@@ -11955,7 +12260,7 @@ class CNContactVCardWritingAdapter
     );
   }
 
-  static Pointer<Void> note(
+  static Pointer note(
     Pointer<CNContactVCardWritingAdapter> _self,
   ) {
     _openDynamicLibrary();
@@ -11965,7 +12270,7 @@ class CNContactVCardWritingAdapter
     );
   }
 
-  static Pointer<Void> organization(
+  static Pointer organization(
     Pointer<CNContactVCardWritingAdapter> _self,
   ) {
     _openDynamicLibrary();
@@ -11975,7 +12280,7 @@ class CNContactVCardWritingAdapter
     );
   }
 
-  static Pointer<Void> otherDateComponents(
+  static Pointer otherDateComponents(
     Pointer<CNContactVCardWritingAdapter> _self,
   ) {
     _openDynamicLibrary();
@@ -11985,7 +12290,7 @@ class CNContactVCardWritingAdapter
     );
   }
 
-  static Pointer<Void> phoneNumbers(
+  static Pointer phoneNumbers(
     Pointer<CNContactVCardWritingAdapter> _self,
   ) {
     _openDynamicLibrary();
@@ -11995,7 +12300,7 @@ class CNContactVCardWritingAdapter
     );
   }
 
-  static Pointer<Void> phonemeData(
+  static Pointer phonemeData(
     Pointer<CNContactVCardWritingAdapter> _self,
   ) {
     _openDynamicLibrary();
@@ -12005,7 +12310,7 @@ class CNContactVCardWritingAdapter
     );
   }
 
-  static Pointer<Void> phoneticFirstName(
+  static Pointer phoneticFirstName(
     Pointer<CNContactVCardWritingAdapter> _self,
   ) {
     _openDynamicLibrary();
@@ -12015,7 +12320,7 @@ class CNContactVCardWritingAdapter
     );
   }
 
-  static Pointer<Void> phoneticLastName(
+  static Pointer phoneticLastName(
     Pointer<CNContactVCardWritingAdapter> _self,
   ) {
     _openDynamicLibrary();
@@ -12025,7 +12330,7 @@ class CNContactVCardWritingAdapter
     );
   }
 
-  static Pointer<Void> phoneticMiddleName(
+  static Pointer phoneticMiddleName(
     Pointer<CNContactVCardWritingAdapter> _self,
   ) {
     _openDynamicLibrary();
@@ -12035,7 +12340,7 @@ class CNContactVCardWritingAdapter
     );
   }
 
-  static Pointer<Void> phoneticOrganization(
+  static Pointer phoneticOrganization(
     Pointer<CNContactVCardWritingAdapter> _self,
   ) {
     _openDynamicLibrary();
@@ -12045,7 +12350,7 @@ class CNContactVCardWritingAdapter
     );
   }
 
-  static Pointer<Void> postalAddresses(
+  static Pointer postalAddresses(
     Pointer<CNContactVCardWritingAdapter> _self,
   ) {
     _openDynamicLibrary();
@@ -12055,7 +12360,7 @@ class CNContactVCardWritingAdapter
     );
   }
 
-  static Pointer<Void> preferredApplePersonaIdentifier(
+  static Pointer preferredApplePersonaIdentifier(
     Pointer<CNContactVCardWritingAdapter> _self,
   ) {
     _openDynamicLibrary();
@@ -12065,7 +12370,7 @@ class CNContactVCardWritingAdapter
     );
   }
 
-  static Pointer<Void> preferredLikenessSource(
+  static Pointer preferredLikenessSource(
     Pointer<CNContactVCardWritingAdapter> _self,
   ) {
     _openDynamicLibrary();
@@ -12075,7 +12380,7 @@ class CNContactVCardWritingAdapter
     );
   }
 
-  static Pointer<Void> pronunciationFirstName(
+  static Pointer pronunciationFirstName(
     Pointer<CNContactVCardWritingAdapter> _self,
   ) {
     _openDynamicLibrary();
@@ -12085,7 +12390,7 @@ class CNContactVCardWritingAdapter
     );
   }
 
-  static Pointer<Void> pronunciationLastName(
+  static Pointer pronunciationLastName(
     Pointer<CNContactVCardWritingAdapter> _self,
   ) {
     _openDynamicLibrary();
@@ -12095,7 +12400,7 @@ class CNContactVCardWritingAdapter
     );
   }
 
-  static Pointer<Void> relatedNames(
+  static Pointer relatedNames(
     Pointer<CNContactVCardWritingAdapter> _self,
   ) {
     _openDynamicLibrary();
@@ -12105,7 +12410,7 @@ class CNContactVCardWritingAdapter
     );
   }
 
-  static Pointer<Void> socialProfiles(
+  static Pointer socialProfiles(
     Pointer<CNContactVCardWritingAdapter> _self,
   ) {
     _openDynamicLibrary();
@@ -12115,7 +12420,7 @@ class CNContactVCardWritingAdapter
     );
   }
 
-  static Pointer<Void> suffix(
+  static Pointer suffix(
     Pointer<CNContactVCardWritingAdapter> _self,
   ) {
     _openDynamicLibrary();
@@ -12125,7 +12430,7 @@ class CNContactVCardWritingAdapter
     );
   }
 
-  static Pointer<Void> title(
+  static Pointer title(
     Pointer<CNContactVCardWritingAdapter> _self,
   ) {
     _openDynamicLibrary();
@@ -12135,7 +12440,7 @@ class CNContactVCardWritingAdapter
     );
   }
 
-  static Pointer<Void> uid(
+  static Pointer uid(
     Pointer<CNContactVCardWritingAdapter> _self,
   ) {
     _openDynamicLibrary();
@@ -12145,7 +12450,7 @@ class CNContactVCardWritingAdapter
     );
   }
 
-  static Pointer<Void> unknownProperties(
+  static Pointer unknownProperties(
     Pointer<CNContactVCardWritingAdapter> _self,
   ) {
     _openDynamicLibrary();
@@ -12155,7 +12460,7 @@ class CNContactVCardWritingAdapter
     );
   }
 
-  static Pointer<Void> urls(
+  static Pointer urls(
     Pointer<CNContactVCardWritingAdapter> _self,
   ) {
     _openDynamicLibrary();
@@ -12165,9 +12470,9 @@ class CNContactVCardWritingAdapter
     );
   }
 
-  static Pointer<Void> vCardPropertyItemsForProperty$(
+  static Pointer vCardPropertyItemsForProperty$(
     Pointer<CNContactVCardWritingAdapter> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -12177,10 +12482,10 @@ class CNContactVCardWritingAdapter
     );
   }
 
-  static Pointer<Void> vCardPropertyItemsForProperty$valueTransform$(
+  static Pointer vCardPropertyItemsForProperty$valueTransform$(
     Pointer<CNContactVCardWritingAdapter> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> valueTransform,
+    Pointer arg, {
+    @required Pointer valueTransform,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -12192,11 +12497,9 @@ class CNContactVCardWritingAdapter
   }
 }
 
-/// Objective-C class _CNContactWithNamePredicate_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNContactWithNamePredicate extends Struct<CNContactWithNamePredicate> {
   factory CNContactWithNamePredicate._() {
@@ -12209,7 +12512,7 @@ class CNContactWithNamePredicate extends Struct<CNContactWithNamePredicate> {
         .cast<CNContactWithNamePredicate>();
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CNContactWithNamePredicate> _self,
   ) {
     _openDynamicLibrary();
@@ -12221,7 +12524,7 @@ class CNContactWithNamePredicate extends Struct<CNContactWithNamePredicate> {
 
   static void encodeWithCoder(
     Pointer<CNContactWithNamePredicate> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -12231,9 +12534,9 @@ class CNContactWithNamePredicate extends Struct<CNContactWithNamePredicate> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CNContactWithNamePredicate> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -12243,9 +12546,9 @@ class CNContactWithNamePredicate extends Struct<CNContactWithNamePredicate> {
     );
   }
 
-  static Pointer<Void> initWithName$(
+  static Pointer initWithName$(
     Pointer<CNContactWithNamePredicate> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -12255,9 +12558,9 @@ class CNContactWithNamePredicate extends Struct<CNContactWithNamePredicate> {
     );
   }
 
-  static Pointer<Void> initWithName$options$(
+  static Pointer initWithName$options$(
     Pointer<CNContactWithNamePredicate> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int options,
   }) {
     _openDynamicLibrary();
@@ -12269,7 +12572,7 @@ class CNContactWithNamePredicate extends Struct<CNContactWithNamePredicate> {
     );
   }
 
-  static Pointer<Void> name(
+  static Pointer name(
     Pointer<CNContactWithNamePredicate> _self,
   ) {
     _openDynamicLibrary();
@@ -12289,12 +12592,12 @@ class CNContactWithNamePredicate extends Struct<CNContactWithNamePredicate> {
     );
   }
 
-  static Pointer<Void> sgContactMatchesWithSortOrder(
+  static Pointer sgContactMatchesWithSortOrder(
     Pointer<CNContactWithNamePredicate> _self,
     int arg, {
     @required int mutableObjects,
-    @required Pointer<Void> service,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer service,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_Int64_Int8_p_p_returns_p(
@@ -12309,11 +12612,9 @@ class CNContactWithNamePredicate extends Struct<CNContactWithNamePredicate> {
   }
 }
 
-/// Objective-C class _CNContactsEnvironment_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNContactsEnvironment extends Struct<CNContactsEnvironment> {
   factory CNContactsEnvironment._() {
@@ -12326,7 +12627,7 @@ class CNContactsEnvironment extends Struct<CNContactsEnvironment> {
         .cast<CNContactsEnvironment>();
   }
 
-  static Pointer<Void> accountCollection(
+  static Pointer accountCollection(
     Pointer<CNContactsEnvironment> _self,
   ) {
     _openDynamicLibrary();
@@ -12338,7 +12639,7 @@ class CNContactsEnvironment extends Struct<CNContactsEnvironment> {
 
   static void encodeWithCoder(
     Pointer<CNContactsEnvironment> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -12348,7 +12649,7 @@ class CNContactsEnvironment extends Struct<CNContactsEnvironment> {
     );
   }
 
-  static Pointer<Void> existingPersistentStoreCoordinator(
+  static Pointer existingPersistentStoreCoordinator(
     Pointer<CNContactsEnvironment> _self,
   ) {
     _openDynamicLibrary();
@@ -12358,7 +12659,7 @@ class CNContactsEnvironment extends Struct<CNContactsEnvironment> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CNContactsEnvironment> _self,
   ) {
     _openDynamicLibrary();
@@ -12368,9 +12669,9 @@ class CNContactsEnvironment extends Struct<CNContactsEnvironment> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CNContactsEnvironment> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -12380,10 +12681,10 @@ class CNContactsEnvironment extends Struct<CNContactsEnvironment> {
     );
   }
 
-  static Pointer<Void> initWithSchedulerProvider(
+  static Pointer initWithSchedulerProvider(
     Pointer<CNContactsEnvironment> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> loggerProvider,
+    Pointer arg, {
+    @required Pointer loggerProvider,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -12394,7 +12695,7 @@ class CNContactsEnvironment extends Struct<CNContactsEnvironment> {
     );
   }
 
-  static Pointer<Void> loggerProvider(
+  static Pointer loggerProvider(
     Pointer<CNContactsEnvironment> _self,
   ) {
     _openDynamicLibrary();
@@ -12404,7 +12705,7 @@ class CNContactsEnvironment extends Struct<CNContactsEnvironment> {
     );
   }
 
-  static Pointer<Void> schedulerProvider(
+  static Pointer schedulerProvider(
     Pointer<CNContactsEnvironment> _self,
   ) {
     _openDynamicLibrary();
@@ -12416,7 +12717,7 @@ class CNContactsEnvironment extends Struct<CNContactsEnvironment> {
 
   static void setAccountCollection(
     Pointer<CNContactsEnvironment> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -12428,7 +12729,7 @@ class CNContactsEnvironment extends Struct<CNContactsEnvironment> {
 
   static void setExistingPersistentStoreCoordinator(
     Pointer<CNContactsEnvironment> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -12440,7 +12741,7 @@ class CNContactsEnvironment extends Struct<CNContactsEnvironment> {
 
   static void setSuggestionsService(
     Pointer<CNContactsEnvironment> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -12450,7 +12751,7 @@ class CNContactsEnvironment extends Struct<CNContactsEnvironment> {
     );
   }
 
-  static Pointer<Void> suggestionsService(
+  static Pointer suggestionsService(
     Pointer<CNContactsEnvironment> _self,
   ) {
     _openDynamicLibrary();
@@ -12471,11 +12772,9 @@ class CNContactsEnvironment extends Struct<CNContactsEnvironment> {
   }
 }
 
-/// Objective-C class _CNContactsLoggerProvider_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNContactsLoggerProvider extends Struct<CNContactsLoggerProvider> {
   factory CNContactsLoggerProvider._() {
@@ -12488,7 +12787,7 @@ class CNContactsLoggerProvider extends Struct<CNContactsLoggerProvider> {
         .cast<CNContactsLoggerProvider>();
   }
 
-  static Pointer<Void> contactsLogger(
+  static Pointer contactsLogger(
     Pointer<CNContactsLoggerProvider> _self,
   ) {
     _openDynamicLibrary();
@@ -12498,7 +12797,7 @@ class CNContactsLoggerProvider extends Struct<CNContactsLoggerProvider> {
     );
   }
 
-  static Pointer<Void> favoritesLogger(
+  static Pointer favoritesLogger(
     Pointer<CNContactsLoggerProvider> _self,
   ) {
     _openDynamicLibrary();
@@ -12508,7 +12807,7 @@ class CNContactsLoggerProvider extends Struct<CNContactsLoggerProvider> {
     );
   }
 
-  static Pointer<Void> regulatoryLogger(
+  static Pointer regulatoryLogger(
     Pointer<CNContactsLoggerProvider> _self,
   ) {
     _openDynamicLibrary();
@@ -12518,7 +12817,7 @@ class CNContactsLoggerProvider extends Struct<CNContactsLoggerProvider> {
     );
   }
 
-  static Pointer<Void> spotlightIndexingLogger(
+  static Pointer spotlightIndexingLogger(
     Pointer<CNContactsLoggerProvider> _self,
   ) {
     _openDynamicLibrary();
@@ -12529,11 +12828,9 @@ class CNContactsLoggerProvider extends Struct<CNContactsLoggerProvider> {
   }
 }
 
-/// Objective-C class _CNContactsLogging_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNContactsLogging extends Struct<CNContactsLogging> {
   factory CNContactsLogging._() {
@@ -12545,11 +12842,9 @@ class CNContactsLogging extends Struct<CNContactsLogging> {
   }
 }
 
-/// Objective-C class _CNContactsUserDefaults_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNContactsUserDefaults extends Struct<CNContactsUserDefaults> {
   factory CNContactsUserDefaults._() {
@@ -12562,7 +12857,7 @@ class CNContactsUserDefaults extends Struct<CNContactsUserDefaults> {
         .cast<CNContactsUserDefaults>();
   }
 
-  static Pointer<Void> countryCode(
+  static Pointer countryCode(
     Pointer<CNContactsUserDefaults> _self,
   ) {
     _openDynamicLibrary();
@@ -12582,7 +12877,7 @@ class CNContactsUserDefaults extends Struct<CNContactsUserDefaults> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CNContactsUserDefaults> _self,
   ) {
     _openDynamicLibrary();
@@ -12691,11 +12986,9 @@ class CNContactsUserDefaults extends Struct<CNContactsUserDefaults> {
   }
 }
 
-/// Objective-C class _CNContactsUserDefaultsX_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNContactsUserDefaultsX extends Struct<CNContactsUserDefaultsX> {
   factory CNContactsUserDefaultsX._() {
@@ -12708,7 +13001,7 @@ class CNContactsUserDefaultsX extends Struct<CNContactsUserDefaultsX> {
         .cast<CNContactsUserDefaultsX>();
   }
 
-  static Pointer<Void> countryCode(
+  static Pointer countryCode(
     Pointer<CNContactsUserDefaultsX> _self,
   ) {
     _openDynamicLibrary();
@@ -12728,7 +13021,7 @@ class CNContactsUserDefaultsX extends Struct<CNContactsUserDefaultsX> {
     );
   }
 
-  static Pointer<Void> foundationUserDefaults(
+  static Pointer foundationUserDefaults(
     Pointer<CNContactsUserDefaultsX> _self,
   ) {
     _openDynamicLibrary();
@@ -12738,7 +13031,7 @@ class CNContactsUserDefaultsX extends Struct<CNContactsUserDefaultsX> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CNContactsUserDefaultsX> _self,
   ) {
     _openDynamicLibrary();
@@ -12748,9 +13041,9 @@ class CNContactsUserDefaultsX extends Struct<CNContactsUserDefaultsX> {
     );
   }
 
-  static Pointer<Void> initWithFoundationUserDefaults(
+  static Pointer initWithFoundationUserDefaults(
     Pointer<CNContactsUserDefaultsX> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -12794,7 +13087,7 @@ class CNContactsUserDefaultsX extends Struct<CNContactsUserDefaultsX> {
 
   static void setFoundationUserDefaults(
     Pointer<CNContactsUserDefaultsX> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -12871,11 +13164,9 @@ class CNContactsUserDefaultsX extends Struct<CNContactsUserDefaultsX> {
   }
 }
 
-/// Objective-C class _CNContactsWithIdentifiersPredicate_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNContactsWithIdentifiersPredicate
     extends Struct<CNContactsWithIdentifiersPredicate> {
@@ -12889,7 +13180,7 @@ class CNContactsWithIdentifiersPredicate
         .cast<CNContactsWithIdentifiersPredicate>();
   }
 
-  static Pointer<Void> cn_coreDataPredicate(
+  static Pointer cn_coreDataPredicate(
     Pointer<CNContactsWithIdentifiersPredicate> _self,
   ) {
     _openDynamicLibrary();
@@ -12909,9 +13200,9 @@ class CNContactsWithIdentifiersPredicate
     );
   }
 
-  static Pointer<Void> contactsFromDonationStore(
+  static Pointer contactsFromDonationStore(
     Pointer<CNContactsWithIdentifiersPredicate> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -12921,7 +13212,7 @@ class CNContactsWithIdentifiersPredicate
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CNContactsWithIdentifiersPredicate> _self,
   ) {
     _openDynamicLibrary();
@@ -12933,7 +13224,7 @@ class CNContactsWithIdentifiersPredicate
 
   static void encodeWithCoder(
     Pointer<CNContactsWithIdentifiersPredicate> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -12953,7 +13244,7 @@ class CNContactsWithIdentifiersPredicate
     );
   }
 
-  static Pointer<Void> identifiers(
+  static Pointer identifiers(
     Pointer<CNContactsWithIdentifiersPredicate> _self,
   ) {
     _openDynamicLibrary();
@@ -12963,9 +13254,9 @@ class CNContactsWithIdentifiersPredicate
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CNContactsWithIdentifiersPredicate> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -12975,9 +13266,9 @@ class CNContactsWithIdentifiersPredicate
     );
   }
 
-  static Pointer<Void> initWithIdentifiers(
+  static Pointer initWithIdentifiers(
     Pointer<CNContactsWithIdentifiersPredicate> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -12987,9 +13278,9 @@ class CNContactsWithIdentifiersPredicate
     );
   }
 
-  static Pointer<Void> internalIdentifiersForStoreWithIdentifier(
+  static Pointer internalIdentifiersForStoreWithIdentifier(
     Pointer<CNContactsWithIdentifiersPredicate> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -13001,7 +13292,7 @@ class CNContactsWithIdentifiersPredicate
 
   static int isEqual(
     Pointer<CNContactsWithIdentifiersPredicate> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -13011,12 +13302,12 @@ class CNContactsWithIdentifiersPredicate
     );
   }
 
-  static Pointer<Void> suggestionsWithSortOrder(
+  static Pointer suggestionsWithSortOrder(
     Pointer<CNContactsWithIdentifiersPredicate> _self,
     int arg, {
     @required int mutableObjects,
-    @required Pointer<Void> service,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer service,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_Int64_Int8_p_p_returns_p(
@@ -13031,11 +13322,9 @@ class CNContactsWithIdentifiersPredicate
   }
 }
 
-/// Objective-C class _CNContainer_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNContainer extends Struct<CNContainer> {
   factory CNContainer._() {
@@ -13046,7 +13335,7 @@ class CNContainer extends Struct<CNContainer> {
     return _objc.allocate("CNContainer").cast<CNContainer>();
   }
 
-  static Pointer<Void> accountIdentifier(
+  static Pointer accountIdentifier(
     Pointer<CNContainer> _self,
   ) {
     _openDynamicLibrary();
@@ -13056,9 +13345,9 @@ class CNContainer extends Struct<CNContainer> {
     );
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<CNContainer> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -13068,7 +13357,7 @@ class CNContainer extends Struct<CNContainer> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CNContainer> _self,
   ) {
     _openDynamicLibrary();
@@ -13078,7 +13367,7 @@ class CNContainer extends Struct<CNContainer> {
     );
   }
 
-  static Pointer<Void> descriptionForContainerType(
+  static Pointer descriptionForContainerType(
     Pointer<CNContainer> _self,
     int arg,
   ) {
@@ -13092,7 +13381,7 @@ class CNContainer extends Struct<CNContainer> {
 
   static void encodeWithCoder(
     Pointer<CNContainer> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -13112,7 +13401,7 @@ class CNContainer extends Struct<CNContainer> {
     );
   }
 
-  static Pointer<Void> identifier(
+  static Pointer identifier(
     Pointer<CNContainer> _self,
   ) {
     _openDynamicLibrary();
@@ -13122,7 +13411,7 @@ class CNContainer extends Struct<CNContainer> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CNContainer> _self,
   ) {
     _openDynamicLibrary();
@@ -13132,9 +13421,9 @@ class CNContainer extends Struct<CNContainer> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CNContainer> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -13144,9 +13433,9 @@ class CNContainer extends Struct<CNContainer> {
     );
   }
 
-  static Pointer<Void> initWithContainer(
+  static Pointer initWithContainer(
     Pointer<CNContainer> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -13156,14 +13445,13 @@ class CNContainer extends Struct<CNContainer> {
     );
   }
 
-  static Pointer<Void>
-      initWithIdentifier$accountIdentifier$name$type$permissions$(
+  static Pointer initWithIdentifier$accountIdentifier$name$type$permissions$(
     Pointer<CNContainer> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> accountIdentifier,
-    @required Pointer<Void> name,
+    Pointer arg, {
+    @required Pointer accountIdentifier,
+    @required Pointer name,
     @required int type,
-    @required Pointer<Void> permissions,
+    @required Pointer permissions,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_Int64_p_returns_p(
@@ -13178,10 +13466,10 @@ class CNContainer extends Struct<CNContainer> {
     );
   }
 
-  static Pointer<Void> initWithIdentifier$name$type$(
+  static Pointer initWithIdentifier$name$type$(
     Pointer<CNContainer> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> name,
+    Pointer arg, {
+    @required Pointer name,
     @required int type,
   }) {
     _openDynamicLibrary();
@@ -13194,9 +13482,9 @@ class CNContainer extends Struct<CNContainer> {
     );
   }
 
-  static Pointer<Void> initWithName$(
+  static Pointer initWithName$(
     Pointer<CNContainer> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -13206,9 +13494,9 @@ class CNContainer extends Struct<CNContainer> {
     );
   }
 
-  static Pointer<Void> initWithName$type$(
+  static Pointer initWithName$type$(
     Pointer<CNContainer> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int type,
   }) {
     _openDynamicLibrary();
@@ -13232,7 +13520,7 @@ class CNContainer extends Struct<CNContainer> {
 
   static int isEqual(
     Pointer<CNContainer> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -13242,9 +13530,9 @@ class CNContainer extends Struct<CNContainer> {
     );
   }
 
-  static Pointer<Void> mutableCopyWithZone(
+  static Pointer mutableCopyWithZone(
     Pointer<CNContainer> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -13254,7 +13542,7 @@ class CNContainer extends Struct<CNContainer> {
     );
   }
 
-  static Pointer<Void> name(
+  static Pointer name(
     Pointer<CNContainer> _self,
   ) {
     _openDynamicLibrary();
@@ -13264,7 +13552,7 @@ class CNContainer extends Struct<CNContainer> {
     );
   }
 
-  static Pointer<Void> permissions(
+  static Pointer permissions(
     Pointer<CNContainer> _self,
   ) {
     _openDynamicLibrary();
@@ -13274,7 +13562,7 @@ class CNContainer extends Struct<CNContainer> {
     );
   }
 
-  static Pointer<Void> snapshot(
+  static Pointer snapshot(
     Pointer<CNContainer> _self,
   ) {
     _openDynamicLibrary();
@@ -13295,11 +13583,9 @@ class CNContainer extends Struct<CNContainer> {
   }
 }
 
-/// Objective-C class _CNContainerEnabledDescription_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNContainerEnabledDescription
     extends Struct<CNContainerEnabledDescription> {
@@ -13313,9 +13599,9 @@ class CNContainerEnabledDescription
         .cast<CNContainerEnabledDescription>();
   }
 
-  static Pointer<Void> CNValueForContainer(
+  static Pointer CNValueForContainer(
     Pointer<CNContainerEnabledDescription> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -13335,7 +13621,7 @@ class CNContainerEnabledDescription
     );
   }
 
-  static Pointer<Void> key(
+  static Pointer key(
     Pointer<CNContainerEnabledDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -13347,8 +13633,8 @@ class CNContainerEnabledDescription
 
   static void setCNValue(
     Pointer<CNContainerEnabledDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> onContainer,
+    Pointer arg, {
+    @required Pointer onContainer,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -13359,7 +13645,7 @@ class CNContainerEnabledDescription
     );
   }
 
-  static Pointer<Void> valueClass(
+  static Pointer valueClass(
     Pointer<CNContainerEnabledDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -13370,11 +13656,9 @@ class CNContainerEnabledDescription
   }
 }
 
-/// Objective-C class _CNContainerIdentifierDescription_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNContainerIdentifierDescription
     extends Struct<CNContainerIdentifierDescription> {
@@ -13388,9 +13672,9 @@ class CNContainerIdentifierDescription
         .cast<CNContainerIdentifierDescription>();
   }
 
-  static Pointer<Void> CNValueForContainer(
+  static Pointer CNValueForContainer(
     Pointer<CNContainerIdentifierDescription> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -13410,7 +13694,7 @@ class CNContainerIdentifierDescription
     );
   }
 
-  static Pointer<Void> key(
+  static Pointer key(
     Pointer<CNContainerIdentifierDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -13422,8 +13706,8 @@ class CNContainerIdentifierDescription
 
   static void setCNValue(
     Pointer<CNContainerIdentifierDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> onContainer,
+    Pointer arg, {
+    @required Pointer onContainer,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -13434,7 +13718,7 @@ class CNContainerIdentifierDescription
     );
   }
 
-  static Pointer<Void> valueClass(
+  static Pointer valueClass(
     Pointer<CNContainerIdentifierDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -13445,11 +13729,9 @@ class CNContainerIdentifierDescription
   }
 }
 
-/// Objective-C class _CNContainerIdentifiersPredicate_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNContainerIdentifiersPredicate
     extends Struct<CNContainerIdentifiersPredicate> {
@@ -13463,7 +13745,7 @@ class CNContainerIdentifiersPredicate
         .cast<CNContainerIdentifiersPredicate>();
   }
 
-  static Pointer<Void> cn_coreDataPredicate(
+  static Pointer cn_coreDataPredicate(
     Pointer<CNContainerIdentifiersPredicate> _self,
   ) {
     _openDynamicLibrary();
@@ -13473,7 +13755,7 @@ class CNContainerIdentifiersPredicate
     );
   }
 
-  static Pointer<Void> cn_persistenceFilterRequest(
+  static Pointer cn_persistenceFilterRequest(
     Pointer<CNContainerIdentifiersPredicate> _self,
   ) {
     _openDynamicLibrary();
@@ -13483,7 +13765,7 @@ class CNContainerIdentifiersPredicate
     );
   }
 
-  static Pointer<Void> cn_topLevelFilter(
+  static Pointer cn_topLevelFilter(
     Pointer<CNContainerIdentifiersPredicate> _self,
   ) {
     _openDynamicLibrary();
@@ -13493,7 +13775,7 @@ class CNContainerIdentifiersPredicate
     );
   }
 
-  static Pointer<Void> identifiers(
+  static Pointer identifiers(
     Pointer<CNContainerIdentifiersPredicate> _self,
   ) {
     _openDynamicLibrary();
@@ -13503,9 +13785,9 @@ class CNContainerIdentifiersPredicate
     );
   }
 
-  static Pointer<Void> initWithIdentifiers(
+  static Pointer initWithIdentifiers(
     Pointer<CNContainerIdentifiersPredicate> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -13516,11 +13798,9 @@ class CNContainerIdentifiersPredicate
   }
 }
 
-/// Objective-C class _CNContainerNameDescription_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNContainerNameDescription extends Struct<CNContainerNameDescription> {
   factory CNContainerNameDescription._() {
@@ -13533,9 +13813,9 @@ class CNContainerNameDescription extends Struct<CNContainerNameDescription> {
         .cast<CNContainerNameDescription>();
   }
 
-  static Pointer<Void> CNValueForContainer(
+  static Pointer CNValueForContainer(
     Pointer<CNContainerNameDescription> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -13565,7 +13845,7 @@ class CNContainerNameDescription extends Struct<CNContainerNameDescription> {
     );
   }
 
-  static Pointer<Void> key(
+  static Pointer key(
     Pointer<CNContainerNameDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -13577,8 +13857,8 @@ class CNContainerNameDescription extends Struct<CNContainerNameDescription> {
 
   static void setCNValue(
     Pointer<CNContainerNameDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> onContainer,
+    Pointer arg, {
+    @required Pointer onContainer,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -13590,11 +13870,9 @@ class CNContainerNameDescription extends Struct<CNContainerNameDescription> {
   }
 }
 
-/// Objective-C class _CNContainerOfContactPredicate_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNContainerOfContactPredicate
     extends Struct<CNContainerOfContactPredicate> {
@@ -13608,7 +13886,7 @@ class CNContainerOfContactPredicate
         .cast<CNContainerOfContactPredicate>();
   }
 
-  static Pointer<Void> cn_coreDataPredicate(
+  static Pointer cn_coreDataPredicate(
     Pointer<CNContainerOfContactPredicate> _self,
   ) {
     _openDynamicLibrary();
@@ -13618,7 +13896,7 @@ class CNContainerOfContactPredicate
     );
   }
 
-  static Pointer<Void> cn_persistenceFilterRequest(
+  static Pointer cn_persistenceFilterRequest(
     Pointer<CNContainerOfContactPredicate> _self,
   ) {
     _openDynamicLibrary();
@@ -13628,7 +13906,7 @@ class CNContainerOfContactPredicate
     );
   }
 
-  static Pointer<Void> cn_secondaryRecursePredicate(
+  static Pointer cn_secondaryRecursePredicate(
     Pointer<CNContainerOfContactPredicate> _self,
   ) {
     _openDynamicLibrary();
@@ -13638,7 +13916,7 @@ class CNContainerOfContactPredicate
     );
   }
 
-  static Pointer<Void> cn_topLevelFilter(
+  static Pointer cn_topLevelFilter(
     Pointer<CNContainerOfContactPredicate> _self,
   ) {
     _openDynamicLibrary();
@@ -13648,7 +13926,7 @@ class CNContainerOfContactPredicate
     );
   }
 
-  static Pointer<Void> identifier(
+  static Pointer identifier(
     Pointer<CNContainerOfContactPredicate> _self,
   ) {
     _openDynamicLibrary();
@@ -13658,9 +13936,9 @@ class CNContainerOfContactPredicate
     );
   }
 
-  static Pointer<Void> initWithIdentifier(
+  static Pointer initWithIdentifier(
     Pointer<CNContainerOfContactPredicate> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -13671,11 +13949,9 @@ class CNContainerOfContactPredicate
   }
 }
 
-/// Objective-C class _CNContainerOfGroupPredicate_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNContainerOfGroupPredicate extends Struct<CNContainerOfGroupPredicate> {
   factory CNContainerOfGroupPredicate._() {
@@ -13688,7 +13964,7 @@ class CNContainerOfGroupPredicate extends Struct<CNContainerOfGroupPredicate> {
         .cast<CNContainerOfGroupPredicate>();
   }
 
-  static Pointer<Void> cn_coreDataPredicate(
+  static Pointer cn_coreDataPredicate(
     Pointer<CNContainerOfGroupPredicate> _self,
   ) {
     _openDynamicLibrary();
@@ -13698,7 +13974,7 @@ class CNContainerOfGroupPredicate extends Struct<CNContainerOfGroupPredicate> {
     );
   }
 
-  static Pointer<Void> cn_persistenceFilterRequest(
+  static Pointer cn_persistenceFilterRequest(
     Pointer<CNContainerOfGroupPredicate> _self,
   ) {
     _openDynamicLibrary();
@@ -13708,7 +13984,7 @@ class CNContainerOfGroupPredicate extends Struct<CNContainerOfGroupPredicate> {
     );
   }
 
-  static Pointer<Void> cn_topLevelFilter(
+  static Pointer cn_topLevelFilter(
     Pointer<CNContainerOfGroupPredicate> _self,
   ) {
     _openDynamicLibrary();
@@ -13718,7 +13994,7 @@ class CNContainerOfGroupPredicate extends Struct<CNContainerOfGroupPredicate> {
     );
   }
 
-  static Pointer<Void> identifier(
+  static Pointer identifier(
     Pointer<CNContainerOfGroupPredicate> _self,
   ) {
     _openDynamicLibrary();
@@ -13728,9 +14004,9 @@ class CNContainerOfGroupPredicate extends Struct<CNContainerOfGroupPredicate> {
     );
   }
 
-  static Pointer<Void> initWithIdentifier(
+  static Pointer initWithIdentifier(
     Pointer<CNContainerOfGroupPredicate> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -13741,11 +14017,9 @@ class CNContainerOfGroupPredicate extends Struct<CNContainerOfGroupPredicate> {
   }
 }
 
-/// Objective-C class _CNContainerPermissions_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNContainerPermissions extends Struct<CNContainerPermissions> {
   factory CNContainerPermissions._() {
@@ -13788,9 +14062,9 @@ class CNContainerPermissions extends Struct<CNContainerPermissions> {
     );
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<CNContainerPermissions> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -13800,7 +14074,7 @@ class CNContainerPermissions extends Struct<CNContainerPermissions> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CNContainerPermissions> _self,
   ) {
     _openDynamicLibrary();
@@ -13812,7 +14086,7 @@ class CNContainerPermissions extends Struct<CNContainerPermissions> {
 
   static void encodeWithCoder(
     Pointer<CNContainerPermissions> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -13832,7 +14106,7 @@ class CNContainerPermissions extends Struct<CNContainerPermissions> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CNContainerPermissions> _self,
   ) {
     _openDynamicLibrary();
@@ -13842,7 +14116,7 @@ class CNContainerPermissions extends Struct<CNContainerPermissions> {
     );
   }
 
-  static Pointer<Void> initWithCanCreateContacts(
+  static Pointer initWithCanCreateContacts(
     Pointer<CNContainerPermissions> _self,
     int arg, {
     @required int canDeleteContacts,
@@ -13859,9 +14133,9 @@ class CNContainerPermissions extends Struct<CNContainerPermissions> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CNContainerPermissions> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -13873,7 +14147,7 @@ class CNContainerPermissions extends Struct<CNContainerPermissions> {
 
   static int isEqual(
     Pointer<CNContainerPermissions> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -13884,11 +14158,9 @@ class CNContainerPermissions extends Struct<CNContainerPermissions> {
   }
 }
 
-/// Objective-C class _CNContainerPropertyDescription_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNContainerPropertyDescription
     extends Struct<CNContainerPropertyDescription> {
@@ -13902,9 +14174,9 @@ class CNContainerPropertyDescription
         .cast<CNContainerPropertyDescription>();
   }
 
-  static Pointer<Void> CNValueForContainer(
+  static Pointer CNValueForContainer(
     Pointer<CNContainerPropertyDescription> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -13916,8 +14188,8 @@ class CNContainerPropertyDescription
 
   static int isValidValue(
     Pointer<CNContainerPropertyDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -13938,7 +14210,7 @@ class CNContainerPropertyDescription
     );
   }
 
-  static Pointer<Void> key(
+  static Pointer key(
     Pointer<CNContainerPropertyDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -13950,8 +14222,8 @@ class CNContainerPropertyDescription
 
   static void setCNValue(
     Pointer<CNContainerPropertyDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> onContainer,
+    Pointer arg, {
+    @required Pointer onContainer,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -13962,7 +14234,7 @@ class CNContainerPropertyDescription
     );
   }
 
-  static Pointer<Void> valueClass(
+  static Pointer valueClass(
     Pointer<CNContainerPropertyDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -13973,11 +14245,9 @@ class CNContainerPropertyDescription
   }
 }
 
-/// Objective-C class _CNContainerTypeDescription_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNContainerTypeDescription extends Struct<CNContainerTypeDescription> {
   factory CNContainerTypeDescription._() {
@@ -13990,9 +14260,9 @@ class CNContainerTypeDescription extends Struct<CNContainerTypeDescription> {
         .cast<CNContainerTypeDescription>();
   }
 
-  static Pointer<Void> CNValueForContainer(
+  static Pointer CNValueForContainer(
     Pointer<CNContainerTypeDescription> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -14004,8 +14274,8 @@ class CNContainerTypeDescription extends Struct<CNContainerTypeDescription> {
 
   static int isValidValue(
     Pointer<CNContainerTypeDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -14026,7 +14296,7 @@ class CNContainerTypeDescription extends Struct<CNContainerTypeDescription> {
     );
   }
 
-  static Pointer<Void> key(
+  static Pointer key(
     Pointer<CNContainerTypeDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -14038,8 +14308,8 @@ class CNContainerTypeDescription extends Struct<CNContainerTypeDescription> {
 
   static void setCNValue(
     Pointer<CNContainerTypeDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> onContainer,
+    Pointer arg, {
+    @required Pointer onContainer,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -14050,7 +14320,7 @@ class CNContainerTypeDescription extends Struct<CNContainerTypeDescription> {
     );
   }
 
-  static Pointer<Void> valueClass(
+  static Pointer valueClass(
     Pointer<CNContainerTypeDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -14061,11 +14331,9 @@ class CNContainerTypeDescription extends Struct<CNContainerTypeDescription> {
   }
 }
 
-/// Objective-C class _CNCoreDataMapperX_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNCoreDataMapperX extends Struct<CNCoreDataMapperX> {
   factory CNCoreDataMapperX._() {
@@ -14076,10 +14344,10 @@ class CNCoreDataMapperX extends Struct<CNCoreDataMapperX> {
     return _objc.allocate("CNCoreDataMapperX").cast<CNCoreDataMapperX>();
   }
 
-  static Pointer<Void> accountsMatchingPredicate(
+  static Pointer accountsMatchingPredicate(
     Pointer<CNCoreDataMapperX> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -14090,10 +14358,10 @@ class CNCoreDataMapperX extends Struct<CNCoreDataMapperX> {
     );
   }
 
-  static Pointer<Void> changeHistoryWithFetchRequest(
+  static Pointer changeHistoryWithFetchRequest(
     Pointer<CNCoreDataMapperX> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -14106,9 +14374,9 @@ class CNCoreDataMapperX extends Struct<CNCoreDataMapperX> {
 
   static int clearChangeHistoryForClientIdentifier(
     Pointer<CNCoreDataMapperX> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toChangeAnchor,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer toChangeAnchor,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_Int8(
@@ -14121,9 +14389,9 @@ class CNCoreDataMapperX extends Struct<CNCoreDataMapperX> {
     );
   }
 
-  static Pointer<Void> contactObservableForFetchRequest(
+  static Pointer contactObservableForFetchRequest(
     Pointer<CNCoreDataMapperX> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -14133,10 +14401,10 @@ class CNCoreDataMapperX extends Struct<CNCoreDataMapperX> {
     );
   }
 
-  static Pointer<Void> containersMatchingPredicate(
+  static Pointer containersMatchingPredicate(
     Pointer<CNCoreDataMapperX> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -14147,7 +14415,7 @@ class CNCoreDataMapperX extends Struct<CNCoreDataMapperX> {
     );
   }
 
-  static Pointer<Void> defaultContainerIdentifier(
+  static Pointer defaultContainerIdentifier(
     Pointer<CNCoreDataMapperX> _self,
   ) {
     _openDynamicLibrary();
@@ -14159,9 +14427,9 @@ class CNCoreDataMapperX extends Struct<CNCoreDataMapperX> {
 
   static int executeSaveRequest$response$error$(
     Pointer<CNCoreDataMapperX> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> response,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> response,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_Int8(
@@ -14175,8 +14443,8 @@ class CNCoreDataMapperX extends Struct<CNCoreDataMapperX> {
 
   static int executeSaveRequest$error$(
     Pointer<CNCoreDataMapperX> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -14187,10 +14455,10 @@ class CNCoreDataMapperX extends Struct<CNCoreDataMapperX> {
     );
   }
 
-  static Pointer<Void> groupsMatchingPredicate(
+  static Pointer groupsMatchingPredicate(
     Pointer<CNCoreDataMapperX> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -14201,7 +14469,7 @@ class CNCoreDataMapperX extends Struct<CNCoreDataMapperX> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CNCoreDataMapperX> _self,
   ) {
     _openDynamicLibrary();
@@ -14211,10 +14479,10 @@ class CNCoreDataMapperX extends Struct<CNCoreDataMapperX> {
     );
   }
 
-  static Pointer<Void> initWithContactsEnvironment(
+  static Pointer initWithContactsEnvironment(
     Pointer<CNCoreDataMapperX> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> managedConfiguration,
+    Pointer arg, {
+    @required Pointer managedConfiguration,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -14225,9 +14493,9 @@ class CNCoreDataMapperX extends Struct<CNCoreDataMapperX> {
     );
   }
 
-  static Pointer<Void> initWithPersistenceStack(
+  static Pointer initWithPersistenceStack(
     Pointer<CNCoreDataMapperX> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -14237,9 +14505,9 @@ class CNCoreDataMapperX extends Struct<CNCoreDataMapperX> {
     );
   }
 
-  static Pointer<Void> meContactIdentifiers(
+  static Pointer meContactIdentifiers(
     Pointer<CNCoreDataMapperX> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -14249,10 +14517,10 @@ class CNCoreDataMapperX extends Struct<CNCoreDataMapperX> {
     );
   }
 
-  static Pointer<Void> policyForContainerWithIdentifier(
+  static Pointer policyForContainerWithIdentifier(
     Pointer<CNCoreDataMapperX> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -14265,8 +14533,8 @@ class CNCoreDataMapperX extends Struct<CNCoreDataMapperX> {
 
   static int registerChangeHistoryClientIdentifier(
     Pointer<CNCoreDataMapperX> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -14280,7 +14548,7 @@ class CNCoreDataMapperX extends Struct<CNCoreDataMapperX> {
   static void requestAccessForEntityType$completionHandler$(
     Pointer<CNCoreDataMapperX> _self,
     int arg, {
-    @required Pointer<Void> completionHandler,
+    @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_Int64_p_returns_void(
@@ -14294,7 +14562,7 @@ class CNCoreDataMapperX extends Struct<CNCoreDataMapperX> {
   static int requestAccessForEntityType$error$(
     Pointer<CNCoreDataMapperX> _self,
     int arg, {
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_Int64_p_returns_Int8(
@@ -14305,10 +14573,10 @@ class CNCoreDataMapperX extends Struct<CNCoreDataMapperX> {
     );
   }
 
-  static Pointer<Void> serverSearchContainersMatchingPredicate(
+  static Pointer serverSearchContainersMatchingPredicate(
     Pointer<CNCoreDataMapperX> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -14321,8 +14589,8 @@ class CNCoreDataMapperX extends Struct<CNCoreDataMapperX> {
 
   static int setMeContact(
     Pointer<CNCoreDataMapperX> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -14335,7 +14603,7 @@ class CNCoreDataMapperX extends Struct<CNCoreDataMapperX> {
 
   static void setNotificationSource(
     Pointer<CNCoreDataMapperX> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -14345,10 +14613,10 @@ class CNCoreDataMapperX extends Struct<CNCoreDataMapperX> {
     );
   }
 
-  static Pointer<Void> subgroupsOfGroupWithIdentifier(
+  static Pointer subgroupsOfGroupWithIdentifier(
     Pointer<CNCoreDataMapperX> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -14361,8 +14629,8 @@ class CNCoreDataMapperX extends Struct<CNCoreDataMapperX> {
 
   static int unregisterChangeHistoryClientIdentifier(
     Pointer<CNCoreDataMapperX> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -14374,11 +14642,9 @@ class CNCoreDataMapperX extends Struct<CNCoreDataMapperX> {
   }
 }
 
-/// Objective-C class _CNCoreDataPropertyMapping_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNCoreDataPropertyMapping extends Struct<CNCoreDataPropertyMapping> {
   factory CNCoreDataPropertyMapping._() {
@@ -14401,7 +14667,7 @@ class CNCoreDataPropertyMapping extends Struct<CNCoreDataPropertyMapping> {
     );
   }
 
-  static Pointer<Void> coreDataBitMaskedValuesMap(
+  static Pointer coreDataBitMaskedValuesMap(
     Pointer<CNCoreDataPropertyMapping> _self,
   ) {
     _openDynamicLibrary();
@@ -14411,7 +14677,7 @@ class CNCoreDataPropertyMapping extends Struct<CNCoreDataPropertyMapping> {
     );
   }
 
-  static Pointer<Void> coreDataPredicateKeyPath(
+  static Pointer coreDataPredicateKeyPath(
     Pointer<CNCoreDataPropertyMapping> _self,
   ) {
     _openDynamicLibrary();
@@ -14421,7 +14687,7 @@ class CNCoreDataPropertyMapping extends Struct<CNCoreDataPropertyMapping> {
     );
   }
 
-  static Pointer<Void> coreDataRelationshipKeyPathsToFetch(
+  static Pointer coreDataRelationshipKeyPathsToFetch(
     Pointer<CNCoreDataPropertyMapping> _self,
   ) {
     _openDynamicLibrary();
@@ -14431,10 +14697,10 @@ class CNCoreDataPropertyMapping extends Struct<CNCoreDataPropertyMapping> {
     );
   }
 
-  static Pointer<Void> initWithCoreDataKeyPath$valueClass$(
+  static Pointer initWithCoreDataKeyPath$valueClass$(
     Pointer<CNCoreDataPropertyMapping> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> valueClass,
+    Pointer arg, {
+    @required Pointer valueClass,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -14445,11 +14711,11 @@ class CNCoreDataPropertyMapping extends Struct<CNCoreDataPropertyMapping> {
     );
   }
 
-  static Pointer<Void> initWithCoreDataKeyPath$valueClass$subProperties$(
+  static Pointer initWithCoreDataKeyPath$valueClass$subProperties$(
     Pointer<CNCoreDataPropertyMapping> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> valueClass,
-    @required Pointer<Void> subProperties,
+    Pointer arg, {
+    @required Pointer valueClass,
+    @required Pointer subProperties,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -14481,7 +14747,7 @@ class CNCoreDataPropertyMapping extends Struct<CNCoreDataPropertyMapping> {
     );
   }
 
-  static Pointer<Void> subCoreDataPredicatePropertiesByKey(
+  static Pointer subCoreDataPredicatePropertiesByKey(
     Pointer<CNCoreDataPropertyMapping> _self,
   ) {
     _openDynamicLibrary();
@@ -14491,7 +14757,7 @@ class CNCoreDataPropertyMapping extends Struct<CNCoreDataPropertyMapping> {
     );
   }
 
-  static Pointer<Void> valueClass(
+  static Pointer valueClass(
     Pointer<CNCoreDataPropertyMapping> _self,
   ) {
     _openDynamicLibrary();
@@ -14502,11 +14768,9 @@ class CNCoreDataPropertyMapping extends Struct<CNCoreDataPropertyMapping> {
   }
 }
 
-/// Objective-C class _CNCountryInformation_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNCountryInformation extends Struct<CNCountryInformation> {
   factory CNCountryInformation._() {
@@ -14517,9 +14781,9 @@ class CNCountryInformation extends Struct<CNCountryInformation> {
     return _objc.allocate("CNCountryInformation").cast<CNCountryInformation>();
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<CNCountryInformation> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -14529,7 +14793,7 @@ class CNCountryInformation extends Struct<CNCountryInformation> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CNCountryInformation> _self,
   ) {
     _openDynamicLibrary();
@@ -14549,11 +14813,11 @@ class CNCountryInformation extends Struct<CNCountryInformation> {
     );
   }
 
-  static Pointer<Void> initWithISOCountryCode(
+  static Pointer initWithISOCountryCode(
     Pointer<CNCountryInformation> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> name,
-    @required Pointer<Void> phoneticName,
+    Pointer arg, {
+    @required Pointer name,
+    @required Pointer phoneticName,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -14567,7 +14831,7 @@ class CNCountryInformation extends Struct<CNCountryInformation> {
 
   static int isEqual(
     Pointer<CNCountryInformation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -14577,7 +14841,7 @@ class CNCountryInformation extends Struct<CNCountryInformation> {
     );
   }
 
-  static Pointer<Void> isoCountryCode(
+  static Pointer isoCountryCode(
     Pointer<CNCountryInformation> _self,
   ) {
     _openDynamicLibrary();
@@ -14587,7 +14851,7 @@ class CNCountryInformation extends Struct<CNCountryInformation> {
     );
   }
 
-  static Pointer<Void> name(
+  static Pointer name(
     Pointer<CNCountryInformation> _self,
   ) {
     _openDynamicLibrary();
@@ -14597,7 +14861,7 @@ class CNCountryInformation extends Struct<CNCountryInformation> {
     );
   }
 
-  static Pointer<Void> phoneticName(
+  static Pointer phoneticName(
     Pointer<CNCountryInformation> _self,
   ) {
     _openDynamicLibrary();
@@ -14608,11 +14872,9 @@ class CNCountryInformation extends Struct<CNCountryInformation> {
   }
 }
 
-/// Objective-C class _CNCreationDateDescription_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNCreationDateDescription extends Struct<CNCreationDateDescription> {
   factory CNCreationDateDescription._() {
@@ -14625,9 +14887,9 @@ class CNCreationDateDescription extends Struct<CNCreationDateDescription> {
         .cast<CNCreationDateDescription>();
   }
 
-  static Pointer<Void> CNValueForContact(
+  static Pointer CNValueForContact(
     Pointer<CNCreationDateDescription> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -14639,8 +14901,8 @@ class CNCreationDateDescription extends Struct<CNCreationDateDescription> {
 
   static void copyValueFromContact(
     Pointer<CNCreationDateDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toRemotePerson,
+    Pointer arg, {
+    @required Pointer toRemotePerson,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -14653,8 +14915,8 @@ class CNCreationDateDescription extends Struct<CNCreationDateDescription> {
 
   static void copyValueFromRemotePerson(
     Pointer<CNCreationDateDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toContact,
+    Pointer arg, {
+    @required Pointer toContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -14665,7 +14927,7 @@ class CNCreationDateDescription extends Struct<CNCreationDateDescription> {
     );
   }
 
-  static Pointer<Void> coreDataKey(
+  static Pointer coreDataKey(
     Pointer<CNCreationDateDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -14677,8 +14939,8 @@ class CNCreationDateDescription extends Struct<CNCreationDateDescription> {
 
   static void decodeUsingCoder(
     Pointer<CNCreationDateDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> contact,
+    Pointer arg, {
+    @required Pointer contact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -14691,8 +14953,8 @@ class CNCreationDateDescription extends Struct<CNCreationDateDescription> {
 
   static void encodeUsingCoder(
     Pointer<CNCreationDateDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> contact,
+    Pointer arg, {
+    @required Pointer contact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -14703,7 +14965,7 @@ class CNCreationDateDescription extends Struct<CNCreationDateDescription> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CNCreationDateDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -14715,8 +14977,8 @@ class CNCreationDateDescription extends Struct<CNCreationDateDescription> {
 
   static int isEqualForContact(
     Pointer<CNCreationDateDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> other,
+    Pointer arg, {
+    @required Pointer other,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -14729,8 +14991,8 @@ class CNCreationDateDescription extends Struct<CNCreationDateDescription> {
 
   static void setCNValue(
     Pointer<CNCreationDateDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> onContact,
+    Pointer arg, {
+    @required Pointer onContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -14743,8 +15005,8 @@ class CNCreationDateDescription extends Struct<CNCreationDateDescription> {
 
   static void setValue(
     Pointer<CNCreationDateDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> onCoreDataContact,
+    Pointer arg, {
+    @required Pointer onCoreDataContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -14755,7 +15017,7 @@ class CNCreationDateDescription extends Struct<CNCreationDateDescription> {
     );
   }
 
-  static Pointer<Void> valueClass(
+  static Pointer valueClass(
     Pointer<CNCreationDateDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -14766,11 +15028,9 @@ class CNCreationDateDescription extends Struct<CNCreationDateDescription> {
   }
 }
 
-/// Objective-C class _CNCropRectDescription_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNCropRectDescription extends Struct<CNCropRectDescription> {
   factory CNCropRectDescription._() {
@@ -14783,9 +15043,9 @@ class CNCropRectDescription extends Struct<CNCropRectDescription> {
         .cast<CNCropRectDescription>();
   }
 
-  static Pointer<Void> CNValueForContact(
+  static Pointer CNValueForContact(
     Pointer<CNCropRectDescription> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -14797,8 +15057,8 @@ class CNCropRectDescription extends Struct<CNCropRectDescription> {
 
   static void copyFromCoreDataContact(
     Pointer<CNCropRectDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toContact,
+    Pointer arg, {
+    @required Pointer toContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -14811,8 +15071,8 @@ class CNCropRectDescription extends Struct<CNCropRectDescription> {
 
   static void decodeUsingCoder(
     Pointer<CNCropRectDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> contact,
+    Pointer arg, {
+    @required Pointer contact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -14825,8 +15085,8 @@ class CNCropRectDescription extends Struct<CNCropRectDescription> {
 
   static void encodeUsingCoder(
     Pointer<CNCropRectDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> contact,
+    Pointer arg, {
+    @required Pointer contact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -14837,7 +15097,7 @@ class CNCropRectDescription extends Struct<CNCropRectDescription> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CNCropRectDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -14849,8 +15109,8 @@ class CNCropRectDescription extends Struct<CNCropRectDescription> {
 
   static int isEqualForContact(
     Pointer<CNCropRectDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> other,
+    Pointer arg, {
+    @required Pointer other,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -14861,7 +15121,7 @@ class CNCropRectDescription extends Struct<CNCropRectDescription> {
     );
   }
 
-  static Pointer<Void> nilValue(
+  static Pointer nilValue(
     Pointer<CNCropRectDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -14873,8 +15133,8 @@ class CNCropRectDescription extends Struct<CNCropRectDescription> {
 
   static void setCNValue(
     Pointer<CNCropRectDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> onContact,
+    Pointer arg, {
+    @required Pointer onContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -14887,8 +15147,8 @@ class CNCropRectDescription extends Struct<CNCropRectDescription> {
 
   static void setValue(
     Pointer<CNCropRectDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> onCoreDataContact,
+    Pointer arg, {
+    @required Pointer onCoreDataContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -14899,7 +15159,7 @@ class CNCropRectDescription extends Struct<CNCropRectDescription> {
     );
   }
 
-  static Pointer<Void> valueClass(
+  static Pointer valueClass(
     Pointer<CNCropRectDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -14910,11 +15170,9 @@ class CNCropRectDescription extends Struct<CNCropRectDescription> {
   }
 }
 
-/// Objective-C class _CNDataMapperContactStore_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNDataMapperContactStore extends Struct<CNDataMapperContactStore> {
   factory CNDataMapperContactStore._() {
@@ -14927,10 +15185,10 @@ class CNDataMapperContactStore extends Struct<CNDataMapperContactStore> {
         .cast<CNDataMapperContactStore>();
   }
 
-  static Pointer<Void> accountsMatchingPredicate(
+  static Pointer accountsMatchingPredicate(
     Pointer<CNDataMapperContactStore> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -14941,10 +15199,10 @@ class CNDataMapperContactStore extends Struct<CNDataMapperContactStore> {
     );
   }
 
-  static Pointer<Void> changeHistoryWithFetchRequest(
+  static Pointer changeHistoryWithFetchRequest(
     Pointer<CNDataMapperContactStore> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -14957,9 +15215,9 @@ class CNDataMapperContactStore extends Struct<CNDataMapperContactStore> {
 
   static int clearChangeHistoryForClientIdentifier(
     Pointer<CNDataMapperContactStore> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toChangeAnchor,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer toChangeAnchor,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_Int8(
@@ -14972,10 +15230,10 @@ class CNDataMapperContactStore extends Struct<CNDataMapperContactStore> {
     );
   }
 
-  static Pointer<Void> contactCountForFetchRequest(
+  static Pointer contactCountForFetchRequest(
     Pointer<CNDataMapperContactStore> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -14986,9 +15244,9 @@ class CNDataMapperContactStore extends Struct<CNDataMapperContactStore> {
     );
   }
 
-  static Pointer<Void> contactIdentifierWithMatchingDictionary(
+  static Pointer contactIdentifierWithMatchingDictionary(
     Pointer<CNDataMapperContactStore> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -14998,10 +15256,10 @@ class CNDataMapperContactStore extends Struct<CNDataMapperContactStore> {
     );
   }
 
-  static Pointer<Void> contactWithUserActivityUserInfo(
+  static Pointer contactWithUserActivityUserInfo(
     Pointer<CNDataMapperContactStore> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> keysToFetch,
+    Pointer arg, {
+    @required Pointer keysToFetch,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -15012,11 +15270,11 @@ class CNDataMapperContactStore extends Struct<CNDataMapperContactStore> {
     );
   }
 
-  static Pointer<Void> contactsForFetchRequest(
+  static Pointer contactsForFetchRequest(
     Pointer<CNDataMapperContactStore> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> matchInfos,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> matchInfos,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -15028,11 +15286,11 @@ class CNDataMapperContactStore extends Struct<CNDataMapperContactStore> {
     );
   }
 
-  static Pointer<Void> contactsInContainerWithIdentifier(
+  static Pointer contactsInContainerWithIdentifier(
     Pointer<CNDataMapperContactStore> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> keysToFetch,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer keysToFetch,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -15044,10 +15302,10 @@ class CNDataMapperContactStore extends Struct<CNDataMapperContactStore> {
     );
   }
 
-  static Pointer<Void> containersMatchingPredicate(
+  static Pointer containersMatchingPredicate(
     Pointer<CNDataMapperContactStore> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -15058,7 +15316,7 @@ class CNDataMapperContactStore extends Struct<CNDataMapperContactStore> {
     );
   }
 
-  static Pointer<Void> defaultContainerIdentifier(
+  static Pointer defaultContainerIdentifier(
     Pointer<CNDataMapperContactStore> _self,
   ) {
     _openDynamicLibrary();
@@ -15068,7 +15326,7 @@ class CNDataMapperContactStore extends Struct<CNDataMapperContactStore> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CNDataMapperContactStore> _self,
   ) {
     _openDynamicLibrary();
@@ -15078,7 +15336,7 @@ class CNDataMapperContactStore extends Struct<CNDataMapperContactStore> {
     );
   }
 
-  static Pointer<Void> descriptorForRequiredKeysForMatchingDictionary(
+  static Pointer descriptorForRequiredKeysForMatchingDictionary(
     Pointer<CNDataMapperContactStore> _self,
   ) {
     _openDynamicLibrary();
@@ -15090,9 +15348,9 @@ class CNDataMapperContactStore extends Struct<CNDataMapperContactStore> {
 
   static int enumerateContactsAndMatchInfoWithFetchRequest(
     Pointer<CNDataMapperContactStore> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
-    @required Pointer<Void> usingBlock,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
+    @required Pointer usingBlock,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_Int8(
@@ -15105,11 +15363,11 @@ class CNDataMapperContactStore extends Struct<CNDataMapperContactStore> {
     );
   }
 
-  static Pointer<Void> executeFetchRequest(
+  static Pointer executeFetchRequest(
     Pointer<CNDataMapperContactStore> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> progressiveResults,
-    @required Pointer<Void> completion,
+    Pointer arg, {
+    @required Pointer progressiveResults,
+    @required Pointer completion,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -15123,9 +15381,9 @@ class CNDataMapperContactStore extends Struct<CNDataMapperContactStore> {
 
   static int executeSaveRequest$response$error$(
     Pointer<CNDataMapperContactStore> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> response,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> response,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_Int8(
@@ -15139,8 +15397,8 @@ class CNDataMapperContactStore extends Struct<CNDataMapperContactStore> {
 
   static int executeSaveRequest$error$(
     Pointer<CNDataMapperContactStore> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -15151,10 +15409,10 @@ class CNDataMapperContactStore extends Struct<CNDataMapperContactStore> {
     );
   }
 
-  static Pointer<Void> groupWithIdentifier(
+  static Pointer groupWithIdentifier(
     Pointer<CNDataMapperContactStore> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -15165,10 +15423,10 @@ class CNDataMapperContactStore extends Struct<CNDataMapperContactStore> {
     );
   }
 
-  static Pointer<Void> groupsMatchingPredicate(
+  static Pointer groupsMatchingPredicate(
     Pointer<CNDataMapperContactStore> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -15179,9 +15437,9 @@ class CNDataMapperContactStore extends Struct<CNDataMapperContactStore> {
     );
   }
 
-  static Pointer<Void> identifierWithError(
+  static Pointer identifierWithError(
     Pointer<CNDataMapperContactStore> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -15191,7 +15449,7 @@ class CNDataMapperContactStore extends Struct<CNDataMapperContactStore> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CNDataMapperContactStore> _self,
   ) {
     _openDynamicLibrary();
@@ -15201,10 +15459,10 @@ class CNDataMapperContactStore extends Struct<CNDataMapperContactStore> {
     );
   }
 
-  static Pointer<Void> initWithDataMapper(
+  static Pointer initWithDataMapper(
     Pointer<CNDataMapperContactStore> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> environment,
+    Pointer arg, {
+    @required Pointer environment,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -15215,10 +15473,10 @@ class CNDataMapperContactStore extends Struct<CNDataMapperContactStore> {
     );
   }
 
-  static Pointer<Void> initWithEnvironment$managedConfiguration$(
+  static Pointer initWithEnvironment$managedConfiguration$(
     Pointer<CNDataMapperContactStore> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> managedConfiguration,
+    Pointer arg, {
+    @required Pointer managedConfiguration,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -15229,9 +15487,9 @@ class CNDataMapperContactStore extends Struct<CNDataMapperContactStore> {
     );
   }
 
-  static Pointer<Void> initWithEnvironment$(
+  static Pointer initWithEnvironment$(
     Pointer<CNDataMapperContactStore> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -15243,8 +15501,8 @@ class CNDataMapperContactStore extends Struct<CNDataMapperContactStore> {
 
   static int isValidSaveRequest(
     Pointer<CNDataMapperContactStore> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -15255,7 +15513,7 @@ class CNDataMapperContactStore extends Struct<CNDataMapperContactStore> {
     );
   }
 
-  static Pointer<Void> logger(
+  static Pointer logger(
     Pointer<CNDataMapperContactStore> _self,
   ) {
     _openDynamicLibrary();
@@ -15265,7 +15523,7 @@ class CNDataMapperContactStore extends Struct<CNDataMapperContactStore> {
     );
   }
 
-  static Pointer<Void> mapper(
+  static Pointer mapper(
     Pointer<CNDataMapperContactStore> _self,
   ) {
     _openDynamicLibrary();
@@ -15275,9 +15533,9 @@ class CNDataMapperContactStore extends Struct<CNDataMapperContactStore> {
     );
   }
 
-  static Pointer<Void> matchingDictionaryForContact(
+  static Pointer matchingDictionaryForContact(
     Pointer<CNDataMapperContactStore> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -15287,9 +15545,9 @@ class CNDataMapperContactStore extends Struct<CNDataMapperContactStore> {
     );
   }
 
-  static Pointer<Void> meContactIdentifiers(
+  static Pointer meContactIdentifiers(
     Pointer<CNDataMapperContactStore> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -15299,11 +15557,11 @@ class CNDataMapperContactStore extends Struct<CNDataMapperContactStore> {
     );
   }
 
-  static Pointer<Void> membersOfGroupWithIdentifier(
+  static Pointer membersOfGroupWithIdentifier(
     Pointer<CNDataMapperContactStore> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> keysToFetch,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer keysToFetch,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -15315,10 +15573,10 @@ class CNDataMapperContactStore extends Struct<CNDataMapperContactStore> {
     );
   }
 
-  static Pointer<Void> policyForContainerWithIdentifier(
+  static Pointer policyForContainerWithIdentifier(
     Pointer<CNDataMapperContactStore> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -15331,8 +15589,8 @@ class CNDataMapperContactStore extends Struct<CNDataMapperContactStore> {
 
   static int registerChangeHistoryClientIdentifier(
     Pointer<CNDataMapperContactStore> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -15343,7 +15601,7 @@ class CNDataMapperContactStore extends Struct<CNDataMapperContactStore> {
     );
   }
 
-  static Pointer<Void> regulatoryLogger(
+  static Pointer regulatoryLogger(
     Pointer<CNDataMapperContactStore> _self,
   ) {
     _openDynamicLibrary();
@@ -15353,7 +15611,7 @@ class CNDataMapperContactStore extends Struct<CNDataMapperContactStore> {
     );
   }
 
-  static Pointer<Void> requestAccessForEntityType(
+  static Pointer requestAccessForEntityType(
     Pointer<CNDataMapperContactStore> _self,
     int arg,
   ) {
@@ -15365,10 +15623,10 @@ class CNDataMapperContactStore extends Struct<CNDataMapperContactStore> {
     );
   }
 
-  static Pointer<Void> serverSearchContainersMatchingPredicate(
+  static Pointer serverSearchContainersMatchingPredicate(
     Pointer<CNDataMapperContactStore> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -15381,10 +15639,10 @@ class CNDataMapperContactStore extends Struct<CNDataMapperContactStore> {
 
   static int setBestMeIfNeededForGivenName(
     Pointer<CNDataMapperContactStore> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> familyName,
-    @required Pointer<Void> email,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer familyName,
+    @required Pointer email,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_returns_Int8(
@@ -15400,8 +15658,8 @@ class CNDataMapperContactStore extends Struct<CNDataMapperContactStore> {
 
   static int setMeContact$error$(
     Pointer<CNDataMapperContactStore> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -15414,9 +15672,9 @@ class CNDataMapperContactStore extends Struct<CNDataMapperContactStore> {
 
   static int setMeContact$forContainer$error$(
     Pointer<CNDataMapperContactStore> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> forContainer,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer forContainer,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_Int8(
@@ -15428,10 +15686,10 @@ class CNDataMapperContactStore extends Struct<CNDataMapperContactStore> {
     );
   }
 
-  static Pointer<Void> subgroupsOfGroupWithIdentifier(
+  static Pointer subgroupsOfGroupWithIdentifier(
     Pointer<CNDataMapperContactStore> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -15442,9 +15700,9 @@ class CNDataMapperContactStore extends Struct<CNDataMapperContactStore> {
     );
   }
 
-  static Pointer<Void> unifiedContactCountWithError(
+  static Pointer unifiedContactCountWithError(
     Pointer<CNDataMapperContactStore> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -15454,11 +15712,11 @@ class CNDataMapperContactStore extends Struct<CNDataMapperContactStore> {
     );
   }
 
-  static Pointer<Void> unifiedContactsMatchingPredicate(
+  static Pointer unifiedContactsMatchingPredicate(
     Pointer<CNDataMapperContactStore> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> keysToFetch,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer keysToFetch,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -15472,8 +15730,8 @@ class CNDataMapperContactStore extends Struct<CNDataMapperContactStore> {
 
   static int unregisterChangeHistoryClientIdentifier(
     Pointer<CNDataMapperContactStore> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -15484,10 +15742,10 @@ class CNDataMapperContactStore extends Struct<CNDataMapperContactStore> {
     );
   }
 
-  static Pointer<Void> usedLabelsForPropertyWithKey(
+  static Pointer usedLabelsForPropertyWithKey(
     Pointer<CNDataMapperContactStore> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -15498,9 +15756,9 @@ class CNDataMapperContactStore extends Struct<CNDataMapperContactStore> {
     );
   }
 
-  static Pointer<Void> userActivityUserInfoForContact(
+  static Pointer userActivityUserInfoForContact(
     Pointer<CNDataMapperContactStore> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -15511,11 +15769,9 @@ class CNDataMapperContactStore extends Struct<CNDataMapperContactStore> {
   }
 }
 
-/// Objective-C class _CNDate_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNDate extends Struct<CNDate> {
   factory CNDate._() {
@@ -15527,11 +15783,9 @@ class CNDate extends Struct<CNDate> {
   }
 }
 
-/// Objective-C class _CNDateComponentsEquivalence_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNDateComponentsEquivalence extends Struct<CNDateComponentsEquivalence> {
   factory CNDateComponentsEquivalence._() {
@@ -15545,11 +15799,9 @@ class CNDateComponentsEquivalence extends Struct<CNDateComponentsEquivalence> {
   }
 }
 
-/// Objective-C class _CNDatesDescription_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNDatesDescription extends Struct<CNDatesDescription> {
   factory CNDatesDescription._() {
@@ -15560,9 +15812,9 @@ class CNDatesDescription extends Struct<CNDatesDescription> {
     return _objc.allocate("CNDatesDescription").cast<CNDatesDescription>();
   }
 
-  static Pointer<Void> CNValueForContact(
+  static Pointer CNValueForContact(
     Pointer<CNDatesDescription> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -15574,8 +15826,8 @@ class CNDatesDescription extends Struct<CNDatesDescription> {
 
   static int canUnifyValue(
     Pointer<CNDatesDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> withValue,
+    Pointer arg, {
+    @required Pointer withValue,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -15588,8 +15840,8 @@ class CNDatesDescription extends Struct<CNDatesDescription> {
 
   static void copyFromLabeledValue(
     Pointer<CNDatesDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toOwnedObject,
+    Pointer arg, {
+    @required Pointer toOwnedObject,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -15602,8 +15854,8 @@ class CNDatesDescription extends Struct<CNDatesDescription> {
 
   static void copyValueFromContact(
     Pointer<CNDatesDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toRemotePerson,
+    Pointer arg, {
+    @required Pointer toRemotePerson,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -15616,8 +15868,8 @@ class CNDatesDescription extends Struct<CNDatesDescription> {
 
   static void copyValueFromRemotePerson(
     Pointer<CNDatesDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toContact,
+    Pointer arg, {
+    @required Pointer toContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -15628,7 +15880,7 @@ class CNDatesDescription extends Struct<CNDatesDescription> {
     );
   }
 
-  static Pointer<Void> coreDataKey(
+  static Pointer coreDataKey(
     Pointer<CNDatesDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -15638,7 +15890,7 @@ class CNDatesDescription extends Struct<CNDatesDescription> {
     );
   }
 
-  static Pointer<Void> coreDataOwnedEntityName(
+  static Pointer coreDataOwnedEntityName(
     Pointer<CNDatesDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -15648,7 +15900,7 @@ class CNDatesDescription extends Struct<CNDatesDescription> {
     );
   }
 
-  static Pointer<Void> coreDataRelationshipKeyPathsToFetch(
+  static Pointer coreDataRelationshipKeyPathsToFetch(
     Pointer<CNDatesDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -15660,8 +15912,8 @@ class CNDatesDescription extends Struct<CNDatesDescription> {
 
   static void decodeUsingCoder(
     Pointer<CNDatesDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> contact,
+    Pointer arg, {
+    @required Pointer contact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -15674,8 +15926,8 @@ class CNDatesDescription extends Struct<CNDatesDescription> {
 
   static void encodeUsingCoder(
     Pointer<CNDatesDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> contact,
+    Pointer arg, {
+    @required Pointer contact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -15686,7 +15938,7 @@ class CNDatesDescription extends Struct<CNDatesDescription> {
     );
   }
 
-  static Pointer<Void> fromPlistTransform(
+  static Pointer fromPlistTransform(
     Pointer<CNDatesDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -15696,7 +15948,7 @@ class CNDatesDescription extends Struct<CNDatesDescription> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CNDatesDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -15708,8 +15960,8 @@ class CNDatesDescription extends Struct<CNDatesDescription> {
 
   static int isEqualForContact(
     Pointer<CNDatesDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> other,
+    Pointer arg, {
+    @required Pointer other,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -15732,8 +15984,8 @@ class CNDatesDescription extends Struct<CNDatesDescription> {
 
   static int isValidMultiValueValue(
     Pointer<CNDatesDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -15746,8 +15998,8 @@ class CNDatesDescription extends Struct<CNDatesDescription> {
 
   static int isValue(
     Pointer<CNDatesDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> preferredToUnifiedValue,
+    Pointer arg, {
+    @required Pointer preferredToUnifiedValue,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -15758,7 +16010,7 @@ class CNDatesDescription extends Struct<CNDatesDescription> {
     );
   }
 
-  static Pointer<Void> labeledValueClass(
+  static Pointer labeledValueClass(
     Pointer<CNDatesDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -15768,7 +16020,7 @@ class CNDatesDescription extends Struct<CNDatesDescription> {
     );
   }
 
-  static Pointer<Void> ownedObjectToLabeledValueValueTransform(
+  static Pointer ownedObjectToLabeledValueValueTransform(
     Pointer<CNDatesDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -15780,8 +16032,8 @@ class CNDatesDescription extends Struct<CNDatesDescription> {
 
   static void setCNValue(
     Pointer<CNDatesDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> onContact,
+    Pointer arg, {
+    @required Pointer onContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -15792,7 +16044,7 @@ class CNDatesDescription extends Struct<CNDatesDescription> {
     );
   }
 
-  static Pointer<Void> standardLabels(
+  static Pointer standardLabels(
     Pointer<CNDatesDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -15802,7 +16054,7 @@ class CNDatesDescription extends Struct<CNDatesDescription> {
     );
   }
 
-  static Pointer<Void> subCoreDataPredicatePropertiesByKey(
+  static Pointer subCoreDataPredicatePropertiesByKey(
     Pointer<CNDatesDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -15813,11 +16065,9 @@ class CNDatesDescription extends Struct<CNDatesDescription> {
   }
 }
 
-/// Objective-C class _CNDeduplication_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNDeduplication extends Struct<CNDeduplication> {
   factory CNDeduplication._() {
@@ -15830,10 +16080,10 @@ class CNDeduplication extends Struct<CNDeduplication> {
 
   static void addContactsForIds(
     Pointer<CNDeduplication> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toGroup,
-    @required Pointer<Void> usingRequest,
-    @required Pointer<Void> store,
+    Pointer arg, {
+    @required Pointer toGroup,
+    @required Pointer usingRequest,
+    @required Pointer store,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_returns_void(
@@ -15846,10 +16096,10 @@ class CNDeduplication extends Struct<CNDeduplication> {
     );
   }
 
-  static Pointer<Void> contactsForGroup(
+  static Pointer contactsForGroup(
     Pointer<CNDeduplication> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> store,
+    Pointer arg, {
+    @required Pointer store,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -15862,7 +16112,7 @@ class CNDeduplication extends Struct<CNDeduplication> {
 
   static void deduplicateAllContainers(
     Pointer<CNDeduplication> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -15874,8 +16124,8 @@ class CNDeduplication extends Struct<CNDeduplication> {
 
   static void deduplicateContainer(
     Pointer<CNDeduplication> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> store,
+    Pointer arg, {
+    @required Pointer store,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -15888,9 +16138,9 @@ class CNDeduplication extends Struct<CNDeduplication> {
 
   static void deduplicateKeeping(
     Pointer<CNDeduplication> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> deleting,
-    @required Pointer<Void> store,
+    Pointer arg, {
+    @required Pointer deleting,
+    @required Pointer store,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_void(
@@ -15902,9 +16152,9 @@ class CNDeduplication extends Struct<CNDeduplication> {
     );
   }
 
-  static Pointer<Void> identifierSetFromContacts(
+  static Pointer identifierSetFromContacts(
     Pointer<CNDeduplication> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -15915,11 +16165,9 @@ class CNDeduplication extends Struct<CNDeduplication> {
   }
 }
 
-/// Objective-C class _CNDepartmentDescription_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNDepartmentDescription extends Struct<CNDepartmentDescription> {
   factory CNDepartmentDescription._() {
@@ -15932,9 +16180,9 @@ class CNDepartmentDescription extends Struct<CNDepartmentDescription> {
         .cast<CNDepartmentDescription>();
   }
 
-  static Pointer<Void> CNValueForContact(
+  static Pointer CNValueForContact(
     Pointer<CNDepartmentDescription> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -15946,8 +16194,8 @@ class CNDepartmentDescription extends Struct<CNDepartmentDescription> {
 
   static void copyFromCoreDataContact(
     Pointer<CNDepartmentDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toContact,
+    Pointer arg, {
+    @required Pointer toContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -15960,8 +16208,8 @@ class CNDepartmentDescription extends Struct<CNDepartmentDescription> {
 
   static void copyValueFromContact(
     Pointer<CNDepartmentDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toRemotePerson,
+    Pointer arg, {
+    @required Pointer toRemotePerson,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -15974,8 +16222,8 @@ class CNDepartmentDescription extends Struct<CNDepartmentDescription> {
 
   static void copyValueFromRemotePerson(
     Pointer<CNDepartmentDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toContact,
+    Pointer arg, {
+    @required Pointer toContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -15986,7 +16234,7 @@ class CNDepartmentDescription extends Struct<CNDepartmentDescription> {
     );
   }
 
-  static Pointer<Void> coreDataKey(
+  static Pointer coreDataKey(
     Pointer<CNDepartmentDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -15998,8 +16246,8 @@ class CNDepartmentDescription extends Struct<CNDepartmentDescription> {
 
   static void decodeUsingCoder(
     Pointer<CNDepartmentDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> contact,
+    Pointer arg, {
+    @required Pointer contact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -16012,8 +16260,8 @@ class CNDepartmentDescription extends Struct<CNDepartmentDescription> {
 
   static void encodeUsingCoder(
     Pointer<CNDepartmentDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> contact,
+    Pointer arg, {
+    @required Pointer contact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -16024,7 +16272,7 @@ class CNDepartmentDescription extends Struct<CNDepartmentDescription> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CNDepartmentDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -16036,8 +16284,8 @@ class CNDepartmentDescription extends Struct<CNDepartmentDescription> {
 
   static int isEqualForContact(
     Pointer<CNDepartmentDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> other,
+    Pointer arg, {
+    @required Pointer other,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -16060,8 +16308,8 @@ class CNDepartmentDescription extends Struct<CNDepartmentDescription> {
 
   static void setCNValue(
     Pointer<CNDepartmentDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> onContact,
+    Pointer arg, {
+    @required Pointer onContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -16073,11 +16321,9 @@ class CNDepartmentDescription extends Struct<CNDepartmentDescription> {
   }
 }
 
-/// Objective-C class _CNDictionaryPolicy_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNDictionaryPolicy extends Struct<CNDictionaryPolicy> {
   factory CNDictionaryPolicy._() {
@@ -16088,9 +16334,9 @@ class CNDictionaryPolicy extends Struct<CNDictionaryPolicy> {
     return _objc.allocate("CNDictionaryPolicy").cast<CNDictionaryPolicy>();
   }
 
-  static Pointer<Void> contactRestrictionsForLabeledProperty(
+  static Pointer contactRestrictionsForLabeledProperty(
     Pointer<CNDictionaryPolicy> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -16100,9 +16346,9 @@ class CNDictionaryPolicy extends Struct<CNDictionaryPolicy> {
     );
   }
 
-  static Pointer<Void> initWithDictionary(
+  static Pointer initWithDictionary(
     Pointer<CNDictionaryPolicy> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -16114,7 +16360,7 @@ class CNDictionaryPolicy extends Struct<CNDictionaryPolicy> {
 
   static int isContactPropertySupported(
     Pointer<CNDictionaryPolicy> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -16126,7 +16372,7 @@ class CNDictionaryPolicy extends Struct<CNDictionaryPolicy> {
 
   static int maximumCountOfValuesForContactProperty$(
     Pointer<CNDictionaryPolicy> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Uint64(
@@ -16138,8 +16384,8 @@ class CNDictionaryPolicy extends Struct<CNDictionaryPolicy> {
 
   static int maximumCountOfValuesForContactProperty$label$(
     Pointer<CNDictionaryPolicy> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> label,
+    Pointer arg, {
+    @required Pointer label,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Uint64(
@@ -16150,9 +16396,9 @@ class CNDictionaryPolicy extends Struct<CNDictionaryPolicy> {
     );
   }
 
-  static Pointer<Void> supportedLabelsForContactProperty(
+  static Pointer supportedLabelsForContactProperty(
     Pointer<CNDictionaryPolicy> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -16162,9 +16408,9 @@ class CNDictionaryPolicy extends Struct<CNDictionaryPolicy> {
     );
   }
 
-  static Pointer<Void> unsupportedAttributesForLableledContactProperty(
+  static Pointer unsupportedAttributesForLableledContactProperty(
     Pointer<CNDictionaryPolicy> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -16175,11 +16421,9 @@ class CNDictionaryPolicy extends Struct<CNDictionaryPolicy> {
   }
 }
 
-/// Objective-C class _CNDisplayNameOrderDescription_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNDisplayNameOrderDescription
     extends Struct<CNDisplayNameOrderDescription> {
@@ -16193,9 +16437,9 @@ class CNDisplayNameOrderDescription
         .cast<CNDisplayNameOrderDescription>();
   }
 
-  static Pointer<Void> CNValueForContact(
+  static Pointer CNValueForContact(
     Pointer<CNDisplayNameOrderDescription> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -16215,7 +16459,7 @@ class CNDisplayNameOrderDescription
     );
   }
 
-  static Pointer<Void> coreDataBitMaskedValuesMap(
+  static Pointer coreDataBitMaskedValuesMap(
     Pointer<CNDisplayNameOrderDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -16225,7 +16469,7 @@ class CNDisplayNameOrderDescription
     );
   }
 
-  static Pointer<Void> coreDataKey(
+  static Pointer coreDataKey(
     Pointer<CNDisplayNameOrderDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -16237,8 +16481,8 @@ class CNDisplayNameOrderDescription
 
   static void decodeUsingCoder(
     Pointer<CNDisplayNameOrderDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> contact,
+    Pointer arg, {
+    @required Pointer contact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -16251,8 +16495,8 @@ class CNDisplayNameOrderDescription
 
   static void encodeUsingCoder(
     Pointer<CNDisplayNameOrderDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> contact,
+    Pointer arg, {
+    @required Pointer contact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -16263,10 +16507,10 @@ class CNDisplayNameOrderDescription
     );
   }
 
-  static Pointer<Void> flagsWithFlags(
+  static Pointer flagsWithFlags(
     Pointer<CNDisplayNameOrderDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> nameOrder,
+    Pointer arg, {
+    @required Pointer nameOrder,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -16277,7 +16521,7 @@ class CNDisplayNameOrderDescription
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CNDisplayNameOrderDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -16289,8 +16533,8 @@ class CNDisplayNameOrderDescription
 
   static int isEqualForContact(
     Pointer<CNDisplayNameOrderDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> other,
+    Pointer arg, {
+    @required Pointer other,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -16303,8 +16547,8 @@ class CNDisplayNameOrderDescription
 
   static int isValidValue(
     Pointer<CNDisplayNameOrderDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -16315,9 +16559,9 @@ class CNDisplayNameOrderDescription
     );
   }
 
-  static Pointer<Void> nameOrderFromFlags(
+  static Pointer nameOrderFromFlags(
     Pointer<CNDisplayNameOrderDescription> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -16327,7 +16571,7 @@ class CNDisplayNameOrderDescription
     );
   }
 
-  static Pointer<Void> nilValue(
+  static Pointer nilValue(
     Pointer<CNDisplayNameOrderDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -16339,8 +16583,8 @@ class CNDisplayNameOrderDescription
 
   static void setCNValue(
     Pointer<CNDisplayNameOrderDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> onContact,
+    Pointer arg, {
+    @required Pointer onContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -16353,8 +16597,8 @@ class CNDisplayNameOrderDescription
 
   static void setValue(
     Pointer<CNDisplayNameOrderDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> onCoreDataContact,
+    Pointer arg, {
+    @required Pointer onCoreDataContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -16365,7 +16609,7 @@ class CNDisplayNameOrderDescription
     );
   }
 
-  static Pointer<Void> valueClass(
+  static Pointer valueClass(
     Pointer<CNDisplayNameOrderDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -16375,9 +16619,9 @@ class CNDisplayNameOrderDescription
     );
   }
 
-  static Pointer<Void> valueFromCoreDataContact(
+  static Pointer valueFromCoreDataContact(
     Pointer<CNDisplayNameOrderDescription> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -16388,11 +16632,9 @@ class CNDisplayNameOrderDescription
   }
 }
 
-/// Objective-C class _CNDonatedContactSanitizer_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNDonatedContactSanitizer extends Struct<CNDonatedContactSanitizer> {
   factory CNDonatedContactSanitizer._() {
@@ -16406,11 +16648,9 @@ class CNDonatedContactSanitizer extends Struct<CNDonatedContactSanitizer> {
   }
 }
 
-/// Objective-C class _CNDonationMapper_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNDonationMapper extends Struct<CNDonationMapper> {
   factory CNDonationMapper._() {
@@ -16421,10 +16661,10 @@ class CNDonationMapper extends Struct<CNDonationMapper> {
     return _objc.allocate("CNDonationMapper").cast<CNDonationMapper>();
   }
 
-  static Pointer<Void> accountsMatchingPredicate(
+  static Pointer accountsMatchingPredicate(
     Pointer<CNDonationMapper> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -16435,9 +16675,9 @@ class CNDonationMapper extends Struct<CNDonationMapper> {
     );
   }
 
-  static Pointer<Void> contactObservableForFetchRequest(
+  static Pointer contactObservableForFetchRequest(
     Pointer<CNDonationMapper> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -16447,10 +16687,10 @@ class CNDonationMapper extends Struct<CNDonationMapper> {
     );
   }
 
-  static Pointer<Void> containersMatchingPredicate(
+  static Pointer containersMatchingPredicate(
     Pointer<CNDonationMapper> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -16461,7 +16701,7 @@ class CNDonationMapper extends Struct<CNDonationMapper> {
     );
   }
 
-  static Pointer<Void> defaultContainerIdentifier(
+  static Pointer defaultContainerIdentifier(
     Pointer<CNDonationMapper> _self,
   ) {
     _openDynamicLibrary();
@@ -16471,7 +16711,7 @@ class CNDonationMapper extends Struct<CNDonationMapper> {
     );
   }
 
-  static Pointer<Void> donationStore(
+  static Pointer donationStore(
     Pointer<CNDonationMapper> _self,
   ) {
     _openDynamicLibrary();
@@ -16481,7 +16721,7 @@ class CNDonationMapper extends Struct<CNDonationMapper> {
     );
   }
 
-  static Pointer<Void> environment(
+  static Pointer environment(
     Pointer<CNDonationMapper> _self,
   ) {
     _openDynamicLibrary();
@@ -16493,9 +16733,9 @@ class CNDonationMapper extends Struct<CNDonationMapper> {
 
   static int executeSaveRequest$response$error$(
     Pointer<CNDonationMapper> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> response,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> response,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_Int8(
@@ -16509,8 +16749,8 @@ class CNDonationMapper extends Struct<CNDonationMapper> {
 
   static int executeSaveRequest$error$(
     Pointer<CNDonationMapper> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -16521,10 +16761,10 @@ class CNDonationMapper extends Struct<CNDonationMapper> {
     );
   }
 
-  static Pointer<Void> groupsMatchingPredicate(
+  static Pointer groupsMatchingPredicate(
     Pointer<CNDonationMapper> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -16535,10 +16775,10 @@ class CNDonationMapper extends Struct<CNDonationMapper> {
     );
   }
 
-  static Pointer<Void> initWithContactsEnvironment(
+  static Pointer initWithContactsEnvironment(
     Pointer<CNDonationMapper> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> managedConfiguration,
+    Pointer arg, {
+    @required Pointer managedConfiguration,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -16549,10 +16789,10 @@ class CNDonationMapper extends Struct<CNDonationMapper> {
     );
   }
 
-  static Pointer<Void> initWithDonationStore(
+  static Pointer initWithDonationStore(
     Pointer<CNDonationMapper> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> environment,
+    Pointer arg, {
+    @required Pointer environment,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -16563,9 +16803,9 @@ class CNDonationMapper extends Struct<CNDonationMapper> {
     );
   }
 
-  static Pointer<Void> meContactIdentifiers(
+  static Pointer meContactIdentifiers(
     Pointer<CNDonationMapper> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -16575,10 +16815,10 @@ class CNDonationMapper extends Struct<CNDonationMapper> {
     );
   }
 
-  static Pointer<Void> policyForContainerWithIdentifier(
+  static Pointer policyForContainerWithIdentifier(
     Pointer<CNDonationMapper> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -16592,7 +16832,7 @@ class CNDonationMapper extends Struct<CNDonationMapper> {
   static void requestAccessForEntityType$completionHandler$(
     Pointer<CNDonationMapper> _self,
     int arg, {
-    @required Pointer<Void> completionHandler,
+    @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_Int64_p_returns_void(
@@ -16606,7 +16846,7 @@ class CNDonationMapper extends Struct<CNDonationMapper> {
   static int requestAccessForEntityType$error$(
     Pointer<CNDonationMapper> _self,
     int arg, {
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_Int64_p_returns_Int8(
@@ -16617,10 +16857,10 @@ class CNDonationMapper extends Struct<CNDonationMapper> {
     );
   }
 
-  static Pointer<Void> serverSearchContainersMatchingPredicate(
+  static Pointer serverSearchContainersMatchingPredicate(
     Pointer<CNDonationMapper> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -16631,10 +16871,10 @@ class CNDonationMapper extends Struct<CNDonationMapper> {
     );
   }
 
-  static Pointer<Void> subgroupsOfGroupWithIdentifier(
+  static Pointer subgroupsOfGroupWithIdentifier(
     Pointer<CNDonationMapper> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -16646,11 +16886,9 @@ class CNDonationMapper extends Struct<CNDonationMapper> {
   }
 }
 
-/// Objective-C class _CNDraggingContact_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNDraggingContact extends Struct<CNDraggingContact> {
   factory CNDraggingContact._() {
@@ -16661,7 +16899,7 @@ class CNDraggingContact extends Struct<CNDraggingContact> {
     return _objc.allocate("CNDraggingContact").cast<CNDraggingContact>();
   }
 
-  static Pointer<Void> cachedFileURLRepresentation(
+  static Pointer cachedFileURLRepresentation(
     Pointer<CNDraggingContact> _self,
   ) {
     _openDynamicLibrary();
@@ -16681,7 +16919,7 @@ class CNDraggingContact extends Struct<CNDraggingContact> {
     );
   }
 
-  static Pointer<Void> contact(
+  static Pointer contact(
     Pointer<CNDraggingContact> _self,
   ) {
     _openDynamicLibrary();
@@ -16691,7 +16929,7 @@ class CNDraggingContact extends Struct<CNDraggingContact> {
     );
   }
 
-  static Pointer<Void> contactStore(
+  static Pointer contactStore(
     Pointer<CNDraggingContact> _self,
   ) {
     _openDynamicLibrary();
@@ -16701,9 +16939,9 @@ class CNDraggingContact extends Struct<CNDraggingContact> {
     );
   }
 
-  static Pointer<Void> dataRepresentationForType(
+  static Pointer dataRepresentationForType(
     Pointer<CNDraggingContact> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -16713,9 +16951,9 @@ class CNDraggingContact extends Struct<CNDraggingContact> {
     );
   }
 
-  static Pointer<Void> fetchContactWithKeys(
+  static Pointer fetchContactWithKeys(
     Pointer<CNDraggingContact> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -16725,9 +16963,9 @@ class CNDraggingContact extends Struct<CNDraggingContact> {
     );
   }
 
-  static Pointer<Void> fileNameForContact(
+  static Pointer fileNameForContact(
     Pointer<CNDraggingContact> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -16737,7 +16975,7 @@ class CNDraggingContact extends Struct<CNDraggingContact> {
     );
   }
 
-  static Pointer<Void> fileURLRepresentation(
+  static Pointer fileURLRepresentation(
     Pointer<CNDraggingContact> _self,
   ) {
     _openDynamicLibrary();
@@ -16747,10 +16985,10 @@ class CNDraggingContact extends Struct<CNDraggingContact> {
     );
   }
 
-  static Pointer<Void> initWithContact(
+  static Pointer initWithContact(
     Pointer<CNDraggingContact> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> contactStore,
+    Pointer arg, {
+    @required Pointer contactStore,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -16761,9 +16999,9 @@ class CNDraggingContact extends Struct<CNDraggingContact> {
     );
   }
 
-  static Pointer<Void> serializeContactToVCard(
+  static Pointer serializeContactToVCard(
     Pointer<CNDraggingContact> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -16775,7 +17013,7 @@ class CNDraggingContact extends Struct<CNDraggingContact> {
 
   static void setCachedFileURLRepresentation(
     Pointer<CNDraggingContact> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -16787,7 +17025,7 @@ class CNDraggingContact extends Struct<CNDraggingContact> {
 
   static void setContact(
     Pointer<CNDraggingContact> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -16799,7 +17037,7 @@ class CNDraggingContact extends Struct<CNDraggingContact> {
 
   static void setContactStore(
     Pointer<CNDraggingContact> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -16810,11 +17048,9 @@ class CNDraggingContact extends Struct<CNDraggingContact> {
   }
 }
 
-/// Objective-C class _CNEmailAddressContactPredicate_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNEmailAddressContactPredicate
     extends Struct<CNEmailAddressContactPredicate> {
@@ -16828,7 +17064,7 @@ class CNEmailAddressContactPredicate
         .cast<CNEmailAddressContactPredicate>();
   }
 
-  static Pointer<Void> cn_coreDataPredicate(
+  static Pointer cn_coreDataPredicate(
     Pointer<CNEmailAddressContactPredicate> _self,
   ) {
     _openDynamicLibrary();
@@ -16838,7 +17074,7 @@ class CNEmailAddressContactPredicate
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CNEmailAddressContactPredicate> _self,
   ) {
     _openDynamicLibrary();
@@ -16848,7 +17084,7 @@ class CNEmailAddressContactPredicate
     );
   }
 
-  static Pointer<Void> emailAddress(
+  static Pointer emailAddress(
     Pointer<CNEmailAddressContactPredicate> _self,
   ) {
     _openDynamicLibrary();
@@ -16860,7 +17096,7 @@ class CNEmailAddressContactPredicate
 
   static void encodeWithCoder(
     Pointer<CNEmailAddressContactPredicate> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -16880,9 +17116,9 @@ class CNEmailAddressContactPredicate
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CNEmailAddressContactPredicate> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -16892,9 +17128,9 @@ class CNEmailAddressContactPredicate
     );
   }
 
-  static Pointer<Void> initWithEmailAddress(
+  static Pointer initWithEmailAddress(
     Pointer<CNEmailAddressContactPredicate> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int returnMultipleResults,
   }) {
     _openDynamicLibrary();
@@ -16908,7 +17144,7 @@ class CNEmailAddressContactPredicate
 
   static int isEqual(
     Pointer<CNEmailAddressContactPredicate> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -16928,12 +17164,12 @@ class CNEmailAddressContactPredicate
     );
   }
 
-  static Pointer<Void> sgContactMatchesWithSortOrder(
+  static Pointer sgContactMatchesWithSortOrder(
     Pointer<CNEmailAddressContactPredicate> _self,
     int arg, {
     @required int mutableObjects,
-    @required Pointer<Void> service,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer service,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_Int64_Int8_p_p_returns_p(
@@ -16947,7 +17183,7 @@ class CNEmailAddressContactPredicate
     );
   }
 
-  static Pointer<Void> shortDebugDescription(
+  static Pointer shortDebugDescription(
     Pointer<CNEmailAddressContactPredicate> _self,
   ) {
     _openDynamicLibrary();
@@ -16958,11 +17194,9 @@ class CNEmailAddressContactPredicate
   }
 }
 
-/// Objective-C class _CNEmailAddressesDescription_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNEmailAddressesDescription extends Struct<CNEmailAddressesDescription> {
   factory CNEmailAddressesDescription._() {
@@ -16975,9 +17209,9 @@ class CNEmailAddressesDescription extends Struct<CNEmailAddressesDescription> {
         .cast<CNEmailAddressesDescription>();
   }
 
-  static Pointer<Void> CNValueForContact(
+  static Pointer CNValueForContact(
     Pointer<CNEmailAddressesDescription> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -16989,8 +17223,8 @@ class CNEmailAddressesDescription extends Struct<CNEmailAddressesDescription> {
 
   static int canUnifyValue(
     Pointer<CNEmailAddressesDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> withValue,
+    Pointer arg, {
+    @required Pointer withValue,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -17003,8 +17237,8 @@ class CNEmailAddressesDescription extends Struct<CNEmailAddressesDescription> {
 
   static void copyFromCoreDataContact(
     Pointer<CNEmailAddressesDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toContact,
+    Pointer arg, {
+    @required Pointer toContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -17017,8 +17251,8 @@ class CNEmailAddressesDescription extends Struct<CNEmailAddressesDescription> {
 
   static void copyFromLabeledValue(
     Pointer<CNEmailAddressesDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toOwnedObject,
+    Pointer arg, {
+    @required Pointer toOwnedObject,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -17031,8 +17265,8 @@ class CNEmailAddressesDescription extends Struct<CNEmailAddressesDescription> {
 
   static void copyValueFromContact(
     Pointer<CNEmailAddressesDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toRemotePerson,
+    Pointer arg, {
+    @required Pointer toRemotePerson,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -17045,8 +17279,8 @@ class CNEmailAddressesDescription extends Struct<CNEmailAddressesDescription> {
 
   static void copyValueFromRemotePerson(
     Pointer<CNEmailAddressesDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toContact,
+    Pointer arg, {
+    @required Pointer toContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -17057,7 +17291,7 @@ class CNEmailAddressesDescription extends Struct<CNEmailAddressesDescription> {
     );
   }
 
-  static Pointer<Void> coreDataKey(
+  static Pointer coreDataKey(
     Pointer<CNEmailAddressesDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -17067,7 +17301,7 @@ class CNEmailAddressesDescription extends Struct<CNEmailAddressesDescription> {
     );
   }
 
-  static Pointer<Void> coreDataOwnedEntityName(
+  static Pointer coreDataOwnedEntityName(
     Pointer<CNEmailAddressesDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -17077,7 +17311,7 @@ class CNEmailAddressesDescription extends Struct<CNEmailAddressesDescription> {
     );
   }
 
-  static Pointer<Void> coreDataRelationshipKeyPathsToFetch(
+  static Pointer coreDataRelationshipKeyPathsToFetch(
     Pointer<CNEmailAddressesDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -17089,8 +17323,8 @@ class CNEmailAddressesDescription extends Struct<CNEmailAddressesDescription> {
 
   static void decodeUsingCoder(
     Pointer<CNEmailAddressesDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> contact,
+    Pointer arg, {
+    @required Pointer contact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -17103,8 +17337,8 @@ class CNEmailAddressesDescription extends Struct<CNEmailAddressesDescription> {
 
   static void encodeUsingCoder(
     Pointer<CNEmailAddressesDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> contact,
+    Pointer arg, {
+    @required Pointer contact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -17115,7 +17349,7 @@ class CNEmailAddressesDescription extends Struct<CNEmailAddressesDescription> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CNEmailAddressesDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -17127,8 +17361,8 @@ class CNEmailAddressesDescription extends Struct<CNEmailAddressesDescription> {
 
   static int isEqualForContact(
     Pointer<CNEmailAddressesDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> other,
+    Pointer arg, {
+    @required Pointer other,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -17149,7 +17383,7 @@ class CNEmailAddressesDescription extends Struct<CNEmailAddressesDescription> {
     );
   }
 
-  static Pointer<Void> ownedObjectToLabeledValueValueTransform(
+  static Pointer ownedObjectToLabeledValueValueTransform(
     Pointer<CNEmailAddressesDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -17161,8 +17395,8 @@ class CNEmailAddressesDescription extends Struct<CNEmailAddressesDescription> {
 
   static void setCNValue(
     Pointer<CNEmailAddressesDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> onContact,
+    Pointer arg, {
+    @required Pointer onContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -17173,7 +17407,7 @@ class CNEmailAddressesDescription extends Struct<CNEmailAddressesDescription> {
     );
   }
 
-  static Pointer<Void> standardLabels(
+  static Pointer standardLabels(
     Pointer<CNEmailAddressesDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -17183,7 +17417,7 @@ class CNEmailAddressesDescription extends Struct<CNEmailAddressesDescription> {
     );
   }
 
-  static Pointer<Void> subCoreDataPredicatePropertiesByKey(
+  static Pointer subCoreDataPredicatePropertiesByKey(
     Pointer<CNEmailAddressesDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -17194,11 +17428,9 @@ class CNEmailAddressesDescription extends Struct<CNEmailAddressesDescription> {
   }
 }
 
-/// Objective-C class _CNErrorFactory_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNErrorFactory extends Struct<CNErrorFactory> {
   factory CNErrorFactory._() {
@@ -17210,11 +17442,9 @@ class CNErrorFactory extends Struct<CNErrorFactory> {
   }
 }
 
-/// Objective-C class _CNFamilyNameDescription_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNFamilyNameDescription extends Struct<CNFamilyNameDescription> {
   factory CNFamilyNameDescription._() {
@@ -17227,9 +17457,9 @@ class CNFamilyNameDescription extends Struct<CNFamilyNameDescription> {
         .cast<CNFamilyNameDescription>();
   }
 
-  static Pointer<Void> CNValueForContact(
+  static Pointer CNValueForContact(
     Pointer<CNFamilyNameDescription> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -17241,8 +17471,8 @@ class CNFamilyNameDescription extends Struct<CNFamilyNameDescription> {
 
   static void copyFromCoreDataContact(
     Pointer<CNFamilyNameDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toContact,
+    Pointer arg, {
+    @required Pointer toContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -17255,8 +17485,8 @@ class CNFamilyNameDescription extends Struct<CNFamilyNameDescription> {
 
   static void copyValueFromContact(
     Pointer<CNFamilyNameDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toRemotePerson,
+    Pointer arg, {
+    @required Pointer toRemotePerson,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -17269,8 +17499,8 @@ class CNFamilyNameDescription extends Struct<CNFamilyNameDescription> {
 
   static void copyValueFromRemotePerson(
     Pointer<CNFamilyNameDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toContact,
+    Pointer arg, {
+    @required Pointer toContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -17281,7 +17511,7 @@ class CNFamilyNameDescription extends Struct<CNFamilyNameDescription> {
     );
   }
 
-  static Pointer<Void> coreDataKey(
+  static Pointer coreDataKey(
     Pointer<CNFamilyNameDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -17293,8 +17523,8 @@ class CNFamilyNameDescription extends Struct<CNFamilyNameDescription> {
 
   static void decodeUsingCoder(
     Pointer<CNFamilyNameDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> contact,
+    Pointer arg, {
+    @required Pointer contact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -17307,8 +17537,8 @@ class CNFamilyNameDescription extends Struct<CNFamilyNameDescription> {
 
   static void encodeUsingCoder(
     Pointer<CNFamilyNameDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> contact,
+    Pointer arg, {
+    @required Pointer contact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -17319,7 +17549,7 @@ class CNFamilyNameDescription extends Struct<CNFamilyNameDescription> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CNFamilyNameDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -17331,8 +17561,8 @@ class CNFamilyNameDescription extends Struct<CNFamilyNameDescription> {
 
   static int isEqualForContact(
     Pointer<CNFamilyNameDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> other,
+    Pointer arg, {
+    @required Pointer other,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -17355,8 +17585,8 @@ class CNFamilyNameDescription extends Struct<CNFamilyNameDescription> {
 
   static void setCNValue(
     Pointer<CNFamilyNameDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> onContact,
+    Pointer arg, {
+    @required Pointer onContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -17368,11 +17598,9 @@ class CNFamilyNameDescription extends Struct<CNFamilyNameDescription> {
   }
 }
 
-/// Objective-C class _CNFamilyNameFirstNameOrder_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNFamilyNameFirstNameOrder extends Struct<CNFamilyNameFirstNameOrder> {
   factory CNFamilyNameFirstNameOrder._() {
@@ -17395,7 +17623,7 @@ class CNFamilyNameFirstNameOrder extends Struct<CNFamilyNameFirstNameOrder> {
     );
   }
 
-  static Pointer<Void> nameProperties(
+  static Pointer nameProperties(
     Pointer<CNFamilyNameFirstNameOrder> _self,
   ) {
     _openDynamicLibrary();
@@ -17405,7 +17633,7 @@ class CNFamilyNameFirstNameOrder extends Struct<CNFamilyNameFirstNameOrder> {
     );
   }
 
-  static Pointer<Void> phoneticNameProperties(
+  static Pointer phoneticNameProperties(
     Pointer<CNFamilyNameFirstNameOrder> _self,
   ) {
     _openDynamicLibrary();
@@ -17415,7 +17643,7 @@ class CNFamilyNameFirstNameOrder extends Struct<CNFamilyNameFirstNameOrder> {
     );
   }
 
-  static Pointer<Void> sortingNameProperties(
+  static Pointer sortingNameProperties(
     Pointer<CNFamilyNameFirstNameOrder> _self,
   ) {
     _openDynamicLibrary();
@@ -17426,11 +17654,9 @@ class CNFamilyNameFirstNameOrder extends Struct<CNFamilyNameFirstNameOrder> {
   }
 }
 
-/// Objective-C class _CNFavoritesEntry_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNFavoritesEntry extends Struct<CNFavoritesEntry> {
   factory CNFavoritesEntry._() {
@@ -17441,7 +17667,7 @@ class CNFavoritesEntry extends Struct<CNFavoritesEntry> {
     return _objc.allocate("CNFavoritesEntry").cast<CNFavoritesEntry>();
   }
 
-  static Pointer<Void> abDatabaseUUID(
+  static Pointer abDatabaseUUID(
     Pointer<CNFavoritesEntry> _self,
   ) {
     _openDynamicLibrary();
@@ -17471,7 +17697,7 @@ class CNFavoritesEntry extends Struct<CNFavoritesEntry> {
     );
   }
 
-  static Pointer<Void> actionType(
+  static Pointer actionType(
     Pointer<CNFavoritesEntry> _self,
   ) {
     _openDynamicLibrary();
@@ -17483,7 +17709,7 @@ class CNFavoritesEntry extends Struct<CNFavoritesEntry> {
 
   static void applyChangeRecord(
     Pointer<CNFavoritesEntry> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -17493,7 +17719,7 @@ class CNFavoritesEntry extends Struct<CNFavoritesEntry> {
     );
   }
 
-  static Pointer<Void> bundleIdentifier(
+  static Pointer bundleIdentifier(
     Pointer<CNFavoritesEntry> _self,
   ) {
     _openDynamicLibrary();
@@ -17503,7 +17729,7 @@ class CNFavoritesEntry extends Struct<CNFavoritesEntry> {
     );
   }
 
-  static Pointer<Void> contact(
+  static Pointer contact(
     Pointer<CNFavoritesEntry> _self,
   ) {
     _openDynamicLibrary();
@@ -17513,7 +17739,7 @@ class CNFavoritesEntry extends Struct<CNFavoritesEntry> {
     );
   }
 
-  static Pointer<Void> contactProperty(
+  static Pointer contactProperty(
     Pointer<CNFavoritesEntry> _self,
   ) {
     _openDynamicLibrary();
@@ -17523,7 +17749,7 @@ class CNFavoritesEntry extends Struct<CNFavoritesEntry> {
     );
   }
 
-  static Pointer<Void> contactStore(
+  static Pointer contactStore(
     Pointer<CNFavoritesEntry> _self,
   ) {
     _openDynamicLibrary();
@@ -17543,7 +17769,7 @@ class CNFavoritesEntry extends Struct<CNFavoritesEntry> {
     );
   }
 
-  static Pointer<Void> dictionaryRepresentation(
+  static Pointer dictionaryRepresentation(
     Pointer<CNFavoritesEntry> _self,
   ) {
     _openDynamicLibrary();
@@ -17555,7 +17781,7 @@ class CNFavoritesEntry extends Struct<CNFavoritesEntry> {
 
   static void dictionaryRepresentation$isDirty$(
     Pointer<CNFavoritesEntry> _self,
-    Pointer<Pointer<Void>> arg, {
+    Pointer<Pointer> arg, {
     @required Pointer<Int8> isDirty,
   }) {
     _openDynamicLibrary();
@@ -17577,11 +17803,11 @@ class CNFavoritesEntry extends Struct<CNFavoritesEntry> {
     );
   }
 
-  static Pointer<Void> initWithContact$propertyKey$identifier$type$(
+  static Pointer initWithContact$propertyKey$identifier$type$(
     Pointer<CNFavoritesEntry> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> propertyKey,
-    @required Pointer<Void> identifier,
+    Pointer arg, {
+    @required Pointer propertyKey,
+    @required Pointer identifier,
     @required int type,
   }) {
     _openDynamicLibrary();
@@ -17595,13 +17821,13 @@ class CNFavoritesEntry extends Struct<CNFavoritesEntry> {
     );
   }
 
-  static Pointer<Void> initWithContact$propertyKey$identifier$type$store$(
+  static Pointer initWithContact$propertyKey$identifier$type$store$(
     Pointer<CNFavoritesEntry> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> propertyKey,
-    @required Pointer<Void> identifier,
+    Pointer arg, {
+    @required Pointer propertyKey,
+    @required Pointer identifier,
     @required int type,
-    @required Pointer<Void> store,
+    @required Pointer store,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_Int64_p_returns_p(
@@ -17615,15 +17841,15 @@ class CNFavoritesEntry extends Struct<CNFavoritesEntry> {
     );
   }
 
-  static Pointer<Void>
+  static Pointer
       initWithContact$propertyKey$labeledValueIdentifier$actionType$bundleIdentifier$store$(
     Pointer<CNFavoritesEntry> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> propertyKey,
-    @required Pointer<Void> labeledValueIdentifier,
-    @required Pointer<Void> actionType,
-    @required Pointer<Void> bundleIdentifier,
-    @required Pointer<Void> store,
+    Pointer arg, {
+    @required Pointer propertyKey,
+    @required Pointer labeledValueIdentifier,
+    @required Pointer actionType,
+    @required Pointer bundleIdentifier,
+    @required Pointer store,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_p_p_returns_p(
@@ -17639,10 +17865,10 @@ class CNFavoritesEntry extends Struct<CNFavoritesEntry> {
     );
   }
 
-  static Pointer<Void> initWithDictionaryRepresentation(
+  static Pointer initWithDictionaryRepresentation(
     Pointer<CNFavoritesEntry> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> store,
+    Pointer arg, {
+    @required Pointer store,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -17655,7 +17881,7 @@ class CNFavoritesEntry extends Struct<CNFavoritesEntry> {
 
   static int isEqual(
     Pointer<CNFavoritesEntry> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -17665,7 +17891,7 @@ class CNFavoritesEntry extends Struct<CNFavoritesEntry> {
     );
   }
 
-  static Pointer<Void> label(
+  static Pointer label(
     Pointer<CNFavoritesEntry> _self,
   ) {
     _openDynamicLibrary();
@@ -17675,7 +17901,7 @@ class CNFavoritesEntry extends Struct<CNFavoritesEntry> {
     );
   }
 
-  static Pointer<Void> labeledValueIdentifier(
+  static Pointer labeledValueIdentifier(
     Pointer<CNFavoritesEntry> _self,
   ) {
     _openDynamicLibrary();
@@ -17685,7 +17911,7 @@ class CNFavoritesEntry extends Struct<CNFavoritesEntry> {
     );
   }
 
-  static Pointer<Void> name(
+  static Pointer name(
     Pointer<CNFavoritesEntry> _self,
   ) {
     _openDynamicLibrary();
@@ -17705,7 +17931,7 @@ class CNFavoritesEntry extends Struct<CNFavoritesEntry> {
     );
   }
 
-  static Pointer<Void> originalName(
+  static Pointer originalName(
     Pointer<CNFavoritesEntry> _self,
   ) {
     _openDynamicLibrary();
@@ -17715,7 +17941,7 @@ class CNFavoritesEntry extends Struct<CNFavoritesEntry> {
     );
   }
 
-  static Pointer<Void> propertyKey(
+  static Pointer propertyKey(
     Pointer<CNFavoritesEntry> _self,
   ) {
     _openDynamicLibrary();
@@ -17725,7 +17951,7 @@ class CNFavoritesEntry extends Struct<CNFavoritesEntry> {
     );
   }
 
-  static Pointer<Pointer<Void>> rematch(
+  static Pointer<Pointer> rematch(
     Pointer<CNFavoritesEntry> _self,
   ) {
     _openDynamicLibrary();
@@ -17757,7 +17983,7 @@ class CNFavoritesEntry extends Struct<CNFavoritesEntry> {
 
   static void setAbDatabaseUUID(
     Pointer<CNFavoritesEntry> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -17793,7 +18019,7 @@ class CNFavoritesEntry extends Struct<CNFavoritesEntry> {
 
   static void setActionType(
     Pointer<CNFavoritesEntry> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -17805,7 +18031,7 @@ class CNFavoritesEntry extends Struct<CNFavoritesEntry> {
 
   static void setBundleIdentifier(
     Pointer<CNFavoritesEntry> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -17817,7 +18043,7 @@ class CNFavoritesEntry extends Struct<CNFavoritesEntry> {
 
   static void setContact(
     Pointer<CNFavoritesEntry> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -17829,7 +18055,7 @@ class CNFavoritesEntry extends Struct<CNFavoritesEntry> {
 
   static void setContactStore(
     Pointer<CNFavoritesEntry> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -17853,7 +18079,7 @@ class CNFavoritesEntry extends Struct<CNFavoritesEntry> {
 
   static void setLabel(
     Pointer<CNFavoritesEntry> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -17865,7 +18091,7 @@ class CNFavoritesEntry extends Struct<CNFavoritesEntry> {
 
   static void setLabeledValueIdentifier(
     Pointer<CNFavoritesEntry> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -17889,7 +18115,7 @@ class CNFavoritesEntry extends Struct<CNFavoritesEntry> {
 
   static void setOriginalName(
     Pointer<CNFavoritesEntry> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -17901,7 +18127,7 @@ class CNFavoritesEntry extends Struct<CNFavoritesEntry> {
 
   static void setPropertyKey(
     Pointer<CNFavoritesEntry> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -17925,7 +18151,7 @@ class CNFavoritesEntry extends Struct<CNFavoritesEntry> {
 
   static void setValue(
     Pointer<CNFavoritesEntry> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -17945,7 +18171,7 @@ class CNFavoritesEntry extends Struct<CNFavoritesEntry> {
     );
   }
 
-  static Pointer<Void> value(
+  static Pointer value(
     Pointer<CNFavoritesEntry> _self,
   ) {
     _openDynamicLibrary();
@@ -17956,11 +18182,9 @@ class CNFavoritesEntry extends Struct<CNFavoritesEntry> {
   }
 }
 
-/// Objective-C class _CNFavoritesLookupChangeRecord_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNFavoritesLookupChangeRecord
     extends Struct<CNFavoritesLookupChangeRecord> {
@@ -17975,11 +18199,9 @@ class CNFavoritesLookupChangeRecord
   }
 }
 
-/// Objective-C class _CNFromABCDConversions_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNFromABCDConversions extends Struct<CNFromABCDConversions> {
   factory CNFromABCDConversions._() {
@@ -17993,11 +18215,9 @@ class CNFromABCDConversions extends Struct<CNFromABCDConversions> {
   }
 }
 
-/// Objective-C class _CNFullTextSearchContactPredicate_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNFullTextSearchContactPredicate
     extends Struct<CNFullTextSearchContactPredicate> {
@@ -18011,7 +18231,7 @@ class CNFullTextSearchContactPredicate
         .cast<CNFullTextSearchContactPredicate>();
   }
 
-  static Pointer<Void> containerIdentifiers(
+  static Pointer containerIdentifiers(
     Pointer<CNFullTextSearchContactPredicate> _self,
   ) {
     _openDynamicLibrary();
@@ -18021,7 +18241,7 @@ class CNFullTextSearchContactPredicate
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CNFullTextSearchContactPredicate> _self,
   ) {
     _openDynamicLibrary();
@@ -18033,7 +18253,7 @@ class CNFullTextSearchContactPredicate
 
   static void encodeWithCoder(
     Pointer<CNFullTextSearchContactPredicate> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -18043,7 +18263,7 @@ class CNFullTextSearchContactPredicate
     );
   }
 
-  static Pointer<Void> groupIdentifiers(
+  static Pointer groupIdentifiers(
     Pointer<CNFullTextSearchContactPredicate> _self,
   ) {
     _openDynamicLibrary();
@@ -18053,9 +18273,9 @@ class CNFullTextSearchContactPredicate
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CNFullTextSearchContactPredicate> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -18065,11 +18285,11 @@ class CNFullTextSearchContactPredicate
     );
   }
 
-  static Pointer<Void> initWithSearchString(
+  static Pointer initWithSearchString(
     Pointer<CNFullTextSearchContactPredicate> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> containerIdentifiers,
-    @required Pointer<Void> groupIdentifiers,
+    Pointer arg, {
+    @required Pointer containerIdentifiers,
+    @required Pointer groupIdentifiers,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -18082,7 +18302,7 @@ class CNFullTextSearchContactPredicate
     );
   }
 
-  static Pointer<Void> searchString(
+  static Pointer searchString(
     Pointer<CNFullTextSearchContactPredicate> _self,
   ) {
     _openDynamicLibrary();
@@ -18092,12 +18312,12 @@ class CNFullTextSearchContactPredicate
     );
   }
 
-  static Pointer<Void> sgContactMatchesWithSortOrder(
+  static Pointer sgContactMatchesWithSortOrder(
     Pointer<CNFullTextSearchContactPredicate> _self,
     int arg, {
     @required int mutableObjects,
-    @required Pointer<Void> service,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer service,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_Int64_Int8_p_p_returns_p(
@@ -18112,11 +18332,9 @@ class CNFullTextSearchContactPredicate
   }
 }
 
-/// Objective-C class _CNGivenNameDescription_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNGivenNameDescription extends Struct<CNGivenNameDescription> {
   factory CNGivenNameDescription._() {
@@ -18129,9 +18347,9 @@ class CNGivenNameDescription extends Struct<CNGivenNameDescription> {
         .cast<CNGivenNameDescription>();
   }
 
-  static Pointer<Void> CNValueForContact(
+  static Pointer CNValueForContact(
     Pointer<CNGivenNameDescription> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -18143,8 +18361,8 @@ class CNGivenNameDescription extends Struct<CNGivenNameDescription> {
 
   static void copyFromCoreDataContact(
     Pointer<CNGivenNameDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toContact,
+    Pointer arg, {
+    @required Pointer toContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -18157,8 +18375,8 @@ class CNGivenNameDescription extends Struct<CNGivenNameDescription> {
 
   static void copyValueFromContact(
     Pointer<CNGivenNameDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toRemotePerson,
+    Pointer arg, {
+    @required Pointer toRemotePerson,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -18171,8 +18389,8 @@ class CNGivenNameDescription extends Struct<CNGivenNameDescription> {
 
   static void copyValueFromRemotePerson(
     Pointer<CNGivenNameDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toContact,
+    Pointer arg, {
+    @required Pointer toContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -18183,7 +18401,7 @@ class CNGivenNameDescription extends Struct<CNGivenNameDescription> {
     );
   }
 
-  static Pointer<Void> coreDataKey(
+  static Pointer coreDataKey(
     Pointer<CNGivenNameDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -18195,8 +18413,8 @@ class CNGivenNameDescription extends Struct<CNGivenNameDescription> {
 
   static void decodeUsingCoder(
     Pointer<CNGivenNameDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> contact,
+    Pointer arg, {
+    @required Pointer contact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -18209,8 +18427,8 @@ class CNGivenNameDescription extends Struct<CNGivenNameDescription> {
 
   static void encodeUsingCoder(
     Pointer<CNGivenNameDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> contact,
+    Pointer arg, {
+    @required Pointer contact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -18221,7 +18439,7 @@ class CNGivenNameDescription extends Struct<CNGivenNameDescription> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CNGivenNameDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -18233,8 +18451,8 @@ class CNGivenNameDescription extends Struct<CNGivenNameDescription> {
 
   static int isEqualForContact(
     Pointer<CNGivenNameDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> other,
+    Pointer arg, {
+    @required Pointer other,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -18257,8 +18475,8 @@ class CNGivenNameDescription extends Struct<CNGivenNameDescription> {
 
   static void setCNValue(
     Pointer<CNGivenNameDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> onContact,
+    Pointer arg, {
+    @required Pointer onContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -18270,11 +18488,9 @@ class CNGivenNameDescription extends Struct<CNGivenNameDescription> {
   }
 }
 
-/// Objective-C class _CNGivenNameFirstNameOrder_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNGivenNameFirstNameOrder extends Struct<CNGivenNameFirstNameOrder> {
   factory CNGivenNameFirstNameOrder._() {
@@ -18297,7 +18513,7 @@ class CNGivenNameFirstNameOrder extends Struct<CNGivenNameFirstNameOrder> {
     );
   }
 
-  static Pointer<Void> nameProperties(
+  static Pointer nameProperties(
     Pointer<CNGivenNameFirstNameOrder> _self,
   ) {
     _openDynamicLibrary();
@@ -18307,7 +18523,7 @@ class CNGivenNameFirstNameOrder extends Struct<CNGivenNameFirstNameOrder> {
     );
   }
 
-  static Pointer<Void> phoneticNameProperties(
+  static Pointer phoneticNameProperties(
     Pointer<CNGivenNameFirstNameOrder> _self,
   ) {
     _openDynamicLibrary();
@@ -18317,7 +18533,7 @@ class CNGivenNameFirstNameOrder extends Struct<CNGivenNameFirstNameOrder> {
     );
   }
 
-  static Pointer<Void> sortingNameProperties(
+  static Pointer sortingNameProperties(
     Pointer<CNGivenNameFirstNameOrder> _self,
   ) {
     _openDynamicLibrary();
@@ -18328,11 +18544,9 @@ class CNGivenNameFirstNameOrder extends Struct<CNGivenNameFirstNameOrder> {
   }
 }
 
-/// Objective-C class _CNGroup_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNGroup extends Struct<CNGroup> {
   factory CNGroup._() {
@@ -18343,9 +18557,9 @@ class CNGroup extends Struct<CNGroup> {
     return _objc.allocate("CNGroup").cast<CNGroup>();
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<CNGroup> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -18355,7 +18569,7 @@ class CNGroup extends Struct<CNGroup> {
     );
   }
 
-  static Pointer<Void> creationDate(
+  static Pointer creationDate(
     Pointer<CNGroup> _self,
   ) {
     _openDynamicLibrary();
@@ -18365,7 +18579,7 @@ class CNGroup extends Struct<CNGroup> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CNGroup> _self,
   ) {
     _openDynamicLibrary();
@@ -18377,7 +18591,7 @@ class CNGroup extends Struct<CNGroup> {
 
   static void encodeWithCoder(
     Pointer<CNGroup> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -18397,7 +18611,7 @@ class CNGroup extends Struct<CNGroup> {
     );
   }
 
-  static Pointer<Void> identifier(
+  static Pointer identifier(
     Pointer<CNGroup> _self,
   ) {
     _openDynamicLibrary();
@@ -18407,7 +18621,7 @@ class CNGroup extends Struct<CNGroup> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CNGroup> _self,
   ) {
     _openDynamicLibrary();
@@ -18417,9 +18631,9 @@ class CNGroup extends Struct<CNGroup> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CNGroup> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -18429,9 +18643,9 @@ class CNGroup extends Struct<CNGroup> {
     );
   }
 
-  static Pointer<Void> initWithGroup(
+  static Pointer initWithGroup(
     Pointer<CNGroup> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -18441,12 +18655,12 @@ class CNGroup extends Struct<CNGroup> {
     );
   }
 
-  static Pointer<Void> initWithIdentifier$name$creationDate$modificationDate$(
+  static Pointer initWithIdentifier$name$creationDate$modificationDate$(
     Pointer<CNGroup> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> name,
-    @required Pointer<Void> creationDate,
-    @required Pointer<Void> modificationDate,
+    Pointer arg, {
+    @required Pointer name,
+    @required Pointer creationDate,
+    @required Pointer modificationDate,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_returns_p(
@@ -18460,10 +18674,10 @@ class CNGroup extends Struct<CNGroup> {
     );
   }
 
-  static Pointer<Void> initWithIdentifier$name$(
+  static Pointer initWithIdentifier$name$(
     Pointer<CNGroup> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> name,
+    Pointer arg, {
+    @required Pointer name,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -18474,9 +18688,9 @@ class CNGroup extends Struct<CNGroup> {
     );
   }
 
-  static Pointer<Void> initWithName(
+  static Pointer initWithName(
     Pointer<CNGroup> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -18488,7 +18702,7 @@ class CNGroup extends Struct<CNGroup> {
 
   static int isEqual(
     Pointer<CNGroup> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -18498,7 +18712,7 @@ class CNGroup extends Struct<CNGroup> {
     );
   }
 
-  static Pointer<Void> modificationDate(
+  static Pointer modificationDate(
     Pointer<CNGroup> _self,
   ) {
     _openDynamicLibrary();
@@ -18508,9 +18722,9 @@ class CNGroup extends Struct<CNGroup> {
     );
   }
 
-  static Pointer<Void> mutableCopyWithZone(
+  static Pointer mutableCopyWithZone(
     Pointer<CNGroup> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -18520,7 +18734,7 @@ class CNGroup extends Struct<CNGroup> {
     );
   }
 
-  static Pointer<Void> name(
+  static Pointer name(
     Pointer<CNGroup> _self,
   ) {
     _openDynamicLibrary();
@@ -18530,7 +18744,7 @@ class CNGroup extends Struct<CNGroup> {
     );
   }
 
-  static Pointer<Void> snapshot(
+  static Pointer snapshot(
     Pointer<CNGroup> _self,
   ) {
     _openDynamicLibrary();
@@ -18541,11 +18755,9 @@ class CNGroup extends Struct<CNGroup> {
   }
 }
 
-/// Objective-C class _CNImageDataAvailableDescription_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNImageDataAvailableDescription
     extends Struct<CNImageDataAvailableDescription> {
@@ -18559,9 +18771,9 @@ class CNImageDataAvailableDescription
         .cast<CNImageDataAvailableDescription>();
   }
 
-  static Pointer<Void> CNValueForContact(
+  static Pointer CNValueForContact(
     Pointer<CNImageDataAvailableDescription> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -18573,8 +18785,8 @@ class CNImageDataAvailableDescription
 
   static void copyFromCoreDataContact(
     Pointer<CNImageDataAvailableDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toContact,
+    Pointer arg, {
+    @required Pointer toContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -18585,7 +18797,7 @@ class CNImageDataAvailableDescription
     );
   }
 
-  static Pointer<Void> coreDataKey(
+  static Pointer coreDataKey(
     Pointer<CNImageDataAvailableDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -18597,8 +18809,8 @@ class CNImageDataAvailableDescription
 
   static void decodeUsingCoder(
     Pointer<CNImageDataAvailableDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> contact,
+    Pointer arg, {
+    @required Pointer contact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -18611,8 +18823,8 @@ class CNImageDataAvailableDescription
 
   static void encodeUsingCoder(
     Pointer<CNImageDataAvailableDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> contact,
+    Pointer arg, {
+    @required Pointer contact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -18623,7 +18835,7 @@ class CNImageDataAvailableDescription
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CNImageDataAvailableDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -18635,8 +18847,8 @@ class CNImageDataAvailableDescription
 
   static int isEqualForContact(
     Pointer<CNImageDataAvailableDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> other,
+    Pointer arg, {
+    @required Pointer other,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -18649,8 +18861,8 @@ class CNImageDataAvailableDescription
 
   static void setCNValue(
     Pointer<CNImageDataAvailableDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> onContact,
+    Pointer arg, {
+    @required Pointer onContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -18663,8 +18875,8 @@ class CNImageDataAvailableDescription
 
   static void setValue(
     Pointer<CNImageDataAvailableDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> onCoreDataContact,
+    Pointer arg, {
+    @required Pointer onCoreDataContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -18675,7 +18887,7 @@ class CNImageDataAvailableDescription
     );
   }
 
-  static Pointer<Void> valueClass(
+  static Pointer valueClass(
     Pointer<CNImageDataAvailableDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -18686,11 +18898,9 @@ class CNImageDataAvailableDescription
   }
 }
 
-/// Objective-C class _CNImageDataDescription_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNImageDataDescription extends Struct<CNImageDataDescription> {
   factory CNImageDataDescription._() {
@@ -18703,9 +18913,9 @@ class CNImageDataDescription extends Struct<CNImageDataDescription> {
         .cast<CNImageDataDescription>();
   }
 
-  static Pointer<Void> CNValueForContact(
+  static Pointer CNValueForContact(
     Pointer<CNImageDataDescription> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -18717,8 +18927,8 @@ class CNImageDataDescription extends Struct<CNImageDataDescription> {
 
   static void copyFromCoreDataContact(
     Pointer<CNImageDataDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toContact,
+    Pointer arg, {
+    @required Pointer toContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -18729,7 +18939,7 @@ class CNImageDataDescription extends Struct<CNImageDataDescription> {
     );
   }
 
-  static Pointer<Void> coreDataKey(
+  static Pointer coreDataKey(
     Pointer<CNImageDataDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -18741,8 +18951,8 @@ class CNImageDataDescription extends Struct<CNImageDataDescription> {
 
   static void decodeUsingCoder(
     Pointer<CNImageDataDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> contact,
+    Pointer arg, {
+    @required Pointer contact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -18755,8 +18965,8 @@ class CNImageDataDescription extends Struct<CNImageDataDescription> {
 
   static void encodeUsingCoder(
     Pointer<CNImageDataDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> contact,
+    Pointer arg, {
+    @required Pointer contact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -18767,7 +18977,7 @@ class CNImageDataDescription extends Struct<CNImageDataDescription> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CNImageDataDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -18779,8 +18989,8 @@ class CNImageDataDescription extends Struct<CNImageDataDescription> {
 
   static int isEqualForContact(
     Pointer<CNImageDataDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> other,
+    Pointer arg, {
+    @required Pointer other,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -18793,8 +19003,8 @@ class CNImageDataDescription extends Struct<CNImageDataDescription> {
 
   static void setCNValue(
     Pointer<CNImageDataDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> onContact,
+    Pointer arg, {
+    @required Pointer onContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -18805,7 +19015,7 @@ class CNImageDataDescription extends Struct<CNImageDataDescription> {
     );
   }
 
-  static Pointer<Void> valueClass(
+  static Pointer valueClass(
     Pointer<CNImageDataDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -18816,11 +19026,9 @@ class CNImageDataDescription extends Struct<CNImageDataDescription> {
   }
 }
 
-/// Objective-C class _CNInstantMessageAddress_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNInstantMessageAddress extends Struct<CNInstantMessageAddress> {
   factory CNInstantMessageAddress._() {
@@ -18833,7 +19041,7 @@ class CNInstantMessageAddress extends Struct<CNInstantMessageAddress> {
         .cast<CNInstantMessageAddress>();
   }
 
-  static Pointer<Void> bundleIdentifiers(
+  static Pointer bundleIdentifiers(
     Pointer<CNInstantMessageAddress> _self,
   ) {
     _openDynamicLibrary();
@@ -18843,9 +19051,9 @@ class CNInstantMessageAddress extends Struct<CNInstantMessageAddress> {
     );
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<CNInstantMessageAddress> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -18855,7 +19063,7 @@ class CNInstantMessageAddress extends Struct<CNInstantMessageAddress> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CNInstantMessageAddress> _self,
   ) {
     _openDynamicLibrary();
@@ -18865,7 +19073,7 @@ class CNInstantMessageAddress extends Struct<CNInstantMessageAddress> {
     );
   }
 
-  static Pointer<Void> dictionaryRepresentation(
+  static Pointer dictionaryRepresentation(
     Pointer<CNInstantMessageAddress> _self,
   ) {
     _openDynamicLibrary();
@@ -18877,7 +19085,7 @@ class CNInstantMessageAddress extends Struct<CNInstantMessageAddress> {
 
   static void encodeWithCoder(
     Pointer<CNInstantMessageAddress> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -18897,9 +19105,9 @@ class CNInstantMessageAddress extends Struct<CNInstantMessageAddress> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CNInstantMessageAddress> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -18909,10 +19117,10 @@ class CNInstantMessageAddress extends Struct<CNInstantMessageAddress> {
     );
   }
 
-  static Pointer<Void> initWithUsername$service$(
+  static Pointer initWithUsername$service$(
     Pointer<CNInstantMessageAddress> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> service,
+    Pointer arg, {
+    @required Pointer service,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -18923,14 +19131,14 @@ class CNInstantMessageAddress extends Struct<CNInstantMessageAddress> {
     );
   }
 
-  static Pointer<Void>
+  static Pointer
       initWithUsername$userIdentifier$service$teamIdentifier$bundleIdentifiers$(
     Pointer<CNInstantMessageAddress> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> userIdentifier,
-    @required Pointer<Void> service,
-    @required Pointer<Void> teamIdentifier,
-    @required Pointer<Void> bundleIdentifiers,
+    Pointer arg, {
+    @required Pointer userIdentifier,
+    @required Pointer service,
+    @required Pointer teamIdentifier,
+    @required Pointer bundleIdentifiers,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_p_returns_p(
@@ -18947,7 +19155,7 @@ class CNInstantMessageAddress extends Struct<CNInstantMessageAddress> {
 
   static int isEqual(
     Pointer<CNInstantMessageAddress> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -18959,7 +19167,7 @@ class CNInstantMessageAddress extends Struct<CNInstantMessageAddress> {
 
   static int isValid(
     Pointer<CNInstantMessageAddress> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -18969,9 +19177,9 @@ class CNInstantMessageAddress extends Struct<CNInstantMessageAddress> {
     );
   }
 
-  static Pointer<Void> mutableCopyWithZone(
+  static Pointer mutableCopyWithZone(
     Pointer<CNInstantMessageAddress> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -18981,7 +19189,7 @@ class CNInstantMessageAddress extends Struct<CNInstantMessageAddress> {
     );
   }
 
-  static Pointer<Void> service(
+  static Pointer service(
     Pointer<CNInstantMessageAddress> _self,
   ) {
     _openDynamicLibrary();
@@ -18993,7 +19201,7 @@ class CNInstantMessageAddress extends Struct<CNInstantMessageAddress> {
 
   static void setBundleIdentifiers(
     Pointer<CNInstantMessageAddress> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -19005,7 +19213,7 @@ class CNInstantMessageAddress extends Struct<CNInstantMessageAddress> {
 
   static void setService(
     Pointer<CNInstantMessageAddress> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -19017,7 +19225,7 @@ class CNInstantMessageAddress extends Struct<CNInstantMessageAddress> {
 
   static void setTeamIdentifier(
     Pointer<CNInstantMessageAddress> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -19029,7 +19237,7 @@ class CNInstantMessageAddress extends Struct<CNInstantMessageAddress> {
 
   static void setUserIdentifier(
     Pointer<CNInstantMessageAddress> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -19041,7 +19249,7 @@ class CNInstantMessageAddress extends Struct<CNInstantMessageAddress> {
 
   static void setUsername(
     Pointer<CNInstantMessageAddress> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -19051,7 +19259,7 @@ class CNInstantMessageAddress extends Struct<CNInstantMessageAddress> {
     );
   }
 
-  static Pointer<Void> teamIdentifier(
+  static Pointer teamIdentifier(
     Pointer<CNInstantMessageAddress> _self,
   ) {
     _openDynamicLibrary();
@@ -19061,7 +19269,7 @@ class CNInstantMessageAddress extends Struct<CNInstantMessageAddress> {
     );
   }
 
-  static Pointer<Void> userIdentifier(
+  static Pointer userIdentifier(
     Pointer<CNInstantMessageAddress> _self,
   ) {
     _openDynamicLibrary();
@@ -19071,7 +19279,7 @@ class CNInstantMessageAddress extends Struct<CNInstantMessageAddress> {
     );
   }
 
-  static Pointer<Void> username(
+  static Pointer username(
     Pointer<CNInstantMessageAddress> _self,
   ) {
     _openDynamicLibrary();
@@ -19082,11 +19290,9 @@ class CNInstantMessageAddress extends Struct<CNInstantMessageAddress> {
   }
 }
 
-/// Objective-C class _CNInstantMessageAddressContactPredicate_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNInstantMessageAddressContactPredicate
     extends Struct<CNInstantMessageAddressContactPredicate> {
@@ -19100,7 +19306,7 @@ class CNInstantMessageAddressContactPredicate
         .cast<CNInstantMessageAddressContactPredicate>();
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CNInstantMessageAddressContactPredicate> _self,
   ) {
     _openDynamicLibrary();
@@ -19112,7 +19318,7 @@ class CNInstantMessageAddressContactPredicate
 
   static void encodeWithCoder(
     Pointer<CNInstantMessageAddressContactPredicate> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -19122,7 +19328,7 @@ class CNInstantMessageAddressContactPredicate
     );
   }
 
-  static Pointer<Void> imAddress(
+  static Pointer imAddress(
     Pointer<CNInstantMessageAddressContactPredicate> _self,
   ) {
     _openDynamicLibrary();
@@ -19132,9 +19338,9 @@ class CNInstantMessageAddressContactPredicate
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CNInstantMessageAddressContactPredicate> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -19144,9 +19350,9 @@ class CNInstantMessageAddressContactPredicate
     );
   }
 
-  static Pointer<Void> initWithInstantMessageAddress(
+  static Pointer initWithInstantMessageAddress(
     Pointer<CNInstantMessageAddressContactPredicate> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -19157,11 +19363,9 @@ class CNInstantMessageAddressContactPredicate
   }
 }
 
-/// Objective-C class _CNInstantMessageAddressesDescription_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNInstantMessageAddressesDescription
     extends Struct<CNInstantMessageAddressesDescription> {
@@ -19175,9 +19379,9 @@ class CNInstantMessageAddressesDescription
         .cast<CNInstantMessageAddressesDescription>();
   }
 
-  static Pointer<Void> CNValueForContact(
+  static Pointer CNValueForContact(
     Pointer<CNInstantMessageAddressesDescription> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -19189,8 +19393,8 @@ class CNInstantMessageAddressesDescription
 
   static int canUnifyValue(
     Pointer<CNInstantMessageAddressesDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> withValue,
+    Pointer arg, {
+    @required Pointer withValue,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -19203,8 +19407,8 @@ class CNInstantMessageAddressesDescription
 
   static void copyFromCoreDataContact(
     Pointer<CNInstantMessageAddressesDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toContact,
+    Pointer arg, {
+    @required Pointer toContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -19217,8 +19421,8 @@ class CNInstantMessageAddressesDescription
 
   static void copyFromLabeledValue(
     Pointer<CNInstantMessageAddressesDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toOwnedObject,
+    Pointer arg, {
+    @required Pointer toOwnedObject,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -19231,8 +19435,8 @@ class CNInstantMessageAddressesDescription
 
   static void copyValueFromContact(
     Pointer<CNInstantMessageAddressesDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toRemotePerson,
+    Pointer arg, {
+    @required Pointer toRemotePerson,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -19245,8 +19449,8 @@ class CNInstantMessageAddressesDescription
 
   static void copyValueFromRemotePerson(
     Pointer<CNInstantMessageAddressesDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toContact,
+    Pointer arg, {
+    @required Pointer toContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -19257,7 +19461,7 @@ class CNInstantMessageAddressesDescription
     );
   }
 
-  static Pointer<Void> coreDataKey(
+  static Pointer coreDataKey(
     Pointer<CNInstantMessageAddressesDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -19267,7 +19471,7 @@ class CNInstantMessageAddressesDescription
     );
   }
 
-  static Pointer<Void> coreDataOwnedEntityName(
+  static Pointer coreDataOwnedEntityName(
     Pointer<CNInstantMessageAddressesDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -19277,7 +19481,7 @@ class CNInstantMessageAddressesDescription
     );
   }
 
-  static Pointer<Void> coreDataRelationshipKeyPathsToFetch(
+  static Pointer coreDataRelationshipKeyPathsToFetch(
     Pointer<CNInstantMessageAddressesDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -19289,8 +19493,8 @@ class CNInstantMessageAddressesDescription
 
   static void decodeUsingCoder(
     Pointer<CNInstantMessageAddressesDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> contact,
+    Pointer arg, {
+    @required Pointer contact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -19301,7 +19505,7 @@ class CNInstantMessageAddressesDescription
     );
   }
 
-  static Pointer<Void> dictionaryTransform(
+  static Pointer dictionaryTransform(
     Pointer<CNInstantMessageAddressesDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -19313,8 +19517,8 @@ class CNInstantMessageAddressesDescription
 
   static void encodeUsingCoder(
     Pointer<CNInstantMessageAddressesDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> contact,
+    Pointer arg, {
+    @required Pointer contact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -19325,7 +19529,7 @@ class CNInstantMessageAddressesDescription
     );
   }
 
-  static Pointer<Void> fromDictionaryTransform(
+  static Pointer fromDictionaryTransform(
     Pointer<CNInstantMessageAddressesDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -19335,7 +19539,7 @@ class CNInstantMessageAddressesDescription
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CNInstantMessageAddressesDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -19347,8 +19551,8 @@ class CNInstantMessageAddressesDescription
 
   static int isEqualForContact(
     Pointer<CNInstantMessageAddressesDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> other,
+    Pointer arg, {
+    @required Pointer other,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -19369,7 +19573,7 @@ class CNInstantMessageAddressesDescription
     );
   }
 
-  static Pointer<Void> labeledValueClass(
+  static Pointer labeledValueClass(
     Pointer<CNInstantMessageAddressesDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -19379,7 +19583,7 @@ class CNInstantMessageAddressesDescription
     );
   }
 
-  static Pointer<Void> ownedObjectToLabeledValueValueTransform(
+  static Pointer ownedObjectToLabeledValueValueTransform(
     Pointer<CNInstantMessageAddressesDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -19391,8 +19595,8 @@ class CNInstantMessageAddressesDescription
 
   static void setCNValue(
     Pointer<CNInstantMessageAddressesDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> onContact,
+    Pointer arg, {
+    @required Pointer onContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -19403,7 +19607,7 @@ class CNInstantMessageAddressesDescription
     );
   }
 
-  static Pointer<Void> subCoreDataPredicatePropertiesByKey(
+  static Pointer subCoreDataPredicatePropertiesByKey(
     Pointer<CNInstantMessageAddressesDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -19413,7 +19617,7 @@ class CNInstantMessageAddressesDescription
     );
   }
 
-  static Pointer<Void> summarizationKeys(
+  static Pointer summarizationKeys(
     Pointer<CNInstantMessageAddressesDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -19424,11 +19628,9 @@ class CNInstantMessageAddressesDescription
   }
 }
 
-/// Objective-C class _CNInternalIdentifierDescription_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNInternalIdentifierDescription
     extends Struct<CNInternalIdentifierDescription> {
@@ -19442,9 +19644,9 @@ class CNInternalIdentifierDescription
         .cast<CNInternalIdentifierDescription>();
   }
 
-  static Pointer<Void> CNValueForContact(
+  static Pointer CNValueForContact(
     Pointer<CNInternalIdentifierDescription> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -19456,8 +19658,8 @@ class CNInternalIdentifierDescription
 
   static void copyValueFromContact(
     Pointer<CNInternalIdentifierDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toRemotePerson,
+    Pointer arg, {
+    @required Pointer toRemotePerson,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -19468,7 +19670,7 @@ class CNInternalIdentifierDescription
     );
   }
 
-  static Pointer<Void> coreDataKey(
+  static Pointer coreDataKey(
     Pointer<CNInternalIdentifierDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -19480,8 +19682,8 @@ class CNInternalIdentifierDescription
 
   static void decodeUsingCoder(
     Pointer<CNInternalIdentifierDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> contact,
+    Pointer arg, {
+    @required Pointer contact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -19494,8 +19696,8 @@ class CNInternalIdentifierDescription
 
   static void encodeUsingCoder(
     Pointer<CNInternalIdentifierDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> contact,
+    Pointer arg, {
+    @required Pointer contact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -19506,7 +19708,7 @@ class CNInternalIdentifierDescription
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CNInternalIdentifierDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -19518,8 +19720,8 @@ class CNInternalIdentifierDescription
 
   static int isEqualForContact(
     Pointer<CNInternalIdentifierDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> other,
+    Pointer arg, {
+    @required Pointer other,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -19532,8 +19734,8 @@ class CNInternalIdentifierDescription
 
   static int isEqualIgnoringIdentifiersForContact(
     Pointer<CNInternalIdentifierDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> other,
+    Pointer arg, {
+    @required Pointer other,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -19546,8 +19748,8 @@ class CNInternalIdentifierDescription
 
   static void setCNValue(
     Pointer<CNInternalIdentifierDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> onContact,
+    Pointer arg, {
+    @required Pointer onContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -19558,7 +19760,7 @@ class CNInternalIdentifierDescription
     );
   }
 
-  static Pointer<Void> valueClass(
+  static Pointer valueClass(
     Pointer<CNInternalIdentifierDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -19569,11 +19771,9 @@ class CNInternalIdentifierDescription
   }
 }
 
-/// Objective-C class _CNJobTitleDescription_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNJobTitleDescription extends Struct<CNJobTitleDescription> {
   factory CNJobTitleDescription._() {
@@ -19586,9 +19786,9 @@ class CNJobTitleDescription extends Struct<CNJobTitleDescription> {
         .cast<CNJobTitleDescription>();
   }
 
-  static Pointer<Void> CNValueForContact(
+  static Pointer CNValueForContact(
     Pointer<CNJobTitleDescription> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -19600,8 +19800,8 @@ class CNJobTitleDescription extends Struct<CNJobTitleDescription> {
 
   static void copyFromCoreDataContact(
     Pointer<CNJobTitleDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toContact,
+    Pointer arg, {
+    @required Pointer toContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -19614,8 +19814,8 @@ class CNJobTitleDescription extends Struct<CNJobTitleDescription> {
 
   static void copyValueFromContact(
     Pointer<CNJobTitleDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toRemotePerson,
+    Pointer arg, {
+    @required Pointer toRemotePerson,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -19628,8 +19828,8 @@ class CNJobTitleDescription extends Struct<CNJobTitleDescription> {
 
   static void copyValueFromRemotePerson(
     Pointer<CNJobTitleDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toContact,
+    Pointer arg, {
+    @required Pointer toContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -19640,7 +19840,7 @@ class CNJobTitleDescription extends Struct<CNJobTitleDescription> {
     );
   }
 
-  static Pointer<Void> coreDataKey(
+  static Pointer coreDataKey(
     Pointer<CNJobTitleDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -19652,8 +19852,8 @@ class CNJobTitleDescription extends Struct<CNJobTitleDescription> {
 
   static void decodeUsingCoder(
     Pointer<CNJobTitleDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> contact,
+    Pointer arg, {
+    @required Pointer contact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -19666,8 +19866,8 @@ class CNJobTitleDescription extends Struct<CNJobTitleDescription> {
 
   static void encodeUsingCoder(
     Pointer<CNJobTitleDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> contact,
+    Pointer arg, {
+    @required Pointer contact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -19678,7 +19878,7 @@ class CNJobTitleDescription extends Struct<CNJobTitleDescription> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CNJobTitleDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -19690,8 +19890,8 @@ class CNJobTitleDescription extends Struct<CNJobTitleDescription> {
 
   static int isEqualForContact(
     Pointer<CNJobTitleDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> other,
+    Pointer arg, {
+    @required Pointer other,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -19714,8 +19914,8 @@ class CNJobTitleDescription extends Struct<CNJobTitleDescription> {
 
   static void setCNValue(
     Pointer<CNJobTitleDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> onContact,
+    Pointer arg, {
+    @required Pointer onContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -19727,11 +19927,9 @@ class CNJobTitleDescription extends Struct<CNJobTitleDescription> {
   }
 }
 
-/// Objective-C class _CNLDAPConnection_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNLDAPConnection extends Struct<CNLDAPConnection> {
   factory CNLDAPConnection._() {
@@ -19742,7 +19940,7 @@ class CNLDAPConnection extends Struct<CNLDAPConnection> {
     return _objc.allocate("CNLDAPConnection").cast<CNLDAPConnection>();
   }
 
-  static Pointer<Void> connect(
+  static Pointer connect(
     Pointer<CNLDAPConnection> _self,
   ) {
     _openDynamicLibrary();
@@ -19752,7 +19950,7 @@ class CNLDAPConnection extends Struct<CNLDAPConnection> {
     );
   }
 
-  static Pointer<Void> connection(
+  static Pointer connection(
     Pointer<CNLDAPConnection> _self,
   ) {
     _openDynamicLibrary();
@@ -19762,9 +19960,9 @@ class CNLDAPConnection extends Struct<CNLDAPConnection> {
     );
   }
 
-  static Pointer<Void> executeFetchRequest$(
+  static Pointer executeFetchRequest$(
     Pointer<CNLDAPConnection> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -19776,8 +19974,8 @@ class CNLDAPConnection extends Struct<CNLDAPConnection> {
 
   static void executeFetchRequest$completionHandler$(
     Pointer<CNLDAPConnection> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> completionHandler,
+    Pointer arg, {
+    @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -19788,9 +19986,9 @@ class CNLDAPConnection extends Struct<CNLDAPConnection> {
     );
   }
 
-  static Pointer<Void> initWithURL$(
+  static Pointer initWithURL$(
     Pointer<CNLDAPConnection> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -19800,10 +19998,10 @@ class CNLDAPConnection extends Struct<CNLDAPConnection> {
     );
   }
 
-  static Pointer<Void> initWithURL$ldapServices$(
+  static Pointer initWithURL$ldapServices$(
     Pointer<CNLDAPConnection> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> ldapServices,
+    Pointer arg, {
+    @required Pointer ldapServices,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -19814,7 +20012,7 @@ class CNLDAPConnection extends Struct<CNLDAPConnection> {
     );
   }
 
-  static Pointer<Void> ldapServices(
+  static Pointer ldapServices(
     Pointer<CNLDAPConnection> _self,
   ) {
     _openDynamicLibrary();
@@ -19824,9 +20022,9 @@ class CNLDAPConnection extends Struct<CNLDAPConnection> {
     );
   }
 
-  static Pointer<Void> observableWithFetchRequest(
+  static Pointer observableWithFetchRequest(
     Pointer<CNLDAPConnection> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -19836,13 +20034,13 @@ class CNLDAPConnection extends Struct<CNLDAPConnection> {
     );
   }
 
-  static Pointer<Void> observableWithFilter(
+  static Pointer observableWithFilter(
     Pointer<CNLDAPConnection> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> baseDN,
+    Pointer arg, {
+    @required Pointer baseDN,
     @required int scope,
     @required int resultLimit,
-    @required Pointer<Void> attributes,
+    @required Pointer attributes,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_Uint64_Uint32_p_returns_p(
@@ -19858,11 +20056,9 @@ class CNLDAPConnection extends Struct<CNLDAPConnection> {
   }
 }
 
-/// Objective-C class _CNLDAPFetchRequest_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNLDAPFetchRequest extends Struct<CNLDAPFetchRequest> {
   factory CNLDAPFetchRequest._() {
@@ -19873,7 +20069,7 @@ class CNLDAPFetchRequest extends Struct<CNLDAPFetchRequest> {
     return _objc.allocate("CNLDAPFetchRequest").cast<CNLDAPFetchRequest>();
   }
 
-  static Pointer<Void> attributesToFetch(
+  static Pointer attributesToFetch(
     Pointer<CNLDAPFetchRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -19883,7 +20079,7 @@ class CNLDAPFetchRequest extends Struct<CNLDAPFetchRequest> {
     );
   }
 
-  static Pointer<Void> copy(
+  static Pointer copy(
     Pointer<CNLDAPFetchRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -19903,7 +20099,7 @@ class CNLDAPFetchRequest extends Struct<CNLDAPFetchRequest> {
     );
   }
 
-  static Pointer<Void> filter(
+  static Pointer filter(
     Pointer<CNLDAPFetchRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -19913,7 +20109,7 @@ class CNLDAPFetchRequest extends Struct<CNLDAPFetchRequest> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CNLDAPFetchRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -19933,7 +20129,7 @@ class CNLDAPFetchRequest extends Struct<CNLDAPFetchRequest> {
     );
   }
 
-  static Pointer<Void> searchBases(
+  static Pointer searchBases(
     Pointer<CNLDAPFetchRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -19945,7 +20141,7 @@ class CNLDAPFetchRequest extends Struct<CNLDAPFetchRequest> {
 
   static void setAttributesToFetch(
     Pointer<CNLDAPFetchRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -19969,7 +20165,7 @@ class CNLDAPFetchRequest extends Struct<CNLDAPFetchRequest> {
 
   static void setFilter(
     Pointer<CNLDAPFetchRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -19993,7 +20189,7 @@ class CNLDAPFetchRequest extends Struct<CNLDAPFetchRequest> {
 
   static void setSearchBases(
     Pointer<CNLDAPFetchRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -20004,11 +20200,9 @@ class CNLDAPFetchRequest extends Struct<CNLDAPFetchRequest> {
   }
 }
 
-/// Objective-C class _CNLDAPPostalAddressTransform_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNLDAPPostalAddressTransform
     extends Struct<CNLDAPPostalAddressTransform> {
@@ -20023,11 +20217,9 @@ class CNLDAPPostalAddressTransform
   }
 }
 
-/// Objective-C class _CNLDAPPredicateRemapper_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNLDAPPredicateRemapper extends Struct<CNLDAPPredicateRemapper> {
   factory CNLDAPPredicateRemapper._() {
@@ -20040,10 +20232,10 @@ class CNLDAPPredicateRemapper extends Struct<CNLDAPPredicateRemapper> {
         .cast<CNLDAPPredicateRemapper>();
   }
 
-  static Pointer<Void> acceptComparisonPredicateForRemapping(
+  static Pointer acceptComparisonPredicateForRemapping(
     Pointer<CNLDAPPredicateRemapper> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -20054,10 +20246,10 @@ class CNLDAPPredicateRemapper extends Struct<CNLDAPPredicateRemapper> {
     );
   }
 
-  static Pointer<Void> acceptCompoundPredicateForRemapping(
+  static Pointer acceptCompoundPredicateForRemapping(
     Pointer<CNLDAPPredicateRemapper> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -20068,7 +20260,7 @@ class CNLDAPPredicateRemapper extends Struct<CNLDAPPredicateRemapper> {
     );
   }
 
-  static Pointer<Void> factory(
+  static Pointer factory(
     Pointer<CNLDAPPredicateRemapper> _self,
   ) {
     _openDynamicLibrary();
@@ -20078,9 +20270,9 @@ class CNLDAPPredicateRemapper extends Struct<CNLDAPPredicateRemapper> {
     );
   }
 
-  static Pointer<Void> initWithRemapping(
+  static Pointer initWithRemapping(
     Pointer<CNLDAPPredicateRemapper> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -20090,11 +20282,11 @@ class CNLDAPPredicateRemapper extends Struct<CNLDAPPredicateRemapper> {
     );
   }
 
-  static Pointer<Void> predicateForLeft$lessThanRight$error$(
+  static Pointer predicateForLeft$lessThanRight$error$(
     Pointer<CNLDAPPredicateRemapper> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> lessThanRight,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer lessThanRight,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -20106,11 +20298,11 @@ class CNLDAPPredicateRemapper extends Struct<CNLDAPPredicateRemapper> {
     );
   }
 
-  static Pointer<Void> predicateForLeft$lessThanOrEqualToRight$error$(
+  static Pointer predicateForLeft$lessThanOrEqualToRight$error$(
     Pointer<CNLDAPPredicateRemapper> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> lessThanOrEqualToRight,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer lessThanOrEqualToRight,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -20122,11 +20314,11 @@ class CNLDAPPredicateRemapper extends Struct<CNLDAPPredicateRemapper> {
     );
   }
 
-  static Pointer<Void> predicateForLeft$greaterThanRight$error$(
+  static Pointer predicateForLeft$greaterThanRight$error$(
     Pointer<CNLDAPPredicateRemapper> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> greaterThanRight,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer greaterThanRight,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -20138,11 +20330,11 @@ class CNLDAPPredicateRemapper extends Struct<CNLDAPPredicateRemapper> {
     );
   }
 
-  static Pointer<Void> predicateForLeft$greaterThanOrEqualToRight$error$(
+  static Pointer predicateForLeft$greaterThanOrEqualToRight$error$(
     Pointer<CNLDAPPredicateRemapper> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> greaterThanOrEqualToRight,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer greaterThanOrEqualToRight,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -20154,11 +20346,11 @@ class CNLDAPPredicateRemapper extends Struct<CNLDAPPredicateRemapper> {
     );
   }
 
-  static Pointer<Void> predicateForLeft$equalToRight$error$(
+  static Pointer predicateForLeft$equalToRight$error$(
     Pointer<CNLDAPPredicateRemapper> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> equalToRight,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer equalToRight,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -20170,11 +20362,11 @@ class CNLDAPPredicateRemapper extends Struct<CNLDAPPredicateRemapper> {
     );
   }
 
-  static Pointer<Void> predicateForLeft$notEqualToRight$error$(
+  static Pointer predicateForLeft$notEqualToRight$error$(
     Pointer<CNLDAPPredicateRemapper> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> notEqualToRight,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer notEqualToRight,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -20186,11 +20378,11 @@ class CNLDAPPredicateRemapper extends Struct<CNLDAPPredicateRemapper> {
     );
   }
 
-  static Pointer<Void> predicateForLeft$matchesRight$error$(
+  static Pointer predicateForLeft$matchesRight$error$(
     Pointer<CNLDAPPredicateRemapper> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> matchesRight,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer matchesRight,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -20202,11 +20394,11 @@ class CNLDAPPredicateRemapper extends Struct<CNLDAPPredicateRemapper> {
     );
   }
 
-  static Pointer<Void> predicateForLeft$likeRight$error$(
+  static Pointer predicateForLeft$likeRight$error$(
     Pointer<CNLDAPPredicateRemapper> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> likeRight,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer likeRight,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -20218,11 +20410,11 @@ class CNLDAPPredicateRemapper extends Struct<CNLDAPPredicateRemapper> {
     );
   }
 
-  static Pointer<Void> predicateForLeft$beginsWithRight$error$(
+  static Pointer predicateForLeft$beginsWithRight$error$(
     Pointer<CNLDAPPredicateRemapper> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> beginsWithRight,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer beginsWithRight,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -20234,11 +20426,11 @@ class CNLDAPPredicateRemapper extends Struct<CNLDAPPredicateRemapper> {
     );
   }
 
-  static Pointer<Void> predicateForLeft$endsWithRight$error$(
+  static Pointer predicateForLeft$endsWithRight$error$(
     Pointer<CNLDAPPredicateRemapper> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> endsWithRight,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer endsWithRight,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -20250,11 +20442,11 @@ class CNLDAPPredicateRemapper extends Struct<CNLDAPPredicateRemapper> {
     );
   }
 
-  static Pointer<Void> predicateForLeft$inRight$error$(
+  static Pointer predicateForLeft$inRight$error$(
     Pointer<CNLDAPPredicateRemapper> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> inRight,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer inRight,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -20266,11 +20458,11 @@ class CNLDAPPredicateRemapper extends Struct<CNLDAPPredicateRemapper> {
     );
   }
 
-  static Pointer<Void> predicateForLeft$containsRight$error$(
+  static Pointer predicateForLeft$containsRight$error$(
     Pointer<CNLDAPPredicateRemapper> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> containsRight,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer containsRight,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -20282,12 +20474,12 @@ class CNLDAPPredicateRemapper extends Struct<CNLDAPPredicateRemapper> {
     );
   }
 
-  static Pointer<Void> predicateForLeft$betweenLowerBound$upperBound$error$(
+  static Pointer predicateForLeft$betweenLowerBound$upperBound$error$(
     Pointer<CNLDAPPredicateRemapper> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> betweenLowerBound,
-    @required Pointer<Void> upperBound,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer betweenLowerBound,
+    @required Pointer upperBound,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_returns_p(
@@ -20300,10 +20492,10 @@ class CNLDAPPredicateRemapper extends Struct<CNLDAPPredicateRemapper> {
     );
   }
 
-  static Pointer<Void> remapPredicate(
+  static Pointer remapPredicate(
     Pointer<CNLDAPPredicateRemapper> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -20316,7 +20508,7 @@ class CNLDAPPredicateRemapper extends Struct<CNLDAPPredicateRemapper> {
 
   static void setFactory(
     Pointer<CNLDAPPredicateRemapper> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -20327,11 +20519,9 @@ class CNLDAPPredicateRemapper extends Struct<CNLDAPPredicateRemapper> {
   }
 }
 
-/// Objective-C class _CNLDAPPredicateRemapping_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNLDAPPredicateRemapping extends Struct<CNLDAPPredicateRemapping> {
   factory CNLDAPPredicateRemapping._() {
@@ -20344,9 +20534,9 @@ class CNLDAPPredicateRemapping extends Struct<CNLDAPPredicateRemapping> {
         .cast<CNLDAPPredicateRemapping>();
   }
 
-  static Pointer<Void> and(
+  static Pointer and(
     Pointer<CNLDAPPredicateRemapping> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -20356,9 +20546,9 @@ class CNLDAPPredicateRemapping extends Struct<CNLDAPPredicateRemapping> {
     );
   }
 
-  static Pointer<Void> not(
+  static Pointer not(
     Pointer<CNLDAPPredicateRemapping> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -20368,9 +20558,9 @@ class CNLDAPPredicateRemapping extends Struct<CNLDAPPredicateRemapping> {
     );
   }
 
-  static Pointer<Void> or(
+  static Pointer or(
     Pointer<CNLDAPPredicateRemapping> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -20380,10 +20570,10 @@ class CNLDAPPredicateRemapping extends Struct<CNLDAPPredicateRemapping> {
     );
   }
 
-  static Pointer<Void> predicateForLeft$lessThanRight$(
+  static Pointer predicateForLeft$lessThanRight$(
     Pointer<CNLDAPPredicateRemapping> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> lessThanRight,
+    Pointer arg, {
+    @required Pointer lessThanRight,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -20394,10 +20584,10 @@ class CNLDAPPredicateRemapping extends Struct<CNLDAPPredicateRemapping> {
     );
   }
 
-  static Pointer<Void> predicateForLeft$lessThanOrEqualToRight$(
+  static Pointer predicateForLeft$lessThanOrEqualToRight$(
     Pointer<CNLDAPPredicateRemapping> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> lessThanOrEqualToRight,
+    Pointer arg, {
+    @required Pointer lessThanOrEqualToRight,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -20408,10 +20598,10 @@ class CNLDAPPredicateRemapping extends Struct<CNLDAPPredicateRemapping> {
     );
   }
 
-  static Pointer<Void> predicateForLeft$greaterThanRight$(
+  static Pointer predicateForLeft$greaterThanRight$(
     Pointer<CNLDAPPredicateRemapping> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> greaterThanRight,
+    Pointer arg, {
+    @required Pointer greaterThanRight,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -20422,10 +20612,10 @@ class CNLDAPPredicateRemapping extends Struct<CNLDAPPredicateRemapping> {
     );
   }
 
-  static Pointer<Void> predicateForLeft$greaterThanOrEqualToRight$(
+  static Pointer predicateForLeft$greaterThanOrEqualToRight$(
     Pointer<CNLDAPPredicateRemapping> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> greaterThanOrEqualToRight,
+    Pointer arg, {
+    @required Pointer greaterThanOrEqualToRight,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -20436,10 +20626,10 @@ class CNLDAPPredicateRemapping extends Struct<CNLDAPPredicateRemapping> {
     );
   }
 
-  static Pointer<Void> predicateForLeft$equalToRight$(
+  static Pointer predicateForLeft$equalToRight$(
     Pointer<CNLDAPPredicateRemapping> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> equalToRight,
+    Pointer arg, {
+    @required Pointer equalToRight,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -20450,10 +20640,10 @@ class CNLDAPPredicateRemapping extends Struct<CNLDAPPredicateRemapping> {
     );
   }
 
-  static Pointer<Void> predicateForLeft$notEqualToRight$(
+  static Pointer predicateForLeft$notEqualToRight$(
     Pointer<CNLDAPPredicateRemapping> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> notEqualToRight,
+    Pointer arg, {
+    @required Pointer notEqualToRight,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -20464,10 +20654,10 @@ class CNLDAPPredicateRemapping extends Struct<CNLDAPPredicateRemapping> {
     );
   }
 
-  static Pointer<Void> predicateForLeft$likeRight$(
+  static Pointer predicateForLeft$likeRight$(
     Pointer<CNLDAPPredicateRemapping> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> likeRight,
+    Pointer arg, {
+    @required Pointer likeRight,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -20478,10 +20668,10 @@ class CNLDAPPredicateRemapping extends Struct<CNLDAPPredicateRemapping> {
     );
   }
 
-  static Pointer<Void> predicateForLeft$beginsWithRight$(
+  static Pointer predicateForLeft$beginsWithRight$(
     Pointer<CNLDAPPredicateRemapping> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> beginsWithRight,
+    Pointer arg, {
+    @required Pointer beginsWithRight,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -20492,10 +20682,10 @@ class CNLDAPPredicateRemapping extends Struct<CNLDAPPredicateRemapping> {
     );
   }
 
-  static Pointer<Void> predicateForLeft$endsWithRight$(
+  static Pointer predicateForLeft$endsWithRight$(
     Pointer<CNLDAPPredicateRemapping> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> endsWithRight,
+    Pointer arg, {
+    @required Pointer endsWithRight,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -20506,10 +20696,10 @@ class CNLDAPPredicateRemapping extends Struct<CNLDAPPredicateRemapping> {
     );
   }
 
-  static Pointer<Void> predicateForLeft$inRight$(
+  static Pointer predicateForLeft$inRight$(
     Pointer<CNLDAPPredicateRemapping> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> inRight,
+    Pointer arg, {
+    @required Pointer inRight,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -20520,10 +20710,10 @@ class CNLDAPPredicateRemapping extends Struct<CNLDAPPredicateRemapping> {
     );
   }
 
-  static Pointer<Void> predicateForLeft$containsRight$(
+  static Pointer predicateForLeft$containsRight$(
     Pointer<CNLDAPPredicateRemapping> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> containsRight,
+    Pointer arg, {
+    @required Pointer containsRight,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -20534,11 +20724,11 @@ class CNLDAPPredicateRemapping extends Struct<CNLDAPPredicateRemapping> {
     );
   }
 
-  static Pointer<Void> predicateForLeft$betweenLowerBound$upperBound$(
+  static Pointer predicateForLeft$betweenLowerBound$upperBound$(
     Pointer<CNLDAPPredicateRemapping> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> betweenLowerBound,
-    @required Pointer<Void> upperBound,
+    Pointer arg, {
+    @required Pointer betweenLowerBound,
+    @required Pointer upperBound,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -20551,11 +20741,9 @@ class CNLDAPPredicateRemapping extends Struct<CNLDAPPredicateRemapping> {
   }
 }
 
-/// Objective-C class _CNLDAPPropertyDescription_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNLDAPPropertyDescription extends Struct<CNLDAPPropertyDescription> {
   factory CNLDAPPropertyDescription._() {
@@ -20568,7 +20756,7 @@ class CNLDAPPropertyDescription extends Struct<CNLDAPPropertyDescription> {
         .cast<CNLDAPPropertyDescription>();
   }
 
-  static Pointer<Void> LDAPKey(
+  static Pointer LDAPKey(
     Pointer<CNLDAPPropertyDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -20578,7 +20766,7 @@ class CNLDAPPropertyDescription extends Struct<CNLDAPPropertyDescription> {
     );
   }
 
-  static Pointer<Void> contactKey(
+  static Pointer contactKey(
     Pointer<CNLDAPPropertyDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -20590,7 +20778,7 @@ class CNLDAPPropertyDescription extends Struct<CNLDAPPropertyDescription> {
 
   static void setContactKey(
     Pointer<CNLDAPPropertyDescription> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -20602,7 +20790,7 @@ class CNLDAPPropertyDescription extends Struct<CNLDAPPropertyDescription> {
 
   static void setLDAPKey(
     Pointer<CNLDAPPropertyDescription> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -20614,7 +20802,7 @@ class CNLDAPPropertyDescription extends Struct<CNLDAPPropertyDescription> {
 
   static void setValueTransform(
     Pointer<CNLDAPPropertyDescription> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -20626,8 +20814,8 @@ class CNLDAPPropertyDescription extends Struct<CNLDAPPropertyDescription> {
 
   static void updateContact(
     Pointer<CNLDAPPropertyDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> withLDAPValue,
+    Pointer arg, {
+    @required Pointer withLDAPValue,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -20638,7 +20826,7 @@ class CNLDAPPropertyDescription extends Struct<CNLDAPPropertyDescription> {
     );
   }
 
-  static Pointer<Void> valueTransform(
+  static Pointer valueTransform(
     Pointer<CNLDAPPropertyDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -20649,11 +20837,9 @@ class CNLDAPPropertyDescription extends Struct<CNLDAPPropertyDescription> {
   }
 }
 
-/// Objective-C class _CNLDAPQueryFilter_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNLDAPQueryFilter extends Struct<CNLDAPQueryFilter> {
   factory CNLDAPQueryFilter._() {
@@ -20665,11 +20851,9 @@ class CNLDAPQueryFilter extends Struct<CNLDAPQueryFilter> {
   }
 }
 
-/// Objective-C class _CNLDAPSearchBase_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNLDAPSearchBase extends Struct<CNLDAPSearchBase> {
   factory CNLDAPSearchBase._() {
@@ -20680,7 +20864,7 @@ class CNLDAPSearchBase extends Struct<CNLDAPSearchBase> {
     return _objc.allocate("CNLDAPSearchBase").cast<CNLDAPSearchBase>();
   }
 
-  static Pointer<Void> distinguishedName(
+  static Pointer distinguishedName(
     Pointer<CNLDAPSearchBase> _self,
   ) {
     _openDynamicLibrary();
@@ -20702,7 +20886,7 @@ class CNLDAPSearchBase extends Struct<CNLDAPSearchBase> {
 
   static void setDistinguishedName(
     Pointer<CNLDAPSearchBase> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -20725,11 +20909,9 @@ class CNLDAPSearchBase extends Struct<CNLDAPSearchBase> {
   }
 }
 
-/// Objective-C class _CNLDAPServices_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNLDAPServices extends Struct<CNLDAPServices> {
   factory CNLDAPServices._() {
@@ -20740,7 +20922,7 @@ class CNLDAPServices extends Struct<CNLDAPServices> {
     return _objc.allocate("CNLDAPServices").cast<CNLDAPServices>();
   }
 
-  static Pointer<Void> copy(
+  static Pointer copy(
     Pointer<CNLDAPServices> _self,
   ) {
     _openDynamicLibrary();
@@ -20750,9 +20932,9 @@ class CNLDAPServices extends Struct<CNLDAPServices> {
     );
   }
 
-  static Pointer<Void> ldap_connection_create_with_url(
+  static Pointer ldap_connection_create_with_url(
     Pointer<CNLDAPServices> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -20762,18 +20944,18 @@ class CNLDAPServices extends Struct<CNLDAPServices> {
     );
   }
 
-  static Pointer<Void> ldap_connection_query_create(
+  static Pointer ldap_connection_query_create(
     Pointer<CNLDAPServices> _self,
-    Pointer<Void> _arg2,
+    Pointer _arg2,
     int _arg3,
     int _arg4,
-    Pointer<Void> _arg5,
-    Pointer<Void> _arg6,
-    Pointer<Void> _arg7,
+    Pointer _arg5,
+    Pointer _arg6,
+    Pointer _arg7,
     int _arg8,
     int _arg9,
-    Pointer<Void> _arg10,
-    Pointer<Void> _arg11,
+    Pointer _arg10,
+    Pointer _arg11,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_Int32_Int32_p_p_p_Uint32_Int8_p_p_returns_p(
@@ -20794,8 +20976,8 @@ class CNLDAPServices extends Struct<CNLDAPServices> {
 
   static void ldap_connection_set_disconnect_handler(
     Pointer<CNLDAPServices> _self,
-    Pointer<Void> _arg2,
-    Pointer<Void> _arg3,
+    Pointer _arg2,
+    Pointer _arg3,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -20808,9 +20990,9 @@ class CNLDAPServices extends Struct<CNLDAPServices> {
 
   static void ldap_connection_start(
     Pointer<CNLDAPServices> _self,
-    Pointer<Void> _arg2,
+    Pointer _arg2,
     int _arg3,
-    Pointer<Void> _arg4,
+    Pointer _arg4,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_Int32_p_returns_void(
@@ -20824,7 +21006,7 @@ class CNLDAPServices extends Struct<CNLDAPServices> {
 
   static void ldap_operation_cancel(
     Pointer<CNLDAPServices> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -20835,11 +21017,9 @@ class CNLDAPServices extends Struct<CNLDAPServices> {
   }
 }
 
-/// Objective-C class _CNLDAPTransforms_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNLDAPTransforms extends Struct<CNLDAPTransforms> {
   factory CNLDAPTransforms._() {
@@ -20851,11 +21031,9 @@ class CNLDAPTransforms extends Struct<CNLDAPTransforms> {
   }
 }
 
-/// Objective-C class _CNLabelValuePair_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNLabelValuePair extends Struct<CNLabelValuePair> {
   factory CNLabelValuePair._() {
@@ -20866,9 +21044,9 @@ class CNLabelValuePair extends Struct<CNLabelValuePair> {
     return _objc.allocate("CNLabelValuePair").cast<CNLabelValuePair>();
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<CNLabelValuePair> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -20878,7 +21056,7 @@ class CNLabelValuePair extends Struct<CNLabelValuePair> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CNLabelValuePair> _self,
   ) {
     _openDynamicLibrary();
@@ -20898,10 +21076,10 @@ class CNLabelValuePair extends Struct<CNLabelValuePair> {
     );
   }
 
-  static Pointer<Void> initWithLabel(
+  static Pointer initWithLabel(
     Pointer<CNLabelValuePair> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> value,
+    Pointer arg, {
+    @required Pointer value,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -20914,7 +21092,7 @@ class CNLabelValuePair extends Struct<CNLabelValuePair> {
 
   static int isEqual(
     Pointer<CNLabelValuePair> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -20924,7 +21102,7 @@ class CNLabelValuePair extends Struct<CNLabelValuePair> {
     );
   }
 
-  static Pointer<Void> label(
+  static Pointer label(
     Pointer<CNLabelValuePair> _self,
   ) {
     _openDynamicLibrary();
@@ -20934,7 +21112,7 @@ class CNLabelValuePair extends Struct<CNLabelValuePair> {
     );
   }
 
-  static Pointer<Void> value(
+  static Pointer value(
     Pointer<CNLabelValuePair> _self,
   ) {
     _openDynamicLibrary();
@@ -20945,11 +21123,9 @@ class CNLabelValuePair extends Struct<CNLabelValuePair> {
   }
 }
 
-/// Objective-C class _CNLabeledValue_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNLabeledValue extends Struct<CNLabeledValue> {
   factory CNLabeledValue._() {
@@ -20962,7 +21138,7 @@ class CNLabeledValue extends Struct<CNLabeledValue> {
 
   static void addStoreInfo(
     Pointer<CNLabeledValue> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -20972,9 +21148,9 @@ class CNLabeledValue extends Struct<CNLabeledValue> {
     );
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<CNLabeledValue> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -20984,7 +21160,7 @@ class CNLabeledValue extends Struct<CNLabeledValue> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CNLabeledValue> _self,
   ) {
     _openDynamicLibrary();
@@ -20996,7 +21172,7 @@ class CNLabeledValue extends Struct<CNLabeledValue> {
 
   static void encodeWithCoder(
     Pointer<CNLabeledValue> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -21016,7 +21192,7 @@ class CNLabeledValue extends Struct<CNLabeledValue> {
     );
   }
 
-  static Pointer<Void> identifier(
+  static Pointer identifier(
     Pointer<CNLabeledValue> _self,
   ) {
     _openDynamicLibrary();
@@ -21026,9 +21202,9 @@ class CNLabeledValue extends Struct<CNLabeledValue> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CNLabeledValue> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -21038,11 +21214,11 @@ class CNLabeledValue extends Struct<CNLabeledValue> {
     );
   }
 
-  static Pointer<Void> initWithIdentifier(
+  static Pointer initWithIdentifier(
     Pointer<CNLabeledValue> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> label,
-    @required Pointer<Void> value,
+    Pointer arg, {
+    @required Pointer label,
+    @required Pointer value,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -21054,10 +21230,10 @@ class CNLabeledValue extends Struct<CNLabeledValue> {
     );
   }
 
-  static Pointer<Void> initWithLabel(
+  static Pointer initWithLabel(
     Pointer<CNLabeledValue> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> value,
+    Pointer arg, {
+    @required Pointer value,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -21070,7 +21246,7 @@ class CNLabeledValue extends Struct<CNLabeledValue> {
 
   static int isEqual(
     Pointer<CNLabeledValue> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -21082,7 +21258,7 @@ class CNLabeledValue extends Struct<CNLabeledValue> {
 
   static int isEqualIgnoringIdentifiers(
     Pointer<CNLabeledValue> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -21094,7 +21270,7 @@ class CNLabeledValue extends Struct<CNLabeledValue> {
 
   static int isEqualToLabeledValue$includeIdentifiers$(
     Pointer<CNLabeledValue> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int includeIdentifiers,
   }) {
     _openDynamicLibrary();
@@ -21108,7 +21284,7 @@ class CNLabeledValue extends Struct<CNLabeledValue> {
 
   static int isEqualToLabeledValue$(
     Pointer<CNLabeledValue> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -21128,7 +21304,7 @@ class CNLabeledValue extends Struct<CNLabeledValue> {
     );
   }
 
-  static Pointer<Void> label(
+  static Pointer label(
     Pointer<CNLabeledValue> _self,
   ) {
     _openDynamicLibrary();
@@ -21138,7 +21314,7 @@ class CNLabeledValue extends Struct<CNLabeledValue> {
     );
   }
 
-  static Pointer<Void> labelValuePair(
+  static Pointer labelValuePair(
     Pointer<CNLabeledValue> _self,
   ) {
     _openDynamicLibrary();
@@ -21148,9 +21324,9 @@ class CNLabeledValue extends Struct<CNLabeledValue> {
     );
   }
 
-  static Pointer<Void> labeledValueBySettingLabel$(
+  static Pointer labeledValueBySettingLabel$(
     Pointer<CNLabeledValue> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -21160,10 +21336,10 @@ class CNLabeledValue extends Struct<CNLabeledValue> {
     );
   }
 
-  static Pointer<Void> labeledValueBySettingLabel$value$(
+  static Pointer labeledValueBySettingLabel$value$(
     Pointer<CNLabeledValue> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> value,
+    Pointer arg, {
+    @required Pointer value,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -21174,9 +21350,9 @@ class CNLabeledValue extends Struct<CNLabeledValue> {
     );
   }
 
-  static Pointer<Void> labeledValueBySettingValue(
+  static Pointer labeledValueBySettingValue(
     Pointer<CNLabeledValue> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -21186,7 +21362,7 @@ class CNLabeledValue extends Struct<CNLabeledValue> {
     );
   }
 
-  static Pointer<Void> linkedIdentifiers(
+  static Pointer linkedIdentifiers(
     Pointer<CNLabeledValue> _self,
   ) {
     _openDynamicLibrary();
@@ -21198,7 +21374,7 @@ class CNLabeledValue extends Struct<CNLabeledValue> {
 
   static void setLinkedIdentifiers(
     Pointer<CNLabeledValue> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -21210,7 +21386,7 @@ class CNLabeledValue extends Struct<CNLabeledValue> {
 
   static void setStoreIdentifier(
     Pointer<CNLabeledValue> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -21222,7 +21398,7 @@ class CNLabeledValue extends Struct<CNLabeledValue> {
 
   static void setStoreInfo(
     Pointer<CNLabeledValue> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -21232,7 +21408,7 @@ class CNLabeledValue extends Struct<CNLabeledValue> {
     );
   }
 
-  static Pointer<Void> storeIdentifier(
+  static Pointer storeIdentifier(
     Pointer<CNLabeledValue> _self,
   ) {
     _openDynamicLibrary();
@@ -21242,7 +21418,7 @@ class CNLabeledValue extends Struct<CNLabeledValue> {
     );
   }
 
-  static Pointer<Void> storeInfo(
+  static Pointer storeInfo(
     Pointer<CNLabeledValue> _self,
   ) {
     _openDynamicLibrary();
@@ -21252,7 +21428,7 @@ class CNLabeledValue extends Struct<CNLabeledValue> {
     );
   }
 
-  static Pointer<Void> suggestionFoundInBundleId(
+  static Pointer suggestionFoundInBundleId(
     Pointer<CNLabeledValue> _self,
   ) {
     _openDynamicLibrary();
@@ -21262,7 +21438,7 @@ class CNLabeledValue extends Struct<CNLabeledValue> {
     );
   }
 
-  static Pointer<Void> suggestionRecordId(
+  static Pointer suggestionRecordId(
     Pointer<CNLabeledValue> _self,
   ) {
     _openDynamicLibrary();
@@ -21272,7 +21448,7 @@ class CNLabeledValue extends Struct<CNLabeledValue> {
     );
   }
 
-  static Pointer<Void> value(
+  static Pointer value(
     Pointer<CNLabeledValue> _self,
   ) {
     _openDynamicLibrary();
@@ -21282,7 +21458,7 @@ class CNLabeledValue extends Struct<CNLabeledValue> {
     );
   }
 
-  static Pointer<Void> valueOrigin(
+  static Pointer valueOrigin(
     Pointer<CNLabeledValue> _self,
   ) {
     _openDynamicLibrary();
@@ -21293,11 +21469,9 @@ class CNLabeledValue extends Struct<CNLabeledValue> {
   }
 }
 
-/// Objective-C class _CNLaunchServicesRemoteAdapter_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNLaunchServicesRemoteAdapter
     extends Struct<CNLaunchServicesRemoteAdapter> {
@@ -21313,8 +21487,8 @@ class CNLaunchServicesRemoteAdapter
 
   static void applicationForBundleIdentifier(
     Pointer<CNLaunchServicesRemoteAdapter> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> withReply,
+    Pointer arg, {
+    @required Pointer withReply,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -21327,8 +21501,8 @@ class CNLaunchServicesRemoteAdapter
 
   static void applicationsAvailableForHandlingURLScheme(
     Pointer<CNLaunchServicesRemoteAdapter> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> withReply,
+    Pointer arg, {
+    @required Pointer withReply,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -21341,8 +21515,8 @@ class CNLaunchServicesRemoteAdapter
 
   static void applicationsForUserActivityType(
     Pointer<CNLaunchServicesRemoteAdapter> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> withReply,
+    Pointer arg, {
+    @required Pointer withReply,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -21355,9 +21529,9 @@ class CNLaunchServicesRemoteAdapter
 
   static void openSensitiveURLInBackground(
     Pointer<CNLaunchServicesRemoteAdapter> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> withOptions,
-    @required Pointer<Void> withReply,
+    Pointer arg, {
+    @required Pointer withOptions,
+    @required Pointer withReply,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_void(
@@ -21371,9 +21545,9 @@ class CNLaunchServicesRemoteAdapter
 
   static void openUserActivityData(
     Pointer<CNLaunchServicesRemoteAdapter> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> inApplication,
-    @required Pointer<Void> withReply,
+    Pointer arg, {
+    @required Pointer inApplication,
+    @required Pointer withReply,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_void(
@@ -21386,11 +21560,9 @@ class CNLaunchServicesRemoteAdapter
   }
 }
 
-/// Objective-C class _CNLinkIdentifierDescription_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNLinkIdentifierDescription extends Struct<CNLinkIdentifierDescription> {
   factory CNLinkIdentifierDescription._() {
@@ -21403,9 +21575,9 @@ class CNLinkIdentifierDescription extends Struct<CNLinkIdentifierDescription> {
         .cast<CNLinkIdentifierDescription>();
   }
 
-  static Pointer<Void> CNValueForContact(
+  static Pointer CNValueForContact(
     Pointer<CNLinkIdentifierDescription> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -21417,8 +21589,8 @@ class CNLinkIdentifierDescription extends Struct<CNLinkIdentifierDescription> {
 
   static void copyFromCoreDataContact(
     Pointer<CNLinkIdentifierDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toContact,
+    Pointer arg, {
+    @required Pointer toContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -21431,8 +21603,8 @@ class CNLinkIdentifierDescription extends Struct<CNLinkIdentifierDescription> {
 
   static void copyValueFromContact(
     Pointer<CNLinkIdentifierDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toRemotePerson,
+    Pointer arg, {
+    @required Pointer toRemotePerson,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -21445,8 +21617,8 @@ class CNLinkIdentifierDescription extends Struct<CNLinkIdentifierDescription> {
 
   static void copyValueFromRemotePerson(
     Pointer<CNLinkIdentifierDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toContact,
+    Pointer arg, {
+    @required Pointer toContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -21457,7 +21629,7 @@ class CNLinkIdentifierDescription extends Struct<CNLinkIdentifierDescription> {
     );
   }
 
-  static Pointer<Void> coreDataKey(
+  static Pointer coreDataKey(
     Pointer<CNLinkIdentifierDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -21469,8 +21641,8 @@ class CNLinkIdentifierDescription extends Struct<CNLinkIdentifierDescription> {
 
   static void decodeUsingCoder(
     Pointer<CNLinkIdentifierDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> contact,
+    Pointer arg, {
+    @required Pointer contact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -21483,8 +21655,8 @@ class CNLinkIdentifierDescription extends Struct<CNLinkIdentifierDescription> {
 
   static void encodeUsingCoder(
     Pointer<CNLinkIdentifierDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> contact,
+    Pointer arg, {
+    @required Pointer contact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -21495,7 +21667,7 @@ class CNLinkIdentifierDescription extends Struct<CNLinkIdentifierDescription> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CNLinkIdentifierDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -21507,8 +21679,8 @@ class CNLinkIdentifierDescription extends Struct<CNLinkIdentifierDescription> {
 
   static int isEqualForContact(
     Pointer<CNLinkIdentifierDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> other,
+    Pointer arg, {
+    @required Pointer other,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -21521,8 +21693,8 @@ class CNLinkIdentifierDescription extends Struct<CNLinkIdentifierDescription> {
 
   static int isEqualIgnoringIdentifiersForContact(
     Pointer<CNLinkIdentifierDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> other,
+    Pointer arg, {
+    @required Pointer other,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -21535,8 +21707,8 @@ class CNLinkIdentifierDescription extends Struct<CNLinkIdentifierDescription> {
 
   static void setCNValue(
     Pointer<CNLinkIdentifierDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> onContact,
+    Pointer arg, {
+    @required Pointer onContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -21548,11 +21720,9 @@ class CNLinkIdentifierDescription extends Struct<CNLinkIdentifierDescription> {
   }
 }
 
-/// Objective-C class _CNLinkedContactsPredicate_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNLinkedContactsPredicate extends Struct<CNLinkedContactsPredicate> {
   factory CNLinkedContactsPredicate._() {
@@ -21565,7 +21735,7 @@ class CNLinkedContactsPredicate extends Struct<CNLinkedContactsPredicate> {
         .cast<CNLinkedContactsPredicate>();
   }
 
-  static Pointer<Void> contact(
+  static Pointer contact(
     Pointer<CNLinkedContactsPredicate> _self,
   ) {
     _openDynamicLibrary();
@@ -21575,7 +21745,7 @@ class CNLinkedContactsPredicate extends Struct<CNLinkedContactsPredicate> {
     );
   }
 
-  static Pointer<Void> contactIdentifier(
+  static Pointer contactIdentifier(
     Pointer<CNLinkedContactsPredicate> _self,
   ) {
     _openDynamicLibrary();
@@ -21585,7 +21755,7 @@ class CNLinkedContactsPredicate extends Struct<CNLinkedContactsPredicate> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CNLinkedContactsPredicate> _self,
   ) {
     _openDynamicLibrary();
@@ -21597,7 +21767,7 @@ class CNLinkedContactsPredicate extends Struct<CNLinkedContactsPredicate> {
 
   static void encodeWithCoder(
     Pointer<CNLinkedContactsPredicate> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -21607,9 +21777,9 @@ class CNLinkedContactsPredicate extends Struct<CNLinkedContactsPredicate> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CNLinkedContactsPredicate> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -21619,9 +21789,9 @@ class CNLinkedContactsPredicate extends Struct<CNLinkedContactsPredicate> {
     );
   }
 
-  static Pointer<Void> initWithContact(
+  static Pointer initWithContact(
     Pointer<CNLinkedContactsPredicate> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -21631,9 +21801,9 @@ class CNLinkedContactsPredicate extends Struct<CNLinkedContactsPredicate> {
     );
   }
 
-  static Pointer<Void> initWithContactIdentifier(
+  static Pointer initWithContactIdentifier(
     Pointer<CNLinkedContactsPredicate> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -21644,11 +21814,9 @@ class CNLinkedContactsPredicate extends Struct<CNLinkedContactsPredicate> {
   }
 }
 
-/// Objective-C class _CNMapsDataDescription_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNMapsDataDescription extends Struct<CNMapsDataDescription> {
   factory CNMapsDataDescription._() {
@@ -21661,9 +21829,9 @@ class CNMapsDataDescription extends Struct<CNMapsDataDescription> {
         .cast<CNMapsDataDescription>();
   }
 
-  static Pointer<Void> CNValueForContact(
+  static Pointer CNValueForContact(
     Pointer<CNMapsDataDescription> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -21675,8 +21843,8 @@ class CNMapsDataDescription extends Struct<CNMapsDataDescription> {
 
   static void copyFromCoreDataContact(
     Pointer<CNMapsDataDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toContact,
+    Pointer arg, {
+    @required Pointer toContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -21689,8 +21857,8 @@ class CNMapsDataDescription extends Struct<CNMapsDataDescription> {
 
   static void decodeUsingCoder(
     Pointer<CNMapsDataDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> contact,
+    Pointer arg, {
+    @required Pointer contact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -21703,8 +21871,8 @@ class CNMapsDataDescription extends Struct<CNMapsDataDescription> {
 
   static void encodeUsingCoder(
     Pointer<CNMapsDataDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> contact,
+    Pointer arg, {
+    @required Pointer contact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -21715,7 +21883,7 @@ class CNMapsDataDescription extends Struct<CNMapsDataDescription> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CNMapsDataDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -21727,8 +21895,8 @@ class CNMapsDataDescription extends Struct<CNMapsDataDescription> {
 
   static int isEqualForContact(
     Pointer<CNMapsDataDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> other,
+    Pointer arg, {
+    @required Pointer other,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -21741,8 +21909,8 @@ class CNMapsDataDescription extends Struct<CNMapsDataDescription> {
 
   static void setCNValue(
     Pointer<CNMapsDataDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> onContact,
+    Pointer arg, {
+    @required Pointer onContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -21754,11 +21922,9 @@ class CNMapsDataDescription extends Struct<CNMapsDataDescription> {
   }
 }
 
-/// Objective-C class _CNMeContactsPredicate_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNMeContactsPredicate extends Struct<CNMeContactsPredicate> {
   factory CNMeContactsPredicate._() {
@@ -21771,9 +21937,9 @@ class CNMeContactsPredicate extends Struct<CNMeContactsPredicate> {
         .cast<CNMeContactsPredicate>();
   }
 
-  static Pointer<Void> contactsFromDonationStore(
+  static Pointer contactsFromDonationStore(
     Pointer<CNMeContactsPredicate> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -21783,7 +21949,7 @@ class CNMeContactsPredicate extends Struct<CNMeContactsPredicate> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CNMeContactsPredicate> _self,
   ) {
     _openDynamicLibrary();
@@ -21803,9 +21969,9 @@ class CNMeContactsPredicate extends Struct<CNMeContactsPredicate> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CNMeContactsPredicate> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -21817,7 +21983,7 @@ class CNMeContactsPredicate extends Struct<CNMeContactsPredicate> {
 
   static int isEqual(
     Pointer<CNMeContactsPredicate> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -21828,11 +21994,9 @@ class CNMeContactsPredicate extends Struct<CNMeContactsPredicate> {
   }
 }
 
-/// Objective-C class _CNMiddleNameDescription_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNMiddleNameDescription extends Struct<CNMiddleNameDescription> {
   factory CNMiddleNameDescription._() {
@@ -21845,9 +22009,9 @@ class CNMiddleNameDescription extends Struct<CNMiddleNameDescription> {
         .cast<CNMiddleNameDescription>();
   }
 
-  static Pointer<Void> CNValueForContact(
+  static Pointer CNValueForContact(
     Pointer<CNMiddleNameDescription> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -21859,8 +22023,8 @@ class CNMiddleNameDescription extends Struct<CNMiddleNameDescription> {
 
   static void copyFromCoreDataContact(
     Pointer<CNMiddleNameDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toContact,
+    Pointer arg, {
+    @required Pointer toContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -21873,8 +22037,8 @@ class CNMiddleNameDescription extends Struct<CNMiddleNameDescription> {
 
   static void copyValueFromContact(
     Pointer<CNMiddleNameDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toRemotePerson,
+    Pointer arg, {
+    @required Pointer toRemotePerson,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -21887,8 +22051,8 @@ class CNMiddleNameDescription extends Struct<CNMiddleNameDescription> {
 
   static void copyValueFromRemotePerson(
     Pointer<CNMiddleNameDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toContact,
+    Pointer arg, {
+    @required Pointer toContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -21899,7 +22063,7 @@ class CNMiddleNameDescription extends Struct<CNMiddleNameDescription> {
     );
   }
 
-  static Pointer<Void> coreDataKey(
+  static Pointer coreDataKey(
     Pointer<CNMiddleNameDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -21911,8 +22075,8 @@ class CNMiddleNameDescription extends Struct<CNMiddleNameDescription> {
 
   static void decodeUsingCoder(
     Pointer<CNMiddleNameDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> contact,
+    Pointer arg, {
+    @required Pointer contact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -21925,8 +22089,8 @@ class CNMiddleNameDescription extends Struct<CNMiddleNameDescription> {
 
   static void encodeUsingCoder(
     Pointer<CNMiddleNameDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> contact,
+    Pointer arg, {
+    @required Pointer contact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -21937,7 +22101,7 @@ class CNMiddleNameDescription extends Struct<CNMiddleNameDescription> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CNMiddleNameDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -21949,8 +22113,8 @@ class CNMiddleNameDescription extends Struct<CNMiddleNameDescription> {
 
   static int isEqualForContact(
     Pointer<CNMiddleNameDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> other,
+    Pointer arg, {
+    @required Pointer other,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -21973,8 +22137,8 @@ class CNMiddleNameDescription extends Struct<CNMiddleNameDescription> {
 
   static void setCNValue(
     Pointer<CNMiddleNameDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> onContact,
+    Pointer arg, {
+    @required Pointer onContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -21986,11 +22150,9 @@ class CNMiddleNameDescription extends Struct<CNMiddleNameDescription> {
   }
 }
 
-/// Objective-C class _CNMockContactsLogger_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNMockContactsLogger extends Struct<CNMockContactsLogger> {
   factory CNMockContactsLogger._() {
@@ -22047,8 +22209,8 @@ class CNMockContactsLogger extends Struct<CNMockContactsLogger> {
 
   static void addingContacts(
     Pointer<CNMockContactsLogger> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toContainerWithIdentifier,
+    Pointer arg, {
+    @required Pointer toContainerWithIdentifier,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -22061,7 +22223,7 @@ class CNMockContactsLogger extends Struct<CNMockContactsLogger> {
 
   static void changedMeContact(
     Pointer<CNMockContactsLogger> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -22073,7 +22235,7 @@ class CNMockContactsLogger extends Struct<CNMockContactsLogger> {
 
   static void changingMeContact(
     Pointer<CNMockContactsLogger> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -22085,7 +22247,7 @@ class CNMockContactsLogger extends Struct<CNMockContactsLogger> {
 
   static void clearingChangeHistory(
     Pointer<CNMockContactsLogger> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -22109,7 +22271,7 @@ class CNMockContactsLogger extends Struct<CNMockContactsLogger> {
 
   static void deletingContact(
     Pointer<CNMockContactsLogger> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -22121,8 +22283,8 @@ class CNMockContactsLogger extends Struct<CNMockContactsLogger> {
 
   static void didFetchContacts(
     Pointer<CNMockContactsLogger> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> error,
+    Pointer arg, {
+    @required Pointer error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -22135,8 +22297,8 @@ class CNMockContactsLogger extends Struct<CNMockContactsLogger> {
 
   static void didFetchEncodedContacts(
     Pointer<CNMockContactsLogger> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> error,
+    Pointer arg, {
+    @required Pointer error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -22149,9 +22311,9 @@ class CNMockContactsLogger extends Struct<CNMockContactsLogger> {
 
   static void fetchContactsMatchingPredicate(
     Pointer<CNMockContactsLogger> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int unifyResults,
-    @required Pointer<Void> keysToFetch,
+    @required Pointer keysToFetch,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_Int8_p_returns_void(
@@ -22166,9 +22328,9 @@ class CNMockContactsLogger extends Struct<CNMockContactsLogger> {
 
   static void fetchContactsProgressivelyMatchingPredicate(
     Pointer<CNMockContactsLogger> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int unifyResults,
-    @required Pointer<Void> keysToFetch,
+    @required Pointer keysToFetch,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_Int8_p_returns_void(
@@ -22183,9 +22345,9 @@ class CNMockContactsLogger extends Struct<CNMockContactsLogger> {
 
   static void fetchEncodedContactsMatchingPredicate(
     Pointer<CNMockContactsLogger> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int unifyResults,
-    @required Pointer<Void> keysToFetch,
+    @required Pointer keysToFetch,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_Int8_p_returns_void(
@@ -22200,7 +22362,7 @@ class CNMockContactsLogger extends Struct<CNMockContactsLogger> {
 
   static void fetchingChangeHistory(
     Pointer<CNMockContactsLogger> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -22212,7 +22374,7 @@ class CNMockContactsLogger extends Struct<CNMockContactsLogger> {
 
   static void fetchingContactCount(
     Pointer<CNMockContactsLogger> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -22224,7 +22386,7 @@ class CNMockContactsLogger extends Struct<CNMockContactsLogger> {
 
   static void fetchingContactIdentifierWithMatchingDictionary(
     Pointer<CNMockContactsLogger> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -22236,7 +22398,7 @@ class CNMockContactsLogger extends Struct<CNMockContactsLogger> {
 
   static void fetchingContactWithUserActivity(
     Pointer<CNMockContactsLogger> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -22248,7 +22410,7 @@ class CNMockContactsLogger extends Struct<CNMockContactsLogger> {
 
   static void fetchingContacts(
     Pointer<CNMockContactsLogger> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -22260,7 +22422,7 @@ class CNMockContactsLogger extends Struct<CNMockContactsLogger> {
 
   static void fetchingContactsBatch(
     Pointer<CNMockContactsLogger> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -22272,7 +22434,7 @@ class CNMockContactsLogger extends Struct<CNMockContactsLogger> {
 
   static void fetchingContainers(
     Pointer<CNMockContactsLogger> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -22284,7 +22446,7 @@ class CNMockContactsLogger extends Struct<CNMockContactsLogger> {
 
   static void fetchingDefaultContainerIdentifier(
     Pointer<CNMockContactsLogger> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -22296,7 +22458,7 @@ class CNMockContactsLogger extends Struct<CNMockContactsLogger> {
 
   static void fetchingGroups(
     Pointer<CNMockContactsLogger> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -22308,7 +22470,7 @@ class CNMockContactsLogger extends Struct<CNMockContactsLogger> {
 
   static void fetchingMeContactIdentifier(
     Pointer<CNMockContactsLogger> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -22320,7 +22482,7 @@ class CNMockContactsLogger extends Struct<CNMockContactsLogger> {
 
   static void internalError(
     Pointer<CNMockContactsLogger> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -22332,7 +22494,7 @@ class CNMockContactsLogger extends Struct<CNMockContactsLogger> {
 
   static void noAccessToContactsWithError(
     Pointer<CNMockContactsLogger> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -22344,7 +22506,7 @@ class CNMockContactsLogger extends Struct<CNMockContactsLogger> {
 
   static void registeringForChangeHistory(
     Pointer<CNMockContactsLogger> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -22356,7 +22518,7 @@ class CNMockContactsLogger extends Struct<CNMockContactsLogger> {
 
   static void requestingAccessForContacts(
     Pointer<CNMockContactsLogger> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -22368,7 +22530,7 @@ class CNMockContactsLogger extends Struct<CNMockContactsLogger> {
 
   static void saveRequestFailed(
     Pointer<CNMockContactsLogger> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -22380,7 +22542,7 @@ class CNMockContactsLogger extends Struct<CNMockContactsLogger> {
 
   static void saveRequestInvalid(
     Pointer<CNMockContactsLogger> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -22392,7 +22554,7 @@ class CNMockContactsLogger extends Struct<CNMockContactsLogger> {
 
   static void saving(
     Pointer<CNMockContactsLogger> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -22404,7 +22566,7 @@ class CNMockContactsLogger extends Struct<CNMockContactsLogger> {
 
   static void serviceError(
     Pointer<CNMockContactsLogger> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -22416,7 +22578,7 @@ class CNMockContactsLogger extends Struct<CNMockContactsLogger> {
 
   static void servicingContactsRequest(
     Pointer<CNMockContactsLogger> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -22448,7 +22610,7 @@ class CNMockContactsLogger extends Struct<CNMockContactsLogger> {
 
   static void unregisteringForChangeHistory(
     Pointer<CNMockContactsLogger> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -22460,7 +22622,7 @@ class CNMockContactsLogger extends Struct<CNMockContactsLogger> {
 
   static void updatingContact(
     Pointer<CNMockContactsLogger> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -22471,11 +22633,9 @@ class CNMockContactsLogger extends Struct<CNMockContactsLogger> {
   }
 }
 
-/// Objective-C class _CNMockFavoritesLogger_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNMockFavoritesLogger extends Struct<CNMockFavoritesLogger> {
   factory CNMockFavoritesLogger._() {
@@ -22490,7 +22650,7 @@ class CNMockFavoritesLogger extends Struct<CNMockFavoritesLogger> {
 
   static void failedToConvertFavoritesToPropertyList(
     Pointer<CNMockFavoritesLogger> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -22502,8 +22662,8 @@ class CNMockFavoritesLogger extends Struct<CNMockFavoritesLogger> {
 
   static void failedToReadFavoritesFromPath(
     Pointer<CNMockFavoritesLogger> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> error,
+    Pointer arg, {
+    @required Pointer error,
     @required int simulateCrashReport,
   }) {
     _openDynamicLibrary();
@@ -22519,7 +22679,7 @@ class CNMockFavoritesLogger extends Struct<CNMockFavoritesLogger> {
 
   static void failedToReadRemoteFavorites(
     Pointer<CNMockFavoritesLogger> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -22531,9 +22691,9 @@ class CNMockFavoritesLogger extends Struct<CNMockFavoritesLogger> {
 
   static void failedToVerifyFavorites(
     Pointer<CNMockFavoritesLogger> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> withPropertyListFavorites,
-    @required Pointer<Void> error,
+    Pointer arg, {
+    @required Pointer withPropertyListFavorites,
+    @required Pointer error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_void(
@@ -22548,7 +22708,7 @@ class CNMockFavoritesLogger extends Struct<CNMockFavoritesLogger> {
 
   static void failedToVerifyWrittenFavoritesExistsAtPath(
     Pointer<CNMockFavoritesLogger> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -22560,8 +22720,8 @@ class CNMockFavoritesLogger extends Struct<CNMockFavoritesLogger> {
 
   static void failedToWriteFavoritesToPath(
     Pointer<CNMockFavoritesLogger> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> error,
+    Pointer arg, {
+    @required Pointer error,
     @required int simulateCrashReport,
   }) {
     _openDynamicLibrary();
@@ -22577,7 +22737,7 @@ class CNMockFavoritesLogger extends Struct<CNMockFavoritesLogger> {
 
   static void failedToWriteRemoteFavorites(
     Pointer<CNMockFavoritesLogger> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -22589,7 +22749,7 @@ class CNMockFavoritesLogger extends Struct<CNMockFavoritesLogger> {
 
   static void finishedReadingFavoritesFromPath(
     Pointer<CNMockFavoritesLogger> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int entriesCount,
   }) {
     _openDynamicLibrary();
@@ -22613,7 +22773,7 @@ class CNMockFavoritesLogger extends Struct<CNMockFavoritesLogger> {
 
   static void finishedWritingFavoritesToPath(
     Pointer<CNMockFavoritesLogger> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int entriesCount,
   }) {
     _openDynamicLibrary();
@@ -22637,7 +22797,7 @@ class CNMockFavoritesLogger extends Struct<CNMockFavoritesLogger> {
 
   static void readingFavorites(
     Pointer<CNMockFavoritesLogger> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -22649,7 +22809,7 @@ class CNMockFavoritesLogger extends Struct<CNMockFavoritesLogger> {
 
   static void rematchingFavorites(
     Pointer<CNMockFavoritesLogger> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -22661,7 +22821,7 @@ class CNMockFavoritesLogger extends Struct<CNMockFavoritesLogger> {
 
   static void writingFavorites(
     Pointer<CNMockFavoritesLogger> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -22672,11 +22832,9 @@ class CNMockFavoritesLogger extends Struct<CNMockFavoritesLogger> {
   }
 }
 
-/// Objective-C class _CNMockLoggerProvider_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNMockLoggerProvider extends Struct<CNMockLoggerProvider> {
   factory CNMockLoggerProvider._() {
@@ -22687,7 +22845,7 @@ class CNMockLoggerProvider extends Struct<CNMockLoggerProvider> {
     return _objc.allocate("CNMockLoggerProvider").cast<CNMockLoggerProvider>();
   }
 
-  static Pointer<Void> contactsLogger(
+  static Pointer contactsLogger(
     Pointer<CNMockLoggerProvider> _self,
   ) {
     _openDynamicLibrary();
@@ -22697,7 +22855,7 @@ class CNMockLoggerProvider extends Struct<CNMockLoggerProvider> {
     );
   }
 
-  static Pointer<Void> favoritesLogger(
+  static Pointer favoritesLogger(
     Pointer<CNMockLoggerProvider> _self,
   ) {
     _openDynamicLibrary();
@@ -22707,7 +22865,7 @@ class CNMockLoggerProvider extends Struct<CNMockLoggerProvider> {
     );
   }
 
-  static Pointer<Void> regulatoryLogger(
+  static Pointer regulatoryLogger(
     Pointer<CNMockLoggerProvider> _self,
   ) {
     _openDynamicLibrary();
@@ -22719,7 +22877,7 @@ class CNMockLoggerProvider extends Struct<CNMockLoggerProvider> {
 
   static void setContactsLogger(
     Pointer<CNMockLoggerProvider> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -22731,7 +22889,7 @@ class CNMockLoggerProvider extends Struct<CNMockLoggerProvider> {
 
   static void setFavoritesLogger(
     Pointer<CNMockLoggerProvider> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -22743,7 +22901,7 @@ class CNMockLoggerProvider extends Struct<CNMockLoggerProvider> {
 
   static void setRegulatoryLogger(
     Pointer<CNMockLoggerProvider> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -22755,7 +22913,7 @@ class CNMockLoggerProvider extends Struct<CNMockLoggerProvider> {
 
   static void setSpotlightIndexingLogger(
     Pointer<CNMockLoggerProvider> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -22765,7 +22923,7 @@ class CNMockLoggerProvider extends Struct<CNMockLoggerProvider> {
     );
   }
 
-  static Pointer<Void> spotlightIndexingLogger(
+  static Pointer spotlightIndexingLogger(
     Pointer<CNMockLoggerProvider> _self,
   ) {
     _openDynamicLibrary();
@@ -22776,11 +22934,9 @@ class CNMockLoggerProvider extends Struct<CNMockLoggerProvider> {
   }
 }
 
-/// Objective-C class _CNMockSpotlightIndexingLogger_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNMockSpotlightIndexingLogger
     extends Struct<CNMockSpotlightIndexingLogger> {
@@ -22806,7 +22962,7 @@ class CNMockSpotlightIndexingLogger
 
   static void didNotFinishIndexingForDeltaSyncWithError(
     Pointer<CNMockSpotlightIndexingLogger> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -22818,7 +22974,7 @@ class CNMockSpotlightIndexingLogger
 
   static void didNotFinishIndexingForFullSyncWithError(
     Pointer<CNMockSpotlightIndexingLogger> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -22830,7 +22986,7 @@ class CNMockSpotlightIndexingLogger
 
   static void failedToBeginIndexBatchWithSpotlight(
     Pointer<CNMockSpotlightIndexingLogger> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -22842,9 +22998,9 @@ class CNMockSpotlightIndexingLogger
 
   static void failedToClearChangeHistory(
     Pointer<CNMockSpotlightIndexingLogger> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toChangeAnchor,
-    @required Pointer<Void> error,
+    Pointer arg, {
+    @required Pointer toChangeAnchor,
+    @required Pointer error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_void(
@@ -22858,7 +23014,7 @@ class CNMockSpotlightIndexingLogger
 
   static void failedToCreateSearchableItemForContactIdentifier(
     Pointer<CNMockSpotlightIndexingLogger> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -22870,7 +23026,7 @@ class CNMockSpotlightIndexingLogger
 
   static void failedToCreateUnarchiverForClientStateWithError(
     Pointer<CNMockSpotlightIndexingLogger> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -22882,7 +23038,7 @@ class CNMockSpotlightIndexingLogger
 
   static void failedToDeleteAllSearchableItemsWithSpotlight(
     Pointer<CNMockSpotlightIndexingLogger> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int willRetry,
   }) {
     _openDynamicLibrary();
@@ -22897,7 +23053,7 @@ class CNMockSpotlightIndexingLogger
 
   static void failedToEndIndexBatchWithSpotlight(
     Pointer<CNMockSpotlightIndexingLogger> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int willRetry,
   }) {
     _openDynamicLibrary();
@@ -22911,7 +23067,7 @@ class CNMockSpotlightIndexingLogger
 
   static void failedToFetchClientStateFromSpotlight(
     Pointer<CNMockSpotlightIndexingLogger> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int willRetry,
   }) {
     _openDynamicLibrary();
@@ -22925,7 +23081,7 @@ class CNMockSpotlightIndexingLogger
 
   static void failedToFetchContactForChange(
     Pointer<CNMockSpotlightIndexingLogger> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -22937,8 +23093,8 @@ class CNMockSpotlightIndexingLogger
 
   static void failedToFetchSearchableForContactIdentifiers(
     Pointer<CNMockSpotlightIndexingLogger> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> error,
+    Pointer arg, {
+    @required Pointer error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -22951,8 +23107,8 @@ class CNMockSpotlightIndexingLogger
 
   static void failedToJournalItemIdentifiersForDeletionWithSpotlight(
     Pointer<CNMockSpotlightIndexingLogger> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> identifiers,
+    Pointer arg, {
+    @required Pointer identifiers,
     @required int willRetry,
   }) {
     _openDynamicLibrary();
@@ -22968,8 +23124,8 @@ class CNMockSpotlightIndexingLogger
 
   static void failedToJournalSearchableItemsForIndexingWithSpotlight(
     Pointer<CNMockSpotlightIndexingLogger> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> identifiers,
+    Pointer arg, {
+    @required Pointer identifiers,
     @required int willRetry,
   }) {
     _openDynamicLibrary();
@@ -22985,7 +23141,7 @@ class CNMockSpotlightIndexingLogger
 
   static void failedToUnarchiveClientStateData(
     Pointer<CNMockSpotlightIndexingLogger> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -22997,8 +23153,8 @@ class CNMockSpotlightIndexingLogger
 
   static void finishedBatchIndexWithUpdateIdentifiers(
     Pointer<CNMockSpotlightIndexingLogger> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> deleteIdentifiers,
+    Pointer arg, {
+    @required Pointer deleteIdentifiers,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -23039,7 +23195,7 @@ class CNMockSpotlightIndexingLogger
 
   static void indexingContacts(
     Pointer<CNMockSpotlightIndexingLogger> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -23061,7 +23217,7 @@ class CNMockSpotlightIndexingLogger
 
   static void reindexingAllSearchableItems(
     Pointer<CNMockSpotlightIndexingLogger> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -23073,7 +23229,7 @@ class CNMockSpotlightIndexingLogger
 
   static void reindexingSearchableItemsWithIdentifiers(
     Pointer<CNMockSpotlightIndexingLogger> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -23085,7 +23241,7 @@ class CNMockSpotlightIndexingLogger
 
   static void verifiedIndexWithSummmary(
     Pointer<CNMockSpotlightIndexingLogger> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -23097,7 +23253,7 @@ class CNMockSpotlightIndexingLogger
 
   static void verifyingIndex(
     Pointer<CNMockSpotlightIndexingLogger> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -23141,8 +23297,8 @@ class CNMockSpotlightIndexingLogger
 
   static void willClearChangeHistory(
     Pointer<CNMockSpotlightIndexingLogger> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toChangeAnchor,
+    Pointer arg, {
+    @required Pointer toChangeAnchor,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -23155,7 +23311,7 @@ class CNMockSpotlightIndexingLogger
 
   static void willReindexAsChangeHistoryIsTruncated(
     Pointer<CNMockSpotlightIndexingLogger> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -23167,8 +23323,8 @@ class CNMockSpotlightIndexingLogger
 
   static void willReindexAsFailedToFetchChangeHistory(
     Pointer<CNMockSpotlightIndexingLogger> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> error,
+    Pointer arg, {
+    @required Pointer error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -23191,8 +23347,8 @@ class CNMockSpotlightIndexingLogger
 
   static void willReindexAsFailedToRegisterForChangeHistory(
     Pointer<CNMockSpotlightIndexingLogger> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> error,
+    Pointer arg, {
+    @required Pointer error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -23219,8 +23375,8 @@ class CNMockSpotlightIndexingLogger
 
   static void willReindexAsSnapshotAnchorChangedFrom(
     Pointer<CNMockSpotlightIndexingLogger> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> to,
+    Pointer arg, {
+    @required Pointer to,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -23233,7 +23389,7 @@ class CNMockSpotlightIndexingLogger
 
   static void willReindexItemsWithIdentifiers(
     Pointer<CNMockSpotlightIndexingLogger> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -23267,7 +23423,7 @@ class CNMockSpotlightIndexingLogger
 
   static void willStartIndexingWithClientState(
     Pointer<CNMockSpotlightIndexingLogger> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -23278,11 +23434,9 @@ class CNMockSpotlightIndexingLogger
   }
 }
 
-/// Objective-C class _CNModificationDateDescription_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNModificationDateDescription
     extends Struct<CNModificationDateDescription> {
@@ -23296,9 +23450,9 @@ class CNModificationDateDescription
         .cast<CNModificationDateDescription>();
   }
 
-  static Pointer<Void> CNValueForContact(
+  static Pointer CNValueForContact(
     Pointer<CNModificationDateDescription> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -23310,8 +23464,8 @@ class CNModificationDateDescription
 
   static void copyValueFromContact(
     Pointer<CNModificationDateDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toRemotePerson,
+    Pointer arg, {
+    @required Pointer toRemotePerson,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -23324,8 +23478,8 @@ class CNModificationDateDescription
 
   static void copyValueFromRemotePerson(
     Pointer<CNModificationDateDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toContact,
+    Pointer arg, {
+    @required Pointer toContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -23336,7 +23490,7 @@ class CNModificationDateDescription
     );
   }
 
-  static Pointer<Void> coreDataKey(
+  static Pointer coreDataKey(
     Pointer<CNModificationDateDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -23348,8 +23502,8 @@ class CNModificationDateDescription
 
   static void decodeUsingCoder(
     Pointer<CNModificationDateDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> contact,
+    Pointer arg, {
+    @required Pointer contact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -23362,8 +23516,8 @@ class CNModificationDateDescription
 
   static void encodeUsingCoder(
     Pointer<CNModificationDateDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> contact,
+    Pointer arg, {
+    @required Pointer contact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -23374,7 +23528,7 @@ class CNModificationDateDescription
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CNModificationDateDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -23386,8 +23540,8 @@ class CNModificationDateDescription
 
   static int isEqualForContact(
     Pointer<CNModificationDateDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> other,
+    Pointer arg, {
+    @required Pointer other,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -23400,8 +23554,8 @@ class CNModificationDateDescription
 
   static void setCNValue(
     Pointer<CNModificationDateDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> onContact,
+    Pointer arg, {
+    @required Pointer onContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -23412,7 +23566,7 @@ class CNModificationDateDescription
     );
   }
 
-  static Pointer<Void> valueClass(
+  static Pointer valueClass(
     Pointer<CNModificationDateDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -23423,11 +23577,9 @@ class CNModificationDateDescription
   }
 }
 
-/// Objective-C class _CNMultiValueAddUpdate_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNMultiValueAddUpdate extends Struct<CNMultiValueAddUpdate> {
   factory CNMultiValueAddUpdate._() {
@@ -23442,9 +23594,9 @@ class CNMultiValueAddUpdate extends Struct<CNMultiValueAddUpdate> {
 
   static void applyToABCDContact(
     Pointer<CNMultiValueAddUpdate> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> orderedABCDOwnedObjects,
-    @required Pointer<Void> propertyDescription,
+    Pointer arg, {
+    @required Pointer orderedABCDOwnedObjects,
+    @required Pointer propertyDescription,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_void(
@@ -23459,8 +23611,8 @@ class CNMultiValueAddUpdate extends Struct<CNMultiValueAddUpdate> {
 
   static void applyToMutableMultiValue(
     Pointer<CNMultiValueAddUpdate> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> withIdentifierMap,
+    Pointer arg, {
+    @required Pointer withIdentifierMap,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -23472,11 +23624,9 @@ class CNMultiValueAddUpdate extends Struct<CNMultiValueAddUpdate> {
   }
 }
 
-/// Objective-C class _CNMultiValueDiff_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNMultiValueDiff extends Struct<CNMultiValueDiff> {
   factory CNMultiValueDiff._() {
@@ -23489,8 +23639,8 @@ class CNMultiValueDiff extends Struct<CNMultiValueDiff> {
 
   static void applyToABCDContact(
     Pointer<CNMultiValueDiff> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> propertyDescription,
+    Pointer arg, {
+    @required Pointer propertyDescription,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -23501,7 +23651,7 @@ class CNMultiValueDiff extends Struct<CNMultiValueDiff> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CNMultiValueDiff> _self,
   ) {
     _openDynamicLibrary();
@@ -23511,9 +23661,9 @@ class CNMultiValueDiff extends Struct<CNMultiValueDiff> {
     );
   }
 
-  static Pointer<Void> initWithUpdates(
+  static Pointer initWithUpdates(
     Pointer<CNMultiValueDiff> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -23533,10 +23683,10 @@ class CNMultiValueDiff extends Struct<CNMultiValueDiff> {
     );
   }
 
-  static Pointer<Void> multiValueByApplyToMultiValue(
+  static Pointer multiValueByApplyToMultiValue(
     Pointer<CNMultiValueDiff> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> withIdentifierMap,
+    Pointer arg, {
+    @required Pointer withIdentifierMap,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -23547,7 +23697,7 @@ class CNMultiValueDiff extends Struct<CNMultiValueDiff> {
     );
   }
 
-  static Pointer<Void> updates(
+  static Pointer updates(
     Pointer<CNMultiValueDiff> _self,
   ) {
     _openDynamicLibrary();
@@ -23558,11 +23708,9 @@ class CNMultiValueDiff extends Struct<CNMultiValueDiff> {
   }
 }
 
-/// Objective-C class _CNMultiValuePropertyDescription_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNMultiValuePropertyDescription
     extends Struct<CNMultiValuePropertyDescription> {
@@ -23578,7 +23726,7 @@ class CNMultiValuePropertyDescription
 
   static void assertValueType(
     Pointer<CNMultiValuePropertyDescription> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -23590,8 +23738,8 @@ class CNMultiValuePropertyDescription
 
   static void copyFromLabeledValue(
     Pointer<CNMultiValuePropertyDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toOwnedObject,
+    Pointer arg, {
+    @required Pointer toOwnedObject,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -23602,7 +23750,7 @@ class CNMultiValuePropertyDescription
     );
   }
 
-  static Pointer<Void> coreDataOwnedEntityName(
+  static Pointer coreDataOwnedEntityName(
     Pointer<CNMultiValuePropertyDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -23612,7 +23760,7 @@ class CNMultiValuePropertyDescription
     );
   }
 
-  static Pointer<Void> coreDataRelationship(
+  static Pointer coreDataRelationship(
     Pointer<CNMultiValuePropertyDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -23622,7 +23770,7 @@ class CNMultiValuePropertyDescription
     );
   }
 
-  static Pointer<Void> coreDataValueForKeyTransform(
+  static Pointer coreDataValueForKeyTransform(
     Pointer<CNMultiValuePropertyDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -23632,7 +23780,7 @@ class CNMultiValuePropertyDescription
     );
   }
 
-  static Pointer<Void> fromPlistTransform(
+  static Pointer fromPlistTransform(
     Pointer<CNMultiValuePropertyDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -23644,8 +23792,8 @@ class CNMultiValuePropertyDescription
 
   static int isEqualIgnoringIdentifiersForContact(
     Pointer<CNMultiValuePropertyDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> other,
+    Pointer arg, {
+    @required Pointer other,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -23678,8 +23826,8 @@ class CNMultiValuePropertyDescription
 
   static int isValidMultiValueValue(
     Pointer<CNMultiValuePropertyDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -23692,8 +23840,8 @@ class CNMultiValuePropertyDescription
 
   static int isValidValue(
     Pointer<CNMultiValuePropertyDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -23704,7 +23852,7 @@ class CNMultiValuePropertyDescription
     );
   }
 
-  static Pointer<Void> labeledValueClass(
+  static Pointer labeledValueClass(
     Pointer<CNMultiValuePropertyDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -23714,9 +23862,9 @@ class CNMultiValuePropertyDescription
     );
   }
 
-  static Pointer<Void> newOwnedObjectForCoreDataContact(
+  static Pointer newOwnedObjectForCoreDataContact(
     Pointer<CNMultiValuePropertyDescription> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -23726,7 +23874,7 @@ class CNMultiValuePropertyDescription
     );
   }
 
-  static Pointer<Void> ownedObjectToLabeledValueValueTransform(
+  static Pointer ownedObjectToLabeledValueValueTransform(
     Pointer<CNMultiValuePropertyDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -23736,7 +23884,7 @@ class CNMultiValuePropertyDescription
     );
   }
 
-  static Pointer<Void> plistTransform(
+  static Pointer plistTransform(
     Pointer<CNMultiValuePropertyDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -23746,7 +23894,7 @@ class CNMultiValuePropertyDescription
     );
   }
 
-  static Pointer<Void> standardLabels(
+  static Pointer standardLabels(
     Pointer<CNMultiValuePropertyDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -23756,9 +23904,9 @@ class CNMultiValuePropertyDescription
     );
   }
 
-  static Pointer<Void> stringForIndexingForContact(
+  static Pointer stringForIndexingForContact(
     Pointer<CNMultiValuePropertyDescription> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -23768,7 +23916,7 @@ class CNMultiValuePropertyDescription
     );
   }
 
-  static Pointer<Void> valueClass(
+  static Pointer valueClass(
     Pointer<CNMultiValuePropertyDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -23778,9 +23926,9 @@ class CNMultiValuePropertyDescription
     );
   }
 
-  static Pointer<Void> valueFromCoreDataContact(
+  static Pointer valueFromCoreDataContact(
     Pointer<CNMultiValuePropertyDescription> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -23790,9 +23938,9 @@ class CNMultiValuePropertyDescription
     );
   }
 
-  static Pointer<Void> valueWithResetIdentifiers(
+  static Pointer valueWithResetIdentifiers(
     Pointer<CNMultiValuePropertyDescription> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -23803,11 +23951,9 @@ class CNMultiValuePropertyDescription
   }
 }
 
-/// Objective-C class _CNMultiValueRemoveUpdate_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNMultiValueRemoveUpdate extends Struct<CNMultiValueRemoveUpdate> {
   factory CNMultiValueRemoveUpdate._() {
@@ -23822,9 +23968,9 @@ class CNMultiValueRemoveUpdate extends Struct<CNMultiValueRemoveUpdate> {
 
   static void applyToABCDContact(
     Pointer<CNMultiValueRemoveUpdate> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> orderedABCDOwnedObjects,
-    @required Pointer<Void> propertyDescription,
+    Pointer arg, {
+    @required Pointer orderedABCDOwnedObjects,
+    @required Pointer propertyDescription,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_void(
@@ -23839,8 +23985,8 @@ class CNMultiValueRemoveUpdate extends Struct<CNMultiValueRemoveUpdate> {
 
   static void applyToMutableMultiValue(
     Pointer<CNMultiValueRemoveUpdate> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> withIdentifierMap,
+    Pointer arg, {
+    @required Pointer withIdentifierMap,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -23852,11 +23998,9 @@ class CNMultiValueRemoveUpdate extends Struct<CNMultiValueRemoveUpdate> {
   }
 }
 
-/// Objective-C class _CNMultiValueReorderUpdate_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNMultiValueReorderUpdate extends Struct<CNMultiValueReorderUpdate> {
   factory CNMultiValueReorderUpdate._() {
@@ -23871,9 +24015,9 @@ class CNMultiValueReorderUpdate extends Struct<CNMultiValueReorderUpdate> {
 
   static void applyToABCDContact(
     Pointer<CNMultiValueReorderUpdate> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> orderedABCDOwnedObjects,
-    @required Pointer<Void> propertyDescription,
+    Pointer arg, {
+    @required Pointer orderedABCDOwnedObjects,
+    @required Pointer propertyDescription,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_void(
@@ -23888,8 +24032,8 @@ class CNMultiValueReorderUpdate extends Struct<CNMultiValueReorderUpdate> {
 
   static void applyToMutableMultiValue(
     Pointer<CNMultiValueReorderUpdate> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> withIdentifierMap,
+    Pointer arg, {
+    @required Pointer withIdentifierMap,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -23902,8 +24046,8 @@ class CNMultiValueReorderUpdate extends Struct<CNMultiValueReorderUpdate> {
 
   static int compareIndexOfIdentifier(
     Pointer<CNMultiValueReorderUpdate> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toIndexOfIdentifier,
+    Pointer arg, {
+    @required Pointer toIndexOfIdentifier,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int64(
@@ -23914,7 +24058,7 @@ class CNMultiValueReorderUpdate extends Struct<CNMultiValueReorderUpdate> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CNMultiValueReorderUpdate> _self,
   ) {
     _openDynamicLibrary();
@@ -23924,9 +24068,9 @@ class CNMultiValueReorderUpdate extends Struct<CNMultiValueReorderUpdate> {
     );
   }
 
-  static Pointer<Void> initWithValues(
+  static Pointer initWithValues(
     Pointer<CNMultiValueReorderUpdate> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -23936,7 +24080,7 @@ class CNMultiValueReorderUpdate extends Struct<CNMultiValueReorderUpdate> {
     );
   }
 
-  static Pointer<Void> values(
+  static Pointer values(
     Pointer<CNMultiValueReorderUpdate> _self,
   ) {
     _openDynamicLibrary();
@@ -23947,11 +24091,9 @@ class CNMultiValueReorderUpdate extends Struct<CNMultiValueReorderUpdate> {
   }
 }
 
-/// Objective-C class _CNMultiValueReplaceUpdate_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNMultiValueReplaceUpdate extends Struct<CNMultiValueReplaceUpdate> {
   factory CNMultiValueReplaceUpdate._() {
@@ -23966,9 +24108,9 @@ class CNMultiValueReplaceUpdate extends Struct<CNMultiValueReplaceUpdate> {
 
   static void applyToABCDContact(
     Pointer<CNMultiValueReplaceUpdate> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> orderedABCDOwnedObjects,
-    @required Pointer<Void> propertyDescription,
+    Pointer arg, {
+    @required Pointer orderedABCDOwnedObjects,
+    @required Pointer propertyDescription,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_void(
@@ -23983,8 +24125,8 @@ class CNMultiValueReplaceUpdate extends Struct<CNMultiValueReplaceUpdate> {
 
   static void applyToMutableMultiValue(
     Pointer<CNMultiValueReplaceUpdate> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> withIdentifierMap,
+    Pointer arg, {
+    @required Pointer withIdentifierMap,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -23996,11 +24138,9 @@ class CNMultiValueReplaceUpdate extends Struct<CNMultiValueReplaceUpdate> {
   }
 }
 
-/// Objective-C class _CNMultiValueSingleUpdate_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNMultiValueSingleUpdate extends Struct<CNMultiValueSingleUpdate> {
   factory CNMultiValueSingleUpdate._() {
@@ -24013,7 +24153,7 @@ class CNMultiValueSingleUpdate extends Struct<CNMultiValueSingleUpdate> {
         .cast<CNMultiValueSingleUpdate>();
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CNMultiValueSingleUpdate> _self,
   ) {
     _openDynamicLibrary();
@@ -24023,9 +24163,9 @@ class CNMultiValueSingleUpdate extends Struct<CNMultiValueSingleUpdate> {
     );
   }
 
-  static Pointer<Void> initWithValue(
+  static Pointer initWithValue(
     Pointer<CNMultiValueSingleUpdate> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -24035,7 +24175,7 @@ class CNMultiValueSingleUpdate extends Struct<CNMultiValueSingleUpdate> {
     );
   }
 
-  static Pointer<Void> value(
+  static Pointer value(
     Pointer<CNMultiValueSingleUpdate> _self,
   ) {
     _openDynamicLibrary();
@@ -24046,11 +24186,9 @@ class CNMultiValueSingleUpdate extends Struct<CNMultiValueSingleUpdate> {
   }
 }
 
-/// Objective-C class _CNMultiValueUpdate_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNMultiValueUpdate extends Struct<CNMultiValueUpdate> {
   factory CNMultiValueUpdate._() {
@@ -24084,11 +24222,9 @@ class CNMultiValueUpdate extends Struct<CNMultiValueUpdate> {
   }
 }
 
-/// Objective-C class _CNMutableActivityAlert_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNMutableActivityAlert extends Struct<CNMutableActivityAlert> {
   factory CNMutableActivityAlert._() {
@@ -24101,7 +24237,7 @@ class CNMutableActivityAlert extends Struct<CNMutableActivityAlert> {
         .cast<CNMutableActivityAlert>();
   }
 
-  static Pointer<Void> freeze(
+  static Pointer freeze(
     Pointer<CNMutableActivityAlert> _self,
   ) {
     _openDynamicLibrary();
@@ -24112,11 +24248,9 @@ class CNMutableActivityAlert extends Struct<CNMutableActivityAlert> {
   }
 }
 
-/// Objective-C class _CNMutableContact_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNMutableContact extends Struct<CNMutableContact> {
   factory CNMutableContact._() {
@@ -24127,7 +24261,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
     return _objc.allocate("CNMutableContact").cast<CNMutableContact>();
   }
 
-  static Pointer<Void> accountIdentifier(
+  static Pointer accountIdentifier(
     Pointer<CNMutableContact> _self,
   ) {
     _openDynamicLibrary();
@@ -24137,7 +24271,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
     );
   }
 
-  static Pointer<Void> availableKeyDescriptor(
+  static Pointer availableKeyDescriptor(
     Pointer<CNMutableContact> _self,
   ) {
     _openDynamicLibrary();
@@ -24147,7 +24281,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
     );
   }
 
-  static Pointer<Void> birthday(
+  static Pointer birthday(
     Pointer<CNMutableContact> _self,
   ) {
     _openDynamicLibrary();
@@ -24157,7 +24291,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
     );
   }
 
-  static Pointer<Void> calendarURIs(
+  static Pointer calendarURIs(
     Pointer<CNMutableContact> _self,
   ) {
     _openDynamicLibrary();
@@ -24167,7 +24301,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
     );
   }
 
-  static Pointer<Void> callAlert(
+  static Pointer callAlert(
     Pointer<CNMutableContact> _self,
   ) {
     _openDynamicLibrary();
@@ -24177,7 +24311,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
     );
   }
 
-  static Pointer<Void> cardDAVUID(
+  static Pointer cardDAVUID(
     Pointer<CNMutableContact> _self,
   ) {
     _openDynamicLibrary();
@@ -24187,7 +24321,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
     );
   }
 
-  static Pointer<Void> contactRelations(
+  static Pointer contactRelations(
     Pointer<CNMutableContact> _self,
   ) {
     _openDynamicLibrary();
@@ -24207,7 +24341,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
     );
   }
 
-  static Pointer<Void> copyWithSelfAsSnapshot(
+  static Pointer copyWithSelfAsSnapshot(
     Pointer<CNMutableContact> _self,
   ) {
     _openDynamicLibrary();
@@ -24217,9 +24351,9 @@ class CNMutableContact extends Struct<CNMutableContact> {
     );
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<CNMutableContact> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -24229,7 +24363,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
     );
   }
 
-  static Pointer<Void> creationDate(
+  static Pointer creationDate(
     Pointer<CNMutableContact> _self,
   ) {
     _openDynamicLibrary();
@@ -24239,7 +24373,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
     );
   }
 
-  static Pointer<Void> cropRect(
+  static Pointer cropRect(
     Pointer<CNMutableContact> _self,
   ) {
     _openDynamicLibrary();
@@ -24249,7 +24383,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
     );
   }
 
-  static Pointer<Void> dates(
+  static Pointer dates(
     Pointer<CNMutableContact> _self,
   ) {
     _openDynamicLibrary();
@@ -24259,7 +24393,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
     );
   }
 
-  static Pointer<Void> departmentName(
+  static Pointer departmentName(
     Pointer<CNMutableContact> _self,
   ) {
     _openDynamicLibrary();
@@ -24279,7 +24413,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
     );
   }
 
-  static Pointer<Void> emailAddresses(
+  static Pointer emailAddresses(
     Pointer<CNMutableContact> _self,
   ) {
     _openDynamicLibrary();
@@ -24289,7 +24423,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
     );
   }
 
-  static Pointer<Void> familyName(
+  static Pointer familyName(
     Pointer<CNMutableContact> _self,
   ) {
     _openDynamicLibrary();
@@ -24299,7 +24433,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
     );
   }
 
-  static Pointer<Void> freeze(
+  static Pointer freeze(
     Pointer<CNMutableContact> _self,
   ) {
     _openDynamicLibrary();
@@ -24309,7 +24443,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
     );
   }
 
-  static Pointer<Void> freezeWithSelfAsSnapshot(
+  static Pointer freezeWithSelfAsSnapshot(
     Pointer<CNMutableContact> _self,
   ) {
     _openDynamicLibrary();
@@ -24319,7 +24453,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
     );
   }
 
-  static Pointer<Void> givenName(
+  static Pointer givenName(
     Pointer<CNMutableContact> _self,
   ) {
     _openDynamicLibrary();
@@ -24339,7 +24473,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
     );
   }
 
-  static Pointer<Void> imageData(
+  static Pointer imageData(
     Pointer<CNMutableContact> _self,
   ) {
     _openDynamicLibrary();
@@ -24359,9 +24493,9 @@ class CNMutableContact extends Struct<CNMutableContact> {
     );
   }
 
-  static Pointer<Void> initWithContact(
+  static Pointer initWithContact(
     Pointer<CNMutableContact> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -24371,7 +24505,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
     );
   }
 
-  static Pointer<Void> instantMessageAddresses(
+  static Pointer instantMessageAddresses(
     Pointer<CNMutableContact> _self,
   ) {
     _openDynamicLibrary();
@@ -24381,7 +24515,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
     );
   }
 
-  static Pointer<Void> jobTitle(
+  static Pointer jobTitle(
     Pointer<CNMutableContact> _self,
   ) {
     _openDynamicLibrary();
@@ -24391,7 +24525,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
     );
   }
 
-  static Pointer<Void> linkIdentifier(
+  static Pointer linkIdentifier(
     Pointer<CNMutableContact> _self,
   ) {
     _openDynamicLibrary();
@@ -24401,7 +24535,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
     );
   }
 
-  static Pointer<Void> mapsData(
+  static Pointer mapsData(
     Pointer<CNMutableContact> _self,
   ) {
     _openDynamicLibrary();
@@ -24411,7 +24545,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
     );
   }
 
-  static Pointer<Void> middleName(
+  static Pointer middleName(
     Pointer<CNMutableContact> _self,
   ) {
     _openDynamicLibrary();
@@ -24421,7 +24555,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
     );
   }
 
-  static Pointer<Void> modificationDate(
+  static Pointer modificationDate(
     Pointer<CNMutableContact> _self,
   ) {
     _openDynamicLibrary();
@@ -24431,7 +24565,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
     );
   }
 
-  static Pointer<Void> namePrefix(
+  static Pointer namePrefix(
     Pointer<CNMutableContact> _self,
   ) {
     _openDynamicLibrary();
@@ -24441,7 +24575,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
     );
   }
 
-  static Pointer<Void> nameSuffix(
+  static Pointer nameSuffix(
     Pointer<CNMutableContact> _self,
   ) {
     _openDynamicLibrary();
@@ -24451,7 +24585,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
     );
   }
 
-  static Pointer<Void> nickname(
+  static Pointer nickname(
     Pointer<CNMutableContact> _self,
   ) {
     _openDynamicLibrary();
@@ -24461,7 +24595,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
     );
   }
 
-  static Pointer<Void> nonGregorianBirthday(
+  static Pointer nonGregorianBirthday(
     Pointer<CNMutableContact> _self,
   ) {
     _openDynamicLibrary();
@@ -24471,7 +24605,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
     );
   }
 
-  static Pointer<Void> note(
+  static Pointer note(
     Pointer<CNMutableContact> _self,
   ) {
     _openDynamicLibrary();
@@ -24481,7 +24615,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
     );
   }
 
-  static Pointer<Void> organizationName(
+  static Pointer organizationName(
     Pointer<CNMutableContact> _self,
   ) {
     _openDynamicLibrary();
@@ -24493,7 +24627,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
 
   static void overwriteStateFromContact(
     Pointer<CNMutableContact> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -24503,7 +24637,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
     );
   }
 
-  static Pointer<Void> phoneNumbers(
+  static Pointer phoneNumbers(
     Pointer<CNMutableContact> _self,
   ) {
     _openDynamicLibrary();
@@ -24513,7 +24647,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
     );
   }
 
-  static Pointer<Void> phonemeData(
+  static Pointer phonemeData(
     Pointer<CNMutableContact> _self,
   ) {
     _openDynamicLibrary();
@@ -24523,7 +24657,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
     );
   }
 
-  static Pointer<Void> phoneticFamilyName(
+  static Pointer phoneticFamilyName(
     Pointer<CNMutableContact> _self,
   ) {
     _openDynamicLibrary();
@@ -24533,7 +24667,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
     );
   }
 
-  static Pointer<Void> phoneticGivenName(
+  static Pointer phoneticGivenName(
     Pointer<CNMutableContact> _self,
   ) {
     _openDynamicLibrary();
@@ -24543,7 +24677,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
     );
   }
 
-  static Pointer<Void> phoneticMiddleName(
+  static Pointer phoneticMiddleName(
     Pointer<CNMutableContact> _self,
   ) {
     _openDynamicLibrary();
@@ -24553,7 +24687,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
     );
   }
 
-  static Pointer<Void> phoneticOrganizationName(
+  static Pointer phoneticOrganizationName(
     Pointer<CNMutableContact> _self,
   ) {
     _openDynamicLibrary();
@@ -24563,7 +24697,19 @@ class CNMutableContact extends Struct<CNMutableContact> {
     );
   }
 
-  static Pointer<Void> postalAddresses(
+  static void populateNamesFromComponents(
+    Pointer<CNMutableContact> _self,
+    Pointer arg,
+  ) {
+    _openDynamicLibrary();
+    return _call_objc_p_p_p_returns_void(
+      _self,
+      _objc.getSelector("populateNamesFromComponents:"),
+      arg,
+    );
+  }
+
+  static Pointer postalAddresses(
     Pointer<CNMutableContact> _self,
   ) {
     _openDynamicLibrary();
@@ -24573,7 +24719,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
     );
   }
 
-  static Pointer<Void> preferredApplePersonaIdentifier(
+  static Pointer preferredApplePersonaIdentifier(
     Pointer<CNMutableContact> _self,
   ) {
     _openDynamicLibrary();
@@ -24583,7 +24729,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
     );
   }
 
-  static Pointer<Void> preferredChannel(
+  static Pointer preferredChannel(
     Pointer<CNMutableContact> _self,
   ) {
     _openDynamicLibrary();
@@ -24613,7 +24759,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
     );
   }
 
-  static Pointer<Void> preferredLikenessSource(
+  static Pointer preferredLikenessSource(
     Pointer<CNMutableContact> _self,
   ) {
     _openDynamicLibrary();
@@ -24623,7 +24769,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
     );
   }
 
-  static Pointer<Void> previousFamilyName(
+  static Pointer previousFamilyName(
     Pointer<CNMutableContact> _self,
   ) {
     _openDynamicLibrary();
@@ -24643,7 +24789,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
     );
   }
 
-  static Pointer<Void> searchIndex(
+  static Pointer searchIndex(
     Pointer<CNMutableContact> _self,
   ) {
     _openDynamicLibrary();
@@ -24655,7 +24801,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
 
   static void setAccountIdentifier(
     Pointer<CNMutableContact> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -24667,7 +24813,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
 
   static void setActivityAlerts(
     Pointer<CNMutableContact> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -24679,7 +24825,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
 
   static void setAvailableKeyDescriptor(
     Pointer<CNMutableContact> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -24691,7 +24837,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
 
   static void setBirthday(
     Pointer<CNMutableContact> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -24703,7 +24849,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
 
   static void setCalendarURIs(
     Pointer<CNMutableContact> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -24715,7 +24861,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
 
   static void setCallAlert(
     Pointer<CNMutableContact> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -24727,7 +24873,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
 
   static void setCardDAVUID(
     Pointer<CNMutableContact> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -24739,7 +24885,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
 
   static void setCompanyName(
     Pointer<CNMutableContact> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -24751,7 +24897,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
 
   static void setContactRelations(
     Pointer<CNMutableContact> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -24775,7 +24921,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
 
   static void setCreationDate(
     Pointer<CNMutableContact> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -24787,7 +24933,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
 
   static void setCropRect(
     Pointer<CNMutableContact> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -24799,7 +24945,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
 
   static void setDates(
     Pointer<CNMutableContact> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -24811,7 +24957,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
 
   static void setDepartmentName(
     Pointer<CNMutableContact> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -24835,7 +24981,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
 
   static void setEmailAddresses(
     Pointer<CNMutableContact> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -24847,7 +24993,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
 
   static void setFamilyName(
     Pointer<CNMutableContact> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -24859,7 +25005,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
 
   static void setFirstName(
     Pointer<CNMutableContact> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -24881,7 +25027,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
 
   static void setGivenName(
     Pointer<CNMutableContact> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -24893,7 +25039,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
 
   static void setImageData(
     Pointer<CNMutableContact> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -24917,7 +25063,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
 
   static void setInstantMessageAddresses(
     Pointer<CNMutableContact> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -24929,7 +25075,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
 
   static void setJobTitle(
     Pointer<CNMutableContact> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -24941,7 +25087,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
 
   static void setLastName(
     Pointer<CNMutableContact> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -24953,7 +25099,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
 
   static void setLinkIdentifier(
     Pointer<CNMutableContact> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -24965,7 +25111,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
 
   static void setLinkedContacts(
     Pointer<CNMutableContact> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -24977,7 +25123,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
 
   static void setMaidenName(
     Pointer<CNMutableContact> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -24989,7 +25135,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
 
   static void setMapsData(
     Pointer<CNMutableContact> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -25001,7 +25147,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
 
   static void setMiddleName(
     Pointer<CNMutableContact> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -25013,7 +25159,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
 
   static void setModificationDate(
     Pointer<CNMutableContact> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -25025,7 +25171,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
 
   static void setNamePrefix(
     Pointer<CNMutableContact> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -25037,7 +25183,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
 
   static void setNameSuffix(
     Pointer<CNMutableContact> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -25049,7 +25195,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
 
   static void setNameTitle(
     Pointer<CNMutableContact> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -25061,7 +25207,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
 
   static void setNickname(
     Pointer<CNMutableContact> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -25073,7 +25219,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
 
   static void setNilValueForKey(
     Pointer<CNMutableContact> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -25085,7 +25231,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
 
   static void setNonGregorianBirthday(
     Pointer<CNMutableContact> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -25097,7 +25243,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
 
   static void setNote(
     Pointer<CNMutableContact> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -25109,7 +25255,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
 
   static void setOrganizationName(
     Pointer<CNMutableContact> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -25121,7 +25267,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
 
   static void setPhoneNumbers(
     Pointer<CNMutableContact> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -25133,7 +25279,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
 
   static void setPhonemeData(
     Pointer<CNMutableContact> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -25145,7 +25291,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
 
   static void setPhoneticCompanyName(
     Pointer<CNMutableContact> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -25157,7 +25303,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
 
   static void setPhoneticFamilyName(
     Pointer<CNMutableContact> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -25169,7 +25315,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
 
   static void setPhoneticFirstName(
     Pointer<CNMutableContact> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -25181,7 +25327,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
 
   static void setPhoneticGivenName(
     Pointer<CNMutableContact> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -25193,7 +25339,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
 
   static void setPhoneticLastName(
     Pointer<CNMutableContact> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -25205,7 +25351,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
 
   static void setPhoneticMiddleName(
     Pointer<CNMutableContact> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -25217,7 +25363,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
 
   static void setPhoneticOrganizationName(
     Pointer<CNMutableContact> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -25229,7 +25375,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
 
   static void setPostalAddresses(
     Pointer<CNMutableContact> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -25241,7 +25387,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
 
   static void setPreferredApplePersonaIdentifier(
     Pointer<CNMutableContact> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -25253,7 +25399,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
 
   static void setPreferredChannel(
     Pointer<CNMutableContact> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -25289,7 +25435,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
 
   static void setPreferredLikenessSource(
     Pointer<CNMutableContact> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -25301,7 +25447,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
 
   static void setPreviousFamilyName(
     Pointer<CNMutableContact> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -25313,7 +25459,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
 
   static void setRelatedNames(
     Pointer<CNMutableContact> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -25325,7 +25471,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
 
   static void setSearchIndex(
     Pointer<CNMutableContact> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -25337,7 +25483,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
 
   static void setSnapshot(
     Pointer<CNMutableContact> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -25349,7 +25495,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
 
   static void setSocialProfiles(
     Pointer<CNMutableContact> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -25361,7 +25507,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
 
   static void setSortingFamilyName(
     Pointer<CNMutableContact> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -25373,7 +25519,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
 
   static void setSortingGivenName(
     Pointer<CNMutableContact> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -25385,7 +25531,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
 
   static void setStoreIdentifier(
     Pointer<CNMutableContact> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -25397,7 +25543,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
 
   static void setStoreInfo(
     Pointer<CNMutableContact> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -25409,7 +25555,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
 
   static void setTextAlert(
     Pointer<CNMutableContact> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -25421,7 +25567,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
 
   static void setThumbnailImageData(
     Pointer<CNMutableContact> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -25433,7 +25579,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
 
   static void setUrlAddresses(
     Pointer<CNMutableContact> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -25443,7 +25589,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
     );
   }
 
-  static Pointer<Void> socialProfiles(
+  static Pointer socialProfiles(
     Pointer<CNMutableContact> _self,
   ) {
     _openDynamicLibrary();
@@ -25453,7 +25599,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
     );
   }
 
-  static Pointer<Void> sortingFamilyName(
+  static Pointer sortingFamilyName(
     Pointer<CNMutableContact> _self,
   ) {
     _openDynamicLibrary();
@@ -25463,7 +25609,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
     );
   }
 
-  static Pointer<Void> sortingGivenName(
+  static Pointer sortingGivenName(
     Pointer<CNMutableContact> _self,
   ) {
     _openDynamicLibrary();
@@ -25473,7 +25619,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
     );
   }
 
-  static Pointer<Void> textAlert(
+  static Pointer textAlert(
     Pointer<CNMutableContact> _self,
   ) {
     _openDynamicLibrary();
@@ -25483,7 +25629,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
     );
   }
 
-  static Pointer<Void> thumbnailImageData(
+  static Pointer thumbnailImageData(
     Pointer<CNMutableContact> _self,
   ) {
     _openDynamicLibrary();
@@ -25505,7 +25651,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
 
   static void updateStateFromContact(
     Pointer<CNMutableContact> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -25515,7 +25661,7 @@ class CNMutableContact extends Struct<CNMutableContact> {
     );
   }
 
-  static Pointer<Void> urlAddresses(
+  static Pointer urlAddresses(
     Pointer<CNMutableContact> _self,
   ) {
     _openDynamicLibrary();
@@ -25526,11 +25672,9 @@ class CNMutableContact extends Struct<CNMutableContact> {
   }
 }
 
-/// Objective-C class _CNMutableContactKeyVector_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNMutableContactKeyVector extends Struct<CNMutableContactKeyVector> {
   factory CNMutableContactKeyVector._() {
@@ -25545,7 +25689,7 @@ class CNMutableContactKeyVector extends Struct<CNMutableContactKeyVector> {
 
   static void addKey(
     Pointer<CNMutableContactKeyVector> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -25557,7 +25701,7 @@ class CNMutableContactKeyVector extends Struct<CNMutableContactKeyVector> {
 
   static void addKeys(
     Pointer<CNMutableContactKeyVector> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -25567,9 +25711,9 @@ class CNMutableContactKeyVector extends Struct<CNMutableContactKeyVector> {
     );
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<CNMutableContactKeyVector> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -25579,7 +25723,7 @@ class CNMutableContactKeyVector extends Struct<CNMutableContactKeyVector> {
     );
   }
 
-  static Pointer<Void> freeze(
+  static Pointer freeze(
     Pointer<CNMutableContactKeyVector> _self,
   ) {
     _openDynamicLibrary();
@@ -25589,7 +25733,7 @@ class CNMutableContactKeyVector extends Struct<CNMutableContactKeyVector> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CNMutableContactKeyVector> _self,
   ) {
     _openDynamicLibrary();
@@ -25599,9 +25743,9 @@ class CNMutableContactKeyVector extends Struct<CNMutableContactKeyVector> {
     );
   }
 
-  static Pointer<Void> initWithKeyVector(
+  static Pointer initWithKeyVector(
     Pointer<CNMutableContactKeyVector> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -25613,7 +25757,7 @@ class CNMutableContactKeyVector extends Struct<CNMutableContactKeyVector> {
 
   static void minusKeyVector(
     Pointer<CNMutableContactKeyVector> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -25625,7 +25769,7 @@ class CNMutableContactKeyVector extends Struct<CNMutableContactKeyVector> {
 
   static void subtractKey(
     Pointer<CNMutableContactKeyVector> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -25637,7 +25781,7 @@ class CNMutableContactKeyVector extends Struct<CNMutableContactKeyVector> {
 
   static void subtractKeys(
     Pointer<CNMutableContactKeyVector> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -25649,7 +25793,7 @@ class CNMutableContactKeyVector extends Struct<CNMutableContactKeyVector> {
 
   static void unionKeyVector(
     Pointer<CNMutableContactKeyVector> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -25660,11 +25804,9 @@ class CNMutableContactKeyVector extends Struct<CNMutableContactKeyVector> {
   }
 }
 
-/// Objective-C class _CNMutableContainer_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNMutableContainer extends Struct<CNMutableContainer> {
   factory CNMutableContainer._() {
@@ -25677,7 +25819,7 @@ class CNMutableContainer extends Struct<CNMutableContainer> {
 
   static void adoptValuesFromAndSetSnapshot(
     Pointer<CNMutableContainer> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -25687,7 +25829,7 @@ class CNMutableContainer extends Struct<CNMutableContainer> {
     );
   }
 
-  static Pointer<Void> copy(
+  static Pointer copy(
     Pointer<CNMutableContainer> _self,
   ) {
     _openDynamicLibrary();
@@ -25697,7 +25839,7 @@ class CNMutableContainer extends Struct<CNMutableContainer> {
     );
   }
 
-  static Pointer<Void> freeze(
+  static Pointer freeze(
     Pointer<CNMutableContainer> _self,
   ) {
     _openDynamicLibrary();
@@ -25707,7 +25849,7 @@ class CNMutableContainer extends Struct<CNMutableContainer> {
     );
   }
 
-  static Pointer<Void> freezeWithSelfAsSnapshot(
+  static Pointer freezeWithSelfAsSnapshot(
     Pointer<CNMutableContainer> _self,
   ) {
     _openDynamicLibrary();
@@ -25717,7 +25859,7 @@ class CNMutableContainer extends Struct<CNMutableContainer> {
     );
   }
 
-  static Pointer<Void> identifier(
+  static Pointer identifier(
     Pointer<CNMutableContainer> _self,
   ) {
     _openDynamicLibrary();
@@ -25737,7 +25879,7 @@ class CNMutableContainer extends Struct<CNMutableContainer> {
     );
   }
 
-  static Pointer<Void> name(
+  static Pointer name(
     Pointer<CNMutableContainer> _self,
   ) {
     _openDynamicLibrary();
@@ -25761,7 +25903,7 @@ class CNMutableContainer extends Struct<CNMutableContainer> {
 
   static void setIdentifier(
     Pointer<CNMutableContainer> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -25773,7 +25915,7 @@ class CNMutableContainer extends Struct<CNMutableContainer> {
 
   static void setName(
     Pointer<CNMutableContainer> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -25785,7 +25927,7 @@ class CNMutableContainer extends Struct<CNMutableContainer> {
 
   static void setSnapshot(
     Pointer<CNMutableContainer> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -25818,11 +25960,9 @@ class CNMutableContainer extends Struct<CNMutableContainer> {
   }
 }
 
-/// Objective-C class _CNMutableGroup_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNMutableGroup extends Struct<CNMutableGroup> {
   factory CNMutableGroup._() {
@@ -25835,7 +25975,7 @@ class CNMutableGroup extends Struct<CNMutableGroup> {
 
   static void adoptValuesFromAndSetSnapshot(
     Pointer<CNMutableGroup> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -25845,7 +25985,7 @@ class CNMutableGroup extends Struct<CNMutableGroup> {
     );
   }
 
-  static Pointer<Void> copy(
+  static Pointer copy(
     Pointer<CNMutableGroup> _self,
   ) {
     _openDynamicLibrary();
@@ -25855,7 +25995,7 @@ class CNMutableGroup extends Struct<CNMutableGroup> {
     );
   }
 
-  static Pointer<Void> freeze(
+  static Pointer freeze(
     Pointer<CNMutableGroup> _self,
   ) {
     _openDynamicLibrary();
@@ -25865,7 +26005,7 @@ class CNMutableGroup extends Struct<CNMutableGroup> {
     );
   }
 
-  static Pointer<Void> freezeWithSelfAsSnapshot(
+  static Pointer freezeWithSelfAsSnapshot(
     Pointer<CNMutableGroup> _self,
   ) {
     _openDynamicLibrary();
@@ -25875,7 +26015,7 @@ class CNMutableGroup extends Struct<CNMutableGroup> {
     );
   }
 
-  static Pointer<Void> identifier(
+  static Pointer identifier(
     Pointer<CNMutableGroup> _self,
   ) {
     _openDynamicLibrary();
@@ -25885,7 +26025,7 @@ class CNMutableGroup extends Struct<CNMutableGroup> {
     );
   }
 
-  static Pointer<Void> name(
+  static Pointer name(
     Pointer<CNMutableGroup> _self,
   ) {
     _openDynamicLibrary();
@@ -25897,7 +26037,7 @@ class CNMutableGroup extends Struct<CNMutableGroup> {
 
   static void setIdentifier(
     Pointer<CNMutableGroup> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -25909,7 +26049,7 @@ class CNMutableGroup extends Struct<CNMutableGroup> {
 
   static void setName(
     Pointer<CNMutableGroup> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -25921,7 +26061,7 @@ class CNMutableGroup extends Struct<CNMutableGroup> {
 
   static void setSnapshot(
     Pointer<CNMutableGroup> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -25932,11 +26072,9 @@ class CNMutableGroup extends Struct<CNMutableGroup> {
   }
 }
 
-/// Objective-C class _CNMutableInstantMessageAddress_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNMutableInstantMessageAddress
     extends Struct<CNMutableInstantMessageAddress> {
@@ -25950,9 +26088,9 @@ class CNMutableInstantMessageAddress
         .cast<CNMutableInstantMessageAddress>();
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<CNMutableInstantMessageAddress> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -25962,7 +26100,7 @@ class CNMutableInstantMessageAddress
     );
   }
 
-  static Pointer<Void> freeze(
+  static Pointer freeze(
     Pointer<CNMutableInstantMessageAddress> _self,
   ) {
     _openDynamicLibrary();
@@ -25973,11 +26111,9 @@ class CNMutableInstantMessageAddress
   }
 }
 
-/// Objective-C class _CNMutablePostalAddress_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNMutablePostalAddress extends Struct<CNMutablePostalAddress> {
   factory CNMutablePostalAddress._() {
@@ -25990,9 +26126,9 @@ class CNMutablePostalAddress extends Struct<CNMutablePostalAddress> {
         .cast<CNMutablePostalAddress>();
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<CNMutablePostalAddress> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -26002,7 +26138,7 @@ class CNMutablePostalAddress extends Struct<CNMutablePostalAddress> {
     );
   }
 
-  static Pointer<Void> freeze(
+  static Pointer freeze(
     Pointer<CNMutablePostalAddress> _self,
   ) {
     _openDynamicLibrary();
@@ -26013,11 +26149,9 @@ class CNMutablePostalAddress extends Struct<CNMutablePostalAddress> {
   }
 }
 
-/// Objective-C class _CNMutableSaveResponse_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNMutableSaveResponse extends Struct<CNMutableSaveResponse> {
   factory CNMutableSaveResponse._() {
@@ -26032,8 +26166,8 @@ class CNMutableSaveResponse extends Struct<CNMutableSaveResponse> {
 
   static void setContactSnapshot(
     Pointer<CNMutableSaveResponse> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> forIndexPath,
+    Pointer arg, {
+    @required Pointer forIndexPath,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -26046,8 +26180,8 @@ class CNMutableSaveResponse extends Struct<CNMutableSaveResponse> {
 
   static void setContainerSnapshot(
     Pointer<CNMutableSaveResponse> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> forIndexPath,
+    Pointer arg, {
+    @required Pointer forIndexPath,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -26072,8 +26206,8 @@ class CNMutableSaveResponse extends Struct<CNMutableSaveResponse> {
 
   static void setGroupSnapshot(
     Pointer<CNMutableSaveResponse> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> forIndexPath,
+    Pointer arg, {
+    @required Pointer forIndexPath,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -26085,11 +26219,9 @@ class CNMutableSaveResponse extends Struct<CNMutableSaveResponse> {
   }
 }
 
-/// Objective-C class _CNMutableSocialProfile_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNMutableSocialProfile extends Struct<CNMutableSocialProfile> {
   factory CNMutableSocialProfile._() {
@@ -26102,9 +26234,9 @@ class CNMutableSocialProfile extends Struct<CNMutableSocialProfile> {
         .cast<CNMutableSocialProfile>();
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<CNMutableSocialProfile> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -26114,7 +26246,7 @@ class CNMutableSocialProfile extends Struct<CNMutableSocialProfile> {
     );
   }
 
-  static Pointer<Void> freeze(
+  static Pointer freeze(
     Pointer<CNMutableSocialProfile> _self,
   ) {
     _openDynamicLibrary();
@@ -26125,11 +26257,9 @@ class CNMutableSocialProfile extends Struct<CNMutableSocialProfile> {
   }
 }
 
-/// Objective-C class _CNNamePrefixDescription_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNNamePrefixDescription extends Struct<CNNamePrefixDescription> {
   factory CNNamePrefixDescription._() {
@@ -26142,9 +26272,9 @@ class CNNamePrefixDescription extends Struct<CNNamePrefixDescription> {
         .cast<CNNamePrefixDescription>();
   }
 
-  static Pointer<Void> CNValueForContact(
+  static Pointer CNValueForContact(
     Pointer<CNNamePrefixDescription> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -26156,8 +26286,8 @@ class CNNamePrefixDescription extends Struct<CNNamePrefixDescription> {
 
   static void copyFromCoreDataContact(
     Pointer<CNNamePrefixDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toContact,
+    Pointer arg, {
+    @required Pointer toContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -26170,8 +26300,8 @@ class CNNamePrefixDescription extends Struct<CNNamePrefixDescription> {
 
   static void copyValueFromContact(
     Pointer<CNNamePrefixDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toRemotePerson,
+    Pointer arg, {
+    @required Pointer toRemotePerson,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -26184,8 +26314,8 @@ class CNNamePrefixDescription extends Struct<CNNamePrefixDescription> {
 
   static void copyValueFromRemotePerson(
     Pointer<CNNamePrefixDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toContact,
+    Pointer arg, {
+    @required Pointer toContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -26196,7 +26326,7 @@ class CNNamePrefixDescription extends Struct<CNNamePrefixDescription> {
     );
   }
 
-  static Pointer<Void> coreDataKey(
+  static Pointer coreDataKey(
     Pointer<CNNamePrefixDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -26208,8 +26338,8 @@ class CNNamePrefixDescription extends Struct<CNNamePrefixDescription> {
 
   static void decodeUsingCoder(
     Pointer<CNNamePrefixDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> contact,
+    Pointer arg, {
+    @required Pointer contact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -26222,8 +26352,8 @@ class CNNamePrefixDescription extends Struct<CNNamePrefixDescription> {
 
   static void encodeUsingCoder(
     Pointer<CNNamePrefixDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> contact,
+    Pointer arg, {
+    @required Pointer contact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -26234,7 +26364,7 @@ class CNNamePrefixDescription extends Struct<CNNamePrefixDescription> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CNNamePrefixDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -26246,8 +26376,8 @@ class CNNamePrefixDescription extends Struct<CNNamePrefixDescription> {
 
   static int isEqualForContact(
     Pointer<CNNamePrefixDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> other,
+    Pointer arg, {
+    @required Pointer other,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -26270,8 +26400,8 @@ class CNNamePrefixDescription extends Struct<CNNamePrefixDescription> {
 
   static void setCNValue(
     Pointer<CNNamePrefixDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> onContact,
+    Pointer arg, {
+    @required Pointer onContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -26283,11 +26413,9 @@ class CNNamePrefixDescription extends Struct<CNNamePrefixDescription> {
   }
 }
 
-/// Objective-C class _CNNameSuffixDescription_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNNameSuffixDescription extends Struct<CNNameSuffixDescription> {
   factory CNNameSuffixDescription._() {
@@ -26300,9 +26428,9 @@ class CNNameSuffixDescription extends Struct<CNNameSuffixDescription> {
         .cast<CNNameSuffixDescription>();
   }
 
-  static Pointer<Void> CNValueForContact(
+  static Pointer CNValueForContact(
     Pointer<CNNameSuffixDescription> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -26314,8 +26442,8 @@ class CNNameSuffixDescription extends Struct<CNNameSuffixDescription> {
 
   static void copyFromCoreDataContact(
     Pointer<CNNameSuffixDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toContact,
+    Pointer arg, {
+    @required Pointer toContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -26328,8 +26456,8 @@ class CNNameSuffixDescription extends Struct<CNNameSuffixDescription> {
 
   static void copyValueFromContact(
     Pointer<CNNameSuffixDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toRemotePerson,
+    Pointer arg, {
+    @required Pointer toRemotePerson,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -26342,8 +26470,8 @@ class CNNameSuffixDescription extends Struct<CNNameSuffixDescription> {
 
   static void copyValueFromRemotePerson(
     Pointer<CNNameSuffixDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toContact,
+    Pointer arg, {
+    @required Pointer toContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -26354,7 +26482,7 @@ class CNNameSuffixDescription extends Struct<CNNameSuffixDescription> {
     );
   }
 
-  static Pointer<Void> coreDataKey(
+  static Pointer coreDataKey(
     Pointer<CNNameSuffixDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -26366,8 +26494,8 @@ class CNNameSuffixDescription extends Struct<CNNameSuffixDescription> {
 
   static void decodeUsingCoder(
     Pointer<CNNameSuffixDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> contact,
+    Pointer arg, {
+    @required Pointer contact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -26380,8 +26508,8 @@ class CNNameSuffixDescription extends Struct<CNNameSuffixDescription> {
 
   static void encodeUsingCoder(
     Pointer<CNNameSuffixDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> contact,
+    Pointer arg, {
+    @required Pointer contact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -26392,7 +26520,7 @@ class CNNameSuffixDescription extends Struct<CNNameSuffixDescription> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CNNameSuffixDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -26404,8 +26532,8 @@ class CNNameSuffixDescription extends Struct<CNNameSuffixDescription> {
 
   static int isEqualForContact(
     Pointer<CNNameSuffixDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> other,
+    Pointer arg, {
+    @required Pointer other,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -26428,8 +26556,8 @@ class CNNameSuffixDescription extends Struct<CNNameSuffixDescription> {
 
   static void setCNValue(
     Pointer<CNNameSuffixDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> onContact,
+    Pointer arg, {
+    @required Pointer onContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -26441,11 +26569,9 @@ class CNNameSuffixDescription extends Struct<CNNameSuffixDescription> {
   }
 }
 
-/// Objective-C class _CNNicknameNameDescription_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNNicknameNameDescription extends Struct<CNNicknameNameDescription> {
   factory CNNicknameNameDescription._() {
@@ -26458,9 +26584,9 @@ class CNNicknameNameDescription extends Struct<CNNicknameNameDescription> {
         .cast<CNNicknameNameDescription>();
   }
 
-  static Pointer<Void> CNValueForContact(
+  static Pointer CNValueForContact(
     Pointer<CNNicknameNameDescription> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -26472,8 +26598,8 @@ class CNNicknameNameDescription extends Struct<CNNicknameNameDescription> {
 
   static void copyFromCoreDataContact(
     Pointer<CNNicknameNameDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toContact,
+    Pointer arg, {
+    @required Pointer toContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -26486,8 +26612,8 @@ class CNNicknameNameDescription extends Struct<CNNicknameNameDescription> {
 
   static void copyValueFromContact(
     Pointer<CNNicknameNameDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toRemotePerson,
+    Pointer arg, {
+    @required Pointer toRemotePerson,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -26500,8 +26626,8 @@ class CNNicknameNameDescription extends Struct<CNNicknameNameDescription> {
 
   static void copyValueFromRemotePerson(
     Pointer<CNNicknameNameDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toContact,
+    Pointer arg, {
+    @required Pointer toContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -26512,7 +26638,7 @@ class CNNicknameNameDescription extends Struct<CNNicknameNameDescription> {
     );
   }
 
-  static Pointer<Void> coreDataKey(
+  static Pointer coreDataKey(
     Pointer<CNNicknameNameDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -26524,8 +26650,8 @@ class CNNicknameNameDescription extends Struct<CNNicknameNameDescription> {
 
   static void decodeUsingCoder(
     Pointer<CNNicknameNameDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> contact,
+    Pointer arg, {
+    @required Pointer contact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -26538,8 +26664,8 @@ class CNNicknameNameDescription extends Struct<CNNicknameNameDescription> {
 
   static void encodeUsingCoder(
     Pointer<CNNicknameNameDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> contact,
+    Pointer arg, {
+    @required Pointer contact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -26550,7 +26676,7 @@ class CNNicknameNameDescription extends Struct<CNNicknameNameDescription> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CNNicknameNameDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -26562,8 +26688,8 @@ class CNNicknameNameDescription extends Struct<CNNicknameNameDescription> {
 
   static int isEqualForContact(
     Pointer<CNNicknameNameDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> other,
+    Pointer arg, {
+    @required Pointer other,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -26586,8 +26712,8 @@ class CNNicknameNameDescription extends Struct<CNNicknameNameDescription> {
 
   static void setCNValue(
     Pointer<CNNicknameNameDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> onContact,
+    Pointer arg, {
+    @required Pointer onContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -26599,11 +26725,9 @@ class CNNicknameNameDescription extends Struct<CNNicknameNameDescription> {
   }
 }
 
-/// Objective-C class _CNNonGregorianBirthdayDescription_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNNonGregorianBirthdayDescription
     extends Struct<CNNonGregorianBirthdayDescription> {
@@ -26617,9 +26741,9 @@ class CNNonGregorianBirthdayDescription
         .cast<CNNonGregorianBirthdayDescription>();
   }
 
-  static Pointer<Void> CNValueForContact(
+  static Pointer CNValueForContact(
     Pointer<CNNonGregorianBirthdayDescription> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -26631,8 +26755,8 @@ class CNNonGregorianBirthdayDescription
 
   static int canUnifyValue(
     Pointer<CNNonGregorianBirthdayDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> withValue,
+    Pointer arg, {
+    @required Pointer withValue,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -26645,8 +26769,8 @@ class CNNonGregorianBirthdayDescription
 
   static void copyValueFromContact(
     Pointer<CNNonGregorianBirthdayDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toRemotePerson,
+    Pointer arg, {
+    @required Pointer toRemotePerson,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -26659,8 +26783,8 @@ class CNNonGregorianBirthdayDescription
 
   static void copyValueFromRemotePerson(
     Pointer<CNNonGregorianBirthdayDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toContact,
+    Pointer arg, {
+    @required Pointer toContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -26671,7 +26795,7 @@ class CNNonGregorianBirthdayDescription
     );
   }
 
-  static Pointer<Void> coreDataKey(
+  static Pointer coreDataKey(
     Pointer<CNNonGregorianBirthdayDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -26683,8 +26807,8 @@ class CNNonGregorianBirthdayDescription
 
   static void decodeUsingCoder(
     Pointer<CNNonGregorianBirthdayDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> contact,
+    Pointer arg, {
+    @required Pointer contact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -26697,8 +26821,8 @@ class CNNonGregorianBirthdayDescription
 
   static void encodeUsingCoder(
     Pointer<CNNonGregorianBirthdayDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> contact,
+    Pointer arg, {
+    @required Pointer contact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -26709,7 +26833,7 @@ class CNNonGregorianBirthdayDescription
     );
   }
 
-  static Pointer<Void> fromPlistTransform(
+  static Pointer fromPlistTransform(
     Pointer<CNNonGregorianBirthdayDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -26719,7 +26843,7 @@ class CNNonGregorianBirthdayDescription
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CNNonGregorianBirthdayDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -26731,8 +26855,8 @@ class CNNonGregorianBirthdayDescription
 
   static int isEqualForContact(
     Pointer<CNNonGregorianBirthdayDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> other,
+    Pointer arg, {
+    @required Pointer other,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -26745,8 +26869,8 @@ class CNNonGregorianBirthdayDescription
 
   static int isValidValue(
     Pointer<CNNonGregorianBirthdayDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -26759,8 +26883,8 @@ class CNNonGregorianBirthdayDescription
 
   static int isValue(
     Pointer<CNNonGregorianBirthdayDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> preferredToUnifiedValue,
+    Pointer arg, {
+    @required Pointer preferredToUnifiedValue,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -26773,8 +26897,8 @@ class CNNonGregorianBirthdayDescription
 
   static void setCNValue(
     Pointer<CNNonGregorianBirthdayDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> onContact,
+    Pointer arg, {
+    @required Pointer onContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -26787,8 +26911,8 @@ class CNNonGregorianBirthdayDescription
 
   static void setValue(
     Pointer<CNNonGregorianBirthdayDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> onCoreDataContact,
+    Pointer arg, {
+    @required Pointer onCoreDataContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -26799,7 +26923,7 @@ class CNNonGregorianBirthdayDescription
     );
   }
 
-  static Pointer<Void> valueClass(
+  static Pointer valueClass(
     Pointer<CNNonGregorianBirthdayDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -26809,9 +26933,9 @@ class CNNonGregorianBirthdayDescription
     );
   }
 
-  static Pointer<Void> valueFromCoreDataContact(
+  static Pointer valueFromCoreDataContact(
     Pointer<CNNonGregorianBirthdayDescription> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -26822,11 +26946,9 @@ class CNNonGregorianBirthdayDescription
   }
 }
 
-/// Objective-C class _CNNoteDescription_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNNoteDescription extends Struct<CNNoteDescription> {
   factory CNNoteDescription._() {
@@ -26837,9 +26959,9 @@ class CNNoteDescription extends Struct<CNNoteDescription> {
     return _objc.allocate("CNNoteDescription").cast<CNNoteDescription>();
   }
 
-  static Pointer<Void> CNValueForContact(
+  static Pointer CNValueForContact(
     Pointer<CNNoteDescription> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -26851,8 +26973,8 @@ class CNNoteDescription extends Struct<CNNoteDescription> {
 
   static void copyFromCoreDataContact(
     Pointer<CNNoteDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toContact,
+    Pointer arg, {
+    @required Pointer toContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -26865,8 +26987,8 @@ class CNNoteDescription extends Struct<CNNoteDescription> {
 
   static void copyValueFromContact(
     Pointer<CNNoteDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toRemotePerson,
+    Pointer arg, {
+    @required Pointer toRemotePerson,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -26879,8 +27001,8 @@ class CNNoteDescription extends Struct<CNNoteDescription> {
 
   static void copyValueFromRemotePerson(
     Pointer<CNNoteDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toContact,
+    Pointer arg, {
+    @required Pointer toContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -26891,7 +27013,7 @@ class CNNoteDescription extends Struct<CNNoteDescription> {
     );
   }
 
-  static Pointer<Void> coreDataKey(
+  static Pointer coreDataKey(
     Pointer<CNNoteDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -26901,7 +27023,7 @@ class CNNoteDescription extends Struct<CNNoteDescription> {
     );
   }
 
-  static Pointer<Void> coreDataRelationship(
+  static Pointer coreDataRelationship(
     Pointer<CNNoteDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -26913,8 +27035,8 @@ class CNNoteDescription extends Struct<CNNoteDescription> {
 
   static void decodeUsingCoder(
     Pointer<CNNoteDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> contact,
+    Pointer arg, {
+    @required Pointer contact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -26927,8 +27049,8 @@ class CNNoteDescription extends Struct<CNNoteDescription> {
 
   static void encodeUsingCoder(
     Pointer<CNNoteDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> contact,
+    Pointer arg, {
+    @required Pointer contact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -26939,7 +27061,7 @@ class CNNoteDescription extends Struct<CNNoteDescription> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CNNoteDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -26951,8 +27073,8 @@ class CNNoteDescription extends Struct<CNNoteDescription> {
 
   static int isEqualForContact(
     Pointer<CNNoteDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> other,
+    Pointer arg, {
+    @required Pointer other,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -26975,8 +27097,8 @@ class CNNoteDescription extends Struct<CNNoteDescription> {
 
   static void setCNValue(
     Pointer<CNNoteDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> onContact,
+    Pointer arg, {
+    @required Pointer onContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -26989,8 +27111,8 @@ class CNNoteDescription extends Struct<CNNoteDescription> {
 
   static void setValue(
     Pointer<CNNoteDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> onCoreDataContact,
+    Pointer arg, {
+    @required Pointer onCoreDataContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -27001,9 +27123,9 @@ class CNNoteDescription extends Struct<CNNoteDescription> {
     );
   }
 
-  static Pointer<Void> valueFromCoreDataContact(
+  static Pointer valueFromCoreDataContact(
     Pointer<CNNoteDescription> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -27014,11 +27136,9 @@ class CNNoteDescription extends Struct<CNNoteDescription> {
   }
 }
 
-/// Objective-C class _CNOrganizationNameDescription_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNOrganizationNameDescription
     extends Struct<CNOrganizationNameDescription> {
@@ -27032,9 +27152,9 @@ class CNOrganizationNameDescription
         .cast<CNOrganizationNameDescription>();
   }
 
-  static Pointer<Void> CNValueForContact(
+  static Pointer CNValueForContact(
     Pointer<CNOrganizationNameDescription> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -27046,8 +27166,8 @@ class CNOrganizationNameDescription
 
   static void copyFromCoreDataContact(
     Pointer<CNOrganizationNameDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toContact,
+    Pointer arg, {
+    @required Pointer toContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -27060,8 +27180,8 @@ class CNOrganizationNameDescription
 
   static void copyValueFromContact(
     Pointer<CNOrganizationNameDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toRemotePerson,
+    Pointer arg, {
+    @required Pointer toRemotePerson,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -27074,8 +27194,8 @@ class CNOrganizationNameDescription
 
   static void copyValueFromRemotePerson(
     Pointer<CNOrganizationNameDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toContact,
+    Pointer arg, {
+    @required Pointer toContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -27086,7 +27206,7 @@ class CNOrganizationNameDescription
     );
   }
 
-  static Pointer<Void> coreDataKey(
+  static Pointer coreDataKey(
     Pointer<CNOrganizationNameDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -27098,8 +27218,8 @@ class CNOrganizationNameDescription
 
   static void decodeUsingCoder(
     Pointer<CNOrganizationNameDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> contact,
+    Pointer arg, {
+    @required Pointer contact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -27112,8 +27232,8 @@ class CNOrganizationNameDescription
 
   static void encodeUsingCoder(
     Pointer<CNOrganizationNameDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> contact,
+    Pointer arg, {
+    @required Pointer contact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -27124,7 +27244,7 @@ class CNOrganizationNameDescription
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CNOrganizationNameDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -27136,8 +27256,8 @@ class CNOrganizationNameDescription
 
   static int isEqualForContact(
     Pointer<CNOrganizationNameDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> other,
+    Pointer arg, {
+    @required Pointer other,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -27160,8 +27280,8 @@ class CNOrganizationNameDescription
 
   static void setCNValue(
     Pointer<CNOrganizationNameDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> onContact,
+    Pointer arg, {
+    @required Pointer onContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -27173,11 +27293,9 @@ class CNOrganizationNameDescription
   }
 }
 
-/// Objective-C class _CNPerContactPropertyKeyDescriptor_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNPerContactPropertyKeyDescriptor
     extends Struct<CNPerContactPropertyKeyDescriptor> {
@@ -27191,9 +27309,9 @@ class CNPerContactPropertyKeyDescriptor
         .cast<CNPerContactPropertyKeyDescriptor>();
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<CNPerContactPropertyKeyDescriptor> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -27205,7 +27323,7 @@ class CNPerContactPropertyKeyDescriptor
 
   static void encodeWithCoder(
     Pointer<CNPerContactPropertyKeyDescriptor> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -27225,7 +27343,7 @@ class CNPerContactPropertyKeyDescriptor
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CNPerContactPropertyKeyDescriptor> _self,
   ) {
     _openDynamicLibrary();
@@ -27235,9 +27353,9 @@ class CNPerContactPropertyKeyDescriptor
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CNPerContactPropertyKeyDescriptor> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -27249,7 +27367,7 @@ class CNPerContactPropertyKeyDescriptor
 
   static int isEqual(
     Pointer<CNPerContactPropertyKeyDescriptor> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -27259,7 +27377,7 @@ class CNPerContactPropertyKeyDescriptor
     );
   }
 
-  static Pointer<Void> propertiesByIdentifier(
+  static Pointer propertiesByIdentifier(
     Pointer<CNPerContactPropertyKeyDescriptor> _self,
   ) {
     _openDynamicLibrary();
@@ -27271,8 +27389,8 @@ class CNPerContactPropertyKeyDescriptor
 
   static void setKeysToFetch(
     Pointer<CNPerContactPropertyKeyDescriptor> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> forContactIdentifier,
+    Pointer arg, {
+    @required Pointer forContactIdentifier,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -27285,7 +27403,7 @@ class CNPerContactPropertyKeyDescriptor
 
   static void setPropertiesByIdentifier(
     Pointer<CNPerContactPropertyKeyDescriptor> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -27296,11 +27414,9 @@ class CNPerContactPropertyKeyDescriptor
   }
 }
 
-/// Objective-C class _CNPermissivePolicy_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNPermissivePolicy extends Struct<CNPermissivePolicy> {
   factory CNPermissivePolicy._() {
@@ -27313,7 +27429,7 @@ class CNPermissivePolicy extends Struct<CNPermissivePolicy> {
 
   static int isContactPropertySupported(
     Pointer<CNPermissivePolicy> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -27335,7 +27451,7 @@ class CNPermissivePolicy extends Struct<CNPermissivePolicy> {
 
   static int maximumCountOfValuesForContactProperty$(
     Pointer<CNPermissivePolicy> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Uint64(
@@ -27347,8 +27463,8 @@ class CNPermissivePolicy extends Struct<CNPermissivePolicy> {
 
   static int maximumCountOfValuesForContactProperty$label$(
     Pointer<CNPermissivePolicy> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> label,
+    Pointer arg, {
+    @required Pointer label,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Uint64(
@@ -27361,7 +27477,7 @@ class CNPermissivePolicy extends Struct<CNPermissivePolicy> {
 
   static int shouldAddContact(
     Pointer<CNPermissivePolicy> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -27373,7 +27489,7 @@ class CNPermissivePolicy extends Struct<CNPermissivePolicy> {
 
   static int shouldRemoveContact(
     Pointer<CNPermissivePolicy> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -27385,10 +27501,10 @@ class CNPermissivePolicy extends Struct<CNPermissivePolicy> {
 
   static int shouldSetValue(
     Pointer<CNPermissivePolicy> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> ofProperty,
-    @required Pointer<Void> onContact,
-    @required Pointer<Pointer<Void>> replacementValue,
+    Pointer arg, {
+    @required Pointer ofProperty,
+    @required Pointer onContact,
+    @required Pointer<Pointer> replacementValue,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_returns_Int8(
@@ -27402,9 +27518,9 @@ class CNPermissivePolicy extends Struct<CNPermissivePolicy> {
     );
   }
 
-  static Pointer<Void> supportedLabelsForContactProperty(
+  static Pointer supportedLabelsForContactProperty(
     Pointer<CNPermissivePolicy> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -27414,9 +27530,9 @@ class CNPermissivePolicy extends Struct<CNPermissivePolicy> {
     );
   }
 
-  static Pointer<Void> unsupportedAttributesForLableledContactProperty(
+  static Pointer unsupportedAttributesForLableledContactProperty(
     Pointer<CNPermissivePolicy> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -27426,9 +27542,9 @@ class CNPermissivePolicy extends Struct<CNPermissivePolicy> {
     );
   }
 
-  static Pointer<Void> unsupportedKeyPathsForContactProperty(
+  static Pointer unsupportedKeyPathsForContactProperty(
     Pointer<CNPermissivePolicy> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -27439,11 +27555,9 @@ class CNPermissivePolicy extends Struct<CNPermissivePolicy> {
   }
 }
 
-/// Objective-C class _CNPhoneDialer_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNPhoneDialer extends Struct<CNPhoneDialer> {
   factory CNPhoneDialer._() {
@@ -27455,11 +27569,9 @@ class CNPhoneDialer extends Struct<CNPhoneDialer> {
   }
 }
 
-/// Objective-C class _CNPhoneNumber_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNPhoneNumber extends Struct<CNPhoneNumber> {
   factory CNPhoneNumber._() {
@@ -27470,9 +27582,9 @@ class CNPhoneNumber extends Struct<CNPhoneNumber> {
     return _objc.allocate("CNPhoneNumber").cast<CNPhoneNumber>();
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<CNPhoneNumber> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -27482,7 +27594,7 @@ class CNPhoneNumber extends Struct<CNPhoneNumber> {
     );
   }
 
-  static Pointer<Void> countryCode(
+  static Pointer countryCode(
     Pointer<CNPhoneNumber> _self,
   ) {
     _openDynamicLibrary();
@@ -27502,7 +27614,7 @@ class CNPhoneNumber extends Struct<CNPhoneNumber> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CNPhoneNumber> _self,
   ) {
     _openDynamicLibrary();
@@ -27512,7 +27624,7 @@ class CNPhoneNumber extends Struct<CNPhoneNumber> {
     );
   }
 
-  static Pointer<Void> digits(
+  static Pointer digits(
     Pointer<CNPhoneNumber> _self,
   ) {
     _openDynamicLibrary();
@@ -27524,7 +27636,7 @@ class CNPhoneNumber extends Struct<CNPhoneNumber> {
 
   static void encodeWithCoder(
     Pointer<CNPhoneNumber> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -27534,7 +27646,7 @@ class CNPhoneNumber extends Struct<CNPhoneNumber> {
     );
   }
 
-  static Pointer<Void> formattedInternationalStringValue(
+  static Pointer formattedInternationalStringValue(
     Pointer<CNPhoneNumber> _self,
   ) {
     _openDynamicLibrary();
@@ -27544,7 +27656,7 @@ class CNPhoneNumber extends Struct<CNPhoneNumber> {
     );
   }
 
-  static Pointer<Void> formattedStringValue(
+  static Pointer formattedStringValue(
     Pointer<CNPhoneNumber> _self,
   ) {
     _openDynamicLibrary();
@@ -27564,7 +27676,7 @@ class CNPhoneNumber extends Struct<CNPhoneNumber> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CNPhoneNumber> _self,
   ) {
     _openDynamicLibrary();
@@ -27574,9 +27686,9 @@ class CNPhoneNumber extends Struct<CNPhoneNumber> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CNPhoneNumber> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -27586,10 +27698,10 @@ class CNPhoneNumber extends Struct<CNPhoneNumber> {
     );
   }
 
-  static Pointer<Void> initWithStringValue$countryCode$(
+  static Pointer initWithStringValue$countryCode$(
     Pointer<CNPhoneNumber> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> countryCode,
+    Pointer arg, {
+    @required Pointer countryCode,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -27600,9 +27712,9 @@ class CNPhoneNumber extends Struct<CNPhoneNumber> {
     );
   }
 
-  static Pointer<Void> initWithStringValue$(
+  static Pointer initWithStringValue$(
     Pointer<CNPhoneNumber> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -27612,7 +27724,7 @@ class CNPhoneNumber extends Struct<CNPhoneNumber> {
     );
   }
 
-  static Pointer<Void> initialCountryCode(
+  static Pointer initialCountryCode(
     Pointer<CNPhoneNumber> _self,
   ) {
     _openDynamicLibrary();
@@ -27624,7 +27736,7 @@ class CNPhoneNumber extends Struct<CNPhoneNumber> {
 
   static int isEqual(
     Pointer<CNPhoneNumber> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -27636,7 +27748,7 @@ class CNPhoneNumber extends Struct<CNPhoneNumber> {
 
   static int isLikePhoneNumber(
     Pointer<CNPhoneNumber> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -27648,7 +27760,7 @@ class CNPhoneNumber extends Struct<CNPhoneNumber> {
 
   static int isLikePhoneNumberForSamePerson(
     Pointer<CNPhoneNumber> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -27660,7 +27772,7 @@ class CNPhoneNumber extends Struct<CNPhoneNumber> {
 
   static int isValid(
     Pointer<CNPhoneNumber> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -27670,7 +27782,7 @@ class CNPhoneNumber extends Struct<CNPhoneNumber> {
     );
   }
 
-  static Pointer<Void> lastFourDigits(
+  static Pointer lastFourDigits(
     Pointer<CNPhoneNumber> _self,
   ) {
     _openDynamicLibrary();
@@ -27680,7 +27792,7 @@ class CNPhoneNumber extends Struct<CNPhoneNumber> {
     );
   }
 
-  static Pointer<Pointer<Void>> nts_lazyPhoneNumberRef(
+  static Pointer<Pointer> nts_lazyPhoneNumberRef(
     Pointer<CNPhoneNumber> _self,
   ) {
     _openDynamicLibrary();
@@ -27690,7 +27802,7 @@ class CNPhoneNumber extends Struct<CNPhoneNumber> {
     );
   }
 
-  static Pointer<Pointer<Void>> phoneNumberRef(
+  static Pointer<Pointer> phoneNumberRef(
     Pointer<CNPhoneNumber> _self,
   ) {
     _openDynamicLibrary();
@@ -27700,7 +27812,17 @@ class CNPhoneNumber extends Struct<CNPhoneNumber> {
     );
   }
 
-  static Pointer<Void> stringValue(
+  static Pointer pkFormattedStringValue(
+    Pointer<CNPhoneNumber> _self,
+  ) {
+    _openDynamicLibrary();
+    return _call_objc_p_p_returns_p(
+      _self,
+      _objc.getSelector("pkFormattedStringValue"),
+    );
+  }
+
+  static Pointer stringValue(
     Pointer<CNPhoneNumber> _self,
   ) {
     _openDynamicLibrary();
@@ -27710,7 +27832,7 @@ class CNPhoneNumber extends Struct<CNPhoneNumber> {
     );
   }
 
-  static Pointer<Void> stringValueWithCFPhoneNumberOptions(
+  static Pointer stringValueWithCFPhoneNumberOptions(
     Pointer<CNPhoneNumber> _self,
     int arg,
   ) {
@@ -27722,7 +27844,7 @@ class CNPhoneNumber extends Struct<CNPhoneNumber> {
     );
   }
 
-  static Pointer<Void> unformattedInternationalStringValue(
+  static Pointer unformattedInternationalStringValue(
     Pointer<CNPhoneNumber> _self,
   ) {
     _openDynamicLibrary();
@@ -27733,11 +27855,9 @@ class CNPhoneNumber extends Struct<CNPhoneNumber> {
   }
 }
 
-/// Objective-C class _CNPhoneNumberContactPredicate_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNPhoneNumberContactPredicate
     extends Struct<CNPhoneNumberContactPredicate> {
@@ -27751,7 +27871,7 @@ class CNPhoneNumberContactPredicate
         .cast<CNPhoneNumberContactPredicate>();
   }
 
-  static Pointer<Void> cn_coreDataPredicate(
+  static Pointer cn_coreDataPredicate(
     Pointer<CNPhoneNumberContactPredicate> _self,
   ) {
     _openDynamicLibrary();
@@ -27761,7 +27881,7 @@ class CNPhoneNumberContactPredicate
     );
   }
 
-  static Pointer<Void> countryCode(
+  static Pointer countryCode(
     Pointer<CNPhoneNumberContactPredicate> _self,
   ) {
     _openDynamicLibrary();
@@ -27771,7 +27891,7 @@ class CNPhoneNumberContactPredicate
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CNPhoneNumberContactPredicate> _self,
   ) {
     _openDynamicLibrary();
@@ -27781,7 +27901,7 @@ class CNPhoneNumberContactPredicate
     );
   }
 
-  static Pointer<Void> digits(
+  static Pointer digits(
     Pointer<CNPhoneNumberContactPredicate> _self,
   ) {
     _openDynamicLibrary();
@@ -27793,7 +27913,7 @@ class CNPhoneNumberContactPredicate
 
   static void encodeWithCoder(
     Pointer<CNPhoneNumberContactPredicate> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -27815,7 +27935,7 @@ class CNPhoneNumberContactPredicate
 
   static int includeResult(
     Pointer<CNPhoneNumberContactPredicate> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -27825,9 +27945,9 @@ class CNPhoneNumberContactPredicate
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CNPhoneNumberContactPredicate> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -27837,10 +27957,10 @@ class CNPhoneNumberContactPredicate
     );
   }
 
-  static Pointer<Void> initWithDigits(
+  static Pointer initWithDigits(
     Pointer<CNPhoneNumberContactPredicate> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> countryCode,
+    Pointer arg, {
+    @required Pointer countryCode,
     @required int returnMultipleResults,
   }) {
     _openDynamicLibrary();
@@ -27853,9 +27973,9 @@ class CNPhoneNumberContactPredicate
     );
   }
 
-  static Pointer<Void> initWithPhoneNumber$returnMultipleResults$(
+  static Pointer initWithPhoneNumber$returnMultipleResults$(
     Pointer<CNPhoneNumberContactPredicate> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int returnMultipleResults,
   }) {
     _openDynamicLibrary();
@@ -27867,11 +27987,11 @@ class CNPhoneNumberContactPredicate
     );
   }
 
-  static Pointer<Void> initWithPhoneNumber$returnMultipleResults$prefixHint$(
+  static Pointer initWithPhoneNumber$returnMultipleResults$prefixHint$(
     Pointer<CNPhoneNumberContactPredicate> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int returnMultipleResults,
-    @required Pointer<Void> prefixHint,
+    @required Pointer prefixHint,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_Int8_p_returns_p(
@@ -27886,7 +28006,7 @@ class CNPhoneNumberContactPredicate
 
   static int isEqual(
     Pointer<CNPhoneNumberContactPredicate> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -27896,7 +28016,7 @@ class CNPhoneNumberContactPredicate
     );
   }
 
-  static Pointer<Void> phoneNumber(
+  static Pointer phoneNumber(
     Pointer<CNPhoneNumberContactPredicate> _self,
   ) {
     _openDynamicLibrary();
@@ -27906,7 +28026,7 @@ class CNPhoneNumberContactPredicate
     );
   }
 
-  static Pointer<Void> prefixHint(
+  static Pointer prefixHint(
     Pointer<CNPhoneNumberContactPredicate> _self,
   ) {
     _openDynamicLibrary();
@@ -27926,12 +28046,12 @@ class CNPhoneNumberContactPredicate
     );
   }
 
-  static Pointer<Void> sgContactMatchesWithSortOrder(
+  static Pointer sgContactMatchesWithSortOrder(
     Pointer<CNPhoneNumberContactPredicate> _self,
     int arg, {
     @required int mutableObjects,
-    @required Pointer<Void> service,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer service,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_Int64_Int8_p_p_returns_p(
@@ -27945,7 +28065,7 @@ class CNPhoneNumberContactPredicate
     );
   }
 
-  static Pointer<Void> shortDebugDescription(
+  static Pointer shortDebugDescription(
     Pointer<CNPhoneNumberContactPredicate> _self,
   ) {
     _openDynamicLibrary();
@@ -27956,11 +28076,9 @@ class CNPhoneNumberContactPredicate
   }
 }
 
-/// Objective-C class _CNPhoneNumbersDescription_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNPhoneNumbersDescription extends Struct<CNPhoneNumbersDescription> {
   factory CNPhoneNumbersDescription._() {
@@ -27973,9 +28091,9 @@ class CNPhoneNumbersDescription extends Struct<CNPhoneNumbersDescription> {
         .cast<CNPhoneNumbersDescription>();
   }
 
-  static Pointer<Void> CNValueForContact(
+  static Pointer CNValueForContact(
     Pointer<CNPhoneNumbersDescription> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -27987,8 +28105,8 @@ class CNPhoneNumbersDescription extends Struct<CNPhoneNumbersDescription> {
 
   static int canUnifyValue(
     Pointer<CNPhoneNumbersDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> withValue,
+    Pointer arg, {
+    @required Pointer withValue,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -28001,8 +28119,8 @@ class CNPhoneNumbersDescription extends Struct<CNPhoneNumbersDescription> {
 
   static void copyFromCoreDataContact(
     Pointer<CNPhoneNumbersDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toContact,
+    Pointer arg, {
+    @required Pointer toContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -28015,8 +28133,8 @@ class CNPhoneNumbersDescription extends Struct<CNPhoneNumbersDescription> {
 
   static void copyFromLabeledValue(
     Pointer<CNPhoneNumbersDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toOwnedObject,
+    Pointer arg, {
+    @required Pointer toOwnedObject,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -28029,8 +28147,8 @@ class CNPhoneNumbersDescription extends Struct<CNPhoneNumbersDescription> {
 
   static void copyValueFromContact(
     Pointer<CNPhoneNumbersDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toRemotePerson,
+    Pointer arg, {
+    @required Pointer toRemotePerson,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -28043,8 +28161,8 @@ class CNPhoneNumbersDescription extends Struct<CNPhoneNumbersDescription> {
 
   static void copyValueFromRemotePerson(
     Pointer<CNPhoneNumbersDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toContact,
+    Pointer arg, {
+    @required Pointer toContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -28055,7 +28173,7 @@ class CNPhoneNumbersDescription extends Struct<CNPhoneNumbersDescription> {
     );
   }
 
-  static Pointer<Void> coreDataKey(
+  static Pointer coreDataKey(
     Pointer<CNPhoneNumbersDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -28065,7 +28183,7 @@ class CNPhoneNumbersDescription extends Struct<CNPhoneNumbersDescription> {
     );
   }
 
-  static Pointer<Void> coreDataOwnedEntityName(
+  static Pointer coreDataOwnedEntityName(
     Pointer<CNPhoneNumbersDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -28075,7 +28193,7 @@ class CNPhoneNumbersDescription extends Struct<CNPhoneNumbersDescription> {
     );
   }
 
-  static Pointer<Void> coreDataRelationshipKeyPathsToFetch(
+  static Pointer coreDataRelationshipKeyPathsToFetch(
     Pointer<CNPhoneNumbersDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -28087,8 +28205,8 @@ class CNPhoneNumbersDescription extends Struct<CNPhoneNumbersDescription> {
 
   static void decodeUsingCoder(
     Pointer<CNPhoneNumbersDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> contact,
+    Pointer arg, {
+    @required Pointer contact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -28101,8 +28219,8 @@ class CNPhoneNumbersDescription extends Struct<CNPhoneNumbersDescription> {
 
   static void encodeUsingCoder(
     Pointer<CNPhoneNumbersDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> contact,
+    Pointer arg, {
+    @required Pointer contact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -28113,7 +28231,7 @@ class CNPhoneNumbersDescription extends Struct<CNPhoneNumbersDescription> {
     );
   }
 
-  static Pointer<Void> equivalentLabelSets(
+  static Pointer equivalentLabelSets(
     Pointer<CNPhoneNumbersDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -28123,7 +28241,7 @@ class CNPhoneNumbersDescription extends Struct<CNPhoneNumbersDescription> {
     );
   }
 
-  static Pointer<Void> fromPlistTransform(
+  static Pointer fromPlistTransform(
     Pointer<CNPhoneNumbersDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -28133,7 +28251,7 @@ class CNPhoneNumbersDescription extends Struct<CNPhoneNumbersDescription> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CNPhoneNumbersDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -28145,8 +28263,8 @@ class CNPhoneNumbersDescription extends Struct<CNPhoneNumbersDescription> {
 
   static int isEqualForContact(
     Pointer<CNPhoneNumbersDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> other,
+    Pointer arg, {
+    @required Pointer other,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -28167,7 +28285,7 @@ class CNPhoneNumbersDescription extends Struct<CNPhoneNumbersDescription> {
     );
   }
 
-  static Pointer<Void> labeledValueClass(
+  static Pointer labeledValueClass(
     Pointer<CNPhoneNumbersDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -28177,7 +28295,7 @@ class CNPhoneNumbersDescription extends Struct<CNPhoneNumbersDescription> {
     );
   }
 
-  static Pointer<Void> ownedObjectToLabeledValueValueTransform(
+  static Pointer ownedObjectToLabeledValueValueTransform(
     Pointer<CNPhoneNumbersDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -28187,7 +28305,7 @@ class CNPhoneNumbersDescription extends Struct<CNPhoneNumbersDescription> {
     );
   }
 
-  static Pointer<Void> plistTransform(
+  static Pointer plistTransform(
     Pointer<CNPhoneNumbersDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -28199,8 +28317,8 @@ class CNPhoneNumbersDescription extends Struct<CNPhoneNumbersDescription> {
 
   static void setCNValue(
     Pointer<CNPhoneNumbersDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> onContact,
+    Pointer arg, {
+    @required Pointer onContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -28211,7 +28329,7 @@ class CNPhoneNumbersDescription extends Struct<CNPhoneNumbersDescription> {
     );
   }
 
-  static Pointer<Void> standardLabels(
+  static Pointer standardLabels(
     Pointer<CNPhoneNumbersDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -28221,9 +28339,9 @@ class CNPhoneNumbersDescription extends Struct<CNPhoneNumbersDescription> {
     );
   }
 
-  static Pointer<Void> stringForIndexingForContact(
+  static Pointer stringForIndexingForContact(
     Pointer<CNPhoneNumbersDescription> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -28233,7 +28351,7 @@ class CNPhoneNumbersDescription extends Struct<CNPhoneNumbersDescription> {
     );
   }
 
-  static Pointer<Void> subCoreDataPredicatePropertiesByKey(
+  static Pointer subCoreDataPredicatePropertiesByKey(
     Pointer<CNPhoneNumbersDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -28244,11 +28362,9 @@ class CNPhoneNumbersDescription extends Struct<CNPhoneNumbersDescription> {
   }
 }
 
-/// Objective-C class _CNPhonemeDataDescription_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNPhonemeDataDescription extends Struct<CNPhonemeDataDescription> {
   factory CNPhonemeDataDescription._() {
@@ -28261,9 +28377,9 @@ class CNPhonemeDataDescription extends Struct<CNPhonemeDataDescription> {
         .cast<CNPhonemeDataDescription>();
   }
 
-  static Pointer<Void> CNValueForContact(
+  static Pointer CNValueForContact(
     Pointer<CNPhonemeDataDescription> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -28275,8 +28391,8 @@ class CNPhonemeDataDescription extends Struct<CNPhonemeDataDescription> {
 
   static void copyFromCoreDataContact(
     Pointer<CNPhonemeDataDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toContact,
+    Pointer arg, {
+    @required Pointer toContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -28289,8 +28405,8 @@ class CNPhonemeDataDescription extends Struct<CNPhonemeDataDescription> {
 
   static void copyValueFromContact(
     Pointer<CNPhonemeDataDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toRemotePerson,
+    Pointer arg, {
+    @required Pointer toRemotePerson,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -28303,8 +28419,8 @@ class CNPhonemeDataDescription extends Struct<CNPhonemeDataDescription> {
 
   static void copyValueFromRemotePerson(
     Pointer<CNPhonemeDataDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toContact,
+    Pointer arg, {
+    @required Pointer toContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -28315,7 +28431,7 @@ class CNPhonemeDataDescription extends Struct<CNPhonemeDataDescription> {
     );
   }
 
-  static Pointer<Void> coreDataKey(
+  static Pointer coreDataKey(
     Pointer<CNPhonemeDataDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -28327,8 +28443,8 @@ class CNPhonemeDataDescription extends Struct<CNPhonemeDataDescription> {
 
   static void decodeUsingCoder(
     Pointer<CNPhonemeDataDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> contact,
+    Pointer arg, {
+    @required Pointer contact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -28341,8 +28457,8 @@ class CNPhonemeDataDescription extends Struct<CNPhonemeDataDescription> {
 
   static void encodeUsingCoder(
     Pointer<CNPhonemeDataDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> contact,
+    Pointer arg, {
+    @required Pointer contact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -28353,7 +28469,7 @@ class CNPhonemeDataDescription extends Struct<CNPhonemeDataDescription> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CNPhonemeDataDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -28365,8 +28481,8 @@ class CNPhonemeDataDescription extends Struct<CNPhonemeDataDescription> {
 
   static int isEqualForContact(
     Pointer<CNPhonemeDataDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> other,
+    Pointer arg, {
+    @required Pointer other,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -28379,8 +28495,8 @@ class CNPhonemeDataDescription extends Struct<CNPhonemeDataDescription> {
 
   static void setCNValue(
     Pointer<CNPhonemeDataDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> onContact,
+    Pointer arg, {
+    @required Pointer onContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -28392,11 +28508,9 @@ class CNPhonemeDataDescription extends Struct<CNPhonemeDataDescription> {
   }
 }
 
-/// Objective-C class _CNPhoneticFamilyNameDescription_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNPhoneticFamilyNameDescription
     extends Struct<CNPhoneticFamilyNameDescription> {
@@ -28410,9 +28524,9 @@ class CNPhoneticFamilyNameDescription
         .cast<CNPhoneticFamilyNameDescription>();
   }
 
-  static Pointer<Void> CNValueForContact(
+  static Pointer CNValueForContact(
     Pointer<CNPhoneticFamilyNameDescription> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -28424,8 +28538,8 @@ class CNPhoneticFamilyNameDescription
 
   static void copyFromCoreDataContact(
     Pointer<CNPhoneticFamilyNameDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toContact,
+    Pointer arg, {
+    @required Pointer toContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -28438,8 +28552,8 @@ class CNPhoneticFamilyNameDescription
 
   static void copyValueFromContact(
     Pointer<CNPhoneticFamilyNameDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toRemotePerson,
+    Pointer arg, {
+    @required Pointer toRemotePerson,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -28452,8 +28566,8 @@ class CNPhoneticFamilyNameDescription
 
   static void copyValueFromRemotePerson(
     Pointer<CNPhoneticFamilyNameDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toContact,
+    Pointer arg, {
+    @required Pointer toContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -28464,7 +28578,7 @@ class CNPhoneticFamilyNameDescription
     );
   }
 
-  static Pointer<Void> coreDataKey(
+  static Pointer coreDataKey(
     Pointer<CNPhoneticFamilyNameDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -28476,8 +28590,8 @@ class CNPhoneticFamilyNameDescription
 
   static void decodeUsingCoder(
     Pointer<CNPhoneticFamilyNameDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> contact,
+    Pointer arg, {
+    @required Pointer contact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -28490,8 +28604,8 @@ class CNPhoneticFamilyNameDescription
 
   static void encodeUsingCoder(
     Pointer<CNPhoneticFamilyNameDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> contact,
+    Pointer arg, {
+    @required Pointer contact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -28502,7 +28616,7 @@ class CNPhoneticFamilyNameDescription
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CNPhoneticFamilyNameDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -28514,8 +28628,8 @@ class CNPhoneticFamilyNameDescription
 
   static int isEqualForContact(
     Pointer<CNPhoneticFamilyNameDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> other,
+    Pointer arg, {
+    @required Pointer other,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -28538,8 +28652,8 @@ class CNPhoneticFamilyNameDescription
 
   static void setCNValue(
     Pointer<CNPhoneticFamilyNameDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> onContact,
+    Pointer arg, {
+    @required Pointer onContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -28551,11 +28665,9 @@ class CNPhoneticFamilyNameDescription
   }
 }
 
-/// Objective-C class _CNPhoneticGivenNameDescription_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNPhoneticGivenNameDescription
     extends Struct<CNPhoneticGivenNameDescription> {
@@ -28569,9 +28681,9 @@ class CNPhoneticGivenNameDescription
         .cast<CNPhoneticGivenNameDescription>();
   }
 
-  static Pointer<Void> CNValueForContact(
+  static Pointer CNValueForContact(
     Pointer<CNPhoneticGivenNameDescription> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -28583,8 +28695,8 @@ class CNPhoneticGivenNameDescription
 
   static void copyFromCoreDataContact(
     Pointer<CNPhoneticGivenNameDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toContact,
+    Pointer arg, {
+    @required Pointer toContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -28597,8 +28709,8 @@ class CNPhoneticGivenNameDescription
 
   static void copyValueFromContact(
     Pointer<CNPhoneticGivenNameDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toRemotePerson,
+    Pointer arg, {
+    @required Pointer toRemotePerson,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -28611,8 +28723,8 @@ class CNPhoneticGivenNameDescription
 
   static void copyValueFromRemotePerson(
     Pointer<CNPhoneticGivenNameDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toContact,
+    Pointer arg, {
+    @required Pointer toContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -28623,7 +28735,7 @@ class CNPhoneticGivenNameDescription
     );
   }
 
-  static Pointer<Void> coreDataKey(
+  static Pointer coreDataKey(
     Pointer<CNPhoneticGivenNameDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -28635,8 +28747,8 @@ class CNPhoneticGivenNameDescription
 
   static void decodeUsingCoder(
     Pointer<CNPhoneticGivenNameDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> contact,
+    Pointer arg, {
+    @required Pointer contact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -28649,8 +28761,8 @@ class CNPhoneticGivenNameDescription
 
   static void encodeUsingCoder(
     Pointer<CNPhoneticGivenNameDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> contact,
+    Pointer arg, {
+    @required Pointer contact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -28661,7 +28773,7 @@ class CNPhoneticGivenNameDescription
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CNPhoneticGivenNameDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -28673,8 +28785,8 @@ class CNPhoneticGivenNameDescription
 
   static int isEqualForContact(
     Pointer<CNPhoneticGivenNameDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> other,
+    Pointer arg, {
+    @required Pointer other,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -28697,8 +28809,8 @@ class CNPhoneticGivenNameDescription
 
   static void setCNValue(
     Pointer<CNPhoneticGivenNameDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> onContact,
+    Pointer arg, {
+    @required Pointer onContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -28710,11 +28822,9 @@ class CNPhoneticGivenNameDescription
   }
 }
 
-/// Objective-C class _CNPhoneticMiddleNameDescription_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNPhoneticMiddleNameDescription
     extends Struct<CNPhoneticMiddleNameDescription> {
@@ -28728,9 +28838,9 @@ class CNPhoneticMiddleNameDescription
         .cast<CNPhoneticMiddleNameDescription>();
   }
 
-  static Pointer<Void> CNValueForContact(
+  static Pointer CNValueForContact(
     Pointer<CNPhoneticMiddleNameDescription> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -28742,8 +28852,8 @@ class CNPhoneticMiddleNameDescription
 
   static void copyFromCoreDataContact(
     Pointer<CNPhoneticMiddleNameDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toContact,
+    Pointer arg, {
+    @required Pointer toContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -28756,8 +28866,8 @@ class CNPhoneticMiddleNameDescription
 
   static void copyValueFromContact(
     Pointer<CNPhoneticMiddleNameDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toRemotePerson,
+    Pointer arg, {
+    @required Pointer toRemotePerson,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -28770,8 +28880,8 @@ class CNPhoneticMiddleNameDescription
 
   static void copyValueFromRemotePerson(
     Pointer<CNPhoneticMiddleNameDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toContact,
+    Pointer arg, {
+    @required Pointer toContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -28782,7 +28892,7 @@ class CNPhoneticMiddleNameDescription
     );
   }
 
-  static Pointer<Void> coreDataKey(
+  static Pointer coreDataKey(
     Pointer<CNPhoneticMiddleNameDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -28794,8 +28904,8 @@ class CNPhoneticMiddleNameDescription
 
   static void decodeUsingCoder(
     Pointer<CNPhoneticMiddleNameDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> contact,
+    Pointer arg, {
+    @required Pointer contact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -28808,8 +28918,8 @@ class CNPhoneticMiddleNameDescription
 
   static void encodeUsingCoder(
     Pointer<CNPhoneticMiddleNameDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> contact,
+    Pointer arg, {
+    @required Pointer contact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -28820,7 +28930,7 @@ class CNPhoneticMiddleNameDescription
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CNPhoneticMiddleNameDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -28832,8 +28942,8 @@ class CNPhoneticMiddleNameDescription
 
   static int isEqualForContact(
     Pointer<CNPhoneticMiddleNameDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> other,
+    Pointer arg, {
+    @required Pointer other,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -28856,8 +28966,8 @@ class CNPhoneticMiddleNameDescription
 
   static void setCNValue(
     Pointer<CNPhoneticMiddleNameDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> onContact,
+    Pointer arg, {
+    @required Pointer onContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -28869,11 +28979,9 @@ class CNPhoneticMiddleNameDescription
   }
 }
 
-/// Objective-C class _CNPhoneticOrganizationNameDescription_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNPhoneticOrganizationNameDescription
     extends Struct<CNPhoneticOrganizationNameDescription> {
@@ -28887,9 +28995,9 @@ class CNPhoneticOrganizationNameDescription
         .cast<CNPhoneticOrganizationNameDescription>();
   }
 
-  static Pointer<Void> CNValueForContact(
+  static Pointer CNValueForContact(
     Pointer<CNPhoneticOrganizationNameDescription> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -28901,8 +29009,8 @@ class CNPhoneticOrganizationNameDescription
 
   static void copyFromCoreDataContact(
     Pointer<CNPhoneticOrganizationNameDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toContact,
+    Pointer arg, {
+    @required Pointer toContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -28915,8 +29023,8 @@ class CNPhoneticOrganizationNameDescription
 
   static void copyValueFromContact(
     Pointer<CNPhoneticOrganizationNameDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toRemotePerson,
+    Pointer arg, {
+    @required Pointer toRemotePerson,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -28929,8 +29037,8 @@ class CNPhoneticOrganizationNameDescription
 
   static void copyValueFromRemotePerson(
     Pointer<CNPhoneticOrganizationNameDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toContact,
+    Pointer arg, {
+    @required Pointer toContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -28941,7 +29049,7 @@ class CNPhoneticOrganizationNameDescription
     );
   }
 
-  static Pointer<Void> coreDataKey(
+  static Pointer coreDataKey(
     Pointer<CNPhoneticOrganizationNameDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -28953,8 +29061,8 @@ class CNPhoneticOrganizationNameDescription
 
   static void decodeUsingCoder(
     Pointer<CNPhoneticOrganizationNameDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> contact,
+    Pointer arg, {
+    @required Pointer contact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -28967,8 +29075,8 @@ class CNPhoneticOrganizationNameDescription
 
   static void encodeUsingCoder(
     Pointer<CNPhoneticOrganizationNameDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> contact,
+    Pointer arg, {
+    @required Pointer contact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -28979,7 +29087,7 @@ class CNPhoneticOrganizationNameDescription
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CNPhoneticOrganizationNameDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -28991,8 +29099,8 @@ class CNPhoneticOrganizationNameDescription
 
   static int isEqualForContact(
     Pointer<CNPhoneticOrganizationNameDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> other,
+    Pointer arg, {
+    @required Pointer other,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -29015,8 +29123,8 @@ class CNPhoneticOrganizationNameDescription
 
   static void setCNValue(
     Pointer<CNPhoneticOrganizationNameDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> onContact,
+    Pointer arg, {
+    @required Pointer onContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -29028,11 +29136,9 @@ class CNPhoneticOrganizationNameDescription
   }
 }
 
-/// Objective-C class _CNPolicy_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNPolicy extends Struct<CNPolicy> {
   factory CNPolicy._() {
@@ -29045,7 +29151,7 @@ class CNPolicy extends Struct<CNPolicy> {
 
   static int isContactPropertySupported(
     Pointer<CNPolicy> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -29067,7 +29173,7 @@ class CNPolicy extends Struct<CNPolicy> {
 
   static int maximumCountOfValuesForContactProperty$(
     Pointer<CNPolicy> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Uint64(
@@ -29079,8 +29185,8 @@ class CNPolicy extends Struct<CNPolicy> {
 
   static int maximumCountOfValuesForContactProperty$label$(
     Pointer<CNPolicy> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> label,
+    Pointer arg, {
+    @required Pointer label,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Uint64(
@@ -29093,7 +29199,7 @@ class CNPolicy extends Struct<CNPolicy> {
 
   static int shouldAddContact(
     Pointer<CNPolicy> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -29105,7 +29211,7 @@ class CNPolicy extends Struct<CNPolicy> {
 
   static int shouldRemoveContact(
     Pointer<CNPolicy> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -29117,10 +29223,10 @@ class CNPolicy extends Struct<CNPolicy> {
 
   static int shouldSetValue(
     Pointer<CNPolicy> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> property,
-    @required Pointer<Void> contact,
-    @required Pointer<Pointer<Void>> replacementValue,
+    Pointer arg, {
+    @required Pointer property,
+    @required Pointer contact,
+    @required Pointer<Pointer> replacementValue,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_returns_Int8(
@@ -29133,9 +29239,9 @@ class CNPolicy extends Struct<CNPolicy> {
     );
   }
 
-  static Pointer<Void> supportedLabelsForContactProperty(
+  static Pointer supportedLabelsForContactProperty(
     Pointer<CNPolicy> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -29145,9 +29251,9 @@ class CNPolicy extends Struct<CNPolicy> {
     );
   }
 
-  static Pointer<Void> unsupportedAttributesForLableledContactProperty(
+  static Pointer unsupportedAttributesForLableledContactProperty(
     Pointer<CNPolicy> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -29158,11 +29264,9 @@ class CNPolicy extends Struct<CNPolicy> {
   }
 }
 
-/// Objective-C class _CNPostalAddress_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNPostalAddress extends Struct<CNPostalAddress> {
   factory CNPostalAddress._() {
@@ -29173,7 +29277,7 @@ class CNPostalAddress extends Struct<CNPostalAddress> {
     return _objc.allocate("CNPostalAddress").cast<CNPostalAddress>();
   }
 
-  static Pointer<Void> ISOCountryCode(
+  static Pointer ISOCountryCode(
     Pointer<CNPostalAddress> _self,
   ) {
     _openDynamicLibrary();
@@ -29183,7 +29287,7 @@ class CNPostalAddress extends Struct<CNPostalAddress> {
     );
   }
 
-  static Pointer<Void> addressBookDictionaryRepresentation(
+  static Pointer addressBookDictionaryRepresentation(
     Pointer<CNPostalAddress> _self,
   ) {
     _openDynamicLibrary();
@@ -29193,7 +29297,17 @@ class CNPostalAddress extends Struct<CNPostalAddress> {
     );
   }
 
-  static Pointer<Void> city(
+  static Pointer backwardsCompatibleDictionaryRepresentation(
+    Pointer<CNPostalAddress> _self,
+  ) {
+    _openDynamicLibrary();
+    return _call_objc_p_p_returns_p(
+      _self,
+      _objc.getSelector("backwardsCompatibleDictionaryRepresentation"),
+    );
+  }
+
+  static Pointer city(
     Pointer<CNPostalAddress> _self,
   ) {
     _openDynamicLibrary();
@@ -29203,9 +29317,9 @@ class CNPostalAddress extends Struct<CNPostalAddress> {
     );
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<CNPostalAddress> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -29215,7 +29329,7 @@ class CNPostalAddress extends Struct<CNPostalAddress> {
     );
   }
 
-  static Pointer<Void> country(
+  static Pointer country(
     Pointer<CNPostalAddress> _self,
   ) {
     _openDynamicLibrary();
@@ -29225,7 +29339,7 @@ class CNPostalAddress extends Struct<CNPostalAddress> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CNPostalAddress> _self,
   ) {
     _openDynamicLibrary();
@@ -29235,7 +29349,7 @@ class CNPostalAddress extends Struct<CNPostalAddress> {
     );
   }
 
-  static Pointer<Void> dictionaryRepresentation(
+  static Pointer dictionaryRepresentation(
     Pointer<CNPostalAddress> _self,
   ) {
     _openDynamicLibrary();
@@ -29247,7 +29361,7 @@ class CNPostalAddress extends Struct<CNPostalAddress> {
 
   static void encodeWithCoder(
     Pointer<CNPostalAddress> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -29257,7 +29371,7 @@ class CNPostalAddress extends Struct<CNPostalAddress> {
     );
   }
 
-  static Pointer<Void> formattedAddress(
+  static Pointer formattedAddress(
     Pointer<CNPostalAddress> _self,
   ) {
     _openDynamicLibrary();
@@ -29277,9 +29391,9 @@ class CNPostalAddress extends Struct<CNPostalAddress> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CNPostalAddress> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -29289,9 +29403,9 @@ class CNPostalAddress extends Struct<CNPostalAddress> {
     );
   }
 
-  static Pointer<Void> initWithPostalAddress(
+  static Pointer initWithPostalAddress(
     Pointer<CNPostalAddress> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -29303,7 +29417,7 @@ class CNPostalAddress extends Struct<CNPostalAddress> {
 
   static int isEqual(
     Pointer<CNPostalAddress> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -29315,7 +29429,7 @@ class CNPostalAddress extends Struct<CNPostalAddress> {
 
   static int isValid(
     Pointer<CNPostalAddress> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -29325,9 +29439,9 @@ class CNPostalAddress extends Struct<CNPostalAddress> {
     );
   }
 
-  static Pointer<Void> mutableCopyWithZone(
+  static Pointer mutableCopyWithZone(
     Pointer<CNPostalAddress> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -29337,7 +29451,7 @@ class CNPostalAddress extends Struct<CNPostalAddress> {
     );
   }
 
-  static Pointer<Void> postalCode(
+  static Pointer postalCode(
     Pointer<CNPostalAddress> _self,
   ) {
     _openDynamicLibrary();
@@ -29347,9 +29461,29 @@ class CNPostalAddress extends Struct<CNPostalAddress> {
     );
   }
 
+  static Pointer redactedPostalAddress(
+    Pointer<CNPostalAddress> _self,
+  ) {
+    _openDynamicLibrary();
+    return _call_objc_p_p_returns_p(
+      _self,
+      _objc.getSelector("redactedPostalAddress"),
+    );
+  }
+
+  static Pointer redactedStreetAddress(
+    Pointer<CNPostalAddress> _self,
+  ) {
+    _openDynamicLibrary();
+    return _call_objc_p_p_returns_p(
+      _self,
+      _objc.getSelector("redactedStreetAddress"),
+    );
+  }
+
   static void setCity(
     Pointer<CNPostalAddress> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -29361,7 +29495,7 @@ class CNPostalAddress extends Struct<CNPostalAddress> {
 
   static void setCountry(
     Pointer<CNPostalAddress> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -29373,7 +29507,7 @@ class CNPostalAddress extends Struct<CNPostalAddress> {
 
   static void setFormattedAddress(
     Pointer<CNPostalAddress> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -29385,7 +29519,7 @@ class CNPostalAddress extends Struct<CNPostalAddress> {
 
   static void setISOCountryCode(
     Pointer<CNPostalAddress> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -29397,7 +29531,7 @@ class CNPostalAddress extends Struct<CNPostalAddress> {
 
   static void setPostalCode(
     Pointer<CNPostalAddress> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -29409,7 +29543,7 @@ class CNPostalAddress extends Struct<CNPostalAddress> {
 
   static void setState(
     Pointer<CNPostalAddress> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -29421,7 +29555,7 @@ class CNPostalAddress extends Struct<CNPostalAddress> {
 
   static void setStreet(
     Pointer<CNPostalAddress> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -29433,7 +29567,7 @@ class CNPostalAddress extends Struct<CNPostalAddress> {
 
   static void setSubAdministrativeArea(
     Pointer<CNPostalAddress> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -29445,7 +29579,7 @@ class CNPostalAddress extends Struct<CNPostalAddress> {
 
   static void setSubLocality(
     Pointer<CNPostalAddress> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -29455,7 +29589,7 @@ class CNPostalAddress extends Struct<CNPostalAddress> {
     );
   }
 
-  static Pointer<Void> state(
+  static Pointer state(
     Pointer<CNPostalAddress> _self,
   ) {
     _openDynamicLibrary();
@@ -29465,7 +29599,7 @@ class CNPostalAddress extends Struct<CNPostalAddress> {
     );
   }
 
-  static Pointer<Void> street(
+  static Pointer street(
     Pointer<CNPostalAddress> _self,
   ) {
     _openDynamicLibrary();
@@ -29475,7 +29609,7 @@ class CNPostalAddress extends Struct<CNPostalAddress> {
     );
   }
 
-  static Pointer<Void> subAdministrativeArea(
+  static Pointer subAdministrativeArea(
     Pointer<CNPostalAddress> _self,
   ) {
     _openDynamicLibrary();
@@ -29485,7 +29619,7 @@ class CNPostalAddress extends Struct<CNPostalAddress> {
     );
   }
 
-  static Pointer<Void> subLocality(
+  static Pointer subLocality(
     Pointer<CNPostalAddress> _self,
   ) {
     _openDynamicLibrary();
@@ -29494,13 +29628,31 @@ class CNPostalAddress extends Struct<CNPostalAddress> {
       _objc.getSelector("subLocality"),
     );
   }
+
+  static Pointer suggestedCountryCode(
+    Pointer<CNPostalAddress> _self,
+  ) {
+    _openDynamicLibrary();
+    return _call_objc_p_p_returns_p(
+      _self,
+      _objc.getSelector("suggestedCountryCode"),
+    );
+  }
+
+  static Pointer webServiceDictionaryRepresentation(
+    Pointer<CNPostalAddress> _self,
+  ) {
+    _openDynamicLibrary();
+    return _call_objc_p_p_returns_p(
+      _self,
+      _objc.getSelector("webServiceDictionaryRepresentation"),
+    );
+  }
 }
 
-/// Objective-C class _CNPostalAddressContactPredicate_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNPostalAddressContactPredicate
     extends Struct<CNPostalAddressContactPredicate> {
@@ -29514,7 +29666,7 @@ class CNPostalAddressContactPredicate
         .cast<CNPostalAddressContactPredicate>();
   }
 
-  static Pointer<Void> cn_coreDataPredicate(
+  static Pointer cn_coreDataPredicate(
     Pointer<CNPostalAddressContactPredicate> _self,
   ) {
     _openDynamicLibrary();
@@ -29524,7 +29676,7 @@ class CNPostalAddressContactPredicate
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CNPostalAddressContactPredicate> _self,
   ) {
     _openDynamicLibrary();
@@ -29536,7 +29688,7 @@ class CNPostalAddressContactPredicate
 
   static void encodeWithCoder(
     Pointer<CNPostalAddressContactPredicate> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -29546,9 +29698,9 @@ class CNPostalAddressContactPredicate
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CNPostalAddressContactPredicate> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -29558,9 +29710,9 @@ class CNPostalAddressContactPredicate
     );
   }
 
-  static Pointer<Void> initWithPostalAddress(
+  static Pointer initWithPostalAddress(
     Pointer<CNPostalAddressContactPredicate> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -29570,7 +29722,7 @@ class CNPostalAddressContactPredicate
     );
   }
 
-  static Pointer<Void> postalAddress(
+  static Pointer postalAddress(
     Pointer<CNPostalAddressContactPredicate> _self,
   ) {
     _openDynamicLibrary();
@@ -29581,11 +29733,9 @@ class CNPostalAddressContactPredicate
   }
 }
 
-/// Objective-C class _CNPostalAddressFormatter_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNPostalAddressFormatter extends Struct<CNPostalAddressFormatter> {
   factory CNPostalAddressFormatter._() {
@@ -29598,10 +29748,10 @@ class CNPostalAddressFormatter extends Struct<CNPostalAddressFormatter> {
         .cast<CNPostalAddressFormatter>();
   }
 
-  static Pointer<Void> attributedStringForObjectValue(
+  static Pointer attributedStringForObjectValue(
     Pointer<CNPostalAddressFormatter> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> withDefaultAttributes,
+    Pointer arg, {
+    @required Pointer withDefaultAttributes,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -29613,10 +29763,10 @@ class CNPostalAddressFormatter extends Struct<CNPostalAddressFormatter> {
     );
   }
 
-  static Pointer<Void> attributedStringFromPostalAddress$withDefaultAttributes$(
+  static Pointer attributedStringFromPostalAddress$withDefaultAttributes$(
     Pointer<CNPostalAddressFormatter> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> withDefaultAttributes,
+    Pointer arg, {
+    @required Pointer withDefaultAttributes,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -29628,14 +29778,14 @@ class CNPostalAddressFormatter extends Struct<CNPostalAddressFormatter> {
     );
   }
 
-  static Pointer<Void>
+  static Pointer
       attributedStringFromPostalAddress$name$organization$attributes$order$(
     Pointer<CNPostalAddressFormatter> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> name,
-    @required Pointer<Void> organization,
-    @required Pointer<Void> attributes,
-    @required Pointer<Pointer<Void>> order,
+    Pointer arg, {
+    @required Pointer name,
+    @required Pointer organization,
+    @required Pointer attributes,
+    @required Pointer<Pointer> order,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_p_returns_p(
@@ -29650,13 +29800,13 @@ class CNPostalAddressFormatter extends Struct<CNPostalAddressFormatter> {
     );
   }
 
-  static Pointer<Void>
+  static Pointer
       attributedStringFromPostalAddress$name$organization$attributes$(
     Pointer<CNPostalAddressFormatter> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> name,
-    @required Pointer<Void> organization,
-    @required Pointer<Void> attributes,
+    Pointer arg, {
+    @required Pointer name,
+    @required Pointer organization,
+    @required Pointer attributes,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_returns_p(
@@ -29670,9 +29820,9 @@ class CNPostalAddressFormatter extends Struct<CNPostalAddressFormatter> {
     );
   }
 
-  static Pointer<Void> countryCodeForCountryName(
+  static Pointer countryCodeForCountryName(
     Pointer<CNPostalAddressFormatter> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -29682,9 +29832,9 @@ class CNPostalAddressFormatter extends Struct<CNPostalAddressFormatter> {
     );
   }
 
-  static Pointer<Void> postalAddressFromString(
+  static Pointer postalAddressFromString(
     Pointer<CNPostalAddressFormatter> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -29706,9 +29856,9 @@ class CNPostalAddressFormatter extends Struct<CNPostalAddressFormatter> {
     );
   }
 
-  static Pointer<Void> stringForObjectValue(
+  static Pointer stringForObjectValue(
     Pointer<CNPostalAddressFormatter> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -29718,9 +29868,9 @@ class CNPostalAddressFormatter extends Struct<CNPostalAddressFormatter> {
     );
   }
 
-  static Pointer<Void> stringFromPostalAddress(
+  static Pointer stringFromPostalAddress(
     Pointer<CNPostalAddressFormatter> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -29741,11 +29891,9 @@ class CNPostalAddressFormatter extends Struct<CNPostalAddressFormatter> {
   }
 }
 
-/// Objective-C class _CNPostalAddressFormattingSpecification_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNPostalAddressFormattingSpecification
     extends Struct<CNPostalAddressFormattingSpecification> {
@@ -29759,7 +29907,7 @@ class CNPostalAddressFormattingSpecification
         .cast<CNPostalAddressFormattingSpecification>();
   }
 
-  static Pointer<Void> displayFieldArrangement(
+  static Pointer displayFieldArrangement(
     Pointer<CNPostalAddressFormattingSpecification> _self,
   ) {
     _openDynamicLibrary();
@@ -29769,7 +29917,7 @@ class CNPostalAddressFormattingSpecification
     );
   }
 
-  static Pointer<Void> editingFieldArrangement(
+  static Pointer editingFieldArrangement(
     Pointer<CNPostalAddressFormattingSpecification> _self,
   ) {
     _openDynamicLibrary();
@@ -29779,7 +29927,7 @@ class CNPostalAddressFormattingSpecification
     );
   }
 
-  static Pointer<Void> fieldLabelMap(
+  static Pointer fieldLabelMap(
     Pointer<CNPostalAddressFormattingSpecification> _self,
   ) {
     _openDynamicLibrary();
@@ -29789,11 +29937,11 @@ class CNPostalAddressFormattingSpecification
     );
   }
 
-  static Pointer<Void> initWithDisplayFieldArrangement(
+  static Pointer initWithDisplayFieldArrangement(
     Pointer<CNPostalAddressFormattingSpecification> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> editingFieldArrangement,
-    @required Pointer<Void> fieldLabelMap,
+    Pointer arg, {
+    @required Pointer editingFieldArrangement,
+    @required Pointer fieldLabelMap,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -29806,9 +29954,9 @@ class CNPostalAddressFormattingSpecification
     );
   }
 
-  static Pointer<Void> localizedPlaceholderForKey(
+  static Pointer localizedPlaceholderForKey(
     Pointer<CNPostalAddressFormattingSpecification> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -29819,11 +29967,9 @@ class CNPostalAddressFormattingSpecification
   }
 }
 
-/// Objective-C class _CNPostalAddressesDescription_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNPostalAddressesDescription
     extends Struct<CNPostalAddressesDescription> {
@@ -29837,9 +29983,9 @@ class CNPostalAddressesDescription
         .cast<CNPostalAddressesDescription>();
   }
 
-  static Pointer<Void> CNValueForContact(
+  static Pointer CNValueForContact(
     Pointer<CNPostalAddressesDescription> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -29851,8 +29997,8 @@ class CNPostalAddressesDescription
 
   static int canUnifyValue(
     Pointer<CNPostalAddressesDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> withValue,
+    Pointer arg, {
+    @required Pointer withValue,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -29865,8 +30011,8 @@ class CNPostalAddressesDescription
 
   static void copyFromCoreDataContact(
     Pointer<CNPostalAddressesDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toContact,
+    Pointer arg, {
+    @required Pointer toContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -29879,8 +30025,8 @@ class CNPostalAddressesDescription
 
   static void copyFromLabeledValue(
     Pointer<CNPostalAddressesDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toOwnedObject,
+    Pointer arg, {
+    @required Pointer toOwnedObject,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -29893,8 +30039,8 @@ class CNPostalAddressesDescription
 
   static void copyValueFromContact(
     Pointer<CNPostalAddressesDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toRemotePerson,
+    Pointer arg, {
+    @required Pointer toRemotePerson,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -29907,8 +30053,8 @@ class CNPostalAddressesDescription
 
   static void copyValueFromRemotePerson(
     Pointer<CNPostalAddressesDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toContact,
+    Pointer arg, {
+    @required Pointer toContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -29919,7 +30065,7 @@ class CNPostalAddressesDescription
     );
   }
 
-  static Pointer<Void> coreDataKey(
+  static Pointer coreDataKey(
     Pointer<CNPostalAddressesDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -29929,7 +30075,7 @@ class CNPostalAddressesDescription
     );
   }
 
-  static Pointer<Void> coreDataOwnedEntityName(
+  static Pointer coreDataOwnedEntityName(
     Pointer<CNPostalAddressesDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -29939,7 +30085,7 @@ class CNPostalAddressesDescription
     );
   }
 
-  static Pointer<Void> coreDataRelationshipKeyPathsToFetch(
+  static Pointer coreDataRelationshipKeyPathsToFetch(
     Pointer<CNPostalAddressesDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -29951,8 +30097,8 @@ class CNPostalAddressesDescription
 
   static void decodeUsingCoder(
     Pointer<CNPostalAddressesDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> contact,
+    Pointer arg, {
+    @required Pointer contact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -29963,7 +30109,7 @@ class CNPostalAddressesDescription
     );
   }
 
-  static Pointer<Void> dictionaryTransform(
+  static Pointer dictionaryTransform(
     Pointer<CNPostalAddressesDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -29975,8 +30121,8 @@ class CNPostalAddressesDescription
 
   static void encodeUsingCoder(
     Pointer<CNPostalAddressesDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> contact,
+    Pointer arg, {
+    @required Pointer contact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -29987,7 +30133,7 @@ class CNPostalAddressesDescription
     );
   }
 
-  static Pointer<Void> fromDictionaryTransform(
+  static Pointer fromDictionaryTransform(
     Pointer<CNPostalAddressesDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -29997,7 +30143,7 @@ class CNPostalAddressesDescription
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CNPostalAddressesDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -30009,8 +30155,8 @@ class CNPostalAddressesDescription
 
   static int isEqualForContact(
     Pointer<CNPostalAddressesDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> other,
+    Pointer arg, {
+    @required Pointer other,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -30031,7 +30177,7 @@ class CNPostalAddressesDescription
     );
   }
 
-  static Pointer<Void> labeledValueClass(
+  static Pointer labeledValueClass(
     Pointer<CNPostalAddressesDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -30041,7 +30187,7 @@ class CNPostalAddressesDescription
     );
   }
 
-  static Pointer<Void> ownedObjectToLabeledValueValueTransform(
+  static Pointer ownedObjectToLabeledValueValueTransform(
     Pointer<CNPostalAddressesDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -30053,8 +30199,8 @@ class CNPostalAddressesDescription
 
   static void setCNValue(
     Pointer<CNPostalAddressesDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> onContact,
+    Pointer arg, {
+    @required Pointer onContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -30065,7 +30211,7 @@ class CNPostalAddressesDescription
     );
   }
 
-  static Pointer<Void> subCoreDataPredicatePropertiesByKey(
+  static Pointer subCoreDataPredicatePropertiesByKey(
     Pointer<CNPostalAddressesDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -30075,7 +30221,7 @@ class CNPostalAddressesDescription
     );
   }
 
-  static Pointer<Void> summarizationKeys(
+  static Pointer summarizationKeys(
     Pointer<CNPostalAddressesDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -30086,11 +30232,9 @@ class CNPostalAddressesDescription
   }
 }
 
-/// Objective-C class _CNPredicate_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNPredicate extends Struct<CNPredicate> {
   factory CNPredicate._() {
@@ -30111,7 +30255,7 @@ class CNPredicate extends Struct<CNPredicate> {
     );
   }
 
-  static Pointer<Void> cn_predicate(
+  static Pointer cn_predicate(
     Pointer<CNPredicate> _self,
   ) {
     _openDynamicLibrary();
@@ -30121,9 +30265,9 @@ class CNPredicate extends Struct<CNPredicate> {
     );
   }
 
-  static Pointer<Void> contactsFromDonationStore(
+  static Pointer contactsFromDonationStore(
     Pointer<CNPredicate> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -30133,9 +30277,9 @@ class CNPredicate extends Struct<CNPredicate> {
     );
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<CNPredicate> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -30147,7 +30291,7 @@ class CNPredicate extends Struct<CNPredicate> {
 
   static void encodeWithCoder(
     Pointer<CNPredicate> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -30159,7 +30303,7 @@ class CNPredicate extends Struct<CNPredicate> {
 
   static int evaluateWithObject$(
     Pointer<CNPredicate> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -30171,8 +30315,8 @@ class CNPredicate extends Struct<CNPredicate> {
 
   static int evaluateWithObject$substitutionVariables$(
     Pointer<CNPredicate> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> substitutionVariables,
+    Pointer arg, {
+    @required Pointer substitutionVariables,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -30183,7 +30327,7 @@ class CNPredicate extends Struct<CNPredicate> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CNPredicate> _self,
   ) {
     _openDynamicLibrary();
@@ -30193,9 +30337,9 @@ class CNPredicate extends Struct<CNPredicate> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CNPredicate> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -30205,9 +30349,9 @@ class CNPredicate extends Struct<CNPredicate> {
     );
   }
 
-  static Pointer<Void> initWithPredicate(
+  static Pointer initWithPredicate(
     Pointer<CNPredicate> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -30217,7 +30361,7 @@ class CNPredicate extends Struct<CNPredicate> {
     );
   }
 
-  static Pointer<Void> mainStoreContactIdentifiers(
+  static Pointer mainStoreContactIdentifiers(
     Pointer<CNPredicate> _self,
   ) {
     _openDynamicLibrary();
@@ -30229,7 +30373,7 @@ class CNPredicate extends Struct<CNPredicate> {
 
   static void mainStoreDidFetchContacts(
     Pointer<CNPredicate> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int unifiedFetch,
   }) {
     _openDynamicLibrary();
@@ -30241,7 +30385,7 @@ class CNPredicate extends Struct<CNPredicate> {
     );
   }
 
-  static Pointer<Void> predicateFormat(
+  static Pointer predicateFormat(
     Pointer<CNPredicate> _self,
   ) {
     _openDynamicLibrary();
@@ -30265,7 +30409,7 @@ class CNPredicate extends Struct<CNPredicate> {
 
   static void setMainStoreContactIdentifiers(
     Pointer<CNPredicate> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -30275,7 +30419,7 @@ class CNPredicate extends Struct<CNPredicate> {
     );
   }
 
-  static Pointer<Void> shortDebugDescription(
+  static Pointer shortDebugDescription(
     Pointer<CNPredicate> _self,
   ) {
     _openDynamicLibrary();
@@ -30285,13 +30429,13 @@ class CNPredicate extends Struct<CNPredicate> {
     );
   }
 
-  static Pointer<Void> suggestedContactsWithSortOrder(
+  static Pointer suggestedContactsWithSortOrder(
     Pointer<CNPredicate> _self,
     int arg, {
-    @required Pointer<Void> keysToFetch,
+    @required Pointer keysToFetch,
     @required int mutableObjects,
-    @required Pointer<Void> service,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer service,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_Int64_p_Int8_p_p_returns_p(
@@ -30307,11 +30451,9 @@ class CNPredicate extends Struct<CNPredicate> {
   }
 }
 
-/// Objective-C class _CNPredicateValidator_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNPredicateValidator extends Struct<CNPredicateValidator> {
   factory CNPredicateValidator._() {
@@ -30322,7 +30464,7 @@ class CNPredicateValidator extends Struct<CNPredicateValidator> {
     return _objc.allocate("CNPredicateValidator").cast<CNPredicateValidator>();
   }
 
-  static Pointer<Void> allowedKeys(
+  static Pointer allowedKeys(
     Pointer<CNPredicateValidator> _self,
   ) {
     _openDynamicLibrary();
@@ -30332,7 +30474,7 @@ class CNPredicateValidator extends Struct<CNPredicateValidator> {
     );
   }
 
-  static Pointer<Void> allowedKeysSet(
+  static Pointer allowedKeysSet(
     Pointer<CNPredicateValidator> _self,
   ) {
     _openDynamicLibrary();
@@ -30342,7 +30484,7 @@ class CNPredicateValidator extends Struct<CNPredicateValidator> {
     );
   }
 
-  static Pointer<Void> error(
+  static Pointer error(
     Pointer<CNPredicateValidator> _self,
   ) {
     _openDynamicLibrary();
@@ -30352,7 +30494,7 @@ class CNPredicateValidator extends Struct<CNPredicateValidator> {
     );
   }
 
-  static Pointer<Void> predicate(
+  static Pointer predicate(
     Pointer<CNPredicateValidator> _self,
   ) {
     _openDynamicLibrary();
@@ -30374,7 +30516,7 @@ class CNPredicateValidator extends Struct<CNPredicateValidator> {
 
   static void setAllowedKeys(
     Pointer<CNPredicateValidator> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -30386,7 +30528,7 @@ class CNPredicateValidator extends Struct<CNPredicateValidator> {
 
   static void setAllowedKeysSet(
     Pointer<CNPredicateValidator> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -30398,7 +30540,7 @@ class CNPredicateValidator extends Struct<CNPredicateValidator> {
 
   static void setError(
     Pointer<CNPredicateValidator> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -30410,7 +30552,7 @@ class CNPredicateValidator extends Struct<CNPredicateValidator> {
 
   static void setPredicate(
     Pointer<CNPredicateValidator> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -30422,7 +30564,7 @@ class CNPredicateValidator extends Struct<CNPredicateValidator> {
 
   static void setUsedKeysSet(
     Pointer<CNPredicateValidator> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -30444,7 +30586,7 @@ class CNPredicateValidator extends Struct<CNPredicateValidator> {
     );
   }
 
-  static Pointer<Void> usedKeys(
+  static Pointer usedKeys(
     Pointer<CNPredicateValidator> _self,
   ) {
     _openDynamicLibrary();
@@ -30454,7 +30596,7 @@ class CNPredicateValidator extends Struct<CNPredicateValidator> {
     );
   }
 
-  static Pointer<Void> usedKeysSet(
+  static Pointer usedKeysSet(
     Pointer<CNPredicateValidator> _self,
   ) {
     _openDynamicLibrary();
@@ -30466,7 +30608,7 @@ class CNPredicateValidator extends Struct<CNPredicateValidator> {
 
   static int validateWithError(
     Pointer<CNPredicateValidator> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -30488,7 +30630,7 @@ class CNPredicateValidator extends Struct<CNPredicateValidator> {
 
   static void visitPredicate(
     Pointer<CNPredicateValidator> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -30500,7 +30642,7 @@ class CNPredicateValidator extends Struct<CNPredicateValidator> {
 
   static void visitPredicateExpression(
     Pointer<CNPredicateValidator> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -30512,7 +30654,7 @@ class CNPredicateValidator extends Struct<CNPredicateValidator> {
 
   static void visitPredicateOperator(
     Pointer<CNPredicateValidator> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -30523,11 +30665,9 @@ class CNPredicateValidator extends Struct<CNPredicateValidator> {
   }
 }
 
-/// Objective-C class _CNPreferredApplePersonaIdentifierDescription_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNPreferredApplePersonaIdentifierDescription
     extends Struct<CNPreferredApplePersonaIdentifierDescription> {
@@ -30541,9 +30681,9 @@ class CNPreferredApplePersonaIdentifierDescription
         .cast<CNPreferredApplePersonaIdentifierDescription>();
   }
 
-  static Pointer<Void> CNValueForContact(
+  static Pointer CNValueForContact(
     Pointer<CNPreferredApplePersonaIdentifierDescription> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -30553,7 +30693,7 @@ class CNPreferredApplePersonaIdentifierDescription
     );
   }
 
-  static Pointer<Void> coreDataKey(
+  static Pointer coreDataKey(
     Pointer<CNPreferredApplePersonaIdentifierDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -30565,8 +30705,8 @@ class CNPreferredApplePersonaIdentifierDescription
 
   static void decodeUsingCoder(
     Pointer<CNPreferredApplePersonaIdentifierDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> contact,
+    Pointer arg, {
+    @required Pointer contact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -30579,8 +30719,8 @@ class CNPreferredApplePersonaIdentifierDescription
 
   static void encodeUsingCoder(
     Pointer<CNPreferredApplePersonaIdentifierDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> contact,
+    Pointer arg, {
+    @required Pointer contact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -30591,7 +30731,7 @@ class CNPreferredApplePersonaIdentifierDescription
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CNPreferredApplePersonaIdentifierDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -30603,8 +30743,8 @@ class CNPreferredApplePersonaIdentifierDescription
 
   static int isEqualForContact(
     Pointer<CNPreferredApplePersonaIdentifierDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> other,
+    Pointer arg, {
+    @required Pointer other,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -30617,8 +30757,8 @@ class CNPreferredApplePersonaIdentifierDescription
 
   static void setCNValue(
     Pointer<CNPreferredApplePersonaIdentifierDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> onContact,
+    Pointer arg, {
+    @required Pointer onContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -30629,7 +30769,7 @@ class CNPreferredApplePersonaIdentifierDescription
     );
   }
 
-  static Pointer<Void> valueClass(
+  static Pointer valueClass(
     Pointer<CNPreferredApplePersonaIdentifierDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -30640,11 +30780,9 @@ class CNPreferredApplePersonaIdentifierDescription
   }
 }
 
-/// Objective-C class _CNPreferredForImageDescription_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNPreferredForImageDescription
     extends Struct<CNPreferredForImageDescription> {
@@ -30658,9 +30796,9 @@ class CNPreferredForImageDescription
         .cast<CNPreferredForImageDescription>();
   }
 
-  static Pointer<Void> CNValueForContact(
+  static Pointer CNValueForContact(
     Pointer<CNPreferredForImageDescription> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -30670,7 +30808,7 @@ class CNPreferredForImageDescription
     );
   }
 
-  static Pointer<Void> coreDataKey(
+  static Pointer coreDataKey(
     Pointer<CNPreferredForImageDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -30682,8 +30820,8 @@ class CNPreferredForImageDescription
 
   static void decodeUsingCoder(
     Pointer<CNPreferredForImageDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> contact,
+    Pointer arg, {
+    @required Pointer contact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -30696,8 +30834,8 @@ class CNPreferredForImageDescription
 
   static void encodeUsingCoder(
     Pointer<CNPreferredForImageDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> contact,
+    Pointer arg, {
+    @required Pointer contact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -30708,7 +30846,7 @@ class CNPreferredForImageDescription
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CNPreferredForImageDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -30720,8 +30858,8 @@ class CNPreferredForImageDescription
 
   static int isEqualForContact(
     Pointer<CNPreferredForImageDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> other,
+    Pointer arg, {
+    @required Pointer other,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -30732,7 +30870,7 @@ class CNPreferredForImageDescription
     );
   }
 
-  static Pointer<Void> nilValue(
+  static Pointer nilValue(
     Pointer<CNPreferredForImageDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -30744,8 +30882,8 @@ class CNPreferredForImageDescription
 
   static void setCNValue(
     Pointer<CNPreferredForImageDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> onContact,
+    Pointer arg, {
+    @required Pointer onContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -30756,7 +30894,7 @@ class CNPreferredForImageDescription
     );
   }
 
-  static Pointer<Void> valueClass(
+  static Pointer valueClass(
     Pointer<CNPreferredForImageDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -30767,11 +30905,9 @@ class CNPreferredForImageDescription
   }
 }
 
-/// Objective-C class _CNPreferredForNameDescription_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNPreferredForNameDescription
     extends Struct<CNPreferredForNameDescription> {
@@ -30785,9 +30921,9 @@ class CNPreferredForNameDescription
         .cast<CNPreferredForNameDescription>();
   }
 
-  static Pointer<Void> CNValueForContact(
+  static Pointer CNValueForContact(
     Pointer<CNPreferredForNameDescription> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -30797,7 +30933,7 @@ class CNPreferredForNameDescription
     );
   }
 
-  static Pointer<Void> coreDataKey(
+  static Pointer coreDataKey(
     Pointer<CNPreferredForNameDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -30809,8 +30945,8 @@ class CNPreferredForNameDescription
 
   static void decodeUsingCoder(
     Pointer<CNPreferredForNameDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> contact,
+    Pointer arg, {
+    @required Pointer contact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -30823,8 +30959,8 @@ class CNPreferredForNameDescription
 
   static void encodeUsingCoder(
     Pointer<CNPreferredForNameDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> contact,
+    Pointer arg, {
+    @required Pointer contact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -30835,7 +30971,7 @@ class CNPreferredForNameDescription
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CNPreferredForNameDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -30847,8 +30983,8 @@ class CNPreferredForNameDescription
 
   static int isEqualForContact(
     Pointer<CNPreferredForNameDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> other,
+    Pointer arg, {
+    @required Pointer other,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -30859,7 +30995,7 @@ class CNPreferredForNameDescription
     );
   }
 
-  static Pointer<Void> nilValue(
+  static Pointer nilValue(
     Pointer<CNPreferredForNameDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -30871,8 +31007,8 @@ class CNPreferredForNameDescription
 
   static void setCNValue(
     Pointer<CNPreferredForNameDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> onContact,
+    Pointer arg, {
+    @required Pointer onContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -30883,7 +31019,7 @@ class CNPreferredForNameDescription
     );
   }
 
-  static Pointer<Void> valueClass(
+  static Pointer valueClass(
     Pointer<CNPreferredForNameDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -30894,11 +31030,9 @@ class CNPreferredForNameDescription
   }
 }
 
-/// Objective-C class _CNPreferredLikenessSourceDescription_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNPreferredLikenessSourceDescription
     extends Struct<CNPreferredLikenessSourceDescription> {
@@ -30912,9 +31046,9 @@ class CNPreferredLikenessSourceDescription
         .cast<CNPreferredLikenessSourceDescription>();
   }
 
-  static Pointer<Void> CNValueForContact(
+  static Pointer CNValueForContact(
     Pointer<CNPreferredLikenessSourceDescription> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -30924,7 +31058,7 @@ class CNPreferredLikenessSourceDescription
     );
   }
 
-  static Pointer<Void> coreDataKey(
+  static Pointer coreDataKey(
     Pointer<CNPreferredLikenessSourceDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -30936,8 +31070,8 @@ class CNPreferredLikenessSourceDescription
 
   static void decodeUsingCoder(
     Pointer<CNPreferredLikenessSourceDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> contact,
+    Pointer arg, {
+    @required Pointer contact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -30950,8 +31084,8 @@ class CNPreferredLikenessSourceDescription
 
   static void encodeUsingCoder(
     Pointer<CNPreferredLikenessSourceDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> contact,
+    Pointer arg, {
+    @required Pointer contact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -30962,7 +31096,7 @@ class CNPreferredLikenessSourceDescription
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CNPreferredLikenessSourceDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -30974,8 +31108,8 @@ class CNPreferredLikenessSourceDescription
 
   static int isEqualForContact(
     Pointer<CNPreferredLikenessSourceDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> other,
+    Pointer arg, {
+    @required Pointer other,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -30988,8 +31122,8 @@ class CNPreferredLikenessSourceDescription
 
   static void setCNValue(
     Pointer<CNPreferredLikenessSourceDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> onContact,
+    Pointer arg, {
+    @required Pointer onContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -31000,7 +31134,7 @@ class CNPreferredLikenessSourceDescription
     );
   }
 
-  static Pointer<Void> valueClass(
+  static Pointer valueClass(
     Pointer<CNPreferredLikenessSourceDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -31011,11 +31145,9 @@ class CNPreferredLikenessSourceDescription
   }
 }
 
-/// Objective-C class _CNPreviousFamilyNameDescription_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNPreviousFamilyNameDescription
     extends Struct<CNPreviousFamilyNameDescription> {
@@ -31029,9 +31161,9 @@ class CNPreviousFamilyNameDescription
         .cast<CNPreviousFamilyNameDescription>();
   }
 
-  static Pointer<Void> CNValueForContact(
+  static Pointer CNValueForContact(
     Pointer<CNPreviousFamilyNameDescription> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -31043,8 +31175,8 @@ class CNPreviousFamilyNameDescription
 
   static int canUnifyValue(
     Pointer<CNPreviousFamilyNameDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> withValue,
+    Pointer arg, {
+    @required Pointer withValue,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -31057,8 +31189,8 @@ class CNPreviousFamilyNameDescription
 
   static void copyFromCoreDataContact(
     Pointer<CNPreviousFamilyNameDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toContact,
+    Pointer arg, {
+    @required Pointer toContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -31071,8 +31203,8 @@ class CNPreviousFamilyNameDescription
 
   static void copyValueFromContact(
     Pointer<CNPreviousFamilyNameDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toRemotePerson,
+    Pointer arg, {
+    @required Pointer toRemotePerson,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -31085,8 +31217,8 @@ class CNPreviousFamilyNameDescription
 
   static void copyValueFromRemotePerson(
     Pointer<CNPreviousFamilyNameDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toContact,
+    Pointer arg, {
+    @required Pointer toContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -31097,7 +31229,7 @@ class CNPreviousFamilyNameDescription
     );
   }
 
-  static Pointer<Void> coreDataKey(
+  static Pointer coreDataKey(
     Pointer<CNPreviousFamilyNameDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -31109,8 +31241,8 @@ class CNPreviousFamilyNameDescription
 
   static void decodeUsingCoder(
     Pointer<CNPreviousFamilyNameDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> contact,
+    Pointer arg, {
+    @required Pointer contact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -31123,8 +31255,8 @@ class CNPreviousFamilyNameDescription
 
   static void encodeUsingCoder(
     Pointer<CNPreviousFamilyNameDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> contact,
+    Pointer arg, {
+    @required Pointer contact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -31135,7 +31267,7 @@ class CNPreviousFamilyNameDescription
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CNPreviousFamilyNameDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -31147,8 +31279,8 @@ class CNPreviousFamilyNameDescription
 
   static int isEqualForContact(
     Pointer<CNPreviousFamilyNameDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> other,
+    Pointer arg, {
+    @required Pointer other,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -31171,8 +31303,8 @@ class CNPreviousFamilyNameDescription
 
   static void setCNValue(
     Pointer<CNPreviousFamilyNameDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> onContact,
+    Pointer arg, {
+    @required Pointer onContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -31184,11 +31316,9 @@ class CNPreviousFamilyNameDescription
   }
 }
 
-/// Objective-C class _CNPropertyDescription_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNPropertyDescription extends Struct<CNPropertyDescription> {
   factory CNPropertyDescription._() {
@@ -31201,9 +31331,9 @@ class CNPropertyDescription extends Struct<CNPropertyDescription> {
         .cast<CNPropertyDescription>();
   }
 
-  static Pointer<Void> CNValueForContact(
+  static Pointer CNValueForContact(
     Pointer<CNPropertyDescription> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -31215,7 +31345,7 @@ class CNPropertyDescription extends Struct<CNPropertyDescription> {
 
   static void assertValueType(
     Pointer<CNPropertyDescription> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -31227,8 +31357,8 @@ class CNPropertyDescription extends Struct<CNPropertyDescription> {
 
   static int canUnifyValue(
     Pointer<CNPropertyDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> withValue,
+    Pointer arg, {
+    @required Pointer withValue,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -31241,8 +31371,8 @@ class CNPropertyDescription extends Struct<CNPropertyDescription> {
 
   static void copyFromCoreDataContact(
     Pointer<CNPropertyDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toContact,
+    Pointer arg, {
+    @required Pointer toContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -31255,8 +31385,8 @@ class CNPropertyDescription extends Struct<CNPropertyDescription> {
 
   static void copyValueFromContact(
     Pointer<CNPropertyDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toRemotePerson,
+    Pointer arg, {
+    @required Pointer toRemotePerson,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -31269,8 +31399,8 @@ class CNPropertyDescription extends Struct<CNPropertyDescription> {
 
   static void copyValueFromRemotePerson(
     Pointer<CNPropertyDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toContact,
+    Pointer arg, {
+    @required Pointer toContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -31281,9 +31411,9 @@ class CNPropertyDescription extends Struct<CNPropertyDescription> {
     );
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<CNPropertyDescription> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -31303,7 +31433,7 @@ class CNPropertyDescription extends Struct<CNPropertyDescription> {
     );
   }
 
-  static Pointer<Void> coreDataBitMaskedValuesMap(
+  static Pointer coreDataBitMaskedValuesMap(
     Pointer<CNPropertyDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -31313,7 +31443,7 @@ class CNPropertyDescription extends Struct<CNPropertyDescription> {
     );
   }
 
-  static Pointer<Void> coreDataKey(
+  static Pointer coreDataKey(
     Pointer<CNPropertyDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -31323,7 +31453,7 @@ class CNPropertyDescription extends Struct<CNPropertyDescription> {
     );
   }
 
-  static Pointer<Void> coreDataPredicateKeyPath(
+  static Pointer coreDataPredicateKeyPath(
     Pointer<CNPropertyDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -31333,7 +31463,7 @@ class CNPropertyDescription extends Struct<CNPropertyDescription> {
     );
   }
 
-  static Pointer<Void> coreDataRelationship(
+  static Pointer coreDataRelationship(
     Pointer<CNPropertyDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -31343,7 +31473,7 @@ class CNPropertyDescription extends Struct<CNPropertyDescription> {
     );
   }
 
-  static Pointer<Void> coreDataRelationshipKeyPathsToFetch(
+  static Pointer coreDataRelationshipKeyPathsToFetch(
     Pointer<CNPropertyDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -31355,8 +31485,8 @@ class CNPropertyDescription extends Struct<CNPropertyDescription> {
 
   static void decodeUsingCoder(
     Pointer<CNPropertyDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> contact,
+    Pointer arg, {
+    @required Pointer contact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -31369,8 +31499,8 @@ class CNPropertyDescription extends Struct<CNPropertyDescription> {
 
   static void encodeUsingCoder(
     Pointer<CNPropertyDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> contact,
+    Pointer arg, {
+    @required Pointer contact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -31383,7 +31513,7 @@ class CNPropertyDescription extends Struct<CNPropertyDescription> {
 
   static void encodeWithCoder(
     Pointer<CNPropertyDescription> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -31393,7 +31523,7 @@ class CNPropertyDescription extends Struct<CNPropertyDescription> {
     );
   }
 
-  static Pointer<Void> equivalentLabelSets(
+  static Pointer equivalentLabelSets(
     Pointer<CNPropertyDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -31403,9 +31533,9 @@ class CNPropertyDescription extends Struct<CNPropertyDescription> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CNPropertyDescription> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -31415,11 +31545,11 @@ class CNPropertyDescription extends Struct<CNPropertyDescription> {
     );
   }
 
-  static Pointer<Void> initWithKey(
+  static Pointer initWithKey(
     Pointer<CNPropertyDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> readSelector,
-    @required Pointer<Void> writeSelector,
+    Pointer arg, {
+    @required Pointer readSelector,
+    @required Pointer writeSelector,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -31433,8 +31563,8 @@ class CNPropertyDescription extends Struct<CNPropertyDescription> {
 
   static int isEqualIgnoringIdentifiersForContact(
     Pointer<CNPropertyDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> other,
+    Pointer arg, {
+    @required Pointer other,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -31487,8 +31617,8 @@ class CNPropertyDescription extends Struct<CNPropertyDescription> {
 
   static int isValidValue(
     Pointer<CNPropertyDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -31501,8 +31631,8 @@ class CNPropertyDescription extends Struct<CNPropertyDescription> {
 
   static int isValue$preferredToUnifiedValue$(
     Pointer<CNPropertyDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> preferredToUnifiedValue,
+    Pointer arg, {
+    @required Pointer preferredToUnifiedValue,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -31515,8 +31645,8 @@ class CNPropertyDescription extends Struct<CNPropertyDescription> {
 
   static int isValue$equalToEmptyEquivalentOrValue$(
     Pointer<CNPropertyDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> equalToEmptyEquivalentOrValue,
+    Pointer arg, {
+    @required Pointer equalToEmptyEquivalentOrValue,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -31537,7 +31667,7 @@ class CNPropertyDescription extends Struct<CNPropertyDescription> {
     );
   }
 
-  static Pointer<Void> key(
+  static Pointer key(
     Pointer<CNPropertyDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -31547,7 +31677,7 @@ class CNPropertyDescription extends Struct<CNPropertyDescription> {
     );
   }
 
-  static Pointer<Void> nilValue(
+  static Pointer nilValue(
     Pointer<CNPropertyDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -31557,7 +31687,7 @@ class CNPropertyDescription extends Struct<CNPropertyDescription> {
     );
   }
 
-  static Pointer<Void> readSelector(
+  static Pointer readSelector(
     Pointer<CNPropertyDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -31569,8 +31699,8 @@ class CNPropertyDescription extends Struct<CNPropertyDescription> {
 
   static void setCNValue(
     Pointer<CNPropertyDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> onContact,
+    Pointer arg, {
+    @required Pointer onContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -31583,8 +31713,8 @@ class CNPropertyDescription extends Struct<CNPropertyDescription> {
 
   static void setValue(
     Pointer<CNPropertyDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> onCoreDataContact,
+    Pointer arg, {
+    @required Pointer onCoreDataContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -31595,9 +31725,9 @@ class CNPropertyDescription extends Struct<CNPropertyDescription> {
     );
   }
 
-  static Pointer<Void> stringForIndexingForContact(
+  static Pointer stringForIndexingForContact(
     Pointer<CNPropertyDescription> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -31607,7 +31737,7 @@ class CNPropertyDescription extends Struct<CNPropertyDescription> {
     );
   }
 
-  static Pointer<Void> subCoreDataPredicatePropertiesByKey(
+  static Pointer subCoreDataPredicatePropertiesByKey(
     Pointer<CNPropertyDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -31617,9 +31747,9 @@ class CNPropertyDescription extends Struct<CNPropertyDescription> {
     );
   }
 
-  static Pointer<Void> unifiableLabelsForLabel(
+  static Pointer unifiableLabelsForLabel(
     Pointer<CNPropertyDescription> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -31629,7 +31759,7 @@ class CNPropertyDescription extends Struct<CNPropertyDescription> {
     );
   }
 
-  static Pointer<Void> valueClass(
+  static Pointer valueClass(
     Pointer<CNPropertyDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -31639,7 +31769,7 @@ class CNPropertyDescription extends Struct<CNPropertyDescription> {
     );
   }
 
-  static Pointer<Void> valueForKeyTransform(
+  static Pointer valueForKeyTransform(
     Pointer<CNPropertyDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -31649,9 +31779,9 @@ class CNPropertyDescription extends Struct<CNPropertyDescription> {
     );
   }
 
-  static Pointer<Void> valueFromCoreDataContact(
+  static Pointer valueFromCoreDataContact(
     Pointer<CNPropertyDescription> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -31661,9 +31791,9 @@ class CNPropertyDescription extends Struct<CNPropertyDescription> {
     );
   }
 
-  static Pointer<Void> valueWithResetIdentifiers(
+  static Pointer valueWithResetIdentifiers(
     Pointer<CNPropertyDescription> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -31673,7 +31803,7 @@ class CNPropertyDescription extends Struct<CNPropertyDescription> {
     );
   }
 
-  static Pointer<Void> writeSelector(
+  static Pointer writeSelector(
     Pointer<CNPropertyDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -31684,11 +31814,9 @@ class CNPropertyDescription extends Struct<CNPropertyDescription> {
   }
 }
 
-/// Objective-C class _CNReputationContactsAdapter_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNReputationContactsAdapter extends Struct<CNReputationContactsAdapter> {
   factory CNReputationContactsAdapter._() {
@@ -31701,7 +31829,7 @@ class CNReputationContactsAdapter extends Struct<CNReputationContactsAdapter> {
         .cast<CNReputationContactsAdapter>();
   }
 
-  static Pointer<Void> contactStore(
+  static Pointer contactStore(
     Pointer<CNReputationContactsAdapter> _self,
   ) {
     _openDynamicLibrary();
@@ -31711,9 +31839,9 @@ class CNReputationContactsAdapter extends Struct<CNReputationContactsAdapter> {
     );
   }
 
-  static Pointer<Void> contactsForEmailAddress(
+  static Pointer contactsForEmailAddress(
     Pointer<CNReputationContactsAdapter> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -31723,9 +31851,9 @@ class CNReputationContactsAdapter extends Struct<CNReputationContactsAdapter> {
     );
   }
 
-  static Pointer<Void> contactsForPhoneNumber(
+  static Pointer contactsForPhoneNumber(
     Pointer<CNReputationContactsAdapter> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -31735,10 +31863,10 @@ class CNReputationContactsAdapter extends Struct<CNReputationContactsAdapter> {
     );
   }
 
-  static Pointer<Void> contactsForPredicate(
+  static Pointer contactsForPredicate(
     Pointer<CNReputationContactsAdapter> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> keys,
+    Pointer arg, {
+    @required Pointer keys,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -31749,7 +31877,7 @@ class CNReputationContactsAdapter extends Struct<CNReputationContactsAdapter> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CNReputationContactsAdapter> _self,
   ) {
     _openDynamicLibrary();
@@ -31759,9 +31887,9 @@ class CNReputationContactsAdapter extends Struct<CNReputationContactsAdapter> {
     );
   }
 
-  static Pointer<Void> initWithContactStore$(
+  static Pointer initWithContactStore$(
     Pointer<CNReputationContactsAdapter> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -31771,10 +31899,10 @@ class CNReputationContactsAdapter extends Struct<CNReputationContactsAdapter> {
     );
   }
 
-  static Pointer<Void> initWithContactStore$schedulerProvider$(
+  static Pointer initWithContactStore$schedulerProvider$(
     Pointer<CNReputationContactsAdapter> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> schedulerProvider,
+    Pointer arg, {
+    @required Pointer schedulerProvider,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -31785,7 +31913,7 @@ class CNReputationContactsAdapter extends Struct<CNReputationContactsAdapter> {
     );
   }
 
-  static Pointer<Void> schedulerProvider(
+  static Pointer schedulerProvider(
     Pointer<CNReputationContactsAdapter> _self,
   ) {
     _openDynamicLibrary();
@@ -31795,7 +31923,7 @@ class CNReputationContactsAdapter extends Struct<CNReputationContactsAdapter> {
     );
   }
 
-  static Pointer<Void> storeScheduler(
+  static Pointer storeScheduler(
     Pointer<CNReputationContactsAdapter> _self,
   ) {
     _openDynamicLibrary();
@@ -31806,11 +31934,9 @@ class CNReputationContactsAdapter extends Struct<CNReputationContactsAdapter> {
   }
 }
 
-/// Objective-C class _CNReputationCoreRecentsAdapter_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNReputationCoreRecentsAdapter
     extends Struct<CNReputationCoreRecentsAdapter> {
@@ -31824,7 +31950,7 @@ class CNReputationCoreRecentsAdapter
         .cast<CNReputationCoreRecentsAdapter>();
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CNReputationCoreRecentsAdapter> _self,
   ) {
     _openDynamicLibrary();
@@ -31834,9 +31960,9 @@ class CNReputationCoreRecentsAdapter
     );
   }
 
-  static Pointer<Void> initWithRecentContactsLibrary(
+  static Pointer initWithRecentContactsLibrary(
     Pointer<CNReputationCoreRecentsAdapter> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -31846,7 +31972,7 @@ class CNReputationCoreRecentsAdapter
     );
   }
 
-  static Pointer<Void> library(
+  static Pointer library(
     Pointer<CNReputationCoreRecentsAdapter> _self,
   ) {
     _openDynamicLibrary();
@@ -31856,9 +31982,9 @@ class CNReputationCoreRecentsAdapter
     );
   }
 
-  static Pointer<Void> recentContactsForHandle(
+  static Pointer recentContactsForHandle(
     Pointer<CNReputationCoreRecentsAdapter> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -31869,11 +31995,9 @@ class CNReputationCoreRecentsAdapter
   }
 }
 
-/// Objective-C class _CNReputationFutureBuilder_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNReputationFutureBuilder extends Struct<CNReputationFutureBuilder> {
   factory CNReputationFutureBuilder._() {
@@ -31916,7 +32040,7 @@ class CNReputationFutureBuilder extends Struct<CNReputationFutureBuilder> {
     );
   }
 
-  static Pointer<Void> build(
+  static Pointer build(
     Pointer<CNReputationFutureBuilder> _self,
   ) {
     _openDynamicLibrary();
@@ -31926,7 +32050,7 @@ class CNReputationFutureBuilder extends Struct<CNReputationFutureBuilder> {
     );
   }
 
-  static Pointer<Void> contactsAdapter(
+  static Pointer contactsAdapter(
     Pointer<CNReputationFutureBuilder> _self,
   ) {
     _openDynamicLibrary();
@@ -31936,9 +32060,9 @@ class CNReputationFutureBuilder extends Struct<CNReputationFutureBuilder> {
     );
   }
 
-  static Pointer<Void> contactsTrustForEmailAddress(
+  static Pointer contactsTrustForEmailAddress(
     Pointer<CNReputationFutureBuilder> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -31948,9 +32072,9 @@ class CNReputationFutureBuilder extends Struct<CNReputationFutureBuilder> {
     );
   }
 
-  static Pointer<Void> contactsTrustForPhoneNumber(
+  static Pointer contactsTrustForPhoneNumber(
     Pointer<CNReputationFutureBuilder> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -31960,7 +32084,7 @@ class CNReputationFutureBuilder extends Struct<CNReputationFutureBuilder> {
     );
   }
 
-  static Pointer<Void> coreRecentsAdapter(
+  static Pointer coreRecentsAdapter(
     Pointer<CNReputationFutureBuilder> _self,
   ) {
     _openDynamicLibrary();
@@ -31970,9 +32094,9 @@ class CNReputationFutureBuilder extends Struct<CNReputationFutureBuilder> {
     );
   }
 
-  static Pointer<Void> coreRecentsTrustForHandle(
+  static Pointer coreRecentsTrustForHandle(
     Pointer<CNReputationFutureBuilder> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -31982,7 +32106,7 @@ class CNReputationFutureBuilder extends Struct<CNReputationFutureBuilder> {
     );
   }
 
-  static Pointer<Void> handle(
+  static Pointer handle(
     Pointer<CNReputationFutureBuilder> _self,
   ) {
     _openDynamicLibrary();
@@ -31992,12 +32116,12 @@ class CNReputationFutureBuilder extends Struct<CNReputationFutureBuilder> {
     );
   }
 
-  static Pointer<Void> initWithHandle(
+  static Pointer initWithHandle(
     Pointer<CNReputationFutureBuilder> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> coreRecentsAdapter,
-    @required Pointer<Void> contactsAdapter,
-    @required Pointer<Void> logger,
+    Pointer arg, {
+    @required Pointer coreRecentsAdapter,
+    @required Pointer contactsAdapter,
+    @required Pointer logger,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_returns_p(
@@ -32011,7 +32135,7 @@ class CNReputationFutureBuilder extends Struct<CNReputationFutureBuilder> {
     );
   }
 
-  static Pointer<Void> logger(
+  static Pointer logger(
     Pointer<CNReputationFutureBuilder> _self,
   ) {
     _openDynamicLibrary();
@@ -32021,7 +32145,7 @@ class CNReputationFutureBuilder extends Struct<CNReputationFutureBuilder> {
     );
   }
 
-  static Pointer<Void> scoreFuture(
+  static Pointer scoreFuture(
     Pointer<CNReputationFutureBuilder> _self,
   ) {
     _openDynamicLibrary();
@@ -32033,7 +32157,7 @@ class CNReputationFutureBuilder extends Struct<CNReputationFutureBuilder> {
 
   static void setScoreFuture(
     Pointer<CNReputationFutureBuilder> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -32044,11 +32168,9 @@ class CNReputationFutureBuilder extends Struct<CNReputationFutureBuilder> {
   }
 }
 
-/// Objective-C class _CNReputationHandle_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNReputationHandle extends Struct<CNReputationHandle> {
   factory CNReputationHandle._() {
@@ -32061,7 +32183,7 @@ class CNReputationHandle extends Struct<CNReputationHandle> {
 
   static void configureBuilder(
     Pointer<CNReputationHandle> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -32071,9 +32193,9 @@ class CNReputationHandle extends Struct<CNReputationHandle> {
     );
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<CNReputationHandle> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -32083,7 +32205,7 @@ class CNReputationHandle extends Struct<CNReputationHandle> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CNReputationHandle> _self,
   ) {
     _openDynamicLibrary();
@@ -32103,9 +32225,9 @@ class CNReputationHandle extends Struct<CNReputationHandle> {
     );
   }
 
-  static Pointer<Void> initWithStringValue(
+  static Pointer initWithStringValue(
     Pointer<CNReputationHandle> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int type,
   }) {
     _openDynamicLibrary();
@@ -32119,7 +32241,7 @@ class CNReputationHandle extends Struct<CNReputationHandle> {
 
   static int isEqual(
     Pointer<CNReputationHandle> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -32129,7 +32251,7 @@ class CNReputationHandle extends Struct<CNReputationHandle> {
     );
   }
 
-  static Pointer<Void> stringValue(
+  static Pointer stringValue(
     Pointer<CNReputationHandle> _self,
   ) {
     _openDynamicLibrary();
@@ -32150,11 +32272,9 @@ class CNReputationHandle extends Struct<CNReputationHandle> {
   }
 }
 
-/// Objective-C class _CNReputationLogger_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNReputationLogger extends Struct<CNReputationLogger> {
   factory CNReputationLogger._() {
@@ -32167,7 +32287,7 @@ class CNReputationLogger extends Struct<CNReputationLogger> {
 
   static void beginQueryForHandle(
     Pointer<CNReputationLogger> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -32239,7 +32359,7 @@ class CNReputationLogger extends Struct<CNReputationLogger> {
 
   static void couldNotQueryContactsForEmailAddressWithError(
     Pointer<CNReputationLogger> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -32251,7 +32371,7 @@ class CNReputationLogger extends Struct<CNReputationLogger> {
 
   static void couldNotQueryContactsForPhoneNumberWithError(
     Pointer<CNReputationLogger> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -32263,7 +32383,7 @@ class CNReputationLogger extends Struct<CNReputationLogger> {
 
   static void couldNotQueryCoreRecentsWithError(
     Pointer<CNReputationLogger> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -32275,8 +32395,8 @@ class CNReputationLogger extends Struct<CNReputationLogger> {
 
   static void queryForHandle$didFinishWithReputation$(
     Pointer<CNReputationLogger> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> didFinishWithReputation,
+    Pointer arg, {
+    @required Pointer didFinishWithReputation,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -32289,8 +32409,8 @@ class CNReputationLogger extends Struct<CNReputationLogger> {
 
   static void queryForHandle$didFailWithError$(
     Pointer<CNReputationLogger> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> didFailWithError,
+    Pointer arg, {
+    @required Pointer didFailWithError,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -32324,11 +32444,9 @@ class CNReputationLogger extends Struct<CNReputationLogger> {
   }
 }
 
-/// Objective-C class _CNReputationResult_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNReputationResult extends Struct<CNReputationResult> {
   factory CNReputationResult._() {
@@ -32339,7 +32457,7 @@ class CNReputationResult extends Struct<CNReputationResult> {
     return _objc.allocate("CNReputationResult").cast<CNReputationResult>();
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CNReputationResult> _self,
   ) {
     _openDynamicLibrary();
@@ -32349,7 +32467,7 @@ class CNReputationResult extends Struct<CNReputationResult> {
     );
   }
 
-  static Pointer<Void> handle(
+  static Pointer handle(
     Pointer<CNReputationResult> _self,
   ) {
     _openDynamicLibrary();
@@ -32369,9 +32487,9 @@ class CNReputationResult extends Struct<CNReputationResult> {
     );
   }
 
-  static Pointer<Void> initWithHandle(
+  static Pointer initWithHandle(
     Pointer<CNReputationResult> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int score,
   }) {
     _openDynamicLibrary();
@@ -32385,7 +32503,7 @@ class CNReputationResult extends Struct<CNReputationResult> {
 
   static int isEqual(
     Pointer<CNReputationResult> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -32406,11 +32524,9 @@ class CNReputationResult extends Struct<CNReputationResult> {
   }
 }
 
-/// Objective-C class _CNReputationStore_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNReputationStore extends Struct<CNReputationStore> {
   factory CNReputationStore._() {
@@ -32421,7 +32537,7 @@ class CNReputationStore extends Struct<CNReputationStore> {
     return _objc.allocate("CNReputationStore").cast<CNReputationStore>();
   }
 
-  static Pointer<Void> contactsAdapter(
+  static Pointer contactsAdapter(
     Pointer<CNReputationStore> _self,
   ) {
     _openDynamicLibrary();
@@ -32431,7 +32547,7 @@ class CNReputationStore extends Struct<CNReputationStore> {
     );
   }
 
-  static Pointer<Void> coreRecentsAdapter(
+  static Pointer coreRecentsAdapter(
     Pointer<CNReputationStore> _self,
   ) {
     _openDynamicLibrary();
@@ -32441,7 +32557,7 @@ class CNReputationStore extends Struct<CNReputationStore> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CNReputationStore> _self,
   ) {
     _openDynamicLibrary();
@@ -32451,12 +32567,12 @@ class CNReputationStore extends Struct<CNReputationStore> {
     );
   }
 
-  static Pointer<Void> initWithCoreRecentsAdapter(
+  static Pointer initWithCoreRecentsAdapter(
     Pointer<CNReputationStore> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> contactsAdapter,
-    @required Pointer<Void> logger,
-    @required Pointer<Void> schedulerProvider,
+    Pointer arg, {
+    @required Pointer contactsAdapter,
+    @required Pointer logger,
+    @required Pointer schedulerProvider,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_returns_p(
@@ -32470,7 +32586,7 @@ class CNReputationStore extends Struct<CNReputationStore> {
     );
   }
 
-  static Pointer<Void> logger(
+  static Pointer logger(
     Pointer<CNReputationStore> _self,
   ) {
     _openDynamicLibrary();
@@ -32480,9 +32596,9 @@ class CNReputationStore extends Struct<CNReputationStore> {
     );
   }
 
-  static Pointer<Void> makeFutureForHandle(
+  static Pointer makeFutureForHandle(
     Pointer<CNReputationStore> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -32492,11 +32608,11 @@ class CNReputationStore extends Struct<CNReputationStore> {
     );
   }
 
-  static Pointer<Void> reputationForHandle(
+  static Pointer reputationForHandle(
     Pointer<CNReputationStore> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required double timeout,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_float64_p_returns_p(
@@ -32508,7 +32624,7 @@ class CNReputationStore extends Struct<CNReputationStore> {
     );
   }
 
-  static Pointer<Void> schedulerProvider(
+  static Pointer schedulerProvider(
     Pointer<CNReputationStore> _self,
   ) {
     _openDynamicLibrary();
@@ -32519,11 +32635,9 @@ class CNReputationStore extends Struct<CNReputationStore> {
   }
 }
 
-/// Objective-C class _CNSaveRequest_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNSaveRequest extends Struct<CNSaveRequest> {
   factory CNSaveRequest._() {
@@ -32536,7 +32650,7 @@ class CNSaveRequest extends Struct<CNSaveRequest> {
 
   static void addAccount(
     Pointer<CNSaveRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -32548,8 +32662,8 @@ class CNSaveRequest extends Struct<CNSaveRequest> {
 
   static void addContact(
     Pointer<CNSaveRequest> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toContainerWithIdentifier,
+    Pointer arg, {
+    @required Pointer toContainerWithIdentifier,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -32562,8 +32676,8 @@ class CNSaveRequest extends Struct<CNSaveRequest> {
 
   static void addContainer$toContainerWithIdentifier$(
     Pointer<CNSaveRequest> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toContainerWithIdentifier,
+    Pointer arg, {
+    @required Pointer toContainerWithIdentifier,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -32576,8 +32690,8 @@ class CNSaveRequest extends Struct<CNSaveRequest> {
 
   static void addContainer$toAccountWithIdentifier$(
     Pointer<CNSaveRequest> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toAccountWithIdentifier,
+    Pointer arg, {
+    @required Pointer toAccountWithIdentifier,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -32590,8 +32704,8 @@ class CNSaveRequest extends Struct<CNSaveRequest> {
 
   static void addGroup(
     Pointer<CNSaveRequest> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toContainerWithIdentifier,
+    Pointer arg, {
+    @required Pointer toContainerWithIdentifier,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -32604,8 +32718,8 @@ class CNSaveRequest extends Struct<CNSaveRequest> {
 
   static void addMember(
     Pointer<CNSaveRequest> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toGroup,
+    Pointer arg, {
+    @required Pointer toGroup,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -32618,8 +32732,8 @@ class CNSaveRequest extends Struct<CNSaveRequest> {
 
   static void addSubgroup(
     Pointer<CNSaveRequest> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toGroup,
+    Pointer arg, {
+    @required Pointer toGroup,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -32630,7 +32744,7 @@ class CNSaveRequest extends Struct<CNSaveRequest> {
     );
   }
 
-  static Pointer<Void> addedAccountContainersByParentContainerIdentifier(
+  static Pointer addedAccountContainersByParentContainerIdentifier(
     Pointer<CNSaveRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -32640,7 +32754,7 @@ class CNSaveRequest extends Struct<CNSaveRequest> {
     );
   }
 
-  static Pointer<Void> addedAccounts(
+  static Pointer addedAccounts(
     Pointer<CNSaveRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -32650,7 +32764,7 @@ class CNSaveRequest extends Struct<CNSaveRequest> {
     );
   }
 
-  static Pointer<Void> addedContactsByContainerIdentifier(
+  static Pointer addedContactsByContainerIdentifier(
     Pointer<CNSaveRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -32660,7 +32774,7 @@ class CNSaveRequest extends Struct<CNSaveRequest> {
     );
   }
 
-  static Pointer<Void> addedContainersByParentContainerIdentifier(
+  static Pointer addedContainersByParentContainerIdentifier(
     Pointer<CNSaveRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -32670,7 +32784,7 @@ class CNSaveRequest extends Struct<CNSaveRequest> {
     );
   }
 
-  static Pointer<Void> addedGroupsByContainerIdentifier(
+  static Pointer addedGroupsByContainerIdentifier(
     Pointer<CNSaveRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -32680,7 +32794,7 @@ class CNSaveRequest extends Struct<CNSaveRequest> {
     );
   }
 
-  static Pointer<Void> addedMembersByGroupIdentifier(
+  static Pointer addedMembersByGroupIdentifier(
     Pointer<CNSaveRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -32690,7 +32804,7 @@ class CNSaveRequest extends Struct<CNSaveRequest> {
     );
   }
 
-  static Pointer<Void> addedSubgroupsByGroupIdentifier(
+  static Pointer addedSubgroupsByGroupIdentifier(
     Pointer<CNSaveRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -32700,7 +32814,7 @@ class CNSaveRequest extends Struct<CNSaveRequest> {
     );
   }
 
-  static Pointer<Void> allAccountIdentifierStrings(
+  static Pointer allAccountIdentifierStrings(
     Pointer<CNSaveRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -32710,7 +32824,7 @@ class CNSaveRequest extends Struct<CNSaveRequest> {
     );
   }
 
-  static Pointer<Void> allAccountIdentifiers(
+  static Pointer allAccountIdentifiers(
     Pointer<CNSaveRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -32720,7 +32834,7 @@ class CNSaveRequest extends Struct<CNSaveRequest> {
     );
   }
 
-  static Pointer<Void> allContactIdentifiers(
+  static Pointer allContactIdentifiers(
     Pointer<CNSaveRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -32730,7 +32844,7 @@ class CNSaveRequest extends Struct<CNSaveRequest> {
     );
   }
 
-  static Pointer<Void> allContacts(
+  static Pointer allContacts(
     Pointer<CNSaveRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -32740,7 +32854,7 @@ class CNSaveRequest extends Struct<CNSaveRequest> {
     );
   }
 
-  static Pointer<Void> allContainerIdentifierStrings(
+  static Pointer allContainerIdentifierStrings(
     Pointer<CNSaveRequest> _self,
     Pointer<Int8> arg,
   ) {
@@ -32752,7 +32866,7 @@ class CNSaveRequest extends Struct<CNSaveRequest> {
     );
   }
 
-  static Pointer<Void> allContainerIdentifiers(
+  static Pointer allContainerIdentifiers(
     Pointer<CNSaveRequest> _self,
     Pointer<Int8> arg,
   ) {
@@ -32764,7 +32878,7 @@ class CNSaveRequest extends Struct<CNSaveRequest> {
     );
   }
 
-  static Pointer<Void> allContainers(
+  static Pointer allContainers(
     Pointer<CNSaveRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -32774,7 +32888,7 @@ class CNSaveRequest extends Struct<CNSaveRequest> {
     );
   }
 
-  static Pointer<Void> allGroupIdentifiers(
+  static Pointer allGroupIdentifiers(
     Pointer<CNSaveRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -32784,7 +32898,7 @@ class CNSaveRequest extends Struct<CNSaveRequest> {
     );
   }
 
-  static Pointer<Void> allGroups(
+  static Pointer allGroups(
     Pointer<CNSaveRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -32794,7 +32908,7 @@ class CNSaveRequest extends Struct<CNSaveRequest> {
     );
   }
 
-  static Pointer<Void> changeHistoryClientIdentifier(
+  static Pointer changeHistoryClientIdentifier(
     Pointer<CNSaveRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -32804,7 +32918,7 @@ class CNSaveRequest extends Struct<CNSaveRequest> {
     );
   }
 
-  static Pointer<Void> contactChangeRequests(
+  static Pointer contactChangeRequests(
     Pointer<CNSaveRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -32816,7 +32930,7 @@ class CNSaveRequest extends Struct<CNSaveRequest> {
 
   static void deleteContact(
     Pointer<CNSaveRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -32828,7 +32942,7 @@ class CNSaveRequest extends Struct<CNSaveRequest> {
 
   static void deleteContainer(
     Pointer<CNSaveRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -32840,7 +32954,7 @@ class CNSaveRequest extends Struct<CNSaveRequest> {
 
   static void deleteGroup(
     Pointer<CNSaveRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -32850,7 +32964,7 @@ class CNSaveRequest extends Struct<CNSaveRequest> {
     );
   }
 
-  static Pointer<Void> deletedContacts(
+  static Pointer deletedContacts(
     Pointer<CNSaveRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -32860,7 +32974,7 @@ class CNSaveRequest extends Struct<CNSaveRequest> {
     );
   }
 
-  static Pointer<Void> deletedContactsByIdentifier(
+  static Pointer deletedContactsByIdentifier(
     Pointer<CNSaveRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -32870,7 +32984,7 @@ class CNSaveRequest extends Struct<CNSaveRequest> {
     );
   }
 
-  static Pointer<Void> deletedContainers(
+  static Pointer deletedContainers(
     Pointer<CNSaveRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -32880,7 +32994,7 @@ class CNSaveRequest extends Struct<CNSaveRequest> {
     );
   }
 
-  static Pointer<Void> deletedGroups(
+  static Pointer deletedGroups(
     Pointer<CNSaveRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -32892,7 +33006,7 @@ class CNSaveRequest extends Struct<CNSaveRequest> {
 
   static void encodeWithCoder(
     Pointer<CNSaveRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -32902,9 +33016,9 @@ class CNSaveRequest extends Struct<CNSaveRequest> {
     );
   }
 
-  static Pointer<Void> flattenedDictionaryForDictionaryOfTuples(
+  static Pointer flattenedDictionaryForDictionaryOfTuples(
     Pointer<CNSaveRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -32914,9 +33028,9 @@ class CNSaveRequest extends Struct<CNSaveRequest> {
     );
   }
 
-  static Pointer<Void> groupWithAddedMemberForGroupIdentifier(
+  static Pointer groupWithAddedMemberForGroupIdentifier(
     Pointer<CNSaveRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -32926,9 +33040,9 @@ class CNSaveRequest extends Struct<CNSaveRequest> {
     );
   }
 
-  static Pointer<Void> groupWithAddedSubgroupForGroupIdentifier(
+  static Pointer groupWithAddedSubgroupForGroupIdentifier(
     Pointer<CNSaveRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -32938,9 +33052,9 @@ class CNSaveRequest extends Struct<CNSaveRequest> {
     );
   }
 
-  static Pointer<Void> groupWithRemovedMemberForGroupIdentifier(
+  static Pointer groupWithRemovedMemberForGroupIdentifier(
     Pointer<CNSaveRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -32950,9 +33064,9 @@ class CNSaveRequest extends Struct<CNSaveRequest> {
     );
   }
 
-  static Pointer<Void> groupWithRemovedSubgroupForGroupIdentifier(
+  static Pointer groupWithRemovedSubgroupForGroupIdentifier(
     Pointer<CNSaveRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -32962,7 +33076,7 @@ class CNSaveRequest extends Struct<CNSaveRequest> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CNSaveRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -32972,9 +33086,9 @@ class CNSaveRequest extends Struct<CNSaveRequest> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CNSaveRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -32986,7 +33100,7 @@ class CNSaveRequest extends Struct<CNSaveRequest> {
 
   static int isValid(
     Pointer<CNSaveRequest> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -32998,8 +33112,8 @@ class CNSaveRequest extends Struct<CNSaveRequest> {
 
   static void linkContact(
     Pointer<CNSaveRequest> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toContact,
+    Pointer arg, {
+    @required Pointer toContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -33010,7 +33124,7 @@ class CNSaveRequest extends Struct<CNSaveRequest> {
     );
   }
 
-  static Pointer<Void> meCardIdentifier(
+  static Pointer meCardIdentifier(
     Pointer<CNSaveRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -33022,8 +33136,8 @@ class CNSaveRequest extends Struct<CNSaveRequest> {
 
   static void moveContainer(
     Pointer<CNSaveRequest> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toContainerWithIdentifier,
+    Pointer arg, {
+    @required Pointer toContainerWithIdentifier,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -33034,7 +33148,7 @@ class CNSaveRequest extends Struct<CNSaveRequest> {
     );
   }
 
-  static Pointer<Void> movedContainersByParentContainerIdentifier(
+  static Pointer movedContainersByParentContainerIdentifier(
     Pointer<CNSaveRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -33046,8 +33160,8 @@ class CNSaveRequest extends Struct<CNSaveRequest> {
 
   static void preferLinkedContactForImage(
     Pointer<CNSaveRequest> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> inUnifiedContact,
+    Pointer arg, {
+    @required Pointer inUnifiedContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -33060,8 +33174,8 @@ class CNSaveRequest extends Struct<CNSaveRequest> {
 
   static void preferLinkedContactForName(
     Pointer<CNSaveRequest> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> inUnifiedContact,
+    Pointer arg, {
+    @required Pointer inUnifiedContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -33074,8 +33188,8 @@ class CNSaveRequest extends Struct<CNSaveRequest> {
 
   static void queueUpdatedObject(
     Pointer<CNSaveRequest> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> intoArray,
+    Pointer arg, {
+    @required Pointer intoArray,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -33088,8 +33202,8 @@ class CNSaveRequest extends Struct<CNSaveRequest> {
 
   static void removeMember(
     Pointer<CNSaveRequest> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> fromGroup,
+    Pointer arg, {
+    @required Pointer fromGroup,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -33102,8 +33216,8 @@ class CNSaveRequest extends Struct<CNSaveRequest> {
 
   static void removeSubgroup(
     Pointer<CNSaveRequest> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> fromGroup,
+    Pointer arg, {
+    @required Pointer fromGroup,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -33114,7 +33228,7 @@ class CNSaveRequest extends Struct<CNSaveRequest> {
     );
   }
 
-  static Pointer<Void> removedMembersByGroupIdentifier(
+  static Pointer removedMembersByGroupIdentifier(
     Pointer<CNSaveRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -33124,7 +33238,7 @@ class CNSaveRequest extends Struct<CNSaveRequest> {
     );
   }
 
-  static Pointer<Void> removedSubgroupsByGroupIdentifier(
+  static Pointer removedSubgroupsByGroupIdentifier(
     Pointer<CNSaveRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -33134,7 +33248,7 @@ class CNSaveRequest extends Struct<CNSaveRequest> {
     );
   }
 
-  static Pointer<Void> saveRequestIdentifier(
+  static Pointer saveRequestIdentifier(
     Pointer<CNSaveRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -33146,7 +33260,7 @@ class CNSaveRequest extends Struct<CNSaveRequest> {
 
   static void setChangeHistoryClientIdentifier(
     Pointer<CNSaveRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -33158,8 +33272,8 @@ class CNSaveRequest extends Struct<CNSaveRequest> {
 
   static void setLinkIdentifier(
     Pointer<CNSaveRequest> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> forContact,
+    Pointer arg, {
+    @required Pointer forContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -33172,7 +33286,7 @@ class CNSaveRequest extends Struct<CNSaveRequest> {
 
   static void setMeCardIdentifier(
     Pointer<CNSaveRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -33194,7 +33308,7 @@ class CNSaveRequest extends Struct<CNSaveRequest> {
     );
   }
 
-  static Pointer<Void> storeIdentifier(
+  static Pointer storeIdentifier(
     Pointer<CNSaveRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -33206,7 +33320,7 @@ class CNSaveRequest extends Struct<CNSaveRequest> {
 
   static void unlinkContact(
     Pointer<CNSaveRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -33228,7 +33342,7 @@ class CNSaveRequest extends Struct<CNSaveRequest> {
 
   static void updateContact(
     Pointer<CNSaveRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -33240,7 +33354,7 @@ class CNSaveRequest extends Struct<CNSaveRequest> {
 
   static void updateContainer(
     Pointer<CNSaveRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -33252,7 +33366,7 @@ class CNSaveRequest extends Struct<CNSaveRequest> {
 
   static void updateGroup(
     Pointer<CNSaveRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -33262,7 +33376,7 @@ class CNSaveRequest extends Struct<CNSaveRequest> {
     );
   }
 
-  static Pointer<Void> updatedContacts(
+  static Pointer updatedContacts(
     Pointer<CNSaveRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -33272,7 +33386,7 @@ class CNSaveRequest extends Struct<CNSaveRequest> {
     );
   }
 
-  static Pointer<Void> updatedContainers(
+  static Pointer updatedContainers(
     Pointer<CNSaveRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -33282,7 +33396,7 @@ class CNSaveRequest extends Struct<CNSaveRequest> {
     );
   }
 
-  static Pointer<Void> updatedGroups(
+  static Pointer updatedGroups(
     Pointer<CNSaveRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -33293,11 +33407,9 @@ class CNSaveRequest extends Struct<CNSaveRequest> {
   }
 }
 
-/// Objective-C class _CNSaveResponse_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNSaveResponse extends Struct<CNSaveResponse> {
   factory CNSaveResponse._() {
@@ -33310,7 +33422,7 @@ class CNSaveResponse extends Struct<CNSaveResponse> {
 
   static void applySnapshotsToSaveRequest(
     Pointer<CNSaveResponse> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -33332,7 +33444,7 @@ class CNSaveResponse extends Struct<CNSaveResponse> {
 
   static void encodeWithCoder(
     Pointer<CNSaveResponse> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -33342,7 +33454,7 @@ class CNSaveResponse extends Struct<CNSaveResponse> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CNSaveResponse> _self,
   ) {
     _openDynamicLibrary();
@@ -33352,9 +33464,9 @@ class CNSaveResponse extends Struct<CNSaveResponse> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CNSaveResponse> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -33365,11 +33477,9 @@ class CNSaveResponse extends Struct<CNSaveResponse> {
   }
 }
 
-/// Objective-C class _CNSearchIndexDescription_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNSearchIndexDescription extends Struct<CNSearchIndexDescription> {
   factory CNSearchIndexDescription._() {
@@ -33382,9 +33492,9 @@ class CNSearchIndexDescription extends Struct<CNSearchIndexDescription> {
         .cast<CNSearchIndexDescription>();
   }
 
-  static Pointer<Void> CNValueForContact(
+  static Pointer CNValueForContact(
     Pointer<CNSearchIndexDescription> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -33396,8 +33506,8 @@ class CNSearchIndexDescription extends Struct<CNSearchIndexDescription> {
 
   static void copyFromCoreDataContact(
     Pointer<CNSearchIndexDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toContact,
+    Pointer arg, {
+    @required Pointer toContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -33410,8 +33520,8 @@ class CNSearchIndexDescription extends Struct<CNSearchIndexDescription> {
 
   static void copyValueFromContact(
     Pointer<CNSearchIndexDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toRemotePerson,
+    Pointer arg, {
+    @required Pointer toRemotePerson,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -33424,8 +33534,8 @@ class CNSearchIndexDescription extends Struct<CNSearchIndexDescription> {
 
   static void copyValueFromRemotePerson(
     Pointer<CNSearchIndexDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toContact,
+    Pointer arg, {
+    @required Pointer toContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -33436,7 +33546,7 @@ class CNSearchIndexDescription extends Struct<CNSearchIndexDescription> {
     );
   }
 
-  static Pointer<Void> coreDataKey(
+  static Pointer coreDataKey(
     Pointer<CNSearchIndexDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -33446,7 +33556,7 @@ class CNSearchIndexDescription extends Struct<CNSearchIndexDescription> {
     );
   }
 
-  static Pointer<Void> coreDataRelationship(
+  static Pointer coreDataRelationship(
     Pointer<CNSearchIndexDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -33458,8 +33568,8 @@ class CNSearchIndexDescription extends Struct<CNSearchIndexDescription> {
 
   static void decodeUsingCoder(
     Pointer<CNSearchIndexDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> contact,
+    Pointer arg, {
+    @required Pointer contact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -33472,8 +33582,8 @@ class CNSearchIndexDescription extends Struct<CNSearchIndexDescription> {
 
   static void encodeUsingCoder(
     Pointer<CNSearchIndexDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> contact,
+    Pointer arg, {
+    @required Pointer contact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -33484,7 +33594,7 @@ class CNSearchIndexDescription extends Struct<CNSearchIndexDescription> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CNSearchIndexDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -33496,8 +33606,8 @@ class CNSearchIndexDescription extends Struct<CNSearchIndexDescription> {
 
   static int isEqualForContact(
     Pointer<CNSearchIndexDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> other,
+    Pointer arg, {
+    @required Pointer other,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -33510,8 +33620,8 @@ class CNSearchIndexDescription extends Struct<CNSearchIndexDescription> {
 
   static int isEqualIgnoringIdentifiersForContact(
     Pointer<CNSearchIndexDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> other,
+    Pointer arg, {
+    @required Pointer other,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -33534,8 +33644,8 @@ class CNSearchIndexDescription extends Struct<CNSearchIndexDescription> {
 
   static void setCNValue(
     Pointer<CNSearchIndexDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> onContact,
+    Pointer arg, {
+    @required Pointer onContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -33548,8 +33658,8 @@ class CNSearchIndexDescription extends Struct<CNSearchIndexDescription> {
 
   static void setValue(
     Pointer<CNSearchIndexDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> onCoreDataContact,
+    Pointer arg, {
+    @required Pointer onCoreDataContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -33560,9 +33670,9 @@ class CNSearchIndexDescription extends Struct<CNSearchIndexDescription> {
     );
   }
 
-  static Pointer<Void> valueFromCoreDataContact(
+  static Pointer valueFromCoreDataContact(
     Pointer<CNSearchIndexDescription> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -33573,11 +33683,9 @@ class CNSearchIndexDescription extends Struct<CNSearchIndexDescription> {
   }
 }
 
-/// Objective-C class _CNSecureCodingClassSets_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNSecureCodingClassSets extends Struct<CNSecureCodingClassSets> {
   factory CNSecureCodingClassSets._() {
@@ -33591,11 +33699,9 @@ class CNSecureCodingClassSets extends Struct<CNSecureCodingClassSets> {
   }
 }
 
-/// Objective-C class _CNSmartPropertyFetcher_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNSmartPropertyFetcher extends Struct<CNSmartPropertyFetcher> {
   factory CNSmartPropertyFetcher._() {
@@ -33608,9 +33714,9 @@ class CNSmartPropertyFetcher extends Struct<CNSmartPropertyFetcher> {
         .cast<CNSmartPropertyFetcher>();
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<CNSmartPropertyFetcher> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -33622,7 +33728,7 @@ class CNSmartPropertyFetcher extends Struct<CNSmartPropertyFetcher> {
 
   static void encodeWithCoder(
     Pointer<CNSmartPropertyFetcher> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -33632,9 +33738,9 @@ class CNSmartPropertyFetcher extends Struct<CNSmartPropertyFetcher> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CNSmartPropertyFetcher> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -33645,11 +33751,9 @@ class CNSmartPropertyFetcher extends Struct<CNSmartPropertyFetcher> {
   }
 }
 
-/// Objective-C class _CNSocialProfile_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNSocialProfile extends Struct<CNSocialProfile> {
   factory CNSocialProfile._() {
@@ -33660,7 +33764,7 @@ class CNSocialProfile extends Struct<CNSocialProfile> {
     return _objc.allocate("CNSocialProfile").cast<CNSocialProfile>();
   }
 
-  static Pointer<Void> bundleIdentifiers(
+  static Pointer bundleIdentifiers(
     Pointer<CNSocialProfile> _self,
   ) {
     _openDynamicLibrary();
@@ -33670,9 +33774,9 @@ class CNSocialProfile extends Struct<CNSocialProfile> {
     );
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<CNSocialProfile> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -33682,7 +33786,7 @@ class CNSocialProfile extends Struct<CNSocialProfile> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CNSocialProfile> _self,
   ) {
     _openDynamicLibrary();
@@ -33692,7 +33796,7 @@ class CNSocialProfile extends Struct<CNSocialProfile> {
     );
   }
 
-  static Pointer<Void> dictionaryRepresentation(
+  static Pointer dictionaryRepresentation(
     Pointer<CNSocialProfile> _self,
   ) {
     _openDynamicLibrary();
@@ -33702,7 +33806,7 @@ class CNSocialProfile extends Struct<CNSocialProfile> {
     );
   }
 
-  static Pointer<Void> displayname(
+  static Pointer displayname(
     Pointer<CNSocialProfile> _self,
   ) {
     _openDynamicLibrary();
@@ -33714,7 +33818,7 @@ class CNSocialProfile extends Struct<CNSocialProfile> {
 
   static void encodeWithCoder(
     Pointer<CNSocialProfile> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -33734,9 +33838,9 @@ class CNSocialProfile extends Struct<CNSocialProfile> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CNSocialProfile> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -33746,14 +33850,13 @@ class CNSocialProfile extends Struct<CNSocialProfile> {
     );
   }
 
-  static Pointer<Void>
-      initWithUrlString$username$userIdentifier$service$displayname$(
+  static Pointer initWithUrlString$username$userIdentifier$service$displayname$(
     Pointer<CNSocialProfile> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> username,
-    @required Pointer<Void> userIdentifier,
-    @required Pointer<Void> service,
-    @required Pointer<Void> displayname,
+    Pointer arg, {
+    @required Pointer username,
+    @required Pointer userIdentifier,
+    @required Pointer service,
+    @required Pointer displayname,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_p_returns_p(
@@ -33768,12 +33871,12 @@ class CNSocialProfile extends Struct<CNSocialProfile> {
     );
   }
 
-  static Pointer<Void> initWithUrlString$username$userIdentifier$service$(
+  static Pointer initWithUrlString$username$userIdentifier$service$(
     Pointer<CNSocialProfile> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> username,
-    @required Pointer<Void> userIdentifier,
-    @required Pointer<Void> service,
+    Pointer arg, {
+    @required Pointer username,
+    @required Pointer userIdentifier,
+    @required Pointer service,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_returns_p(
@@ -33786,16 +33889,16 @@ class CNSocialProfile extends Struct<CNSocialProfile> {
     );
   }
 
-  static Pointer<Void>
+  static Pointer
       initWithUrlString$username$userIdentifier$service$displayname$teamIdentifier$bundleIdentifiers$(
     Pointer<CNSocialProfile> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> username,
-    @required Pointer<Void> userIdentifier,
-    @required Pointer<Void> service,
-    @required Pointer<Void> displayname,
-    @required Pointer<Void> teamIdentifier,
-    @required Pointer<Void> bundleIdentifiers,
+    Pointer arg, {
+    @required Pointer username,
+    @required Pointer userIdentifier,
+    @required Pointer service,
+    @required Pointer displayname,
+    @required Pointer teamIdentifier,
+    @required Pointer bundleIdentifiers,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_p_p_p_returns_p(
@@ -33814,7 +33917,7 @@ class CNSocialProfile extends Struct<CNSocialProfile> {
 
   static int isEqual$(
     Pointer<CNSocialProfile> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -33826,7 +33929,7 @@ class CNSocialProfile extends Struct<CNSocialProfile> {
 
   static int isEqual$ignoreURLs$(
     Pointer<CNSocialProfile> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int ignoreURLs,
   }) {
     _openDynamicLibrary();
@@ -33840,7 +33943,7 @@ class CNSocialProfile extends Struct<CNSocialProfile> {
 
   static int isValid(
     Pointer<CNSocialProfile> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -33850,9 +33953,9 @@ class CNSocialProfile extends Struct<CNSocialProfile> {
     );
   }
 
-  static Pointer<Void> mutableCopyWithZone(
+  static Pointer mutableCopyWithZone(
     Pointer<CNSocialProfile> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -33862,7 +33965,7 @@ class CNSocialProfile extends Struct<CNSocialProfile> {
     );
   }
 
-  static Pointer<Void> service(
+  static Pointer service(
     Pointer<CNSocialProfile> _self,
   ) {
     _openDynamicLibrary();
@@ -33874,7 +33977,7 @@ class CNSocialProfile extends Struct<CNSocialProfile> {
 
   static void setBundleIdentifiers(
     Pointer<CNSocialProfile> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -33886,7 +33989,7 @@ class CNSocialProfile extends Struct<CNSocialProfile> {
 
   static void setDisplayname(
     Pointer<CNSocialProfile> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -33898,7 +34001,7 @@ class CNSocialProfile extends Struct<CNSocialProfile> {
 
   static void setService(
     Pointer<CNSocialProfile> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -33910,7 +34013,7 @@ class CNSocialProfile extends Struct<CNSocialProfile> {
 
   static void setTeamIdentifier(
     Pointer<CNSocialProfile> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -33922,7 +34025,7 @@ class CNSocialProfile extends Struct<CNSocialProfile> {
 
   static void setUrlString(
     Pointer<CNSocialProfile> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -33934,7 +34037,7 @@ class CNSocialProfile extends Struct<CNSocialProfile> {
 
   static void setUserIdentifier(
     Pointer<CNSocialProfile> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -33946,7 +34049,7 @@ class CNSocialProfile extends Struct<CNSocialProfile> {
 
   static void setUsername(
     Pointer<CNSocialProfile> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -33956,7 +34059,7 @@ class CNSocialProfile extends Struct<CNSocialProfile> {
     );
   }
 
-  static Pointer<Void> teamIdentifier(
+  static Pointer teamIdentifier(
     Pointer<CNSocialProfile> _self,
   ) {
     _openDynamicLibrary();
@@ -33966,7 +34069,7 @@ class CNSocialProfile extends Struct<CNSocialProfile> {
     );
   }
 
-  static Pointer<Void> urlString(
+  static Pointer urlString(
     Pointer<CNSocialProfile> _self,
   ) {
     _openDynamicLibrary();
@@ -33976,7 +34079,7 @@ class CNSocialProfile extends Struct<CNSocialProfile> {
     );
   }
 
-  static Pointer<Void> userIdentifier(
+  static Pointer userIdentifier(
     Pointer<CNSocialProfile> _self,
   ) {
     _openDynamicLibrary();
@@ -33986,7 +34089,7 @@ class CNSocialProfile extends Struct<CNSocialProfile> {
     );
   }
 
-  static Pointer<Void> username(
+  static Pointer username(
     Pointer<CNSocialProfile> _self,
   ) {
     _openDynamicLibrary();
@@ -33997,11 +34100,9 @@ class CNSocialProfile extends Struct<CNSocialProfile> {
   }
 }
 
-/// Objective-C class _CNSocialProfileContactPredicate_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNSocialProfileContactPredicate
     extends Struct<CNSocialProfileContactPredicate> {
@@ -34015,7 +34116,7 @@ class CNSocialProfileContactPredicate
         .cast<CNSocialProfileContactPredicate>();
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CNSocialProfileContactPredicate> _self,
   ) {
     _openDynamicLibrary();
@@ -34027,7 +34128,7 @@ class CNSocialProfileContactPredicate
 
   static void encodeWithCoder(
     Pointer<CNSocialProfileContactPredicate> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -34037,9 +34138,9 @@ class CNSocialProfileContactPredicate
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CNSocialProfileContactPredicate> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -34049,9 +34150,9 @@ class CNSocialProfileContactPredicate
     );
   }
 
-  static Pointer<Void> initWithSocialProfile(
+  static Pointer initWithSocialProfile(
     Pointer<CNSocialProfileContactPredicate> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -34061,7 +34162,7 @@ class CNSocialProfileContactPredicate
     );
   }
 
-  static Pointer<Void> socialProfile(
+  static Pointer socialProfile(
     Pointer<CNSocialProfileContactPredicate> _self,
   ) {
     _openDynamicLibrary();
@@ -34072,11 +34173,9 @@ class CNSocialProfileContactPredicate
   }
 }
 
-/// Objective-C class _CNSocialProfilesDescription_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNSocialProfilesDescription extends Struct<CNSocialProfilesDescription> {
   factory CNSocialProfilesDescription._() {
@@ -34089,9 +34188,9 @@ class CNSocialProfilesDescription extends Struct<CNSocialProfilesDescription> {
         .cast<CNSocialProfilesDescription>();
   }
 
-  static Pointer<Void> CNValueForContact(
+  static Pointer CNValueForContact(
     Pointer<CNSocialProfilesDescription> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -34103,8 +34202,8 @@ class CNSocialProfilesDescription extends Struct<CNSocialProfilesDescription> {
 
   static int canUnifyValue(
     Pointer<CNSocialProfilesDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> withValue,
+    Pointer arg, {
+    @required Pointer withValue,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -34117,8 +34216,8 @@ class CNSocialProfilesDescription extends Struct<CNSocialProfilesDescription> {
 
   static void copyFromCoreDataContact(
     Pointer<CNSocialProfilesDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toContact,
+    Pointer arg, {
+    @required Pointer toContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -34131,8 +34230,8 @@ class CNSocialProfilesDescription extends Struct<CNSocialProfilesDescription> {
 
   static void copyFromLabeledValue(
     Pointer<CNSocialProfilesDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toOwnedObject,
+    Pointer arg, {
+    @required Pointer toOwnedObject,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -34145,8 +34244,8 @@ class CNSocialProfilesDescription extends Struct<CNSocialProfilesDescription> {
 
   static void copyValueFromContact(
     Pointer<CNSocialProfilesDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toRemotePerson,
+    Pointer arg, {
+    @required Pointer toRemotePerson,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -34159,8 +34258,8 @@ class CNSocialProfilesDescription extends Struct<CNSocialProfilesDescription> {
 
   static void copyValueFromRemotePerson(
     Pointer<CNSocialProfilesDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toContact,
+    Pointer arg, {
+    @required Pointer toContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -34171,7 +34270,7 @@ class CNSocialProfilesDescription extends Struct<CNSocialProfilesDescription> {
     );
   }
 
-  static Pointer<Void> coreDataKey(
+  static Pointer coreDataKey(
     Pointer<CNSocialProfilesDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -34181,7 +34280,7 @@ class CNSocialProfilesDescription extends Struct<CNSocialProfilesDescription> {
     );
   }
 
-  static Pointer<Void> coreDataOwnedEntityName(
+  static Pointer coreDataOwnedEntityName(
     Pointer<CNSocialProfilesDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -34191,7 +34290,7 @@ class CNSocialProfilesDescription extends Struct<CNSocialProfilesDescription> {
     );
   }
 
-  static Pointer<Void> coreDataRelationshipKeyPathsToFetch(
+  static Pointer coreDataRelationshipKeyPathsToFetch(
     Pointer<CNSocialProfilesDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -34203,8 +34302,8 @@ class CNSocialProfilesDescription extends Struct<CNSocialProfilesDescription> {
 
   static void decodeUsingCoder(
     Pointer<CNSocialProfilesDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> contact,
+    Pointer arg, {
+    @required Pointer contact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -34215,7 +34314,7 @@ class CNSocialProfilesDescription extends Struct<CNSocialProfilesDescription> {
     );
   }
 
-  static Pointer<Void> dictionaryTransform(
+  static Pointer dictionaryTransform(
     Pointer<CNSocialProfilesDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -34227,8 +34326,8 @@ class CNSocialProfilesDescription extends Struct<CNSocialProfilesDescription> {
 
   static void encodeUsingCoder(
     Pointer<CNSocialProfilesDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> contact,
+    Pointer arg, {
+    @required Pointer contact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -34239,7 +34338,7 @@ class CNSocialProfilesDescription extends Struct<CNSocialProfilesDescription> {
     );
   }
 
-  static Pointer<Void> fromDictionaryTransform(
+  static Pointer fromDictionaryTransform(
     Pointer<CNSocialProfilesDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -34249,7 +34348,7 @@ class CNSocialProfilesDescription extends Struct<CNSocialProfilesDescription> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CNSocialProfilesDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -34261,8 +34360,8 @@ class CNSocialProfilesDescription extends Struct<CNSocialProfilesDescription> {
 
   static int isEqualForContact(
     Pointer<CNSocialProfilesDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> other,
+    Pointer arg, {
+    @required Pointer other,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -34283,7 +34382,7 @@ class CNSocialProfilesDescription extends Struct<CNSocialProfilesDescription> {
     );
   }
 
-  static Pointer<Void> labeledValueClass(
+  static Pointer labeledValueClass(
     Pointer<CNSocialProfilesDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -34293,7 +34392,7 @@ class CNSocialProfilesDescription extends Struct<CNSocialProfilesDescription> {
     );
   }
 
-  static Pointer<Void> ownedObjectToLabeledValueValueTransform(
+  static Pointer ownedObjectToLabeledValueValueTransform(
     Pointer<CNSocialProfilesDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -34305,8 +34404,8 @@ class CNSocialProfilesDescription extends Struct<CNSocialProfilesDescription> {
 
   static void setCNValue(
     Pointer<CNSocialProfilesDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> onContact,
+    Pointer arg, {
+    @required Pointer onContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -34317,7 +34416,7 @@ class CNSocialProfilesDescription extends Struct<CNSocialProfilesDescription> {
     );
   }
 
-  static Pointer<Void> subCoreDataPredicatePropertiesByKey(
+  static Pointer subCoreDataPredicatePropertiesByKey(
     Pointer<CNSocialProfilesDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -34327,7 +34426,7 @@ class CNSocialProfilesDescription extends Struct<CNSocialProfilesDescription> {
     );
   }
 
-  static Pointer<Void> summarizationKeys(
+  static Pointer summarizationKeys(
     Pointer<CNSocialProfilesDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -34338,11 +34437,9 @@ class CNSocialProfilesDescription extends Struct<CNSocialProfilesDescription> {
   }
 }
 
-/// Objective-C class _CNSortingFamilyNameDescription_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNSortingFamilyNameDescription
     extends Struct<CNSortingFamilyNameDescription> {
@@ -34356,9 +34453,9 @@ class CNSortingFamilyNameDescription
         .cast<CNSortingFamilyNameDescription>();
   }
 
-  static Pointer<Void> CNValueForContact(
+  static Pointer CNValueForContact(
     Pointer<CNSortingFamilyNameDescription> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -34368,7 +34465,7 @@ class CNSortingFamilyNameDescription
     );
   }
 
-  static Pointer<Void> coreDataKey(
+  static Pointer coreDataKey(
     Pointer<CNSortingFamilyNameDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -34380,8 +34477,8 @@ class CNSortingFamilyNameDescription
 
   static void decodeUsingCoder(
     Pointer<CNSortingFamilyNameDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> contact,
+    Pointer arg, {
+    @required Pointer contact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -34394,8 +34491,8 @@ class CNSortingFamilyNameDescription
 
   static void encodeUsingCoder(
     Pointer<CNSortingFamilyNameDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> contact,
+    Pointer arg, {
+    @required Pointer contact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -34406,7 +34503,7 @@ class CNSortingFamilyNameDescription
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CNSortingFamilyNameDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -34418,8 +34515,8 @@ class CNSortingFamilyNameDescription
 
   static int isEqualForContact(
     Pointer<CNSortingFamilyNameDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> other,
+    Pointer arg, {
+    @required Pointer other,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -34432,8 +34529,8 @@ class CNSortingFamilyNameDescription
 
   static void setCNValue(
     Pointer<CNSortingFamilyNameDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> onContact,
+    Pointer arg, {
+    @required Pointer onContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -34445,11 +34542,9 @@ class CNSortingFamilyNameDescription
   }
 }
 
-/// Objective-C class _CNSortingGivenNameDescription_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNSortingGivenNameDescription
     extends Struct<CNSortingGivenNameDescription> {
@@ -34463,9 +34558,9 @@ class CNSortingGivenNameDescription
         .cast<CNSortingGivenNameDescription>();
   }
 
-  static Pointer<Void> CNValueForContact(
+  static Pointer CNValueForContact(
     Pointer<CNSortingGivenNameDescription> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -34475,7 +34570,7 @@ class CNSortingGivenNameDescription
     );
   }
 
-  static Pointer<Void> coreDataKey(
+  static Pointer coreDataKey(
     Pointer<CNSortingGivenNameDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -34487,8 +34582,8 @@ class CNSortingGivenNameDescription
 
   static void decodeUsingCoder(
     Pointer<CNSortingGivenNameDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> contact,
+    Pointer arg, {
+    @required Pointer contact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -34501,8 +34596,8 @@ class CNSortingGivenNameDescription
 
   static void encodeUsingCoder(
     Pointer<CNSortingGivenNameDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> contact,
+    Pointer arg, {
+    @required Pointer contact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -34513,7 +34608,7 @@ class CNSortingGivenNameDescription
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CNSortingGivenNameDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -34525,8 +34620,8 @@ class CNSortingGivenNameDescription
 
   static int isEqualForContact(
     Pointer<CNSortingGivenNameDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> other,
+    Pointer arg, {
+    @required Pointer other,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -34539,8 +34634,8 @@ class CNSortingGivenNameDescription
 
   static void setCNValue(
     Pointer<CNSortingGivenNameDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> onContact,
+    Pointer arg, {
+    @required Pointer onContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -34552,11 +34647,9 @@ class CNSortingGivenNameDescription
   }
 }
 
-/// Objective-C class _CNSuggestedContactIdentifierPredicate_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNSuggestedContactIdentifierPredicate
     extends Struct<CNSuggestedContactIdentifierPredicate> {
@@ -34580,7 +34673,7 @@ class CNSuggestedContactIdentifierPredicate
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CNSuggestedContactIdentifierPredicate> _self,
   ) {
     _openDynamicLibrary();
@@ -34592,7 +34685,7 @@ class CNSuggestedContactIdentifierPredicate
 
   static void encodeWithCoder(
     Pointer<CNSuggestedContactIdentifierPredicate> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -34602,9 +34695,9 @@ class CNSuggestedContactIdentifierPredicate
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CNSuggestedContactIdentifierPredicate> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -34614,7 +34707,7 @@ class CNSuggestedContactIdentifierPredicate
     );
   }
 
-  static Pointer<Void> initWithSuggestionIdentifier(
+  static Pointer initWithSuggestionIdentifier(
     Pointer<CNSuggestedContactIdentifierPredicate> _self,
     int arg,
   ) {
@@ -34626,12 +34719,12 @@ class CNSuggestedContactIdentifierPredicate
     );
   }
 
-  static Pointer<Void> sgContactMatchesWithSortOrder(
+  static Pointer sgContactMatchesWithSortOrder(
     Pointer<CNSuggestedContactIdentifierPredicate> _self,
     int arg, {
     @required int mutableObjects,
-    @required Pointer<Void> service,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer service,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_Int64_Int8_p_p_returns_p(
@@ -34656,11 +34749,9 @@ class CNSuggestedContactIdentifierPredicate
   }
 }
 
-/// Objective-C class _CNSuggestedContactStore_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNSuggestedContactStore extends Struct<CNSuggestedContactStore> {
   factory CNSuggestedContactStore._() {
@@ -34675,9 +34766,9 @@ class CNSuggestedContactStore extends Struct<CNSuggestedContactStore> {
 
   static int enumerateContactsAndMatchInfoWithFetchRequest(
     Pointer<CNSuggestedContactStore> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
-    @required Pointer<Void> usingBlock,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
+    @required Pointer usingBlock,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_Int8(
@@ -34692,8 +34783,8 @@ class CNSuggestedContactStore extends Struct<CNSuggestedContactStore> {
 
   static int executeSaveRequest(
     Pointer<CNSuggestedContactStore> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -34704,7 +34795,7 @@ class CNSuggestedContactStore extends Struct<CNSuggestedContactStore> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CNSuggestedContactStore> _self,
   ) {
     _openDynamicLibrary();
@@ -34714,9 +34805,9 @@ class CNSuggestedContactStore extends Struct<CNSuggestedContactStore> {
     );
   }
 
-  static Pointer<Void> initWithSuggestionsService(
+  static Pointer initWithSuggestionsService(
     Pointer<CNSuggestedContactStore> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -34726,10 +34817,10 @@ class CNSuggestedContactStore extends Struct<CNSuggestedContactStore> {
     );
   }
 
-  static Pointer<Void> originForSuggestion(
+  static Pointer originForSuggestion(
     Pointer<CNSuggestedContactStore> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -34740,7 +34831,7 @@ class CNSuggestedContactStore extends Struct<CNSuggestedContactStore> {
     );
   }
 
-  static Pointer<Void> requestAccessForEntityType(
+  static Pointer requestAccessForEntityType(
     Pointer<CNSuggestedContactStore> _self,
     int arg,
   ) {
@@ -34754,7 +34845,7 @@ class CNSuggestedContactStore extends Struct<CNSuggestedContactStore> {
 
   static void setSuggestionService(
     Pointer<CNSuggestedContactStore> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -34764,7 +34855,7 @@ class CNSuggestedContactStore extends Struct<CNSuggestedContactStore> {
     );
   }
 
-  static Pointer<Void> suggestionService(
+  static Pointer suggestionService(
     Pointer<CNSuggestedContactStore> _self,
   ) {
     _openDynamicLibrary();
@@ -34774,11 +34865,11 @@ class CNSuggestedContactStore extends Struct<CNSuggestedContactStore> {
     );
   }
 
-  static Pointer<Void> unifiedContactsMatchingPredicate(
+  static Pointer unifiedContactsMatchingPredicate(
     Pointer<CNSuggestedContactStore> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> keysToFetch,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer keysToFetch,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -34791,11 +34882,9 @@ class CNSuggestedContactStore extends Struct<CNSuggestedContactStore> {
   }
 }
 
-/// Objective-C class _CNSuggestedSaveRequest_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNSuggestedSaveRequest extends Struct<CNSuggestedSaveRequest> {
   factory CNSuggestedSaveRequest._() {
@@ -34810,7 +34899,7 @@ class CNSuggestedSaveRequest extends Struct<CNSuggestedSaveRequest> {
 
   static void confirmSuggestion(
     Pointer<CNSuggestedSaveRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -34820,7 +34909,7 @@ class CNSuggestedSaveRequest extends Struct<CNSuggestedSaveRequest> {
     );
   }
 
-  static Pointer<Void> confirmedSuggestions(
+  static Pointer confirmedSuggestions(
     Pointer<CNSuggestedSaveRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -34830,7 +34919,7 @@ class CNSuggestedSaveRequest extends Struct<CNSuggestedSaveRequest> {
     );
   }
 
-  static Pointer<Void> mutableConfirmedSuggestions(
+  static Pointer mutableConfirmedSuggestions(
     Pointer<CNSuggestedSaveRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -34840,7 +34929,7 @@ class CNSuggestedSaveRequest extends Struct<CNSuggestedSaveRequest> {
     );
   }
 
-  static Pointer<Void> mutableRejectedSuggestions(
+  static Pointer mutableRejectedSuggestions(
     Pointer<CNSuggestedSaveRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -34852,7 +34941,7 @@ class CNSuggestedSaveRequest extends Struct<CNSuggestedSaveRequest> {
 
   static void rejectSuggestion(
     Pointer<CNSuggestedSaveRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -34862,7 +34951,7 @@ class CNSuggestedSaveRequest extends Struct<CNSuggestedSaveRequest> {
     );
   }
 
-  static Pointer<Void> rejectedSuggestions(
+  static Pointer rejectedSuggestions(
     Pointer<CNSuggestedSaveRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -34874,7 +34963,7 @@ class CNSuggestedSaveRequest extends Struct<CNSuggestedSaveRequest> {
 
   static void setMutableConfirmedSuggestions(
     Pointer<CNSuggestedSaveRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -34886,7 +34975,7 @@ class CNSuggestedSaveRequest extends Struct<CNSuggestedSaveRequest> {
 
   static void setMutableRejectedSuggestions(
     Pointer<CNSuggestedSaveRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -34896,7 +34985,7 @@ class CNSuggestedSaveRequest extends Struct<CNSuggestedSaveRequest> {
     );
   }
 
-  static Pointer<Void> storeIdentifier(
+  static Pointer storeIdentifier(
     Pointer<CNSuggestedSaveRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -34907,11 +34996,9 @@ class CNSuggestedSaveRequest extends Struct<CNSuggestedSaveRequest> {
   }
 }
 
-/// Objective-C class _CNTCC_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNTCC extends Struct<CNTCC> {
   factory CNTCC._() {
@@ -34934,7 +35021,7 @@ class CNTCC extends Struct<CNTCC> {
 
   static void accessRequestWithCompletion(
     Pointer<CNTCC> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -34946,7 +35033,7 @@ class CNTCC extends Struct<CNTCC> {
 
   static int checkAuditToken(
     Pointer<CNTCC> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Uint8(
@@ -34956,7 +35043,7 @@ class CNTCC extends Struct<CNTCC> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CNTCC> _self,
   ) {
     _openDynamicLibrary();
@@ -34966,9 +35053,9 @@ class CNTCC extends Struct<CNTCC> {
     );
   }
 
-  static Pointer<Void> initWithEnvironment(
+  static Pointer initWithEnvironment(
     Pointer<CNTCC> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -34988,7 +35075,7 @@ class CNTCC extends Struct<CNTCC> {
     );
   }
 
-  static Pointer<Void> logger(
+  static Pointer logger(
     Pointer<CNTCC> _self,
   ) {
     _openDynamicLibrary();
@@ -35114,11 +35201,9 @@ class CNTCC extends Struct<CNTCC> {
   }
 }
 
-/// Objective-C class _CNTCCServices_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNTCCServices extends Struct<CNTCCServices> {
   factory CNTCCServices._() {
@@ -35131,9 +35216,9 @@ class CNTCCServices extends Struct<CNTCCServices> {
 
   static int TCCAccessCheckAuditToken(
     Pointer<CNTCCServices> _self,
-    Pointer<Void> _arg2,
-    Pointer<Pointer<Void>> _arg3,
-    Pointer<Pointer<Void>> _arg4,
+    Pointer _arg2,
+    Pointer<Pointer> _arg3,
+    Pointer<Pointer> _arg4,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_Int8(
@@ -35147,8 +35232,8 @@ class CNTCCServices extends Struct<CNTCCServices> {
 
   static int TCCAccessPreflight(
     Pointer<CNTCCServices> _self,
-    Pointer<Pointer<Void>> _arg2,
-    Pointer<Pointer<Void>> _arg3,
+    Pointer<Pointer> _arg2,
+    Pointer<Pointer> _arg3,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int32(
@@ -35160,11 +35245,9 @@ class CNTCCServices extends Struct<CNTCCServices> {
   }
 }
 
-/// Objective-C class _CNTestSmartFetcher_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNTestSmartFetcher extends Struct<CNTestSmartFetcher> {
   factory CNTestSmartFetcher._() {
@@ -35175,9 +35258,9 @@ class CNTestSmartFetcher extends Struct<CNTestSmartFetcher> {
     return _objc.allocate("CNTestSmartFetcher").cast<CNTestSmartFetcher>();
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<CNTestSmartFetcher> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -35189,7 +35272,7 @@ class CNTestSmartFetcher extends Struct<CNTestSmartFetcher> {
 
   static void encodeWithCoder(
     Pointer<CNTestSmartFetcher> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -35209,9 +35292,9 @@ class CNTestSmartFetcher extends Struct<CNTestSmartFetcher> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CNTestSmartFetcher> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -35221,10 +35304,10 @@ class CNTestSmartFetcher extends Struct<CNTestSmartFetcher> {
     );
   }
 
-  static Pointer<Void> initWithRequiredKeys(
+  static Pointer initWithRequiredKeys(
     Pointer<CNTestSmartFetcher> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> optionalKeys,
+    Pointer arg, {
+    @required Pointer optionalKeys,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -35237,7 +35320,7 @@ class CNTestSmartFetcher extends Struct<CNTestSmartFetcher> {
 
   static int isEqual(
     Pointer<CNTestSmartFetcher> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -35247,7 +35330,7 @@ class CNTestSmartFetcher extends Struct<CNTestSmartFetcher> {
     );
   }
 
-  static Pointer<Void> optionalKeys(
+  static Pointer optionalKeys(
     Pointer<CNTestSmartFetcher> _self,
   ) {
     _openDynamicLibrary();
@@ -35257,7 +35340,7 @@ class CNTestSmartFetcher extends Struct<CNTestSmartFetcher> {
     );
   }
 
-  static Pointer<Void> requiredKeys(
+  static Pointer requiredKeys(
     Pointer<CNTestSmartFetcher> _self,
   ) {
     _openDynamicLibrary();
@@ -35268,11 +35351,9 @@ class CNTestSmartFetcher extends Struct<CNTestSmartFetcher> {
   }
 }
 
-/// Objective-C class _CNTextAlertDescription_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNTextAlertDescription extends Struct<CNTextAlertDescription> {
   factory CNTextAlertDescription._() {
@@ -35285,9 +35366,9 @@ class CNTextAlertDescription extends Struct<CNTextAlertDescription> {
         .cast<CNTextAlertDescription>();
   }
 
-  static Pointer<Void> CNValueForContact(
+  static Pointer CNValueForContact(
     Pointer<CNTextAlertDescription> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -35297,7 +35378,7 @@ class CNTextAlertDescription extends Struct<CNTextAlertDescription> {
     );
   }
 
-  static Pointer<Void> activity(
+  static Pointer activity(
     Pointer<CNTextAlertDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -35309,8 +35390,8 @@ class CNTextAlertDescription extends Struct<CNTextAlertDescription> {
 
   static void copyFromCoreDataContact(
     Pointer<CNTextAlertDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toContact,
+    Pointer arg, {
+    @required Pointer toContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -35323,8 +35404,8 @@ class CNTextAlertDescription extends Struct<CNTextAlertDescription> {
 
   static void decodeUsingCoder(
     Pointer<CNTextAlertDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> contact,
+    Pointer arg, {
+    @required Pointer contact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -35337,8 +35418,8 @@ class CNTextAlertDescription extends Struct<CNTextAlertDescription> {
 
   static void encodeUsingCoder(
     Pointer<CNTextAlertDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> contact,
+    Pointer arg, {
+    @required Pointer contact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -35349,7 +35430,7 @@ class CNTextAlertDescription extends Struct<CNTextAlertDescription> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CNTextAlertDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -35361,8 +35442,8 @@ class CNTextAlertDescription extends Struct<CNTextAlertDescription> {
 
   static int isEqualForContact(
     Pointer<CNTextAlertDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> other,
+    Pointer arg, {
+    @required Pointer other,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -35375,8 +35456,8 @@ class CNTextAlertDescription extends Struct<CNTextAlertDescription> {
 
   static void setCNValue(
     Pointer<CNTextAlertDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> onContact,
+    Pointer arg, {
+    @required Pointer onContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -35388,11 +35469,9 @@ class CNTextAlertDescription extends Struct<CNTextAlertDescription> {
   }
 }
 
-/// Objective-C class _CNThumbnailImageDataDescription_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNThumbnailImageDataDescription
     extends Struct<CNThumbnailImageDataDescription> {
@@ -35406,9 +35485,9 @@ class CNThumbnailImageDataDescription
         .cast<CNThumbnailImageDataDescription>();
   }
 
-  static Pointer<Void> CNValueForContact(
+  static Pointer CNValueForContact(
     Pointer<CNThumbnailImageDataDescription> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -35420,8 +35499,8 @@ class CNThumbnailImageDataDescription
 
   static void copyFromCoreDataContact(
     Pointer<CNThumbnailImageDataDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toContact,
+    Pointer arg, {
+    @required Pointer toContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -35432,7 +35511,7 @@ class CNThumbnailImageDataDescription
     );
   }
 
-  static Pointer<Void> coreDataKey(
+  static Pointer coreDataKey(
     Pointer<CNThumbnailImageDataDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -35444,8 +35523,8 @@ class CNThumbnailImageDataDescription
 
   static void decodeUsingCoder(
     Pointer<CNThumbnailImageDataDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> contact,
+    Pointer arg, {
+    @required Pointer contact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -35458,8 +35537,8 @@ class CNThumbnailImageDataDescription
 
   static void encodeUsingCoder(
     Pointer<CNThumbnailImageDataDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> contact,
+    Pointer arg, {
+    @required Pointer contact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -35470,7 +35549,7 @@ class CNThumbnailImageDataDescription
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CNThumbnailImageDataDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -35482,8 +35561,8 @@ class CNThumbnailImageDataDescription
 
   static int isEqualForContact(
     Pointer<CNThumbnailImageDataDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> other,
+    Pointer arg, {
+    @required Pointer other,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -35496,8 +35575,8 @@ class CNThumbnailImageDataDescription
 
   static void setCNValue(
     Pointer<CNThumbnailImageDataDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> onContact,
+    Pointer arg, {
+    @required Pointer onContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -35508,7 +35587,7 @@ class CNThumbnailImageDataDescription
     );
   }
 
-  static Pointer<Void> valueClass(
+  static Pointer valueClass(
     Pointer<CNThumbnailImageDataDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -35519,11 +35598,9 @@ class CNThumbnailImageDataDescription
   }
 }
 
-/// Objective-C class _CNUnifiedContacts_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNUnifiedContacts extends Struct<CNUnifiedContacts> {
   factory CNUnifiedContacts._() {
@@ -35535,11 +35612,9 @@ class CNUnifiedContacts extends Struct<CNUnifiedContacts> {
   }
 }
 
-/// Objective-C class _CNUrlAddressesDescription_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNUrlAddressesDescription extends Struct<CNUrlAddressesDescription> {
   factory CNUrlAddressesDescription._() {
@@ -35552,9 +35627,9 @@ class CNUrlAddressesDescription extends Struct<CNUrlAddressesDescription> {
         .cast<CNUrlAddressesDescription>();
   }
 
-  static Pointer<Void> CNValueForContact(
+  static Pointer CNValueForContact(
     Pointer<CNUrlAddressesDescription> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -35566,8 +35641,8 @@ class CNUrlAddressesDescription extends Struct<CNUrlAddressesDescription> {
 
   static int canUnifyValue(
     Pointer<CNUrlAddressesDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> withValue,
+    Pointer arg, {
+    @required Pointer withValue,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -35580,8 +35655,8 @@ class CNUrlAddressesDescription extends Struct<CNUrlAddressesDescription> {
 
   static void copyFromCoreDataContact(
     Pointer<CNUrlAddressesDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toContact,
+    Pointer arg, {
+    @required Pointer toContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -35594,8 +35669,8 @@ class CNUrlAddressesDescription extends Struct<CNUrlAddressesDescription> {
 
   static void copyFromLabeledValue(
     Pointer<CNUrlAddressesDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toOwnedObject,
+    Pointer arg, {
+    @required Pointer toOwnedObject,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -35608,8 +35683,8 @@ class CNUrlAddressesDescription extends Struct<CNUrlAddressesDescription> {
 
   static void copyValueFromContact(
     Pointer<CNUrlAddressesDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toRemotePerson,
+    Pointer arg, {
+    @required Pointer toRemotePerson,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -35622,8 +35697,8 @@ class CNUrlAddressesDescription extends Struct<CNUrlAddressesDescription> {
 
   static void copyValueFromRemotePerson(
     Pointer<CNUrlAddressesDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toContact,
+    Pointer arg, {
+    @required Pointer toContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -35634,7 +35709,7 @@ class CNUrlAddressesDescription extends Struct<CNUrlAddressesDescription> {
     );
   }
 
-  static Pointer<Void> coreDataKey(
+  static Pointer coreDataKey(
     Pointer<CNUrlAddressesDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -35644,7 +35719,7 @@ class CNUrlAddressesDescription extends Struct<CNUrlAddressesDescription> {
     );
   }
 
-  static Pointer<Void> coreDataOwnedEntityName(
+  static Pointer coreDataOwnedEntityName(
     Pointer<CNUrlAddressesDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -35654,7 +35729,7 @@ class CNUrlAddressesDescription extends Struct<CNUrlAddressesDescription> {
     );
   }
 
-  static Pointer<Void> coreDataRelationshipKeyPathsToFetch(
+  static Pointer coreDataRelationshipKeyPathsToFetch(
     Pointer<CNUrlAddressesDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -35666,8 +35741,8 @@ class CNUrlAddressesDescription extends Struct<CNUrlAddressesDescription> {
 
   static void decodeUsingCoder(
     Pointer<CNUrlAddressesDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> contact,
+    Pointer arg, {
+    @required Pointer contact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -35680,8 +35755,8 @@ class CNUrlAddressesDescription extends Struct<CNUrlAddressesDescription> {
 
   static void encodeUsingCoder(
     Pointer<CNUrlAddressesDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> contact,
+    Pointer arg, {
+    @required Pointer contact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -35692,7 +35767,7 @@ class CNUrlAddressesDescription extends Struct<CNUrlAddressesDescription> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CNUrlAddressesDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -35704,8 +35779,8 @@ class CNUrlAddressesDescription extends Struct<CNUrlAddressesDescription> {
 
   static int isEqualForContact(
     Pointer<CNUrlAddressesDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> other,
+    Pointer arg, {
+    @required Pointer other,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -35726,7 +35801,7 @@ class CNUrlAddressesDescription extends Struct<CNUrlAddressesDescription> {
     );
   }
 
-  static Pointer<Void> ownedObjectToLabeledValueValueTransform(
+  static Pointer ownedObjectToLabeledValueValueTransform(
     Pointer<CNUrlAddressesDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -35738,8 +35813,8 @@ class CNUrlAddressesDescription extends Struct<CNUrlAddressesDescription> {
 
   static void setCNValue(
     Pointer<CNUrlAddressesDescription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> onContact,
+    Pointer arg, {
+    @required Pointer onContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -35750,7 +35825,7 @@ class CNUrlAddressesDescription extends Struct<CNUrlAddressesDescription> {
     );
   }
 
-  static Pointer<Void> standardLabels(
+  static Pointer standardLabels(
     Pointer<CNUrlAddressesDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -35760,7 +35835,7 @@ class CNUrlAddressesDescription extends Struct<CNUrlAddressesDescription> {
     );
   }
 
-  static Pointer<Void> subCoreDataPredicatePropertiesByKey(
+  static Pointer subCoreDataPredicatePropertiesByKey(
     Pointer<CNUrlAddressesDescription> _self,
   ) {
     _openDynamicLibrary();
@@ -35771,11 +35846,9 @@ class CNUrlAddressesDescription extends Struct<CNUrlAddressesDescription> {
   }
 }
 
-/// Objective-C class _CNUuidIdentifierProvider_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNUuidIdentifierProvider extends Struct<CNUuidIdentifierProvider> {
   factory CNUuidIdentifierProvider._() {
@@ -35788,9 +35861,9 @@ class CNUuidIdentifierProvider extends Struct<CNUuidIdentifierProvider> {
         .cast<CNUuidIdentifierProvider>();
   }
 
-  static Pointer<Void> initWithSuffix(
+  static Pointer initWithSuffix(
     Pointer<CNUuidIdentifierProvider> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -35800,7 +35873,7 @@ class CNUuidIdentifierProvider extends Struct<CNUuidIdentifierProvider> {
     );
   }
 
-  static Pointer<Void> makeIdentifier(
+  static Pointer makeIdentifier(
     Pointer<CNUuidIdentifierProvider> _self,
   ) {
     _openDynamicLibrary();
@@ -35811,11 +35884,9 @@ class CNUuidIdentifierProvider extends Struct<CNUuidIdentifierProvider> {
   }
 }
 
-/// Objective-C class _CNVCardConstantsMapping_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNVCardConstantsMapping extends Struct<CNVCardConstantsMapping> {
   factory CNVCardConstantsMapping._() {
@@ -35828,9 +35899,9 @@ class CNVCardConstantsMapping extends Struct<CNVCardConstantsMapping> {
         .cast<CNVCardConstantsMapping>();
   }
 
-  static Pointer<Void> initWithMapping(
+  static Pointer initWithMapping(
     Pointer<CNVCardConstantsMapping> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -35840,7 +35911,7 @@ class CNVCardConstantsMapping extends Struct<CNVCardConstantsMapping> {
     );
   }
 
-  static Pointer<Void> invertedMapping(
+  static Pointer invertedMapping(
     Pointer<CNVCardConstantsMapping> _self,
   ) {
     _openDynamicLibrary();
@@ -35850,9 +35921,9 @@ class CNVCardConstantsMapping extends Struct<CNVCardConstantsMapping> {
     );
   }
 
-  static Pointer<Void> mappedConstant(
+  static Pointer mappedConstant(
     Pointer<CNVCardConstantsMapping> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -35862,7 +35933,7 @@ class CNVCardConstantsMapping extends Struct<CNVCardConstantsMapping> {
     );
   }
 
-  static Pointer<Void> mapping(
+  static Pointer mapping(
     Pointer<CNVCardConstantsMapping> _self,
   ) {
     _openDynamicLibrary();
@@ -35874,7 +35945,7 @@ class CNVCardConstantsMapping extends Struct<CNVCardConstantsMapping> {
 
   static void setMapping(
     Pointer<CNVCardConstantsMapping> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -35885,11 +35956,9 @@ class CNVCardConstantsMapping extends Struct<CNVCardConstantsMapping> {
   }
 }
 
-/// Objective-C class _CNValueOrigin_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNValueOrigin extends Struct<CNValueOrigin> {
   factory CNValueOrigin._() {
@@ -35900,9 +35969,9 @@ class CNValueOrigin extends Struct<CNValueOrigin> {
     return _objc.allocate("CNValueOrigin").cast<CNValueOrigin>();
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<CNValueOrigin> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -35912,7 +35981,7 @@ class CNValueOrigin extends Struct<CNValueOrigin> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CNValueOrigin> _self,
   ) {
     _openDynamicLibrary();
@@ -35922,7 +35991,7 @@ class CNValueOrigin extends Struct<CNValueOrigin> {
     );
   }
 
-  static Pointer<Void> donationIdentifier(
+  static Pointer donationIdentifier(
     Pointer<CNValueOrigin> _self,
   ) {
     _openDynamicLibrary();
@@ -35934,7 +36003,7 @@ class CNValueOrigin extends Struct<CNValueOrigin> {
 
   static void encodeWithCoder(
     Pointer<CNValueOrigin> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -35954,7 +36023,7 @@ class CNValueOrigin extends Struct<CNValueOrigin> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CNValueOrigin> _self,
   ) {
     _openDynamicLibrary();
@@ -35964,9 +36033,9 @@ class CNValueOrigin extends Struct<CNValueOrigin> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CNValueOrigin> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -35976,10 +36045,22 @@ class CNValueOrigin extends Struct<CNValueOrigin> {
     );
   }
 
-  static Pointer<Void> initWithLocalizedApplicationName(
+  static Pointer initWithDonationOrigin(
     Pointer<CNValueOrigin> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> donationIdentifier,
+    Pointer arg,
+  ) {
+    _openDynamicLibrary();
+    return _call_objc_p_p_p_returns_p(
+      _self,
+      _objc.getSelector("initWithDonationOrigin:"),
+      arg,
+    );
+  }
+
+  static Pointer initWithLocalizedApplicationName(
+    Pointer<CNValueOrigin> _self,
+    Pointer arg, {
+    @required Pointer donationIdentifier,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -35992,7 +36073,7 @@ class CNValueOrigin extends Struct<CNValueOrigin> {
 
   static int isEqual(
     Pointer<CNValueOrigin> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -36002,7 +36083,7 @@ class CNValueOrigin extends Struct<CNValueOrigin> {
     );
   }
 
-  static Pointer<Void> localizedApplicationName(
+  static Pointer localizedApplicationName(
     Pointer<CNValueOrigin> _self,
   ) {
     _openDynamicLibrary();
@@ -36013,11 +36094,9 @@ class CNValueOrigin extends Struct<CNValueOrigin> {
   }
 }
 
-/// Objective-C class _CNXPCDataMapper_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNXPCDataMapper extends Struct<CNXPCDataMapper> {
   factory CNXPCDataMapper._() {
@@ -36028,10 +36107,10 @@ class CNXPCDataMapper extends Struct<CNXPCDataMapper> {
     return _objc.allocate("CNXPCDataMapper").cast<CNXPCDataMapper>();
   }
 
-  static Pointer<Void> accountsMatchingPredicate(
+  static Pointer accountsMatchingPredicate(
     Pointer<CNXPCDataMapper> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -36042,10 +36121,10 @@ class CNXPCDataMapper extends Struct<CNXPCDataMapper> {
     );
   }
 
-  static Pointer<Void> changeHistoryWithFetchRequest(
+  static Pointer changeHistoryWithFetchRequest(
     Pointer<CNXPCDataMapper> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -36058,9 +36137,9 @@ class CNXPCDataMapper extends Struct<CNXPCDataMapper> {
 
   static int clearChangeHistoryForClientIdentifier(
     Pointer<CNXPCDataMapper> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toChangeAnchor,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer toChangeAnchor,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_Int8(
@@ -36073,7 +36152,7 @@ class CNXPCDataMapper extends Struct<CNXPCDataMapper> {
     );
   }
 
-  static Pointer<Void> connection(
+  static Pointer connection(
     Pointer<CNXPCDataMapper> _self,
   ) {
     _openDynamicLibrary();
@@ -36083,10 +36162,10 @@ class CNXPCDataMapper extends Struct<CNXPCDataMapper> {
     );
   }
 
-  static Pointer<Void> contactCountForFetchRequest(
+  static Pointer contactCountForFetchRequest(
     Pointer<CNXPCDataMapper> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -36097,9 +36176,9 @@ class CNXPCDataMapper extends Struct<CNXPCDataMapper> {
     );
   }
 
-  static Pointer<Void> contactObservableForFetchRequest(
+  static Pointer contactObservableForFetchRequest(
     Pointer<CNXPCDataMapper> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -36109,10 +36188,10 @@ class CNXPCDataMapper extends Struct<CNXPCDataMapper> {
     );
   }
 
-  static Pointer<Void> contactWithUserActivityUserInfo(
+  static Pointer contactWithUserActivityUserInfo(
     Pointer<CNXPCDataMapper> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> keysToFetch,
+    Pointer arg, {
+    @required Pointer keysToFetch,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -36123,10 +36202,10 @@ class CNXPCDataMapper extends Struct<CNXPCDataMapper> {
     );
   }
 
-  static Pointer<Void> containersMatchingPredicate(
+  static Pointer containersMatchingPredicate(
     Pointer<CNXPCDataMapper> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -36147,7 +36226,7 @@ class CNXPCDataMapper extends Struct<CNXPCDataMapper> {
     );
   }
 
-  static Pointer<Void> defaultContainerIdentifier(
+  static Pointer defaultContainerIdentifier(
     Pointer<CNXPCDataMapper> _self,
   ) {
     _openDynamicLibrary();
@@ -36157,11 +36236,11 @@ class CNXPCDataMapper extends Struct<CNXPCDataMapper> {
     );
   }
 
-  static Pointer<Void> executeFetchRequest(
+  static Pointer executeFetchRequest(
     Pointer<CNXPCDataMapper> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> progressiveResults,
-    @required Pointer<Void> completion,
+    Pointer arg, {
+    @required Pointer progressiveResults,
+    @required Pointer completion,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -36175,9 +36254,9 @@ class CNXPCDataMapper extends Struct<CNXPCDataMapper> {
 
   static int executeSaveRequest$response$error$(
     Pointer<CNXPCDataMapper> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> response,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> response,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_Int8(
@@ -36191,8 +36270,8 @@ class CNXPCDataMapper extends Struct<CNXPCDataMapper> {
 
   static int executeSaveRequest$error$(
     Pointer<CNXPCDataMapper> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -36203,10 +36282,10 @@ class CNXPCDataMapper extends Struct<CNXPCDataMapper> {
     );
   }
 
-  static Pointer<Void> favoritesEntryDictionariesAtPath(
+  static Pointer favoritesEntryDictionariesAtPath(
     Pointer<CNXPCDataMapper> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -36219,9 +36298,9 @@ class CNXPCDataMapper extends Struct<CNXPCDataMapper> {
 
   static int fetchContactsForFetchRequest(
     Pointer<CNXPCDataMapper> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
-    @required Pointer<Void> batchHandler,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
+    @required Pointer batchHandler,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_Int8(
@@ -36233,10 +36312,10 @@ class CNXPCDataMapper extends Struct<CNXPCDataMapper> {
     );
   }
 
-  static Pointer<Void> groupsMatchingPredicate(
+  static Pointer groupsMatchingPredicate(
     Pointer<CNXPCDataMapper> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -36247,9 +36326,9 @@ class CNXPCDataMapper extends Struct<CNXPCDataMapper> {
     );
   }
 
-  static Pointer<Void> identifierWithError(
+  static Pointer identifierWithError(
     Pointer<CNXPCDataMapper> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -36259,7 +36338,7 @@ class CNXPCDataMapper extends Struct<CNXPCDataMapper> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CNXPCDataMapper> _self,
   ) {
     _openDynamicLibrary();
@@ -36269,10 +36348,10 @@ class CNXPCDataMapper extends Struct<CNXPCDataMapper> {
     );
   }
 
-  static Pointer<Void> initWithContactsEnvironment$managedConfiguration$(
+  static Pointer initWithContactsEnvironment$managedConfiguration$(
     Pointer<CNXPCDataMapper> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> managedConfiguration,
+    Pointer arg, {
+    @required Pointer managedConfiguration,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -36283,10 +36362,10 @@ class CNXPCDataMapper extends Struct<CNXPCDataMapper> {
     );
   }
 
-  static Pointer<Void> initWithContactsEnvironment$connection$(
+  static Pointer initWithContactsEnvironment$connection$(
     Pointer<CNXPCDataMapper> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> connection,
+    Pointer arg, {
+    @required Pointer connection,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -36297,7 +36376,7 @@ class CNXPCDataMapper extends Struct<CNXPCDataMapper> {
     );
   }
 
-  static Pointer<Void> logger(
+  static Pointer logger(
     Pointer<CNXPCDataMapper> _self,
   ) {
     _openDynamicLibrary();
@@ -36307,9 +36386,9 @@ class CNXPCDataMapper extends Struct<CNXPCDataMapper> {
     );
   }
 
-  static Pointer<Void> meContactIdentifiers(
+  static Pointer meContactIdentifiers(
     Pointer<CNXPCDataMapper> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -36319,10 +36398,10 @@ class CNXPCDataMapper extends Struct<CNXPCDataMapper> {
     );
   }
 
-  static Pointer<Void> policyForContainerWithIdentifier(
+  static Pointer policyForContainerWithIdentifier(
     Pointer<CNXPCDataMapper> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -36335,8 +36414,8 @@ class CNXPCDataMapper extends Struct<CNXPCDataMapper> {
 
   static int registerChangeHistoryClientIdentifier(
     Pointer<CNXPCDataMapper> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -36349,8 +36428,8 @@ class CNXPCDataMapper extends Struct<CNXPCDataMapper> {
 
   static int reindexSearchableItemsWithIdentifiers(
     Pointer<CNXPCDataMapper> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -36361,11 +36440,11 @@ class CNXPCDataMapper extends Struct<CNXPCDataMapper> {
     );
   }
 
-  static Pointer<Void> remoteResultForSelector$parameters$error$(
+  static Pointer remoteResultForSelector$parameters$error$(
     Pointer<CNXPCDataMapper> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> parameters,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer parameters,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -36377,10 +36456,10 @@ class CNXPCDataMapper extends Struct<CNXPCDataMapper> {
     );
   }
 
-  static Pointer<Void> remoteResultForSelector$error$(
+  static Pointer remoteResultForSelector$error$(
     Pointer<CNXPCDataMapper> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -36391,11 +36470,11 @@ class CNXPCDataMapper extends Struct<CNXPCDataMapper> {
     );
   }
 
-  static Pointer<Void> remoteResultForSelector$query$error$(
+  static Pointer remoteResultForSelector$query$error$(
     Pointer<CNXPCDataMapper> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> query,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer query,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -36407,12 +36486,12 @@ class CNXPCDataMapper extends Struct<CNXPCDataMapper> {
     );
   }
 
-  static Pointer<Void> remoteResultForSelector$query$queryParameter$error$(
+  static Pointer remoteResultForSelector$query$queryParameter$error$(
     Pointer<CNXPCDataMapper> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> query,
-    @required Pointer<Void> queryParameter,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer query,
+    @required Pointer queryParameter,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_returns_p(
@@ -36428,7 +36507,7 @@ class CNXPCDataMapper extends Struct<CNXPCDataMapper> {
   static void requestAccessForEntityType$completionHandler$(
     Pointer<CNXPCDataMapper> _self,
     int arg, {
-    @required Pointer<Void> completionHandler,
+    @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_Int64_p_returns_void(
@@ -36442,7 +36521,7 @@ class CNXPCDataMapper extends Struct<CNXPCDataMapper> {
   static int requestAccessForEntityType$error$(
     Pointer<CNXPCDataMapper> _self,
     int arg, {
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_Int64_p_returns_Int8(
@@ -36453,10 +36532,10 @@ class CNXPCDataMapper extends Struct<CNXPCDataMapper> {
     );
   }
 
-  static Pointer<Void> serverSearchContainersMatchingPredicate(
+  static Pointer serverSearchContainersMatchingPredicate(
     Pointer<CNXPCDataMapper> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -36467,7 +36546,7 @@ class CNXPCDataMapper extends Struct<CNXPCDataMapper> {
     );
   }
 
-  static Pointer<Void> serviceProxy(
+  static Pointer serviceProxy(
     Pointer<CNXPCDataMapper> _self,
   ) {
     _openDynamicLibrary();
@@ -36479,10 +36558,10 @@ class CNXPCDataMapper extends Struct<CNXPCDataMapper> {
 
   static int setBestMeIfNeededForGivenName(
     Pointer<CNXPCDataMapper> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> familyName,
-    @required Pointer<Void> email,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer familyName,
+    @required Pointer email,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_returns_Int8(
@@ -36498,7 +36577,7 @@ class CNXPCDataMapper extends Struct<CNXPCDataMapper> {
 
   static void setConnection(
     Pointer<CNXPCDataMapper> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -36510,7 +36589,7 @@ class CNXPCDataMapper extends Struct<CNXPCDataMapper> {
 
   static void setLogger(
     Pointer<CNXPCDataMapper> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -36522,8 +36601,8 @@ class CNXPCDataMapper extends Struct<CNXPCDataMapper> {
 
   static int setMeContact$error$(
     Pointer<CNXPCDataMapper> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -36536,9 +36615,9 @@ class CNXPCDataMapper extends Struct<CNXPCDataMapper> {
 
   static int setMeContact$forContainer$error$(
     Pointer<CNXPCDataMapper> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> forContainer,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer forContainer,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_Int8(
@@ -36552,7 +36631,7 @@ class CNXPCDataMapper extends Struct<CNXPCDataMapper> {
 
   static void setServiceProxy(
     Pointer<CNXPCDataMapper> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -36562,10 +36641,10 @@ class CNXPCDataMapper extends Struct<CNXPCDataMapper> {
     );
   }
 
-  static Pointer<Void> subgroupsOfGroupWithIdentifier(
+  static Pointer subgroupsOfGroupWithIdentifier(
     Pointer<CNXPCDataMapper> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -36576,9 +36655,9 @@ class CNXPCDataMapper extends Struct<CNXPCDataMapper> {
     );
   }
 
-  static Pointer<Void> unifiedContactCountWithError(
+  static Pointer unifiedContactCountWithError(
     Pointer<CNXPCDataMapper> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -36590,8 +36669,8 @@ class CNXPCDataMapper extends Struct<CNXPCDataMapper> {
 
   static int unregisterChangeHistoryClientIdentifier(
     Pointer<CNXPCDataMapper> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -36602,9 +36681,9 @@ class CNXPCDataMapper extends Struct<CNXPCDataMapper> {
     );
   }
 
-  static Pointer<Void> userActivityUserInfoForContact(
+  static Pointer userActivityUserInfoForContact(
     Pointer<CNXPCDataMapper> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -36614,9 +36693,9 @@ class CNXPCDataMapper extends Struct<CNXPCDataMapper> {
     );
   }
 
-  static Pointer<Void> verifyIndexWithError(
+  static Pointer verifyIndexWithError(
     Pointer<CNXPCDataMapper> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -36628,9 +36707,9 @@ class CNXPCDataMapper extends Struct<CNXPCDataMapper> {
 
   static int writeFavoritesPropertyListData(
     Pointer<CNXPCDataMapper> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toPath,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer toPath,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_Int8(
@@ -36643,11 +36722,9 @@ class CNXPCDataMapper extends Struct<CNXPCDataMapper> {
   }
 }
 
-/// Objective-C class _CNXPCDataMapperProgressiveHandler_.
+/// Automatically generated API. Part of [Contacts](https://developer.apple.com/documentation/contacts?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/contacts?language=objc).
 @unsized
 class CNXPCDataMapperProgressiveHandler
     extends Struct<CNXPCDataMapperProgressiveHandler> {
@@ -36663,7 +36740,7 @@ class CNXPCDataMapperProgressiveHandler
 
   static void completedWithError(
     Pointer<CNXPCDataMapperProgressiveHandler> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -36673,10 +36750,10 @@ class CNXPCDataMapperProgressiveHandler
     );
   }
 
-  static Pointer<Void> initWithProgressBlock(
+  static Pointer initWithProgressBlock(
     Pointer<CNXPCDataMapperProgressiveHandler> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> completionBlock,
+    Pointer arg, {
+    @required Pointer completionBlock,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -36689,8 +36766,8 @@ class CNXPCDataMapperProgressiveHandler
 
   static void receiveProgressiveContacts(
     Pointer<CNXPCDataMapperProgressiveHandler> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> matchInfos,
+    Pointer arg, {
+    @required Pointer matchInfos,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -36840,6 +36917,14 @@ typedef _call_objc_p_p_Int8_Int8_Int8_returns_p_Dart = Pointer Function(
     int canDeleteContacts,
     int canCreateGroups);
 
+final _call_objc_p_p_Int8_Int8_returns_p = _objc.dlForObjectiveC.lookupFunction<
+    _call_objc_p_p_Int8_Int8_returns_p_C,
+    _call_objc_p_p_Int8_Int8_returns_p_Dart>("objc_msgSend");
+typedef _call_objc_p_p_Int8_Int8_returns_p_C = Pointer Function(
+    Pointer _arg0, Pointer _arg1, Int8 arg, Int8 showName);
+typedef _call_objc_p_p_Int8_Int8_returns_p_Dart = Pointer Function(
+    Pointer _arg0, Pointer _arg1, int arg, int showName);
+
 final _call_objc_p_p_Int8_float64_returns_void = _objc.dlForObjectiveC
     .lookupFunction<_call_objc_p_p_Int8_float64_returns_void_C,
         _call_objc_p_p_Int8_float64_returns_void_Dart>("objc_msgSend");
@@ -36863,6 +36948,14 @@ typedef _call_objc_p_p_Int8_p_p_returns_void_Dart = void Function(
     int arg,
     Pointer fromContactStore,
     Pointer requestIdentifier);
+
+final _call_objc_p_p_Int8_returns_p = _objc.dlForObjectiveC.lookupFunction<
+    _call_objc_p_p_Int8_returns_p_C,
+    _call_objc_p_p_Int8_returns_p_Dart>("objc_msgSend");
+typedef _call_objc_p_p_Int8_returns_p_C = Pointer Function(
+    Pointer _arg0, Pointer _arg1, Int8 arg);
+typedef _call_objc_p_p_Int8_returns_p_Dart = Pointer Function(
+    Pointer _arg0, Pointer _arg1, int arg);
 
 final _call_objc_p_p_Int8_returns_void = _objc.dlForObjectiveC.lookupFunction<
     _call_objc_p_p_Int8_returns_void_C,

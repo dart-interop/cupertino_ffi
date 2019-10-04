@@ -318,7 +318,7 @@ String _typeFromEncoded(String className, String methodName, int parameter,
     );
   }
   switch (type) {
-// Special
+    // Special
     case "@": // any object
       return "*void";
     case "@?": // ?
@@ -333,10 +333,8 @@ String _typeFromEncoded(String className, String methodName, int parameter,
       return "*Utf8";
     case "B": // Block
       return "*void";
-    case "A": // ?
-      return "void";
 
-// Signed integer types
+    // Signed integer types
     case "c":
       return "Int8";
     case "s":
@@ -346,7 +344,7 @@ String _typeFromEncoded(String className, String methodName, int parameter,
     case "q":
       return "Int64";
 
-// Unsigned integer types
+    // Unsigned integer types
     case "C":
       return "Uint8";
     case "S":
@@ -356,13 +354,13 @@ String _typeFromEncoded(String className, String methodName, int parameter,
     case "Q":
       return "Uint64";
 
-// Other integer types
+    // Other integer types
     case "l":
       return "Int32";
     case "L":
       return "Int32";
 
-// Floating-point types
+    // Floating-point types
     case "f":
       return "float32";
     case "d":
@@ -372,7 +370,7 @@ String _typeFromEncoded(String className, String methodName, int parameter,
     case "D":
       return "float64";
 
-// Bitfields
+    // Bitfields
     case "0":
       return "Uint8";
     case "1":
@@ -394,7 +392,15 @@ String _typeFromEncoded(String className, String methodName, int parameter,
     case "9":
       return "Uint8";
 
-// Unknown
+    // Unknown
+    // TODO: Find documentation or skip methods that contain these
+
+    case "A": // ?
+      return "void";
+    case "R":
+      return "*void";
+    case "T":
+      return "*void";
     case "*r":
       return "*void";
     case "?":

@@ -1,4 +1,4 @@
-/// [Vision](https://developer.apple.com/documentation/vision?language=objc) (Objective-C library).
+/// Automatically generated API for [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 library cupertino_ffi.vision;
@@ -7,6 +7,8 @@ import 'dart:ffi';
 import 'package:ffi/ffi.dart';
 import 'package:meta/meta.dart';
 import 'package:cupertino_ffi/objective_c.dart' as _objc;
+export 'package:cupertino_ffi/core_foundation.dart'
+    show arcPush, arcPop, arcReturn, arcFieldGet, arcFieldSet;
 
 bool _isDynamicLibraryOpened = false;
 
@@ -19,11 +21,9 @@ void _openDynamicLibrary() {
   }
 }
 
-/// Objective-C class _ANFDDetectedObject_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class ANFDDetectedObject extends Struct<ANFDDetectedObject> {
   factory ANFDDetectedObject._() {
@@ -79,11 +79,9 @@ class ANFDDetectedObject extends Struct<ANFDDetectedObject> {
   }
 }
 
-/// Objective-C class _BurstActionClassifier_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class BurstActionClassifier extends Struct<BurstActionClassifier> {
   factory BurstActionClassifier._() {
@@ -98,7 +96,7 @@ class BurstActionClassifier extends Struct<BurstActionClassifier> {
 
   static double computeKernelValueWithSupportVector(
     Pointer<BurstActionClassifier> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_float64(
@@ -108,7 +106,7 @@ class BurstActionClassifier extends Struct<BurstActionClassifier> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<BurstActionClassifier> _self,
   ) {
     _openDynamicLibrary();
@@ -118,7 +116,7 @@ class BurstActionClassifier extends Struct<BurstActionClassifier> {
     );
   }
 
-  static Pointer<Void> initWithVersion(
+  static Pointer initWithVersion(
     Pointer<BurstActionClassifier> _self,
     int arg,
   ) {
@@ -162,7 +160,7 @@ class BurstActionClassifier extends Struct<BurstActionClassifier> {
 
   static void setSvmParameters(
     Pointer<BurstActionClassifier> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -293,7 +291,7 @@ class BurstActionClassifier extends Struct<BurstActionClassifier> {
     );
   }
 
-  static Pointer<Pointer<Void>> svmParameters(
+  static Pointer<Pointer> svmParameters(
     Pointer<BurstActionClassifier> _self,
   ) {
     _openDynamicLibrary();
@@ -404,11 +402,9 @@ class BurstActionClassifier extends Struct<BurstActionClassifier> {
   }
 }
 
-/// Objective-C class _BurstClusterDivider_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class BurstClusterDivider extends Struct<BurstClusterDivider> {
   factory BurstClusterDivider._() {
@@ -431,7 +427,7 @@ class BurstClusterDivider extends Struct<BurstClusterDivider> {
 
   static int compareActionAmounts(
     Pointer<BurstClusterDivider> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int64(
@@ -443,7 +439,7 @@ class BurstClusterDivider extends Struct<BurstClusterDivider> {
 
   static int compareDividers(
     Pointer<BurstClusterDivider> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int64(
@@ -455,7 +451,7 @@ class BurstClusterDivider extends Struct<BurstClusterDivider> {
 
   static int compareIndices(
     Pointer<BurstClusterDivider> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int64(
@@ -588,11 +584,9 @@ class BurstClusterDivider extends Struct<BurstClusterDivider> {
   }
 }
 
-/// Objective-C class _BurstFaceConfigEntry_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class BurstFaceConfigEntry extends Struct<BurstFaceConfigEntry> {
   factory BurstFaceConfigEntry._() {
@@ -613,7 +607,7 @@ class BurstFaceConfigEntry extends Struct<BurstFaceConfigEntry> {
     );
   }
 
-  static Pointer<Void> faceRect(
+  static Pointer faceRect(
     Pointer<BurstFaceConfigEntry> _self,
   ) {
     _openDynamicLibrary();
@@ -633,9 +627,9 @@ class BurstFaceConfigEntry extends Struct<BurstFaceConfigEntry> {
     );
   }
 
-  static Pointer<Void> initWithRect(
+  static Pointer initWithRect(
     Pointer<BurstFaceConfigEntry> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int withFaceId,
   }) {
     _openDynamicLibrary();
@@ -661,7 +655,7 @@ class BurstFaceConfigEntry extends Struct<BurstFaceConfigEntry> {
 
   static void setFaceRect(
     Pointer<BurstFaceConfigEntry> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -684,11 +678,9 @@ class BurstFaceConfigEntry extends Struct<BurstFaceConfigEntry> {
   }
 }
 
-/// Objective-C class _BurstFaceInfo_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class BurstFaceInfo extends Struct<BurstFaceInfo> {
   factory BurstFaceInfo._() {
@@ -699,7 +691,7 @@ class BurstFaceInfo extends Struct<BurstFaceInfo> {
     return _objc.allocate("BurstFaceInfo").cast<BurstFaceInfo>();
   }
 
-  static Pointer<Void> hwCenter(
+  static Pointer hwCenter(
     Pointer<BurstFaceInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -719,7 +711,7 @@ class BurstFaceInfo extends Struct<BurstFaceInfo> {
     );
   }
 
-  static Pointer<Void> hwFaceRect(
+  static Pointer hwFaceRect(
     Pointer<BurstFaceInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -739,7 +731,7 @@ class BurstFaceInfo extends Struct<BurstFaceInfo> {
     );
   }
 
-  static Pointer<Void> hwSize(
+  static Pointer hwSize(
     Pointer<BurstFaceInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -749,7 +741,7 @@ class BurstFaceInfo extends Struct<BurstFaceInfo> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<BurstFaceInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -761,7 +753,7 @@ class BurstFaceInfo extends Struct<BurstFaceInfo> {
 
   static double overlapWithHwRect(
     Pointer<BurstFaceInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_float32(
@@ -773,7 +765,7 @@ class BurstFaceInfo extends Struct<BurstFaceInfo> {
 
   static double overlapWithSwRect(
     Pointer<BurstFaceInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_float32(
@@ -785,7 +777,7 @@ class BurstFaceInfo extends Struct<BurstFaceInfo> {
 
   static void setHwCenter(
     Pointer<BurstFaceInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -821,7 +813,7 @@ class BurstFaceInfo extends Struct<BurstFaceInfo> {
 
   static void setHwSize(
     Pointer<BurstFaceInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -833,7 +825,7 @@ class BurstFaceInfo extends Struct<BurstFaceInfo> {
 
   static void setSwCenter(
     Pointer<BurstFaceInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -869,7 +861,7 @@ class BurstFaceInfo extends Struct<BurstFaceInfo> {
 
   static void setSwSize(
     Pointer<BurstFaceInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -879,7 +871,7 @@ class BurstFaceInfo extends Struct<BurstFaceInfo> {
     );
   }
 
-  static Pointer<Void> swCenter(
+  static Pointer swCenter(
     Pointer<BurstFaceInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -899,7 +891,7 @@ class BurstFaceInfo extends Struct<BurstFaceInfo> {
     );
   }
 
-  static Pointer<Void> swFaceRect(
+  static Pointer swFaceRect(
     Pointer<BurstFaceInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -919,7 +911,7 @@ class BurstFaceInfo extends Struct<BurstFaceInfo> {
     );
   }
 
-  static Pointer<Void> swSize(
+  static Pointer swSize(
     Pointer<BurstFaceInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -930,11 +922,9 @@ class BurstFaceInfo extends Struct<BurstFaceInfo> {
   }
 }
 
-/// Objective-C class _BurstFaceScoreEntry_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class BurstFaceScoreEntry extends Struct<BurstFaceScoreEntry> {
   factory BurstFaceScoreEntry._() {
@@ -977,7 +967,7 @@ class BurstFaceScoreEntry extends Struct<BurstFaceScoreEntry> {
     );
   }
 
-  static Pointer<Void> initWithScore(
+  static Pointer initWithScore(
     Pointer<BurstFaceScoreEntry> _self,
     double arg,
   ) {
@@ -1056,11 +1046,9 @@ class BurstFaceScoreEntry extends Struct<BurstFaceScoreEntry> {
   }
 }
 
-/// Objective-C class _BurstFaceStat_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class BurstFaceStat extends Struct<BurstFaceStat> {
   factory BurstFaceStat._() {
@@ -1101,7 +1089,7 @@ class BurstFaceStat extends Struct<BurstFaceStat> {
     );
   }
 
-  static Pointer<Void> FCRSmileAndBlinkFeatures(
+  static Pointer FCRSmileAndBlinkFeatures(
     Pointer<BurstFaceStat> _self,
   ) {
     _openDynamicLibrary();
@@ -1131,9 +1119,9 @@ class BurstFaceStat extends Struct<BurstFaceStat> {
     );
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<BurstFaceStat> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -1153,7 +1141,7 @@ class BurstFaceStat extends Struct<BurstFaceStat> {
     );
   }
 
-  static Pointer<Void> faceRect(
+  static Pointer faceRect(
     Pointer<BurstFaceStat> _self,
   ) {
     _openDynamicLibrary();
@@ -1263,7 +1251,7 @@ class BurstFaceStat extends Struct<BurstFaceStat> {
     );
   }
 
-  static Pointer<Void> hwFaceRect(
+  static Pointer hwFaceRect(
     Pointer<BurstFaceStat> _self,
   ) {
     _openDynamicLibrary();
@@ -1273,9 +1261,9 @@ class BurstFaceStat extends Struct<BurstFaceStat> {
     );
   }
 
-  static Pointer<Void> initWithFaceStat(
+  static Pointer initWithFaceStat(
     Pointer<BurstFaceStat> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -1315,7 +1303,7 @@ class BurstFaceStat extends Struct<BurstFaceStat> {
     );
   }
 
-  static Pointer<Void> leftEyeRect(
+  static Pointer leftEyeRect(
     Pointer<BurstFaceStat> _self,
   ) {
     _openDynamicLibrary();
@@ -1325,7 +1313,7 @@ class BurstFaceStat extends Struct<BurstFaceStat> {
     );
   }
 
-  static Pointer<Void> normalizedFaceRect(
+  static Pointer normalizedFaceRect(
     Pointer<BurstFaceStat> _self,
   ) {
     _openDynamicLibrary();
@@ -1385,7 +1373,7 @@ class BurstFaceStat extends Struct<BurstFaceStat> {
     );
   }
 
-  static Pointer<Void> rightEyeRect(
+  static Pointer rightEyeRect(
     Pointer<BurstFaceStat> _self,
   ) {
     _openDynamicLibrary();
@@ -1443,7 +1431,7 @@ class BurstFaceStat extends Struct<BurstFaceStat> {
 
   static void setFCRSmileAndBlinkFeatures(
     Pointer<BurstFaceStat> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -1491,7 +1479,7 @@ class BurstFaceStat extends Struct<BurstFaceStat> {
 
   static void setFaceRect(
     Pointer<BurstFaceStat> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -1623,7 +1611,7 @@ class BurstFaceStat extends Struct<BurstFaceStat> {
 
   static void setHwFaceRect(
     Pointer<BurstFaceStat> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -1671,7 +1659,7 @@ class BurstFaceStat extends Struct<BurstFaceStat> {
 
   static void setLeftEyeRect(
     Pointer<BurstFaceStat> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -1683,7 +1671,7 @@ class BurstFaceStat extends Struct<BurstFaceStat> {
 
   static void setNormalizedFaceRect(
     Pointer<BurstFaceStat> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -1755,7 +1743,7 @@ class BurstFaceStat extends Struct<BurstFaceStat> {
 
   static void setRightEyeRect(
     Pointer<BurstFaceStat> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -1888,11 +1876,9 @@ class BurstFaceStat extends Struct<BurstFaceStat> {
   }
 }
 
-/// Objective-C class _BurstImageFaceAnalysisContext_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class BurstImageFaceAnalysisContext
     extends Struct<BurstImageFaceAnalysisContext> {
@@ -1908,7 +1894,7 @@ class BurstImageFaceAnalysisContext
 
   static void addFaceToArray(
     Pointer<BurstImageFaceAnalysisContext> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -1920,8 +1906,8 @@ class BurstImageFaceAnalysisContext
 
   static void addFacesToImageStat(
     Pointer<BurstImageFaceAnalysisContext> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> imageSize,
+    Pointer arg, {
+    @required Pointer imageSize,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -1934,7 +1920,7 @@ class BurstImageFaceAnalysisContext
 
   static void adjustFaceIdsForImageStat(
     Pointer<BurstImageFaceAnalysisContext> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -1946,7 +1932,7 @@ class BurstImageFaceAnalysisContext
 
   static void calcFaceScores(
     Pointer<BurstImageFaceAnalysisContext> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -1956,10 +1942,10 @@ class BurstImageFaceAnalysisContext
     );
   }
 
-  static Pointer<Void> calculateFaceCoreROI(
+  static Pointer calculateFaceCoreROI(
     Pointer<BurstImageFaceAnalysisContext> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> imageStat,
+    Pointer arg, {
+    @required Pointer imageStat,
     @required Pointer<Int8> needSWFaceDetection,
   }) {
     _openDynamicLibrary();
@@ -1974,8 +1960,8 @@ class BurstImageFaceAnalysisContext
 
   static void calculateFaceFocusInImage(
     Pointer<BurstImageFaceAnalysisContext> _self,
-    Pointer<Pointer<Void>> arg, {
-    @required Pointer<Void> imageStat,
+    Pointer<Pointer> arg, {
+    @required Pointer imageStat,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -1986,7 +1972,7 @@ class BurstImageFaceAnalysisContext
     );
   }
 
-  static Pointer<Void> curConfig(
+  static Pointer curConfig(
     Pointer<BurstImageFaceAnalysisContext> _self,
   ) {
     _openDynamicLibrary();
@@ -2008,7 +1994,7 @@ class BurstImageFaceAnalysisContext
 
   static void extractFacesFromMetadata(
     Pointer<BurstImageFaceAnalysisContext> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -2028,7 +2014,7 @@ class BurstImageFaceAnalysisContext
     );
   }
 
-  static Pointer<Void> faceIdMapping(
+  static Pointer faceIdMapping(
     Pointer<BurstImageFaceAnalysisContext> _self,
   ) {
     _openDynamicLibrary();
@@ -2038,7 +2024,7 @@ class BurstImageFaceAnalysisContext
     );
   }
 
-  static Pointer<Void> faceInfoArray(
+  static Pointer faceInfoArray(
     Pointer<BurstImageFaceAnalysisContext> _self,
   ) {
     _openDynamicLibrary();
@@ -2048,7 +2034,7 @@ class BurstImageFaceAnalysisContext
     );
   }
 
-  static Pointer<Void> faceTimestampArray(
+  static Pointer faceTimestampArray(
     Pointer<BurstImageFaceAnalysisContext> _self,
   ) {
     _openDynamicLibrary();
@@ -2060,8 +2046,8 @@ class BurstImageFaceAnalysisContext
 
   static int findFacesInImage(
     Pointer<BurstImageFaceAnalysisContext> _self,
-    Pointer<Pointer<Void>> arg, {
-    @required Pointer<Void> imageStat,
+    Pointer<Pointer> arg, {
+    @required Pointer imageStat,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int32(
@@ -2072,10 +2058,10 @@ class BurstImageFaceAnalysisContext
     );
   }
 
-  static Pointer<Void> findOverlappingFaceStat(
+  static Pointer findOverlappingFaceStat(
     Pointer<BurstImageFaceAnalysisContext> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> imageStat,
+    Pointer arg, {
+    @required Pointer imageStat,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -2106,9 +2092,9 @@ class BurstImageFaceAnalysisContext
     );
   }
 
-  static Pointer<Void> initWithVersion(
+  static Pointer initWithVersion(
     Pointer<BurstImageFaceAnalysisContext> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -2168,9 +2154,9 @@ class BurstImageFaceAnalysisContext
     );
   }
 
-  static Pointer<Void> padRoiRect(
+  static Pointer padRoiRect(
     Pointer<BurstImageFaceAnalysisContext> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required double paddingX,
     @required double paddingY,
   }) {
@@ -2184,7 +2170,7 @@ class BurstImageFaceAnalysisContext
     );
   }
 
-  static Pointer<Void> renameMapping(
+  static Pointer renameMapping(
     Pointer<BurstImageFaceAnalysisContext> _self,
   ) {
     _openDynamicLibrary();
@@ -2196,7 +2182,7 @@ class BurstImageFaceAnalysisContext
 
   static void setCurConfig(
     Pointer<BurstImageFaceAnalysisContext> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -2220,7 +2206,7 @@ class BurstImageFaceAnalysisContext
 
   static void setFaceIdMapping(
     Pointer<BurstImageFaceAnalysisContext> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -2232,7 +2218,7 @@ class BurstImageFaceAnalysisContext
 
   static void setFaceInfoArray(
     Pointer<BurstImageFaceAnalysisContext> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -2244,7 +2230,7 @@ class BurstImageFaceAnalysisContext
 
   static void setFaceTimestampArray(
     Pointer<BurstImageFaceAnalysisContext> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -2340,7 +2326,7 @@ class BurstImageFaceAnalysisContext
 
   static void setRenameMapping(
     Pointer<BurstImageFaceAnalysisContext> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -2417,11 +2403,9 @@ class BurstImageFaceAnalysisContext
   }
 }
 
-/// Objective-C class _BurstImageSetInternal_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class BurstImageSetInternal extends Struct<BurstImageSetInternal> {
   factory BurstImageSetInternal._() {
@@ -2434,7 +2418,7 @@ class BurstImageSetInternal extends Struct<BurstImageSetInternal> {
         .cast<BurstImageSetInternal>();
   }
 
-  static Pointer<Void> actionClassifier(
+  static Pointer actionClassifier(
     Pointer<BurstImageSetInternal> _self,
   ) {
     _openDynamicLibrary();
@@ -2446,10 +2430,10 @@ class BurstImageSetInternal extends Struct<BurstImageSetInternal> {
 
   static void addImage(
     Pointer<BurstImageSetInternal> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> properties,
-    @required Pointer<Void> identifier,
-    @required Pointer<Void> completionBlock,
+    Pointer arg, {
+    @required Pointer properties,
+    @required Pointer identifier,
+    @required Pointer completionBlock,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_returns_void(
@@ -2462,7 +2446,7 @@ class BurstImageSetInternal extends Struct<BurstImageSetInternal> {
     );
   }
 
-  static Pointer<Void> allImageClusters(
+  static Pointer allImageClusters(
     Pointer<BurstImageSetInternal> _self,
   ) {
     _openDynamicLibrary();
@@ -2472,7 +2456,7 @@ class BurstImageSetInternal extends Struct<BurstImageSetInternal> {
     );
   }
 
-  static Pointer<Void> allImageIdentifiers(
+  static Pointer allImageIdentifiers(
     Pointer<BurstImageSetInternal> _self,
   ) {
     _openDynamicLibrary();
@@ -2482,7 +2466,7 @@ class BurstImageSetInternal extends Struct<BurstImageSetInternal> {
     );
   }
 
-  static Pointer<Void> bestImageIdentifiers(
+  static Pointer bestImageIdentifiers(
     Pointer<BurstImageSetInternal> _self,
   ) {
     _openDynamicLibrary();
@@ -2492,7 +2476,7 @@ class BurstImageSetInternal extends Struct<BurstImageSetInternal> {
     );
   }
 
-  static Pointer<Void> bestImageIdentifiersArray(
+  static Pointer bestImageIdentifiersArray(
     Pointer<BurstImageSetInternal> _self,
   ) {
     _openDynamicLibrary();
@@ -2502,7 +2486,7 @@ class BurstImageSetInternal extends Struct<BurstImageSetInternal> {
     );
   }
 
-  static Pointer<Void> burstCoverSelection(
+  static Pointer burstCoverSelection(
     Pointer<BurstImageSetInternal> _self,
   ) {
     _openDynamicLibrary();
@@ -2512,7 +2496,7 @@ class BurstImageSetInternal extends Struct<BurstImageSetInternal> {
     );
   }
 
-  static Pointer<Void> burstDocumentDirectory(
+  static Pointer burstDocumentDirectory(
     Pointer<BurstImageSetInternal> _self,
   ) {
     _openDynamicLibrary();
@@ -2522,7 +2506,7 @@ class BurstImageSetInternal extends Struct<BurstImageSetInternal> {
     );
   }
 
-  static Pointer<Void> burstId(
+  static Pointer burstId(
     Pointer<BurstImageSetInternal> _self,
   ) {
     _openDynamicLibrary();
@@ -2532,7 +2516,7 @@ class BurstImageSetInternal extends Struct<BurstImageSetInternal> {
     );
   }
 
-  static Pointer<Void> burstLogFileName(
+  static Pointer burstLogFileName(
     Pointer<BurstImageSetInternal> _self,
   ) {
     _openDynamicLibrary();
@@ -2542,7 +2526,7 @@ class BurstImageSetInternal extends Struct<BurstImageSetInternal> {
     );
   }
 
-  static Pointer<Void> clusterArray(
+  static Pointer clusterArray(
     Pointer<BurstImageSetInternal> _self,
   ) {
     _openDynamicLibrary();
@@ -2552,7 +2536,7 @@ class BurstImageSetInternal extends Struct<BurstImageSetInternal> {
     );
   }
 
-  static Pointer<Void> clusterByImageIdentifier(
+  static Pointer clusterByImageIdentifier(
     Pointer<BurstImageSetInternal> _self,
   ) {
     _openDynamicLibrary();
@@ -2604,7 +2588,7 @@ class BurstImageSetInternal extends Struct<BurstImageSetInternal> {
 
   static int computeEmotion(
     Pointer<BurstImageSetInternal> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int32(
@@ -2664,7 +2648,7 @@ class BurstImageSetInternal extends Struct<BurstImageSetInternal> {
     );
   }
 
-  static Pointer<Void> faceAnalysisContext(
+  static Pointer faceAnalysisContext(
     Pointer<BurstImageSetInternal> _self,
   ) {
     _openDynamicLibrary();
@@ -2674,7 +2658,7 @@ class BurstImageSetInternal extends Struct<BurstImageSetInternal> {
     );
   }
 
-  static Pointer<Void> faceIDCounts(
+  static Pointer faceIDCounts(
     Pointer<BurstImageSetInternal> _self,
   ) {
     _openDynamicLibrary();
@@ -2684,10 +2668,10 @@ class BurstImageSetInternal extends Struct<BurstImageSetInternal> {
     );
   }
 
-  static Pointer<Void> findBestImage(
+  static Pointer findBestImage(
     Pointer<BurstImageSetInternal> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> useActionScores,
+    Pointer arg, {
+    @required Pointer useActionScores,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -2698,9 +2682,9 @@ class BurstImageSetInternal extends Struct<BurstImageSetInternal> {
     );
   }
 
-  static Pointer<Void> imageClusterForIdentifier(
+  static Pointer imageClusterForIdentifier(
     Pointer<BurstImageSetInternal> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -2710,9 +2694,9 @@ class BurstImageSetInternal extends Struct<BurstImageSetInternal> {
     );
   }
 
-  static Pointer<Void> initWithOptions(
+  static Pointer initWithOptions(
     Pointer<BurstImageSetInternal> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -2752,7 +2736,7 @@ class BurstImageSetInternal extends Struct<BurstImageSetInternal> {
     );
   }
 
-  static Pointer<Void> loggingCallback(
+  static Pointer loggingCallback(
     Pointer<BurstImageSetInternal> _self,
   ) {
     _openDynamicLibrary();
@@ -2772,7 +2756,7 @@ class BurstImageSetInternal extends Struct<BurstImageSetInternal> {
     );
   }
 
-  static Pointer<Void> overrideImage(
+  static Pointer overrideImage(
     Pointer<BurstImageSetInternal> _self,
   ) {
     _openDynamicLibrary();
@@ -2782,7 +2766,7 @@ class BurstImageSetInternal extends Struct<BurstImageSetInternal> {
     );
   }
 
-  static Pointer<Void> overrideProps(
+  static Pointer overrideProps(
     Pointer<BurstImageSetInternal> _self,
   ) {
     _openDynamicLibrary();
@@ -2794,7 +2778,7 @@ class BurstImageSetInternal extends Struct<BurstImageSetInternal> {
 
   static void performEmotionalRejectionOnCluster(
     Pointer<BurstImageSetInternal> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -2828,7 +2812,7 @@ class BurstImageSetInternal extends Struct<BurstImageSetInternal> {
 
   static void selectCoverPhotoFromMultiple(
     Pointer<BurstImageSetInternal> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int burstSize,
   }) {
     _openDynamicLibrary();
@@ -2842,7 +2826,7 @@ class BurstImageSetInternal extends Struct<BurstImageSetInternal> {
 
   static void setActionClassifier(
     Pointer<BurstImageSetInternal> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -2854,7 +2838,7 @@ class BurstImageSetInternal extends Struct<BurstImageSetInternal> {
 
   static void setAllImageIdentifiers(
     Pointer<BurstImageSetInternal> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -2866,7 +2850,7 @@ class BurstImageSetInternal extends Struct<BurstImageSetInternal> {
 
   static void setBestImageIdentifiersArray(
     Pointer<BurstImageSetInternal> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -2878,7 +2862,7 @@ class BurstImageSetInternal extends Struct<BurstImageSetInternal> {
 
   static void setBurstCoverSelection(
     Pointer<BurstImageSetInternal> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -2890,7 +2874,7 @@ class BurstImageSetInternal extends Struct<BurstImageSetInternal> {
 
   static void setBurstId(
     Pointer<BurstImageSetInternal> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -2902,7 +2886,7 @@ class BurstImageSetInternal extends Struct<BurstImageSetInternal> {
 
   static void setBurstLogFileName(
     Pointer<BurstImageSetInternal> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -2914,7 +2898,7 @@ class BurstImageSetInternal extends Struct<BurstImageSetInternal> {
 
   static void setClusterArray(
     Pointer<BurstImageSetInternal> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -2926,7 +2910,7 @@ class BurstImageSetInternal extends Struct<BurstImageSetInternal> {
 
   static void setClusterByImageIdentifier(
     Pointer<BurstImageSetInternal> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -2986,7 +2970,7 @@ class BurstImageSetInternal extends Struct<BurstImageSetInternal> {
 
   static void setFaceAnalysisContext(
     Pointer<BurstImageSetInternal> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -2998,7 +2982,7 @@ class BurstImageSetInternal extends Struct<BurstImageSetInternal> {
 
   static void setFaceIDCounts(
     Pointer<BurstImageSetInternal> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -3010,7 +2994,7 @@ class BurstImageSetInternal extends Struct<BurstImageSetInternal> {
 
   static void setLoggingCallback(
     Pointer<BurstImageSetInternal> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -3034,7 +3018,7 @@ class BurstImageSetInternal extends Struct<BurstImageSetInternal> {
 
   static void setOverrideImage(
     Pointer<BurstImageSetInternal> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -3046,7 +3030,7 @@ class BurstImageSetInternal extends Struct<BurstImageSetInternal> {
 
   static void setOverrideProps(
     Pointer<BurstImageSetInternal> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -3058,7 +3042,7 @@ class BurstImageSetInternal extends Struct<BurstImageSetInternal> {
 
   static void setStatsByImageIdentifier(
     Pointer<BurstImageSetInternal> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -3094,7 +3078,7 @@ class BurstImageSetInternal extends Struct<BurstImageSetInternal> {
 
   static void setVersionString(
     Pointer<BurstImageSetInternal> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -3104,7 +3088,7 @@ class BurstImageSetInternal extends Struct<BurstImageSetInternal> {
     );
   }
 
-  static Pointer<Void> statsByImageIdentifier(
+  static Pointer statsByImageIdentifier(
     Pointer<BurstImageSetInternal> _self,
   ) {
     _openDynamicLibrary();
@@ -3134,7 +3118,7 @@ class BurstImageSetInternal extends Struct<BurstImageSetInternal> {
     );
   }
 
-  static Pointer<Void> versionString(
+  static Pointer versionString(
     Pointer<BurstImageSetInternal> _self,
   ) {
     _openDynamicLibrary();
@@ -3145,11 +3129,9 @@ class BurstImageSetInternal extends Struct<BurstImageSetInternal> {
   }
 }
 
-/// Objective-C class _BurstImageStat_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class BurstImageStat extends Struct<BurstImageStat> {
   factory BurstImageStat._() {
@@ -3322,7 +3304,7 @@ class BurstImageStat extends Struct<BurstImageStat> {
 
   static int compareImageOrder(
     Pointer<BurstImageStat> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int64(
@@ -3334,7 +3316,7 @@ class BurstImageStat extends Struct<BurstImageStat> {
 
   static int compareImageStats(
     Pointer<BurstImageStat> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int64(
@@ -3346,7 +3328,7 @@ class BurstImageStat extends Struct<BurstImageStat> {
 
   static void computeAEMatrix(
     Pointer<BurstImageStat> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -3358,7 +3340,7 @@ class BurstImageStat extends Struct<BurstImageStat> {
 
   static double computeAEMatrixDifference(
     Pointer<BurstImageStat> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_float32(
@@ -3370,7 +3352,7 @@ class BurstImageStat extends Struct<BurstImageStat> {
 
   static void computeBlurStatsOnGrid(
     Pointer<BurstImageStat> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -3392,7 +3374,7 @@ class BurstImageStat extends Struct<BurstImageStat> {
 
   static void computeImageColorHistogram(
     Pointer<BurstImageStat> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -3404,8 +3386,8 @@ class BurstImageStat extends Struct<BurstImageStat> {
 
   static void computeImageData(
     Pointer<BurstImageStat> _self,
-    Pointer<Pointer<Void>> arg, {
-    @required Pointer<Void> faceIDCounts,
+    Pointer<Pointer> arg, {
+    @required Pointer faceIDCounts,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -3418,7 +3400,7 @@ class BurstImageStat extends Struct<BurstImageStat> {
 
   static double computeImageDistance(
     Pointer<BurstImageStat> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_float32(
@@ -3430,7 +3412,7 @@ class BurstImageStat extends Struct<BurstImageStat> {
 
   static void computeImageProjections(
     Pointer<BurstImageStat> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -3442,7 +3424,7 @@ class BurstImageStat extends Struct<BurstImageStat> {
 
   static void computeImageSharpnessOnGrid(
     Pointer<BurstImageStat> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -3486,8 +3468,8 @@ class BurstImageStat extends Struct<BurstImageStat> {
 
   static double computeSmoothedGridROI(
     Pointer<BurstImageStat> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> nextStat,
+    Pointer arg, {
+    @required Pointer nextStat,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_float32(
@@ -3538,7 +3520,7 @@ class BurstImageStat extends Struct<BurstImageStat> {
     );
   }
 
-  static Pointer<Void> faceStatArray(
+  static Pointer faceStatArray(
     Pointer<BurstImageStat> _self,
   ) {
     _openDynamicLibrary();
@@ -3548,7 +3530,7 @@ class BurstImageStat extends Struct<BurstImageStat> {
     );
   }
 
-  static Pointer<Void> facesRoiRect(
+  static Pointer facesRoiRect(
     Pointer<BurstImageStat> _self,
   ) {
     _openDynamicLibrary();
@@ -3568,7 +3550,7 @@ class BurstImageStat extends Struct<BurstImageStat> {
     );
   }
 
-  static Pointer<Void> getSharpnessAndBlurLimits(
+  static Pointer getSharpnessAndBlurLimits(
     Pointer<BurstImageStat> _self,
   ) {
     _openDynamicLibrary();
@@ -3588,7 +3570,7 @@ class BurstImageStat extends Struct<BurstImageStat> {
     );
   }
 
-  static Pointer<Void> imageId(
+  static Pointer imageId(
     Pointer<BurstImageStat> _self,
   ) {
     _openDynamicLibrary();
@@ -3608,9 +3590,9 @@ class BurstImageStat extends Struct<BurstImageStat> {
     );
   }
 
-  static Pointer<Void> initWithIdentifier(
+  static Pointer initWithIdentifier(
     Pointer<BurstImageStat> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -3662,7 +3644,7 @@ class BurstImageStat extends Struct<BurstImageStat> {
 
   static void performRegistration(
     Pointer<BurstImageStat> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required Pointer<Float> deltaCol,
     @required Pointer<Float> deltaRow,
   }) {
@@ -3742,7 +3724,7 @@ class BurstImageStat extends Struct<BurstImageStat> {
 
   static int setAEMatrix(
     Pointer<BurstImageStat> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int32(
@@ -3874,7 +3856,7 @@ class BurstImageStat extends Struct<BurstImageStat> {
 
   static void setFaceStatArray(
     Pointer<BurstImageStat> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -3886,7 +3868,7 @@ class BurstImageStat extends Struct<BurstImageStat> {
 
   static void setFacesRoiRect(
     Pointer<BurstImageStat> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -3910,7 +3892,7 @@ class BurstImageStat extends Struct<BurstImageStat> {
 
   static void setImageId(
     Pointer<BurstImageStat> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -4152,7 +4134,7 @@ class BurstImageStat extends Struct<BurstImageStat> {
 
   static void updateROI(
     Pointer<BurstImageStat> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -4174,7 +4156,7 @@ class BurstImageStat extends Struct<BurstImageStat> {
 
   static void writeGridROI(
     Pointer<BurstImageStat> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -4185,11 +4167,9 @@ class BurstImageStat extends Struct<BurstImageStat> {
   }
 }
 
-/// Objective-C class _BurstThumbnailCluster_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class BurstThumbnailCluster extends Struct<BurstThumbnailCluster> {
   factory BurstThumbnailCluster._() {
@@ -4204,7 +4184,7 @@ class BurstThumbnailCluster extends Struct<BurstThumbnailCluster> {
 
   static void addItemsFromCluster(
     Pointer<BurstThumbnailCluster> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -4214,7 +4194,7 @@ class BurstThumbnailCluster extends Struct<BurstThumbnailCluster> {
     );
   }
 
-  static Pointer<Void> burstImages(
+  static Pointer burstImages(
     Pointer<BurstThumbnailCluster> _self,
   ) {
     _openDynamicLibrary();
@@ -4224,7 +4204,7 @@ class BurstThumbnailCluster extends Struct<BurstThumbnailCluster> {
     );
   }
 
-  static Pointer<Void> completionBlock(
+  static Pointer completionBlock(
     Pointer<BurstThumbnailCluster> _self,
   ) {
     _openDynamicLibrary();
@@ -4236,7 +4216,7 @@ class BurstThumbnailCluster extends Struct<BurstThumbnailCluster> {
 
   static double computeMergeCost(
     Pointer<BurstThumbnailCluster> _self,
-    Pointer<Void> _arg2,
+    Pointer _arg2,
     Pointer<Int32> _arg3,
     int _arg4,
   ) {
@@ -4260,7 +4240,7 @@ class BurstThumbnailCluster extends Struct<BurstThumbnailCluster> {
     );
   }
 
-  static Pointer<Pointer<Void>> imagePixelBuffer(
+  static Pointer<Pointer> imagePixelBuffer(
     Pointer<BurstThumbnailCluster> _self,
   ) {
     _openDynamicLibrary();
@@ -4270,7 +4250,7 @@ class BurstThumbnailCluster extends Struct<BurstThumbnailCluster> {
     );
   }
 
-  static Pointer<Void> imageProps(
+  static Pointer imageProps(
     Pointer<BurstThumbnailCluster> _self,
   ) {
     _openDynamicLibrary();
@@ -4280,7 +4260,7 @@ class BurstThumbnailCluster extends Struct<BurstThumbnailCluster> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<BurstThumbnailCluster> _self,
   ) {
     _openDynamicLibrary();
@@ -4290,13 +4270,13 @@ class BurstThumbnailCluster extends Struct<BurstThumbnailCluster> {
     );
   }
 
-  static Pointer<Void> initWithImageData(
+  static Pointer initWithImageData(
     Pointer<BurstThumbnailCluster> _self,
-    Pointer<Pointer<Void>> arg, {
-    @required Pointer<Void> dict,
-    @required Pointer<Void> identifier,
-    @required Pointer<Void> imageProps,
-    @required Pointer<Void> completionBlock,
+    Pointer<Pointer> arg, {
+    @required Pointer dict,
+    @required Pointer identifier,
+    @required Pointer imageProps,
+    @required Pointer completionBlock,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_p_returns_p(
@@ -4313,7 +4293,7 @@ class BurstThumbnailCluster extends Struct<BurstThumbnailCluster> {
 
   static void setBurstImages(
     Pointer<BurstThumbnailCluster> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -4325,7 +4305,7 @@ class BurstThumbnailCluster extends Struct<BurstThumbnailCluster> {
 
   static void setCompletionBlock(
     Pointer<BurstThumbnailCluster> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -4337,7 +4317,7 @@ class BurstThumbnailCluster extends Struct<BurstThumbnailCluster> {
 
   static void setImagePixelBuffer(
     Pointer<BurstThumbnailCluster> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -4349,7 +4329,7 @@ class BurstThumbnailCluster extends Struct<BurstThumbnailCluster> {
 
   static void setImageProps(
     Pointer<BurstThumbnailCluster> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -4360,11 +4340,9 @@ class BurstThumbnailCluster extends Struct<BurstThumbnailCluster> {
   }
 }
 
-/// Objective-C class _CCCharBoxContext_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class CCCharBoxContext extends Struct<CCCharBoxContext> {
   factory CCCharBoxContext._() {
@@ -4916,11 +4894,9 @@ class CCCharBoxContext extends Struct<CCCharBoxContext> {
   }
 }
 
-/// Objective-C class _CCTextDetector_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class CCTextDetector extends Struct<CCTextDetector> {
   factory CCTextDetector._() {
@@ -4933,7 +4909,7 @@ class CCTextDetector extends Struct<CCTextDetector> {
 
   static int allocateColorProfileContext(
     Pointer<CCTextDetector> _self,
-    Pointer<Pointer<Void>> arg, {
+    Pointer<Pointer> arg, {
     @required int width,
     @required int height,
     @required int rowBytes,
@@ -4951,7 +4927,7 @@ class CCTextDetector extends Struct<CCTextDetector> {
 
   static void calculateSumProd(
     Pointer<CCTextDetector> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required Pointer<Float> prodROIRef,
     @required Pointer<Float> prodROIRotateRef,
     @required int rowStartLocation2,
@@ -4972,7 +4948,7 @@ class CCTextDetector extends Struct<CCTextDetector> {
 
   static void calculateSumProdAlternative(
     Pointer<CCTextDetector> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required Pointer<Float> prodROIRef,
     @required Pointer<Float> prodROIRotateRef,
     @required int rowStartLocation2,
@@ -4991,7 +4967,7 @@ class CCTextDetector extends Struct<CCTextDetector> {
     );
   }
 
-  static Pointer<Void> charBoxContext(
+  static Pointer charBoxContext(
     Pointer<CCTextDetector> _self,
   ) {
     _openDynamicLibrary();
@@ -5003,8 +4979,8 @@ class CCTextDetector extends Struct<CCTextDetector> {
 
   static int charBoxesFromTextBoxes(
     Pointer<CCTextDetector> _self,
-    Pointer<Pointer<Void>> arg, {
-    @required Pointer<Pointer<Void>> bigBoxes,
+    Pointer<Pointer> arg, {
+    @required Pointer<Pointer> bigBoxes,
     @required Pointer<Uint16> ccYTopLocationsForSort,
     @required Pointer<Uint16> ccYBottomLocationsForSort,
   }) {
@@ -5022,7 +4998,7 @@ class CCTextDetector extends Struct<CCTextDetector> {
 
   static int computeDependentTopAndBottomComponents(
     Pointer<CCTextDetector> _self,
-    Pointer<Pointer<Void>> arg, {
+    Pointer<Pointer> arg, {
     @required Pointer<Uint64> finalCharBoxCoordCount,
   }) {
     _openDynamicLibrary();
@@ -5037,7 +5013,7 @@ class CCTextDetector extends Struct<CCTextDetector> {
 
   static void computeIndependentTopAndBottomComponents(
     Pointer<CCTextDetector> _self,
-    Pointer<Pointer<Void>> arg, {
+    Pointer<Pointer> arg, {
     @required Pointer<Uint64> finalCharBoxCoordCount,
   }) {
     _openDynamicLibrary();
@@ -5052,7 +5028,7 @@ class CCTextDetector extends Struct<CCTextDetector> {
 
   static int computeMainStub(
     Pointer<CCTextDetector> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int numCropRows,
     @required Pointer<Uint16> numCropColsOut,
     @required double maxY,
@@ -5124,8 +5100,8 @@ class CCTextDetector extends Struct<CCTextDetector> {
 
   static double createLumaImage(
     Pointer<CCTextDetector> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> lumaImage,
+    Pointer arg, {
+    @required Pointer lumaImage,
     @required int numCropRows,
     @required int rowStartLocation,
   }) {
@@ -5143,8 +5119,8 @@ class CCTextDetector extends Struct<CCTextDetector> {
 
   static double createLumaImageAlternative(
     Pointer<CCTextDetector> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> lumaImageAlternative,
+    Pointer arg, {
+    @required Pointer lumaImageAlternative,
     @required int numCropRows,
     @required int rowStartLocation,
   }) {
@@ -5170,7 +5146,7 @@ class CCTextDetector extends Struct<CCTextDetector> {
     );
   }
 
-  static Pointer<Void> debugFilename(
+  static Pointer debugFilename(
     Pointer<CCTextDetector> _self,
   ) {
     _openDynamicLibrary();
@@ -5202,7 +5178,7 @@ class CCTextDetector extends Struct<CCTextDetector> {
 
   static void determineColorProfileType(
     Pointer<CCTextDetector> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -5216,10 +5192,10 @@ class CCTextDetector extends Struct<CCTextDetector> {
     Pointer<CCTextDetector> _self,
     int arg, {
     @required Pointer<Float> prodBoostNormalized,
-    @required Pointer<Pointer<Void>> pwContext,
+    @required Pointer<Pointer> pwContext,
     @required int minHeight,
     @required int maxHeight,
-    @required Pointer<Void> thresholdSet,
+    @required Pointer thresholdSet,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_Uint16_p_p_Uint8_Uint8_p_returns_void(
@@ -5237,16 +5213,16 @@ class CCTextDetector extends Struct<CCTextDetector> {
 
   static int extractBoxesForStub(
     Pointer<CCTextDetector> _self,
-    Pointer<Pointer<Void>> arg, {
-    @required Pointer<Pointer<Void>> bigBoxesAdapt,
+    Pointer<Pointer> arg, {
+    @required Pointer<Pointer> bigBoxesAdapt,
     @required int countBigBox,
     @required int rowStartLocation2,
     @required int rowStopLocation2,
     @required int heightConstraint,
     @required int imageWidth,
     @required int height,
-    @required Pointer<Pointer<Void>> ccCharBoxesAggr,
-    @required Pointer<Pointer<Void>> ccCharBoxesFiltered,
+    @required Pointer<Pointer> ccCharBoxesAggr,
+    @required Pointer<Pointer> ccCharBoxesFiltered,
     @required int useLowLightEnhancement,
   }) {
     _openDynamicLibrary();
@@ -5270,8 +5246,8 @@ class CCTextDetector extends Struct<CCTextDetector> {
 
   static void extractCharBoxHeightInfo(
     Pointer<CCTextDetector> _self,
-    Pointer<Pointer<Void>> arg, {
-    @required Pointer<Pointer<Void>> ccCharBoxesFiltered,
+    Pointer<Pointer> arg, {
+    @required Pointer<Pointer> ccCharBoxesFiltered,
     @required Pointer<Uint16> ccYTopLocationsForSort,
     @required Pointer<Uint16> ccYBottomLocationsForSort,
     @required int aggregateGreenBoxesForStubCount,
@@ -5293,7 +5269,7 @@ class CCTextDetector extends Struct<CCTextDetector> {
 
   static void fillInOneVector(
     Pointer<CCTextDetector> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int checkFlag,
     @required int checkHeight,
   }) {
@@ -5309,7 +5285,7 @@ class CCTextDetector extends Struct<CCTextDetector> {
 
   static void freeColorProfileContext(
     Pointer<CCTextDetector> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -5342,12 +5318,12 @@ class CCTextDetector extends Struct<CCTextDetector> {
 
   static int generateHistogramBounds(
     Pointer<CCTextDetector> _self,
-    Pointer<Pointer<Void>> arg, {
-    @required Pointer<Pointer<Void>> rgbVector2Ref,
+    Pointer<Pointer> arg, {
+    @required Pointer<Pointer> rgbVector2Ref,
     @required int numPixels1,
     @required int numPixels2,
-    @required Pointer<Pointer<Void>> minMaxRGB,
-    @required Pointer<Pointer<Void>> lowHighRGB,
+    @required Pointer<Pointer> minMaxRGB,
+    @required Pointer<Pointer> lowHighRGB,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_Uint32_Uint32_p_p_returns_Int32(
@@ -5368,7 +5344,7 @@ class CCTextDetector extends Struct<CCTextDetector> {
     int arg, {
     @required int minHeight,
     @required int maxHeight,
-    @required Pointer<Void> thresholdSet,
+    @required Pointer thresholdSet,
     @required Pointer<Float> prodBoostNormalized,
     @required int pulseVectorFlag,
   }) {
@@ -5388,9 +5364,9 @@ class CCTextDetector extends Struct<CCTextDetector> {
 
   static void getLumaHistogram(
     Pointer<CCTextDetector> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int startCC,
-    @required Pointer<Pointer<Void>> colorProfileContext,
+    @required Pointer<Pointer> colorProfileContext,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_Uint16_p_returns_void(
@@ -5404,8 +5380,8 @@ class CCTextDetector extends Struct<CCTextDetector> {
 
   static void getVotingHistogram(
     Pointer<CCTextDetector> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> colorProfileContext,
+    Pointer arg, {
+    @required Pointer<Pointer> colorProfileContext,
     @required int startCC,
     @required int rowStartLocation,
   }) {
@@ -5423,7 +5399,7 @@ class CCTextDetector extends Struct<CCTextDetector> {
 
   static void groupEndpoints(
     Pointer<CCTextDetector> _self,
-    Pointer<Pointer<Void>> arg, {
+    Pointer<Pointer> arg, {
     @required Pointer<Uint64> finalCharBoxCoordCount,
   }) {
     _openDynamicLibrary();
@@ -5445,9 +5421,9 @@ class CCTextDetector extends Struct<CCTextDetector> {
     );
   }
 
-  static Pointer<Void> initWithOptions(
+  static Pointer initWithOptions(
     Pointer<CCTextDetector> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -5459,7 +5435,7 @@ class CCTextDetector extends Struct<CCTextDetector> {
 
   static void initializeForImage(
     Pointer<CCTextDetector> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -5571,7 +5547,7 @@ class CCTextDetector extends Struct<CCTextDetector> {
 
   static void setCharBoxContext(
     Pointer<CCTextDetector> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -5595,7 +5571,7 @@ class CCTextDetector extends Struct<CCTextDetector> {
 
   static void setDebugFilename(
     Pointer<CCTextDetector> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -5893,10 +5869,10 @@ class CCTextDetector extends Struct<CCTextDetector> {
     );
   }
 
-  static Pointer<Void> textBoxesForBuffer(
+  static Pointer textBoxesForBuffer(
     Pointer<CCTextDetector> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -5907,10 +5883,10 @@ class CCTextDetector extends Struct<CCTextDetector> {
     );
   }
 
-  static Pointer<Void> textBoxesForImage(
+  static Pointer textBoxesForImage(
     Pointer<CCTextDetector> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -5921,9 +5897,9 @@ class CCTextDetector extends Struct<CCTextDetector> {
     );
   }
 
-  static Pointer<Void> tightenBox(
+  static Pointer tightenBox(
     Pointer<CCTextDetector> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int startTop,
     @required int startBottom,
     @required int startPosition,
@@ -5947,11 +5923,9 @@ class CCTextDetector extends Struct<CCTextDetector> {
   }
 }
 
-/// Objective-C class _CVMLFaceprint_LegacySupportDoNotChange_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class CVMLFaceprint_LegacySupportDoNotChange
     extends Struct<CVMLFaceprint_LegacySupportDoNotChange> {
@@ -5967,7 +5941,7 @@ class CVMLFaceprint_LegacySupportDoNotChange
 
   static void encodeWithCoder(
     Pointer<CVMLFaceprint_LegacySupportDoNotChange> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -5977,7 +5951,7 @@ class CVMLFaceprint_LegacySupportDoNotChange
     );
   }
 
-  static Pointer<Void> faceprint(
+  static Pointer faceprint(
     Pointer<CVMLFaceprint_LegacySupportDoNotChange> _self,
   ) {
     _openDynamicLibrary();
@@ -5987,7 +5961,7 @@ class CVMLFaceprint_LegacySupportDoNotChange
     );
   }
 
-  static Pointer<Void> faceprintInputPath(
+  static Pointer faceprintInputPath(
     Pointer<CVMLFaceprint_LegacySupportDoNotChange> _self,
   ) {
     _openDynamicLibrary();
@@ -5997,9 +5971,9 @@ class CVMLFaceprint_LegacySupportDoNotChange
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CVMLFaceprint_LegacySupportDoNotChange> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -6009,7 +5983,7 @@ class CVMLFaceprint_LegacySupportDoNotChange
     );
   }
 
-  static Pointer<Void> key(
+  static Pointer key(
     Pointer<CVMLFaceprint_LegacySupportDoNotChange> _self,
   ) {
     _openDynamicLibrary();
@@ -6041,7 +6015,7 @@ class CVMLFaceprint_LegacySupportDoNotChange
 
   static void setFaceprint(
     Pointer<CVMLFaceprint_LegacySupportDoNotChange> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -6053,7 +6027,7 @@ class CVMLFaceprint_LegacySupportDoNotChange
 
   static void setFaceprintInputPath(
     Pointer<CVMLFaceprint_LegacySupportDoNotChange> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -6065,7 +6039,7 @@ class CVMLFaceprint_LegacySupportDoNotChange
 
   static void setKey(
     Pointer<CVMLFaceprint_LegacySupportDoNotChange> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -6100,11 +6074,9 @@ class CVMLFaceprint_LegacySupportDoNotChange
   }
 }
 
-/// Objective-C class _CVMLImageprintObservation_LegacySupportDoNotChange_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class CVMLImageprintObservation_LegacySupportDoNotChange
     extends Struct<CVMLImageprintObservation_LegacySupportDoNotChange> {
@@ -6121,7 +6093,7 @@ class CVMLImageprintObservation_LegacySupportDoNotChange
 
   static void encodeWithCoder(
     Pointer<CVMLImageprintObservation_LegacySupportDoNotChange> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -6131,7 +6103,7 @@ class CVMLImageprintObservation_LegacySupportDoNotChange
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CVMLImageprintObservation_LegacySupportDoNotChange> _self,
   ) {
     _openDynamicLibrary();
@@ -6141,9 +6113,9 @@ class CVMLImageprintObservation_LegacySupportDoNotChange
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CVMLImageprintObservation_LegacySupportDoNotChange> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -6153,9 +6125,9 @@ class CVMLImageprintObservation_LegacySupportDoNotChange
     );
   }
 
-  static Pointer<Void> initWithData(
+  static Pointer initWithData(
     Pointer<CVMLImageprintObservation_LegacySupportDoNotChange> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -6165,9 +6137,9 @@ class CVMLImageprintObservation_LegacySupportDoNotChange
     );
   }
 
-  static Pointer<Void> serializeAsVNImageprintStateAndReturnError(
+  static Pointer serializeAsVNImageprintStateAndReturnError(
     Pointer<CVMLImageprintObservation_LegacySupportDoNotChange> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -6179,9 +6151,9 @@ class CVMLImageprintObservation_LegacySupportDoNotChange
 
   static int serializeStateIntoData(
     Pointer<CVMLImageprintObservation_LegacySupportDoNotChange> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int startingAtByteOffset,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_Uint64_p_returns_Uint64(
@@ -6204,11 +6176,9 @@ class CVMLImageprintObservation_LegacySupportDoNotChange
   }
 }
 
-/// Objective-C class _CVMLObservation_LegacySupportDoNotChange_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class CVMLObservation_LegacySupportDoNotChange
     extends Struct<CVMLObservation_LegacySupportDoNotChange> {
@@ -6224,7 +6194,7 @@ class CVMLObservation_LegacySupportDoNotChange
 
   static void encodeWithCoder(
     Pointer<CVMLObservation_LegacySupportDoNotChange> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -6234,9 +6204,9 @@ class CVMLObservation_LegacySupportDoNotChange
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CVMLObservation_LegacySupportDoNotChange> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -6246,10 +6216,10 @@ class CVMLObservation_LegacySupportDoNotChange
     );
   }
 
-  static Pointer<Void> initWithData(
+  static Pointer initWithData(
     Pointer<CVMLObservation_LegacySupportDoNotChange> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> forKey,
+    Pointer arg, {
+    @required Pointer forKey,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -6261,11 +6231,9 @@ class CVMLObservation_LegacySupportDoNotChange
   }
 }
 
-/// Objective-C class _CVML_Error_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class CVML_Error extends Struct<CVML_Error> {
   factory CVML_Error._() {
@@ -6277,11 +6245,9 @@ class CVML_Error extends Struct<CVML_Error> {
   }
 }
 
-/// Objective-C class _ImageProcessing_CoreImageUtils_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class ImageProcessing_CoreImageUtils
     extends Struct<ImageProcessing_CoreImageUtils> {
@@ -6296,11 +6262,9 @@ class ImageProcessing_CoreImageUtils
   }
 }
 
-/// Objective-C class _LKTGPU_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class LKTGPU extends Struct<LKTGPU> {
   factory LKTGPU._() {
@@ -6323,8 +6287,8 @@ class LKTGPU extends Struct<LKTGPU> {
 
   static int estimateFlowFromReference(
     Pointer<LKTGPU> _self,
-    Pointer<Pointer<Void>> arg, {
-    @required Pointer<Pointer<Void>> target,
+    Pointer<Pointer> arg, {
+    @required Pointer<Pointer> target,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int32(
@@ -6337,7 +6301,7 @@ class LKTGPU extends Struct<LKTGPU> {
 
   static int estimateFlowStream(
     Pointer<LKTGPU> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int32(
@@ -6357,13 +6321,13 @@ class LKTGPU extends Struct<LKTGPU> {
     );
   }
 
-  static Pointer<Void> initWithMetalContext(
+  static Pointer initWithMetalContext(
     Pointer<LKTGPU> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int width,
     @required int height,
     @required int nscales,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_Int32_Int32_Int32_p_returns_p(
@@ -6563,8 +6527,8 @@ class LKTGPU extends Struct<LKTGPU> {
 
   static int setOutputUV(
     Pointer<LKTGPU> _self,
-    Pointer<Pointer<Void>> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer<Pointer> arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -6640,11 +6604,9 @@ class LKTGPU extends Struct<LKTGPU> {
   }
 }
 
-/// Objective-C class _LKTMetalContext_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class LKTMetalContext extends Struct<LKTMetalContext> {
   factory LKTMetalContext._() {
@@ -6655,14 +6617,14 @@ class LKTMetalContext extends Struct<LKTMetalContext> {
     return _objc.allocate("LKTMetalContext").cast<LKTMetalContext>();
   }
 
-  static Pointer<Void> bindIOSurfaceToMTL2DTexture(
+  static Pointer bindIOSurfaceToMTL2DTexture(
     Pointer<LKTMetalContext> _self,
-    Pointer<Pointer<Void>> arg, {
+    Pointer<Pointer> arg, {
     @required int pixelFormat,
     @required int width,
     @required int height,
     @required int plane,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_Uint64_Uint64_Uint64_Uint64_p_returns_p(
@@ -6678,12 +6640,12 @@ class LKTMetalContext extends Struct<LKTMetalContext> {
     );
   }
 
-  static Pointer<Void> bindPixelBufferToMTL2DTexture$pixelFormat$plane$error$(
+  static Pointer bindPixelBufferToMTL2DTexture$pixelFormat$plane$error$(
     Pointer<LKTMetalContext> _self,
-    Pointer<Pointer<Void>> arg, {
+    Pointer<Pointer> arg, {
     @required int pixelFormat,
     @required int plane,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_Uint64_Uint64_p_returns_p(
@@ -6697,14 +6659,14 @@ class LKTMetalContext extends Struct<LKTMetalContext> {
     );
   }
 
-  static Pointer<Void>
+  static Pointer
       bindPixelBufferToMTL2DTexture$pixelFormat$textureSize$plane$error$(
     Pointer<LKTMetalContext> _self,
-    Pointer<Pointer<Void>> arg, {
+    Pointer<Pointer> arg, {
     @required int pixelFormat,
-    @required Pointer<Void> textureSize,
+    @required Pointer textureSize,
     @required int plane,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_Uint64_p_Uint64_p_returns_p(
@@ -6719,7 +6681,7 @@ class LKTMetalContext extends Struct<LKTMetalContext> {
     );
   }
 
-  static Pointer<Void> commandQueue(
+  static Pointer commandQueue(
     Pointer<LKTMetalContext> _self,
   ) {
     _openDynamicLibrary();
@@ -6729,7 +6691,7 @@ class LKTMetalContext extends Struct<LKTMetalContext> {
     );
   }
 
-  static Pointer<Void> device(
+  static Pointer device(
     Pointer<LKTMetalContext> _self,
   ) {
     _openDynamicLibrary();
@@ -6739,10 +6701,10 @@ class LKTMetalContext extends Struct<LKTMetalContext> {
     );
   }
 
-  static Pointer<Void> initWithDevice(
+  static Pointer initWithDevice(
     Pointer<LKTMetalContext> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -6753,7 +6715,7 @@ class LKTMetalContext extends Struct<LKTMetalContext> {
     );
   }
 
-  static Pointer<Void> library(
+  static Pointer library(
     Pointer<LKTMetalContext> _self,
   ) {
     _openDynamicLibrary();
@@ -6778,11 +6740,9 @@ class LKTMetalContext extends Struct<LKTMetalContext> {
   }
 }
 
-/// Objective-C class _MPImageDescriptor_LegacySupportDoNotChange_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class MPImageDescriptor_LegacySupportDoNotChange
     extends Struct<MPImageDescriptor_LegacySupportDoNotChange> {
@@ -6796,7 +6756,7 @@ class MPImageDescriptor_LegacySupportDoNotChange
         .cast<MPImageDescriptor_LegacySupportDoNotChange>();
   }
 
-  static Pointer<Void> colorGaborDescriptor(
+  static Pointer colorGaborDescriptor(
     Pointer<MPImageDescriptor_LegacySupportDoNotChange> _self,
   ) {
     _openDynamicLibrary();
@@ -6818,7 +6778,7 @@ class MPImageDescriptor_LegacySupportDoNotChange
 
   static void encodeWithCoder(
     Pointer<MPImageDescriptor_LegacySupportDoNotChange> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -6838,7 +6798,7 @@ class MPImageDescriptor_LegacySupportDoNotChange
     );
   }
 
-  static Pointer<Void> externalImageId(
+  static Pointer externalImageId(
     Pointer<MPImageDescriptor_LegacySupportDoNotChange> _self,
   ) {
     _openDynamicLibrary();
@@ -6848,7 +6808,7 @@ class MPImageDescriptor_LegacySupportDoNotChange
     );
   }
 
-  static Pointer<Void> imageFilePath(
+  static Pointer imageFilePath(
     Pointer<MPImageDescriptor_LegacySupportDoNotChange> _self,
   ) {
     _openDynamicLibrary();
@@ -6858,7 +6818,7 @@ class MPImageDescriptor_LegacySupportDoNotChange
     );
   }
 
-  static Pointer<Void> imageRegistrationDescriptor(
+  static Pointer imageRegistrationDescriptor(
     Pointer<MPImageDescriptor_LegacySupportDoNotChange> _self,
   ) {
     _openDynamicLibrary();
@@ -6868,9 +6828,9 @@ class MPImageDescriptor_LegacySupportDoNotChange
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<MPImageDescriptor_LegacySupportDoNotChange> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -6970,7 +6930,7 @@ class MPImageDescriptor_LegacySupportDoNotChange
     );
   }
 
-  static Pointer<Void> rawColorGaborDescriptor(
+  static Pointer rawColorGaborDescriptor(
     Pointer<MPImageDescriptor_LegacySupportDoNotChange> _self,
   ) {
     _openDynamicLibrary();
@@ -6980,7 +6940,7 @@ class MPImageDescriptor_LegacySupportDoNotChange
     );
   }
 
-  static Pointer<Void> sceneClassifierDescriptor(
+  static Pointer sceneClassifierDescriptor(
     Pointer<MPImageDescriptor_LegacySupportDoNotChange> _self,
   ) {
     _openDynamicLibrary();
@@ -6992,9 +6952,9 @@ class MPImageDescriptor_LegacySupportDoNotChange
 
   static int serializeStateIntoData(
     Pointer<MPImageDescriptor_LegacySupportDoNotChange> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int startingAtByteOffset,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_Uint64_p_returns_Uint64(
@@ -7113,11 +7073,9 @@ class MPImageDescriptor_LegacySupportDoNotChange
   }
 }
 
-/// Objective-C class _SaliencyExtrema_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class SaliencyExtrema extends Struct<SaliencyExtrema> {
   factory SaliencyExtrema._() {
@@ -7128,10 +7086,10 @@ class SaliencyExtrema extends Struct<SaliencyExtrema> {
     return _objc.allocate("SaliencyExtrema").cast<SaliencyExtrema>();
   }
 
-  static Pointer<Void> computeRectFromExtremaUsingThreshold(
+  static Pointer computeRectFromExtremaUsingThreshold(
     Pointer<SaliencyExtrema> _self,
     double arg, {
-    @required Pointer<Void> vImage,
+    @required Pointer vImage,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_float32_p_returns_p(
@@ -7142,7 +7100,7 @@ class SaliencyExtrema extends Struct<SaliencyExtrema> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<SaliencyExtrema> _self,
   ) {
     _openDynamicLibrary();
@@ -7169,11 +7127,9 @@ class SaliencyExtrema extends Struct<SaliencyExtrema> {
   }
 }
 
-/// Objective-C class _ShotflowDetector_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class ShotflowDetector extends Struct<ShotflowDetector> {
   factory ShotflowDetector._() {
@@ -7184,9 +7140,9 @@ class ShotflowDetector extends Struct<ShotflowDetector> {
     return _objc.allocate("ShotflowDetector").cast<ShotflowDetector>();
   }
 
-  static Pointer<Void> detect(
+  static Pointer detect(
     Pointer<ShotflowDetector> _self,
-    Pointer<Pointer<Void>> arg, {
+    Pointer<Pointer> arg, {
     @required int inputIsBGR,
   }) {
     _openDynamicLibrary();
@@ -7198,9 +7154,9 @@ class ShotflowDetector extends Struct<ShotflowDetector> {
     );
   }
 
-  static Pointer<Void> filterBoxes(
+  static Pointer filterBoxes(
     Pointer<ShotflowDetector> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -7220,9 +7176,9 @@ class ShotflowDetector extends Struct<ShotflowDetector> {
     );
   }
 
-  static Pointer<Void> initWithNetwork(
+  static Pointer initWithNetwork(
     Pointer<ShotflowDetector> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required double filterThreshold,
   }) {
     _openDynamicLibrary();
@@ -7234,9 +7190,9 @@ class ShotflowDetector extends Struct<ShotflowDetector> {
     );
   }
 
-  static Pointer<Void> mergeBoxes(
+  static Pointer mergeBoxes(
     Pointer<ShotflowDetector> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -7246,9 +7202,9 @@ class ShotflowDetector extends Struct<ShotflowDetector> {
     );
   }
 
-  static Pointer<Void> nmsBoxes(
+  static Pointer nmsBoxes(
     Pointer<ShotflowDetector> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -7318,9 +7274,9 @@ class ShotflowDetector extends Struct<ShotflowDetector> {
     );
   }
 
-  static Pointer<Void> overlappingLowMergeCountSuppression(
+  static Pointer overlappingLowMergeCountSuppression(
     Pointer<ShotflowDetector> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -7330,9 +7286,9 @@ class ShotflowDetector extends Struct<ShotflowDetector> {
     );
   }
 
-  static Pointer<Void> overlappingSmallFacesSuppression(
+  static Pointer overlappingSmallFacesSuppression(
     Pointer<ShotflowDetector> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -7342,9 +7298,9 @@ class ShotflowDetector extends Struct<ShotflowDetector> {
     );
   }
 
-  static Pointer<Void> processBoxes(
+  static Pointer processBoxes(
     Pointer<ShotflowDetector> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required double withHeight,
     @required double andWidth,
   }) {
@@ -7488,9 +7444,9 @@ class ShotflowDetector extends Struct<ShotflowDetector> {
     );
   }
 
-  static Pointer<Void> smartMergeBoxes(
+  static Pointer smartMergeBoxes(
     Pointer<ShotflowDetector> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -7521,11 +7477,9 @@ class ShotflowDetector extends Struct<ShotflowDetector> {
   }
 }
 
-/// Objective-C class _ShotflowFaceDetection_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class ShotflowFaceDetection extends Struct<ShotflowFaceDetection> {
   factory ShotflowFaceDetection._() {
@@ -7538,7 +7492,7 @@ class ShotflowFaceDetection extends Struct<ShotflowFaceDetection> {
         .cast<ShotflowFaceDetection>();
   }
 
-  static Pointer<Void> box(
+  static Pointer box(
     Pointer<ShotflowFaceDetection> _self,
   ) {
     _openDynamicLibrary();
@@ -7548,7 +7502,7 @@ class ShotflowFaceDetection extends Struct<ShotflowFaceDetection> {
     );
   }
 
-  static Pointer<Void> boxCenter(
+  static Pointer boxCenter(
     Pointer<ShotflowFaceDetection> _self,
   ) {
     _openDynamicLibrary();
@@ -7568,7 +7522,7 @@ class ShotflowFaceDetection extends Struct<ShotflowFaceDetection> {
     );
   }
 
-  static Pointer<Void> defaultBox(
+  static Pointer defaultBox(
     Pointer<ShotflowFaceDetection> _self,
   ) {
     _openDynamicLibrary();
@@ -7588,11 +7542,11 @@ class ShotflowFaceDetection extends Struct<ShotflowFaceDetection> {
     );
   }
 
-  static Pointer<Void>
+  static Pointer
       initWithBox$defaultBox$confidence$scale$rotationAngle$yawAngle$mergesCount$(
     Pointer<ShotflowFaceDetection> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> defaultBox,
+    Pointer arg, {
+    @required Pointer defaultBox,
     @required double confidence,
     @required int scale,
     @required double rotationAngle,
@@ -7614,11 +7568,11 @@ class ShotflowFaceDetection extends Struct<ShotflowFaceDetection> {
     );
   }
 
-  static Pointer<Void>
+  static Pointer
       initWithBox$defaultBox$confidence$scale$rotationAngle$yawAngle$(
     Pointer<ShotflowFaceDetection> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> defaultBox,
+    Pointer arg, {
+    @required Pointer defaultBox,
     @required double confidence,
     @required int scale,
     @required double rotationAngle,
@@ -7638,9 +7592,9 @@ class ShotflowFaceDetection extends Struct<ShotflowFaceDetection> {
     );
   }
 
-  static Pointer<Void> isOverlappingLowMergeDet(
+  static Pointer isOverlappingLowMergeDet(
     Pointer<ShotflowFaceDetection> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required double withOverlapThreshold,
     @required int withMergeCountDelta,
   }) {
@@ -7655,9 +7609,9 @@ class ShotflowFaceDetection extends Struct<ShotflowFaceDetection> {
     );
   }
 
-  static Pointer<Void> isOverlappingSmallFace(
+  static Pointer isOverlappingSmallFace(
     Pointer<ShotflowFaceDetection> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required double withOverlapThreshold,
     @required double withSizeRatio,
   }) {
@@ -7684,7 +7638,7 @@ class ShotflowFaceDetection extends Struct<ShotflowFaceDetection> {
 
   static double overlap(
     Pointer<ShotflowFaceDetection> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_float32(
@@ -7716,7 +7670,7 @@ class ShotflowFaceDetection extends Struct<ShotflowFaceDetection> {
 
   static void setBox(
     Pointer<ShotflowFaceDetection> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -7740,7 +7694,7 @@ class ShotflowFaceDetection extends Struct<ShotflowFaceDetection> {
 
   static void setDefaultBox(
     Pointer<ShotflowFaceDetection> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -7819,11 +7773,9 @@ class ShotflowFaceDetection extends Struct<ShotflowFaceDetection> {
   }
 }
 
-/// Objective-C class _ShotflowHelpers_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class ShotflowHelpers extends Struct<ShotflowHelpers> {
   factory ShotflowHelpers._() {
@@ -7835,11 +7787,9 @@ class ShotflowHelpers extends Struct<ShotflowHelpers> {
   }
 }
 
-/// Objective-C class _ShotflowNetwork_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class ShotflowNetwork extends Struct<ShotflowNetwork> {
   factory ShotflowNetwork._() {
@@ -7860,9 +7810,9 @@ class ShotflowNetwork extends Struct<ShotflowNetwork> {
     );
   }
 
-  static Pointer<Void> initWithModelPath(
+  static Pointer initWithModelPath(
     Pointer<ShotflowNetwork> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int espressoEngineID,
     @required int espressoDeviceID,
     @required int espressoStorageType,
@@ -7891,9 +7841,9 @@ class ShotflowNetwork extends Struct<ShotflowNetwork> {
     );
   }
 
-  static Pointer<Void> processCIImage(
+  static Pointer processCIImage(
     Pointer<ShotflowNetwork> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -7903,9 +7853,9 @@ class ShotflowNetwork extends Struct<ShotflowNetwork> {
     );
   }
 
-  static Pointer<Void> processVImage(
+  static Pointer processVImage(
     Pointer<ShotflowNetwork> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int inputIsBGR,
   }) {
     _openDynamicLibrary();
@@ -7917,9 +7867,9 @@ class ShotflowNetwork extends Struct<ShotflowNetwork> {
     );
   }
 
-  static Pointer<Void> resizeAndProcessVImage(
+  static Pointer resizeAndProcessVImage(
     Pointer<ShotflowNetwork> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int inputIsBGR,
   }) {
     _openDynamicLibrary();
@@ -7933,7 +7883,7 @@ class ShotflowNetwork extends Struct<ShotflowNetwork> {
 
   static void runNetwork(
     Pointer<ShotflowNetwork> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int inputIsBGR,
   }) {
     _openDynamicLibrary();
@@ -7982,11 +7932,9 @@ class ShotflowNetwork extends Struct<ShotflowNetwork> {
   }
 }
 
-/// Objective-C class _VNANEProcessingDevice_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNANEProcessingDevice extends Struct<VNANEProcessingDevice> {
   factory VNANEProcessingDevice._() {
@@ -8020,11 +7968,9 @@ class VNANEProcessingDevice extends Struct<VNANEProcessingDevice> {
   }
 }
 
-/// Objective-C class _VNANERuntimeDirectProcessingDevice_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNANERuntimeDirectProcessingDevice
     extends Struct<VNANERuntimeDirectProcessingDevice> {
@@ -8049,11 +7995,9 @@ class VNANERuntimeDirectProcessingDevice
   }
 }
 
-/// Objective-C class _VNANERuntimeProcessingDevice_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNANERuntimeProcessingDevice
     extends Struct<VNANERuntimeProcessingDevice> {
@@ -8078,11 +8022,9 @@ class VNANERuntimeProcessingDevice
   }
 }
 
-/// Objective-C class _VNAlignFaceRectangleRequest_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNAlignFaceRectangleRequest extends Struct<VNAlignFaceRectangleRequest> {
   factory VNAlignFaceRectangleRequest._() {
@@ -8095,9 +8037,9 @@ class VNAlignFaceRectangleRequest extends Struct<VNAlignFaceRectangleRequest> {
         .cast<VNAlignFaceRectangleRequest>();
   }
 
-  static Pointer<Void> initWithFaceObservations$(
+  static Pointer initWithFaceObservations$(
     Pointer<VNAlignFaceRectangleRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -8107,10 +8049,10 @@ class VNAlignFaceRectangleRequest extends Struct<VNAlignFaceRectangleRequest> {
     );
   }
 
-  static Pointer<Void> initWithFaceObservations$completionHandler$(
+  static Pointer initWithFaceObservations$completionHandler$(
     Pointer<VNAlignFaceRectangleRequest> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> completionHandler,
+    Pointer arg, {
+    @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -8121,11 +8063,11 @@ class VNAlignFaceRectangleRequest extends Struct<VNAlignFaceRectangleRequest> {
     );
   }
 
-  static Pointer<Void> initWithName(
+  static Pointer initWithName(
     Pointer<VNAlignFaceRectangleRequest> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> options,
-    @required Pointer<Void> completionHandler,
+    Pointer arg, {
+    @required Pointer options,
+    @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -8137,7 +8079,7 @@ class VNAlignFaceRectangleRequest extends Struct<VNAlignFaceRectangleRequest> {
     );
   }
 
-  static Pointer<Void> inputFaceObservations(
+  static Pointer inputFaceObservations(
     Pointer<VNAlignFaceRectangleRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -8150,8 +8092,8 @@ class VNAlignFaceRectangleRequest extends Struct<VNAlignFaceRectangleRequest> {
   static int internalPerformRevision(
     Pointer<VNAlignFaceRectangleRequest> _self,
     int arg, {
-    @required Pointer<Void> inContext,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer inContext,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_Uint64_p_p_returns_Int8(
@@ -8163,7 +8105,7 @@ class VNAlignFaceRectangleRequest extends Struct<VNAlignFaceRectangleRequest> {
     );
   }
 
-  static Pointer<Void> newDefaultRequestInstance(
+  static Pointer newDefaultRequestInstance(
     Pointer<VNAlignFaceRectangleRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -8175,8 +8117,8 @@ class VNAlignFaceRectangleRequest extends Struct<VNAlignFaceRectangleRequest> {
 
   static int warmUpRequestPerformer(
     Pointer<VNAlignFaceRectangleRequest> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -8189,7 +8131,7 @@ class VNAlignFaceRectangleRequest extends Struct<VNAlignFaceRectangleRequest> {
 
   static int willAcceptCachedResultsFromRequestWithConfiguration(
     Pointer<VNAlignFaceRectangleRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -8200,11 +8142,9 @@ class VNAlignFaceRectangleRequest extends Struct<VNAlignFaceRectangleRequest> {
   }
 }
 
-/// Objective-C class _VNAlignFaceRectangleRequestConfiguration_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNAlignFaceRectangleRequestConfiguration
     extends Struct<VNAlignFaceRectangleRequestConfiguration> {
@@ -8218,9 +8158,9 @@ class VNAlignFaceRectangleRequestConfiguration
         .cast<VNAlignFaceRectangleRequestConfiguration>();
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<VNAlignFaceRectangleRequestConfiguration> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -8230,7 +8170,7 @@ class VNAlignFaceRectangleRequestConfiguration
     );
   }
 
-  static Pointer<Void> inputFaceObservations(
+  static Pointer inputFaceObservations(
     Pointer<VNAlignFaceRectangleRequestConfiguration> _self,
   ) {
     _openDynamicLibrary();
@@ -8242,7 +8182,7 @@ class VNAlignFaceRectangleRequestConfiguration
 
   static void setInputFaceObservations(
     Pointer<VNAlignFaceRectangleRequestConfiguration> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -8253,11 +8193,9 @@ class VNAlignFaceRectangleRequestConfiguration
   }
 }
 
-/// Objective-C class _VNAppendBurstSequenceFrameRequest_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNAppendBurstSequenceFrameRequest
     extends Struct<VNAppendBurstSequenceFrameRequest> {
@@ -8283,7 +8221,7 @@ class VNAppendBurstSequenceFrameRequest
 
   static void applyConfigurationOfRequest(
     Pointer<VNAppendBurstSequenceFrameRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -8293,7 +8231,7 @@ class VNAppendBurstSequenceFrameRequest
     );
   }
 
-  static Pointer<Void> burstFrameIdentifier(
+  static Pointer burstFrameIdentifier(
     Pointer<VNAppendBurstSequenceFrameRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -8303,7 +8241,7 @@ class VNAppendBurstSequenceFrameRequest
     );
   }
 
-  static Pointer<Void> imageProperties(
+  static Pointer imageProperties(
     Pointer<VNAppendBurstSequenceFrameRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -8313,10 +8251,10 @@ class VNAppendBurstSequenceFrameRequest
     );
   }
 
-  static Pointer<Void> initWithTargetedCGImage(
+  static Pointer initWithTargetedCGImage(
     Pointer<VNAppendBurstSequenceFrameRequest> _self,
-    Pointer<Pointer<Void>> arg, {
-    @required Pointer<Void> completionHandler,
+    Pointer<Pointer> arg, {
+    @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -8327,10 +8265,10 @@ class VNAppendBurstSequenceFrameRequest
     );
   }
 
-  static Pointer<Void> initWithTargetedCIImage(
+  static Pointer initWithTargetedCIImage(
     Pointer<VNAppendBurstSequenceFrameRequest> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> completionHandler,
+    Pointer arg, {
+    @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -8341,10 +8279,10 @@ class VNAppendBurstSequenceFrameRequest
     );
   }
 
-  static Pointer<Void> initWithTargetedCVPixelBuffer(
+  static Pointer initWithTargetedCVPixelBuffer(
     Pointer<VNAppendBurstSequenceFrameRequest> _self,
-    Pointer<Pointer<Void>> arg, {
-    @required Pointer<Void> completionHandler,
+    Pointer<Pointer> arg, {
+    @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -8355,10 +8293,10 @@ class VNAppendBurstSequenceFrameRequest
     );
   }
 
-  static Pointer<Void> initWithTargetedImageData(
+  static Pointer initWithTargetedImageData(
     Pointer<VNAppendBurstSequenceFrameRequest> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> completionHandler,
+    Pointer arg, {
+    @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -8369,10 +8307,10 @@ class VNAppendBurstSequenceFrameRequest
     );
   }
 
-  static Pointer<Void> initWithTargetedImageURL(
+  static Pointer initWithTargetedImageURL(
     Pointer<VNAppendBurstSequenceFrameRequest> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> completionHandler,
+    Pointer arg, {
+    @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -8385,8 +8323,8 @@ class VNAppendBurstSequenceFrameRequest
 
   static int internalPerformInContext(
     Pointer<VNAppendBurstSequenceFrameRequest> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -8397,7 +8335,7 @@ class VNAppendBurstSequenceFrameRequest
     );
   }
 
-  static Pointer<Void> sequencedRequestPreviousObservationsKey(
+  static Pointer sequencedRequestPreviousObservationsKey(
     Pointer<VNAppendBurstSequenceFrameRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -8409,7 +8347,7 @@ class VNAppendBurstSequenceFrameRequest
 
   static void setBurstFrameIdentifier(
     Pointer<VNAppendBurstSequenceFrameRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -8421,7 +8359,7 @@ class VNAppendBurstSequenceFrameRequest
 
   static void setImageProperties(
     Pointer<VNAppendBurstSequenceFrameRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -8433,8 +8371,8 @@ class VNAppendBurstSequenceFrameRequest
 
   static int warmUpRequestPerformer(
     Pointer<VNAppendBurstSequenceFrameRequest> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -8447,7 +8385,7 @@ class VNAppendBurstSequenceFrameRequest
 
   static int willAcceptCachedResultsFromRequestWithConfiguration(
     Pointer<VNAppendBurstSequenceFrameRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -8458,11 +8396,9 @@ class VNAppendBurstSequenceFrameRequest
   }
 }
 
-/// Objective-C class _VNBarcodeObservation_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNBarcodeObservation extends Struct<VNBarcodeObservation> {
   factory VNBarcodeObservation._() {
@@ -8473,7 +8409,7 @@ class VNBarcodeObservation extends Struct<VNBarcodeObservation> {
     return _objc.allocate("VNBarcodeObservation").cast<VNBarcodeObservation>();
   }
 
-  static Pointer<Void> acbsBarcodeInfo(
+  static Pointer acbsBarcodeInfo(
     Pointer<VNBarcodeObservation> _self,
   ) {
     _openDynamicLibrary();
@@ -8483,7 +8419,7 @@ class VNBarcodeObservation extends Struct<VNBarcodeObservation> {
     );
   }
 
-  static Pointer<Void> barcodeDescriptor(
+  static Pointer barcodeDescriptor(
     Pointer<VNBarcodeObservation> _self,
   ) {
     _openDynamicLibrary();
@@ -8493,9 +8429,9 @@ class VNBarcodeObservation extends Struct<VNBarcodeObservation> {
     );
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<VNBarcodeObservation> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -8505,7 +8441,7 @@ class VNBarcodeObservation extends Struct<VNBarcodeObservation> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<VNBarcodeObservation> _self,
   ) {
     _openDynamicLibrary();
@@ -8517,7 +8453,7 @@ class VNBarcodeObservation extends Struct<VNBarcodeObservation> {
 
   static void encodeWithCoder(
     Pointer<VNBarcodeObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -8537,9 +8473,9 @@ class VNBarcodeObservation extends Struct<VNBarcodeObservation> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<VNBarcodeObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -8549,16 +8485,16 @@ class VNBarcodeObservation extends Struct<VNBarcodeObservation> {
     );
   }
 
-  static Pointer<Void>
+  static Pointer
       initWithRequestRevision$symbology$descriptor$topLeft$bottomLeft$bottomRight$topRight$(
     Pointer<VNBarcodeObservation> _self,
     int arg, {
-    @required Pointer<Void> symbology,
-    @required Pointer<Void> descriptor,
-    @required Pointer<Void> topLeft,
-    @required Pointer<Void> bottomLeft,
-    @required Pointer<Void> bottomRight,
-    @required Pointer<Void> topRight,
+    @required Pointer symbology,
+    @required Pointer descriptor,
+    @required Pointer topLeft,
+    @required Pointer bottomLeft,
+    @required Pointer bottomRight,
+    @required Pointer topRight,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_Uint64_p_p_p_p_p_p_returns_p(
@@ -8575,13 +8511,12 @@ class VNBarcodeObservation extends Struct<VNBarcodeObservation> {
     );
   }
 
-  static Pointer<Void>
-      initWithRequestRevision$symbology$descriptor$boundingBox$(
+  static Pointer initWithRequestRevision$symbology$descriptor$boundingBox$(
     Pointer<VNBarcodeObservation> _self,
     int arg, {
-    @required Pointer<Void> symbology,
-    @required Pointer<Void> descriptor,
-    @required Pointer<Void> boundingBox,
+    @required Pointer symbology,
+    @required Pointer descriptor,
+    @required Pointer boundingBox,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_Uint64_p_p_p_returns_p(
@@ -8597,7 +8532,7 @@ class VNBarcodeObservation extends Struct<VNBarcodeObservation> {
 
   static int isEqual(
     Pointer<VNBarcodeObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -8607,7 +8542,7 @@ class VNBarcodeObservation extends Struct<VNBarcodeObservation> {
     );
   }
 
-  static Pointer<Void> payloadStringValue(
+  static Pointer payloadStringValue(
     Pointer<VNBarcodeObservation> _self,
   ) {
     _openDynamicLibrary();
@@ -8619,7 +8554,7 @@ class VNBarcodeObservation extends Struct<VNBarcodeObservation> {
 
   static void setACBSBarcodeInfo(
     Pointer<VNBarcodeObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -8629,7 +8564,7 @@ class VNBarcodeObservation extends Struct<VNBarcodeObservation> {
     );
   }
 
-  static Pointer<Void> symbology(
+  static Pointer symbology(
     Pointer<VNBarcodeObservation> _self,
   ) {
     _openDynamicLibrary();
@@ -8640,11 +8575,9 @@ class VNBarcodeObservation extends Struct<VNBarcodeObservation> {
   }
 }
 
-/// Objective-C class _VNBlurMeasure_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNBlurMeasure extends Struct<VNBlurMeasure> {
   factory VNBlurMeasure._() {
@@ -8656,11 +8589,9 @@ class VNBlurMeasure extends Struct<VNBlurMeasure> {
   }
 }
 
-/// Objective-C class _VNBlurSignature_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNBlurSignature extends Struct<VNBlurSignature> {
   factory VNBlurSignature._() {
@@ -8681,7 +8612,7 @@ class VNBlurSignature extends Struct<VNBlurSignature> {
     );
   }
 
-  static Pointer<Void> getSignatureData(
+  static Pointer getSignatureData(
     Pointer<VNBlurSignature> _self,
   ) {
     _openDynamicLibrary();
@@ -8691,9 +8622,9 @@ class VNBlurSignature extends Struct<VNBlurSignature> {
     );
   }
 
-  static Pointer<Void> initWithSignatureData(
+  static Pointer initWithSignatureData(
     Pointer<VNBlurSignature> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -8705,7 +8636,7 @@ class VNBlurSignature extends Struct<VNBlurSignature> {
 
   static void setSignatureData(
     Pointer<VNBlurSignature> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -8716,11 +8647,9 @@ class VNBlurSignature extends Struct<VNBlurSignature> {
   }
 }
 
-/// Objective-C class _VNBrightnessMeasure_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNBrightnessMeasure extends Struct<VNBrightnessMeasure> {
   factory VNBrightnessMeasure._() {
@@ -8732,11 +8661,9 @@ class VNBrightnessMeasure extends Struct<VNBrightnessMeasure> {
   }
 }
 
-/// Objective-C class _VNBurstAnalysisResultsRequest_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNBurstAnalysisResultsRequest
     extends Struct<VNBurstAnalysisResultsRequest> {
@@ -8752,7 +8679,7 @@ class VNBurstAnalysisResultsRequest
 
   static void applyConfigurationOfRequest(
     Pointer<VNBurstAnalysisResultsRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -8792,11 +8719,11 @@ class VNBurstAnalysisResultsRequest
     );
   }
 
-  static Pointer<Void> initWithName(
+  static Pointer initWithName(
     Pointer<VNBurstAnalysisResultsRequest> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> options,
-    @required Pointer<Void> completionHandler,
+    Pointer arg, {
+    @required Pointer options,
+    @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -8810,8 +8737,8 @@ class VNBurstAnalysisResultsRequest
 
   static int internalPerformInContext(
     Pointer<VNBurstAnalysisResultsRequest> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -8822,7 +8749,7 @@ class VNBurstAnalysisResultsRequest
     );
   }
 
-  static Pointer<Void> sequencedRequestPreviousObservationsKey(
+  static Pointer sequencedRequestPreviousObservationsKey(
     Pointer<VNBurstAnalysisResultsRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -8870,8 +8797,8 @@ class VNBurstAnalysisResultsRequest
 
   static int warmUpRequestPerformer(
     Pointer<VNBurstAnalysisResultsRequest> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -8884,7 +8811,7 @@ class VNBurstAnalysisResultsRequest
 
   static int willAcceptCachedResultsFromRequestWithConfiguration(
     Pointer<VNBurstAnalysisResultsRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -8895,11 +8822,9 @@ class VNBurstAnalysisResultsRequest
   }
 }
 
-/// Objective-C class _VNBurstAnalysisResultsRequestConfiguration_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNBurstAnalysisResultsRequestConfiguration
     extends Struct<VNBurstAnalysisResultsRequestConfiguration> {
@@ -8913,9 +8838,9 @@ class VNBurstAnalysisResultsRequestConfiguration
         .cast<VNBurstAnalysisResultsRequestConfiguration>();
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<VNBurstAnalysisResultsRequestConfiguration> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -8955,9 +8880,9 @@ class VNBurstAnalysisResultsRequestConfiguration
     );
   }
 
-  static Pointer<Void> initWithRequestClass(
+  static Pointer initWithRequestClass(
     Pointer<VNBurstAnalysisResultsRequestConfiguration> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -9004,11 +8929,9 @@ class VNBurstAnalysisResultsRequestConfiguration
   }
 }
 
-/// Objective-C class _VNBurstContext_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNBurstContext extends Struct<VNBurstContext> {
   factory VNBurstContext._() {
@@ -9021,10 +8944,10 @@ class VNBurstContext extends Struct<VNBurstContext> {
 
   static int addBurstFrameWithIdentifier(
     Pointer<VNBurstContext> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> fromImageBuffer,
-    @required Pointer<Void> withProperties,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer fromImageBuffer,
+    @required Pointer withProperties,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_returns_Int8(
@@ -9038,7 +8961,7 @@ class VNBurstContext extends Struct<VNBurstContext> {
     );
   }
 
-  static Pointer<Void> allClusters(
+  static Pointer allClusters(
     Pointer<VNBurstContext> _self,
   ) {
     _openDynamicLibrary();
@@ -9048,7 +8971,7 @@ class VNBurstContext extends Struct<VNBurstContext> {
     );
   }
 
-  static Pointer<Void> allImageIdentifiers(
+  static Pointer allImageIdentifiers(
     Pointer<VNBurstContext> _self,
   ) {
     _openDynamicLibrary();
@@ -9058,7 +8981,7 @@ class VNBurstContext extends Struct<VNBurstContext> {
     );
   }
 
-  static Pointer<Void> allImageStats(
+  static Pointer allImageStats(
     Pointer<VNBurstContext> _self,
   ) {
     _openDynamicLibrary();
@@ -9068,7 +8991,7 @@ class VNBurstContext extends Struct<VNBurstContext> {
     );
   }
 
-  static Pointer<Void> bestImageIdentifiers(
+  static Pointer bestImageIdentifiers(
     Pointer<VNBurstContext> _self,
   ) {
     _openDynamicLibrary();
@@ -9078,7 +9001,7 @@ class VNBurstContext extends Struct<VNBurstContext> {
     );
   }
 
-  static Pointer<Void> coverImageIdentifier(
+  static Pointer coverImageIdentifier(
     Pointer<VNBurstContext> _self,
   ) {
     _openDynamicLibrary();
@@ -9098,10 +9021,10 @@ class VNBurstContext extends Struct<VNBurstContext> {
     );
   }
 
-  static Pointer<Void> initWithOptions(
+  static Pointer initWithOptions(
     Pointer<VNBurstContext> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -9132,7 +9055,7 @@ class VNBurstContext extends Struct<VNBurstContext> {
     );
   }
 
-  static Pointer<Void> loggingCallback(
+  static Pointer loggingCallback(
     Pointer<VNBurstContext> _self,
   ) {
     _openDynamicLibrary();
@@ -9144,7 +9067,7 @@ class VNBurstContext extends Struct<VNBurstContext> {
 
   static void setLoggingCallback(
     Pointer<VNBurstContext> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -9155,11 +9078,9 @@ class VNBurstContext extends Struct<VNBurstContext> {
   }
 }
 
-/// Objective-C class _VNBurstObservation_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNBurstObservation extends Struct<VNBurstObservation> {
   factory VNBurstObservation._() {
@@ -9170,7 +9091,7 @@ class VNBurstObservation extends Struct<VNBurstObservation> {
     return _objc.allocate("VNBurstObservation").cast<VNBurstObservation>();
   }
 
-  static Pointer<Void> allImageIdentifiers(
+  static Pointer allImageIdentifiers(
     Pointer<VNBurstObservation> _self,
   ) {
     _openDynamicLibrary();
@@ -9180,7 +9101,7 @@ class VNBurstObservation extends Struct<VNBurstObservation> {
     );
   }
 
-  static Pointer<Void> allImageStats(
+  static Pointer allImageStats(
     Pointer<VNBurstObservation> _self,
   ) {
     _openDynamicLibrary();
@@ -9190,7 +9111,7 @@ class VNBurstObservation extends Struct<VNBurstObservation> {
     );
   }
 
-  static Pointer<Void> bestImageIdentifiers(
+  static Pointer bestImageIdentifiers(
     Pointer<VNBurstObservation> _self,
   ) {
     _openDynamicLibrary();
@@ -9200,7 +9121,7 @@ class VNBurstObservation extends Struct<VNBurstObservation> {
     );
   }
 
-  static Pointer<Void> clusters(
+  static Pointer clusters(
     Pointer<VNBurstObservation> _self,
   ) {
     _openDynamicLibrary();
@@ -9210,9 +9131,9 @@ class VNBurstObservation extends Struct<VNBurstObservation> {
     );
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<VNBurstObservation> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -9222,7 +9143,7 @@ class VNBurstObservation extends Struct<VNBurstObservation> {
     );
   }
 
-  static Pointer<Void> coverImageIdentifier(
+  static Pointer coverImageIdentifier(
     Pointer<VNBurstObservation> _self,
   ) {
     _openDynamicLibrary();
@@ -9234,7 +9155,7 @@ class VNBurstObservation extends Struct<VNBurstObservation> {
 
   static void encodeWithCoder(
     Pointer<VNBurstObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -9254,9 +9175,9 @@ class VNBurstObservation extends Struct<VNBurstObservation> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<VNBurstObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -9278,7 +9199,7 @@ class VNBurstObservation extends Struct<VNBurstObservation> {
 
   static int isEqual(
     Pointer<VNBurstObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -9300,7 +9221,7 @@ class VNBurstObservation extends Struct<VNBurstObservation> {
 
   static void setAllImageIdentifiers(
     Pointer<VNBurstObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -9312,7 +9233,7 @@ class VNBurstObservation extends Struct<VNBurstObservation> {
 
   static void setAllImageStats(
     Pointer<VNBurstObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -9324,7 +9245,7 @@ class VNBurstObservation extends Struct<VNBurstObservation> {
 
   static void setBestImageIdentifiers(
     Pointer<VNBurstObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -9336,7 +9257,7 @@ class VNBurstObservation extends Struct<VNBurstObservation> {
 
   static void setClusters(
     Pointer<VNBurstObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -9348,7 +9269,7 @@ class VNBurstObservation extends Struct<VNBurstObservation> {
 
   static void setCoverImageIdentifier(
     Pointer<VNBurstObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -9383,11 +9304,9 @@ class VNBurstObservation extends Struct<VNBurstObservation> {
   }
 }
 
-/// Objective-C class _VNCPUProcessingDevice_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNCPUProcessingDevice extends Struct<VNCPUProcessingDevice> {
   factory VNCPUProcessingDevice._() {
@@ -9420,7 +9339,7 @@ class VNCPUProcessingDevice extends Struct<VNCPUProcessingDevice> {
     );
   }
 
-  static Pointer<Void> metalDevice(
+  static Pointer metalDevice(
     Pointer<VNCPUProcessingDevice> _self,
   ) {
     _openDynamicLibrary();
@@ -9441,11 +9360,9 @@ class VNCPUProcessingDevice extends Struct<VNCPUProcessingDevice> {
   }
 }
 
-/// Objective-C class _VNCVPixelBufferConversionHelpers_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNCVPixelBufferConversionHelpers
     extends Struct<VNCVPixelBufferConversionHelpers> {
@@ -9460,11 +9377,9 @@ class VNCVPixelBufferConversionHelpers
   }
 }
 
-/// Objective-C class _VNCanceller_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNCanceller extends Struct<VNCanceller> {
   factory VNCanceller._() {
@@ -9475,7 +9390,7 @@ class VNCanceller extends Struct<VNCanceller> {
     return _objc.allocate("VNCanceller").cast<VNCanceller>();
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<VNCanceller> _self,
   ) {
     _openDynamicLibrary();
@@ -9497,8 +9412,8 @@ class VNCanceller extends Struct<VNCanceller> {
 
   static void resetAndPerformBlock(
     Pointer<VNCanceller> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> usingSignallingBlock,
+    Pointer arg, {
+    @required Pointer usingSignallingBlock,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -9511,7 +9426,7 @@ class VNCanceller extends Struct<VNCanceller> {
 
   static void resetWithSignallingBlock(
     Pointer<VNCanceller> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -9533,8 +9448,8 @@ class VNCanceller extends Struct<VNCanceller> {
 
   static int tryToPerformBlock(
     Pointer<VNCanceller> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> usingSignallingBlock,
+    Pointer arg, {
+    @required Pointer usingSignallingBlock,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -9556,11 +9471,9 @@ class VNCanceller extends Struct<VNCanceller> {
   }
 }
 
-/// Objective-C class _VNClassificationObservation_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNClassificationObservation extends Struct<VNClassificationObservation> {
   factory VNClassificationObservation._() {
@@ -9573,9 +9486,9 @@ class VNClassificationObservation extends Struct<VNClassificationObservation> {
         .cast<VNClassificationObservation>();
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<VNClassificationObservation> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -9585,7 +9498,7 @@ class VNClassificationObservation extends Struct<VNClassificationObservation> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<VNClassificationObservation> _self,
   ) {
     _openDynamicLibrary();
@@ -9597,7 +9510,7 @@ class VNClassificationObservation extends Struct<VNClassificationObservation> {
 
   static void encodeWithCoder(
     Pointer<VNClassificationObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -9607,7 +9520,7 @@ class VNClassificationObservation extends Struct<VNClassificationObservation> {
     );
   }
 
-  static Pointer<Void> identifier(
+  static Pointer identifier(
     Pointer<VNClassificationObservation> _self,
   ) {
     _openDynamicLibrary();
@@ -9617,9 +9530,9 @@ class VNClassificationObservation extends Struct<VNClassificationObservation> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<VNClassificationObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -9629,10 +9542,10 @@ class VNClassificationObservation extends Struct<VNClassificationObservation> {
     );
   }
 
-  static Pointer<Void> initWithRequestRevision(
+  static Pointer initWithRequestRevision(
     Pointer<VNClassificationObservation> _self,
     int arg, {
-    @required Pointer<Void> identifier,
+    @required Pointer identifier,
     @required double confidence,
   }) {
     _openDynamicLibrary();
@@ -9646,11 +9559,9 @@ class VNClassificationObservation extends Struct<VNClassificationObservation> {
   }
 }
 
-/// Objective-C class _VNClassifyFaceAttributesRequest_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNClassifyFaceAttributesRequest
     extends Struct<VNClassifyFaceAttributesRequest> {
@@ -9667,8 +9578,8 @@ class VNClassifyFaceAttributesRequest
   static int internalPerformRevision(
     Pointer<VNClassifyFaceAttributesRequest> _self,
     int arg, {
-    @required Pointer<Void> inContext,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer inContext,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_Uint64_p_p_returns_Int8(
@@ -9682,8 +9593,8 @@ class VNClassifyFaceAttributesRequest
 
   static int warmUpRequestPerformer(
     Pointer<VNClassifyFaceAttributesRequest> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -9695,11 +9606,9 @@ class VNClassifyFaceAttributesRequest
   }
 }
 
-/// Objective-C class _VNClassifyImageAestheticsRequest_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNClassifyImageAestheticsRequest
     extends Struct<VNClassifyImageAestheticsRequest> {
@@ -9716,8 +9625,8 @@ class VNClassifyImageAestheticsRequest
   static int internalPerformRevision(
     Pointer<VNClassifyImageAestheticsRequest> _self,
     int arg, {
-    @required Pointer<Void> inContext,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer inContext,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_Uint64_p_p_returns_Int8(
@@ -9731,7 +9640,7 @@ class VNClassifyImageAestheticsRequest
 
   static int willAcceptCachedResultsFromRequestWithConfiguration(
     Pointer<VNClassifyImageAestheticsRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -9742,11 +9651,9 @@ class VNClassifyImageAestheticsRequest
   }
 }
 
-/// Objective-C class _VNClassifyImageAestheticsRequestConfiguration_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNClassifyImageAestheticsRequestConfiguration
     extends Struct<VNClassifyImageAestheticsRequestConfiguration> {
@@ -9761,11 +9668,9 @@ class VNClassifyImageAestheticsRequestConfiguration
   }
 }
 
-/// Objective-C class _VNClipGenerator_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNClipGenerator extends Struct<VNClipGenerator> {
   factory VNClipGenerator._() {
@@ -9776,12 +9681,12 @@ class VNClipGenerator extends Struct<VNClipGenerator> {
     return _objc.allocate("VNClipGenerator").cast<VNClipGenerator>();
   }
 
-  static Pointer<Void> generateSequenceSummaryWithMinClipDuration(
+  static Pointer generateSequenceSummaryWithMinClipDuration(
     Pointer<VNClipGenerator> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> maxClipDuration,
-    @required Pointer<Void> maxSequenceSummaryDuration,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer maxClipDuration,
+    @required Pointer maxSequenceSummaryDuration,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_returns_p(
@@ -9795,7 +9700,7 @@ class VNClipGenerator extends Struct<VNClipGenerator> {
     );
   }
 
-  static Pointer<Void> getLSTMScoreTimeStampFromIndex(
+  static Pointer getLSTMScoreTimeStampFromIndex(
     Pointer<VNClipGenerator> _self,
     int arg,
   ) {
@@ -9807,7 +9712,7 @@ class VNClipGenerator extends Struct<VNClipGenerator> {
     );
   }
 
-  static Pointer<Void> getLSTMScoreValueFromIndex(
+  static Pointer getLSTMScoreValueFromIndex(
     Pointer<VNClipGenerator> _self,
     int arg,
   ) {
@@ -9819,10 +9724,10 @@ class VNClipGenerator extends Struct<VNClipGenerator> {
     );
   }
 
-  static Pointer<Void> initWithScores(
+  static Pointer initWithScores(
     Pointer<VNClipGenerator> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> frameRate,
+    Pointer arg, {
+    @required Pointer frameRate,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -9834,11 +9739,9 @@ class VNClipGenerator extends Struct<VNClipGenerator> {
   }
 }
 
-/// Objective-C class _VNCluster_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNCluster extends Struct<VNCluster> {
   factory VNCluster._() {
@@ -9859,7 +9762,7 @@ class VNCluster extends Struct<VNCluster> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<VNCluster> _self,
   ) {
     _openDynamicLibrary();
@@ -9881,7 +9784,7 @@ class VNCluster extends Struct<VNCluster> {
 
   static int isEqual(
     Pointer<VNCluster> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -9891,7 +9794,7 @@ class VNCluster extends Struct<VNCluster> {
     );
   }
 
-  static Pointer<Void> objects(
+  static Pointer objects(
     Pointer<VNCluster> _self,
   ) {
     _openDynamicLibrary();
@@ -9901,7 +9804,7 @@ class VNCluster extends Struct<VNCluster> {
     );
   }
 
-  static Pointer<Void> representativenessById(
+  static Pointer representativenessById(
     Pointer<VNCluster> _self,
   ) {
     _openDynamicLibrary();
@@ -9925,7 +9828,7 @@ class VNCluster extends Struct<VNCluster> {
 
   static void setObjects(
     Pointer<VNCluster> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -9937,7 +9840,7 @@ class VNCluster extends Struct<VNCluster> {
 
   static void setRepresentativenessById(
     Pointer<VNCluster> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -9961,7 +9864,7 @@ class VNCluster extends Struct<VNCluster> {
 
   static void setSuggestedIdsForRepresentative(
     Pointer<VNCluster> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -9993,7 +9896,7 @@ class VNCluster extends Struct<VNCluster> {
     );
   }
 
-  static Pointer<Void> suggestedIdsForRepresentative(
+  static Pointer suggestedIdsForRepresentative(
     Pointer<VNCluster> _self,
   ) {
     _openDynamicLibrary();
@@ -10014,11 +9917,9 @@ class VNCluster extends Struct<VNCluster> {
   }
 }
 
-/// Objective-C class _VNClusterObservation_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNClusterObservation extends Struct<VNClusterObservation> {
   factory VNClusterObservation._() {
@@ -10029,7 +9930,7 @@ class VNClusterObservation extends Struct<VNClusterObservation> {
     return _objc.allocate("VNClusterObservation").cast<VNClusterObservation>();
   }
 
-  static Pointer<Void> clusterState(
+  static Pointer clusterState(
     Pointer<VNClusterObservation> _self,
   ) {
     _openDynamicLibrary();
@@ -10039,7 +9940,7 @@ class VNClusterObservation extends Struct<VNClusterObservation> {
     );
   }
 
-  static Pointer<Void> clusteredFaceIds(
+  static Pointer clusteredFaceIds(
     Pointer<VNClusterObservation> _self,
   ) {
     _openDynamicLibrary();
@@ -10049,7 +9950,7 @@ class VNClusterObservation extends Struct<VNClusterObservation> {
     );
   }
 
-  static Pointer<Void> clusters(
+  static Pointer clusters(
     Pointer<VNClusterObservation> _self,
   ) {
     _openDynamicLibrary();
@@ -10059,9 +9960,9 @@ class VNClusterObservation extends Struct<VNClusterObservation> {
     );
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<VNClusterObservation> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -10071,7 +9972,7 @@ class VNClusterObservation extends Struct<VNClusterObservation> {
     );
   }
 
-  static Pointer<Void> distance(
+  static Pointer distance(
     Pointer<VNClusterObservation> _self,
   ) {
     _openDynamicLibrary();
@@ -10081,7 +9982,7 @@ class VNClusterObservation extends Struct<VNClusterObservation> {
     );
   }
 
-  static Pointer<Void> distancesById(
+  static Pointer distancesById(
     Pointer<VNClusterObservation> _self,
   ) {
     _openDynamicLibrary();
@@ -10093,7 +9994,7 @@ class VNClusterObservation extends Struct<VNClusterObservation> {
 
   static void encodeWithCoder(
     Pointer<VNClusterObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -10103,7 +10004,7 @@ class VNClusterObservation extends Struct<VNClusterObservation> {
     );
   }
 
-  static Pointer<Void> groupedClusteredFaceIdsForCluster(
+  static Pointer groupedClusteredFaceIdsForCluster(
     Pointer<VNClusterObservation> _self,
   ) {
     _openDynamicLibrary();
@@ -10123,9 +10024,9 @@ class VNClusterObservation extends Struct<VNClusterObservation> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<VNClusterObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -10137,7 +10038,7 @@ class VNClusterObservation extends Struct<VNClusterObservation> {
 
   static int isEqual(
     Pointer<VNClusterObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -10149,7 +10050,7 @@ class VNClusterObservation extends Struct<VNClusterObservation> {
 
   static void setClusterState(
     Pointer<VNClusterObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -10161,7 +10062,7 @@ class VNClusterObservation extends Struct<VNClusterObservation> {
 
   static void setClusteredFaceIds(
     Pointer<VNClusterObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -10173,7 +10074,7 @@ class VNClusterObservation extends Struct<VNClusterObservation> {
 
   static void setClusters(
     Pointer<VNClusterObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -10185,7 +10086,7 @@ class VNClusterObservation extends Struct<VNClusterObservation> {
 
   static void setDistance(
     Pointer<VNClusterObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -10197,7 +10098,7 @@ class VNClusterObservation extends Struct<VNClusterObservation> {
 
   static void setDistancesById(
     Pointer<VNClusterObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -10209,7 +10110,7 @@ class VNClusterObservation extends Struct<VNClusterObservation> {
 
   static void setGroupedClusteredFaceIdsForCluster(
     Pointer<VNClusterObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -10221,7 +10122,7 @@ class VNClusterObservation extends Struct<VNClusterObservation> {
 
   static void setSuggestionsForCluster(
     Pointer<VNClusterObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -10231,7 +10132,7 @@ class VNClusterObservation extends Struct<VNClusterObservation> {
     );
   }
 
-  static Pointer<Void> suggestionsForCluster(
+  static Pointer suggestionsForCluster(
     Pointer<VNClusterObservation> _self,
   ) {
     _openDynamicLibrary();
@@ -10242,11 +10143,9 @@ class VNClusterObservation extends Struct<VNClusterObservation> {
   }
 }
 
-/// Objective-C class _VNClustererBuilder_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNClustererBuilder extends Struct<VNClustererBuilder> {
   factory VNClustererBuilder._() {
@@ -10257,9 +10156,9 @@ class VNClustererBuilder extends Struct<VNClustererBuilder> {
     return _objc.allocate("VNClustererBuilder").cast<VNClustererBuilder>();
   }
 
-  static Pointer<Void> allClusteredFaceIdsAndReturnError(
+  static Pointer allClusteredFaceIdsAndReturnError(
     Pointer<VNClustererBuilder> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -10269,10 +10168,10 @@ class VNClustererBuilder extends Struct<VNClustererBuilder> {
     );
   }
 
-  static Pointer<Void> clusteredFaceIdsForClusterContainingFaceId(
+  static Pointer clusteredFaceIdsForClusterContainingFaceId(
     Pointer<VNClustererBuilder> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -10283,11 +10182,11 @@ class VNClustererBuilder extends Struct<VNClustererBuilder> {
     );
   }
 
-  static Pointer<Void> distanceBetweenClustersWithFaceId(
+  static Pointer distanceBetweenClustersWithFaceId(
     Pointer<VNClustererBuilder> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> andFaceId,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer andFaceId,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -10299,10 +10198,10 @@ class VNClustererBuilder extends Struct<VNClustererBuilder> {
     );
   }
 
-  static Pointer<Void> distanceBetweenLevel1Clusters(
+  static Pointer distanceBetweenLevel1Clusters(
     Pointer<VNClustererBuilder> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -10313,11 +10212,11 @@ class VNClustererBuilder extends Struct<VNClustererBuilder> {
     );
   }
 
-  static Pointer<Void> getDistances(
+  static Pointer getDistances(
     Pointer<VNClustererBuilder> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> to,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer to,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -10329,13 +10228,13 @@ class VNClustererBuilder extends Struct<VNClustererBuilder> {
     );
   }
 
-  static Pointer<Void> initWithType$cachePath$state$threshold$error$(
+  static Pointer initWithType$cachePath$state$threshold$error$(
     Pointer<VNClustererBuilder> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> cachePath,
-    @required Pointer<Void> state,
+    Pointer arg, {
+    @required Pointer cachePath,
+    @required Pointer state,
     @required double threshold,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_float32_p_returns_p(
@@ -10349,15 +10248,14 @@ class VNClustererBuilder extends Struct<VNClustererBuilder> {
     );
   }
 
-  static Pointer<Void>
-      initWithType$cachePath$state$threshold$torsoThreshold$error$(
+  static Pointer initWithType$cachePath$state$threshold$torsoThreshold$error$(
     Pointer<VNClustererBuilder> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> cachePath,
-    @required Pointer<Void> state,
+    Pointer arg, {
+    @required Pointer cachePath,
+    @required Pointer state,
     @required double threshold,
     @required double torsoThreshold,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_float32_float32_p_returns_p(
@@ -10373,11 +10271,11 @@ class VNClustererBuilder extends Struct<VNClustererBuilder> {
     );
   }
 
-  static Pointer<Void>
+  static Pointer
       l1ClusteredFaceIdsGroupedByL0ClustersForClustersContainingFaceIds(
     Pointer<VNClustererBuilder> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -10389,9 +10287,9 @@ class VNClustererBuilder extends Struct<VNClustererBuilder> {
     );
   }
 
-  static Pointer<Void> maximumFaceIdInModelAndReturnError(
+  static Pointer maximumFaceIdInModelAndReturnError(
     Pointer<VNClustererBuilder> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -10403,8 +10301,8 @@ class VNClustererBuilder extends Struct<VNClustererBuilder> {
 
   static int resetModelState(
     Pointer<VNClustererBuilder> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -10415,9 +10313,9 @@ class VNClustererBuilder extends Struct<VNClustererBuilder> {
     );
   }
 
-  static Pointer<Void> saveAndReturnCurrentModelState(
+  static Pointer saveAndReturnCurrentModelState(
     Pointer<VNClustererBuilder> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -10427,12 +10325,12 @@ class VNClustererBuilder extends Struct<VNClustererBuilder> {
     );
   }
 
-  static Pointer<Void> suggestionsForClustersWithFaceIds(
+  static Pointer suggestionsForClustersWithFaceIds(
     Pointer<VNClustererBuilder> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required double affinityThreshold,
-    @required Pointer<Void> canceller,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer canceller,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_float32_p_p_returns_p(
@@ -10446,14 +10344,14 @@ class VNClustererBuilder extends Struct<VNClustererBuilder> {
     );
   }
 
-  static Pointer<Void>
+  static Pointer
       updateModelByAddingFaces$withGroupingIdentifiers$andRemovingFaces$canceller$error$(
     Pointer<VNClustererBuilder> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> withGroupingIdentifiers,
-    @required Pointer<Void> andRemovingFaces,
-    @required Pointer<Void> canceller,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer withGroupingIdentifiers,
+    @required Pointer andRemovingFaces,
+    @required Pointer canceller,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_p_returns_p(
@@ -10468,13 +10366,12 @@ class VNClustererBuilder extends Struct<VNClustererBuilder> {
     );
   }
 
-  static Pointer<Void>
-      updateModelByAddingFaces$andRemovingFaces$canceller$error$(
+  static Pointer updateModelByAddingFaces$andRemovingFaces$canceller$error$(
     Pointer<VNClustererBuilder> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> andRemovingFaces,
-    @required Pointer<Void> canceller,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer andRemovingFaces,
+    @required Pointer canceller,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_returns_p(
@@ -10488,11 +10385,11 @@ class VNClustererBuilder extends Struct<VNClustererBuilder> {
     );
   }
 
-  static Pointer<Void> updateModelByAddingFaces$canceller$error$(
+  static Pointer updateModelByAddingFaces$canceller$error$(
     Pointer<VNClustererBuilder> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> canceller,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer canceller,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -10504,13 +10401,13 @@ class VNClustererBuilder extends Struct<VNClustererBuilder> {
     );
   }
 
-  static Pointer<Void>
+  static Pointer
       updateModelByAddingFaces$withGroupingIdentifiers$canceller$error$(
     Pointer<VNClustererBuilder> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> withGroupingIdentifiers,
-    @required Pointer<Void> canceller,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer withGroupingIdentifiers,
+    @required Pointer canceller,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_returns_p(
@@ -10524,11 +10421,11 @@ class VNClustererBuilder extends Struct<VNClustererBuilder> {
     );
   }
 
-  static Pointer<Void> updateModelByRemovingFaces(
+  static Pointer updateModelByRemovingFaces(
     Pointer<VNClustererBuilder> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> canceller,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer canceller,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -10541,11 +10438,9 @@ class VNClustererBuilder extends Struct<VNClustererBuilder> {
   }
 }
 
-/// Objective-C class _VNClustererBuilderOptions_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNClustererBuilderOptions extends Struct<VNClustererBuilderOptions> {
   factory VNClustererBuilderOptions._() {
@@ -10558,7 +10453,7 @@ class VNClustererBuilderOptions extends Struct<VNClustererBuilderOptions> {
         .cast<VNClustererBuilderOptions>();
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<VNClustererBuilderOptions> _self,
   ) {
     _openDynamicLibrary();
@@ -10568,11 +10463,11 @@ class VNClustererBuilderOptions extends Struct<VNClustererBuilderOptions> {
     );
   }
 
-  static Pointer<Void> initWithType$cachePath$state$threshold$(
+  static Pointer initWithType$cachePath$state$threshold$(
     Pointer<VNClustererBuilderOptions> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> cachePath,
-    @required Pointer<Void> state,
+    Pointer arg, {
+    @required Pointer cachePath,
+    @required Pointer state,
     @required double threshold,
   }) {
     _openDynamicLibrary();
@@ -10586,11 +10481,11 @@ class VNClustererBuilderOptions extends Struct<VNClustererBuilderOptions> {
     );
   }
 
-  static Pointer<Void> initWithType$cachePath$state$threshold$torsoThreshold$(
+  static Pointer initWithType$cachePath$state$threshold$torsoThreshold$(
     Pointer<VNClustererBuilderOptions> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> cachePath,
-    @required Pointer<Void> state,
+    Pointer arg, {
+    @required Pointer cachePath,
+    @required Pointer state,
     @required double threshold,
     @required double torsoThreshold,
   }) {
@@ -10608,11 +10503,9 @@ class VNClustererBuilderOptions extends Struct<VNClustererBuilderOptions> {
   }
 }
 
-/// Objective-C class _VNClustererContextBase_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNClustererContextBase extends Struct<VNClustererContextBase> {
   factory VNClustererContextBase._() {
@@ -10627,10 +10520,10 @@ class VNClustererContextBase extends Struct<VNClustererContextBase> {
 
   static int checkInitInputs(
     Pointer<VNClustererContextBase> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> cachePath,
-    @required Pointer<Void> checkType,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer cachePath,
+    @required Pointer checkType,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_returns_Int8(
@@ -10643,14 +10536,14 @@ class VNClustererContextBase extends Struct<VNClustererContextBase> {
     );
   }
 
-  static Pointer<Void> initWithType$cachePath$state$readOnly$threshold$error$(
+  static Pointer initWithType$cachePath$state$readOnly$threshold$error$(
     Pointer<VNClustererContextBase> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> cachePath,
-    @required Pointer<Void> state,
+    Pointer arg, {
+    @required Pointer cachePath,
+    @required Pointer state,
     @required int readOnly,
     @required double threshold,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_Int8_float32_p_returns_p(
@@ -10666,16 +10559,16 @@ class VNClustererContextBase extends Struct<VNClustererContextBase> {
     );
   }
 
-  static Pointer<Void>
+  static Pointer
       initWithType$cachePath$state$readOnly$threshold$torsoThreshold$error$(
     Pointer<VNClustererContextBase> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> cachePath,
-    @required Pointer<Void> state,
+    Pointer arg, {
+    @required Pointer cachePath,
+    @required Pointer state,
     @required int readOnly,
     @required double threshold,
     @required double torsoThreshold,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_Int8_float32_float32_p_returns_p(
@@ -10693,11 +10586,9 @@ class VNClustererContextBase extends Struct<VNClustererContextBase> {
   }
 }
 
-/// Objective-C class _VNClustererOptions_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNClustererOptions extends Struct<VNClustererOptions> {
   factory VNClustererOptions._() {
@@ -10708,7 +10599,7 @@ class VNClustererOptions extends Struct<VNClustererOptions> {
     return _objc.allocate("VNClustererOptions").cast<VNClustererOptions>();
   }
 
-  static Pointer<Void> cachePath(
+  static Pointer cachePath(
     Pointer<VNClustererOptions> _self,
   ) {
     _openDynamicLibrary();
@@ -10718,7 +10609,7 @@ class VNClustererOptions extends Struct<VNClustererOptions> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<VNClustererOptions> _self,
   ) {
     _openDynamicLibrary();
@@ -10728,11 +10619,11 @@ class VNClustererOptions extends Struct<VNClustererOptions> {
     );
   }
 
-  static Pointer<Void> initWithType$cachePath$state$threshold$(
+  static Pointer initWithType$cachePath$state$threshold$(
     Pointer<VNClustererOptions> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> cachePath,
-    @required Pointer<Void> state,
+    Pointer arg, {
+    @required Pointer cachePath,
+    @required Pointer state,
     @required double threshold,
   }) {
     _openDynamicLibrary();
@@ -10746,11 +10637,11 @@ class VNClustererOptions extends Struct<VNClustererOptions> {
     );
   }
 
-  static Pointer<Void> initWithType$cachePath$state$threshold$torsoThreshold$(
+  static Pointer initWithType$cachePath$state$threshold$torsoThreshold$(
     Pointer<VNClustererOptions> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> cachePath,
-    @required Pointer<Void> state,
+    Pointer arg, {
+    @required Pointer cachePath,
+    @required Pointer state,
     @required double threshold,
     @required double torsoThreshold,
   }) {
@@ -10769,7 +10660,7 @@ class VNClustererOptions extends Struct<VNClustererOptions> {
 
   static void setCachePath(
     Pointer<VNClustererOptions> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -10781,7 +10672,7 @@ class VNClustererOptions extends Struct<VNClustererOptions> {
 
   static void setState(
     Pointer<VNClustererOptions> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -10817,7 +10708,7 @@ class VNClustererOptions extends Struct<VNClustererOptions> {
 
   static void setType(
     Pointer<VNClustererOptions> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -10827,7 +10718,7 @@ class VNClustererOptions extends Struct<VNClustererOptions> {
     );
   }
 
-  static Pointer<Void> state(
+  static Pointer state(
     Pointer<VNClustererOptions> _self,
   ) {
     _openDynamicLibrary();
@@ -10857,7 +10748,7 @@ class VNClustererOptions extends Struct<VNClustererOptions> {
     );
   }
 
-  static Pointer<Void> type(
+  static Pointer type(
     Pointer<VNClustererOptions> _self,
   ) {
     _openDynamicLibrary();
@@ -10868,11 +10759,9 @@ class VNClustererOptions extends Struct<VNClustererOptions> {
   }
 }
 
-/// Objective-C class _VNClustererQuery_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNClustererQuery extends Struct<VNClustererQuery> {
   factory VNClustererQuery._() {
@@ -10883,9 +10772,9 @@ class VNClustererQuery extends Struct<VNClustererQuery> {
     return _objc.allocate("VNClustererQuery").cast<VNClustererQuery>();
   }
 
-  static Pointer<Void> allClusteredFaceIdsAndReturnError(
+  static Pointer allClusteredFaceIdsAndReturnError(
     Pointer<VNClustererQuery> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -10895,10 +10784,10 @@ class VNClustererQuery extends Struct<VNClustererQuery> {
     );
   }
 
-  static Pointer<Void> clusteredFaceIdsForClusterContainingFaceId(
+  static Pointer clusteredFaceIdsForClusterContainingFaceId(
     Pointer<VNClustererQuery> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -10909,11 +10798,11 @@ class VNClustererQuery extends Struct<VNClustererQuery> {
     );
   }
 
-  static Pointer<Void> distanceBetweenClustersWithFaceId(
+  static Pointer distanceBetweenClustersWithFaceId(
     Pointer<VNClustererQuery> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> andFaceId,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer andFaceId,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -10925,10 +10814,10 @@ class VNClustererQuery extends Struct<VNClustererQuery> {
     );
   }
 
-  static Pointer<Void> distanceBetweenLevel1Clusters(
+  static Pointer distanceBetweenLevel1Clusters(
     Pointer<VNClustererQuery> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -10939,11 +10828,11 @@ class VNClustererQuery extends Struct<VNClustererQuery> {
     );
   }
 
-  static Pointer<Void> getDistances(
+  static Pointer getDistances(
     Pointer<VNClustererQuery> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> to,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer to,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -10955,13 +10844,13 @@ class VNClustererQuery extends Struct<VNClustererQuery> {
     );
   }
 
-  static Pointer<Void> initWithType$cachePath$state$threshold$error$(
+  static Pointer initWithType$cachePath$state$threshold$error$(
     Pointer<VNClustererQuery> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> cachePath,
-    @required Pointer<Void> state,
+    Pointer arg, {
+    @required Pointer cachePath,
+    @required Pointer state,
     @required double threshold,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_float32_p_returns_p(
@@ -10975,15 +10864,14 @@ class VNClustererQuery extends Struct<VNClustererQuery> {
     );
   }
 
-  static Pointer<Void>
-      initWithType$cachePath$state$threshold$torsoThreshold$error$(
+  static Pointer initWithType$cachePath$state$threshold$torsoThreshold$error$(
     Pointer<VNClustererQuery> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> cachePath,
-    @required Pointer<Void> state,
+    Pointer arg, {
+    @required Pointer cachePath,
+    @required Pointer state,
     @required double threshold,
     @required double torsoThreshold,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_float32_float32_p_returns_p(
@@ -10999,11 +10887,11 @@ class VNClustererQuery extends Struct<VNClustererQuery> {
     );
   }
 
-  static Pointer<Void>
+  static Pointer
       l1ClusteredFaceIdsGroupedByL0ClustersForClustersContainingFaceIds(
     Pointer<VNClustererQuery> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -11015,9 +10903,9 @@ class VNClustererQuery extends Struct<VNClustererQuery> {
     );
   }
 
-  static Pointer<Void> maximumFaceIdInModelAndReturnError(
+  static Pointer maximumFaceIdInModelAndReturnError(
     Pointer<VNClustererQuery> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -11027,12 +10915,12 @@ class VNClustererQuery extends Struct<VNClustererQuery> {
     );
   }
 
-  static Pointer<Void> suggestionsForClustersWithFaceIds(
+  static Pointer suggestionsForClustersWithFaceIds(
     Pointer<VNClustererQuery> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required double affinityThreshold,
-    @required Pointer<Void> canceller,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer canceller,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_float32_p_p_returns_p(
@@ -11047,11 +10935,9 @@ class VNClustererQuery extends Struct<VNClustererQuery> {
   }
 }
 
-/// Objective-C class _VNClustererQueryOptions_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNClustererQueryOptions extends Struct<VNClustererQueryOptions> {
   factory VNClustererQueryOptions._() {
@@ -11064,7 +10950,7 @@ class VNClustererQueryOptions extends Struct<VNClustererQueryOptions> {
         .cast<VNClustererQueryOptions>();
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<VNClustererQueryOptions> _self,
   ) {
     _openDynamicLibrary();
@@ -11074,11 +10960,11 @@ class VNClustererQueryOptions extends Struct<VNClustererQueryOptions> {
     );
   }
 
-  static Pointer<Void> initWithType$cachePath$state$threshold$(
+  static Pointer initWithType$cachePath$state$threshold$(
     Pointer<VNClustererQueryOptions> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> cachePath,
-    @required Pointer<Void> state,
+    Pointer arg, {
+    @required Pointer cachePath,
+    @required Pointer state,
     @required double threshold,
   }) {
     _openDynamicLibrary();
@@ -11092,11 +10978,11 @@ class VNClustererQueryOptions extends Struct<VNClustererQueryOptions> {
     );
   }
 
-  static Pointer<Void> initWithType$cachePath$state$threshold$torsoThreshold$(
+  static Pointer initWithType$cachePath$state$threshold$torsoThreshold$(
     Pointer<VNClustererQueryOptions> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> cachePath,
-    @required Pointer<Void> state,
+    Pointer arg, {
+    @required Pointer cachePath,
+    @required Pointer state,
     @required double threshold,
     @required double torsoThreshold,
   }) {
@@ -11114,11 +11000,9 @@ class VNClustererQueryOptions extends Struct<VNClustererQueryOptions> {
   }
 }
 
-/// Objective-C class _VNClustererReadOnlyContext_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNClustererReadOnlyContext extends Struct<VNClustererReadOnlyContext> {
   factory VNClustererReadOnlyContext._() {
@@ -11131,9 +11015,9 @@ class VNClustererReadOnlyContext extends Struct<VNClustererReadOnlyContext> {
         .cast<VNClustererReadOnlyContext>();
   }
 
-  static Pointer<Void> allClusteredFaceIdsAndReturnError(
+  static Pointer allClusteredFaceIdsAndReturnError(
     Pointer<VNClustererReadOnlyContext> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -11143,10 +11027,10 @@ class VNClustererReadOnlyContext extends Struct<VNClustererReadOnlyContext> {
     );
   }
 
-  static Pointer<Void> clusteredFaceIdsForClusterContainingFaceId(
+  static Pointer clusteredFaceIdsForClusterContainingFaceId(
     Pointer<VNClustererReadOnlyContext> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -11157,11 +11041,11 @@ class VNClustererReadOnlyContext extends Struct<VNClustererReadOnlyContext> {
     );
   }
 
-  static Pointer<Void> distanceBetweenClustersWithFaceId(
+  static Pointer distanceBetweenClustersWithFaceId(
     Pointer<VNClustererReadOnlyContext> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> andFaceId,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer andFaceId,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -11173,10 +11057,10 @@ class VNClustererReadOnlyContext extends Struct<VNClustererReadOnlyContext> {
     );
   }
 
-  static Pointer<Void> distanceBetweenLevel1Clusters(
+  static Pointer distanceBetweenLevel1Clusters(
     Pointer<VNClustererReadOnlyContext> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -11187,11 +11071,11 @@ class VNClustererReadOnlyContext extends Struct<VNClustererReadOnlyContext> {
     );
   }
 
-  static Pointer<Void> getDistances(
+  static Pointer getDistances(
     Pointer<VNClustererReadOnlyContext> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> to,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer to,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -11203,13 +11087,13 @@ class VNClustererReadOnlyContext extends Struct<VNClustererReadOnlyContext> {
     );
   }
 
-  static Pointer<Void> initWithType$cachePath$state$threshold$error$(
+  static Pointer initWithType$cachePath$state$threshold$error$(
     Pointer<VNClustererReadOnlyContext> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> cachePath,
-    @required Pointer<Void> state,
+    Pointer arg, {
+    @required Pointer cachePath,
+    @required Pointer state,
     @required double threshold,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_float32_p_returns_p(
@@ -11223,15 +11107,14 @@ class VNClustererReadOnlyContext extends Struct<VNClustererReadOnlyContext> {
     );
   }
 
-  static Pointer<Void>
-      initWithType$cachePath$state$threshold$torsoThreshold$error$(
+  static Pointer initWithType$cachePath$state$threshold$torsoThreshold$error$(
     Pointer<VNClustererReadOnlyContext> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> cachePath,
-    @required Pointer<Void> state,
+    Pointer arg, {
+    @required Pointer cachePath,
+    @required Pointer state,
     @required double threshold,
     @required double torsoThreshold,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_float32_float32_p_returns_p(
@@ -11247,11 +11130,11 @@ class VNClustererReadOnlyContext extends Struct<VNClustererReadOnlyContext> {
     );
   }
 
-  static Pointer<Void>
+  static Pointer
       l1ClusteredFaceIdsGroupedByL0ClustersForClustersContainingFaceIds(
     Pointer<VNClustererReadOnlyContext> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -11263,9 +11146,9 @@ class VNClustererReadOnlyContext extends Struct<VNClustererReadOnlyContext> {
     );
   }
 
-  static Pointer<Void> maximumFaceIdInModelAndReturnError(
+  static Pointer maximumFaceIdInModelAndReturnError(
     Pointer<VNClustererReadOnlyContext> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -11275,12 +11158,12 @@ class VNClustererReadOnlyContext extends Struct<VNClustererReadOnlyContext> {
     );
   }
 
-  static Pointer<Void> suggestionsForClustersWithFaceIds(
+  static Pointer suggestionsForClustersWithFaceIds(
     Pointer<VNClustererReadOnlyContext> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required double affinityThreshold,
-    @required Pointer<Void> canceller,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer canceller,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_float32_p_p_returns_p(
@@ -11295,11 +11178,9 @@ class VNClustererReadOnlyContext extends Struct<VNClustererReadOnlyContext> {
   }
 }
 
-/// Objective-C class _VNClustererReadWriteContext_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNClustererReadWriteContext extends Struct<VNClustererReadWriteContext> {
   factory VNClustererReadWriteContext._() {
@@ -11312,9 +11193,9 @@ class VNClustererReadWriteContext extends Struct<VNClustererReadWriteContext> {
         .cast<VNClustererReadWriteContext>();
   }
 
-  static Pointer<Void> allClusteredFaceIdsAndReturnError(
+  static Pointer allClusteredFaceIdsAndReturnError(
     Pointer<VNClustererReadWriteContext> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -11326,7 +11207,7 @@ class VNClustererReadWriteContext extends Struct<VNClustererReadWriteContext> {
 
   static int cancelClustering(
     Pointer<VNClustererReadWriteContext> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -11336,10 +11217,10 @@ class VNClustererReadWriteContext extends Struct<VNClustererReadWriteContext> {
     );
   }
 
-  static Pointer<Void> clusteredFaceIdsForClusterContainingFaceId(
+  static Pointer clusteredFaceIdsForClusterContainingFaceId(
     Pointer<VNClustererReadWriteContext> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -11350,11 +11231,11 @@ class VNClustererReadWriteContext extends Struct<VNClustererReadWriteContext> {
     );
   }
 
-  static Pointer<Void> distanceBetweenClustersWithFaceId(
+  static Pointer distanceBetweenClustersWithFaceId(
     Pointer<VNClustererReadWriteContext> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> andFaceId,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer andFaceId,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -11366,10 +11247,10 @@ class VNClustererReadWriteContext extends Struct<VNClustererReadWriteContext> {
     );
   }
 
-  static Pointer<Void> distanceBetweenLevel1Clusters(
+  static Pointer distanceBetweenLevel1Clusters(
     Pointer<VNClustererReadWriteContext> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -11380,11 +11261,11 @@ class VNClustererReadWriteContext extends Struct<VNClustererReadWriteContext> {
     );
   }
 
-  static Pointer<Void> getDistances(
+  static Pointer getDistances(
     Pointer<VNClustererReadWriteContext> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> to,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer to,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -11396,13 +11277,13 @@ class VNClustererReadWriteContext extends Struct<VNClustererReadWriteContext> {
     );
   }
 
-  static Pointer<Void> initWithType$cachePath$state$threshold$error$(
+  static Pointer initWithType$cachePath$state$threshold$error$(
     Pointer<VNClustererReadWriteContext> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> cachePath,
-    @required Pointer<Void> state,
+    Pointer arg, {
+    @required Pointer cachePath,
+    @required Pointer state,
     @required double threshold,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_float32_p_returns_p(
@@ -11416,15 +11297,14 @@ class VNClustererReadWriteContext extends Struct<VNClustererReadWriteContext> {
     );
   }
 
-  static Pointer<Void>
-      initWithType$cachePath$state$threshold$torsoThreshold$error$(
+  static Pointer initWithType$cachePath$state$threshold$torsoThreshold$error$(
     Pointer<VNClustererReadWriteContext> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> cachePath,
-    @required Pointer<Void> state,
+    Pointer arg, {
+    @required Pointer cachePath,
+    @required Pointer state,
     @required double threshold,
     @required double torsoThreshold,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_float32_float32_p_returns_p(
@@ -11440,11 +11320,11 @@ class VNClustererReadWriteContext extends Struct<VNClustererReadWriteContext> {
     );
   }
 
-  static Pointer<Void>
+  static Pointer
       l1ClusteredFaceIdsGroupedByL0ClustersForClustersContainingFaceIds(
     Pointer<VNClustererReadWriteContext> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -11456,9 +11336,9 @@ class VNClustererReadWriteContext extends Struct<VNClustererReadWriteContext> {
     );
   }
 
-  static Pointer<Void> maximumFaceIdInModelAndReturnError(
+  static Pointer maximumFaceIdInModelAndReturnError(
     Pointer<VNClustererReadWriteContext> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -11470,8 +11350,8 @@ class VNClustererReadWriteContext extends Struct<VNClustererReadWriteContext> {
 
   static int resetModelState(
     Pointer<VNClustererReadWriteContext> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -11482,9 +11362,9 @@ class VNClustererReadWriteContext extends Struct<VNClustererReadWriteContext> {
     );
   }
 
-  static Pointer<Void> saveAndReturnCurrentModelState(
+  static Pointer saveAndReturnCurrentModelState(
     Pointer<VNClustererReadWriteContext> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -11494,12 +11374,12 @@ class VNClustererReadWriteContext extends Struct<VNClustererReadWriteContext> {
     );
   }
 
-  static Pointer<Void> suggestionsForClustersWithFaceIds(
+  static Pointer suggestionsForClustersWithFaceIds(
     Pointer<VNClustererReadWriteContext> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required double affinityThreshold,
-    @required Pointer<Void> canceller,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer canceller,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_float32_p_p_returns_p(
@@ -11513,14 +11393,14 @@ class VNClustererReadWriteContext extends Struct<VNClustererReadWriteContext> {
     );
   }
 
-  static Pointer<Void>
+  static Pointer
       updateModelByAddingFaces$withGroupingIdentifiers$andRemovingFaces$canceller$error$(
     Pointer<VNClustererReadWriteContext> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> withGroupingIdentifiers,
-    @required Pointer<Void> andRemovingFaces,
-    @required Pointer<Void> canceller,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer withGroupingIdentifiers,
+    @required Pointer andRemovingFaces,
+    @required Pointer canceller,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_p_returns_p(
@@ -11535,11 +11415,11 @@ class VNClustererReadWriteContext extends Struct<VNClustererReadWriteContext> {
     );
   }
 
-  static Pointer<Void> updateModelByAddingFaces$canceller$error$(
+  static Pointer updateModelByAddingFaces$canceller$error$(
     Pointer<VNClustererReadWriteContext> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> canceller,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer canceller,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -11551,11 +11431,11 @@ class VNClustererReadWriteContext extends Struct<VNClustererReadWriteContext> {
     );
   }
 
-  static Pointer<Void> updateModelByRemovingFaces(
+  static Pointer updateModelByRemovingFaces(
     Pointer<VNClustererReadWriteContext> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> canceller,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer canceller,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -11568,11 +11448,9 @@ class VNClustererReadWriteContext extends Struct<VNClustererReadWriteContext> {
   }
 }
 
-/// Objective-C class _VNClusteringLogger_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNClusteringLogger extends Struct<VNClusteringLogger> {
   factory VNClusteringLogger._() {
@@ -11583,7 +11461,7 @@ class VNClusteringLogger extends Struct<VNClusteringLogger> {
     return _objc.allocate("VNClusteringLogger").cast<VNClusteringLogger>();
   }
 
-  static Pointer<Void> fileNameBase(
+  static Pointer fileNameBase(
     Pointer<VNClusteringLogger> _self,
   ) {
     _openDynamicLibrary();
@@ -11593,11 +11471,11 @@ class VNClusteringLogger extends Struct<VNClusteringLogger> {
     );
   }
 
-  static Pointer<Void> initWithOptions$logEnabled$logFileNameBase$(
+  static Pointer initWithOptions$logEnabled$logFileNameBase$(
     Pointer<VNClusteringLogger> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int logEnabled,
-    @required Pointer<Void> logFileNameBase,
+    @required Pointer logFileNameBase,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_Int8_p_returns_p(
@@ -11609,9 +11487,9 @@ class VNClusteringLogger extends Struct<VNClusteringLogger> {
     );
   }
 
-  static Pointer<Void> initWithOptions$logEnabled$(
+  static Pointer initWithOptions$logEnabled$(
     Pointer<VNClusteringLogger> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int logEnabled,
   }) {
     _openDynamicLibrary();
@@ -11625,7 +11503,7 @@ class VNClusteringLogger extends Struct<VNClusteringLogger> {
 
   static void logClusterLookupMapL0(
     Pointer<VNClusteringLogger> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -11637,7 +11515,7 @@ class VNClusteringLogger extends Struct<VNClusteringLogger> {
 
   static void logClusterLookupMapL1(
     Pointer<VNClusteringLogger> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -11649,8 +11527,8 @@ class VNClusteringLogger extends Struct<VNClusteringLogger> {
 
   static void logClusterMap(
     Pointer<VNClusteringLogger> _self,
-    Pointer<Pointer<Void>> arg, {
-    @required Pointer<Void> level,
+    Pointer<Pointer> arg, {
+    @required Pointer level,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -11663,7 +11541,7 @@ class VNClusteringLogger extends Struct<VNClusteringLogger> {
 
   static void logClusterMapL0(
     Pointer<VNClusteringLogger> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -11675,7 +11553,7 @@ class VNClusteringLogger extends Struct<VNClusteringLogger> {
 
   static void logClusterMapL1(
     Pointer<VNClusteringLogger> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -11695,7 +11573,7 @@ class VNClusteringLogger extends Struct<VNClusteringLogger> {
     );
   }
 
-  static Pointer<Void> logFileURL(
+  static Pointer logFileURL(
     Pointer<VNClusteringLogger> _self,
   ) {
     _openDynamicLibrary();
@@ -11705,7 +11583,7 @@ class VNClusteringLogger extends Struct<VNClusteringLogger> {
     );
   }
 
-  static Pointer<Void> logFolderURL(
+  static Pointer logFolderURL(
     Pointer<VNClusteringLogger> _self,
   ) {
     _openDynamicLibrary();
@@ -11717,7 +11595,7 @@ class VNClusteringLogger extends Struct<VNClusteringLogger> {
 
   static void logString(
     Pointer<VNClusteringLogger> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -11738,11 +11616,9 @@ class VNClusteringLogger extends Struct<VNClusteringLogger> {
   }
 }
 
-/// Objective-C class _VNCompoundRequest_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNCompoundRequest extends Struct<VNCompoundRequest> {
   factory VNCompoundRequest._() {
@@ -11763,7 +11639,7 @@ class VNCompoundRequest extends Struct<VNCompoundRequest> {
     );
   }
 
-  static Pointer<Void> compoundResults(
+  static Pointer compoundResults(
     Pointer<VNCompoundRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -11783,7 +11659,7 @@ class VNCompoundRequest extends Struct<VNCompoundRequest> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<VNCompoundRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -11793,9 +11669,9 @@ class VNCompoundRequest extends Struct<VNCompoundRequest> {
     );
   }
 
-  static Pointer<Void> initWithOriginalRequests(
+  static Pointer initWithOriginalRequests(
     Pointer<VNCompoundRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -11808,8 +11684,8 @@ class VNCompoundRequest extends Struct<VNCompoundRequest> {
   static int internalPerformRevision(
     Pointer<VNCompoundRequest> _self,
     int arg, {
-    @required Pointer<Void> inContext,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer inContext,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_Uint64_p_p_returns_Int8(
@@ -11821,7 +11697,7 @@ class VNCompoundRequest extends Struct<VNCompoundRequest> {
     );
   }
 
-  static Pointer<Void> originalRequests(
+  static Pointer originalRequests(
     Pointer<VNCompoundRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -11841,7 +11717,7 @@ class VNCompoundRequest extends Struct<VNCompoundRequest> {
     );
   }
 
-  static Pointer<Void> regionOfInterest(
+  static Pointer regionOfInterest(
     Pointer<VNCompoundRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -11851,7 +11727,7 @@ class VNCompoundRequest extends Struct<VNCompoundRequest> {
     );
   }
 
-  static Pointer<Void> sequencedRequestPreviousObservationsKey(
+  static Pointer sequencedRequestPreviousObservationsKey(
     Pointer<VNCompoundRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -11873,8 +11749,8 @@ class VNCompoundRequest extends Struct<VNCompoundRequest> {
 
   static int warmUpRequestPerformer(
     Pointer<VNCompoundRequest> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -11886,11 +11762,9 @@ class VNCompoundRequest extends Struct<VNCompoundRequest> {
   }
 }
 
-/// Objective-C class _VNCoreMLFeatureValueObservation_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNCoreMLFeatureValueObservation
     extends Struct<VNCoreMLFeatureValueObservation> {
@@ -11904,9 +11778,9 @@ class VNCoreMLFeatureValueObservation
         .cast<VNCoreMLFeatureValueObservation>();
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<VNCoreMLFeatureValueObservation> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -11916,7 +11790,7 @@ class VNCoreMLFeatureValueObservation
     );
   }
 
-  static Pointer<Void> debugDescription(
+  static Pointer debugDescription(
     Pointer<VNCoreMLFeatureValueObservation> _self,
   ) {
     _openDynamicLibrary();
@@ -11928,7 +11802,7 @@ class VNCoreMLFeatureValueObservation
 
   static void encodeWithCoder(
     Pointer<VNCoreMLFeatureValueObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -11938,7 +11812,7 @@ class VNCoreMLFeatureValueObservation
     );
   }
 
-  static Pointer<Void> featureValue(
+  static Pointer featureValue(
     Pointer<VNCoreMLFeatureValueObservation> _self,
   ) {
     _openDynamicLibrary();
@@ -11948,9 +11822,9 @@ class VNCoreMLFeatureValueObservation
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<VNCoreMLFeatureValueObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -11960,10 +11834,10 @@ class VNCoreMLFeatureValueObservation
     );
   }
 
-  static Pointer<Void> initWithRequestRevision(
+  static Pointer initWithRequestRevision(
     Pointer<VNCoreMLFeatureValueObservation> _self,
     int arg, {
-    @required Pointer<Void> featureValue,
+    @required Pointer featureValue,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_Uint64_p_returns_p(
@@ -11975,11 +11849,9 @@ class VNCoreMLFeatureValueObservation
   }
 }
 
-/// Objective-C class _VNCoreMLModel_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNCoreMLModel extends Struct<VNCoreMLModel> {
   factory VNCoreMLModel._() {
@@ -11990,7 +11862,7 @@ class VNCoreMLModel extends Struct<VNCoreMLModel> {
     return _objc.allocate("VNCoreMLModel").cast<VNCoreMLModel>();
   }
 
-  static Pointer<Void> boundingBoxOutputDescription(
+  static Pointer boundingBoxOutputDescription(
     Pointer<VNCoreMLModel> _self,
   ) {
     _openDynamicLibrary();
@@ -12000,7 +11872,7 @@ class VNCoreMLModel extends Struct<VNCoreMLModel> {
     );
   }
 
-  static Pointer<Void> cachingIdentifier(
+  static Pointer cachingIdentifier(
     Pointer<VNCoreMLModel> _self,
   ) {
     _openDynamicLibrary();
@@ -12010,9 +11882,9 @@ class VNCoreMLModel extends Struct<VNCoreMLModel> {
     );
   }
 
-  static Pointer<Void> featureValueFromScenePrint(
+  static Pointer featureValueFromScenePrint(
     Pointer<VNCoreMLModel> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int dataType,
   }) {
     _openDynamicLibrary();
@@ -12024,10 +11896,10 @@ class VNCoreMLModel extends Struct<VNCoreMLModel> {
     );
   }
 
-  static Pointer<Void> initWithMLModel(
+  static Pointer initWithMLModel(
     Pointer<VNCoreMLModel> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -12058,7 +11930,7 @@ class VNCoreMLModel extends Struct<VNCoreMLModel> {
     );
   }
 
-  static Pointer<Void> inputImageKey(
+  static Pointer inputImageKey(
     Pointer<VNCoreMLModel> _self,
   ) {
     _openDynamicLibrary();
@@ -12078,7 +11950,7 @@ class VNCoreMLModel extends Struct<VNCoreMLModel> {
     );
   }
 
-  static Pointer<Void> inputScenePrintKey(
+  static Pointer inputScenePrintKey(
     Pointer<VNCoreMLModel> _self,
   ) {
     _openDynamicLibrary();
@@ -12098,7 +11970,7 @@ class VNCoreMLModel extends Struct<VNCoreMLModel> {
     );
   }
 
-  static Pointer<Void> model(
+  static Pointer model(
     Pointer<VNCoreMLModel> _self,
   ) {
     _openDynamicLibrary();
@@ -12118,11 +11990,11 @@ class VNCoreMLModel extends Struct<VNCoreMLModel> {
     );
   }
 
-  static Pointer<Void> predictWithCVPixelBuffer(
+  static Pointer predictWithCVPixelBuffer(
     Pointer<VNCoreMLModel> _self,
-    Pointer<Pointer<Void>> arg, {
-    @required Pointer<Void> options,
-    @required Pointer<Pointer<Void>> error,
+    Pointer<Pointer> arg, {
+    @required Pointer options,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -12134,11 +12006,11 @@ class VNCoreMLModel extends Struct<VNCoreMLModel> {
     );
   }
 
-  static Pointer<Void> predictWithScenePrint(
+  static Pointer predictWithScenePrint(
     Pointer<VNCoreMLModel> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> options,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer options,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -12150,7 +12022,7 @@ class VNCoreMLModel extends Struct<VNCoreMLModel> {
     );
   }
 
-  static Pointer<Void> predictedFeatureKey(
+  static Pointer predictedFeatureKey(
     Pointer<VNCoreMLModel> _self,
   ) {
     _openDynamicLibrary();
@@ -12160,7 +12032,7 @@ class VNCoreMLModel extends Struct<VNCoreMLModel> {
     );
   }
 
-  static Pointer<Void> predictedProbabilitiesKey(
+  static Pointer predictedProbabilitiesKey(
     Pointer<VNCoreMLModel> _self,
   ) {
     _openDynamicLibrary();
@@ -12180,7 +12052,7 @@ class VNCoreMLModel extends Struct<VNCoreMLModel> {
     );
   }
 
-  static Pointer<Void> sequencedRequestPreviousObservationsKey(
+  static Pointer sequencedRequestPreviousObservationsKey(
     Pointer<VNCoreMLModel> _self,
   ) {
     _openDynamicLibrary();
@@ -12192,7 +12064,7 @@ class VNCoreMLModel extends Struct<VNCoreMLModel> {
 
   static void setInputImageKey(
     Pointer<VNCoreMLModel> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -12204,7 +12076,7 @@ class VNCoreMLModel extends Struct<VNCoreMLModel> {
 
   static void setInputScenePrintKey(
     Pointer<VNCoreMLModel> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -12216,7 +12088,7 @@ class VNCoreMLModel extends Struct<VNCoreMLModel> {
 
   static void setModel(
     Pointer<VNCoreMLModel> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -12240,7 +12112,7 @@ class VNCoreMLModel extends Struct<VNCoreMLModel> {
 
   static void setPredictedFeatureKey(
     Pointer<VNCoreMLModel> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -12252,7 +12124,7 @@ class VNCoreMLModel extends Struct<VNCoreMLModel> {
 
   static int setupInputImageFromModelDescription(
     Pointer<VNCoreMLModel> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -12273,11 +12145,9 @@ class VNCoreMLModel extends Struct<VNCoreMLModel> {
   }
 }
 
-/// Objective-C class _VNCoreMLRequest_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNCoreMLRequest extends Struct<VNCoreMLRequest> {
   factory VNCoreMLRequest._() {
@@ -12300,7 +12170,7 @@ class VNCoreMLRequest extends Struct<VNCoreMLRequest> {
 
   static void applyConfigurationOfRequest(
     Pointer<VNCoreMLRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -12320,10 +12190,10 @@ class VNCoreMLRequest extends Struct<VNCoreMLRequest> {
     );
   }
 
-  static Pointer<Void> initWithModel$completionHandler$(
+  static Pointer initWithModel$completionHandler$(
     Pointer<VNCoreMLRequest> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> completionHandler,
+    Pointer arg, {
+    @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -12334,9 +12204,9 @@ class VNCoreMLRequest extends Struct<VNCoreMLRequest> {
     );
   }
 
-  static Pointer<Void> initWithModel$(
+  static Pointer initWithModel$(
     Pointer<VNCoreMLRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -12346,11 +12216,11 @@ class VNCoreMLRequest extends Struct<VNCoreMLRequest> {
     );
   }
 
-  static Pointer<Void> initWithName(
+  static Pointer initWithName(
     Pointer<VNCoreMLRequest> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> options,
-    @required Pointer<Void> completionHandler,
+    Pointer arg, {
+    @required Pointer options,
+    @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -12365,8 +12235,8 @@ class VNCoreMLRequest extends Struct<VNCoreMLRequest> {
   static int internalPerformRevision(
     Pointer<VNCoreMLRequest> _self,
     int arg, {
-    @required Pointer<Void> inContext,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer inContext,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_Uint64_p_p_returns_Int8(
@@ -12378,7 +12248,7 @@ class VNCoreMLRequest extends Struct<VNCoreMLRequest> {
     );
   }
 
-  static Pointer<Void> model(
+  static Pointer model(
     Pointer<VNCoreMLRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -12388,7 +12258,7 @@ class VNCoreMLRequest extends Struct<VNCoreMLRequest> {
     );
   }
 
-  static Pointer<Void> newDefaultRequestInstance(
+  static Pointer newDefaultRequestInstance(
     Pointer<VNCoreMLRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -12398,7 +12268,7 @@ class VNCoreMLRequest extends Struct<VNCoreMLRequest> {
     );
   }
 
-  static Pointer<Void> sequencedRequestPreviousObservationsKey(
+  static Pointer sequencedRequestPreviousObservationsKey(
     Pointer<VNCoreMLRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -12422,7 +12292,7 @@ class VNCoreMLRequest extends Struct<VNCoreMLRequest> {
 
   static int willAcceptCachedResultsFromRequestWithConfiguration(
     Pointer<VNCoreMLRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -12433,11 +12303,9 @@ class VNCoreMLRequest extends Struct<VNCoreMLRequest> {
   }
 }
 
-/// Objective-C class _VNCoreMLRequestConfiguration_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNCoreMLRequestConfiguration
     extends Struct<VNCoreMLRequestConfiguration> {
@@ -12451,9 +12319,9 @@ class VNCoreMLRequestConfiguration
         .cast<VNCoreMLRequestConfiguration>();
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<VNCoreMLRequestConfiguration> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -12463,7 +12331,7 @@ class VNCoreMLRequestConfiguration
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<VNCoreMLRequestConfiguration> _self,
   ) {
     _openDynamicLibrary();
@@ -12483,9 +12351,9 @@ class VNCoreMLRequestConfiguration
     );
   }
 
-  static Pointer<Void> initWithRequestClass(
+  static Pointer initWithRequestClass(
     Pointer<VNCoreMLRequestConfiguration> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -12495,7 +12363,7 @@ class VNCoreMLRequestConfiguration
     );
   }
 
-  static Pointer<Void> modelCachingIdentifier(
+  static Pointer modelCachingIdentifier(
     Pointer<VNCoreMLRequestConfiguration> _self,
   ) {
     _openDynamicLibrary();
@@ -12519,7 +12387,7 @@ class VNCoreMLRequestConfiguration
 
   static void setModelCachingIdentifier(
     Pointer<VNCoreMLRequestConfiguration> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -12531,7 +12399,7 @@ class VNCoreMLRequestConfiguration
 
   static void updateWithPropertiesOfModel(
     Pointer<VNCoreMLRequestConfiguration> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -12542,11 +12410,9 @@ class VNCoreMLRequestConfiguration
   }
 }
 
-/// Objective-C class _VNCoreMLTransformer_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNCoreMLTransformer extends Struct<VNCoreMLTransformer> {
   factory VNCoreMLTransformer._() {
@@ -12557,11 +12423,11 @@ class VNCoreMLTransformer extends Struct<VNCoreMLTransformer> {
     return _objc.allocate("VNCoreMLTransformer").cast<VNCoreMLTransformer>();
   }
 
-  static Pointer<Void> initWithOptions(
+  static Pointer initWithOptions(
     Pointer<VNCoreMLTransformer> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> model,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer model,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -12573,7 +12439,7 @@ class VNCoreMLTransformer extends Struct<VNCoreMLTransformer> {
     );
   }
 
-  static Pointer<Void> model(
+  static Pointer model(
     Pointer<VNCoreMLTransformer> _self,
   ) {
     _openDynamicLibrary();
@@ -12593,12 +12459,12 @@ class VNCoreMLTransformer extends Struct<VNCoreMLTransformer> {
     );
   }
 
-  static Pointer<Void> processWithOptions(
+  static Pointer processWithOptions(
     Pointer<VNCoreMLTransformer> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> regionOfInterest,
-    @required Pointer<Void> warningRecorder,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer regionOfInterest,
+    @required Pointer warningRecorder,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_returns_p(
@@ -12613,11 +12479,9 @@ class VNCoreMLTransformer extends Struct<VNCoreMLTransformer> {
   }
 }
 
-/// Objective-C class _VNCreateFaceRegionMapRequest_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNCreateFaceRegionMapRequest
     extends Struct<VNCreateFaceRegionMapRequest> {
@@ -12634,8 +12498,8 @@ class VNCreateFaceRegionMapRequest
   static int internalPerformRevision(
     Pointer<VNCreateFaceRegionMapRequest> _self,
     int arg, {
-    @required Pointer<Void> inContext,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer inContext,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_Uint64_p_p_returns_Int8(
@@ -12649,8 +12513,8 @@ class VNCreateFaceRegionMapRequest
 
   static int warmUpRequestPerformer(
     Pointer<VNCreateFaceRegionMapRequest> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -12662,11 +12526,9 @@ class VNCreateFaceRegionMapRequest
   }
 }
 
-/// Objective-C class _VNCreateFaceTorsoprintRequest_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNCreateFaceTorsoprintRequest
     extends Struct<VNCreateFaceTorsoprintRequest> {
@@ -12693,8 +12555,8 @@ class VNCreateFaceTorsoprintRequest
   static int internalPerformRevision(
     Pointer<VNCreateFaceTorsoprintRequest> _self,
     int arg, {
-    @required Pointer<Void> inContext,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer inContext,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_Uint64_p_p_returns_Int8(
@@ -12708,8 +12570,8 @@ class VNCreateFaceTorsoprintRequest
 
   static int warmUpRequestPerformer(
     Pointer<VNCreateFaceTorsoprintRequest> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -12721,11 +12583,9 @@ class VNCreateFaceTorsoprintRequest
   }
 }
 
-/// Objective-C class _VNCreateFaceprintRequest_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNCreateFaceprintRequest extends Struct<VNCreateFaceprintRequest> {
   factory VNCreateFaceprintRequest._() {
@@ -12751,8 +12611,8 @@ class VNCreateFaceprintRequest extends Struct<VNCreateFaceprintRequest> {
   static int internalPerformRevision(
     Pointer<VNCreateFaceprintRequest> _self,
     int arg, {
-    @required Pointer<Void> inContext,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer inContext,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_Uint64_p_p_returns_Int8(
@@ -12766,8 +12626,8 @@ class VNCreateFaceprintRequest extends Struct<VNCreateFaceprintRequest> {
 
   static int warmUpRequestPerformer(
     Pointer<VNCreateFaceprintRequest> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -12779,11 +12639,9 @@ class VNCreateFaceprintRequest extends Struct<VNCreateFaceprintRequest> {
   }
 }
 
-/// Objective-C class _VNCreateImageprintRequest_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNCreateImageprintRequest extends Struct<VNCreateImageprintRequest> {
   factory VNCreateImageprintRequest._() {
@@ -12798,7 +12656,7 @@ class VNCreateImageprintRequest extends Struct<VNCreateImageprintRequest> {
 
   static void applyConfigurationOfRequest(
     Pointer<VNCreateImageprintRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -12811,8 +12669,8 @@ class VNCreateImageprintRequest extends Struct<VNCreateImageprintRequest> {
   static int internalPerformRevision(
     Pointer<VNCreateImageprintRequest> _self,
     int arg, {
-    @required Pointer<Void> inContext,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer inContext,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_Uint64_p_p_returns_Int8(
@@ -12826,7 +12684,7 @@ class VNCreateImageprintRequest extends Struct<VNCreateImageprintRequest> {
 
   static void setTimeStamp(
     Pointer<VNCreateImageprintRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -12836,7 +12694,7 @@ class VNCreateImageprintRequest extends Struct<VNCreateImageprintRequest> {
     );
   }
 
-  static Pointer<Void> timeStamp(
+  static Pointer timeStamp(
     Pointer<VNCreateImageprintRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -12848,8 +12706,8 @@ class VNCreateImageprintRequest extends Struct<VNCreateImageprintRequest> {
 
   static int warmUpRequestPerformer(
     Pointer<VNCreateImageprintRequest> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -12862,7 +12720,7 @@ class VNCreateImageprintRequest extends Struct<VNCreateImageprintRequest> {
 
   static int willAcceptCachedResultsFromRequestWithConfiguration(
     Pointer<VNCreateImageprintRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -12873,11 +12731,9 @@ class VNCreateImageprintRequest extends Struct<VNCreateImageprintRequest> {
   }
 }
 
-/// Objective-C class _VNCreateImageprintRequestConfiguration_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNCreateImageprintRequestConfiguration
     extends Struct<VNCreateImageprintRequestConfiguration> {
@@ -12891,9 +12747,9 @@ class VNCreateImageprintRequestConfiguration
         .cast<VNCreateImageprintRequestConfiguration>();
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<VNCreateImageprintRequestConfiguration> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -12903,9 +12759,9 @@ class VNCreateImageprintRequestConfiguration
     );
   }
 
-  static Pointer<Void> initWithRequestClass(
+  static Pointer initWithRequestClass(
     Pointer<VNCreateImageprintRequestConfiguration> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -12917,7 +12773,7 @@ class VNCreateImageprintRequestConfiguration
 
   static void setTimeStamp(
     Pointer<VNCreateImageprintRequestConfiguration> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -12927,7 +12783,7 @@ class VNCreateImageprintRequestConfiguration
     );
   }
 
-  static Pointer<Void> timeStamp(
+  static Pointer timeStamp(
     Pointer<VNCreateImageprintRequestConfiguration> _self,
   ) {
     _openDynamicLibrary();
@@ -12938,11 +12794,9 @@ class VNCreateImageprintRequestConfiguration
   }
 }
 
-/// Objective-C class _VNCreateSceneprintRequest_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNCreateSceneprintRequest extends Struct<VNCreateSceneprintRequest> {
   factory VNCreateSceneprintRequest._() {
@@ -12957,7 +12811,7 @@ class VNCreateSceneprintRequest extends Struct<VNCreateSceneprintRequest> {
 
   static void applyConfigurationOfRequest(
     Pointer<VNCreateSceneprintRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -12987,9 +12841,9 @@ class VNCreateSceneprintRequest extends Struct<VNCreateSceneprintRequest> {
     );
   }
 
-  static Pointer<Void> initWithCompletionHandler(
+  static Pointer initWithCompletionHandler(
     Pointer<VNCreateSceneprintRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -12999,11 +12853,11 @@ class VNCreateSceneprintRequest extends Struct<VNCreateSceneprintRequest> {
     );
   }
 
-  static Pointer<Void> initWithName(
+  static Pointer initWithName(
     Pointer<VNCreateSceneprintRequest> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> options,
-    @required Pointer<Void> completionHandler,
+    Pointer arg, {
+    @required Pointer options,
+    @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -13017,8 +12871,8 @@ class VNCreateSceneprintRequest extends Struct<VNCreateSceneprintRequest> {
 
   static int internalCancelInContext(
     Pointer<VNCreateSceneprintRequest> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -13032,8 +12886,8 @@ class VNCreateSceneprintRequest extends Struct<VNCreateSceneprintRequest> {
   static int internalPerformRevision(
     Pointer<VNCreateSceneprintRequest> _self,
     int arg, {
-    @required Pointer<Void> inContext,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer inContext,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_Uint64_p_p_returns_Int8(
@@ -13045,7 +12899,7 @@ class VNCreateSceneprintRequest extends Struct<VNCreateSceneprintRequest> {
     );
   }
 
-  static Pointer<Void> newDefaultDetectorOptionsForRequestRevision(
+  static Pointer newDefaultDetectorOptionsForRequestRevision(
     Pointer<VNCreateSceneprintRequest> _self,
     int arg,
   ) {
@@ -13103,7 +12957,7 @@ class VNCreateSceneprintRequest extends Struct<VNCreateSceneprintRequest> {
     );
   }
 
-  static Pointer<Void> supportedImageSizeSet(
+  static Pointer supportedImageSizeSet(
     Pointer<VNCreateSceneprintRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -13125,8 +12979,8 @@ class VNCreateSceneprintRequest extends Struct<VNCreateSceneprintRequest> {
 
   static int warmUpRequestPerformer(
     Pointer<VNCreateSceneprintRequest> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -13139,7 +12993,7 @@ class VNCreateSceneprintRequest extends Struct<VNCreateSceneprintRequest> {
 
   static int willAcceptCachedResultsFromRequestWithConfiguration(
     Pointer<VNCreateSceneprintRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -13150,11 +13004,9 @@ class VNCreateSceneprintRequest extends Struct<VNCreateSceneprintRequest> {
   }
 }
 
-/// Objective-C class _VNCreateSceneprintRequestConfiguration_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNCreateSceneprintRequestConfiguration
     extends Struct<VNCreateSceneprintRequestConfiguration> {
@@ -13168,9 +13020,9 @@ class VNCreateSceneprintRequestConfiguration
         .cast<VNCreateSceneprintRequestConfiguration>();
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<VNCreateSceneprintRequestConfiguration> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -13190,9 +13042,9 @@ class VNCreateSceneprintRequestConfiguration
     );
   }
 
-  static Pointer<Void> initWithRequestClass(
+  static Pointer initWithRequestClass(
     Pointer<VNCreateSceneprintRequestConfiguration> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -13259,11 +13111,9 @@ class VNCreateSceneprintRequestConfiguration
   }
 }
 
-/// Objective-C class _VNCreateSmartCamprintRequest_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNCreateSmartCamprintRequest
     extends Struct<VNCreateSmartCamprintRequest> {
@@ -13279,7 +13129,7 @@ class VNCreateSmartCamprintRequest
 
   static void applyConfigurationOfRequest(
     Pointer<VNCreateSmartCamprintRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -13289,11 +13139,11 @@ class VNCreateSmartCamprintRequest
     );
   }
 
-  static Pointer<Void> initWithName(
+  static Pointer initWithName(
     Pointer<VNCreateSmartCamprintRequest> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> options,
-    @required Pointer<Void> completionHandler,
+    Pointer arg, {
+    @required Pointer options,
+    @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -13308,8 +13158,8 @@ class VNCreateSmartCamprintRequest
   static int internalPerformRevision(
     Pointer<VNCreateSmartCamprintRequest> _self,
     int arg, {
-    @required Pointer<Void> inContext,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer inContext,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_Uint64_p_p_returns_Int8(
@@ -13345,8 +13195,8 @@ class VNCreateSmartCamprintRequest
 
   static int warmUpRequestPerformer(
     Pointer<VNCreateSmartCamprintRequest> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -13359,7 +13209,7 @@ class VNCreateSmartCamprintRequest
 
   static int willAcceptCachedResultsFromRequestWithConfiguration(
     Pointer<VNCreateSmartCamprintRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -13370,11 +13220,9 @@ class VNCreateSmartCamprintRequest
   }
 }
 
-/// Objective-C class _VNCreateSmartCamprintRequestConfiguration_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNCreateSmartCamprintRequestConfiguration
     extends Struct<VNCreateSmartCamprintRequestConfiguration> {
@@ -13388,9 +13236,9 @@ class VNCreateSmartCamprintRequestConfiguration
         .cast<VNCreateSmartCamprintRequestConfiguration>();
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<VNCreateSmartCamprintRequestConfiguration> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -13400,9 +13248,9 @@ class VNCreateSmartCamprintRequestConfiguration
     );
   }
 
-  static Pointer<Void> initWithRequestClass(
+  static Pointer initWithRequestClass(
     Pointer<VNCreateSmartCamprintRequestConfiguration> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -13435,11 +13283,9 @@ class VNCreateSmartCamprintRequestConfiguration
   }
 }
 
-/// Objective-C class _VNCreateTorsoprintRequest_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNCreateTorsoprintRequest extends Struct<VNCreateTorsoprintRequest> {
   factory VNCreateTorsoprintRequest._() {
@@ -13465,8 +13311,8 @@ class VNCreateTorsoprintRequest extends Struct<VNCreateTorsoprintRequest> {
   static int internalPerformRevision(
     Pointer<VNCreateTorsoprintRequest> _self,
     int arg, {
-    @required Pointer<Void> inContext,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer inContext,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_Uint64_p_p_returns_Int8(
@@ -13480,8 +13326,8 @@ class VNCreateTorsoprintRequest extends Struct<VNCreateTorsoprintRequest> {
 
   static int warmUpRequestPerformer(
     Pointer<VNCreateTorsoprintRequest> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -13493,11 +13339,9 @@ class VNCreateTorsoprintRequest extends Struct<VNCreateTorsoprintRequest> {
   }
 }
 
-/// Objective-C class _VNDebugHelpers_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNDebugHelpers extends Struct<VNDebugHelpers> {
   factory VNDebugHelpers._() {
@@ -13509,11 +13353,9 @@ class VNDebugHelpers extends Struct<VNDebugHelpers> {
   }
 }
 
-/// Objective-C class _VNDetectBarcodesRequest_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNDetectBarcodesRequest extends Struct<VNDetectBarcodesRequest> {
   factory VNDetectBarcodesRequest._() {
@@ -13528,7 +13370,7 @@ class VNDetectBarcodesRequest extends Struct<VNDetectBarcodesRequest> {
 
   static void applyConfigurationOfRequest(
     Pointer<VNDetectBarcodesRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -13541,8 +13383,8 @@ class VNDetectBarcodesRequest extends Struct<VNDetectBarcodesRequest> {
   static int internalPerformRevision(
     Pointer<VNDetectBarcodesRequest> _self,
     int arg, {
-    @required Pointer<Void> inContext,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer inContext,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_Uint64_p_p_returns_Int8(
@@ -13554,7 +13396,7 @@ class VNDetectBarcodesRequest extends Struct<VNDetectBarcodesRequest> {
     );
   }
 
-  static Pointer<Void> locateMode(
+  static Pointer locateMode(
     Pointer<VNDetectBarcodesRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -13564,15 +13406,15 @@ class VNDetectBarcodesRequest extends Struct<VNDetectBarcodesRequest> {
     );
   }
 
-  static Pointer<Void> newBarcodeObservationForACBSBarcodeInfo(
+  static Pointer newBarcodeObservationForACBSBarcodeInfo(
     Pointer<VNDetectBarcodesRequest> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int imageWidth,
     @required int imageHeight,
-    @required Pointer<Void> roiCroppingPixelRect,
+    @required Pointer roiCroppingPixelRect,
     @required double scanConfidence,
     @required int requestRevision,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_Uint64_Uint64_p_float32_Uint64_p_returns_p(
@@ -13591,7 +13433,7 @@ class VNDetectBarcodesRequest extends Struct<VNDetectBarcodesRequest> {
 
   static void setLocateMode(
     Pointer<VNDetectBarcodesRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -13603,7 +13445,7 @@ class VNDetectBarcodesRequest extends Struct<VNDetectBarcodesRequest> {
 
   static void setSymbologies(
     Pointer<VNDetectBarcodesRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -13613,7 +13455,7 @@ class VNDetectBarcodesRequest extends Struct<VNDetectBarcodesRequest> {
     );
   }
 
-  static Pointer<Void> symbologies(
+  static Pointer symbologies(
     Pointer<VNDetectBarcodesRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -13624,11 +13466,9 @@ class VNDetectBarcodesRequest extends Struct<VNDetectBarcodesRequest> {
   }
 }
 
-/// Objective-C class _VNDetectBarcodesRequestConfiguration_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNDetectBarcodesRequestConfiguration
     extends Struct<VNDetectBarcodesRequestConfiguration> {
@@ -13642,9 +13482,9 @@ class VNDetectBarcodesRequestConfiguration
         .cast<VNDetectBarcodesRequestConfiguration>();
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<VNDetectBarcodesRequestConfiguration> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -13654,9 +13494,9 @@ class VNDetectBarcodesRequestConfiguration
     );
   }
 
-  static Pointer<Void> initWithRequestClass(
+  static Pointer initWithRequestClass(
     Pointer<VNDetectBarcodesRequestConfiguration> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -13666,7 +13506,7 @@ class VNDetectBarcodesRequestConfiguration
     );
   }
 
-  static Pointer<Void> locateMode(
+  static Pointer locateMode(
     Pointer<VNDetectBarcodesRequestConfiguration> _self,
   ) {
     _openDynamicLibrary();
@@ -13678,7 +13518,7 @@ class VNDetectBarcodesRequestConfiguration
 
   static void setLocateMode(
     Pointer<VNDetectBarcodesRequestConfiguration> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -13690,7 +13530,7 @@ class VNDetectBarcodesRequestConfiguration
 
   static void setSymbologies(
     Pointer<VNDetectBarcodesRequestConfiguration> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -13700,7 +13540,7 @@ class VNDetectBarcodesRequestConfiguration
     );
   }
 
-  static Pointer<Void> symbologies(
+  static Pointer symbologies(
     Pointer<VNDetectBarcodesRequestConfiguration> _self,
   ) {
     _openDynamicLibrary();
@@ -13711,11 +13551,9 @@ class VNDetectBarcodesRequestConfiguration
   }
 }
 
-/// Objective-C class _VNDetectFace3DLandmarksRequest_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNDetectFace3DLandmarksRequest
     extends Struct<VNDetectFace3DLandmarksRequest> {
@@ -13741,8 +13579,8 @@ class VNDetectFace3DLandmarksRequest
 
   static int internalPerformInContext(
     Pointer<VNDetectFace3DLandmarksRequest> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -13755,8 +13593,8 @@ class VNDetectFace3DLandmarksRequest
 
   static int warmUpRequestPerformer(
     Pointer<VNDetectFace3DLandmarksRequest> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -13768,11 +13606,9 @@ class VNDetectFace3DLandmarksRequest
   }
 }
 
-/// Objective-C class _VNDetectFaceExpressionsRequest_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNDetectFaceExpressionsRequest
     extends Struct<VNDetectFaceExpressionsRequest> {
@@ -13799,8 +13635,8 @@ class VNDetectFaceExpressionsRequest
   static int internalPerformRevision(
     Pointer<VNDetectFaceExpressionsRequest> _self,
     int arg, {
-    @required Pointer<Void> inContext,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer inContext,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_Uint64_p_p_returns_Int8(
@@ -13814,8 +13650,8 @@ class VNDetectFaceExpressionsRequest
 
   static int warmUpRequestPerformer(
     Pointer<VNDetectFaceExpressionsRequest> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -13827,11 +13663,9 @@ class VNDetectFaceExpressionsRequest
   }
 }
 
-/// Objective-C class _VNDetectFaceLandmarksRequest_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNDetectFaceLandmarksRequest
     extends Struct<VNDetectFaceLandmarksRequest> {
@@ -13847,7 +13681,7 @@ class VNDetectFaceLandmarksRequest
 
   static void applyConfigurationOfRequest(
     Pointer<VNDetectFaceLandmarksRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -13857,7 +13691,7 @@ class VNDetectFaceLandmarksRequest
     );
   }
 
-  static Pointer<Void> cascadeStepCount(
+  static Pointer cascadeStepCount(
     Pointer<VNDetectFaceLandmarksRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -13880,8 +13714,8 @@ class VNDetectFaceLandmarksRequest
   static int internalPerformRevision(
     Pointer<VNDetectFaceLandmarksRequest> _self,
     int arg, {
-    @required Pointer<Void> inContext,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer inContext,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_Uint64_p_p_returns_Int8(
@@ -13893,7 +13727,7 @@ class VNDetectFaceLandmarksRequest
     );
   }
 
-  static Pointer<Void> newDefaultDetectorOptionsForRequestRevision(
+  static Pointer newDefaultDetectorOptionsForRequestRevision(
     Pointer<VNDetectFaceLandmarksRequest> _self,
     int arg,
   ) {
@@ -13947,7 +13781,7 @@ class VNDetectFaceLandmarksRequest
 
   static void setCascadeStepCount(
     Pointer<VNDetectFaceLandmarksRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -14007,8 +13841,8 @@ class VNDetectFaceLandmarksRequest
 
   static int warmUpRequestPerformer(
     Pointer<VNDetectFaceLandmarksRequest> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -14021,7 +13855,7 @@ class VNDetectFaceLandmarksRequest
 
   static int willAcceptCachedResultsFromRequestWithConfiguration(
     Pointer<VNDetectFaceLandmarksRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -14032,11 +13866,9 @@ class VNDetectFaceLandmarksRequest
   }
 }
 
-/// Objective-C class _VNDetectFaceLandmarksRequestConfiguration_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNDetectFaceLandmarksRequestConfiguration
     extends Struct<VNDetectFaceLandmarksRequestConfiguration> {
@@ -14050,7 +13882,7 @@ class VNDetectFaceLandmarksRequestConfiguration
         .cast<VNDetectFaceLandmarksRequestConfiguration>();
   }
 
-  static Pointer<Void> cascadeStepCount(
+  static Pointer cascadeStepCount(
     Pointer<VNDetectFaceLandmarksRequestConfiguration> _self,
   ) {
     _openDynamicLibrary();
@@ -14060,9 +13892,9 @@ class VNDetectFaceLandmarksRequestConfiguration
     );
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<VNDetectFaceLandmarksRequestConfiguration> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -14072,9 +13904,9 @@ class VNDetectFaceLandmarksRequestConfiguration
     );
   }
 
-  static Pointer<Void> initWithRequestClass(
+  static Pointer initWithRequestClass(
     Pointer<VNDetectFaceLandmarksRequestConfiguration> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -14126,7 +13958,7 @@ class VNDetectFaceLandmarksRequestConfiguration
 
   static void setCascadeStepCount(
     Pointer<VNDetectFaceLandmarksRequestConfiguration> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -14185,11 +14017,9 @@ class VNDetectFaceLandmarksRequestConfiguration
   }
 }
 
-/// Objective-C class _VNDetectFacePoseRequest_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNDetectFacePoseRequest extends Struct<VNDetectFacePoseRequest> {
   factory VNDetectFacePoseRequest._() {
@@ -14214,8 +14044,8 @@ class VNDetectFacePoseRequest extends Struct<VNDetectFacePoseRequest> {
 
   static int internalPerformInContext(
     Pointer<VNDetectFacePoseRequest> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -14228,8 +14058,8 @@ class VNDetectFacePoseRequest extends Struct<VNDetectFacePoseRequest> {
 
   static int warmUpRequestPerformer(
     Pointer<VNDetectFacePoseRequest> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -14241,11 +14071,9 @@ class VNDetectFacePoseRequest extends Struct<VNDetectFacePoseRequest> {
   }
 }
 
-/// Objective-C class _VNDetectFaceRectanglesRequest_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNDetectFaceRectanglesRequest
     extends Struct<VNDetectFaceRectanglesRequest> {
@@ -14272,8 +14100,8 @@ class VNDetectFaceRectanglesRequest
   static int internalPerformRevision(
     Pointer<VNDetectFaceRectanglesRequest> _self,
     int arg, {
-    @required Pointer<Void> inContext,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer inContext,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_Uint64_p_p_returns_Int8(
@@ -14287,8 +14115,8 @@ class VNDetectFaceRectanglesRequest
 
   static int warmUpRequestPerformer(
     Pointer<VNDetectFaceRectanglesRequest> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -14300,11 +14128,9 @@ class VNDetectFaceRectanglesRequest
   }
 }
 
-/// Objective-C class _VNDetectHorizonRequest_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNDetectHorizonRequest extends Struct<VNDetectHorizonRequest> {
   factory VNDetectHorizonRequest._() {
@@ -14319,8 +14145,8 @@ class VNDetectHorizonRequest extends Struct<VNDetectHorizonRequest> {
 
   static int internalPerformInContext(
     Pointer<VNDetectHorizonRequest> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -14332,11 +14158,9 @@ class VNDetectHorizonRequest extends Struct<VNDetectHorizonRequest> {
   }
 }
 
-/// Objective-C class _VNDetectHumanRectanglesRequest_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNDetectHumanRectanglesRequest
     extends Struct<VNDetectHumanRectanglesRequest> {
@@ -14353,8 +14177,8 @@ class VNDetectHumanRectanglesRequest
   static int internalPerformRevision(
     Pointer<VNDetectHumanRectanglesRequest> _self,
     int arg, {
-    @required Pointer<Void> inContext,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer inContext,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_Uint64_p_p_returns_Int8(
@@ -14368,8 +14192,8 @@ class VNDetectHumanRectanglesRequest
 
   static int warmUpRequestPerformer(
     Pointer<VNDetectHumanRectanglesRequest> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -14381,11 +14205,9 @@ class VNDetectHumanRectanglesRequest
   }
 }
 
-/// Objective-C class _VNDetectRectanglesRequest_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNDetectRectanglesRequest extends Struct<VNDetectRectanglesRequest> {
   factory VNDetectRectanglesRequest._() {
@@ -14400,7 +14222,7 @@ class VNDetectRectanglesRequest extends Struct<VNDetectRectanglesRequest> {
 
   static void applyConfigurationOfRequest(
     Pointer<VNDetectRectanglesRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -14420,11 +14242,11 @@ class VNDetectRectanglesRequest extends Struct<VNDetectRectanglesRequest> {
     );
   }
 
-  static Pointer<Void> initWithName(
+  static Pointer initWithName(
     Pointer<VNDetectRectanglesRequest> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> options,
-    @required Pointer<Void> completionHandler,
+    Pointer arg, {
+    @required Pointer options,
+    @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -14439,8 +14261,8 @@ class VNDetectRectanglesRequest extends Struct<VNDetectRectanglesRequest> {
   static int internalPerformRevision(
     Pointer<VNDetectRectanglesRequest> _self,
     int arg, {
-    @required Pointer<Void> inContext,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer inContext,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_Uint64_p_p_returns_Int8(
@@ -14522,7 +14344,7 @@ class VNDetectRectanglesRequest extends Struct<VNDetectRectanglesRequest> {
     );
   }
 
-  static Pointer<Void> resultsSortingComparator(
+  static Pointer resultsSortingComparator(
     Pointer<VNDetectRectanglesRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -14618,7 +14440,7 @@ class VNDetectRectanglesRequest extends Struct<VNDetectRectanglesRequest> {
 
   static void setSortedResults(
     Pointer<VNDetectRectanglesRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -14628,7 +14450,7 @@ class VNDetectRectanglesRequest extends Struct<VNDetectRectanglesRequest> {
     );
   }
 
-  static Pointer<Void> supportedImageSizeSet(
+  static Pointer supportedImageSizeSet(
     Pointer<VNDetectRectanglesRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -14640,7 +14462,7 @@ class VNDetectRectanglesRequest extends Struct<VNDetectRectanglesRequest> {
 
   static int willAcceptCachedResultsFromRequestWithConfiguration(
     Pointer<VNDetectRectanglesRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -14651,11 +14473,9 @@ class VNDetectRectanglesRequest extends Struct<VNDetectRectanglesRequest> {
   }
 }
 
-/// Objective-C class _VNDetectRectanglesRequestConfiguration_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNDetectRectanglesRequestConfiguration
     extends Struct<VNDetectRectanglesRequestConfiguration> {
@@ -14669,9 +14489,9 @@ class VNDetectRectanglesRequestConfiguration
         .cast<VNDetectRectanglesRequestConfiguration>();
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<VNDetectRectanglesRequestConfiguration> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -14681,9 +14501,9 @@ class VNDetectRectanglesRequestConfiguration
     );
   }
 
-  static Pointer<Void> initWithRequestClass(
+  static Pointer initWithRequestClass(
     Pointer<VNDetectRectanglesRequestConfiguration> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -14848,11 +14668,9 @@ class VNDetectRectanglesRequestConfiguration
   }
 }
 
-/// Objective-C class _VNDetectTextRectanglesRequest_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNDetectTextRectanglesRequest
     extends Struct<VNDetectTextRectanglesRequest> {
@@ -14878,7 +14696,7 @@ class VNDetectTextRectanglesRequest
 
   static void applyConfigurationOfRequest(
     Pointer<VNDetectTextRectanglesRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -14898,11 +14716,11 @@ class VNDetectTextRectanglesRequest
     );
   }
 
-  static Pointer<Void> initWithName(
+  static Pointer initWithName(
     Pointer<VNDetectTextRectanglesRequest> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> options,
-    @required Pointer<Void> completionHandler,
+    Pointer arg, {
+    @required Pointer options,
+    @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -14917,8 +14735,8 @@ class VNDetectTextRectanglesRequest
   static int internalPerformRevision(
     Pointer<VNDetectTextRectanglesRequest> _self,
     int arg, {
-    @required Pointer<Void> inContext,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer inContext,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_Uint64_p_p_returns_Int8(
@@ -15022,7 +14840,7 @@ class VNDetectTextRectanglesRequest
 
   static void setTextRecognition(
     Pointer<VNDetectTextRectanglesRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -15032,7 +14850,7 @@ class VNDetectTextRectanglesRequest
     );
   }
 
-  static Pointer<Void> textRecognition(
+  static Pointer textRecognition(
     Pointer<VNDetectTextRectanglesRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -15044,7 +14862,7 @@ class VNDetectTextRectanglesRequest
 
   static int willAcceptCachedResultsFromRequestWithConfiguration(
     Pointer<VNDetectTextRectanglesRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -15055,11 +14873,9 @@ class VNDetectTextRectanglesRequest
   }
 }
 
-/// Objective-C class _VNDetectTextRectanglesRequestConfiguration_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNDetectTextRectanglesRequestConfiguration
     extends Struct<VNDetectTextRectanglesRequestConfiguration> {
@@ -15093,9 +14909,9 @@ class VNDetectTextRectanglesRequestConfiguration
     );
   }
 
-  static Pointer<Void> initWithRequestClass(
+  static Pointer initWithRequestClass(
     Pointer<VNDetectTextRectanglesRequestConfiguration> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -15197,7 +15013,7 @@ class VNDetectTextRectanglesRequestConfiguration
 
   static void setTextRecognition(
     Pointer<VNDetectTextRectanglesRequestConfiguration> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -15207,7 +15023,7 @@ class VNDetectTextRectanglesRequestConfiguration
     );
   }
 
-  static Pointer<Void> textRecognition(
+  static Pointer textRecognition(
     Pointer<VNDetectTextRectanglesRequestConfiguration> _self,
   ) {
     _openDynamicLibrary();
@@ -15218,11 +15034,9 @@ class VNDetectTextRectanglesRequestConfiguration
   }
 }
 
-/// Objective-C class _VNDetectedObjectObservation_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNDetectedObjectObservation extends Struct<VNDetectedObjectObservation> {
   factory VNDetectedObjectObservation._() {
@@ -15235,7 +15049,7 @@ class VNDetectedObjectObservation extends Struct<VNDetectedObjectObservation> {
         .cast<VNDetectedObjectObservation>();
   }
 
-  static Pointer<Void> boundingBox(
+  static Pointer boundingBox(
     Pointer<VNDetectedObjectObservation> _self,
   ) {
     _openDynamicLibrary();
@@ -15245,9 +15059,9 @@ class VNDetectedObjectObservation extends Struct<VNDetectedObjectObservation> {
     );
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<VNDetectedObjectObservation> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -15257,7 +15071,7 @@ class VNDetectedObjectObservation extends Struct<VNDetectedObjectObservation> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<VNDetectedObjectObservation> _self,
   ) {
     _openDynamicLibrary();
@@ -15269,7 +15083,7 @@ class VNDetectedObjectObservation extends Struct<VNDetectedObjectObservation> {
 
   static void encodeWithCoder(
     Pointer<VNDetectedObjectObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -15299,7 +15113,7 @@ class VNDetectedObjectObservation extends Struct<VNDetectedObjectObservation> {
     );
   }
 
-  static Pointer<Void> identifier(
+  static Pointer identifier(
     Pointer<VNDetectedObjectObservation> _self,
   ) {
     _openDynamicLibrary();
@@ -15309,9 +15123,9 @@ class VNDetectedObjectObservation extends Struct<VNDetectedObjectObservation> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<VNDetectedObjectObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -15321,7 +15135,7 @@ class VNDetectedObjectObservation extends Struct<VNDetectedObjectObservation> {
     );
   }
 
-  static Pointer<Void> initWithRequestRevision(
+  static Pointer initWithRequestRevision(
     Pointer<VNDetectedObjectObservation> _self,
     int arg,
   ) {
@@ -15335,7 +15149,7 @@ class VNDetectedObjectObservation extends Struct<VNDetectedObjectObservation> {
 
   static int isEqual(
     Pointer<VNDetectedObjectObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -15347,7 +15161,7 @@ class VNDetectedObjectObservation extends Struct<VNDetectedObjectObservation> {
 
   static void setBoundingBox(
     Pointer<VNDetectedObjectObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -15359,10 +15173,10 @@ class VNDetectedObjectObservation extends Struct<VNDetectedObjectObservation> {
 
   static void setBoundingBoxFromQuadrilateralPointsAtTopLeft(
     Pointer<VNDetectedObjectObservation> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> topRight,
-    @required Pointer<Void> bottomRight,
-    @required Pointer<Void> bottomLeft,
+    Pointer arg, {
+    @required Pointer topRight,
+    @required Pointer bottomRight,
+    @required Pointer bottomLeft,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_returns_void(
@@ -15378,7 +15192,7 @@ class VNDetectedObjectObservation extends Struct<VNDetectedObjectObservation> {
 
   static void setIdentifier(
     Pointer<VNDetectedObjectObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -15389,11 +15203,9 @@ class VNDetectedObjectObservation extends Struct<VNDetectedObjectObservation> {
   }
 }
 
-/// Objective-C class _VNDetector_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNDetector extends Struct<VNDetector> {
   factory VNDetector._() {
@@ -15416,7 +15228,7 @@ class VNDetector extends Struct<VNDetector> {
 
   static int completeInitializationAndReturnError(
     Pointer<VNDetector> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -15426,7 +15238,7 @@ class VNDetector extends Struct<VNDetector> {
     );
   }
 
-  static Pointer<Void> configurationOptions(
+  static Pointer configurationOptions(
     Pointer<VNDetector> _self,
   ) {
     _openDynamicLibrary();
@@ -15448,9 +15260,9 @@ class VNDetector extends Struct<VNDetector> {
 
   static int getOptionalCanceller(
     Pointer<VNDetector> _self,
-    Pointer<Pointer<Void>> arg, {
-    @required Pointer<Void> inOptions,
-    @required Pointer<Pointer<Void>> error,
+    Pointer<Pointer> arg, {
+    @required Pointer inOptions,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_Int8(
@@ -15462,9 +15274,9 @@ class VNDetector extends Struct<VNDetector> {
     );
   }
 
-  static Pointer<Void> initWithConfigurationOptions(
+  static Pointer initWithConfigurationOptions(
     Pointer<VNDetector> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -15474,7 +15286,7 @@ class VNDetector extends Struct<VNDetector> {
     );
   }
 
-  static Pointer<Void> metalContext(
+  static Pointer metalContext(
     Pointer<VNDetector> _self,
   ) {
     _openDynamicLibrary();
@@ -15494,10 +15306,10 @@ class VNDetector extends Struct<VNDetector> {
     );
   }
 
-  static Pointer<Void> newMetalContextForConfigurationOptions(
+  static Pointer newMetalContextForConfigurationOptions(
     Pointer<VNDetector> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -15508,13 +15320,13 @@ class VNDetector extends Struct<VNDetector> {
     );
   }
 
-  static Pointer<Void> processInSynchronizationQueueUsingQualityOfServiceClass(
+  static Pointer processInSynchronizationQueueUsingQualityOfServiceClass(
     Pointer<VNDetector> _self,
     int arg, {
-    @required Pointer<Void> options,
-    @required Pointer<Void> regionOfInterest,
-    @required Pointer<Void> warningRecorder,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer options,
+    @required Pointer regionOfInterest,
+    @required Pointer warningRecorder,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_Uint32_p_p_p_p_returns_p(
@@ -15529,12 +15341,12 @@ class VNDetector extends Struct<VNDetector> {
     );
   }
 
-  static Pointer<Void> processWithOptions(
+  static Pointer processWithOptions(
     Pointer<VNDetector> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> regionOfInterest,
-    @required Pointer<Void> warningRecorder,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer regionOfInterest,
+    @required Pointer warningRecorder,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_returns_p(
@@ -15548,7 +15360,7 @@ class VNDetector extends Struct<VNDetector> {
     );
   }
 
-  static Pointer<Void> processingQueue(
+  static Pointer processingQueue(
     Pointer<VNDetector> _self,
   ) {
     _openDynamicLibrary();
@@ -15568,10 +15380,10 @@ class VNDetector extends Struct<VNDetector> {
     );
   }
 
-  static Pointer<Void> requiredCancellerInOptions(
+  static Pointer requiredCancellerInOptions(
     Pointer<VNDetector> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -15584,7 +15396,7 @@ class VNDetector extends Struct<VNDetector> {
 
   static void setSynchronizationQueue(
     Pointer<VNDetector> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -15596,7 +15408,7 @@ class VNDetector extends Struct<VNDetector> {
 
   static int supportsProcessingDevice(
     Pointer<VNDetector> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -15606,7 +15418,7 @@ class VNDetector extends Struct<VNDetector> {
     );
   }
 
-  static Pointer<Void> synchronizationQueue(
+  static Pointer synchronizationQueue(
     Pointer<VNDetector> _self,
   ) {
     _openDynamicLibrary();
@@ -15628,8 +15440,8 @@ class VNDetector extends Struct<VNDetector> {
 
   static int validateImageBuffer(
     Pointer<VNDetector> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -15640,10 +15452,10 @@ class VNDetector extends Struct<VNDetector> {
     );
   }
 
-  static Pointer<Void> validatedImageBufferFromOptions(
+  static Pointer validatedImageBufferFromOptions(
     Pointer<VNDetector> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -15654,10 +15466,10 @@ class VNDetector extends Struct<VNDetector> {
     );
   }
 
-  static Pointer<Void> validatedProcessingDeviceInOptions(
+  static Pointer validatedProcessingDeviceInOptions(
     Pointer<VNDetector> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -15669,11 +15481,9 @@ class VNDetector extends Struct<VNDetector> {
   }
 }
 
-/// Objective-C class _VNDetectorManager_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNDetectorManager extends Struct<VNDetectorManager> {
   factory VNDetectorManager._() {
@@ -15684,10 +15494,10 @@ class VNDetectorManager extends Struct<VNDetectorManager> {
     return _objc.allocate("VNDetectorManager").cast<VNDetectorManager>();
   }
 
-  static Pointer<Void> detectorClassForDetectorType(
+  static Pointer detectorClassForDetectorType(
     Pointer<VNDetectorManager> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> options,
+    Pointer arg, {
+    @required Pointer options,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -15698,11 +15508,11 @@ class VNDetectorManager extends Struct<VNDetectorManager> {
     );
   }
 
-  static Pointer<Void> detectorOfType(
+  static Pointer detectorOfType(
     Pointer<VNDetectorManager> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> options,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer options,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -15726,7 +15536,7 @@ class VNDetectorManager extends Struct<VNDetectorManager> {
 
   static void forcedCleanupWithOptions(
     Pointer<VNDetectorManager> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -15736,7 +15546,7 @@ class VNDetectorManager extends Struct<VNDetectorManager> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<VNDetectorManager> _self,
   ) {
     _openDynamicLibrary();
@@ -15746,7 +15556,7 @@ class VNDetectorManager extends Struct<VNDetectorManager> {
     );
   }
 
-  static Pointer<Void> loadedDetectors(
+  static Pointer loadedDetectors(
     Pointer<VNDetectorManager> _self,
   ) {
     _openDynamicLibrary();
@@ -15756,9 +15566,9 @@ class VNDetectorManager extends Struct<VNDetectorManager> {
     );
   }
 
-  static Pointer<Void> wisdomParametersForMetalDeviceWithName(
+  static Pointer wisdomParametersForMetalDeviceWithName(
     Pointer<VNDetectorManager> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -15769,11 +15579,9 @@ class VNDetectorManager extends Struct<VNDetectorManager> {
   }
 }
 
-/// Objective-C class _VNError_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNError extends Struct<VNError> {
   factory VNError._() {
@@ -15785,11 +15593,9 @@ class VNError extends Struct<VNError> {
   }
 }
 
-/// Objective-C class _VNEspressoFaceDetectedObject_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNEspressoFaceDetectedObject
     extends Struct<VNEspressoFaceDetectedObject> {
@@ -15803,7 +15609,7 @@ class VNEspressoFaceDetectedObject
         .cast<VNEspressoFaceDetectedObject>();
   }
 
-  static Pointer<Void> bounds(
+  static Pointer bounds(
     Pointer<VNEspressoFaceDetectedObject> _self,
   ) {
     _openDynamicLibrary();
@@ -15813,7 +15619,7 @@ class VNEspressoFaceDetectedObject
     );
   }
 
-  static Pointer<Void> center(
+  static Pointer center(
     Pointer<VNEspressoFaceDetectedObject> _self,
   ) {
     _openDynamicLibrary();
@@ -15833,7 +15639,7 @@ class VNEspressoFaceDetectedObject
     );
   }
 
-  static Pointer<Void> initWithOptionsXloc(
+  static Pointer initWithOptionsXloc(
     Pointer<VNEspressoFaceDetectedObject> _self,
     double arg, {
     @required double yloc,
@@ -15863,7 +15669,7 @@ class VNEspressoFaceDetectedObject
 
   static void setBounds(
     Pointer<VNEspressoFaceDetectedObject> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -15875,7 +15681,7 @@ class VNEspressoFaceDetectedObject
 
   static void setCenter(
     Pointer<VNEspressoFaceDetectedObject> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -15898,11 +15704,9 @@ class VNEspressoFaceDetectedObject
   }
 }
 
-/// Objective-C class _VNEspressoHelpers_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNEspressoHelpers extends Struct<VNEspressoHelpers> {
   factory VNEspressoHelpers._() {
@@ -15914,11 +15718,9 @@ class VNEspressoHelpers extends Struct<VNEspressoHelpers> {
   }
 }
 
-/// Objective-C class _VNEspressoModelClassifier_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNEspressoModelClassifier extends Struct<VNEspressoModelClassifier> {
   factory VNEspressoModelClassifier._() {
@@ -15931,7 +15733,7 @@ class VNEspressoModelClassifier extends Struct<VNEspressoModelClassifier> {
         .cast<VNEspressoModelClassifier>();
   }
 
-  static Pointer<Void> blacklistedIdentifiers(
+  static Pointer blacklistedIdentifiers(
     Pointer<VNEspressoModelClassifier> _self,
   ) {
     _openDynamicLibrary();
@@ -15941,12 +15743,12 @@ class VNEspressoModelClassifier extends Struct<VNEspressoModelClassifier> {
     );
   }
 
-  static Pointer<Void> calculateImageDescriptorsWithOptions(
+  static Pointer calculateImageDescriptorsWithOptions(
     Pointer<VNEspressoModelClassifier> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> regionOfInterest,
-    @required Pointer<Void> warningRecorder,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer regionOfInterest,
+    @required Pointer warningRecorder,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_returns_p(
@@ -15962,7 +15764,7 @@ class VNEspressoModelClassifier extends Struct<VNEspressoModelClassifier> {
 
   static int completeInitializationAndReturnError(
     Pointer<VNEspressoModelClassifier> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -15972,7 +15774,7 @@ class VNEspressoModelClassifier extends Struct<VNEspressoModelClassifier> {
     );
   }
 
-  static Pointer<Void> getLabels(
+  static Pointer getLabels(
     Pointer<VNEspressoModelClassifier> _self,
   ) {
     _openDynamicLibrary();
@@ -15983,11 +15785,9 @@ class VNEspressoModelClassifier extends Struct<VNEspressoModelClassifier> {
   }
 }
 
-/// Objective-C class _VNEspressoModelFileBasedDetector_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNEspressoModelFileBasedDetector
     extends Struct<VNEspressoModelFileBasedDetector> {
@@ -16003,7 +15803,7 @@ class VNEspressoModelFileBasedDetector
 
   static int completeInitializationAndReturnError(
     Pointer<VNEspressoModelFileBasedDetector> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -16023,7 +15823,7 @@ class VNEspressoModelFileBasedDetector
     );
   }
 
-  static Pointer<Void> espressoContext(
+  static Pointer espressoContext(
     Pointer<VNEspressoModelFileBasedDetector> _self,
   ) {
     _openDynamicLibrary();
@@ -16033,9 +15833,9 @@ class VNEspressoModelFileBasedDetector
     );
   }
 
-  static Pointer<Void> espressoModelFileNameForConfigurationOptions(
+  static Pointer espressoModelFileNameForConfigurationOptions(
     Pointer<VNEspressoModelFileBasedDetector> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -16045,10 +15845,10 @@ class VNEspressoModelFileBasedDetector
     );
   }
 
-  static Pointer<Void>
+  static Pointer
       espressoModelInputImageDimensionsBlobNameForConfigurationOptions(
     Pointer<VNEspressoModelFileBasedDetector> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -16061,7 +15861,7 @@ class VNEspressoModelFileBasedDetector
 
   static int espressoModelNetworkLayersStorageTypeForConfigurationOptions(
     Pointer<VNEspressoModelFileBasedDetector> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int32(
@@ -16072,7 +15872,7 @@ class VNEspressoModelFileBasedDetector
     );
   }
 
-  static Pointer<Void> espressoNetwork(
+  static Pointer espressoNetwork(
     Pointer<VNEspressoModelFileBasedDetector> _self,
   ) {
     _openDynamicLibrary();
@@ -16082,7 +15882,7 @@ class VNEspressoModelFileBasedDetector
     );
   }
 
-  static Pointer<Void> espressoPlan(
+  static Pointer espressoPlan(
     Pointer<VNEspressoModelFileBasedDetector> _self,
   ) {
     _openDynamicLibrary();
@@ -16096,8 +15896,8 @@ class VNEspressoModelFileBasedDetector
     Pointer<VNEspressoModelFileBasedDetector> _self,
     Pointer<Uint64> arg, {
     @required Pointer<Uint64> height,
-    @required Pointer<Void> ofEspressoModelNetworkBlobNamed,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer ofEspressoModelNetworkBlobNamed,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_returns_Int8(
@@ -16133,7 +15933,7 @@ class VNEspressoModelFileBasedDetector
 
   static int supportsProcessingDevice(
     Pointer<VNEspressoModelFileBasedDetector> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -16144,11 +15944,9 @@ class VNEspressoModelFileBasedDetector
   }
 }
 
-/// Objective-C class _VNEspressoModelImageprint_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNEspressoModelImageprint extends Struct<VNEspressoModelImageprint> {
   factory VNEspressoModelImageprint._() {
@@ -16161,11 +15959,11 @@ class VNEspressoModelImageprint extends Struct<VNEspressoModelImageprint> {
         .cast<VNEspressoModelImageprint>();
   }
 
-  static Pointer<Void> computeDistance(
+  static Pointer computeDistance(
     Pointer<VNEspressoModelImageprint> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int withDistanceFunction,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_Uint64_p_returns_p(
@@ -16187,9 +15985,9 @@ class VNEspressoModelImageprint extends Struct<VNEspressoModelImageprint> {
     );
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<VNEspressoModelImageprint> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -16199,7 +15997,7 @@ class VNEspressoModelImageprint extends Struct<VNEspressoModelImageprint> {
     );
   }
 
-  static Pointer<Void> descriptorData(
+  static Pointer descriptorData(
     Pointer<VNEspressoModelImageprint> _self,
   ) {
     _openDynamicLibrary();
@@ -16231,7 +16029,7 @@ class VNEspressoModelImageprint extends Struct<VNEspressoModelImageprint> {
 
   static void encodeWithCoder(
     Pointer<VNEspressoModelImageprint> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -16251,9 +16049,9 @@ class VNEspressoModelImageprint extends Struct<VNEspressoModelImageprint> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<VNEspressoModelImageprint> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -16263,12 +16061,12 @@ class VNEspressoModelImageprint extends Struct<VNEspressoModelImageprint> {
     );
   }
 
-  static Pointer<Void> initWithData(
+  static Pointer initWithData(
     Pointer<VNEspressoModelImageprint> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int elementCount,
     @required int lengthInBytes,
-    @required Pointer<Void> labelsAndConfidence,
+    @required Pointer labelsAndConfidence,
     @required int requestRevision,
   }) {
     _openDynamicLibrary();
@@ -16284,11 +16082,11 @@ class VNEspressoModelImageprint extends Struct<VNEspressoModelImageprint> {
     );
   }
 
-  static Pointer<Void> initWithState$startingAtByteOffset$error$(
+  static Pointer initWithState$startingAtByteOffset$error$(
     Pointer<VNEspressoModelImageprint> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int startingAtByteOffset,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_Uint64_p_returns_p(
@@ -16300,10 +16098,10 @@ class VNEspressoModelImageprint extends Struct<VNEspressoModelImageprint> {
     );
   }
 
-  static Pointer<Void> initWithState$error$(
+  static Pointer initWithState$error$(
     Pointer<VNEspressoModelImageprint> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -16316,7 +16114,7 @@ class VNEspressoModelImageprint extends Struct<VNEspressoModelImageprint> {
 
   static int isEqual(
     Pointer<VNEspressoModelImageprint> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -16326,7 +16124,7 @@ class VNEspressoModelImageprint extends Struct<VNEspressoModelImageprint> {
     );
   }
 
-  static Pointer<Void> labelsAndConfidence(
+  static Pointer labelsAndConfidence(
     Pointer<VNEspressoModelImageprint> _self,
   ) {
     _openDynamicLibrary();
@@ -16356,9 +16154,9 @@ class VNEspressoModelImageprint extends Struct<VNEspressoModelImageprint> {
     );
   }
 
-  static Pointer<Void> serializeStateAndReturnError(
+  static Pointer serializeStateAndReturnError(
     Pointer<VNEspressoModelImageprint> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -16370,9 +16168,9 @@ class VNEspressoModelImageprint extends Struct<VNEspressoModelImageprint> {
 
   static int serializeStateIntoData(
     Pointer<VNEspressoModelImageprint> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int startingAtByteOffset,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_Uint64_p_returns_Uint64(
@@ -16396,7 +16194,7 @@ class VNEspressoModelImageprint extends Struct<VNEspressoModelImageprint> {
 
   static void setDescriptorData(
     Pointer<VNEspressoModelImageprint> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -16432,7 +16230,7 @@ class VNEspressoModelImageprint extends Struct<VNEspressoModelImageprint> {
 
   static void setLabelsAndConfidence(
     Pointer<VNEspressoModelImageprint> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -16456,7 +16254,7 @@ class VNEspressoModelImageprint extends Struct<VNEspressoModelImageprint> {
 
   static void setVersion(
     Pointer<VNEspressoModelImageprint> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -16466,7 +16264,7 @@ class VNEspressoModelImageprint extends Struct<VNEspressoModelImageprint> {
     );
   }
 
-  static Pointer<Void> version(
+  static Pointer version(
     Pointer<VNEspressoModelImageprint> _self,
   ) {
     _openDynamicLibrary();
@@ -16477,11 +16275,9 @@ class VNEspressoModelImageprint extends Struct<VNEspressoModelImageprint> {
   }
 }
 
-/// Objective-C class _VNFaceAttributeCategory_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNFaceAttributeCategory extends Struct<VNFaceAttributeCategory> {
   factory VNFaceAttributeCategory._() {
@@ -16494,7 +16290,7 @@ class VNFaceAttributeCategory extends Struct<VNFaceAttributeCategory> {
         .cast<VNFaceAttributeCategory>();
   }
 
-  static Pointer<Void> allLabelsWithConfidences(
+  static Pointer allLabelsWithConfidences(
     Pointer<VNFaceAttributeCategory> _self,
   ) {
     _openDynamicLibrary();
@@ -16514,9 +16310,9 @@ class VNFaceAttributeCategory extends Struct<VNFaceAttributeCategory> {
     );
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<VNFaceAttributeCategory> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -16528,7 +16324,7 @@ class VNFaceAttributeCategory extends Struct<VNFaceAttributeCategory> {
 
   static void encodeWithCoder(
     Pointer<VNFaceAttributeCategory> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -16548,9 +16344,9 @@ class VNFaceAttributeCategory extends Struct<VNFaceAttributeCategory> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<VNFaceAttributeCategory> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -16560,7 +16356,7 @@ class VNFaceAttributeCategory extends Struct<VNFaceAttributeCategory> {
     );
   }
 
-  static Pointer<Void> initWithRequestRevision(
+  static Pointer initWithRequestRevision(
     Pointer<VNFaceAttributeCategory> _self,
     int arg,
   ) {
@@ -16574,7 +16370,7 @@ class VNFaceAttributeCategory extends Struct<VNFaceAttributeCategory> {
 
   static int isEqual(
     Pointer<VNFaceAttributeCategory> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -16584,7 +16380,7 @@ class VNFaceAttributeCategory extends Struct<VNFaceAttributeCategory> {
     );
   }
 
-  static Pointer<Void> label(
+  static Pointer label(
     Pointer<VNFaceAttributeCategory> _self,
   ) {
     _openDynamicLibrary();
@@ -16606,7 +16402,7 @@ class VNFaceAttributeCategory extends Struct<VNFaceAttributeCategory> {
 
   static void setAllLabelsWithConfidences(
     Pointer<VNFaceAttributeCategory> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -16618,7 +16414,7 @@ class VNFaceAttributeCategory extends Struct<VNFaceAttributeCategory> {
 
   static void setLabel(
     Pointer<VNFaceAttributeCategory> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -16629,11 +16425,9 @@ class VNFaceAttributeCategory extends Struct<VNFaceAttributeCategory> {
   }
 }
 
-/// Objective-C class _VNFaceAttributes_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNFaceAttributes extends Struct<VNFaceAttributes> {
   factory VNFaceAttributes._() {
@@ -16644,7 +16438,7 @@ class VNFaceAttributes extends Struct<VNFaceAttributes> {
     return _objc.allocate("VNFaceAttributes").cast<VNFaceAttributes>();
   }
 
-  static Pointer<Void> ageCategory(
+  static Pointer ageCategory(
     Pointer<VNFaceAttributes> _self,
   ) {
     _openDynamicLibrary();
@@ -16654,7 +16448,7 @@ class VNFaceAttributes extends Struct<VNFaceAttributes> {
     );
   }
 
-  static Pointer<Void> baldCategory(
+  static Pointer baldCategory(
     Pointer<VNFaceAttributes> _self,
   ) {
     _openDynamicLibrary();
@@ -16664,9 +16458,9 @@ class VNFaceAttributes extends Struct<VNFaceAttributes> {
     );
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<VNFaceAttributes> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -16678,7 +16472,7 @@ class VNFaceAttributes extends Struct<VNFaceAttributes> {
 
   static void encodeWithCoder(
     Pointer<VNFaceAttributes> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -16688,7 +16482,7 @@ class VNFaceAttributes extends Struct<VNFaceAttributes> {
     );
   }
 
-  static Pointer<Void> eyesCategory(
+  static Pointer eyesCategory(
     Pointer<VNFaceAttributes> _self,
   ) {
     _openDynamicLibrary();
@@ -16698,7 +16492,7 @@ class VNFaceAttributes extends Struct<VNFaceAttributes> {
     );
   }
 
-  static Pointer<Void> faceHairCategory(
+  static Pointer faceHairCategory(
     Pointer<VNFaceAttributes> _self,
   ) {
     _openDynamicLibrary();
@@ -16708,7 +16502,7 @@ class VNFaceAttributes extends Struct<VNFaceAttributes> {
     );
   }
 
-  static Pointer<Void> genderCategory(
+  static Pointer genderCategory(
     Pointer<VNFaceAttributes> _self,
   ) {
     _openDynamicLibrary();
@@ -16718,7 +16512,7 @@ class VNFaceAttributes extends Struct<VNFaceAttributes> {
     );
   }
 
-  static Pointer<Void> glassesCategory(
+  static Pointer glassesCategory(
     Pointer<VNFaceAttributes> _self,
   ) {
     _openDynamicLibrary();
@@ -16728,7 +16522,7 @@ class VNFaceAttributes extends Struct<VNFaceAttributes> {
     );
   }
 
-  static Pointer<Void> hairColorCategory(
+  static Pointer hairColorCategory(
     Pointer<VNFaceAttributes> _self,
   ) {
     _openDynamicLibrary();
@@ -16748,9 +16542,9 @@ class VNFaceAttributes extends Struct<VNFaceAttributes> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<VNFaceAttributes> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -16760,7 +16554,7 @@ class VNFaceAttributes extends Struct<VNFaceAttributes> {
     );
   }
 
-  static Pointer<Void> initWithRequestRevision(
+  static Pointer initWithRequestRevision(
     Pointer<VNFaceAttributes> _self,
     int arg,
   ) {
@@ -16774,7 +16568,7 @@ class VNFaceAttributes extends Struct<VNFaceAttributes> {
 
   static int isEqual(
     Pointer<VNFaceAttributes> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -16796,7 +16590,7 @@ class VNFaceAttributes extends Struct<VNFaceAttributes> {
 
   static void setAgeCategory(
     Pointer<VNFaceAttributes> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -16808,7 +16602,7 @@ class VNFaceAttributes extends Struct<VNFaceAttributes> {
 
   static void setBaldCategory(
     Pointer<VNFaceAttributes> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -16820,7 +16614,7 @@ class VNFaceAttributes extends Struct<VNFaceAttributes> {
 
   static void setEyesCategory(
     Pointer<VNFaceAttributes> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -16832,7 +16626,7 @@ class VNFaceAttributes extends Struct<VNFaceAttributes> {
 
   static void setFaceHairCategory(
     Pointer<VNFaceAttributes> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -16844,7 +16638,7 @@ class VNFaceAttributes extends Struct<VNFaceAttributes> {
 
   static void setGenderCategory(
     Pointer<VNFaceAttributes> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -16856,7 +16650,7 @@ class VNFaceAttributes extends Struct<VNFaceAttributes> {
 
   static void setGlassesCategory(
     Pointer<VNFaceAttributes> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -16868,7 +16662,7 @@ class VNFaceAttributes extends Struct<VNFaceAttributes> {
 
   static void setHairColorCategory(
     Pointer<VNFaceAttributes> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -16880,7 +16674,7 @@ class VNFaceAttributes extends Struct<VNFaceAttributes> {
 
   static void setSmilingCategory(
     Pointer<VNFaceAttributes> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -16890,7 +16684,7 @@ class VNFaceAttributes extends Struct<VNFaceAttributes> {
     );
   }
 
-  static Pointer<Void> smilingCategory(
+  static Pointer smilingCategory(
     Pointer<VNFaceAttributes> _self,
   ) {
     _openDynamicLibrary();
@@ -16901,11 +16695,9 @@ class VNFaceAttributes extends Struct<VNFaceAttributes> {
   }
 }
 
-/// Objective-C class _VNFaceAttributesClassifier_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNFaceAttributesClassifier extends Struct<VNFaceAttributesClassifier> {
   factory VNFaceAttributesClassifier._() {
@@ -16920,7 +16712,7 @@ class VNFaceAttributesClassifier extends Struct<VNFaceAttributesClassifier> {
 
   static int completeInitializationAndReturnError(
     Pointer<VNFaceAttributesClassifier> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -16940,12 +16732,12 @@ class VNFaceAttributesClassifier extends Struct<VNFaceAttributesClassifier> {
     );
   }
 
-  static Pointer<Void> processWithOptions(
+  static Pointer processWithOptions(
     Pointer<VNFaceAttributesClassifier> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> regionOfInterest,
-    @required Pointer<Void> warningRecorder,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer regionOfInterest,
+    @required Pointer warningRecorder,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_returns_p(
@@ -16960,11 +16752,9 @@ class VNFaceAttributesClassifier extends Struct<VNFaceAttributesClassifier> {
   }
 }
 
-/// Objective-C class _VNFaceBBoxAligner_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNFaceBBoxAligner extends Struct<VNFaceBBoxAligner> {
   factory VNFaceBBoxAligner._() {
@@ -16977,7 +16767,7 @@ class VNFaceBBoxAligner extends Struct<VNFaceBBoxAligner> {
 
   static int completeInitializationAndReturnError(
     Pointer<VNFaceBBoxAligner> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -16999,11 +16789,11 @@ class VNFaceBBoxAligner extends Struct<VNFaceBBoxAligner> {
 
   static void dumpDebugIntermediatesWithImageBuffer(
     Pointer<VNFaceBBoxAligner> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> lumaIntermediate,
-    @required Pointer<Void> rawBBoxInLumaIntermediateCoordinates,
-    @required Pointer<Void> alignedBBoxInLumaIntermediateCoordinates,
-    @required Pointer<Pointer<Void>> meanShapeInLumaIntermediateCoordinates,
+    Pointer arg, {
+    @required Pointer<Pointer> lumaIntermediate,
+    @required Pointer rawBBoxInLumaIntermediateCoordinates,
+    @required Pointer alignedBBoxInLumaIntermediateCoordinates,
+    @required Pointer<Pointer> meanShapeInLumaIntermediateCoordinates,
     @required double rotationAngle,
   }) {
     _openDynamicLibrary();
@@ -17020,11 +16810,11 @@ class VNFaceBBoxAligner extends Struct<VNFaceBBoxAligner> {
     );
   }
 
-  static Pointer<Void> processWithOptions(
+  static Pointer processWithOptions(
     Pointer<VNFaceBBoxAligner> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> warningRecorder,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer warningRecorder,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -17037,11 +16827,9 @@ class VNFaceBBoxAligner extends Struct<VNFaceBBoxAligner> {
   }
 }
 
-/// Objective-C class _VNFaceClassifierBoostedPixelDifference_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNFaceClassifierBoostedPixelDifference
     extends Struct<VNFaceClassifierBoostedPixelDifference> {
@@ -17055,7 +16843,7 @@ class VNFaceClassifierBoostedPixelDifference
         .cast<VNFaceClassifierBoostedPixelDifference>();
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<VNFaceClassifierBoostedPixelDifference> _self,
   ) {
     _openDynamicLibrary();
@@ -17065,11 +16853,11 @@ class VNFaceClassifierBoostedPixelDifference
     );
   }
 
-  static Pointer<Void> predictFaceOnImageCrop(
+  static Pointer predictFaceOnImageCrop(
     Pointer<VNFaceClassifierBoostedPixelDifference> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> faceObservation,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer faceObservation,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -17082,11 +16870,9 @@ class VNFaceClassifierBoostedPixelDifference
   }
 }
 
-/// Objective-C class _VNFaceDetector_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNFaceDetector extends Struct<VNFaceDetector> {
   factory VNFaceDetector._() {
@@ -17108,11 +16894,9 @@ class VNFaceDetector extends Struct<VNFaceDetector> {
   }
 }
 
-/// Objective-C class _VNFaceDetectorRevision1_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNFaceDetectorRevision1 extends Struct<VNFaceDetectorRevision1> {
   factory VNFaceDetectorRevision1._() {
@@ -17127,7 +16911,7 @@ class VNFaceDetectorRevision1 extends Struct<VNFaceDetectorRevision1> {
 
   static int completeInitializationAndReturnError(
     Pointer<VNFaceDetectorRevision1> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -17137,12 +16921,12 @@ class VNFaceDetectorRevision1 extends Struct<VNFaceDetectorRevision1> {
     );
   }
 
-  static Pointer<Void> processWithOptions(
+  static Pointer processWithOptions(
     Pointer<VNFaceDetectorRevision1> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> regionOfInterest,
-    @required Pointer<Void> warningRecorder,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer regionOfInterest,
+    @required Pointer warningRecorder,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_returns_p(
@@ -17167,11 +16951,9 @@ class VNFaceDetectorRevision1 extends Struct<VNFaceDetectorRevision1> {
   }
 }
 
-/// Objective-C class _VNFaceDetectorRevision2_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNFaceDetectorRevision2 extends Struct<VNFaceDetectorRevision2> {
   factory VNFaceDetectorRevision2._() {
@@ -17186,7 +16968,7 @@ class VNFaceDetectorRevision2 extends Struct<VNFaceDetectorRevision2> {
 
   static int completeInitializationAndReturnError(
     Pointer<VNFaceDetectorRevision2> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -17196,12 +16978,12 @@ class VNFaceDetectorRevision2 extends Struct<VNFaceDetectorRevision2> {
     );
   }
 
-  static Pointer<Void> processWithOptions(
+  static Pointer processWithOptions(
     Pointer<VNFaceDetectorRevision2> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> regionOfInterest,
-    @required Pointer<Void> warningRecorder,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer regionOfInterest,
+    @required Pointer warningRecorder,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_returns_p(
@@ -17227,7 +17009,7 @@ class VNFaceDetectorRevision2 extends Struct<VNFaceDetectorRevision2> {
 
   static int supportsProcessingDevice(
     Pointer<VNFaceDetectorRevision2> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -17238,11 +17020,9 @@ class VNFaceDetectorRevision2 extends Struct<VNFaceDetectorRevision2> {
   }
 }
 
-/// Objective-C class _VNFaceExpressionDetector_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNFaceExpressionDetector extends Struct<VNFaceExpressionDetector> {
   factory VNFaceExpressionDetector._() {
@@ -17257,7 +17037,7 @@ class VNFaceExpressionDetector extends Struct<VNFaceExpressionDetector> {
 
   static int completeInitializationAndReturnError(
     Pointer<VNFaceExpressionDetector> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -17277,12 +17057,12 @@ class VNFaceExpressionDetector extends Struct<VNFaceExpressionDetector> {
     );
   }
 
-  static Pointer<Void> processWithOptions(
+  static Pointer processWithOptions(
     Pointer<VNFaceExpressionDetector> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> regionOfInterest,
-    @required Pointer<Void> warningRecorder,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer regionOfInterest,
+    @required Pointer warningRecorder,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_returns_p(
@@ -17297,11 +17077,9 @@ class VNFaceExpressionDetector extends Struct<VNFaceExpressionDetector> {
   }
 }
 
-/// Objective-C class _VNFaceGeometryEstimator_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNFaceGeometryEstimator extends Struct<VNFaceGeometryEstimator> {
   factory VNFaceGeometryEstimator._() {
@@ -17316,7 +17094,7 @@ class VNFaceGeometryEstimator extends Struct<VNFaceGeometryEstimator> {
 
   static int completeInitializationAndReturnError(
     Pointer<VNFaceGeometryEstimator> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -17326,12 +17104,12 @@ class VNFaceGeometryEstimator extends Struct<VNFaceGeometryEstimator> {
     );
   }
 
-  static Pointer<Void> processWithOptions(
+  static Pointer processWithOptions(
     Pointer<VNFaceGeometryEstimator> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> regionOfInterest,
-    @required Pointer<Void> warningRecorder,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer regionOfInterest,
+    @required Pointer warningRecorder,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_returns_p(
@@ -17346,11 +17124,9 @@ class VNFaceGeometryEstimator extends Struct<VNFaceGeometryEstimator> {
   }
 }
 
-/// Objective-C class _VNFaceLandmarkDetector_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNFaceLandmarkDetector extends Struct<VNFaceLandmarkDetector> {
   factory VNFaceLandmarkDetector._() {
@@ -17365,7 +17141,7 @@ class VNFaceLandmarkDetector extends Struct<VNFaceLandmarkDetector> {
 
   static int completeInitializationAndReturnError(
     Pointer<VNFaceLandmarkDetector> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -17375,12 +17151,12 @@ class VNFaceLandmarkDetector extends Struct<VNFaceLandmarkDetector> {
     );
   }
 
-  static Pointer<Void> computeLandmarksScoreOnImage(
+  static Pointer computeLandmarksScoreOnImage(
     Pointer<VNFaceLandmarkDetector> _self,
-    Pointer<Pointer<Void>> arg, {
-    @required Pointer<Pointer<Void>> withFaceBoundingBox,
-    @required Pointer<Void> andLandmarks,
-    @required Pointer<Pointer<Void>> error,
+    Pointer<Pointer> arg, {
+    @required Pointer<Pointer> withFaceBoundingBox,
+    @required Pointer andLandmarks,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_returns_p(
@@ -17394,17 +17170,17 @@ class VNFaceLandmarkDetector extends Struct<VNFaceLandmarkDetector> {
     );
   }
 
-  static Pointer<Pointer<Void>> createLumaPixelBufferFrom(
+  static Pointer<Pointer> createLumaPixelBufferFrom(
     Pointer<VNFaceLandmarkDetector> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> scaleToSize,
-    @required Pointer<Void> forFaceBBox,
-    @required Pointer<Pointer<Void>> initializeVImage,
-    @required Pointer<Pointer<Void>> initializeRect2D,
+    Pointer arg, {
+    @required Pointer scaleToSize,
+    @required Pointer forFaceBBox,
+    @required Pointer<Pointer> initializeVImage,
+    @required Pointer<Pointer> initializeRect2D,
     @required Pointer<Int8> initializeIgnoreCropAndScaleFlag,
     @required Pointer<Float> initializeLumaScaleFromOriginal,
-    @required Pointer<Void> options,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer options,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_p_p_p_p_p_returns_p(
@@ -17435,13 +17211,13 @@ class VNFaceLandmarkDetector extends Struct<VNFaceLandmarkDetector> {
 
   static int detectBlinkOnFaceImage(
     Pointer<VNFaceLandmarkDetector> _self,
-    Pointer<Pointer<Void>> arg, {
-    @required Pointer<Void> faceObservation,
-    @required Pointer<Pointer<Void>> lumaRec2DInImageCoordinates,
-    @required Pointer<Void> landmarks,
-    @required Pointer<Void> options,
-    @required Pointer<Void> warningRecorder,
-    @required Pointer<Pointer<Void>> error,
+    Pointer<Pointer> arg, {
+    @required Pointer faceObservation,
+    @required Pointer<Pointer> lumaRec2DInImageCoordinates,
+    @required Pointer landmarks,
+    @required Pointer options,
+    @required Pointer warningRecorder,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_p_p_p_returns_Int8(
@@ -17458,7 +17234,7 @@ class VNFaceLandmarkDetector extends Struct<VNFaceLandmarkDetector> {
     );
   }
 
-  static Pointer<Void> faceAttributesPupilRefiner(
+  static Pointer faceAttributesPupilRefiner(
     Pointer<VNFaceLandmarkDetector> _self,
   ) {
     _openDynamicLibrary();
@@ -17469,11 +17245,9 @@ class VNFaceLandmarkDetector extends Struct<VNFaceLandmarkDetector> {
   }
 }
 
-/// Objective-C class _VNFaceLandmarkDetectorRevision1_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNFaceLandmarkDetectorRevision1
     extends Struct<VNFaceLandmarkDetectorRevision1> {
@@ -17509,7 +17283,7 @@ class VNFaceLandmarkDetectorRevision1
 
   static int completeInitializationAndReturnError(
     Pointer<VNFaceLandmarkDetectorRevision1> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -17529,12 +17303,12 @@ class VNFaceLandmarkDetectorRevision1
     );
   }
 
-  static Pointer<Void> processWithOptions(
+  static Pointer processWithOptions(
     Pointer<VNFaceLandmarkDetectorRevision1> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> regionOfInterest,
-    @required Pointer<Void> warningRecorder,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer regionOfInterest,
+    @required Pointer warningRecorder,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_returns_p(
@@ -17549,11 +17323,9 @@ class VNFaceLandmarkDetectorRevision1
   }
 }
 
-/// Objective-C class _VNFaceLandmarkDetectorRevision2_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNFaceLandmarkDetectorRevision2
     extends Struct<VNFaceLandmarkDetectorRevision2> {
@@ -17567,9 +17339,9 @@ class VNFaceLandmarkDetectorRevision2
         .cast<VNFaceLandmarkDetectorRevision2>();
   }
 
-  static Pointer<Void> espressoModelFileNameForConfigurationOptions(
+  static Pointer espressoModelFileNameForConfigurationOptions(
     Pointer<VNFaceLandmarkDetectorRevision2> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -17579,10 +17351,10 @@ class VNFaceLandmarkDetectorRevision2
     );
   }
 
-  static Pointer<Void>
+  static Pointer
       espressoModelInputImageDimensionsBlobNameForConfigurationOptions(
     Pointer<VNFaceLandmarkDetectorRevision2> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -17593,12 +17365,12 @@ class VNFaceLandmarkDetectorRevision2
     );
   }
 
-  static Pointer<Void> processWithOptions(
+  static Pointer processWithOptions(
     Pointer<VNFaceLandmarkDetectorRevision2> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> regionOfInterest,
-    @required Pointer<Void> warningRecorder,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer regionOfInterest,
+    @required Pointer warningRecorder,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_returns_p(
@@ -17613,11 +17385,9 @@ class VNFaceLandmarkDetectorRevision2
   }
 }
 
-/// Objective-C class _VNFaceLandmarkRegion_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNFaceLandmarkRegion extends Struct<VNFaceLandmarkRegion> {
   factory VNFaceLandmarkRegion._() {
@@ -17628,7 +17398,7 @@ class VNFaceLandmarkRegion extends Struct<VNFaceLandmarkRegion> {
     return _objc.allocate("VNFaceLandmarkRegion").cast<VNFaceLandmarkRegion>();
   }
 
-  static Pointer<Void> faceBoundingBox(
+  static Pointer faceBoundingBox(
     Pointer<VNFaceLandmarkRegion> _self,
   ) {
     _openDynamicLibrary();
@@ -17648,9 +17418,9 @@ class VNFaceLandmarkRegion extends Struct<VNFaceLandmarkRegion> {
     );
   }
 
-  static Pointer<Void> initWithFaceBoundingBox(
+  static Pointer initWithFaceBoundingBox(
     Pointer<VNFaceLandmarkRegion> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -17662,7 +17432,7 @@ class VNFaceLandmarkRegion extends Struct<VNFaceLandmarkRegion> {
 
   static int isEqual(
     Pointer<VNFaceLandmarkRegion> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -17695,11 +17465,9 @@ class VNFaceLandmarkRegion extends Struct<VNFaceLandmarkRegion> {
   }
 }
 
-/// Objective-C class _VNFaceLandmarkRegion2D_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNFaceLandmarkRegion2D extends Struct<VNFaceLandmarkRegion2D> {
   factory VNFaceLandmarkRegion2D._() {
@@ -17732,9 +17500,9 @@ class VNFaceLandmarkRegion2D extends Struct<VNFaceLandmarkRegion2D> {
     );
   }
 
-  static Pointer<Void> initWithFaceBoundingBox(
+  static Pointer initWithFaceBoundingBox(
     Pointer<VNFaceLandmarkRegion2D> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required Pointer<Uint8> points,
     @required int pointCount,
   }) {
@@ -17750,7 +17518,7 @@ class VNFaceLandmarkRegion2D extends Struct<VNFaceLandmarkRegion2D> {
 
   static int isEqual(
     Pointer<VNFaceLandmarkRegion2D> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -17760,7 +17528,7 @@ class VNFaceLandmarkRegion2D extends Struct<VNFaceLandmarkRegion2D> {
     );
   }
 
-  static Pointer<Pointer<Void>> normalizedPoints(
+  static Pointer<Pointer> normalizedPoints(
     Pointer<VNFaceLandmarkRegion2D> _self,
   ) {
     _openDynamicLibrary();
@@ -17792,9 +17560,9 @@ class VNFaceLandmarkRegion2D extends Struct<VNFaceLandmarkRegion2D> {
     );
   }
 
-  static Pointer<Pointer<Void>> pointsInImageOfSize(
+  static Pointer<Pointer> pointsInImageOfSize(
     Pointer<VNFaceLandmarkRegion2D> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -17817,11 +17585,9 @@ class VNFaceLandmarkRegion2D extends Struct<VNFaceLandmarkRegion2D> {
   }
 }
 
-/// Objective-C class _VNFaceLandmarkRegion3D_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNFaceLandmarkRegion3D extends Struct<VNFaceLandmarkRegion3D> {
   factory VNFaceLandmarkRegion3D._() {
@@ -17844,9 +17610,9 @@ class VNFaceLandmarkRegion3D extends Struct<VNFaceLandmarkRegion3D> {
     );
   }
 
-  static Pointer<Void> initWithFaceBoundingBox(
+  static Pointer initWithFaceBoundingBox(
     Pointer<VNFaceLandmarkRegion3D> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required Pointer<Uint8> points,
     @required int pointCount,
   }) {
@@ -17895,11 +17661,9 @@ class VNFaceLandmarkRegion3D extends Struct<VNFaceLandmarkRegion3D> {
   }
 }
 
-/// Objective-C class _VNFaceLandmarkSegments_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNFaceLandmarkSegments extends Struct<VNFaceLandmarkSegments> {
   factory VNFaceLandmarkSegments._() {
@@ -17912,9 +17676,9 @@ class VNFaceLandmarkSegments extends Struct<VNFaceLandmarkSegments> {
         .cast<VNFaceLandmarkSegments>();
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<VNFaceLandmarkSegments> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -17924,10 +17688,10 @@ class VNFaceLandmarkSegments extends Struct<VNFaceLandmarkSegments> {
     );
   }
 
-  static Pointer<Pointer<Void>> createImageOfFaceLandmarkSegments(
+  static Pointer<Pointer> createImageOfFaceLandmarkSegments(
     Pointer<VNFaceLandmarkSegments> _self,
     int arg, {
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_Uint64_p_returns_p(
@@ -17940,7 +17704,7 @@ class VNFaceLandmarkSegments extends Struct<VNFaceLandmarkSegments> {
 
   static void encodeWithCoder(
     Pointer<VNFaceLandmarkSegments> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -17960,7 +17724,7 @@ class VNFaceLandmarkSegments extends Struct<VNFaceLandmarkSegments> {
     );
   }
 
-  static Pointer<Void> espressoOutputBufferData(
+  static Pointer espressoOutputBufferData(
     Pointer<VNFaceLandmarkSegments> _self,
   ) {
     _openDynamicLibrary();
@@ -18000,9 +17764,9 @@ class VNFaceLandmarkSegments extends Struct<VNFaceLandmarkSegments> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<VNFaceLandmarkSegments> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -18012,13 +17776,13 @@ class VNFaceLandmarkSegments extends Struct<VNFaceLandmarkSegments> {
     );
   }
 
-  static Pointer<Void> initWithRequestRevision(
+  static Pointer initWithRequestRevision(
     Pointer<VNFaceLandmarkSegments> _self,
     int arg, {
     @required int espressoOutputBufferWidth,
     @required int espressoOutputBufferHeight,
     @required int espressoOutputBufferChannels,
-    @required Pointer<Void> espressoOutputBufferData,
+    @required Pointer espressoOutputBufferData,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_Uint64_Uint64_Uint64_Uint64_p_returns_p(
@@ -18035,7 +17799,7 @@ class VNFaceLandmarkSegments extends Struct<VNFaceLandmarkSegments> {
 
   static int isEqual(
     Pointer<VNFaceLandmarkSegments> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -18069,7 +17833,7 @@ class VNFaceLandmarkSegments extends Struct<VNFaceLandmarkSegments> {
 
   static void setEspressoOutputBufferData(
     Pointer<VNFaceLandmarkSegments> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -18104,11 +17868,9 @@ class VNFaceLandmarkSegments extends Struct<VNFaceLandmarkSegments> {
   }
 }
 
-/// Objective-C class _VNFaceLandmarks_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNFaceLandmarks extends Struct<VNFaceLandmarks> {
   factory VNFaceLandmarks._() {
@@ -18119,7 +17881,7 @@ class VNFaceLandmarks extends Struct<VNFaceLandmarks> {
     return _objc.allocate("VNFaceLandmarks").cast<VNFaceLandmarks>();
   }
 
-  static Pointer<Void> alignedBBox(
+  static Pointer alignedBBox(
     Pointer<VNFaceLandmarks> _self,
   ) {
     _openDynamicLibrary();
@@ -18139,7 +17901,7 @@ class VNFaceLandmarks extends Struct<VNFaceLandmarks> {
     );
   }
 
-  static Pointer<Void> createPointArray(
+  static Pointer createPointArray(
     Pointer<VNFaceLandmarks> _self,
     Pointer<Int32> arg, {
     @required int count,
@@ -18163,12 +17925,12 @@ class VNFaceLandmarks extends Struct<VNFaceLandmarks> {
     );
   }
 
-  static Pointer<Void> initWithPointsData(
+  static Pointer initWithPointsData(
     Pointer<VNFaceLandmarks> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int pointCount,
-    @required Pointer<Void> userFacingBBox,
-    @required Pointer<Void> alignedBBox,
+    @required Pointer userFacingBBox,
+    @required Pointer alignedBBox,
     @required double landmarkScore,
   }) {
     _openDynamicLibrary();
@@ -18186,7 +17948,7 @@ class VNFaceLandmarks extends Struct<VNFaceLandmarks> {
 
   static int isEqual(
     Pointer<VNFaceLandmarks> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -18216,7 +17978,7 @@ class VNFaceLandmarks extends Struct<VNFaceLandmarks> {
     );
   }
 
-  static Pointer<Void> pointsData(
+  static Pointer pointsData(
     Pointer<VNFaceLandmarks> _self,
   ) {
     _openDynamicLibrary();
@@ -18228,7 +17990,7 @@ class VNFaceLandmarks extends Struct<VNFaceLandmarks> {
 
   static void setAlignedBBox(
     Pointer<VNFaceLandmarks> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -18252,7 +18014,7 @@ class VNFaceLandmarks extends Struct<VNFaceLandmarks> {
 
   static void setPointsData(
     Pointer<VNFaceLandmarks> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -18264,7 +18026,7 @@ class VNFaceLandmarks extends Struct<VNFaceLandmarks> {
 
   static void setUserFacingBBox(
     Pointer<VNFaceLandmarks> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -18274,7 +18036,7 @@ class VNFaceLandmarks extends Struct<VNFaceLandmarks> {
     );
   }
 
-  static Pointer<Void> userFacingBBox(
+  static Pointer userFacingBBox(
     Pointer<VNFaceLandmarks> _self,
   ) {
     _openDynamicLibrary();
@@ -18285,11 +18047,9 @@ class VNFaceLandmarks extends Struct<VNFaceLandmarks> {
   }
 }
 
-/// Objective-C class _VNFaceLandmarks2D_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNFaceLandmarks2D extends Struct<VNFaceLandmarks2D> {
   factory VNFaceLandmarks2D._() {
@@ -18300,7 +18060,7 @@ class VNFaceLandmarks2D extends Struct<VNFaceLandmarks2D> {
     return _objc.allocate("VNFaceLandmarks2D").cast<VNFaceLandmarks2D>();
   }
 
-  static Pointer<Void> allPoints(
+  static Pointer allPoints(
     Pointer<VNFaceLandmarks2D> _self,
   ) {
     _openDynamicLibrary();
@@ -18310,7 +18070,7 @@ class VNFaceLandmarks2D extends Struct<VNFaceLandmarks2D> {
     );
   }
 
-  static Pointer<Void> createPointArray(
+  static Pointer createPointArray(
     Pointer<VNFaceLandmarks2D> _self,
     Pointer<Int32> arg, {
     @required int count,
@@ -18324,7 +18084,7 @@ class VNFaceLandmarks2D extends Struct<VNFaceLandmarks2D> {
     );
   }
 
-  static Pointer<Void> faceContour(
+  static Pointer faceContour(
     Pointer<VNFaceLandmarks2D> _self,
   ) {
     _openDynamicLibrary();
@@ -18334,7 +18094,7 @@ class VNFaceLandmarks2D extends Struct<VNFaceLandmarks2D> {
     );
   }
 
-  static Pointer<Void> innerLips(
+  static Pointer innerLips(
     Pointer<VNFaceLandmarks2D> _self,
   ) {
     _openDynamicLibrary();
@@ -18344,7 +18104,7 @@ class VNFaceLandmarks2D extends Struct<VNFaceLandmarks2D> {
     );
   }
 
-  static Pointer<Void> leftEye(
+  static Pointer leftEye(
     Pointer<VNFaceLandmarks2D> _self,
   ) {
     _openDynamicLibrary();
@@ -18354,7 +18114,7 @@ class VNFaceLandmarks2D extends Struct<VNFaceLandmarks2D> {
     );
   }
 
-  static Pointer<Void> leftEyebrow(
+  static Pointer leftEyebrow(
     Pointer<VNFaceLandmarks2D> _self,
   ) {
     _openDynamicLibrary();
@@ -18364,7 +18124,7 @@ class VNFaceLandmarks2D extends Struct<VNFaceLandmarks2D> {
     );
   }
 
-  static Pointer<Void> leftPupil(
+  static Pointer leftPupil(
     Pointer<VNFaceLandmarks2D> _self,
   ) {
     _openDynamicLibrary();
@@ -18374,7 +18134,7 @@ class VNFaceLandmarks2D extends Struct<VNFaceLandmarks2D> {
     );
   }
 
-  static Pointer<Void> medianLine(
+  static Pointer medianLine(
     Pointer<VNFaceLandmarks2D> _self,
   ) {
     _openDynamicLibrary();
@@ -18384,7 +18144,7 @@ class VNFaceLandmarks2D extends Struct<VNFaceLandmarks2D> {
     );
   }
 
-  static Pointer<Void> nose(
+  static Pointer nose(
     Pointer<VNFaceLandmarks2D> _self,
   ) {
     _openDynamicLibrary();
@@ -18394,7 +18154,7 @@ class VNFaceLandmarks2D extends Struct<VNFaceLandmarks2D> {
     );
   }
 
-  static Pointer<Void> noseCrest(
+  static Pointer noseCrest(
     Pointer<VNFaceLandmarks2D> _self,
   ) {
     _openDynamicLibrary();
@@ -18404,7 +18164,7 @@ class VNFaceLandmarks2D extends Struct<VNFaceLandmarks2D> {
     );
   }
 
-  static Pointer<Void> outerLips(
+  static Pointer outerLips(
     Pointer<VNFaceLandmarks2D> _self,
   ) {
     _openDynamicLibrary();
@@ -18414,7 +18174,7 @@ class VNFaceLandmarks2D extends Struct<VNFaceLandmarks2D> {
     );
   }
 
-  static Pointer<Void> rightEye(
+  static Pointer rightEye(
     Pointer<VNFaceLandmarks2D> _self,
   ) {
     _openDynamicLibrary();
@@ -18424,7 +18184,7 @@ class VNFaceLandmarks2D extends Struct<VNFaceLandmarks2D> {
     );
   }
 
-  static Pointer<Void> rightEyebrow(
+  static Pointer rightEyebrow(
     Pointer<VNFaceLandmarks2D> _self,
   ) {
     _openDynamicLibrary();
@@ -18434,7 +18194,7 @@ class VNFaceLandmarks2D extends Struct<VNFaceLandmarks2D> {
     );
   }
 
-  static Pointer<Void> rightPupil(
+  static Pointer rightPupil(
     Pointer<VNFaceLandmarks2D> _self,
   ) {
     _openDynamicLibrary();
@@ -18445,11 +18205,9 @@ class VNFaceLandmarks2D extends Struct<VNFaceLandmarks2D> {
   }
 }
 
-/// Objective-C class _VNFaceLandmarks3D_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNFaceLandmarks3D extends Struct<VNFaceLandmarks3D> {
   factory VNFaceLandmarks3D._() {
@@ -18460,7 +18218,7 @@ class VNFaceLandmarks3D extends Struct<VNFaceLandmarks3D> {
     return _objc.allocate("VNFaceLandmarks3D").cast<VNFaceLandmarks3D>();
   }
 
-  static Pointer<Void> allPoints(
+  static Pointer allPoints(
     Pointer<VNFaceLandmarks3D> _self,
   ) {
     _openDynamicLibrary();
@@ -18470,7 +18228,7 @@ class VNFaceLandmarks3D extends Struct<VNFaceLandmarks3D> {
     );
   }
 
-  static Pointer<Void> createPointArray(
+  static Pointer createPointArray(
     Pointer<VNFaceLandmarks3D> _self,
     Pointer<Int32> arg, {
     @required int count,
@@ -18484,7 +18242,7 @@ class VNFaceLandmarks3D extends Struct<VNFaceLandmarks3D> {
     );
   }
 
-  static Pointer<Void> faceContour(
+  static Pointer faceContour(
     Pointer<VNFaceLandmarks3D> _self,
   ) {
     _openDynamicLibrary();
@@ -18494,7 +18252,7 @@ class VNFaceLandmarks3D extends Struct<VNFaceLandmarks3D> {
     );
   }
 
-  static Pointer<Void> innerLips(
+  static Pointer innerLips(
     Pointer<VNFaceLandmarks3D> _self,
   ) {
     _openDynamicLibrary();
@@ -18504,7 +18262,7 @@ class VNFaceLandmarks3D extends Struct<VNFaceLandmarks3D> {
     );
   }
 
-  static Pointer<Void> leftEye(
+  static Pointer leftEye(
     Pointer<VNFaceLandmarks3D> _self,
   ) {
     _openDynamicLibrary();
@@ -18514,7 +18272,7 @@ class VNFaceLandmarks3D extends Struct<VNFaceLandmarks3D> {
     );
   }
 
-  static Pointer<Void> leftEyebrow(
+  static Pointer leftEyebrow(
     Pointer<VNFaceLandmarks3D> _self,
   ) {
     _openDynamicLibrary();
@@ -18524,7 +18282,7 @@ class VNFaceLandmarks3D extends Struct<VNFaceLandmarks3D> {
     );
   }
 
-  static Pointer<Void> medianLine(
+  static Pointer medianLine(
     Pointer<VNFaceLandmarks3D> _self,
   ) {
     _openDynamicLibrary();
@@ -18534,7 +18292,7 @@ class VNFaceLandmarks3D extends Struct<VNFaceLandmarks3D> {
     );
   }
 
-  static Pointer<Void> nose(
+  static Pointer nose(
     Pointer<VNFaceLandmarks3D> _self,
   ) {
     _openDynamicLibrary();
@@ -18544,7 +18302,7 @@ class VNFaceLandmarks3D extends Struct<VNFaceLandmarks3D> {
     );
   }
 
-  static Pointer<Void> noseCrest(
+  static Pointer noseCrest(
     Pointer<VNFaceLandmarks3D> _self,
   ) {
     _openDynamicLibrary();
@@ -18554,7 +18312,7 @@ class VNFaceLandmarks3D extends Struct<VNFaceLandmarks3D> {
     );
   }
 
-  static Pointer<Void> outerLips(
+  static Pointer outerLips(
     Pointer<VNFaceLandmarks3D> _self,
   ) {
     _openDynamicLibrary();
@@ -18564,7 +18322,7 @@ class VNFaceLandmarks3D extends Struct<VNFaceLandmarks3D> {
     );
   }
 
-  static Pointer<Void> rightEye(
+  static Pointer rightEye(
     Pointer<VNFaceLandmarks3D> _self,
   ) {
     _openDynamicLibrary();
@@ -18574,7 +18332,7 @@ class VNFaceLandmarks3D extends Struct<VNFaceLandmarks3D> {
     );
   }
 
-  static Pointer<Void> rightEyebrow(
+  static Pointer rightEyebrow(
     Pointer<VNFaceLandmarks3D> _self,
   ) {
     _openDynamicLibrary();
@@ -18585,11 +18343,9 @@ class VNFaceLandmarks3D extends Struct<VNFaceLandmarks3D> {
   }
 }
 
-/// Objective-C class _VNFaceLandmarksSegmenter_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNFaceLandmarksSegmenter extends Struct<VNFaceLandmarksSegmenter> {
   factory VNFaceLandmarksSegmenter._() {
@@ -18602,9 +18358,9 @@ class VNFaceLandmarksSegmenter extends Struct<VNFaceLandmarksSegmenter> {
         .cast<VNFaceLandmarksSegmenter>();
   }
 
-  static Pointer<Void> espressoModelFileNameForConfigurationOptions(
+  static Pointer espressoModelFileNameForConfigurationOptions(
     Pointer<VNFaceLandmarksSegmenter> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -18614,10 +18370,10 @@ class VNFaceLandmarksSegmenter extends Struct<VNFaceLandmarksSegmenter> {
     );
   }
 
-  static Pointer<Void>
+  static Pointer
       espressoModelInputImageDimensionsBlobNameForConfigurationOptions(
     Pointer<VNFaceLandmarksSegmenter> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -18630,8 +18386,8 @@ class VNFaceLandmarksSegmenter extends Struct<VNFaceLandmarksSegmenter> {
 
   static void prepareNetworkInput(
     Pointer<VNFaceLandmarksSegmenter> _self,
-    Pointer<Pointer<Void>> arg, {
-    @required Pointer<Pointer<Void>> fromScaledFacePixelBuffer,
+    Pointer<Pointer> arg, {
+    @required Pointer<Pointer> fromScaledFacePixelBuffer,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -18642,12 +18398,12 @@ class VNFaceLandmarksSegmenter extends Struct<VNFaceLandmarksSegmenter> {
     );
   }
 
-  static Pointer<Void> processWithOptions(
+  static Pointer processWithOptions(
     Pointer<VNFaceLandmarksSegmenter> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> regionOfInterest,
-    @required Pointer<Void> warningRecorder,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer regionOfInterest,
+    @required Pointer warningRecorder,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_returns_p(
@@ -18663,7 +18419,7 @@ class VNFaceLandmarksSegmenter extends Struct<VNFaceLandmarksSegmenter> {
 
   static int supportsProcessingDevice(
     Pointer<VNFaceLandmarksSegmenter> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -18674,11 +18430,9 @@ class VNFaceLandmarksSegmenter extends Struct<VNFaceLandmarksSegmenter> {
   }
 }
 
-/// Objective-C class _VNFaceObservation_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNFaceObservation extends Struct<VNFaceObservation> {
   factory VNFaceObservation._() {
@@ -18689,7 +18443,7 @@ class VNFaceObservation extends Struct<VNFaceObservation> {
     return _objc.allocate("VNFaceObservation").cast<VNFaceObservation>();
   }
 
-  static Pointer<Void> alignedBoundingBox(
+  static Pointer alignedBoundingBox(
     Pointer<VNFaceObservation> _self,
   ) {
     _openDynamicLibrary();
@@ -18699,7 +18453,7 @@ class VNFaceObservation extends Struct<VNFaceObservation> {
     );
   }
 
-  static Pointer<Void> alignedBoundingBoxAsCGRect(
+  static Pointer alignedBoundingBoxAsCGRect(
     Pointer<VNFaceObservation> _self,
   ) {
     _openDynamicLibrary();
@@ -18709,7 +18463,7 @@ class VNFaceObservation extends Struct<VNFaceObservation> {
     );
   }
 
-  static Pointer<Void> alignedMeanShape(
+  static Pointer alignedMeanShape(
     Pointer<VNFaceObservation> _self,
   ) {
     _openDynamicLibrary();
@@ -18739,9 +18493,9 @@ class VNFaceObservation extends Struct<VNFaceObservation> {
     );
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<VNFaceObservation> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -18751,7 +18505,7 @@ class VNFaceObservation extends Struct<VNFaceObservation> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<VNFaceObservation> _self,
   ) {
     _openDynamicLibrary();
@@ -18763,7 +18517,7 @@ class VNFaceObservation extends Struct<VNFaceObservation> {
 
   static void encodeWithCoder(
     Pointer<VNFaceObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -18773,7 +18527,7 @@ class VNFaceObservation extends Struct<VNFaceObservation> {
     );
   }
 
-  static Pointer<Void> expressionsAndConfidence(
+  static Pointer expressionsAndConfidence(
     Pointer<VNFaceObservation> _self,
   ) {
     _openDynamicLibrary();
@@ -18783,7 +18537,7 @@ class VNFaceObservation extends Struct<VNFaceObservation> {
     );
   }
 
-  static Pointer<Void> expressionsAndDetections(
+  static Pointer expressionsAndDetections(
     Pointer<VNFaceObservation> _self,
   ) {
     _openDynamicLibrary();
@@ -18793,7 +18547,7 @@ class VNFaceObservation extends Struct<VNFaceObservation> {
     );
   }
 
-  static Pointer<Void> expressionsAndScores(
+  static Pointer expressionsAndScores(
     Pointer<VNFaceObservation> _self,
   ) {
     _openDynamicLibrary();
@@ -18803,7 +18557,7 @@ class VNFaceObservation extends Struct<VNFaceObservation> {
     );
   }
 
-  static Pointer<Void> faceAttributes(
+  static Pointer faceAttributes(
     Pointer<VNFaceObservation> _self,
   ) {
     _openDynamicLibrary();
@@ -18843,7 +18597,7 @@ class VNFaceObservation extends Struct<VNFaceObservation> {
     );
   }
 
-  static Pointer<Void> faceLandmarkSegments(
+  static Pointer faceLandmarkSegments(
     Pointer<VNFaceObservation> _self,
   ) {
     _openDynamicLibrary();
@@ -18863,7 +18617,7 @@ class VNFaceObservation extends Struct<VNFaceObservation> {
     );
   }
 
-  static Pointer<Void> faceRegionMap(
+  static Pointer faceRegionMap(
     Pointer<VNFaceObservation> _self,
   ) {
     _openDynamicLibrary();
@@ -18873,7 +18627,7 @@ class VNFaceObservation extends Struct<VNFaceObservation> {
     );
   }
 
-  static Pointer<Void> faceTorsoprint(
+  static Pointer faceTorsoprint(
     Pointer<VNFaceObservation> _self,
   ) {
     _openDynamicLibrary();
@@ -18883,7 +18637,7 @@ class VNFaceObservation extends Struct<VNFaceObservation> {
     );
   }
 
-  static Pointer<Void> faceprint(
+  static Pointer faceprint(
     Pointer<VNFaceObservation> _self,
   ) {
     _openDynamicLibrary();
@@ -18895,7 +18649,7 @@ class VNFaceObservation extends Struct<VNFaceObservation> {
 
   static int getComputedRectifyingTransform(
     Pointer<VNFaceObservation> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -18908,7 +18662,7 @@ class VNFaceObservation extends Struct<VNFaceObservation> {
   static int getFaceEXIFOrientation(
     Pointer<VNFaceObservation> _self,
     Pointer<Int32> arg, {
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -18939,7 +18693,7 @@ class VNFaceObservation extends Struct<VNFaceObservation> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<VNFaceObservation> _self,
   ) {
     _openDynamicLibrary();
@@ -18949,9 +18703,9 @@ class VNFaceObservation extends Struct<VNFaceObservation> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<VNFaceObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -18973,7 +18727,7 @@ class VNFaceObservation extends Struct<VNFaceObservation> {
 
   static int isEqual(
     Pointer<VNFaceObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -18983,7 +18737,7 @@ class VNFaceObservation extends Struct<VNFaceObservation> {
     );
   }
 
-  static Pointer<Void> landmarkPoints(
+  static Pointer landmarkPoints(
     Pointer<VNFaceObservation> _self,
   ) {
     _openDynamicLibrary();
@@ -18993,7 +18747,7 @@ class VNFaceObservation extends Struct<VNFaceObservation> {
     );
   }
 
-  static Pointer<Void> landmarkPoints3d(
+  static Pointer landmarkPoints3d(
     Pointer<VNFaceObservation> _self,
   ) {
     _openDynamicLibrary();
@@ -19013,7 +18767,7 @@ class VNFaceObservation extends Struct<VNFaceObservation> {
     );
   }
 
-  static Pointer<Void> landmarks(
+  static Pointer landmarks(
     Pointer<VNFaceObservation> _self,
   ) {
     _openDynamicLibrary();
@@ -19023,7 +18777,7 @@ class VNFaceObservation extends Struct<VNFaceObservation> {
     );
   }
 
-  static Pointer<Void> landmarks3d(
+  static Pointer landmarks3d(
     Pointer<VNFaceObservation> _self,
   ) {
     _openDynamicLibrary();
@@ -19043,7 +18797,7 @@ class VNFaceObservation extends Struct<VNFaceObservation> {
     );
   }
 
-  static Pointer<Void> pose(
+  static Pointer pose(
     Pointer<VNFaceObservation> _self,
   ) {
     _openDynamicLibrary();
@@ -19053,7 +18807,7 @@ class VNFaceObservation extends Struct<VNFaceObservation> {
     );
   }
 
-  static Pointer<Void> poseData(
+  static Pointer poseData(
     Pointer<VNFaceObservation> _self,
   ) {
     _openDynamicLibrary();
@@ -19063,7 +18817,7 @@ class VNFaceObservation extends Struct<VNFaceObservation> {
     );
   }
 
-  static Pointer<Void> roll(
+  static Pointer roll(
     Pointer<VNFaceObservation> _self,
   ) {
     _openDynamicLibrary();
@@ -19075,7 +18829,7 @@ class VNFaceObservation extends Struct<VNFaceObservation> {
 
   static void setAlignedBoundingBox(
     Pointer<VNFaceObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -19087,7 +18841,7 @@ class VNFaceObservation extends Struct<VNFaceObservation> {
 
   static void setAlignedMeanShape(
     Pointer<VNFaceObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -19123,7 +18877,7 @@ class VNFaceObservation extends Struct<VNFaceObservation> {
 
   static void setExpressionsAndScores(
     Pointer<VNFaceObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -19135,7 +18889,7 @@ class VNFaceObservation extends Struct<VNFaceObservation> {
 
   static void setFaceAttributes(
     Pointer<VNFaceObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -19183,7 +18937,7 @@ class VNFaceObservation extends Struct<VNFaceObservation> {
 
   static void setFaceLandmarkSegments(
     Pointer<VNFaceObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -19207,7 +18961,7 @@ class VNFaceObservation extends Struct<VNFaceObservation> {
 
   static void setFaceRegionMap(
     Pointer<VNFaceObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -19219,7 +18973,7 @@ class VNFaceObservation extends Struct<VNFaceObservation> {
 
   static void setFaceTorsoprint(
     Pointer<VNFaceObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -19231,7 +18985,7 @@ class VNFaceObservation extends Struct<VNFaceObservation> {
 
   static void setFaceprint(
     Pointer<VNFaceObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -19267,7 +19021,7 @@ class VNFaceObservation extends Struct<VNFaceObservation> {
 
   static void setLandmarkPoints(
     Pointer<VNFaceObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -19279,7 +19033,7 @@ class VNFaceObservation extends Struct<VNFaceObservation> {
 
   static void setLandmarkPoints3d(
     Pointer<VNFaceObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -19303,7 +19057,7 @@ class VNFaceObservation extends Struct<VNFaceObservation> {
 
   static void setLandmarks(
     Pointer<VNFaceObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -19315,7 +19069,7 @@ class VNFaceObservation extends Struct<VNFaceObservation> {
 
   static void setPoseData(
     Pointer<VNFaceObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -19327,7 +19081,7 @@ class VNFaceObservation extends Struct<VNFaceObservation> {
 
   static void setRoll(
     Pointer<VNFaceObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -19339,7 +19093,7 @@ class VNFaceObservation extends Struct<VNFaceObservation> {
 
   static void setTorsoprint(
     Pointer<VNFaceObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -19351,7 +19105,7 @@ class VNFaceObservation extends Struct<VNFaceObservation> {
 
   static void setYaw(
     Pointer<VNFaceObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -19361,7 +19115,7 @@ class VNFaceObservation extends Struct<VNFaceObservation> {
     );
   }
 
-  static Pointer<Void> torsoprint(
+  static Pointer torsoprint(
     Pointer<VNFaceObservation> _self,
   ) {
     _openDynamicLibrary();
@@ -19371,7 +19125,7 @@ class VNFaceObservation extends Struct<VNFaceObservation> {
     );
   }
 
-  static Pointer<Void> yaw(
+  static Pointer yaw(
     Pointer<VNFaceObservation> _self,
   ) {
     _openDynamicLibrary();
@@ -19382,11 +19136,9 @@ class VNFaceObservation extends Struct<VNFaceObservation> {
   }
 }
 
-/// Objective-C class _VNFaceRegionMap_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNFaceRegionMap extends Struct<VNFaceRegionMap> {
   factory VNFaceRegionMap._() {
@@ -19397,9 +19149,9 @@ class VNFaceRegionMap extends Struct<VNFaceRegionMap> {
     return _objc.allocate("VNFaceRegionMap").cast<VNFaceRegionMap>();
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<VNFaceRegionMap> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -19421,7 +19173,7 @@ class VNFaceRegionMap extends Struct<VNFaceRegionMap> {
 
   static void encodeWithCoder(
     Pointer<VNFaceRegionMap> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -19431,7 +19183,7 @@ class VNFaceRegionMap extends Struct<VNFaceRegionMap> {
     );
   }
 
-  static Pointer<Void> getRegionLabels(
+  static Pointer getRegionLabels(
     Pointer<VNFaceRegionMap> _self,
   ) {
     _openDynamicLibrary();
@@ -19441,9 +19193,9 @@ class VNFaceRegionMap extends Struct<VNFaceRegionMap> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<VNFaceRegionMap> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -19453,14 +19205,14 @@ class VNFaceRegionMap extends Struct<VNFaceRegionMap> {
     );
   }
 
-  static Pointer<Void> initWithRequestRevision(
+  static Pointer initWithRequestRevision(
     Pointer<VNFaceRegionMap> _self,
     int arg, {
-    @required Pointer<Pointer<Void>> regionMap,
+    @required Pointer<Pointer> regionMap,
     @required int deallocateBuffer,
-    @required Pointer<Void> userBBox,
-    @required Pointer<Void> alignedBBox,
-    @required Pointer<Void> valueToLabelMap,
+    @required Pointer userBBox,
+    @required Pointer alignedBBox,
+    @required Pointer valueToLabelMap,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_Uint64_p_Int8_p_p_p_returns_p(
@@ -19476,7 +19228,7 @@ class VNFaceRegionMap extends Struct<VNFaceRegionMap> {
     );
   }
 
-  static Pointer<Void> regionLabels(
+  static Pointer regionLabels(
     Pointer<VNFaceRegionMap> _self,
   ) {
     _openDynamicLibrary();
@@ -19486,10 +19238,10 @@ class VNFaceRegionMap extends Struct<VNFaceRegionMap> {
     );
   }
 
-  static Pointer<Void> regionNameAtImageCoordinate(
+  static Pointer regionNameAtImageCoordinate(
     Pointer<VNFaceRegionMap> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> imageSize,
+    Pointer arg, {
+    @required Pointer imageSize,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -19500,9 +19252,9 @@ class VNFaceRegionMap extends Struct<VNFaceRegionMap> {
     );
   }
 
-  static Pointer<Void> regionNameAtNormalizedAlignedFaceCoordinate(
+  static Pointer regionNameAtNormalizedAlignedFaceCoordinate(
     Pointer<VNFaceRegionMap> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -19512,9 +19264,9 @@ class VNFaceRegionMap extends Struct<VNFaceRegionMap> {
     );
   }
 
-  static Pointer<Void> regionNameAtNormalizedFaceCoordinate(
+  static Pointer regionNameAtNormalizedFaceCoordinate(
     Pointer<VNFaceRegionMap> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -19536,7 +19288,7 @@ class VNFaceRegionMap extends Struct<VNFaceRegionMap> {
 
   static void setRegionLabels(
     Pointer<VNFaceRegionMap> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -19547,11 +19299,9 @@ class VNFaceRegionMap extends Struct<VNFaceRegionMap> {
   }
 }
 
-/// Objective-C class _VNFaceRegionMapGenerator_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNFaceRegionMapGenerator extends Struct<VNFaceRegionMapGenerator> {
   factory VNFaceRegionMapGenerator._() {
@@ -19566,7 +19316,7 @@ class VNFaceRegionMapGenerator extends Struct<VNFaceRegionMapGenerator> {
 
   static int completeInitializationAndReturnError(
     Pointer<VNFaceRegionMapGenerator> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -19576,12 +19326,12 @@ class VNFaceRegionMapGenerator extends Struct<VNFaceRegionMapGenerator> {
     );
   }
 
-  static Pointer<Void> processWithOptions(
+  static Pointer processWithOptions(
     Pointer<VNFaceRegionMapGenerator> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> regionOfInterest,
-    @required Pointer<Void> warningRecorder,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer regionOfInterest,
+    @required Pointer warningRecorder,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_returns_p(
@@ -19596,11 +19346,9 @@ class VNFaceRegionMapGenerator extends Struct<VNFaceRegionMapGenerator> {
   }
 }
 
-/// Objective-C class _VNFaceTorsoprint_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNFaceTorsoprint extends Struct<VNFaceTorsoprint> {
   factory VNFaceTorsoprint._() {
@@ -19611,11 +19359,11 @@ class VNFaceTorsoprint extends Struct<VNFaceTorsoprint> {
     return _objc.allocate("VNFaceTorsoprint").cast<VNFaceTorsoprint>();
   }
 
-  static Pointer<Void> computeDistance(
+  static Pointer computeDistance(
     Pointer<VNFaceTorsoprint> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int withDistanceFunction,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_Uint64_p_returns_p(
@@ -19629,7 +19377,7 @@ class VNFaceTorsoprint extends Struct<VNFaceTorsoprint> {
 
   static void encodeWithCoder(
     Pointer<VNFaceTorsoprint> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -19639,7 +19387,7 @@ class VNFaceTorsoprint extends Struct<VNFaceTorsoprint> {
     );
   }
 
-  static Pointer<Void> faceprint(
+  static Pointer faceprint(
     Pointer<VNFaceTorsoprint> _self,
   ) {
     _openDynamicLibrary();
@@ -19649,9 +19397,9 @@ class VNFaceTorsoprint extends Struct<VNFaceTorsoprint> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<VNFaceTorsoprint> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -19661,10 +19409,10 @@ class VNFaceTorsoprint extends Struct<VNFaceTorsoprint> {
     );
   }
 
-  static Pointer<Void> initWithFaceprint(
+  static Pointer initWithFaceprint(
     Pointer<VNFaceTorsoprint> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> torsoPrint,
+    Pointer arg, {
+    @required Pointer torsoPrint,
     @required int requestRevision,
   }) {
     _openDynamicLibrary();
@@ -19687,7 +19435,7 @@ class VNFaceTorsoprint extends Struct<VNFaceTorsoprint> {
     );
   }
 
-  static Pointer<Void> torsoprint(
+  static Pointer torsoprint(
     Pointer<VNFaceTorsoprint> _self,
   ) {
     _openDynamicLibrary();
@@ -19698,11 +19446,9 @@ class VNFaceTorsoprint extends Struct<VNFaceTorsoprint> {
   }
 }
 
-/// Objective-C class _VNFaceTracker_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNFaceTracker extends Struct<VNFaceTracker> {
   factory VNFaceTracker._() {
@@ -19713,10 +19459,10 @@ class VNFaceTracker extends Struct<VNFaceTracker> {
     return _objc.allocate("VNFaceTracker").cast<VNFaceTracker>();
   }
 
-  static Pointer<Void> initWithOptions(
+  static Pointer initWithOptions(
     Pointer<VNFaceTracker> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -19728,11 +19474,9 @@ class VNFaceTracker extends Struct<VNFaceTracker> {
   }
 }
 
-/// Objective-C class _VNFaceprint_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNFaceprint extends Struct<VNFaceprint> {
   factory VNFaceprint._() {
@@ -19743,11 +19487,11 @@ class VNFaceprint extends Struct<VNFaceprint> {
     return _objc.allocate("VNFaceprint").cast<VNFaceprint>();
   }
 
-  static Pointer<Void> computeDistanceToFaceprint(
+  static Pointer computeDistanceToFaceprint(
     Pointer<VNFaceprint> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int withDistanceFunction,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_Int64_p_returns_p(
@@ -19760,9 +19504,9 @@ class VNFaceprint extends Struct<VNFaceprint> {
     );
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<VNFaceprint> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -19774,7 +19518,7 @@ class VNFaceprint extends Struct<VNFaceprint> {
 
   static void encodeWithCoder(
     Pointer<VNFaceprint> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -19784,7 +19528,7 @@ class VNFaceprint extends Struct<VNFaceprint> {
     );
   }
 
-  static Pointer<Void> faceprint(
+  static Pointer faceprint(
     Pointer<VNFaceprint> _self,
   ) {
     _openDynamicLibrary();
@@ -19794,7 +19538,7 @@ class VNFaceprint extends Struct<VNFaceprint> {
     );
   }
 
-  static Pointer<Void> faceprintInputPath(
+  static Pointer faceprintInputPath(
     Pointer<VNFaceprint> _self,
   ) {
     _openDynamicLibrary();
@@ -19814,9 +19558,9 @@ class VNFaceprint extends Struct<VNFaceprint> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<VNFaceprint> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -19826,7 +19570,7 @@ class VNFaceprint extends Struct<VNFaceprint> {
     );
   }
 
-  static Pointer<Void> initWithRequestRevision(
+  static Pointer initWithRequestRevision(
     Pointer<VNFaceprint> _self,
     int arg,
   ) {
@@ -19838,10 +19582,10 @@ class VNFaceprint extends Struct<VNFaceprint> {
     );
   }
 
-  static Pointer<Void> initWithState(
+  static Pointer initWithState(
     Pointer<VNFaceprint> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -19854,7 +19598,7 @@ class VNFaceprint extends Struct<VNFaceprint> {
 
   static int isEqual(
     Pointer<VNFaceprint> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -19864,7 +19608,7 @@ class VNFaceprint extends Struct<VNFaceprint> {
     );
   }
 
-  static Pointer<Void> key(
+  static Pointer key(
     Pointer<VNFaceprint> _self,
   ) {
     _openDynamicLibrary();
@@ -19904,9 +19648,9 @@ class VNFaceprint extends Struct<VNFaceprint> {
     );
   }
 
-  static Pointer<Void> serializeStateAndReturnError(
+  static Pointer serializeStateAndReturnError(
     Pointer<VNFaceprint> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -19918,7 +19662,7 @@ class VNFaceprint extends Struct<VNFaceprint> {
 
   static void setFaceprint(
     Pointer<VNFaceprint> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -19930,7 +19674,7 @@ class VNFaceprint extends Struct<VNFaceprint> {
 
   static void setFaceprintInputPath(
     Pointer<VNFaceprint> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -19942,7 +19686,7 @@ class VNFaceprint extends Struct<VNFaceprint> {
 
   static void setKey(
     Pointer<VNFaceprint> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -19977,11 +19721,9 @@ class VNFaceprint extends Struct<VNFaceprint> {
   }
 }
 
-/// Objective-C class _VNFaceprintGenerator_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNFaceprintGenerator extends Struct<VNFaceprintGenerator> {
   factory VNFaceprintGenerator._() {
@@ -19994,7 +19736,7 @@ class VNFaceprintGenerator extends Struct<VNFaceprintGenerator> {
 
   static int completeInitializationAndReturnError(
     Pointer<VNFaceprintGenerator> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -20006,7 +19748,7 @@ class VNFaceprintGenerator extends Struct<VNFaceprintGenerator> {
 
   static int isFaceprinterCompatibleWithFaceprinterCreatedWithOptions(
     Pointer<VNFaceprintGenerator> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -20039,11 +19781,11 @@ class VNFaceprintGenerator extends Struct<VNFaceprintGenerator> {
 
   static void printDebugInfoFor(
     Pointer<VNFaceprintGenerator> _self,
-    Pointer<Pointer<Void>> arg, {
-    @required Pointer<Void> imageBuffer,
-    @required Pointer<Void> originalImageLumaCrop,
-    @required Pointer<Void> faceBBoxInLumaCropCoordinates,
-    @required Pointer<Void> magnifiedBBoxInLumaCropCoordinates,
+    Pointer<Pointer> arg, {
+    @required Pointer imageBuffer,
+    @required Pointer originalImageLumaCrop,
+    @required Pointer faceBBoxInLumaCropCoordinates,
+    @required Pointer magnifiedBBoxInLumaCropCoordinates,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_p_returns_void(
@@ -20058,12 +19800,12 @@ class VNFaceprintGenerator extends Struct<VNFaceprintGenerator> {
     );
   }
 
-  static Pointer<Void> processWithOptions(
+  static Pointer processWithOptions(
     Pointer<VNFaceprintGenerator> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> regionOfInterest,
-    @required Pointer<Void> warningRecorder,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer regionOfInterest,
+    @required Pointer warningRecorder,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_returns_p(
@@ -20088,11 +19830,9 @@ class VNFaceprintGenerator extends Struct<VNFaceprintGenerator> {
   }
 }
 
-/// Objective-C class _VNGenerateImageSaliencyRequest_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNGenerateImageSaliencyRequest
     extends Struct<VNGenerateImageSaliencyRequest> {
@@ -20109,8 +19849,8 @@ class VNGenerateImageSaliencyRequest
   static int internalPerformRevision(
     Pointer<VNGenerateImageSaliencyRequest> _self,
     int arg, {
-    @required Pointer<Void> inContext,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer inContext,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_Uint64_p_p_returns_Int8(
@@ -20124,7 +19864,7 @@ class VNGenerateImageSaliencyRequest
 
   static int willAcceptCachedResultsFromRequestWithConfiguration(
     Pointer<VNGenerateImageSaliencyRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -20135,11 +19875,9 @@ class VNGenerateImageSaliencyRequest
   }
 }
 
-/// Objective-C class _VNGenerateImageSaliencyRequestConfiguration_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNGenerateImageSaliencyRequestConfiguration
     extends Struct<VNGenerateImageSaliencyRequestConfiguration> {
@@ -20154,11 +19892,9 @@ class VNGenerateImageSaliencyRequestConfiguration
   }
 }
 
-/// Objective-C class _VNGenerateOpticalFlowRequest_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNGenerateOpticalFlowRequest
     extends Struct<VNGenerateOpticalFlowRequest> {
@@ -20185,8 +19921,8 @@ class VNGenerateOpticalFlowRequest
   static int internalPerformRevision(
     Pointer<VNGenerateOpticalFlowRequest> _self,
     int arg, {
-    @required Pointer<Void> inContext,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer inContext,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_Uint64_p_p_returns_Int8(
@@ -20210,7 +19946,7 @@ class VNGenerateOpticalFlowRequest
 
   static int willAcceptCachedResultsFromRequestWithConfiguration(
     Pointer<VNGenerateOpticalFlowRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -20221,11 +19957,9 @@ class VNGenerateOpticalFlowRequest
   }
 }
 
-/// Objective-C class _VNGreedyClusteringReadOnly_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNGreedyClusteringReadOnly extends Struct<VNGreedyClusteringReadOnly> {
   factory VNGreedyClusteringReadOnly._() {
@@ -20240,7 +19974,7 @@ class VNGreedyClusteringReadOnly extends Struct<VNGreedyClusteringReadOnly> {
 
   static int cancelClustering(
     Pointer<VNGreedyClusteringReadOnly> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -20250,9 +19984,9 @@ class VNGreedyClusteringReadOnly extends Struct<VNGreedyClusteringReadOnly> {
     );
   }
 
-  static Pointer<Void> convertUpdatePairsToClusters(
+  static Pointer convertUpdatePairsToClusters(
     Pointer<VNGreedyClusteringReadOnly> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -20262,9 +19996,9 @@ class VNGreedyClusteringReadOnly extends Struct<VNGreedyClusteringReadOnly> {
     );
   }
 
-  static Pointer<Void> getClusterState(
+  static Pointer getClusterState(
     Pointer<VNGreedyClusteringReadOnly> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -20274,9 +20008,9 @@ class VNGreedyClusteringReadOnly extends Struct<VNGreedyClusteringReadOnly> {
     );
   }
 
-  static Pointer<Void> getClusteredIds(
+  static Pointer getClusteredIds(
     Pointer<VNGreedyClusteringReadOnly> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -20286,11 +20020,11 @@ class VNGreedyClusteringReadOnly extends Struct<VNGreedyClusteringReadOnly> {
     );
   }
 
-  static Pointer<Void> getClustersForClusterIds(
+  static Pointer getClustersForClusterIds(
     Pointer<VNGreedyClusteringReadOnly> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> options,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer options,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -20302,11 +20036,11 @@ class VNGreedyClusteringReadOnly extends Struct<VNGreedyClusteringReadOnly> {
     );
   }
 
-  static Pointer<Void> getDistanceBetweenLevel0ClustersWithFaceId(
+  static Pointer getDistanceBetweenLevel0ClustersWithFaceId(
     Pointer<VNGreedyClusteringReadOnly> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> andFaceId,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer andFaceId,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -20319,10 +20053,10 @@ class VNGreedyClusteringReadOnly extends Struct<VNGreedyClusteringReadOnly> {
     );
   }
 
-  static Pointer<Void> getDistanceBetweenLevel1Clusters(
+  static Pointer getDistanceBetweenLevel1Clusters(
     Pointer<VNGreedyClusteringReadOnly> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -20333,11 +20067,11 @@ class VNGreedyClusteringReadOnly extends Struct<VNGreedyClusteringReadOnly> {
     );
   }
 
-  static Pointer<Void> getDistances(
+  static Pointer getDistances(
     Pointer<VNGreedyClusteringReadOnly> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> to,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer to,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -20349,10 +20083,10 @@ class VNGreedyClusteringReadOnly extends Struct<VNGreedyClusteringReadOnly> {
     );
   }
 
-  static Pointer<Void> getLevel0ClusteredIdsForFaceId(
+  static Pointer getLevel0ClusteredIdsForFaceId(
     Pointer<VNGreedyClusteringReadOnly> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -20363,10 +20097,10 @@ class VNGreedyClusteringReadOnly extends Struct<VNGreedyClusteringReadOnly> {
     );
   }
 
-  static Pointer<Void> getLevel1ClusteredIdsGroupedByLevel0ClustersForFaceId(
+  static Pointer getLevel1ClusteredIdsGroupedByLevel0ClustersForFaceId(
     Pointer<VNGreedyClusteringReadOnly> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -20378,10 +20112,10 @@ class VNGreedyClusteringReadOnly extends Struct<VNGreedyClusteringReadOnly> {
     );
   }
 
-  static Pointer<Void> initWithOptions(
+  static Pointer initWithOptions(
     Pointer<VNGreedyClusteringReadOnly> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -20402,9 +20136,9 @@ class VNGreedyClusteringReadOnly extends Struct<VNGreedyClusteringReadOnly> {
     );
   }
 
-  static Pointer<Void> maximumFaceIdInModelAndReturnError(
+  static Pointer maximumFaceIdInModelAndReturnError(
     Pointer<VNGreedyClusteringReadOnly> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -20416,7 +20150,7 @@ class VNGreedyClusteringReadOnly extends Struct<VNGreedyClusteringReadOnly> {
 
   static void setGreedyClustererFaces_const(
     Pointer<VNGreedyClusteringReadOnly> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -20426,11 +20160,11 @@ class VNGreedyClusteringReadOnly extends Struct<VNGreedyClusteringReadOnly> {
     );
   }
 
-  static Pointer<Void> suggestionsForClusterIdsWithFlags(
+  static Pointer suggestionsForClusterIdsWithFlags(
     Pointer<VNGreedyClusteringReadOnly> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required double affinityThreshold,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_float32_p_returns_p(
@@ -20444,11 +20178,9 @@ class VNGreedyClusteringReadOnly extends Struct<VNGreedyClusteringReadOnly> {
   }
 }
 
-/// Objective-C class _VNGreedyClusteringReadWrite_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNGreedyClusteringReadWrite extends Struct<VNGreedyClusteringReadWrite> {
   factory VNGreedyClusteringReadWrite._() {
@@ -20461,10 +20193,10 @@ class VNGreedyClusteringReadWrite extends Struct<VNGreedyClusteringReadWrite> {
         .cast<VNGreedyClusteringReadWrite>();
   }
 
-  static Pointer<Void> getClustersWithOptions(
+  static Pointer getClustersWithOptions(
     Pointer<VNGreedyClusteringReadWrite> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -20475,10 +20207,10 @@ class VNGreedyClusteringReadWrite extends Struct<VNGreedyClusteringReadWrite> {
     );
   }
 
-  static Pointer<Void> initWithOptions(
+  static Pointer initWithOptions(
     Pointer<VNGreedyClusteringReadWrite> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -20490,11 +20222,9 @@ class VNGreedyClusteringReadWrite extends Struct<VNGreedyClusteringReadWrite> {
   }
 }
 
-/// Objective-C class _VNGroupImagesByTimeAndContentRequest_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNGroupImagesByTimeAndContentRequest
     extends Struct<VNGroupImagesByTimeAndContentRequest> {
@@ -20520,7 +20250,7 @@ class VNGroupImagesByTimeAndContentRequest
 
   static void applyConfigurationOfRequest(
     Pointer<VNGroupImagesByTimeAndContentRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -20540,12 +20270,12 @@ class VNGroupImagesByTimeAndContentRequest
     );
   }
 
-  static Pointer<Void>
+  static Pointer
       initWithImageprintObservations$clusteringDistanceThreshold$completionHandler$(
     Pointer<VNGroupImagesByTimeAndContentRequest> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required double clusteringDistanceThreshold,
-    @required Pointer<Void> completionHandler,
+    @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_float32_p_returns_p(
@@ -20558,10 +20288,9 @@ class VNGroupImagesByTimeAndContentRequest
     );
   }
 
-  static Pointer<Void>
-      initWithImageprintObservations$clusteringDistanceThreshold$(
+  static Pointer initWithImageprintObservations$clusteringDistanceThreshold$(
     Pointer<VNGroupImagesByTimeAndContentRequest> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required double clusteringDistanceThreshold,
   }) {
     _openDynamicLibrary();
@@ -20574,11 +20303,11 @@ class VNGroupImagesByTimeAndContentRequest
     );
   }
 
-  static Pointer<Void> initWithName(
+  static Pointer initWithName(
     Pointer<VNGroupImagesByTimeAndContentRequest> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> options,
-    @required Pointer<Void> completionHandler,
+    Pointer arg, {
+    @required Pointer options,
+    @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -20590,7 +20319,7 @@ class VNGroupImagesByTimeAndContentRequest
     );
   }
 
-  static Pointer<Void> inputImageprints(
+  static Pointer inputImageprints(
     Pointer<VNGroupImagesByTimeAndContentRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -20602,8 +20331,8 @@ class VNGroupImagesByTimeAndContentRequest
 
   static int internalPerformInContext(
     Pointer<VNGroupImagesByTimeAndContentRequest> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -20614,7 +20343,7 @@ class VNGroupImagesByTimeAndContentRequest
     );
   }
 
-  static Pointer<Void> resultsSortingComparator(
+  static Pointer resultsSortingComparator(
     Pointer<VNGroupImagesByTimeAndContentRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -20638,7 +20367,7 @@ class VNGroupImagesByTimeAndContentRequest
 
   static void setInputImageprints(
     Pointer<VNGroupImagesByTimeAndContentRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -20650,8 +20379,8 @@ class VNGroupImagesByTimeAndContentRequest
 
   static int warmUpRequestPerformer(
     Pointer<VNGroupImagesByTimeAndContentRequest> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -20664,7 +20393,7 @@ class VNGroupImagesByTimeAndContentRequest
 
   static int willAcceptCachedResultsFromRequestWithConfiguration(
     Pointer<VNGroupImagesByTimeAndContentRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -20675,11 +20404,9 @@ class VNGroupImagesByTimeAndContentRequest
   }
 }
 
-/// Objective-C class _VNHomographicImageRegistrationRequest_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNHomographicImageRegistrationRequest
     extends Struct<VNHomographicImageRegistrationRequest> {
@@ -20705,8 +20432,8 @@ class VNHomographicImageRegistrationRequest
 
   static int internalPerformInContext(
     Pointer<VNHomographicImageRegistrationRequest> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -20728,11 +20455,9 @@ class VNHomographicImageRegistrationRequest
   }
 }
 
-/// Objective-C class _VNHorizonDetector_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNHorizonDetector extends Struct<VNHorizonDetector> {
   factory VNHorizonDetector._() {
@@ -20753,12 +20478,12 @@ class VNHorizonDetector extends Struct<VNHorizonDetector> {
     );
   }
 
-  static Pointer<Void> processWithOptions(
+  static Pointer processWithOptions(
     Pointer<VNHorizonDetector> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> regionOfInterest,
-    @required Pointer<Void> warningRecorder,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer regionOfInterest,
+    @required Pointer warningRecorder,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_returns_p(
@@ -20773,11 +20498,9 @@ class VNHorizonDetector extends Struct<VNHorizonDetector> {
   }
 }
 
-/// Objective-C class _VNHorizonObservation_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNHorizonObservation extends Struct<VNHorizonObservation> {
   factory VNHorizonObservation._() {
@@ -20798,9 +20521,9 @@ class VNHorizonObservation extends Struct<VNHorizonObservation> {
     );
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<VNHorizonObservation> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -20812,7 +20535,7 @@ class VNHorizonObservation extends Struct<VNHorizonObservation> {
 
   static void encodeWithCoder(
     Pointer<VNHorizonObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -20832,9 +20555,9 @@ class VNHorizonObservation extends Struct<VNHorizonObservation> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<VNHorizonObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -20846,7 +20569,7 @@ class VNHorizonObservation extends Struct<VNHorizonObservation> {
 
   static int isEqual(
     Pointer<VNHorizonObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -20870,7 +20593,7 @@ class VNHorizonObservation extends Struct<VNHorizonObservation> {
 
   static void setTransform(
     Pointer<VNHorizonObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -20880,7 +20603,7 @@ class VNHorizonObservation extends Struct<VNHorizonObservation> {
     );
   }
 
-  static Pointer<Void> transform(
+  static Pointer transform(
     Pointer<VNHorizonObservation> _self,
   ) {
     _openDynamicLibrary();
@@ -20891,11 +20614,9 @@ class VNHorizonObservation extends Struct<VNHorizonObservation> {
   }
 }
 
-/// Objective-C class _VNHumanDetector_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNHumanDetector extends Struct<VNHumanDetector> {
   factory VNHumanDetector._() {
@@ -20908,7 +20629,7 @@ class VNHumanDetector extends Struct<VNHumanDetector> {
 
   static int completeInitializationAndReturnError(
     Pointer<VNHumanDetector> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -20938,12 +20659,12 @@ class VNHumanDetector extends Struct<VNHumanDetector> {
     );
   }
 
-  static Pointer<Void> processWithOptions(
+  static Pointer processWithOptions(
     Pointer<VNHumanDetector> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> regionOfInterest,
-    @required Pointer<Void> warningRecorder,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer regionOfInterest,
+    @required Pointer warningRecorder,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_returns_p(
@@ -20958,11 +20679,9 @@ class VNHumanDetector extends Struct<VNHumanDetector> {
   }
 }
 
-/// Objective-C class _VNHumanObservation_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNHumanObservation extends Struct<VNHumanObservation> {
   factory VNHumanObservation._() {
@@ -20974,11 +20693,9 @@ class VNHumanObservation extends Struct<VNHumanObservation> {
   }
 }
 
-/// Objective-C class _VNIdentifyJunkRequest_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNIdentifyJunkRequest extends Struct<VNIdentifyJunkRequest> {
   factory VNIdentifyJunkRequest._() {
@@ -20991,11 +20708,11 @@ class VNIdentifyJunkRequest extends Struct<VNIdentifyJunkRequest> {
         .cast<VNIdentifyJunkRequest>();
   }
 
-  static Pointer<Void> initWithName(
+  static Pointer initWithName(
     Pointer<VNIdentifyJunkRequest> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> options,
-    @required Pointer<Void> completionHandler,
+    Pointer arg, {
+    @required Pointer options,
+    @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -21010,8 +20727,8 @@ class VNIdentifyJunkRequest extends Struct<VNIdentifyJunkRequest> {
   static int internalPerformRevision(
     Pointer<VNIdentifyJunkRequest> _self,
     int arg, {
-    @required Pointer<Void> inContext,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer inContext,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_Uint64_p_p_returns_Int8(
@@ -21025,8 +20742,8 @@ class VNIdentifyJunkRequest extends Struct<VNIdentifyJunkRequest> {
 
   static int warmUpRequestPerformer(
     Pointer<VNIdentifyJunkRequest> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -21038,11 +20755,9 @@ class VNIdentifyJunkRequest extends Struct<VNIdentifyJunkRequest> {
   }
 }
 
-/// Objective-C class _VNImageAestheticsObservation_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNImageAestheticsObservation
     extends Struct<VNImageAestheticsObservation> {
@@ -21066,9 +20781,9 @@ class VNImageAestheticsObservation
     );
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<VNImageAestheticsObservation> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -21078,7 +20793,7 @@ class VNImageAestheticsObservation
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<VNImageAestheticsObservation> _self,
   ) {
     _openDynamicLibrary();
@@ -21090,7 +20805,7 @@ class VNImageAestheticsObservation
 
   static void encodeWithCoder(
     Pointer<VNImageAestheticsObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -21130,9 +20845,9 @@ class VNImageAestheticsObservation
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<VNImageAestheticsObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -21142,7 +20857,7 @@ class VNImageAestheticsObservation
     );
   }
 
-  static Pointer<Void> initWithRequestRevision(
+  static Pointer initWithRequestRevision(
     Pointer<VNImageAestheticsObservation> _self,
     int arg, {
     @required double overallAestheticScore,
@@ -21390,11 +21105,9 @@ class VNImageAestheticsObservation
   }
 }
 
-/// Objective-C class _VNImageAlignmentObservation_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNImageAlignmentObservation extends Struct<VNImageAlignmentObservation> {
   factory VNImageAlignmentObservation._() {
@@ -21407,7 +21120,7 @@ class VNImageAlignmentObservation extends Struct<VNImageAlignmentObservation> {
         .cast<VNImageAlignmentObservation>();
   }
 
-  static Pointer<Void> alignmentTransform(
+  static Pointer alignmentTransform(
     Pointer<VNImageAlignmentObservation> _self,
   ) {
     _openDynamicLibrary();
@@ -21417,9 +21130,9 @@ class VNImageAlignmentObservation extends Struct<VNImageAlignmentObservation> {
     );
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<VNImageAlignmentObservation> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -21431,7 +21144,7 @@ class VNImageAlignmentObservation extends Struct<VNImageAlignmentObservation> {
 
   static void encodeWithCoder(
     Pointer<VNImageAlignmentObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -21441,7 +21154,7 @@ class VNImageAlignmentObservation extends Struct<VNImageAlignmentObservation> {
     );
   }
 
-  static Pointer<Void> floatingImageSignature(
+  static Pointer floatingImageSignature(
     Pointer<VNImageAlignmentObservation> _self,
   ) {
     _openDynamicLibrary();
@@ -21461,9 +21174,9 @@ class VNImageAlignmentObservation extends Struct<VNImageAlignmentObservation> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<VNImageAlignmentObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -21475,7 +21188,7 @@ class VNImageAlignmentObservation extends Struct<VNImageAlignmentObservation> {
 
   static int isEqual(
     Pointer<VNImageAlignmentObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -21485,7 +21198,7 @@ class VNImageAlignmentObservation extends Struct<VNImageAlignmentObservation> {
     );
   }
 
-  static Pointer<Void> referenceImageSignature(
+  static Pointer referenceImageSignature(
     Pointer<VNImageAlignmentObservation> _self,
   ) {
     _openDynamicLibrary();
@@ -21497,7 +21210,7 @@ class VNImageAlignmentObservation extends Struct<VNImageAlignmentObservation> {
 
   static void setAlignmentTransform(
     Pointer<VNImageAlignmentObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -21509,7 +21222,7 @@ class VNImageAlignmentObservation extends Struct<VNImageAlignmentObservation> {
 
   static void setFloatingImageSignature(
     Pointer<VNImageAlignmentObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -21521,7 +21234,7 @@ class VNImageAlignmentObservation extends Struct<VNImageAlignmentObservation> {
 
   static void setReferenceImageSignature(
     Pointer<VNImageAlignmentObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -21532,11 +21245,9 @@ class VNImageAlignmentObservation extends Struct<VNImageAlignmentObservation> {
   }
 }
 
-/// Objective-C class _VNImageAnalyzerCompoundRequest_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNImageAnalyzerCompoundRequest
     extends Struct<VNImageAnalyzerCompoundRequest> {
@@ -21560,10 +21271,10 @@ class VNImageAnalyzerCompoundRequest
     );
   }
 
-  static Pointer<Void> initWithDetectorType(
+  static Pointer initWithDetectorType(
     Pointer<VNImageAnalyzerCompoundRequest> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> groupingConfiguration,
+    Pointer arg, {
+    @required Pointer groupingConfiguration,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -21577,8 +21288,8 @@ class VNImageAnalyzerCompoundRequest
   static int internalPerformRevision(
     Pointer<VNImageAnalyzerCompoundRequest> _self,
     int arg, {
-    @required Pointer<Void> inContext,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer inContext,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_Uint64_p_p_returns_Int8(
@@ -21590,7 +21301,7 @@ class VNImageAnalyzerCompoundRequest
     );
   }
 
-  static Pointer<Void> newDefaultDetectorOptionsForRequestRevision(
+  static Pointer newDefaultDetectorOptionsForRequestRevision(
     Pointer<VNImageAnalyzerCompoundRequest> _self,
     int arg,
   ) {
@@ -21604,7 +21315,7 @@ class VNImageAnalyzerCompoundRequest
 
   static int willAcceptCachedResultsFromRequestWithConfiguration(
     Pointer<VNImageAnalyzerCompoundRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -21615,11 +21326,9 @@ class VNImageAnalyzerCompoundRequest
   }
 }
 
-/// Objective-C class _VNImageAnalyzerCompoundRequestConfiguration_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNImageAnalyzerCompoundRequestConfiguration
     extends Struct<VNImageAnalyzerCompoundRequestConfiguration> {
@@ -21633,9 +21342,9 @@ class VNImageAnalyzerCompoundRequestConfiguration
         .cast<VNImageAnalyzerCompoundRequestConfiguration>();
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<VNImageAnalyzerCompoundRequestConfiguration> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -21645,7 +21354,7 @@ class VNImageAnalyzerCompoundRequestConfiguration
     );
   }
 
-  static Pointer<Void> detectorConfigurationOptions(
+  static Pointer detectorConfigurationOptions(
     Pointer<VNImageAnalyzerCompoundRequestConfiguration> _self,
   ) {
     _openDynamicLibrary();
@@ -21655,7 +21364,7 @@ class VNImageAnalyzerCompoundRequestConfiguration
     );
   }
 
-  static Pointer<Void> detectorType(
+  static Pointer detectorType(
     Pointer<VNImageAnalyzerCompoundRequestConfiguration> _self,
   ) {
     _openDynamicLibrary();
@@ -21665,7 +21374,7 @@ class VNImageAnalyzerCompoundRequestConfiguration
     );
   }
 
-  static Pointer<Void> originalRequestConfigurations(
+  static Pointer originalRequestConfigurations(
     Pointer<VNImageAnalyzerCompoundRequestConfiguration> _self,
   ) {
     _openDynamicLibrary();
@@ -21677,7 +21386,7 @@ class VNImageAnalyzerCompoundRequestConfiguration
 
   static void setDetectorConfigurationOptions(
     Pointer<VNImageAnalyzerCompoundRequestConfiguration> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -21689,7 +21398,7 @@ class VNImageAnalyzerCompoundRequestConfiguration
 
   static void setDetectorType(
     Pointer<VNImageAnalyzerCompoundRequestConfiguration> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -21701,7 +21410,7 @@ class VNImageAnalyzerCompoundRequestConfiguration
 
   static void setOriginalRequestConfigurations(
     Pointer<VNImageAnalyzerCompoundRequestConfiguration> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -21712,11 +21421,9 @@ class VNImageAnalyzerCompoundRequestConfiguration
   }
 }
 
-/// Objective-C class _VNImageAnalyzerCompoundRequestGroupingConfiguration_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNImageAnalyzerCompoundRequestGroupingConfiguration
     extends Struct<VNImageAnalyzerCompoundRequestGroupingConfiguration> {
@@ -21733,8 +21440,8 @@ class VNImageAnalyzerCompoundRequestGroupingConfiguration
 
   static void addOriginalRequest(
     Pointer<VNImageAnalyzerCompoundRequestGroupingConfiguration> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> withObservationClass,
+    Pointer arg, {
+    @required Pointer withObservationClass,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -21745,7 +21452,7 @@ class VNImageAnalyzerCompoundRequestGroupingConfiguration
     );
   }
 
-  static Pointer<Void> detectorConfigurationOptions(
+  static Pointer detectorConfigurationOptions(
     Pointer<VNImageAnalyzerCompoundRequestGroupingConfiguration> _self,
   ) {
     _openDynamicLibrary();
@@ -21755,7 +21462,7 @@ class VNImageAnalyzerCompoundRequestGroupingConfiguration
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<VNImageAnalyzerCompoundRequestGroupingConfiguration> _self,
   ) {
     _openDynamicLibrary();
@@ -21765,7 +21472,7 @@ class VNImageAnalyzerCompoundRequestGroupingConfiguration
     );
   }
 
-  static Pointer<Void> observationClasses(
+  static Pointer observationClasses(
     Pointer<VNImageAnalyzerCompoundRequestGroupingConfiguration> _self,
   ) {
     _openDynamicLibrary();
@@ -21775,7 +21482,7 @@ class VNImageAnalyzerCompoundRequestGroupingConfiguration
     );
   }
 
-  static Pointer<Void> originalRequests(
+  static Pointer originalRequests(
     Pointer<VNImageAnalyzerCompoundRequestGroupingConfiguration> _self,
   ) {
     _openDynamicLibrary();
@@ -21795,7 +21502,7 @@ class VNImageAnalyzerCompoundRequestGroupingConfiguration
     );
   }
 
-  static Pointer<Void> processingDevice(
+  static Pointer processingDevice(
     Pointer<VNImageAnalyzerCompoundRequestGroupingConfiguration> _self,
   ) {
     _openDynamicLibrary();
@@ -21807,8 +21514,8 @@ class VNImageAnalyzerCompoundRequestGroupingConfiguration
 
   static void setDetectorConfigurationOption(
     Pointer<VNImageAnalyzerCompoundRequestGroupingConfiguration> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> value,
+    Pointer arg, {
+    @required Pointer value,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -21820,11 +21527,9 @@ class VNImageAnalyzerCompoundRequestGroupingConfiguration
   }
 }
 
-/// Objective-C class _VNImageAnalyzerCompoundRequestGroupingConfigurations_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNImageAnalyzerCompoundRequestGroupingConfigurations
     extends Struct<VNImageAnalyzerCompoundRequestGroupingConfigurations> {
@@ -21839,7 +21544,7 @@ class VNImageAnalyzerCompoundRequestGroupingConfigurations
         .cast<VNImageAnalyzerCompoundRequestGroupingConfigurations>();
   }
 
-  static Pointer<Void> allGroupingConfigurations(
+  static Pointer allGroupingConfigurations(
     Pointer<VNImageAnalyzerCompoundRequestGroupingConfigurations> _self,
   ) {
     _openDynamicLibrary();
@@ -21849,10 +21554,10 @@ class VNImageAnalyzerCompoundRequestGroupingConfigurations
     );
   }
 
-  static Pointer<Void> groupingConfigurationForRequest(
+  static Pointer groupingConfigurationForRequest(
     Pointer<VNImageAnalyzerCompoundRequestGroupingConfigurations> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> withObservationClass,
+    Pointer arg, {
+    @required Pointer withObservationClass,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -21874,7 +21579,7 @@ class VNImageAnalyzerCompoundRequestGroupingConfigurations
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<VNImageAnalyzerCompoundRequestGroupingConfigurations> _self,
   ) {
     _openDynamicLibrary();
@@ -21895,11 +21600,9 @@ class VNImageAnalyzerCompoundRequestGroupingConfigurations
   }
 }
 
-/// Objective-C class _VNImageAnalyzerMultiDetector_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNImageAnalyzerMultiDetector
     extends Struct<VNImageAnalyzerMultiDetector> {
@@ -21913,7 +21616,7 @@ class VNImageAnalyzerMultiDetector
         .cast<VNImageAnalyzerMultiDetector>();
   }
 
-  static Pointer<Void> allSceneLabels(
+  static Pointer allSceneLabels(
     Pointer<VNImageAnalyzerMultiDetector> _self,
   ) {
     _openDynamicLibrary();
@@ -21925,7 +21628,7 @@ class VNImageAnalyzerMultiDetector
 
   static int completeInitializationAndReturnError(
     Pointer<VNImageAnalyzerMultiDetector> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -21935,12 +21638,12 @@ class VNImageAnalyzerMultiDetector
     );
   }
 
-  static Pointer<Void> processWithOptions(
+  static Pointer processWithOptions(
     Pointer<VNImageAnalyzerMultiDetector> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> regionOfInterest,
-    @required Pointer<Void> warningRecorder,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer regionOfInterest,
+    @required Pointer warningRecorder,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_returns_p(
@@ -21956,7 +21659,7 @@ class VNImageAnalyzerMultiDetector
 
   static int supportsProcessingDevice(
     Pointer<VNImageAnalyzerMultiDetector> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -21967,11 +21670,9 @@ class VNImageAnalyzerMultiDetector
   }
 }
 
-/// Objective-C class _VNImageBasedRequest_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNImageBasedRequest extends Struct<VNImageBasedRequest> {
   factory VNImageBasedRequest._() {
@@ -21984,7 +21685,7 @@ class VNImageBasedRequest extends Struct<VNImageBasedRequest> {
 
   static void applyConfigurationOfRequest(
     Pointer<VNImageBasedRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -21996,9 +21697,9 @@ class VNImageBasedRequest extends Struct<VNImageBasedRequest> {
 
   static int getOptionalValidatedInputFaceObservations(
     Pointer<VNImageBasedRequest> _self,
-    Pointer<Pointer<Void>> arg, {
+    Pointer<Pointer> arg, {
     @required int clippedToRegionOfInterest,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_Int8_p_returns_Int8(
@@ -22011,11 +21712,11 @@ class VNImageBasedRequest extends Struct<VNImageBasedRequest> {
     );
   }
 
-  static Pointer<Void> initWithName(
+  static Pointer initWithName(
     Pointer<VNImageBasedRequest> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> options,
-    @required Pointer<Void> completionHandler,
+    Pointer arg, {
+    @required Pointer options,
+    @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -22027,7 +21728,7 @@ class VNImageBasedRequest extends Struct<VNImageBasedRequest> {
     );
   }
 
-  static Pointer<Void> inputFaceObservations(
+  static Pointer inputFaceObservations(
     Pointer<VNImageBasedRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -22047,7 +21748,7 @@ class VNImageBasedRequest extends Struct<VNImageBasedRequest> {
     );
   }
 
-  static Pointer<Void> regionOfInterest(
+  static Pointer regionOfInterest(
     Pointer<VNImageBasedRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -22057,7 +21758,7 @@ class VNImageBasedRequest extends Struct<VNImageBasedRequest> {
     );
   }
 
-  static Pointer<Void> regionOfInterestNonIntegralPixelRectForWidth(
+  static Pointer regionOfInterestNonIntegralPixelRectForWidth(
     Pointer<VNImageBasedRequest> _self,
     int arg, {
     @required int height,
@@ -22071,7 +21772,7 @@ class VNImageBasedRequest extends Struct<VNImageBasedRequest> {
     );
   }
 
-  static Pointer<Void> regionOfInterestPixelRectForWidth(
+  static Pointer regionOfInterestPixelRectForWidth(
     Pointer<VNImageBasedRequest> _self,
     int arg, {
     @required int height,
@@ -22087,7 +21788,7 @@ class VNImageBasedRequest extends Struct<VNImageBasedRequest> {
 
   static void setInputFaceObservations(
     Pointer<VNImageBasedRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -22099,7 +21800,7 @@ class VNImageBasedRequest extends Struct<VNImageBasedRequest> {
 
   static void setRegionOfInterest(
     Pointer<VNImageBasedRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -22111,7 +21812,7 @@ class VNImageBasedRequest extends Struct<VNImageBasedRequest> {
 
   static int validateConfigurationAndReturnError(
     Pointer<VNImageBasedRequest> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -22121,10 +21822,10 @@ class VNImageBasedRequest extends Struct<VNImageBasedRequest> {
     );
   }
 
-  static Pointer<Void> validatedInputFaceObservationsClippedToRegionOfInterest(
+  static Pointer validatedInputFaceObservationsClippedToRegionOfInterest(
     Pointer<VNImageBasedRequest> _self,
     int arg, {
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_Int8_p_returns_p(
@@ -22138,7 +21839,7 @@ class VNImageBasedRequest extends Struct<VNImageBasedRequest> {
 
   static int willAcceptCachedResultsFromRequestWithConfiguration(
     Pointer<VNImageBasedRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -22149,11 +21850,9 @@ class VNImageBasedRequest extends Struct<VNImageBasedRequest> {
   }
 }
 
-/// Objective-C class _VNImageBasedRequestConfiguration_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNImageBasedRequestConfiguration
     extends Struct<VNImageBasedRequestConfiguration> {
@@ -22167,9 +21866,9 @@ class VNImageBasedRequestConfiguration
         .cast<VNImageBasedRequestConfiguration>();
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<VNImageBasedRequestConfiguration> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -22179,7 +21878,7 @@ class VNImageBasedRequestConfiguration
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<VNImageBasedRequestConfiguration> _self,
   ) {
     _openDynamicLibrary();
@@ -22189,9 +21888,9 @@ class VNImageBasedRequestConfiguration
     );
   }
 
-  static Pointer<Void> initWithRequestClass(
+  static Pointer initWithRequestClass(
     Pointer<VNImageBasedRequestConfiguration> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -22201,7 +21900,7 @@ class VNImageBasedRequestConfiguration
     );
   }
 
-  static Pointer<Void> inputFaceObservations(
+  static Pointer inputFaceObservations(
     Pointer<VNImageBasedRequestConfiguration> _self,
   ) {
     _openDynamicLibrary();
@@ -22211,7 +21910,7 @@ class VNImageBasedRequestConfiguration
     );
   }
 
-  static Pointer<Void> regionOfInterest(
+  static Pointer regionOfInterest(
     Pointer<VNImageBasedRequestConfiguration> _self,
   ) {
     _openDynamicLibrary();
@@ -22223,7 +21922,7 @@ class VNImageBasedRequestConfiguration
 
   static void setInputFaceObservations(
     Pointer<VNImageBasedRequestConfiguration> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -22235,7 +21934,7 @@ class VNImageBasedRequestConfiguration
 
   static void setRegionOfInterest(
     Pointer<VNImageBasedRequestConfiguration> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -22246,11 +21945,9 @@ class VNImageBasedRequestConfiguration
   }
 }
 
-/// Objective-C class _VNImageBlurObservation_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNImageBlurObservation extends Struct<VNImageBlurObservation> {
   factory VNImageBlurObservation._() {
@@ -22274,11 +21971,9 @@ class VNImageBlurObservation extends Struct<VNImageBlurObservation> {
   }
 }
 
-/// Objective-C class _VNImageBlurScoreRequest_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNImageBlurScoreRequest extends Struct<VNImageBlurScoreRequest> {
   factory VNImageBlurScoreRequest._() {
@@ -22293,7 +21988,7 @@ class VNImageBlurScoreRequest extends Struct<VNImageBlurScoreRequest> {
 
   static void applyConfigurationOfRequest(
     Pointer<VNImageBlurScoreRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -22313,11 +22008,11 @@ class VNImageBlurScoreRequest extends Struct<VNImageBlurScoreRequest> {
     );
   }
 
-  static Pointer<Void> initWithName(
+  static Pointer initWithName(
     Pointer<VNImageBlurScoreRequest> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> options,
-    @required Pointer<Void> completionHandler,
+    Pointer arg, {
+    @required Pointer options,
+    @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -22332,8 +22027,8 @@ class VNImageBlurScoreRequest extends Struct<VNImageBlurScoreRequest> {
   static int internalPerformRevision(
     Pointer<VNImageBlurScoreRequest> _self,
     int arg, {
-    @required Pointer<Void> inContext,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer inContext,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_Uint64_p_p_returns_Int8(
@@ -22381,7 +22076,7 @@ class VNImageBlurScoreRequest extends Struct<VNImageBlurScoreRequest> {
 
   static int willAcceptCachedResultsFromRequestWithConfiguration(
     Pointer<VNImageBlurScoreRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -22392,11 +22087,9 @@ class VNImageBlurScoreRequest extends Struct<VNImageBlurScoreRequest> {
   }
 }
 
-/// Objective-C class _VNImageBlurScoreRequestConfiguration_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNImageBlurScoreRequestConfiguration
     extends Struct<VNImageBlurScoreRequestConfiguration> {
@@ -22420,9 +22113,9 @@ class VNImageBlurScoreRequestConfiguration
     );
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<VNImageBlurScoreRequestConfiguration> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -22432,9 +22125,9 @@ class VNImageBlurScoreRequestConfiguration
     );
   }
 
-  static Pointer<Void> initWithRequestClass(
+  static Pointer initWithRequestClass(
     Pointer<VNImageBlurScoreRequestConfiguration> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -22479,11 +22172,9 @@ class VNImageBlurScoreRequestConfiguration
   }
 }
 
-/// Objective-C class _VNImageBrightnessObservation_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNImageBrightnessObservation
     extends Struct<VNImageBrightnessObservation> {
@@ -22508,11 +22199,9 @@ class VNImageBrightnessObservation
   }
 }
 
-/// Objective-C class _VNImageBuffer_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNImageBuffer extends Struct<VNImageBuffer> {
   factory VNImageBuffer._() {
@@ -22523,14 +22212,14 @@ class VNImageBuffer extends Struct<VNImageBuffer> {
     return _objc.allocate("VNImageBuffer").cast<VNImageBuffer>();
   }
 
-  static Pointer<Void> augmentedBuffersWithWidth(
+  static Pointer augmentedBuffersWithWidth(
     Pointer<VNImageBuffer> _self,
     int arg, {
     @required int height,
     @required int format,
-    @required Pointer<Void> options,
-    @required Pointer<Void> augmentationOptions,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer options,
+    @required Pointer augmentationOptions,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_Uint64_Uint64_Uint32_p_p_p_returns_p(
@@ -22546,15 +22235,15 @@ class VNImageBuffer extends Struct<VNImageBuffer> {
     );
   }
 
-  static Pointer<Void> augmentedCroppedBuffersWithWidth(
+  static Pointer augmentedCroppedBuffersWithWidth(
     Pointer<VNImageBuffer> _self,
     int arg, {
     @required int height,
     @required int format,
-    @required Pointer<Void> cropRect,
-    @required Pointer<Void> options,
-    @required Pointer<Void> augmentationOptions,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer cropRect,
+    @required Pointer options,
+    @required Pointer augmentationOptions,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_Uint64_Uint64_Uint32_p_p_p_p_returns_p(
@@ -22571,13 +22260,13 @@ class VNImageBuffer extends Struct<VNImageBuffer> {
     );
   }
 
-  static Pointer<Pointer<Void>> bufferWithWidth(
+  static Pointer<Pointer> bufferWithWidth(
     Pointer<VNImageBuffer> _self,
     int arg, {
     @required int height,
     @required int format,
-    @required Pointer<Void> options,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer options,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_Uint64_Uint64_Uint32_p_p_returns_p(
@@ -22601,12 +22290,12 @@ class VNImageBuffer extends Struct<VNImageBuffer> {
     );
   }
 
-  static Pointer<Pointer<Void>> createBufferWithMaxSideLengthOf(
+  static Pointer<Pointer> createBufferWithMaxSideLengthOf(
     Pointer<VNImageBuffer> _self,
     int arg, {
     @required int andPixelFormat,
-    @required Pointer<Void> andOptions,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer andOptions,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_Uint64_Uint32_p_p_returns_p(
@@ -22620,13 +22309,13 @@ class VNImageBuffer extends Struct<VNImageBuffer> {
     );
   }
 
-  static Pointer<Pointer<Void>> createCroppedBufferWithMaxSideLengthOf(
+  static Pointer<Pointer> createCroppedBufferWithMaxSideLengthOf(
     Pointer<VNImageBuffer> _self,
     int arg, {
-    @required Pointer<Void> andCropBounds,
+    @required Pointer andCropBounds,
     @required int andPixelFormat,
-    @required Pointer<Void> andOptions,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer andOptions,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_Uint64_p_Uint32_p_p_returns_p(
@@ -22641,16 +22330,16 @@ class VNImageBuffer extends Struct<VNImageBuffer> {
     );
   }
 
-  static Pointer<Pointer<Void>> cropAndScaleBufferWithWidth(
+  static Pointer<Pointer> cropAndScaleBufferWithWidth(
     Pointer<VNImageBuffer> _self,
     int arg, {
     @required int height,
-    @required Pointer<Void> cropRect,
+    @required Pointer cropRect,
     @required int format,
     @required int imageCropAndScaleOption,
-    @required Pointer<Void> options,
-    @required Pointer<Pointer<Void>> error,
-    @required Pointer<Pointer<Void>> calculatedNormalizedOriginOffset,
+    @required Pointer options,
+    @required Pointer<Pointer> error,
+    @required Pointer<Pointer> calculatedNormalizedOriginOffset,
     @required Pointer<Float> calculatedScaleX,
     @required Pointer<Float> calculatedScaleY,
   }) {
@@ -22672,14 +22361,14 @@ class VNImageBuffer extends Struct<VNImageBuffer> {
     );
   }
 
-  static Pointer<Pointer<Void>> croppedBufferWithWidth(
+  static Pointer<Pointer> croppedBufferWithWidth(
     Pointer<VNImageBuffer> _self,
     int arg, {
     @required int height,
     @required int format,
-    @required Pointer<Void> cropRect,
-    @required Pointer<Void> options,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer cropRect,
+    @required Pointer options,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_Uint64_Uint64_Uint32_p_p_p_returns_p(
@@ -22705,7 +22394,7 @@ class VNImageBuffer extends Struct<VNImageBuffer> {
     );
   }
 
-  static Pointer<Void> fileURL(
+  static Pointer fileURL(
     Pointer<VNImageBuffer> _self,
   ) {
     _openDynamicLibrary();
@@ -22717,7 +22406,7 @@ class VNImageBuffer extends Struct<VNImageBuffer> {
 
   static int getCameraIntrinsicsAvailable(
     Pointer<VNImageBuffer> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -22729,7 +22418,7 @@ class VNImageBuffer extends Struct<VNImageBuffer> {
 
   static int getCameraOpticalCenterIfAvailable(
     Pointer<VNImageBuffer> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -22761,7 +22450,7 @@ class VNImageBuffer extends Struct<VNImageBuffer> {
     );
   }
 
-  static Pointer<Void> imageProperties(
+  static Pointer imageProperties(
     Pointer<VNImageBuffer> _self,
   ) {
     _openDynamicLibrary();
@@ -22771,10 +22460,10 @@ class VNImageBuffer extends Struct<VNImageBuffer> {
     );
   }
 
-  static Pointer<Void> initWithCGImage(
+  static Pointer initWithCGImage(
     Pointer<VNImageBuffer> _self,
-    Pointer<Pointer<Void>> arg, {
-    @required Pointer<Void> options,
+    Pointer<Pointer> arg, {
+    @required Pointer options,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -22785,10 +22474,10 @@ class VNImageBuffer extends Struct<VNImageBuffer> {
     );
   }
 
-  static Pointer<Void> initWithCIImage(
+  static Pointer initWithCIImage(
     Pointer<VNImageBuffer> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> options,
+    Pointer arg, {
+    @required Pointer options,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -22799,10 +22488,10 @@ class VNImageBuffer extends Struct<VNImageBuffer> {
     );
   }
 
-  static Pointer<Void> initWithCVPixelBuffer(
+  static Pointer initWithCVPixelBuffer(
     Pointer<VNImageBuffer> _self,
-    Pointer<Pointer<Void>> arg, {
-    @required Pointer<Void> options,
+    Pointer<Pointer> arg, {
+    @required Pointer options,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -22813,10 +22502,10 @@ class VNImageBuffer extends Struct<VNImageBuffer> {
     );
   }
 
-  static Pointer<Void> initWithData(
+  static Pointer initWithData(
     Pointer<VNImageBuffer> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> options,
+    Pointer arg, {
+    @required Pointer options,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -22827,9 +22516,9 @@ class VNImageBuffer extends Struct<VNImageBuffer> {
     );
   }
 
-  static Pointer<Void> initWithOptions(
+  static Pointer initWithOptions(
     Pointer<VNImageBuffer> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -22839,10 +22528,10 @@ class VNImageBuffer extends Struct<VNImageBuffer> {
     );
   }
 
-  static Pointer<Void> initWithURL(
+  static Pointer initWithURL(
     Pointer<VNImageBuffer> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> options,
+    Pointer arg, {
+    @required Pointer options,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -22853,9 +22542,9 @@ class VNImageBuffer extends Struct<VNImageBuffer> {
     );
   }
 
-  static Pointer<Void> makeClippedRectAgainstImageExtentUsingOriginalRect(
+  static Pointer makeClippedRectAgainstImageExtentUsingOriginalRect(
     Pointer<VNImageBuffer> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -22875,7 +22564,7 @@ class VNImageBuffer extends Struct<VNImageBuffer> {
     );
   }
 
-  static Pointer<Pointer<Void>> originalPixelBuffer(
+  static Pointer<Pointer> originalPixelBuffer(
     Pointer<VNImageBuffer> _self,
   ) {
     _openDynamicLibrary();
@@ -22889,10 +22578,10 @@ class VNImageBuffer extends Struct<VNImageBuffer> {
     Pointer<VNImageBuffer> _self,
     int arg, {
     @required double overlapFraction,
-    @required Pointer<Void> options,
-    @required Pointer<Void> roi,
-    @required Pointer<Void> handler,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer options,
+    @required Pointer roi,
+    @required Pointer handler,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_Uint64_float32_p_p_p_p_returns_Int8(
@@ -22929,11 +22618,9 @@ class VNImageBuffer extends Struct<VNImageBuffer> {
   }
 }
 
-/// Objective-C class _VNImageBufferManager_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNImageBufferManager extends Struct<VNImageBufferManager> {
   factory VNImageBufferManager._() {
@@ -22946,7 +22633,7 @@ class VNImageBufferManager extends Struct<VNImageBufferManager> {
 
   static void addImageBuffer(
     Pointer<VNImageBufferManager> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -22966,7 +22653,7 @@ class VNImageBufferManager extends Struct<VNImageBufferManager> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<VNImageBufferManager> _self,
   ) {
     _openDynamicLibrary();
@@ -22988,7 +22675,7 @@ class VNImageBufferManager extends Struct<VNImageBufferManager> {
 
   static void removeBuffer(
     Pointer<VNImageBufferManager> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -22998,9 +22685,9 @@ class VNImageBufferManager extends Struct<VNImageBufferManager> {
     );
   }
 
-  static Pointer<Void> sharedCIContextWithOptions(
+  static Pointer sharedCIContextWithOptions(
     Pointer<VNImageBufferManager> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -23011,11 +22698,9 @@ class VNImageBufferManager extends Struct<VNImageBufferManager> {
   }
 }
 
-/// Objective-C class _VNImageClassifier_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNImageClassifier extends Struct<VNImageClassifier> {
   factory VNImageClassifier._() {
@@ -23027,11 +22712,9 @@ class VNImageClassifier extends Struct<VNImageClassifier> {
   }
 }
 
-/// Objective-C class _VNImageExposureScoreRequest_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNImageExposureScoreRequest extends Struct<VNImageExposureScoreRequest> {
   factory VNImageExposureScoreRequest._() {
@@ -23047,8 +22730,8 @@ class VNImageExposureScoreRequest extends Struct<VNImageExposureScoreRequest> {
   static int internalPerformRevision(
     Pointer<VNImageExposureScoreRequest> _self,
     int arg, {
-    @required Pointer<Void> inContext,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer inContext,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_Uint64_p_p_returns_Int8(
@@ -23061,11 +22744,9 @@ class VNImageExposureScoreRequest extends Struct<VNImageExposureScoreRequest> {
   }
 }
 
-/// Objective-C class _VNImageGrouper_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNImageGrouper extends Struct<VNImageGrouper> {
   factory VNImageGrouper._() {
@@ -23077,11 +22758,9 @@ class VNImageGrouper extends Struct<VNImageGrouper> {
   }
 }
 
-/// Objective-C class _VNImageHomographicAlignmentObservation_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNImageHomographicAlignmentObservation
     extends Struct<VNImageHomographicAlignmentObservation> {
@@ -23095,9 +22774,9 @@ class VNImageHomographicAlignmentObservation
         .cast<VNImageHomographicAlignmentObservation>();
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<VNImageHomographicAlignmentObservation> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -23109,7 +22788,7 @@ class VNImageHomographicAlignmentObservation
 
   static void encodeWithCoder(
     Pointer<VNImageHomographicAlignmentObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -23129,7 +22808,7 @@ class VNImageHomographicAlignmentObservation
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<VNImageHomographicAlignmentObservation> _self,
   ) {
     _openDynamicLibrary();
@@ -23139,9 +22818,9 @@ class VNImageHomographicAlignmentObservation
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<VNImageHomographicAlignmentObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -23153,7 +22832,7 @@ class VNImageHomographicAlignmentObservation
 
   static int isEqual(
     Pointer<VNImageHomographicAlignmentObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -23165,7 +22844,7 @@ class VNImageHomographicAlignmentObservation
 
   static void setWarpTransform(
     Pointer<VNImageHomographicAlignmentObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -23175,7 +22854,7 @@ class VNImageHomographicAlignmentObservation
     );
   }
 
-  static Pointer<Void> warpTransform(
+  static Pointer warpTransform(
     Pointer<VNImageHomographicAlignmentObservation> _self,
   ) {
     _openDynamicLibrary();
@@ -23186,11 +22865,9 @@ class VNImageHomographicAlignmentObservation
   }
 }
 
-/// Objective-C class _VNImageRegistration_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNImageRegistration extends Struct<VNImageRegistration> {
   factory VNImageRegistration._() {
@@ -23202,11 +22879,9 @@ class VNImageRegistration extends Struct<VNImageRegistration> {
   }
 }
 
-/// Objective-C class _VNImageRegistrationRequest_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNImageRegistrationRequest extends Struct<VNImageRegistrationRequest> {
   factory VNImageRegistrationRequest._() {
@@ -23229,9 +22904,9 @@ class VNImageRegistrationRequest extends Struct<VNImageRegistrationRequest> {
     );
   }
 
-  static Pointer<Void> cachedFloatingImageBufferReturningError(
+  static Pointer cachedFloatingImageBufferReturningError(
     Pointer<VNImageRegistrationRequest> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -23241,9 +22916,9 @@ class VNImageRegistrationRequest extends Struct<VNImageRegistrationRequest> {
     );
   }
 
-  static Pointer<Void> cachedFloatingImageRegistrationSignatureReturningError(
+  static Pointer cachedFloatingImageRegistrationSignatureReturningError(
     Pointer<VNImageRegistrationRequest> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -23256,11 +22931,11 @@ class VNImageRegistrationRequest extends Struct<VNImageRegistrationRequest> {
 
   static int getReferenceImageBuffer(
     Pointer<VNImageRegistrationRequest> _self,
-    Pointer<Pointer<Void>> arg, {
-    @required Pointer<Pointer<Void>> registrationSignature,
-    @required Pointer<Void> forRequestPerformingContext,
-    @required Pointer<Void> options,
-    @required Pointer<Pointer<Void>> error,
+    Pointer<Pointer> arg, {
+    @required Pointer<Pointer> registrationSignature,
+    @required Pointer forRequestPerformingContext,
+    @required Pointer options,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_p_returns_Int8(
@@ -23277,8 +22952,8 @@ class VNImageRegistrationRequest extends Struct<VNImageRegistrationRequest> {
 
   static int internalPerformInContext(
     Pointer<VNImageRegistrationRequest> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -23301,8 +22976,8 @@ class VNImageRegistrationRequest extends Struct<VNImageRegistrationRequest> {
 
   static int warmUpRequestPerformer(
     Pointer<VNImageRegistrationRequest> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -23314,11 +22989,9 @@ class VNImageRegistrationRequest extends Struct<VNImageRegistrationRequest> {
   }
 }
 
-/// Objective-C class _VNImageRegistrationSignature_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNImageRegistrationSignature
     extends Struct<VNImageRegistrationSignature> {
@@ -23344,7 +23017,7 @@ class VNImageRegistrationSignature
 
   static void encodeWithCoder(
     Pointer<VNImageRegistrationSignature> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -23364,9 +23037,9 @@ class VNImageRegistrationSignature
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<VNImageRegistrationSignature> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -23376,11 +23049,11 @@ class VNImageRegistrationSignature
     );
   }
 
-  static Pointer<Void> initWithImageBuffer(
+  static Pointer initWithImageBuffer(
     Pointer<VNImageRegistrationSignature> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> andOptions,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer andOptions,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -23394,7 +23067,7 @@ class VNImageRegistrationSignature
 
   static int isEqual(
     Pointer<VNImageRegistrationSignature> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -23404,7 +23077,7 @@ class VNImageRegistrationSignature
     );
   }
 
-  static Pointer<Pointer<Void>> signature(
+  static Pointer<Pointer> signature(
     Pointer<VNImageRegistrationSignature> _self,
   ) {
     _openDynamicLibrary();
@@ -23415,11 +23088,9 @@ class VNImageRegistrationSignature
   }
 }
 
-/// Objective-C class _VNImageRequestHandler_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNImageRequestHandler extends Struct<VNImageRequestHandler> {
   factory VNImageRequestHandler._() {
@@ -23442,9 +23113,9 @@ class VNImageRequestHandler extends Struct<VNImageRequestHandler> {
     );
   }
 
-  static Pointer<Void> imageBufferAndReturnError(
+  static Pointer imageBufferAndReturnError(
     Pointer<VNImageRequestHandler> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -23454,10 +23125,10 @@ class VNImageRequestHandler extends Struct<VNImageRequestHandler> {
     );
   }
 
-  static Pointer<Void> initWithCGImage$options$(
+  static Pointer initWithCGImage$options$(
     Pointer<VNImageRequestHandler> _self,
-    Pointer<Pointer<Void>> arg, {
-    @required Pointer<Void> options,
+    Pointer<Pointer> arg, {
+    @required Pointer options,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -23468,11 +23139,11 @@ class VNImageRequestHandler extends Struct<VNImageRequestHandler> {
     );
   }
 
-  static Pointer<Void> initWithCGImage$orientation$options$(
+  static Pointer initWithCGImage$orientation$options$(
     Pointer<VNImageRequestHandler> _self,
-    Pointer<Pointer<Void>> arg, {
+    Pointer<Pointer> arg, {
     @required int orientation,
-    @required Pointer<Void> options,
+    @required Pointer options,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_Uint32_p_returns_p(
@@ -23484,10 +23155,10 @@ class VNImageRequestHandler extends Struct<VNImageRequestHandler> {
     );
   }
 
-  static Pointer<Void> initWithCIImage$options$(
+  static Pointer initWithCIImage$options$(
     Pointer<VNImageRequestHandler> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> options,
+    Pointer arg, {
+    @required Pointer options,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -23498,11 +23169,11 @@ class VNImageRequestHandler extends Struct<VNImageRequestHandler> {
     );
   }
 
-  static Pointer<Void> initWithCIImage$orientation$options$(
+  static Pointer initWithCIImage$orientation$options$(
     Pointer<VNImageRequestHandler> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int orientation,
-    @required Pointer<Void> options,
+    @required Pointer options,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_Uint32_p_returns_p(
@@ -23514,10 +23185,10 @@ class VNImageRequestHandler extends Struct<VNImageRequestHandler> {
     );
   }
 
-  static Pointer<Void> initWithCVPixelBuffer$options$(
+  static Pointer initWithCVPixelBuffer$options$(
     Pointer<VNImageRequestHandler> _self,
-    Pointer<Pointer<Void>> arg, {
-    @required Pointer<Void> options,
+    Pointer<Pointer> arg, {
+    @required Pointer options,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -23528,11 +23199,11 @@ class VNImageRequestHandler extends Struct<VNImageRequestHandler> {
     );
   }
 
-  static Pointer<Void> initWithCVPixelBuffer$orientation$options$(
+  static Pointer initWithCVPixelBuffer$orientation$options$(
     Pointer<VNImageRequestHandler> _self,
-    Pointer<Pointer<Void>> arg, {
+    Pointer<Pointer> arg, {
     @required int orientation,
-    @required Pointer<Void> options,
+    @required Pointer options,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_Uint32_p_returns_p(
@@ -23544,10 +23215,10 @@ class VNImageRequestHandler extends Struct<VNImageRequestHandler> {
     );
   }
 
-  static Pointer<Void> initWithData$options$(
+  static Pointer initWithData$options$(
     Pointer<VNImageRequestHandler> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> options,
+    Pointer arg, {
+    @required Pointer options,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -23558,11 +23229,11 @@ class VNImageRequestHandler extends Struct<VNImageRequestHandler> {
     );
   }
 
-  static Pointer<Void> initWithData$orientation$options$(
+  static Pointer initWithData$orientation$options$(
     Pointer<VNImageRequestHandler> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int orientation,
-    @required Pointer<Void> options,
+    @required Pointer options,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_Uint32_p_returns_p(
@@ -23574,9 +23245,9 @@ class VNImageRequestHandler extends Struct<VNImageRequestHandler> {
     );
   }
 
-  static Pointer<Void> initWithImageSpecifier(
+  static Pointer initWithImageSpecifier(
     Pointer<VNImageRequestHandler> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -23586,11 +23257,11 @@ class VNImageRequestHandler extends Struct<VNImageRequestHandler> {
     );
   }
 
-  static Pointer<Void> initWithURL$orientation$options$(
+  static Pointer initWithURL$orientation$options$(
     Pointer<VNImageRequestHandler> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int orientation,
-    @required Pointer<Void> options,
+    @required Pointer options,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_Uint32_p_returns_p(
@@ -23602,10 +23273,10 @@ class VNImageRequestHandler extends Struct<VNImageRequestHandler> {
     );
   }
 
-  static Pointer<Void> initWithURL$options$(
+  static Pointer initWithURL$options$(
     Pointer<VNImageRequestHandler> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> options,
+    Pointer arg, {
+    @required Pointer options,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -23618,8 +23289,8 @@ class VNImageRequestHandler extends Struct<VNImageRequestHandler> {
 
   static int performRequests$error$(
     Pointer<VNImageRequestHandler> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -23632,9 +23303,9 @@ class VNImageRequestHandler extends Struct<VNImageRequestHandler> {
 
   static int performRequests$gatheredForensics$error$(
     Pointer<VNImageRequestHandler> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> gatheredForensics,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> gatheredForensics,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_Int8(
@@ -23648,8 +23319,8 @@ class VNImageRequestHandler extends Struct<VNImageRequestHandler> {
 
   static int prepareForPerformingRequests(
     Pointer<VNImageRequestHandler> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -23662,8 +23333,8 @@ class VNImageRequestHandler extends Struct<VNImageRequestHandler> {
 
   static int prepareForPerformingRequestsOfClass(
     Pointer<VNImageRequestHandler> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -23675,11 +23346,9 @@ class VNImageRequestHandler extends Struct<VNImageRequestHandler> {
   }
 }
 
-/// Objective-C class _VNImageSaliencyObservation_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNImageSaliencyObservation extends Struct<VNImageSaliencyObservation> {
   factory VNImageSaliencyObservation._() {
@@ -23692,7 +23361,7 @@ class VNImageSaliencyObservation extends Struct<VNImageSaliencyObservation> {
         .cast<VNImageSaliencyObservation>();
   }
 
-  static Pointer<Void> boundingBox(
+  static Pointer boundingBox(
     Pointer<VNImageSaliencyObservation> _self,
   ) {
     _openDynamicLibrary();
@@ -23702,9 +23371,9 @@ class VNImageSaliencyObservation extends Struct<VNImageSaliencyObservation> {
     );
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<VNImageSaliencyObservation> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -23714,9 +23383,9 @@ class VNImageSaliencyObservation extends Struct<VNImageSaliencyObservation> {
     );
   }
 
-  static Pointer<Pointer<Void>> createSaliencyImageAndReturnError(
+  static Pointer<Pointer> createSaliencyImageAndReturnError(
     Pointer<VNImageSaliencyObservation> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -23728,7 +23397,7 @@ class VNImageSaliencyObservation extends Struct<VNImageSaliencyObservation> {
 
   static void encodeWithCoder(
     Pointer<VNImageSaliencyObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -23748,9 +23417,9 @@ class VNImageSaliencyObservation extends Struct<VNImageSaliencyObservation> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<VNImageSaliencyObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -23760,11 +23429,11 @@ class VNImageSaliencyObservation extends Struct<VNImageSaliencyObservation> {
     );
   }
 
-  static Pointer<Void> initWithRequestRevision(
+  static Pointer initWithRequestRevision(
     Pointer<VNImageSaliencyObservation> _self,
     int arg, {
-    @required Pointer<Pointer<Void>> rawSaliencyImage,
-    @required Pointer<Void> originalImageSize,
+    @required Pointer<Pointer> rawSaliencyImage,
+    @required Pointer originalImageSize,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_Uint64_p_p_returns_p(
@@ -23779,7 +23448,7 @@ class VNImageSaliencyObservation extends Struct<VNImageSaliencyObservation> {
 
   static int isEqual(
     Pointer<VNImageSaliencyObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -23789,7 +23458,7 @@ class VNImageSaliencyObservation extends Struct<VNImageSaliencyObservation> {
     );
   }
 
-  static Pointer<Void> narrowedBoundingBox(
+  static Pointer narrowedBoundingBox(
     Pointer<VNImageSaliencyObservation> _self,
   ) {
     _openDynamicLibrary();
@@ -23799,7 +23468,7 @@ class VNImageSaliencyObservation extends Struct<VNImageSaliencyObservation> {
     );
   }
 
-  static Pointer<Void> salientObjects(
+  static Pointer salientObjects(
     Pointer<VNImageSaliencyObservation> _self,
   ) {
     _openDynamicLibrary();
@@ -23810,11 +23479,9 @@ class VNImageSaliencyObservation extends Struct<VNImageSaliencyObservation> {
   }
 }
 
-/// Objective-C class _VNImageScoreObservation_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNImageScoreObservation extends Struct<VNImageScoreObservation> {
   factory VNImageScoreObservation._() {
@@ -23827,7 +23494,7 @@ class VNImageScoreObservation extends Struct<VNImageScoreObservation> {
         .cast<VNImageScoreObservation>();
   }
 
-  static Pointer<Void> blurScore(
+  static Pointer blurScore(
     Pointer<VNImageScoreObservation> _self,
   ) {
     _openDynamicLibrary();
@@ -23837,9 +23504,9 @@ class VNImageScoreObservation extends Struct<VNImageScoreObservation> {
     );
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<VNImageScoreObservation> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -23851,7 +23518,7 @@ class VNImageScoreObservation extends Struct<VNImageScoreObservation> {
 
   static void encodeWithCoder(
     Pointer<VNImageScoreObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -23861,7 +23528,7 @@ class VNImageScoreObservation extends Struct<VNImageScoreObservation> {
     );
   }
 
-  static Pointer<Void> exposureScore(
+  static Pointer exposureScore(
     Pointer<VNImageScoreObservation> _self,
   ) {
     _openDynamicLibrary();
@@ -23881,9 +23548,9 @@ class VNImageScoreObservation extends Struct<VNImageScoreObservation> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<VNImageScoreObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -23895,7 +23562,7 @@ class VNImageScoreObservation extends Struct<VNImageScoreObservation> {
 
   static int isEqual(
     Pointer<VNImageScoreObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -23907,7 +23574,7 @@ class VNImageScoreObservation extends Struct<VNImageScoreObservation> {
 
   static void setBlurScore(
     Pointer<VNImageScoreObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -23919,7 +23586,7 @@ class VNImageScoreObservation extends Struct<VNImageScoreObservation> {
 
   static void setExposureScore(
     Pointer<VNImageScoreObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -23930,11 +23597,9 @@ class VNImageScoreObservation extends Struct<VNImageScoreObservation> {
   }
 }
 
-/// Objective-C class _VNImageSourceManager_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNImageSourceManager extends Struct<VNImageSourceManager> {
   factory VNImageSourceManager._() {
@@ -23965,7 +23630,7 @@ class VNImageSourceManager extends Struct<VNImageSourceManager> {
     );
   }
 
-  static Pointer<Void> imageData(
+  static Pointer imageData(
     Pointer<VNImageSourceManager> _self,
   ) {
     _openDynamicLibrary();
@@ -23975,7 +23640,7 @@ class VNImageSourceManager extends Struct<VNImageSourceManager> {
     );
   }
 
-  static Pointer<Void> imageURL(
+  static Pointer imageURL(
     Pointer<VNImageSourceManager> _self,
   ) {
     _openDynamicLibrary();
@@ -23985,9 +23650,9 @@ class VNImageSourceManager extends Struct<VNImageSourceManager> {
     );
   }
 
-  static Pointer<Void> initWithImageData(
+  static Pointer initWithImageData(
     Pointer<VNImageSourceManager> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -23997,9 +23662,9 @@ class VNImageSourceManager extends Struct<VNImageSourceManager> {
     );
   }
 
-  static Pointer<Void> initWithImageURL(
+  static Pointer initWithImageURL(
     Pointer<VNImageSourceManager> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -24009,7 +23674,7 @@ class VNImageSourceManager extends Struct<VNImageSourceManager> {
     );
   }
 
-  static Pointer<Pointer<Void>> obtainImageSourceRef(
+  static Pointer<Pointer> obtainImageSourceRef(
     Pointer<VNImageSourceManager> _self,
   ) {
     _openDynamicLibrary();
@@ -24019,7 +23684,7 @@ class VNImageSourceManager extends Struct<VNImageSourceManager> {
     );
   }
 
-  static Pointer<Pointer<Void>> obtainImageSourceRefWithSubSampleFactor(
+  static Pointer<Pointer> obtainImageSourceRefWithSubSampleFactor(
     Pointer<VNImageSourceManager> _self,
     int arg, {
     @required int andLowPriorityHint,
@@ -24035,11 +23700,9 @@ class VNImageSourceManager extends Struct<VNImageSourceManager> {
   }
 }
 
-/// Objective-C class _VNImageSpecifier_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNImageSpecifier extends Struct<VNImageSpecifier> {
   factory VNImageSpecifier._() {
@@ -24050,9 +23713,9 @@ class VNImageSpecifier extends Struct<VNImageSpecifier> {
     return _objc.allocate("VNImageSpecifier").cast<VNImageSpecifier>();
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<VNImageSpecifier> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -24062,9 +23725,9 @@ class VNImageSpecifier extends Struct<VNImageSpecifier> {
     );
   }
 
-  static Pointer<Void> imageBufferAndReturnError(
+  static Pointer imageBufferAndReturnError(
     Pointer<VNImageSpecifier> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -24074,7 +23737,7 @@ class VNImageSpecifier extends Struct<VNImageSpecifier> {
     );
   }
 
-  static Pointer<Void> initInternal(
+  static Pointer initInternal(
     Pointer<VNImageSpecifier> _self,
   ) {
     _openDynamicLibrary();
@@ -24084,10 +23747,10 @@ class VNImageSpecifier extends Struct<VNImageSpecifier> {
     );
   }
 
-  static Pointer<Void> newImageBufferWithOptions(
+  static Pointer newImageBufferWithOptions(
     Pointer<VNImageSpecifier> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -24098,7 +23761,7 @@ class VNImageSpecifier extends Struct<VNImageSpecifier> {
     );
   }
 
-  static Pointer<Void> options(
+  static Pointer options(
     Pointer<VNImageSpecifier> _self,
   ) {
     _openDynamicLibrary();
@@ -24108,7 +23771,7 @@ class VNImageSpecifier extends Struct<VNImageSpecifier> {
     );
   }
 
-  static Pointer<Void> sequencedRequestPreviousObservationsKey(
+  static Pointer sequencedRequestPreviousObservationsKey(
     Pointer<VNImageSpecifier> _self,
   ) {
     _openDynamicLibrary();
@@ -24129,11 +23792,9 @@ class VNImageSpecifier extends Struct<VNImageSpecifier> {
   }
 }
 
-/// Objective-C class _VNImageTranslationAlignmentObservation_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNImageTranslationAlignmentObservation
     extends Struct<VNImageTranslationAlignmentObservation> {
@@ -24147,7 +23808,7 @@ class VNImageTranslationAlignmentObservation
         .cast<VNImageTranslationAlignmentObservation>();
   }
 
-  static Pointer<Void> alignmentTransform(
+  static Pointer alignmentTransform(
     Pointer<VNImageTranslationAlignmentObservation> _self,
   ) {
     _openDynamicLibrary();
@@ -24157,9 +23818,9 @@ class VNImageTranslationAlignmentObservation
     );
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<VNImageTranslationAlignmentObservation> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -24169,7 +23830,7 @@ class VNImageTranslationAlignmentObservation
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<VNImageTranslationAlignmentObservation> _self,
   ) {
     _openDynamicLibrary();
@@ -24181,7 +23842,7 @@ class VNImageTranslationAlignmentObservation
 
   static void encodeWithCoder(
     Pointer<VNImageTranslationAlignmentObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -24201,7 +23862,7 @@ class VNImageTranslationAlignmentObservation
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<VNImageTranslationAlignmentObservation> _self,
   ) {
     _openDynamicLibrary();
@@ -24211,9 +23872,9 @@ class VNImageTranslationAlignmentObservation
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<VNImageTranslationAlignmentObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -24225,7 +23886,7 @@ class VNImageTranslationAlignmentObservation
 
   static int isEqual(
     Pointer<VNImageTranslationAlignmentObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -24237,7 +23898,7 @@ class VNImageTranslationAlignmentObservation
 
   static void setAlignmentTransform(
     Pointer<VNImageTranslationAlignmentObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -24248,11 +23909,9 @@ class VNImageTranslationAlignmentObservation
   }
 }
 
-/// Objective-C class _VNImageprint_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNImageprint extends Struct<VNImageprint> {
   factory VNImageprint._() {
@@ -24263,9 +23922,9 @@ class VNImageprint extends Struct<VNImageprint> {
     return _objc.allocate("VNImageprint").cast<VNImageprint>();
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<VNImageprint> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -24275,7 +23934,7 @@ class VNImageprint extends Struct<VNImageprint> {
     );
   }
 
-  static Pointer<Void> descriptor(
+  static Pointer descriptor(
     Pointer<VNImageprint> _self,
   ) {
     _openDynamicLibrary();
@@ -24285,10 +23944,10 @@ class VNImageprint extends Struct<VNImageprint> {
     );
   }
 
-  static Pointer<Void> distanceToImageprint(
+  static Pointer distanceToImageprint(
     Pointer<VNImageprint> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -24301,7 +23960,7 @@ class VNImageprint extends Struct<VNImageprint> {
 
   static void encodeWithCoder(
     Pointer<VNImageprint> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -24321,9 +23980,9 @@ class VNImageprint extends Struct<VNImageprint> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<VNImageprint> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -24333,9 +23992,9 @@ class VNImageprint extends Struct<VNImageprint> {
     );
   }
 
-  static Pointer<Void> initWithImageDescriptor(
+  static Pointer initWithImageDescriptor(
     Pointer<VNImageprint> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int type,
     @required int requestRevision,
   }) {
@@ -24349,11 +24008,11 @@ class VNImageprint extends Struct<VNImageprint> {
     );
   }
 
-  static Pointer<Void> initWithState$startingAtByteOffset$error$(
+  static Pointer initWithState$startingAtByteOffset$error$(
     Pointer<VNImageprint> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int startingAtByteOffset,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_Uint64_p_returns_p(
@@ -24365,10 +24024,10 @@ class VNImageprint extends Struct<VNImageprint> {
     );
   }
 
-  static Pointer<Void> initWithState$error$(
+  static Pointer initWithState$error$(
     Pointer<VNImageprint> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -24381,7 +24040,7 @@ class VNImageprint extends Struct<VNImageprint> {
 
   static int isEqual(
     Pointer<VNImageprint> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -24401,9 +24060,9 @@ class VNImageprint extends Struct<VNImageprint> {
     );
   }
 
-  static Pointer<Void> serializeStateAndReturnError(
+  static Pointer serializeStateAndReturnError(
     Pointer<VNImageprint> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -24415,9 +24074,9 @@ class VNImageprint extends Struct<VNImageprint> {
 
   static int serializeStateIntoData(
     Pointer<VNImageprint> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int startingAtByteOffset,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_Uint64_p_returns_Uint64(
@@ -24441,7 +24100,7 @@ class VNImageprint extends Struct<VNImageprint> {
 
   static void setDescriptor(
     Pointer<VNImageprint> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -24484,11 +24143,9 @@ class VNImageprint extends Struct<VNImageprint> {
   }
 }
 
-/// Objective-C class _VNImageprintGenerator_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNImageprintGenerator extends Struct<VNImageprintGenerator> {
   factory VNImageprintGenerator._() {
@@ -24501,12 +24158,12 @@ class VNImageprintGenerator extends Struct<VNImageprintGenerator> {
         .cast<VNImageprintGenerator>();
   }
 
-  static Pointer<Void> processWithOptions(
+  static Pointer processWithOptions(
     Pointer<VNImageprintGenerator> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> regionOfInterest,
-    @required Pointer<Void> warningRecorder,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer regionOfInterest,
+    @required Pointer warningRecorder,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_returns_p(
@@ -24521,11 +24178,9 @@ class VNImageprintGenerator extends Struct<VNImageprintGenerator> {
   }
 }
 
-/// Objective-C class _VNImageprintObservation_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNImageprintObservation extends Struct<VNImageprintObservation> {
   factory VNImageprintObservation._() {
@@ -24540,7 +24195,7 @@ class VNImageprintObservation extends Struct<VNImageprintObservation> {
 
   static double calculateDistanceFromImageprintObservation(
     Pointer<VNImageprintObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_float32(
@@ -24550,9 +24205,9 @@ class VNImageprintObservation extends Struct<VNImageprintObservation> {
     );
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<VNImageprintObservation> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -24564,7 +24219,7 @@ class VNImageprintObservation extends Struct<VNImageprintObservation> {
 
   static void encodeWithCoder(
     Pointer<VNImageprintObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -24584,7 +24239,7 @@ class VNImageprintObservation extends Struct<VNImageprintObservation> {
     );
   }
 
-  static Pointer<Void> imageprint(
+  static Pointer imageprint(
     Pointer<VNImageprintObservation> _self,
   ) {
     _openDynamicLibrary();
@@ -24604,7 +24259,7 @@ class VNImageprintObservation extends Struct<VNImageprintObservation> {
     );
   }
 
-  static Pointer<Void> imageprintVersion(
+  static Pointer imageprintVersion(
     Pointer<VNImageprintObservation> _self,
   ) {
     _openDynamicLibrary();
@@ -24614,9 +24269,9 @@ class VNImageprintObservation extends Struct<VNImageprintObservation> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<VNImageprintObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -24626,9 +24281,9 @@ class VNImageprintObservation extends Struct<VNImageprintObservation> {
     );
   }
 
-  static Pointer<Void> initWithRawImageprintDescriptor(
+  static Pointer initWithRawImageprintDescriptor(
     Pointer<VNImageprintObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -24640,7 +24295,7 @@ class VNImageprintObservation extends Struct<VNImageprintObservation> {
 
   static int isEqual(
     Pointer<VNImageprintObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -24660,7 +24315,7 @@ class VNImageprintObservation extends Struct<VNImageprintObservation> {
     );
   }
 
-  static Pointer<Void> rawImageprintDescriptor(
+  static Pointer rawImageprintDescriptor(
     Pointer<VNImageprintObservation> _self,
   ) {
     _openDynamicLibrary();
@@ -24672,7 +24327,7 @@ class VNImageprintObservation extends Struct<VNImageprintObservation> {
 
   static void setImageprint(
     Pointer<VNImageprintObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -24683,11 +24338,9 @@ class VNImageprintObservation extends Struct<VNImageprintObservation> {
   }
 }
 
-/// Objective-C class _VNJunkIdentifier_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNJunkIdentifier extends Struct<VNJunkIdentifier> {
   factory VNJunkIdentifier._() {
@@ -24700,7 +24353,7 @@ class VNJunkIdentifier extends Struct<VNJunkIdentifier> {
 
   static int completeInitializationAndReturnError(
     Pointer<VNJunkIdentifier> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -24710,12 +24363,12 @@ class VNJunkIdentifier extends Struct<VNJunkIdentifier> {
     );
   }
 
-  static Pointer<Void> processWithOptions(
+  static Pointer processWithOptions(
     Pointer<VNJunkIdentifier> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> regionOfInterest,
-    @required Pointer<Void> warningRecorder,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer regionOfInterest,
+    @required Pointer warningRecorder,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_returns_p(
@@ -24730,11 +24383,9 @@ class VNJunkIdentifier extends Struct<VNJunkIdentifier> {
   }
 }
 
-/// Objective-C class _VNMPClusteringTreeNodeWrapper_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNMPClusteringTreeNodeWrapper
     extends Struct<VNMPClusteringTreeNodeWrapper> {
@@ -24768,7 +24419,7 @@ class VNMPClusteringTreeNodeWrapper
     );
   }
 
-  static Pointer<Void> descriptor(
+  static Pointer descriptor(
     Pointer<VNMPClusteringTreeNodeWrapper> _self,
   ) {
     _openDynamicLibrary();
@@ -24798,7 +24449,7 @@ class VNMPClusteringTreeNodeWrapper
     );
   }
 
-  static Pointer<Void> getLeafNodes(
+  static Pointer getLeafNodes(
     Pointer<VNMPClusteringTreeNodeWrapper> _self,
   ) {
     _openDynamicLibrary();
@@ -24808,9 +24459,9 @@ class VNMPClusteringTreeNodeWrapper
     );
   }
 
-  static Pointer<Void> initWithNode(
+  static Pointer initWithNode(
     Pointer<VNMPClusteringTreeNodeWrapper> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int freeNodeOnDealloc,
   }) {
     _openDynamicLibrary();
@@ -24832,7 +24483,7 @@ class VNMPClusteringTreeNodeWrapper
     );
   }
 
-  static Pointer<Void> left(
+  static Pointer left(
     Pointer<VNMPClusteringTreeNodeWrapper> _self,
   ) {
     _openDynamicLibrary();
@@ -24842,7 +24493,7 @@ class VNMPClusteringTreeNodeWrapper
     );
   }
 
-  static Pointer<Void> node(
+  static Pointer node(
     Pointer<VNMPClusteringTreeNodeWrapper> _self,
   ) {
     _openDynamicLibrary();
@@ -24862,7 +24513,7 @@ class VNMPClusteringTreeNodeWrapper
     );
   }
 
-  static Pointer<Void> right(
+  static Pointer right(
     Pointer<VNMPClusteringTreeNodeWrapper> _self,
   ) {
     _openDynamicLibrary();
@@ -24886,7 +24537,7 @@ class VNMPClusteringTreeNodeWrapper
 
   static void setNode(
     Pointer<VNMPClusteringTreeNodeWrapper> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -24897,11 +24548,9 @@ class VNMPClusteringTreeNodeWrapper
   }
 }
 
-/// Objective-C class _VNMPContext_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNMPContext extends Struct<VNMPContext> {
   factory VNMPContext._() {
@@ -24982,7 +24631,7 @@ class VNMPContext extends Struct<VNMPContext> {
     );
   }
 
-  static Pointer<Void> qualityCriteriaList(
+  static Pointer qualityCriteriaList(
     Pointer<VNMPContext> _self,
   ) {
     _openDynamicLibrary();
@@ -25088,7 +24737,7 @@ class VNMPContext extends Struct<VNMPContext> {
 
   static void setQualityCriteriaList(
     Pointer<VNMPContext> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -25155,11 +24804,9 @@ class VNMPContext extends Struct<VNMPContext> {
   }
 }
 
-/// Objective-C class _VNMPImageData_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNMPImageData extends Struct<VNMPImageData> {
   factory VNMPImageData._() {
@@ -25190,7 +24837,7 @@ class VNMPImageData extends Struct<VNMPImageData> {
     );
   }
 
-  static Pointer<Void> externalImageId(
+  static Pointer externalImageId(
     Pointer<VNMPImageData> _self,
   ) {
     _openDynamicLibrary();
@@ -25210,7 +24857,7 @@ class VNMPImageData extends Struct<VNMPImageData> {
     );
   }
 
-  static Pointer<Pointer<Void>> image(
+  static Pointer<Pointer> image(
     Pointer<VNMPImageData> _self,
   ) {
     _openDynamicLibrary();
@@ -25220,7 +24867,7 @@ class VNMPImageData extends Struct<VNMPImageData> {
     );
   }
 
-  static Pointer<Pointer<Void>> imageCVPixelBuffer(
+  static Pointer<Pointer> imageCVPixelBuffer(
     Pointer<VNMPImageData> _self,
   ) {
     _openDynamicLibrary();
@@ -25230,7 +24877,7 @@ class VNMPImageData extends Struct<VNMPImageData> {
     );
   }
 
-  static Pointer<Void> imageFilePath(
+  static Pointer imageFilePath(
     Pointer<VNMPImageData> _self,
   ) {
     _openDynamicLibrary();
@@ -25240,13 +24887,13 @@ class VNMPImageData extends Struct<VNMPImageData> {
     );
   }
 
-  static Pointer<Void>
+  static Pointer
       initWithCVPixelBufferImage$externalImageId$andExifTimestampValue$error$(
     Pointer<VNMPImageData> _self,
-    Pointer<Pointer<Void>> arg, {
-    @required Pointer<Void> externalImageId,
+    Pointer<Pointer> arg, {
+    @required Pointer externalImageId,
     @required int andExifTimestampValue,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_Int64_p_returns_p(
@@ -25260,13 +24907,13 @@ class VNMPImageData extends Struct<VNMPImageData> {
     );
   }
 
-  static Pointer<Void>
+  static Pointer
       initWithCVPixelBufferImage$externalImageId$andExifTimestampString$error$(
     Pointer<VNMPImageData> _self,
-    Pointer<Pointer<Void>> arg, {
-    @required Pointer<Void> externalImageId,
-    @required Pointer<Void> andExifTimestampString,
-    @required Pointer<Pointer<Void>> error,
+    Pointer<Pointer> arg, {
+    @required Pointer externalImageId,
+    @required Pointer andExifTimestampString,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_returns_p(
@@ -25280,13 +24927,12 @@ class VNMPImageData extends Struct<VNMPImageData> {
     );
   }
 
-  static Pointer<Void>
-      initWithVImage$externalImageId$andExifTimestampValue$error$(
+  static Pointer initWithVImage$externalImageId$andExifTimestampValue$error$(
     Pointer<VNMPImageData> _self,
-    Pointer<Pointer<Void>> arg, {
-    @required Pointer<Void> externalImageId,
+    Pointer<Pointer> arg, {
+    @required Pointer externalImageId,
     @required int andExifTimestampValue,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_Int64_p_returns_p(
@@ -25300,13 +24946,12 @@ class VNMPImageData extends Struct<VNMPImageData> {
     );
   }
 
-  static Pointer<Void>
-      initWithVImage$externalImageId$andExifTimestampString$error$(
+  static Pointer initWithVImage$externalImageId$andExifTimestampString$error$(
     Pointer<VNMPImageData> _self,
-    Pointer<Pointer<Void>> arg, {
-    @required Pointer<Void> externalImageId,
-    @required Pointer<Void> andExifTimestampString,
-    @required Pointer<Pointer<Void>> error,
+    Pointer<Pointer> arg, {
+    @required Pointer externalImageId,
+    @required Pointer andExifTimestampString,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_returns_p(
@@ -25334,7 +24979,7 @@ class VNMPImageData extends Struct<VNMPImageData> {
 
   static void setImageFilePath(
     Pointer<VNMPImageData> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -25345,11 +24990,9 @@ class VNMPImageData extends Struct<VNMPImageData> {
   }
 }
 
-/// Objective-C class _VNMPImageDescriptor_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNMPImageDescriptor extends Struct<VNMPImageDescriptor> {
   factory VNMPImageDescriptor._() {
@@ -25360,7 +25003,7 @@ class VNMPImageDescriptor extends Struct<VNMPImageDescriptor> {
     return _objc.allocate("VNMPImageDescriptor").cast<VNMPImageDescriptor>();
   }
 
-  static Pointer<Void> colorGaborDescriptor(
+  static Pointer colorGaborDescriptor(
     Pointer<VNMPImageDescriptor> _self,
   ) {
     _openDynamicLibrary();
@@ -25372,9 +25015,9 @@ class VNMPImageDescriptor extends Struct<VNMPImageDescriptor> {
 
   static int computeConvnetDescriptorForImageData(
     Pointer<VNMPImageDescriptor> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> context,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer context,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_Int8(
@@ -25388,9 +25031,9 @@ class VNMPImageDescriptor extends Struct<VNMPImageDescriptor> {
 
   static int computeDescriptorForImageData(
     Pointer<VNMPImageDescriptor> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> context,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer context,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_Int8(
@@ -25419,10 +25062,10 @@ class VNMPImageDescriptor extends Struct<VNMPImageDescriptor> {
 
   static int computeQualityForImageData(
     Pointer<VNMPImageDescriptor> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> andQualityCriteria,
-    @required Pointer<Void> context,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer andQualityCriteria,
+    @required Pointer context,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_returns_Int8(
@@ -25438,9 +25081,9 @@ class VNMPImageDescriptor extends Struct<VNMPImageDescriptor> {
 
   static int computeRegistrationFeaturesForImageData(
     Pointer<VNMPImageDescriptor> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> context,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer context,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_Int8(
@@ -25475,7 +25118,7 @@ class VNMPImageDescriptor extends Struct<VNMPImageDescriptor> {
 
   static double distanceFromDescriptor(
     Pointer<VNMPImageDescriptor> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_float32(
@@ -25487,7 +25130,7 @@ class VNMPImageDescriptor extends Struct<VNMPImageDescriptor> {
 
   static void encodeWithCoder(
     Pointer<VNMPImageDescriptor> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -25507,7 +25150,7 @@ class VNMPImageDescriptor extends Struct<VNMPImageDescriptor> {
     );
   }
 
-  static Pointer<Void> externalImageId(
+  static Pointer externalImageId(
     Pointer<VNMPImageDescriptor> _self,
   ) {
     _openDynamicLibrary();
@@ -25527,7 +25170,7 @@ class VNMPImageDescriptor extends Struct<VNMPImageDescriptor> {
     );
   }
 
-  static Pointer<Void> imageFilePath(
+  static Pointer imageFilePath(
     Pointer<VNMPImageDescriptor> _self,
   ) {
     _openDynamicLibrary();
@@ -25537,7 +25180,7 @@ class VNMPImageDescriptor extends Struct<VNMPImageDescriptor> {
     );
   }
 
-  static Pointer<Void> imageRegistrationDescriptor(
+  static Pointer imageRegistrationDescriptor(
     Pointer<VNMPImageDescriptor> _self,
   ) {
     _openDynamicLibrary();
@@ -25547,9 +25190,9 @@ class VNMPImageDescriptor extends Struct<VNMPImageDescriptor> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<VNMPImageDescriptor> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -25559,12 +25202,12 @@ class VNMPImageDescriptor extends Struct<VNMPImageDescriptor> {
     );
   }
 
-  static Pointer<Void> initWithImageData$andCustomQualityScore$context$error$(
+  static Pointer initWithImageData$andCustomQualityScore$context$error$(
     Pointer<VNMPImageDescriptor> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required double andCustomQualityScore,
-    @required Pointer<Void> context,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer context,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_float32_p_p_returns_p(
@@ -25578,12 +25221,12 @@ class VNMPImageDescriptor extends Struct<VNMPImageDescriptor> {
     );
   }
 
-  static Pointer<Void> initWithImageData$andQualityCriteria$context$error$(
+  static Pointer initWithImageData$andQualityCriteria$context$error$(
     Pointer<VNMPImageDescriptor> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> andQualityCriteria,
-    @required Pointer<Void> context,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer andQualityCriteria,
+    @required Pointer context,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_returns_p(
@@ -25596,11 +25239,11 @@ class VNMPImageDescriptor extends Struct<VNMPImageDescriptor> {
     );
   }
 
-  static Pointer<Void> initWithImageData$context$error$(
+  static Pointer initWithImageData$context$error$(
     Pointer<VNMPImageDescriptor> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> context,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer context,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -25612,9 +25255,9 @@ class VNMPImageDescriptor extends Struct<VNMPImageDescriptor> {
     );
   }
 
-  static Pointer<Void> initWithRawColorGaborDescriptor(
+  static Pointer initWithRawColorGaborDescriptor(
     Pointer<VNMPImageDescriptor> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -25624,11 +25267,11 @@ class VNMPImageDescriptor extends Struct<VNMPImageDescriptor> {
     );
   }
 
-  static Pointer<Void> initWithState(
+  static Pointer initWithState(
     Pointer<VNMPImageDescriptor> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int startingAtByteOffset,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_Uint64_p_returns_p(
@@ -25642,7 +25285,7 @@ class VNMPImageDescriptor extends Struct<VNMPImageDescriptor> {
 
   static int isEqual(
     Pointer<VNMPImageDescriptor> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -25742,7 +25385,7 @@ class VNMPImageDescriptor extends Struct<VNMPImageDescriptor> {
     );
   }
 
-  static Pointer<Void> rawColorGaborDescriptor(
+  static Pointer rawColorGaborDescriptor(
     Pointer<VNMPImageDescriptor> _self,
   ) {
     _openDynamicLibrary();
@@ -25752,7 +25395,7 @@ class VNMPImageDescriptor extends Struct<VNMPImageDescriptor> {
     );
   }
 
-  static Pointer<Void> sceneClassifierDescriptor(
+  static Pointer sceneClassifierDescriptor(
     Pointer<VNMPImageDescriptor> _self,
   ) {
     _openDynamicLibrary();
@@ -25764,9 +25407,9 @@ class VNMPImageDescriptor extends Struct<VNMPImageDescriptor> {
 
   static int serializeStateIntoData(
     Pointer<VNMPImageDescriptor> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int startingAtByteOffset,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_Uint64_p_returns_Uint64(
@@ -25885,11 +25528,9 @@ class VNMPImageDescriptor extends Struct<VNMPImageDescriptor> {
   }
 }
 
-/// Objective-C class _VNMPImageGrouping_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNMPImageGrouping extends Struct<VNMPImageGrouping> {
   factory VNMPImageGrouping._() {
@@ -25901,11 +25542,9 @@ class VNMPImageGrouping extends Struct<VNMPImageGrouping> {
   }
 }
 
-/// Objective-C class _VNMPImageQuality_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNMPImageQuality extends Struct<VNMPImageQuality> {
   factory VNMPImageQuality._() {
@@ -25917,11 +25556,9 @@ class VNMPImageQuality extends Struct<VNMPImageQuality> {
   }
 }
 
-/// Objective-C class _VNMPImageSharpness_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNMPImageSharpness extends Struct<VNMPImageSharpness> {
   factory VNMPImageSharpness._() {
@@ -25933,11 +25570,9 @@ class VNMPImageSharpness extends Struct<VNMPImageSharpness> {
   }
 }
 
-/// Objective-C class _VNMPUtils_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNMPUtils extends Struct<VNMPUtils> {
   factory VNMPUtils._() {
@@ -25949,11 +25584,9 @@ class VNMPUtils extends Struct<VNMPUtils> {
   }
 }
 
-/// Objective-C class _VNMetalContext_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNMetalContext extends Struct<VNMetalContext> {
   factory VNMetalContext._() {
@@ -25964,9 +25597,9 @@ class VNMetalContext extends Struct<VNMetalContext> {
     return _objc.allocate("VNMetalContext").cast<VNMetalContext>();
   }
 
-  static Pointer<Void> initWithMetalDevice(
+  static Pointer initWithMetalDevice(
     Pointer<VNMetalContext> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -25976,7 +25609,7 @@ class VNMetalContext extends Struct<VNMetalContext> {
     );
   }
 
-  static Pointer<Void> metalDevice(
+  static Pointer metalDevice(
     Pointer<VNMetalContext> _self,
   ) {
     _openDynamicLibrary();
@@ -25996,7 +25629,7 @@ class VNMetalContext extends Struct<VNMetalContext> {
     );
   }
 
-  static Pointer<Void> wisdomParams(
+  static Pointer wisdomParams(
     Pointer<VNMetalContext> _self,
   ) {
     _openDynamicLibrary();
@@ -26007,11 +25640,9 @@ class VNMetalContext extends Struct<VNMetalContext> {
   }
 }
 
-/// Objective-C class _VNMetalProcessingDevice_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNMetalProcessingDevice extends Struct<VNMetalProcessingDevice> {
   factory VNMetalProcessingDevice._() {
@@ -26024,7 +25655,7 @@ class VNMetalProcessingDevice extends Struct<VNMetalProcessingDevice> {
         .cast<VNMetalProcessingDevice>();
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<VNMetalProcessingDevice> _self,
   ) {
     _openDynamicLibrary();
@@ -26074,9 +25705,9 @@ class VNMetalProcessingDevice extends Struct<VNMetalProcessingDevice> {
     );
   }
 
-  static Pointer<Void> initWithMetalDevice(
+  static Pointer initWithMetalDevice(
     Pointer<VNMetalProcessingDevice> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -26088,7 +25719,7 @@ class VNMetalProcessingDevice extends Struct<VNMetalProcessingDevice> {
 
   static int isEqual(
     Pointer<VNMetalProcessingDevice> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -26098,7 +25729,7 @@ class VNMetalProcessingDevice extends Struct<VNMetalProcessingDevice> {
     );
   }
 
-  static Pointer<Void> metalDevice(
+  static Pointer metalDevice(
     Pointer<VNMetalProcessingDevice> _self,
   ) {
     _openDynamicLibrary();
@@ -26119,11 +25750,9 @@ class VNMetalProcessingDevice extends Struct<VNMetalProcessingDevice> {
   }
 }
 
-/// Objective-C class _VNModelFileImpl_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNModelFileImpl extends Struct<VNModelFileImpl> {
   factory VNModelFileImpl._() {
@@ -26146,7 +25775,7 @@ class VNModelFileImpl extends Struct<VNModelFileImpl> {
     );
   }
 
-  static Pointer<Void> baseAddress(
+  static Pointer baseAddress(
     Pointer<VNModelFileImpl> _self,
   ) {
     _openDynamicLibrary();
@@ -26156,9 +25785,9 @@ class VNModelFileImpl extends Struct<VNModelFileImpl> {
     );
   }
 
-  static Pointer<Void> initWithMappedModel(
+  static Pointer initWithMappedModel(
     Pointer<VNModelFileImpl> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -26179,11 +25808,9 @@ class VNModelFileImpl extends Struct<VNModelFileImpl> {
   }
 }
 
-/// Objective-C class _VNModelFilesCache_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNModelFilesCache extends Struct<VNModelFilesCache> {
   factory VNModelFilesCache._() {
@@ -26194,7 +25821,7 @@ class VNModelFilesCache extends Struct<VNModelFilesCache> {
     return _objc.allocate("VNModelFilesCache").cast<VNModelFilesCache>();
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<VNModelFilesCache> _self,
   ) {
     _openDynamicLibrary();
@@ -26204,9 +25831,9 @@ class VNModelFilesCache extends Struct<VNModelFilesCache> {
     );
   }
 
-  static Pointer<Void> load(
+  static Pointer load(
     Pointer<VNModelFilesCache> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -26228,7 +25855,7 @@ class VNModelFilesCache extends Struct<VNModelFilesCache> {
 
   static void unload(
     Pointer<VNModelFilesCache> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -26239,11 +25866,9 @@ class VNModelFilesCache extends Struct<VNModelFilesCache> {
   }
 }
 
-/// Objective-C class _VNMomentProcessor_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNMomentProcessor extends Struct<VNMomentProcessor> {
   factory VNMomentProcessor._() {
@@ -26254,11 +25879,11 @@ class VNMomentProcessor extends Struct<VNMomentProcessor> {
     return _objc.allocate("VNMomentProcessor").cast<VNMomentProcessor>();
   }
 
-  static Pointer<Void> computeClusteringForClusteringTree$intoKGroups$error$(
+  static Pointer computeClusteringForClusteringTree$intoKGroups$error$(
     Pointer<VNMomentProcessor> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int intoKGroups,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_Int32_p_returns_p(
@@ -26271,11 +25896,11 @@ class VNMomentProcessor extends Struct<VNMomentProcessor> {
     );
   }
 
-  static Pointer<Void> computeClusteringForClusteringTree$usingThreshold$error$(
+  static Pointer computeClusteringForClusteringTree$usingThreshold$error$(
     Pointer<VNMomentProcessor> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required double usingThreshold,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_float32_p_returns_p(
@@ -26288,11 +25913,11 @@ class VNMomentProcessor extends Struct<VNMomentProcessor> {
     );
   }
 
-  static Pointer<Void> computeClusteringOfImageDescriptors(
+  static Pointer computeClusteringOfImageDescriptors(
     Pointer<VNMomentProcessor> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int intoKGroups,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_Int32_p_returns_p(
@@ -26305,10 +25930,10 @@ class VNMomentProcessor extends Struct<VNMomentProcessor> {
     );
   }
 
-  static Pointer<Void> computeClusteringTreeForImageDescriptors$error$(
+  static Pointer computeClusteringTreeForImageDescriptors$error$(
     Pointer<VNMomentProcessor> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -26319,12 +25944,12 @@ class VNMomentProcessor extends Struct<VNMomentProcessor> {
     );
   }
 
-  static Pointer<Void>
+  static Pointer
       computeClusteringTreeForImageDescriptors$assumeDescriptorsAreSorted$error$(
     Pointer<VNMomentProcessor> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int assumeDescriptorsAreSorted,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_Int8_p_returns_p(
@@ -26337,10 +25962,10 @@ class VNMomentProcessor extends Struct<VNMomentProcessor> {
     );
   }
 
-  static Pointer<Void> computeNaturalClusteringForClusteringTree(
+  static Pointer computeNaturalClusteringForClusteringTree(
     Pointer<VNMomentProcessor> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -26351,10 +25976,10 @@ class VNMomentProcessor extends Struct<VNMomentProcessor> {
     );
   }
 
-  static Pointer<Void> computeNaturalClusteringOfImageDescriptors(
+  static Pointer computeNaturalClusteringOfImageDescriptors(
     Pointer<VNMomentProcessor> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -26365,7 +25990,7 @@ class VNMomentProcessor extends Struct<VNMomentProcessor> {
     );
   }
 
-  static Pointer<Void> context(
+  static Pointer context(
     Pointer<VNMomentProcessor> _self,
   ) {
     _openDynamicLibrary();
@@ -26375,9 +26000,9 @@ class VNMomentProcessor extends Struct<VNMomentProcessor> {
     );
   }
 
-  static Pointer<Void> convertClusterNodesListToDescriptorsList(
+  static Pointer convertClusterNodesListToDescriptorsList(
     Pointer<VNMomentProcessor> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -26387,11 +26012,11 @@ class VNMomentProcessor extends Struct<VNMomentProcessor> {
     );
   }
 
-  static Pointer<Void> getKey(
+  static Pointer getKey(
     Pointer<VNMomentProcessor> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> fromDictionary,
-    @required Pointer<Void> withDefault,
+    Pointer arg, {
+    @required Pointer fromDictionary,
+    @required Pointer withDefault,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -26403,10 +26028,10 @@ class VNMomentProcessor extends Struct<VNMomentProcessor> {
     );
   }
 
-  static Pointer<Void> initWithOptions(
+  static Pointer initWithOptions(
     Pointer<VNMomentProcessor> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -26417,10 +26042,10 @@ class VNMomentProcessor extends Struct<VNMomentProcessor> {
     );
   }
 
-  static Pointer<Void> performClustersPostprocessing(
+  static Pointer performClustersPostprocessing(
     Pointer<VNMomentProcessor> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -26431,10 +26056,10 @@ class VNMomentProcessor extends Struct<VNMomentProcessor> {
     );
   }
 
-  static Pointer<Void> processImagesFromDataProvider(
+  static Pointer processImagesFromDataProvider(
     Pointer<VNMomentProcessor> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -26447,7 +26072,7 @@ class VNMomentProcessor extends Struct<VNMomentProcessor> {
 
   static void setContext(
     Pointer<VNMomentProcessor> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -26458,11 +26083,9 @@ class VNMomentProcessor extends Struct<VNMomentProcessor> {
   }
 }
 
-/// Objective-C class _VNMutablePersonsModel_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNMutablePersonsModel extends Struct<VNMutablePersonsModel> {
   factory VNMutablePersonsModel._() {
@@ -26477,9 +26100,9 @@ class VNMutablePersonsModel extends Struct<VNMutablePersonsModel> {
 
   static int addFaceObservations(
     Pointer<VNMutablePersonsModel> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toPersonWithUniqueIdentifier,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer toPersonWithUniqueIdentifier,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_Int8(
@@ -26492,10 +26115,10 @@ class VNMutablePersonsModel extends Struct<VNMutablePersonsModel> {
     );
   }
 
-  static Pointer<Void> dataWithOptions(
+  static Pointer dataWithOptions(
     Pointer<VNMutablePersonsModel> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -26506,7 +26129,7 @@ class VNMutablePersonsModel extends Struct<VNMutablePersonsModel> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<VNMutablePersonsModel> _self,
   ) {
     _openDynamicLibrary();
@@ -26516,9 +26139,9 @@ class VNMutablePersonsModel extends Struct<VNMutablePersonsModel> {
     );
   }
 
-  static Pointer<Void> initWithConfiguration(
+  static Pointer initWithConfiguration(
     Pointer<VNMutablePersonsModel> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -26530,7 +26153,7 @@ class VNMutablePersonsModel extends Struct<VNMutablePersonsModel> {
 
   static void personsModelDataWasModified(
     Pointer<VNMutablePersonsModel> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -26542,8 +26165,8 @@ class VNMutablePersonsModel extends Struct<VNMutablePersonsModel> {
 
   static int removeAllFaceObservationsFromPersonWithUniqueIdentifier(
     Pointer<VNMutablePersonsModel> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -26557,9 +26180,9 @@ class VNMutablePersonsModel extends Struct<VNMutablePersonsModel> {
 
   static int removeFaceObservations(
     Pointer<VNMutablePersonsModel> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> fromPersonWithUniqueIdentifier,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer fromPersonWithUniqueIdentifier,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_Int8(
@@ -26574,8 +26197,8 @@ class VNMutablePersonsModel extends Struct<VNMutablePersonsModel> {
 
   static int removePersonWithUniqueIdentifier(
     Pointer<VNMutablePersonsModel> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -26586,10 +26209,10 @@ class VNMutablePersonsModel extends Struct<VNMutablePersonsModel> {
     );
   }
 
-  static Pointer<Void> upToDateFaceModelWithCanceller(
+  static Pointer upToDateFaceModelWithCanceller(
     Pointer<VNMutablePersonsModel> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -26602,10 +26225,10 @@ class VNMutablePersonsModel extends Struct<VNMutablePersonsModel> {
 
   static int writeReadOnlyVersion1ToOutputStream(
     Pointer<VNMutablePersonsModel> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> options,
-    @required Pointer<Pointer<Void>> md5Context,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer options,
+    @required Pointer<Pointer> md5Context,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_returns_Int8(
@@ -26621,9 +26244,9 @@ class VNMutablePersonsModel extends Struct<VNMutablePersonsModel> {
 
   static int writeToStream(
     Pointer<VNMutablePersonsModel> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> options,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer options,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_Int8(
@@ -26637,9 +26260,9 @@ class VNMutablePersonsModel extends Struct<VNMutablePersonsModel> {
 
   static int writeToURL(
     Pointer<VNMutablePersonsModel> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> options,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer options,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_Int8(
@@ -26653,10 +26276,10 @@ class VNMutablePersonsModel extends Struct<VNMutablePersonsModel> {
 
   static int writeVersion1ToOutputStream(
     Pointer<VNMutablePersonsModel> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> options,
-    @required Pointer<Pointer<Void>> md5Context,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer options,
+    @required Pointer<Pointer> md5Context,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_returns_Int8(
@@ -26671,11 +26294,9 @@ class VNMutablePersonsModel extends Struct<VNMutablePersonsModel> {
   }
 }
 
-/// Objective-C class _VNNOPRequest_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNNOPRequest extends Struct<VNNOPRequest> {
   factory VNNOPRequest._() {
@@ -26696,7 +26317,7 @@ class VNNOPRequest extends Struct<VNNOPRequest> {
     );
   }
 
-  static Pointer<Void> detectorPreferredImageSize(
+  static Pointer detectorPreferredImageSize(
     Pointer<VNNOPRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -26719,8 +26340,8 @@ class VNNOPRequest extends Struct<VNNOPRequest> {
   static int internalPerformRevision(
     Pointer<VNNOPRequest> _self,
     int arg, {
-    @required Pointer<Void> inContext,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer inContext,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_Uint64_p_p_returns_Int8(
@@ -26746,7 +26367,7 @@ class VNNOPRequest extends Struct<VNNOPRequest> {
 
   static void setDetectorPreferredImageSize(
     Pointer<VNNOPRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -26768,7 +26389,7 @@ class VNNOPRequest extends Struct<VNNOPRequest> {
     );
   }
 
-  static Pointer<Void> supportedImageSizeSet(
+  static Pointer supportedImageSizeSet(
     Pointer<VNNOPRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -26780,7 +26401,7 @@ class VNNOPRequest extends Struct<VNNOPRequest> {
 
   static int willAcceptCachedResultsFromRequestWithConfiguration(
     Pointer<VNNOPRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -26791,11 +26412,9 @@ class VNNOPRequest extends Struct<VNNOPRequest> {
   }
 }
 
-/// Objective-C class _VNNOPRequestConfiguration_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNNOPRequestConfiguration extends Struct<VNNOPRequestConfiguration> {
   factory VNNOPRequestConfiguration._() {
@@ -26808,9 +26427,9 @@ class VNNOPRequestConfiguration extends Struct<VNNOPRequestConfiguration> {
         .cast<VNNOPRequestConfiguration>();
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<VNNOPRequestConfiguration> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -26830,7 +26449,7 @@ class VNNOPRequestConfiguration extends Struct<VNNOPRequestConfiguration> {
     );
   }
 
-  static Pointer<Void> detectorPreferredImageSize(
+  static Pointer detectorPreferredImageSize(
     Pointer<VNNOPRequestConfiguration> _self,
   ) {
     _openDynamicLibrary();
@@ -26850,9 +26469,9 @@ class VNNOPRequestConfiguration extends Struct<VNNOPRequestConfiguration> {
     );
   }
 
-  static Pointer<Void> initWithRequestClass(
+  static Pointer initWithRequestClass(
     Pointer<VNNOPRequestConfiguration> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -26876,7 +26495,7 @@ class VNNOPRequestConfiguration extends Struct<VNNOPRequestConfiguration> {
 
   static void setDetectorPreferredImageSize(
     Pointer<VNNOPRequestConfiguration> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -26899,11 +26518,9 @@ class VNNOPRequestConfiguration extends Struct<VNNOPRequestConfiguration> {
   }
 }
 
-/// Objective-C class _VNObjectTracker_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNObjectTracker extends Struct<VNObjectTracker> {
   factory VNObjectTracker._() {
@@ -26914,10 +26531,10 @@ class VNObjectTracker extends Struct<VNObjectTracker> {
     return _objc.allocate("VNObjectTracker").cast<VNObjectTracker>();
   }
 
-  static Pointer<Void> initWithOptions(
+  static Pointer initWithOptions(
     Pointer<VNObjectTracker> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -26929,11 +26546,9 @@ class VNObjectTracker extends Struct<VNObjectTracker> {
   }
 }
 
-/// Objective-C class _VNObservation_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNObservation extends Struct<VNObservation> {
   factory VNObservation._() {
@@ -26954,9 +26569,9 @@ class VNObservation extends Struct<VNObservation> {
     );
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<VNObservation> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -26966,7 +26581,7 @@ class VNObservation extends Struct<VNObservation> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<VNObservation> _self,
   ) {
     _openDynamicLibrary();
@@ -26978,7 +26593,7 @@ class VNObservation extends Struct<VNObservation> {
 
   static void encodeWithCoder(
     Pointer<VNObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -26998,9 +26613,9 @@ class VNObservation extends Struct<VNObservation> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<VNObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -27010,7 +26625,7 @@ class VNObservation extends Struct<VNObservation> {
     );
   }
 
-  static Pointer<Void> initWithRequestRevision(
+  static Pointer initWithRequestRevision(
     Pointer<VNObservation> _self,
     int arg,
   ) {
@@ -27024,7 +26639,7 @@ class VNObservation extends Struct<VNObservation> {
 
   static int isEqual(
     Pointer<VNObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -27058,7 +26673,7 @@ class VNObservation extends Struct<VNObservation> {
 
   static void setUUID(
     Pointer<VNObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -27068,7 +26683,7 @@ class VNObservation extends Struct<VNObservation> {
     );
   }
 
-  static Pointer<Void> uuid(
+  static Pointer uuid(
     Pointer<VNObservation> _self,
   ) {
     _openDynamicLibrary();
@@ -27079,11 +26694,9 @@ class VNObservation extends Struct<VNObservation> {
   }
 }
 
-/// Objective-C class _VNObservationsCache_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNObservationsCache extends Struct<VNObservationsCache> {
   factory VNObservationsCache._() {
@@ -27094,7 +26707,7 @@ class VNObservationsCache extends Struct<VNObservationsCache> {
     return _objc.allocate("VNObservationsCache").cast<VNObservationsCache>();
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<VNObservationsCache> _self,
   ) {
     _openDynamicLibrary();
@@ -27104,9 +26717,9 @@ class VNObservationsCache extends Struct<VNObservationsCache> {
     );
   }
 
-  static Pointer<Void> observationsForKey(
+  static Pointer observationsForKey(
     Pointer<VNObservationsCache> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -27116,10 +26729,10 @@ class VNObservationsCache extends Struct<VNObservationsCache> {
     );
   }
 
-  static Pointer<Void> observationsForRequest(
+  static Pointer observationsForRequest(
     Pointer<VNObservationsCache> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> testedKeyHandler,
+    Pointer arg, {
+    @required Pointer testedKeyHandler,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -27132,8 +26745,8 @@ class VNObservationsCache extends Struct<VNObservationsCache> {
 
   static void setObservations(
     Pointer<VNObservationsCache> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> forKey,
+    Pointer arg, {
+    @required Pointer forKey,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -27145,11 +26758,9 @@ class VNObservationsCache extends Struct<VNObservationsCache> {
   }
 }
 
-/// Objective-C class _VNOpticalFlowObservation_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNOpticalFlowObservation extends Struct<VNOpticalFlowObservation> {
   factory VNOpticalFlowObservation._() {
@@ -27163,11 +26774,9 @@ class VNOpticalFlowObservation extends Struct<VNOpticalFlowObservation> {
   }
 }
 
-/// Objective-C class _VNPersonsModel_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNPersonsModel extends Struct<VNPersonsModel> {
   factory VNPersonsModel._() {
@@ -27178,7 +26787,7 @@ class VNPersonsModel extends Struct<VNPersonsModel> {
     return _objc.allocate("VNPersonsModel").cast<VNPersonsModel>();
   }
 
-  static Pointer<Void> configuration(
+  static Pointer configuration(
     Pointer<VNPersonsModel> _self,
   ) {
     _openDynamicLibrary();
@@ -27188,7 +26797,7 @@ class VNPersonsModel extends Struct<VNPersonsModel> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<VNPersonsModel> _self,
   ) {
     _openDynamicLibrary();
@@ -27200,7 +26809,7 @@ class VNPersonsModel extends Struct<VNPersonsModel> {
 
   static int faceCountForPersonWithUniqueIdentifier(
     Pointer<VNPersonsModel> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Uint64(
@@ -27210,7 +26819,7 @@ class VNPersonsModel extends Struct<VNPersonsModel> {
     );
   }
 
-  static Pointer<Void> faceCountsForAllPersons(
+  static Pointer faceCountsForAllPersons(
     Pointer<VNPersonsModel> _self,
   ) {
     _openDynamicLibrary();
@@ -27220,9 +26829,9 @@ class VNPersonsModel extends Struct<VNPersonsModel> {
     );
   }
 
-  static Pointer<Void> faceCountsForPersonsWithUniqueIdentifiers(
+  static Pointer faceCountsForPersonsWithUniqueIdentifiers(
     Pointer<VNPersonsModel> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -27232,10 +26841,10 @@ class VNPersonsModel extends Struct<VNPersonsModel> {
     );
   }
 
-  static Pointer<Void> initWithConfiguration(
+  static Pointer initWithConfiguration(
     Pointer<VNPersonsModel> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> dataSource,
+    Pointer arg, {
+    @required Pointer dataSource,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -27256,7 +26865,7 @@ class VNPersonsModel extends Struct<VNPersonsModel> {
     );
   }
 
-  static Pointer<Void> personUniqueIdentifiers(
+  static Pointer personUniqueIdentifiers(
     Pointer<VNPersonsModel> _self,
   ) {
     _openDynamicLibrary();
@@ -27266,12 +26875,12 @@ class VNPersonsModel extends Struct<VNPersonsModel> {
     );
   }
 
-  static Pointer<Void> predictPersonFromFaceObservation(
+  static Pointer predictPersonFromFaceObservation(
     Pointer<VNPersonsModel> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int limit,
-    @required Pointer<Void> canceller,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer canceller,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_Uint64_p_p_returns_p(
@@ -27285,10 +26894,10 @@ class VNPersonsModel extends Struct<VNPersonsModel> {
     );
   }
 
-  static Pointer<Void> upToDateFaceModelWithCanceller(
+  static Pointer upToDateFaceModelWithCanceller(
     Pointer<VNPersonsModel> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -27300,11 +26909,9 @@ class VNPersonsModel extends Struct<VNPersonsModel> {
   }
 }
 
-/// Objective-C class _VNPersonsModelConfiguration_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNPersonsModelConfiguration extends Struct<VNPersonsModelConfiguration> {
   factory VNPersonsModelConfiguration._() {
@@ -27317,9 +26924,9 @@ class VNPersonsModelConfiguration extends Struct<VNPersonsModelConfiguration> {
         .cast<VNPersonsModelConfiguration>();
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<VNPersonsModelConfiguration> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -27331,7 +26938,7 @@ class VNPersonsModelConfiguration extends Struct<VNPersonsModelConfiguration> {
 
   static void encodeWithCoder(
     Pointer<VNPersonsModelConfiguration> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -27361,7 +26968,7 @@ class VNPersonsModelConfiguration extends Struct<VNPersonsModelConfiguration> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<VNPersonsModelConfiguration> _self,
   ) {
     _openDynamicLibrary();
@@ -27371,9 +26978,9 @@ class VNPersonsModelConfiguration extends Struct<VNPersonsModelConfiguration> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<VNPersonsModelConfiguration> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -27385,7 +26992,7 @@ class VNPersonsModelConfiguration extends Struct<VNPersonsModelConfiguration> {
 
   static int isEqual(
     Pointer<VNPersonsModelConfiguration> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -27440,11 +27047,9 @@ class VNPersonsModelConfiguration extends Struct<VNPersonsModelConfiguration> {
   }
 }
 
-/// Objective-C class _VNPersonsModelData_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNPersonsModelData extends Struct<VNPersonsModelData> {
   factory VNPersonsModelData._() {
@@ -27457,9 +27062,9 @@ class VNPersonsModelData extends Struct<VNPersonsModelData> {
 
   static int addFaceObservations(
     Pointer<VNPersonsModelData> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toPersonWithUniqueIdentifier,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer toPersonWithUniqueIdentifier,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_Int8(
@@ -27472,7 +27077,7 @@ class VNPersonsModelData extends Struct<VNPersonsModelData> {
     );
   }
 
-  static Pointer<Void> delegate(
+  static Pointer delegate(
     Pointer<VNPersonsModelData> _self,
   ) {
     _openDynamicLibrary();
@@ -27482,7 +27087,7 @@ class VNPersonsModelData extends Struct<VNPersonsModelData> {
     );
   }
 
-  static Pointer<Void> faceModelFaceObservationAtIndex(
+  static Pointer faceModelFaceObservationAtIndex(
     Pointer<VNPersonsModelData> _self,
     int arg, {
     @required int forPersonAtIndex,
@@ -27498,7 +27103,7 @@ class VNPersonsModelData extends Struct<VNPersonsModelData> {
 
   static int faceModelIndexOfPersonWithUniqueIdentifier(
     Pointer<VNPersonsModelData> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Uint64(
@@ -27530,7 +27135,7 @@ class VNPersonsModelData extends Struct<VNPersonsModelData> {
     );
   }
 
-  static Pointer<Void> faceModelUniqueIdentifierOfPersonAtIndex(
+  static Pointer faceModelUniqueIdentifierOfPersonAtIndex(
     Pointer<VNPersonsModelData> _self,
     int arg,
   ) {
@@ -27542,9 +27147,9 @@ class VNPersonsModelData extends Struct<VNPersonsModelData> {
     );
   }
 
-  static Pointer<Void> initWithConfiguration(
+  static Pointer initWithConfiguration(
     Pointer<VNPersonsModelData> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -27554,7 +27159,7 @@ class VNPersonsModelData extends Struct<VNPersonsModelData> {
     );
   }
 
-  static Pointer<Void> lastModificationDate(
+  static Pointer lastModificationDate(
     Pointer<VNPersonsModelData> _self,
   ) {
     _openDynamicLibrary();
@@ -27566,7 +27171,7 @@ class VNPersonsModelData extends Struct<VNPersonsModelData> {
 
   static int numberOfPersonsInPersonsModel(
     Pointer<VNPersonsModelData> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Uint64(
@@ -27576,9 +27181,9 @@ class VNPersonsModelData extends Struct<VNPersonsModelData> {
     );
   }
 
-  static Pointer<Void> personsModel$uniqueIdentifierOfPersonAtIndex$(
+  static Pointer personsModel$uniqueIdentifierOfPersonAtIndex$(
     Pointer<VNPersonsModelData> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int uniqueIdentifierOfPersonAtIndex,
   }) {
     _openDynamicLibrary();
@@ -27592,8 +27197,8 @@ class VNPersonsModelData extends Struct<VNPersonsModelData> {
 
   static int personsModel$indexOfPersonWithUniqueIdentifier$(
     Pointer<VNPersonsModelData> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> indexOfPersonWithUniqueIdentifier,
+    Pointer arg, {
+    @required Pointer indexOfPersonWithUniqueIdentifier,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Uint64(
@@ -27606,7 +27211,7 @@ class VNPersonsModelData extends Struct<VNPersonsModelData> {
 
   static int personsModel$numberOfFaceObservationsForPersonAtIndex$(
     Pointer<VNPersonsModelData> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int numberOfFaceObservationsForPersonAtIndex,
   }) {
     _openDynamicLibrary();
@@ -27619,9 +27224,9 @@ class VNPersonsModelData extends Struct<VNPersonsModelData> {
     );
   }
 
-  static Pointer<Void> personsModel$faceObservationAtIndex$forPersonAtIndex$(
+  static Pointer personsModel$faceObservationAtIndex$forPersonAtIndex$(
     Pointer<VNPersonsModelData> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int faceObservationAtIndex,
     @required int forPersonAtIndex,
   }) {
@@ -27638,8 +27243,8 @@ class VNPersonsModelData extends Struct<VNPersonsModelData> {
 
   static int removeAllFaceObservationsFromPersonWithUniqueIdentifier(
     Pointer<VNPersonsModelData> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -27653,9 +27258,9 @@ class VNPersonsModelData extends Struct<VNPersonsModelData> {
 
   static int removeFaceObservations(
     Pointer<VNPersonsModelData> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> fromPersonWithUniqueIdentifier,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer fromPersonWithUniqueIdentifier,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_Int8(
@@ -27670,8 +27275,8 @@ class VNPersonsModelData extends Struct<VNPersonsModelData> {
 
   static int removePersonWithUniqueIdentifier(
     Pointer<VNPersonsModelData> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -27684,7 +27289,7 @@ class VNPersonsModelData extends Struct<VNPersonsModelData> {
 
   static void setDelegate(
     Pointer<VNPersonsModelData> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -27695,11 +27300,9 @@ class VNPersonsModelData extends Struct<VNPersonsModelData> {
   }
 }
 
-/// Objective-C class _VNPersonsModelFaceModel_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNPersonsModelFaceModel extends Struct<VNPersonsModelFaceModel> {
   factory VNPersonsModelFaceModel._() {
@@ -27714,7 +27317,7 @@ class VNPersonsModelFaceModel extends Struct<VNPersonsModelFaceModel> {
 
   static void encodeWithCoder(
     Pointer<VNPersonsModelFaceModel> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -27726,7 +27329,7 @@ class VNPersonsModelFaceModel extends Struct<VNPersonsModelFaceModel> {
 
   static int faceCountForPersonWithUniqueIdentifier(
     Pointer<VNPersonsModelFaceModel> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Uint64(
@@ -27736,7 +27339,7 @@ class VNPersonsModelFaceModel extends Struct<VNPersonsModelFaceModel> {
     );
   }
 
-  static Pointer<Void> faceCountsForAllPersons(
+  static Pointer faceCountsForAllPersons(
     Pointer<VNPersonsModelFaceModel> _self,
   ) {
     _openDynamicLibrary();
@@ -27746,9 +27349,9 @@ class VNPersonsModelFaceModel extends Struct<VNPersonsModelFaceModel> {
     );
   }
 
-  static Pointer<Void> faceCountsForPersonsWithUniqueIdentifiers(
+  static Pointer faceCountsForPersonsWithUniqueIdentifiers(
     Pointer<VNPersonsModelFaceModel> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -27758,9 +27361,9 @@ class VNPersonsModelFaceModel extends Struct<VNPersonsModelFaceModel> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<VNPersonsModelFaceModel> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -27770,11 +27373,11 @@ class VNPersonsModelFaceModel extends Struct<VNPersonsModelFaceModel> {
     );
   }
 
-  static Pointer<Void> initWithFaceIDModel(
+  static Pointer initWithFaceIDModel(
     Pointer<VNPersonsModelFaceModel> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int maximumElementsPerID,
-    @required Pointer<Void> personUniqueIdentifierToSerialNumberMapping,
+    @required Pointer personUniqueIdentifierToSerialNumberMapping,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_Uint64_p_returns_p(
@@ -27797,13 +27400,13 @@ class VNPersonsModelFaceModel extends Struct<VNPersonsModelFaceModel> {
     );
   }
 
-  static Pointer<Void> personPredictionsForFace(
+  static Pointer personPredictionsForFace(
     Pointer<VNPersonsModelFaceModel> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> withDescriptor,
+    Pointer arg, {
+    @required Pointer<Pointer> withDescriptor,
     @required int limit,
-    @required Pointer<Void> canceller,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer canceller,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_Uint64_p_p_returns_p(
@@ -27818,7 +27421,7 @@ class VNPersonsModelFaceModel extends Struct<VNPersonsModelFaceModel> {
     );
   }
 
-  static Pointer<Void> personUniqueIdentifiers(
+  static Pointer personUniqueIdentifiers(
     Pointer<VNPersonsModelFaceModel> _self,
   ) {
     _openDynamicLibrary();
@@ -27829,11 +27432,9 @@ class VNPersonsModelFaceModel extends Struct<VNPersonsModelFaceModel> {
   }
 }
 
-/// Objective-C class _VNPersonsModelInformation_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNPersonsModelInformation extends Struct<VNPersonsModelInformation> {
   factory VNPersonsModelInformation._() {
@@ -27846,9 +27447,9 @@ class VNPersonsModelInformation extends Struct<VNPersonsModelInformation> {
         .cast<VNPersonsModelInformation>();
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<VNPersonsModelInformation> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -27868,10 +27469,10 @@ class VNPersonsModelInformation extends Struct<VNPersonsModelInformation> {
     );
   }
 
-  static Pointer<Void> initWithVersion(
+  static Pointer initWithVersion(
     Pointer<VNPersonsModelInformation> _self,
     int arg, {
-    @required Pointer<Void> lastModificationDate,
+    @required Pointer lastModificationDate,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_Uint64_p_returns_p(
@@ -27884,7 +27485,7 @@ class VNPersonsModelInformation extends Struct<VNPersonsModelInformation> {
 
   static int isEqual(
     Pointer<VNPersonsModelInformation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -27894,7 +27495,7 @@ class VNPersonsModelInformation extends Struct<VNPersonsModelInformation> {
     );
   }
 
-  static Pointer<Void> lastModificationDate(
+  static Pointer lastModificationDate(
     Pointer<VNPersonsModelInformation> _self,
   ) {
     _openDynamicLibrary();
@@ -27915,11 +27516,9 @@ class VNPersonsModelInformation extends Struct<VNPersonsModelInformation> {
   }
 }
 
-/// Objective-C class _VNPersonsModelPrediction_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNPersonsModelPrediction extends Struct<VNPersonsModelPrediction> {
   factory VNPersonsModelPrediction._() {
@@ -27942,9 +27541,9 @@ class VNPersonsModelPrediction extends Struct<VNPersonsModelPrediction> {
     );
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<VNPersonsModelPrediction> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -27954,7 +27553,7 @@ class VNPersonsModelPrediction extends Struct<VNPersonsModelPrediction> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<VNPersonsModelPrediction> _self,
   ) {
     _openDynamicLibrary();
@@ -27966,7 +27565,7 @@ class VNPersonsModelPrediction extends Struct<VNPersonsModelPrediction> {
 
   static void encodeWithCoder(
     Pointer<VNPersonsModelPrediction> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -27976,7 +27575,7 @@ class VNPersonsModelPrediction extends Struct<VNPersonsModelPrediction> {
     );
   }
 
-  static Pointer<Void> faceObservation(
+  static Pointer faceObservation(
     Pointer<VNPersonsModelPrediction> _self,
   ) {
     _openDynamicLibrary();
@@ -27996,9 +27595,9 @@ class VNPersonsModelPrediction extends Struct<VNPersonsModelPrediction> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<VNPersonsModelPrediction> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -28008,10 +27607,10 @@ class VNPersonsModelPrediction extends Struct<VNPersonsModelPrediction> {
     );
   }
 
-  static Pointer<Void> initWithFaceObservation(
+  static Pointer initWithFaceObservation(
     Pointer<VNPersonsModelPrediction> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> predictedPersonUniqueIdentifier,
+    Pointer arg, {
+    @required Pointer predictedPersonUniqueIdentifier,
     @required double confidence,
   }) {
     _openDynamicLibrary();
@@ -28027,7 +27626,7 @@ class VNPersonsModelPrediction extends Struct<VNPersonsModelPrediction> {
 
   static int isEqual(
     Pointer<VNPersonsModelPrediction> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -28037,7 +27636,7 @@ class VNPersonsModelPrediction extends Struct<VNPersonsModelPrediction> {
     );
   }
 
-  static Pointer<Void> predictedPersonUniqueIdentifier(
+  static Pointer predictedPersonUniqueIdentifier(
     Pointer<VNPersonsModelPrediction> _self,
   ) {
     _openDynamicLibrary();
@@ -28048,11 +27647,9 @@ class VNPersonsModelPrediction extends Struct<VNPersonsModelPrediction> {
   }
 }
 
-/// Objective-C class _VNPersonsModelReadOptions_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNPersonsModelReadOptions extends Struct<VNPersonsModelReadOptions> {
   factory VNPersonsModelReadOptions._() {
@@ -28065,7 +27662,7 @@ class VNPersonsModelReadOptions extends Struct<VNPersonsModelReadOptions> {
         .cast<VNPersonsModelReadOptions>();
   }
 
-  static Pointer<Void> acceptableVersions(
+  static Pointer acceptableVersions(
     Pointer<VNPersonsModelReadOptions> _self,
   ) {
     _openDynamicLibrary();
@@ -28075,9 +27672,9 @@ class VNPersonsModelReadOptions extends Struct<VNPersonsModelReadOptions> {
     );
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<VNPersonsModelReadOptions> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -28089,7 +27686,7 @@ class VNPersonsModelReadOptions extends Struct<VNPersonsModelReadOptions> {
 
   static void encodeWithCoder(
     Pointer<VNPersonsModelReadOptions> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -28099,9 +27696,9 @@ class VNPersonsModelReadOptions extends Struct<VNPersonsModelReadOptions> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<VNPersonsModelReadOptions> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -28113,7 +27710,7 @@ class VNPersonsModelReadOptions extends Struct<VNPersonsModelReadOptions> {
 
   static void setAcceptableVersions(
     Pointer<VNPersonsModelReadOptions> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -28124,11 +27721,9 @@ class VNPersonsModelReadOptions extends Struct<VNPersonsModelReadOptions> {
   }
 }
 
-/// Objective-C class _VNPersonsModelWriteOptions_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNPersonsModelWriteOptions extends Struct<VNPersonsModelWriteOptions> {
   factory VNPersonsModelWriteOptions._() {
@@ -28141,9 +27736,9 @@ class VNPersonsModelWriteOptions extends Struct<VNPersonsModelWriteOptions> {
         .cast<VNPersonsModelWriteOptions>();
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<VNPersonsModelWriteOptions> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -28155,7 +27750,7 @@ class VNPersonsModelWriteOptions extends Struct<VNPersonsModelWriteOptions> {
 
   static void encodeWithCoder(
     Pointer<VNPersonsModelWriteOptions> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -28165,7 +27760,7 @@ class VNPersonsModelWriteOptions extends Struct<VNPersonsModelWriteOptions> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<VNPersonsModelWriteOptions> _self,
   ) {
     _openDynamicLibrary();
@@ -28175,9 +27770,9 @@ class VNPersonsModelWriteOptions extends Struct<VNPersonsModelWriteOptions> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<VNPersonsModelWriteOptions> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -28232,11 +27827,9 @@ class VNPersonsModelWriteOptions extends Struct<VNPersonsModelWriteOptions> {
   }
 }
 
-/// Objective-C class _VNPhotosRequestHandler_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNPhotosRequestHandler extends Struct<VNPhotosRequestHandler> {
   factory VNPhotosRequestHandler._() {
@@ -28249,7 +27842,7 @@ class VNPhotosRequestHandler extends Struct<VNPhotosRequestHandler> {
         .cast<VNPhotosRequestHandler>();
   }
 
-  static Pointer<Void> burstAnalysisLoggingCallback(
+  static Pointer burstAnalysisLoggingCallback(
     Pointer<VNPhotosRequestHandler> _self,
   ) {
     _openDynamicLibrary();
@@ -28269,7 +27862,7 @@ class VNPhotosRequestHandler extends Struct<VNPhotosRequestHandler> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<VNPhotosRequestHandler> _self,
   ) {
     _openDynamicLibrary();
@@ -28279,7 +27872,7 @@ class VNPhotosRequestHandler extends Struct<VNPhotosRequestHandler> {
     );
   }
 
-  static Pointer<Void> modelContextObject(
+  static Pointer modelContextObject(
     Pointer<VNPhotosRequestHandler> _self,
   ) {
     _openDynamicLibrary();
@@ -28291,8 +27884,8 @@ class VNPhotosRequestHandler extends Struct<VNPhotosRequestHandler> {
 
   static int performRequests(
     Pointer<VNPhotosRequestHandler> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -28305,8 +27898,8 @@ class VNPhotosRequestHandler extends Struct<VNPhotosRequestHandler> {
 
   static int prepareForPerformingRequests(
     Pointer<VNPhotosRequestHandler> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -28319,8 +27912,8 @@ class VNPhotosRequestHandler extends Struct<VNPhotosRequestHandler> {
 
   static int prepareForPerformingRequestsOfClass(
     Pointer<VNPhotosRequestHandler> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -28333,7 +27926,7 @@ class VNPhotosRequestHandler extends Struct<VNPhotosRequestHandler> {
 
   static void setBurstAnalysisLoggingCallback(
     Pointer<VNPhotosRequestHandler> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -28345,7 +27938,7 @@ class VNPhotosRequestHandler extends Struct<VNPhotosRequestHandler> {
 
   static void setModelContextObject(
     Pointer<VNPhotosRequestHandler> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -28356,11 +27949,9 @@ class VNPhotosRequestHandler extends Struct<VNPhotosRequestHandler> {
   }
 }
 
-/// Objective-C class _VNPixelBufferObservation_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNPixelBufferObservation extends Struct<VNPixelBufferObservation> {
   factory VNPixelBufferObservation._() {
@@ -28373,9 +27964,9 @@ class VNPixelBufferObservation extends Struct<VNPixelBufferObservation> {
         .cast<VNPixelBufferObservation>();
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<VNPixelBufferObservation> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -28395,7 +27986,7 @@ class VNPixelBufferObservation extends Struct<VNPixelBufferObservation> {
     );
   }
 
-  static Pointer<Void> debugDescription(
+  static Pointer debugDescription(
     Pointer<VNPixelBufferObservation> _self,
   ) {
     _openDynamicLibrary();
@@ -28407,7 +27998,7 @@ class VNPixelBufferObservation extends Struct<VNPixelBufferObservation> {
 
   static void encodeWithCoder(
     Pointer<VNPixelBufferObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -28427,9 +28018,9 @@ class VNPixelBufferObservation extends Struct<VNPixelBufferObservation> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<VNPixelBufferObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -28439,10 +28030,10 @@ class VNPixelBufferObservation extends Struct<VNPixelBufferObservation> {
     );
   }
 
-  static Pointer<Void> initWithRequestRevision(
+  static Pointer initWithRequestRevision(
     Pointer<VNPixelBufferObservation> _self,
     int arg, {
-    @required Pointer<Pointer<Void>> CVPixelBuffer,
+    @required Pointer<Pointer> CVPixelBuffer,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_Uint64_p_returns_p(
@@ -28455,7 +28046,7 @@ class VNPixelBufferObservation extends Struct<VNPixelBufferObservation> {
 
   static int isEqual(
     Pointer<VNPixelBufferObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -28465,7 +28056,7 @@ class VNPixelBufferObservation extends Struct<VNPixelBufferObservation> {
     );
   }
 
-  static Pointer<Pointer<Void>> pixelBuffer(
+  static Pointer<Pointer> pixelBuffer(
     Pointer<VNPixelBufferObservation> _self,
   ) {
     _openDynamicLibrary();
@@ -28476,11 +28067,9 @@ class VNPixelBufferObservation extends Struct<VNPixelBufferObservation> {
   }
 }
 
-/// Objective-C class _VNProcessingDevice_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNProcessingDevice extends Struct<VNProcessingDevice> {
   factory VNProcessingDevice._() {
@@ -28491,9 +28080,9 @@ class VNProcessingDevice extends Struct<VNProcessingDevice> {
     return _objc.allocate("VNProcessingDevice").cast<VNProcessingDevice>();
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<VNProcessingDevice> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -28503,7 +28092,7 @@ class VNProcessingDevice extends Struct<VNProcessingDevice> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<VNProcessingDevice> _self,
   ) {
     _openDynamicLibrary();
@@ -28555,7 +28144,7 @@ class VNProcessingDevice extends Struct<VNProcessingDevice> {
 
   static int isEqual(
     Pointer<VNProcessingDevice> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -28565,7 +28154,7 @@ class VNProcessingDevice extends Struct<VNProcessingDevice> {
     );
   }
 
-  static Pointer<Void> metalDevice(
+  static Pointer metalDevice(
     Pointer<VNProcessingDevice> _self,
   ) {
     _openDynamicLibrary();
@@ -28606,11 +28195,9 @@ class VNProcessingDevice extends Struct<VNProcessingDevice> {
   }
 }
 
-/// Objective-C class _VNReadOnlyPersonsModel_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNReadOnlyPersonsModel extends Struct<VNReadOnlyPersonsModel> {
   factory VNReadOnlyPersonsModel._() {
@@ -28625,7 +28212,7 @@ class VNReadOnlyPersonsModel extends Struct<VNReadOnlyPersonsModel> {
 
   static int faceCountForPersonWithUniqueIdentifier(
     Pointer<VNReadOnlyPersonsModel> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Uint64(
@@ -28635,7 +28222,7 @@ class VNReadOnlyPersonsModel extends Struct<VNReadOnlyPersonsModel> {
     );
   }
 
-  static Pointer<Void> faceCountsForAllPersons(
+  static Pointer faceCountsForAllPersons(
     Pointer<VNReadOnlyPersonsModel> _self,
   ) {
     _openDynamicLibrary();
@@ -28645,9 +28232,9 @@ class VNReadOnlyPersonsModel extends Struct<VNReadOnlyPersonsModel> {
     );
   }
 
-  static Pointer<Void> faceCountsForPersonsWithUniqueIdentifiers(
+  static Pointer faceCountsForPersonsWithUniqueIdentifiers(
     Pointer<VNReadOnlyPersonsModel> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -28657,10 +28244,10 @@ class VNReadOnlyPersonsModel extends Struct<VNReadOnlyPersonsModel> {
     );
   }
 
-  static Pointer<Void> initWithConfiguration(
+  static Pointer initWithConfiguration(
     Pointer<VNReadOnlyPersonsModel> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> faceModel,
+    Pointer arg, {
+    @required Pointer faceModel,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -28673,7 +28260,7 @@ class VNReadOnlyPersonsModel extends Struct<VNReadOnlyPersonsModel> {
 
   static int numberOfPersonsInPersonsModel(
     Pointer<VNReadOnlyPersonsModel> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Uint64(
@@ -28693,7 +28280,7 @@ class VNReadOnlyPersonsModel extends Struct<VNReadOnlyPersonsModel> {
     );
   }
 
-  static Pointer<Void> personUniqueIdentifiers(
+  static Pointer personUniqueIdentifiers(
     Pointer<VNReadOnlyPersonsModel> _self,
   ) {
     _openDynamicLibrary();
@@ -28703,9 +28290,9 @@ class VNReadOnlyPersonsModel extends Struct<VNReadOnlyPersonsModel> {
     );
   }
 
-  static Pointer<Void> personsModel$uniqueIdentifierOfPersonAtIndex$(
+  static Pointer personsModel$uniqueIdentifierOfPersonAtIndex$(
     Pointer<VNReadOnlyPersonsModel> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int uniqueIdentifierOfPersonAtIndex,
   }) {
     _openDynamicLibrary();
@@ -28719,8 +28306,8 @@ class VNReadOnlyPersonsModel extends Struct<VNReadOnlyPersonsModel> {
 
   static int personsModel$indexOfPersonWithUniqueIdentifier$(
     Pointer<VNReadOnlyPersonsModel> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> indexOfPersonWithUniqueIdentifier,
+    Pointer arg, {
+    @required Pointer indexOfPersonWithUniqueIdentifier,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Uint64(
@@ -28733,7 +28320,7 @@ class VNReadOnlyPersonsModel extends Struct<VNReadOnlyPersonsModel> {
 
   static int personsModel$numberOfFaceObservationsForPersonAtIndex$(
     Pointer<VNReadOnlyPersonsModel> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int numberOfFaceObservationsForPersonAtIndex,
   }) {
     _openDynamicLibrary();
@@ -28746,9 +28333,9 @@ class VNReadOnlyPersonsModel extends Struct<VNReadOnlyPersonsModel> {
     );
   }
 
-  static Pointer<Void> personsModel$faceObservationAtIndex$forPersonAtIndex$(
+  static Pointer personsModel$faceObservationAtIndex$forPersonAtIndex$(
     Pointer<VNReadOnlyPersonsModel> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int faceObservationAtIndex,
     @required int forPersonAtIndex,
   }) {
@@ -28763,10 +28350,10 @@ class VNReadOnlyPersonsModel extends Struct<VNReadOnlyPersonsModel> {
     );
   }
 
-  static Pointer<Void> upToDateFaceModelWithCanceller(
+  static Pointer upToDateFaceModelWithCanceller(
     Pointer<VNReadOnlyPersonsModel> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -28778,11 +28365,9 @@ class VNReadOnlyPersonsModel extends Struct<VNReadOnlyPersonsModel> {
   }
 }
 
-/// Objective-C class _VNRecognizedObjectObservation_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNRecognizedObjectObservation
     extends Struct<VNRecognizedObjectObservation> {
@@ -28796,12 +28381,12 @@ class VNRecognizedObjectObservation
         .cast<VNRecognizedObjectObservation>();
   }
 
-  static Pointer<Void> initWithRequestRevision(
+  static Pointer initWithRequestRevision(
     Pointer<VNRecognizedObjectObservation> _self,
     int arg, {
-    @required Pointer<Void> boundingBox,
+    @required Pointer boundingBox,
     @required double confidence,
-    @required Pointer<Void> labels,
+    @required Pointer labels,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_Uint64_p_float32_p_returns_p(
@@ -28815,7 +28400,7 @@ class VNRecognizedObjectObservation
     );
   }
 
-  static Pointer<Void> labels(
+  static Pointer labels(
     Pointer<VNRecognizedObjectObservation> _self,
   ) {
     _openDynamicLibrary();
@@ -28826,11 +28411,9 @@ class VNRecognizedObjectObservation
   }
 }
 
-/// Objective-C class _VNRectangleDetector_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNRectangleDetector extends Struct<VNRectangleDetector> {
   factory VNRectangleDetector._() {
@@ -28861,12 +28444,12 @@ class VNRectangleDetector extends Struct<VNRectangleDetector> {
     );
   }
 
-  static Pointer<Void> processWithOptions(
+  static Pointer processWithOptions(
     Pointer<VNRectangleDetector> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> regionOfInterest,
-    @required Pointer<Void> warningRecorder,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer regionOfInterest,
+    @required Pointer warningRecorder,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_returns_p(
@@ -28881,11 +28464,9 @@ class VNRectangleDetector extends Struct<VNRectangleDetector> {
   }
 }
 
-/// Objective-C class _VNRectangleObservation_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNRectangleObservation extends Struct<VNRectangleObservation> {
   factory VNRectangleObservation._() {
@@ -28898,7 +28479,7 @@ class VNRectangleObservation extends Struct<VNRectangleObservation> {
         .cast<VNRectangleObservation>();
   }
 
-  static Pointer<Void> bottomLeft(
+  static Pointer bottomLeft(
     Pointer<VNRectangleObservation> _self,
   ) {
     _openDynamicLibrary();
@@ -28908,7 +28489,7 @@ class VNRectangleObservation extends Struct<VNRectangleObservation> {
     );
   }
 
-  static Pointer<Void> bottomRight(
+  static Pointer bottomRight(
     Pointer<VNRectangleObservation> _self,
   ) {
     _openDynamicLibrary();
@@ -28918,9 +28499,9 @@ class VNRectangleObservation extends Struct<VNRectangleObservation> {
     );
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<VNRectangleObservation> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -28932,7 +28513,7 @@ class VNRectangleObservation extends Struct<VNRectangleObservation> {
 
   static void encodeWithCoder(
     Pointer<VNRectangleObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -28962,9 +28543,9 @@ class VNRectangleObservation extends Struct<VNRectangleObservation> {
     );
   }
 
-  static Pointer<Void> initWithBoundingBox(
+  static Pointer initWithBoundingBox(
     Pointer<VNRectangleObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -28974,9 +28555,9 @@ class VNRectangleObservation extends Struct<VNRectangleObservation> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<VNRectangleObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -28986,10 +28567,10 @@ class VNRectangleObservation extends Struct<VNRectangleObservation> {
     );
   }
 
-  static Pointer<Void> initWithRequestRevision$boundingBox$(
+  static Pointer initWithRequestRevision$boundingBox$(
     Pointer<VNRectangleObservation> _self,
     int arg, {
-    @required Pointer<Void> boundingBox,
+    @required Pointer boundingBox,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_Uint64_p_returns_p(
@@ -29000,14 +28581,14 @@ class VNRectangleObservation extends Struct<VNRectangleObservation> {
     );
   }
 
-  static Pointer<Void>
+  static Pointer
       initWithRequestRevision$topLeft$bottomLeft$bottomRight$topRight$(
     Pointer<VNRectangleObservation> _self,
     int arg, {
-    @required Pointer<Void> topLeft,
-    @required Pointer<Void> bottomLeft,
-    @required Pointer<Void> bottomRight,
-    @required Pointer<Void> topRight,
+    @required Pointer topLeft,
+    @required Pointer bottomLeft,
+    @required Pointer bottomRight,
+    @required Pointer topRight,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_Uint64_p_p_p_p_returns_p(
@@ -29022,12 +28603,12 @@ class VNRectangleObservation extends Struct<VNRectangleObservation> {
     );
   }
 
-  static Pointer<Void> initWithTopLeft(
+  static Pointer initWithTopLeft(
     Pointer<VNRectangleObservation> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> bottomLeft,
-    @required Pointer<Void> bottomRight,
-    @required Pointer<Void> topRight,
+    Pointer arg, {
+    @required Pointer bottomLeft,
+    @required Pointer bottomRight,
+    @required Pointer topRight,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_returns_p(
@@ -29042,7 +28623,7 @@ class VNRectangleObservation extends Struct<VNRectangleObservation> {
 
   static int isEqual(
     Pointer<VNRectangleObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -29054,10 +28635,10 @@ class VNRectangleObservation extends Struct<VNRectangleObservation> {
 
   static void setBoundingBoxFromQuadrilateralPointsAtTopLeft(
     Pointer<VNRectangleObservation> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> topRight,
-    @required Pointer<Void> bottomRight,
-    @required Pointer<Void> bottomLeft,
+    Pointer arg, {
+    @required Pointer topRight,
+    @required Pointer bottomRight,
+    @required Pointer bottomLeft,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_returns_void(
@@ -29071,7 +28652,7 @@ class VNRectangleObservation extends Struct<VNRectangleObservation> {
     );
   }
 
-  static Pointer<Void> topLeft(
+  static Pointer topLeft(
     Pointer<VNRectangleObservation> _self,
   ) {
     _openDynamicLibrary();
@@ -29081,7 +28662,7 @@ class VNRectangleObservation extends Struct<VNRectangleObservation> {
     );
   }
 
-  static Pointer<Void> topRight(
+  static Pointer topRight(
     Pointer<VNRectangleObservation> _self,
   ) {
     _openDynamicLibrary();
@@ -29092,11 +28673,9 @@ class VNRectangleObservation extends Struct<VNRectangleObservation> {
   }
 }
 
-/// Objective-C class _VNRectangleTracker_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNRectangleTracker extends Struct<VNRectangleTracker> {
   factory VNRectangleTracker._() {
@@ -29107,10 +28686,10 @@ class VNRectangleTracker extends Struct<VNRectangleTracker> {
     return _objc.allocate("VNRectangleTracker").cast<VNRectangleTracker>();
   }
 
-  static Pointer<Void> initWithOptions(
+  static Pointer initWithOptions(
     Pointer<VNRectangleTracker> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -29133,7 +28712,7 @@ class VNRectangleTracker extends Struct<VNRectangleTracker> {
 
   static int reset(
     Pointer<VNRectangleTracker> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -29143,11 +28722,11 @@ class VNRectangleTracker extends Struct<VNRectangleTracker> {
     );
   }
 
-  static Pointer<Void> setTrackedObjects(
+  static Pointer setTrackedObjects(
     Pointer<VNRectangleTracker> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> inFrame,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer inFrame,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -29159,10 +28738,10 @@ class VNRectangleTracker extends Struct<VNRectangleTracker> {
     );
   }
 
-  static Pointer<Void> trackInFrame(
+  static Pointer trackInFrame(
     Pointer<VNRectangleTracker> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -29174,11 +28753,9 @@ class VNRectangleTracker extends Struct<VNRectangleTracker> {
   }
 }
 
-/// Objective-C class _VNRequest_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNRequest extends Struct<VNRequest> {
   factory VNRequest._() {
@@ -29201,7 +28778,7 @@ class VNRequest extends Struct<VNRequest> {
 
   static void applyConfigurationOfRequest(
     Pointer<VNRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -29221,7 +28798,7 @@ class VNRequest extends Struct<VNRequest> {
     );
   }
 
-  static Pointer<Void> cancellationSemaphore(
+  static Pointer cancellationSemaphore(
     Pointer<VNRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -29243,7 +28820,7 @@ class VNRequest extends Struct<VNRequest> {
 
   static int compatibleRevisionForDependentRequest(
     Pointer<VNRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Uint64(
@@ -29253,7 +28830,7 @@ class VNRequest extends Struct<VNRequest> {
     );
   }
 
-  static Pointer<Void> completionHandler(
+  static Pointer completionHandler(
     Pointer<VNRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -29263,7 +28840,7 @@ class VNRequest extends Struct<VNRequest> {
     );
   }
 
-  static Pointer<Void> configuration(
+  static Pointer configuration(
     Pointer<VNRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -29275,7 +28852,7 @@ class VNRequest extends Struct<VNRequest> {
 
   static void copyStateOfRequest(
     Pointer<VNRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -29285,9 +28862,9 @@ class VNRequest extends Struct<VNRequest> {
     );
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<VNRequest> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -29347,7 +28924,7 @@ class VNRequest extends Struct<VNRequest> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<VNRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -29357,9 +28934,9 @@ class VNRequest extends Struct<VNRequest> {
     );
   }
 
-  static Pointer<Void> initWithCompletionHandler(
+  static Pointer initWithCompletionHandler(
     Pointer<VNRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -29369,11 +28946,11 @@ class VNRequest extends Struct<VNRequest> {
     );
   }
 
-  static Pointer<Void> initWithName(
+  static Pointer initWithName(
     Pointer<VNRequest> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> options,
-    @required Pointer<Void> completionHandler,
+    Pointer arg, {
+    @required Pointer options,
+    @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -29387,8 +28964,8 @@ class VNRequest extends Struct<VNRequest> {
 
   static int internalCancelInContext(
     Pointer<VNRequest> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -29401,8 +28978,8 @@ class VNRequest extends Struct<VNRequest> {
 
   static int internalPerformInContext(
     Pointer<VNRequest> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -29416,8 +28993,8 @@ class VNRequest extends Struct<VNRequest> {
   static int internalPerformRevision(
     Pointer<VNRequest> _self,
     int arg, {
-    @required Pointer<Void> inContext,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer inContext,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_Uint64_p_p_returns_Int8(
@@ -29449,7 +29026,7 @@ class VNRequest extends Struct<VNRequest> {
     );
   }
 
-  static Pointer<Void> newDefaultDetectorOptions(
+  static Pointer newDefaultDetectorOptions(
     Pointer<VNRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -29459,7 +29036,7 @@ class VNRequest extends Struct<VNRequest> {
     );
   }
 
-  static Pointer<Void> newDefaultDetectorOptionsForRequestRevision(
+  static Pointer newDefaultDetectorOptionsForRequestRevision(
     Pointer<VNRequest> _self,
     int arg,
   ) {
@@ -29471,7 +29048,7 @@ class VNRequest extends Struct<VNRequest> {
     );
   }
 
-  static Pointer<Void> newDefaultRequestInstance(
+  static Pointer newDefaultRequestInstance(
     Pointer<VNRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -29481,7 +29058,7 @@ class VNRequest extends Struct<VNRequest> {
     );
   }
 
-  static Pointer<Void> options(
+  static Pointer options(
     Pointer<VNRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -29493,8 +29070,8 @@ class VNRequest extends Struct<VNRequest> {
 
   static int performInContext(
     Pointer<VNRequest> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -29515,7 +29092,7 @@ class VNRequest extends Struct<VNRequest> {
     );
   }
 
-  static Pointer<Void> preferredMetalContext(
+  static Pointer preferredMetalContext(
     Pointer<VNRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -29525,7 +29102,7 @@ class VNRequest extends Struct<VNRequest> {
     );
   }
 
-  static Pointer<Void> processingDevice(
+  static Pointer processingDevice(
     Pointer<VNRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -29537,8 +29114,8 @@ class VNRequest extends Struct<VNRequest> {
 
   static void recordWarning(
     Pointer<VNRequest> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> value,
+    Pointer arg, {
+    @required Pointer value,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -29549,7 +29126,7 @@ class VNRequest extends Struct<VNRequest> {
     );
   }
 
-  static Pointer<Void> requestName(
+  static Pointer requestName(
     Pointer<VNRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -29569,7 +29146,7 @@ class VNRequest extends Struct<VNRequest> {
     );
   }
 
-  static Pointer<Void> results(
+  static Pointer results(
     Pointer<VNRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -29579,7 +29156,7 @@ class VNRequest extends Struct<VNRequest> {
     );
   }
 
-  static Pointer<Void> resultsSortingComparator(
+  static Pointer resultsSortingComparator(
     Pointer<VNRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -29599,7 +29176,7 @@ class VNRequest extends Struct<VNRequest> {
     );
   }
 
-  static Pointer<Void> sequencedRequestPreviousObservationsKey(
+  static Pointer sequencedRequestPreviousObservationsKey(
     Pointer<VNRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -29611,7 +29188,7 @@ class VNRequest extends Struct<VNRequest> {
 
   static void setCancellationSemaphore(
     Pointer<VNRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -29707,7 +29284,7 @@ class VNRequest extends Struct<VNRequest> {
 
   static void setPreferredMetalContext(
     Pointer<VNRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -29719,7 +29296,7 @@ class VNRequest extends Struct<VNRequest> {
 
   static void setProcessingDevice(
     Pointer<VNRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -29731,7 +29308,7 @@ class VNRequest extends Struct<VNRequest> {
 
   static void setResults(
     Pointer<VNRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -29755,7 +29332,7 @@ class VNRequest extends Struct<VNRequest> {
 
   static void setSortedResults(
     Pointer<VNRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -29779,8 +29356,8 @@ class VNRequest extends Struct<VNRequest> {
 
   static void setValue$forRequestOption$(
     Pointer<VNRequest> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> forRequestOption,
+    Pointer arg, {
+    @required Pointer forRequestOption,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -29793,8 +29370,8 @@ class VNRequest extends Struct<VNRequest> {
 
   static void setValue$forPrivateOption$(
     Pointer<VNRequest> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> forPrivateOption,
+    Pointer arg, {
+    @required Pointer forPrivateOption,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -29817,7 +29394,7 @@ class VNRequest extends Struct<VNRequest> {
 
   static int validateConfigurationAndReturnError(
     Pointer<VNRequest> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -29829,10 +29406,10 @@ class VNRequest extends Struct<VNRequest> {
 
   static int validateImageBuffer(
     Pointer<VNRequest> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required Pointer<Uint64> ofNonZeroWidth,
     @required Pointer<Uint64> andHeight,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_returns_Int8(
@@ -29845,9 +29422,9 @@ class VNRequest extends Struct<VNRequest> {
     );
   }
 
-  static Pointer<Void> valueForPrivateOption(
+  static Pointer valueForPrivateOption(
     Pointer<VNRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -29857,9 +29434,9 @@ class VNRequest extends Struct<VNRequest> {
     );
   }
 
-  static Pointer<Void> valueForWarning(
+  static Pointer valueForWarning(
     Pointer<VNRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -29881,8 +29458,8 @@ class VNRequest extends Struct<VNRequest> {
 
   static int warmUpRequestPerformer(
     Pointer<VNRequest> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -29893,7 +29470,7 @@ class VNRequest extends Struct<VNRequest> {
     );
   }
 
-  static Pointer<Void> warnings(
+  static Pointer warnings(
     Pointer<VNRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -29905,7 +29482,7 @@ class VNRequest extends Struct<VNRequest> {
 
   static int willAcceptCachedResultsFromRequestWithConfiguration(
     Pointer<VNRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -29916,11 +29493,9 @@ class VNRequest extends Struct<VNRequest> {
   }
 }
 
-/// Objective-C class _VNRequestConfiguration_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNRequestConfiguration extends Struct<VNRequestConfiguration> {
   factory VNRequestConfiguration._() {
@@ -29933,9 +29508,9 @@ class VNRequestConfiguration extends Struct<VNRequestConfiguration> {
         .cast<VNRequestConfiguration>();
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<VNRequestConfiguration> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -29945,7 +29520,7 @@ class VNRequestConfiguration extends Struct<VNRequestConfiguration> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<VNRequestConfiguration> _self,
   ) {
     _openDynamicLibrary();
@@ -29965,9 +29540,9 @@ class VNRequestConfiguration extends Struct<VNRequestConfiguration> {
     );
   }
 
-  static Pointer<Void> initWithRequestClass(
+  static Pointer initWithRequestClass(
     Pointer<VNRequestConfiguration> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -30007,7 +29582,7 @@ class VNRequestConfiguration extends Struct<VNRequestConfiguration> {
     );
   }
 
-  static Pointer<Void> processingDevice(
+  static Pointer processingDevice(
     Pointer<VNRequestConfiguration> _self,
   ) {
     _openDynamicLibrary();
@@ -30017,7 +29592,7 @@ class VNRequestConfiguration extends Struct<VNRequestConfiguration> {
     );
   }
 
-  static Pointer<Void> requestClass(
+  static Pointer requestClass(
     Pointer<VNRequestConfiguration> _self,
   ) {
     _openDynamicLibrary();
@@ -30087,7 +29662,7 @@ class VNRequestConfiguration extends Struct<VNRequestConfiguration> {
 
   static void setProcessingDevice(
     Pointer<VNRequestConfiguration> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -30110,11 +29685,9 @@ class VNRequestConfiguration extends Struct<VNRequestConfiguration> {
   }
 }
 
-/// Objective-C class _VNRequestForensics_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNRequestForensics extends Struct<VNRequestForensics> {
   factory VNRequestForensics._() {
@@ -30127,8 +29700,8 @@ class VNRequestForensics extends Struct<VNRequestForensics> {
 
   static void cachedObservationsWithKey$wereCheckedOnBehalfOfRequest$(
     Pointer<VNRequestForensics> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> wereCheckedOnBehalfOfRequest,
+    Pointer arg, {
+    @required Pointer wereCheckedOnBehalfOfRequest,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -30142,8 +29715,8 @@ class VNRequestForensics extends Struct<VNRequestForensics> {
 
   static void cachedObservationsWithKey$wereLocatedOnBehalfOfRequest$(
     Pointer<VNRequestForensics> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> wereLocatedOnBehalfOfRequest,
+    Pointer arg, {
+    @required Pointer wereLocatedOnBehalfOfRequest,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -30155,7 +29728,7 @@ class VNRequestForensics extends Struct<VNRequestForensics> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<VNRequestForensics> _self,
   ) {
     _openDynamicLibrary();
@@ -30165,9 +29738,9 @@ class VNRequestForensics extends Struct<VNRequestForensics> {
     );
   }
 
-  static Pointer<Void> initWithOriginalRequests(
+  static Pointer initWithOriginalRequests(
     Pointer<VNRequestForensics> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -30177,9 +29750,9 @@ class VNRequestForensics extends Struct<VNRequestForensics> {
     );
   }
 
-  static Pointer<Void> keyUsedToCacheResultsOfRequest(
+  static Pointer keyUsedToCacheResultsOfRequest(
     Pointer<VNRequestForensics> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -30189,7 +29762,7 @@ class VNRequestForensics extends Struct<VNRequestForensics> {
     );
   }
 
-  static Pointer<Void> orderedRequests(
+  static Pointer orderedRequests(
     Pointer<VNRequestForensics> _self,
   ) {
     _openDynamicLibrary();
@@ -30199,7 +29772,7 @@ class VNRequestForensics extends Struct<VNRequestForensics> {
     );
   }
 
-  static Pointer<Void> originalRequests(
+  static Pointer originalRequests(
     Pointer<VNRequestForensics> _self,
   ) {
     _openDynamicLibrary();
@@ -30211,8 +29784,8 @@ class VNRequestForensics extends Struct<VNRequestForensics> {
 
   static void performedRequest(
     Pointer<VNRequestForensics> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> withError,
+    Pointer arg, {
+    @required Pointer withError,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -30223,7 +29796,7 @@ class VNRequestForensics extends Struct<VNRequestForensics> {
     );
   }
 
-  static Pointer<Void> performedRequests(
+  static Pointer performedRequests(
     Pointer<VNRequestForensics> _self,
   ) {
     _openDynamicLibrary();
@@ -30235,8 +29808,8 @@ class VNRequestForensics extends Struct<VNRequestForensics> {
 
   static void performingOrderedDependentRequests(
     Pointer<VNRequestForensics> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> onBehalfOfRequest,
+    Pointer arg, {
+    @required Pointer onBehalfOfRequest,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -30250,7 +29823,7 @@ class VNRequestForensics extends Struct<VNRequestForensics> {
 
   static void performingRequest(
     Pointer<VNRequestForensics> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -30262,8 +29835,8 @@ class VNRequestForensics extends Struct<VNRequestForensics> {
 
   static void request(
     Pointer<VNRequestForensics> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> cachedResultsWithObservationsCacheKey,
+    Pointer arg, {
+    @required Pointer cachedResultsWithObservationsCacheKey,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -30274,9 +29847,9 @@ class VNRequestForensics extends Struct<VNRequestForensics> {
     );
   }
 
-  static Pointer<Void> requestThatProvidedObservationsForRequest(
+  static Pointer requestThatProvidedObservationsForRequest(
     Pointer<VNRequestForensics> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -30286,9 +29859,9 @@ class VNRequestForensics extends Struct<VNRequestForensics> {
     );
   }
 
-  static Pointer<Void> requestsImplicitlyPerformedOnBehalfOfRequest(
+  static Pointer requestsImplicitlyPerformedOnBehalfOfRequest(
     Pointer<VNRequestForensics> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -30298,9 +29871,9 @@ class VNRequestForensics extends Struct<VNRequestForensics> {
     );
   }
 
-  static Pointer<Void> requestsThatLookedUpCachedResultsKey(
+  static Pointer requestsThatLookedUpCachedResultsKey(
     Pointer<VNRequestForensics> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -30312,7 +29885,7 @@ class VNRequestForensics extends Struct<VNRequestForensics> {
 
   static int resultsObtainedFromObservationsCacheForRequest(
     Pointer<VNRequestForensics> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -30324,7 +29897,7 @@ class VNRequestForensics extends Struct<VNRequestForensics> {
 
   static void setOrderedRequests(
     Pointer<VNRequestForensics> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -30335,11 +29908,9 @@ class VNRequestForensics extends Struct<VNRequestForensics> {
   }
 }
 
-/// Objective-C class _VNRequestPerformer_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNRequestPerformer extends Struct<VNRequestPerformer> {
   factory VNRequestPerformer._() {
@@ -30370,7 +29941,7 @@ class VNRequestPerformer extends Struct<VNRequestPerformer> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<VNRequestPerformer> _self,
   ) {
     _openDynamicLibrary();
@@ -30382,10 +29953,10 @@ class VNRequestPerformer extends Struct<VNRequestPerformer> {
 
   static int performDependentRequests(
     Pointer<VNRequestPerformer> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> inContext,
-    @required Pointer<Void> onBehalfOfRequest,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer inContext,
+    @required Pointer onBehalfOfRequest,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_returns_Int8(
@@ -30401,9 +29972,9 @@ class VNRequestPerformer extends Struct<VNRequestPerformer> {
 
   static int performRequests$inContext$error$(
     Pointer<VNRequestPerformer> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> inContext,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer inContext,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_Int8(
@@ -30417,10 +29988,10 @@ class VNRequestPerformer extends Struct<VNRequestPerformer> {
 
   static int performRequests$inContext$onBehalfOfRequest$error$(
     Pointer<VNRequestPerformer> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> inContext,
-    @required Pointer<Void> onBehalfOfRequest,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer inContext,
+    @required Pointer onBehalfOfRequest,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_returns_Int8(
@@ -30435,8 +30006,8 @@ class VNRequestPerformer extends Struct<VNRequestPerformer> {
 
   static int prepareForPerformingRequests(
     Pointer<VNRequestPerformer> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -30449,8 +30020,8 @@ class VNRequestPerformer extends Struct<VNRequestPerformer> {
 
   static int prepareForPerformingRequestsOfClass(
     Pointer<VNRequestPerformer> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -30461,9 +30032,9 @@ class VNRequestPerformer extends Struct<VNRequestPerformer> {
     );
   }
 
-  static Pointer<Void> previousSequencedObservationsForRequest(
+  static Pointer previousSequencedObservationsForRequest(
     Pointer<VNRequestPerformer> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -30475,7 +30046,7 @@ class VNRequestPerformer extends Struct<VNRequestPerformer> {
 
   static void recordSequencedObservationsForRequest(
     Pointer<VNRequestPerformer> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -30487,7 +30058,7 @@ class VNRequestPerformer extends Struct<VNRequestPerformer> {
 
   static void releaseTracker(
     Pointer<VNRequestPerformer> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -30497,10 +30068,10 @@ class VNRequestPerformer extends Struct<VNRequestPerformer> {
     );
   }
 
-  static Pointer<Void> trackerWithOptions(
+  static Pointer trackerWithOptions(
     Pointer<VNRequestPerformer> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -30512,11 +30083,9 @@ class VNRequestPerformer extends Struct<VNRequestPerformer> {
   }
 }
 
-/// Objective-C class _VNRequestPerformingContext_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNRequestPerformingContext extends Struct<VNRequestPerformingContext> {
   factory VNRequestPerformingContext._() {
@@ -30531,7 +30100,7 @@ class VNRequestPerformingContext extends Struct<VNRequestPerformingContext> {
 
   static void cacheObservationsForRequest(
     Pointer<VNRequestPerformingContext> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -30541,9 +30110,9 @@ class VNRequestPerformingContext extends Struct<VNRequestPerformingContext> {
     );
   }
 
-  static Pointer<Void> cachedObservationsForRequest(
+  static Pointer cachedObservationsForRequest(
     Pointer<VNRequestPerformingContext> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -30553,9 +30122,9 @@ class VNRequestPerformingContext extends Struct<VNRequestPerformingContext> {
     );
   }
 
-  static Pointer<Void> imageBufferAndReturnError(
+  static Pointer imageBufferAndReturnError(
     Pointer<VNRequestPerformingContext> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -30565,13 +30134,13 @@ class VNRequestPerformingContext extends Struct<VNRequestPerformingContext> {
     );
   }
 
-  static Pointer<Void>
+  static Pointer
       initWithRequestPerformer$imageBuffer$forensics$observationsCache$(
     Pointer<VNRequestPerformingContext> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> imageBuffer,
-    @required Pointer<Void> forensics,
-    @required Pointer<Void> observationsCache,
+    Pointer arg, {
+    @required Pointer imageBuffer,
+    @required Pointer forensics,
+    @required Pointer observationsCache,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_returns_p(
@@ -30585,13 +30154,13 @@ class VNRequestPerformingContext extends Struct<VNRequestPerformingContext> {
     );
   }
 
-  static Pointer<Void>
+  static Pointer
       initWithRequestPerformer$imageBuffer$forensics$observationsCache$qosClass$(
     Pointer<VNRequestPerformingContext> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> imageBuffer,
-    @required Pointer<Void> forensics,
-    @required Pointer<Void> observationsCache,
+    Pointer arg, {
+    @required Pointer imageBuffer,
+    @required Pointer forensics,
+    @required Pointer observationsCache,
     @required int qosClass,
   }) {
     _openDynamicLibrary();
@@ -30607,9 +30176,9 @@ class VNRequestPerformingContext extends Struct<VNRequestPerformingContext> {
     );
   }
 
-  static Pointer<Void> modelRequestHandlerAndReturnError(
+  static Pointer modelRequestHandlerAndReturnError(
     Pointer<VNRequestPerformingContext> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -30621,9 +30190,9 @@ class VNRequestPerformingContext extends Struct<VNRequestPerformingContext> {
 
   static int performDependentRequests(
     Pointer<VNRequestPerformingContext> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> onBehalfOfRequest,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer onBehalfOfRequest,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_Int8(
@@ -30635,9 +30204,9 @@ class VNRequestPerformingContext extends Struct<VNRequestPerformingContext> {
     );
   }
 
-  static Pointer<Void> previousSequencedObservationsForRequest(
+  static Pointer previousSequencedObservationsForRequest(
     Pointer<VNRequestPerformingContext> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -30659,7 +30228,7 @@ class VNRequestPerformingContext extends Struct<VNRequestPerformingContext> {
 
   static void recordSequencedObservationsForRequest(
     Pointer<VNRequestPerformingContext> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -30669,7 +30238,7 @@ class VNRequestPerformingContext extends Struct<VNRequestPerformingContext> {
     );
   }
 
-  static Pointer<Void> requestForensics(
+  static Pointer requestForensics(
     Pointer<VNRequestPerformingContext> _self,
   ) {
     _openDynamicLibrary();
@@ -30679,9 +30248,9 @@ class VNRequestPerformingContext extends Struct<VNRequestPerformingContext> {
     );
   }
 
-  static Pointer<Void> requestPerformerAndReturnError(
+  static Pointer requestPerformerAndReturnError(
     Pointer<VNRequestPerformingContext> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -30693,7 +30262,7 @@ class VNRequestPerformingContext extends Struct<VNRequestPerformingContext> {
 
   static void setModelRequestHandler(
     Pointer<VNRequestPerformingContext> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -30704,11 +30273,9 @@ class VNRequestPerformingContext extends Struct<VNRequestPerformingContext> {
   }
 }
 
-/// Objective-C class _VNRuntimeUtilities_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNRuntimeUtilities extends Struct<VNRuntimeUtilities> {
   factory VNRuntimeUtilities._() {
@@ -30720,11 +30287,9 @@ class VNRuntimeUtilities extends Struct<VNRuntimeUtilities> {
   }
 }
 
-/// Objective-C class _VNSceneClassificationCustomHierarchy_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNSceneClassificationCustomHierarchy
     extends Struct<VNSceneClassificationCustomHierarchy> {
@@ -30738,9 +30303,9 @@ class VNSceneClassificationCustomHierarchy
         .cast<VNSceneClassificationCustomHierarchy>();
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<VNSceneClassificationCustomHierarchy> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -30750,11 +30315,11 @@ class VNSceneClassificationCustomHierarchy
     );
   }
 
-  static Pointer<Void> customHierarchyWithAdditionalParent(
+  static Pointer customHierarchyWithAdditionalParent(
     Pointer<VNSceneClassificationCustomHierarchy> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> children,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer children,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -30766,10 +30331,10 @@ class VNSceneClassificationCustomHierarchy
     );
   }
 
-  static Pointer<Void> customHierarchyWithAdditionalRelationships(
+  static Pointer customHierarchyWithAdditionalRelationships(
     Pointer<VNSceneClassificationCustomHierarchy> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -30780,7 +30345,7 @@ class VNSceneClassificationCustomHierarchy
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<VNSceneClassificationCustomHierarchy> _self,
   ) {
     _openDynamicLibrary();
@@ -30792,7 +30357,7 @@ class VNSceneClassificationCustomHierarchy
 
   static void encodeWithCoder(
     Pointer<VNSceneClassificationCustomHierarchy> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -30812,9 +30377,9 @@ class VNSceneClassificationCustomHierarchy
     );
   }
 
-  static Pointer<Void> hierarchicalModelAndReturnError(
+  static Pointer hierarchicalModelAndReturnError(
     Pointer<VNSceneClassificationCustomHierarchy> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -30824,9 +30389,9 @@ class VNSceneClassificationCustomHierarchy
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<VNSceneClassificationCustomHierarchy> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -30836,7 +30401,7 @@ class VNSceneClassificationCustomHierarchy
     );
   }
 
-  static Pointer<Void> initWithSceneClassificationRequestRevision(
+  static Pointer initWithSceneClassificationRequestRevision(
     Pointer<VNSceneClassificationCustomHierarchy> _self,
     int arg, {
     @required int detectionLevel,
@@ -30853,7 +30418,7 @@ class VNSceneClassificationCustomHierarchy
 
   static int isEqual(
     Pointer<VNSceneClassificationCustomHierarchy> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -30863,9 +30428,9 @@ class VNSceneClassificationCustomHierarchy
     );
   }
 
-  static Pointer<Void> newHierarchicalModelAndReturnError(
+  static Pointer newHierarchicalModelAndReturnError(
     Pointer<VNSceneClassificationCustomHierarchy> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -30875,7 +30440,7 @@ class VNSceneClassificationCustomHierarchy
     );
   }
 
-  static Pointer<Void> relationships(
+  static Pointer relationships(
     Pointer<VNSceneClassificationCustomHierarchy> _self,
   ) {
     _openDynamicLibrary();
@@ -30906,11 +30471,9 @@ class VNSceneClassificationCustomHierarchy
   }
 }
 
-/// Objective-C class _VNSceneClassificationRequest_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNSceneClassificationRequest
     extends Struct<VNSceneClassificationRequest> {
@@ -30926,7 +30489,7 @@ class VNSceneClassificationRequest
 
   static void applyConfigurationOfRequest(
     Pointer<VNSceneClassificationRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -30936,7 +30499,7 @@ class VNSceneClassificationRequest
     );
   }
 
-  static Pointer<Void> customHierarchy(
+  static Pointer customHierarchy(
     Pointer<VNSceneClassificationRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -30948,8 +30511,8 @@ class VNSceneClassificationRequest
 
   static int defineCustomHierarchy(
     Pointer<VNSceneClassificationRequest> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -30960,10 +30523,10 @@ class VNSceneClassificationRequest
     );
   }
 
-  static Pointer<Void> defineCustomHierarchyWithRelationships(
+  static Pointer defineCustomHierarchyWithRelationships(
     Pointer<VNSceneClassificationRequest> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -30974,11 +30537,11 @@ class VNSceneClassificationRequest
     );
   }
 
-  static Pointer<Void> initWithName(
+  static Pointer initWithName(
     Pointer<VNSceneClassificationRequest> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> options,
-    @required Pointer<Void> completionHandler,
+    Pointer arg, {
+    @required Pointer options,
+    @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -30990,10 +30553,10 @@ class VNSceneClassificationRequest
     );
   }
 
-  static Pointer<Void> initWithSceneObservation$completionHandler$(
+  static Pointer initWithSceneObservation$completionHandler$(
     Pointer<VNSceneClassificationRequest> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> completionHandler,
+    Pointer arg, {
+    @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -31004,9 +30567,9 @@ class VNSceneClassificationRequest
     );
   }
 
-  static Pointer<Void> initWithSceneObservation$(
+  static Pointer initWithSceneObservation$(
     Pointer<VNSceneClassificationRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -31019,8 +30582,8 @@ class VNSceneClassificationRequest
   static int internalPerformRevision(
     Pointer<VNSceneClassificationRequest> _self,
     int arg, {
-    @required Pointer<Void> inContext,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer inContext,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_Uint64_p_p_returns_Int8(
@@ -31052,7 +30615,7 @@ class VNSceneClassificationRequest
     );
   }
 
-  static Pointer<Void> newDefaultDetectorOptionsForRequestRevision(
+  static Pointer newDefaultDetectorOptionsForRequestRevision(
     Pointer<VNSceneClassificationRequest> _self,
     int arg,
   ) {
@@ -31064,7 +30627,7 @@ class VNSceneClassificationRequest
     );
   }
 
-  static Pointer<Void> resultsSortingComparator(
+  static Pointer resultsSortingComparator(
     Pointer<VNSceneClassificationRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -31074,7 +30637,7 @@ class VNSceneClassificationRequest
     );
   }
 
-  static Pointer<Void> sceneObservation(
+  static Pointer sceneObservation(
     Pointer<VNSceneClassificationRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -31122,7 +30685,7 @@ class VNSceneClassificationRequest
 
   static void setSceneObservation(
     Pointer<VNSceneClassificationRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -31132,7 +30695,7 @@ class VNSceneClassificationRequest
     );
   }
 
-  static Pointer<Void> supportedImageSizeSet(
+  static Pointer supportedImageSizeSet(
     Pointer<VNSceneClassificationRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -31144,8 +30707,8 @@ class VNSceneClassificationRequest
 
   static int warmUpRequestPerformer(
     Pointer<VNSceneClassificationRequest> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -31158,7 +30721,7 @@ class VNSceneClassificationRequest
 
   static int willAcceptCachedResultsFromRequestWithConfiguration(
     Pointer<VNSceneClassificationRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -31169,11 +30732,9 @@ class VNSceneClassificationRequest
   }
 }
 
-/// Objective-C class _VNSceneClassificationRequestConfiguration_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNSceneClassificationRequestConfiguration
     extends Struct<VNSceneClassificationRequestConfiguration> {
@@ -31187,9 +30748,9 @@ class VNSceneClassificationRequestConfiguration
         .cast<VNSceneClassificationRequestConfiguration>();
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<VNSceneClassificationRequestConfiguration> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -31199,7 +30760,7 @@ class VNSceneClassificationRequestConfiguration
     );
   }
 
-  static Pointer<Void> customHierarchy(
+  static Pointer customHierarchy(
     Pointer<VNSceneClassificationRequestConfiguration> _self,
   ) {
     _openDynamicLibrary();
@@ -31209,7 +30770,7 @@ class VNSceneClassificationRequestConfiguration
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<VNSceneClassificationRequestConfiguration> _self,
   ) {
     _openDynamicLibrary();
@@ -31219,9 +30780,9 @@ class VNSceneClassificationRequestConfiguration
     );
   }
 
-  static Pointer<Void> initWithRequestClass(
+  static Pointer initWithRequestClass(
     Pointer<VNSceneClassificationRequestConfiguration> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -31251,7 +30812,7 @@ class VNSceneClassificationRequestConfiguration
     );
   }
 
-  static Pointer<Void> sceneObservation(
+  static Pointer sceneObservation(
     Pointer<VNSceneClassificationRequestConfiguration> _self,
   ) {
     _openDynamicLibrary();
@@ -31263,7 +30824,7 @@ class VNSceneClassificationRequestConfiguration
 
   static void setCustomHierarchy(
     Pointer<VNSceneClassificationRequestConfiguration> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -31299,7 +30860,7 @@ class VNSceneClassificationRequestConfiguration
 
   static void setSceneObservation(
     Pointer<VNSceneClassificationRequestConfiguration> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -31310,11 +30871,9 @@ class VNSceneClassificationRequestConfiguration
   }
 }
 
-/// Objective-C class _VNSceneClassifier_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNSceneClassifier extends Struct<VNSceneClassifier> {
   factory VNSceneClassifier._() {
@@ -31327,7 +30886,7 @@ class VNSceneClassifier extends Struct<VNSceneClassifier> {
 
   static int completeInitializationAndReturnError(
     Pointer<VNSceneClassifier> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -31339,9 +30898,9 @@ class VNSceneClassifier extends Struct<VNSceneClassifier> {
 
   static int initImageDescriptorBuffer(
     Pointer<VNSceneClassifier> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> descriptorBuffer,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> descriptorBuffer,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_Int8(
@@ -31355,8 +30914,8 @@ class VNSceneClassifier extends Struct<VNSceneClassifier> {
 
   static int isSceneprinterCompatibleWithSceneprinterCreatedWithOptions(
     Pointer<VNSceneClassifier> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -31368,12 +30927,12 @@ class VNSceneClassifier extends Struct<VNSceneClassifier> {
     );
   }
 
-  static Pointer<Void> processWithOptions(
+  static Pointer processWithOptions(
     Pointer<VNSceneClassifier> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> regionOfInterest,
-    @required Pointer<Void> warningRecorder,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer regionOfInterest,
+    @required Pointer warningRecorder,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_returns_p(
@@ -31388,11 +30947,9 @@ class VNSceneClassifier extends Struct<VNSceneClassifier> {
   }
 }
 
-/// Objective-C class _VNSceneObservation_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNSceneObservation extends Struct<VNSceneObservation> {
   factory VNSceneObservation._() {
@@ -31403,9 +30960,9 @@ class VNSceneObservation extends Struct<VNSceneObservation> {
     return _objc.allocate("VNSceneObservation").cast<VNSceneObservation>();
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<VNSceneObservation> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -31417,7 +30974,7 @@ class VNSceneObservation extends Struct<VNSceneObservation> {
 
   static void encodeWithCoder(
     Pointer<VNSceneObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -31437,9 +30994,9 @@ class VNSceneObservation extends Struct<VNSceneObservation> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<VNSceneObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -31449,10 +31006,10 @@ class VNSceneObservation extends Struct<VNSceneObservation> {
     );
   }
 
-  static Pointer<Void> initWithRequestRevision(
+  static Pointer initWithRequestRevision(
     Pointer<VNSceneObservation> _self,
     int arg, {
-    @required Pointer<Void> sceneprints,
+    @required Pointer sceneprints,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_Uint64_p_returns_p(
@@ -31465,7 +31022,7 @@ class VNSceneObservation extends Struct<VNSceneObservation> {
 
   static int isEqual(
     Pointer<VNSceneObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -31475,7 +31032,7 @@ class VNSceneObservation extends Struct<VNSceneObservation> {
     );
   }
 
-  static Pointer<Void> sceneprintVersion(
+  static Pointer sceneprintVersion(
     Pointer<VNSceneObservation> _self,
   ) {
     _openDynamicLibrary();
@@ -31485,7 +31042,7 @@ class VNSceneObservation extends Struct<VNSceneObservation> {
     );
   }
 
-  static Pointer<Void> sceneprints(
+  static Pointer sceneprints(
     Pointer<VNSceneObservation> _self,
   ) {
     _openDynamicLibrary();
@@ -31496,11 +31053,9 @@ class VNSceneObservation extends Struct<VNSceneObservation> {
   }
 }
 
-/// Objective-C class _VNSceneprint_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNSceneprint extends Struct<VNSceneprint> {
   factory VNSceneprint._() {
@@ -31512,11 +31067,9 @@ class VNSceneprint extends Struct<VNSceneprint> {
   }
 }
 
-/// Objective-C class _VNSegmentFaceLandmarksRequest_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNSegmentFaceLandmarksRequest
     extends Struct<VNSegmentFaceLandmarksRequest> {
@@ -31533,8 +31086,8 @@ class VNSegmentFaceLandmarksRequest
   static int internalPerformRevision(
     Pointer<VNSegmentFaceLandmarksRequest> _self,
     int arg, {
-    @required Pointer<Void> inContext,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer inContext,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_Uint64_p_p_returns_Int8(
@@ -31548,8 +31101,8 @@ class VNSegmentFaceLandmarksRequest
 
   static int warmUpRequestPerformer(
     Pointer<VNSegmentFaceLandmarksRequest> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -31561,11 +31114,9 @@ class VNSegmentFaceLandmarksRequest
   }
 }
 
-/// Objective-C class _VNSequenceRequestHandler_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNSequenceRequestHandler extends Struct<VNSequenceRequestHandler> {
   factory VNSequenceRequestHandler._() {
@@ -31588,7 +31139,7 @@ class VNSequenceRequestHandler extends Struct<VNSequenceRequestHandler> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<VNSequenceRequestHandler> _self,
   ) {
     _openDynamicLibrary();
@@ -31600,10 +31151,10 @@ class VNSequenceRequestHandler extends Struct<VNSequenceRequestHandler> {
 
   static int performRequests$onCVPixelBuffer$orientation$error$(
     Pointer<VNSequenceRequestHandler> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> onCVPixelBuffer,
+    Pointer arg, {
+    @required Pointer<Pointer> onCVPixelBuffer,
     @required int orientation,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_Uint32_p_returns_Int8(
@@ -31619,11 +31170,11 @@ class VNSequenceRequestHandler extends Struct<VNSequenceRequestHandler> {
   static int
       performRequests$onCVPixelBuffer$orientation$gatheredForensics$error$(
     Pointer<VNSequenceRequestHandler> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> onCVPixelBuffer,
+    Pointer arg, {
+    @required Pointer<Pointer> onCVPixelBuffer,
     @required int orientation,
-    @required Pointer<Pointer<Void>> gatheredForensics,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer<Pointer> gatheredForensics,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_Uint32_p_p_returns_Int8(
@@ -31640,10 +31191,10 @@ class VNSequenceRequestHandler extends Struct<VNSequenceRequestHandler> {
 
   static int performRequests$onCGImage$orientation$error$(
     Pointer<VNSequenceRequestHandler> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> onCGImage,
+    Pointer arg, {
+    @required Pointer<Pointer> onCGImage,
     @required int orientation,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_Uint32_p_returns_Int8(
@@ -31658,11 +31209,11 @@ class VNSequenceRequestHandler extends Struct<VNSequenceRequestHandler> {
 
   static int performRequests$onCGImage$orientation$gatheredForensics$error$(
     Pointer<VNSequenceRequestHandler> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> onCGImage,
+    Pointer arg, {
+    @required Pointer<Pointer> onCGImage,
     @required int orientation,
-    @required Pointer<Pointer<Void>> gatheredForensics,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer<Pointer> gatheredForensics,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_Uint32_p_p_returns_Int8(
@@ -31679,10 +31230,10 @@ class VNSequenceRequestHandler extends Struct<VNSequenceRequestHandler> {
 
   static int performRequests$onCIImage$orientation$error$(
     Pointer<VNSequenceRequestHandler> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> onCIImage,
+    Pointer arg, {
+    @required Pointer onCIImage,
     @required int orientation,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_Uint32_p_returns_Int8(
@@ -31697,11 +31248,11 @@ class VNSequenceRequestHandler extends Struct<VNSequenceRequestHandler> {
 
   static int performRequests$onCIImage$orientation$gatheredForensics$error$(
     Pointer<VNSequenceRequestHandler> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> onCIImage,
+    Pointer arg, {
+    @required Pointer onCIImage,
     @required int orientation,
-    @required Pointer<Pointer<Void>> gatheredForensics,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer<Pointer> gatheredForensics,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_Uint32_p_p_returns_Int8(
@@ -31718,10 +31269,10 @@ class VNSequenceRequestHandler extends Struct<VNSequenceRequestHandler> {
 
   static int performRequests$onImageURL$orientation$error$(
     Pointer<VNSequenceRequestHandler> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> onImageURL,
+    Pointer arg, {
+    @required Pointer onImageURL,
     @required int orientation,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_Uint32_p_returns_Int8(
@@ -31736,11 +31287,11 @@ class VNSequenceRequestHandler extends Struct<VNSequenceRequestHandler> {
 
   static int performRequests$onImageURL$orientation$gatheredForensics$error$(
     Pointer<VNSequenceRequestHandler> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> onImageURL,
+    Pointer arg, {
+    @required Pointer onImageURL,
     @required int orientation,
-    @required Pointer<Pointer<Void>> gatheredForensics,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer<Pointer> gatheredForensics,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_Uint32_p_p_returns_Int8(
@@ -31757,10 +31308,10 @@ class VNSequenceRequestHandler extends Struct<VNSequenceRequestHandler> {
 
   static int performRequests$onImageData$orientation$error$(
     Pointer<VNSequenceRequestHandler> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> onImageData,
+    Pointer arg, {
+    @required Pointer onImageData,
     @required int orientation,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_Uint32_p_returns_Int8(
@@ -31775,11 +31326,11 @@ class VNSequenceRequestHandler extends Struct<VNSequenceRequestHandler> {
 
   static int performRequests$onImageData$orientation$gatheredForensics$error$(
     Pointer<VNSequenceRequestHandler> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> onImageData,
+    Pointer arg, {
+    @required Pointer onImageData,
     @required int orientation,
-    @required Pointer<Pointer<Void>> gatheredForensics,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer<Pointer> gatheredForensics,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_Uint32_p_p_returns_Int8(
@@ -31796,10 +31347,10 @@ class VNSequenceRequestHandler extends Struct<VNSequenceRequestHandler> {
 
   static int performRequests$onImageSpecifier$gatheredForensics$error$(
     Pointer<VNSequenceRequestHandler> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> onImageSpecifier,
-    @required Pointer<Pointer<Void>> gatheredForensics,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer onImageSpecifier,
+    @required Pointer<Pointer> gatheredForensics,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_returns_Int8(
@@ -31815,9 +31366,9 @@ class VNSequenceRequestHandler extends Struct<VNSequenceRequestHandler> {
 
   static int performRequests$onCVPixelBuffer$error$(
     Pointer<VNSequenceRequestHandler> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> onCVPixelBuffer,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> onCVPixelBuffer,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_Int8(
@@ -31831,10 +31382,10 @@ class VNSequenceRequestHandler extends Struct<VNSequenceRequestHandler> {
 
   static int performRequests$onCVPixelBuffer$gatheredForensics$error$(
     Pointer<VNSequenceRequestHandler> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> onCVPixelBuffer,
-    @required Pointer<Pointer<Void>> gatheredForensics,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> onCVPixelBuffer,
+    @required Pointer<Pointer> gatheredForensics,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_returns_Int8(
@@ -31850,9 +31401,9 @@ class VNSequenceRequestHandler extends Struct<VNSequenceRequestHandler> {
 
   static int performRequests$onCGImage$error$(
     Pointer<VNSequenceRequestHandler> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> onCGImage,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> onCGImage,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_Int8(
@@ -31866,10 +31417,10 @@ class VNSequenceRequestHandler extends Struct<VNSequenceRequestHandler> {
 
   static int performRequests$onCGImage$gatheredForensics$error$(
     Pointer<VNSequenceRequestHandler> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> onCGImage,
-    @required Pointer<Pointer<Void>> gatheredForensics,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> onCGImage,
+    @required Pointer<Pointer> gatheredForensics,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_returns_Int8(
@@ -31884,9 +31435,9 @@ class VNSequenceRequestHandler extends Struct<VNSequenceRequestHandler> {
 
   static int performRequests$onCIImage$error$(
     Pointer<VNSequenceRequestHandler> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> onCIImage,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer onCIImage,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_Int8(
@@ -31900,10 +31451,10 @@ class VNSequenceRequestHandler extends Struct<VNSequenceRequestHandler> {
 
   static int performRequests$onCIImage$gatheredForensics$error$(
     Pointer<VNSequenceRequestHandler> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> onCIImage,
-    @required Pointer<Pointer<Void>> gatheredForensics,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer onCIImage,
+    @required Pointer<Pointer> gatheredForensics,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_returns_Int8(
@@ -31918,9 +31469,9 @@ class VNSequenceRequestHandler extends Struct<VNSequenceRequestHandler> {
 
   static int performRequests$onImageURL$error$(
     Pointer<VNSequenceRequestHandler> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> onImageURL,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer onImageURL,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_Int8(
@@ -31934,10 +31485,10 @@ class VNSequenceRequestHandler extends Struct<VNSequenceRequestHandler> {
 
   static int performRequests$onImageURL$gatheredForensics$error$(
     Pointer<VNSequenceRequestHandler> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> onImageURL,
-    @required Pointer<Pointer<Void>> gatheredForensics,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer onImageURL,
+    @required Pointer<Pointer> gatheredForensics,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_returns_Int8(
@@ -31952,9 +31503,9 @@ class VNSequenceRequestHandler extends Struct<VNSequenceRequestHandler> {
 
   static int performRequests$onImageData$error$(
     Pointer<VNSequenceRequestHandler> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> onImageData,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer onImageData,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_Int8(
@@ -31968,9 +31519,9 @@ class VNSequenceRequestHandler extends Struct<VNSequenceRequestHandler> {
 
   static int performRequests$onImageSpecifier$error$(
     Pointer<VNSequenceRequestHandler> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> onImageSpecifier,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer onImageSpecifier,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_Int8(
@@ -31984,8 +31535,8 @@ class VNSequenceRequestHandler extends Struct<VNSequenceRequestHandler> {
 
   static int prepareForPerformingRequests(
     Pointer<VNSequenceRequestHandler> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -31998,8 +31549,8 @@ class VNSequenceRequestHandler extends Struct<VNSequenceRequestHandler> {
 
   static int prepareForPerformingRequestsOfClass(
     Pointer<VNSequenceRequestHandler> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -32011,11 +31562,9 @@ class VNSequenceRequestHandler extends Struct<VNSequenceRequestHandler> {
   }
 }
 
-/// Objective-C class _VNSequenceSummarizationAnalyzer_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNSequenceSummarizationAnalyzer
     extends Struct<VNSequenceSummarizationAnalyzer> {
@@ -32031,7 +31580,7 @@ class VNSequenceSummarizationAnalyzer
 
   static int completeInitializationAndReturnError(
     Pointer<VNSequenceSummarizationAnalyzer> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -32051,12 +31600,12 @@ class VNSequenceSummarizationAnalyzer
     );
   }
 
-  static Pointer<Void> processWithOptions(
+  static Pointer processWithOptions(
     Pointer<VNSequenceSummarizationAnalyzer> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> regionOfInterest,
-    @required Pointer<Void> warningRecorder,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer regionOfInterest,
+    @required Pointer warningRecorder,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_returns_p(
@@ -32071,11 +31620,9 @@ class VNSequenceSummarizationAnalyzer
   }
 }
 
-/// Objective-C class _VNSequenceSummarizationObservation_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNSequenceSummarizationObservation
     extends Struct<VNSequenceSummarizationObservation> {
@@ -32089,9 +31636,9 @@ class VNSequenceSummarizationObservation
         .cast<VNSequenceSummarizationObservation>();
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<VNSequenceSummarizationObservation> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -32103,7 +31650,7 @@ class VNSequenceSummarizationObservation
 
   static void encodeWithCoder(
     Pointer<VNSequenceSummarizationObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -32113,7 +31660,7 @@ class VNSequenceSummarizationObservation
     );
   }
 
-  static Pointer<Void> frameRate(
+  static Pointer frameRate(
     Pointer<VNSequenceSummarizationObservation> _self,
   ) {
     _openDynamicLibrary();
@@ -32123,12 +31670,12 @@ class VNSequenceSummarizationObservation
     );
   }
 
-  static Pointer<Void> generateSequenceSummaryWithMinClipDuration(
+  static Pointer generateSequenceSummaryWithMinClipDuration(
     Pointer<VNSequenceSummarizationObservation> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> maxClipDuration,
-    @required Pointer<Void> maxSequenceSummaryDuration,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer maxClipDuration,
+    @required Pointer maxSequenceSummaryDuration,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_returns_p(
@@ -32142,9 +31689,9 @@ class VNSequenceSummarizationObservation
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<VNSequenceSummarizationObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -32154,10 +31701,10 @@ class VNSequenceSummarizationObservation
     );
   }
 
-  static Pointer<Void> initWithLSTMScores(
+  static Pointer initWithLSTMScores(
     Pointer<VNSequenceSummarizationObservation> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> frameRate,
+    Pointer arg, {
+    @required Pointer frameRate,
     @required int requestRevision,
   }) {
     _openDynamicLibrary();
@@ -32170,7 +31717,7 @@ class VNSequenceSummarizationObservation
     );
   }
 
-  static Pointer<Void> initWithRequestRevision(
+  static Pointer initWithRequestRevision(
     Pointer<VNSequenceSummarizationObservation> _self,
     int arg,
   ) {
@@ -32182,7 +31729,7 @@ class VNSequenceSummarizationObservation
     );
   }
 
-  static Pointer<Void> lstmScores(
+  static Pointer lstmScores(
     Pointer<VNSequenceSummarizationObservation> _self,
   ) {
     _openDynamicLibrary();
@@ -32194,7 +31741,7 @@ class VNSequenceSummarizationObservation
 
   static void setFrameRate(
     Pointer<VNSequenceSummarizationObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -32206,7 +31753,7 @@ class VNSequenceSummarizationObservation
 
   static void setLstmScores(
     Pointer<VNSequenceSummarizationObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -32217,11 +31764,9 @@ class VNSequenceSummarizationObservation
   }
 }
 
-/// Objective-C class _VNSequenceSummarizationRequest_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNSequenceSummarizationRequest
     extends Struct<VNSequenceSummarizationRequest> {
@@ -32247,7 +31792,7 @@ class VNSequenceSummarizationRequest
 
   static void applyConfigurationOfRequest(
     Pointer<VNSequenceSummarizationRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -32257,7 +31802,7 @@ class VNSequenceSummarizationRequest
     );
   }
 
-  static Pointer<Void> frameRate(
+  static Pointer frameRate(
     Pointer<VNSequenceSummarizationRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -32267,7 +31812,7 @@ class VNSequenceSummarizationRequest
     );
   }
 
-  static Pointer<Void> frameTimeStamp(
+  static Pointer frameTimeStamp(
     Pointer<VNSequenceSummarizationRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -32277,12 +31822,12 @@ class VNSequenceSummarizationRequest
     );
   }
 
-  static Pointer<Void>
+  static Pointer
       initWithSequenceSummarizationObservation$frameTimeStamp$completionHandler$(
     Pointer<VNSequenceSummarizationRequest> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> frameTimeStamp,
-    @required Pointer<Void> completionHandler,
+    Pointer arg, {
+    @required Pointer frameTimeStamp,
+    @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -32295,10 +31840,10 @@ class VNSequenceSummarizationRequest
     );
   }
 
-  static Pointer<Void> initWithSequenceSummarizationObservation$frameTimeStamp$(
+  static Pointer initWithSequenceSummarizationObservation$frameTimeStamp$(
     Pointer<VNSequenceSummarizationRequest> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> frameTimeStamp,
+    Pointer arg, {
+    @required Pointer frameTimeStamp,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -32310,7 +31855,7 @@ class VNSequenceSummarizationRequest
     );
   }
 
-  static Pointer<Void> inputObservation(
+  static Pointer inputObservation(
     Pointer<VNSequenceSummarizationRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -32323,8 +31868,8 @@ class VNSequenceSummarizationRequest
   static int internalPerformRevision(
     Pointer<VNSequenceSummarizationRequest> _self,
     int arg, {
-    @required Pointer<Void> inContext,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer inContext,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_Uint64_p_p_returns_Int8(
@@ -32338,7 +31883,7 @@ class VNSequenceSummarizationRequest
 
   static void setFrameRate(
     Pointer<VNSequenceSummarizationRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -32350,7 +31895,7 @@ class VNSequenceSummarizationRequest
 
   static void setFrameTimeStamp(
     Pointer<VNSequenceSummarizationRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -32362,7 +31907,7 @@ class VNSequenceSummarizationRequest
 
   static void setInputObservation(
     Pointer<VNSequenceSummarizationRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -32374,8 +31919,8 @@ class VNSequenceSummarizationRequest
 
   static int warmUpRequestPerformer(
     Pointer<VNSequenceSummarizationRequest> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -32388,7 +31933,7 @@ class VNSequenceSummarizationRequest
 
   static int willAcceptCachedResultsFromRequestWithConfiguration(
     Pointer<VNSequenceSummarizationRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -32399,11 +31944,9 @@ class VNSequenceSummarizationRequest
   }
 }
 
-/// Objective-C class _VNSequenceSummarizationRequestConfiguration_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNSequenceSummarizationRequestConfiguration
     extends Struct<VNSequenceSummarizationRequestConfiguration> {
@@ -32417,9 +31960,9 @@ class VNSequenceSummarizationRequestConfiguration
         .cast<VNSequenceSummarizationRequestConfiguration>();
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<VNSequenceSummarizationRequestConfiguration> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -32429,7 +31972,7 @@ class VNSequenceSummarizationRequestConfiguration
     );
   }
 
-  static Pointer<Void> frameRate(
+  static Pointer frameRate(
     Pointer<VNSequenceSummarizationRequestConfiguration> _self,
   ) {
     _openDynamicLibrary();
@@ -32439,7 +31982,7 @@ class VNSequenceSummarizationRequestConfiguration
     );
   }
 
-  static Pointer<Void> frameTimeStamp(
+  static Pointer frameTimeStamp(
     Pointer<VNSequenceSummarizationRequestConfiguration> _self,
   ) {
     _openDynamicLibrary();
@@ -32449,7 +31992,7 @@ class VNSequenceSummarizationRequestConfiguration
     );
   }
 
-  static Pointer<Void> inputObservation(
+  static Pointer inputObservation(
     Pointer<VNSequenceSummarizationRequestConfiguration> _self,
   ) {
     _openDynamicLibrary();
@@ -32461,7 +32004,7 @@ class VNSequenceSummarizationRequestConfiguration
 
   static void setFrameRate(
     Pointer<VNSequenceSummarizationRequestConfiguration> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -32473,7 +32016,7 @@ class VNSequenceSummarizationRequestConfiguration
 
   static void setFrameTimeStamp(
     Pointer<VNSequenceSummarizationRequestConfiguration> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -32485,7 +32028,7 @@ class VNSequenceSummarizationRequestConfiguration
 
   static void setInputObservation(
     Pointer<VNSequenceSummarizationRequestConfiguration> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -32496,11 +32039,9 @@ class VNSequenceSummarizationRequestConfiguration
   }
 }
 
-/// Objective-C class _VNSingleHeadSceneprintGenerator_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNSingleHeadSceneprintGenerator
     extends Struct<VNSingleHeadSceneprintGenerator> {
@@ -32516,7 +32057,7 @@ class VNSingleHeadSceneprintGenerator
 
   static int completeInitializationAndReturnError(
     Pointer<VNSingleHeadSceneprintGenerator> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -32526,9 +32067,9 @@ class VNSingleHeadSceneprintGenerator
     );
   }
 
-  static Pointer<Void> espressoModelFileNameForConfigurationOptions(
+  static Pointer espressoModelFileNameForConfigurationOptions(
     Pointer<VNSingleHeadSceneprintGenerator> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -32538,10 +32079,10 @@ class VNSingleHeadSceneprintGenerator
     );
   }
 
-  static Pointer<Void>
+  static Pointer
       espressoModelInputImageDimensionsBlobNameForConfigurationOptions(
     Pointer<VNSingleHeadSceneprintGenerator> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -32552,12 +32093,12 @@ class VNSingleHeadSceneprintGenerator
     );
   }
 
-  static Pointer<Void> processWithOptions(
+  static Pointer processWithOptions(
     Pointer<VNSingleHeadSceneprintGenerator> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> regionOfInterest,
-    @required Pointer<Void> warningRecorder,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer regionOfInterest,
+    @required Pointer warningRecorder,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_returns_p(
@@ -32573,7 +32114,7 @@ class VNSingleHeadSceneprintGenerator
 
   static int supportsProcessingDevice(
     Pointer<VNSingleHeadSceneprintGenerator> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -32584,11 +32125,9 @@ class VNSingleHeadSceneprintGenerator
   }
 }
 
-/// Objective-C class _VNSizeRange_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNSizeRange extends Struct<VNSizeRange> {
   factory VNSizeRange._() {
@@ -32609,7 +32148,7 @@ class VNSizeRange extends Struct<VNSizeRange> {
     );
   }
 
-  static Pointer<Void> initWithMinimumDimension(
+  static Pointer initWithMinimumDimension(
     Pointer<VNSizeRange> _self,
     int arg, {
     @required int maximumDimension,
@@ -32659,11 +32198,9 @@ class VNSizeRange extends Struct<VNSizeRange> {
   }
 }
 
-/// Objective-C class _VNSmartCamClassifier_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNSmartCamClassifier extends Struct<VNSmartCamClassifier> {
   factory VNSmartCamClassifier._() {
@@ -32676,7 +32213,7 @@ class VNSmartCamClassifier extends Struct<VNSmartCamClassifier> {
 
   static int completeInitializationAndReturnError(
     Pointer<VNSmartCamClassifier> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -32686,12 +32223,12 @@ class VNSmartCamClassifier extends Struct<VNSmartCamClassifier> {
     );
   }
 
-  static Pointer<Void> processWithOptions(
+  static Pointer processWithOptions(
     Pointer<VNSmartCamClassifier> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> regionOfInterest,
-    @required Pointer<Void> warningRecorder,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer regionOfInterest,
+    @required Pointer warningRecorder,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_returns_p(
@@ -32706,11 +32243,9 @@ class VNSmartCamClassifier extends Struct<VNSmartCamClassifier> {
   }
 }
 
-/// Objective-C class _VNSmartCamCombinedAestheticsAndSaliencyDetector_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNSmartCamCombinedAestheticsAndSaliencyDetector
     extends Struct<VNSmartCamCombinedAestheticsAndSaliencyDetector> {
@@ -32724,9 +32259,9 @@ class VNSmartCamCombinedAestheticsAndSaliencyDetector
         .cast<VNSmartCamCombinedAestheticsAndSaliencyDetector>();
   }
 
-  static Pointer<Void> espressoModelFileNameForConfigurationOptions(
+  static Pointer espressoModelFileNameForConfigurationOptions(
     Pointer<VNSmartCamCombinedAestheticsAndSaliencyDetector> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -32736,10 +32271,10 @@ class VNSmartCamCombinedAestheticsAndSaliencyDetector
     );
   }
 
-  static Pointer<Void>
+  static Pointer
       espressoModelInputImageDimensionsBlobNameForConfigurationOptions(
     Pointer<VNSmartCamCombinedAestheticsAndSaliencyDetector> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -32752,7 +32287,7 @@ class VNSmartCamCombinedAestheticsAndSaliencyDetector
 
   static int espressoModelNetworkLayersStorageTypeForConfigurationOptions(
     Pointer<VNSmartCamCombinedAestheticsAndSaliencyDetector> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int32(
@@ -32763,12 +32298,12 @@ class VNSmartCamCombinedAestheticsAndSaliencyDetector
     );
   }
 
-  static Pointer<Void> processWithOptions(
+  static Pointer processWithOptions(
     Pointer<VNSmartCamCombinedAestheticsAndSaliencyDetector> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> regionOfInterest,
-    @required Pointer<Void> warningRecorder,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer regionOfInterest,
+    @required Pointer warningRecorder,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_returns_p(
@@ -32783,11 +32318,9 @@ class VNSmartCamCombinedAestheticsAndSaliencyDetector
   }
 }
 
-/// Objective-C class _VNSmartCamObservation_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNSmartCamObservation extends Struct<VNSmartCamObservation> {
   factory VNSmartCamObservation._() {
@@ -32800,9 +32333,9 @@ class VNSmartCamObservation extends Struct<VNSmartCamObservation> {
         .cast<VNSmartCamObservation>();
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<VNSmartCamObservation> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -32814,7 +32347,7 @@ class VNSmartCamObservation extends Struct<VNSmartCamObservation> {
 
   static void encodeWithCoder(
     Pointer<VNSmartCamObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -32834,9 +32367,9 @@ class VNSmartCamObservation extends Struct<VNSmartCamObservation> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<VNSmartCamObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -32846,10 +32379,10 @@ class VNSmartCamObservation extends Struct<VNSmartCamObservation> {
     );
   }
 
-  static Pointer<Void> initWithRequestRevision(
+  static Pointer initWithRequestRevision(
     Pointer<VNSmartCamObservation> _self,
     int arg, {
-    @required Pointer<Void> smartCamprints,
+    @required Pointer smartCamprints,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_Uint64_p_returns_p(
@@ -32862,7 +32395,7 @@ class VNSmartCamObservation extends Struct<VNSmartCamObservation> {
 
   static int isEqual(
     Pointer<VNSmartCamObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -32874,7 +32407,7 @@ class VNSmartCamObservation extends Struct<VNSmartCamObservation> {
 
   static void setSmartCamprints(
     Pointer<VNSmartCamObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -32884,7 +32417,7 @@ class VNSmartCamObservation extends Struct<VNSmartCamObservation> {
     );
   }
 
-  static Pointer<Void> smartCamprintVersion(
+  static Pointer smartCamprintVersion(
     Pointer<VNSmartCamObservation> _self,
   ) {
     _openDynamicLibrary();
@@ -32894,7 +32427,7 @@ class VNSmartCamObservation extends Struct<VNSmartCamObservation> {
     );
   }
 
-  static Pointer<Void> smartCamprints(
+  static Pointer smartCamprints(
     Pointer<VNSmartCamObservation> _self,
   ) {
     _openDynamicLibrary();
@@ -32905,11 +32438,9 @@ class VNSmartCamObservation extends Struct<VNSmartCamObservation> {
   }
 }
 
-/// Objective-C class _VNSmartCamprint_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNSmartCamprint extends Struct<VNSmartCamprint> {
   factory VNSmartCamprint._() {
@@ -32921,11 +32452,9 @@ class VNSmartCamprint extends Struct<VNSmartCamprint> {
   }
 }
 
-/// Objective-C class _VNSuggestionsLogger_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNSuggestionsLogger extends Struct<VNSuggestionsLogger> {
   factory VNSuggestionsLogger._() {
@@ -32936,9 +32465,9 @@ class VNSuggestionsLogger extends Struct<VNSuggestionsLogger> {
     return _objc.allocate("VNSuggestionsLogger").cast<VNSuggestionsLogger>();
   }
 
-  static Pointer<Void> initWithOptions(
+  static Pointer initWithOptions(
     Pointer<VNSuggestionsLogger> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int logEnabled,
   }) {
     _openDynamicLibrary();
@@ -32952,7 +32481,7 @@ class VNSuggestionsLogger extends Struct<VNSuggestionsLogger> {
 
   static void logAllSuggestons(
     Pointer<VNSuggestionsLogger> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -32964,7 +32493,7 @@ class VNSuggestionsLogger extends Struct<VNSuggestionsLogger> {
 
   static void logConnectedGroups(
     Pointer<VNSuggestionsLogger> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -32976,7 +32505,7 @@ class VNSuggestionsLogger extends Struct<VNSuggestionsLogger> {
 
   static void logFilteredByInputQuerySuggestons(
     Pointer<VNSuggestionsLogger> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -32988,7 +32517,7 @@ class VNSuggestionsLogger extends Struct<VNSuggestionsLogger> {
 
   static void logFinalSuggestionsList(
     Pointer<VNSuggestionsLogger> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -33000,7 +32529,7 @@ class VNSuggestionsLogger extends Struct<VNSuggestionsLogger> {
 
   static void logInputFaceIdsWithFlags(
     Pointer<VNSuggestionsLogger> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -33012,7 +32541,7 @@ class VNSuggestionsLogger extends Struct<VNSuggestionsLogger> {
 
   static void logString(
     Pointer<VNSuggestionsLogger> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -33024,8 +32553,8 @@ class VNSuggestionsLogger extends Struct<VNSuggestionsLogger> {
 
   static void logSuggestons(
     Pointer<VNSuggestionsLogger> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> description,
+    Pointer arg, {
+    @required Pointer description,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -33037,11 +32566,9 @@ class VNSuggestionsLogger extends Struct<VNSuggestionsLogger> {
   }
 }
 
-/// Objective-C class _VNSupportedImageSize_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNSupportedImageSize extends Struct<VNSupportedImageSize> {
   factory VNSupportedImageSize._() {
@@ -33082,11 +32609,11 @@ class VNSupportedImageSize extends Struct<VNSupportedImageSize> {
     );
   }
 
-  static Pointer<Void> initWithIdealFormat(
+  static Pointer initWithIdealFormat(
     Pointer<VNSupportedImageSize> _self,
     int arg, {
-    @required Pointer<Void> pixelsWideRange,
-    @required Pointer<Void> pixelsHighRange,
+    @required Pointer pixelsWideRange,
+    @required Pointer pixelsHighRange,
     @required int aspectRatioHandling,
     @required int idealOrientation,
     @required int orientationAgnostic,
@@ -33129,7 +32656,7 @@ class VNSupportedImageSize extends Struct<VNSupportedImageSize> {
     );
   }
 
-  static Pointer<Void> pixelsHighRange(
+  static Pointer pixelsHighRange(
     Pointer<VNSupportedImageSize> _self,
   ) {
     _openDynamicLibrary();
@@ -33139,7 +32666,7 @@ class VNSupportedImageSize extends Struct<VNSupportedImageSize> {
     );
   }
 
-  static Pointer<Void> pixelsWideRange(
+  static Pointer pixelsWideRange(
     Pointer<VNSupportedImageSize> _self,
   ) {
     _openDynamicLibrary();
@@ -33150,11 +32677,9 @@ class VNSupportedImageSize extends Struct<VNSupportedImageSize> {
   }
 }
 
-/// Objective-C class _VNTargetedImageRequest_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNTargetedImageRequest extends Struct<VNTargetedImageRequest> {
   factory VNTargetedImageRequest._() {
@@ -33177,11 +32702,11 @@ class VNTargetedImageRequest extends Struct<VNTargetedImageRequest> {
     );
   }
 
-  static Pointer<Void> initWithName(
+  static Pointer initWithName(
     Pointer<VNTargetedImageRequest> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> options,
-    @required Pointer<Void> completionHandler,
+    Pointer arg, {
+    @required Pointer options,
+    @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -33193,10 +32718,10 @@ class VNTargetedImageRequest extends Struct<VNTargetedImageRequest> {
     );
   }
 
-  static Pointer<Void> initWithTargetedCGImage$completionHandler$(
+  static Pointer initWithTargetedCGImage$completionHandler$(
     Pointer<VNTargetedImageRequest> _self,
-    Pointer<Pointer<Void>> arg, {
-    @required Pointer<Void> completionHandler,
+    Pointer<Pointer> arg, {
+    @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -33207,11 +32732,11 @@ class VNTargetedImageRequest extends Struct<VNTargetedImageRequest> {
     );
   }
 
-  static Pointer<Void> initWithTargetedCGImage$options$completionHandler$(
+  static Pointer initWithTargetedCGImage$options$completionHandler$(
     Pointer<VNTargetedImageRequest> _self,
-    Pointer<Pointer<Void>> arg, {
-    @required Pointer<Void> options,
-    @required Pointer<Void> completionHandler,
+    Pointer<Pointer> arg, {
+    @required Pointer options,
+    @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -33223,13 +32748,12 @@ class VNTargetedImageRequest extends Struct<VNTargetedImageRequest> {
     );
   }
 
-  static Pointer<Void>
-      initWithTargetedCGImage$orientation$options$completionHandler$(
+  static Pointer initWithTargetedCGImage$orientation$options$completionHandler$(
     Pointer<VNTargetedImageRequest> _self,
-    Pointer<Pointer<Void>> arg, {
+    Pointer<Pointer> arg, {
     @required int orientation,
-    @required Pointer<Void> options,
-    @required Pointer<Void> completionHandler,
+    @required Pointer options,
+    @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_Uint32_p_p_returns_p(
@@ -33243,9 +32767,9 @@ class VNTargetedImageRequest extends Struct<VNTargetedImageRequest> {
     );
   }
 
-  static Pointer<Void> initWithTargetedCGImage$(
+  static Pointer initWithTargetedCGImage$(
     Pointer<VNTargetedImageRequest> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -33255,10 +32779,10 @@ class VNTargetedImageRequest extends Struct<VNTargetedImageRequest> {
     );
   }
 
-  static Pointer<Void> initWithTargetedCGImage$options$(
+  static Pointer initWithTargetedCGImage$options$(
     Pointer<VNTargetedImageRequest> _self,
-    Pointer<Pointer<Void>> arg, {
-    @required Pointer<Void> options,
+    Pointer<Pointer> arg, {
+    @required Pointer options,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -33269,11 +32793,11 @@ class VNTargetedImageRequest extends Struct<VNTargetedImageRequest> {
     );
   }
 
-  static Pointer<Void> initWithTargetedCGImage$orientation$options$(
+  static Pointer initWithTargetedCGImage$orientation$options$(
     Pointer<VNTargetedImageRequest> _self,
-    Pointer<Pointer<Void>> arg, {
+    Pointer<Pointer> arg, {
     @required int orientation,
-    @required Pointer<Void> options,
+    @required Pointer options,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_Uint32_p_returns_p(
@@ -33285,10 +32809,10 @@ class VNTargetedImageRequest extends Struct<VNTargetedImageRequest> {
     );
   }
 
-  static Pointer<Void> initWithTargetedCIImage$completionHandler$(
+  static Pointer initWithTargetedCIImage$completionHandler$(
     Pointer<VNTargetedImageRequest> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> completionHandler,
+    Pointer arg, {
+    @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -33299,11 +32823,11 @@ class VNTargetedImageRequest extends Struct<VNTargetedImageRequest> {
     );
   }
 
-  static Pointer<Void> initWithTargetedCIImage$options$completionHandler$(
+  static Pointer initWithTargetedCIImage$options$completionHandler$(
     Pointer<VNTargetedImageRequest> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> options,
-    @required Pointer<Void> completionHandler,
+    Pointer arg, {
+    @required Pointer options,
+    @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -33315,13 +32839,12 @@ class VNTargetedImageRequest extends Struct<VNTargetedImageRequest> {
     );
   }
 
-  static Pointer<Void>
-      initWithTargetedCIImage$orientation$options$completionHandler$(
+  static Pointer initWithTargetedCIImage$orientation$options$completionHandler$(
     Pointer<VNTargetedImageRequest> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int orientation,
-    @required Pointer<Void> options,
-    @required Pointer<Void> completionHandler,
+    @required Pointer options,
+    @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_Uint32_p_p_returns_p(
@@ -33335,9 +32858,9 @@ class VNTargetedImageRequest extends Struct<VNTargetedImageRequest> {
     );
   }
 
-  static Pointer<Void> initWithTargetedCIImage$(
+  static Pointer initWithTargetedCIImage$(
     Pointer<VNTargetedImageRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -33347,10 +32870,10 @@ class VNTargetedImageRequest extends Struct<VNTargetedImageRequest> {
     );
   }
 
-  static Pointer<Void> initWithTargetedCIImage$options$(
+  static Pointer initWithTargetedCIImage$options$(
     Pointer<VNTargetedImageRequest> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> options,
+    Pointer arg, {
+    @required Pointer options,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -33361,11 +32884,11 @@ class VNTargetedImageRequest extends Struct<VNTargetedImageRequest> {
     );
   }
 
-  static Pointer<Void> initWithTargetedCIImage$orientation$options$(
+  static Pointer initWithTargetedCIImage$orientation$options$(
     Pointer<VNTargetedImageRequest> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int orientation,
-    @required Pointer<Void> options,
+    @required Pointer options,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_Uint32_p_returns_p(
@@ -33377,10 +32900,10 @@ class VNTargetedImageRequest extends Struct<VNTargetedImageRequest> {
     );
   }
 
-  static Pointer<Void> initWithTargetedCVPixelBuffer$completionHandler$(
+  static Pointer initWithTargetedCVPixelBuffer$completionHandler$(
     Pointer<VNTargetedImageRequest> _self,
-    Pointer<Pointer<Void>> arg, {
-    @required Pointer<Void> completionHandler,
+    Pointer<Pointer> arg, {
+    @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -33391,11 +32914,11 @@ class VNTargetedImageRequest extends Struct<VNTargetedImageRequest> {
     );
   }
 
-  static Pointer<Void> initWithTargetedCVPixelBuffer$options$completionHandler$(
+  static Pointer initWithTargetedCVPixelBuffer$options$completionHandler$(
     Pointer<VNTargetedImageRequest> _self,
-    Pointer<Pointer<Void>> arg, {
-    @required Pointer<Void> options,
-    @required Pointer<Void> completionHandler,
+    Pointer<Pointer> arg, {
+    @required Pointer options,
+    @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -33408,13 +32931,13 @@ class VNTargetedImageRequest extends Struct<VNTargetedImageRequest> {
     );
   }
 
-  static Pointer<Void>
+  static Pointer
       initWithTargetedCVPixelBuffer$orientation$options$completionHandler$(
     Pointer<VNTargetedImageRequest> _self,
-    Pointer<Pointer<Void>> arg, {
+    Pointer<Pointer> arg, {
     @required int orientation,
-    @required Pointer<Void> options,
-    @required Pointer<Void> completionHandler,
+    @required Pointer options,
+    @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_Uint32_p_p_returns_p(
@@ -33428,9 +32951,9 @@ class VNTargetedImageRequest extends Struct<VNTargetedImageRequest> {
     );
   }
 
-  static Pointer<Void> initWithTargetedCVPixelBuffer$(
+  static Pointer initWithTargetedCVPixelBuffer$(
     Pointer<VNTargetedImageRequest> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -33440,10 +32963,10 @@ class VNTargetedImageRequest extends Struct<VNTargetedImageRequest> {
     );
   }
 
-  static Pointer<Void> initWithTargetedCVPixelBuffer$options$(
+  static Pointer initWithTargetedCVPixelBuffer$options$(
     Pointer<VNTargetedImageRequest> _self,
-    Pointer<Pointer<Void>> arg, {
-    @required Pointer<Void> options,
+    Pointer<Pointer> arg, {
+    @required Pointer options,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -33454,11 +32977,11 @@ class VNTargetedImageRequest extends Struct<VNTargetedImageRequest> {
     );
   }
 
-  static Pointer<Void> initWithTargetedCVPixelBuffer$orientation$options$(
+  static Pointer initWithTargetedCVPixelBuffer$orientation$options$(
     Pointer<VNTargetedImageRequest> _self,
-    Pointer<Pointer<Void>> arg, {
+    Pointer<Pointer> arg, {
     @required int orientation,
-    @required Pointer<Void> options,
+    @required Pointer options,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_Uint32_p_returns_p(
@@ -33470,10 +32993,10 @@ class VNTargetedImageRequest extends Struct<VNTargetedImageRequest> {
     );
   }
 
-  static Pointer<Void> initWithTargetedImageData$completionHandler$(
+  static Pointer initWithTargetedImageData$completionHandler$(
     Pointer<VNTargetedImageRequest> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> completionHandler,
+    Pointer arg, {
+    @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -33484,11 +33007,11 @@ class VNTargetedImageRequest extends Struct<VNTargetedImageRequest> {
     );
   }
 
-  static Pointer<Void> initWithTargetedImageData$options$completionHandler$(
+  static Pointer initWithTargetedImageData$options$completionHandler$(
     Pointer<VNTargetedImageRequest> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> options,
-    @required Pointer<Void> completionHandler,
+    Pointer arg, {
+    @required Pointer options,
+    @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -33500,13 +33023,13 @@ class VNTargetedImageRequest extends Struct<VNTargetedImageRequest> {
     );
   }
 
-  static Pointer<Void>
+  static Pointer
       initWithTargetedImageData$orientation$options$completionHandler$(
     Pointer<VNTargetedImageRequest> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int orientation,
-    @required Pointer<Void> options,
-    @required Pointer<Void> completionHandler,
+    @required Pointer options,
+    @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_Uint32_p_p_returns_p(
@@ -33520,9 +33043,9 @@ class VNTargetedImageRequest extends Struct<VNTargetedImageRequest> {
     );
   }
 
-  static Pointer<Void> initWithTargetedImageData$(
+  static Pointer initWithTargetedImageData$(
     Pointer<VNTargetedImageRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -33532,10 +33055,10 @@ class VNTargetedImageRequest extends Struct<VNTargetedImageRequest> {
     );
   }
 
-  static Pointer<Void> initWithTargetedImageData$options$(
+  static Pointer initWithTargetedImageData$options$(
     Pointer<VNTargetedImageRequest> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> options,
+    Pointer arg, {
+    @required Pointer options,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -33546,11 +33069,11 @@ class VNTargetedImageRequest extends Struct<VNTargetedImageRequest> {
     );
   }
 
-  static Pointer<Void> initWithTargetedImageData$orientation$options$(
+  static Pointer initWithTargetedImageData$orientation$options$(
     Pointer<VNTargetedImageRequest> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int orientation,
-    @required Pointer<Void> options,
+    @required Pointer options,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_Uint32_p_returns_p(
@@ -33562,10 +33085,10 @@ class VNTargetedImageRequest extends Struct<VNTargetedImageRequest> {
     );
   }
 
-  static Pointer<Void> initWithTargetedImageSpecifier(
+  static Pointer initWithTargetedImageSpecifier(
     Pointer<VNTargetedImageRequest> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> completionHandler,
+    Pointer arg, {
+    @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -33576,10 +33099,10 @@ class VNTargetedImageRequest extends Struct<VNTargetedImageRequest> {
     );
   }
 
-  static Pointer<Void> initWithTargetedImageURL$completionHandler$(
+  static Pointer initWithTargetedImageURL$completionHandler$(
     Pointer<VNTargetedImageRequest> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> completionHandler,
+    Pointer arg, {
+    @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -33590,11 +33113,11 @@ class VNTargetedImageRequest extends Struct<VNTargetedImageRequest> {
     );
   }
 
-  static Pointer<Void> initWithTargetedImageURL$options$completionHandler$(
+  static Pointer initWithTargetedImageURL$options$completionHandler$(
     Pointer<VNTargetedImageRequest> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> options,
-    @required Pointer<Void> completionHandler,
+    Pointer arg, {
+    @required Pointer options,
+    @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -33606,13 +33129,13 @@ class VNTargetedImageRequest extends Struct<VNTargetedImageRequest> {
     );
   }
 
-  static Pointer<Void>
+  static Pointer
       initWithTargetedImageURL$orientation$options$completionHandler$(
     Pointer<VNTargetedImageRequest> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int orientation,
-    @required Pointer<Void> options,
-    @required Pointer<Void> completionHandler,
+    @required Pointer options,
+    @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_Uint32_p_p_returns_p(
@@ -33626,9 +33149,9 @@ class VNTargetedImageRequest extends Struct<VNTargetedImageRequest> {
     );
   }
 
-  static Pointer<Void> initWithTargetedImageURL$(
+  static Pointer initWithTargetedImageURL$(
     Pointer<VNTargetedImageRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -33638,10 +33161,10 @@ class VNTargetedImageRequest extends Struct<VNTargetedImageRequest> {
     );
   }
 
-  static Pointer<Void> initWithTargetedImageURL$options$(
+  static Pointer initWithTargetedImageURL$options$(
     Pointer<VNTargetedImageRequest> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> options,
+    Pointer arg, {
+    @required Pointer options,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -33652,11 +33175,11 @@ class VNTargetedImageRequest extends Struct<VNTargetedImageRequest> {
     );
   }
 
-  static Pointer<Void> initWithTargetedImageURL$orientation$options$(
+  static Pointer initWithTargetedImageURL$orientation$options$(
     Pointer<VNTargetedImageRequest> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int orientation,
-    @required Pointer<Void> options,
+    @required Pointer options,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_Uint32_p_returns_p(
@@ -33668,7 +33191,7 @@ class VNTargetedImageRequest extends Struct<VNTargetedImageRequest> {
     );
   }
 
-  static Pointer<Void> newDefaultRequestInstance(
+  static Pointer newDefaultRequestInstance(
     Pointer<VNTargetedImageRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -33678,9 +33201,9 @@ class VNTargetedImageRequest extends Struct<VNTargetedImageRequest> {
     );
   }
 
-  static Pointer<Void> requiredTargetedImageSpecifierReturningError(
+  static Pointer requiredTargetedImageSpecifierReturningError(
     Pointer<VNTargetedImageRequest> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -33690,7 +33213,7 @@ class VNTargetedImageRequest extends Struct<VNTargetedImageRequest> {
     );
   }
 
-  static Pointer<Void> sequencedRequestPreviousObservationsKey(
+  static Pointer sequencedRequestPreviousObservationsKey(
     Pointer<VNTargetedImageRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -33700,7 +33223,7 @@ class VNTargetedImageRequest extends Struct<VNTargetedImageRequest> {
     );
   }
 
-  static Pointer<Void> targetedImageSpecifier(
+  static Pointer targetedImageSpecifier(
     Pointer<VNTargetedImageRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -33712,7 +33235,7 @@ class VNTargetedImageRequest extends Struct<VNTargetedImageRequest> {
 
   static int willAcceptCachedResultsFromRequestWithConfiguration(
     Pointer<VNTargetedImageRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -33723,11 +33246,9 @@ class VNTargetedImageRequest extends Struct<VNTargetedImageRequest> {
   }
 }
 
-/// Objective-C class _VNTextObservation_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNTextObservation extends Struct<VNTextObservation> {
   factory VNTextObservation._() {
@@ -33738,7 +33259,7 @@ class VNTextObservation extends Struct<VNTextObservation> {
     return _objc.allocate("VNTextObservation").cast<VNTextObservation>();
   }
 
-  static Pointer<Void> characterBoxes(
+  static Pointer characterBoxes(
     Pointer<VNTextObservation> _self,
   ) {
     _openDynamicLibrary();
@@ -33748,9 +33269,9 @@ class VNTextObservation extends Struct<VNTextObservation> {
     );
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<VNTextObservation> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -33762,7 +33283,7 @@ class VNTextObservation extends Struct<VNTextObservation> {
 
   static void encodeWithCoder(
     Pointer<VNTextObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -33782,9 +33303,9 @@ class VNTextObservation extends Struct<VNTextObservation> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<VNTextObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -33796,7 +33317,7 @@ class VNTextObservation extends Struct<VNTextObservation> {
 
   static int isEqual(
     Pointer<VNTextObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -33808,7 +33329,7 @@ class VNTextObservation extends Struct<VNTextObservation> {
 
   static void setCharacterBoxes(
     Pointer<VNTextObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -33820,7 +33341,7 @@ class VNTextObservation extends Struct<VNTextObservation> {
 
   static void setText(
     Pointer<VNTextObservation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -33830,7 +33351,7 @@ class VNTextObservation extends Struct<VNTextObservation> {
     );
   }
 
-  static Pointer<Void> text(
+  static Pointer text(
     Pointer<VNTextObservation> _self,
   ) {
     _openDynamicLibrary();
@@ -33841,11 +33362,9 @@ class VNTextObservation extends Struct<VNTextObservation> {
   }
 }
 
-/// Objective-C class _VNTorsoprint_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNTorsoprint extends Struct<VNTorsoprint> {
   factory VNTorsoprint._() {
@@ -33857,11 +33376,9 @@ class VNTorsoprint extends Struct<VNTorsoprint> {
   }
 }
 
-/// Objective-C class _VNTorsoprintGenerator_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNTorsoprintGenerator extends Struct<VNTorsoprintGenerator> {
   factory VNTorsoprintGenerator._() {
@@ -33876,7 +33393,7 @@ class VNTorsoprintGenerator extends Struct<VNTorsoprintGenerator> {
 
   static int completeInitializationAndReturnError(
     Pointer<VNTorsoprintGenerator> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -33896,12 +33413,12 @@ class VNTorsoprintGenerator extends Struct<VNTorsoprintGenerator> {
     );
   }
 
-  static Pointer<Void> processWithOptions(
+  static Pointer processWithOptions(
     Pointer<VNTorsoprintGenerator> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> regionOfInterest,
-    @required Pointer<Void> warningRecorder,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer regionOfInterest,
+    @required Pointer warningRecorder,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_returns_p(
@@ -33916,11 +33433,9 @@ class VNTorsoprintGenerator extends Struct<VNTorsoprintGenerator> {
   }
 }
 
-/// Objective-C class _VNTrackFaceRequest_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNTrackFaceRequest extends Struct<VNTrackFaceRequest> {
   factory VNTrackFaceRequest._() {
@@ -33931,10 +33446,10 @@ class VNTrackFaceRequest extends Struct<VNTrackFaceRequest> {
     return _objc.allocate("VNTrackFaceRequest").cast<VNTrackFaceRequest>();
   }
 
-  static Pointer<Void> initWithFaceObservation$completionHandler$(
+  static Pointer initWithFaceObservation$completionHandler$(
     Pointer<VNTrackFaceRequest> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> completionHandler,
+    Pointer arg, {
+    @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -33945,9 +33460,9 @@ class VNTrackFaceRequest extends Struct<VNTrackFaceRequest> {
     );
   }
 
-  static Pointer<Void> initWithFaceObservation$(
+  static Pointer initWithFaceObservation$(
     Pointer<VNTrackFaceRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -33957,7 +33472,7 @@ class VNTrackFaceRequest extends Struct<VNTrackFaceRequest> {
     );
   }
 
-  static Pointer<Void> trackerType(
+  static Pointer trackerType(
     Pointer<VNTrackFaceRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -33968,11 +33483,9 @@ class VNTrackFaceRequest extends Struct<VNTrackFaceRequest> {
   }
 }
 
-/// Objective-C class _VNTrackObjectRequest_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNTrackObjectRequest extends Struct<VNTrackObjectRequest> {
   factory VNTrackObjectRequest._() {
@@ -33983,10 +33496,10 @@ class VNTrackObjectRequest extends Struct<VNTrackObjectRequest> {
     return _objc.allocate("VNTrackObjectRequest").cast<VNTrackObjectRequest>();
   }
 
-  static Pointer<Void> initWithDetectedObjectObservation$completionHandler$(
+  static Pointer initWithDetectedObjectObservation$completionHandler$(
     Pointer<VNTrackObjectRequest> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> completionHandler,
+    Pointer arg, {
+    @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -33997,9 +33510,9 @@ class VNTrackObjectRequest extends Struct<VNTrackObjectRequest> {
     );
   }
 
-  static Pointer<Void> initWithDetectedObjectObservation$(
+  static Pointer initWithDetectedObjectObservation$(
     Pointer<VNTrackObjectRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -34009,7 +33522,7 @@ class VNTrackObjectRequest extends Struct<VNTrackObjectRequest> {
     );
   }
 
-  static Pointer<Void> trackerType(
+  static Pointer trackerType(
     Pointer<VNTrackObjectRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -34020,11 +33533,9 @@ class VNTrackObjectRequest extends Struct<VNTrackObjectRequest> {
   }
 }
 
-/// Objective-C class _VNTrackRectangleRequest_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNTrackRectangleRequest extends Struct<VNTrackRectangleRequest> {
   factory VNTrackRectangleRequest._() {
@@ -34037,10 +33548,10 @@ class VNTrackRectangleRequest extends Struct<VNTrackRectangleRequest> {
         .cast<VNTrackRectangleRequest>();
   }
 
-  static Pointer<Void> initWithRectangleObservation$completionHandler$(
+  static Pointer initWithRectangleObservation$completionHandler$(
     Pointer<VNTrackRectangleRequest> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> completionHandler,
+    Pointer arg, {
+    @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -34051,9 +33562,9 @@ class VNTrackRectangleRequest extends Struct<VNTrackRectangleRequest> {
     );
   }
 
-  static Pointer<Void> initWithRectangleObservation$(
+  static Pointer initWithRectangleObservation$(
     Pointer<VNTrackRectangleRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -34063,7 +33574,7 @@ class VNTrackRectangleRequest extends Struct<VNTrackRectangleRequest> {
     );
   }
 
-  static Pointer<Void> trackerType(
+  static Pointer trackerType(
     Pointer<VNTrackRectangleRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -34074,11 +33585,9 @@ class VNTrackRectangleRequest extends Struct<VNTrackRectangleRequest> {
   }
 }
 
-/// Objective-C class _VNTracker_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNTracker extends Struct<VNTracker> {
   factory VNTracker._() {
@@ -34089,10 +33598,10 @@ class VNTracker extends Struct<VNTracker> {
     return _objc.allocate("VNTracker").cast<VNTracker>();
   }
 
-  static Pointer<Void> initWithOptions(
+  static Pointer initWithOptions(
     Pointer<VNTracker> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -34113,7 +33622,7 @@ class VNTracker extends Struct<VNTracker> {
     );
   }
 
-  static Pointer<Void> key(
+  static Pointer key(
     Pointer<VNTracker> _self,
   ) {
     _openDynamicLibrary();
@@ -34123,7 +33632,7 @@ class VNTracker extends Struct<VNTracker> {
     );
   }
 
-  static Pointer<Void> lastTrackedBBox(
+  static Pointer lastTrackedBBox(
     Pointer<VNTracker> _self,
   ) {
     _openDynamicLibrary();
@@ -34133,7 +33642,7 @@ class VNTracker extends Struct<VNTracker> {
     );
   }
 
-  static Pointer<Void> level(
+  static Pointer level(
     Pointer<VNTracker> _self,
   ) {
     _openDynamicLibrary();
@@ -34155,7 +33664,7 @@ class VNTracker extends Struct<VNTracker> {
 
   static int reset(
     Pointer<VNTracker> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -34167,7 +33676,7 @@ class VNTracker extends Struct<VNTracker> {
 
   static void setLastTrackedBBox(
     Pointer<VNTracker> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -34189,11 +33698,11 @@ class VNTracker extends Struct<VNTracker> {
     );
   }
 
-  static Pointer<Void> setTrackedObjects(
+  static Pointer setTrackedObjects(
     Pointer<VNTracker> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> inFrame,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer inFrame,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -34205,10 +33714,10 @@ class VNTracker extends Struct<VNTracker> {
     );
   }
 
-  static Pointer<Void> trackInFrame(
+  static Pointer trackInFrame(
     Pointer<VNTracker> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -34230,11 +33739,9 @@ class VNTracker extends Struct<VNTracker> {
   }
 }
 
-/// Objective-C class _VNTrackerManager_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNTrackerManager extends Struct<VNTrackerManager> {
   factory VNTrackerManager._() {
@@ -34245,7 +33752,7 @@ class VNTrackerManager extends Struct<VNTrackerManager> {
     return _objc.allocate("VNTrackerManager").cast<VNTrackerManager>();
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<VNTrackerManager> _self,
   ) {
     _openDynamicLibrary();
@@ -34257,7 +33764,7 @@ class VNTrackerManager extends Struct<VNTrackerManager> {
 
   static void releaseTracker(
     Pointer<VNTrackerManager> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -34267,10 +33774,10 @@ class VNTrackerManager extends Struct<VNTrackerManager> {
     );
   }
 
-  static Pointer<Void> trackerWithOptions(
+  static Pointer trackerWithOptions(
     Pointer<VNTrackerManager> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -34282,11 +33789,9 @@ class VNTrackerManager extends Struct<VNTrackerManager> {
   }
 }
 
-/// Objective-C class _VNTrackingRequest_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNTrackingRequest extends Struct<VNTrackingRequest> {
   factory VNTrackingRequest._() {
@@ -34309,7 +33814,7 @@ class VNTrackingRequest extends Struct<VNTrackingRequest> {
 
   static void applyConfigurationOfRequest(
     Pointer<VNTrackingRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -34319,10 +33824,10 @@ class VNTrackingRequest extends Struct<VNTrackingRequest> {
     );
   }
 
-  static Pointer<Void> initWithDetectedObjectObservation$completionHandler$(
+  static Pointer initWithDetectedObjectObservation$completionHandler$(
     Pointer<VNTrackingRequest> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> completionHandler,
+    Pointer arg, {
+    @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -34333,9 +33838,9 @@ class VNTrackingRequest extends Struct<VNTrackingRequest> {
     );
   }
 
-  static Pointer<Void> initWithDetectedObjectObservation$(
+  static Pointer initWithDetectedObjectObservation$(
     Pointer<VNTrackingRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -34345,11 +33850,11 @@ class VNTrackingRequest extends Struct<VNTrackingRequest> {
     );
   }
 
-  static Pointer<Void> initWithName(
+  static Pointer initWithName(
     Pointer<VNTrackingRequest> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> options,
-    @required Pointer<Void> completionHandler,
+    Pointer arg, {
+    @required Pointer options,
+    @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -34361,7 +33866,7 @@ class VNTrackingRequest extends Struct<VNTrackingRequest> {
     );
   }
 
-  static Pointer<Void> inputObservation(
+  static Pointer inputObservation(
     Pointer<VNTrackingRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -34374,8 +33879,8 @@ class VNTrackingRequest extends Struct<VNTrackingRequest> {
   static int internalPerformRevision(
     Pointer<VNTrackingRequest> _self,
     int arg, {
-    @required Pointer<Void> inContext,
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer inContext,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_Uint64_p_p_returns_Int8(
@@ -34397,7 +33902,7 @@ class VNTrackingRequest extends Struct<VNTrackingRequest> {
     );
   }
 
-  static Pointer<Void> newDefaultRequestInstance(
+  static Pointer newDefaultRequestInstance(
     Pointer<VNTrackingRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -34407,7 +33912,7 @@ class VNTrackingRequest extends Struct<VNTrackingRequest> {
     );
   }
 
-  static Pointer<Void> sequencedRequestPreviousObservationsKey(
+  static Pointer sequencedRequestPreviousObservationsKey(
     Pointer<VNTrackingRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -34419,7 +33924,7 @@ class VNTrackingRequest extends Struct<VNTrackingRequest> {
 
   static void setInputObservation(
     Pointer<VNTrackingRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -34453,7 +33958,7 @@ class VNTrackingRequest extends Struct<VNTrackingRequest> {
     );
   }
 
-  static Pointer<Void> trackerType(
+  static Pointer trackerType(
     Pointer<VNTrackingRequest> _self,
   ) {
     _openDynamicLibrary();
@@ -34475,8 +33980,8 @@ class VNTrackingRequest extends Struct<VNTrackingRequest> {
 
   static int warmUpRequestPerformer(
     Pointer<VNTrackingRequest> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -34489,7 +33994,7 @@ class VNTrackingRequest extends Struct<VNTrackingRequest> {
 
   static int willAcceptCachedResultsFromRequestWithConfiguration(
     Pointer<VNTrackingRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -34500,11 +34005,9 @@ class VNTrackingRequest extends Struct<VNTrackingRequest> {
   }
 }
 
-/// Objective-C class _VNTranslationalImageRegistrationRequest_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNTranslationalImageRegistrationRequest
     extends Struct<VNTranslationalImageRegistrationRequest> {
@@ -34520,8 +34023,8 @@ class VNTranslationalImageRegistrationRequest
 
   static int internalPerformInContext(
     Pointer<VNTranslationalImageRegistrationRequest> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -34533,11 +34036,9 @@ class VNTranslationalImageRegistrationRequest
   }
 }
 
-/// Objective-C class _VNUniqueObservationClassCompoundRequest_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNUniqueObservationClassCompoundRequest
     extends Struct<VNUniqueObservationClassCompoundRequest> {
@@ -34553,8 +34054,8 @@ class VNUniqueObservationClassCompoundRequest
 
   static void assignOriginalRequestsResultsFromObservations(
     Pointer<VNUniqueObservationClassCompoundRequest> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> obtainedInPerformingContext,
+    Pointer arg, {
+    @required Pointer obtainedInPerformingContext,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -34566,10 +34067,10 @@ class VNUniqueObservationClassCompoundRequest
     );
   }
 
-  static Pointer<Void> initWithOriginalRequests(
+  static Pointer initWithOriginalRequests(
     Pointer<VNUniqueObservationClassCompoundRequest> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> requestToObservationClassMap,
+    Pointer arg, {
+    @required Pointer requestToObservationClassMap,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -34581,10 +34082,10 @@ class VNUniqueObservationClassCompoundRequest
     );
   }
 
-  static Pointer<Void> initWithSubrequests(
+  static Pointer initWithSubrequests(
     Pointer<VNUniqueObservationClassCompoundRequest> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> uniqueObservationClasses,
+    Pointer arg, {
+    @required Pointer uniqueObservationClasses,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -34595,9 +34096,9 @@ class VNUniqueObservationClassCompoundRequest
     );
   }
 
-  static Pointer<Void> initWithSubrequestsAndUniqueObservationClasses(
+  static Pointer initWithSubrequestsAndUniqueObservationClasses(
     Pointer<VNUniqueObservationClassCompoundRequest> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -34608,11 +34109,9 @@ class VNUniqueObservationClassCompoundRequest
   }
 }
 
-/// Objective-C class _VNValidationUtilities_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNValidationUtilities extends Struct<VNValidationUtilities> {
   factory VNValidationUtilities._() {
@@ -34626,11 +34125,9 @@ class VNValidationUtilities extends Struct<VNValidationUtilities> {
   }
 }
 
-/// Objective-C class _VNVersionParser_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNVersionParser extends Struct<VNVersionParser> {
   factory VNVersionParser._() {
@@ -34642,11 +34139,9 @@ class VNVersionParser extends Struct<VNVersionParser> {
   }
 }
 
-/// Objective-C class _VNWarningRecorder_.
+/// Automatically generated API. Part of [Vision](https://developer.apple.com/documentation/vision?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/vision?language=objc).
 @unsized
 class VNWarningRecorder extends Struct<VNWarningRecorder> {
   factory VNWarningRecorder._() {
@@ -34667,7 +34162,7 @@ class VNWarningRecorder extends Struct<VNWarningRecorder> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<VNWarningRecorder> _self,
   ) {
     _openDynamicLibrary();
@@ -34679,8 +34174,8 @@ class VNWarningRecorder extends Struct<VNWarningRecorder> {
 
   static void recordWarning(
     Pointer<VNWarningRecorder> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> value,
+    Pointer arg, {
+    @required Pointer value,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -34693,7 +34188,7 @@ class VNWarningRecorder extends Struct<VNWarningRecorder> {
 
   static void recordWarnings(
     Pointer<VNWarningRecorder> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -34705,7 +34200,7 @@ class VNWarningRecorder extends Struct<VNWarningRecorder> {
 
   static void setWarnings(
     Pointer<VNWarningRecorder> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -34715,9 +34210,9 @@ class VNWarningRecorder extends Struct<VNWarningRecorder> {
     );
   }
 
-  static Pointer<Void> valueForWarning(
+  static Pointer valueForWarning(
     Pointer<VNWarningRecorder> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -34727,7 +34222,7 @@ class VNWarningRecorder extends Struct<VNWarningRecorder> {
     );
   }
 
-  static Pointer<Void> warnings(
+  static Pointer warnings(
     Pointer<VNWarningRecorder> _self,
   ) {
     _openDynamicLibrary();

@@ -1,4 +1,4 @@
-/// [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc) (Objective-C library).
+/// Automatically generated API for [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 library cupertino_ffi.cloudkit;
@@ -7,6 +7,8 @@ import 'dart:ffi';
 import 'package:ffi/ffi.dart';
 import 'package:meta/meta.dart';
 import 'package:cupertino_ffi/objective_c.dart' as _objc;
+export 'package:cupertino_ffi/core_foundation.dart'
+    show arcPush, arcPop, arcReturn, arcFieldGet, arcFieldSet;
 
 bool _isDynamicLibraryOpened = false;
 
@@ -19,11 +21,9 @@ void _openDynamicLibrary() {
   }
 }
 
-/// Objective-C class _CKAcceptSharesOperation_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKAcceptSharesOperation extends Struct<CKAcceptSharesOperation> {
   factory CKAcceptSharesOperation._() {
@@ -38,7 +38,7 @@ class CKAcceptSharesOperation extends Struct<CKAcceptSharesOperation> {
 
   static int CKOperationShouldRun(
     Pointer<CKAcceptSharesOperation> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -48,7 +48,7 @@ class CKAcceptSharesOperation extends Struct<CKAcceptSharesOperation> {
     );
   }
 
-  static Pointer<Void> acceptSharesCompletionBlock(
+  static Pointer acceptSharesCompletionBlock(
     Pointer<CKAcceptSharesOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -58,7 +58,7 @@ class CKAcceptSharesOperation extends Struct<CKAcceptSharesOperation> {
     );
   }
 
-  static Pointer<Void> activityCreate(
+  static Pointer activityCreate(
     Pointer<CKAcceptSharesOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -68,7 +68,7 @@ class CKAcceptSharesOperation extends Struct<CKAcceptSharesOperation> {
     );
   }
 
-  static Pointer<Void> errorsByShareURL(
+  static Pointer errorsByShareURL(
     Pointer<CKAcceptSharesOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -80,7 +80,7 @@ class CKAcceptSharesOperation extends Struct<CKAcceptSharesOperation> {
 
   static void fillFromOperationInfo(
     Pointer<CKAcceptSharesOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -92,7 +92,7 @@ class CKAcceptSharesOperation extends Struct<CKAcceptSharesOperation> {
 
   static void fillOutOperationInfo(
     Pointer<CKAcceptSharesOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -112,7 +112,7 @@ class CKAcceptSharesOperation extends Struct<CKAcceptSharesOperation> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CKAcceptSharesOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -122,9 +122,9 @@ class CKAcceptSharesOperation extends Struct<CKAcceptSharesOperation> {
     );
   }
 
-  static Pointer<Void> initWithShareMetadatas(
+  static Pointer initWithShareMetadatas(
     Pointer<CKAcceptSharesOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -134,7 +134,7 @@ class CKAcceptSharesOperation extends Struct<CKAcceptSharesOperation> {
     );
   }
 
-  static Pointer<Void> perShareCompletionBlock(
+  static Pointer perShareCompletionBlock(
     Pointer<CKAcceptSharesOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -156,7 +156,7 @@ class CKAcceptSharesOperation extends Struct<CKAcceptSharesOperation> {
 
   static void setAcceptSharesCompletionBlock(
     Pointer<CKAcceptSharesOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -168,7 +168,7 @@ class CKAcceptSharesOperation extends Struct<CKAcceptSharesOperation> {
 
   static void setErrorsByShareURL(
     Pointer<CKAcceptSharesOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -180,7 +180,7 @@ class CKAcceptSharesOperation extends Struct<CKAcceptSharesOperation> {
 
   static void setPerShareCompletionBlock(
     Pointer<CKAcceptSharesOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -192,7 +192,7 @@ class CKAcceptSharesOperation extends Struct<CKAcceptSharesOperation> {
 
   static void setShareMetadatas(
     Pointer<CKAcceptSharesOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -204,7 +204,7 @@ class CKAcceptSharesOperation extends Struct<CKAcceptSharesOperation> {
 
   static void setShareMetadatasByShareURL(
     Pointer<CKAcceptSharesOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -214,7 +214,7 @@ class CKAcceptSharesOperation extends Struct<CKAcceptSharesOperation> {
     );
   }
 
-  static Pointer<Void> shareMetadatas(
+  static Pointer shareMetadatas(
     Pointer<CKAcceptSharesOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -224,7 +224,7 @@ class CKAcceptSharesOperation extends Struct<CKAcceptSharesOperation> {
     );
   }
 
-  static Pointer<Void> shareMetadatasByShareURL(
+  static Pointer shareMetadatasByShareURL(
     Pointer<CKAcceptSharesOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -235,11 +235,9 @@ class CKAcceptSharesOperation extends Struct<CKAcceptSharesOperation> {
   }
 }
 
-/// Objective-C class _CKAcceptSharesOperationInfo_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKAcceptSharesOperationInfo extends Struct<CKAcceptSharesOperationInfo> {
   factory CKAcceptSharesOperationInfo._() {
@@ -264,7 +262,7 @@ class CKAcceptSharesOperationInfo extends Struct<CKAcceptSharesOperationInfo> {
 
   static void encodeWithCoder(
     Pointer<CKAcceptSharesOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -274,9 +272,9 @@ class CKAcceptSharesOperationInfo extends Struct<CKAcceptSharesOperationInfo> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CKAcceptSharesOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -288,7 +286,7 @@ class CKAcceptSharesOperationInfo extends Struct<CKAcceptSharesOperationInfo> {
 
   static void setShareMetadatasToAccept(
     Pointer<CKAcceptSharesOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -298,7 +296,7 @@ class CKAcceptSharesOperationInfo extends Struct<CKAcceptSharesOperationInfo> {
     );
   }
 
-  static Pointer<Void> shareMetadatasToAccept(
+  static Pointer shareMetadatasToAccept(
     Pointer<CKAcceptSharesOperationInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -309,11 +307,9 @@ class CKAcceptSharesOperationInfo extends Struct<CKAcceptSharesOperationInfo> {
   }
 }
 
-/// Objective-C class _CKAccountInfo_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKAccountInfo extends Struct<CKAccountInfo> {
   factory CKAccountInfo._() {
@@ -324,7 +320,7 @@ class CKAccountInfo extends Struct<CKAccountInfo> {
     return _objc.allocate("CKAccountInfo").cast<CKAccountInfo>();
   }
 
-  static Pointer<Void> CKPropertiesDescription(
+  static Pointer CKPropertiesDescription(
     Pointer<CKAccountInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -354,7 +350,7 @@ class CKAccountInfo extends Struct<CKAccountInfo> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CKAccountInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -364,7 +360,7 @@ class CKAccountInfo extends Struct<CKAccountInfo> {
     );
   }
 
-  static Pointer<Void> deviceToDeviceEncryptionAvailabilityError(
+  static Pointer deviceToDeviceEncryptionAvailabilityError(
     Pointer<CKAccountInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -376,7 +372,7 @@ class CKAccountInfo extends Struct<CKAccountInfo> {
 
   static void encodeWithCoder(
     Pointer<CKAccountInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -416,7 +412,7 @@ class CKAccountInfo extends Struct<CKAccountInfo> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CKAccountInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -426,9 +422,9 @@ class CKAccountInfo extends Struct<CKAccountInfo> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CKAccountInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -440,7 +436,7 @@ class CKAccountInfo extends Struct<CKAccountInfo> {
 
   static int isEqual(
     Pointer<CKAccountInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -450,7 +446,7 @@ class CKAccountInfo extends Struct<CKAccountInfo> {
     );
   }
 
-  static Pointer<Void> manateeError(
+  static Pointer manateeError(
     Pointer<CKAccountInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -486,7 +482,7 @@ class CKAccountInfo extends Struct<CKAccountInfo> {
 
   static void setDeviceToDeviceEncryptionAvailabilityError(
     Pointer<CKAccountInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -522,7 +518,7 @@ class CKAccountInfo extends Struct<CKAccountInfo> {
 
   static void setManateeError(
     Pointer<CKAccountInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -555,11 +551,9 @@ class CKAccountInfo extends Struct<CKAccountInfo> {
   }
 }
 
-/// Objective-C class _CKAccountOverrideInfo_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKAccountOverrideInfo extends Struct<CKAccountOverrideInfo> {
   factory CKAccountOverrideInfo._() {
@@ -572,7 +566,7 @@ class CKAccountOverrideInfo extends Struct<CKAccountOverrideInfo> {
         .cast<CKAccountOverrideInfo>();
   }
 
-  static Pointer<Void> CKPropertiesDescription(
+  static Pointer CKPropertiesDescription(
     Pointer<CKAccountOverrideInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -582,7 +576,7 @@ class CKAccountOverrideInfo extends Struct<CKAccountOverrideInfo> {
     );
   }
 
-  static Pointer<Void> accountPropertyOverrides(
+  static Pointer accountPropertyOverrides(
     Pointer<CKAccountOverrideInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -612,9 +606,9 @@ class CKAccountOverrideInfo extends Struct<CKAccountOverrideInfo> {
     );
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<CKAccountOverrideInfo> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -624,7 +618,7 @@ class CKAccountOverrideInfo extends Struct<CKAccountOverrideInfo> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CKAccountOverrideInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -634,7 +628,7 @@ class CKAccountOverrideInfo extends Struct<CKAccountOverrideInfo> {
     );
   }
 
-  static Pointer<Void> email(
+  static Pointer email(
     Pointer<CKAccountOverrideInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -646,7 +640,7 @@ class CKAccountOverrideInfo extends Struct<CKAccountOverrideInfo> {
 
   static void encodeWithCoder(
     Pointer<CKAccountOverrideInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -666,7 +660,7 @@ class CKAccountOverrideInfo extends Struct<CKAccountOverrideInfo> {
     );
   }
 
-  static Pointer<Void> initAnonymousAccount(
+  static Pointer initAnonymousAccount(
     Pointer<CKAccountOverrideInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -676,9 +670,9 @@ class CKAccountOverrideInfo extends Struct<CKAccountOverrideInfo> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CKAccountOverrideInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -688,10 +682,10 @@ class CKAccountOverrideInfo extends Struct<CKAccountOverrideInfo> {
     );
   }
 
-  static Pointer<Void> initWithEmail(
+  static Pointer initWithEmail(
     Pointer<CKAccountOverrideInfo> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> password,
+    Pointer arg, {
+    @required Pointer password,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -704,7 +698,7 @@ class CKAccountOverrideInfo extends Struct<CKAccountOverrideInfo> {
 
   static int isEqual(
     Pointer<CKAccountOverrideInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -724,7 +718,7 @@ class CKAccountOverrideInfo extends Struct<CKAccountOverrideInfo> {
     );
   }
 
-  static Pointer<Void> overridesByDataclass(
+  static Pointer overridesByDataclass(
     Pointer<CKAccountOverrideInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -734,7 +728,7 @@ class CKAccountOverrideInfo extends Struct<CKAccountOverrideInfo> {
     );
   }
 
-  static Pointer<Void> password(
+  static Pointer password(
     Pointer<CKAccountOverrideInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -744,7 +738,7 @@ class CKAccountOverrideInfo extends Struct<CKAccountOverrideInfo> {
     );
   }
 
-  static Pointer<Void> secondEmail(
+  static Pointer secondEmail(
     Pointer<CKAccountOverrideInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -756,7 +750,7 @@ class CKAccountOverrideInfo extends Struct<CKAccountOverrideInfo> {
 
   static void setAccountPropertyOverrides(
     Pointer<CKAccountOverrideInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -804,7 +798,7 @@ class CKAccountOverrideInfo extends Struct<CKAccountOverrideInfo> {
 
   static void setOverridesByDataclass(
     Pointer<CKAccountOverrideInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -816,7 +810,7 @@ class CKAccountOverrideInfo extends Struct<CKAccountOverrideInfo> {
 
   static void setSecondEmail(
     Pointer<CKAccountOverrideInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -827,11 +821,9 @@ class CKAccountOverrideInfo extends Struct<CKAccountOverrideInfo> {
   }
 }
 
-/// Objective-C class _CKAggregateExpressionValidator_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKAggregateExpressionValidator
     extends Struct<CKAggregateExpressionValidator> {
@@ -845,7 +837,7 @@ class CKAggregateExpressionValidator
         .cast<CKAggregateExpressionValidator>();
   }
 
-  static Pointer<Void> CKPropertiesDescription(
+  static Pointer CKPropertiesDescription(
     Pointer<CKAggregateExpressionValidator> _self,
   ) {
     _openDynamicLibrary();
@@ -855,9 +847,9 @@ class CKAggregateExpressionValidator
     );
   }
 
-  static Pointer<Void> initWithValidators(
+  static Pointer initWithValidators(
     Pointer<CKAggregateExpressionValidator> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -869,7 +861,7 @@ class CKAggregateExpressionValidator
 
   static void setSubExpressionValidators(
     Pointer<CKAggregateExpressionValidator> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -879,7 +871,7 @@ class CKAggregateExpressionValidator
     );
   }
 
-  static Pointer<Void> subExpressionValidators(
+  static Pointer subExpressionValidators(
     Pointer<CKAggregateExpressionValidator> _self,
   ) {
     _openDynamicLibrary();
@@ -891,8 +883,8 @@ class CKAggregateExpressionValidator
 
   static int validate(
     Pointer<CKAggregateExpressionValidator> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -904,11 +896,9 @@ class CKAggregateExpressionValidator
   }
 }
 
-/// Objective-C class _CKAggregateZonePCSOperation_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKAggregateZonePCSOperation extends Struct<CKAggregateZonePCSOperation> {
   factory CKAggregateZonePCSOperation._() {
@@ -923,7 +913,7 @@ class CKAggregateZonePCSOperation extends Struct<CKAggregateZonePCSOperation> {
 
   static int CKOperationShouldRun(
     Pointer<CKAggregateZonePCSOperation> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -933,7 +923,7 @@ class CKAggregateZonePCSOperation extends Struct<CKAggregateZonePCSOperation> {
     );
   }
 
-  static Pointer<Void> activityCreate(
+  static Pointer activityCreate(
     Pointer<CKAggregateZonePCSOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -943,7 +933,7 @@ class CKAggregateZonePCSOperation extends Struct<CKAggregateZonePCSOperation> {
     );
   }
 
-  static Pointer<Void> aggregateZonePCSCompletionBlock(
+  static Pointer aggregateZonePCSCompletionBlock(
     Pointer<CKAggregateZonePCSOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -955,7 +945,7 @@ class CKAggregateZonePCSOperation extends Struct<CKAggregateZonePCSOperation> {
 
   static void fillFromOperationInfo(
     Pointer<CKAggregateZonePCSOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -967,7 +957,7 @@ class CKAggregateZonePCSOperation extends Struct<CKAggregateZonePCSOperation> {
 
   static void fillOutOperationInfo(
     Pointer<CKAggregateZonePCSOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -987,7 +977,7 @@ class CKAggregateZonePCSOperation extends Struct<CKAggregateZonePCSOperation> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CKAggregateZonePCSOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -997,10 +987,10 @@ class CKAggregateZonePCSOperation extends Struct<CKAggregateZonePCSOperation> {
     );
   }
 
-  static Pointer<Void> initWithSourceZoneIDs(
+  static Pointer initWithSourceZoneIDs(
     Pointer<CKAggregateZonePCSOperation> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> targetZone,
+    Pointer arg, {
+    @required Pointer targetZone,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -1023,7 +1013,7 @@ class CKAggregateZonePCSOperation extends Struct<CKAggregateZonePCSOperation> {
 
   static void setAggregateZonePCSCompletionBlock(
     Pointer<CKAggregateZonePCSOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -1035,7 +1025,7 @@ class CKAggregateZonePCSOperation extends Struct<CKAggregateZonePCSOperation> {
 
   static void setSourceZoneIDs(
     Pointer<CKAggregateZonePCSOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -1047,7 +1037,7 @@ class CKAggregateZonePCSOperation extends Struct<CKAggregateZonePCSOperation> {
 
   static void setTargetZone(
     Pointer<CKAggregateZonePCSOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -1057,7 +1047,7 @@ class CKAggregateZonePCSOperation extends Struct<CKAggregateZonePCSOperation> {
     );
   }
 
-  static Pointer<Void> sourceZoneIDs(
+  static Pointer sourceZoneIDs(
     Pointer<CKAggregateZonePCSOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -1067,7 +1057,7 @@ class CKAggregateZonePCSOperation extends Struct<CKAggregateZonePCSOperation> {
     );
   }
 
-  static Pointer<Void> targetZone(
+  static Pointer targetZone(
     Pointer<CKAggregateZonePCSOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -1078,11 +1068,9 @@ class CKAggregateZonePCSOperation extends Struct<CKAggregateZonePCSOperation> {
   }
 }
 
-/// Objective-C class _CKAggregateZonePCSOperationInfo_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKAggregateZonePCSOperationInfo
     extends Struct<CKAggregateZonePCSOperationInfo> {
@@ -1098,7 +1086,7 @@ class CKAggregateZonePCSOperationInfo
 
   static void encodeWithCoder(
     Pointer<CKAggregateZonePCSOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -1108,9 +1096,9 @@ class CKAggregateZonePCSOperationInfo
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CKAggregateZonePCSOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -1122,7 +1110,7 @@ class CKAggregateZonePCSOperationInfo
 
   static void setSourceZoneIDs(
     Pointer<CKAggregateZonePCSOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -1134,7 +1122,7 @@ class CKAggregateZonePCSOperationInfo
 
   static void setTargetZone(
     Pointer<CKAggregateZonePCSOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -1144,7 +1132,7 @@ class CKAggregateZonePCSOperationInfo
     );
   }
 
-  static Pointer<Void> sourceZoneIDs(
+  static Pointer sourceZoneIDs(
     Pointer<CKAggregateZonePCSOperationInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -1154,7 +1142,7 @@ class CKAggregateZonePCSOperationInfo
     );
   }
 
-  static Pointer<Void> targetZone(
+  static Pointer targetZone(
     Pointer<CKAggregateZonePCSOperationInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -1165,11 +1153,9 @@ class CKAggregateZonePCSOperationInfo
   }
 }
 
-/// Objective-C class _CKAllPredicateValidator_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKAllPredicateValidator extends Struct<CKAllPredicateValidator> {
   factory CKAllPredicateValidator._() {
@@ -1182,7 +1168,7 @@ class CKAllPredicateValidator extends Struct<CKAllPredicateValidator> {
         .cast<CKAllPredicateValidator>();
   }
 
-  static Pointer<Void> CKPropertiesDescription(
+  static Pointer CKPropertiesDescription(
     Pointer<CKAllPredicateValidator> _self,
   ) {
     _openDynamicLibrary();
@@ -1192,9 +1178,9 @@ class CKAllPredicateValidator extends Struct<CKAllPredicateValidator> {
     );
   }
 
-  static Pointer<Void> initWithValidators(
+  static Pointer initWithValidators(
     Pointer<CKAllPredicateValidator> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -1206,7 +1192,7 @@ class CKAllPredicateValidator extends Struct<CKAllPredicateValidator> {
 
   static void setValidators(
     Pointer<CKAllPredicateValidator> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -1218,8 +1204,8 @@ class CKAllPredicateValidator extends Struct<CKAllPredicateValidator> {
 
   static int validate(
     Pointer<CKAllPredicateValidator> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -1230,7 +1216,7 @@ class CKAllPredicateValidator extends Struct<CKAllPredicateValidator> {
     );
   }
 
-  static Pointer<Void> validators(
+  static Pointer validators(
     Pointer<CKAllPredicateValidator> _self,
   ) {
     _openDynamicLibrary();
@@ -1241,11 +1227,9 @@ class CKAllPredicateValidator extends Struct<CKAllPredicateValidator> {
   }
 }
 
-/// Objective-C class _CKAnyPredicateValidator_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKAnyPredicateValidator extends Struct<CKAnyPredicateValidator> {
   factory CKAnyPredicateValidator._() {
@@ -1258,7 +1242,7 @@ class CKAnyPredicateValidator extends Struct<CKAnyPredicateValidator> {
         .cast<CKAnyPredicateValidator>();
   }
 
-  static Pointer<Void> CKPropertiesDescription(
+  static Pointer CKPropertiesDescription(
     Pointer<CKAnyPredicateValidator> _self,
   ) {
     _openDynamicLibrary();
@@ -1268,9 +1252,9 @@ class CKAnyPredicateValidator extends Struct<CKAnyPredicateValidator> {
     );
   }
 
-  static Pointer<Void> initWithValidators(
+  static Pointer initWithValidators(
     Pointer<CKAnyPredicateValidator> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -1282,7 +1266,7 @@ class CKAnyPredicateValidator extends Struct<CKAnyPredicateValidator> {
 
   static void setValidators(
     Pointer<CKAnyPredicateValidator> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -1294,8 +1278,8 @@ class CKAnyPredicateValidator extends Struct<CKAnyPredicateValidator> {
 
   static int validate(
     Pointer<CKAnyPredicateValidator> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -1306,7 +1290,7 @@ class CKAnyPredicateValidator extends Struct<CKAnyPredicateValidator> {
     );
   }
 
-  static Pointer<Void> validators(
+  static Pointer validators(
     Pointer<CKAnyPredicateValidator> _self,
   ) {
     _openDynamicLibrary();
@@ -1317,11 +1301,9 @@ class CKAnyPredicateValidator extends Struct<CKAnyPredicateValidator> {
   }
 }
 
-/// Objective-C class _CKApplicationPermissionGroup_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKApplicationPermissionGroup
     extends Struct<CKApplicationPermissionGroup> {
@@ -1335,7 +1317,7 @@ class CKApplicationPermissionGroup
         .cast<CKApplicationPermissionGroup>();
   }
 
-  static Pointer<Void> CKPropertiesDescription(
+  static Pointer CKPropertiesDescription(
     Pointer<CKApplicationPermissionGroup> _self,
   ) {
     _openDynamicLibrary();
@@ -1345,7 +1327,7 @@ class CKApplicationPermissionGroup
     );
   }
 
-  static Pointer<Void> applicationBundleIDs(
+  static Pointer applicationBundleIDs(
     Pointer<CKApplicationPermissionGroup> _self,
   ) {
     _openDynamicLibrary();
@@ -1355,7 +1337,7 @@ class CKApplicationPermissionGroup
     );
   }
 
-  static Pointer<Void> containerIDs(
+  static Pointer containerIDs(
     Pointer<CKApplicationPermissionGroup> _self,
   ) {
     _openDynamicLibrary();
@@ -1365,7 +1347,7 @@ class CKApplicationPermissionGroup
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CKApplicationPermissionGroup> _self,
   ) {
     _openDynamicLibrary();
@@ -1387,7 +1369,7 @@ class CKApplicationPermissionGroup
 
   static void encodeWithCoder(
     Pointer<CKApplicationPermissionGroup> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -1397,9 +1379,9 @@ class CKApplicationPermissionGroup
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CKApplicationPermissionGroup> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -1411,7 +1393,7 @@ class CKApplicationPermissionGroup
 
   static void setApplicationBundleIDs(
     Pointer<CKApplicationPermissionGroup> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -1423,7 +1405,7 @@ class CKApplicationPermissionGroup
 
   static void setContainerIDs(
     Pointer<CKApplicationPermissionGroup> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -1446,11 +1428,9 @@ class CKApplicationPermissionGroup
   }
 }
 
-/// Objective-C class _CKArchiveRecordsOperation_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKArchiveRecordsOperation extends Struct<CKArchiveRecordsOperation> {
   factory CKArchiveRecordsOperation._() {
@@ -1465,7 +1445,7 @@ class CKArchiveRecordsOperation extends Struct<CKArchiveRecordsOperation> {
 
   static int CKOperationShouldRun(
     Pointer<CKArchiveRecordsOperation> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -1475,7 +1455,7 @@ class CKArchiveRecordsOperation extends Struct<CKArchiveRecordsOperation> {
     );
   }
 
-  static Pointer<Void> activityCreate(
+  static Pointer activityCreate(
     Pointer<CKArchiveRecordsOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -1485,7 +1465,7 @@ class CKArchiveRecordsOperation extends Struct<CKArchiveRecordsOperation> {
     );
   }
 
-  static Pointer<Void> archiveRecordsCompletionBlock(
+  static Pointer archiveRecordsCompletionBlock(
     Pointer<CKArchiveRecordsOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -1497,7 +1477,7 @@ class CKArchiveRecordsOperation extends Struct<CKArchiveRecordsOperation> {
 
   static void fillFromOperationInfo(
     Pointer<CKArchiveRecordsOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -1509,7 +1489,7 @@ class CKArchiveRecordsOperation extends Struct<CKArchiveRecordsOperation> {
 
   static void fillOutOperationInfo(
     Pointer<CKArchiveRecordsOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -1529,7 +1509,7 @@ class CKArchiveRecordsOperation extends Struct<CKArchiveRecordsOperation> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CKArchiveRecordsOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -1539,9 +1519,9 @@ class CKArchiveRecordsOperation extends Struct<CKArchiveRecordsOperation> {
     );
   }
 
-  static Pointer<Void> initWithRecordIDs(
+  static Pointer initWithRecordIDs(
     Pointer<CKArchiveRecordsOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -1551,7 +1531,7 @@ class CKArchiveRecordsOperation extends Struct<CKArchiveRecordsOperation> {
     );
   }
 
-  static Pointer<Void> perItemErrors(
+  static Pointer perItemErrors(
     Pointer<CKArchiveRecordsOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -1571,7 +1551,7 @@ class CKArchiveRecordsOperation extends Struct<CKArchiveRecordsOperation> {
     );
   }
 
-  static Pointer<Void> recordArchivedBlock(
+  static Pointer recordArchivedBlock(
     Pointer<CKArchiveRecordsOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -1581,7 +1561,7 @@ class CKArchiveRecordsOperation extends Struct<CKArchiveRecordsOperation> {
     );
   }
 
-  static Pointer<Void> recordIDs(
+  static Pointer recordIDs(
     Pointer<CKArchiveRecordsOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -1593,7 +1573,7 @@ class CKArchiveRecordsOperation extends Struct<CKArchiveRecordsOperation> {
 
   static void setArchiveRecordsCompletionBlock(
     Pointer<CKArchiveRecordsOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -1605,7 +1585,7 @@ class CKArchiveRecordsOperation extends Struct<CKArchiveRecordsOperation> {
 
   static void setPerItemErrors(
     Pointer<CKArchiveRecordsOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -1617,7 +1597,7 @@ class CKArchiveRecordsOperation extends Struct<CKArchiveRecordsOperation> {
 
   static void setRecordArchivedBlock(
     Pointer<CKArchiveRecordsOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -1629,7 +1609,7 @@ class CKArchiveRecordsOperation extends Struct<CKArchiveRecordsOperation> {
 
   static void setRecordIDs(
     Pointer<CKArchiveRecordsOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -1640,11 +1620,9 @@ class CKArchiveRecordsOperation extends Struct<CKArchiveRecordsOperation> {
   }
 }
 
-/// Objective-C class _CKArchiveRecordsOperationInfo_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKArchiveRecordsOperationInfo
     extends Struct<CKArchiveRecordsOperationInfo> {
@@ -1660,7 +1638,7 @@ class CKArchiveRecordsOperationInfo
 
   static void encodeWithCoder(
     Pointer<CKArchiveRecordsOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -1670,9 +1648,9 @@ class CKArchiveRecordsOperationInfo
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CKArchiveRecordsOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -1682,7 +1660,7 @@ class CKArchiveRecordsOperationInfo
     );
   }
 
-  static Pointer<Void> recordIDs(
+  static Pointer recordIDs(
     Pointer<CKArchiveRecordsOperationInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -1694,7 +1672,7 @@ class CKArchiveRecordsOperationInfo
 
   static void setRecordIDs(
     Pointer<CKArchiveRecordsOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -1705,11 +1683,9 @@ class CKArchiveRecordsOperationInfo
   }
 }
 
-/// Objective-C class _CKArchivedAnchoredPackage_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKArchivedAnchoredPackage extends Struct<CKArchivedAnchoredPackage> {
   factory CKArchivedAnchoredPackage._() {
@@ -1722,7 +1698,7 @@ class CKArchivedAnchoredPackage extends Struct<CKArchivedAnchoredPackage> {
         .cast<CKArchivedAnchoredPackage>();
   }
 
-  static Pointer<Void> UUID(
+  static Pointer UUID(
     Pointer<CKArchivedAnchoredPackage> _self,
   ) {
     _openDynamicLibrary();
@@ -1732,7 +1708,7 @@ class CKArchivedAnchoredPackage extends Struct<CKArchivedAnchoredPackage> {
     );
   }
 
-  static Pointer<Void> anchorPath(
+  static Pointer anchorPath(
     Pointer<CKArchivedAnchoredPackage> _self,
   ) {
     _openDynamicLibrary();
@@ -1742,9 +1718,9 @@ class CKArchivedAnchoredPackage extends Struct<CKArchivedAnchoredPackage> {
     );
   }
 
-  static Pointer<Void> awakeAfterUsingCoder(
+  static Pointer awakeAfterUsingCoder(
     Pointer<CKArchivedAnchoredPackage> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -1756,7 +1732,7 @@ class CKArchivedAnchoredPackage extends Struct<CKArchivedAnchoredPackage> {
 
   static void encodeWithCoder(
     Pointer<CKArchivedAnchoredPackage> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -1766,9 +1742,9 @@ class CKArchivedAnchoredPackage extends Struct<CKArchivedAnchoredPackage> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CKArchivedAnchoredPackage> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -1778,7 +1754,7 @@ class CKArchivedAnchoredPackage extends Struct<CKArchivedAnchoredPackage> {
     );
   }
 
-  static Pointer<Void> packagePath(
+  static Pointer packagePath(
     Pointer<CKArchivedAnchoredPackage> _self,
   ) {
     _openDynamicLibrary();
@@ -1790,7 +1766,7 @@ class CKArchivedAnchoredPackage extends Struct<CKArchivedAnchoredPackage> {
 
   static void setAnchorPath(
     Pointer<CKArchivedAnchoredPackage> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -1802,7 +1778,7 @@ class CKArchivedAnchoredPackage extends Struct<CKArchivedAnchoredPackage> {
 
   static void setPackagePath(
     Pointer<CKArchivedAnchoredPackage> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -1814,7 +1790,7 @@ class CKArchivedAnchoredPackage extends Struct<CKArchivedAnchoredPackage> {
 
   static void setUUID(
     Pointer<CKArchivedAnchoredPackage> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -1825,11 +1801,9 @@ class CKArchivedAnchoredPackage extends Struct<CKArchivedAnchoredPackage> {
   }
 }
 
-/// Objective-C class _CKAsset_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKAsset extends Struct<CKAsset> {
   factory CKAsset._() {
@@ -1840,7 +1814,7 @@ class CKAsset extends Struct<CKAsset> {
     return _objc.allocate("CKAsset").cast<CKAsset>();
   }
 
-  static Pointer<Void> CKDescriptionPropertiesWithPublic(
+  static Pointer CKDescriptionPropertiesWithPublic(
     Pointer<CKAsset> _self,
     int arg, {
     @required int private,
@@ -1857,7 +1831,7 @@ class CKAsset extends Struct<CKAsset> {
     );
   }
 
-  static Pointer<Void> UUID(
+  static Pointer UUID(
     Pointer<CKAsset> _self,
   ) {
     _openDynamicLibrary();
@@ -1877,7 +1851,7 @@ class CKAsset extends Struct<CKAsset> {
     );
   }
 
-  static Pointer<Void> assetChunkerOptions(
+  static Pointer assetChunkerOptions(
     Pointer<CKAsset> _self,
   ) {
     _openDynamicLibrary();
@@ -1887,7 +1861,7 @@ class CKAsset extends Struct<CKAsset> {
     );
   }
 
-  static Pointer<Void> assetContent(
+  static Pointer assetContent(
     Pointer<CKAsset> _self,
   ) {
     _openDynamicLibrary();
@@ -1897,7 +1871,7 @@ class CKAsset extends Struct<CKAsset> {
     );
   }
 
-  static Pointer<Void> assetCopyInfo(
+  static Pointer assetCopyInfo(
     Pointer<CKAsset> _self,
   ) {
     _openDynamicLibrary();
@@ -1907,7 +1881,7 @@ class CKAsset extends Struct<CKAsset> {
     );
   }
 
-  static Pointer<Void> assetHandleUUID(
+  static Pointer assetHandleUUID(
     Pointer<CKAsset> _self,
   ) {
     _openDynamicLibrary();
@@ -1917,7 +1891,7 @@ class CKAsset extends Struct<CKAsset> {
     );
   }
 
-  static Pointer<Void> assetKey(
+  static Pointer assetKey(
     Pointer<CKAsset> _self,
   ) {
     _openDynamicLibrary();
@@ -1927,7 +1901,7 @@ class CKAsset extends Struct<CKAsset> {
     );
   }
 
-  static Pointer<Void> assetReference(
+  static Pointer assetReference(
     Pointer<CKAsset> _self,
   ) {
     _openDynamicLibrary();
@@ -1937,7 +1911,7 @@ class CKAsset extends Struct<CKAsset> {
     );
   }
 
-  static Pointer<Void> assetRereferenceInfo(
+  static Pointer assetRereferenceInfo(
     Pointer<CKAsset> _self,
   ) {
     _openDynamicLibrary();
@@ -1947,7 +1921,7 @@ class CKAsset extends Struct<CKAsset> {
     );
   }
 
-  static Pointer<Void> assetTransferOptions(
+  static Pointer assetTransferOptions(
     Pointer<CKAsset> _self,
   ) {
     _openDynamicLibrary();
@@ -1957,7 +1931,7 @@ class CKAsset extends Struct<CKAsset> {
     );
   }
 
-  static Pointer<Void> authToken(
+  static Pointer authToken(
     Pointer<CKAsset> _self,
   ) {
     _openDynamicLibrary();
@@ -1967,7 +1941,7 @@ class CKAsset extends Struct<CKAsset> {
     );
   }
 
-  static Pointer<Void> boundaryKey(
+  static Pointer boundaryKey(
     Pointer<CKAsset> _self,
   ) {
     _openDynamicLibrary();
@@ -1977,7 +1951,7 @@ class CKAsset extends Struct<CKAsset> {
     );
   }
 
-  static Pointer<Void> clearAssetKey(
+  static Pointer clearAssetKey(
     Pointer<CKAsset> _self,
   ) {
     _openDynamicLibrary();
@@ -1987,7 +1961,7 @@ class CKAsset extends Struct<CKAsset> {
     );
   }
 
-  static Pointer<Void> clientOpenedFileHandle(
+  static Pointer clientOpenedFileHandle(
     Pointer<CKAsset> _self,
   ) {
     _openDynamicLibrary();
@@ -1997,7 +1971,7 @@ class CKAsset extends Struct<CKAsset> {
     );
   }
 
-  static Pointer<Void> constructedAssetDownloadURL(
+  static Pointer constructedAssetDownloadURL(
     Pointer<CKAsset> _self,
   ) {
     _openDynamicLibrary();
@@ -2007,7 +1981,7 @@ class CKAsset extends Struct<CKAsset> {
     );
   }
 
-  static Pointer<Void> constructedAssetDownloadURLTemplate(
+  static Pointer constructedAssetDownloadURLTemplate(
     Pointer<CKAsset> _self,
   ) {
     _openDynamicLibrary();
@@ -2027,7 +2001,7 @@ class CKAsset extends Struct<CKAsset> {
     );
   }
 
-  static Pointer<Void> contentBaseURL(
+  static Pointer contentBaseURL(
     Pointer<CKAsset> _self,
   ) {
     _openDynamicLibrary();
@@ -2037,7 +2011,7 @@ class CKAsset extends Struct<CKAsset> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CKAsset> _self,
   ) {
     _openDynamicLibrary();
@@ -2047,7 +2021,7 @@ class CKAsset extends Struct<CKAsset> {
     );
   }
 
-  static Pointer<Void> deviceID(
+  static Pointer deviceID(
     Pointer<CKAsset> _self,
   ) {
     _openDynamicLibrary();
@@ -2057,7 +2031,7 @@ class CKAsset extends Struct<CKAsset> {
     );
   }
 
-  static Pointer<Void> downloadBaseURL(
+  static Pointer downloadBaseURL(
     Pointer<CKAsset> _self,
   ) {
     _openDynamicLibrary();
@@ -2067,7 +2041,7 @@ class CKAsset extends Struct<CKAsset> {
     );
   }
 
-  static Pointer<Void> downloadPreauthorization(
+  static Pointer downloadPreauthorization(
     Pointer<CKAsset> _self,
   ) {
     _openDynamicLibrary();
@@ -2087,7 +2061,7 @@ class CKAsset extends Struct<CKAsset> {
     );
   }
 
-  static Pointer<Void> downloadURL(
+  static Pointer downloadURL(
     Pointer<CKAsset> _self,
   ) {
     _openDynamicLibrary();
@@ -2097,7 +2071,7 @@ class CKAsset extends Struct<CKAsset> {
     );
   }
 
-  static Pointer<Void> downloadURLExpiration(
+  static Pointer downloadURLExpiration(
     Pointer<CKAsset> _self,
   ) {
     _openDynamicLibrary();
@@ -2107,7 +2081,7 @@ class CKAsset extends Struct<CKAsset> {
     );
   }
 
-  static Pointer<Void> downloadURLTemplate(
+  static Pointer downloadURLTemplate(
     Pointer<CKAsset> _self,
   ) {
     _openDynamicLibrary();
@@ -2117,9 +2091,9 @@ class CKAsset extends Struct<CKAsset> {
     );
   }
 
-  static Pointer<Void> downloadURLWithFileName(
+  static Pointer downloadURLWithFileName(
     Pointer<CKAsset> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -2141,7 +2115,7 @@ class CKAsset extends Struct<CKAsset> {
 
   static void encodeWithCoder(
     Pointer<CKAsset> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -2151,7 +2125,7 @@ class CKAsset extends Struct<CKAsset> {
     );
   }
 
-  static Pointer<Void> fileID(
+  static Pointer fileID(
     Pointer<CKAsset> _self,
   ) {
     _openDynamicLibrary();
@@ -2161,7 +2135,7 @@ class CKAsset extends Struct<CKAsset> {
     );
   }
 
-  static Pointer<Void> fileURL(
+  static Pointer fileURL(
     Pointer<CKAsset> _self,
   ) {
     _openDynamicLibrary();
@@ -2171,7 +2145,7 @@ class CKAsset extends Struct<CKAsset> {
     );
   }
 
-  static Pointer<Void> generationCountToSave(
+  static Pointer generationCountToSave(
     Pointer<CKAsset> _self,
   ) {
     _openDynamicLibrary();
@@ -2191,7 +2165,7 @@ class CKAsset extends Struct<CKAsset> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CKAsset> _self,
   ) {
     _openDynamicLibrary();
@@ -2201,9 +2175,9 @@ class CKAsset extends Struct<CKAsset> {
     );
   }
 
-  static Pointer<Void> initWithAssetReference(
+  static Pointer initWithAssetReference(
     Pointer<CKAsset> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -2213,9 +2187,9 @@ class CKAsset extends Struct<CKAsset> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CKAsset> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -2225,10 +2199,10 @@ class CKAsset extends Struct<CKAsset> {
     );
   }
 
-  static Pointer<Void> initWithCopyInfo(
+  static Pointer initWithCopyInfo(
     Pointer<CKAsset> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> fileURL,
+    Pointer arg, {
+    @required Pointer fileURL,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -2239,11 +2213,11 @@ class CKAsset extends Struct<CKAsset> {
     );
   }
 
-  static Pointer<Void> initWithDeviceID(
+  static Pointer initWithDeviceID(
     Pointer<CKAsset> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> fileID,
-    @required Pointer<Void> generationID,
+    Pointer arg, {
+    @required Pointer fileID,
+    @required Pointer generationID,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -2255,7 +2229,7 @@ class CKAsset extends Struct<CKAsset> {
     );
   }
 
-  static Pointer<Void> initWithFileDescriptor(
+  static Pointer initWithFileDescriptor(
     Pointer<CKAsset> _self,
     int arg,
   ) {
@@ -2267,9 +2241,9 @@ class CKAsset extends Struct<CKAsset> {
     );
   }
 
-  static Pointer<Void> initWithFileURL$(
+  static Pointer initWithFileURL$(
     Pointer<CKAsset> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -2279,10 +2253,10 @@ class CKAsset extends Struct<CKAsset> {
     );
   }
 
-  static Pointer<Void> initWithFileURL$signature$(
+  static Pointer initWithFileURL$signature$(
     Pointer<CKAsset> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> signature,
+    Pointer arg, {
+    @required Pointer signature,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -2293,11 +2267,11 @@ class CKAsset extends Struct<CKAsset> {
     );
   }
 
-  static Pointer<Void> initWithFileURL$signature$assetHandleUUID$(
+  static Pointer initWithFileURL$signature$assetHandleUUID$(
     Pointer<CKAsset> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> signature,
-    @required Pointer<Void> assetHandleUUID,
+    Pointer arg, {
+    @required Pointer signature,
+    @required Pointer assetHandleUUID,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -2329,7 +2303,7 @@ class CKAsset extends Struct<CKAsset> {
     );
   }
 
-  static Pointer<Void> itemTypeHint(
+  static Pointer itemTypeHint(
     Pointer<CKAsset> _self,
   ) {
     _openDynamicLibrary();
@@ -2339,7 +2313,7 @@ class CKAsset extends Struct<CKAsset> {
     );
   }
 
-  static Pointer<Void> nullableFileURL(
+  static Pointer nullableFileURL(
     Pointer<CKAsset> _self,
   ) {
     _openDynamicLibrary();
@@ -2349,9 +2323,9 @@ class CKAsset extends Struct<CKAsset> {
     );
   }
 
-  static Pointer<Void> openWithError(
+  static Pointer openWithError(
     Pointer<CKAsset> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -2361,7 +2335,7 @@ class CKAsset extends Struct<CKAsset> {
     );
   }
 
-  static Pointer<Void> owner(
+  static Pointer owner(
     Pointer<CKAsset> _self,
   ) {
     _openDynamicLibrary();
@@ -2381,7 +2355,7 @@ class CKAsset extends Struct<CKAsset> {
     );
   }
 
-  static Pointer<Void> realPathURL(
+  static Pointer realPathURL(
     Pointer<CKAsset> _self,
   ) {
     _openDynamicLibrary();
@@ -2391,7 +2365,7 @@ class CKAsset extends Struct<CKAsset> {
     );
   }
 
-  static Pointer<Void> record(
+  static Pointer record(
     Pointer<CKAsset> _self,
   ) {
     _openDynamicLibrary();
@@ -2401,7 +2375,7 @@ class CKAsset extends Struct<CKAsset> {
     );
   }
 
-  static Pointer<Void> recordID(
+  static Pointer recordID(
     Pointer<CKAsset> _self,
   ) {
     _openDynamicLibrary();
@@ -2411,7 +2385,7 @@ class CKAsset extends Struct<CKAsset> {
     );
   }
 
-  static Pointer<Void> recordKey(
+  static Pointer recordKey(
     Pointer<CKAsset> _self,
   ) {
     _openDynamicLibrary();
@@ -2421,7 +2395,7 @@ class CKAsset extends Struct<CKAsset> {
     );
   }
 
-  static Pointer<Void> referenceSignature(
+  static Pointer referenceSignature(
     Pointer<CKAsset> _self,
   ) {
     _openDynamicLibrary();
@@ -2431,7 +2405,7 @@ class CKAsset extends Struct<CKAsset> {
     );
   }
 
-  static Pointer<Void> requestor(
+  static Pointer requestor(
     Pointer<CKAsset> _self,
   ) {
     _openDynamicLibrary();
@@ -2455,7 +2429,7 @@ class CKAsset extends Struct<CKAsset> {
 
   static void setAssetChunkerOptions(
     Pointer<CKAsset> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -2467,7 +2441,7 @@ class CKAsset extends Struct<CKAsset> {
 
   static void setAssetContent(
     Pointer<CKAsset> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -2479,7 +2453,7 @@ class CKAsset extends Struct<CKAsset> {
 
   static void setAssetCopyInfo(
     Pointer<CKAsset> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -2491,7 +2465,7 @@ class CKAsset extends Struct<CKAsset> {
 
   static void setAssetKey(
     Pointer<CKAsset> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -2503,7 +2477,7 @@ class CKAsset extends Struct<CKAsset> {
 
   static void setAssetReference(
     Pointer<CKAsset> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -2515,7 +2489,7 @@ class CKAsset extends Struct<CKAsset> {
 
   static void setAssetRereferenceInfo(
     Pointer<CKAsset> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -2527,7 +2501,7 @@ class CKAsset extends Struct<CKAsset> {
 
   static void setAssetTransferOptions(
     Pointer<CKAsset> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -2539,7 +2513,7 @@ class CKAsset extends Struct<CKAsset> {
 
   static void setAuthToken(
     Pointer<CKAsset> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -2551,7 +2525,7 @@ class CKAsset extends Struct<CKAsset> {
 
   static void setBoundaryKey(
     Pointer<CKAsset> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -2563,7 +2537,7 @@ class CKAsset extends Struct<CKAsset> {
 
   static void setClearAssetKey(
     Pointer<CKAsset> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -2575,7 +2549,7 @@ class CKAsset extends Struct<CKAsset> {
 
   static void setClientOpenedFileHandle(
     Pointer<CKAsset> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -2587,7 +2561,7 @@ class CKAsset extends Struct<CKAsset> {
 
   static void setConstructedAssetDownloadURL(
     Pointer<CKAsset> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -2599,7 +2573,7 @@ class CKAsset extends Struct<CKAsset> {
 
   static void setConstructedAssetDownloadURLTemplate(
     Pointer<CKAsset> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -2623,7 +2597,7 @@ class CKAsset extends Struct<CKAsset> {
 
   static void setContentBaseURL(
     Pointer<CKAsset> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -2635,7 +2609,7 @@ class CKAsset extends Struct<CKAsset> {
 
   static void setDownloadBaseURL(
     Pointer<CKAsset> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -2647,7 +2621,7 @@ class CKAsset extends Struct<CKAsset> {
 
   static void setDownloadPreauthorization(
     Pointer<CKAsset> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -2671,7 +2645,7 @@ class CKAsset extends Struct<CKAsset> {
 
   static void setDownloadURLExpiration(
     Pointer<CKAsset> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -2683,7 +2657,7 @@ class CKAsset extends Struct<CKAsset> {
 
   static void setDownloadURLTemplate(
     Pointer<CKAsset> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -2707,7 +2681,7 @@ class CKAsset extends Struct<CKAsset> {
 
   static void setFileURL(
     Pointer<CKAsset> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -2719,7 +2693,7 @@ class CKAsset extends Struct<CKAsset> {
 
   static void setGenerationCountToSave(
     Pointer<CKAsset> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -2743,7 +2717,7 @@ class CKAsset extends Struct<CKAsset> {
 
   static void setItemTypeHint(
     Pointer<CKAsset> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -2755,7 +2729,7 @@ class CKAsset extends Struct<CKAsset> {
 
   static void setNullableFileURL(
     Pointer<CKAsset> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -2767,7 +2741,7 @@ class CKAsset extends Struct<CKAsset> {
 
   static void setOwner(
     Pointer<CKAsset> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -2791,7 +2765,7 @@ class CKAsset extends Struct<CKAsset> {
 
   static void setRealPathURL(
     Pointer<CKAsset> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -2803,7 +2777,7 @@ class CKAsset extends Struct<CKAsset> {
 
   static void setRecord(
     Pointer<CKAsset> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -2815,7 +2789,7 @@ class CKAsset extends Struct<CKAsset> {
 
   static void setRecordID(
     Pointer<CKAsset> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -2827,7 +2801,7 @@ class CKAsset extends Struct<CKAsset> {
 
   static void setRecordKey(
     Pointer<CKAsset> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -2839,7 +2813,7 @@ class CKAsset extends Struct<CKAsset> {
 
   static void setReferenceSignature(
     Pointer<CKAsset> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -2851,7 +2825,7 @@ class CKAsset extends Struct<CKAsset> {
 
   static void setRequestor(
     Pointer<CKAsset> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -2875,7 +2849,7 @@ class CKAsset extends Struct<CKAsset> {
 
   static void setSignature(
     Pointer<CKAsset> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -2911,7 +2885,7 @@ class CKAsset extends Struct<CKAsset> {
 
   static void setUUID(
     Pointer<CKAsset> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -2935,7 +2909,7 @@ class CKAsset extends Struct<CKAsset> {
 
   static void setUploadReceipt(
     Pointer<CKAsset> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -2983,7 +2957,7 @@ class CKAsset extends Struct<CKAsset> {
 
   static void setWrappedAssetKey(
     Pointer<CKAsset> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -3003,7 +2977,7 @@ class CKAsset extends Struct<CKAsset> {
     );
   }
 
-  static Pointer<Void> signature(
+  static Pointer signature(
     Pointer<CKAsset> _self,
   ) {
     _openDynamicLibrary();
@@ -3043,7 +3017,7 @@ class CKAsset extends Struct<CKAsset> {
     );
   }
 
-  static Pointer<Void> uploadReceipt(
+  static Pointer uploadReceipt(
     Pointer<CKAsset> _self,
   ) {
     _openDynamicLibrary();
@@ -3083,7 +3057,7 @@ class CKAsset extends Struct<CKAsset> {
     );
   }
 
-  static Pointer<Void> wrappedAssetKey(
+  static Pointer wrappedAssetKey(
     Pointer<CKAsset> _self,
   ) {
     _openDynamicLibrary();
@@ -3094,11 +3068,9 @@ class CKAsset extends Struct<CKAsset> {
   }
 }
 
-/// Objective-C class _CKAssetCopyInfo_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKAssetCopyInfo extends Struct<CKAssetCopyInfo> {
   factory CKAssetCopyInfo._() {
@@ -3109,7 +3081,7 @@ class CKAssetCopyInfo extends Struct<CKAssetCopyInfo> {
     return _objc.allocate("CKAssetCopyInfo").cast<CKAssetCopyInfo>();
   }
 
-  static Pointer<Void> CKDescriptionPropertiesWithPublic(
+  static Pointer CKDescriptionPropertiesWithPublic(
     Pointer<CKAssetCopyInfo> _self,
     int arg, {
     @required int private,
@@ -3126,7 +3098,7 @@ class CKAssetCopyInfo extends Struct<CKAssetCopyInfo> {
     );
   }
 
-  static Pointer<Void> assetKey(
+  static Pointer assetKey(
     Pointer<CKAssetCopyInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -3136,7 +3108,7 @@ class CKAssetCopyInfo extends Struct<CKAssetCopyInfo> {
     );
   }
 
-  static Pointer<Void> assetURL(
+  static Pointer assetURL(
     Pointer<CKAssetCopyInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -3146,7 +3118,7 @@ class CKAssetCopyInfo extends Struct<CKAssetCopyInfo> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CKAssetCopyInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -3158,7 +3130,7 @@ class CKAssetCopyInfo extends Struct<CKAssetCopyInfo> {
 
   static void encodeWithCoder(
     Pointer<CKAssetCopyInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -3168,7 +3140,7 @@ class CKAssetCopyInfo extends Struct<CKAssetCopyInfo> {
     );
   }
 
-  static Pointer<Void> fileSignature(
+  static Pointer fileSignature(
     Pointer<CKAssetCopyInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -3178,9 +3150,9 @@ class CKAssetCopyInfo extends Struct<CKAssetCopyInfo> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CKAssetCopyInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -3190,7 +3162,7 @@ class CKAssetCopyInfo extends Struct<CKAssetCopyInfo> {
     );
   }
 
-  static Pointer<Void> referenceSignature(
+  static Pointer referenceSignature(
     Pointer<CKAssetCopyInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -3200,7 +3172,7 @@ class CKAssetCopyInfo extends Struct<CKAssetCopyInfo> {
     );
   }
 
-  static Pointer<Void> senderID(
+  static Pointer senderID(
     Pointer<CKAssetCopyInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -3212,7 +3184,7 @@ class CKAssetCopyInfo extends Struct<CKAssetCopyInfo> {
 
   static void setAssetKey(
     Pointer<CKAssetCopyInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -3224,7 +3196,7 @@ class CKAssetCopyInfo extends Struct<CKAssetCopyInfo> {
 
   static void setAssetURL(
     Pointer<CKAssetCopyInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -3236,7 +3208,7 @@ class CKAssetCopyInfo extends Struct<CKAssetCopyInfo> {
 
   static void setFileSignature(
     Pointer<CKAssetCopyInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -3248,7 +3220,7 @@ class CKAssetCopyInfo extends Struct<CKAssetCopyInfo> {
 
   static void setReferenceSignature(
     Pointer<CKAssetCopyInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -3260,7 +3232,7 @@ class CKAssetCopyInfo extends Struct<CKAssetCopyInfo> {
 
   static void setSenderID(
     Pointer<CKAssetCopyInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -3271,11 +3243,9 @@ class CKAssetCopyInfo extends Struct<CKAssetCopyInfo> {
   }
 }
 
-/// Objective-C class _CKAssetDownloadPreauthorization_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKAssetDownloadPreauthorization
     extends Struct<CKAssetDownloadPreauthorization> {
@@ -3289,7 +3259,7 @@ class CKAssetDownloadPreauthorization
         .cast<CKAssetDownloadPreauthorization>();
   }
 
-  static Pointer<Void> contentResponseBody(
+  static Pointer contentResponseBody(
     Pointer<CKAssetDownloadPreauthorization> _self,
   ) {
     _openDynamicLibrary();
@@ -3299,7 +3269,7 @@ class CKAssetDownloadPreauthorization
     );
   }
 
-  static Pointer<Void> contentResponseHeaders(
+  static Pointer contentResponseHeaders(
     Pointer<CKAssetDownloadPreauthorization> _self,
   ) {
     _openDynamicLibrary();
@@ -3309,9 +3279,9 @@ class CKAssetDownloadPreauthorization
     );
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<CKAssetDownloadPreauthorization> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -3331,11 +3301,11 @@ class CKAssetDownloadPreauthorization
     );
   }
 
-  static Pointer<Void> initWithResponseUUID(
+  static Pointer initWithResponseUUID(
     Pointer<CKAssetDownloadPreauthorization> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> contentResponseHeaders,
-    @required Pointer<Void> contentResponseBody,
+    Pointer arg, {
+    @required Pointer contentResponseHeaders,
+    @required Pointer contentResponseBody,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -3350,7 +3320,7 @@ class CKAssetDownloadPreauthorization
 
   static int isEqual(
     Pointer<CKAssetDownloadPreauthorization> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -3360,7 +3330,7 @@ class CKAssetDownloadPreauthorization
     );
   }
 
-  static Pointer<Void> responseUUID(
+  static Pointer responseUUID(
     Pointer<CKAssetDownloadPreauthorization> _self,
   ) {
     _openDynamicLibrary();
@@ -3372,7 +3342,7 @@ class CKAssetDownloadPreauthorization
 
   static void setContentResponseBody(
     Pointer<CKAssetDownloadPreauthorization> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -3384,7 +3354,7 @@ class CKAssetDownloadPreauthorization
 
   static void setContentResponseHeaders(
     Pointer<CKAssetDownloadPreauthorization> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -3396,7 +3366,7 @@ class CKAssetDownloadPreauthorization
 
   static void setResponseUUID(
     Pointer<CKAssetDownloadPreauthorization> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -3407,11 +3377,9 @@ class CKAssetDownloadPreauthorization
   }
 }
 
-/// Objective-C class _CKAssetReference_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKAssetReference extends Struct<CKAssetReference> {
   factory CKAssetReference._() {
@@ -3422,7 +3390,7 @@ class CKAssetReference extends Struct<CKAssetReference> {
     return _objc.allocate("CKAssetReference").cast<CKAssetReference>();
   }
 
-  static Pointer<Void> CKDescriptionPropertiesWithPublic(
+  static Pointer CKDescriptionPropertiesWithPublic(
     Pointer<CKAssetReference> _self,
     int arg, {
     @required int private,
@@ -3439,9 +3407,9 @@ class CKAssetReference extends Struct<CKAssetReference> {
     );
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<CKAssetReference> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -3461,7 +3429,7 @@ class CKAssetReference extends Struct<CKAssetReference> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CKAssetReference> _self,
   ) {
     _openDynamicLibrary();
@@ -3473,7 +3441,7 @@ class CKAssetReference extends Struct<CKAssetReference> {
 
   static void encodeWithCoder(
     Pointer<CKAssetReference> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -3483,7 +3451,7 @@ class CKAssetReference extends Struct<CKAssetReference> {
     );
   }
 
-  static Pointer<Void> fieldName(
+  static Pointer fieldName(
     Pointer<CKAssetReference> _self,
   ) {
     _openDynamicLibrary();
@@ -3493,7 +3461,7 @@ class CKAssetReference extends Struct<CKAssetReference> {
     );
   }
 
-  static Pointer<Void> fileSignature(
+  static Pointer fileSignature(
     Pointer<CKAssetReference> _self,
   ) {
     _openDynamicLibrary();
@@ -3513,9 +3481,9 @@ class CKAssetReference extends Struct<CKAssetReference> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CKAssetReference> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -3525,12 +3493,12 @@ class CKAssetReference extends Struct<CKAssetReference> {
     );
   }
 
-  static Pointer<Void> initWithExistingRecordID(
+  static Pointer initWithExistingRecordID(
     Pointer<CKAssetReference> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int databaseScope,
-    @required Pointer<Void> fieldName,
-    @required Pointer<Void> fileSignature,
+    @required Pointer fieldName,
+    @required Pointer fileSignature,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_Int64_p_p_returns_p(
@@ -3546,7 +3514,7 @@ class CKAssetReference extends Struct<CKAssetReference> {
 
   static int isEqual(
     Pointer<CKAssetReference> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -3556,7 +3524,7 @@ class CKAssetReference extends Struct<CKAssetReference> {
     );
   }
 
-  static Pointer<Void> recordID(
+  static Pointer recordID(
     Pointer<CKAssetReference> _self,
   ) {
     _openDynamicLibrary();
@@ -3579,11 +3547,9 @@ class CKAssetReference extends Struct<CKAssetReference> {
   }
 }
 
-/// Objective-C class _CKAssetRereferenceInfo_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKAssetRereferenceInfo extends Struct<CKAssetRereferenceInfo> {
   factory CKAssetRereferenceInfo._() {
@@ -3596,7 +3562,7 @@ class CKAssetRereferenceInfo extends Struct<CKAssetRereferenceInfo> {
         .cast<CKAssetRereferenceInfo>();
   }
 
-  static Pointer<Void> CKDescriptionPropertiesWithPublic(
+  static Pointer CKDescriptionPropertiesWithPublic(
     Pointer<CKAssetRereferenceInfo> _self,
     int arg, {
     @required int private,
@@ -3613,7 +3579,7 @@ class CKAssetRereferenceInfo extends Struct<CKAssetRereferenceInfo> {
     );
   }
 
-  static Pointer<Void> assetKey(
+  static Pointer assetKey(
     Pointer<CKAssetRereferenceInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -3633,7 +3599,7 @@ class CKAssetRereferenceInfo extends Struct<CKAssetRereferenceInfo> {
     );
   }
 
-  static Pointer<Void> contentBaseURL(
+  static Pointer contentBaseURL(
     Pointer<CKAssetRereferenceInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -3643,7 +3609,7 @@ class CKAssetRereferenceInfo extends Struct<CKAssetRereferenceInfo> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CKAssetRereferenceInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -3653,7 +3619,7 @@ class CKAssetRereferenceInfo extends Struct<CKAssetRereferenceInfo> {
     );
   }
 
-  static Pointer<Void> destinationFieldName(
+  static Pointer destinationFieldName(
     Pointer<CKAssetRereferenceInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -3663,7 +3629,7 @@ class CKAssetRereferenceInfo extends Struct<CKAssetRereferenceInfo> {
     );
   }
 
-  static Pointer<Void> downloadToken(
+  static Pointer downloadToken(
     Pointer<CKAssetRereferenceInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -3683,7 +3649,7 @@ class CKAssetRereferenceInfo extends Struct<CKAssetRereferenceInfo> {
     );
   }
 
-  static Pointer<Void> error(
+  static Pointer error(
     Pointer<CKAssetRereferenceInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -3693,9 +3659,9 @@ class CKAssetRereferenceInfo extends Struct<CKAssetRereferenceInfo> {
     );
   }
 
-  static Pointer<Void> initWithSourceZoneID(
+  static Pointer initWithSourceZoneID(
     Pointer<CKAssetRereferenceInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -3705,7 +3671,7 @@ class CKAssetRereferenceInfo extends Struct<CKAssetRereferenceInfo> {
     );
   }
 
-  static Pointer<Void> owner(
+  static Pointer owner(
     Pointer<CKAssetRereferenceInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -3715,7 +3681,7 @@ class CKAssetRereferenceInfo extends Struct<CKAssetRereferenceInfo> {
     );
   }
 
-  static Pointer<Void> referenceSignature(
+  static Pointer referenceSignature(
     Pointer<CKAssetRereferenceInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -3725,7 +3691,7 @@ class CKAssetRereferenceInfo extends Struct<CKAssetRereferenceInfo> {
     );
   }
 
-  static Pointer<Void> requestor(
+  static Pointer requestor(
     Pointer<CKAssetRereferenceInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -3737,7 +3703,7 @@ class CKAssetRereferenceInfo extends Struct<CKAssetRereferenceInfo> {
 
   static void setAssetKey(
     Pointer<CKAssetRereferenceInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -3749,7 +3715,7 @@ class CKAssetRereferenceInfo extends Struct<CKAssetRereferenceInfo> {
 
   static void setContentBaseURL(
     Pointer<CKAssetRereferenceInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -3761,7 +3727,7 @@ class CKAssetRereferenceInfo extends Struct<CKAssetRereferenceInfo> {
 
   static void setDestinationFieldName(
     Pointer<CKAssetRereferenceInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -3773,7 +3739,7 @@ class CKAssetRereferenceInfo extends Struct<CKAssetRereferenceInfo> {
 
   static void setDownloadToken(
     Pointer<CKAssetRereferenceInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -3797,7 +3763,7 @@ class CKAssetRereferenceInfo extends Struct<CKAssetRereferenceInfo> {
 
   static void setError(
     Pointer<CKAssetRereferenceInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -3809,7 +3775,7 @@ class CKAssetRereferenceInfo extends Struct<CKAssetRereferenceInfo> {
 
   static void setOwner(
     Pointer<CKAssetRereferenceInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -3821,7 +3787,7 @@ class CKAssetRereferenceInfo extends Struct<CKAssetRereferenceInfo> {
 
   static void setReferenceSignature(
     Pointer<CKAssetRereferenceInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -3833,7 +3799,7 @@ class CKAssetRereferenceInfo extends Struct<CKAssetRereferenceInfo> {
 
   static void setRequestor(
     Pointer<CKAssetRereferenceInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -3845,7 +3811,7 @@ class CKAssetRereferenceInfo extends Struct<CKAssetRereferenceInfo> {
 
   static void setSourceZoneID(
     Pointer<CKAssetRereferenceInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -3855,7 +3821,7 @@ class CKAssetRereferenceInfo extends Struct<CKAssetRereferenceInfo> {
     );
   }
 
-  static Pointer<Void> sourceZoneID(
+  static Pointer sourceZoneID(
     Pointer<CKAssetRereferenceInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -3867,8 +3833,8 @@ class CKAssetRereferenceInfo extends Struct<CKAssetRereferenceInfo> {
 
   static int validateAndSetRecordFetchPropertiesWithAsset(
     Pointer<CKAssetRereferenceInfo> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> assetReference,
+    Pointer arg, {
+    @required Pointer assetReference,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -3881,11 +3847,9 @@ class CKAssetRereferenceInfo extends Struct<CKAssetRereferenceInfo> {
   }
 }
 
-/// Objective-C class _CKAssetTransferOptions_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKAssetTransferOptions extends Struct<CKAssetTransferOptions> {
   factory CKAssetTransferOptions._() {
@@ -3898,7 +3862,7 @@ class CKAssetTransferOptions extends Struct<CKAssetTransferOptions> {
         .cast<CKAssetTransferOptions>();
   }
 
-  static Pointer<Void> CKPropertiesDescription(
+  static Pointer CKPropertiesDescription(
     Pointer<CKAssetTransferOptions> _self,
   ) {
     _openDynamicLibrary();
@@ -3908,9 +3872,9 @@ class CKAssetTransferOptions extends Struct<CKAssetTransferOptions> {
     );
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<CKAssetTransferOptions> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -3920,7 +3884,7 @@ class CKAssetTransferOptions extends Struct<CKAssetTransferOptions> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CKAssetTransferOptions> _self,
   ) {
     _openDynamicLibrary();
@@ -3932,7 +3896,7 @@ class CKAssetTransferOptions extends Struct<CKAssetTransferOptions> {
 
   static void encodeWithCoder(
     Pointer<CKAssetTransferOptions> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -3942,9 +3906,9 @@ class CKAssetTransferOptions extends Struct<CKAssetTransferOptions> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CKAssetTransferOptions> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -3956,7 +3920,7 @@ class CKAssetTransferOptions extends Struct<CKAssetTransferOptions> {
 
   static void setShouldFetchAssetContent(
     Pointer<CKAssetTransferOptions> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -3968,7 +3932,7 @@ class CKAssetTransferOptions extends Struct<CKAssetTransferOptions> {
 
   static void setShouldFetchAssetContentInMemory(
     Pointer<CKAssetTransferOptions> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -3980,7 +3944,7 @@ class CKAssetTransferOptions extends Struct<CKAssetTransferOptions> {
 
   static void setSparseAware(
     Pointer<CKAssetTransferOptions> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -3990,7 +3954,7 @@ class CKAssetTransferOptions extends Struct<CKAssetTransferOptions> {
     );
   }
 
-  static Pointer<Void> shouldFetchAssetContent(
+  static Pointer shouldFetchAssetContent(
     Pointer<CKAssetTransferOptions> _self,
   ) {
     _openDynamicLibrary();
@@ -4000,7 +3964,7 @@ class CKAssetTransferOptions extends Struct<CKAssetTransferOptions> {
     );
   }
 
-  static Pointer<Void> shouldFetchAssetContentInMemory(
+  static Pointer shouldFetchAssetContentInMemory(
     Pointer<CKAssetTransferOptions> _self,
   ) {
     _openDynamicLibrary();
@@ -4010,7 +3974,7 @@ class CKAssetTransferOptions extends Struct<CKAssetTransferOptions> {
     );
   }
 
-  static Pointer<Void> sparseAware(
+  static Pointer sparseAware(
     Pointer<CKAssetTransferOptions> _self,
   ) {
     _openDynamicLibrary();
@@ -4021,11 +3985,9 @@ class CKAssetTransferOptions extends Struct<CKAssetTransferOptions> {
   }
 }
 
-/// Objective-C class _CKAutoBugCaptureMetadata_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKAutoBugCaptureMetadata extends Struct<CKAutoBugCaptureMetadata> {
   factory CKAutoBugCaptureMetadata._() {
@@ -4038,7 +4000,7 @@ class CKAutoBugCaptureMetadata extends Struct<CKAutoBugCaptureMetadata> {
         .cast<CKAutoBugCaptureMetadata>();
   }
 
-  static Pointer<Void> containerID(
+  static Pointer containerID(
     Pointer<CKAutoBugCaptureMetadata> _self,
   ) {
     _openDynamicLibrary();
@@ -4048,7 +4010,7 @@ class CKAutoBugCaptureMetadata extends Struct<CKAutoBugCaptureMetadata> {
     );
   }
 
-  static Pointer<Void> errorPayload(
+  static Pointer errorPayload(
     Pointer<CKAutoBugCaptureMetadata> _self,
   ) {
     _openDynamicLibrary();
@@ -4058,7 +4020,7 @@ class CKAutoBugCaptureMetadata extends Struct<CKAutoBugCaptureMetadata> {
     );
   }
 
-  static Pointer<Void> procName(
+  static Pointer procName(
     Pointer<CKAutoBugCaptureMetadata> _self,
   ) {
     _openDynamicLibrary();
@@ -4080,7 +4042,7 @@ class CKAutoBugCaptureMetadata extends Struct<CKAutoBugCaptureMetadata> {
 
   static void setContainerID(
     Pointer<CKAutoBugCaptureMetadata> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -4092,7 +4054,7 @@ class CKAutoBugCaptureMetadata extends Struct<CKAutoBugCaptureMetadata> {
 
   static void setErrorPayload(
     Pointer<CKAutoBugCaptureMetadata> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -4104,7 +4066,7 @@ class CKAutoBugCaptureMetadata extends Struct<CKAutoBugCaptureMetadata> {
 
   static void setProcName(
     Pointer<CKAutoBugCaptureMetadata> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -4127,11 +4089,9 @@ class CKAutoBugCaptureMetadata extends Struct<CKAutoBugCaptureMetadata> {
   }
 }
 
-/// Objective-C class _CKBehaviorOptions_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKBehaviorOptions extends Struct<CKBehaviorOptions> {
   factory CKBehaviorOptions._() {
@@ -4247,7 +4207,7 @@ class CKBehaviorOptions extends Struct<CKBehaviorOptions> {
     );
   }
 
-  static Pointer<Void> automatedDeviceGroup(
+  static Pointer automatedDeviceGroup(
     Pointer<CKBehaviorOptions> _self,
   ) {
     _openDynamicLibrary();
@@ -4257,7 +4217,7 @@ class CKBehaviorOptions extends Struct<CKBehaviorOptions> {
     );
   }
 
-  static Pointer<Void> automatedDeviceGroupDefaults(
+  static Pointer automatedDeviceGroupDefaults(
     Pointer<CKBehaviorOptions> _self,
   ) {
     _openDynamicLibrary();
@@ -4280,7 +4240,7 @@ class CKBehaviorOptions extends Struct<CKBehaviorOptions> {
     );
   }
 
-  static Pointer<Void> buildVersion(
+  static Pointer buildVersion(
     Pointer<CKBehaviorOptions> _self,
   ) {
     _openDynamicLibrary();
@@ -4290,7 +4250,7 @@ class CKBehaviorOptions extends Struct<CKBehaviorOptions> {
     );
   }
 
-  static Pointer<Void> cachedPrefs(
+  static Pointer cachedPrefs(
     Pointer<CKBehaviorOptions> _self,
   ) {
     _openDynamicLibrary();
@@ -4300,7 +4260,7 @@ class CKBehaviorOptions extends Struct<CKBehaviorOptions> {
     );
   }
 
-  static Pointer<Void> cachedPrefsQueue(
+  static Pointer cachedPrefsQueue(
     Pointer<CKBehaviorOptions> _self,
   ) {
     _openDynamicLibrary();
@@ -4350,7 +4310,7 @@ class CKBehaviorOptions extends Struct<CKBehaviorOptions> {
     );
   }
 
-  static Pointer<Void> configBaseURL(
+  static Pointer configBaseURL(
     Pointer<CKBehaviorOptions> _self,
   ) {
     _openDynamicLibrary();
@@ -4360,7 +4320,7 @@ class CKBehaviorOptions extends Struct<CKBehaviorOptions> {
     );
   }
 
-  static Pointer<Void> containerIDToForceFatalManateeZoneDecryptionFailure(
+  static Pointer containerIDToForceFatalManateeZoneDecryptionFailure(
     Pointer<CKBehaviorOptions> _self,
   ) {
     _openDynamicLibrary();
@@ -4370,7 +4330,7 @@ class CKBehaviorOptions extends Struct<CKBehaviorOptions> {
     );
   }
 
-  static Pointer<Void> customCloudDBBaseURL(
+  static Pointer customCloudDBBaseURL(
     Pointer<CKBehaviorOptions> _self,
   ) {
     _openDynamicLibrary();
@@ -4380,7 +4340,7 @@ class CKBehaviorOptions extends Struct<CKBehaviorOptions> {
     );
   }
 
-  static Pointer<Void> customCodeServiceBaseURL(
+  static Pointer customCodeServiceBaseURL(
     Pointer<CKBehaviorOptions> _self,
   ) {
     _openDynamicLibrary();
@@ -4390,7 +4350,7 @@ class CKBehaviorOptions extends Struct<CKBehaviorOptions> {
     );
   }
 
-  static Pointer<Void> customDeviceServiceBaseURL(
+  static Pointer customDeviceServiceBaseURL(
     Pointer<CKBehaviorOptions> _self,
   ) {
     _openDynamicLibrary();
@@ -4400,7 +4360,7 @@ class CKBehaviorOptions extends Struct<CKBehaviorOptions> {
     );
   }
 
-  static Pointer<Void> customMetricsServiceBaseURL(
+  static Pointer customMetricsServiceBaseURL(
     Pointer<CKBehaviorOptions> _self,
   ) {
     _openDynamicLibrary();
@@ -4410,7 +4370,7 @@ class CKBehaviorOptions extends Struct<CKBehaviorOptions> {
     );
   }
 
-  static Pointer<Void> customShareServiceBaseURL(
+  static Pointer customShareServiceBaseURL(
     Pointer<CKBehaviorOptions> _self,
   ) {
     _openDynamicLibrary();
@@ -4698,10 +4658,10 @@ class CKBehaviorOptions extends Struct<CKBehaviorOptions> {
 
   static void observeValueForKeyPath(
     Pointer<CKBehaviorOptions> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> ofObject,
-    @required Pointer<Void> change,
-    @required Pointer<Void> context,
+    Pointer arg, {
+    @required Pointer ofObject,
+    @required Pointer change,
+    @required Pointer context,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_returns_void(
@@ -4734,9 +4694,9 @@ class CKBehaviorOptions extends Struct<CKBehaviorOptions> {
     );
   }
 
-  static Pointer<Void> otherAccountsWithDefaultValue(
+  static Pointer otherAccountsWithDefaultValue(
     Pointer<CKBehaviorOptions> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -4776,7 +4736,7 @@ class CKBehaviorOptions extends Struct<CKBehaviorOptions> {
     );
   }
 
-  static Pointer<Void> primaryAccountEmailOverride(
+  static Pointer primaryAccountEmailOverride(
     Pointer<CKBehaviorOptions> _self,
   ) {
     _openDynamicLibrary();
@@ -4786,7 +4746,7 @@ class CKBehaviorOptions extends Struct<CKBehaviorOptions> {
     );
   }
 
-  static Pointer<Void> primaryAccountPasswordOverride(
+  static Pointer primaryAccountPasswordOverride(
     Pointer<CKBehaviorOptions> _self,
   ) {
     _openDynamicLibrary();
@@ -4796,7 +4756,7 @@ class CKBehaviorOptions extends Struct<CKBehaviorOptions> {
     );
   }
 
-  static Pointer<Void> productName(
+  static Pointer productName(
     Pointer<CKBehaviorOptions> _self,
   ) {
     _openDynamicLibrary();
@@ -4806,7 +4766,7 @@ class CKBehaviorOptions extends Struct<CKBehaviorOptions> {
     );
   }
 
-  static Pointer<Void> productVersion(
+  static Pointer productVersion(
     Pointer<CKBehaviorOptions> _self,
   ) {
     _openDynamicLibrary();
@@ -4846,7 +4806,7 @@ class CKBehaviorOptions extends Struct<CKBehaviorOptions> {
     );
   }
 
-  static Pointer<Void> recordNamesForFakingDecryptionFailure(
+  static Pointer recordNamesForFakingDecryptionFailure(
     Pointer<CKBehaviorOptions> _self,
   ) {
     _openDynamicLibrary();
@@ -4918,7 +4878,7 @@ class CKBehaviorOptions extends Struct<CKBehaviorOptions> {
 
   static void setAutomatedDeviceGroup(
     Pointer<CKBehaviorOptions> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -4930,7 +4890,7 @@ class CKBehaviorOptions extends Struct<CKBehaviorOptions> {
 
   static void setAutomatedDeviceGroupDefaults(
     Pointer<CKBehaviorOptions> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -4942,7 +4902,7 @@ class CKBehaviorOptions extends Struct<CKBehaviorOptions> {
 
   static void setBuildVersion(
     Pointer<CKBehaviorOptions> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -5002,7 +4962,7 @@ class CKBehaviorOptions extends Struct<CKBehaviorOptions> {
 
   static void setCachedPrefs(
     Pointer<CKBehaviorOptions> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -5014,7 +4974,7 @@ class CKBehaviorOptions extends Struct<CKBehaviorOptions> {
 
   static void setCachedPrefsQueue(
     Pointer<CKBehaviorOptions> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -5062,7 +5022,7 @@ class CKBehaviorOptions extends Struct<CKBehaviorOptions> {
 
   static void setConfigBaseURL(
     Pointer<CKBehaviorOptions> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -5074,7 +5034,7 @@ class CKBehaviorOptions extends Struct<CKBehaviorOptions> {
 
   static void setContainerIDToForceFatalManateeZoneDecryptionFailure(
     Pointer<CKBehaviorOptions> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -5087,7 +5047,7 @@ class CKBehaviorOptions extends Struct<CKBehaviorOptions> {
 
   static void setCustomCloudDBBaseURL(
     Pointer<CKBehaviorOptions> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -5099,7 +5059,7 @@ class CKBehaviorOptions extends Struct<CKBehaviorOptions> {
 
   static void setCustomCodeServiceBaseURL(
     Pointer<CKBehaviorOptions> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -5111,7 +5071,7 @@ class CKBehaviorOptions extends Struct<CKBehaviorOptions> {
 
   static void setCustomDeviceServiceBaseURL(
     Pointer<CKBehaviorOptions> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -5123,7 +5083,7 @@ class CKBehaviorOptions extends Struct<CKBehaviorOptions> {
 
   static void setCustomMetricsServiceBaseURL(
     Pointer<CKBehaviorOptions> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -5135,7 +5095,7 @@ class CKBehaviorOptions extends Struct<CKBehaviorOptions> {
 
   static void setCustomShareServiceBaseURL(
     Pointer<CKBehaviorOptions> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -5255,7 +5215,7 @@ class CKBehaviorOptions extends Struct<CKBehaviorOptions> {
 
   static void setPrimaryAccountEmailOverride(
     Pointer<CKBehaviorOptions> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -5267,7 +5227,7 @@ class CKBehaviorOptions extends Struct<CKBehaviorOptions> {
 
   static void setPrimaryAccountPasswordOverride(
     Pointer<CKBehaviorOptions> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -5279,7 +5239,7 @@ class CKBehaviorOptions extends Struct<CKBehaviorOptions> {
 
   static void setProductName(
     Pointer<CKBehaviorOptions> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -5291,7 +5251,7 @@ class CKBehaviorOptions extends Struct<CKBehaviorOptions> {
 
   static void setProductVersion(
     Pointer<CKBehaviorOptions> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -5351,7 +5311,7 @@ class CKBehaviorOptions extends Struct<CKBehaviorOptions> {
 
   static void setSetupBaseURL(
     Pointer<CKBehaviorOptions> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -5399,7 +5359,7 @@ class CKBehaviorOptions extends Struct<CKBehaviorOptions> {
 
   static void setTestRunIDHeader(
     Pointer<CKBehaviorOptions> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -5469,7 +5429,7 @@ class CKBehaviorOptions extends Struct<CKBehaviorOptions> {
     );
   }
 
-  static Pointer<Void> setupBaseURL(
+  static Pointer setupBaseURL(
     Pointer<CKBehaviorOptions> _self,
   ) {
     _openDynamicLibrary();
@@ -5539,7 +5499,7 @@ class CKBehaviorOptions extends Struct<CKBehaviorOptions> {
     );
   }
 
-  static Pointer<Void> testRunIDHeader(
+  static Pointer testRunIDHeader(
     Pointer<CKBehaviorOptions> _self,
   ) {
     _openDynamicLibrary();
@@ -5619,7 +5579,7 @@ class CKBehaviorOptions extends Struct<CKBehaviorOptions> {
     );
   }
 
-  static Pointer<Void> vettedEmailsTestFormat(
+  static Pointer vettedEmailsTestFormat(
     Pointer<CKBehaviorOptions> _self,
   ) {
     _openDynamicLibrary();
@@ -5630,11 +5590,9 @@ class CKBehaviorOptions extends Struct<CKBehaviorOptions> {
   }
 }
 
-/// Objective-C class _CKBlockingAsyncQueue_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKBlockingAsyncQueue extends Struct<CKBlockingAsyncQueue> {
   factory CKBlockingAsyncQueue._() {
@@ -5645,7 +5603,7 @@ class CKBlockingAsyncQueue extends Struct<CKBlockingAsyncQueue> {
     return _objc.allocate("CKBlockingAsyncQueue").cast<CKBlockingAsyncQueue>();
   }
 
-  static Pointer<Void> initWithWidth$qosClass$(
+  static Pointer initWithWidth$qosClass$(
     Pointer<CKBlockingAsyncQueue> _self,
     int arg, {
     @required int qosClass,
@@ -5659,7 +5617,7 @@ class CKBlockingAsyncQueue extends Struct<CKBlockingAsyncQueue> {
     );
   }
 
-  static Pointer<Void> initWithWidth$(
+  static Pointer initWithWidth$(
     Pointer<CKBlockingAsyncQueue> _self,
     int arg,
   ) {
@@ -5673,7 +5631,7 @@ class CKBlockingAsyncQueue extends Struct<CKBlockingAsyncQueue> {
 
   static void performBarrierBlock(
     Pointer<CKBlockingAsyncQueue> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -5685,7 +5643,7 @@ class CKBlockingAsyncQueue extends Struct<CKBlockingAsyncQueue> {
 
   static void performBlock(
     Pointer<CKBlockingAsyncQueue> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -5705,7 +5663,7 @@ class CKBlockingAsyncQueue extends Struct<CKBlockingAsyncQueue> {
     );
   }
 
-  static Pointer<Void> queue(
+  static Pointer queue(
     Pointer<CKBlockingAsyncQueue> _self,
   ) {
     _openDynamicLibrary();
@@ -5715,7 +5673,7 @@ class CKBlockingAsyncQueue extends Struct<CKBlockingAsyncQueue> {
     );
   }
 
-  static Pointer<Void> queueSema(
+  static Pointer queueSema(
     Pointer<CKBlockingAsyncQueue> _self,
   ) {
     _openDynamicLibrary();
@@ -5739,7 +5697,7 @@ class CKBlockingAsyncQueue extends Struct<CKBlockingAsyncQueue> {
 
   static void setQueue(
     Pointer<CKBlockingAsyncQueue> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -5751,7 +5709,7 @@ class CKBlockingAsyncQueue extends Struct<CKBlockingAsyncQueue> {
 
   static void setQueueSema(
     Pointer<CKBlockingAsyncQueue> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -5784,11 +5742,9 @@ class CKBlockingAsyncQueue extends Struct<CKBlockingAsyncQueue> {
   }
 }
 
-/// Objective-C class _CKCodeFunctionInvokeOperation_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKCodeFunctionInvokeOperation
     extends Struct<CKCodeFunctionInvokeOperation> {
@@ -5804,7 +5760,7 @@ class CKCodeFunctionInvokeOperation
 
   static int CKOperationShouldRun(
     Pointer<CKCodeFunctionInvokeOperation> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -5814,7 +5770,7 @@ class CKCodeFunctionInvokeOperation
     );
   }
 
-  static Pointer<Void> activityCreate(
+  static Pointer activityCreate(
     Pointer<CKCodeFunctionInvokeOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -5826,7 +5782,7 @@ class CKCodeFunctionInvokeOperation
 
   static void fillFromOperationInfo(
     Pointer<CKCodeFunctionInvokeOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -5838,7 +5794,7 @@ class CKCodeFunctionInvokeOperation
 
   static void fillOutOperationInfo(
     Pointer<CKCodeFunctionInvokeOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -5848,7 +5804,7 @@ class CKCodeFunctionInvokeOperation
     );
   }
 
-  static Pointer<Void> functionInvokeCompletionBlock(
+  static Pointer functionInvokeCompletionBlock(
     Pointer<CKCodeFunctionInvokeOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -5858,7 +5814,7 @@ class CKCodeFunctionInvokeOperation
     );
   }
 
-  static Pointer<Void> functionName(
+  static Pointer functionName(
     Pointer<CKCodeFunctionInvokeOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -5878,12 +5834,11 @@ class CKCodeFunctionInvokeOperation
     );
   }
 
-  static Pointer<Void>
-      initWithServiceName$functionName$serializedParameters$local$(
+  static Pointer initWithServiceName$functionName$serializedParameters$local$(
     Pointer<CKCodeFunctionInvokeOperation> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> functionName,
-    @required Pointer<Void> serializedParameters,
+    Pointer arg, {
+    @required Pointer functionName,
+    @required Pointer serializedParameters,
     @required int local,
   }) {
     _openDynamicLibrary();
@@ -5898,11 +5853,11 @@ class CKCodeFunctionInvokeOperation
     );
   }
 
-  static Pointer<Void> initWithServiceName$functionName$serializedParameters$(
+  static Pointer initWithServiceName$functionName$serializedParameters$(
     Pointer<CKCodeFunctionInvokeOperation> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> functionName,
-    @required Pointer<Void> serializedParameters,
+    Pointer arg, {
+    @required Pointer functionName,
+    @required Pointer serializedParameters,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -5925,7 +5880,7 @@ class CKCodeFunctionInvokeOperation
     );
   }
 
-  static Pointer<Void> perRecordProgressBlock(
+  static Pointer perRecordProgressBlock(
     Pointer<CKCodeFunctionInvokeOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -5945,7 +5900,7 @@ class CKCodeFunctionInvokeOperation
     );
   }
 
-  static Pointer<Void> responseError(
+  static Pointer responseError(
     Pointer<CKCodeFunctionInvokeOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -5955,7 +5910,7 @@ class CKCodeFunctionInvokeOperation
     );
   }
 
-  static Pointer<Void> serializedRequest(
+  static Pointer serializedRequest(
     Pointer<CKCodeFunctionInvokeOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -5965,7 +5920,7 @@ class CKCodeFunctionInvokeOperation
     );
   }
 
-  static Pointer<Void> serializedResponse(
+  static Pointer serializedResponse(
     Pointer<CKCodeFunctionInvokeOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -5975,7 +5930,7 @@ class CKCodeFunctionInvokeOperation
     );
   }
 
-  static Pointer<Void> serviceName(
+  static Pointer serviceName(
     Pointer<CKCodeFunctionInvokeOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -5987,7 +5942,7 @@ class CKCodeFunctionInvokeOperation
 
   static void setFunctionInvokeCompletionBlock(
     Pointer<CKCodeFunctionInvokeOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -5999,7 +5954,7 @@ class CKCodeFunctionInvokeOperation
 
   static void setFunctionName(
     Pointer<CKCodeFunctionInvokeOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -6023,7 +5978,7 @@ class CKCodeFunctionInvokeOperation
 
   static void setPerRecordProgressBlock(
     Pointer<CKCodeFunctionInvokeOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -6035,7 +5990,7 @@ class CKCodeFunctionInvokeOperation
 
   static void setResponseError(
     Pointer<CKCodeFunctionInvokeOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -6047,7 +6002,7 @@ class CKCodeFunctionInvokeOperation
 
   static void setSerializedRequest(
     Pointer<CKCodeFunctionInvokeOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -6059,7 +6014,7 @@ class CKCodeFunctionInvokeOperation
 
   static void setSerializedResponse(
     Pointer<CKCodeFunctionInvokeOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -6071,7 +6026,7 @@ class CKCodeFunctionInvokeOperation
 
   static void setServiceName(
     Pointer<CKCodeFunctionInvokeOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -6104,11 +6059,9 @@ class CKCodeFunctionInvokeOperation
   }
 }
 
-/// Objective-C class _CKCodeFunctionInvokeOperationInfo_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKCodeFunctionInvokeOperationInfo
     extends Struct<CKCodeFunctionInvokeOperationInfo> {
@@ -6124,7 +6077,7 @@ class CKCodeFunctionInvokeOperationInfo
 
   static void encodeWithCoder(
     Pointer<CKCodeFunctionInvokeOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -6134,7 +6087,7 @@ class CKCodeFunctionInvokeOperationInfo
     );
   }
 
-  static Pointer<Void> functionName(
+  static Pointer functionName(
     Pointer<CKCodeFunctionInvokeOperationInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -6144,9 +6097,9 @@ class CKCodeFunctionInvokeOperationInfo
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CKCodeFunctionInvokeOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -6166,7 +6119,7 @@ class CKCodeFunctionInvokeOperationInfo
     );
   }
 
-  static Pointer<Void> requestLocalSerializations(
+  static Pointer requestLocalSerializations(
     Pointer<CKCodeFunctionInvokeOperationInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -6176,7 +6129,7 @@ class CKCodeFunctionInvokeOperationInfo
     );
   }
 
-  static Pointer<Void> serviceName(
+  static Pointer serviceName(
     Pointer<CKCodeFunctionInvokeOperationInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -6188,7 +6141,7 @@ class CKCodeFunctionInvokeOperationInfo
 
   static void setFunctionName(
     Pointer<CKCodeFunctionInvokeOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -6212,7 +6165,7 @@ class CKCodeFunctionInvokeOperationInfo
 
   static void setRequestLocalSerializations(
     Pointer<CKCodeFunctionInvokeOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -6224,7 +6177,7 @@ class CKCodeFunctionInvokeOperationInfo
 
   static void setServiceName(
     Pointer<CKCodeFunctionInvokeOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -6257,11 +6210,9 @@ class CKCodeFunctionInvokeOperationInfo
   }
 }
 
-/// Objective-C class _CKComparisonModifierValidator_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKComparisonModifierValidator
     extends Struct<CKComparisonModifierValidator> {
@@ -6275,7 +6226,7 @@ class CKComparisonModifierValidator
         .cast<CKComparisonModifierValidator>();
   }
 
-  static Pointer<Void> CKPropertiesDescription(
+  static Pointer CKPropertiesDescription(
     Pointer<CKComparisonModifierValidator> _self,
   ) {
     _openDynamicLibrary();
@@ -6285,7 +6236,7 @@ class CKComparisonModifierValidator
     );
   }
 
-  static Pointer<Void> initWithModifier(
+  static Pointer initWithModifier(
     Pointer<CKComparisonModifierValidator> _self,
     int arg,
   ) {
@@ -6321,8 +6272,8 @@ class CKComparisonModifierValidator
 
   static int validate(
     Pointer<CKComparisonModifierValidator> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -6334,11 +6285,9 @@ class CKComparisonModifierValidator
   }
 }
 
-/// Objective-C class _CKComparisonOperatorValidator_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKComparisonOperatorValidator
     extends Struct<CKComparisonOperatorValidator> {
@@ -6352,7 +6301,7 @@ class CKComparisonOperatorValidator
         .cast<CKComparisonOperatorValidator>();
   }
 
-  static Pointer<Void> CKPropertiesDescription(
+  static Pointer CKPropertiesDescription(
     Pointer<CKComparisonOperatorValidator> _self,
   ) {
     _openDynamicLibrary();
@@ -6362,7 +6311,7 @@ class CKComparisonOperatorValidator
     );
   }
 
-  static Pointer<Void> initWithOperatorType(
+  static Pointer initWithOperatorType(
     Pointer<CKComparisonOperatorValidator> _self,
     int arg,
   ) {
@@ -6398,8 +6347,8 @@ class CKComparisonOperatorValidator
 
   static int validate(
     Pointer<CKComparisonOperatorValidator> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -6411,11 +6360,9 @@ class CKComparisonOperatorValidator
   }
 }
 
-/// Objective-C class _CKComparisonOptionsValidator_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKComparisonOptionsValidator
     extends Struct<CKComparisonOptionsValidator> {
@@ -6429,7 +6376,7 @@ class CKComparisonOptionsValidator
         .cast<CKComparisonOptionsValidator>();
   }
 
-  static Pointer<Void> CKPropertiesDescription(
+  static Pointer CKPropertiesDescription(
     Pointer<CKComparisonOptionsValidator> _self,
   ) {
     _openDynamicLibrary();
@@ -6439,7 +6386,7 @@ class CKComparisonOptionsValidator
     );
   }
 
-  static Pointer<Void> initWithOptions(
+  static Pointer initWithOptions(
     Pointer<CKComparisonOptionsValidator> _self,
     int arg,
   ) {
@@ -6475,8 +6422,8 @@ class CKComparisonOptionsValidator
 
   static int validate(
     Pointer<CKComparisonOptionsValidator> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -6488,11 +6435,9 @@ class CKComparisonOptionsValidator
   }
 }
 
-/// Objective-C class _CKComparisonPredicateValidator_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKComparisonPredicateValidator
     extends Struct<CKComparisonPredicateValidator> {
@@ -6506,7 +6451,7 @@ class CKComparisonPredicateValidator
         .cast<CKComparisonPredicateValidator>();
   }
 
-  static Pointer<Void> CKPropertiesDescription(
+  static Pointer CKPropertiesDescription(
     Pointer<CKComparisonPredicateValidator> _self,
   ) {
     _openDynamicLibrary();
@@ -6516,7 +6461,7 @@ class CKComparisonPredicateValidator
     );
   }
 
-  static Pointer<Void> leftExpressionValidator(
+  static Pointer leftExpressionValidator(
     Pointer<CKComparisonPredicateValidator> _self,
   ) {
     _openDynamicLibrary();
@@ -6526,7 +6471,7 @@ class CKComparisonPredicateValidator
     );
   }
 
-  static Pointer<Void> modifierValidator(
+  static Pointer modifierValidator(
     Pointer<CKComparisonPredicateValidator> _self,
   ) {
     _openDynamicLibrary();
@@ -6536,7 +6481,7 @@ class CKComparisonPredicateValidator
     );
   }
 
-  static Pointer<Void> operatorValidator(
+  static Pointer operatorValidator(
     Pointer<CKComparisonPredicateValidator> _self,
   ) {
     _openDynamicLibrary();
@@ -6546,7 +6491,7 @@ class CKComparisonPredicateValidator
     );
   }
 
-  static Pointer<Void> optionsValidator(
+  static Pointer optionsValidator(
     Pointer<CKComparisonPredicateValidator> _self,
   ) {
     _openDynamicLibrary();
@@ -6556,7 +6501,7 @@ class CKComparisonPredicateValidator
     );
   }
 
-  static Pointer<Void> rightExpressionValidator(
+  static Pointer rightExpressionValidator(
     Pointer<CKComparisonPredicateValidator> _self,
   ) {
     _openDynamicLibrary();
@@ -6568,7 +6513,7 @@ class CKComparisonPredicateValidator
 
   static void setLeftExpressionValidator(
     Pointer<CKComparisonPredicateValidator> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -6580,7 +6525,7 @@ class CKComparisonPredicateValidator
 
   static void setModifierValidator(
     Pointer<CKComparisonPredicateValidator> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -6592,7 +6537,7 @@ class CKComparisonPredicateValidator
 
   static void setOperatorValidator(
     Pointer<CKComparisonPredicateValidator> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -6604,7 +6549,7 @@ class CKComparisonPredicateValidator
 
   static void setOptionsValidator(
     Pointer<CKComparisonPredicateValidator> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -6616,7 +6561,7 @@ class CKComparisonPredicateValidator
 
   static void setRightExpressionValidator(
     Pointer<CKComparisonPredicateValidator> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -6628,8 +6573,8 @@ class CKComparisonPredicateValidator
 
   static int validate(
     Pointer<CKComparisonPredicateValidator> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -6641,11 +6586,9 @@ class CKComparisonPredicateValidator
   }
 }
 
-/// Objective-C class _CKCompleteParticipantVettingOperation_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKCompleteParticipantVettingOperation
     extends Struct<CKCompleteParticipantVettingOperation> {
@@ -6661,7 +6604,7 @@ class CKCompleteParticipantVettingOperation
 
   static int CKOperationShouldRun(
     Pointer<CKCompleteParticipantVettingOperation> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -6671,7 +6614,7 @@ class CKCompleteParticipantVettingOperation
     );
   }
 
-  static Pointer<Void> activityCreate(
+  static Pointer activityCreate(
     Pointer<CKCompleteParticipantVettingOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -6681,7 +6624,7 @@ class CKCompleteParticipantVettingOperation
     );
   }
 
-  static Pointer<Void> baseToken(
+  static Pointer baseToken(
     Pointer<CKCompleteParticipantVettingOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -6691,7 +6634,7 @@ class CKCompleteParticipantVettingOperation
     );
   }
 
-  static Pointer<Void> completeParticipantVettingCompletionBlock(
+  static Pointer completeParticipantVettingCompletionBlock(
     Pointer<CKCompleteParticipantVettingOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -6701,7 +6644,7 @@ class CKCompleteParticipantVettingOperation
     );
   }
 
-  static Pointer<Void> displayedHostname(
+  static Pointer displayedHostname(
     Pointer<CKCompleteParticipantVettingOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -6711,7 +6654,7 @@ class CKCompleteParticipantVettingOperation
     );
   }
 
-  static Pointer<Void> encryptedKey(
+  static Pointer encryptedKey(
     Pointer<CKCompleteParticipantVettingOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -6723,7 +6666,7 @@ class CKCompleteParticipantVettingOperation
 
   static void fillFromOperationInfo(
     Pointer<CKCompleteParticipantVettingOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -6735,7 +6678,7 @@ class CKCompleteParticipantVettingOperation
 
   static void fillOutOperationInfo(
     Pointer<CKCompleteParticipantVettingOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -6745,7 +6688,7 @@ class CKCompleteParticipantVettingOperation
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CKCompleteParticipantVettingOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -6755,11 +6698,11 @@ class CKCompleteParticipantVettingOperation
     );
   }
 
-  static Pointer<Void> initWithVettingToken(
+  static Pointer initWithVettingToken(
     Pointer<CKCompleteParticipantVettingOperation> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> vettingRecord,
-    @required Pointer<Void> displayedHostname,
+    Pointer arg, {
+    @required Pointer vettingRecord,
+    @required Pointer displayedHostname,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -6782,7 +6725,7 @@ class CKCompleteParticipantVettingOperation
     );
   }
 
-  static Pointer<Void> reconstructedShareURL(
+  static Pointer reconstructedShareURL(
     Pointer<CKCompleteParticipantVettingOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -6792,7 +6735,7 @@ class CKCompleteParticipantVettingOperation
     );
   }
 
-  static Pointer<Void> routingKey(
+  static Pointer routingKey(
     Pointer<CKCompleteParticipantVettingOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -6804,7 +6747,7 @@ class CKCompleteParticipantVettingOperation
 
   static void setBaseToken(
     Pointer<CKCompleteParticipantVettingOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -6816,7 +6759,7 @@ class CKCompleteParticipantVettingOperation
 
   static void setCompleteParticipantVettingCompletionBlock(
     Pointer<CKCompleteParticipantVettingOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -6828,7 +6771,7 @@ class CKCompleteParticipantVettingOperation
 
   static void setDisplayedHostname(
     Pointer<CKCompleteParticipantVettingOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -6840,7 +6783,7 @@ class CKCompleteParticipantVettingOperation
 
   static void setEncryptedKey(
     Pointer<CKCompleteParticipantVettingOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -6852,7 +6795,7 @@ class CKCompleteParticipantVettingOperation
 
   static void setReconstructedShareURL(
     Pointer<CKCompleteParticipantVettingOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -6864,7 +6807,7 @@ class CKCompleteParticipantVettingOperation
 
   static void setRoutingKey(
     Pointer<CKCompleteParticipantVettingOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -6876,7 +6819,7 @@ class CKCompleteParticipantVettingOperation
 
   static void setShareMetadata(
     Pointer<CKCompleteParticipantVettingOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -6888,7 +6831,7 @@ class CKCompleteParticipantVettingOperation
 
   static void setVerificationError(
     Pointer<CKCompleteParticipantVettingOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -6900,7 +6843,7 @@ class CKCompleteParticipantVettingOperation
 
   static void setVettingEmail(
     Pointer<CKCompleteParticipantVettingOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -6912,7 +6855,7 @@ class CKCompleteParticipantVettingOperation
 
   static void setVettingPhone(
     Pointer<CKCompleteParticipantVettingOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -6924,7 +6867,7 @@ class CKCompleteParticipantVettingOperation
 
   static void setVettingToken(
     Pointer<CKCompleteParticipantVettingOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -6934,7 +6877,7 @@ class CKCompleteParticipantVettingOperation
     );
   }
 
-  static Pointer<Void> shareMetadata(
+  static Pointer shareMetadata(
     Pointer<CKCompleteParticipantVettingOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -6944,7 +6887,7 @@ class CKCompleteParticipantVettingOperation
     );
   }
 
-  static Pointer<Void> verificationError(
+  static Pointer verificationError(
     Pointer<CKCompleteParticipantVettingOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -6954,7 +6897,7 @@ class CKCompleteParticipantVettingOperation
     );
   }
 
-  static Pointer<Void> vettingEmail(
+  static Pointer vettingEmail(
     Pointer<CKCompleteParticipantVettingOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -6964,7 +6907,7 @@ class CKCompleteParticipantVettingOperation
     );
   }
 
-  static Pointer<Void> vettingPhone(
+  static Pointer vettingPhone(
     Pointer<CKCompleteParticipantVettingOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -6974,7 +6917,7 @@ class CKCompleteParticipantVettingOperation
     );
   }
 
-  static Pointer<Void> vettingToken(
+  static Pointer vettingToken(
     Pointer<CKCompleteParticipantVettingOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -6985,11 +6928,9 @@ class CKCompleteParticipantVettingOperation
   }
 }
 
-/// Objective-C class _CKCompleteParticipantVettingOperationInfo_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKCompleteParticipantVettingOperationInfo
     extends Struct<CKCompleteParticipantVettingOperationInfo> {
@@ -7003,7 +6944,7 @@ class CKCompleteParticipantVettingOperationInfo
         .cast<CKCompleteParticipantVettingOperationInfo>();
   }
 
-  static Pointer<Void> baseToken(
+  static Pointer baseToken(
     Pointer<CKCompleteParticipantVettingOperationInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -7013,7 +6954,7 @@ class CKCompleteParticipantVettingOperationInfo
     );
   }
 
-  static Pointer<Void> displayedHostname(
+  static Pointer displayedHostname(
     Pointer<CKCompleteParticipantVettingOperationInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -7025,7 +6966,7 @@ class CKCompleteParticipantVettingOperationInfo
 
   static void encodeWithCoder(
     Pointer<CKCompleteParticipantVettingOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -7035,7 +6976,7 @@ class CKCompleteParticipantVettingOperationInfo
     );
   }
 
-  static Pointer<Void> encryptedKey(
+  static Pointer encryptedKey(
     Pointer<CKCompleteParticipantVettingOperationInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -7045,9 +6986,9 @@ class CKCompleteParticipantVettingOperationInfo
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CKCompleteParticipantVettingOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -7057,7 +6998,7 @@ class CKCompleteParticipantVettingOperationInfo
     );
   }
 
-  static Pointer<Void> routingKey(
+  static Pointer routingKey(
     Pointer<CKCompleteParticipantVettingOperationInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -7069,7 +7010,7 @@ class CKCompleteParticipantVettingOperationInfo
 
   static void setBaseToken(
     Pointer<CKCompleteParticipantVettingOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -7081,7 +7022,7 @@ class CKCompleteParticipantVettingOperationInfo
 
   static void setDisplayedHostname(
     Pointer<CKCompleteParticipantVettingOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -7093,7 +7034,7 @@ class CKCompleteParticipantVettingOperationInfo
 
   static void setEncryptedKey(
     Pointer<CKCompleteParticipantVettingOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -7105,7 +7046,7 @@ class CKCompleteParticipantVettingOperationInfo
 
   static void setRoutingKey(
     Pointer<CKCompleteParticipantVettingOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -7117,7 +7058,7 @@ class CKCompleteParticipantVettingOperationInfo
 
   static void setVettingEmail(
     Pointer<CKCompleteParticipantVettingOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -7129,7 +7070,7 @@ class CKCompleteParticipantVettingOperationInfo
 
   static void setVettingPhone(
     Pointer<CKCompleteParticipantVettingOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -7141,7 +7082,7 @@ class CKCompleteParticipantVettingOperationInfo
 
   static void setVettingToken(
     Pointer<CKCompleteParticipantVettingOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -7151,7 +7092,7 @@ class CKCompleteParticipantVettingOperationInfo
     );
   }
 
-  static Pointer<Void> vettingEmail(
+  static Pointer vettingEmail(
     Pointer<CKCompleteParticipantVettingOperationInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -7161,7 +7102,7 @@ class CKCompleteParticipantVettingOperationInfo
     );
   }
 
-  static Pointer<Void> vettingPhone(
+  static Pointer vettingPhone(
     Pointer<CKCompleteParticipantVettingOperationInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -7171,7 +7112,7 @@ class CKCompleteParticipantVettingOperationInfo
     );
   }
 
-  static Pointer<Void> vettingToken(
+  static Pointer vettingToken(
     Pointer<CKCompleteParticipantVettingOperationInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -7182,11 +7123,9 @@ class CKCompleteParticipantVettingOperationInfo
   }
 }
 
-/// Objective-C class _CKCompoundSubpredicateValidator_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKCompoundSubpredicateValidator
     extends Struct<CKCompoundSubpredicateValidator> {
@@ -7200,7 +7139,7 @@ class CKCompoundSubpredicateValidator
         .cast<CKCompoundSubpredicateValidator>();
   }
 
-  static Pointer<Void> CKPropertiesDescription(
+  static Pointer CKPropertiesDescription(
     Pointer<CKCompoundSubpredicateValidator> _self,
   ) {
     _openDynamicLibrary();
@@ -7210,9 +7149,9 @@ class CKCompoundSubpredicateValidator
     );
   }
 
-  static Pointer<Void> initWithValidator(
+  static Pointer initWithValidator(
     Pointer<CKCompoundSubpredicateValidator> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -7224,7 +7163,7 @@ class CKCompoundSubpredicateValidator
 
   static void setValidator(
     Pointer<CKCompoundSubpredicateValidator> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -7236,8 +7175,8 @@ class CKCompoundSubpredicateValidator
 
   static int validate(
     Pointer<CKCompoundSubpredicateValidator> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -7248,7 +7187,7 @@ class CKCompoundSubpredicateValidator
     );
   }
 
-  static Pointer<Void> validator(
+  static Pointer validator(
     Pointer<CKCompoundSubpredicateValidator> _self,
   ) {
     _openDynamicLibrary();
@@ -7259,11 +7198,9 @@ class CKCompoundSubpredicateValidator
   }
 }
 
-/// Objective-C class _CKCompoundTypePredicateValidator_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKCompoundTypePredicateValidator
     extends Struct<CKCompoundTypePredicateValidator> {
@@ -7277,7 +7214,7 @@ class CKCompoundTypePredicateValidator
         .cast<CKCompoundTypePredicateValidator>();
   }
 
-  static Pointer<Void> CKPropertiesDescription(
+  static Pointer CKPropertiesDescription(
     Pointer<CKCompoundTypePredicateValidator> _self,
   ) {
     _openDynamicLibrary();
@@ -7287,7 +7224,7 @@ class CKCompoundTypePredicateValidator
     );
   }
 
-  static Pointer<Void> initWithType(
+  static Pointer initWithType(
     Pointer<CKCompoundTypePredicateValidator> _self,
     int arg,
   ) {
@@ -7323,8 +7260,8 @@ class CKCompoundTypePredicateValidator
 
   static int validate(
     Pointer<CKCompoundTypePredicateValidator> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -7336,11 +7273,9 @@ class CKCompoundTypePredicateValidator
   }
 }
 
-/// Objective-C class _CKConstantValueExpressionValidator_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKConstantValueExpressionValidator
     extends Struct<CKConstantValueExpressionValidator> {
@@ -7354,7 +7289,7 @@ class CKConstantValueExpressionValidator
         .cast<CKConstantValueExpressionValidator>();
   }
 
-  static Pointer<Void> CKPropertiesDescription(
+  static Pointer CKPropertiesDescription(
     Pointer<CKConstantValueExpressionValidator> _self,
   ) {
     _openDynamicLibrary();
@@ -7364,9 +7299,9 @@ class CKConstantValueExpressionValidator
     );
   }
 
-  static Pointer<Void> initWithValidator(
+  static Pointer initWithValidator(
     Pointer<CKConstantValueExpressionValidator> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -7378,7 +7313,7 @@ class CKConstantValueExpressionValidator
 
   static void setValidator(
     Pointer<CKConstantValueExpressionValidator> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -7390,8 +7325,8 @@ class CKConstantValueExpressionValidator
 
   static int validate(
     Pointer<CKConstantValueExpressionValidator> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -7402,7 +7337,7 @@ class CKConstantValueExpressionValidator
     );
   }
 
-  static Pointer<Void> validator(
+  static Pointer validator(
     Pointer<CKConstantValueExpressionValidator> _self,
   ) {
     _openDynamicLibrary();
@@ -7413,11 +7348,9 @@ class CKConstantValueExpressionValidator
   }
 }
 
-/// Objective-C class _CKContactsSupport_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKContactsSupport extends Struct<CKContactsSupport> {
   factory CKContactsSupport._() {
@@ -7428,7 +7361,7 @@ class CKContactsSupport extends Struct<CKContactsSupport> {
     return _objc.allocate("CKContactsSupport").cast<CKContactsSupport>();
   }
 
-  static Pointer<Void> CKCNContact(
+  static Pointer CKCNContact(
     Pointer<CKContactsSupport> _self,
   ) {
     _openDynamicLibrary();
@@ -7438,7 +7371,7 @@ class CKContactsSupport extends Struct<CKContactsSupport> {
     );
   }
 
-  static Pointer<Void> CKCNContactFetchRequest(
+  static Pointer CKCNContactFetchRequest(
     Pointer<CKContactsSupport> _self,
   ) {
     _openDynamicLibrary();
@@ -7448,7 +7381,7 @@ class CKContactsSupport extends Struct<CKContactsSupport> {
     );
   }
 
-  static Pointer<Void> CKCNContactStore(
+  static Pointer CKCNContactStore(
     Pointer<CKContactsSupport> _self,
   ) {
     _openDynamicLibrary();
@@ -7458,7 +7391,7 @@ class CKContactsSupport extends Struct<CKContactsSupport> {
     );
   }
 
-  static Pointer<Void> CKCNMutableContact(
+  static Pointer CKCNMutableContact(
     Pointer<CKContactsSupport> _self,
   ) {
     _openDynamicLibrary();
@@ -7468,7 +7401,7 @@ class CKContactsSupport extends Struct<CKContactsSupport> {
     );
   }
 
-  static Pointer<Void> CKCNPhoneNumber(
+  static Pointer CKCNPhoneNumber(
     Pointer<CKContactsSupport> _self,
   ) {
     _openDynamicLibrary();
@@ -7479,11 +7412,9 @@ class CKContactsSupport extends Struct<CKContactsSupport> {
   }
 }
 
-/// Objective-C class _CKContainer_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKContainer extends Struct<CKContainer> {
   factory CKContainer._() {
@@ -7494,7 +7425,7 @@ class CKContainer extends Struct<CKContainer> {
     return _objc.allocate("CKContainer").cast<CKContainer>();
   }
 
-  static Pointer<Void> CKPropertiesDescription(
+  static Pointer CKPropertiesDescription(
     Pointer<CKContainer> _self,
   ) {
     _openDynamicLibrary();
@@ -7504,7 +7435,7 @@ class CKContainer extends Struct<CKContainer> {
     );
   }
 
-  static Pointer<Void> CKStatusReportArray(
+  static Pointer CKStatusReportArray(
     Pointer<CKContainer> _self,
   ) {
     _openDynamicLibrary();
@@ -7516,8 +7447,8 @@ class CKContainer extends Struct<CKContainer> {
 
   static void acceptShareMetadata(
     Pointer<CKContainer> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> completionHandler,
+    Pointer arg, {
+    @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -7540,7 +7471,7 @@ class CKContainer extends Struct<CKContainer> {
 
   static void accountChangedWithID(
     Pointer<CKContainer> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -7550,7 +7481,7 @@ class CKContainer extends Struct<CKContainer> {
     );
   }
 
-  static Pointer<Void> accountInfoOverride(
+  static Pointer accountInfoOverride(
     Pointer<CKContainer> _self,
   ) {
     _openDynamicLibrary();
@@ -7562,7 +7493,7 @@ class CKContainer extends Struct<CKContainer> {
 
   static void accountInfoWithCompletionHandler(
     Pointer<CKContainer> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -7574,7 +7505,7 @@ class CKContainer extends Struct<CKContainer> {
 
   static void accountStatusWithCompletionHandler(
     Pointer<CKContainer> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -7584,7 +7515,7 @@ class CKContainer extends Struct<CKContainer> {
     );
   }
 
-  static Pointer<Void> accountStore(
+  static Pointer accountStore(
     Pointer<CKContainer> _self,
   ) {
     _openDynamicLibrary();
@@ -7596,8 +7527,8 @@ class CKContainer extends Struct<CKContainer> {
 
   static void accountsDidGrantAccessToBundleID(
     Pointer<CKContainer> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> containerIdentifiers,
+    Pointer arg, {
+    @required Pointer containerIdentifiers,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -7611,8 +7542,8 @@ class CKContainer extends Struct<CKContainer> {
 
   static void accountsDidRevokeAccessToBundleID(
     Pointer<CKContainer> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> containerIdentifiers,
+    Pointer arg, {
+    @required Pointer containerIdentifiers,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -7626,8 +7557,8 @@ class CKContainer extends Struct<CKContainer> {
 
   static void accountsWillDeleteAccount(
     Pointer<CKContainer> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> completionHandler,
+    Pointer arg, {
+    @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -7640,7 +7571,7 @@ class CKContainer extends Struct<CKContainer> {
 
   static void addOperation(
     Pointer<CKContainer> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -7650,7 +7581,7 @@ class CKContainer extends Struct<CKContainer> {
     );
   }
 
-  static Pointer<Void> assetsByUUID(
+  static Pointer assetsByUUID(
     Pointer<CKContainer> _self,
   ) {
     _openDynamicLibrary();
@@ -7660,7 +7591,7 @@ class CKContainer extends Struct<CKContainer> {
     );
   }
 
-  static Pointer<Void> backgroundThrottlingOperationQueue(
+  static Pointer backgroundThrottlingOperationQueue(
     Pointer<CKContainer> _self,
   ) {
     _openDynamicLibrary();
@@ -7670,7 +7601,7 @@ class CKContainer extends Struct<CKContainer> {
     );
   }
 
-  static Pointer<Void> cachedSetupInfo(
+  static Pointer cachedSetupInfo(
     Pointer<CKContainer> _self,
   ) {
     _openDynamicLibrary();
@@ -7680,7 +7611,7 @@ class CKContainer extends Struct<CKContainer> {
     );
   }
 
-  static Pointer<Void> callbackManager(
+  static Pointer callbackManager(
     Pointer<CKContainer> _self,
   ) {
     _openDynamicLibrary();
@@ -7712,7 +7643,7 @@ class CKContainer extends Struct<CKContainer> {
 
   static void clearPCSCachesForKnownContextsWithCompletionHandler(
     Pointer<CKContainer> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -7724,7 +7655,7 @@ class CKContainer extends Struct<CKContainer> {
 
   static void clearPILSCacheForLookupInfos(
     Pointer<CKContainer> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -7734,9 +7665,9 @@ class CKContainer extends Struct<CKContainer> {
     );
   }
 
-  static Pointer<Void> connectionWithError(
+  static Pointer connectionWithError(
     Pointer<CKContainer> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -7748,8 +7679,8 @@ class CKContainer extends Struct<CKContainer> {
 
   static void consumeSandboxExtensions(
     Pointer<CKContainer> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> reply,
+    Pointer arg, {
+    @required Pointer reply,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -7760,7 +7691,7 @@ class CKContainer extends Struct<CKContainer> {
     );
   }
 
-  static Pointer<Void> containerID(
+  static Pointer containerID(
     Pointer<CKContainer> _self,
   ) {
     _openDynamicLibrary();
@@ -7770,7 +7701,7 @@ class CKContainer extends Struct<CKContainer> {
     );
   }
 
-  static Pointer<Void> containerIdentifier(
+  static Pointer containerIdentifier(
     Pointer<CKContainer> _self,
   ) {
     _openDynamicLibrary();
@@ -7780,7 +7711,7 @@ class CKContainer extends Struct<CKContainer> {
     );
   }
 
-  static Pointer<Void> containerScopedUserID(
+  static Pointer containerScopedUserID(
     Pointer<CKContainer> _self,
   ) {
     _openDynamicLibrary();
@@ -7790,7 +7721,7 @@ class CKContainer extends Struct<CKContainer> {
     );
   }
 
-  static Pointer<Void> convenienceOperationQueue(
+  static Pointer convenienceOperationQueue(
     Pointer<CKContainer> _self,
   ) {
     _openDynamicLibrary();
@@ -7800,9 +7731,9 @@ class CKContainer extends Struct<CKContainer> {
     );
   }
 
-  static Pointer<Void> daemonWithErrorHandler(
+  static Pointer daemonWithErrorHandler(
     Pointer<CKContainer> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -7812,7 +7743,7 @@ class CKContainer extends Struct<CKContainer> {
     );
   }
 
-  static Pointer<Void> databaseWithDatabaseScope(
+  static Pointer databaseWithDatabaseScope(
     Pointer<CKContainer> _self,
     int arg,
   ) {
@@ -7826,8 +7757,8 @@ class CKContainer extends Struct<CKContainer> {
 
   static void dataclassEnabled(
     Pointer<CKContainer> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> completionHandler,
+    Pointer arg, {
+    @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -7850,8 +7781,8 @@ class CKContainer extends Struct<CKContainer> {
 
   static void decryptPersonalInfoOnShare(
     Pointer<CKContainer> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> completionHandler,
+    Pointer arg, {
+    @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -7862,7 +7793,7 @@ class CKContainer extends Struct<CKContainer> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CKContainer> _self,
   ) {
     _openDynamicLibrary();
@@ -7874,7 +7805,7 @@ class CKContainer extends Struct<CKContainer> {
 
   static void discoverAllContactUserInfosWithCompletionHandler(
     Pointer<CKContainer> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -7886,7 +7817,7 @@ class CKContainer extends Struct<CKContainer> {
 
   static void discoverAllIdentitiesWithCompletionHandler(
     Pointer<CKContainer> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -7898,8 +7829,8 @@ class CKContainer extends Struct<CKContainer> {
 
   static void discoverUserIdentityWithEmailAddress(
     Pointer<CKContainer> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> completionHandler,
+    Pointer arg, {
+    @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -7913,8 +7844,8 @@ class CKContainer extends Struct<CKContainer> {
 
   static void discoverUserIdentityWithPhoneNumber(
     Pointer<CKContainer> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> completionHandler,
+    Pointer arg, {
+    @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -7928,8 +7859,8 @@ class CKContainer extends Struct<CKContainer> {
 
   static void discoverUserIdentityWithUserRecordID(
     Pointer<CKContainer> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> completionHandler,
+    Pointer arg, {
+    @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -7943,8 +7874,8 @@ class CKContainer extends Struct<CKContainer> {
 
   static void discoverUserInfoWithEmailAddress(
     Pointer<CKContainer> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> completionHandler,
+    Pointer arg, {
+    @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -7957,8 +7888,8 @@ class CKContainer extends Struct<CKContainer> {
 
   static void discoverUserInfoWithUserRecordID(
     Pointer<CKContainer> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> completionHandler,
+    Pointer arg, {
+    @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -7971,8 +7902,8 @@ class CKContainer extends Struct<CKContainer> {
 
   static void dumpAllClientsStatusReportToFileHandle(
     Pointer<CKContainer> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> completionHandler,
+    Pointer arg, {
+    @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -7996,8 +7927,8 @@ class CKContainer extends Struct<CKContainer> {
 
   static void dumpDaemonStatusReportToFileHandle(
     Pointer<CKContainer> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> completionHandler,
+    Pointer arg, {
+    @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -8009,7 +7940,7 @@ class CKContainer extends Struct<CKContainer> {
     );
   }
 
-  static Pointer<Void> fakeEntitlements(
+  static Pointer fakeEntitlements(
     Pointer<CKContainer> _self,
   ) {
     _openDynamicLibrary();
@@ -8021,7 +7952,7 @@ class CKContainer extends Struct<CKContainer> {
 
   static void fetchAllLongLivedOperationIDsWithCompletionHandler(
     Pointer<CKContainer> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -8033,7 +7964,7 @@ class CKContainer extends Struct<CKContainer> {
 
   static void fetchCurrentDeviceIDWithCompletionHandler(
     Pointer<CKContainer> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -8045,7 +7976,7 @@ class CKContainer extends Struct<CKContainer> {
 
   static void fetchCurrentUserBoundaryKeyWithCompletionHandler(
     Pointer<CKContainer> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -8057,7 +7988,7 @@ class CKContainer extends Struct<CKContainer> {
 
   static void fetchFullNameAndFormattedUsernameOfAccountWithCompletionHandler(
     Pointer<CKContainer> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -8070,7 +8001,7 @@ class CKContainer extends Struct<CKContainer> {
 
   static void fetchFullNameAndPrimaryEmailOnAccountWithCompletionHandler(
     Pointer<CKContainer> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -8083,8 +8014,8 @@ class CKContainer extends Struct<CKContainer> {
 
   static void fetchLongLivedOperationWithID(
     Pointer<CKContainer> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> completionHandler,
+    Pointer arg, {
+    @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -8097,8 +8028,8 @@ class CKContainer extends Struct<CKContainer> {
 
   static void fetchLongLivedOperationsWithIDs(
     Pointer<CKContainer> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> completionHandler,
+    Pointer arg, {
+    @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -8111,7 +8042,7 @@ class CKContainer extends Struct<CKContainer> {
 
   static void fetchOrgAdminUserRecordIDWithCompletionHandler(
     Pointer<CKContainer> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -8123,7 +8054,7 @@ class CKContainer extends Struct<CKContainer> {
 
   static void fetchServerEnvironment(
     Pointer<CKContainer> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -8135,8 +8066,8 @@ class CKContainer extends Struct<CKContainer> {
 
   static void fetchShareMetadataWithURL(
     Pointer<CKContainer> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> completionHandler,
+    Pointer arg, {
+    @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -8149,8 +8080,8 @@ class CKContainer extends Struct<CKContainer> {
 
   static void fetchShareParticipantWithEmailAddress(
     Pointer<CKContainer> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> completionHandler,
+    Pointer arg, {
+    @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -8164,8 +8095,8 @@ class CKContainer extends Struct<CKContainer> {
 
   static void fetchShareParticipantWithLookupInfo(
     Pointer<CKContainer> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> completionHandler,
+    Pointer arg, {
+    @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -8179,8 +8110,8 @@ class CKContainer extends Struct<CKContainer> {
 
   static void fetchShareParticipantWithPhoneNumber(
     Pointer<CKContainer> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> completionHandler,
+    Pointer arg, {
+    @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -8194,8 +8125,8 @@ class CKContainer extends Struct<CKContainer> {
 
   static void fetchShareParticipantWithUserRecordID(
     Pointer<CKContainer> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> completionHandler,
+    Pointer arg, {
+    @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -8209,7 +8140,7 @@ class CKContainer extends Struct<CKContainer> {
 
   static void fetchUserRecordIDWithCompletionHandler(
     Pointer<CKContainer> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -8219,9 +8150,9 @@ class CKContainer extends Struct<CKContainer> {
     );
   }
 
-  static Pointer<Void> findTrackedAssetByUUID(
+  static Pointer findTrackedAssetByUUID(
     Pointer<CKContainer> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -8231,7 +8162,7 @@ class CKContainer extends Struct<CKContainer> {
     );
   }
 
-  static Pointer<Void> flowControlManager(
+  static Pointer flowControlManager(
     Pointer<CKContainer> _self,
   ) {
     _openDynamicLibrary();
@@ -8253,9 +8184,9 @@ class CKContainer extends Struct<CKContainer> {
 
   static void getFileMetadataWithFileHandle(
     Pointer<CKContainer> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> openInfo,
-    @required Pointer<Void> reply,
+    Pointer arg, {
+    @required Pointer openInfo,
+    @required Pointer reply,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_void(
@@ -8269,7 +8200,7 @@ class CKContainer extends Struct<CKContainer> {
 
   static void getNewWebSharingIdentity(
     Pointer<CKContainer> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -8281,7 +8212,7 @@ class CKContainer extends Struct<CKContainer> {
 
   static void getNewWebSharingIdentityDataWithCompletionHandler(
     Pointer<CKContainer> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -8293,8 +8224,8 @@ class CKContainer extends Struct<CKContainer> {
 
   static void handleOperationCheckpoint(
     Pointer<CKContainer> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> forOperationWithID,
+    Pointer arg, {
+    @required Pointer forOperationWithID,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -8307,8 +8238,8 @@ class CKContainer extends Struct<CKContainer> {
 
   static void handleOperationCompletion(
     Pointer<CKContainer> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> forOperationWithID,
+    Pointer arg, {
+    @required Pointer forOperationWithID,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -8321,9 +8252,9 @@ class CKContainer extends Struct<CKContainer> {
 
   static void handleOperationProgress$forOperationWithID$reply$(
     Pointer<CKContainer> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> forOperationWithID,
-    @required Pointer<Void> reply,
+    Pointer arg, {
+    @required Pointer forOperationWithID,
+    @required Pointer reply,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_void(
@@ -8337,8 +8268,8 @@ class CKContainer extends Struct<CKContainer> {
 
   static void handleOperationProgress$forOperationWithID$(
     Pointer<CKContainer> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> forOperationWithID,
+    Pointer arg, {
+    @required Pointer forOperationWithID,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -8351,8 +8282,8 @@ class CKContainer extends Struct<CKContainer> {
 
   static void handleOperationStatistics(
     Pointer<CKContainer> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> forOperationWithID,
+    Pointer arg, {
+    @required Pointer forOperationWithID,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -8403,10 +8334,10 @@ class CKContainer extends Struct<CKContainer> {
     );
   }
 
-  static Pointer<Void> initWithContainerID$accountInfoOverride$(
+  static Pointer initWithContainerID$accountInfoOverride$(
     Pointer<CKContainer> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> accountInfoOverride,
+    Pointer arg, {
+    @required Pointer accountInfoOverride,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -8417,9 +8348,9 @@ class CKContainer extends Struct<CKContainer> {
     );
   }
 
-  static Pointer<Void> initWithContainerID$(
+  static Pointer initWithContainerID$(
     Pointer<CKContainer> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -8429,10 +8360,10 @@ class CKContainer extends Struct<CKContainer> {
     );
   }
 
-  static Pointer<Void> initWithContainerID$options$(
+  static Pointer initWithContainerID$options$(
     Pointer<CKContainer> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> options,
+    Pointer arg, {
+    @required Pointer options,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -8465,8 +8396,8 @@ class CKContainer extends Struct<CKContainer> {
 
   static void openFileWithOpenInfo(
     Pointer<CKContainer> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> reply,
+    Pointer arg, {
+    @required Pointer reply,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -8477,7 +8408,7 @@ class CKContainer extends Struct<CKContainer> {
     );
   }
 
-  static Pointer<Void> options(
+  static Pointer options(
     Pointer<CKContainer> _self,
   ) {
     _openDynamicLibrary();
@@ -8487,7 +8418,7 @@ class CKContainer extends Struct<CKContainer> {
     );
   }
 
-  static Pointer<Void> orgAdminUserID(
+  static Pointer orgAdminUserID(
     Pointer<CKContainer> _self,
   ) {
     _openDynamicLibrary();
@@ -8497,7 +8428,7 @@ class CKContainer extends Struct<CKContainer> {
     );
   }
 
-  static Pointer<Void> organizationCloudDatabase(
+  static Pointer organizationCloudDatabase(
     Pointer<CKContainer> _self,
   ) {
     _openDynamicLibrary();
@@ -8507,7 +8438,7 @@ class CKContainer extends Struct<CKContainer> {
     );
   }
 
-  static Pointer<Void> privateCloudDatabase(
+  static Pointer privateCloudDatabase(
     Pointer<CKContainer> _self,
   ) {
     _openDynamicLibrary();
@@ -8517,7 +8448,7 @@ class CKContainer extends Struct<CKContainer> {
     );
   }
 
-  static Pointer<Void> publicCloudDatabase(
+  static Pointer publicCloudDatabase(
     Pointer<CKContainer> _self,
   ) {
     _openDynamicLibrary();
@@ -8530,7 +8461,7 @@ class CKContainer extends Struct<CKContainer> {
   static void requestApplicationPermission(
     Pointer<CKContainer> _self,
     int arg, {
-    @required Pointer<Void> completionHandler,
+    @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_Uint64_p_returns_void(
@@ -8543,7 +8474,7 @@ class CKContainer extends Struct<CKContainer> {
 
   static void resetAllApplicationPermissionsWithCompletionHandler(
     Pointer<CKContainer> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -8553,7 +8484,7 @@ class CKContainer extends Struct<CKContainer> {
     );
   }
 
-  static Pointer<Void> sandboxExtensionHandles(
+  static Pointer sandboxExtensionHandles(
     Pointer<CKContainer> _self,
   ) {
     _openDynamicLibrary();
@@ -8565,7 +8496,7 @@ class CKContainer extends Struct<CKContainer> {
 
   static void serverPreferredPushEnvironmentWithCompletionHandler(
     Pointer<CKContainer> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -8589,7 +8520,7 @@ class CKContainer extends Struct<CKContainer> {
 
   static void setAccountInfoOverride(
     Pointer<CKContainer> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -8601,7 +8532,7 @@ class CKContainer extends Struct<CKContainer> {
 
   static void setAccountStore(
     Pointer<CKContainer> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -8615,7 +8546,7 @@ class CKContainer extends Struct<CKContainer> {
     Pointer<CKContainer> _self,
     int arg, {
     @required int enabled,
-    @required Pointer<Void> completionHandler,
+    @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_Uint64_Int8_p_returns_void(
@@ -8629,7 +8560,7 @@ class CKContainer extends Struct<CKContainer> {
 
   static void setAssetsByUUID(
     Pointer<CKContainer> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -8641,7 +8572,7 @@ class CKContainer extends Struct<CKContainer> {
 
   static void setBackgroundThrottlingOperationQueue(
     Pointer<CKContainer> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -8653,7 +8584,7 @@ class CKContainer extends Struct<CKContainer> {
 
   static void setCachedSetupInfo(
     Pointer<CKContainer> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -8665,7 +8596,7 @@ class CKContainer extends Struct<CKContainer> {
 
   static void setCallbackManager(
     Pointer<CKContainer> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -8689,7 +8620,7 @@ class CKContainer extends Struct<CKContainer> {
 
   static void setContainerID(
     Pointer<CKContainer> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -8701,7 +8632,7 @@ class CKContainer extends Struct<CKContainer> {
 
   static void setContainerScopedUserID(
     Pointer<CKContainer> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -8713,7 +8644,7 @@ class CKContainer extends Struct<CKContainer> {
 
   static void setConvenienceOperationQueue(
     Pointer<CKContainer> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -8725,8 +8656,8 @@ class CKContainer extends Struct<CKContainer> {
 
   static void setFakeEntitlement(
     Pointer<CKContainer> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> forKey,
+    Pointer arg, {
+    @required Pointer forKey,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -8739,7 +8670,7 @@ class CKContainer extends Struct<CKContainer> {
 
   static void setFakeEntitlements(
     Pointer<CKContainer> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -8751,8 +8682,8 @@ class CKContainer extends Struct<CKContainer> {
 
   static void setFakeError(
     Pointer<CKContainer> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> forNextRequestOfClassName,
+    Pointer arg, {
+    @required Pointer forNextRequestOfClassName,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -8765,9 +8696,9 @@ class CKContainer extends Struct<CKContainer> {
 
   static void setFakeResponseOperationResult(
     Pointer<CKContainer> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> forNextRequestOfClassName,
-    @required Pointer<Void> forItemID,
+    Pointer arg, {
+    @required Pointer forNextRequestOfClassName,
+    @required Pointer forItemID,
     @required int withLifetime,
   }) {
     _openDynamicLibrary();
@@ -8784,7 +8715,7 @@ class CKContainer extends Struct<CKContainer> {
 
   static void setFlowControlManager(
     Pointer<CKContainer> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -8868,7 +8799,7 @@ class CKContainer extends Struct<CKContainer> {
 
   static void setOptions(
     Pointer<CKContainer> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -8880,7 +8811,7 @@ class CKContainer extends Struct<CKContainer> {
 
   static void setOrgAdminUserID(
     Pointer<CKContainer> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -8892,7 +8823,7 @@ class CKContainer extends Struct<CKContainer> {
 
   static void setOrganizationCloudDatabase(
     Pointer<CKContainer> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -8904,7 +8835,7 @@ class CKContainer extends Struct<CKContainer> {
 
   static void setPrivateCloudDatabase(
     Pointer<CKContainer> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -8916,7 +8847,7 @@ class CKContainer extends Struct<CKContainer> {
 
   static void setPublicCloudDatabase(
     Pointer<CKContainer> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -8928,7 +8859,7 @@ class CKContainer extends Struct<CKContainer> {
 
   static void setSandboxExtensionHandles(
     Pointer<CKContainer> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -8940,7 +8871,7 @@ class CKContainer extends Struct<CKContainer> {
 
   static void setSharedCloudDatabase(
     Pointer<CKContainer> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -8952,7 +8883,7 @@ class CKContainer extends Struct<CKContainer> {
 
   static void setSourceApplicationBundleIdentifier(
     Pointer<CKContainer> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -8964,7 +8895,7 @@ class CKContainer extends Struct<CKContainer> {
 
   static void setSourceApplicationSecondaryIdentifier(
     Pointer<CKContainer> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -9000,7 +8931,7 @@ class CKContainer extends Struct<CKContainer> {
 
   static void setThrottlingOperationQueue(
     Pointer<CKContainer> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -9012,7 +8943,7 @@ class CKContainer extends Struct<CKContainer> {
 
   static void setUnderlyingDispatchQueue(
     Pointer<CKContainer> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -9036,7 +8967,7 @@ class CKContainer extends Struct<CKContainer> {
 
   static void setXpcConnection(
     Pointer<CKContainer> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -9046,7 +8977,7 @@ class CKContainer extends Struct<CKContainer> {
     );
   }
 
-  static Pointer<Void> setupInfo(
+  static Pointer setupInfo(
     Pointer<CKContainer> _self,
   ) {
     _openDynamicLibrary();
@@ -9056,7 +8987,7 @@ class CKContainer extends Struct<CKContainer> {
     );
   }
 
-  static Pointer<Void> sharedCloudDatabase(
+  static Pointer sharedCloudDatabase(
     Pointer<CKContainer> _self,
   ) {
     _openDynamicLibrary();
@@ -9066,7 +8997,7 @@ class CKContainer extends Struct<CKContainer> {
     );
   }
 
-  static Pointer<Void> sourceApplicationBundleIdentifier(
+  static Pointer sourceApplicationBundleIdentifier(
     Pointer<CKContainer> _self,
   ) {
     _openDynamicLibrary();
@@ -9076,7 +9007,7 @@ class CKContainer extends Struct<CKContainer> {
     );
   }
 
-  static Pointer<Void> sourceApplicationSecondaryIdentifier(
+  static Pointer sourceApplicationSecondaryIdentifier(
     Pointer<CKContainer> _self,
   ) {
     _openDynamicLibrary();
@@ -9099,7 +9030,7 @@ class CKContainer extends Struct<CKContainer> {
   static void statusForApplicationPermission(
     Pointer<CKContainer> _self,
     int arg, {
-    @required Pointer<Void> completionHandler,
+    @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_Uint64_p_returns_void(
@@ -9113,7 +9044,7 @@ class CKContainer extends Struct<CKContainer> {
   static void statusGroupsForApplicationPermission(
     Pointer<CKContainer> _self,
     int arg, {
-    @required Pointer<Void> completionHandler,
+    @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_Uint64_p_returns_void(
@@ -9137,7 +9068,7 @@ class CKContainer extends Struct<CKContainer> {
 
   static void submitEventMetric(
     Pointer<CKContainer> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -9147,7 +9078,7 @@ class CKContainer extends Struct<CKContainer> {
     );
   }
 
-  static Pointer<Void> throttlingOperationQueue(
+  static Pointer throttlingOperationQueue(
     Pointer<CKContainer> _self,
   ) {
     _openDynamicLibrary();
@@ -9159,7 +9090,7 @@ class CKContainer extends Struct<CKContainer> {
 
   static void tossConfigWithCompletionHandler(
     Pointer<CKContainer> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -9171,7 +9102,7 @@ class CKContainer extends Struct<CKContainer> {
 
   static void trackAssets(
     Pointer<CKContainer> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -9191,7 +9122,7 @@ class CKContainer extends Struct<CKContainer> {
     );
   }
 
-  static Pointer<Void> underlyingDispatchQueue(
+  static Pointer underlyingDispatchQueue(
     Pointer<CKContainer> _self,
   ) {
     _openDynamicLibrary();
@@ -9223,7 +9154,7 @@ class CKContainer extends Struct<CKContainer> {
 
   static void wipeAllCachedLongLivedProxiesWithCompletionHandler(
     Pointer<CKContainer> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -9243,7 +9174,7 @@ class CKContainer extends Struct<CKContainer> {
     );
   }
 
-  static Pointer<Void> xpcConnection(
+  static Pointer xpcConnection(
     Pointer<CKContainer> _self,
   ) {
     _openDynamicLibrary();
@@ -9254,11 +9185,9 @@ class CKContainer extends Struct<CKContainer> {
   }
 }
 
-/// Objective-C class _CKContainerID_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKContainerID extends Struct<CKContainerID> {
   factory CKContainerID._() {
@@ -9269,7 +9198,7 @@ class CKContainerID extends Struct<CKContainerID> {
     return _objc.allocate("CKContainerID").cast<CKContainerID>();
   }
 
-  static Pointer<Void> CKPropertiesDescription(
+  static Pointer CKPropertiesDescription(
     Pointer<CKContainerID> _self,
   ) {
     _openDynamicLibrary();
@@ -9279,7 +9208,7 @@ class CKContainerID extends Struct<CKContainerID> {
     );
   }
 
-  static Pointer<Void> containerIdentifier(
+  static Pointer containerIdentifier(
     Pointer<CKContainerID> _self,
   ) {
     _openDynamicLibrary();
@@ -9289,9 +9218,9 @@ class CKContainerID extends Struct<CKContainerID> {
     );
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<CKContainerID> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -9301,7 +9230,7 @@ class CKContainerID extends Struct<CKContainerID> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CKContainerID> _self,
   ) {
     _openDynamicLibrary();
@@ -9311,7 +9240,7 @@ class CKContainerID extends Struct<CKContainerID> {
     );
   }
 
-  static Pointer<Void> dictionaryRepresentation(
+  static Pointer dictionaryRepresentation(
     Pointer<CKContainerID> _self,
   ) {
     _openDynamicLibrary();
@@ -9323,7 +9252,7 @@ class CKContainerID extends Struct<CKContainerID> {
 
   static void encodeWithCoder(
     Pointer<CKContainerID> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -9353,9 +9282,9 @@ class CKContainerID extends Struct<CKContainerID> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CKContainerID> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -9365,9 +9294,9 @@ class CKContainerID extends Struct<CKContainerID> {
     );
   }
 
-  static Pointer<Void> initWithContainerIdentifier(
+  static Pointer initWithContainerIdentifier(
     Pointer<CKContainerID> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int environment,
   }) {
     _openDynamicLibrary();
@@ -9379,9 +9308,9 @@ class CKContainerID extends Struct<CKContainerID> {
     );
   }
 
-  static Pointer<Void> initWithDictionaryRepresentation(
+  static Pointer initWithDictionaryRepresentation(
     Pointer<CKContainerID> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -9393,7 +9322,7 @@ class CKContainerID extends Struct<CKContainerID> {
 
   static int isEqual(
     Pointer<CKContainerID> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -9404,11 +9333,9 @@ class CKContainerID extends Struct<CKContainerID> {
   }
 }
 
-/// Objective-C class _CKContainerOptions_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKContainerOptions extends Struct<CKContainerOptions> {
   factory CKContainerOptions._() {
@@ -9419,7 +9346,7 @@ class CKContainerOptions extends Struct<CKContainerOptions> {
     return _objc.allocate("CKContainerOptions").cast<CKContainerOptions>();
   }
 
-  static Pointer<Void> accountInfoOverride(
+  static Pointer accountInfoOverride(
     Pointer<CKContainerOptions> _self,
   ) {
     _openDynamicLibrary();
@@ -9449,7 +9376,7 @@ class CKContainerOptions extends Struct<CKContainerOptions> {
     );
   }
 
-  static Pointer<Void> encryptionServiceName(
+  static Pointer encryptionServiceName(
     Pointer<CKContainerOptions> _self,
   ) {
     _openDynamicLibrary();
@@ -9491,7 +9418,7 @@ class CKContainerOptions extends Struct<CKContainerOptions> {
 
   static void setAccountInfoOverride(
     Pointer<CKContainerOptions> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -9527,7 +9454,7 @@ class CKContainerOptions extends Struct<CKContainerOptions> {
 
   static void setEncryptionServiceName(
     Pointer<CKContainerOptions> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -9640,11 +9567,9 @@ class CKContainerOptions extends Struct<CKContainerOptions> {
   }
 }
 
-/// Objective-C class _CKContainerSetupInfo_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKContainerSetupInfo extends Struct<CKContainerSetupInfo> {
   factory CKContainerSetupInfo._() {
@@ -9655,7 +9580,7 @@ class CKContainerSetupInfo extends Struct<CKContainerSetupInfo> {
     return _objc.allocate("CKContainerSetupInfo").cast<CKContainerSetupInfo>();
   }
 
-  static Pointer<Void> accountInfoOverride(
+  static Pointer accountInfoOverride(
     Pointer<CKContainerSetupInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -9695,7 +9620,7 @@ class CKContainerSetupInfo extends Struct<CKContainerSetupInfo> {
     );
   }
 
-  static Pointer<Void> containerEncryptionServiceName(
+  static Pointer containerEncryptionServiceName(
     Pointer<CKContainerSetupInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -9705,7 +9630,7 @@ class CKContainerSetupInfo extends Struct<CKContainerSetupInfo> {
     );
   }
 
-  static Pointer<Void> containerID(
+  static Pointer containerID(
     Pointer<CKContainerSetupInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -9717,7 +9642,7 @@ class CKContainerSetupInfo extends Struct<CKContainerSetupInfo> {
 
   static void encodeWithCoder(
     Pointer<CKContainerSetupInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -9727,7 +9652,7 @@ class CKContainerSetupInfo extends Struct<CKContainerSetupInfo> {
     );
   }
 
-  static Pointer<Void> fakeEntitlements(
+  static Pointer fakeEntitlements(
     Pointer<CKContainerSetupInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -9757,9 +9682,9 @@ class CKContainerSetupInfo extends Struct<CKContainerSetupInfo> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CKContainerSetupInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -9791,7 +9716,7 @@ class CKContainerSetupInfo extends Struct<CKContainerSetupInfo> {
 
   static void setAccountInfoOverride(
     Pointer<CKContainerSetupInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -9839,7 +9764,7 @@ class CKContainerSetupInfo extends Struct<CKContainerSetupInfo> {
 
   static void setContainerEncryptionServiceName(
     Pointer<CKContainerSetupInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -9851,7 +9776,7 @@ class CKContainerSetupInfo extends Struct<CKContainerSetupInfo> {
 
   static void setContainerID(
     Pointer<CKContainerSetupInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -9863,7 +9788,7 @@ class CKContainerSetupInfo extends Struct<CKContainerSetupInfo> {
 
   static void setFakeEntitlements(
     Pointer<CKContainerSetupInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -9923,7 +9848,7 @@ class CKContainerSetupInfo extends Struct<CKContainerSetupInfo> {
 
   static void setSourceApplicationBundleIdentifier(
     Pointer<CKContainerSetupInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -9969,7 +9894,7 @@ class CKContainerSetupInfo extends Struct<CKContainerSetupInfo> {
     );
   }
 
-  static Pointer<Void> sourceApplicationBundleIdentifier(
+  static Pointer sourceApplicationBundleIdentifier(
     Pointer<CKContainerSetupInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -10010,11 +9935,9 @@ class CKContainerSetupInfo extends Struct<CKContainerSetupInfo> {
   }
 }
 
-/// Objective-C class _CKContainerXPCProxy_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKContainerXPCProxy extends Struct<CKContainerXPCProxy> {
   factory CKContainerXPCProxy._() {
@@ -10027,8 +9950,8 @@ class CKContainerXPCProxy extends Struct<CKContainerXPCProxy> {
 
   static void consumeSandboxExtensions(
     Pointer<CKContainerXPCProxy> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> reply,
+    Pointer arg, {
+    @required Pointer reply,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -10039,7 +9962,7 @@ class CKContainerXPCProxy extends Struct<CKContainerXPCProxy> {
     );
   }
 
-  static Pointer<Void> container(
+  static Pointer container(
     Pointer<CKContainerXPCProxy> _self,
   ) {
     _openDynamicLibrary();
@@ -10051,9 +9974,9 @@ class CKContainerXPCProxy extends Struct<CKContainerXPCProxy> {
 
   static void getFileMetadataWithFileHandle(
     Pointer<CKContainerXPCProxy> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> openInfo,
-    @required Pointer<Void> reply,
+    Pointer arg, {
+    @required Pointer openInfo,
+    @required Pointer reply,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_void(
@@ -10067,8 +9990,8 @@ class CKContainerXPCProxy extends Struct<CKContainerXPCProxy> {
 
   static void handleOperationCheckpoint(
     Pointer<CKContainerXPCProxy> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> forOperationWithID,
+    Pointer arg, {
+    @required Pointer forOperationWithID,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -10081,8 +10004,8 @@ class CKContainerXPCProxy extends Struct<CKContainerXPCProxy> {
 
   static void handleOperationCompletion(
     Pointer<CKContainerXPCProxy> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> forOperationWithID,
+    Pointer arg, {
+    @required Pointer forOperationWithID,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -10095,9 +10018,9 @@ class CKContainerXPCProxy extends Struct<CKContainerXPCProxy> {
 
   static void handleOperationProgress$forOperationWithID$reply$(
     Pointer<CKContainerXPCProxy> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> forOperationWithID,
-    @required Pointer<Void> reply,
+    Pointer arg, {
+    @required Pointer forOperationWithID,
+    @required Pointer reply,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_void(
@@ -10111,8 +10034,8 @@ class CKContainerXPCProxy extends Struct<CKContainerXPCProxy> {
 
   static void handleOperationProgress$forOperationWithID$(
     Pointer<CKContainerXPCProxy> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> forOperationWithID,
+    Pointer arg, {
+    @required Pointer forOperationWithID,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -10125,8 +10048,8 @@ class CKContainerXPCProxy extends Struct<CKContainerXPCProxy> {
 
   static void handleOperationStatistics(
     Pointer<CKContainerXPCProxy> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> forOperationWithID,
+    Pointer arg, {
+    @required Pointer forOperationWithID,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -10137,9 +10060,9 @@ class CKContainerXPCProxy extends Struct<CKContainerXPCProxy> {
     );
   }
 
-  static Pointer<Void> initWithContainer(
+  static Pointer initWithContainer(
     Pointer<CKContainerXPCProxy> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -10151,8 +10074,8 @@ class CKContainerXPCProxy extends Struct<CKContainerXPCProxy> {
 
   static void openFileWithOpenInfo(
     Pointer<CKContainerXPCProxy> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> reply,
+    Pointer arg, {
+    @required Pointer reply,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -10165,7 +10088,7 @@ class CKContainerXPCProxy extends Struct<CKContainerXPCProxy> {
 
   static void setContainer(
     Pointer<CKContainerXPCProxy> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -10176,11 +10099,9 @@ class CKContainerXPCProxy extends Struct<CKContainerXPCProxy> {
   }
 }
 
-/// Objective-C class _CKCustomBlockValidator_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKCustomBlockValidator extends Struct<CKCustomBlockValidator> {
   factory CKCustomBlockValidator._() {
@@ -10193,7 +10114,7 @@ class CKCustomBlockValidator extends Struct<CKCustomBlockValidator> {
         .cast<CKCustomBlockValidator>();
   }
 
-  static Pointer<Void> block(
+  static Pointer block(
     Pointer<CKCustomBlockValidator> _self,
   ) {
     _openDynamicLibrary();
@@ -10203,9 +10124,9 @@ class CKCustomBlockValidator extends Struct<CKCustomBlockValidator> {
     );
   }
 
-  static Pointer<Void> initWithBlock(
+  static Pointer initWithBlock(
     Pointer<CKCustomBlockValidator> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -10217,7 +10138,7 @@ class CKCustomBlockValidator extends Struct<CKCustomBlockValidator> {
 
   static void setBlock(
     Pointer<CKCustomBlockValidator> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -10229,8 +10150,8 @@ class CKCustomBlockValidator extends Struct<CKCustomBlockValidator> {
 
   static int validate(
     Pointer<CKCustomBlockValidator> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -10242,11 +10163,9 @@ class CKCustomBlockValidator extends Struct<CKCustomBlockValidator> {
   }
 }
 
-/// Objective-C class _CKDCancelToken_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKDCancelToken extends Struct<CKDCancelToken> {
   factory CKDCancelToken._() {
@@ -10267,7 +10186,7 @@ class CKDCancelToken extends Struct<CKDCancelToken> {
     );
   }
 
-  static Pointer<Void> cancelAction(
+  static Pointer cancelAction(
     Pointer<CKDCancelToken> _self,
   ) {
     _openDynamicLibrary();
@@ -10289,7 +10208,7 @@ class CKDCancelToken extends Struct<CKDCancelToken> {
 
   static void setCancelAction(
     Pointer<CKDCancelToken> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -10300,11 +10219,9 @@ class CKDCancelToken extends Struct<CKDCancelToken> {
   }
 }
 
-/// Objective-C class _CKDPDate_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKDPDate extends Struct<CKDPDate> {
   factory CKDPDate._() {
@@ -10317,7 +10234,7 @@ class CKDPDate extends Struct<CKDPDate> {
 
   static void copyTo(
     Pointer<CKDPDate> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -10327,9 +10244,9 @@ class CKDPDate extends Struct<CKDPDate> {
     );
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<CKDPDate> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -10339,7 +10256,7 @@ class CKDPDate extends Struct<CKDPDate> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CKDPDate> _self,
   ) {
     _openDynamicLibrary();
@@ -10349,7 +10266,7 @@ class CKDPDate extends Struct<CKDPDate> {
     );
   }
 
-  static Pointer<Void> dictionaryRepresentation(
+  static Pointer dictionaryRepresentation(
     Pointer<CKDPDate> _self,
   ) {
     _openDynamicLibrary();
@@ -10381,7 +10298,7 @@ class CKDPDate extends Struct<CKDPDate> {
 
   static int isEqual(
     Pointer<CKDPDate> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -10393,7 +10310,7 @@ class CKDPDate extends Struct<CKDPDate> {
 
   static void mergeFrom(
     Pointer<CKDPDate> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -10405,7 +10322,7 @@ class CKDPDate extends Struct<CKDPDate> {
 
   static int readFrom(
     Pointer<CKDPDate> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -10451,7 +10368,7 @@ class CKDPDate extends Struct<CKDPDate> {
 
   static void writeTo(
     Pointer<CKDPDate> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -10462,11 +10379,9 @@ class CKDPDate extends Struct<CKDPDate> {
   }
 }
 
-/// Objective-C class _CKDPIdentifier_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKDPIdentifier extends Struct<CKDPIdentifier> {
   factory CKDPIdentifier._() {
@@ -10479,7 +10394,7 @@ class CKDPIdentifier extends Struct<CKDPIdentifier> {
 
   static int StringAsType(
     Pointer<CKDPIdentifier> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int32(
@@ -10491,7 +10406,7 @@ class CKDPIdentifier extends Struct<CKDPIdentifier> {
 
   static void copyTo(
     Pointer<CKDPIdentifier> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -10501,9 +10416,9 @@ class CKDPIdentifier extends Struct<CKDPIdentifier> {
     );
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<CKDPIdentifier> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -10513,7 +10428,7 @@ class CKDPIdentifier extends Struct<CKDPIdentifier> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CKDPIdentifier> _self,
   ) {
     _openDynamicLibrary();
@@ -10523,7 +10438,7 @@ class CKDPIdentifier extends Struct<CKDPIdentifier> {
     );
   }
 
-  static Pointer<Void> dictionaryRepresentation(
+  static Pointer dictionaryRepresentation(
     Pointer<CKDPIdentifier> _self,
   ) {
     _openDynamicLibrary();
@@ -10565,7 +10480,7 @@ class CKDPIdentifier extends Struct<CKDPIdentifier> {
 
   static int isEqual(
     Pointer<CKDPIdentifier> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -10577,7 +10492,7 @@ class CKDPIdentifier extends Struct<CKDPIdentifier> {
 
   static void mergeFrom(
     Pointer<CKDPIdentifier> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -10587,7 +10502,7 @@ class CKDPIdentifier extends Struct<CKDPIdentifier> {
     );
   }
 
-  static Pointer<Void> name(
+  static Pointer name(
     Pointer<CKDPIdentifier> _self,
   ) {
     _openDynamicLibrary();
@@ -10599,7 +10514,7 @@ class CKDPIdentifier extends Struct<CKDPIdentifier> {
 
   static int readFrom(
     Pointer<CKDPIdentifier> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -10623,7 +10538,7 @@ class CKDPIdentifier extends Struct<CKDPIdentifier> {
 
   static void setName(
     Pointer<CKDPIdentifier> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -10655,7 +10570,7 @@ class CKDPIdentifier extends Struct<CKDPIdentifier> {
     );
   }
 
-  static Pointer<Void> typeAsString(
+  static Pointer typeAsString(
     Pointer<CKDPIdentifier> _self,
     int arg,
   ) {
@@ -10669,7 +10584,7 @@ class CKDPIdentifier extends Struct<CKDPIdentifier> {
 
   static void writeTo(
     Pointer<CKDPIdentifier> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -10680,11 +10595,9 @@ class CKDPIdentifier extends Struct<CKDPIdentifier> {
   }
 }
 
-/// Objective-C class _CKDPLocationCoordinate_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKDPLocationCoordinate extends Struct<CKDPLocationCoordinate> {
   factory CKDPLocationCoordinate._() {
@@ -10709,7 +10622,7 @@ class CKDPLocationCoordinate extends Struct<CKDPLocationCoordinate> {
 
   static void copyTo(
     Pointer<CKDPLocationCoordinate> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -10719,9 +10632,9 @@ class CKDPLocationCoordinate extends Struct<CKDPLocationCoordinate> {
     );
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<CKDPLocationCoordinate> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -10741,7 +10654,7 @@ class CKDPLocationCoordinate extends Struct<CKDPLocationCoordinate> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CKDPLocationCoordinate> _self,
   ) {
     _openDynamicLibrary();
@@ -10751,7 +10664,7 @@ class CKDPLocationCoordinate extends Struct<CKDPLocationCoordinate> {
     );
   }
 
-  static Pointer<Void> dictionaryRepresentation(
+  static Pointer dictionaryRepresentation(
     Pointer<CKDPLocationCoordinate> _self,
   ) {
     _openDynamicLibrary();
@@ -10863,7 +10776,7 @@ class CKDPLocationCoordinate extends Struct<CKDPLocationCoordinate> {
 
   static int isEqual(
     Pointer<CKDPLocationCoordinate> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -10895,7 +10808,7 @@ class CKDPLocationCoordinate extends Struct<CKDPLocationCoordinate> {
 
   static void mergeFrom(
     Pointer<CKDPLocationCoordinate> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -10907,7 +10820,7 @@ class CKDPLocationCoordinate extends Struct<CKDPLocationCoordinate> {
 
   static int readFrom(
     Pointer<CKDPLocationCoordinate> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -11075,7 +10988,7 @@ class CKDPLocationCoordinate extends Struct<CKDPLocationCoordinate> {
 
   static void setTimestamp(
     Pointer<CKDPLocationCoordinate> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -11107,7 +11020,7 @@ class CKDPLocationCoordinate extends Struct<CKDPLocationCoordinate> {
     );
   }
 
-  static Pointer<Void> timestamp(
+  static Pointer timestamp(
     Pointer<CKDPLocationCoordinate> _self,
   ) {
     _openDynamicLibrary();
@@ -11129,7 +11042,7 @@ class CKDPLocationCoordinate extends Struct<CKDPLocationCoordinate> {
 
   static void writeTo(
     Pointer<CKDPLocationCoordinate> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -11140,11 +11053,9 @@ class CKDPLocationCoordinate extends Struct<CKDPLocationCoordinate> {
   }
 }
 
-/// Objective-C class _CKDPRecordFieldValueEncryptedValue_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKDPRecordFieldValueEncryptedValue
     extends Struct<CKDPRecordFieldValueEncryptedValue> {
@@ -11160,7 +11071,7 @@ class CKDPRecordFieldValueEncryptedValue
 
   static void addDateListValue(
     Pointer<CKDPRecordFieldValueEncryptedValue> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -11184,7 +11095,7 @@ class CKDPRecordFieldValueEncryptedValue
 
   static void addLocationListValue(
     Pointer<CKDPRecordFieldValueEncryptedValue> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -11208,7 +11119,7 @@ class CKDPRecordFieldValueEncryptedValue
 
   static void addStringListValue(
     Pointer<CKDPRecordFieldValueEncryptedValue> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -11270,7 +11181,7 @@ class CKDPRecordFieldValueEncryptedValue
 
   static void copyTo(
     Pointer<CKDPRecordFieldValueEncryptedValue> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -11280,9 +11191,9 @@ class CKDPRecordFieldValueEncryptedValue
     );
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<CKDPRecordFieldValueEncryptedValue> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -11292,7 +11203,7 @@ class CKDPRecordFieldValueEncryptedValue
     );
   }
 
-  static Pointer<Void> dateListValueAtIndex(
+  static Pointer dateListValueAtIndex(
     Pointer<CKDPRecordFieldValueEncryptedValue> _self,
     int arg,
   ) {
@@ -11304,7 +11215,7 @@ class CKDPRecordFieldValueEncryptedValue
     );
   }
 
-  static Pointer<Void> dateListValues(
+  static Pointer dateListValues(
     Pointer<CKDPRecordFieldValueEncryptedValue> _self,
   ) {
     _openDynamicLibrary();
@@ -11324,7 +11235,7 @@ class CKDPRecordFieldValueEncryptedValue
     );
   }
 
-  static Pointer<Void> dateValue(
+  static Pointer dateValue(
     Pointer<CKDPRecordFieldValueEncryptedValue> _self,
   ) {
     _openDynamicLibrary();
@@ -11344,7 +11255,7 @@ class CKDPRecordFieldValueEncryptedValue
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CKDPRecordFieldValueEncryptedValue> _self,
   ) {
     _openDynamicLibrary();
@@ -11354,7 +11265,7 @@ class CKDPRecordFieldValueEncryptedValue
     );
   }
 
-  static Pointer<Void> dictionaryRepresentation(
+  static Pointer dictionaryRepresentation(
     Pointer<CKDPRecordFieldValueEncryptedValue> _self,
   ) {
     _openDynamicLibrary();
@@ -11478,7 +11389,7 @@ class CKDPRecordFieldValueEncryptedValue
 
   static int isEqual(
     Pointer<CKDPRecordFieldValueEncryptedValue> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -11488,7 +11399,7 @@ class CKDPRecordFieldValueEncryptedValue
     );
   }
 
-  static Pointer<Void> locationListValueAtIndex(
+  static Pointer locationListValueAtIndex(
     Pointer<CKDPRecordFieldValueEncryptedValue> _self,
     int arg,
   ) {
@@ -11500,7 +11411,7 @@ class CKDPRecordFieldValueEncryptedValue
     );
   }
 
-  static Pointer<Void> locationListValues(
+  static Pointer locationListValues(
     Pointer<CKDPRecordFieldValueEncryptedValue> _self,
   ) {
     _openDynamicLibrary();
@@ -11520,7 +11431,7 @@ class CKDPRecordFieldValueEncryptedValue
     );
   }
 
-  static Pointer<Void> locationValue(
+  static Pointer locationValue(
     Pointer<CKDPRecordFieldValueEncryptedValue> _self,
   ) {
     _openDynamicLibrary();
@@ -11532,7 +11443,7 @@ class CKDPRecordFieldValueEncryptedValue
 
   static void mergeFrom(
     Pointer<CKDPRecordFieldValueEncryptedValue> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -11544,7 +11455,7 @@ class CKDPRecordFieldValueEncryptedValue
 
   static int readFrom(
     Pointer<CKDPRecordFieldValueEncryptedValue> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -11554,7 +11465,7 @@ class CKDPRecordFieldValueEncryptedValue
     );
   }
 
-  static Pointer<Void> referenceValue(
+  static Pointer referenceValue(
     Pointer<CKDPRecordFieldValueEncryptedValue> _self,
   ) {
     _openDynamicLibrary();
@@ -11566,7 +11477,7 @@ class CKDPRecordFieldValueEncryptedValue
 
   static void setDateListValues(
     Pointer<CKDPRecordFieldValueEncryptedValue> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -11578,7 +11489,7 @@ class CKDPRecordFieldValueEncryptedValue
 
   static void setDateValue(
     Pointer<CKDPRecordFieldValueEncryptedValue> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -11640,7 +11551,7 @@ class CKDPRecordFieldValueEncryptedValue
 
   static void setLocationListValues(
     Pointer<CKDPRecordFieldValueEncryptedValue> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -11652,7 +11563,7 @@ class CKDPRecordFieldValueEncryptedValue
 
   static void setLocationValue(
     Pointer<CKDPRecordFieldValueEncryptedValue> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -11664,7 +11575,7 @@ class CKDPRecordFieldValueEncryptedValue
 
   static void setReferenceValue(
     Pointer<CKDPRecordFieldValueEncryptedValue> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -11702,7 +11613,7 @@ class CKDPRecordFieldValueEncryptedValue
 
   static void setStringListValues(
     Pointer<CKDPRecordFieldValueEncryptedValue> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -11714,7 +11625,7 @@ class CKDPRecordFieldValueEncryptedValue
 
   static void setStringValue(
     Pointer<CKDPRecordFieldValueEncryptedValue> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -11766,7 +11677,7 @@ class CKDPRecordFieldValueEncryptedValue
     );
   }
 
-  static Pointer<Void> stringListValueAtIndex(
+  static Pointer stringListValueAtIndex(
     Pointer<CKDPRecordFieldValueEncryptedValue> _self,
     int arg,
   ) {
@@ -11778,7 +11689,7 @@ class CKDPRecordFieldValueEncryptedValue
     );
   }
 
-  static Pointer<Void> stringListValues(
+  static Pointer stringListValues(
     Pointer<CKDPRecordFieldValueEncryptedValue> _self,
   ) {
     _openDynamicLibrary();
@@ -11798,7 +11709,7 @@ class CKDPRecordFieldValueEncryptedValue
     );
   }
 
-  static Pointer<Void> stringValue(
+  static Pointer stringValue(
     Pointer<CKDPRecordFieldValueEncryptedValue> _self,
   ) {
     _openDynamicLibrary();
@@ -11810,7 +11721,7 @@ class CKDPRecordFieldValueEncryptedValue
 
   static void writeTo(
     Pointer<CKDPRecordFieldValueEncryptedValue> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -11821,11 +11732,9 @@ class CKDPRecordFieldValueEncryptedValue
   }
 }
 
-/// Objective-C class _CKDPRecordIdentifier_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKDPRecordIdentifier extends Struct<CKDPRecordIdentifier> {
   factory CKDPRecordIdentifier._() {
@@ -11838,7 +11747,7 @@ class CKDPRecordIdentifier extends Struct<CKDPRecordIdentifier> {
 
   static void copyTo(
     Pointer<CKDPRecordIdentifier> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -11848,9 +11757,9 @@ class CKDPRecordIdentifier extends Struct<CKDPRecordIdentifier> {
     );
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<CKDPRecordIdentifier> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -11860,7 +11769,7 @@ class CKDPRecordIdentifier extends Struct<CKDPRecordIdentifier> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CKDPRecordIdentifier> _self,
   ) {
     _openDynamicLibrary();
@@ -11870,7 +11779,7 @@ class CKDPRecordIdentifier extends Struct<CKDPRecordIdentifier> {
     );
   }
 
-  static Pointer<Void> dictionaryRepresentation(
+  static Pointer dictionaryRepresentation(
     Pointer<CKDPRecordIdentifier> _self,
   ) {
     _openDynamicLibrary();
@@ -11912,7 +11821,7 @@ class CKDPRecordIdentifier extends Struct<CKDPRecordIdentifier> {
 
   static int isEqual(
     Pointer<CKDPRecordIdentifier> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -11924,7 +11833,7 @@ class CKDPRecordIdentifier extends Struct<CKDPRecordIdentifier> {
 
   static void mergeFrom(
     Pointer<CKDPRecordIdentifier> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -11936,7 +11845,7 @@ class CKDPRecordIdentifier extends Struct<CKDPRecordIdentifier> {
 
   static int readFrom(
     Pointer<CKDPRecordIdentifier> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -11948,7 +11857,7 @@ class CKDPRecordIdentifier extends Struct<CKDPRecordIdentifier> {
 
   static void setValue(
     Pointer<CKDPRecordIdentifier> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -11960,7 +11869,7 @@ class CKDPRecordIdentifier extends Struct<CKDPRecordIdentifier> {
 
   static void setZoneIdentifier(
     Pointer<CKDPRecordIdentifier> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -11970,7 +11879,7 @@ class CKDPRecordIdentifier extends Struct<CKDPRecordIdentifier> {
     );
   }
 
-  static Pointer<Void> value(
+  static Pointer value(
     Pointer<CKDPRecordIdentifier> _self,
   ) {
     _openDynamicLibrary();
@@ -11982,7 +11891,7 @@ class CKDPRecordIdentifier extends Struct<CKDPRecordIdentifier> {
 
   static void writeTo(
     Pointer<CKDPRecordIdentifier> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -11992,7 +11901,7 @@ class CKDPRecordIdentifier extends Struct<CKDPRecordIdentifier> {
     );
   }
 
-  static Pointer<Void> zoneIdentifier(
+  static Pointer zoneIdentifier(
     Pointer<CKDPRecordIdentifier> _self,
   ) {
     _openDynamicLibrary();
@@ -12003,11 +11912,9 @@ class CKDPRecordIdentifier extends Struct<CKDPRecordIdentifier> {
   }
 }
 
-/// Objective-C class _CKDPRecordReference_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKDPRecordReference extends Struct<CKDPRecordReference> {
   factory CKDPRecordReference._() {
@@ -12020,7 +11927,7 @@ class CKDPRecordReference extends Struct<CKDPRecordReference> {
 
   static int StringAsType(
     Pointer<CKDPRecordReference> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int32(
@@ -12032,7 +11939,7 @@ class CKDPRecordReference extends Struct<CKDPRecordReference> {
 
   static void copyTo(
     Pointer<CKDPRecordReference> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -12042,9 +11949,9 @@ class CKDPRecordReference extends Struct<CKDPRecordReference> {
     );
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<CKDPRecordReference> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -12054,7 +11961,7 @@ class CKDPRecordReference extends Struct<CKDPRecordReference> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CKDPRecordReference> _self,
   ) {
     _openDynamicLibrary();
@@ -12064,7 +11971,7 @@ class CKDPRecordReference extends Struct<CKDPRecordReference> {
     );
   }
 
-  static Pointer<Void> dictionaryRepresentation(
+  static Pointer dictionaryRepresentation(
     Pointer<CKDPRecordReference> _self,
   ) {
     _openDynamicLibrary();
@@ -12106,7 +12013,7 @@ class CKDPRecordReference extends Struct<CKDPRecordReference> {
 
   static int isEqual(
     Pointer<CKDPRecordReference> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -12118,7 +12025,7 @@ class CKDPRecordReference extends Struct<CKDPRecordReference> {
 
   static void mergeFrom(
     Pointer<CKDPRecordReference> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -12130,7 +12037,7 @@ class CKDPRecordReference extends Struct<CKDPRecordReference> {
 
   static int readFrom(
     Pointer<CKDPRecordReference> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -12140,7 +12047,7 @@ class CKDPRecordReference extends Struct<CKDPRecordReference> {
     );
   }
 
-  static Pointer<Void> recordIdentifier(
+  static Pointer recordIdentifier(
     Pointer<CKDPRecordReference> _self,
   ) {
     _openDynamicLibrary();
@@ -12164,7 +12071,7 @@ class CKDPRecordReference extends Struct<CKDPRecordReference> {
 
   static void setRecordIdentifier(
     Pointer<CKDPRecordReference> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -12196,7 +12103,7 @@ class CKDPRecordReference extends Struct<CKDPRecordReference> {
     );
   }
 
-  static Pointer<Void> typeAsString(
+  static Pointer typeAsString(
     Pointer<CKDPRecordReference> _self,
     int arg,
   ) {
@@ -12210,7 +12117,7 @@ class CKDPRecordReference extends Struct<CKDPRecordReference> {
 
   static void writeTo(
     Pointer<CKDPRecordReference> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -12221,11 +12128,9 @@ class CKDPRecordReference extends Struct<CKDPRecordReference> {
   }
 }
 
-/// Objective-C class _CKDPRecordZoneIdentifier_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKDPRecordZoneIdentifier extends Struct<CKDPRecordZoneIdentifier> {
   factory CKDPRecordZoneIdentifier._() {
@@ -12240,7 +12145,7 @@ class CKDPRecordZoneIdentifier extends Struct<CKDPRecordZoneIdentifier> {
 
   static void copyTo(
     Pointer<CKDPRecordZoneIdentifier> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -12250,9 +12155,9 @@ class CKDPRecordZoneIdentifier extends Struct<CKDPRecordZoneIdentifier> {
     );
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<CKDPRecordZoneIdentifier> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -12262,7 +12167,7 @@ class CKDPRecordZoneIdentifier extends Struct<CKDPRecordZoneIdentifier> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CKDPRecordZoneIdentifier> _self,
   ) {
     _openDynamicLibrary();
@@ -12272,7 +12177,7 @@ class CKDPRecordZoneIdentifier extends Struct<CKDPRecordZoneIdentifier> {
     );
   }
 
-  static Pointer<Void> dictionaryRepresentation(
+  static Pointer dictionaryRepresentation(
     Pointer<CKDPRecordZoneIdentifier> _self,
   ) {
     _openDynamicLibrary();
@@ -12314,7 +12219,7 @@ class CKDPRecordZoneIdentifier extends Struct<CKDPRecordZoneIdentifier> {
 
   static int isEqual(
     Pointer<CKDPRecordZoneIdentifier> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -12326,7 +12231,7 @@ class CKDPRecordZoneIdentifier extends Struct<CKDPRecordZoneIdentifier> {
 
   static void mergeFrom(
     Pointer<CKDPRecordZoneIdentifier> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -12336,7 +12241,7 @@ class CKDPRecordZoneIdentifier extends Struct<CKDPRecordZoneIdentifier> {
     );
   }
 
-  static Pointer<Void> ownerIdentifier(
+  static Pointer ownerIdentifier(
     Pointer<CKDPRecordZoneIdentifier> _self,
   ) {
     _openDynamicLibrary();
@@ -12348,7 +12253,7 @@ class CKDPRecordZoneIdentifier extends Struct<CKDPRecordZoneIdentifier> {
 
   static int readFrom(
     Pointer<CKDPRecordZoneIdentifier> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -12360,7 +12265,7 @@ class CKDPRecordZoneIdentifier extends Struct<CKDPRecordZoneIdentifier> {
 
   static void setOwnerIdentifier(
     Pointer<CKDPRecordZoneIdentifier> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -12372,7 +12277,7 @@ class CKDPRecordZoneIdentifier extends Struct<CKDPRecordZoneIdentifier> {
 
   static void setValue(
     Pointer<CKDPRecordZoneIdentifier> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -12382,7 +12287,7 @@ class CKDPRecordZoneIdentifier extends Struct<CKDPRecordZoneIdentifier> {
     );
   }
 
-  static Pointer<Void> value(
+  static Pointer value(
     Pointer<CKDPRecordZoneIdentifier> _self,
   ) {
     _openDynamicLibrary();
@@ -12394,7 +12299,7 @@ class CKDPRecordZoneIdentifier extends Struct<CKDPRecordZoneIdentifier> {
 
   static void writeTo(
     Pointer<CKDPRecordZoneIdentifier> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -12405,11 +12310,9 @@ class CKDPRecordZoneIdentifier extends Struct<CKDPRecordZoneIdentifier> {
   }
 }
 
-/// Objective-C class _CKDatabase_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKDatabase extends Struct<CKDatabase> {
   factory CKDatabase._() {
@@ -12420,7 +12323,7 @@ class CKDatabase extends Struct<CKDatabase> {
     return _objc.allocate("CKDatabase").cast<CKDatabase>();
   }
 
-  static Pointer<Void> CKPropertiesDescription(
+  static Pointer CKPropertiesDescription(
     Pointer<CKDatabase> _self,
   ) {
     _openDynamicLibrary();
@@ -12430,7 +12333,7 @@ class CKDatabase extends Struct<CKDatabase> {
     );
   }
 
-  static Pointer<Void> CKStatusReportArray(
+  static Pointer CKStatusReportArray(
     Pointer<CKDatabase> _self,
   ) {
     _openDynamicLibrary();
@@ -12442,7 +12345,7 @@ class CKDatabase extends Struct<CKDatabase> {
 
   static void addOperation(
     Pointer<CKDatabase> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -12464,7 +12367,7 @@ class CKDatabase extends Struct<CKDatabase> {
 
   static void clearAuthTokensForRecordWithID(
     Pointer<CKDatabase> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -12476,8 +12379,8 @@ class CKDatabase extends Struct<CKDatabase> {
 
   static void clearCacheEntriesForRecord(
     Pointer<CKDatabase> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> completionHandler,
+    Pointer arg, {
+    @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -12490,8 +12393,8 @@ class CKDatabase extends Struct<CKDatabase> {
 
   static void clearCacheEntriesForZone(
     Pointer<CKDatabase> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> completionHandler,
+    Pointer arg, {
+    @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -12505,7 +12408,7 @@ class CKDatabase extends Struct<CKDatabase> {
   static void clearCachesWithOptions(
     Pointer<CKDatabase> _self,
     int arg, {
-    @required Pointer<Void> completionHandler,
+    @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_Uint64_p_returns_void(
@@ -12526,7 +12429,7 @@ class CKDatabase extends Struct<CKDatabase> {
     );
   }
 
-  static Pointer<Void> container(
+  static Pointer container(
     Pointer<CKDatabase> _self,
   ) {
     _openDynamicLibrary();
@@ -12536,9 +12439,9 @@ class CKDatabase extends Struct<CKDatabase> {
     );
   }
 
-  static Pointer<Void> daemonWithErrorHandler(
+  static Pointer daemonWithErrorHandler(
     Pointer<CKDatabase> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -12560,8 +12463,8 @@ class CKDatabase extends Struct<CKDatabase> {
 
   static void deleteRecordWithID(
     Pointer<CKDatabase> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> completionHandler,
+    Pointer arg, {
+    @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -12574,8 +12477,8 @@ class CKDatabase extends Struct<CKDatabase> {
 
   static void deleteRecordZoneWithID(
     Pointer<CKDatabase> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> completionHandler,
+    Pointer arg, {
+    @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -12588,8 +12491,8 @@ class CKDatabase extends Struct<CKDatabase> {
 
   static void deleteSubscriptionWithID(
     Pointer<CKDatabase> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> completionHandler,
+    Pointer arg, {
+    @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -12600,7 +12503,7 @@ class CKDatabase extends Struct<CKDatabase> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CKDatabase> _self,
   ) {
     _openDynamicLibrary();
@@ -12612,7 +12515,7 @@ class CKDatabase extends Struct<CKDatabase> {
 
   static void fetchAllRecordZonesWithCompletionHandler(
     Pointer<CKDatabase> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -12624,7 +12527,7 @@ class CKDatabase extends Struct<CKDatabase> {
 
   static void fetchAllSubscriptionsWithCompletionHandler(
     Pointer<CKDatabase> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -12636,8 +12539,8 @@ class CKDatabase extends Struct<CKDatabase> {
 
   static void fetchRecordWithID(
     Pointer<CKDatabase> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> completionHandler,
+    Pointer arg, {
+    @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -12650,8 +12553,8 @@ class CKDatabase extends Struct<CKDatabase> {
 
   static void fetchRecordZoneWithID(
     Pointer<CKDatabase> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> completionHandler,
+    Pointer arg, {
+    @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -12664,8 +12567,8 @@ class CKDatabase extends Struct<CKDatabase> {
 
   static void fetchSubscriptionWithID(
     Pointer<CKDatabase> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> completionHandler,
+    Pointer arg, {
+    @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -12678,7 +12581,7 @@ class CKDatabase extends Struct<CKDatabase> {
 
   static void getCorruptRecordsForAllZonesWithCompletionHandler(
     Pointer<CKDatabase> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -12690,7 +12593,7 @@ class CKDatabase extends Struct<CKDatabase> {
 
   static void getPCSDiagnosticsForZonesWithCompletionHandler(
     Pointer<CKDatabase> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -12700,7 +12603,7 @@ class CKDatabase extends Struct<CKDatabase> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CKDatabase> _self,
   ) {
     _openDynamicLibrary();
@@ -12710,7 +12613,7 @@ class CKDatabase extends Struct<CKDatabase> {
     );
   }
 
-  static Pointer<Void> operationQueue(
+  static Pointer operationQueue(
     Pointer<CKDatabase> _self,
   ) {
     _openDynamicLibrary();
@@ -12722,9 +12625,9 @@ class CKDatabase extends Struct<CKDatabase> {
 
   static void performQuery(
     Pointer<CKDatabase> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> inZoneWithID,
-    @required Pointer<Void> completionHandler,
+    Pointer arg, {
+    @required Pointer inZoneWithID,
+    @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_void(
@@ -12738,8 +12641,8 @@ class CKDatabase extends Struct<CKDatabase> {
 
   static void saveRecord(
     Pointer<CKDatabase> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> completionHandler,
+    Pointer arg, {
+    @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -12752,8 +12655,8 @@ class CKDatabase extends Struct<CKDatabase> {
 
   static void saveRecordZone(
     Pointer<CKDatabase> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> completionHandler,
+    Pointer arg, {
+    @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -12766,8 +12669,8 @@ class CKDatabase extends Struct<CKDatabase> {
 
   static void saveSubscription(
     Pointer<CKDatabase> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> completionHandler,
+    Pointer arg, {
+    @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -12790,7 +12693,7 @@ class CKDatabase extends Struct<CKDatabase> {
 
   static void setContainer(
     Pointer<CKDatabase> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -12802,7 +12705,7 @@ class CKDatabase extends Struct<CKDatabase> {
 
   static void setUnderlyingDispatchQueue(
     Pointer<CKDatabase> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -12822,7 +12725,7 @@ class CKDatabase extends Struct<CKDatabase> {
     );
   }
 
-  static Pointer<Void> underlyingDispatchQueue(
+  static Pointer underlyingDispatchQueue(
     Pointer<CKDatabase> _self,
   ) {
     _openDynamicLibrary();
@@ -12833,11 +12736,9 @@ class CKDatabase extends Struct<CKDatabase> {
   }
 }
 
-/// Objective-C class _CKDatabaseNotification_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKDatabaseNotification extends Struct<CKDatabaseNotification> {
   factory CKDatabaseNotification._() {
@@ -12850,7 +12751,7 @@ class CKDatabaseNotification extends Struct<CKDatabaseNotification> {
         .cast<CKDatabaseNotification>();
   }
 
-  static Pointer<Void> CKPropertiesDescription(
+  static Pointer CKPropertiesDescription(
     Pointer<CKDatabaseNotification> _self,
   ) {
     _openDynamicLibrary();
@@ -12870,7 +12771,7 @@ class CKDatabaseNotification extends Struct<CKDatabaseNotification> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CKDatabaseNotification> _self,
   ) {
     _openDynamicLibrary();
@@ -12882,7 +12783,7 @@ class CKDatabaseNotification extends Struct<CKDatabaseNotification> {
 
   static void encodeWithCoder(
     Pointer<CKDatabaseNotification> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -12892,9 +12793,9 @@ class CKDatabaseNotification extends Struct<CKDatabaseNotification> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CKDatabaseNotification> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -12904,9 +12805,9 @@ class CKDatabaseNotification extends Struct<CKDatabaseNotification> {
     );
   }
 
-  static Pointer<Void> initWithRemoteNotificationDictionary(
+  static Pointer initWithRemoteNotificationDictionary(
     Pointer<CKDatabaseNotification> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -12929,11 +12830,9 @@ class CKDatabaseNotification extends Struct<CKDatabaseNotification> {
   }
 }
 
-/// Objective-C class _CKDatabaseOperation_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKDatabaseOperation extends Struct<CKDatabaseOperation> {
   factory CKDatabaseOperation._() {
@@ -12946,7 +12845,7 @@ class CKDatabaseOperation extends Struct<CKDatabaseOperation> {
 
   static int CKOperationShouldRun(
     Pointer<CKDatabaseOperation> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -12956,7 +12855,7 @@ class CKDatabaseOperation extends Struct<CKDatabaseOperation> {
     );
   }
 
-  static Pointer<Void> database(
+  static Pointer database(
     Pointer<CKDatabaseOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -12968,7 +12867,7 @@ class CKDatabaseOperation extends Struct<CKDatabaseOperation> {
 
   static void fillFromOperationInfo(
     Pointer<CKDatabaseOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -12980,7 +12879,7 @@ class CKDatabaseOperation extends Struct<CKDatabaseOperation> {
 
   static void fillOutOperationInfo(
     Pointer<CKDatabaseOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -12990,7 +12889,7 @@ class CKDatabaseOperation extends Struct<CKDatabaseOperation> {
     );
   }
 
-  static Pointer<Void> flowControlKey(
+  static Pointer flowControlKey(
     Pointer<CKDatabaseOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -13002,7 +12901,7 @@ class CKDatabaseOperation extends Struct<CKDatabaseOperation> {
 
   static void setDatabase(
     Pointer<CKDatabaseOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -13013,11 +12912,9 @@ class CKDatabaseOperation extends Struct<CKDatabaseOperation> {
   }
 }
 
-/// Objective-C class _CKDatabaseOperationInfo_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKDatabaseOperationInfo extends Struct<CKDatabaseOperationInfo> {
   factory CKDatabaseOperationInfo._() {
@@ -13030,7 +12927,7 @@ class CKDatabaseOperationInfo extends Struct<CKDatabaseOperationInfo> {
         .cast<CKDatabaseOperationInfo>();
   }
 
-  static Pointer<Void> activityCreate(
+  static Pointer activityCreate(
     Pointer<CKDatabaseOperationInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -13052,7 +12949,7 @@ class CKDatabaseOperationInfo extends Struct<CKDatabaseOperationInfo> {
 
   static void encodeWithCoder(
     Pointer<CKDatabaseOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -13062,9 +12959,9 @@ class CKDatabaseOperationInfo extends Struct<CKDatabaseOperationInfo> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CKDatabaseOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -13088,7 +12985,7 @@ class CKDatabaseOperationInfo extends Struct<CKDatabaseOperationInfo> {
 
   static void takeValuesFrom(
     Pointer<CKDatabaseOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -13099,11 +12996,9 @@ class CKDatabaseOperationInfo extends Struct<CKDatabaseOperationInfo> {
   }
 }
 
-/// Objective-C class _CKDatabaseSubscription_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKDatabaseSubscription extends Struct<CKDatabaseSubscription> {
   factory CKDatabaseSubscription._() {
@@ -13116,9 +13011,9 @@ class CKDatabaseSubscription extends Struct<CKDatabaseSubscription> {
         .cast<CKDatabaseSubscription>();
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<CKDatabaseSubscription> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -13128,7 +13023,7 @@ class CKDatabaseSubscription extends Struct<CKDatabaseSubscription> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CKDatabaseSubscription> _self,
   ) {
     _openDynamicLibrary();
@@ -13138,9 +13033,9 @@ class CKDatabaseSubscription extends Struct<CKDatabaseSubscription> {
     );
   }
 
-  static Pointer<Void> initWithSubscriptionID(
+  static Pointer initWithSubscriptionID(
     Pointer<CKDatabaseSubscription> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -13151,11 +13046,9 @@ class CKDatabaseSubscription extends Struct<CKDatabaseSubscription> {
   }
 }
 
-/// Objective-C class _CKDeclarativePredicateValidator_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKDeclarativePredicateValidator
     extends Struct<CKDeclarativePredicateValidator> {
@@ -13169,7 +13062,7 @@ class CKDeclarativePredicateValidator
         .cast<CKDeclarativePredicateValidator>();
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CKDeclarativePredicateValidator> _self,
   ) {
     _openDynamicLibrary();
@@ -13181,8 +13074,8 @@ class CKDeclarativePredicateValidator
 
   static int validate(
     Pointer<CKDeclarativePredicateValidator> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -13194,11 +13087,9 @@ class CKDeclarativePredicateValidator
   }
 }
 
-/// Objective-C class _CKDiscoverAllContactsOperation_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKDiscoverAllContactsOperation
     extends Struct<CKDiscoverAllContactsOperation> {
@@ -13214,7 +13105,7 @@ class CKDiscoverAllContactsOperation
 
   static int CKOperationShouldRun(
     Pointer<CKDiscoverAllContactsOperation> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -13224,7 +13115,7 @@ class CKDiscoverAllContactsOperation
     );
   }
 
-  static Pointer<Void> activityCreate(
+  static Pointer activityCreate(
     Pointer<CKDiscoverAllContactsOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -13234,7 +13125,7 @@ class CKDiscoverAllContactsOperation
     );
   }
 
-  static Pointer<Void> discoverAllContactsCompletionBlock(
+  static Pointer discoverAllContactsCompletionBlock(
     Pointer<CKDiscoverAllContactsOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -13244,7 +13135,7 @@ class CKDiscoverAllContactsOperation
     );
   }
 
-  static Pointer<Void> discoveredUserInfos(
+  static Pointer discoveredUserInfos(
     Pointer<CKDiscoverAllContactsOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -13264,7 +13155,7 @@ class CKDiscoverAllContactsOperation
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CKDiscoverAllContactsOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -13274,7 +13165,7 @@ class CKDiscoverAllContactsOperation
     );
   }
 
-  static Pointer<Void> operationInfoClass(
+  static Pointer operationInfoClass(
     Pointer<CKDiscoverAllContactsOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -13296,7 +13187,7 @@ class CKDiscoverAllContactsOperation
 
   static void setDiscoverAllContactsCompletionBlock(
     Pointer<CKDiscoverAllContactsOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -13308,7 +13199,7 @@ class CKDiscoverAllContactsOperation
 
   static void setDiscoveredUserInfos(
     Pointer<CKDiscoverAllContactsOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -13319,11 +13210,9 @@ class CKDiscoverAllContactsOperation
   }
 }
 
-/// Objective-C class _CKDiscoverAllUserIdentitiesOperation_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKDiscoverAllUserIdentitiesOperation
     extends Struct<CKDiscoverAllUserIdentitiesOperation> {
@@ -13339,7 +13228,7 @@ class CKDiscoverAllUserIdentitiesOperation
 
   static int CKOperationShouldRun(
     Pointer<CKDiscoverAllUserIdentitiesOperation> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -13349,7 +13238,7 @@ class CKDiscoverAllUserIdentitiesOperation
     );
   }
 
-  static Pointer<Void> activityCreate(
+  static Pointer activityCreate(
     Pointer<CKDiscoverAllUserIdentitiesOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -13359,7 +13248,7 @@ class CKDiscoverAllUserIdentitiesOperation
     );
   }
 
-  static Pointer<Void> discoverAllUserIdentitiesCompletionBlock(
+  static Pointer discoverAllUserIdentitiesCompletionBlock(
     Pointer<CKDiscoverAllUserIdentitiesOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -13369,7 +13258,7 @@ class CKDiscoverAllUserIdentitiesOperation
     );
   }
 
-  static Pointer<Void> identityToContactIdentifiers(
+  static Pointer identityToContactIdentifiers(
     Pointer<CKDiscoverAllUserIdentitiesOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -13379,7 +13268,7 @@ class CKDiscoverAllUserIdentitiesOperation
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CKDiscoverAllUserIdentitiesOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -13389,7 +13278,7 @@ class CKDiscoverAllUserIdentitiesOperation
     );
   }
 
-  static Pointer<Void> operationInfoClass(
+  static Pointer operationInfoClass(
     Pointer<CKDiscoverAllUserIdentitiesOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -13411,7 +13300,7 @@ class CKDiscoverAllUserIdentitiesOperation
 
   static void setDiscoverAllUserIdentitiesCompletionBlock(
     Pointer<CKDiscoverAllUserIdentitiesOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -13423,7 +13312,7 @@ class CKDiscoverAllUserIdentitiesOperation
 
   static void setIdentityToContactIdentifiers(
     Pointer<CKDiscoverAllUserIdentitiesOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -13435,7 +13324,7 @@ class CKDiscoverAllUserIdentitiesOperation
 
   static void setUserIdentityDiscoveredBlock(
     Pointer<CKDiscoverAllUserIdentitiesOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -13445,7 +13334,7 @@ class CKDiscoverAllUserIdentitiesOperation
     );
   }
 
-  static Pointer<Void> userIdentityDiscoveredBlock(
+  static Pointer userIdentityDiscoveredBlock(
     Pointer<CKDiscoverAllUserIdentitiesOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -13456,11 +13345,9 @@ class CKDiscoverAllUserIdentitiesOperation
   }
 }
 
-/// Objective-C class _CKDiscoverUserIdentitiesOperation_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKDiscoverUserIdentitiesOperation
     extends Struct<CKDiscoverUserIdentitiesOperation> {
@@ -13476,7 +13363,7 @@ class CKDiscoverUserIdentitiesOperation
 
   static int CKOperationShouldRun(
     Pointer<CKDiscoverUserIdentitiesOperation> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -13486,7 +13373,7 @@ class CKDiscoverUserIdentitiesOperation
     );
   }
 
-  static Pointer<Void> discoverUserIdentitiesCompletionBlock(
+  static Pointer discoverUserIdentitiesCompletionBlock(
     Pointer<CKDiscoverUserIdentitiesOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -13498,7 +13385,7 @@ class CKDiscoverUserIdentitiesOperation
 
   static void fillFromOperationInfo(
     Pointer<CKDiscoverUserIdentitiesOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -13510,7 +13397,7 @@ class CKDiscoverUserIdentitiesOperation
 
   static void fillOutOperationInfo(
     Pointer<CKDiscoverUserIdentitiesOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -13520,7 +13407,7 @@ class CKDiscoverUserIdentitiesOperation
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CKDiscoverUserIdentitiesOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -13530,9 +13417,9 @@ class CKDiscoverUserIdentitiesOperation
     );
   }
 
-  static Pointer<Void> initWithUserIdentityLookupInfos(
+  static Pointer initWithUserIdentityLookupInfos(
     Pointer<CKDiscoverUserIdentitiesOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -13542,7 +13429,7 @@ class CKDiscoverUserIdentitiesOperation
     );
   }
 
-  static Pointer<Void> operationInfoClass(
+  static Pointer operationInfoClass(
     Pointer<CKDiscoverUserIdentitiesOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -13564,7 +13451,7 @@ class CKDiscoverUserIdentitiesOperation
 
   static void setDiscoverUserIdentitiesCompletionBlock(
     Pointer<CKDiscoverUserIdentitiesOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -13576,7 +13463,7 @@ class CKDiscoverUserIdentitiesOperation
 
   static void setUserIdentityDiscoveredBlock(
     Pointer<CKDiscoverUserIdentitiesOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -13588,7 +13475,7 @@ class CKDiscoverUserIdentitiesOperation
 
   static void setUserIdentityLookupInfos(
     Pointer<CKDiscoverUserIdentitiesOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -13598,7 +13485,7 @@ class CKDiscoverUserIdentitiesOperation
     );
   }
 
-  static Pointer<Void> userIdentityDiscoveredBlock(
+  static Pointer userIdentityDiscoveredBlock(
     Pointer<CKDiscoverUserIdentitiesOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -13608,7 +13495,7 @@ class CKDiscoverUserIdentitiesOperation
     );
   }
 
-  static Pointer<Void> userIdentityLookupInfos(
+  static Pointer userIdentityLookupInfos(
     Pointer<CKDiscoverUserIdentitiesOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -13619,11 +13506,9 @@ class CKDiscoverUserIdentitiesOperation
   }
 }
 
-/// Objective-C class _CKDiscoverUserIdentitiesOperationInfo_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKDiscoverUserIdentitiesOperationInfo
     extends Struct<CKDiscoverUserIdentitiesOperationInfo> {
@@ -13637,7 +13522,7 @@ class CKDiscoverUserIdentitiesOperationInfo
         .cast<CKDiscoverUserIdentitiesOperationInfo>();
   }
 
-  static Pointer<Void> activityCreate(
+  static Pointer activityCreate(
     Pointer<CKDiscoverUserIdentitiesOperationInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -13649,7 +13534,7 @@ class CKDiscoverUserIdentitiesOperationInfo
 
   static void encodeWithCoder(
     Pointer<CKDiscoverUserIdentitiesOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -13659,9 +13544,9 @@ class CKDiscoverUserIdentitiesOperationInfo
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CKDiscoverUserIdentitiesOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -13673,7 +13558,7 @@ class CKDiscoverUserIdentitiesOperationInfo
 
   static void setUserIdentityLookupInfos(
     Pointer<CKDiscoverUserIdentitiesOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -13683,7 +13568,7 @@ class CKDiscoverUserIdentitiesOperationInfo
     );
   }
 
-  static Pointer<Void> userIdentityLookupInfos(
+  static Pointer userIdentityLookupInfos(
     Pointer<CKDiscoverUserIdentitiesOperationInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -13694,11 +13579,9 @@ class CKDiscoverUserIdentitiesOperationInfo
   }
 }
 
-/// Objective-C class _CKDiscoverUserInfosOperation_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKDiscoverUserInfosOperation
     extends Struct<CKDiscoverUserInfosOperation> {
@@ -13714,7 +13597,7 @@ class CKDiscoverUserInfosOperation
 
   static int CKOperationShouldRun(
     Pointer<CKDiscoverUserInfosOperation> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -13724,7 +13607,7 @@ class CKDiscoverUserInfosOperation
     );
   }
 
-  static Pointer<Void> discoverUserInfosCompletionBlock(
+  static Pointer discoverUserInfosCompletionBlock(
     Pointer<CKDiscoverUserInfosOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -13734,7 +13617,7 @@ class CKDiscoverUserInfosOperation
     );
   }
 
-  static Pointer<Void> emailAddresses(
+  static Pointer emailAddresses(
     Pointer<CKDiscoverUserInfosOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -13744,7 +13627,7 @@ class CKDiscoverUserInfosOperation
     );
   }
 
-  static Pointer<Void> emailsToUserInfos(
+  static Pointer emailsToUserInfos(
     Pointer<CKDiscoverUserInfosOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -13756,7 +13639,7 @@ class CKDiscoverUserInfosOperation
 
   static void fillFromOperationInfo(
     Pointer<CKDiscoverUserInfosOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -13768,7 +13651,7 @@ class CKDiscoverUserInfosOperation
 
   static void fillOutOperationInfo(
     Pointer<CKDiscoverUserInfosOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -13788,7 +13671,7 @@ class CKDiscoverUserInfosOperation
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CKDiscoverUserInfosOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -13798,10 +13681,10 @@ class CKDiscoverUserInfosOperation
     );
   }
 
-  static Pointer<Void> initWithEmailAddresses(
+  static Pointer initWithEmailAddresses(
     Pointer<CKDiscoverUserInfosOperation> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> userRecordIDs,
+    Pointer arg, {
+    @required Pointer userRecordIDs,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -13812,7 +13695,7 @@ class CKDiscoverUserInfosOperation
     );
   }
 
-  static Pointer<Void> operationInfoClass(
+  static Pointer operationInfoClass(
     Pointer<CKDiscoverUserInfosOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -13834,7 +13717,7 @@ class CKDiscoverUserInfosOperation
 
   static void setDiscoverUserInfosCompletionBlock(
     Pointer<CKDiscoverUserInfosOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -13846,7 +13729,7 @@ class CKDiscoverUserInfosOperation
 
   static void setEmailAddresses(
     Pointer<CKDiscoverUserInfosOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -13858,7 +13741,7 @@ class CKDiscoverUserInfosOperation
 
   static void setEmailsToUserInfos(
     Pointer<CKDiscoverUserInfosOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -13870,7 +13753,7 @@ class CKDiscoverUserInfosOperation
 
   static void setUserRecordIDs(
     Pointer<CKDiscoverUserInfosOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -13882,7 +13765,7 @@ class CKDiscoverUserInfosOperation
 
   static void setUserRecordIDsToUserInfos(
     Pointer<CKDiscoverUserInfosOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -13892,7 +13775,7 @@ class CKDiscoverUserInfosOperation
     );
   }
 
-  static Pointer<Void> userRecordIDs(
+  static Pointer userRecordIDs(
     Pointer<CKDiscoverUserInfosOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -13902,7 +13785,7 @@ class CKDiscoverUserInfosOperation
     );
   }
 
-  static Pointer<Void> userRecordIDsToUserInfos(
+  static Pointer userRecordIDsToUserInfos(
     Pointer<CKDiscoverUserInfosOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -13913,11 +13796,9 @@ class CKDiscoverUserInfosOperation
   }
 }
 
-/// Objective-C class _CKDiscoveredUserInfo_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKDiscoveredUserInfo extends Struct<CKDiscoveredUserInfo> {
   factory CKDiscoveredUserInfo._() {
@@ -13928,7 +13809,7 @@ class CKDiscoveredUserInfo extends Struct<CKDiscoveredUserInfo> {
     return _objc.allocate("CKDiscoveredUserInfo").cast<CKDiscoveredUserInfo>();
   }
 
-  static Pointer<Void> CKPropertiesDescription(
+  static Pointer CKPropertiesDescription(
     Pointer<CKDiscoveredUserInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -13938,9 +13819,9 @@ class CKDiscoveredUserInfo extends Struct<CKDiscoveredUserInfo> {
     );
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<CKDiscoveredUserInfo> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -13950,7 +13831,7 @@ class CKDiscoveredUserInfo extends Struct<CKDiscoveredUserInfo> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CKDiscoveredUserInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -13960,7 +13841,7 @@ class CKDiscoveredUserInfo extends Struct<CKDiscoveredUserInfo> {
     );
   }
 
-  static Pointer<Void> displayContact(
+  static Pointer displayContact(
     Pointer<CKDiscoveredUserInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -13972,7 +13853,7 @@ class CKDiscoveredUserInfo extends Struct<CKDiscoveredUserInfo> {
 
   static void encodeWithCoder(
     Pointer<CKDiscoveredUserInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -13982,7 +13863,7 @@ class CKDiscoveredUserInfo extends Struct<CKDiscoveredUserInfo> {
     );
   }
 
-  static Pointer<Void> firstName(
+  static Pointer firstName(
     Pointer<CKDiscoveredUserInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -14002,9 +13883,9 @@ class CKDiscoveredUserInfo extends Struct<CKDiscoveredUserInfo> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CKDiscoveredUserInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -14014,10 +13895,10 @@ class CKDiscoveredUserInfo extends Struct<CKDiscoveredUserInfo> {
     );
   }
 
-  static Pointer<Void> initWithUserRecordID(
+  static Pointer initWithUserRecordID(
     Pointer<CKDiscoveredUserInfo> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> displayContact,
+    Pointer arg, {
+    @required Pointer displayContact,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -14030,7 +13911,7 @@ class CKDiscoveredUserInfo extends Struct<CKDiscoveredUserInfo> {
 
   static int isEqual(
     Pointer<CKDiscoveredUserInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -14040,7 +13921,7 @@ class CKDiscoveredUserInfo extends Struct<CKDiscoveredUserInfo> {
     );
   }
 
-  static Pointer<Void> lastName(
+  static Pointer lastName(
     Pointer<CKDiscoveredUserInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -14050,7 +13931,7 @@ class CKDiscoveredUserInfo extends Struct<CKDiscoveredUserInfo> {
     );
   }
 
-  static Pointer<Void> userRecordID(
+  static Pointer userRecordID(
     Pointer<CKDiscoveredUserInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -14061,11 +13942,9 @@ class CKDiscoveredUserInfo extends Struct<CKDiscoveredUserInfo> {
   }
 }
 
-/// Objective-C class _CKEncryptedData_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKEncryptedData extends Struct<CKEncryptedData> {
   factory CKEncryptedData._() {
@@ -14076,7 +13955,7 @@ class CKEncryptedData extends Struct<CKEncryptedData> {
     return _objc.allocate("CKEncryptedData").cast<CKEncryptedData>();
   }
 
-  static Pointer<Void> CKDescriptionPropertiesWithPublic(
+  static Pointer CKDescriptionPropertiesWithPublic(
     Pointer<CKEncryptedData> _self,
     int arg, {
     @required int private,
@@ -14093,7 +13972,7 @@ class CKEncryptedData extends Struct<CKEncryptedData> {
     );
   }
 
-  static Pointer<Void> CKPropertiesDescription(
+  static Pointer CKPropertiesDescription(
     Pointer<CKEncryptedData> _self,
   ) {
     _openDynamicLibrary();
@@ -14103,9 +13982,9 @@ class CKEncryptedData extends Struct<CKEncryptedData> {
     );
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<CKEncryptedData> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -14115,7 +13994,7 @@ class CKEncryptedData extends Struct<CKEncryptedData> {
     );
   }
 
-  static Pointer<Void> data(
+  static Pointer data(
     Pointer<CKEncryptedData> _self,
   ) {
     _openDynamicLibrary();
@@ -14125,7 +14004,7 @@ class CKEncryptedData extends Struct<CKEncryptedData> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CKEncryptedData> _self,
   ) {
     _openDynamicLibrary();
@@ -14137,7 +14016,7 @@ class CKEncryptedData extends Struct<CKEncryptedData> {
 
   static void encodeWithCoder(
     Pointer<CKEncryptedData> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -14147,7 +14026,7 @@ class CKEncryptedData extends Struct<CKEncryptedData> {
     );
   }
 
-  static Pointer<Void> encryptedData(
+  static Pointer encryptedData(
     Pointer<CKEncryptedData> _self,
   ) {
     _openDynamicLibrary();
@@ -14167,7 +14046,7 @@ class CKEncryptedData extends Struct<CKEncryptedData> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CKEncryptedData> _self,
   ) {
     _openDynamicLibrary();
@@ -14177,9 +14056,9 @@ class CKEncryptedData extends Struct<CKEncryptedData> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CKEncryptedData> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -14189,9 +14068,9 @@ class CKEncryptedData extends Struct<CKEncryptedData> {
     );
   }
 
-  static Pointer<Void> initWithData(
+  static Pointer initWithData(
     Pointer<CKEncryptedData> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -14201,9 +14080,9 @@ class CKEncryptedData extends Struct<CKEncryptedData> {
     );
   }
 
-  static Pointer<Void> initWithEncryptedData(
+  static Pointer initWithEncryptedData(
     Pointer<CKEncryptedData> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -14213,9 +14092,9 @@ class CKEncryptedData extends Struct<CKEncryptedData> {
     );
   }
 
-  static Pointer<Void> initWithValue(
+  static Pointer initWithValue(
     Pointer<CKEncryptedData> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -14227,7 +14106,7 @@ class CKEncryptedData extends Struct<CKEncryptedData> {
 
   static int isEqual(
     Pointer<CKEncryptedData> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -14259,7 +14138,7 @@ class CKEncryptedData extends Struct<CKEncryptedData> {
 
   static void setData(
     Pointer<CKEncryptedData> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -14271,7 +14150,7 @@ class CKEncryptedData extends Struct<CKEncryptedData> {
 
   static void setEncryptedData(
     Pointer<CKEncryptedData> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -14281,7 +14160,7 @@ class CKEncryptedData extends Struct<CKEncryptedData> {
     );
   }
 
-  static Pointer<Void> value(
+  static Pointer value(
     Pointer<CKEncryptedData> _self,
   ) {
     _openDynamicLibrary();
@@ -14292,11 +14171,9 @@ class CKEncryptedData extends Struct<CKEncryptedData> {
   }
 }
 
-/// Objective-C class _CKEncryptedDate_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKEncryptedDate extends Struct<CKEncryptedDate> {
   factory CKEncryptedDate._() {
@@ -14307,7 +14184,7 @@ class CKEncryptedDate extends Struct<CKEncryptedDate> {
     return _objc.allocate("CKEncryptedDate").cast<CKEncryptedDate>();
   }
 
-  static Pointer<Void> date(
+  static Pointer date(
     Pointer<CKEncryptedDate> _self,
   ) {
     _openDynamicLibrary();
@@ -14317,9 +14194,9 @@ class CKEncryptedDate extends Struct<CKEncryptedDate> {
     );
   }
 
-  static Pointer<Void> initWithDate(
+  static Pointer initWithDate(
     Pointer<CKEncryptedDate> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -14329,7 +14206,7 @@ class CKEncryptedDate extends Struct<CKEncryptedDate> {
     );
   }
 
-  static Pointer<Void> value(
+  static Pointer value(
     Pointer<CKEncryptedDate> _self,
   ) {
     _openDynamicLibrary();
@@ -14340,11 +14217,9 @@ class CKEncryptedDate extends Struct<CKEncryptedDate> {
   }
 }
 
-/// Objective-C class _CKEncryptedDateArray_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKEncryptedDateArray extends Struct<CKEncryptedDateArray> {
   factory CKEncryptedDateArray._() {
@@ -14355,7 +14230,7 @@ class CKEncryptedDateArray extends Struct<CKEncryptedDateArray> {
     return _objc.allocate("CKEncryptedDateArray").cast<CKEncryptedDateArray>();
   }
 
-  static Pointer<Void> dateArray(
+  static Pointer dateArray(
     Pointer<CKEncryptedDateArray> _self,
   ) {
     _openDynamicLibrary();
@@ -14365,9 +14240,9 @@ class CKEncryptedDateArray extends Struct<CKEncryptedDateArray> {
     );
   }
 
-  static Pointer<Void> initWithDateArray(
+  static Pointer initWithDateArray(
     Pointer<CKEncryptedDateArray> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -14377,7 +14252,7 @@ class CKEncryptedDateArray extends Struct<CKEncryptedDateArray> {
     );
   }
 
-  static Pointer<Void> value(
+  static Pointer value(
     Pointer<CKEncryptedDateArray> _self,
   ) {
     _openDynamicLibrary();
@@ -14388,11 +14263,9 @@ class CKEncryptedDateArray extends Struct<CKEncryptedDateArray> {
   }
 }
 
-/// Objective-C class _CKEncryptedDouble_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKEncryptedDouble extends Struct<CKEncryptedDouble> {
   factory CKEncryptedDouble._() {
@@ -14413,7 +14286,7 @@ class CKEncryptedDouble extends Struct<CKEncryptedDouble> {
     );
   }
 
-  static Pointer<Void> initWithDouble(
+  static Pointer initWithDouble(
     Pointer<CKEncryptedDouble> _self,
     double arg,
   ) {
@@ -14425,7 +14298,7 @@ class CKEncryptedDouble extends Struct<CKEncryptedDouble> {
     );
   }
 
-  static Pointer<Void> value(
+  static Pointer value(
     Pointer<CKEncryptedDouble> _self,
   ) {
     _openDynamicLibrary();
@@ -14436,11 +14309,9 @@ class CKEncryptedDouble extends Struct<CKEncryptedDouble> {
   }
 }
 
-/// Objective-C class _CKEncryptedDoubleArray_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKEncryptedDoubleArray extends Struct<CKEncryptedDoubleArray> {
   factory CKEncryptedDoubleArray._() {
@@ -14453,7 +14324,7 @@ class CKEncryptedDoubleArray extends Struct<CKEncryptedDoubleArray> {
         .cast<CKEncryptedDoubleArray>();
   }
 
-  static Pointer<Void> doubleArray(
+  static Pointer doubleArray(
     Pointer<CKEncryptedDoubleArray> _self,
   ) {
     _openDynamicLibrary();
@@ -14463,9 +14334,9 @@ class CKEncryptedDoubleArray extends Struct<CKEncryptedDoubleArray> {
     );
   }
 
-  static Pointer<Void> initWithDoubleArray(
+  static Pointer initWithDoubleArray(
     Pointer<CKEncryptedDoubleArray> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -14475,7 +14346,7 @@ class CKEncryptedDoubleArray extends Struct<CKEncryptedDoubleArray> {
     );
   }
 
-  static Pointer<Void> value(
+  static Pointer value(
     Pointer<CKEncryptedDoubleArray> _self,
   ) {
     _openDynamicLibrary();
@@ -14486,11 +14357,9 @@ class CKEncryptedDoubleArray extends Struct<CKEncryptedDoubleArray> {
   }
 }
 
-/// Objective-C class _CKEncryptedEmptyArray_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKEncryptedEmptyArray extends Struct<CKEncryptedEmptyArray> {
   factory CKEncryptedEmptyArray._() {
@@ -14503,7 +14372,7 @@ class CKEncryptedEmptyArray extends Struct<CKEncryptedEmptyArray> {
         .cast<CKEncryptedEmptyArray>();
   }
 
-  static Pointer<Void> value(
+  static Pointer value(
     Pointer<CKEncryptedEmptyArray> _self,
   ) {
     _openDynamicLibrary();
@@ -14514,11 +14383,9 @@ class CKEncryptedEmptyArray extends Struct<CKEncryptedEmptyArray> {
   }
 }
 
-/// Objective-C class _CKEncryptedLocation_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKEncryptedLocation extends Struct<CKEncryptedLocation> {
   factory CKEncryptedLocation._() {
@@ -14529,9 +14396,9 @@ class CKEncryptedLocation extends Struct<CKEncryptedLocation> {
     return _objc.allocate("CKEncryptedLocation").cast<CKEncryptedLocation>();
   }
 
-  static Pointer<Void> initWithLocation(
+  static Pointer initWithLocation(
     Pointer<CKEncryptedLocation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -14541,7 +14408,7 @@ class CKEncryptedLocation extends Struct<CKEncryptedLocation> {
     );
   }
 
-  static Pointer<Void> location(
+  static Pointer location(
     Pointer<CKEncryptedLocation> _self,
   ) {
     _openDynamicLibrary();
@@ -14551,7 +14418,7 @@ class CKEncryptedLocation extends Struct<CKEncryptedLocation> {
     );
   }
 
-  static Pointer<Void> value(
+  static Pointer value(
     Pointer<CKEncryptedLocation> _self,
   ) {
     _openDynamicLibrary();
@@ -14562,11 +14429,9 @@ class CKEncryptedLocation extends Struct<CKEncryptedLocation> {
   }
 }
 
-/// Objective-C class _CKEncryptedLocationArray_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKEncryptedLocationArray extends Struct<CKEncryptedLocationArray> {
   factory CKEncryptedLocationArray._() {
@@ -14579,9 +14444,9 @@ class CKEncryptedLocationArray extends Struct<CKEncryptedLocationArray> {
         .cast<CKEncryptedLocationArray>();
   }
 
-  static Pointer<Void> initWithLocationArray(
+  static Pointer initWithLocationArray(
     Pointer<CKEncryptedLocationArray> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -14591,7 +14456,7 @@ class CKEncryptedLocationArray extends Struct<CKEncryptedLocationArray> {
     );
   }
 
-  static Pointer<Void> locationArray(
+  static Pointer locationArray(
     Pointer<CKEncryptedLocationArray> _self,
   ) {
     _openDynamicLibrary();
@@ -14601,7 +14466,7 @@ class CKEncryptedLocationArray extends Struct<CKEncryptedLocationArray> {
     );
   }
 
-  static Pointer<Void> value(
+  static Pointer value(
     Pointer<CKEncryptedLocationArray> _self,
   ) {
     _openDynamicLibrary();
@@ -14612,11 +14477,9 @@ class CKEncryptedLocationArray extends Struct<CKEncryptedLocationArray> {
   }
 }
 
-/// Objective-C class _CKEncryptedLongLong_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKEncryptedLongLong extends Struct<CKEncryptedLongLong> {
   factory CKEncryptedLongLong._() {
@@ -14627,7 +14490,7 @@ class CKEncryptedLongLong extends Struct<CKEncryptedLongLong> {
     return _objc.allocate("CKEncryptedLongLong").cast<CKEncryptedLongLong>();
   }
 
-  static Pointer<Void> initWithLongLong(
+  static Pointer initWithLongLong(
     Pointer<CKEncryptedLongLong> _self,
     int arg,
   ) {
@@ -14649,7 +14512,7 @@ class CKEncryptedLongLong extends Struct<CKEncryptedLongLong> {
     );
   }
 
-  static Pointer<Void> value(
+  static Pointer value(
     Pointer<CKEncryptedLongLong> _self,
   ) {
     _openDynamicLibrary();
@@ -14660,11 +14523,9 @@ class CKEncryptedLongLong extends Struct<CKEncryptedLongLong> {
   }
 }
 
-/// Objective-C class _CKEncryptedLongLongArray_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKEncryptedLongLongArray extends Struct<CKEncryptedLongLongArray> {
   factory CKEncryptedLongLongArray._() {
@@ -14677,9 +14538,9 @@ class CKEncryptedLongLongArray extends Struct<CKEncryptedLongLongArray> {
         .cast<CKEncryptedLongLongArray>();
   }
 
-  static Pointer<Void> initWithLongLongArray(
+  static Pointer initWithLongLongArray(
     Pointer<CKEncryptedLongLongArray> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -14689,7 +14550,7 @@ class CKEncryptedLongLongArray extends Struct<CKEncryptedLongLongArray> {
     );
   }
 
-  static Pointer<Void> longLongArray(
+  static Pointer longLongArray(
     Pointer<CKEncryptedLongLongArray> _self,
   ) {
     _openDynamicLibrary();
@@ -14699,7 +14560,7 @@ class CKEncryptedLongLongArray extends Struct<CKEncryptedLongLongArray> {
     );
   }
 
-  static Pointer<Void> value(
+  static Pointer value(
     Pointer<CKEncryptedLongLongArray> _self,
   ) {
     _openDynamicLibrary();
@@ -14710,11 +14571,9 @@ class CKEncryptedLongLongArray extends Struct<CKEncryptedLongLongArray> {
   }
 }
 
-/// Objective-C class _CKEncryptedRecordValueStore_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKEncryptedRecordValueStore extends Struct<CKEncryptedRecordValueStore> {
   factory CKEncryptedRecordValueStore._() {
@@ -14727,9 +14586,9 @@ class CKEncryptedRecordValueStore extends Struct<CKEncryptedRecordValueStore> {
         .cast<CKEncryptedRecordValueStore>();
   }
 
-  static Pointer<Void> objectForKeyedSubscript(
+  static Pointer objectForKeyedSubscript(
     Pointer<CKEncryptedRecordValueStore> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -14741,8 +14600,8 @@ class CKEncryptedRecordValueStore extends Struct<CKEncryptedRecordValueStore> {
 
   static void setObject$forKey$(
     Pointer<CKEncryptedRecordValueStore> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> forKey,
+    Pointer arg, {
+    @required Pointer forKey,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -14755,8 +14614,8 @@ class CKEncryptedRecordValueStore extends Struct<CKEncryptedRecordValueStore> {
 
   static void setObject$forKeyedSubscript$(
     Pointer<CKEncryptedRecordValueStore> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> forKeyedSubscript,
+    Pointer arg, {
+    @required Pointer forKeyedSubscript,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -14768,11 +14627,9 @@ class CKEncryptedRecordValueStore extends Struct<CKEncryptedRecordValueStore> {
   }
 }
 
-/// Objective-C class _CKEncryptedReference_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKEncryptedReference extends Struct<CKEncryptedReference> {
   factory CKEncryptedReference._() {
@@ -14783,9 +14640,9 @@ class CKEncryptedReference extends Struct<CKEncryptedReference> {
     return _objc.allocate("CKEncryptedReference").cast<CKEncryptedReference>();
   }
 
-  static Pointer<Void> initWithReference(
+  static Pointer initWithReference(
     Pointer<CKEncryptedReference> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -14795,7 +14652,7 @@ class CKEncryptedReference extends Struct<CKEncryptedReference> {
     );
   }
 
-  static Pointer<Void> reference(
+  static Pointer reference(
     Pointer<CKEncryptedReference> _self,
   ) {
     _openDynamicLibrary();
@@ -14805,7 +14662,7 @@ class CKEncryptedReference extends Struct<CKEncryptedReference> {
     );
   }
 
-  static Pointer<Void> value(
+  static Pointer value(
     Pointer<CKEncryptedReference> _self,
   ) {
     _openDynamicLibrary();
@@ -14816,11 +14673,9 @@ class CKEncryptedReference extends Struct<CKEncryptedReference> {
   }
 }
 
-/// Objective-C class _CKEncryptedString_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKEncryptedString extends Struct<CKEncryptedString> {
   factory CKEncryptedString._() {
@@ -14831,9 +14686,9 @@ class CKEncryptedString extends Struct<CKEncryptedString> {
     return _objc.allocate("CKEncryptedString").cast<CKEncryptedString>();
   }
 
-  static Pointer<Void> initWithString(
+  static Pointer initWithString(
     Pointer<CKEncryptedString> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -14843,7 +14698,7 @@ class CKEncryptedString extends Struct<CKEncryptedString> {
     );
   }
 
-  static Pointer<Void> string(
+  static Pointer string(
     Pointer<CKEncryptedString> _self,
   ) {
     _openDynamicLibrary();
@@ -14853,7 +14708,7 @@ class CKEncryptedString extends Struct<CKEncryptedString> {
     );
   }
 
-  static Pointer<Void> value(
+  static Pointer value(
     Pointer<CKEncryptedString> _self,
   ) {
     _openDynamicLibrary();
@@ -14864,11 +14719,9 @@ class CKEncryptedString extends Struct<CKEncryptedString> {
   }
 }
 
-/// Objective-C class _CKEncryptedStringArray_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKEncryptedStringArray extends Struct<CKEncryptedStringArray> {
   factory CKEncryptedStringArray._() {
@@ -14881,9 +14734,9 @@ class CKEncryptedStringArray extends Struct<CKEncryptedStringArray> {
         .cast<CKEncryptedStringArray>();
   }
 
-  static Pointer<Void> initWithStringArray(
+  static Pointer initWithStringArray(
     Pointer<CKEncryptedStringArray> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -14893,7 +14746,7 @@ class CKEncryptedStringArray extends Struct<CKEncryptedStringArray> {
     );
   }
 
-  static Pointer<Void> stringArray(
+  static Pointer stringArray(
     Pointer<CKEncryptedStringArray> _self,
   ) {
     _openDynamicLibrary();
@@ -14903,7 +14756,7 @@ class CKEncryptedStringArray extends Struct<CKEncryptedStringArray> {
     );
   }
 
-  static Pointer<Void> value(
+  static Pointer value(
     Pointer<CKEncryptedStringArray> _self,
   ) {
     _openDynamicLibrary();
@@ -14914,11 +14767,9 @@ class CKEncryptedStringArray extends Struct<CKEncryptedStringArray> {
   }
 }
 
-/// Objective-C class _CKEvaluatedObjectExpressionValidator_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKEvaluatedObjectExpressionValidator
     extends Struct<CKEvaluatedObjectExpressionValidator> {
@@ -14934,8 +14785,8 @@ class CKEvaluatedObjectExpressionValidator
 
   static int validate(
     Pointer<CKEvaluatedObjectExpressionValidator> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -14947,11 +14798,9 @@ class CKEvaluatedObjectExpressionValidator
   }
 }
 
-/// Objective-C class _CKEventMetric_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKEventMetric extends Struct<CKEventMetric> {
   factory CKEventMetric._() {
@@ -14964,7 +14813,7 @@ class CKEventMetric extends Struct<CKEventMetric> {
 
   static int associateWithCompletedOperation(
     Pointer<CKEventMetric> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -14974,7 +14823,7 @@ class CKEventMetric extends Struct<CKEventMetric> {
     );
   }
 
-  static Pointer<Void> associatedOperationGroups(
+  static Pointer associatedOperationGroups(
     Pointer<CKEventMetric> _self,
   ) {
     _openDynamicLibrary();
@@ -14984,7 +14833,7 @@ class CKEventMetric extends Struct<CKEventMetric> {
     );
   }
 
-  static Pointer<Void> associatedOperations(
+  static Pointer associatedOperations(
     Pointer<CKEventMetric> _self,
   ) {
     _openDynamicLibrary();
@@ -14994,7 +14843,7 @@ class CKEventMetric extends Struct<CKEventMetric> {
     );
   }
 
-  static Pointer<Void> attributes(
+  static Pointer attributes(
     Pointer<CKEventMetric> _self,
   ) {
     _openDynamicLibrary();
@@ -15006,7 +14855,7 @@ class CKEventMetric extends Struct<CKEventMetric> {
 
   static void encodeWithCoder(
     Pointer<CKEventMetric> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -15016,7 +14865,7 @@ class CKEventMetric extends Struct<CKEventMetric> {
     );
   }
 
-  static Pointer<Void> endTime(
+  static Pointer endTime(
     Pointer<CKEventMetric> _self,
   ) {
     _openDynamicLibrary();
@@ -15026,7 +14875,7 @@ class CKEventMetric extends Struct<CKEventMetric> {
     );
   }
 
-  static Pointer<Void> eventName(
+  static Pointer eventName(
     Pointer<CKEventMetric> _self,
   ) {
     _openDynamicLibrary();
@@ -15036,7 +14885,7 @@ class CKEventMetric extends Struct<CKEventMetric> {
     );
   }
 
-  static Pointer<Void> generateEventMetricInfo(
+  static Pointer generateEventMetricInfo(
     Pointer<CKEventMetric> _self,
   ) {
     _openDynamicLibrary();
@@ -15076,9 +14925,9 @@ class CKEventMetric extends Struct<CKEventMetric> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CKEventMetric> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -15088,9 +14937,9 @@ class CKEventMetric extends Struct<CKEventMetric> {
     );
   }
 
-  static Pointer<Void> initWithEventName$(
+  static Pointer initWithEventName$(
     Pointer<CKEventMetric> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -15100,10 +14949,10 @@ class CKEventMetric extends Struct<CKEventMetric> {
     );
   }
 
-  static Pointer<Void> initWithEventName$atTime$(
+  static Pointer initWithEventName$atTime$(
     Pointer<CKEventMetric> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> atTime,
+    Pointer arg, {
+    @required Pointer atTime,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -15134,7 +14983,7 @@ class CKEventMetric extends Struct<CKEventMetric> {
     );
   }
 
-  static Pointer<Void> metricUUID(
+  static Pointer metricUUID(
     Pointer<CKEventMetric> _self,
   ) {
     _openDynamicLibrary();
@@ -15146,7 +14995,7 @@ class CKEventMetric extends Struct<CKEventMetric> {
 
   static void setEndTime(
     Pointer<CKEventMetric> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -15218,8 +15067,8 @@ class CKEventMetric extends Struct<CKEventMetric> {
 
   static void setMetricValue(
     Pointer<CKEventMetric> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> forKey,
+    Pointer arg, {
+    @required Pointer forKey,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -15232,8 +15081,8 @@ class CKEventMetric extends Struct<CKEventMetric> {
 
   static void setObject(
     Pointer<CKEventMetric> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> forKeyedSubscript,
+    Pointer arg, {
+    @required Pointer forKeyedSubscript,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -15246,7 +15095,7 @@ class CKEventMetric extends Struct<CKEventMetric> {
 
   static void setStartTime(
     Pointer<CKEventMetric> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -15256,7 +15105,7 @@ class CKEventMetric extends Struct<CKEventMetric> {
     );
   }
 
-  static Pointer<Void> startTime(
+  static Pointer startTime(
     Pointer<CKEventMetric> _self,
   ) {
     _openDynamicLibrary();
@@ -15267,11 +15116,9 @@ class CKEventMetric extends Struct<CKEventMetric> {
   }
 }
 
-/// Objective-C class _CKEventMetricInfo_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKEventMetricInfo extends Struct<CKEventMetricInfo> {
   factory CKEventMetricInfo._() {
@@ -15292,7 +15139,7 @@ class CKEventMetricInfo extends Struct<CKEventMetricInfo> {
     );
   }
 
-  static Pointer<Void> associatedOperationGroups(
+  static Pointer associatedOperationGroups(
     Pointer<CKEventMetricInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -15302,7 +15149,7 @@ class CKEventMetricInfo extends Struct<CKEventMetricInfo> {
     );
   }
 
-  static Pointer<Void> associatedOperations(
+  static Pointer associatedOperations(
     Pointer<CKEventMetricInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -15312,7 +15159,7 @@ class CKEventMetricInfo extends Struct<CKEventMetricInfo> {
     );
   }
 
-  static Pointer<Void> attributes(
+  static Pointer attributes(
     Pointer<CKEventMetricInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -15324,7 +15171,7 @@ class CKEventMetricInfo extends Struct<CKEventMetricInfo> {
 
   static void encodeWithCoder(
     Pointer<CKEventMetricInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -15334,7 +15181,7 @@ class CKEventMetricInfo extends Struct<CKEventMetricInfo> {
     );
   }
 
-  static Pointer<Void> endTime(
+  static Pointer endTime(
     Pointer<CKEventMetricInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -15344,7 +15191,7 @@ class CKEventMetricInfo extends Struct<CKEventMetricInfo> {
     );
   }
 
-  static Pointer<Void> eventName(
+  static Pointer eventName(
     Pointer<CKEventMetricInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -15354,9 +15201,9 @@ class CKEventMetricInfo extends Struct<CKEventMetricInfo> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CKEventMetricInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -15366,9 +15213,9 @@ class CKEventMetricInfo extends Struct<CKEventMetricInfo> {
     );
   }
 
-  static Pointer<Void> initWithEventMetric(
+  static Pointer initWithEventMetric(
     Pointer<CKEventMetricInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -15398,7 +15245,7 @@ class CKEventMetricInfo extends Struct<CKEventMetricInfo> {
     );
   }
 
-  static Pointer<Void> metricUUID(
+  static Pointer metricUUID(
     Pointer<CKEventMetricInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -15418,7 +15265,7 @@ class CKEventMetricInfo extends Struct<CKEventMetricInfo> {
     );
   }
 
-  static Pointer<Void> startTime(
+  static Pointer startTime(
     Pointer<CKEventMetricInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -15429,11 +15276,9 @@ class CKEventMetricInfo extends Struct<CKEventMetricInfo> {
   }
 }
 
-/// Objective-C class _CKEventOperationGroupInfo_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKEventOperationGroupInfo extends Struct<CKEventOperationGroupInfo> {
   factory CKEventOperationGroupInfo._() {
@@ -15448,7 +15293,7 @@ class CKEventOperationGroupInfo extends Struct<CKEventOperationGroupInfo> {
 
   static void encodeWithCoder(
     Pointer<CKEventOperationGroupInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -15458,9 +15303,9 @@ class CKEventOperationGroupInfo extends Struct<CKEventOperationGroupInfo> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CKEventOperationGroupInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -15470,9 +15315,9 @@ class CKEventOperationGroupInfo extends Struct<CKEventOperationGroupInfo> {
     );
   }
 
-  static Pointer<Void> initWithOperationGroup(
+  static Pointer initWithOperationGroup(
     Pointer<CKEventOperationGroupInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -15482,7 +15327,7 @@ class CKEventOperationGroupInfo extends Struct<CKEventOperationGroupInfo> {
     );
   }
 
-  static Pointer<Void> operationGroupID(
+  static Pointer operationGroupID(
     Pointer<CKEventOperationGroupInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -15492,7 +15337,7 @@ class CKEventOperationGroupInfo extends Struct<CKEventOperationGroupInfo> {
     );
   }
 
-  static Pointer<Void> operationGroupName(
+  static Pointer operationGroupName(
     Pointer<CKEventOperationGroupInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -15503,11 +15348,9 @@ class CKEventOperationGroupInfo extends Struct<CKEventOperationGroupInfo> {
   }
 }
 
-/// Objective-C class _CKEventOperationInfo_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKEventOperationInfo extends Struct<CKEventOperationInfo> {
   factory CKEventOperationInfo._() {
@@ -15520,7 +15363,7 @@ class CKEventOperationInfo extends Struct<CKEventOperationInfo> {
 
   static void encodeWithCoder(
     Pointer<CKEventOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -15530,9 +15373,9 @@ class CKEventOperationInfo extends Struct<CKEventOperationInfo> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CKEventOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -15542,9 +15385,9 @@ class CKEventOperationInfo extends Struct<CKEventOperationInfo> {
     );
   }
 
-  static Pointer<Void> initWithOperation(
+  static Pointer initWithOperation(
     Pointer<CKEventOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -15554,7 +15397,7 @@ class CKEventOperationInfo extends Struct<CKEventOperationInfo> {
     );
   }
 
-  static Pointer<Void> operationGroupID(
+  static Pointer operationGroupID(
     Pointer<CKEventOperationInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -15564,7 +15407,7 @@ class CKEventOperationInfo extends Struct<CKEventOperationInfo> {
     );
   }
 
-  static Pointer<Void> operationID(
+  static Pointer operationID(
     Pointer<CKEventOperationInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -15574,7 +15417,7 @@ class CKEventOperationInfo extends Struct<CKEventOperationInfo> {
     );
   }
 
-  static Pointer<Void> operationType(
+  static Pointer operationType(
     Pointer<CKEventOperationInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -15585,11 +15428,9 @@ class CKEventOperationInfo extends Struct<CKEventOperationInfo> {
   }
 }
 
-/// Objective-C class _CKException_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKException extends Struct<CKException> {
   factory CKException._() {
@@ -15600,7 +15441,7 @@ class CKException extends Struct<CKException> {
     return _objc.allocate("CKException").cast<CKException>();
   }
 
-  static Pointer<Void> error(
+  static Pointer error(
     Pointer<CKException> _self,
   ) {
     _openDynamicLibrary();
@@ -15620,11 +15461,11 @@ class CKException extends Struct<CKException> {
     );
   }
 
-  static Pointer<Void> initWithCode$format$args$(
+  static Pointer initWithCode$format$args$(
     Pointer<CKException> _self,
     int arg, {
-    @required Pointer<Void> format,
-    @required Pointer<Void> args,
+    @required Pointer format,
+    @required Pointer args,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_Int32_p_p_returns_p(
@@ -15636,10 +15477,10 @@ class CKException extends Struct<CKException> {
     );
   }
 
-  static Pointer<Void> initWithCode$format$(
+  static Pointer initWithCode$format$(
     Pointer<CKException> _self,
     int arg, {
-    @required Pointer<Void> format,
+    @required Pointer format,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_Int32_p_returns_p(
@@ -15650,11 +15491,11 @@ class CKException extends Struct<CKException> {
     );
   }
 
-  static Pointer<Void> initWithName$format$args$(
+  static Pointer initWithName$format$args$(
     Pointer<CKException> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> format,
-    @required Pointer<Void> args,
+    Pointer arg, {
+    @required Pointer format,
+    @required Pointer args,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -15666,10 +15507,10 @@ class CKException extends Struct<CKException> {
     );
   }
 
-  static Pointer<Void> initWithName$format$(
+  static Pointer initWithName$format$(
     Pointer<CKException> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> format,
+    Pointer arg, {
+    @required Pointer format,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -15681,11 +15522,9 @@ class CKException extends Struct<CKException> {
   }
 }
 
-/// Objective-C class _CKFetchArchivedRecordsOperation_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKFetchArchivedRecordsOperation
     extends Struct<CKFetchArchivedRecordsOperation> {
@@ -15701,7 +15540,7 @@ class CKFetchArchivedRecordsOperation
 
   static int CKOperationShouldRun(
     Pointer<CKFetchArchivedRecordsOperation> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -15711,7 +15550,7 @@ class CKFetchArchivedRecordsOperation
     );
   }
 
-  static Pointer<Void> activityCreate(
+  static Pointer activityCreate(
     Pointer<CKFetchArchivedRecordsOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -15721,7 +15560,7 @@ class CKFetchArchivedRecordsOperation
     );
   }
 
-  static Pointer<Void> assetTransferOptionsByRecordTypeAndKey(
+  static Pointer assetTransferOptionsByRecordTypeAndKey(
     Pointer<CKFetchArchivedRecordsOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -15731,7 +15570,7 @@ class CKFetchArchivedRecordsOperation
     );
   }
 
-  static Pointer<Void> configurationsByRecordZoneID(
+  static Pointer configurationsByRecordZoneID(
     Pointer<CKFetchArchivedRecordsOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -15751,7 +15590,7 @@ class CKFetchArchivedRecordsOperation
     );
   }
 
-  static Pointer<Void> fetchArchivedRecordsCompletionBlock(
+  static Pointer fetchArchivedRecordsCompletionBlock(
     Pointer<CKFetchArchivedRecordsOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -15763,7 +15602,7 @@ class CKFetchArchivedRecordsOperation
 
   static void fillFromOperationInfo(
     Pointer<CKFetchArchivedRecordsOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -15775,7 +15614,7 @@ class CKFetchArchivedRecordsOperation
 
   static void fillOutOperationInfo(
     Pointer<CKFetchArchivedRecordsOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -15795,7 +15634,7 @@ class CKFetchArchivedRecordsOperation
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CKFetchArchivedRecordsOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -15805,10 +15644,10 @@ class CKFetchArchivedRecordsOperation
     );
   }
 
-  static Pointer<Void> initWithRecordZoneIDs(
+  static Pointer initWithRecordZoneIDs(
     Pointer<CKFetchArchivedRecordsOperation> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> configurationsByRecordZoneID,
+    Pointer arg, {
+    @required Pointer configurationsByRecordZoneID,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -15819,7 +15658,7 @@ class CKFetchArchivedRecordsOperation
     );
   }
 
-  static Pointer<Void> perItemErrors(
+  static Pointer perItemErrors(
     Pointer<CKFetchArchivedRecordsOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -15839,7 +15678,7 @@ class CKFetchArchivedRecordsOperation
     );
   }
 
-  static Pointer<Void> recordFetchedBlock(
+  static Pointer recordFetchedBlock(
     Pointer<CKFetchArchivedRecordsOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -15849,7 +15688,7 @@ class CKFetchArchivedRecordsOperation
     );
   }
 
-  static Pointer<Void> recordZoneArchivesStatusByZoneID(
+  static Pointer recordZoneArchivesStatusByZoneID(
     Pointer<CKFetchArchivedRecordsOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -15859,7 +15698,7 @@ class CKFetchArchivedRecordsOperation
     );
   }
 
-  static Pointer<Void> recordZoneChangeTokensUpdatedBlock(
+  static Pointer recordZoneChangeTokensUpdatedBlock(
     Pointer<CKFetchArchivedRecordsOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -15869,7 +15708,7 @@ class CKFetchArchivedRecordsOperation
     );
   }
 
-  static Pointer<Void> recordZoneFetchCompletionBlock(
+  static Pointer recordZoneFetchCompletionBlock(
     Pointer<CKFetchArchivedRecordsOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -15879,7 +15718,7 @@ class CKFetchArchivedRecordsOperation
     );
   }
 
-  static Pointer<Void> recordZoneIDs(
+  static Pointer recordZoneIDs(
     Pointer<CKFetchArchivedRecordsOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -15891,7 +15730,7 @@ class CKFetchArchivedRecordsOperation
 
   static void setAssetTransferOptionsByRecordTypeAndKey(
     Pointer<CKFetchArchivedRecordsOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -15903,7 +15742,7 @@ class CKFetchArchivedRecordsOperation
 
   static void setConfigurationsByRecordZoneID(
     Pointer<CKFetchArchivedRecordsOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -15927,7 +15766,7 @@ class CKFetchArchivedRecordsOperation
 
   static void setFetchArchivedRecordsCompletionBlock(
     Pointer<CKFetchArchivedRecordsOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -15939,7 +15778,7 @@ class CKFetchArchivedRecordsOperation
 
   static void setPerItemErrors(
     Pointer<CKFetchArchivedRecordsOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -15951,7 +15790,7 @@ class CKFetchArchivedRecordsOperation
 
   static void setRecordFetchedBlock(
     Pointer<CKFetchArchivedRecordsOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -15963,7 +15802,7 @@ class CKFetchArchivedRecordsOperation
 
   static void setRecordZoneChangeTokensUpdatedBlock(
     Pointer<CKFetchArchivedRecordsOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -15975,7 +15814,7 @@ class CKFetchArchivedRecordsOperation
 
   static void setRecordZoneFetchCompletionBlock(
     Pointer<CKFetchArchivedRecordsOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -15987,7 +15826,7 @@ class CKFetchArchivedRecordsOperation
 
   static void setRecordZoneIDs(
     Pointer<CKFetchArchivedRecordsOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -16011,7 +15850,7 @@ class CKFetchArchivedRecordsOperation
 
   static void setStatusByZoneID(
     Pointer<CKFetchArchivedRecordsOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -16031,7 +15870,7 @@ class CKFetchArchivedRecordsOperation
     );
   }
 
-  static Pointer<Void> statusByZoneID(
+  static Pointer statusByZoneID(
     Pointer<CKFetchArchivedRecordsOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -16042,11 +15881,9 @@ class CKFetchArchivedRecordsOperation
   }
 }
 
-/// Objective-C class _CKFetchArchivedRecordsOperationInfo_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKFetchArchivedRecordsOperationInfo
     extends Struct<CKFetchArchivedRecordsOperationInfo> {
@@ -16060,7 +15897,7 @@ class CKFetchArchivedRecordsOperationInfo
         .cast<CKFetchArchivedRecordsOperationInfo>();
   }
 
-  static Pointer<Void> assetTransferOptionsByRecordTypeAndKey(
+  static Pointer assetTransferOptionsByRecordTypeAndKey(
     Pointer<CKFetchArchivedRecordsOperationInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -16070,7 +15907,7 @@ class CKFetchArchivedRecordsOperationInfo
     );
   }
 
-  static Pointer<Void> configurationsByRecordZoneID(
+  static Pointer configurationsByRecordZoneID(
     Pointer<CKFetchArchivedRecordsOperationInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -16082,7 +15919,7 @@ class CKFetchArchivedRecordsOperationInfo
 
   static void encodeWithCoder(
     Pointer<CKFetchArchivedRecordsOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -16102,9 +15939,9 @@ class CKFetchArchivedRecordsOperationInfo
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CKFetchArchivedRecordsOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -16114,7 +15951,7 @@ class CKFetchArchivedRecordsOperationInfo
     );
   }
 
-  static Pointer<Void> recordZoneIDs(
+  static Pointer recordZoneIDs(
     Pointer<CKFetchArchivedRecordsOperationInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -16126,7 +15963,7 @@ class CKFetchArchivedRecordsOperationInfo
 
   static void setAssetTransferOptionsByRecordTypeAndKey(
     Pointer<CKFetchArchivedRecordsOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -16138,7 +15975,7 @@ class CKFetchArchivedRecordsOperationInfo
 
   static void setConfigurationsByRecordZoneID(
     Pointer<CKFetchArchivedRecordsOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -16162,7 +15999,7 @@ class CKFetchArchivedRecordsOperationInfo
 
   static void setRecordZoneIDs(
     Pointer<CKFetchArchivedRecordsOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -16195,11 +16032,9 @@ class CKFetchArchivedRecordsOperationInfo
   }
 }
 
-/// Objective-C class _CKFetchArchivedRecordsOptions_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKFetchArchivedRecordsOptions
     extends Struct<CKFetchArchivedRecordsOptions> {
@@ -16213,9 +16048,9 @@ class CKFetchArchivedRecordsOptions
         .cast<CKFetchArchivedRecordsOptions>();
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<CKFetchArchivedRecordsOptions> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -16227,7 +16062,7 @@ class CKFetchArchivedRecordsOptions
 
   static void encodeWithCoder(
     Pointer<CKFetchArchivedRecordsOptions> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -16237,9 +16072,9 @@ class CKFetchArchivedRecordsOptions
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CKFetchArchivedRecordsOptions> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -16249,7 +16084,7 @@ class CKFetchArchivedRecordsOptions
     );
   }
 
-  static Pointer<Void> previousServerChangeToken(
+  static Pointer previousServerChangeToken(
     Pointer<CKFetchArchivedRecordsOptions> _self,
   ) {
     _openDynamicLibrary();
@@ -16261,7 +16096,7 @@ class CKFetchArchivedRecordsOptions
 
   static void setPreviousServerChangeToken(
     Pointer<CKFetchArchivedRecordsOptions> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -16272,11 +16107,9 @@ class CKFetchArchivedRecordsOptions
   }
 }
 
-/// Objective-C class _CKFetchDatabaseChangesOperation_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKFetchDatabaseChangesOperation
     extends Struct<CKFetchDatabaseChangesOperation> {
@@ -16290,7 +16123,7 @@ class CKFetchDatabaseChangesOperation
         .cast<CKFetchDatabaseChangesOperation>();
   }
 
-  static Pointer<Void> activityCreate(
+  static Pointer activityCreate(
     Pointer<CKFetchDatabaseChangesOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -16300,7 +16133,7 @@ class CKFetchDatabaseChangesOperation
     );
   }
 
-  static Pointer<Void> changeTokenUpdatedBlock(
+  static Pointer changeTokenUpdatedBlock(
     Pointer<CKFetchDatabaseChangesOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -16320,7 +16153,7 @@ class CKFetchDatabaseChangesOperation
     );
   }
 
-  static Pointer<Void> fetchDatabaseChangesCompletionBlock(
+  static Pointer fetchDatabaseChangesCompletionBlock(
     Pointer<CKFetchDatabaseChangesOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -16332,7 +16165,7 @@ class CKFetchDatabaseChangesOperation
 
   static void fillFromOperationInfo(
     Pointer<CKFetchDatabaseChangesOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -16344,7 +16177,7 @@ class CKFetchDatabaseChangesOperation
 
   static void fillOutOperationInfo(
     Pointer<CKFetchDatabaseChangesOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -16364,7 +16197,7 @@ class CKFetchDatabaseChangesOperation
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CKFetchDatabaseChangesOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -16374,9 +16207,9 @@ class CKFetchDatabaseChangesOperation
     );
   }
 
-  static Pointer<Void> initWithPreviousServerChangeToken(
+  static Pointer initWithPreviousServerChangeToken(
     Pointer<CKFetchDatabaseChangesOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -16396,7 +16229,7 @@ class CKFetchDatabaseChangesOperation
     );
   }
 
-  static Pointer<Void> previousServerChangeToken(
+  static Pointer previousServerChangeToken(
     Pointer<CKFetchDatabaseChangesOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -16406,7 +16239,7 @@ class CKFetchDatabaseChangesOperation
     );
   }
 
-  static Pointer<Void> recordZoneWithIDChangedBlock(
+  static Pointer recordZoneWithIDChangedBlock(
     Pointer<CKFetchDatabaseChangesOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -16416,7 +16249,7 @@ class CKFetchDatabaseChangesOperation
     );
   }
 
-  static Pointer<Void> recordZoneWithIDWasDeletedBlock(
+  static Pointer recordZoneWithIDWasDeletedBlock(
     Pointer<CKFetchDatabaseChangesOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -16426,7 +16259,7 @@ class CKFetchDatabaseChangesOperation
     );
   }
 
-  static Pointer<Void> recordZoneWithIDWasPurgedBlock(
+  static Pointer recordZoneWithIDWasPurgedBlock(
     Pointer<CKFetchDatabaseChangesOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -16446,7 +16279,7 @@ class CKFetchDatabaseChangesOperation
     );
   }
 
-  static Pointer<Void> serverChangeToken(
+  static Pointer serverChangeToken(
     Pointer<CKFetchDatabaseChangesOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -16458,7 +16291,7 @@ class CKFetchDatabaseChangesOperation
 
   static void setChangeTokenUpdatedBlock(
     Pointer<CKFetchDatabaseChangesOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -16482,7 +16315,7 @@ class CKFetchDatabaseChangesOperation
 
   static void setFetchDatabaseChangesCompletionBlock(
     Pointer<CKFetchDatabaseChangesOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -16494,7 +16327,7 @@ class CKFetchDatabaseChangesOperation
 
   static void setPreviousServerChangeToken(
     Pointer<CKFetchDatabaseChangesOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -16506,7 +16339,7 @@ class CKFetchDatabaseChangesOperation
 
   static void setRecordZoneWithIDChangedBlock(
     Pointer<CKFetchDatabaseChangesOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -16518,7 +16351,7 @@ class CKFetchDatabaseChangesOperation
 
   static void setRecordZoneWithIDWasDeletedBlock(
     Pointer<CKFetchDatabaseChangesOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -16530,7 +16363,7 @@ class CKFetchDatabaseChangesOperation
 
   static void setRecordZoneWithIDWasPurgedBlock(
     Pointer<CKFetchDatabaseChangesOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -16554,7 +16387,7 @@ class CKFetchDatabaseChangesOperation
 
   static void setServerChangeToken(
     Pointer<CKFetchDatabaseChangesOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -16587,11 +16420,9 @@ class CKFetchDatabaseChangesOperation
   }
 }
 
-/// Objective-C class _CKFetchDatabaseChangesOperationInfo_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKFetchDatabaseChangesOperationInfo
     extends Struct<CKFetchDatabaseChangesOperationInfo> {
@@ -16607,7 +16438,7 @@ class CKFetchDatabaseChangesOperationInfo
 
   static void encodeWithCoder(
     Pointer<CKFetchDatabaseChangesOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -16627,9 +16458,9 @@ class CKFetchDatabaseChangesOperationInfo
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CKFetchDatabaseChangesOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -16639,7 +16470,7 @@ class CKFetchDatabaseChangesOperationInfo
     );
   }
 
-  static Pointer<Void> previousServerChangeToken(
+  static Pointer previousServerChangeToken(
     Pointer<CKFetchDatabaseChangesOperationInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -16673,7 +16504,7 @@ class CKFetchDatabaseChangesOperationInfo
 
   static void setPreviousServerChangeToken(
     Pointer<CKFetchDatabaseChangesOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -16696,11 +16527,9 @@ class CKFetchDatabaseChangesOperationInfo
   }
 }
 
-/// Objective-C class _CKFetchDatabaseChangesOperationResult_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKFetchDatabaseChangesOperationResult
     extends Struct<CKFetchDatabaseChangesOperationResult> {
@@ -16714,7 +16543,7 @@ class CKFetchDatabaseChangesOperationResult
         .cast<CKFetchDatabaseChangesOperationResult>();
   }
 
-  static Pointer<Void> CKDescriptionPropertiesWithPublic(
+  static Pointer CKDescriptionPropertiesWithPublic(
     Pointer<CKFetchDatabaseChangesOperationResult> _self,
     int arg, {
     @required int private,
@@ -16731,7 +16560,7 @@ class CKFetchDatabaseChangesOperationResult
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CKFetchDatabaseChangesOperationResult> _self,
   ) {
     _openDynamicLibrary();
@@ -16743,7 +16572,7 @@ class CKFetchDatabaseChangesOperationResult
 
   static void encodeWithCoder(
     Pointer<CKFetchDatabaseChangesOperationResult> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -16753,9 +16582,9 @@ class CKFetchDatabaseChangesOperationResult
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CKFetchDatabaseChangesOperationResult> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -16765,7 +16594,7 @@ class CKFetchDatabaseChangesOperationResult
     );
   }
 
-  static Pointer<Void> serverChangeToken(
+  static Pointer serverChangeToken(
     Pointer<CKFetchDatabaseChangesOperationResult> _self,
   ) {
     _openDynamicLibrary();
@@ -16777,7 +16606,7 @@ class CKFetchDatabaseChangesOperationResult
 
   static void setServerChangeToken(
     Pointer<CKFetchDatabaseChangesOperationResult> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -16789,7 +16618,7 @@ class CKFetchDatabaseChangesOperationResult
 
   static void setStatus(
     Pointer<CKFetchDatabaseChangesOperationResult> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -16799,7 +16628,7 @@ class CKFetchDatabaseChangesOperationResult
     );
   }
 
-  static Pointer<Void> status(
+  static Pointer status(
     Pointer<CKFetchDatabaseChangesOperationResult> _self,
   ) {
     _openDynamicLibrary();
@@ -16810,11 +16639,9 @@ class CKFetchDatabaseChangesOperationResult
   }
 }
 
-/// Objective-C class _CKFetchNotificationChangesOperation_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKFetchNotificationChangesOperation
     extends Struct<CKFetchNotificationChangesOperation> {
@@ -16828,7 +16655,7 @@ class CKFetchNotificationChangesOperation
         .cast<CKFetchNotificationChangesOperation>();
   }
 
-  static Pointer<Void> activityCreate(
+  static Pointer activityCreate(
     Pointer<CKFetchNotificationChangesOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -16838,7 +16665,7 @@ class CKFetchNotificationChangesOperation
     );
   }
 
-  static Pointer<Void> fetchNotificationChangesCompletionBlock(
+  static Pointer fetchNotificationChangesCompletionBlock(
     Pointer<CKFetchNotificationChangesOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -16850,7 +16677,7 @@ class CKFetchNotificationChangesOperation
 
   static void fillFromOperationInfo(
     Pointer<CKFetchNotificationChangesOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -16862,7 +16689,7 @@ class CKFetchNotificationChangesOperation
 
   static void fillOutOperationInfo(
     Pointer<CKFetchNotificationChangesOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -16882,7 +16709,7 @@ class CKFetchNotificationChangesOperation
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CKFetchNotificationChangesOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -16892,9 +16719,9 @@ class CKFetchNotificationChangesOperation
     );
   }
 
-  static Pointer<Void> initWithPreviousServerChangeToken(
+  static Pointer initWithPreviousServerChangeToken(
     Pointer<CKFetchNotificationChangesOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -16914,7 +16741,7 @@ class CKFetchNotificationChangesOperation
     );
   }
 
-  static Pointer<Void> notificationChangedBlock(
+  static Pointer notificationChangedBlock(
     Pointer<CKFetchNotificationChangesOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -16934,7 +16761,7 @@ class CKFetchNotificationChangesOperation
     );
   }
 
-  static Pointer<Void> previousServerChangeToken(
+  static Pointer previousServerChangeToken(
     Pointer<CKFetchNotificationChangesOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -16944,7 +16771,7 @@ class CKFetchNotificationChangesOperation
     );
   }
 
-  static Pointer<Void> resultServerChangeToken(
+  static Pointer resultServerChangeToken(
     Pointer<CKFetchNotificationChangesOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -16966,7 +16793,7 @@ class CKFetchNotificationChangesOperation
 
   static void setFetchNotificationChangesCompletionBlock(
     Pointer<CKFetchNotificationChangesOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -16990,7 +16817,7 @@ class CKFetchNotificationChangesOperation
 
   static void setNotificationChangedBlock(
     Pointer<CKFetchNotificationChangesOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -17002,7 +16829,7 @@ class CKFetchNotificationChangesOperation
 
   static void setPreviousServerChangeToken(
     Pointer<CKFetchNotificationChangesOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -17014,7 +16841,7 @@ class CKFetchNotificationChangesOperation
 
   static void setResultServerChangeToken(
     Pointer<CKFetchNotificationChangesOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -17037,11 +16864,9 @@ class CKFetchNotificationChangesOperation
   }
 }
 
-/// Objective-C class _CKFetchNotificationChangesOperationInfo_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKFetchNotificationChangesOperationInfo
     extends Struct<CKFetchNotificationChangesOperationInfo> {
@@ -17057,7 +16882,7 @@ class CKFetchNotificationChangesOperationInfo
 
   static void encodeWithCoder(
     Pointer<CKFetchNotificationChangesOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -17067,9 +16892,9 @@ class CKFetchNotificationChangesOperationInfo
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CKFetchNotificationChangesOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -17079,7 +16904,7 @@ class CKFetchNotificationChangesOperationInfo
     );
   }
 
-  static Pointer<Void> previousServerChangeToken(
+  static Pointer previousServerChangeToken(
     Pointer<CKFetchNotificationChangesOperationInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -17101,7 +16926,7 @@ class CKFetchNotificationChangesOperationInfo
 
   static void setPreviousServerChangeToken(
     Pointer<CKFetchNotificationChangesOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -17146,11 +16971,9 @@ class CKFetchNotificationChangesOperationInfo
   }
 }
 
-/// Objective-C class _CKFetchNotificationChangesOperationResult_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKFetchNotificationChangesOperationResult
     extends Struct<CKFetchNotificationChangesOperationResult> {
@@ -17164,7 +16987,7 @@ class CKFetchNotificationChangesOperationResult
         .cast<CKFetchNotificationChangesOperationResult>();
   }
 
-  static Pointer<Void> CKDescriptionPropertiesWithPublic(
+  static Pointer CKDescriptionPropertiesWithPublic(
     Pointer<CKFetchNotificationChangesOperationResult> _self,
     int arg, {
     @required int private,
@@ -17181,7 +17004,7 @@ class CKFetchNotificationChangesOperationResult
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CKFetchNotificationChangesOperationResult> _self,
   ) {
     _openDynamicLibrary();
@@ -17193,7 +17016,7 @@ class CKFetchNotificationChangesOperationResult
 
   static void encodeWithCoder(
     Pointer<CKFetchNotificationChangesOperationResult> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -17203,9 +17026,9 @@ class CKFetchNotificationChangesOperationResult
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CKFetchNotificationChangesOperationResult> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -17225,7 +17048,7 @@ class CKFetchNotificationChangesOperationResult
     );
   }
 
-  static Pointer<Void> serverChangeToken(
+  static Pointer serverChangeToken(
     Pointer<CKFetchNotificationChangesOperationResult> _self,
   ) {
     _openDynamicLibrary();
@@ -17249,7 +17072,7 @@ class CKFetchNotificationChangesOperationResult
 
   static void setServerChangeToken(
     Pointer<CKFetchNotificationChangesOperationResult> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -17260,11 +17083,9 @@ class CKFetchNotificationChangesOperationResult
   }
 }
 
-/// Objective-C class _CKFetchRecordChangesOperation_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKFetchRecordChangesOperation
     extends Struct<CKFetchRecordChangesOperation> {
@@ -17280,7 +17101,7 @@ class CKFetchRecordChangesOperation
 
   static int CKOperationShouldRun(
     Pointer<CKFetchRecordChangesOperation> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -17290,7 +17111,7 @@ class CKFetchRecordChangesOperation
     );
   }
 
-  static Pointer<Void> activityCreate(
+  static Pointer activityCreate(
     Pointer<CKFetchRecordChangesOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -17300,7 +17121,7 @@ class CKFetchRecordChangesOperation
     );
   }
 
-  static Pointer<Void> changeTokensUpdatedBlock(
+  static Pointer changeTokensUpdatedBlock(
     Pointer<CKFetchRecordChangesOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -17320,7 +17141,7 @@ class CKFetchRecordChangesOperation
     );
   }
 
-  static Pointer<Void> desiredKeys(
+  static Pointer desiredKeys(
     Pointer<CKFetchRecordChangesOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -17340,7 +17161,7 @@ class CKFetchRecordChangesOperation
     );
   }
 
-  static Pointer<Void> fetchRecordChangesCompletionBlock(
+  static Pointer fetchRecordChangesCompletionBlock(
     Pointer<CKFetchRecordChangesOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -17352,7 +17173,7 @@ class CKFetchRecordChangesOperation
 
   static void fillFromOperationInfo(
     Pointer<CKFetchRecordChangesOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -17364,7 +17185,7 @@ class CKFetchRecordChangesOperation
 
   static void fillOutOperationInfo(
     Pointer<CKFetchRecordChangesOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -17384,7 +17205,7 @@ class CKFetchRecordChangesOperation
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CKFetchRecordChangesOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -17394,10 +17215,10 @@ class CKFetchRecordChangesOperation
     );
   }
 
-  static Pointer<Void> initWithRecordZoneID(
+  static Pointer initWithRecordZoneID(
     Pointer<CKFetchRecordChangesOperation> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> previousServerChangeToken,
+    Pointer arg, {
+    @required Pointer previousServerChangeToken,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -17418,7 +17239,7 @@ class CKFetchRecordChangesOperation
     );
   }
 
-  static Pointer<Void> operationInfoClass(
+  static Pointer operationInfoClass(
     Pointer<CKFetchRecordChangesOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -17438,7 +17259,7 @@ class CKFetchRecordChangesOperation
     );
   }
 
-  static Pointer<Void> previousServerChangeToken(
+  static Pointer previousServerChangeToken(
     Pointer<CKFetchRecordChangesOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -17448,7 +17269,7 @@ class CKFetchRecordChangesOperation
     );
   }
 
-  static Pointer<Void> recordChangedBlock(
+  static Pointer recordChangedBlock(
     Pointer<CKFetchRecordChangesOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -17458,7 +17279,7 @@ class CKFetchRecordChangesOperation
     );
   }
 
-  static Pointer<Void> recordErrors(
+  static Pointer recordErrors(
     Pointer<CKFetchRecordChangesOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -17468,7 +17289,7 @@ class CKFetchRecordChangesOperation
     );
   }
 
-  static Pointer<Void> recordWithIDWasDeletedBlock(
+  static Pointer recordWithIDWasDeletedBlock(
     Pointer<CKFetchRecordChangesOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -17478,7 +17299,7 @@ class CKFetchRecordChangesOperation
     );
   }
 
-  static Pointer<Void> recordZoneID(
+  static Pointer recordZoneID(
     Pointer<CKFetchRecordChangesOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -17488,7 +17309,7 @@ class CKFetchRecordChangesOperation
     );
   }
 
-  static Pointer<Void> resultClientChangeTokenData(
+  static Pointer resultClientChangeTokenData(
     Pointer<CKFetchRecordChangesOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -17498,7 +17319,7 @@ class CKFetchRecordChangesOperation
     );
   }
 
-  static Pointer<Void> resultServerChangeToken(
+  static Pointer resultServerChangeToken(
     Pointer<CKFetchRecordChangesOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -17518,7 +17339,7 @@ class CKFetchRecordChangesOperation
     );
   }
 
-  static Pointer<Void> serverChangeTokenFetchedBlock(
+  static Pointer serverChangeTokenFetchedBlock(
     Pointer<CKFetchRecordChangesOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -17530,7 +17351,7 @@ class CKFetchRecordChangesOperation
 
   static void setChangeTokensUpdatedBlock(
     Pointer<CKFetchRecordChangesOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -17542,7 +17363,7 @@ class CKFetchRecordChangesOperation
 
   static void setDesiredKeys(
     Pointer<CKFetchRecordChangesOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -17566,7 +17387,7 @@ class CKFetchRecordChangesOperation
 
   static void setFetchRecordChangesCompletionBlock(
     Pointer<CKFetchRecordChangesOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -17578,7 +17399,7 @@ class CKFetchRecordChangesOperation
 
   static void setPreviousServerChangeToken(
     Pointer<CKFetchRecordChangesOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -17590,7 +17411,7 @@ class CKFetchRecordChangesOperation
 
   static void setRecordChangedBlock(
     Pointer<CKFetchRecordChangesOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -17602,7 +17423,7 @@ class CKFetchRecordChangesOperation
 
   static void setRecordErrors(
     Pointer<CKFetchRecordChangesOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -17614,7 +17435,7 @@ class CKFetchRecordChangesOperation
 
   static void setRecordWithIDWasDeletedBlock(
     Pointer<CKFetchRecordChangesOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -17626,7 +17447,7 @@ class CKFetchRecordChangesOperation
 
   static void setRecordZoneID(
     Pointer<CKFetchRecordChangesOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -17638,7 +17459,7 @@ class CKFetchRecordChangesOperation
 
   static void setResultClientChangeTokenData(
     Pointer<CKFetchRecordChangesOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -17650,7 +17471,7 @@ class CKFetchRecordChangesOperation
 
   static void setResultServerChangeToken(
     Pointer<CKFetchRecordChangesOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -17674,7 +17495,7 @@ class CKFetchRecordChangesOperation
 
   static void setServerChangeTokenFetchedBlock(
     Pointer<CKFetchRecordChangesOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -17729,11 +17550,9 @@ class CKFetchRecordChangesOperation
   }
 }
 
-/// Objective-C class _CKFetchRecordChangesOperationResult_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKFetchRecordChangesOperationResult
     extends Struct<CKFetchRecordChangesOperationResult> {
@@ -17747,7 +17566,7 @@ class CKFetchRecordChangesOperationResult
         .cast<CKFetchRecordChangesOperationResult>();
   }
 
-  static Pointer<Void> CKDescriptionPropertiesWithPublic(
+  static Pointer CKDescriptionPropertiesWithPublic(
     Pointer<CKFetchRecordChangesOperationResult> _self,
     int arg, {
     @required int private,
@@ -17764,7 +17583,7 @@ class CKFetchRecordChangesOperationResult
     );
   }
 
-  static Pointer<Void> clientChangeTokenData(
+  static Pointer clientChangeTokenData(
     Pointer<CKFetchRecordChangesOperationResult> _self,
   ) {
     _openDynamicLibrary();
@@ -17774,7 +17593,7 @@ class CKFetchRecordChangesOperationResult
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CKFetchRecordChangesOperationResult> _self,
   ) {
     _openDynamicLibrary();
@@ -17786,7 +17605,7 @@ class CKFetchRecordChangesOperationResult
 
   static void encodeWithCoder(
     Pointer<CKFetchRecordChangesOperationResult> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -17796,9 +17615,9 @@ class CKFetchRecordChangesOperationResult
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CKFetchRecordChangesOperationResult> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -17808,7 +17627,7 @@ class CKFetchRecordChangesOperationResult
     );
   }
 
-  static Pointer<Void> serverChangeToken(
+  static Pointer serverChangeToken(
     Pointer<CKFetchRecordChangesOperationResult> _self,
   ) {
     _openDynamicLibrary();
@@ -17820,7 +17639,7 @@ class CKFetchRecordChangesOperationResult
 
   static void setClientChangeTokenData(
     Pointer<CKFetchRecordChangesOperationResult> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -17832,7 +17651,7 @@ class CKFetchRecordChangesOperationResult
 
   static void setServerChangeToken(
     Pointer<CKFetchRecordChangesOperationResult> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -17844,7 +17663,7 @@ class CKFetchRecordChangesOperationResult
 
   static void setStatus(
     Pointer<CKFetchRecordChangesOperationResult> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -17854,7 +17673,7 @@ class CKFetchRecordChangesOperationResult
     );
   }
 
-  static Pointer<Void> status(
+  static Pointer status(
     Pointer<CKFetchRecordChangesOperationResult> _self,
   ) {
     _openDynamicLibrary();
@@ -17865,11 +17684,9 @@ class CKFetchRecordChangesOperationResult
   }
 }
 
-/// Objective-C class _CKFetchRecordVersionsOperation_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKFetchRecordVersionsOperation
     extends Struct<CKFetchRecordVersionsOperation> {
@@ -17885,7 +17702,7 @@ class CKFetchRecordVersionsOperation
 
   static int CKOperationShouldRun(
     Pointer<CKFetchRecordVersionsOperation> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -17895,7 +17712,7 @@ class CKFetchRecordVersionsOperation
     );
   }
 
-  static Pointer<Void> activityCreate(
+  static Pointer activityCreate(
     Pointer<CKFetchRecordVersionsOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -17905,7 +17722,7 @@ class CKFetchRecordVersionsOperation
     );
   }
 
-  static Pointer<Void> desiredKeys(
+  static Pointer desiredKeys(
     Pointer<CKFetchRecordVersionsOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -17915,7 +17732,7 @@ class CKFetchRecordVersionsOperation
     );
   }
 
-  static Pointer<Void> fetchRecordVersionsCompletionBlock(
+  static Pointer fetchRecordVersionsCompletionBlock(
     Pointer<CKFetchRecordVersionsOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -17925,7 +17742,7 @@ class CKFetchRecordVersionsOperation
     );
   }
 
-  static Pointer<Void> fetchRecordVersionsProgressBlock(
+  static Pointer fetchRecordVersionsProgressBlock(
     Pointer<CKFetchRecordVersionsOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -17937,7 +17754,7 @@ class CKFetchRecordVersionsOperation
 
   static void fillFromOperationInfo(
     Pointer<CKFetchRecordVersionsOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -17949,7 +17766,7 @@ class CKFetchRecordVersionsOperation
 
   static void fillOutOperationInfo(
     Pointer<CKFetchRecordVersionsOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -17969,9 +17786,9 @@ class CKFetchRecordVersionsOperation
     );
   }
 
-  static Pointer<Void> initWithRecordIDs(
+  static Pointer initWithRecordIDs(
     Pointer<CKFetchRecordVersionsOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -17991,7 +17808,7 @@ class CKFetchRecordVersionsOperation
     );
   }
 
-  static Pointer<Void> minimumVersionETag(
+  static Pointer minimumVersionETag(
     Pointer<CKFetchRecordVersionsOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -18011,7 +17828,7 @@ class CKFetchRecordVersionsOperation
     );
   }
 
-  static Pointer<Void> recordErrors(
+  static Pointer recordErrors(
     Pointer<CKFetchRecordVersionsOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -18021,7 +17838,7 @@ class CKFetchRecordVersionsOperation
     );
   }
 
-  static Pointer<Void> recordIDs(
+  static Pointer recordIDs(
     Pointer<CKFetchRecordVersionsOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -18033,7 +17850,7 @@ class CKFetchRecordVersionsOperation
 
   static void setDesiredKeys(
     Pointer<CKFetchRecordVersionsOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -18045,7 +17862,7 @@ class CKFetchRecordVersionsOperation
 
   static void setFetchRecordVersionsCompletionBlock(
     Pointer<CKFetchRecordVersionsOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -18057,7 +17874,7 @@ class CKFetchRecordVersionsOperation
 
   static void setFetchRecordVersionsProgressBlock(
     Pointer<CKFetchRecordVersionsOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -18081,7 +17898,7 @@ class CKFetchRecordVersionsOperation
 
   static void setMinimumVersionETag(
     Pointer<CKFetchRecordVersionsOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -18093,7 +17910,7 @@ class CKFetchRecordVersionsOperation
 
   static void setRecordErrors(
     Pointer<CKFetchRecordVersionsOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -18105,7 +17922,7 @@ class CKFetchRecordVersionsOperation
 
   static void setRecordIDs(
     Pointer<CKFetchRecordVersionsOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -18138,11 +17955,9 @@ class CKFetchRecordVersionsOperation
   }
 }
 
-/// Objective-C class _CKFetchRecordVersionsOperationInfo_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKFetchRecordVersionsOperationInfo
     extends Struct<CKFetchRecordVersionsOperationInfo> {
@@ -18156,7 +17971,7 @@ class CKFetchRecordVersionsOperationInfo
         .cast<CKFetchRecordVersionsOperationInfo>();
   }
 
-  static Pointer<Void> desiredKeys(
+  static Pointer desiredKeys(
     Pointer<CKFetchRecordVersionsOperationInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -18168,7 +17983,7 @@ class CKFetchRecordVersionsOperationInfo
 
   static void encodeWithCoder(
     Pointer<CKFetchRecordVersionsOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -18178,9 +17993,9 @@ class CKFetchRecordVersionsOperationInfo
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CKFetchRecordVersionsOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -18190,7 +18005,7 @@ class CKFetchRecordVersionsOperationInfo
     );
   }
 
-  static Pointer<Void> minimumVersionETag(
+  static Pointer minimumVersionETag(
     Pointer<CKFetchRecordVersionsOperationInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -18200,7 +18015,7 @@ class CKFetchRecordVersionsOperationInfo
     );
   }
 
-  static Pointer<Void> recordIDs(
+  static Pointer recordIDs(
     Pointer<CKFetchRecordVersionsOperationInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -18212,7 +18027,7 @@ class CKFetchRecordVersionsOperationInfo
 
   static void setDesiredKeys(
     Pointer<CKFetchRecordVersionsOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -18224,7 +18039,7 @@ class CKFetchRecordVersionsOperationInfo
 
   static void setMinimumVersionETag(
     Pointer<CKFetchRecordVersionsOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -18236,7 +18051,7 @@ class CKFetchRecordVersionsOperationInfo
 
   static void setRecordIDs(
     Pointer<CKFetchRecordVersionsOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -18269,11 +18084,9 @@ class CKFetchRecordVersionsOperationInfo
   }
 }
 
-/// Objective-C class _CKFetchRecordZoneChangesConfiguration_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKFetchRecordZoneChangesConfiguration
     extends Struct<CKFetchRecordZoneChangesConfiguration> {
@@ -18287,7 +18100,7 @@ class CKFetchRecordZoneChangesConfiguration
         .cast<CKFetchRecordZoneChangesConfiguration>();
   }
 
-  static Pointer<Void> CKDescriptionPropertiesWithPublic(
+  static Pointer CKDescriptionPropertiesWithPublic(
     Pointer<CKFetchRecordZoneChangesConfiguration> _self,
     int arg, {
     @required int private,
@@ -18304,9 +18117,9 @@ class CKFetchRecordZoneChangesConfiguration
     );
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<CKFetchRecordZoneChangesConfiguration> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -18316,7 +18129,7 @@ class CKFetchRecordZoneChangesConfiguration
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CKFetchRecordZoneChangesConfiguration> _self,
   ) {
     _openDynamicLibrary();
@@ -18326,7 +18139,7 @@ class CKFetchRecordZoneChangesConfiguration
     );
   }
 
-  static Pointer<Void> desiredKeys(
+  static Pointer desiredKeys(
     Pointer<CKFetchRecordZoneChangesConfiguration> _self,
   ) {
     _openDynamicLibrary();
@@ -18338,7 +18151,7 @@ class CKFetchRecordZoneChangesConfiguration
 
   static void encodeWithCoder(
     Pointer<CKFetchRecordZoneChangesConfiguration> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -18368,7 +18181,7 @@ class CKFetchRecordZoneChangesConfiguration
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CKFetchRecordZoneChangesConfiguration> _self,
   ) {
     _openDynamicLibrary();
@@ -18378,9 +18191,9 @@ class CKFetchRecordZoneChangesConfiguration
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CKFetchRecordZoneChangesConfiguration> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -18390,7 +18203,7 @@ class CKFetchRecordZoneChangesConfiguration
     );
   }
 
-  static Pointer<Void> previousServerChangeToken(
+  static Pointer previousServerChangeToken(
     Pointer<CKFetchRecordZoneChangesConfiguration> _self,
   ) {
     _openDynamicLibrary();
@@ -18412,7 +18225,7 @@ class CKFetchRecordZoneChangesConfiguration
 
   static void setDesiredKeys(
     Pointer<CKFetchRecordZoneChangesConfiguration> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -18448,7 +18261,7 @@ class CKFetchRecordZoneChangesConfiguration
 
   static void setPreviousServerChangeToken(
     Pointer<CKFetchRecordZoneChangesConfiguration> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -18471,11 +18284,9 @@ class CKFetchRecordZoneChangesConfiguration
   }
 }
 
-/// Objective-C class _CKFetchRecordZoneChangesOperation_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKFetchRecordZoneChangesOperation
     extends Struct<CKFetchRecordZoneChangesOperation> {
@@ -18491,7 +18302,7 @@ class CKFetchRecordZoneChangesOperation
 
   static int CKOperationShouldRun(
     Pointer<CKFetchRecordZoneChangesOperation> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -18501,7 +18312,7 @@ class CKFetchRecordZoneChangesOperation
     );
   }
 
-  static Pointer<Void> activityCreate(
+  static Pointer activityCreate(
     Pointer<CKFetchRecordZoneChangesOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -18511,7 +18322,7 @@ class CKFetchRecordZoneChangesOperation
     );
   }
 
-  static Pointer<Void> assetTransferOptionsByRecordTypeAndKey(
+  static Pointer assetTransferOptionsByRecordTypeAndKey(
     Pointer<CKFetchRecordZoneChangesOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -18531,7 +18342,7 @@ class CKFetchRecordZoneChangesOperation
     );
   }
 
-  static Pointer<Void> configurationsByRecordZoneID(
+  static Pointer configurationsByRecordZoneID(
     Pointer<CKFetchRecordZoneChangesOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -18551,7 +18362,7 @@ class CKFetchRecordZoneChangesOperation
     );
   }
 
-  static Pointer<Void> fetchRecordZoneChangesCompletionBlock(
+  static Pointer fetchRecordZoneChangesCompletionBlock(
     Pointer<CKFetchRecordZoneChangesOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -18563,7 +18374,7 @@ class CKFetchRecordZoneChangesOperation
 
   static void fillFromOperationInfo(
     Pointer<CKFetchRecordZoneChangesOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -18575,7 +18386,7 @@ class CKFetchRecordZoneChangesOperation
 
   static void fillOutOperationInfo(
     Pointer<CKFetchRecordZoneChangesOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -18595,7 +18406,7 @@ class CKFetchRecordZoneChangesOperation
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CKFetchRecordZoneChangesOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -18605,10 +18416,10 @@ class CKFetchRecordZoneChangesOperation
     );
   }
 
-  static Pointer<Void> initWithRecordZoneIDs$optionsByRecordZoneID$(
+  static Pointer initWithRecordZoneIDs$optionsByRecordZoneID$(
     Pointer<CKFetchRecordZoneChangesOperation> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> optionsByRecordZoneID,
+    Pointer arg, {
+    @required Pointer optionsByRecordZoneID,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -18619,10 +18430,10 @@ class CKFetchRecordZoneChangesOperation
     );
   }
 
-  static Pointer<Void> initWithRecordZoneIDs$configurationsByRecordZoneID$(
+  static Pointer initWithRecordZoneIDs$configurationsByRecordZoneID$(
     Pointer<CKFetchRecordZoneChangesOperation> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> configurationsByRecordZoneID,
+    Pointer arg, {
+    @required Pointer configurationsByRecordZoneID,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -18633,7 +18444,7 @@ class CKFetchRecordZoneChangesOperation
     );
   }
 
-  static Pointer<Void> optionsByRecordZoneID(
+  static Pointer optionsByRecordZoneID(
     Pointer<CKFetchRecordZoneChangesOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -18643,9 +18454,9 @@ class CKFetchRecordZoneChangesOperation
     );
   }
 
-  static Pointer<Void> partialFailureForItemsInZone(
+  static Pointer partialFailureForItemsInZone(
     Pointer<CKFetchRecordZoneChangesOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -18655,7 +18466,7 @@ class CKFetchRecordZoneChangesOperation
     );
   }
 
-  static Pointer<Void> perItemErrors(
+  static Pointer perItemErrors(
     Pointer<CKFetchRecordZoneChangesOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -18665,7 +18476,7 @@ class CKFetchRecordZoneChangesOperation
     );
   }
 
-  static Pointer<Void> perRecordChangeCompletionBlock(
+  static Pointer perRecordChangeCompletionBlock(
     Pointer<CKFetchRecordZoneChangesOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -18685,7 +18496,7 @@ class CKFetchRecordZoneChangesOperation
     );
   }
 
-  static Pointer<Void> recordChangedBlock(
+  static Pointer recordChangedBlock(
     Pointer<CKFetchRecordZoneChangesOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -18695,7 +18506,7 @@ class CKFetchRecordZoneChangesOperation
     );
   }
 
-  static Pointer<Void> recordWithIDWasDeletedBlock(
+  static Pointer recordWithIDWasDeletedBlock(
     Pointer<CKFetchRecordZoneChangesOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -18705,7 +18516,7 @@ class CKFetchRecordZoneChangesOperation
     );
   }
 
-  static Pointer<Void> recordZoneChangeTokensUpdatedBlock(
+  static Pointer recordZoneChangeTokensUpdatedBlock(
     Pointer<CKFetchRecordZoneChangesOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -18715,7 +18526,7 @@ class CKFetchRecordZoneChangesOperation
     );
   }
 
-  static Pointer<Void> recordZoneChangesStatusByZoneID(
+  static Pointer recordZoneChangesStatusByZoneID(
     Pointer<CKFetchRecordZoneChangesOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -18725,7 +18536,7 @@ class CKFetchRecordZoneChangesOperation
     );
   }
 
-  static Pointer<Void> recordZoneFetchCompletionBlock(
+  static Pointer recordZoneFetchCompletionBlock(
     Pointer<CKFetchRecordZoneChangesOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -18735,7 +18546,7 @@ class CKFetchRecordZoneChangesOperation
     );
   }
 
-  static Pointer<Void> recordZoneIDs(
+  static Pointer recordZoneIDs(
     Pointer<CKFetchRecordZoneChangesOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -18745,7 +18556,7 @@ class CKFetchRecordZoneChangesOperation
     );
   }
 
-  static Pointer<Void> recordZoneIDsWithPendingArchivedRecords(
+  static Pointer recordZoneIDsWithPendingArchivedRecords(
     Pointer<CKFetchRecordZoneChangesOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -18757,7 +18568,7 @@ class CKFetchRecordZoneChangesOperation
 
   static void setAssetTransferOptionsByRecordTypeAndKey(
     Pointer<CKFetchRecordZoneChangesOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -18769,7 +18580,7 @@ class CKFetchRecordZoneChangesOperation
 
   static void setConfigurationsByRecordZoneID(
     Pointer<CKFetchRecordZoneChangesOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -18793,7 +18604,7 @@ class CKFetchRecordZoneChangesOperation
 
   static void setFetchRecordZoneChangesCompletionBlock(
     Pointer<CKFetchRecordZoneChangesOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -18805,7 +18616,7 @@ class CKFetchRecordZoneChangesOperation
 
   static void setOptionsByRecordZoneID(
     Pointer<CKFetchRecordZoneChangesOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -18817,7 +18628,7 @@ class CKFetchRecordZoneChangesOperation
 
   static void setPerItemErrors(
     Pointer<CKFetchRecordZoneChangesOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -18829,7 +18640,7 @@ class CKFetchRecordZoneChangesOperation
 
   static void setPerRecordChangeCompletionBlock(
     Pointer<CKFetchRecordZoneChangesOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -18841,7 +18652,7 @@ class CKFetchRecordZoneChangesOperation
 
   static void setRecordChangedBlock(
     Pointer<CKFetchRecordZoneChangesOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -18853,7 +18664,7 @@ class CKFetchRecordZoneChangesOperation
 
   static void setRecordWithIDWasDeletedBlock(
     Pointer<CKFetchRecordZoneChangesOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -18865,7 +18676,7 @@ class CKFetchRecordZoneChangesOperation
 
   static void setRecordZoneChangeTokensUpdatedBlock(
     Pointer<CKFetchRecordZoneChangesOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -18877,7 +18688,7 @@ class CKFetchRecordZoneChangesOperation
 
   static void setRecordZoneFetchCompletionBlock(
     Pointer<CKFetchRecordZoneChangesOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -18889,7 +18700,7 @@ class CKFetchRecordZoneChangesOperation
 
   static void setRecordZoneIDs(
     Pointer<CKFetchRecordZoneChangesOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -18925,7 +18736,7 @@ class CKFetchRecordZoneChangesOperation
 
   static void setStatusByZoneID(
     Pointer<CKFetchRecordZoneChangesOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -18937,7 +18748,7 @@ class CKFetchRecordZoneChangesOperation
 
   static void setZoneIDsWithPendingArchivedRecords(
     Pointer<CKFetchRecordZoneChangesOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -18967,7 +18778,7 @@ class CKFetchRecordZoneChangesOperation
     );
   }
 
-  static Pointer<Void> statusByZoneID(
+  static Pointer statusByZoneID(
     Pointer<CKFetchRecordZoneChangesOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -18977,7 +18788,7 @@ class CKFetchRecordZoneChangesOperation
     );
   }
 
-  static Pointer<Void> zoneIDsWithPendingArchivedRecords(
+  static Pointer zoneIDsWithPendingArchivedRecords(
     Pointer<CKFetchRecordZoneChangesOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -18988,11 +18799,9 @@ class CKFetchRecordZoneChangesOperation
   }
 }
 
-/// Objective-C class _CKFetchRecordZoneChangesOperationInfo_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKFetchRecordZoneChangesOperationInfo
     extends Struct<CKFetchRecordZoneChangesOperationInfo> {
@@ -19006,7 +18815,7 @@ class CKFetchRecordZoneChangesOperationInfo
         .cast<CKFetchRecordZoneChangesOperationInfo>();
   }
 
-  static Pointer<Void> assetTransferOptionsByRecordTypeAndKey(
+  static Pointer assetTransferOptionsByRecordTypeAndKey(
     Pointer<CKFetchRecordZoneChangesOperationInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -19026,7 +18835,7 @@ class CKFetchRecordZoneChangesOperationInfo
     );
   }
 
-  static Pointer<Void> configurationsByRecordZoneID(
+  static Pointer configurationsByRecordZoneID(
     Pointer<CKFetchRecordZoneChangesOperationInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -19038,7 +18847,7 @@ class CKFetchRecordZoneChangesOperationInfo
 
   static void encodeWithCoder(
     Pointer<CKFetchRecordZoneChangesOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -19068,9 +18877,9 @@ class CKFetchRecordZoneChangesOperationInfo
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CKFetchRecordZoneChangesOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -19080,7 +18889,7 @@ class CKFetchRecordZoneChangesOperationInfo
     );
   }
 
-  static Pointer<Void> recordZoneIDs(
+  static Pointer recordZoneIDs(
     Pointer<CKFetchRecordZoneChangesOperationInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -19092,7 +18901,7 @@ class CKFetchRecordZoneChangesOperationInfo
 
   static void setAssetTransferOptionsByRecordTypeAndKey(
     Pointer<CKFetchRecordZoneChangesOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -19116,7 +18925,7 @@ class CKFetchRecordZoneChangesOperationInfo
 
   static void setConfigurationsByRecordZoneID(
     Pointer<CKFetchRecordZoneChangesOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -19152,7 +18961,7 @@ class CKFetchRecordZoneChangesOperationInfo
 
   static void setRecordZoneIDs(
     Pointer<CKFetchRecordZoneChangesOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -19207,11 +19016,9 @@ class CKFetchRecordZoneChangesOperationInfo
   }
 }
 
-/// Objective-C class _CKFetchRecordZoneChangesOptions_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKFetchRecordZoneChangesOptions
     extends Struct<CKFetchRecordZoneChangesOptions> {
@@ -19225,9 +19032,9 @@ class CKFetchRecordZoneChangesOptions
         .cast<CKFetchRecordZoneChangesOptions>();
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<CKFetchRecordZoneChangesOptions> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -19237,7 +19044,7 @@ class CKFetchRecordZoneChangesOptions
     );
   }
 
-  static Pointer<Void> desiredKeys(
+  static Pointer desiredKeys(
     Pointer<CKFetchRecordZoneChangesOptions> _self,
   ) {
     _openDynamicLibrary();
@@ -19249,7 +19056,7 @@ class CKFetchRecordZoneChangesOptions
 
   static void encodeWithCoder(
     Pointer<CKFetchRecordZoneChangesOptions> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -19279,7 +19086,7 @@ class CKFetchRecordZoneChangesOptions
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CKFetchRecordZoneChangesOptions> _self,
   ) {
     _openDynamicLibrary();
@@ -19289,9 +19096,9 @@ class CKFetchRecordZoneChangesOptions
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CKFetchRecordZoneChangesOptions> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -19301,9 +19108,9 @@ class CKFetchRecordZoneChangesOptions
     );
   }
 
-  static Pointer<Void> initWithZoneConfiguration(
+  static Pointer initWithZoneConfiguration(
     Pointer<CKFetchRecordZoneChangesOptions> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -19313,7 +19120,7 @@ class CKFetchRecordZoneChangesOptions
     );
   }
 
-  static Pointer<Void> previousServerChangeToken(
+  static Pointer previousServerChangeToken(
     Pointer<CKFetchRecordZoneChangesOptions> _self,
   ) {
     _openDynamicLibrary();
@@ -19335,7 +19142,7 @@ class CKFetchRecordZoneChangesOptions
 
   static void setDesiredKeys(
     Pointer<CKFetchRecordZoneChangesOptions> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -19371,7 +19178,7 @@ class CKFetchRecordZoneChangesOptions
 
   static void setPreviousServerChangeToken(
     Pointer<CKFetchRecordZoneChangesOptions> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -19393,7 +19200,7 @@ class CKFetchRecordZoneChangesOptions
     );
   }
 
-  static Pointer<Void> zoneConfiguration(
+  static Pointer zoneConfiguration(
     Pointer<CKFetchRecordZoneChangesOptions> _self,
   ) {
     _openDynamicLibrary();
@@ -19404,11 +19211,9 @@ class CKFetchRecordZoneChangesOptions
   }
 }
 
-/// Objective-C class _CKFetchRecordZonesOperation_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKFetchRecordZonesOperation extends Struct<CKFetchRecordZonesOperation> {
   factory CKFetchRecordZonesOperation._() {
@@ -19423,7 +19228,7 @@ class CKFetchRecordZonesOperation extends Struct<CKFetchRecordZonesOperation> {
 
   static int CKOperationShouldRun(
     Pointer<CKFetchRecordZonesOperation> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -19433,7 +19238,7 @@ class CKFetchRecordZonesOperation extends Struct<CKFetchRecordZonesOperation> {
     );
   }
 
-  static Pointer<Void> activityCreate(
+  static Pointer activityCreate(
     Pointer<CKFetchRecordZonesOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -19443,7 +19248,7 @@ class CKFetchRecordZonesOperation extends Struct<CKFetchRecordZonesOperation> {
     );
   }
 
-  static Pointer<Void> fetchAllRecordZonesError(
+  static Pointer fetchAllRecordZonesError(
     Pointer<CKFetchRecordZonesOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -19453,7 +19258,7 @@ class CKFetchRecordZonesOperation extends Struct<CKFetchRecordZonesOperation> {
     );
   }
 
-  static Pointer<Void> fetchRecordZonesCompletionBlock(
+  static Pointer fetchRecordZonesCompletionBlock(
     Pointer<CKFetchRecordZonesOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -19465,7 +19270,7 @@ class CKFetchRecordZonesOperation extends Struct<CKFetchRecordZonesOperation> {
 
   static void fillFromOperationInfo(
     Pointer<CKFetchRecordZonesOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -19477,7 +19282,7 @@ class CKFetchRecordZonesOperation extends Struct<CKFetchRecordZonesOperation> {
 
   static void fillOutOperationInfo(
     Pointer<CKFetchRecordZonesOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -19507,7 +19312,7 @@ class CKFetchRecordZonesOperation extends Struct<CKFetchRecordZonesOperation> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CKFetchRecordZonesOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -19517,9 +19322,9 @@ class CKFetchRecordZonesOperation extends Struct<CKFetchRecordZonesOperation> {
     );
   }
 
-  static Pointer<Void> initWithRecordZoneIDs(
+  static Pointer initWithRecordZoneIDs(
     Pointer<CKFetchRecordZonesOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -19549,7 +19354,7 @@ class CKFetchRecordZonesOperation extends Struct<CKFetchRecordZonesOperation> {
     );
   }
 
-  static Pointer<Void> recordZoneErrors(
+  static Pointer recordZoneErrors(
     Pointer<CKFetchRecordZonesOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -19559,7 +19364,7 @@ class CKFetchRecordZonesOperation extends Struct<CKFetchRecordZonesOperation> {
     );
   }
 
-  static Pointer<Void> recordZoneIDs(
+  static Pointer recordZoneIDs(
     Pointer<CKFetchRecordZonesOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -19569,7 +19374,7 @@ class CKFetchRecordZonesOperation extends Struct<CKFetchRecordZonesOperation> {
     );
   }
 
-  static Pointer<Void> recordZones(
+  static Pointer recordZones(
     Pointer<CKFetchRecordZonesOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -19579,7 +19384,7 @@ class CKFetchRecordZonesOperation extends Struct<CKFetchRecordZonesOperation> {
     );
   }
 
-  static Pointer<Void> recordZonesByZoneID(
+  static Pointer recordZonesByZoneID(
     Pointer<CKFetchRecordZonesOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -19591,7 +19396,7 @@ class CKFetchRecordZonesOperation extends Struct<CKFetchRecordZonesOperation> {
 
   static void setFetchAllRecordZonesError(
     Pointer<CKFetchRecordZonesOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -19603,7 +19408,7 @@ class CKFetchRecordZonesOperation extends Struct<CKFetchRecordZonesOperation> {
 
   static void setFetchRecordZonesCompletionBlock(
     Pointer<CKFetchRecordZonesOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -19639,7 +19444,7 @@ class CKFetchRecordZonesOperation extends Struct<CKFetchRecordZonesOperation> {
 
   static void setRecordZoneErrors(
     Pointer<CKFetchRecordZonesOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -19651,7 +19456,7 @@ class CKFetchRecordZonesOperation extends Struct<CKFetchRecordZonesOperation> {
 
   static void setRecordZoneIDs(
     Pointer<CKFetchRecordZonesOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -19663,7 +19468,7 @@ class CKFetchRecordZonesOperation extends Struct<CKFetchRecordZonesOperation> {
 
   static void setRecordZones(
     Pointer<CKFetchRecordZonesOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -19675,7 +19480,7 @@ class CKFetchRecordZonesOperation extends Struct<CKFetchRecordZonesOperation> {
 
   static void setRecordZonesByZoneID(
     Pointer<CKFetchRecordZonesOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -19686,11 +19491,9 @@ class CKFetchRecordZonesOperation extends Struct<CKFetchRecordZonesOperation> {
   }
 }
 
-/// Objective-C class _CKFetchRecordZonesOperationInfo_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKFetchRecordZonesOperationInfo
     extends Struct<CKFetchRecordZonesOperationInfo> {
@@ -19706,7 +19509,7 @@ class CKFetchRecordZonesOperationInfo
 
   static void encodeWithCoder(
     Pointer<CKFetchRecordZonesOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -19726,9 +19529,9 @@ class CKFetchRecordZonesOperationInfo
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CKFetchRecordZonesOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -19748,7 +19551,7 @@ class CKFetchRecordZonesOperationInfo
     );
   }
 
-  static Pointer<Void> recordZoneIDs(
+  static Pointer recordZoneIDs(
     Pointer<CKFetchRecordZonesOperationInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -19784,7 +19587,7 @@ class CKFetchRecordZonesOperationInfo
 
   static void setRecordZoneIDs(
     Pointer<CKFetchRecordZonesOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -19795,11 +19598,9 @@ class CKFetchRecordZonesOperationInfo
   }
 }
 
-/// Objective-C class _CKFetchRecordsAssetInfo_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKFetchRecordsAssetInfo extends Struct<CKFetchRecordsAssetInfo> {
   factory CKFetchRecordsAssetInfo._() {
@@ -19812,7 +19613,7 @@ class CKFetchRecordsAssetInfo extends Struct<CKFetchRecordsAssetInfo> {
         .cast<CKFetchRecordsAssetInfo>();
   }
 
-  static Pointer<Void> assetContent(
+  static Pointer assetContent(
     Pointer<CKFetchRecordsAssetInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -19822,10 +19623,10 @@ class CKFetchRecordsAssetInfo extends Struct<CKFetchRecordsAssetInfo> {
     );
   }
 
-  static Pointer<Void> assetContentWithError(
+  static Pointer assetContentWithError(
     Pointer<CKFetchRecordsAssetInfo> _self,
-    Pointer<Pointer<Void>> arg, {
-    @required Pointer<Void> expectedSignature,
+    Pointer<Pointer> arg, {
+    @required Pointer expectedSignature,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -19836,7 +19637,7 @@ class CKFetchRecordsAssetInfo extends Struct<CKFetchRecordsAssetInfo> {
     );
   }
 
-  static Pointer<Void> byteRanges(
+  static Pointer byteRanges(
     Pointer<CKFetchRecordsAssetInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -19846,7 +19647,7 @@ class CKFetchRecordsAssetInfo extends Struct<CKFetchRecordsAssetInfo> {
     );
   }
 
-  static Pointer<Void> error(
+  static Pointer error(
     Pointer<CKFetchRecordsAssetInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -19856,7 +19657,7 @@ class CKFetchRecordsAssetInfo extends Struct<CKFetchRecordsAssetInfo> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CKFetchRecordsAssetInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -19878,7 +19679,7 @@ class CKFetchRecordsAssetInfo extends Struct<CKFetchRecordsAssetInfo> {
 
   static void setAssetContent(
     Pointer<CKFetchRecordsAssetInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -19890,7 +19691,7 @@ class CKFetchRecordsAssetInfo extends Struct<CKFetchRecordsAssetInfo> {
 
   static void setByteRanges(
     Pointer<CKFetchRecordsAssetInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -19902,7 +19703,7 @@ class CKFetchRecordsAssetInfo extends Struct<CKFetchRecordsAssetInfo> {
 
   static void setError(
     Pointer<CKFetchRecordsAssetInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -19914,8 +19715,8 @@ class CKFetchRecordsAssetInfo extends Struct<CKFetchRecordsAssetInfo> {
 
   static void writeData(
     Pointer<CKFetchRecordsAssetInfo> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> atOffset,
+    Pointer arg, {
+    @required Pointer atOffset,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -19927,11 +19728,9 @@ class CKFetchRecordsAssetInfo extends Struct<CKFetchRecordsAssetInfo> {
   }
 }
 
-/// Objective-C class _CKFetchRecordsOperation_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKFetchRecordsOperation extends Struct<CKFetchRecordsOperation> {
   factory CKFetchRecordsOperation._() {
@@ -19946,7 +19745,7 @@ class CKFetchRecordsOperation extends Struct<CKFetchRecordsOperation> {
 
   static int CKOperationShouldRun(
     Pointer<CKFetchRecordsOperation> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -19956,7 +19755,7 @@ class CKFetchRecordsOperation extends Struct<CKFetchRecordsOperation> {
     );
   }
 
-  static Pointer<Void> activityCreate(
+  static Pointer activityCreate(
     Pointer<CKFetchRecordsOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -19966,7 +19765,7 @@ class CKFetchRecordsOperation extends Struct<CKFetchRecordsOperation> {
     );
   }
 
-  static Pointer<Void> assetInfoByArrayIndexByRecordKeyByRecordID(
+  static Pointer assetInfoByArrayIndexByRecordKeyByRecordID(
     Pointer<CKFetchRecordsOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -19976,11 +19775,11 @@ class CKFetchRecordsOperation extends Struct<CKFetchRecordsOperation> {
     );
   }
 
-  static Pointer<Void> assetInfoForRecordID(
+  static Pointer assetInfoForRecordID(
     Pointer<CKFetchRecordsOperation> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> recordKey,
-    @required Pointer<Void> arrayIndex,
+    Pointer arg, {
+    @required Pointer recordKey,
+    @required Pointer arrayIndex,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -19992,7 +19791,7 @@ class CKFetchRecordsOperation extends Struct<CKFetchRecordsOperation> {
     );
   }
 
-  static Pointer<Void> assetTransferOptionsByRecordTypeAndKey(
+  static Pointer assetTransferOptionsByRecordTypeAndKey(
     Pointer<CKFetchRecordsOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -20004,8 +19803,8 @@ class CKFetchRecordsOperation extends Struct<CKFetchRecordsOperation> {
 
   static int claimPackagesInRecord(
     Pointer<CKFetchRecordsOperation> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -20016,7 +19815,7 @@ class CKFetchRecordsOperation extends Struct<CKFetchRecordsOperation> {
     );
   }
 
-  static Pointer<Void> desiredKeys(
+  static Pointer desiredKeys(
     Pointer<CKFetchRecordsOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -20026,7 +19825,7 @@ class CKFetchRecordsOperation extends Struct<CKFetchRecordsOperation> {
     );
   }
 
-  static Pointer<Void> desiredPackageFileIndices(
+  static Pointer desiredPackageFileIndices(
     Pointer<CKFetchRecordsOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -20046,7 +19845,7 @@ class CKFetchRecordsOperation extends Struct<CKFetchRecordsOperation> {
     );
   }
 
-  static Pointer<Void> fetchRecordsCompletionBlock(
+  static Pointer fetchRecordsCompletionBlock(
     Pointer<CKFetchRecordsOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -20058,7 +19857,7 @@ class CKFetchRecordsOperation extends Struct<CKFetchRecordsOperation> {
 
   static void fillFromOperationInfo(
     Pointer<CKFetchRecordsOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -20070,7 +19869,7 @@ class CKFetchRecordsOperation extends Struct<CKFetchRecordsOperation> {
 
   static void fillOutOperationInfo(
     Pointer<CKFetchRecordsOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -20090,7 +19889,7 @@ class CKFetchRecordsOperation extends Struct<CKFetchRecordsOperation> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CKFetchRecordsOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -20100,9 +19899,9 @@ class CKFetchRecordsOperation extends Struct<CKFetchRecordsOperation> {
     );
   }
 
-  static Pointer<Void> initWithRecordIDs(
+  static Pointer initWithRecordIDs(
     Pointer<CKFetchRecordsOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -20122,7 +19921,7 @@ class CKFetchRecordsOperation extends Struct<CKFetchRecordsOperation> {
     );
   }
 
-  static Pointer<Void> packagesToDestroy(
+  static Pointer packagesToDestroy(
     Pointer<CKFetchRecordsOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -20132,7 +19931,7 @@ class CKFetchRecordsOperation extends Struct<CKFetchRecordsOperation> {
     );
   }
 
-  static Pointer<Void> perRecordCompletionBlock(
+  static Pointer perRecordCompletionBlock(
     Pointer<CKFetchRecordsOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -20142,7 +19941,7 @@ class CKFetchRecordsOperation extends Struct<CKFetchRecordsOperation> {
     );
   }
 
-  static Pointer<Void> perRecordProgressBlock(
+  static Pointer perRecordProgressBlock(
     Pointer<CKFetchRecordsOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -20162,7 +19961,7 @@ class CKFetchRecordsOperation extends Struct<CKFetchRecordsOperation> {
     );
   }
 
-  static Pointer<Void> recordErrors(
+  static Pointer recordErrors(
     Pointer<CKFetchRecordsOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -20172,7 +19971,7 @@ class CKFetchRecordsOperation extends Struct<CKFetchRecordsOperation> {
     );
   }
 
-  static Pointer<Void> recordIDs(
+  static Pointer recordIDs(
     Pointer<CKFetchRecordsOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -20182,7 +19981,7 @@ class CKFetchRecordsOperation extends Struct<CKFetchRecordsOperation> {
     );
   }
 
-  static Pointer<Void> recordIDsToETags(
+  static Pointer recordIDsToETags(
     Pointer<CKFetchRecordsOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -20192,7 +19991,7 @@ class CKFetchRecordsOperation extends Struct<CKFetchRecordsOperation> {
     );
   }
 
-  static Pointer<Void> recordIDsToRecords(
+  static Pointer recordIDsToRecords(
     Pointer<CKFetchRecordsOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -20202,7 +20001,7 @@ class CKFetchRecordsOperation extends Struct<CKFetchRecordsOperation> {
     );
   }
 
-  static Pointer<Void> recordIDsToVersionETags(
+  static Pointer recordIDsToVersionETags(
     Pointer<CKFetchRecordsOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -20214,7 +20013,7 @@ class CKFetchRecordsOperation extends Struct<CKFetchRecordsOperation> {
 
   static void setAssetInfoByArrayIndexByRecordKeyByRecordID(
     Pointer<CKFetchRecordsOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -20226,7 +20025,7 @@ class CKFetchRecordsOperation extends Struct<CKFetchRecordsOperation> {
 
   static void setAssetTransferOptionsByRecordTypeAndKey(
     Pointer<CKFetchRecordsOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -20238,7 +20037,7 @@ class CKFetchRecordsOperation extends Struct<CKFetchRecordsOperation> {
 
   static void setDesiredKeys(
     Pointer<CKFetchRecordsOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -20250,7 +20049,7 @@ class CKFetchRecordsOperation extends Struct<CKFetchRecordsOperation> {
 
   static void setDesiredPackageFileIndices(
     Pointer<CKFetchRecordsOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -20274,7 +20073,7 @@ class CKFetchRecordsOperation extends Struct<CKFetchRecordsOperation> {
 
   static void setFetchRecordsCompletionBlock(
     Pointer<CKFetchRecordsOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -20298,7 +20097,7 @@ class CKFetchRecordsOperation extends Struct<CKFetchRecordsOperation> {
 
   static void setPackagesToDestroy(
     Pointer<CKFetchRecordsOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -20310,7 +20109,7 @@ class CKFetchRecordsOperation extends Struct<CKFetchRecordsOperation> {
 
   static void setPerRecordCompletionBlock(
     Pointer<CKFetchRecordsOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -20322,7 +20121,7 @@ class CKFetchRecordsOperation extends Struct<CKFetchRecordsOperation> {
 
   static void setPerRecordProgressBlock(
     Pointer<CKFetchRecordsOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -20334,7 +20133,7 @@ class CKFetchRecordsOperation extends Struct<CKFetchRecordsOperation> {
 
   static void setRecordErrors(
     Pointer<CKFetchRecordsOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -20346,7 +20145,7 @@ class CKFetchRecordsOperation extends Struct<CKFetchRecordsOperation> {
 
   static void setRecordIDs(
     Pointer<CKFetchRecordsOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -20358,7 +20157,7 @@ class CKFetchRecordsOperation extends Struct<CKFetchRecordsOperation> {
 
   static void setRecordIDsToETags(
     Pointer<CKFetchRecordsOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -20370,7 +20169,7 @@ class CKFetchRecordsOperation extends Struct<CKFetchRecordsOperation> {
 
   static void setRecordIDsToRecords(
     Pointer<CKFetchRecordsOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -20382,7 +20181,7 @@ class CKFetchRecordsOperation extends Struct<CKFetchRecordsOperation> {
 
   static void setRecordIDsToVersionETags(
     Pointer<CKFetchRecordsOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -20418,7 +20217,7 @@ class CKFetchRecordsOperation extends Struct<CKFetchRecordsOperation> {
 
   static void setWebSharingIdentityDataByRecordID(
     Pointer<CKFetchRecordsOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -20448,7 +20247,7 @@ class CKFetchRecordsOperation extends Struct<CKFetchRecordsOperation> {
     );
   }
 
-  static Pointer<Void> webSharingIdentityDataByRecordID(
+  static Pointer webSharingIdentityDataByRecordID(
     Pointer<CKFetchRecordsOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -20459,11 +20258,9 @@ class CKFetchRecordsOperation extends Struct<CKFetchRecordsOperation> {
   }
 }
 
-/// Objective-C class _CKFetchRecordsOperationInfo_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKFetchRecordsOperationInfo extends Struct<CKFetchRecordsOperationInfo> {
   factory CKFetchRecordsOperationInfo._() {
@@ -20486,7 +20283,7 @@ class CKFetchRecordsOperationInfo extends Struct<CKFetchRecordsOperationInfo> {
     );
   }
 
-  static Pointer<Void> assetFieldNamesToPublishURLs(
+  static Pointer assetFieldNamesToPublishURLs(
     Pointer<CKFetchRecordsOperationInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -20496,7 +20293,7 @@ class CKFetchRecordsOperationInfo extends Struct<CKFetchRecordsOperationInfo> {
     );
   }
 
-  static Pointer<Void> assetTransferOptionsByRecordTypeAndKey(
+  static Pointer assetTransferOptionsByRecordTypeAndKey(
     Pointer<CKFetchRecordsOperationInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -20506,7 +20303,7 @@ class CKFetchRecordsOperationInfo extends Struct<CKFetchRecordsOperationInfo> {
     );
   }
 
-  static Pointer<Void> desiredKeys(
+  static Pointer desiredKeys(
     Pointer<CKFetchRecordsOperationInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -20516,7 +20313,7 @@ class CKFetchRecordsOperationInfo extends Struct<CKFetchRecordsOperationInfo> {
     );
   }
 
-  static Pointer<Void> desiredPackageFileIndices(
+  static Pointer desiredPackageFileIndices(
     Pointer<CKFetchRecordsOperationInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -20538,7 +20335,7 @@ class CKFetchRecordsOperationInfo extends Struct<CKFetchRecordsOperationInfo> {
 
   static void encodeWithCoder(
     Pointer<CKFetchRecordsOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -20548,9 +20345,9 @@ class CKFetchRecordsOperationInfo extends Struct<CKFetchRecordsOperationInfo> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CKFetchRecordsOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -20570,7 +20367,7 @@ class CKFetchRecordsOperationInfo extends Struct<CKFetchRecordsOperationInfo> {
     );
   }
 
-  static Pointer<Void> recordIDs(
+  static Pointer recordIDs(
     Pointer<CKFetchRecordsOperationInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -20580,7 +20377,7 @@ class CKFetchRecordsOperationInfo extends Struct<CKFetchRecordsOperationInfo> {
     );
   }
 
-  static Pointer<Void> recordIDsToETags(
+  static Pointer recordIDsToETags(
     Pointer<CKFetchRecordsOperationInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -20590,7 +20387,7 @@ class CKFetchRecordsOperationInfo extends Struct<CKFetchRecordsOperationInfo> {
     );
   }
 
-  static Pointer<Void> recordIDsToVersionETags(
+  static Pointer recordIDsToVersionETags(
     Pointer<CKFetchRecordsOperationInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -20612,7 +20409,7 @@ class CKFetchRecordsOperationInfo extends Struct<CKFetchRecordsOperationInfo> {
 
   static void setAssetFieldNamesToPublishURLs(
     Pointer<CKFetchRecordsOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -20624,7 +20421,7 @@ class CKFetchRecordsOperationInfo extends Struct<CKFetchRecordsOperationInfo> {
 
   static void setAssetTransferOptionsByRecordTypeAndKey(
     Pointer<CKFetchRecordsOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -20636,7 +20433,7 @@ class CKFetchRecordsOperationInfo extends Struct<CKFetchRecordsOperationInfo> {
 
   static void setDesiredKeys(
     Pointer<CKFetchRecordsOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -20648,7 +20445,7 @@ class CKFetchRecordsOperationInfo extends Struct<CKFetchRecordsOperationInfo> {
 
   static void setDesiredPackageFileIndices(
     Pointer<CKFetchRecordsOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -20684,7 +20481,7 @@ class CKFetchRecordsOperationInfo extends Struct<CKFetchRecordsOperationInfo> {
 
   static void setRecordIDs(
     Pointer<CKFetchRecordsOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -20696,7 +20493,7 @@ class CKFetchRecordsOperationInfo extends Struct<CKFetchRecordsOperationInfo> {
 
   static void setRecordIDsToETags(
     Pointer<CKFetchRecordsOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -20708,7 +20505,7 @@ class CKFetchRecordsOperationInfo extends Struct<CKFetchRecordsOperationInfo> {
 
   static void setRecordIDsToVersionETags(
     Pointer<CKFetchRecordsOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -20768,7 +20565,7 @@ class CKFetchRecordsOperationInfo extends Struct<CKFetchRecordsOperationInfo> {
 
   static void setWebSharingIdentityDataByRecordID(
     Pointer<CKFetchRecordsOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -20798,7 +20595,7 @@ class CKFetchRecordsOperationInfo extends Struct<CKFetchRecordsOperationInfo> {
     );
   }
 
-  static Pointer<Void> webSharingIdentityDataByRecordID(
+  static Pointer webSharingIdentityDataByRecordID(
     Pointer<CKFetchRecordsOperationInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -20809,11 +20606,9 @@ class CKFetchRecordsOperationInfo extends Struct<CKFetchRecordsOperationInfo> {
   }
 }
 
-/// Objective-C class _CKFetchShareMetadataOperation_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKFetchShareMetadataOperation
     extends Struct<CKFetchShareMetadataOperation> {
@@ -20829,7 +20624,7 @@ class CKFetchShareMetadataOperation
 
   static int CKOperationShouldRun(
     Pointer<CKFetchShareMetadataOperation> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -20839,7 +20634,7 @@ class CKFetchShareMetadataOperation
     );
   }
 
-  static Pointer<Void> activityCreate(
+  static Pointer activityCreate(
     Pointer<CKFetchShareMetadataOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -20851,8 +20646,8 @@ class CKFetchShareMetadataOperation
 
   static int claimPackagesInRecord(
     Pointer<CKFetchShareMetadataOperation> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -20863,7 +20658,7 @@ class CKFetchShareMetadataOperation
     );
   }
 
-  static Pointer<Void> errorsByURL(
+  static Pointer errorsByURL(
     Pointer<CKFetchShareMetadataOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -20873,7 +20668,7 @@ class CKFetchShareMetadataOperation
     );
   }
 
-  static Pointer<Void> fetchShareMetadataCompletionBlock(
+  static Pointer fetchShareMetadataCompletionBlock(
     Pointer<CKFetchShareMetadataOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -20885,7 +20680,7 @@ class CKFetchShareMetadataOperation
 
   static void fillFromOperationInfo(
     Pointer<CKFetchShareMetadataOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -20897,7 +20692,7 @@ class CKFetchShareMetadataOperation
 
   static void fillOutOperationInfo(
     Pointer<CKFetchShareMetadataOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -20917,7 +20712,7 @@ class CKFetchShareMetadataOperation
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CKFetchShareMetadataOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -20927,9 +20722,9 @@ class CKFetchShareMetadataOperation
     );
   }
 
-  static Pointer<Void> initWithShareURLs(
+  static Pointer initWithShareURLs(
     Pointer<CKFetchShareMetadataOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -20939,7 +20734,7 @@ class CKFetchShareMetadataOperation
     );
   }
 
-  static Pointer<Void> packagesToDestroy(
+  static Pointer packagesToDestroy(
     Pointer<CKFetchShareMetadataOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -20949,7 +20744,7 @@ class CKFetchShareMetadataOperation
     );
   }
 
-  static Pointer<Void> perShareMetadataBlock(
+  static Pointer perShareMetadataBlock(
     Pointer<CKFetchShareMetadataOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -20969,7 +20764,7 @@ class CKFetchShareMetadataOperation
     );
   }
 
-  static Pointer<Void> rootRecordDesiredKeys(
+  static Pointer rootRecordDesiredKeys(
     Pointer<CKFetchShareMetadataOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -20981,7 +20776,7 @@ class CKFetchShareMetadataOperation
 
   static void setErrorsByURL(
     Pointer<CKFetchShareMetadataOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -20993,7 +20788,7 @@ class CKFetchShareMetadataOperation
 
   static void setFetchShareMetadataCompletionBlock(
     Pointer<CKFetchShareMetadataOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -21005,7 +20800,7 @@ class CKFetchShareMetadataOperation
 
   static void setPackagesToDestroy(
     Pointer<CKFetchShareMetadataOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -21017,7 +20812,7 @@ class CKFetchShareMetadataOperation
 
   static void setPerShareMetadataBlock(
     Pointer<CKFetchShareMetadataOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -21029,7 +20824,7 @@ class CKFetchShareMetadataOperation
 
   static void setRootRecordDesiredKeys(
     Pointer<CKFetchShareMetadataOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -21041,7 +20836,7 @@ class CKFetchShareMetadataOperation
 
   static void setShareURLs(
     Pointer<CKFetchShareMetadataOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -21063,7 +20858,7 @@ class CKFetchShareMetadataOperation
     );
   }
 
-  static Pointer<Void> shareURLs(
+  static Pointer shareURLs(
     Pointer<CKFetchShareMetadataOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -21084,11 +20879,9 @@ class CKFetchShareMetadataOperation
   }
 }
 
-/// Objective-C class _CKFetchShareMetadataOperationInfo_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKFetchShareMetadataOperationInfo
     extends Struct<CKFetchShareMetadataOperationInfo> {
@@ -21104,7 +20897,7 @@ class CKFetchShareMetadataOperationInfo
 
   static void encodeWithCoder(
     Pointer<CKFetchShareMetadataOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -21114,9 +20907,9 @@ class CKFetchShareMetadataOperationInfo
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CKFetchShareMetadataOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -21126,7 +20919,7 @@ class CKFetchShareMetadataOperationInfo
     );
   }
 
-  static Pointer<Void> rootRecordDesiredKeys(
+  static Pointer rootRecordDesiredKeys(
     Pointer<CKFetchShareMetadataOperationInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -21138,7 +20931,7 @@ class CKFetchShareMetadataOperationInfo
 
   static void setRootRecordDesiredKeys(
     Pointer<CKFetchShareMetadataOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -21150,7 +20943,7 @@ class CKFetchShareMetadataOperationInfo
 
   static void setShareURLsToFetch(
     Pointer<CKFetchShareMetadataOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -21172,7 +20965,7 @@ class CKFetchShareMetadataOperationInfo
     );
   }
 
-  static Pointer<Void> shareURLsToFetch(
+  static Pointer shareURLsToFetch(
     Pointer<CKFetchShareMetadataOperationInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -21193,11 +20986,9 @@ class CKFetchShareMetadataOperationInfo
   }
 }
 
-/// Objective-C class _CKFetchShareParticipantKeyOperation_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKFetchShareParticipantKeyOperation
     extends Struct<CKFetchShareParticipantKeyOperation> {
@@ -21213,7 +21004,7 @@ class CKFetchShareParticipantKeyOperation
 
   static int CKOperationShouldRun(
     Pointer<CKFetchShareParticipantKeyOperation> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -21223,7 +21014,7 @@ class CKFetchShareParticipantKeyOperation
     );
   }
 
-  static Pointer<Void> activityCreate(
+  static Pointer activityCreate(
     Pointer<CKFetchShareParticipantKeyOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -21233,7 +21024,7 @@ class CKFetchShareParticipantKeyOperation
     );
   }
 
-  static Pointer<Void> baseTokensByShareID(
+  static Pointer baseTokensByShareID(
     Pointer<CKFetchShareParticipantKeyOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -21243,7 +21034,7 @@ class CKFetchShareParticipantKeyOperation
     );
   }
 
-  static Pointer<Void> childRecordIDsByShareID(
+  static Pointer childRecordIDsByShareID(
     Pointer<CKFetchShareParticipantKeyOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -21253,7 +21044,7 @@ class CKFetchShareParticipantKeyOperation
     );
   }
 
-  static Pointer<Void> errorsByShareID(
+  static Pointer errorsByShareID(
     Pointer<CKFetchShareParticipantKeyOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -21265,7 +21056,7 @@ class CKFetchShareParticipantKeyOperation
 
   static void fillFromOperationInfo(
     Pointer<CKFetchShareParticipantKeyOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -21277,7 +21068,7 @@ class CKFetchShareParticipantKeyOperation
 
   static void fillOutOperationInfo(
     Pointer<CKFetchShareParticipantKeyOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -21297,9 +21088,9 @@ class CKFetchShareParticipantKeyOperation
     );
   }
 
-  static Pointer<Void> initWithShareIDs(
+  static Pointer initWithShareIDs(
     Pointer<CKFetchShareParticipantKeyOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -21309,7 +21100,7 @@ class CKFetchShareParticipantKeyOperation
     );
   }
 
-  static Pointer<Void> operationInfoClass(
+  static Pointer operationInfoClass(
     Pointer<CKFetchShareParticipantKeyOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -21331,7 +21122,7 @@ class CKFetchShareParticipantKeyOperation
 
   static void setBaseTokensByShareID(
     Pointer<CKFetchShareParticipantKeyOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -21343,7 +21134,7 @@ class CKFetchShareParticipantKeyOperation
 
   static void setChildRecordIDsByShareID(
     Pointer<CKFetchShareParticipantKeyOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -21355,7 +21146,7 @@ class CKFetchShareParticipantKeyOperation
 
   static void setErrorsByShareID(
     Pointer<CKFetchShareParticipantKeyOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -21367,7 +21158,7 @@ class CKFetchShareParticipantKeyOperation
 
   static void setShareIDs(
     Pointer<CKFetchShareParticipantKeyOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -21379,7 +21170,7 @@ class CKFetchShareParticipantKeyOperation
 
   static void setShareParticipantKeyCompletionBlock(
     Pointer<CKFetchShareParticipantKeyOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -21391,7 +21182,7 @@ class CKFetchShareParticipantKeyOperation
 
   static void setShareParticipantKeyFetchedBlock(
     Pointer<CKFetchShareParticipantKeyOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -21401,7 +21192,7 @@ class CKFetchShareParticipantKeyOperation
     );
   }
 
-  static Pointer<Void> shareIDs(
+  static Pointer shareIDs(
     Pointer<CKFetchShareParticipantKeyOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -21411,7 +21202,7 @@ class CKFetchShareParticipantKeyOperation
     );
   }
 
-  static Pointer<Void> shareParticipantKeyCompletionBlock(
+  static Pointer shareParticipantKeyCompletionBlock(
     Pointer<CKFetchShareParticipantKeyOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -21421,7 +21212,7 @@ class CKFetchShareParticipantKeyOperation
     );
   }
 
-  static Pointer<Void> shareParticipantKeyFetchedBlock(
+  static Pointer shareParticipantKeyFetchedBlock(
     Pointer<CKFetchShareParticipantKeyOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -21432,11 +21223,9 @@ class CKFetchShareParticipantKeyOperation
   }
 }
 
-/// Objective-C class _CKFetchShareParticipantKeyOperationInfo_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKFetchShareParticipantKeyOperationInfo
     extends Struct<CKFetchShareParticipantKeyOperationInfo> {
@@ -21450,7 +21239,7 @@ class CKFetchShareParticipantKeyOperationInfo
         .cast<CKFetchShareParticipantKeyOperationInfo>();
   }
 
-  static Pointer<Void> baseTokensByShareID(
+  static Pointer baseTokensByShareID(
     Pointer<CKFetchShareParticipantKeyOperationInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -21460,7 +21249,7 @@ class CKFetchShareParticipantKeyOperationInfo
     );
   }
 
-  static Pointer<Void> childRecordIDsByShareID(
+  static Pointer childRecordIDsByShareID(
     Pointer<CKFetchShareParticipantKeyOperationInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -21472,7 +21261,7 @@ class CKFetchShareParticipantKeyOperationInfo
 
   static void encodeWithCoder(
     Pointer<CKFetchShareParticipantKeyOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -21482,9 +21271,9 @@ class CKFetchShareParticipantKeyOperationInfo
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CKFetchShareParticipantKeyOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -21496,7 +21285,7 @@ class CKFetchShareParticipantKeyOperationInfo
 
   static void setBaseTokensByShareID(
     Pointer<CKFetchShareParticipantKeyOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -21508,7 +21297,7 @@ class CKFetchShareParticipantKeyOperationInfo
 
   static void setChildRecordIDsByShareID(
     Pointer<CKFetchShareParticipantKeyOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -21520,7 +21309,7 @@ class CKFetchShareParticipantKeyOperationInfo
 
   static void setShareIDs(
     Pointer<CKFetchShareParticipantKeyOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -21530,7 +21319,7 @@ class CKFetchShareParticipantKeyOperationInfo
     );
   }
 
-  static Pointer<Void> shareIDs(
+  static Pointer shareIDs(
     Pointer<CKFetchShareParticipantKeyOperationInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -21541,11 +21330,9 @@ class CKFetchShareParticipantKeyOperationInfo
   }
 }
 
-/// Objective-C class _CKFetchShareParticipantsOperation_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKFetchShareParticipantsOperation
     extends Struct<CKFetchShareParticipantsOperation> {
@@ -21561,7 +21348,7 @@ class CKFetchShareParticipantsOperation
 
   static int CKOperationShouldRun(
     Pointer<CKFetchShareParticipantsOperation> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -21571,7 +21358,7 @@ class CKFetchShareParticipantsOperation
     );
   }
 
-  static Pointer<Void> activityCreate(
+  static Pointer activityCreate(
     Pointer<CKFetchShareParticipantsOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -21581,7 +21368,7 @@ class CKFetchShareParticipantsOperation
     );
   }
 
-  static Pointer<Void> discoveredUserIdentities(
+  static Pointer discoveredUserIdentities(
     Pointer<CKFetchShareParticipantsOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -21591,7 +21378,7 @@ class CKFetchShareParticipantsOperation
     );
   }
 
-  static Pointer<Void> fetchShareParticipantsCompletionBlock(
+  static Pointer fetchShareParticipantsCompletionBlock(
     Pointer<CKFetchShareParticipantsOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -21603,7 +21390,7 @@ class CKFetchShareParticipantsOperation
 
   static void fillFromOperationInfo(
     Pointer<CKFetchShareParticipantsOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -21615,7 +21402,7 @@ class CKFetchShareParticipantsOperation
 
   static void fillOutOperationInfo(
     Pointer<CKFetchShareParticipantsOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -21635,7 +21422,7 @@ class CKFetchShareParticipantsOperation
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CKFetchShareParticipantsOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -21645,9 +21432,9 @@ class CKFetchShareParticipantsOperation
     );
   }
 
-  static Pointer<Void> initWithUserIdentityLookupInfos(
+  static Pointer initWithUserIdentityLookupInfos(
     Pointer<CKFetchShareParticipantsOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -21657,7 +21444,7 @@ class CKFetchShareParticipantsOperation
     );
   }
 
-  static Pointer<Void> lookupErrors(
+  static Pointer lookupErrors(
     Pointer<CKFetchShareParticipantsOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -21679,7 +21466,7 @@ class CKFetchShareParticipantsOperation
 
   static void setDiscoveredUserIdentities(
     Pointer<CKFetchShareParticipantsOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -21691,7 +21478,7 @@ class CKFetchShareParticipantsOperation
 
   static void setFetchShareParticipantsCompletionBlock(
     Pointer<CKFetchShareParticipantsOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -21703,7 +21490,7 @@ class CKFetchShareParticipantsOperation
 
   static void setLookupErrors(
     Pointer<CKFetchShareParticipantsOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -21715,7 +21502,7 @@ class CKFetchShareParticipantsOperation
 
   static void setShareParticipantFetchedBlock(
     Pointer<CKFetchShareParticipantsOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -21727,7 +21514,7 @@ class CKFetchShareParticipantsOperation
 
   static void setUserIdentityLookupInfos(
     Pointer<CKFetchShareParticipantsOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -21737,7 +21524,7 @@ class CKFetchShareParticipantsOperation
     );
   }
 
-  static Pointer<Void> shareParticipantFetchedBlock(
+  static Pointer shareParticipantFetchedBlock(
     Pointer<CKFetchShareParticipantsOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -21747,7 +21534,7 @@ class CKFetchShareParticipantsOperation
     );
   }
 
-  static Pointer<Void> userIdentityLookupInfos(
+  static Pointer userIdentityLookupInfos(
     Pointer<CKFetchShareParticipantsOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -21758,11 +21545,9 @@ class CKFetchShareParticipantsOperation
   }
 }
 
-/// Objective-C class _CKFetchShareParticipantsOperationInfo_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKFetchShareParticipantsOperationInfo
     extends Struct<CKFetchShareParticipantsOperationInfo> {
@@ -21778,7 +21563,7 @@ class CKFetchShareParticipantsOperationInfo
 
   static void encodeWithCoder(
     Pointer<CKFetchShareParticipantsOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -21788,9 +21573,9 @@ class CKFetchShareParticipantsOperationInfo
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CKFetchShareParticipantsOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -21802,7 +21587,7 @@ class CKFetchShareParticipantsOperationInfo
 
   static void setUserIdentityLookupInfos(
     Pointer<CKFetchShareParticipantsOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -21812,7 +21597,7 @@ class CKFetchShareParticipantsOperationInfo
     );
   }
 
-  static Pointer<Void> userIdentityLookupInfos(
+  static Pointer userIdentityLookupInfos(
     Pointer<CKFetchShareParticipantsOperationInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -21823,11 +21608,9 @@ class CKFetchShareParticipantsOperationInfo
   }
 }
 
-/// Objective-C class _CKFetchSubscriptionsOperation_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKFetchSubscriptionsOperation
     extends Struct<CKFetchSubscriptionsOperation> {
@@ -21843,7 +21626,7 @@ class CKFetchSubscriptionsOperation
 
   static int CKOperationShouldRun(
     Pointer<CKFetchSubscriptionsOperation> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -21853,7 +21636,7 @@ class CKFetchSubscriptionsOperation
     );
   }
 
-  static Pointer<Void> activityCreate(
+  static Pointer activityCreate(
     Pointer<CKFetchSubscriptionsOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -21863,7 +21646,7 @@ class CKFetchSubscriptionsOperation
     );
   }
 
-  static Pointer<Void> fetchSubscriptionCompletionBlock(
+  static Pointer fetchSubscriptionCompletionBlock(
     Pointer<CKFetchSubscriptionsOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -21875,7 +21658,7 @@ class CKFetchSubscriptionsOperation
 
   static void fillFromOperationInfo(
     Pointer<CKFetchSubscriptionsOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -21887,7 +21670,7 @@ class CKFetchSubscriptionsOperation
 
   static void fillOutOperationInfo(
     Pointer<CKFetchSubscriptionsOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -21907,7 +21690,7 @@ class CKFetchSubscriptionsOperation
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CKFetchSubscriptionsOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -21917,9 +21700,9 @@ class CKFetchSubscriptionsOperation
     );
   }
 
-  static Pointer<Void> initWithSubscriptionIDs(
+  static Pointer initWithSubscriptionIDs(
     Pointer<CKFetchSubscriptionsOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -21951,7 +21734,7 @@ class CKFetchSubscriptionsOperation
 
   static void setFetchSubscriptionCompletionBlock(
     Pointer<CKFetchSubscriptionsOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -21975,7 +21758,7 @@ class CKFetchSubscriptionsOperation
 
   static void setSubscriptionErrors(
     Pointer<CKFetchSubscriptionsOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -21987,7 +21770,7 @@ class CKFetchSubscriptionsOperation
 
   static void setSubscriptionIDs(
     Pointer<CKFetchSubscriptionsOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -21999,7 +21782,7 @@ class CKFetchSubscriptionsOperation
 
   static void setSubscriptions(
     Pointer<CKFetchSubscriptionsOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -22011,7 +21794,7 @@ class CKFetchSubscriptionsOperation
 
   static void setSubscriptionsBySubscriptionID(
     Pointer<CKFetchSubscriptionsOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -22021,7 +21804,7 @@ class CKFetchSubscriptionsOperation
     );
   }
 
-  static Pointer<Void> subscriptionErrors(
+  static Pointer subscriptionErrors(
     Pointer<CKFetchSubscriptionsOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -22031,7 +21814,7 @@ class CKFetchSubscriptionsOperation
     );
   }
 
-  static Pointer<Void> subscriptionIDs(
+  static Pointer subscriptionIDs(
     Pointer<CKFetchSubscriptionsOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -22041,7 +21824,7 @@ class CKFetchSubscriptionsOperation
     );
   }
 
-  static Pointer<Void> subscriptions(
+  static Pointer subscriptions(
     Pointer<CKFetchSubscriptionsOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -22051,7 +21834,7 @@ class CKFetchSubscriptionsOperation
     );
   }
 
-  static Pointer<Void> subscriptionsBySubscriptionID(
+  static Pointer subscriptionsBySubscriptionID(
     Pointer<CKFetchSubscriptionsOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -22062,11 +21845,9 @@ class CKFetchSubscriptionsOperation
   }
 }
 
-/// Objective-C class _CKFetchSubscriptionsOperationInfo_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKFetchSubscriptionsOperationInfo
     extends Struct<CKFetchSubscriptionsOperationInfo> {
@@ -22082,7 +21863,7 @@ class CKFetchSubscriptionsOperationInfo
 
   static void encodeWithCoder(
     Pointer<CKFetchSubscriptionsOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -22092,9 +21873,9 @@ class CKFetchSubscriptionsOperationInfo
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CKFetchSubscriptionsOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -22128,7 +21909,7 @@ class CKFetchSubscriptionsOperationInfo
 
   static void setSubscriptionIDs(
     Pointer<CKFetchSubscriptionsOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -22138,7 +21919,7 @@ class CKFetchSubscriptionsOperationInfo
     );
   }
 
-  static Pointer<Void> subscriptionIDs(
+  static Pointer subscriptionIDs(
     Pointer<CKFetchSubscriptionsOperationInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -22149,11 +21930,9 @@ class CKFetchSubscriptionsOperationInfo
   }
 }
 
-/// Objective-C class _CKFetchUserQuotaOperation_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKFetchUserQuotaOperation extends Struct<CKFetchUserQuotaOperation> {
   factory CKFetchUserQuotaOperation._() {
@@ -22166,7 +21945,7 @@ class CKFetchUserQuotaOperation extends Struct<CKFetchUserQuotaOperation> {
         .cast<CKFetchUserQuotaOperation>();
   }
 
-  static Pointer<Void> activityCreate(
+  static Pointer activityCreate(
     Pointer<CKFetchUserQuotaOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -22176,7 +21955,7 @@ class CKFetchUserQuotaOperation extends Struct<CKFetchUserQuotaOperation> {
     );
   }
 
-  static Pointer<Void> fetchUserQuotaCompletionBlock(
+  static Pointer fetchUserQuotaCompletionBlock(
     Pointer<CKFetchUserQuotaOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -22196,7 +21975,7 @@ class CKFetchUserQuotaOperation extends Struct<CKFetchUserQuotaOperation> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CKFetchUserQuotaOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -22206,7 +21985,7 @@ class CKFetchUserQuotaOperation extends Struct<CKFetchUserQuotaOperation> {
     );
   }
 
-  static Pointer<Void> operationInfoClass(
+  static Pointer operationInfoClass(
     Pointer<CKFetchUserQuotaOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -22238,7 +22017,7 @@ class CKFetchUserQuotaOperation extends Struct<CKFetchUserQuotaOperation> {
 
   static void setFetchUserQuotaCompletionBlock(
     Pointer<CKFetchUserQuotaOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -22261,11 +22040,9 @@ class CKFetchUserQuotaOperation extends Struct<CKFetchUserQuotaOperation> {
   }
 }
 
-/// Objective-C class _CKFetchUserQuotaOperationResult_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKFetchUserQuotaOperationResult
     extends Struct<CKFetchUserQuotaOperationResult> {
@@ -22279,7 +22056,7 @@ class CKFetchUserQuotaOperationResult
         .cast<CKFetchUserQuotaOperationResult>();
   }
 
-  static Pointer<Void> CKDescriptionPropertiesWithPublic(
+  static Pointer CKDescriptionPropertiesWithPublic(
     Pointer<CKFetchUserQuotaOperationResult> _self,
     int arg, {
     @required int private,
@@ -22296,9 +22073,9 @@ class CKFetchUserQuotaOperationResult
     );
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<CKFetchUserQuotaOperationResult> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -22310,7 +22087,7 @@ class CKFetchUserQuotaOperationResult
 
   static void encodeWithCoder(
     Pointer<CKFetchUserQuotaOperationResult> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -22320,9 +22097,9 @@ class CKFetchUserQuotaOperationResult
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CKFetchUserQuotaOperationResult> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -22355,11 +22132,9 @@ class CKFetchUserQuotaOperationResult
   }
 }
 
-/// Objective-C class _CKFetchWebAuthTokenOperation_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKFetchWebAuthTokenOperation
     extends Struct<CKFetchWebAuthTokenOperation> {
@@ -22373,7 +22148,7 @@ class CKFetchWebAuthTokenOperation
         .cast<CKFetchWebAuthTokenOperation>();
   }
 
-  static Pointer<Void> APIToken(
+  static Pointer APIToken(
     Pointer<CKFetchWebAuthTokenOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -22385,7 +22160,7 @@ class CKFetchWebAuthTokenOperation
 
   static int CKOperationShouldRun(
     Pointer<CKFetchWebAuthTokenOperation> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -22395,7 +22170,7 @@ class CKFetchWebAuthTokenOperation
     );
   }
 
-  static Pointer<Void> activityCreate(
+  static Pointer activityCreate(
     Pointer<CKFetchWebAuthTokenOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -22405,7 +22180,7 @@ class CKFetchWebAuthTokenOperation
     );
   }
 
-  static Pointer<Void> fetchWebAuthTokenCompletionBlock(
+  static Pointer fetchWebAuthTokenCompletionBlock(
     Pointer<CKFetchWebAuthTokenOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -22417,7 +22192,7 @@ class CKFetchWebAuthTokenOperation
 
   static void fillFromOperationInfo(
     Pointer<CKFetchWebAuthTokenOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -22429,7 +22204,7 @@ class CKFetchWebAuthTokenOperation
 
   static void fillOutOperationInfo(
     Pointer<CKFetchWebAuthTokenOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -22449,7 +22224,7 @@ class CKFetchWebAuthTokenOperation
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CKFetchWebAuthTokenOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -22459,9 +22234,9 @@ class CKFetchWebAuthTokenOperation
     );
   }
 
-  static Pointer<Void> initWithAPIToken(
+  static Pointer initWithAPIToken(
     Pointer<CKFetchWebAuthTokenOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -22471,7 +22246,7 @@ class CKFetchWebAuthTokenOperation
     );
   }
 
-  static Pointer<Void> operationInfoClass(
+  static Pointer operationInfoClass(
     Pointer<CKFetchWebAuthTokenOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -22493,7 +22268,7 @@ class CKFetchWebAuthTokenOperation
 
   static void setAPIToken(
     Pointer<CKFetchWebAuthTokenOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -22505,7 +22280,7 @@ class CKFetchWebAuthTokenOperation
 
   static void setFetchWebAuthTokenCompletionBlock(
     Pointer<CKFetchWebAuthTokenOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -22517,7 +22292,7 @@ class CKFetchWebAuthTokenOperation
 
   static void setWebAuthToken(
     Pointer<CKFetchWebAuthTokenOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -22527,7 +22302,7 @@ class CKFetchWebAuthTokenOperation
     );
   }
 
-  static Pointer<Void> webAuthToken(
+  static Pointer webAuthToken(
     Pointer<CKFetchWebAuthTokenOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -22538,11 +22313,9 @@ class CKFetchWebAuthTokenOperation
   }
 }
 
-/// Objective-C class _CKFetchWebAuthTokenOperationInfo_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKFetchWebAuthTokenOperationInfo
     extends Struct<CKFetchWebAuthTokenOperationInfo> {
@@ -22556,7 +22329,7 @@ class CKFetchWebAuthTokenOperationInfo
         .cast<CKFetchWebAuthTokenOperationInfo>();
   }
 
-  static Pointer<Void> APIToken(
+  static Pointer APIToken(
     Pointer<CKFetchWebAuthTokenOperationInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -22568,7 +22341,7 @@ class CKFetchWebAuthTokenOperationInfo
 
   static void encodeWithCoder(
     Pointer<CKFetchWebAuthTokenOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -22578,9 +22351,9 @@ class CKFetchWebAuthTokenOperationInfo
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CKFetchWebAuthTokenOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -22592,7 +22365,7 @@ class CKFetchWebAuthTokenOperationInfo
 
   static void setAPIToken(
     Pointer<CKFetchWebAuthTokenOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -22603,11 +22376,9 @@ class CKFetchWebAuthTokenOperationInfo
   }
 }
 
-/// Objective-C class _CKFetchWebAuthTokenOperationResult_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKFetchWebAuthTokenOperationResult
     extends Struct<CKFetchWebAuthTokenOperationResult> {
@@ -22621,7 +22392,7 @@ class CKFetchWebAuthTokenOperationResult
         .cast<CKFetchWebAuthTokenOperationResult>();
   }
 
-  static Pointer<Void> CKDescriptionPropertiesWithPublic(
+  static Pointer CKDescriptionPropertiesWithPublic(
     Pointer<CKFetchWebAuthTokenOperationResult> _self,
     int arg, {
     @required int private,
@@ -22638,9 +22409,9 @@ class CKFetchWebAuthTokenOperationResult
     );
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<CKFetchWebAuthTokenOperationResult> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -22652,7 +22423,7 @@ class CKFetchWebAuthTokenOperationResult
 
   static void encodeWithCoder(
     Pointer<CKFetchWebAuthTokenOperationResult> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -22662,9 +22433,9 @@ class CKFetchWebAuthTokenOperationResult
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CKFetchWebAuthTokenOperationResult> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -22676,7 +22447,7 @@ class CKFetchWebAuthTokenOperationResult
 
   static void setWebAuthToken(
     Pointer<CKFetchWebAuthTokenOperationResult> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -22686,7 +22457,7 @@ class CKFetchWebAuthTokenOperationResult
     );
   }
 
-  static Pointer<Void> webAuthToken(
+  static Pointer webAuthToken(
     Pointer<CKFetchWebAuthTokenOperationResult> _self,
   ) {
     _openDynamicLibrary();
@@ -22697,11 +22468,9 @@ class CKFetchWebAuthTokenOperationResult
   }
 }
 
-/// Objective-C class _CKFetchWhitelistedBundleIDsOperation_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKFetchWhitelistedBundleIDsOperation
     extends Struct<CKFetchWhitelistedBundleIDsOperation> {
@@ -22715,7 +22484,7 @@ class CKFetchWhitelistedBundleIDsOperation
         .cast<CKFetchWhitelistedBundleIDsOperation>();
   }
 
-  static Pointer<Void> activityCreate(
+  static Pointer activityCreate(
     Pointer<CKFetchWhitelistedBundleIDsOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -22725,7 +22494,7 @@ class CKFetchWhitelistedBundleIDsOperation
     );
   }
 
-  static Pointer<Void> bundleIDs(
+  static Pointer bundleIDs(
     Pointer<CKFetchWhitelistedBundleIDsOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -22735,7 +22504,7 @@ class CKFetchWhitelistedBundleIDsOperation
     );
   }
 
-  static Pointer<Void> fetchWhitelistedBundleIDsCompletionBlock(
+  static Pointer fetchWhitelistedBundleIDsCompletionBlock(
     Pointer<CKFetchWhitelistedBundleIDsOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -22755,7 +22524,7 @@ class CKFetchWhitelistedBundleIDsOperation
     );
   }
 
-  static Pointer<Void> operationInfoClass(
+  static Pointer operationInfoClass(
     Pointer<CKFetchWhitelistedBundleIDsOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -22777,7 +22546,7 @@ class CKFetchWhitelistedBundleIDsOperation
 
   static void setBundleIDs(
     Pointer<CKFetchWhitelistedBundleIDsOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -22789,7 +22558,7 @@ class CKFetchWhitelistedBundleIDsOperation
 
   static void setFetchWhitelistedBundleIDsCompletionBlock(
     Pointer<CKFetchWhitelistedBundleIDsOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -22800,11 +22569,9 @@ class CKFetchWhitelistedBundleIDsOperation
   }
 }
 
-/// Objective-C class _CKFetchWhitelistedBundleIDsOperationResult_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKFetchWhitelistedBundleIDsOperationResult
     extends Struct<CKFetchWhitelistedBundleIDsOperationResult> {
@@ -22818,7 +22585,7 @@ class CKFetchWhitelistedBundleIDsOperationResult
         .cast<CKFetchWhitelistedBundleIDsOperationResult>();
   }
 
-  static Pointer<Void> CKDescriptionPropertiesWithPublic(
+  static Pointer CKDescriptionPropertiesWithPublic(
     Pointer<CKFetchWhitelistedBundleIDsOperationResult> _self,
     int arg, {
     @required int private,
@@ -22835,7 +22602,7 @@ class CKFetchWhitelistedBundleIDsOperationResult
     );
   }
 
-  static Pointer<Void> bundleIDs(
+  static Pointer bundleIDs(
     Pointer<CKFetchWhitelistedBundleIDsOperationResult> _self,
   ) {
     _openDynamicLibrary();
@@ -22845,9 +22612,9 @@ class CKFetchWhitelistedBundleIDsOperationResult
     );
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<CKFetchWhitelistedBundleIDsOperationResult> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -22859,7 +22626,7 @@ class CKFetchWhitelistedBundleIDsOperationResult
 
   static void encodeWithCoder(
     Pointer<CKFetchWhitelistedBundleIDsOperationResult> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -22869,9 +22636,9 @@ class CKFetchWhitelistedBundleIDsOperationResult
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CKFetchWhitelistedBundleIDsOperationResult> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -22883,7 +22650,7 @@ class CKFetchWhitelistedBundleIDsOperationResult
 
   static void setBundleIDs(
     Pointer<CKFetchWhitelistedBundleIDsOperationResult> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -22894,11 +22661,9 @@ class CKFetchWhitelistedBundleIDsOperationResult
   }
 }
 
-/// Objective-C class _CKFileMetadata_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKFileMetadata extends Struct<CKFileMetadata> {
   factory CKFileMetadata._() {
@@ -22909,7 +22674,7 @@ class CKFileMetadata extends Struct<CKFileMetadata> {
     return _objc.allocate("CKFileMetadata").cast<CKFileMetadata>();
   }
 
-  static Pointer<Void> deviceID(
+  static Pointer deviceID(
     Pointer<CKFileMetadata> _self,
   ) {
     _openDynamicLibrary();
@@ -22921,7 +22686,7 @@ class CKFileMetadata extends Struct<CKFileMetadata> {
 
   static void encodeWithCoder(
     Pointer<CKFileMetadata> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -22931,7 +22696,7 @@ class CKFileMetadata extends Struct<CKFileMetadata> {
     );
   }
 
-  static Pointer<Void> fileID(
+  static Pointer fileID(
     Pointer<CKFileMetadata> _self,
   ) {
     _openDynamicLibrary();
@@ -22941,7 +22706,7 @@ class CKFileMetadata extends Struct<CKFileMetadata> {
     );
   }
 
-  static Pointer<Void> fileSize(
+  static Pointer fileSize(
     Pointer<CKFileMetadata> _self,
   ) {
     _openDynamicLibrary();
@@ -22951,7 +22716,7 @@ class CKFileMetadata extends Struct<CKFileMetadata> {
     );
   }
 
-  static Pointer<Void> generationID(
+  static Pointer generationID(
     Pointer<CKFileMetadata> _self,
   ) {
     _openDynamicLibrary();
@@ -22961,9 +22726,9 @@ class CKFileMetadata extends Struct<CKFileMetadata> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CKFileMetadata> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -22973,7 +22738,7 @@ class CKFileMetadata extends Struct<CKFileMetadata> {
     );
   }
 
-  static Pointer<Void> modTimeInSeconds(
+  static Pointer modTimeInSeconds(
     Pointer<CKFileMetadata> _self,
   ) {
     _openDynamicLibrary();
@@ -22985,7 +22750,7 @@ class CKFileMetadata extends Struct<CKFileMetadata> {
 
   static void setDeviceID(
     Pointer<CKFileMetadata> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -22997,7 +22762,7 @@ class CKFileMetadata extends Struct<CKFileMetadata> {
 
   static void setFileID(
     Pointer<CKFileMetadata> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -23009,7 +22774,7 @@ class CKFileMetadata extends Struct<CKFileMetadata> {
 
   static void setFileSize(
     Pointer<CKFileMetadata> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -23021,7 +22786,7 @@ class CKFileMetadata extends Struct<CKFileMetadata> {
 
   static void setGenerationID(
     Pointer<CKFileMetadata> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -23033,7 +22798,7 @@ class CKFileMetadata extends Struct<CKFileMetadata> {
 
   static void setModTimeInSeconds(
     Pointer<CKFileMetadata> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -23044,11 +22809,9 @@ class CKFileMetadata extends Struct<CKFileMetadata> {
   }
 }
 
-/// Objective-C class _CKFileOpenInfo_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKFileOpenInfo extends Struct<CKFileOpenInfo> {
   factory CKFileOpenInfo._() {
@@ -23059,7 +22822,7 @@ class CKFileOpenInfo extends Struct<CKFileOpenInfo> {
     return _objc.allocate("CKFileOpenInfo").cast<CKFileOpenInfo>();
   }
 
-  static Pointer<Void> CKPropertiesDescription(
+  static Pointer CKPropertiesDescription(
     Pointer<CKFileOpenInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -23069,7 +22832,7 @@ class CKFileOpenInfo extends Struct<CKFileOpenInfo> {
     );
   }
 
-  static Pointer<Void> UUID(
+  static Pointer UUID(
     Pointer<CKFileOpenInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -23079,7 +22842,7 @@ class CKFileOpenInfo extends Struct<CKFileOpenInfo> {
     );
   }
 
-  static Pointer<Void> clientOpenedFileHandle(
+  static Pointer clientOpenedFileHandle(
     Pointer<CKFileOpenInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -23089,7 +22852,7 @@ class CKFileOpenInfo extends Struct<CKFileOpenInfo> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CKFileOpenInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -23099,7 +22862,7 @@ class CKFileOpenInfo extends Struct<CKFileOpenInfo> {
     );
   }
 
-  static Pointer<Void> deviceID(
+  static Pointer deviceID(
     Pointer<CKFileOpenInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -23111,7 +22874,7 @@ class CKFileOpenInfo extends Struct<CKFileOpenInfo> {
 
   static void encodeWithCoder(
     Pointer<CKFileOpenInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -23121,7 +22884,7 @@ class CKFileOpenInfo extends Struct<CKFileOpenInfo> {
     );
   }
 
-  static Pointer<Void> fileID(
+  static Pointer fileID(
     Pointer<CKFileOpenInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -23131,7 +22894,7 @@ class CKFileOpenInfo extends Struct<CKFileOpenInfo> {
     );
   }
 
-  static Pointer<Void> generationID(
+  static Pointer generationID(
     Pointer<CKFileOpenInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -23141,9 +22904,9 @@ class CKFileOpenInfo extends Struct<CKFileOpenInfo> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CKFileOpenInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -23153,7 +22916,7 @@ class CKFileOpenInfo extends Struct<CKFileOpenInfo> {
     );
   }
 
-  static Pointer<Void> path(
+  static Pointer path(
     Pointer<CKFileOpenInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -23165,7 +22928,7 @@ class CKFileOpenInfo extends Struct<CKFileOpenInfo> {
 
   static void setClientOpenedFileHandle(
     Pointer<CKFileOpenInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -23177,7 +22940,7 @@ class CKFileOpenInfo extends Struct<CKFileOpenInfo> {
 
   static void setDeviceID(
     Pointer<CKFileOpenInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -23189,7 +22952,7 @@ class CKFileOpenInfo extends Struct<CKFileOpenInfo> {
 
   static void setFileID(
     Pointer<CKFileOpenInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -23201,7 +22964,7 @@ class CKFileOpenInfo extends Struct<CKFileOpenInfo> {
 
   static void setGenerationID(
     Pointer<CKFileOpenInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -23213,7 +22976,7 @@ class CKFileOpenInfo extends Struct<CKFileOpenInfo> {
 
   static void setPath(
     Pointer<CKFileOpenInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -23237,7 +23000,7 @@ class CKFileOpenInfo extends Struct<CKFileOpenInfo> {
 
   static void setUUID(
     Pointer<CKFileOpenInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -23258,11 +23021,9 @@ class CKFileOpenInfo extends Struct<CKFileOpenInfo> {
   }
 }
 
-/// Objective-C class _CKFileOpenResult_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKFileOpenResult extends Struct<CKFileOpenResult> {
   factory CKFileOpenResult._() {
@@ -23285,7 +23046,7 @@ class CKFileOpenResult extends Struct<CKFileOpenResult> {
 
   static void encodeWithCoder(
     Pointer<CKFileOpenResult> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -23295,7 +23056,7 @@ class CKFileOpenResult extends Struct<CKFileOpenResult> {
     );
   }
 
-  static Pointer<Void> encryptedFileHandle(
+  static Pointer encryptedFileHandle(
     Pointer<CKFileOpenResult> _self,
   ) {
     _openDynamicLibrary();
@@ -23305,7 +23066,7 @@ class CKFileOpenResult extends Struct<CKFileOpenResult> {
     );
   }
 
-  static Pointer<Void> fileHandle(
+  static Pointer fileHandle(
     Pointer<CKFileOpenResult> _self,
   ) {
     _openDynamicLibrary();
@@ -23315,7 +23076,7 @@ class CKFileOpenResult extends Struct<CKFileOpenResult> {
     );
   }
 
-  static Pointer<Void> fileSize(
+  static Pointer fileSize(
     Pointer<CKFileOpenResult> _self,
   ) {
     _openDynamicLibrary();
@@ -23325,9 +23086,9 @@ class CKFileOpenResult extends Struct<CKFileOpenResult> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CKFileOpenResult> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -23339,7 +23100,7 @@ class CKFileOpenResult extends Struct<CKFileOpenResult> {
 
   static void setEncryptedFileHandle(
     Pointer<CKFileOpenResult> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -23351,7 +23112,7 @@ class CKFileOpenResult extends Struct<CKFileOpenResult> {
 
   static void setFileHandle(
     Pointer<CKFileOpenResult> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -23363,7 +23124,7 @@ class CKFileOpenResult extends Struct<CKFileOpenResult> {
 
   static void setFileSize(
     Pointer<CKFileOpenResult> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -23374,11 +23135,9 @@ class CKFileOpenResult extends Struct<CKFileOpenResult> {
   }
 }
 
-/// Objective-C class _CKFlipFlopPredicateValidator_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKFlipFlopPredicateValidator
     extends Struct<CKFlipFlopPredicateValidator> {
@@ -23392,7 +23151,7 @@ class CKFlipFlopPredicateValidator
         .cast<CKFlipFlopPredicateValidator>();
   }
 
-  static Pointer<Void> CKPropertiesDescription(
+  static Pointer CKPropertiesDescription(
     Pointer<CKFlipFlopPredicateValidator> _self,
   ) {
     _openDynamicLibrary();
@@ -23402,9 +23161,9 @@ class CKFlipFlopPredicateValidator
     );
   }
 
-  static Pointer<Void> initWithValidator(
+  static Pointer initWithValidator(
     Pointer<CKFlipFlopPredicateValidator> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -23416,7 +23175,7 @@ class CKFlipFlopPredicateValidator
 
   static void setValidator(
     Pointer<CKFlipFlopPredicateValidator> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -23428,8 +23187,8 @@ class CKFlipFlopPredicateValidator
 
   static int validate(
     Pointer<CKFlipFlopPredicateValidator> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -23440,7 +23199,7 @@ class CKFlipFlopPredicateValidator
     );
   }
 
-  static Pointer<Void> validator(
+  static Pointer validator(
     Pointer<CKFlipFlopPredicateValidator> _self,
   ) {
     _openDynamicLibrary();
@@ -23451,11 +23210,9 @@ class CKFlipFlopPredicateValidator
   }
 }
 
-/// Objective-C class _CKFlowControl_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKFlowControl extends Struct<CKFlowControl> {
   factory CKFlowControl._() {
@@ -23466,7 +23223,7 @@ class CKFlowControl extends Struct<CKFlowControl> {
     return _objc.allocate("CKFlowControl").cast<CKFlowControl>();
   }
 
-  static Pointer<Void> CKPropertiesDescription(
+  static Pointer CKPropertiesDescription(
     Pointer<CKFlowControl> _self,
   ) {
     _openDynamicLibrary();
@@ -23508,7 +23265,7 @@ class CKFlowControl extends Struct<CKFlowControl> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CKFlowControl> _self,
   ) {
     _openDynamicLibrary();
@@ -23521,7 +23278,7 @@ class CKFlowControl extends Struct<CKFlowControl> {
   static void expendWithCost(
     Pointer<CKFlowControl> _self,
     double arg, {
-    @required Pointer<Void> reportableError,
+    @required Pointer reportableError,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_float64_p_returns_void(
@@ -23532,7 +23289,7 @@ class CKFlowControl extends Struct<CKFlowControl> {
     );
   }
 
-  static Pointer<Void> initWithBudgetCap(
+  static Pointer initWithBudgetCap(
     Pointer<CKFlowControl> _self,
     int arg, {
     @required double withMaximumThrottleTime,
@@ -23559,7 +23316,7 @@ class CKFlowControl extends Struct<CKFlowControl> {
     );
   }
 
-  static Pointer<Void> lastRegeneration(
+  static Pointer lastRegeneration(
     Pointer<CKFlowControl> _self,
   ) {
     _openDynamicLibrary();
@@ -23569,7 +23326,7 @@ class CKFlowControl extends Struct<CKFlowControl> {
     );
   }
 
-  static Pointer<Void> lastReportableError(
+  static Pointer lastReportableError(
     Pointer<CKFlowControl> _self,
   ) {
     _openDynamicLibrary();
@@ -23645,7 +23402,7 @@ class CKFlowControl extends Struct<CKFlowControl> {
 
   static void setLastRegeneration(
     Pointer<CKFlowControl> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -23657,7 +23414,7 @@ class CKFlowControl extends Struct<CKFlowControl> {
 
   static void setLastReportableError(
     Pointer<CKFlowControl> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -23692,11 +23449,9 @@ class CKFlowControl extends Struct<CKFlowControl> {
   }
 }
 
-/// Objective-C class _CKFunctionExpressionValidator_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKFunctionExpressionValidator
     extends Struct<CKFunctionExpressionValidator> {
@@ -23710,7 +23465,7 @@ class CKFunctionExpressionValidator
         .cast<CKFunctionExpressionValidator>();
   }
 
-  static Pointer<Void> CKPropertiesDescription(
+  static Pointer CKPropertiesDescription(
     Pointer<CKFunctionExpressionValidator> _self,
   ) {
     _openDynamicLibrary();
@@ -23720,7 +23475,7 @@ class CKFunctionExpressionValidator
     );
   }
 
-  static Pointer<Void> argumentValidators(
+  static Pointer argumentValidators(
     Pointer<CKFunctionExpressionValidator> _self,
   ) {
     _openDynamicLibrary();
@@ -23730,7 +23485,7 @@ class CKFunctionExpressionValidator
     );
   }
 
-  static Pointer<Void> functionName(
+  static Pointer functionName(
     Pointer<CKFunctionExpressionValidator> _self,
   ) {
     _openDynamicLibrary();
@@ -23740,10 +23495,10 @@ class CKFunctionExpressionValidator
     );
   }
 
-  static Pointer<Void> initWithFunctionName(
+  static Pointer initWithFunctionName(
     Pointer<CKFunctionExpressionValidator> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> validators,
+    Pointer arg, {
+    @required Pointer validators,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -23756,7 +23511,7 @@ class CKFunctionExpressionValidator
 
   static void setArgumentValidators(
     Pointer<CKFunctionExpressionValidator> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -23768,7 +23523,7 @@ class CKFunctionExpressionValidator
 
   static void setFunctionName(
     Pointer<CKFunctionExpressionValidator> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -23780,8 +23535,8 @@ class CKFunctionExpressionValidator
 
   static int validate(
     Pointer<CKFunctionExpressionValidator> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -23793,11 +23548,9 @@ class CKFunctionExpressionValidator
   }
 }
 
-/// Objective-C class _CKInitiateParticipantVettingOperation_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKInitiateParticipantVettingOperation
     extends Struct<CKInitiateParticipantVettingOperation> {
@@ -23813,7 +23566,7 @@ class CKInitiateParticipantVettingOperation
 
   static int CKOperationShouldRun(
     Pointer<CKInitiateParticipantVettingOperation> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -23823,7 +23576,7 @@ class CKInitiateParticipantVettingOperation
     );
   }
 
-  static Pointer<Void> address(
+  static Pointer address(
     Pointer<CKInitiateParticipantVettingOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -23835,7 +23588,7 @@ class CKInitiateParticipantVettingOperation
 
   static void fillFromOperationInfo(
     Pointer<CKInitiateParticipantVettingOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -23847,7 +23600,7 @@ class CKInitiateParticipantVettingOperation
 
   static void fillOutOperationInfo(
     Pointer<CKInitiateParticipantVettingOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -23857,11 +23610,11 @@ class CKInitiateParticipantVettingOperation
     );
   }
 
-  static Pointer<Void> initWithShareMetadata(
+  static Pointer initWithShareMetadata(
     Pointer<CKInitiateParticipantVettingOperation> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> participantID,
-    @required Pointer<Void> address,
+    Pointer arg, {
+    @required Pointer participantID,
+    @required Pointer address,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -23873,7 +23626,7 @@ class CKInitiateParticipantVettingOperation
     );
   }
 
-  static Pointer<Void> operationInfoClass(
+  static Pointer operationInfoClass(
     Pointer<CKInitiateParticipantVettingOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -23883,7 +23636,7 @@ class CKInitiateParticipantVettingOperation
     );
   }
 
-  static Pointer<Void> participantID(
+  static Pointer participantID(
     Pointer<CKInitiateParticipantVettingOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -23893,7 +23646,7 @@ class CKInitiateParticipantVettingOperation
     );
   }
 
-  static Pointer<Void> participantVettingInitiatedBlock(
+  static Pointer participantVettingInitiatedBlock(
     Pointer<CKInitiateParticipantVettingOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -23903,7 +23656,7 @@ class CKInitiateParticipantVettingOperation
     );
   }
 
-  static Pointer<Void> participantVettingInitiationCompletionBlock(
+  static Pointer participantVettingInitiationCompletionBlock(
     Pointer<CKInitiateParticipantVettingOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -23926,9 +23679,9 @@ class CKInitiateParticipantVettingOperation
   static void retryTimes(
     Pointer<CKInitiateParticipantVettingOperation> _self,
     int arg, {
-    @required Pointer<Void> container,
-    @required Pointer<Void> participantVettingInitiatedBlock,
-    @required Pointer<Void> participantVettingInitiationCompletionBlock,
+    @required Pointer container,
+    @required Pointer participantVettingInitiatedBlock,
+    @required Pointer participantVettingInitiationCompletionBlock,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_Uint64_p_p_p_returns_void(
@@ -23944,7 +23697,7 @@ class CKInitiateParticipantVettingOperation
 
   static void setAddress(
     Pointer<CKInitiateParticipantVettingOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -23956,7 +23709,7 @@ class CKInitiateParticipantVettingOperation
 
   static void setParticipantID(
     Pointer<CKInitiateParticipantVettingOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -23968,7 +23721,7 @@ class CKInitiateParticipantVettingOperation
 
   static void setParticipantVettingInitiatedBlock(
     Pointer<CKInitiateParticipantVettingOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -23980,7 +23733,7 @@ class CKInitiateParticipantVettingOperation
 
   static void setParticipantVettingInitiationCompletionBlock(
     Pointer<CKInitiateParticipantVettingOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -23992,7 +23745,7 @@ class CKInitiateParticipantVettingOperation
 
   static void setShareMetadata(
     Pointer<CKInitiateParticipantVettingOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -24002,7 +23755,7 @@ class CKInitiateParticipantVettingOperation
     );
   }
 
-  static Pointer<Void> shareMetadata(
+  static Pointer shareMetadata(
     Pointer<CKInitiateParticipantVettingOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -24013,11 +23766,9 @@ class CKInitiateParticipantVettingOperation
   }
 }
 
-/// Objective-C class _CKInitiateParticipantVettingOperationInfo_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKInitiateParticipantVettingOperationInfo
     extends Struct<CKInitiateParticipantVettingOperationInfo> {
@@ -24031,7 +23782,7 @@ class CKInitiateParticipantVettingOperationInfo
         .cast<CKInitiateParticipantVettingOperationInfo>();
   }
 
-  static Pointer<Void> address(
+  static Pointer address(
     Pointer<CKInitiateParticipantVettingOperationInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -24043,7 +23794,7 @@ class CKInitiateParticipantVettingOperationInfo
 
   static void encodeWithCoder(
     Pointer<CKInitiateParticipantVettingOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -24053,9 +23804,9 @@ class CKInitiateParticipantVettingOperationInfo
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CKInitiateParticipantVettingOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -24065,7 +23816,7 @@ class CKInitiateParticipantVettingOperationInfo
     );
   }
 
-  static Pointer<Void> participantID(
+  static Pointer participantID(
     Pointer<CKInitiateParticipantVettingOperationInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -24077,7 +23828,7 @@ class CKInitiateParticipantVettingOperationInfo
 
   static void setAddress(
     Pointer<CKInitiateParticipantVettingOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -24089,7 +23840,7 @@ class CKInitiateParticipantVettingOperationInfo
 
   static void setParticipantID(
     Pointer<CKInitiateParticipantVettingOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -24101,7 +23852,7 @@ class CKInitiateParticipantVettingOperationInfo
 
   static void setShareMetadata(
     Pointer<CKInitiateParticipantVettingOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -24111,7 +23862,7 @@ class CKInitiateParticipantVettingOperationInfo
     );
   }
 
-  static Pointer<Void> shareMetadata(
+  static Pointer shareMetadata(
     Pointer<CKInitiateParticipantVettingOperationInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -24122,11 +23873,9 @@ class CKInitiateParticipantVettingOperationInfo
   }
 }
 
-/// Objective-C class _CKInternalError_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKInternalError extends Struct<CKInternalError> {
   factory CKInternalError._() {
@@ -24138,11 +23887,9 @@ class CKInternalError extends Struct<CKInternalError> {
   }
 }
 
-/// Objective-C class _CKKeyPathExpressionValidator_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKKeyPathExpressionValidator
     extends Struct<CKKeyPathExpressionValidator> {
@@ -24156,7 +23903,7 @@ class CKKeyPathExpressionValidator
         .cast<CKKeyPathExpressionValidator>();
   }
 
-  static Pointer<Void> CKPropertiesDescription(
+  static Pointer CKPropertiesDescription(
     Pointer<CKKeyPathExpressionValidator> _self,
   ) {
     _openDynamicLibrary();
@@ -24166,9 +23913,9 @@ class CKKeyPathExpressionValidator
     );
   }
 
-  static Pointer<Void> initWithValidator(
+  static Pointer initWithValidator(
     Pointer<CKKeyPathExpressionValidator> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -24180,7 +23927,7 @@ class CKKeyPathExpressionValidator
 
   static void setValidator(
     Pointer<CKKeyPathExpressionValidator> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -24192,8 +23939,8 @@ class CKKeyPathExpressionValidator
 
   static int validate(
     Pointer<CKKeyPathExpressionValidator> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -24204,7 +23951,7 @@ class CKKeyPathExpressionValidator
     );
   }
 
-  static Pointer<Void> validator(
+  static Pointer validator(
     Pointer<CKKeyPathExpressionValidator> _self,
   ) {
     _openDynamicLibrary();
@@ -24215,11 +23962,9 @@ class CKKeyPathExpressionValidator
   }
 }
 
-/// Objective-C class _CKKindOfClassValidator_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKKindOfClassValidator extends Struct<CKKindOfClassValidator> {
   factory CKKindOfClassValidator._() {
@@ -24232,7 +23977,7 @@ class CKKindOfClassValidator extends Struct<CKKindOfClassValidator> {
         .cast<CKKindOfClassValidator>();
   }
 
-  static Pointer<Void> CKPropertiesDescription(
+  static Pointer CKPropertiesDescription(
     Pointer<CKKindOfClassValidator> _self,
   ) {
     _openDynamicLibrary();
@@ -24242,9 +23987,9 @@ class CKKindOfClassValidator extends Struct<CKKindOfClassValidator> {
     );
   }
 
-  static Pointer<Void> initWithClass(
+  static Pointer initWithClass(
     Pointer<CKKindOfClassValidator> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -24254,7 +23999,7 @@ class CKKindOfClassValidator extends Struct<CKKindOfClassValidator> {
     );
   }
 
-  static Pointer<Void> parentClass(
+  static Pointer parentClass(
     Pointer<CKKindOfClassValidator> _self,
   ) {
     _openDynamicLibrary();
@@ -24266,7 +24011,7 @@ class CKKindOfClassValidator extends Struct<CKKindOfClassValidator> {
 
   static void setParentClass(
     Pointer<CKKindOfClassValidator> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -24278,8 +24023,8 @@ class CKKindOfClassValidator extends Struct<CKKindOfClassValidator> {
 
   static int validate(
     Pointer<CKKindOfClassValidator> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -24291,11 +24036,9 @@ class CKKindOfClassValidator extends Struct<CKKindOfClassValidator> {
   }
 }
 
-/// Objective-C class _CKKindOfCollectionClassValidator_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKKindOfCollectionClassValidator
     extends Struct<CKKindOfCollectionClassValidator> {
@@ -24311,8 +24054,8 @@ class CKKindOfCollectionClassValidator
 
   static int validate(
     Pointer<CKKindOfCollectionClassValidator> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -24324,11 +24067,9 @@ class CKKindOfCollectionClassValidator
   }
 }
 
-/// Objective-C class _CKLegacyPredicateValidator_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKLegacyPredicateValidator extends Struct<CKLegacyPredicateValidator> {
   factory CKLegacyPredicateValidator._() {
@@ -24343,8 +24084,8 @@ class CKLegacyPredicateValidator extends Struct<CKLegacyPredicateValidator> {
 
   static int validate$error$(
     Pointer<CKLegacyPredicateValidator> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -24357,7 +24098,7 @@ class CKLegacyPredicateValidator extends Struct<CKLegacyPredicateValidator> {
 
   static void validate$(
     Pointer<CKLegacyPredicateValidator> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -24369,7 +24110,7 @@ class CKLegacyPredicateValidator extends Struct<CKLegacyPredicateValidator> {
 
   static int validateBasicOperatorPredicate(
     Pointer<CKLegacyPredicateValidator> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -24381,7 +24122,7 @@ class CKLegacyPredicateValidator extends Struct<CKLegacyPredicateValidator> {
 
   static int validateBeginsWithPredicate(
     Pointer<CKLegacyPredicateValidator> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -24393,7 +24134,7 @@ class CKLegacyPredicateValidator extends Struct<CKLegacyPredicateValidator> {
 
   static int validateBetweenPredicate(
     Pointer<CKLegacyPredicateValidator> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -24405,7 +24146,7 @@ class CKLegacyPredicateValidator extends Struct<CKLegacyPredicateValidator> {
 
   static void validateComparisonPredicate(
     Pointer<CKLegacyPredicateValidator> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -24417,7 +24158,7 @@ class CKLegacyPredicateValidator extends Struct<CKLegacyPredicateValidator> {
 
   static void validateCompoundPredicate(
     Pointer<CKLegacyPredicateValidator> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -24429,7 +24170,7 @@ class CKLegacyPredicateValidator extends Struct<CKLegacyPredicateValidator> {
 
   static int validateContainsAllInPredicate(
     Pointer<CKLegacyPredicateValidator> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -24441,7 +24182,7 @@ class CKLegacyPredicateValidator extends Struct<CKLegacyPredicateValidator> {
 
   static int validateContainsAnyPredicate(
     Pointer<CKLegacyPredicateValidator> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -24453,7 +24194,7 @@ class CKLegacyPredicateValidator extends Struct<CKLegacyPredicateValidator> {
 
   static int validateContainsPredicate(
     Pointer<CKLegacyPredicateValidator> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -24465,7 +24206,7 @@ class CKLegacyPredicateValidator extends Struct<CKLegacyPredicateValidator> {
 
   static int validateFullTextSearchPredicate(
     Pointer<CKLegacyPredicateValidator> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -24477,7 +24218,7 @@ class CKLegacyPredicateValidator extends Struct<CKLegacyPredicateValidator> {
 
   static int validateInPredicate(
     Pointer<CKLegacyPredicateValidator> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -24489,7 +24230,7 @@ class CKLegacyPredicateValidator extends Struct<CKLegacyPredicateValidator> {
 
   static int validateNearPredicate(
     Pointer<CKLegacyPredicateValidator> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -24500,11 +24241,9 @@ class CKLegacyPredicateValidator extends Struct<CKLegacyPredicateValidator> {
   }
 }
 
-/// Objective-C class _CKLocationSortDescriptor_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKLocationSortDescriptor extends Struct<CKLocationSortDescriptor> {
   factory CKLocationSortDescriptor._() {
@@ -24517,7 +24256,7 @@ class CKLocationSortDescriptor extends Struct<CKLocationSortDescriptor> {
         .cast<CKLocationSortDescriptor>();
   }
 
-  static Pointer<Void> CKPropertiesDescription(
+  static Pointer CKPropertiesDescription(
     Pointer<CKLocationSortDescriptor> _self,
   ) {
     _openDynamicLibrary();
@@ -24529,8 +24268,8 @@ class CKLocationSortDescriptor extends Struct<CKLocationSortDescriptor> {
 
   static int compareObject(
     Pointer<CKLocationSortDescriptor> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toObject,
+    Pointer arg, {
+    @required Pointer toObject,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int64(
@@ -24541,9 +24280,9 @@ class CKLocationSortDescriptor extends Struct<CKLocationSortDescriptor> {
     );
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<CKLocationSortDescriptor> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -24553,7 +24292,7 @@ class CKLocationSortDescriptor extends Struct<CKLocationSortDescriptor> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CKLocationSortDescriptor> _self,
   ) {
     _openDynamicLibrary();
@@ -24565,7 +24304,7 @@ class CKLocationSortDescriptor extends Struct<CKLocationSortDescriptor> {
 
   static void encodeWithCoder(
     Pointer<CKLocationSortDescriptor> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -24575,9 +24314,9 @@ class CKLocationSortDescriptor extends Struct<CKLocationSortDescriptor> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CKLocationSortDescriptor> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -24587,10 +24326,10 @@ class CKLocationSortDescriptor extends Struct<CKLocationSortDescriptor> {
     );
   }
 
-  static Pointer<Void> initWithKey(
+  static Pointer initWithKey(
     Pointer<CKLocationSortDescriptor> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> relativeLocation,
+    Pointer arg, {
+    @required Pointer relativeLocation,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -24601,7 +24340,7 @@ class CKLocationSortDescriptor extends Struct<CKLocationSortDescriptor> {
     );
   }
 
-  static Pointer<Void> relativeLocation(
+  static Pointer relativeLocation(
     Pointer<CKLocationSortDescriptor> _self,
   ) {
     _openDynamicLibrary();
@@ -24613,7 +24352,7 @@ class CKLocationSortDescriptor extends Struct<CKLocationSortDescriptor> {
 
   static void setRelativeLocation(
     Pointer<CKLocationSortDescriptor> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -24624,11 +24363,9 @@ class CKLocationSortDescriptor extends Struct<CKLocationSortDescriptor> {
   }
 }
 
-/// Objective-C class _CKLogFacilityWrapper_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKLogFacilityWrapper extends Struct<CKLogFacilityWrapper> {
   factory CKLogFacilityWrapper._() {
@@ -24639,7 +24376,7 @@ class CKLogFacilityWrapper extends Struct<CKLogFacilityWrapper> {
     return _objc.allocate("CKLogFacilityWrapper").cast<CKLogFacilityWrapper>();
   }
 
-  static Pointer<Void> facility(
+  static Pointer facility(
     Pointer<CKLogFacilityWrapper> _self,
   ) {
     _openDynamicLibrary();
@@ -24649,7 +24386,7 @@ class CKLogFacilityWrapper extends Struct<CKLogFacilityWrapper> {
     );
   }
 
-  static Pointer<Void> facilityName(
+  static Pointer facilityName(
     Pointer<CKLogFacilityWrapper> _self,
   ) {
     _openDynamicLibrary();
@@ -24659,10 +24396,10 @@ class CKLogFacilityWrapper extends Struct<CKLogFacilityWrapper> {
     );
   }
 
-  static Pointer<Void> initWithFacility(
+  static Pointer initWithFacility(
     Pointer<CKLogFacilityWrapper> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> facilityName,
+    Pointer arg, {
+    @required Pointer facilityName,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -24674,11 +24411,9 @@ class CKLogFacilityWrapper extends Struct<CKLogFacilityWrapper> {
   }
 }
 
-/// Objective-C class _CKMarkNotificationsReadOperation_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKMarkNotificationsReadOperation
     extends Struct<CKMarkNotificationsReadOperation> {
@@ -24694,7 +24429,7 @@ class CKMarkNotificationsReadOperation
 
   static int CKOperationShouldRun(
     Pointer<CKMarkNotificationsReadOperation> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -24704,7 +24439,7 @@ class CKMarkNotificationsReadOperation
     );
   }
 
-  static Pointer<Void> activityCreate(
+  static Pointer activityCreate(
     Pointer<CKMarkNotificationsReadOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -24714,7 +24449,7 @@ class CKMarkNotificationsReadOperation
     );
   }
 
-  static Pointer<Void> errorsByNotificationID(
+  static Pointer errorsByNotificationID(
     Pointer<CKMarkNotificationsReadOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -24726,7 +24461,7 @@ class CKMarkNotificationsReadOperation
 
   static void fillFromOperationInfo(
     Pointer<CKMarkNotificationsReadOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -24738,7 +24473,7 @@ class CKMarkNotificationsReadOperation
 
   static void fillOutOperationInfo(
     Pointer<CKMarkNotificationsReadOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -24758,7 +24493,7 @@ class CKMarkNotificationsReadOperation
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CKMarkNotificationsReadOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -24768,9 +24503,9 @@ class CKMarkNotificationsReadOperation
     );
   }
 
-  static Pointer<Void> initWithNotificationIDsToMarkRead(
+  static Pointer initWithNotificationIDsToMarkRead(
     Pointer<CKMarkNotificationsReadOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -24780,7 +24515,7 @@ class CKMarkNotificationsReadOperation
     );
   }
 
-  static Pointer<Void> markNotificationsReadCompletionBlock(
+  static Pointer markNotificationsReadCompletionBlock(
     Pointer<CKMarkNotificationsReadOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -24790,7 +24525,7 @@ class CKMarkNotificationsReadOperation
     );
   }
 
-  static Pointer<Void> notificationIDs(
+  static Pointer notificationIDs(
     Pointer<CKMarkNotificationsReadOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -24800,7 +24535,7 @@ class CKMarkNotificationsReadOperation
     );
   }
 
-  static Pointer<Void> notificationIDsMarkedRead(
+  static Pointer notificationIDsMarkedRead(
     Pointer<CKMarkNotificationsReadOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -24822,7 +24557,7 @@ class CKMarkNotificationsReadOperation
 
   static void setErrorsByNotificationID(
     Pointer<CKMarkNotificationsReadOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -24834,7 +24569,7 @@ class CKMarkNotificationsReadOperation
 
   static void setMarkNotificationsReadCompletionBlock(
     Pointer<CKMarkNotificationsReadOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -24846,7 +24581,7 @@ class CKMarkNotificationsReadOperation
 
   static void setNotificationIDs(
     Pointer<CKMarkNotificationsReadOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -24858,7 +24593,7 @@ class CKMarkNotificationsReadOperation
 
   static void setNotificationIDsMarkedRead(
     Pointer<CKMarkNotificationsReadOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -24869,11 +24604,9 @@ class CKMarkNotificationsReadOperation
   }
 }
 
-/// Objective-C class _CKMarkNotificationsReadOperationInfo_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKMarkNotificationsReadOperationInfo
     extends Struct<CKMarkNotificationsReadOperationInfo> {
@@ -24889,7 +24622,7 @@ class CKMarkNotificationsReadOperationInfo
 
   static void encodeWithCoder(
     Pointer<CKMarkNotificationsReadOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -24899,9 +24632,9 @@ class CKMarkNotificationsReadOperationInfo
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CKMarkNotificationsReadOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -24911,7 +24644,7 @@ class CKMarkNotificationsReadOperationInfo
     );
   }
 
-  static Pointer<Void> notificationIDs(
+  static Pointer notificationIDs(
     Pointer<CKMarkNotificationsReadOperationInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -24923,7 +24656,7 @@ class CKMarkNotificationsReadOperationInfo
 
   static void setNotificationIDs(
     Pointer<CKMarkNotificationsReadOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -24934,11 +24667,9 @@ class CKMarkNotificationsReadOperationInfo
   }
 }
 
-/// Objective-C class _CKMetric_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKMetric extends Struct<CKMetric> {
   factory CKMetric._() {
@@ -24949,7 +24680,7 @@ class CKMetric extends Struct<CKMetric> {
     return _objc.allocate("CKMetric").cast<CKMetric>();
   }
 
-  static Pointer<Void> CKPropertiesDescription(
+  static Pointer CKPropertiesDescription(
     Pointer<CKMetric> _self,
   ) {
     _openDynamicLibrary();
@@ -24999,9 +24730,9 @@ class CKMetric extends Struct<CKMetric> {
     );
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<CKMetric> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -25011,7 +24742,7 @@ class CKMetric extends Struct<CKMetric> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CKMetric> _self,
   ) {
     _openDynamicLibrary();
@@ -25033,7 +24764,7 @@ class CKMetric extends Struct<CKMetric> {
 
   static void encodeWithCoder(
     Pointer<CKMetric> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -25053,9 +24784,9 @@ class CKMetric extends Struct<CKMetric> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CKMetric> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -25161,7 +24892,7 @@ class CKMetric extends Struct<CKMetric> {
 
   static void setStartDate(
     Pointer<CKMetric> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -25171,7 +24902,7 @@ class CKMetric extends Struct<CKMetric> {
     );
   }
 
-  static Pointer<Void> startDate(
+  static Pointer startDate(
     Pointer<CKMetric> _self,
   ) {
     _openDynamicLibrary();
@@ -25183,7 +24914,7 @@ class CKMetric extends Struct<CKMetric> {
 
   static void unionMetric(
     Pointer<CKMetric> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -25194,11 +24925,9 @@ class CKMetric extends Struct<CKMetric> {
   }
 }
 
-/// Objective-C class _CKModifyBadgeOperation_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKModifyBadgeOperation extends Struct<CKModifyBadgeOperation> {
   factory CKModifyBadgeOperation._() {
@@ -25211,7 +24940,7 @@ class CKModifyBadgeOperation extends Struct<CKModifyBadgeOperation> {
         .cast<CKModifyBadgeOperation>();
   }
 
-  static Pointer<Void> activityCreate(
+  static Pointer activityCreate(
     Pointer<CKModifyBadgeOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -25233,7 +24962,7 @@ class CKModifyBadgeOperation extends Struct<CKModifyBadgeOperation> {
 
   static void fillFromOperationInfo(
     Pointer<CKModifyBadgeOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -25245,7 +24974,7 @@ class CKModifyBadgeOperation extends Struct<CKModifyBadgeOperation> {
 
   static void fillOutOperationInfo(
     Pointer<CKModifyBadgeOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -25265,7 +24994,7 @@ class CKModifyBadgeOperation extends Struct<CKModifyBadgeOperation> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CKModifyBadgeOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -25275,7 +25004,7 @@ class CKModifyBadgeOperation extends Struct<CKModifyBadgeOperation> {
     );
   }
 
-  static Pointer<Void> initWithBadgeValue(
+  static Pointer initWithBadgeValue(
     Pointer<CKModifyBadgeOperation> _self,
     int arg,
   ) {
@@ -25287,7 +25016,7 @@ class CKModifyBadgeOperation extends Struct<CKModifyBadgeOperation> {
     );
   }
 
-  static Pointer<Void> modifyBadgeCompletionBlock(
+  static Pointer modifyBadgeCompletionBlock(
     Pointer<CKModifyBadgeOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -25321,7 +25050,7 @@ class CKModifyBadgeOperation extends Struct<CKModifyBadgeOperation> {
 
   static void setModifyBadgeCompletionBlock(
     Pointer<CKModifyBadgeOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -25332,11 +25061,9 @@ class CKModifyBadgeOperation extends Struct<CKModifyBadgeOperation> {
   }
 }
 
-/// Objective-C class _CKModifyBadgeOperationInfo_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKModifyBadgeOperationInfo extends Struct<CKModifyBadgeOperationInfo> {
   factory CKModifyBadgeOperationInfo._() {
@@ -25361,7 +25088,7 @@ class CKModifyBadgeOperationInfo extends Struct<CKModifyBadgeOperationInfo> {
 
   static void encodeWithCoder(
     Pointer<CKModifyBadgeOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -25371,9 +25098,9 @@ class CKModifyBadgeOperationInfo extends Struct<CKModifyBadgeOperationInfo> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CKModifyBadgeOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -25396,11 +25123,9 @@ class CKModifyBadgeOperationInfo extends Struct<CKModifyBadgeOperationInfo> {
   }
 }
 
-/// Objective-C class _CKModifyRecordAccessOperation_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKModifyRecordAccessOperation
     extends Struct<CKModifyRecordAccessOperation> {
@@ -25416,7 +25141,7 @@ class CKModifyRecordAccessOperation
 
   static int CKOperationShouldRun(
     Pointer<CKModifyRecordAccessOperation> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -25426,7 +25151,7 @@ class CKModifyRecordAccessOperation
     );
   }
 
-  static Pointer<Void> activityCreate(
+  static Pointer activityCreate(
     Pointer<CKModifyRecordAccessOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -25438,7 +25163,7 @@ class CKModifyRecordAccessOperation
 
   static void fillFromOperationInfo(
     Pointer<CKModifyRecordAccessOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -25450,7 +25175,7 @@ class CKModifyRecordAccessOperation
 
   static void fillOutOperationInfo(
     Pointer<CKModifyRecordAccessOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -25460,7 +25185,7 @@ class CKModifyRecordAccessOperation
     );
   }
 
-  static Pointer<Void> grantedRecordIDs(
+  static Pointer grantedRecordIDs(
     Pointer<CKModifyRecordAccessOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -25480,10 +25205,10 @@ class CKModifyRecordAccessOperation
     );
   }
 
-  static Pointer<Void> initWithRecordIDsToGrantAccess(
+  static Pointer initWithRecordIDsToGrantAccess(
     Pointer<CKModifyRecordAccessOperation> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> recordIDsToRevokeAccess,
+    Pointer arg, {
+    @required Pointer recordIDsToRevokeAccess,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -25505,7 +25230,7 @@ class CKModifyRecordAccessOperation
     );
   }
 
-  static Pointer<Void> recordAccessCompletionBlock(
+  static Pointer recordAccessCompletionBlock(
     Pointer<CKModifyRecordAccessOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -25515,7 +25240,7 @@ class CKModifyRecordAccessOperation
     );
   }
 
-  static Pointer<Void> recordAccessGrantedBlock(
+  static Pointer recordAccessGrantedBlock(
     Pointer<CKModifyRecordAccessOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -25525,7 +25250,7 @@ class CKModifyRecordAccessOperation
     );
   }
 
-  static Pointer<Void> recordAccessRevokedBlock(
+  static Pointer recordAccessRevokedBlock(
     Pointer<CKModifyRecordAccessOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -25535,7 +25260,7 @@ class CKModifyRecordAccessOperation
     );
   }
 
-  static Pointer<Void> recordErrors(
+  static Pointer recordErrors(
     Pointer<CKModifyRecordAccessOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -25545,7 +25270,7 @@ class CKModifyRecordAccessOperation
     );
   }
 
-  static Pointer<Void> recordIDsToGrant(
+  static Pointer recordIDsToGrant(
     Pointer<CKModifyRecordAccessOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -25555,7 +25280,7 @@ class CKModifyRecordAccessOperation
     );
   }
 
-  static Pointer<Void> recordIDsToRevoke(
+  static Pointer recordIDsToRevoke(
     Pointer<CKModifyRecordAccessOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -25565,7 +25290,7 @@ class CKModifyRecordAccessOperation
     );
   }
 
-  static Pointer<Void> revokedRecordIDs(
+  static Pointer revokedRecordIDs(
     Pointer<CKModifyRecordAccessOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -25577,7 +25302,7 @@ class CKModifyRecordAccessOperation
 
   static void setGrantedRecordIDs(
     Pointer<CKModifyRecordAccessOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -25589,7 +25314,7 @@ class CKModifyRecordAccessOperation
 
   static void setRecordAccessCompletionBlock(
     Pointer<CKModifyRecordAccessOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -25601,7 +25326,7 @@ class CKModifyRecordAccessOperation
 
   static void setRecordAccessGrantedBlock(
     Pointer<CKModifyRecordAccessOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -25613,7 +25338,7 @@ class CKModifyRecordAccessOperation
 
   static void setRecordAccessRevokedBlock(
     Pointer<CKModifyRecordAccessOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -25625,7 +25350,7 @@ class CKModifyRecordAccessOperation
 
   static void setRecordErrors(
     Pointer<CKModifyRecordAccessOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -25637,7 +25362,7 @@ class CKModifyRecordAccessOperation
 
   static void setRecordIDsToGrant(
     Pointer<CKModifyRecordAccessOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -25649,7 +25374,7 @@ class CKModifyRecordAccessOperation
 
   static void setRecordIDsToRevoke(
     Pointer<CKModifyRecordAccessOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -25661,7 +25386,7 @@ class CKModifyRecordAccessOperation
 
   static void setRevokedRecordIDs(
     Pointer<CKModifyRecordAccessOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -25672,11 +25397,9 @@ class CKModifyRecordAccessOperation
   }
 }
 
-/// Objective-C class _CKModifyRecordAccessOperationInfo_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKModifyRecordAccessOperationInfo
     extends Struct<CKModifyRecordAccessOperationInfo> {
@@ -25692,7 +25415,7 @@ class CKModifyRecordAccessOperationInfo
 
   static void encodeWithCoder(
     Pointer<CKModifyRecordAccessOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -25702,9 +25425,9 @@ class CKModifyRecordAccessOperationInfo
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CKModifyRecordAccessOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -25714,7 +25437,7 @@ class CKModifyRecordAccessOperationInfo
     );
   }
 
-  static Pointer<Void> recordIDsToGrant(
+  static Pointer recordIDsToGrant(
     Pointer<CKModifyRecordAccessOperationInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -25724,7 +25447,7 @@ class CKModifyRecordAccessOperationInfo
     );
   }
 
-  static Pointer<Void> recordIDsToRevoke(
+  static Pointer recordIDsToRevoke(
     Pointer<CKModifyRecordAccessOperationInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -25736,7 +25459,7 @@ class CKModifyRecordAccessOperationInfo
 
   static void setRecordIDsToGrant(
     Pointer<CKModifyRecordAccessOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -25748,7 +25471,7 @@ class CKModifyRecordAccessOperationInfo
 
   static void setRecordIDsToRevoke(
     Pointer<CKModifyRecordAccessOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -25759,11 +25482,9 @@ class CKModifyRecordAccessOperationInfo
   }
 }
 
-/// Objective-C class _CKModifyRecordZonesOperation_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKModifyRecordZonesOperation
     extends Struct<CKModifyRecordZonesOperation> {
@@ -25779,7 +25500,7 @@ class CKModifyRecordZonesOperation
 
   static int CKOperationShouldRun(
     Pointer<CKModifyRecordZonesOperation> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -25789,7 +25510,7 @@ class CKModifyRecordZonesOperation
     );
   }
 
-  static Pointer<Void> activityCreate(
+  static Pointer activityCreate(
     Pointer<CKModifyRecordZonesOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -25799,7 +25520,7 @@ class CKModifyRecordZonesOperation
     );
   }
 
-  static Pointer<Void> deletedRecordZoneIDs(
+  static Pointer deletedRecordZoneIDs(
     Pointer<CKModifyRecordZonesOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -25811,7 +25532,7 @@ class CKModifyRecordZonesOperation
 
   static void fillFromOperationInfo(
     Pointer<CKModifyRecordZonesOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -25823,7 +25544,7 @@ class CKModifyRecordZonesOperation
 
   static void fillOutOperationInfo(
     Pointer<CKModifyRecordZonesOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -25843,7 +25564,7 @@ class CKModifyRecordZonesOperation
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CKModifyRecordZonesOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -25853,10 +25574,10 @@ class CKModifyRecordZonesOperation
     );
   }
 
-  static Pointer<Void> initWithRecordZonesToSave(
+  static Pointer initWithRecordZonesToSave(
     Pointer<CKModifyRecordZonesOperation> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> recordZoneIDsToDelete,
+    Pointer arg, {
+    @required Pointer recordZoneIDsToDelete,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -25877,7 +25598,7 @@ class CKModifyRecordZonesOperation
     );
   }
 
-  static Pointer<Void> modifyRecordZonesCompletionBlock(
+  static Pointer modifyRecordZonesCompletionBlock(
     Pointer<CKModifyRecordZonesOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -25897,7 +25618,7 @@ class CKModifyRecordZonesOperation
     );
   }
 
-  static Pointer<Void> recordZoneErrors(
+  static Pointer recordZoneErrors(
     Pointer<CKModifyRecordZonesOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -25907,7 +25628,7 @@ class CKModifyRecordZonesOperation
     );
   }
 
-  static Pointer<Void> recordZoneIDsToDelete(
+  static Pointer recordZoneIDsToDelete(
     Pointer<CKModifyRecordZonesOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -25917,7 +25638,7 @@ class CKModifyRecordZonesOperation
     );
   }
 
-  static Pointer<Void> recordZonesByZoneIDs(
+  static Pointer recordZonesByZoneIDs(
     Pointer<CKModifyRecordZonesOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -25927,7 +25648,7 @@ class CKModifyRecordZonesOperation
     );
   }
 
-  static Pointer<Void> recordZonesToSave(
+  static Pointer recordZonesToSave(
     Pointer<CKModifyRecordZonesOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -25937,7 +25658,7 @@ class CKModifyRecordZonesOperation
     );
   }
 
-  static Pointer<Void> savedRecordZones(
+  static Pointer savedRecordZones(
     Pointer<CKModifyRecordZonesOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -25949,7 +25670,7 @@ class CKModifyRecordZonesOperation
 
   static void setDeletedRecordZoneIDs(
     Pointer<CKModifyRecordZonesOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -25973,7 +25694,7 @@ class CKModifyRecordZonesOperation
 
   static void setModifyRecordZonesCompletionBlock(
     Pointer<CKModifyRecordZonesOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -25985,7 +25706,7 @@ class CKModifyRecordZonesOperation
 
   static void setRecordZoneErrors(
     Pointer<CKModifyRecordZonesOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -25997,7 +25718,7 @@ class CKModifyRecordZonesOperation
 
   static void setRecordZoneIDsToDelete(
     Pointer<CKModifyRecordZonesOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -26009,7 +25730,7 @@ class CKModifyRecordZonesOperation
 
   static void setRecordZonesByZoneIDs(
     Pointer<CKModifyRecordZonesOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -26021,7 +25742,7 @@ class CKModifyRecordZonesOperation
 
   static void setRecordZonesToSave(
     Pointer<CKModifyRecordZonesOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -26033,7 +25754,7 @@ class CKModifyRecordZonesOperation
 
   static void setSavedRecordZones(
     Pointer<CKModifyRecordZonesOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -26044,11 +25765,9 @@ class CKModifyRecordZonesOperation
   }
 }
 
-/// Objective-C class _CKModifyRecordZonesOperationInfo_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKModifyRecordZonesOperationInfo
     extends Struct<CKModifyRecordZonesOperationInfo> {
@@ -26084,7 +25803,7 @@ class CKModifyRecordZonesOperationInfo
 
   static void encodeWithCoder(
     Pointer<CKModifyRecordZonesOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -26094,9 +25813,9 @@ class CKModifyRecordZonesOperationInfo
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CKModifyRecordZonesOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -26126,7 +25845,7 @@ class CKModifyRecordZonesOperationInfo
     );
   }
 
-  static Pointer<Void> recordZoneIDsToDelete(
+  static Pointer recordZoneIDsToDelete(
     Pointer<CKModifyRecordZonesOperationInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -26136,7 +25855,7 @@ class CKModifyRecordZonesOperationInfo
     );
   }
 
-  static Pointer<Void> recordZonesToSave(
+  static Pointer recordZonesToSave(
     Pointer<CKModifyRecordZonesOperationInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -26196,7 +25915,7 @@ class CKModifyRecordZonesOperationInfo
 
   static void setRecordZoneIDsToDelete(
     Pointer<CKModifyRecordZonesOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -26208,7 +25927,7 @@ class CKModifyRecordZonesOperationInfo
 
   static void setRecordZonesToSave(
     Pointer<CKModifyRecordZonesOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -26219,11 +25938,9 @@ class CKModifyRecordZonesOperationInfo
   }
 }
 
-/// Objective-C class _CKModifyRecordsOperation_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKModifyRecordsOperation extends Struct<CKModifyRecordsOperation> {
   factory CKModifyRecordsOperation._() {
@@ -26238,7 +25955,7 @@ class CKModifyRecordsOperation extends Struct<CKModifyRecordsOperation> {
 
   static int CKOperationShouldRun(
     Pointer<CKModifyRecordsOperation> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -26248,7 +25965,7 @@ class CKModifyRecordsOperation extends Struct<CKModifyRecordsOperation> {
     );
   }
 
-  static Pointer<Void> activityCreate(
+  static Pointer activityCreate(
     Pointer<CKModifyRecordsOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -26258,7 +25975,7 @@ class CKModifyRecordsOperation extends Struct<CKModifyRecordsOperation> {
     );
   }
 
-  static Pointer<Void> assetsByRecordIDAndRecordKey(
+  static Pointer assetsByRecordIDAndRecordKey(
     Pointer<CKModifyRecordsOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -26280,8 +25997,8 @@ class CKModifyRecordsOperation extends Struct<CKModifyRecordsOperation> {
 
   static int claimPackagesInRecord(
     Pointer<CKModifyRecordsOperation> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -26292,7 +26009,7 @@ class CKModifyRecordsOperation extends Struct<CKModifyRecordsOperation> {
     );
   }
 
-  static Pointer<Void> clientChangeTokenData(
+  static Pointer clientChangeTokenData(
     Pointer<CKModifyRecordsOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -26302,7 +26019,7 @@ class CKModifyRecordsOperation extends Struct<CKModifyRecordsOperation> {
     );
   }
 
-  static Pointer<Void> conflictLosersToResolveByRecordID(
+  static Pointer conflictLosersToResolveByRecordID(
     Pointer<CKModifyRecordsOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -26312,7 +26029,7 @@ class CKModifyRecordsOperation extends Struct<CKModifyRecordsOperation> {
     );
   }
 
-  static Pointer<Void> deletedRecordIDs(
+  static Pointer deletedRecordIDs(
     Pointer<CKModifyRecordsOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -26324,7 +26041,7 @@ class CKModifyRecordsOperation extends Struct<CKModifyRecordsOperation> {
 
   static void destroyPackages(
     Pointer<CKModifyRecordsOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -26336,7 +26053,7 @@ class CKModifyRecordsOperation extends Struct<CKModifyRecordsOperation> {
 
   static void destroyPackagesInRecords(
     Pointer<CKModifyRecordsOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -26348,7 +26065,7 @@ class CKModifyRecordsOperation extends Struct<CKModifyRecordsOperation> {
 
   static void fillFromOperationInfo(
     Pointer<CKModifyRecordsOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -26360,7 +26077,7 @@ class CKModifyRecordsOperation extends Struct<CKModifyRecordsOperation> {
 
   static void fillOutOperationInfo(
     Pointer<CKModifyRecordsOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -26380,7 +26097,7 @@ class CKModifyRecordsOperation extends Struct<CKModifyRecordsOperation> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CKModifyRecordsOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -26390,10 +26107,10 @@ class CKModifyRecordsOperation extends Struct<CKModifyRecordsOperation> {
     );
   }
 
-  static Pointer<Void> initWithRecordsToSave(
+  static Pointer initWithRecordsToSave(
     Pointer<CKModifyRecordsOperation> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> recordIDsToDelete,
+    Pointer arg, {
+    @required Pointer recordIDsToDelete,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -26404,7 +26121,7 @@ class CKModifyRecordsOperation extends Struct<CKModifyRecordsOperation> {
     );
   }
 
-  static Pointer<Void> modifyRecordsCompletionBlock(
+  static Pointer modifyRecordsCompletionBlock(
     Pointer<CKModifyRecordsOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -26414,7 +26131,7 @@ class CKModifyRecordsOperation extends Struct<CKModifyRecordsOperation> {
     );
   }
 
-  static Pointer<Void> packagesToDestroy(
+  static Pointer packagesToDestroy(
     Pointer<CKModifyRecordsOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -26424,7 +26141,7 @@ class CKModifyRecordsOperation extends Struct<CKModifyRecordsOperation> {
     );
   }
 
-  static Pointer<Void> perRecordCompletionBlock(
+  static Pointer perRecordCompletionBlock(
     Pointer<CKModifyRecordsOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -26434,7 +26151,7 @@ class CKModifyRecordsOperation extends Struct<CKModifyRecordsOperation> {
     );
   }
 
-  static Pointer<Void> perRecordProgressBlock(
+  static Pointer perRecordProgressBlock(
     Pointer<CKModifyRecordsOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -26454,7 +26171,7 @@ class CKModifyRecordsOperation extends Struct<CKModifyRecordsOperation> {
     );
   }
 
-  static Pointer<Void> pluginFieldsForRecordDeletesByID(
+  static Pointer pluginFieldsForRecordDeletesByID(
     Pointer<CKModifyRecordsOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -26464,7 +26181,7 @@ class CKModifyRecordsOperation extends Struct<CKModifyRecordsOperation> {
     );
   }
 
-  static Pointer<Void> recordErrors(
+  static Pointer recordErrors(
     Pointer<CKModifyRecordsOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -26474,7 +26191,7 @@ class CKModifyRecordsOperation extends Struct<CKModifyRecordsOperation> {
     );
   }
 
-  static Pointer<Void> recordIDsToDelete(
+  static Pointer recordIDsToDelete(
     Pointer<CKModifyRecordsOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -26484,7 +26201,7 @@ class CKModifyRecordsOperation extends Struct<CKModifyRecordsOperation> {
     );
   }
 
-  static Pointer<Void> recordIDsToDeleteToEtags(
+  static Pointer recordIDsToDeleteToEtags(
     Pointer<CKModifyRecordsOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -26494,7 +26211,7 @@ class CKModifyRecordsOperation extends Struct<CKModifyRecordsOperation> {
     );
   }
 
-  static Pointer<Void> recordsByRecordIDs(
+  static Pointer recordsByRecordIDs(
     Pointer<CKModifyRecordsOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -26504,7 +26221,7 @@ class CKModifyRecordsOperation extends Struct<CKModifyRecordsOperation> {
     );
   }
 
-  static Pointer<Void> recordsInFlightBlock(
+  static Pointer recordsInFlightBlock(
     Pointer<CKModifyRecordsOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -26514,7 +26231,7 @@ class CKModifyRecordsOperation extends Struct<CKModifyRecordsOperation> {
     );
   }
 
-  static Pointer<Void> recordsToSave(
+  static Pointer recordsToSave(
     Pointer<CKModifyRecordsOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -26534,7 +26251,7 @@ class CKModifyRecordsOperation extends Struct<CKModifyRecordsOperation> {
     );
   }
 
-  static Pointer<Void> savedRecords(
+  static Pointer savedRecords(
     Pointer<CKModifyRecordsOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -26546,7 +26263,7 @@ class CKModifyRecordsOperation extends Struct<CKModifyRecordsOperation> {
 
   static void setAssetsByRecordIDAndRecordKey(
     Pointer<CKModifyRecordsOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -26570,7 +26287,7 @@ class CKModifyRecordsOperation extends Struct<CKModifyRecordsOperation> {
 
   static void setClientChangeTokenData(
     Pointer<CKModifyRecordsOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -26582,7 +26299,7 @@ class CKModifyRecordsOperation extends Struct<CKModifyRecordsOperation> {
 
   static void setConflictLosersToResolveByRecordID(
     Pointer<CKModifyRecordsOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -26594,7 +26311,7 @@ class CKModifyRecordsOperation extends Struct<CKModifyRecordsOperation> {
 
   static void setDeletedRecordIDs(
     Pointer<CKModifyRecordsOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -26606,7 +26323,7 @@ class CKModifyRecordsOperation extends Struct<CKModifyRecordsOperation> {
 
   static void setModifyRecordsCompletionBlock(
     Pointer<CKModifyRecordsOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -26618,7 +26335,7 @@ class CKModifyRecordsOperation extends Struct<CKModifyRecordsOperation> {
 
   static void setPackagesToDestroy(
     Pointer<CKModifyRecordsOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -26630,7 +26347,7 @@ class CKModifyRecordsOperation extends Struct<CKModifyRecordsOperation> {
 
   static void setPerRecordCompletionBlock(
     Pointer<CKModifyRecordsOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -26642,7 +26359,7 @@ class CKModifyRecordsOperation extends Struct<CKModifyRecordsOperation> {
 
   static void setPerRecordProgressBlock(
     Pointer<CKModifyRecordsOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -26654,7 +26371,7 @@ class CKModifyRecordsOperation extends Struct<CKModifyRecordsOperation> {
 
   static void setPluginFieldsForRecordDeletesByID(
     Pointer<CKModifyRecordsOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -26666,7 +26383,7 @@ class CKModifyRecordsOperation extends Struct<CKModifyRecordsOperation> {
 
   static void setRecordErrors(
     Pointer<CKModifyRecordsOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -26678,7 +26395,7 @@ class CKModifyRecordsOperation extends Struct<CKModifyRecordsOperation> {
 
   static void setRecordIDsToDelete(
     Pointer<CKModifyRecordsOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -26690,7 +26407,7 @@ class CKModifyRecordsOperation extends Struct<CKModifyRecordsOperation> {
 
   static void setRecordIDsToDeleteToEtags(
     Pointer<CKModifyRecordsOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -26702,7 +26419,7 @@ class CKModifyRecordsOperation extends Struct<CKModifyRecordsOperation> {
 
   static void setRecordsByRecordIDs(
     Pointer<CKModifyRecordsOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -26714,7 +26431,7 @@ class CKModifyRecordsOperation extends Struct<CKModifyRecordsOperation> {
 
   static void setRecordsInFlightBlock(
     Pointer<CKModifyRecordsOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -26726,7 +26443,7 @@ class CKModifyRecordsOperation extends Struct<CKModifyRecordsOperation> {
 
   static void setRecordsToSave(
     Pointer<CKModifyRecordsOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -26750,7 +26467,7 @@ class CKModifyRecordsOperation extends Struct<CKModifyRecordsOperation> {
 
   static void setSavedRecords(
     Pointer<CKModifyRecordsOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -26805,11 +26522,9 @@ class CKModifyRecordsOperation extends Struct<CKModifyRecordsOperation> {
   }
 }
 
-/// Objective-C class _CKModifyRecordsOperationInfo_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKModifyRecordsOperationInfo
     extends Struct<CKModifyRecordsOperationInfo> {
@@ -26833,7 +26548,7 @@ class CKModifyRecordsOperationInfo
     );
   }
 
-  static Pointer<Void> clientChangeTokenData(
+  static Pointer clientChangeTokenData(
     Pointer<CKModifyRecordsOperationInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -26843,7 +26558,7 @@ class CKModifyRecordsOperationInfo
     );
   }
 
-  static Pointer<Void> conflictLosersToResolveByRecordID(
+  static Pointer conflictLosersToResolveByRecordID(
     Pointer<CKModifyRecordsOperationInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -26855,7 +26570,7 @@ class CKModifyRecordsOperationInfo
 
   static void encodeWithCoder(
     Pointer<CKModifyRecordsOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -26865,9 +26580,9 @@ class CKModifyRecordsOperationInfo
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CKModifyRecordsOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -26877,7 +26592,7 @@ class CKModifyRecordsOperationInfo
     );
   }
 
-  static Pointer<Void> pluginFieldsForRecordDeletesByID(
+  static Pointer pluginFieldsForRecordDeletesByID(
     Pointer<CKModifyRecordsOperationInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -26887,7 +26602,7 @@ class CKModifyRecordsOperationInfo
     );
   }
 
-  static Pointer<Void> recordIDsToDelete(
+  static Pointer recordIDsToDelete(
     Pointer<CKModifyRecordsOperationInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -26897,7 +26612,7 @@ class CKModifyRecordsOperationInfo
     );
   }
 
-  static Pointer<Void> recordIDsToDeleteToEtags(
+  static Pointer recordIDsToDeleteToEtags(
     Pointer<CKModifyRecordsOperationInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -26907,7 +26622,7 @@ class CKModifyRecordsOperationInfo
     );
   }
 
-  static Pointer<Void> recordsToSave(
+  static Pointer recordsToSave(
     Pointer<CKModifyRecordsOperationInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -26941,7 +26656,7 @@ class CKModifyRecordsOperationInfo
 
   static void setClientChangeTokenData(
     Pointer<CKModifyRecordsOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -26953,7 +26668,7 @@ class CKModifyRecordsOperationInfo
 
   static void setConflictLosersToResolveByRecordID(
     Pointer<CKModifyRecordsOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -26965,7 +26680,7 @@ class CKModifyRecordsOperationInfo
 
   static void setPluginFieldsForRecordDeletesByID(
     Pointer<CKModifyRecordsOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -26977,7 +26692,7 @@ class CKModifyRecordsOperationInfo
 
   static void setRecordIDsToDelete(
     Pointer<CKModifyRecordsOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -26989,7 +26704,7 @@ class CKModifyRecordsOperationInfo
 
   static void setRecordIDsToDeleteToEtags(
     Pointer<CKModifyRecordsOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -27001,7 +26716,7 @@ class CKModifyRecordsOperationInfo
 
   static void setRecordsToSave(
     Pointer<CKModifyRecordsOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -27068,11 +26783,9 @@ class CKModifyRecordsOperationInfo
   }
 }
 
-/// Objective-C class _CKModifySubscriptionsOperation_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKModifySubscriptionsOperation
     extends Struct<CKModifySubscriptionsOperation> {
@@ -27088,7 +26801,7 @@ class CKModifySubscriptionsOperation
 
   static int CKOperationShouldRun(
     Pointer<CKModifySubscriptionsOperation> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -27098,7 +26811,7 @@ class CKModifySubscriptionsOperation
     );
   }
 
-  static Pointer<Void> activityCreate(
+  static Pointer activityCreate(
     Pointer<CKModifySubscriptionsOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -27108,7 +26821,7 @@ class CKModifySubscriptionsOperation
     );
   }
 
-  static Pointer<Void> deletedSubscriptionIDs(
+  static Pointer deletedSubscriptionIDs(
     Pointer<CKModifySubscriptionsOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -27120,7 +26833,7 @@ class CKModifySubscriptionsOperation
 
   static void fillFromOperationInfo(
     Pointer<CKModifySubscriptionsOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -27132,7 +26845,7 @@ class CKModifySubscriptionsOperation
 
   static void fillOutOperationInfo(
     Pointer<CKModifySubscriptionsOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -27152,7 +26865,7 @@ class CKModifySubscriptionsOperation
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CKModifySubscriptionsOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -27162,10 +26875,10 @@ class CKModifySubscriptionsOperation
     );
   }
 
-  static Pointer<Void> initWithSubscriptionsToSave(
+  static Pointer initWithSubscriptionsToSave(
     Pointer<CKModifySubscriptionsOperation> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> subscriptionIDsToDelete,
+    Pointer arg, {
+    @required Pointer subscriptionIDsToDelete,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -27176,7 +26889,7 @@ class CKModifySubscriptionsOperation
     );
   }
 
-  static Pointer<Void> modifySubscriptionsCompletionBlock(
+  static Pointer modifySubscriptionsCompletionBlock(
     Pointer<CKModifySubscriptionsOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -27196,7 +26909,7 @@ class CKModifySubscriptionsOperation
     );
   }
 
-  static Pointer<Void> savedSubscriptions(
+  static Pointer savedSubscriptions(
     Pointer<CKModifySubscriptionsOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -27208,7 +26921,7 @@ class CKModifySubscriptionsOperation
 
   static void setDeletedSubscriptionIDs(
     Pointer<CKModifySubscriptionsOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -27220,7 +26933,7 @@ class CKModifySubscriptionsOperation
 
   static void setModifySubscriptionsCompletionBlock(
     Pointer<CKModifySubscriptionsOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -27232,7 +26945,7 @@ class CKModifySubscriptionsOperation
 
   static void setSavedSubscriptions(
     Pointer<CKModifySubscriptionsOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -27244,7 +26957,7 @@ class CKModifySubscriptionsOperation
 
   static void setSubscriptionErrors(
     Pointer<CKModifySubscriptionsOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -27256,7 +26969,7 @@ class CKModifySubscriptionsOperation
 
   static void setSubscriptionIDsToDelete(
     Pointer<CKModifySubscriptionsOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -27268,7 +26981,7 @@ class CKModifySubscriptionsOperation
 
   static void setSubscriptionsBySubscriptionIDs(
     Pointer<CKModifySubscriptionsOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -27280,7 +26993,7 @@ class CKModifySubscriptionsOperation
 
   static void setSubscriptionsToSave(
     Pointer<CKModifySubscriptionsOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -27290,7 +27003,7 @@ class CKModifySubscriptionsOperation
     );
   }
 
-  static Pointer<Void> subscriptionErrors(
+  static Pointer subscriptionErrors(
     Pointer<CKModifySubscriptionsOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -27300,7 +27013,7 @@ class CKModifySubscriptionsOperation
     );
   }
 
-  static Pointer<Void> subscriptionIDsToDelete(
+  static Pointer subscriptionIDsToDelete(
     Pointer<CKModifySubscriptionsOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -27310,7 +27023,7 @@ class CKModifySubscriptionsOperation
     );
   }
 
-  static Pointer<Void> subscriptionsBySubscriptionIDs(
+  static Pointer subscriptionsBySubscriptionIDs(
     Pointer<CKModifySubscriptionsOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -27320,7 +27033,7 @@ class CKModifySubscriptionsOperation
     );
   }
 
-  static Pointer<Void> subscriptionsToSave(
+  static Pointer subscriptionsToSave(
     Pointer<CKModifySubscriptionsOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -27331,11 +27044,9 @@ class CKModifySubscriptionsOperation
   }
 }
 
-/// Objective-C class _CKModifySubscriptionsOperationInfo_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKModifySubscriptionsOperationInfo
     extends Struct<CKModifySubscriptionsOperationInfo> {
@@ -27351,7 +27062,7 @@ class CKModifySubscriptionsOperationInfo
 
   static void encodeWithCoder(
     Pointer<CKModifySubscriptionsOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -27361,9 +27072,9 @@ class CKModifySubscriptionsOperationInfo
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CKModifySubscriptionsOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -27375,7 +27086,7 @@ class CKModifySubscriptionsOperationInfo
 
   static void setSubscriptionIDsToDelete(
     Pointer<CKModifySubscriptionsOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -27387,7 +27098,7 @@ class CKModifySubscriptionsOperationInfo
 
   static void setSubscriptionsToSave(
     Pointer<CKModifySubscriptionsOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -27397,7 +27108,7 @@ class CKModifySubscriptionsOperationInfo
     );
   }
 
-  static Pointer<Void> subscriptionIDsToDelete(
+  static Pointer subscriptionIDsToDelete(
     Pointer<CKModifySubscriptionsOperationInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -27407,7 +27118,7 @@ class CKModifySubscriptionsOperationInfo
     );
   }
 
-  static Pointer<Void> subscriptionsToSave(
+  static Pointer subscriptionsToSave(
     Pointer<CKModifySubscriptionsOperationInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -27418,11 +27129,9 @@ class CKModifySubscriptionsOperationInfo
   }
 }
 
-/// Objective-C class _CKModifyWebSharingOperation_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKModifyWebSharingOperation extends Struct<CKModifyWebSharingOperation> {
   factory CKModifyWebSharingOperation._() {
@@ -27437,7 +27146,7 @@ class CKModifyWebSharingOperation extends Struct<CKModifyWebSharingOperation> {
 
   static int CKOperationShouldRun(
     Pointer<CKModifyWebSharingOperation> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -27447,7 +27156,7 @@ class CKModifyWebSharingOperation extends Struct<CKModifyWebSharingOperation> {
     );
   }
 
-  static Pointer<Void> activityCreate(
+  static Pointer activityCreate(
     Pointer<CKModifyWebSharingOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -27459,7 +27168,7 @@ class CKModifyWebSharingOperation extends Struct<CKModifyWebSharingOperation> {
 
   static void fillFromOperationInfo(
     Pointer<CKModifyWebSharingOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -27471,7 +27180,7 @@ class CKModifyWebSharingOperation extends Struct<CKModifyWebSharingOperation> {
 
   static void fillOutOperationInfo(
     Pointer<CKModifyWebSharingOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -27491,10 +27200,10 @@ class CKModifyWebSharingOperation extends Struct<CKModifyWebSharingOperation> {
     );
   }
 
-  static Pointer<Void> initWithRecordIDsToWebShare(
+  static Pointer initWithRecordIDsToWebShare(
     Pointer<CKModifyWebSharingOperation> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> recordIDsToUnshare,
+    Pointer arg, {
+    @required Pointer recordIDsToUnshare,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -27515,7 +27224,7 @@ class CKModifyWebSharingOperation extends Struct<CKModifyWebSharingOperation> {
     );
   }
 
-  static Pointer<Void> recordErrors(
+  static Pointer recordErrors(
     Pointer<CKModifyWebSharingOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -27525,7 +27234,7 @@ class CKModifyWebSharingOperation extends Struct<CKModifyWebSharingOperation> {
     );
   }
 
-  static Pointer<Void> recordIDsToShare(
+  static Pointer recordIDsToShare(
     Pointer<CKModifyWebSharingOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -27535,7 +27244,7 @@ class CKModifyWebSharingOperation extends Struct<CKModifyWebSharingOperation> {
     );
   }
 
-  static Pointer<Void> recordIDsToShareReadWrite(
+  static Pointer recordIDsToShareReadWrite(
     Pointer<CKModifyWebSharingOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -27545,7 +27254,7 @@ class CKModifyWebSharingOperation extends Struct<CKModifyWebSharingOperation> {
     );
   }
 
-  static Pointer<Void> recordIDsToUnshare(
+  static Pointer recordIDsToUnshare(
     Pointer<CKModifyWebSharingOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -27555,7 +27264,7 @@ class CKModifyWebSharingOperation extends Struct<CKModifyWebSharingOperation> {
     );
   }
 
-  static Pointer<Void> recordSharedBlock(
+  static Pointer recordSharedBlock(
     Pointer<CKModifyWebSharingOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -27565,7 +27274,7 @@ class CKModifyWebSharingOperation extends Struct<CKModifyWebSharingOperation> {
     );
   }
 
-  static Pointer<Void> recordUnsharedBlock(
+  static Pointer recordUnsharedBlock(
     Pointer<CKModifyWebSharingOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -27577,7 +27286,7 @@ class CKModifyWebSharingOperation extends Struct<CKModifyWebSharingOperation> {
 
   static void setRecordErrors(
     Pointer<CKModifyWebSharingOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -27589,7 +27298,7 @@ class CKModifyWebSharingOperation extends Struct<CKModifyWebSharingOperation> {
 
   static void setRecordIDsToShare(
     Pointer<CKModifyWebSharingOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -27601,7 +27310,7 @@ class CKModifyWebSharingOperation extends Struct<CKModifyWebSharingOperation> {
 
   static void setRecordIDsToShareReadWrite(
     Pointer<CKModifyWebSharingOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -27613,7 +27322,7 @@ class CKModifyWebSharingOperation extends Struct<CKModifyWebSharingOperation> {
 
   static void setRecordIDsToUnshare(
     Pointer<CKModifyWebSharingOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -27625,7 +27334,7 @@ class CKModifyWebSharingOperation extends Struct<CKModifyWebSharingOperation> {
 
   static void setRecordSharedBlock(
     Pointer<CKModifyWebSharingOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -27637,7 +27346,7 @@ class CKModifyWebSharingOperation extends Struct<CKModifyWebSharingOperation> {
 
   static void setRecordUnsharedBlock(
     Pointer<CKModifyWebSharingOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -27649,7 +27358,7 @@ class CKModifyWebSharingOperation extends Struct<CKModifyWebSharingOperation> {
 
   static void setSharedRecordIDs(
     Pointer<CKModifyWebSharingOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -27661,7 +27370,7 @@ class CKModifyWebSharingOperation extends Struct<CKModifyWebSharingOperation> {
 
   static void setUnsharedRecordIDs(
     Pointer<CKModifyWebSharingOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -27673,7 +27382,7 @@ class CKModifyWebSharingOperation extends Struct<CKModifyWebSharingOperation> {
 
   static void setWebShareRecordsCompletionBlock(
     Pointer<CKModifyWebSharingOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -27683,7 +27392,7 @@ class CKModifyWebSharingOperation extends Struct<CKModifyWebSharingOperation> {
     );
   }
 
-  static Pointer<Void> sharedRecordIDs(
+  static Pointer sharedRecordIDs(
     Pointer<CKModifyWebSharingOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -27693,7 +27402,7 @@ class CKModifyWebSharingOperation extends Struct<CKModifyWebSharingOperation> {
     );
   }
 
-  static Pointer<Void> unsharedRecordIDs(
+  static Pointer unsharedRecordIDs(
     Pointer<CKModifyWebSharingOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -27703,7 +27412,7 @@ class CKModifyWebSharingOperation extends Struct<CKModifyWebSharingOperation> {
     );
   }
 
-  static Pointer<Void> webShareRecordsCompletionBlock(
+  static Pointer webShareRecordsCompletionBlock(
     Pointer<CKModifyWebSharingOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -27714,11 +27423,9 @@ class CKModifyWebSharingOperation extends Struct<CKModifyWebSharingOperation> {
   }
 }
 
-/// Objective-C class _CKModifyWebSharingOperationInfo_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKModifyWebSharingOperationInfo
     extends Struct<CKModifyWebSharingOperationInfo> {
@@ -27734,7 +27441,7 @@ class CKModifyWebSharingOperationInfo
 
   static void encodeWithCoder(
     Pointer<CKModifyWebSharingOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -27744,9 +27451,9 @@ class CKModifyWebSharingOperationInfo
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CKModifyWebSharingOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -27756,7 +27463,7 @@ class CKModifyWebSharingOperationInfo
     );
   }
 
-  static Pointer<Void> recordIDsToShare(
+  static Pointer recordIDsToShare(
     Pointer<CKModifyWebSharingOperationInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -27766,7 +27473,7 @@ class CKModifyWebSharingOperationInfo
     );
   }
 
-  static Pointer<Void> recordIDsToShareReadWrite(
+  static Pointer recordIDsToShareReadWrite(
     Pointer<CKModifyWebSharingOperationInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -27776,7 +27483,7 @@ class CKModifyWebSharingOperationInfo
     );
   }
 
-  static Pointer<Void> recordIDsToUnshare(
+  static Pointer recordIDsToUnshare(
     Pointer<CKModifyWebSharingOperationInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -27788,7 +27495,7 @@ class CKModifyWebSharingOperationInfo
 
   static void setRecordIDsToShare(
     Pointer<CKModifyWebSharingOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -27800,7 +27507,7 @@ class CKModifyWebSharingOperationInfo
 
   static void setRecordIDsToShareReadWrite(
     Pointer<CKModifyWebSharingOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -27812,7 +27519,7 @@ class CKModifyWebSharingOperationInfo
 
   static void setRecordIDsToUnshare(
     Pointer<CKModifyWebSharingOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -27823,11 +27530,9 @@ class CKModifyWebSharingOperationInfo
   }
 }
 
-/// Objective-C class _CKNilValidator_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKNilValidator extends Struct<CKNilValidator> {
   factory CKNilValidator._() {
@@ -27840,8 +27545,8 @@ class CKNilValidator extends Struct<CKNilValidator> {
 
   static int validate(
     Pointer<CKNilValidator> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -27853,11 +27558,9 @@ class CKNilValidator extends Struct<CKNilValidator> {
   }
 }
 
-/// Objective-C class _CKNotification_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKNotification extends Struct<CKNotification> {
   factory CKNotification._() {
@@ -27868,7 +27571,7 @@ class CKNotification extends Struct<CKNotification> {
     return _objc.allocate("CKNotification").cast<CKNotification>();
   }
 
-  static Pointer<Void> CKPropertiesDescription(
+  static Pointer CKPropertiesDescription(
     Pointer<CKNotification> _self,
   ) {
     _openDynamicLibrary();
@@ -27878,7 +27581,7 @@ class CKNotification extends Struct<CKNotification> {
     );
   }
 
-  static Pointer<Void> alertActionLocalizationKey(
+  static Pointer alertActionLocalizationKey(
     Pointer<CKNotification> _self,
   ) {
     _openDynamicLibrary();
@@ -27888,7 +27591,7 @@ class CKNotification extends Struct<CKNotification> {
     );
   }
 
-  static Pointer<Void> alertBody(
+  static Pointer alertBody(
     Pointer<CKNotification> _self,
   ) {
     _openDynamicLibrary();
@@ -27898,7 +27601,7 @@ class CKNotification extends Struct<CKNotification> {
     );
   }
 
-  static Pointer<Void> alertLaunchImage(
+  static Pointer alertLaunchImage(
     Pointer<CKNotification> _self,
   ) {
     _openDynamicLibrary();
@@ -27908,7 +27611,7 @@ class CKNotification extends Struct<CKNotification> {
     );
   }
 
-  static Pointer<Void> alertLocalizationArgs(
+  static Pointer alertLocalizationArgs(
     Pointer<CKNotification> _self,
   ) {
     _openDynamicLibrary();
@@ -27918,7 +27621,7 @@ class CKNotification extends Struct<CKNotification> {
     );
   }
 
-  static Pointer<Void> alertLocalizationKey(
+  static Pointer alertLocalizationKey(
     Pointer<CKNotification> _self,
   ) {
     _openDynamicLibrary();
@@ -27928,7 +27631,7 @@ class CKNotification extends Struct<CKNotification> {
     );
   }
 
-  static Pointer<Void> badge(
+  static Pointer badge(
     Pointer<CKNotification> _self,
   ) {
     _openDynamicLibrary();
@@ -27938,7 +27641,7 @@ class CKNotification extends Struct<CKNotification> {
     );
   }
 
-  static Pointer<Void> category(
+  static Pointer category(
     Pointer<CKNotification> _self,
   ) {
     _openDynamicLibrary();
@@ -27948,7 +27651,7 @@ class CKNotification extends Struct<CKNotification> {
     );
   }
 
-  static Pointer<Void> containerIdentifier(
+  static Pointer containerIdentifier(
     Pointer<CKNotification> _self,
   ) {
     _openDynamicLibrary();
@@ -27958,7 +27661,7 @@ class CKNotification extends Struct<CKNotification> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CKNotification> _self,
   ) {
     _openDynamicLibrary();
@@ -27970,7 +27673,7 @@ class CKNotification extends Struct<CKNotification> {
 
   static void encodeWithCoder(
     Pointer<CKNotification> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -27980,7 +27683,7 @@ class CKNotification extends Struct<CKNotification> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CKNotification> _self,
   ) {
     _openDynamicLibrary();
@@ -27990,9 +27693,9 @@ class CKNotification extends Struct<CKNotification> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CKNotification> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -28002,9 +27705,9 @@ class CKNotification extends Struct<CKNotification> {
     );
   }
 
-  static Pointer<Void> initWithRemoteNotificationDictionary(
+  static Pointer initWithRemoteNotificationDictionary(
     Pointer<CKNotification> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -28034,7 +27737,7 @@ class CKNotification extends Struct<CKNotification> {
     );
   }
 
-  static Pointer<Void> notificationID(
+  static Pointer notificationID(
     Pointer<CKNotification> _self,
   ) {
     _openDynamicLibrary();
@@ -28056,7 +27759,7 @@ class CKNotification extends Struct<CKNotification> {
 
   static void setAlertActionLocalizationKey(
     Pointer<CKNotification> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -28068,7 +27771,7 @@ class CKNotification extends Struct<CKNotification> {
 
   static void setAlertBody(
     Pointer<CKNotification> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -28080,7 +27783,7 @@ class CKNotification extends Struct<CKNotification> {
 
   static void setAlertLaunchImage(
     Pointer<CKNotification> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -28092,7 +27795,7 @@ class CKNotification extends Struct<CKNotification> {
 
   static void setAlertLocalizationArgs(
     Pointer<CKNotification> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -28104,7 +27807,7 @@ class CKNotification extends Struct<CKNotification> {
 
   static void setAlertLocalizationKey(
     Pointer<CKNotification> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -28116,7 +27819,7 @@ class CKNotification extends Struct<CKNotification> {
 
   static void setBadge(
     Pointer<CKNotification> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -28128,7 +27831,7 @@ class CKNotification extends Struct<CKNotification> {
 
   static void setCategory(
     Pointer<CKNotification> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -28140,7 +27843,7 @@ class CKNotification extends Struct<CKNotification> {
 
   static void setContainerIdentifier(
     Pointer<CKNotification> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -28164,7 +27867,7 @@ class CKNotification extends Struct<CKNotification> {
 
   static void setNotificationID(
     Pointer<CKNotification> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -28188,7 +27891,7 @@ class CKNotification extends Struct<CKNotification> {
 
   static void setSoundName(
     Pointer<CKNotification> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -28200,7 +27903,7 @@ class CKNotification extends Struct<CKNotification> {
 
   static void setSubscriptionID(
     Pointer<CKNotification> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -28212,7 +27915,7 @@ class CKNotification extends Struct<CKNotification> {
 
   static void setSubtitle(
     Pointer<CKNotification> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -28224,7 +27927,7 @@ class CKNotification extends Struct<CKNotification> {
 
   static void setSubtitleLocalizationArgs(
     Pointer<CKNotification> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -28236,7 +27939,7 @@ class CKNotification extends Struct<CKNotification> {
 
   static void setSubtitleLocalizationKey(
     Pointer<CKNotification> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -28248,7 +27951,7 @@ class CKNotification extends Struct<CKNotification> {
 
   static void setTitle(
     Pointer<CKNotification> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -28260,7 +27963,7 @@ class CKNotification extends Struct<CKNotification> {
 
   static void setTitleLocalizationArgs(
     Pointer<CKNotification> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -28272,7 +27975,7 @@ class CKNotification extends Struct<CKNotification> {
 
   static void setTitleLocalizationKey(
     Pointer<CKNotification> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -28282,7 +27985,7 @@ class CKNotification extends Struct<CKNotification> {
     );
   }
 
-  static Pointer<Void> soundName(
+  static Pointer soundName(
     Pointer<CKNotification> _self,
   ) {
     _openDynamicLibrary();
@@ -28292,7 +27995,7 @@ class CKNotification extends Struct<CKNotification> {
     );
   }
 
-  static Pointer<Void> subscriptionID(
+  static Pointer subscriptionID(
     Pointer<CKNotification> _self,
   ) {
     _openDynamicLibrary();
@@ -28302,7 +28005,7 @@ class CKNotification extends Struct<CKNotification> {
     );
   }
 
-  static Pointer<Void> subtitle(
+  static Pointer subtitle(
     Pointer<CKNotification> _self,
   ) {
     _openDynamicLibrary();
@@ -28312,7 +28015,7 @@ class CKNotification extends Struct<CKNotification> {
     );
   }
 
-  static Pointer<Void> subtitleLocalizationArgs(
+  static Pointer subtitleLocalizationArgs(
     Pointer<CKNotification> _self,
   ) {
     _openDynamicLibrary();
@@ -28322,7 +28025,7 @@ class CKNotification extends Struct<CKNotification> {
     );
   }
 
-  static Pointer<Void> subtitleLocalizationKey(
+  static Pointer subtitleLocalizationKey(
     Pointer<CKNotification> _self,
   ) {
     _openDynamicLibrary();
@@ -28332,7 +28035,7 @@ class CKNotification extends Struct<CKNotification> {
     );
   }
 
-  static Pointer<Void> title(
+  static Pointer title(
     Pointer<CKNotification> _self,
   ) {
     _openDynamicLibrary();
@@ -28342,7 +28045,7 @@ class CKNotification extends Struct<CKNotification> {
     );
   }
 
-  static Pointer<Void> titleLocalizationArgs(
+  static Pointer titleLocalizationArgs(
     Pointer<CKNotification> _self,
   ) {
     _openDynamicLibrary();
@@ -28352,7 +28055,7 @@ class CKNotification extends Struct<CKNotification> {
     );
   }
 
-  static Pointer<Void> titleLocalizationKey(
+  static Pointer titleLocalizationKey(
     Pointer<CKNotification> _self,
   ) {
     _openDynamicLibrary();
@@ -28363,11 +28066,9 @@ class CKNotification extends Struct<CKNotification> {
   }
 }
 
-/// Objective-C class _CKNotificationID_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKNotificationID extends Struct<CKNotificationID> {
   factory CKNotificationID._() {
@@ -28378,7 +28079,7 @@ class CKNotificationID extends Struct<CKNotificationID> {
     return _objc.allocate("CKNotificationID").cast<CKNotificationID>();
   }
 
-  static Pointer<Void> CKPropertiesDescription(
+  static Pointer CKPropertiesDescription(
     Pointer<CKNotificationID> _self,
   ) {
     _openDynamicLibrary();
@@ -28388,7 +28089,7 @@ class CKNotificationID extends Struct<CKNotificationID> {
     );
   }
 
-  static Pointer<Void> CKXPCSuitableString(
+  static Pointer CKXPCSuitableString(
     Pointer<CKNotificationID> _self,
   ) {
     _openDynamicLibrary();
@@ -28398,9 +28099,9 @@ class CKNotificationID extends Struct<CKNotificationID> {
     );
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<CKNotificationID> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -28410,7 +28111,7 @@ class CKNotificationID extends Struct<CKNotificationID> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CKNotificationID> _self,
   ) {
     _openDynamicLibrary();
@@ -28422,7 +28123,7 @@ class CKNotificationID extends Struct<CKNotificationID> {
 
   static void encodeWithCoder(
     Pointer<CKNotificationID> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -28442,9 +28143,9 @@ class CKNotificationID extends Struct<CKNotificationID> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CKNotificationID> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -28456,7 +28157,7 @@ class CKNotificationID extends Struct<CKNotificationID> {
 
   static int isEqual(
     Pointer<CKNotificationID> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -28466,7 +28167,7 @@ class CKNotificationID extends Struct<CKNotificationID> {
     );
   }
 
-  static Pointer<Void> notificationUUID(
+  static Pointer notificationUUID(
     Pointer<CKNotificationID> _self,
   ) {
     _openDynamicLibrary();
@@ -28478,7 +28179,7 @@ class CKNotificationID extends Struct<CKNotificationID> {
 
   static void setNotificationUUID(
     Pointer<CKNotificationID> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -28489,11 +28190,9 @@ class CKNotificationID extends Struct<CKNotificationID> {
   }
 }
 
-/// Objective-C class _CKNotificationInfo_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKNotificationInfo extends Struct<CKNotificationInfo> {
   factory CKNotificationInfo._() {
@@ -28504,7 +28203,7 @@ class CKNotificationInfo extends Struct<CKNotificationInfo> {
     return _objc.allocate("CKNotificationInfo").cast<CKNotificationInfo>();
   }
 
-  static Pointer<Void> alertActionLocalizationKey(
+  static Pointer alertActionLocalizationKey(
     Pointer<CKNotificationInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -28514,7 +28213,7 @@ class CKNotificationInfo extends Struct<CKNotificationInfo> {
     );
   }
 
-  static Pointer<Void> alertBody(
+  static Pointer alertBody(
     Pointer<CKNotificationInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -28524,7 +28223,7 @@ class CKNotificationInfo extends Struct<CKNotificationInfo> {
     );
   }
 
-  static Pointer<Void> alertLaunchImage(
+  static Pointer alertLaunchImage(
     Pointer<CKNotificationInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -28534,7 +28233,7 @@ class CKNotificationInfo extends Struct<CKNotificationInfo> {
     );
   }
 
-  static Pointer<Void> alertLocalizationArgs(
+  static Pointer alertLocalizationArgs(
     Pointer<CKNotificationInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -28544,7 +28243,7 @@ class CKNotificationInfo extends Struct<CKNotificationInfo> {
     );
   }
 
-  static Pointer<Void> alertLocalizationKey(
+  static Pointer alertLocalizationKey(
     Pointer<CKNotificationInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -28554,7 +28253,7 @@ class CKNotificationInfo extends Struct<CKNotificationInfo> {
     );
   }
 
-  static Pointer<Void> category(
+  static Pointer category(
     Pointer<CKNotificationInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -28564,7 +28263,7 @@ class CKNotificationInfo extends Struct<CKNotificationInfo> {
     );
   }
 
-  static Pointer<Void> collapseIDKey(
+  static Pointer collapseIDKey(
     Pointer<CKNotificationInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -28574,9 +28273,9 @@ class CKNotificationInfo extends Struct<CKNotificationInfo> {
     );
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<CKNotificationInfo> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -28586,7 +28285,7 @@ class CKNotificationInfo extends Struct<CKNotificationInfo> {
     );
   }
 
-  static Pointer<Void> debugDescription(
+  static Pointer debugDescription(
     Pointer<CKNotificationInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -28596,7 +28295,7 @@ class CKNotificationInfo extends Struct<CKNotificationInfo> {
     );
   }
 
-  static Pointer<Void> desiredKeys(
+  static Pointer desiredKeys(
     Pointer<CKNotificationInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -28608,7 +28307,7 @@ class CKNotificationInfo extends Struct<CKNotificationInfo> {
 
   static void encodeWithCoder(
     Pointer<CKNotificationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -28618,9 +28317,9 @@ class CKNotificationInfo extends Struct<CKNotificationInfo> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CKNotificationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -28632,7 +28331,7 @@ class CKNotificationInfo extends Struct<CKNotificationInfo> {
 
   static void setAlertActionLocalizationKey(
     Pointer<CKNotificationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -28644,7 +28343,7 @@ class CKNotificationInfo extends Struct<CKNotificationInfo> {
 
   static void setAlertBody(
     Pointer<CKNotificationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -28656,7 +28355,7 @@ class CKNotificationInfo extends Struct<CKNotificationInfo> {
 
   static void setAlertLaunchImage(
     Pointer<CKNotificationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -28668,7 +28367,7 @@ class CKNotificationInfo extends Struct<CKNotificationInfo> {
 
   static void setAlertLocalizationArgs(
     Pointer<CKNotificationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -28680,7 +28379,7 @@ class CKNotificationInfo extends Struct<CKNotificationInfo> {
 
   static void setAlertLocalizationKey(
     Pointer<CKNotificationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -28692,7 +28391,7 @@ class CKNotificationInfo extends Struct<CKNotificationInfo> {
 
   static void setCategory(
     Pointer<CKNotificationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -28704,7 +28403,7 @@ class CKNotificationInfo extends Struct<CKNotificationInfo> {
 
   static void setCollapseIDKey(
     Pointer<CKNotificationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -28716,7 +28415,7 @@ class CKNotificationInfo extends Struct<CKNotificationInfo> {
 
   static void setDesiredKeys(
     Pointer<CKNotificationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -28764,7 +28463,7 @@ class CKNotificationInfo extends Struct<CKNotificationInfo> {
 
   static void setSoundName(
     Pointer<CKNotificationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -28776,7 +28475,7 @@ class CKNotificationInfo extends Struct<CKNotificationInfo> {
 
   static void setSubtitle(
     Pointer<CKNotificationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -28788,7 +28487,7 @@ class CKNotificationInfo extends Struct<CKNotificationInfo> {
 
   static void setSubtitleLocalizationArgs(
     Pointer<CKNotificationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -28800,7 +28499,7 @@ class CKNotificationInfo extends Struct<CKNotificationInfo> {
 
   static void setSubtitleLocalizationKey(
     Pointer<CKNotificationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -28812,7 +28511,7 @@ class CKNotificationInfo extends Struct<CKNotificationInfo> {
 
   static void setTitle(
     Pointer<CKNotificationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -28824,7 +28523,7 @@ class CKNotificationInfo extends Struct<CKNotificationInfo> {
 
   static void setTitleLocalizationArgs(
     Pointer<CKNotificationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -28836,7 +28535,7 @@ class CKNotificationInfo extends Struct<CKNotificationInfo> {
 
   static void setTitleLocalizationKey(
     Pointer<CKNotificationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -28876,7 +28575,7 @@ class CKNotificationInfo extends Struct<CKNotificationInfo> {
     );
   }
 
-  static Pointer<Void> soundName(
+  static Pointer soundName(
     Pointer<CKNotificationInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -28886,7 +28585,7 @@ class CKNotificationInfo extends Struct<CKNotificationInfo> {
     );
   }
 
-  static Pointer<Void> subtitle(
+  static Pointer subtitle(
     Pointer<CKNotificationInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -28896,7 +28595,7 @@ class CKNotificationInfo extends Struct<CKNotificationInfo> {
     );
   }
 
-  static Pointer<Void> subtitleLocalizationArgs(
+  static Pointer subtitleLocalizationArgs(
     Pointer<CKNotificationInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -28906,7 +28605,7 @@ class CKNotificationInfo extends Struct<CKNotificationInfo> {
     );
   }
 
-  static Pointer<Void> subtitleLocalizationKey(
+  static Pointer subtitleLocalizationKey(
     Pointer<CKNotificationInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -28916,7 +28615,7 @@ class CKNotificationInfo extends Struct<CKNotificationInfo> {
     );
   }
 
-  static Pointer<Void> title(
+  static Pointer title(
     Pointer<CKNotificationInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -28926,7 +28625,7 @@ class CKNotificationInfo extends Struct<CKNotificationInfo> {
     );
   }
 
-  static Pointer<Void> titleLocalizationArgs(
+  static Pointer titleLocalizationArgs(
     Pointer<CKNotificationInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -28936,7 +28635,7 @@ class CKNotificationInfo extends Struct<CKNotificationInfo> {
     );
   }
 
-  static Pointer<Void> titleLocalizationKey(
+  static Pointer titleLocalizationKey(
     Pointer<CKNotificationInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -28947,11 +28646,9 @@ class CKNotificationInfo extends Struct<CKNotificationInfo> {
   }
 }
 
-/// Objective-C class _CKObjCClass_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKObjCClass extends Struct<CKObjCClass> {
   factory CKObjCClass._() {
@@ -28962,7 +28659,7 @@ class CKObjCClass extends Struct<CKObjCClass> {
     return _objc.allocate("CKObjCClass").cast<CKObjCClass>();
   }
 
-  static Pointer<Void> allProperties(
+  static Pointer allProperties(
     Pointer<CKObjCClass> _self,
   ) {
     _openDynamicLibrary();
@@ -28972,7 +28669,7 @@ class CKObjCClass extends Struct<CKObjCClass> {
     );
   }
 
-  static Pointer<Void> handle(
+  static Pointer handle(
     Pointer<CKObjCClass> _self,
   ) {
     _openDynamicLibrary();
@@ -28982,9 +28679,9 @@ class CKObjCClass extends Struct<CKObjCClass> {
     );
   }
 
-  static Pointer<Void> initWithHandle(
+  static Pointer initWithHandle(
     Pointer<CKObjCClass> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -28994,7 +28691,7 @@ class CKObjCClass extends Struct<CKObjCClass> {
     );
   }
 
-  static Pointer<Void> name(
+  static Pointer name(
     Pointer<CKObjCClass> _self,
   ) {
     _openDynamicLibrary();
@@ -29004,7 +28701,7 @@ class CKObjCClass extends Struct<CKObjCClass> {
     );
   }
 
-  static Pointer<Void> propertiesByName(
+  static Pointer propertiesByName(
     Pointer<CKObjCClass> _self,
   ) {
     _openDynamicLibrary();
@@ -29014,9 +28711,9 @@ class CKObjCClass extends Struct<CKObjCClass> {
     );
   }
 
-  static Pointer<Void> propertyForName(
+  static Pointer propertyForName(
     Pointer<CKObjCClass> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -29026,7 +28723,7 @@ class CKObjCClass extends Struct<CKObjCClass> {
     );
   }
 
-  static Pointer<Void> sortedProperties(
+  static Pointer sortedProperties(
     Pointer<CKObjCClass> _self,
   ) {
     _openDynamicLibrary();
@@ -29037,11 +28734,9 @@ class CKObjCClass extends Struct<CKObjCClass> {
   }
 }
 
-/// Objective-C class _CKObjCProperty_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKObjCProperty extends Struct<CKObjCProperty> {
   factory CKObjCProperty._() {
@@ -29052,7 +28747,7 @@ class CKObjCProperty extends Struct<CKObjCProperty> {
     return _objc.allocate("CKObjCProperty").cast<CKObjCProperty>();
   }
 
-  static Pointer<Void> classHandle(
+  static Pointer classHandle(
     Pointer<CKObjCProperty> _self,
   ) {
     _openDynamicLibrary();
@@ -29064,7 +28759,7 @@ class CKObjCProperty extends Struct<CKObjCProperty> {
 
   static int compare(
     Pointer<CKObjCProperty> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int64(
@@ -29076,7 +28771,7 @@ class CKObjCProperty extends Struct<CKObjCProperty> {
 
   static int compareToProperty(
     Pointer<CKObjCProperty> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int64(
@@ -29086,7 +28781,7 @@ class CKObjCProperty extends Struct<CKObjCProperty> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CKObjCProperty> _self,
   ) {
     _openDynamicLibrary();
@@ -29106,9 +28801,9 @@ class CKObjCProperty extends Struct<CKObjCProperty> {
     );
   }
 
-  static Pointer<Void> getFromObject(
+  static Pointer getFromObject(
     Pointer<CKObjCProperty> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -29118,7 +28813,7 @@ class CKObjCProperty extends Struct<CKObjCProperty> {
     );
   }
 
-  static Pointer<Void> getterMethodSignature(
+  static Pointer getterMethodSignature(
     Pointer<CKObjCProperty> _self,
   ) {
     _openDynamicLibrary();
@@ -29128,7 +28823,7 @@ class CKObjCProperty extends Struct<CKObjCProperty> {
     );
   }
 
-  static Pointer<Void> getterSelector(
+  static Pointer getterSelector(
     Pointer<CKObjCProperty> _self,
   ) {
     _openDynamicLibrary();
@@ -29138,7 +28833,7 @@ class CKObjCProperty extends Struct<CKObjCProperty> {
     );
   }
 
-  static Pointer<Void> getterSelectorName(
+  static Pointer getterSelectorName(
     Pointer<CKObjCProperty> _self,
   ) {
     _openDynamicLibrary();
@@ -29148,10 +28843,10 @@ class CKObjCProperty extends Struct<CKObjCProperty> {
     );
   }
 
-  static Pointer<Void> initWithClass(
+  static Pointer initWithClass(
     Pointer<CKObjCProperty> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> property,
+    Pointer arg, {
+    @required Pointer<Pointer> property,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -29162,7 +28857,7 @@ class CKObjCProperty extends Struct<CKObjCProperty> {
     );
   }
 
-  static Pointer<Void> instanceVariableName(
+  static Pointer instanceVariableName(
     Pointer<CKObjCProperty> _self,
   ) {
     _openDynamicLibrary();
@@ -29172,7 +28867,7 @@ class CKObjCProperty extends Struct<CKObjCProperty> {
     );
   }
 
-  static Pointer<Void> name(
+  static Pointer name(
     Pointer<CKObjCProperty> _self,
   ) {
     _openDynamicLibrary();
@@ -29184,8 +28879,8 @@ class CKObjCProperty extends Struct<CKObjCProperty> {
 
   static void setValue(
     Pointer<CKObjCProperty> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> onObject,
+    Pointer arg, {
+    @required Pointer onObject,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -29196,7 +28891,7 @@ class CKObjCProperty extends Struct<CKObjCProperty> {
     );
   }
 
-  static Pointer<Void> setterMethodSignature(
+  static Pointer setterMethodSignature(
     Pointer<CKObjCProperty> _self,
   ) {
     _openDynamicLibrary();
@@ -29206,7 +28901,7 @@ class CKObjCProperty extends Struct<CKObjCProperty> {
     );
   }
 
-  static Pointer<Void> setterSelector(
+  static Pointer setterSelector(
     Pointer<CKObjCProperty> _self,
   ) {
     _openDynamicLibrary();
@@ -29216,7 +28911,7 @@ class CKObjCProperty extends Struct<CKObjCProperty> {
     );
   }
 
-  static Pointer<Void> setterSelectorName(
+  static Pointer setterSelectorName(
     Pointer<CKObjCProperty> _self,
   ) {
     _openDynamicLibrary();
@@ -29226,7 +28921,7 @@ class CKObjCProperty extends Struct<CKObjCProperty> {
     );
   }
 
-  static Pointer<Void> type(
+  static Pointer type(
     Pointer<CKObjCProperty> _self,
   ) {
     _openDynamicLibrary();
@@ -29237,11 +28932,9 @@ class CKObjCProperty extends Struct<CKObjCProperty> {
   }
 }
 
-/// Objective-C class _CKObjCType_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKObjCType extends Struct<CKObjCType> {
   factory CKObjCType._() {
@@ -29252,7 +28945,7 @@ class CKObjCType extends Struct<CKObjCType> {
     return _objc.allocate("CKObjCType").cast<CKObjCType>();
   }
 
-  static Pointer<Void> className(
+  static Pointer className(
     Pointer<CKObjCType> _self,
   ) {
     _openDynamicLibrary();
@@ -29272,7 +28965,7 @@ class CKObjCType extends Struct<CKObjCType> {
     );
   }
 
-  static Pointer<Void> encoding(
+  static Pointer encoding(
     Pointer<CKObjCType> _self,
   ) {
     _openDynamicLibrary();
@@ -29294,8 +28987,8 @@ class CKObjCType extends Struct<CKObjCType> {
 
   static void getBytes(
     Pointer<CKObjCType> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> forObject,
+    Pointer arg, {
+    @required Pointer forObject,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -29306,12 +28999,12 @@ class CKObjCType extends Struct<CKObjCType> {
     );
   }
 
-  static Pointer<Void> initWithCode(
+  static Pointer initWithCode(
     Pointer<CKObjCType> _self,
     int arg, {
-    @required Pointer<Void> encoding,
-    @required Pointer<Void> name,
-    @required Pointer<Void> className,
+    @required Pointer encoding,
+    @required Pointer name,
+    @required Pointer className,
     @required int size,
     @required int flags,
   }) {
@@ -29368,7 +29061,7 @@ class CKObjCType extends Struct<CKObjCType> {
     );
   }
 
-  static Pointer<Void> name(
+  static Pointer name(
     Pointer<CKObjCType> _self,
   ) {
     _openDynamicLibrary();
@@ -29378,9 +29071,9 @@ class CKObjCType extends Struct<CKObjCType> {
     );
   }
 
-  static Pointer<Void> objectWithBytes(
+  static Pointer objectWithBytes(
     Pointer<CKObjCType> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -29401,11 +29094,9 @@ class CKObjCType extends Struct<CKObjCType> {
   }
 }
 
-/// Objective-C class _CKObject_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKObject extends Struct<CKObject> {
   factory CKObject._() {
@@ -29416,7 +29107,7 @@ class CKObject extends Struct<CKObject> {
     return _objc.allocate("CKObject").cast<CKObject>();
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CKObject> _self,
   ) {
     _openDynamicLibrary();
@@ -29426,7 +29117,7 @@ class CKObject extends Struct<CKObject> {
     );
   }
 
-  static Pointer<Void> dictionaryPropertyEncoding(
+  static Pointer dictionaryPropertyEncoding(
     Pointer<CKObject> _self,
   ) {
     _openDynamicLibrary();
@@ -29446,9 +29137,9 @@ class CKObject extends Struct<CKObject> {
     );
   }
 
-  static Pointer<Void> initWithPropertyDictionary(
+  static Pointer initWithPropertyDictionary(
     Pointer<CKObject> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -29460,7 +29151,7 @@ class CKObject extends Struct<CKObject> {
 
   static int isEqual(
     Pointer<CKObject> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -29470,7 +29161,7 @@ class CKObject extends Struct<CKObject> {
     );
   }
 
-  static Pointer<Void> objcClass(
+  static Pointer objcClass(
     Pointer<CKObject> _self,
   ) {
     _openDynamicLibrary();
@@ -29480,7 +29171,7 @@ class CKObject extends Struct<CKObject> {
     );
   }
 
-  static Pointer<Void> propertyNamesNotToEncode(
+  static Pointer propertyNamesNotToEncode(
     Pointer<CKObject> _self,
   ) {
     _openDynamicLibrary();
@@ -29491,11 +29182,9 @@ class CKObject extends Struct<CKObject> {
   }
 }
 
-/// Objective-C class _CKOperation_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKOperation extends Struct<CKOperation> {
   factory CKOperation._() {
@@ -29506,7 +29195,7 @@ class CKOperation extends Struct<CKOperation> {
     return _objc.allocate("CKOperation").cast<CKOperation>();
   }
 
-  static Pointer<Void> CKDescriptionPropertiesWithPublic(
+  static Pointer CKDescriptionPropertiesWithPublic(
     Pointer<CKOperation> _self,
     int arg, {
     @required int private,
@@ -29525,7 +29214,7 @@ class CKOperation extends Struct<CKOperation> {
 
   static int CKOperationShouldRun(
     Pointer<CKOperation> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -29535,7 +29224,7 @@ class CKOperation extends Struct<CKOperation> {
     );
   }
 
-  static Pointer<Void> MMCSRequestOptions(
+  static Pointer MMCSRequestOptions(
     Pointer<CKOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -29545,7 +29234,7 @@ class CKOperation extends Struct<CKOperation> {
     );
   }
 
-  static Pointer<Void> activityCreate(
+  static Pointer activityCreate(
     Pointer<CKOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -29555,7 +29244,7 @@ class CKOperation extends Struct<CKOperation> {
     );
   }
 
-  static Pointer<Void> additionalRequestHTTPHeaders(
+  static Pointer additionalRequestHTTPHeaders(
     Pointer<CKOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -29585,7 +29274,7 @@ class CKOperation extends Struct<CKOperation> {
     );
   }
 
-  static Pointer<Void> callbackQueue(
+  static Pointer callbackQueue(
     Pointer<CKOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -29605,7 +29294,7 @@ class CKOperation extends Struct<CKOperation> {
     );
   }
 
-  static Pointer<Void> cancelError(
+  static Pointer cancelError(
     Pointer<CKOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -29617,7 +29306,7 @@ class CKOperation extends Struct<CKOperation> {
 
   static void cancelWithUnderlyingError(
     Pointer<CKOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -29627,7 +29316,7 @@ class CKOperation extends Struct<CKOperation> {
     );
   }
 
-  static Pointer<Void> clientVoucher(
+  static Pointer clientVoucher(
     Pointer<CKOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -29647,7 +29336,7 @@ class CKOperation extends Struct<CKOperation> {
     );
   }
 
-  static Pointer<Void> configuration(
+  static Pointer configuration(
     Pointer<CKOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -29657,7 +29346,7 @@ class CKOperation extends Struct<CKOperation> {
     );
   }
 
-  static Pointer<Void> container(
+  static Pointer container(
     Pointer<CKOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -29667,7 +29356,7 @@ class CKOperation extends Struct<CKOperation> {
     );
   }
 
-  static Pointer<Void> context(
+  static Pointer context(
     Pointer<CKOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -29677,7 +29366,7 @@ class CKOperation extends Struct<CKOperation> {
     );
   }
 
-  static Pointer<Void> daemon(
+  static Pointer daemon(
     Pointer<CKOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -29697,7 +29386,7 @@ class CKOperation extends Struct<CKOperation> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CKOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -29707,7 +29396,7 @@ class CKOperation extends Struct<CKOperation> {
     );
   }
 
-  static Pointer<Void> deviceIdentifier(
+  static Pointer deviceIdentifier(
     Pointer<CKOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -29717,7 +29406,7 @@ class CKOperation extends Struct<CKOperation> {
     );
   }
 
-  static Pointer<Void> error(
+  static Pointer error(
     Pointer<CKOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -29729,7 +29418,7 @@ class CKOperation extends Struct<CKOperation> {
 
   static void fillFromOperationInfo(
     Pointer<CKOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -29741,7 +29430,7 @@ class CKOperation extends Struct<CKOperation> {
 
   static void fillOutOperationInfo(
     Pointer<CKOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -29753,7 +29442,7 @@ class CKOperation extends Struct<CKOperation> {
 
   static void finishWithError(
     Pointer<CKOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -29763,7 +29452,7 @@ class CKOperation extends Struct<CKOperation> {
     );
   }
 
-  static Pointer<Void> flowControlKey(
+  static Pointer flowControlKey(
     Pointer<CKOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -29773,7 +29462,7 @@ class CKOperation extends Struct<CKOperation> {
     );
   }
 
-  static Pointer<Void> group(
+  static Pointer group(
     Pointer<CKOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -29793,7 +29482,7 @@ class CKOperation extends Struct<CKOperation> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CKOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -29863,7 +29552,7 @@ class CKOperation extends Struct<CKOperation> {
     );
   }
 
-  static Pointer<Void> longLivedOperationWasPersistedBlock(
+  static Pointer longLivedOperationWasPersistedBlock(
     Pointer<CKOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -29883,7 +29572,7 @@ class CKOperation extends Struct<CKOperation> {
     );
   }
 
-  static Pointer<Void> metrics(
+  static Pointer metrics(
     Pointer<CKOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -29893,7 +29582,7 @@ class CKOperation extends Struct<CKOperation> {
     );
   }
 
-  static Pointer<Void> operationClass(
+  static Pointer operationClass(
     Pointer<CKOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -29903,7 +29592,7 @@ class CKOperation extends Struct<CKOperation> {
     );
   }
 
-  static Pointer<Void> operationID(
+  static Pointer operationID(
     Pointer<CKOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -29913,7 +29602,7 @@ class CKOperation extends Struct<CKOperation> {
     );
   }
 
-  static Pointer<Void> operationInfo(
+  static Pointer operationInfo(
     Pointer<CKOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -29923,7 +29612,7 @@ class CKOperation extends Struct<CKOperation> {
     );
   }
 
-  static Pointer<Void> operationInfoClass(
+  static Pointer operationInfoClass(
     Pointer<CKOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -29933,7 +29622,7 @@ class CKOperation extends Struct<CKOperation> {
     );
   }
 
-  static Pointer<Void> operationMetric(
+  static Pointer operationMetric(
     Pointer<CKOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -29943,7 +29632,7 @@ class CKOperation extends Struct<CKOperation> {
     );
   }
 
-  static Pointer<Void> osActivity(
+  static Pointer osActivity(
     Pointer<CKOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -29953,7 +29642,7 @@ class CKOperation extends Struct<CKOperation> {
     );
   }
 
-  static Pointer<Void> parentSectionID(
+  static Pointer parentSectionID(
     Pointer<CKOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -29973,7 +29662,7 @@ class CKOperation extends Struct<CKOperation> {
     );
   }
 
-  static Pointer<Void> placeholderOperation(
+  static Pointer placeholderOperation(
     Pointer<CKOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -29995,7 +29684,7 @@ class CKOperation extends Struct<CKOperation> {
 
   static void processOperationResult(
     Pointer<CKOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -30025,7 +29714,7 @@ class CKOperation extends Struct<CKOperation> {
     );
   }
 
-  static Pointer<Void> requestCompletedBlock(
+  static Pointer requestCompletedBlock(
     Pointer<CKOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -30035,7 +29724,7 @@ class CKOperation extends Struct<CKOperation> {
     );
   }
 
-  static Pointer<Void> requestUUIDs(
+  static Pointer requestUUIDs(
     Pointer<CKOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -30045,7 +29734,7 @@ class CKOperation extends Struct<CKOperation> {
     );
   }
 
-  static Pointer<Void> resolvedConfiguration(
+  static Pointer resolvedConfiguration(
     Pointer<CKOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -30055,7 +29744,7 @@ class CKOperation extends Struct<CKOperation> {
     );
   }
 
-  static Pointer<Void> responseHTTPHeadersByRequestUUID(
+  static Pointer responseHTTPHeadersByRequestUUID(
     Pointer<CKOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -30065,7 +29754,7 @@ class CKOperation extends Struct<CKOperation> {
     );
   }
 
-  static Pointer<Void> savedRequestUUIDs(
+  static Pointer savedRequestUUIDs(
     Pointer<CKOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -30075,7 +29764,7 @@ class CKOperation extends Struct<CKOperation> {
     );
   }
 
-  static Pointer<Void> savedResponseHTTPHeadersByRequestUUID(
+  static Pointer savedResponseHTTPHeadersByRequestUUID(
     Pointer<CKOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -30085,7 +29774,7 @@ class CKOperation extends Struct<CKOperation> {
     );
   }
 
-  static Pointer<Void> savedW3CNavigationTimingByRequestUUID(
+  static Pointer savedW3CNavigationTimingByRequestUUID(
     Pointer<CKOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -30095,7 +29784,7 @@ class CKOperation extends Struct<CKOperation> {
     );
   }
 
-  static Pointer<Void> sectionID(
+  static Pointer sectionID(
     Pointer<CKOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -30107,7 +29796,7 @@ class CKOperation extends Struct<CKOperation> {
 
   static void setAdditionalRequestHTTPHeaders(
     Pointer<CKOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -30143,7 +29832,7 @@ class CKOperation extends Struct<CKOperation> {
 
   static void setCallbackQueue(
     Pointer<CKOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -30155,7 +29844,7 @@ class CKOperation extends Struct<CKOperation> {
 
   static void setCancelError(
     Pointer<CKOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -30167,7 +29856,7 @@ class CKOperation extends Struct<CKOperation> {
 
   static void setClientVoucher(
     Pointer<CKOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -30191,7 +29880,7 @@ class CKOperation extends Struct<CKOperation> {
 
   static void setCompletionBlock(
     Pointer<CKOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -30203,7 +29892,7 @@ class CKOperation extends Struct<CKOperation> {
 
   static void setConfiguration(
     Pointer<CKOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -30215,7 +29904,7 @@ class CKOperation extends Struct<CKOperation> {
 
   static void setContainer(
     Pointer<CKOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -30227,7 +29916,7 @@ class CKOperation extends Struct<CKOperation> {
 
   static void setDeviceIdentifier(
     Pointer<CKOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -30239,7 +29928,7 @@ class CKOperation extends Struct<CKOperation> {
 
   static void setError(
     Pointer<CKOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -30251,7 +29940,7 @@ class CKOperation extends Struct<CKOperation> {
 
   static void setGroup(
     Pointer<CKOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -30311,7 +30000,7 @@ class CKOperation extends Struct<CKOperation> {
 
   static void setLongLivedOperationWasPersistedBlock(
     Pointer<CKOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -30323,7 +30012,7 @@ class CKOperation extends Struct<CKOperation> {
 
   static void setMMCSRequestOptions(
     Pointer<CKOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -30335,7 +30024,7 @@ class CKOperation extends Struct<CKOperation> {
 
   static void setMetrics(
     Pointer<CKOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -30347,7 +30036,7 @@ class CKOperation extends Struct<CKOperation> {
 
   static void setOperationID(
     Pointer<CKOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -30359,7 +30048,7 @@ class CKOperation extends Struct<CKOperation> {
 
   static void setOsActivity(
     Pointer<CKOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -30371,7 +30060,7 @@ class CKOperation extends Struct<CKOperation> {
 
   static void setPlaceholderOperation(
     Pointer<CKOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -30419,7 +30108,7 @@ class CKOperation extends Struct<CKOperation> {
 
   static void setRequestCompletedBlock(
     Pointer<CKOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -30431,7 +30120,7 @@ class CKOperation extends Struct<CKOperation> {
 
   static void setSavedRequestUUIDs(
     Pointer<CKOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -30443,7 +30132,7 @@ class CKOperation extends Struct<CKOperation> {
 
   static void setSavedResponseHTTPHeadersByRequestUUID(
     Pointer<CKOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -30455,7 +30144,7 @@ class CKOperation extends Struct<CKOperation> {
 
   static void setSavedW3CNavigationTimingByRequestUUID(
     Pointer<CKOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -30467,7 +30156,7 @@ class CKOperation extends Struct<CKOperation> {
 
   static void setSectionID(
     Pointer<CKOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -30479,7 +30168,7 @@ class CKOperation extends Struct<CKOperation> {
 
   static void setSourceApplicationBundleIdentifier(
     Pointer<CKOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -30491,7 +30180,7 @@ class CKOperation extends Struct<CKOperation> {
 
   static void setSourceApplicationSecondaryIdentifier(
     Pointer<CKOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -30503,7 +30192,7 @@ class CKOperation extends Struct<CKOperation> {
 
   static void setTimeLogger(
     Pointer<CKOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -30539,7 +30228,7 @@ class CKOperation extends Struct<CKOperation> {
 
   static void setTimeoutSource(
     Pointer<CKOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -30561,7 +30250,7 @@ class CKOperation extends Struct<CKOperation> {
     );
   }
 
-  static Pointer<Void> sourceApplicationBundleIdentifier(
+  static Pointer sourceApplicationBundleIdentifier(
     Pointer<CKOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -30571,7 +30260,7 @@ class CKOperation extends Struct<CKOperation> {
     );
   }
 
-  static Pointer<Void> sourceApplicationSecondaryIdentifier(
+  static Pointer sourceApplicationSecondaryIdentifier(
     Pointer<CKOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -30591,7 +30280,7 @@ class CKOperation extends Struct<CKOperation> {
     );
   }
 
-  static Pointer<Void> timeLogger(
+  static Pointer timeLogger(
     Pointer<CKOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -30621,7 +30310,7 @@ class CKOperation extends Struct<CKOperation> {
     );
   }
 
-  static Pointer<Void> timeoutSource(
+  static Pointer timeoutSource(
     Pointer<CKOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -30641,7 +30330,7 @@ class CKOperation extends Struct<CKOperation> {
     );
   }
 
-  static Pointer<Void> w3cNavigationTimingByRequestUUID(
+  static Pointer w3cNavigationTimingByRequestUUID(
     Pointer<CKOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -30652,11 +30341,9 @@ class CKOperation extends Struct<CKOperation> {
   }
 }
 
-/// Objective-C class _CKOperationCallbackManager_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKOperationCallbackManager extends Struct<CKOperationCallbackManager> {
   factory CKOperationCallbackManager._() {
@@ -30669,7 +30356,7 @@ class CKOperationCallbackManager extends Struct<CKOperationCallbackManager> {
         .cast<CKOperationCallbackManager>();
   }
 
-  static Pointer<Void> checkpointCallbacks(
+  static Pointer checkpointCallbacks(
     Pointer<CKOperationCallbackManager> _self,
   ) {
     _openDynamicLibrary();
@@ -30679,7 +30366,7 @@ class CKOperationCallbackManager extends Struct<CKOperationCallbackManager> {
     );
   }
 
-  static Pointer<Void> commandCallbacks(
+  static Pointer commandCallbacks(
     Pointer<CKOperationCallbackManager> _self,
   ) {
     _openDynamicLibrary();
@@ -30689,7 +30376,7 @@ class CKOperationCallbackManager extends Struct<CKOperationCallbackManager> {
     );
   }
 
-  static Pointer<Void> completionCallbacks(
+  static Pointer completionCallbacks(
     Pointer<CKOperationCallbackManager> _self,
   ) {
     _openDynamicLibrary();
@@ -30701,8 +30388,8 @@ class CKOperationCallbackManager extends Struct<CKOperationCallbackManager> {
 
   static void handleOperationCheckpoint(
     Pointer<CKOperationCallbackManager> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> forOperationWithID,
+    Pointer arg, {
+    @required Pointer forOperationWithID,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -30715,8 +30402,8 @@ class CKOperationCallbackManager extends Struct<CKOperationCallbackManager> {
 
   static void handleOperationCompletion(
     Pointer<CKOperationCallbackManager> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> forOperationWithID,
+    Pointer arg, {
+    @required Pointer forOperationWithID,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -30729,9 +30416,9 @@ class CKOperationCallbackManager extends Struct<CKOperationCallbackManager> {
 
   static void handleOperationProgress(
     Pointer<CKOperationCallbackManager> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> forOperationWithID,
-    @required Pointer<Void> reply,
+    Pointer arg, {
+    @required Pointer forOperationWithID,
+    @required Pointer reply,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_void(
@@ -30745,8 +30432,8 @@ class CKOperationCallbackManager extends Struct<CKOperationCallbackManager> {
 
   static void handleOperationStatistics(
     Pointer<CKOperationCallbackManager> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> forOperationWithID,
+    Pointer arg, {
+    @required Pointer forOperationWithID,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -30757,7 +30444,7 @@ class CKOperationCallbackManager extends Struct<CKOperationCallbackManager> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CKOperationCallbackManager> _self,
   ) {
     _openDynamicLibrary();
@@ -30767,7 +30454,7 @@ class CKOperationCallbackManager extends Struct<CKOperationCallbackManager> {
     );
   }
 
-  static Pointer<Void> operationsByID(
+  static Pointer operationsByID(
     Pointer<CKOperationCallbackManager> _self,
   ) {
     _openDynamicLibrary();
@@ -30777,7 +30464,7 @@ class CKOperationCallbackManager extends Struct<CKOperationCallbackManager> {
     );
   }
 
-  static Pointer<Void> progressCallbacks(
+  static Pointer progressCallbacks(
     Pointer<CKOperationCallbackManager> _self,
   ) {
     _openDynamicLibrary();
@@ -30789,8 +30476,8 @@ class CKOperationCallbackManager extends Struct<CKOperationCallbackManager> {
 
   static void registerCheckpointCallback(
     Pointer<CKOperationCallbackManager> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> forOperation,
+    Pointer arg, {
+    @required Pointer forOperation,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -30803,8 +30490,8 @@ class CKOperationCallbackManager extends Struct<CKOperationCallbackManager> {
 
   static void registerCommandCallback(
     Pointer<CKOperationCallbackManager> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> forOperation,
+    Pointer arg, {
+    @required Pointer forOperation,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -30817,8 +30504,8 @@ class CKOperationCallbackManager extends Struct<CKOperationCallbackManager> {
 
   static void registerCompletionCallback(
     Pointer<CKOperationCallbackManager> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> forOperation,
+    Pointer arg, {
+    @required Pointer forOperation,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -30831,8 +30518,8 @@ class CKOperationCallbackManager extends Struct<CKOperationCallbackManager> {
 
   static void registerProgressCallback(
     Pointer<CKOperationCallbackManager> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> forOperation,
+    Pointer arg, {
+    @required Pointer forOperation,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -30845,8 +30532,8 @@ class CKOperationCallbackManager extends Struct<CKOperationCallbackManager> {
 
   static void registerStatisticsCallback(
     Pointer<CKOperationCallbackManager> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> forOperation,
+    Pointer arg, {
+    @required Pointer forOperation,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -30869,7 +30556,7 @@ class CKOperationCallbackManager extends Struct<CKOperationCallbackManager> {
 
   static void setCheckpointCallbacks(
     Pointer<CKOperationCallbackManager> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -30881,7 +30568,7 @@ class CKOperationCallbackManager extends Struct<CKOperationCallbackManager> {
 
   static void setCommandCallbacks(
     Pointer<CKOperationCallbackManager> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -30893,7 +30580,7 @@ class CKOperationCallbackManager extends Struct<CKOperationCallbackManager> {
 
   static void setCompletionCallbacks(
     Pointer<CKOperationCallbackManager> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -30905,7 +30592,7 @@ class CKOperationCallbackManager extends Struct<CKOperationCallbackManager> {
 
   static void setOperationsByID(
     Pointer<CKOperationCallbackManager> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -30917,7 +30604,7 @@ class CKOperationCallbackManager extends Struct<CKOperationCallbackManager> {
 
   static void setProgressCallbacks(
     Pointer<CKOperationCallbackManager> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -30929,7 +30616,7 @@ class CKOperationCallbackManager extends Struct<CKOperationCallbackManager> {
 
   static void setStatisticsCallbacks(
     Pointer<CKOperationCallbackManager> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -30939,7 +30626,7 @@ class CKOperationCallbackManager extends Struct<CKOperationCallbackManager> {
     );
   }
 
-  static Pointer<Void> statisticsCallbacks(
+  static Pointer statisticsCallbacks(
     Pointer<CKOperationCallbackManager> _self,
   ) {
     _openDynamicLibrary();
@@ -30951,7 +30638,7 @@ class CKOperationCallbackManager extends Struct<CKOperationCallbackManager> {
 
   static void unregisterAllCallbacksForOperation(
     Pointer<CKOperationCallbackManager> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -30962,11 +30649,9 @@ class CKOperationCallbackManager extends Struct<CKOperationCallbackManager> {
   }
 }
 
-/// Objective-C class _CKOperationConfiguration_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKOperationConfiguration extends Struct<CKOperationConfiguration> {
   factory CKOperationConfiguration._() {
@@ -30979,7 +30664,7 @@ class CKOperationConfiguration extends Struct<CKOperationConfiguration> {
         .cast<CKOperationConfiguration>();
   }
 
-  static Pointer<Void> additionalRequestHTTPHeaders(
+  static Pointer additionalRequestHTTPHeaders(
     Pointer<CKOperationConfiguration> _self,
   ) {
     _openDynamicLibrary();
@@ -31019,7 +30704,7 @@ class CKOperationConfiguration extends Struct<CKOperationConfiguration> {
     );
   }
 
-  static Pointer<Void> container(
+  static Pointer container(
     Pointer<CKOperationConfiguration> _self,
   ) {
     _openDynamicLibrary();
@@ -31029,9 +30714,9 @@ class CKOperationConfiguration extends Struct<CKOperationConfiguration> {
     );
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<CKOperationConfiguration> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -31053,7 +30738,7 @@ class CKOperationConfiguration extends Struct<CKOperationConfiguration> {
 
   static void encodeWithCoder(
     Pointer<CKOperationConfiguration> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -31203,7 +30888,7 @@ class CKOperationConfiguration extends Struct<CKOperationConfiguration> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CKOperationConfiguration> _self,
   ) {
     _openDynamicLibrary();
@@ -31213,9 +30898,9 @@ class CKOperationConfiguration extends Struct<CKOperationConfiguration> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CKOperationConfiguration> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -31255,9 +30940,9 @@ class CKOperationConfiguration extends Struct<CKOperationConfiguration> {
     );
   }
 
-  static Pointer<Void> resolveAgainstGenericConfiguration(
+  static Pointer resolveAgainstGenericConfiguration(
     Pointer<CKOperationConfiguration> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -31269,7 +30954,7 @@ class CKOperationConfiguration extends Struct<CKOperationConfiguration> {
 
   static void setAdditionalRequestHTTPHeaders(
     Pointer<CKOperationConfiguration> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -31317,7 +31002,7 @@ class CKOperationConfiguration extends Struct<CKOperationConfiguration> {
 
   static void setContainer(
     Pointer<CKOperationConfiguration> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -31569,7 +31254,7 @@ class CKOperationConfiguration extends Struct<CKOperationConfiguration> {
 
   static void setSourceApplicationBundleIdentifier(
     Pointer<CKOperationConfiguration> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -31581,7 +31266,7 @@ class CKOperationConfiguration extends Struct<CKOperationConfiguration> {
 
   static void setSourceApplicationSecondaryIdentifier(
     Pointer<CKOperationConfiguration> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -31625,7 +31310,7 @@ class CKOperationConfiguration extends Struct<CKOperationConfiguration> {
     );
   }
 
-  static Pointer<Void> sourceApplicationBundleIdentifier(
+  static Pointer sourceApplicationBundleIdentifier(
     Pointer<CKOperationConfiguration> _self,
   ) {
     _openDynamicLibrary();
@@ -31635,7 +31320,7 @@ class CKOperationConfiguration extends Struct<CKOperationConfiguration> {
     );
   }
 
-  static Pointer<Void> sourceApplicationSecondaryIdentifier(
+  static Pointer sourceApplicationSecondaryIdentifier(
     Pointer<CKOperationConfiguration> _self,
   ) {
     _openDynamicLibrary();
@@ -31666,11 +31351,9 @@ class CKOperationConfiguration extends Struct<CKOperationConfiguration> {
   }
 }
 
-/// Objective-C class _CKOperationFlowControlInfo_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKOperationFlowControlInfo extends Struct<CKOperationFlowControlInfo> {
   factory CKOperationFlowControlInfo._() {
@@ -31683,7 +31366,7 @@ class CKOperationFlowControlInfo extends Struct<CKOperationFlowControlInfo> {
         .cast<CKOperationFlowControlInfo>();
   }
 
-  static Pointer<Void> flowControlEndDate(
+  static Pointer flowControlEndDate(
     Pointer<CKOperationFlowControlInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -31693,7 +31376,7 @@ class CKOperationFlowControlInfo extends Struct<CKOperationFlowControlInfo> {
     );
   }
 
-  static Pointer<Void> lastError(
+  static Pointer lastError(
     Pointer<CKOperationFlowControlInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -31705,7 +31388,7 @@ class CKOperationFlowControlInfo extends Struct<CKOperationFlowControlInfo> {
 
   static void setFlowControlEndDate(
     Pointer<CKOperationFlowControlInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -31717,7 +31400,7 @@ class CKOperationFlowControlInfo extends Struct<CKOperationFlowControlInfo> {
 
   static void setLastError(
     Pointer<CKOperationFlowControlInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -31728,11 +31411,9 @@ class CKOperationFlowControlInfo extends Struct<CKOperationFlowControlInfo> {
   }
 }
 
-/// Objective-C class _CKOperationFlowControlManager_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKOperationFlowControlManager
     extends Struct<CKOperationFlowControlManager> {
@@ -31746,7 +31427,7 @@ class CKOperationFlowControlManager
         .cast<CKOperationFlowControlManager>();
   }
 
-  static Pointer<Void> CKStatusReportArray(
+  static Pointer CKStatusReportArray(
     Pointer<CKOperationFlowControlManager> _self,
   ) {
     _openDynamicLibrary();
@@ -31756,7 +31437,7 @@ class CKOperationFlowControlManager
     );
   }
 
-  static Pointer<Void> flowControlledOperationKeys(
+  static Pointer flowControlledOperationKeys(
     Pointer<CKOperationFlowControlManager> _self,
   ) {
     _openDynamicLibrary();
@@ -31766,7 +31447,7 @@ class CKOperationFlowControlManager
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CKOperationFlowControlManager> _self,
   ) {
     _openDynamicLibrary();
@@ -31778,8 +31459,8 @@ class CKOperationFlowControlManager
 
   static int isOperationLimited(
     Pointer<CKOperationFlowControlManager> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> outLimitError,
+    Pointer arg, {
+    @required Pointer<Pointer> outLimitError,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -31792,9 +31473,9 @@ class CKOperationFlowControlManager
 
   static void limitOperation(
     Pointer<CKOperationFlowControlManager> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> retryAfter,
-    @required Pointer<Void> error,
+    Pointer arg, {
+    @required Pointer retryAfter,
+    @required Pointer error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_void(
@@ -31808,7 +31489,7 @@ class CKOperationFlowControlManager
 
   static double secondsUntilUnlimited(
     Pointer<CKOperationFlowControlManager> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_float64(
@@ -31829,11 +31510,9 @@ class CKOperationFlowControlManager
   }
 }
 
-/// Objective-C class _CKOperationGroup_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKOperationGroup extends Struct<CKOperationGroup> {
   factory CKOperationGroup._() {
@@ -31844,7 +31523,7 @@ class CKOperationGroup extends Struct<CKOperationGroup> {
     return _objc.allocate("CKOperationGroup").cast<CKOperationGroup>();
   }
 
-  static Pointer<Void> CKDescriptionPropertiesWithPublic(
+  static Pointer CKDescriptionPropertiesWithPublic(
     Pointer<CKOperationGroup> _self,
     int arg, {
     @required int private,
@@ -31881,7 +31560,7 @@ class CKOperationGroup extends Struct<CKOperationGroup> {
     );
   }
 
-  static Pointer<Void> authPromptReason(
+  static Pointer authPromptReason(
     Pointer<CKOperationGroup> _self,
   ) {
     _openDynamicLibrary();
@@ -31891,7 +31570,7 @@ class CKOperationGroup extends Struct<CKOperationGroup> {
     );
   }
 
-  static Pointer<Void> defaultConfiguration(
+  static Pointer defaultConfiguration(
     Pointer<CKOperationGroup> _self,
   ) {
     _openDynamicLibrary();
@@ -31901,7 +31580,7 @@ class CKOperationGroup extends Struct<CKOperationGroup> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CKOperationGroup> _self,
   ) {
     _openDynamicLibrary();
@@ -31913,7 +31592,7 @@ class CKOperationGroup extends Struct<CKOperationGroup> {
 
   static void encodeWithCoder(
     Pointer<CKOperationGroup> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -31943,7 +31622,7 @@ class CKOperationGroup extends Struct<CKOperationGroup> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CKOperationGroup> _self,
   ) {
     _openDynamicLibrary();
@@ -31953,9 +31632,9 @@ class CKOperationGroup extends Struct<CKOperationGroup> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CKOperationGroup> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -31965,7 +31644,7 @@ class CKOperationGroup extends Struct<CKOperationGroup> {
     );
   }
 
-  static Pointer<Void> name(
+  static Pointer name(
     Pointer<CKOperationGroup> _self,
   ) {
     _openDynamicLibrary();
@@ -31975,7 +31654,7 @@ class CKOperationGroup extends Struct<CKOperationGroup> {
     );
   }
 
-  static Pointer<Void> operationGroupID(
+  static Pointer operationGroupID(
     Pointer<CKOperationGroup> _self,
   ) {
     _openDynamicLibrary();
@@ -31995,7 +31674,7 @@ class CKOperationGroup extends Struct<CKOperationGroup> {
     );
   }
 
-  static Pointer<Void> quantityNumber(
+  static Pointer quantityNumber(
     Pointer<CKOperationGroup> _self,
   ) {
     _openDynamicLibrary();
@@ -32007,7 +31686,7 @@ class CKOperationGroup extends Struct<CKOperationGroup> {
 
   static int resolvedNetworkServiceTypeForConfig(
     Pointer<CKOperationGroup> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Uint64(
@@ -32019,7 +31698,7 @@ class CKOperationGroup extends Struct<CKOperationGroup> {
 
   static void setAuthPromptReason(
     Pointer<CKOperationGroup> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -32031,7 +31710,7 @@ class CKOperationGroup extends Struct<CKOperationGroup> {
 
   static void setDefaultConfiguration(
     Pointer<CKOperationGroup> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -32067,7 +31746,7 @@ class CKOperationGroup extends Struct<CKOperationGroup> {
 
   static void setName(
     Pointer<CKOperationGroup> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -32091,7 +31770,7 @@ class CKOperationGroup extends Struct<CKOperationGroup> {
 
   static void setQuantityNumber(
     Pointer<CKOperationGroup> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -32103,7 +31782,7 @@ class CKOperationGroup extends Struct<CKOperationGroup> {
 
   static void setSystemImposedInfo(
     Pointer<CKOperationGroup> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -32113,7 +31792,7 @@ class CKOperationGroup extends Struct<CKOperationGroup> {
     );
   }
 
-  static Pointer<Void> systemImposedInfo(
+  static Pointer systemImposedInfo(
     Pointer<CKOperationGroup> _self,
   ) {
     _openDynamicLibrary();
@@ -32124,11 +31803,9 @@ class CKOperationGroup extends Struct<CKOperationGroup> {
   }
 }
 
-/// Objective-C class _CKOperationGroupSystemImposedInfo_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKOperationGroupSystemImposedInfo
     extends Struct<CKOperationGroupSystemImposedInfo> {
@@ -32144,7 +31821,7 @@ class CKOperationGroupSystemImposedInfo
 
   static void encodeWithCoder(
     Pointer<CKOperationGroupSystemImposedInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -32174,9 +31851,9 @@ class CKOperationGroupSystemImposedInfo
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CKOperationGroupSystemImposedInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -32186,7 +31863,7 @@ class CKOperationGroupSystemImposedInfo
     );
   }
 
-  static Pointer<Void> networkServiceTypePerConfig(
+  static Pointer networkServiceTypePerConfig(
     Pointer<CKOperationGroupSystemImposedInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -32222,7 +31899,7 @@ class CKOperationGroupSystemImposedInfo
 
   static void setNetworkServiceTypePerConfig(
     Pointer<CKOperationGroupSystemImposedInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -32233,11 +31910,9 @@ class CKOperationGroupSystemImposedInfo
   }
 }
 
-/// Objective-C class _CKOperationGroupSystemImposedInfoConfiguration_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKOperationGroupSystemImposedInfoConfiguration
     extends Struct<CKOperationGroupSystemImposedInfoConfiguration> {
@@ -32261,9 +31936,9 @@ class CKOperationGroupSystemImposedInfoConfiguration
     );
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<CKOperationGroupSystemImposedInfoConfiguration> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -32275,7 +31950,7 @@ class CKOperationGroupSystemImposedInfoConfiguration
 
   static void encodeWithCoder(
     Pointer<CKOperationGroupSystemImposedInfoConfiguration> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -32295,9 +31970,9 @@ class CKOperationGroupSystemImposedInfoConfiguration
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CKOperationGroupSystemImposedInfoConfiguration> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -32309,7 +31984,7 @@ class CKOperationGroupSystemImposedInfoConfiguration
 
   static int isEqual(
     Pointer<CKOperationGroupSystemImposedInfoConfiguration> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -32354,11 +32029,9 @@ class CKOperationGroupSystemImposedInfoConfiguration
   }
 }
 
-/// Objective-C class _CKOperationInfo_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKOperationInfo extends Struct<CKOperationInfo> {
   factory CKOperationInfo._() {
@@ -32369,7 +32042,7 @@ class CKOperationInfo extends Struct<CKOperationInfo> {
     return _objc.allocate("CKOperationInfo").cast<CKOperationInfo>();
   }
 
-  static Pointer<Void> MMCSRequestOptions(
+  static Pointer MMCSRequestOptions(
     Pointer<CKOperationInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -32379,7 +32052,7 @@ class CKOperationInfo extends Struct<CKOperationInfo> {
     );
   }
 
-  static Pointer<Void> additionalRequestHTTPHeaders(
+  static Pointer additionalRequestHTTPHeaders(
     Pointer<CKOperationInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -32409,7 +32082,7 @@ class CKOperationInfo extends Struct<CKOperationInfo> {
     );
   }
 
-  static Pointer<Void> authPromptReason(
+  static Pointer authPromptReason(
     Pointer<CKOperationInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -32439,9 +32112,9 @@ class CKOperationInfo extends Struct<CKOperationInfo> {
     );
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<CKOperationInfo> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -32451,7 +32124,7 @@ class CKOperationInfo extends Struct<CKOperationInfo> {
     );
   }
 
-  static Pointer<Void> deviceIdentifier(
+  static Pointer deviceIdentifier(
     Pointer<CKOperationInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -32473,7 +32146,7 @@ class CKOperationInfo extends Struct<CKOperationInfo> {
 
   static void encodeWithCoder(
     Pointer<CKOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -32483,7 +32156,7 @@ class CKOperationInfo extends Struct<CKOperationInfo> {
     );
   }
 
-  static Pointer<Void> group(
+  static Pointer group(
     Pointer<CKOperationInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -32493,7 +32166,7 @@ class CKOperationInfo extends Struct<CKOperationInfo> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CKOperationInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -32503,9 +32176,9 @@ class CKOperationInfo extends Struct<CKOperationInfo> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CKOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -32535,7 +32208,7 @@ class CKOperationInfo extends Struct<CKOperationInfo> {
     );
   }
 
-  static Pointer<Void> name(
+  static Pointer name(
     Pointer<CKOperationInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -32545,7 +32218,7 @@ class CKOperationInfo extends Struct<CKOperationInfo> {
     );
   }
 
-  static Pointer<Void> operationClass(
+  static Pointer operationClass(
     Pointer<CKOperationInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -32555,7 +32228,7 @@ class CKOperationInfo extends Struct<CKOperationInfo> {
     );
   }
 
-  static Pointer<Void> operationID(
+  static Pointer operationID(
     Pointer<CKOperationInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -32565,7 +32238,7 @@ class CKOperationInfo extends Struct<CKOperationInfo> {
     );
   }
 
-  static Pointer<Void> parentOperation(
+  static Pointer parentOperation(
     Pointer<CKOperationInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -32575,7 +32248,7 @@ class CKOperationInfo extends Struct<CKOperationInfo> {
     );
   }
 
-  static Pointer<Void> parentSectionID(
+  static Pointer parentSectionID(
     Pointer<CKOperationInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -32585,7 +32258,7 @@ class CKOperationInfo extends Struct<CKOperationInfo> {
     );
   }
 
-  static Pointer<Void> perOpConfiguration(
+  static Pointer perOpConfiguration(
     Pointer<CKOperationInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -32615,7 +32288,7 @@ class CKOperationInfo extends Struct<CKOperationInfo> {
     );
   }
 
-  static Pointer<Void> resolvedConfiguration(
+  static Pointer resolvedConfiguration(
     Pointer<CKOperationInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -32639,7 +32312,7 @@ class CKOperationInfo extends Struct<CKOperationInfo> {
 
   static void setDeviceIdentifier(
     Pointer<CKOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -32651,7 +32324,7 @@ class CKOperationInfo extends Struct<CKOperationInfo> {
 
   static void setGroup(
     Pointer<CKOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -32687,7 +32360,7 @@ class CKOperationInfo extends Struct<CKOperationInfo> {
 
   static void setMMCSRequestOptions(
     Pointer<CKOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -32699,7 +32372,7 @@ class CKOperationInfo extends Struct<CKOperationInfo> {
 
   static void setName(
     Pointer<CKOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -32711,7 +32384,7 @@ class CKOperationInfo extends Struct<CKOperationInfo> {
 
   static void setOperationClass(
     Pointer<CKOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -32723,7 +32396,7 @@ class CKOperationInfo extends Struct<CKOperationInfo> {
 
   static void setOperationID(
     Pointer<CKOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -32735,7 +32408,7 @@ class CKOperationInfo extends Struct<CKOperationInfo> {
 
   static void setParentOperation(
     Pointer<CKOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -32747,7 +32420,7 @@ class CKOperationInfo extends Struct<CKOperationInfo> {
 
   static void setParentSectionID(
     Pointer<CKOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -32759,7 +32432,7 @@ class CKOperationInfo extends Struct<CKOperationInfo> {
 
   static void setPerOpConfiguration(
     Pointer<CKOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -32771,7 +32444,7 @@ class CKOperationInfo extends Struct<CKOperationInfo> {
 
   static void setSetupInfo(
     Pointer<CKOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -32793,7 +32466,7 @@ class CKOperationInfo extends Struct<CKOperationInfo> {
     );
   }
 
-  static Pointer<Void> setupInfo(
+  static Pointer setupInfo(
     Pointer<CKOperationInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -32813,7 +32486,7 @@ class CKOperationInfo extends Struct<CKOperationInfo> {
     );
   }
 
-  static Pointer<Void> sourceApplicationBundleIdentifier(
+  static Pointer sourceApplicationBundleIdentifier(
     Pointer<CKOperationInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -32823,7 +32496,7 @@ class CKOperationInfo extends Struct<CKOperationInfo> {
     );
   }
 
-  static Pointer<Void> sourceApplicationSecondaryIdentifier(
+  static Pointer sourceApplicationSecondaryIdentifier(
     Pointer<CKOperationInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -32835,7 +32508,7 @@ class CKOperationInfo extends Struct<CKOperationInfo> {
 
   static void takeValuesFrom(
     Pointer<CKOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -32876,11 +32549,9 @@ class CKOperationInfo extends Struct<CKOperationInfo> {
   }
 }
 
-/// Objective-C class _CKOperationMMCSRequestOptions_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKOperationMMCSRequestOptions
     extends Struct<CKOperationMMCSRequestOptions> {
@@ -32896,7 +32567,7 @@ class CKOperationMMCSRequestOptions
 
   static void encodeWithCoder(
     Pointer<CKOperationMMCSRequestOptions> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -32906,9 +32577,9 @@ class CKOperationMMCSRequestOptions
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CKOperationMMCSRequestOptions> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -32941,11 +32612,9 @@ class CKOperationMMCSRequestOptions
   }
 }
 
-/// Objective-C class _CKOperationMetrics_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKOperationMetrics extends Struct<CKOperationMetrics> {
   factory CKOperationMetrics._() {
@@ -32956,7 +32625,7 @@ class CKOperationMetrics extends Struct<CKOperationMetrics> {
     return _objc.allocate("CKOperationMetrics").cast<CKOperationMetrics>();
   }
 
-  static Pointer<Void> CKPropertiesDescription(
+  static Pointer CKPropertiesDescription(
     Pointer<CKOperationMetrics> _self,
   ) {
     _openDynamicLibrary();
@@ -32966,7 +32635,7 @@ class CKOperationMetrics extends Struct<CKOperationMetrics> {
     );
   }
 
-  static Pointer<Void> MMCSMetrics(
+  static Pointer MMCSMetrics(
     Pointer<CKOperationMetrics> _self,
   ) {
     _openDynamicLibrary();
@@ -32976,7 +32645,7 @@ class CKOperationMetrics extends Struct<CKOperationMetrics> {
     );
   }
 
-  static Pointer<Void> cloudKitMetrics(
+  static Pointer cloudKitMetrics(
     Pointer<CKOperationMetrics> _self,
   ) {
     _openDynamicLibrary();
@@ -32986,9 +32655,9 @@ class CKOperationMetrics extends Struct<CKOperationMetrics> {
     );
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<CKOperationMetrics> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -32998,7 +32667,7 @@ class CKOperationMetrics extends Struct<CKOperationMetrics> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CKOperationMetrics> _self,
   ) {
     _openDynamicLibrary();
@@ -33008,7 +32677,7 @@ class CKOperationMetrics extends Struct<CKOperationMetrics> {
     );
   }
 
-  static Pointer<Void> dictionaryRepresentation(
+  static Pointer dictionaryRepresentation(
     Pointer<CKOperationMetrics> _self,
   ) {
     _openDynamicLibrary();
@@ -33020,7 +32689,7 @@ class CKOperationMetrics extends Struct<CKOperationMetrics> {
 
   static void encodeWithCoder(
     Pointer<CKOperationMetrics> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -33030,9 +32699,9 @@ class CKOperationMetrics extends Struct<CKOperationMetrics> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CKOperationMetrics> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -33044,7 +32713,7 @@ class CKOperationMetrics extends Struct<CKOperationMetrics> {
 
   static void setCloudKitMetrics(
     Pointer<CKOperationMetrics> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -33056,7 +32725,7 @@ class CKOperationMetrics extends Struct<CKOperationMetrics> {
 
   static void setMMCSMetrics(
     Pointer<CKOperationMetrics> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -33068,7 +32737,7 @@ class CKOperationMetrics extends Struct<CKOperationMetrics> {
 
   static void unionMetrics(
     Pointer<CKOperationMetrics> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -33079,11 +32748,9 @@ class CKOperationMetrics extends Struct<CKOperationMetrics> {
   }
 }
 
-/// Objective-C class _CKOperationResult_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKOperationResult extends Struct<CKOperationResult> {
   factory CKOperationResult._() {
@@ -33094,7 +32761,7 @@ class CKOperationResult extends Struct<CKOperationResult> {
     return _objc.allocate("CKOperationResult").cast<CKOperationResult>();
   }
 
-  static Pointer<Void> CKDescriptionPropertiesWithPublic(
+  static Pointer CKDescriptionPropertiesWithPublic(
     Pointer<CKOperationResult> _self,
     int arg, {
     @required int private,
@@ -33111,7 +32778,7 @@ class CKOperationResult extends Struct<CKOperationResult> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CKOperationResult> _self,
   ) {
     _openDynamicLibrary();
@@ -33123,7 +32790,7 @@ class CKOperationResult extends Struct<CKOperationResult> {
 
   static void encodeWithCoder(
     Pointer<CKOperationResult> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -33133,7 +32800,7 @@ class CKOperationResult extends Struct<CKOperationResult> {
     );
   }
 
-  static Pointer<Void> error(
+  static Pointer error(
     Pointer<CKOperationResult> _self,
   ) {
     _openDynamicLibrary();
@@ -33143,9 +32810,9 @@ class CKOperationResult extends Struct<CKOperationResult> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CKOperationResult> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -33155,7 +32822,7 @@ class CKOperationResult extends Struct<CKOperationResult> {
     );
   }
 
-  static Pointer<Void> metrics(
+  static Pointer metrics(
     Pointer<CKOperationResult> _self,
   ) {
     _openDynamicLibrary();
@@ -33165,7 +32832,7 @@ class CKOperationResult extends Struct<CKOperationResult> {
     );
   }
 
-  static Pointer<Void> operationID(
+  static Pointer operationID(
     Pointer<CKOperationResult> _self,
   ) {
     _openDynamicLibrary();
@@ -33177,7 +32844,7 @@ class CKOperationResult extends Struct<CKOperationResult> {
 
   static void setError(
     Pointer<CKOperationResult> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -33189,7 +32856,7 @@ class CKOperationResult extends Struct<CKOperationResult> {
 
   static void setMetrics(
     Pointer<CKOperationResult> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -33201,7 +32868,7 @@ class CKOperationResult extends Struct<CKOperationResult> {
 
   static void setOperationID(
     Pointer<CKOperationResult> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -33212,11 +32879,9 @@ class CKOperationResult extends Struct<CKOperationResult> {
   }
 }
 
-/// Objective-C class _CKPCSDiagnosticInformation_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKPCSDiagnosticInformation extends Struct<CKPCSDiagnosticInformation> {
   factory CKPCSDiagnosticInformation._() {
@@ -33231,7 +32896,7 @@ class CKPCSDiagnosticInformation extends Struct<CKPCSDiagnosticInformation> {
 
   static void encodeWithCoder(
     Pointer<CKPCSDiagnosticInformation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -33241,7 +32906,7 @@ class CKPCSDiagnosticInformation extends Struct<CKPCSDiagnosticInformation> {
     );
   }
 
-  static Pointer<Void> identityInfo(
+  static Pointer identityInfo(
     Pointer<CKPCSDiagnosticInformation> _self,
   ) {
     _openDynamicLibrary();
@@ -33251,7 +32916,7 @@ class CKPCSDiagnosticInformation extends Struct<CKPCSDiagnosticInformation> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CKPCSDiagnosticInformation> _self,
   ) {
     _openDynamicLibrary();
@@ -33261,9 +32926,9 @@ class CKPCSDiagnosticInformation extends Struct<CKPCSDiagnosticInformation> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CKPCSDiagnosticInformation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -33273,7 +32938,7 @@ class CKPCSDiagnosticInformation extends Struct<CKPCSDiagnosticInformation> {
     );
   }
 
-  static Pointer<Void> notFoundZoneIDs(
+  static Pointer notFoundZoneIDs(
     Pointer<CKPCSDiagnosticInformation> _self,
   ) {
     _openDynamicLibrary();
@@ -33283,7 +32948,7 @@ class CKPCSDiagnosticInformation extends Struct<CKPCSDiagnosticInformation> {
     );
   }
 
-  static Pointer<Void> pcsInfoByZoneID(
+  static Pointer pcsInfoByZoneID(
     Pointer<CKPCSDiagnosticInformation> _self,
   ) {
     _openDynamicLibrary();
@@ -33293,7 +32958,7 @@ class CKPCSDiagnosticInformation extends Struct<CKPCSDiagnosticInformation> {
     );
   }
 
-  static Pointer<Void> serviceIdentityInfo(
+  static Pointer serviceIdentityInfo(
     Pointer<CKPCSDiagnosticInformation> _self,
   ) {
     _openDynamicLibrary();
@@ -33305,7 +32970,7 @@ class CKPCSDiagnosticInformation extends Struct<CKPCSDiagnosticInformation> {
 
   static void setIdentityInfo(
     Pointer<CKPCSDiagnosticInformation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -33317,7 +32982,7 @@ class CKPCSDiagnosticInformation extends Struct<CKPCSDiagnosticInformation> {
 
   static void setNotFoundZoneIDs(
     Pointer<CKPCSDiagnosticInformation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -33329,7 +32994,7 @@ class CKPCSDiagnosticInformation extends Struct<CKPCSDiagnosticInformation> {
 
   static void setPcsInfoByZoneID(
     Pointer<CKPCSDiagnosticInformation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -33341,7 +33006,7 @@ class CKPCSDiagnosticInformation extends Struct<CKPCSDiagnosticInformation> {
 
   static void setServiceIdentityInfo(
     Pointer<CKPCSDiagnosticInformation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -33352,11 +33017,9 @@ class CKPCSDiagnosticInformation extends Struct<CKPCSDiagnosticInformation> {
   }
 }
 
-/// Objective-C class _CKPackage_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKPackage extends Struct<CKPackage> {
   factory CKPackage._() {
@@ -33367,7 +33030,7 @@ class CKPackage extends Struct<CKPackage> {
     return _objc.allocate("CKPackage").cast<CKPackage>();
   }
 
-  static Pointer<Void> CKDescriptionPropertiesWithPublic(
+  static Pointer CKDescriptionPropertiesWithPublic(
     Pointer<CKPackage> _self,
     int arg, {
     @required int private,
@@ -33384,7 +33047,7 @@ class CKPackage extends Struct<CKPackage> {
     );
   }
 
-  static Pointer<Void> UUID(
+  static Pointer UUID(
     Pointer<CKPackage> _self,
   ) {
     _openDynamicLibrary();
@@ -33396,7 +33059,7 @@ class CKPackage extends Struct<CKPackage> {
 
   static void addItem(
     Pointer<CKPackage> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -33408,7 +33071,7 @@ class CKPackage extends Struct<CKPackage> {
 
   static void addSection(
     Pointer<CKPackage> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -33418,7 +33081,7 @@ class CKPackage extends Struct<CKPackage> {
     );
   }
 
-  static Pointer<Void> archiverInfo(
+  static Pointer archiverInfo(
     Pointer<CKPackage> _self,
   ) {
     _openDynamicLibrary();
@@ -33428,7 +33091,7 @@ class CKPackage extends Struct<CKPackage> {
     );
   }
 
-  static Pointer<Void> assets(
+  static Pointer assets(
     Pointer<CKPackage> _self,
   ) {
     _openDynamicLibrary();
@@ -33450,7 +33113,7 @@ class CKPackage extends Struct<CKPackage> {
 
   static int claimOwnershipWithError(
     Pointer<CKPackage> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -33470,7 +33133,7 @@ class CKPackage extends Struct<CKPackage> {
     );
   }
 
-  static Pointer<Void> databaseBasePath(
+  static Pointer databaseBasePath(
     Pointer<CKPackage> _self,
   ) {
     _openDynamicLibrary();
@@ -33490,7 +33153,7 @@ class CKPackage extends Struct<CKPackage> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CKPackage> _self,
   ) {
     _openDynamicLibrary();
@@ -33522,7 +33185,7 @@ class CKPackage extends Struct<CKPackage> {
 
   static void encodeWithCoder(
     Pointer<CKPackage> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -33557,7 +33220,7 @@ class CKPackage extends Struct<CKPackage> {
   static int handleChangeStateAction$error$(
     Pointer<CKPackage> _self,
     int arg, {
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_Int64_p_returns_Int8(
@@ -33588,7 +33251,7 @@ class CKPackage extends Struct<CKPackage> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CKPackage> _self,
   ) {
     _openDynamicLibrary();
@@ -33598,9 +33261,9 @@ class CKPackage extends Struct<CKPackage> {
     );
   }
 
-  static Pointer<Void> initUnreachablePackageWithUUID(
+  static Pointer initUnreachablePackageWithUUID(
     Pointer<CKPackage> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -33610,9 +33273,9 @@ class CKPackage extends Struct<CKPackage> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CKPackage> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -33632,7 +33295,7 @@ class CKPackage extends Struct<CKPackage> {
     );
   }
 
-  static Pointer<Void> itemAtIndex(
+  static Pointer itemAtIndex(
     Pointer<CKPackage> _self,
     int arg,
   ) {
@@ -33654,7 +33317,7 @@ class CKPackage extends Struct<CKPackage> {
     );
   }
 
-  static Pointer<Void> itemEnumerator(
+  static Pointer itemEnumerator(
     Pointer<CKPackage> _self,
   ) {
     _openDynamicLibrary();
@@ -33664,7 +33327,7 @@ class CKPackage extends Struct<CKPackage> {
     );
   }
 
-  static Pointer<Void> itemEnumeratorForSectionAtIndex(
+  static Pointer itemEnumeratorForSectionAtIndex(
     Pointer<CKPackage> _self,
     int arg,
   ) {
@@ -33679,7 +33342,7 @@ class CKPackage extends Struct<CKPackage> {
   static int movePackagesDatabaseInDirection(
     Pointer<CKPackage> _self,
     int arg, {
-    @required Pointer<Pointer<Void>> error,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_Int8_p_returns_Int8(
@@ -33712,7 +33375,7 @@ class CKPackage extends Struct<CKPackage> {
 
   static int openWithError(
     Pointer<CKPackage> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -33734,7 +33397,7 @@ class CKPackage extends Struct<CKPackage> {
 
   static int prepareDBWithError(
     Pointer<CKPackage> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -33744,7 +33407,7 @@ class CKPackage extends Struct<CKPackage> {
     );
   }
 
-  static Pointer<Void> queue(
+  static Pointer queue(
     Pointer<CKPackage> _self,
   ) {
     _openDynamicLibrary();
@@ -33754,7 +33417,7 @@ class CKPackage extends Struct<CKPackage> {
     );
   }
 
-  static Pointer<Void> record(
+  static Pointer record(
     Pointer<CKPackage> _self,
   ) {
     _openDynamicLibrary();
@@ -33764,7 +33427,7 @@ class CKPackage extends Struct<CKPackage> {
     );
   }
 
-  static Pointer<Void> recordKey(
+  static Pointer recordKey(
     Pointer<CKPackage> _self,
   ) {
     _openDynamicLibrary();
@@ -33774,7 +33437,7 @@ class CKPackage extends Struct<CKPackage> {
     );
   }
 
-  static Pointer<Pointer<Void>> recordPCS(
+  static Pointer<Pointer> recordPCS(
     Pointer<CKPackage> _self,
   ) {
     _openDynamicLibrary();
@@ -33816,7 +33479,7 @@ class CKPackage extends Struct<CKPackage> {
     );
   }
 
-  static Pointer<Void> sectionAtIndex(
+  static Pointer sectionAtIndex(
     Pointer<CKPackage> _self,
     int arg,
   ) {
@@ -33840,7 +33503,7 @@ class CKPackage extends Struct<CKPackage> {
 
   static void setArchiverInfo$(
     Pointer<CKPackage> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -33852,8 +33515,8 @@ class CKPackage extends Struct<CKPackage> {
 
   static int setArchiverInfo$error$(
     Pointer<CKPackage> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -33866,7 +33529,7 @@ class CKPackage extends Struct<CKPackage> {
 
   static void setAssets(
     Pointer<CKPackage> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -33878,7 +33541,7 @@ class CKPackage extends Struct<CKPackage> {
 
   static void setDatabaseBasePath(
     Pointer<CKPackage> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -33950,7 +33613,7 @@ class CKPackage extends Struct<CKPackage> {
 
   static void setQueue(
     Pointer<CKPackage> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -33962,7 +33625,7 @@ class CKPackage extends Struct<CKPackage> {
 
   static void setRecord(
     Pointer<CKPackage> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -33974,7 +33637,7 @@ class CKPackage extends Struct<CKPackage> {
 
   static void setRecordKey(
     Pointer<CKPackage> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -33986,7 +33649,7 @@ class CKPackage extends Struct<CKPackage> {
 
   static void setRecordPCS(
     Pointer<CKPackage> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -34010,7 +33673,7 @@ class CKPackage extends Struct<CKPackage> {
 
   static void setSignature(
     Pointer<CKPackage> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -34034,7 +33697,7 @@ class CKPackage extends Struct<CKPackage> {
 
   static void setSqlite(
     Pointer<CKPackage> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -34082,7 +33745,7 @@ class CKPackage extends Struct<CKPackage> {
 
   static void setUUID(
     Pointer<CKPackage> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -34138,7 +33801,7 @@ class CKPackage extends Struct<CKPackage> {
     );
   }
 
-  static Pointer<Void> signature(
+  static Pointer signature(
     Pointer<CKPackage> _self,
   ) {
     _openDynamicLibrary();
@@ -34158,7 +33821,7 @@ class CKPackage extends Struct<CKPackage> {
     );
   }
 
-  static Pointer<Void> sqlite(
+  static Pointer sqlite(
     Pointer<CKPackage> _self,
   ) {
     _openDynamicLibrary();
@@ -34168,7 +33831,7 @@ class CKPackage extends Struct<CKPackage> {
     );
   }
 
-  static Pointer<Void> sqliteOrRaise(
+  static Pointer sqliteOrRaise(
     Pointer<CKPackage> _self,
   ) {
     _openDynamicLibrary();
@@ -34201,7 +33864,7 @@ class CKPackage extends Struct<CKPackage> {
   static void updateItemAtIndex$withFileURL$(
     Pointer<CKPackage> _self,
     int arg, {
-    @required Pointer<Void> withFileURL,
+    @required Pointer withFileURL,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_Int64_p_returns_void(
@@ -34215,7 +33878,7 @@ class CKPackage extends Struct<CKPackage> {
   static void updateItemAtIndex$withSignature$size$itemID$sectionIndex$(
     Pointer<CKPackage> _self,
     int arg, {
-    @required Pointer<Void> withSignature,
+    @required Pointer withSignature,
     @required int size,
     @required int itemID,
     @required int sectionIndex,
@@ -34235,8 +33898,8 @@ class CKPackage extends Struct<CKPackage> {
 
   static void updateItemsAtIndexes(
     Pointer<CKPackage> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> fileURLs,
+    Pointer arg, {
+    @required Pointer fileURLs,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -34278,11 +33941,9 @@ class CKPackage extends Struct<CKPackage> {
   }
 }
 
-/// Objective-C class _CKPackageDB_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKPackageDB extends Struct<CKPackageDB> {
   factory CKPackageDB._() {
@@ -34294,11 +33955,9 @@ class CKPackageDB extends Struct<CKPackageDB> {
   }
 }
 
-/// Objective-C class _CKPackageDBDelegate_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKPackageDBDelegate extends Struct<CKPackageDBDelegate> {
   factory CKPackageDBDelegate._() {
@@ -34311,7 +33970,7 @@ class CKPackageDBDelegate extends Struct<CKPackageDBDelegate> {
 
   static int migrateDatabase(
     Pointer<CKPackageDBDelegate> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int fromVersion,
   }) {
     _openDynamicLibrary();
@@ -34334,11 +33993,9 @@ class CKPackageDBDelegate extends Struct<CKPackageDBDelegate> {
   }
 }
 
-/// Objective-C class _CKPackageItem_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKPackageItem extends Struct<CKPackageItem> {
   factory CKPackageItem._() {
@@ -34349,7 +34006,7 @@ class CKPackageItem extends Struct<CKPackageItem> {
     return _objc.allocate("CKPackageItem").cast<CKPackageItem>();
   }
 
-  static Pointer<Void> CKPropertiesDescription(
+  static Pointer CKPropertiesDescription(
     Pointer<CKPackageItem> _self,
   ) {
     _openDynamicLibrary();
@@ -34359,7 +34016,7 @@ class CKPackageItem extends Struct<CKPackageItem> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CKPackageItem> _self,
   ) {
     _openDynamicLibrary();
@@ -34369,7 +34026,7 @@ class CKPackageItem extends Struct<CKPackageItem> {
     );
   }
 
-  static Pointer<Void> deviceID(
+  static Pointer deviceID(
     Pointer<CKPackageItem> _self,
   ) {
     _openDynamicLibrary();
@@ -34379,7 +34036,7 @@ class CKPackageItem extends Struct<CKPackageItem> {
     );
   }
 
-  static Pointer<Void> fileID(
+  static Pointer fileID(
     Pointer<CKPackageItem> _self,
   ) {
     _openDynamicLibrary();
@@ -34389,7 +34046,7 @@ class CKPackageItem extends Struct<CKPackageItem> {
     );
   }
 
-  static Pointer<Void> fileURL(
+  static Pointer fileURL(
     Pointer<CKPackageItem> _self,
   ) {
     _openDynamicLibrary();
@@ -34399,7 +34056,7 @@ class CKPackageItem extends Struct<CKPackageItem> {
     );
   }
 
-  static Pointer<Void> generationID(
+  static Pointer generationID(
     Pointer<CKPackageItem> _self,
   ) {
     _openDynamicLibrary();
@@ -34409,11 +34066,11 @@ class CKPackageItem extends Struct<CKPackageItem> {
     );
   }
 
-  static Pointer<Void> initWithDeviceID(
+  static Pointer initWithDeviceID(
     Pointer<CKPackageItem> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> fileID,
-    @required Pointer<Void> generationID,
+    Pointer arg, {
+    @required Pointer fileID,
+    @required Pointer generationID,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -34425,9 +34082,9 @@ class CKPackageItem extends Struct<CKPackageItem> {
     );
   }
 
-  static Pointer<Void> initWithFileURL(
+  static Pointer initWithFileURL(
     Pointer<CKPackageItem> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -34447,7 +34104,7 @@ class CKPackageItem extends Struct<CKPackageItem> {
     );
   }
 
-  static Pointer<Void> itemTypeHint(
+  static Pointer itemTypeHint(
     Pointer<CKPackageItem> _self,
   ) {
     _openDynamicLibrary();
@@ -34489,7 +34146,7 @@ class CKPackageItem extends Struct<CKPackageItem> {
 
   static void setDeviceID(
     Pointer<CKPackageItem> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -34501,7 +34158,7 @@ class CKPackageItem extends Struct<CKPackageItem> {
 
   static void setFileID(
     Pointer<CKPackageItem> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -34513,7 +34170,7 @@ class CKPackageItem extends Struct<CKPackageItem> {
 
   static void setFileURL(
     Pointer<CKPackageItem> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -34525,7 +34182,7 @@ class CKPackageItem extends Struct<CKPackageItem> {
 
   static void setGenerationID(
     Pointer<CKPackageItem> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -34549,7 +34206,7 @@ class CKPackageItem extends Struct<CKPackageItem> {
 
   static void setItemTypeHint(
     Pointer<CKPackageItem> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -34597,7 +34254,7 @@ class CKPackageItem extends Struct<CKPackageItem> {
 
   static void setSignature(
     Pointer<CKPackageItem> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -34621,7 +34278,7 @@ class CKPackageItem extends Struct<CKPackageItem> {
 
   static void setWrappedAssetKey(
     Pointer<CKPackageItem> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -34631,7 +34288,7 @@ class CKPackageItem extends Struct<CKPackageItem> {
     );
   }
 
-  static Pointer<Void> signature(
+  static Pointer signature(
     Pointer<CKPackageItem> _self,
   ) {
     _openDynamicLibrary();
@@ -34651,7 +34308,7 @@ class CKPackageItem extends Struct<CKPackageItem> {
     );
   }
 
-  static Pointer<Void> wrappedAssetKey(
+  static Pointer wrappedAssetKey(
     Pointer<CKPackageItem> _self,
   ) {
     _openDynamicLibrary();
@@ -34662,11 +34319,9 @@ class CKPackageItem extends Struct<CKPackageItem> {
   }
 }
 
-/// Objective-C class _CKPackageSection_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKPackageSection extends Struct<CKPackageSection> {
   factory CKPackageSection._() {
@@ -34677,7 +34332,7 @@ class CKPackageSection extends Struct<CKPackageSection> {
     return _objc.allocate("CKPackageSection").cast<CKPackageSection>();
   }
 
-  static Pointer<Void> CKPropertiesDescription(
+  static Pointer CKPropertiesDescription(
     Pointer<CKPackageSection> _self,
   ) {
     _openDynamicLibrary();
@@ -34687,7 +34342,7 @@ class CKPackageSection extends Struct<CKPackageSection> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CKPackageSection> _self,
   ) {
     _openDynamicLibrary();
@@ -34707,10 +34362,10 @@ class CKPackageSection extends Struct<CKPackageSection> {
     );
   }
 
-  static Pointer<Void> initWithIndex(
+  static Pointer initWithIndex(
     Pointer<CKPackageSection> _self,
     int arg, {
-    @required Pointer<Void> signature,
+    @required Pointer signature,
     @required int size,
   }) {
     _openDynamicLibrary();
@@ -34735,7 +34390,7 @@ class CKPackageSection extends Struct<CKPackageSection> {
     );
   }
 
-  static Pointer<Void> signature(
+  static Pointer signature(
     Pointer<CKPackageSection> _self,
   ) {
     _openDynamicLibrary();
@@ -34756,11 +34411,9 @@ class CKPackageSection extends Struct<CKPackageSection> {
   }
 }
 
-/// Objective-C class _CKPlaceholderOperation_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKPlaceholderOperation extends Struct<CKPlaceholderOperation> {
   factory CKPlaceholderOperation._() {
@@ -34773,7 +34426,7 @@ class CKPlaceholderOperation extends Struct<CKPlaceholderOperation> {
         .cast<CKPlaceholderOperation>();
   }
 
-  static Pointer<Void> CKDescriptionPropertiesWithPublic(
+  static Pointer CKDescriptionPropertiesWithPublic(
     Pointer<CKPlaceholderOperation> _self,
     int arg, {
     @required int private,
@@ -34800,7 +34453,7 @@ class CKPlaceholderOperation extends Struct<CKPlaceholderOperation> {
     );
   }
 
-  static Pointer<Void> context(
+  static Pointer context(
     Pointer<CKPlaceholderOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -34810,7 +34463,7 @@ class CKPlaceholderOperation extends Struct<CKPlaceholderOperation> {
     );
   }
 
-  static Pointer<Void> daemonInvokeBlock(
+  static Pointer daemonInvokeBlock(
     Pointer<CKPlaceholderOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -34820,7 +34473,7 @@ class CKPlaceholderOperation extends Struct<CKPlaceholderOperation> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CKPlaceholderOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -34830,10 +34483,10 @@ class CKPlaceholderOperation extends Struct<CKPlaceholderOperation> {
     );
   }
 
-  static Pointer<Void> initWithOperation(
+  static Pointer initWithOperation(
     Pointer<CKPlaceholderOperation> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> daemonInvocationBlock,
+    Pointer arg, {
+    @required Pointer daemonInvocationBlock,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -34884,7 +34537,7 @@ class CKPlaceholderOperation extends Struct<CKPlaceholderOperation> {
     );
   }
 
-  static Pointer<Void> operationID(
+  static Pointer operationID(
     Pointer<CKPlaceholderOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -34894,7 +34547,7 @@ class CKPlaceholderOperation extends Struct<CKPlaceholderOperation> {
     );
   }
 
-  static Pointer<Void> sectionID(
+  static Pointer sectionID(
     Pointer<CKPlaceholderOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -34906,7 +34559,7 @@ class CKPlaceholderOperation extends Struct<CKPlaceholderOperation> {
 
   static void setContext(
     Pointer<CKPlaceholderOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -34942,7 +34595,7 @@ class CKPlaceholderOperation extends Struct<CKPlaceholderOperation> {
 
   static void setSectionID(
     Pointer<CKPlaceholderOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -34954,7 +34607,7 @@ class CKPlaceholderOperation extends Struct<CKPlaceholderOperation> {
 
   static void setStartDate(
     Pointer<CKPlaceholderOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -34974,7 +34627,7 @@ class CKPlaceholderOperation extends Struct<CKPlaceholderOperation> {
     );
   }
 
-  static Pointer<Void> startDate(
+  static Pointer startDate(
     Pointer<CKPlaceholderOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -34985,11 +34638,9 @@ class CKPlaceholderOperation extends Struct<CKPlaceholderOperation> {
   }
 }
 
-/// Objective-C class _CKPredicateValidator_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKPredicateValidator extends Struct<CKPredicateValidator> {
   factory CKPredicateValidator._() {
@@ -35002,8 +34653,8 @@ class CKPredicateValidator extends Struct<CKPredicateValidator> {
 
   static int validate(
     Pointer<CKPredicateValidator> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -35015,11 +34666,9 @@ class CKPredicateValidator extends Struct<CKPredicateValidator> {
   }
 }
 
-/// Objective-C class _CKPredicateValidatorInstance_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKPredicateValidatorInstance
     extends Struct<CKPredicateValidatorInstance> {
@@ -35033,7 +34682,7 @@ class CKPredicateValidatorInstance
         .cast<CKPredicateValidatorInstance>();
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CKPredicateValidatorInstance> _self,
   ) {
     _openDynamicLibrary();
@@ -35045,8 +34694,8 @@ class CKPredicateValidatorInstance
 
   static int validate(
     Pointer<CKPredicateValidatorInstance> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -35058,11 +34707,9 @@ class CKPredicateValidatorInstance
   }
 }
 
-/// Objective-C class _CKPrettyError_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKPrettyError extends Struct<CKPrettyError> {
   factory CKPrettyError._() {
@@ -35073,7 +34720,7 @@ class CKPrettyError extends Struct<CKPrettyError> {
     return _objc.allocate("CKPrettyError").cast<CKPrettyError>();
   }
 
-  static Pointer<Void> CKPartialErrorDescription(
+  static Pointer CKPartialErrorDescription(
     Pointer<CKPrettyError> _self,
   ) {
     _openDynamicLibrary();
@@ -35083,7 +34730,7 @@ class CKPrettyError extends Struct<CKPrettyError> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CKPrettyError> _self,
   ) {
     _openDynamicLibrary();
@@ -35095,7 +34742,7 @@ class CKPrettyError extends Struct<CKPrettyError> {
 
   static void encodeWithCoder(
     Pointer<CKPrettyError> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -35106,11 +34753,9 @@ class CKPrettyError extends Struct<CKPrettyError> {
   }
 }
 
-/// Objective-C class _CKPublicKey_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKPublicKey extends Struct<CKPublicKey> {
   factory CKPublicKey._() {
@@ -35121,7 +34766,7 @@ class CKPublicKey extends Struct<CKPublicKey> {
     return _objc.allocate("CKPublicKey").cast<CKPublicKey>();
   }
 
-  static Pointer<Void> certData(
+  static Pointer certData(
     Pointer<CKPublicKey> _self,
   ) {
     _openDynamicLibrary();
@@ -35131,7 +34776,7 @@ class CKPublicKey extends Struct<CKPublicKey> {
     );
   }
 
-  static Pointer<Void> expiration(
+  static Pointer expiration(
     Pointer<CKPublicKey> _self,
   ) {
     _openDynamicLibrary();
@@ -35151,12 +34796,12 @@ class CKPublicKey extends Struct<CKPublicKey> {
     );
   }
 
-  static Pointer<Void> initWithPublicKey(
+  static Pointer initWithPublicKey(
     Pointer<CKPublicKey> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int version,
-    @required Pointer<Void> expiration,
-    @required Pointer<Void> certificateData,
+    @required Pointer expiration,
+    @required Pointer certificateData,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_Int64_p_p_returns_p(
@@ -35170,7 +34815,7 @@ class CKPublicKey extends Struct<CKPublicKey> {
     );
   }
 
-  static Pointer<Void> publicKey(
+  static Pointer publicKey(
     Pointer<CKPublicKey> _self,
   ) {
     _openDynamicLibrary();
@@ -35191,11 +34836,9 @@ class CKPublicKey extends Struct<CKPublicKey> {
   }
 }
 
-/// Objective-C class _CKPublishAssetsOperation_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKPublishAssetsOperation extends Struct<CKPublishAssetsOperation> {
   factory CKPublishAssetsOperation._() {
@@ -35210,7 +34853,7 @@ class CKPublishAssetsOperation extends Struct<CKPublishAssetsOperation> {
 
   static int CKOperationShouldRun(
     Pointer<CKPublishAssetsOperation> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -35230,7 +34873,7 @@ class CKPublishAssetsOperation extends Struct<CKPublishAssetsOperation> {
     );
   }
 
-  static Pointer<Void> activityCreate(
+  static Pointer activityCreate(
     Pointer<CKPublishAssetsOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -35240,7 +34883,7 @@ class CKPublishAssetsOperation extends Struct<CKPublishAssetsOperation> {
     );
   }
 
-  static Pointer<Void> assetPublishedBlock(
+  static Pointer assetPublishedBlock(
     Pointer<CKPublishAssetsOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -35250,7 +34893,7 @@ class CKPublishAssetsOperation extends Struct<CKPublishAssetsOperation> {
     );
   }
 
-  static Pointer<Void> fileNamesByAssetFieldNames(
+  static Pointer fileNamesByAssetFieldNames(
     Pointer<CKPublishAssetsOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -35262,7 +34905,7 @@ class CKPublishAssetsOperation extends Struct<CKPublishAssetsOperation> {
 
   static void fillFromOperationInfo(
     Pointer<CKPublishAssetsOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -35274,7 +34917,7 @@ class CKPublishAssetsOperation extends Struct<CKPublishAssetsOperation> {
 
   static void fillOutOperationInfo(
     Pointer<CKPublishAssetsOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -35294,9 +34937,9 @@ class CKPublishAssetsOperation extends Struct<CKPublishAssetsOperation> {
     );
   }
 
-  static Pointer<Void> initWithRecordIDs(
+  static Pointer initWithRecordIDs(
     Pointer<CKPublishAssetsOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -35306,7 +34949,7 @@ class CKPublishAssetsOperation extends Struct<CKPublishAssetsOperation> {
     );
   }
 
-  static Pointer<Void> perItemErrorsByRecordID(
+  static Pointer perItemErrorsByRecordID(
     Pointer<CKPublishAssetsOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -35326,7 +34969,7 @@ class CKPublishAssetsOperation extends Struct<CKPublishAssetsOperation> {
     );
   }
 
-  static Pointer<Void> publishAssetCompletionBlock(
+  static Pointer publishAssetCompletionBlock(
     Pointer<CKPublishAssetsOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -35336,7 +34979,7 @@ class CKPublishAssetsOperation extends Struct<CKPublishAssetsOperation> {
     );
   }
 
-  static Pointer<Void> recordIDs(
+  static Pointer recordIDs(
     Pointer<CKPublishAssetsOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -35358,7 +35001,7 @@ class CKPublishAssetsOperation extends Struct<CKPublishAssetsOperation> {
 
   static void setAssetPublishedBlock(
     Pointer<CKPublishAssetsOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -35370,7 +35013,7 @@ class CKPublishAssetsOperation extends Struct<CKPublishAssetsOperation> {
 
   static void setFileNamesByAssetFieldNames(
     Pointer<CKPublishAssetsOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -35382,7 +35025,7 @@ class CKPublishAssetsOperation extends Struct<CKPublishAssetsOperation> {
 
   static void setPerItemErrorsByRecordID(
     Pointer<CKPublishAssetsOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -35394,7 +35037,7 @@ class CKPublishAssetsOperation extends Struct<CKPublishAssetsOperation> {
 
   static void setPublishAssetCompletionBlock(
     Pointer<CKPublishAssetsOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -35406,7 +35049,7 @@ class CKPublishAssetsOperation extends Struct<CKPublishAssetsOperation> {
 
   static void setRecordIDs(
     Pointer<CKPublishAssetsOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -35441,11 +35084,9 @@ class CKPublishAssetsOperation extends Struct<CKPublishAssetsOperation> {
   }
 }
 
-/// Objective-C class _CKPublishAssetsOperationInfo_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKPublishAssetsOperationInfo
     extends Struct<CKPublishAssetsOperationInfo> {
@@ -35471,7 +35112,7 @@ class CKPublishAssetsOperationInfo
 
   static void encodeWithCoder(
     Pointer<CKPublishAssetsOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -35481,7 +35122,7 @@ class CKPublishAssetsOperationInfo
     );
   }
 
-  static Pointer<Void> fileNamesByAssetFieldNames(
+  static Pointer fileNamesByAssetFieldNames(
     Pointer<CKPublishAssetsOperationInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -35491,9 +35132,9 @@ class CKPublishAssetsOperationInfo
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CKPublishAssetsOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -35503,7 +35144,7 @@ class CKPublishAssetsOperationInfo
     );
   }
 
-  static Pointer<Void> recordIDs(
+  static Pointer recordIDs(
     Pointer<CKPublishAssetsOperationInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -35525,7 +35166,7 @@ class CKPublishAssetsOperationInfo
 
   static void setFileNamesByAssetFieldNames(
     Pointer<CKPublishAssetsOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -35537,7 +35178,7 @@ class CKPublishAssetsOperationInfo
 
   static void setRecordIDs(
     Pointer<CKPublishAssetsOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -35572,11 +35213,9 @@ class CKPublishAssetsOperationInfo
   }
 }
 
-/// Objective-C class _CKQuery_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKQuery extends Struct<CKQuery> {
   factory CKQuery._() {
@@ -35587,7 +35226,7 @@ class CKQuery extends Struct<CKQuery> {
     return _objc.allocate("CKQuery").cast<CKQuery>();
   }
 
-  static Pointer<Void> CKPropertiesDescription(
+  static Pointer CKPropertiesDescription(
     Pointer<CKQuery> _self,
   ) {
     _openDynamicLibrary();
@@ -35597,9 +35236,9 @@ class CKQuery extends Struct<CKQuery> {
     );
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<CKQuery> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -35609,7 +35248,7 @@ class CKQuery extends Struct<CKQuery> {
     );
   }
 
-  static Pointer<Void> debugDescription(
+  static Pointer debugDescription(
     Pointer<CKQuery> _self,
   ) {
     _openDynamicLibrary();
@@ -35619,7 +35258,7 @@ class CKQuery extends Struct<CKQuery> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CKQuery> _self,
   ) {
     _openDynamicLibrary();
@@ -35631,7 +35270,7 @@ class CKQuery extends Struct<CKQuery> {
 
   static void encodeWithCoder(
     Pointer<CKQuery> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -35641,7 +35280,7 @@ class CKQuery extends Struct<CKQuery> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CKQuery> _self,
   ) {
     _openDynamicLibrary();
@@ -35651,9 +35290,9 @@ class CKQuery extends Struct<CKQuery> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CKQuery> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -35663,10 +35302,10 @@ class CKQuery extends Struct<CKQuery> {
     );
   }
 
-  static Pointer<Void> initWithRecordType(
+  static Pointer initWithRecordType(
     Pointer<CKQuery> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> predicate,
+    Pointer arg, {
+    @required Pointer predicate,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -35677,7 +35316,7 @@ class CKQuery extends Struct<CKQuery> {
     );
   }
 
-  static Pointer<Void> predicate(
+  static Pointer predicate(
     Pointer<CKQuery> _self,
   ) {
     _openDynamicLibrary();
@@ -35687,7 +35326,7 @@ class CKQuery extends Struct<CKQuery> {
     );
   }
 
-  static Pointer<Void> recordType(
+  static Pointer recordType(
     Pointer<CKQuery> _self,
   ) {
     _openDynamicLibrary();
@@ -35699,7 +35338,7 @@ class CKQuery extends Struct<CKQuery> {
 
   static void setPredicate(
     Pointer<CKQuery> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -35711,7 +35350,7 @@ class CKQuery extends Struct<CKQuery> {
 
   static void setRecordType(
     Pointer<CKQuery> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -35723,7 +35362,7 @@ class CKQuery extends Struct<CKQuery> {
 
   static void setSortDescriptors(
     Pointer<CKQuery> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -35733,7 +35372,7 @@ class CKQuery extends Struct<CKQuery> {
     );
   }
 
-  static Pointer<Void> sortDescriptors(
+  static Pointer sortDescriptors(
     Pointer<CKQuery> _self,
   ) {
     _openDynamicLibrary();
@@ -35744,11 +35383,9 @@ class CKQuery extends Struct<CKQuery> {
   }
 }
 
-/// Objective-C class _CKQueryCursor_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKQueryCursor extends Struct<CKQueryCursor> {
   factory CKQueryCursor._() {
@@ -35759,7 +35396,7 @@ class CKQueryCursor extends Struct<CKQueryCursor> {
     return _objc.allocate("CKQueryCursor").cast<CKQueryCursor>();
   }
 
-  static Pointer<Void> CKPropertiesDescription(
+  static Pointer CKPropertiesDescription(
     Pointer<CKQueryCursor> _self,
   ) {
     _openDynamicLibrary();
@@ -35769,9 +35406,9 @@ class CKQueryCursor extends Struct<CKQueryCursor> {
     );
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<CKQueryCursor> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -35781,7 +35418,7 @@ class CKQueryCursor extends Struct<CKQueryCursor> {
     );
   }
 
-  static Pointer<Void> data(
+  static Pointer data(
     Pointer<CKQueryCursor> _self,
   ) {
     _openDynamicLibrary();
@@ -35791,7 +35428,7 @@ class CKQueryCursor extends Struct<CKQueryCursor> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CKQueryCursor> _self,
   ) {
     _openDynamicLibrary();
@@ -35803,7 +35440,7 @@ class CKQueryCursor extends Struct<CKQueryCursor> {
 
   static void encodeWithCoder(
     Pointer<CKQueryCursor> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -35813,7 +35450,7 @@ class CKQueryCursor extends Struct<CKQueryCursor> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CKQueryCursor> _self,
   ) {
     _openDynamicLibrary();
@@ -35823,9 +35460,9 @@ class CKQueryCursor extends Struct<CKQueryCursor> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CKQueryCursor> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -35835,10 +35472,10 @@ class CKQueryCursor extends Struct<CKQueryCursor> {
     );
   }
 
-  static Pointer<Void> initWithData(
+  static Pointer initWithData(
     Pointer<CKQueryCursor> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> zoneID,
+    Pointer arg, {
+    @required Pointer zoneID,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -35851,7 +35488,7 @@ class CKQueryCursor extends Struct<CKQueryCursor> {
 
   static void setData(
     Pointer<CKQueryCursor> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -35863,7 +35500,7 @@ class CKQueryCursor extends Struct<CKQueryCursor> {
 
   static void setZoneID(
     Pointer<CKQueryCursor> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -35873,7 +35510,7 @@ class CKQueryCursor extends Struct<CKQueryCursor> {
     );
   }
 
-  static Pointer<Void> zoneID(
+  static Pointer zoneID(
     Pointer<CKQueryCursor> _self,
   ) {
     _openDynamicLibrary();
@@ -35884,11 +35521,9 @@ class CKQueryCursor extends Struct<CKQueryCursor> {
   }
 }
 
-/// Objective-C class _CKQueryNotification_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKQueryNotification extends Struct<CKQueryNotification> {
   factory CKQueryNotification._() {
@@ -35899,7 +35534,7 @@ class CKQueryNotification extends Struct<CKQueryNotification> {
     return _objc.allocate("CKQueryNotification").cast<CKQueryNotification>();
   }
 
-  static Pointer<Void> CKPropertiesDescription(
+  static Pointer CKPropertiesDescription(
     Pointer<CKQueryNotification> _self,
   ) {
     _openDynamicLibrary();
@@ -35919,7 +35554,7 @@ class CKQueryNotification extends Struct<CKQueryNotification> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CKQueryNotification> _self,
   ) {
     _openDynamicLibrary();
@@ -35931,7 +35566,7 @@ class CKQueryNotification extends Struct<CKQueryNotification> {
 
   static void encodeWithCoder(
     Pointer<CKQueryNotification> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -35941,9 +35576,9 @@ class CKQueryNotification extends Struct<CKQueryNotification> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CKQueryNotification> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -35953,9 +35588,9 @@ class CKQueryNotification extends Struct<CKQueryNotification> {
     );
   }
 
-  static Pointer<Void> initWithRemoteNotificationDictionary(
+  static Pointer initWithRemoteNotificationDictionary(
     Pointer<CKQueryNotification> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -35985,7 +35620,7 @@ class CKQueryNotification extends Struct<CKQueryNotification> {
     );
   }
 
-  static Pointer<Void> recordFields(
+  static Pointer recordFields(
     Pointer<CKQueryNotification> _self,
   ) {
     _openDynamicLibrary();
@@ -35995,7 +35630,7 @@ class CKQueryNotification extends Struct<CKQueryNotification> {
     );
   }
 
-  static Pointer<Void> recordID(
+  static Pointer recordID(
     Pointer<CKQueryNotification> _self,
   ) {
     _openDynamicLibrary();
@@ -36031,7 +35666,7 @@ class CKQueryNotification extends Struct<CKQueryNotification> {
 
   static void setRecordFields(
     Pointer<CKQueryNotification> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -36043,7 +35678,7 @@ class CKQueryNotification extends Struct<CKQueryNotification> {
 
   static void setRecordID(
     Pointer<CKQueryNotification> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -36054,11 +35689,9 @@ class CKQueryNotification extends Struct<CKQueryNotification> {
   }
 }
 
-/// Objective-C class _CKQueryOperation_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKQueryOperation extends Struct<CKQueryOperation> {
   factory CKQueryOperation._() {
@@ -36071,7 +35704,7 @@ class CKQueryOperation extends Struct<CKQueryOperation> {
 
   static int CKOperationShouldRun(
     Pointer<CKQueryOperation> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -36081,7 +35714,7 @@ class CKQueryOperation extends Struct<CKQueryOperation> {
     );
   }
 
-  static Pointer<Void> activityCreate(
+  static Pointer activityCreate(
     Pointer<CKQueryOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -36091,7 +35724,7 @@ class CKQueryOperation extends Struct<CKQueryOperation> {
     );
   }
 
-  static Pointer<Void> assetTransferOptionsByKey(
+  static Pointer assetTransferOptionsByKey(
     Pointer<CKQueryOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -36101,7 +35734,7 @@ class CKQueryOperation extends Struct<CKQueryOperation> {
     );
   }
 
-  static Pointer<Void> cursor(
+  static Pointer cursor(
     Pointer<CKQueryOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -36111,7 +35744,7 @@ class CKQueryOperation extends Struct<CKQueryOperation> {
     );
   }
 
-  static Pointer<Void> desiredKeys(
+  static Pointer desiredKeys(
     Pointer<CKQueryOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -36133,7 +35766,7 @@ class CKQueryOperation extends Struct<CKQueryOperation> {
 
   static void fillFromOperationInfo(
     Pointer<CKQueryOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -36145,7 +35778,7 @@ class CKQueryOperation extends Struct<CKQueryOperation> {
 
   static void fillOutOperationInfo(
     Pointer<CKQueryOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -36165,7 +35798,7 @@ class CKQueryOperation extends Struct<CKQueryOperation> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CKQueryOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -36175,9 +35808,9 @@ class CKQueryOperation extends Struct<CKQueryOperation> {
     );
   }
 
-  static Pointer<Void> initWithCursor(
+  static Pointer initWithCursor(
     Pointer<CKQueryOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -36187,9 +35820,9 @@ class CKQueryOperation extends Struct<CKQueryOperation> {
     );
   }
 
-  static Pointer<Void> initWithQuery(
+  static Pointer initWithQuery(
     Pointer<CKQueryOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -36209,7 +35842,7 @@ class CKQueryOperation extends Struct<CKQueryOperation> {
     );
   }
 
-  static Pointer<Void> query(
+  static Pointer query(
     Pointer<CKQueryOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -36219,7 +35852,7 @@ class CKQueryOperation extends Struct<CKQueryOperation> {
     );
   }
 
-  static Pointer<Void> queryCompletionBlock(
+  static Pointer queryCompletionBlock(
     Pointer<CKQueryOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -36229,7 +35862,7 @@ class CKQueryOperation extends Struct<CKQueryOperation> {
     );
   }
 
-  static Pointer<Void> queryCursorFetchedBlock(
+  static Pointer queryCursorFetchedBlock(
     Pointer<CKQueryOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -36239,7 +35872,7 @@ class CKQueryOperation extends Struct<CKQueryOperation> {
     );
   }
 
-  static Pointer<Void> recordFetchedBlock(
+  static Pointer recordFetchedBlock(
     Pointer<CKQueryOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -36249,7 +35882,7 @@ class CKQueryOperation extends Struct<CKQueryOperation> {
     );
   }
 
-  static Pointer<Void> resultsCursor(
+  static Pointer resultsCursor(
     Pointer<CKQueryOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -36271,7 +35904,7 @@ class CKQueryOperation extends Struct<CKQueryOperation> {
 
   static void setAssetTransferOptionsByKey(
     Pointer<CKQueryOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -36283,7 +35916,7 @@ class CKQueryOperation extends Struct<CKQueryOperation> {
 
   static void setCursor(
     Pointer<CKQueryOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -36295,7 +35928,7 @@ class CKQueryOperation extends Struct<CKQueryOperation> {
 
   static void setDesiredKeys(
     Pointer<CKQueryOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -36319,7 +35952,7 @@ class CKQueryOperation extends Struct<CKQueryOperation> {
 
   static void setQuery(
     Pointer<CKQueryOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -36331,7 +35964,7 @@ class CKQueryOperation extends Struct<CKQueryOperation> {
 
   static void setQueryCompletionBlock(
     Pointer<CKQueryOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -36343,7 +35976,7 @@ class CKQueryOperation extends Struct<CKQueryOperation> {
 
   static void setQueryCursorFetchedBlock(
     Pointer<CKQueryOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -36355,7 +35988,7 @@ class CKQueryOperation extends Struct<CKQueryOperation> {
 
   static void setRecordFetchedBlock(
     Pointer<CKQueryOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -36367,7 +36000,7 @@ class CKQueryOperation extends Struct<CKQueryOperation> {
 
   static void setResultsCursor(
     Pointer<CKQueryOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -36403,7 +36036,7 @@ class CKQueryOperation extends Struct<CKQueryOperation> {
 
   static void setZoneID(
     Pointer<CKQueryOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -36423,7 +36056,7 @@ class CKQueryOperation extends Struct<CKQueryOperation> {
     );
   }
 
-  static Pointer<Void> zoneID(
+  static Pointer zoneID(
     Pointer<CKQueryOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -36434,11 +36067,9 @@ class CKQueryOperation extends Struct<CKQueryOperation> {
   }
 }
 
-/// Objective-C class _CKQueryOperationInfo_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKQueryOperationInfo extends Struct<CKQueryOperationInfo> {
   factory CKQueryOperationInfo._() {
@@ -36449,7 +36080,7 @@ class CKQueryOperationInfo extends Struct<CKQueryOperationInfo> {
     return _objc.allocate("CKQueryOperationInfo").cast<CKQueryOperationInfo>();
   }
 
-  static Pointer<Void> assetTransferOptionsByKey(
+  static Pointer assetTransferOptionsByKey(
     Pointer<CKQueryOperationInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -36459,7 +36090,7 @@ class CKQueryOperationInfo extends Struct<CKQueryOperationInfo> {
     );
   }
 
-  static Pointer<Void> cursor(
+  static Pointer cursor(
     Pointer<CKQueryOperationInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -36469,7 +36100,7 @@ class CKQueryOperationInfo extends Struct<CKQueryOperationInfo> {
     );
   }
 
-  static Pointer<Void> desiredKeys(
+  static Pointer desiredKeys(
     Pointer<CKQueryOperationInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -36481,7 +36112,7 @@ class CKQueryOperationInfo extends Struct<CKQueryOperationInfo> {
 
   static void encodeWithCoder(
     Pointer<CKQueryOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -36501,9 +36132,9 @@ class CKQueryOperationInfo extends Struct<CKQueryOperationInfo> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CKQueryOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -36513,7 +36144,7 @@ class CKQueryOperationInfo extends Struct<CKQueryOperationInfo> {
     );
   }
 
-  static Pointer<Void> query(
+  static Pointer query(
     Pointer<CKQueryOperationInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -36535,7 +36166,7 @@ class CKQueryOperationInfo extends Struct<CKQueryOperationInfo> {
 
   static void setAssetTransferOptionsByKey(
     Pointer<CKQueryOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -36547,7 +36178,7 @@ class CKQueryOperationInfo extends Struct<CKQueryOperationInfo> {
 
   static void setCursor(
     Pointer<CKQueryOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -36559,7 +36190,7 @@ class CKQueryOperationInfo extends Struct<CKQueryOperationInfo> {
 
   static void setDesiredKeys(
     Pointer<CKQueryOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -36583,7 +36214,7 @@ class CKQueryOperationInfo extends Struct<CKQueryOperationInfo> {
 
   static void setQuery(
     Pointer<CKQueryOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -36619,7 +36250,7 @@ class CKQueryOperationInfo extends Struct<CKQueryOperationInfo> {
 
   static void setZoneID(
     Pointer<CKQueryOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -36639,7 +36270,7 @@ class CKQueryOperationInfo extends Struct<CKQueryOperationInfo> {
     );
   }
 
-  static Pointer<Void> zoneID(
+  static Pointer zoneID(
     Pointer<CKQueryOperationInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -36650,11 +36281,9 @@ class CKQueryOperationInfo extends Struct<CKQueryOperationInfo> {
   }
 }
 
-/// Objective-C class _CKQueryOperationResult_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKQueryOperationResult extends Struct<CKQueryOperationResult> {
   factory CKQueryOperationResult._() {
@@ -36667,7 +36296,7 @@ class CKQueryOperationResult extends Struct<CKQueryOperationResult> {
         .cast<CKQueryOperationResult>();
   }
 
-  static Pointer<Void> CKDescriptionPropertiesWithPublic(
+  static Pointer CKDescriptionPropertiesWithPublic(
     Pointer<CKQueryOperationResult> _self,
     int arg, {
     @required int private,
@@ -36684,7 +36313,7 @@ class CKQueryOperationResult extends Struct<CKQueryOperationResult> {
     );
   }
 
-  static Pointer<Void> cursor(
+  static Pointer cursor(
     Pointer<CKQueryOperationResult> _self,
   ) {
     _openDynamicLibrary();
@@ -36694,7 +36323,7 @@ class CKQueryOperationResult extends Struct<CKQueryOperationResult> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CKQueryOperationResult> _self,
   ) {
     _openDynamicLibrary();
@@ -36706,7 +36335,7 @@ class CKQueryOperationResult extends Struct<CKQueryOperationResult> {
 
   static void encodeWithCoder(
     Pointer<CKQueryOperationResult> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -36716,9 +36345,9 @@ class CKQueryOperationResult extends Struct<CKQueryOperationResult> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CKQueryOperationResult> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -36730,7 +36359,7 @@ class CKQueryOperationResult extends Struct<CKQueryOperationResult> {
 
   static void setCursor(
     Pointer<CKQueryOperationResult> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -36741,11 +36370,9 @@ class CKQueryOperationResult extends Struct<CKQueryOperationResult> {
   }
 }
 
-/// Objective-C class _CKQuerySubscription_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKQuerySubscription extends Struct<CKQuerySubscription> {
   factory CKQuerySubscription._() {
@@ -36756,9 +36383,9 @@ class CKQuerySubscription extends Struct<CKQuerySubscription> {
     return _objc.allocate("CKQuerySubscription").cast<CKQuerySubscription>();
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<CKQuerySubscription> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -36768,10 +36395,10 @@ class CKQuerySubscription extends Struct<CKQuerySubscription> {
     );
   }
 
-  static Pointer<Void> initWithRecordType$predicate$options$(
+  static Pointer initWithRecordType$predicate$options$(
     Pointer<CKQuerySubscription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> predicate,
+    Pointer arg, {
+    @required Pointer predicate,
     @required int options,
   }) {
     _openDynamicLibrary();
@@ -36784,11 +36411,11 @@ class CKQuerySubscription extends Struct<CKQuerySubscription> {
     );
   }
 
-  static Pointer<Void> initWithRecordType$predicate$subscriptionID$options$(
+  static Pointer initWithRecordType$predicate$subscriptionID$options$(
     Pointer<CKQuerySubscription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> predicate,
-    @required Pointer<Void> subscriptionID,
+    Pointer arg, {
+    @required Pointer predicate,
+    @required Pointer subscriptionID,
     @required int options,
   }) {
     _openDynamicLibrary();
@@ -36813,11 +36440,9 @@ class CKQuerySubscription extends Struct<CKQuerySubscription> {
   }
 }
 
-/// Objective-C class _CKRecord_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKRecord extends Struct<CKRecord> {
   factory CKRecord._() {
@@ -36830,7 +36455,7 @@ class CKRecord extends Struct<CKRecord> {
 
   static void CKAssignToContainerWithID(
     Pointer<CKRecord> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -36840,7 +36465,7 @@ class CKRecord extends Struct<CKRecord> {
     );
   }
 
-  static Pointer<Void> CKDescriptionPropertiesWithPublic(
+  static Pointer CKDescriptionPropertiesWithPublic(
     Pointer<CKRecord> _self,
     int arg, {
     @required int private,
@@ -36857,7 +36482,7 @@ class CKRecord extends Struct<CKRecord> {
     );
   }
 
-  static Pointer<Void> URL(
+  static Pointer URL(
     Pointer<CKRecord> _self,
   ) {
     _openDynamicLibrary();
@@ -36867,7 +36492,7 @@ class CKRecord extends Struct<CKRecord> {
     );
   }
 
-  static Pointer<Void> allKeys(
+  static Pointer allKeys(
     Pointer<CKRecord> _self,
   ) {
     _openDynamicLibrary();
@@ -36877,7 +36502,7 @@ class CKRecord extends Struct<CKRecord> {
     );
   }
 
-  static Pointer<Void> allTokens(
+  static Pointer allTokens(
     Pointer<CKRecord> _self,
   ) {
     _openDynamicLibrary();
@@ -36887,7 +36512,7 @@ class CKRecord extends Struct<CKRecord> {
     );
   }
 
-  static Pointer<Void> allValues(
+  static Pointer allValues(
     Pointer<CKRecord> _self,
   ) {
     _openDynamicLibrary();
@@ -36917,7 +36542,7 @@ class CKRecord extends Struct<CKRecord> {
     );
   }
 
-  static Pointer<Void> baseToken(
+  static Pointer baseToken(
     Pointer<CKRecord> _self,
   ) {
     _openDynamicLibrary();
@@ -36927,7 +36552,7 @@ class CKRecord extends Struct<CKRecord> {
     );
   }
 
-  static Pointer<Void> chainParentPublicKeyID(
+  static Pointer chainParentPublicKeyID(
     Pointer<CKRecord> _self,
   ) {
     _openDynamicLibrary();
@@ -36937,7 +36562,7 @@ class CKRecord extends Struct<CKRecord> {
     );
   }
 
-  static Pointer<Void> chainPrivateKey(
+  static Pointer chainPrivateKey(
     Pointer<CKRecord> _self,
   ) {
     _openDynamicLibrary();
@@ -36947,7 +36572,7 @@ class CKRecord extends Struct<CKRecord> {
     );
   }
 
-  static Pointer<Void> chainProtectionInfo(
+  static Pointer chainProtectionInfo(
     Pointer<CKRecord> _self,
   ) {
     _openDynamicLibrary();
@@ -36957,7 +36582,7 @@ class CKRecord extends Struct<CKRecord> {
     );
   }
 
-  static Pointer<Void> changedKeys(
+  static Pointer changedKeys(
     Pointer<CKRecord> _self,
   ) {
     _openDynamicLibrary();
@@ -36967,7 +36592,7 @@ class CKRecord extends Struct<CKRecord> {
     );
   }
 
-  static Pointer<Void> changedKeysSet(
+  static Pointer changedKeysSet(
     Pointer<CKRecord> _self,
   ) {
     _openDynamicLibrary();
@@ -36979,9 +36604,9 @@ class CKRecord extends Struct<CKRecord> {
 
   static void claimPackagesWithSuccessBlock(
     Pointer<CKRecord> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> failureBlock,
-    @required Pointer<Void> completionBlock,
+    Pointer arg, {
+    @required Pointer failureBlock,
+    @required Pointer completionBlock,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_void(
@@ -36994,7 +36619,7 @@ class CKRecord extends Struct<CKRecord> {
     );
   }
 
-  static Pointer<Void> conflictLoserEtags(
+  static Pointer conflictLoserEtags(
     Pointer<CKRecord> _self,
   ) {
     _openDynamicLibrary();
@@ -37004,7 +36629,7 @@ class CKRecord extends Struct<CKRecord> {
     );
   }
 
-  static Pointer<Void> containerID(
+  static Pointer containerID(
     Pointer<CKRecord> _self,
   ) {
     _openDynamicLibrary();
@@ -37034,7 +36659,7 @@ class CKRecord extends Struct<CKRecord> {
     );
   }
 
-  static Pointer<Void> copyWithOriginalValues(
+  static Pointer copyWithOriginalValues(
     Pointer<CKRecord> _self,
   ) {
     _openDynamicLibrary();
@@ -37044,9 +36669,9 @@ class CKRecord extends Struct<CKRecord> {
     );
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<CKRecord> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -37056,7 +36681,7 @@ class CKRecord extends Struct<CKRecord> {
     );
   }
 
-  static Pointer<Void> creationDate(
+  static Pointer creationDate(
     Pointer<CKRecord> _self,
   ) {
     _openDynamicLibrary();
@@ -37066,7 +36691,7 @@ class CKRecord extends Struct<CKRecord> {
     );
   }
 
-  static Pointer<Void> creatorUserRecordID(
+  static Pointer creatorUserRecordID(
     Pointer<CKRecord> _self,
   ) {
     _openDynamicLibrary();
@@ -37076,7 +36701,7 @@ class CKRecord extends Struct<CKRecord> {
     );
   }
 
-  static Pointer<Void> debugDescription(
+  static Pointer debugDescription(
     Pointer<CKRecord> _self,
   ) {
     _openDynamicLibrary();
@@ -37086,9 +36711,9 @@ class CKRecord extends Struct<CKRecord> {
     );
   }
 
-  static Pointer<Void> decryptFullToken(
+  static Pointer decryptFullToken(
     Pointer<CKRecord> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -37098,7 +36723,7 @@ class CKRecord extends Struct<CKRecord> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CKRecord> _self,
   ) {
     _openDynamicLibrary();
@@ -37108,7 +36733,7 @@ class CKRecord extends Struct<CKRecord> {
     );
   }
 
-  static Pointer<Void> displayedHostname(
+  static Pointer displayedHostname(
     Pointer<CKRecord> _self,
   ) {
     _openDynamicLibrary();
@@ -37120,7 +36745,7 @@ class CKRecord extends Struct<CKRecord> {
 
   static void encodeSystemFieldsWithCoder(
     Pointer<CKRecord> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -37132,7 +36757,7 @@ class CKRecord extends Struct<CKRecord> {
 
   static void encodeWithCoder(
     Pointer<CKRecord> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -37142,7 +36767,7 @@ class CKRecord extends Struct<CKRecord> {
     );
   }
 
-  static Pointer<Void> encryptedFullTokenData(
+  static Pointer encryptedFullTokenData(
     Pointer<CKRecord> _self,
   ) {
     _openDynamicLibrary();
@@ -37152,7 +36777,7 @@ class CKRecord extends Struct<CKRecord> {
     );
   }
 
-  static Pointer<Void> encryptedPublicSharingKey(
+  static Pointer encryptedPublicSharingKey(
     Pointer<CKRecord> _self,
   ) {
     _openDynamicLibrary();
@@ -37162,7 +36787,7 @@ class CKRecord extends Struct<CKRecord> {
     );
   }
 
-  static Pointer<Void> encryptedValueStore(
+  static Pointer encryptedValueStore(
     Pointer<CKRecord> _self,
   ) {
     _openDynamicLibrary();
@@ -37172,7 +36797,7 @@ class CKRecord extends Struct<CKRecord> {
     );
   }
 
-  static Pointer<Void> encryptedValuesByKey(
+  static Pointer encryptedValuesByKey(
     Pointer<CKRecord> _self,
   ) {
     _openDynamicLibrary();
@@ -37182,7 +36807,7 @@ class CKRecord extends Struct<CKRecord> {
     );
   }
 
-  static Pointer<Void> etag(
+  static Pointer etag(
     Pointer<CKRecord> _self,
   ) {
     _openDynamicLibrary();
@@ -37192,7 +36817,7 @@ class CKRecord extends Struct<CKRecord> {
     );
   }
 
-  static Pointer<Void> fullToken(
+  static Pointer fullToken(
     Pointer<CKRecord> _self,
   ) {
     _openDynamicLibrary();
@@ -37272,7 +36897,7 @@ class CKRecord extends Struct<CKRecord> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CKRecord> _self,
   ) {
     _openDynamicLibrary();
@@ -37282,9 +36907,9 @@ class CKRecord extends Struct<CKRecord> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CKRecord> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -37294,10 +36919,10 @@ class CKRecord extends Struct<CKRecord> {
     );
   }
 
-  static Pointer<Void> initWithRecordType$recordID$(
+  static Pointer initWithRecordType$recordID$(
     Pointer<CKRecord> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> recordID,
+    Pointer arg, {
+    @required Pointer recordID,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -37308,9 +36933,9 @@ class CKRecord extends Struct<CKRecord> {
     );
   }
 
-  static Pointer<Void> initWithRecordType$(
+  static Pointer initWithRecordType$(
     Pointer<CKRecord> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -37320,10 +36945,10 @@ class CKRecord extends Struct<CKRecord> {
     );
   }
 
-  static Pointer<Void> initWithRecordType$zoneID$(
+  static Pointer initWithRecordType$zoneID$(
     Pointer<CKRecord> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> zoneID,
+    Pointer arg, {
+    @required Pointer zoneID,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -37344,7 +36969,7 @@ class CKRecord extends Struct<CKRecord> {
     );
   }
 
-  static Pointer<Void> lastModifiedUserRecordID(
+  static Pointer lastModifiedUserRecordID(
     Pointer<CKRecord> _self,
   ) {
     _openDynamicLibrary();
@@ -37354,7 +36979,7 @@ class CKRecord extends Struct<CKRecord> {
     );
   }
 
-  static Pointer<Void> modificationDate(
+  static Pointer modificationDate(
     Pointer<CKRecord> _self,
   ) {
     _openDynamicLibrary();
@@ -37364,7 +36989,7 @@ class CKRecord extends Struct<CKRecord> {
     );
   }
 
-  static Pointer<Void> modifiedByDevice(
+  static Pointer modifiedByDevice(
     Pointer<CKRecord> _self,
   ) {
     _openDynamicLibrary();
@@ -37374,7 +36999,7 @@ class CKRecord extends Struct<CKRecord> {
     );
   }
 
-  static Pointer<Void> mutableEncryptedPSK(
+  static Pointer mutableEncryptedPSK(
     Pointer<CKRecord> _self,
   ) {
     _openDynamicLibrary();
@@ -37384,7 +37009,7 @@ class CKRecord extends Struct<CKRecord> {
     );
   }
 
-  static Pointer<Void> mutableEncryptedPublicSharingKey(
+  static Pointer mutableEncryptedPublicSharingKey(
     Pointer<CKRecord> _self,
   ) {
     _openDynamicLibrary();
@@ -37394,7 +37019,7 @@ class CKRecord extends Struct<CKRecord> {
     );
   }
 
-  static Pointer<Void> mutableEncryptedPublicSharingKeyData(
+  static Pointer mutableEncryptedPublicSharingKeyData(
     Pointer<CKRecord> _self,
   ) {
     _openDynamicLibrary();
@@ -37404,7 +37029,7 @@ class CKRecord extends Struct<CKRecord> {
     );
   }
 
-  static Pointer<Void> mutableURL(
+  static Pointer mutableURL(
     Pointer<CKRecord> _self,
   ) {
     _openDynamicLibrary();
@@ -37414,9 +37039,9 @@ class CKRecord extends Struct<CKRecord> {
     );
   }
 
-  static Pointer<Void> objectForKey(
+  static Pointer objectForKey(
     Pointer<CKRecord> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -37426,9 +37051,9 @@ class CKRecord extends Struct<CKRecord> {
     );
   }
 
-  static Pointer<Void> objectForKeyedSubscript(
+  static Pointer objectForKeyedSubscript(
     Pointer<CKRecord> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -37438,7 +37063,7 @@ class CKRecord extends Struct<CKRecord> {
     );
   }
 
-  static Pointer<Void> originalValues(
+  static Pointer originalValues(
     Pointer<CKRecord> _self,
   ) {
     _openDynamicLibrary();
@@ -37448,7 +37073,7 @@ class CKRecord extends Struct<CKRecord> {
     );
   }
 
-  static Pointer<Void> parent(
+  static Pointer parent(
     Pointer<CKRecord> _self,
   ) {
     _openDynamicLibrary();
@@ -37458,7 +37083,7 @@ class CKRecord extends Struct<CKRecord> {
     );
   }
 
-  static Pointer<Void> pcsKeyID(
+  static Pointer pcsKeyID(
     Pointer<CKRecord> _self,
   ) {
     _openDynamicLibrary();
@@ -37478,7 +37103,405 @@ class CKRecord extends Struct<CKRecord> {
     );
   }
 
-  static Pointer<Void> pluginFields(
+  static Pointer pk_arrayForKey(
+    Pointer<CKRecord> _self,
+    Pointer arg,
+  ) {
+    _openDynamicLibrary();
+    return _call_objc_p_p_p_returns_p(
+      _self,
+      _objc.getSelector("pk_arrayForKey:"),
+      arg,
+    );
+  }
+
+  static int pk_boolForKey(
+    Pointer<CKRecord> _self,
+    Pointer arg,
+  ) {
+    _openDynamicLibrary();
+    return _call_objc_p_p_p_returns_Int8(
+      _self,
+      _objc.getSelector("pk_boolForKey:"),
+      arg,
+    );
+  }
+
+  static Pointer pk_dataForKey(
+    Pointer<CKRecord> _self,
+    Pointer arg,
+  ) {
+    _openDynamicLibrary();
+    return _call_objc_p_p_p_returns_p(
+      _self,
+      _objc.getSelector("pk_dataForKey:"),
+      arg,
+    );
+  }
+
+  static Pointer pk_dateForKey(
+    Pointer<CKRecord> _self,
+    Pointer arg,
+  ) {
+    _openDynamicLibrary();
+    return _call_objc_p_p_p_returns_p(
+      _self,
+      _objc.getSelector("pk_dateForKey:"),
+      arg,
+    );
+  }
+
+  static Pointer pk_decimalNumberForKey(
+    Pointer<CKRecord> _self,
+    Pointer arg,
+  ) {
+    _openDynamicLibrary();
+    return _call_objc_p_p_p_returns_p(
+      _self,
+      _objc.getSelector("pk_decimalNumberForKey:"),
+      arg,
+    );
+  }
+
+  static Pointer pk_description(
+    Pointer<CKRecord> _self,
+  ) {
+    _openDynamicLibrary();
+    return _call_objc_p_p_returns_p(
+      _self,
+      _objc.getSelector("pk_description"),
+    );
+  }
+
+  static Pointer pk_dictionaryForKey(
+    Pointer<CKRecord> _self,
+    Pointer arg,
+  ) {
+    _openDynamicLibrary();
+    return _call_objc_p_p_p_returns_p(
+      _self,
+      _objc.getSelector("pk_dictionaryForKey:"),
+      arg,
+    );
+  }
+
+  static Pointer pk_encryptedArrayForKey(
+    Pointer<CKRecord> _self,
+    Pointer arg,
+  ) {
+    _openDynamicLibrary();
+    return _call_objc_p_p_p_returns_p(
+      _self,
+      _objc.getSelector("pk_encryptedArrayForKey:"),
+      arg,
+    );
+  }
+
+  static int pk_encryptedBoolForKey(
+    Pointer<CKRecord> _self,
+    Pointer arg,
+  ) {
+    _openDynamicLibrary();
+    return _call_objc_p_p_p_returns_Int8(
+      _self,
+      _objc.getSelector("pk_encryptedBoolForKey:"),
+      arg,
+    );
+  }
+
+  static Pointer pk_encryptedDataForKey(
+    Pointer<CKRecord> _self,
+    Pointer arg,
+  ) {
+    _openDynamicLibrary();
+    return _call_objc_p_p_p_returns_p(
+      _self,
+      _objc.getSelector("pk_encryptedDataForKey:"),
+      arg,
+    );
+  }
+
+  static Pointer pk_encryptedDateForKey(
+    Pointer<CKRecord> _self,
+    Pointer arg,
+  ) {
+    _openDynamicLibrary();
+    return _call_objc_p_p_p_returns_p(
+      _self,
+      _objc.getSelector("pk_encryptedDateForKey:"),
+      arg,
+    );
+  }
+
+  static Pointer pk_encryptedDecimalNumberForKey(
+    Pointer<CKRecord> _self,
+    Pointer arg,
+  ) {
+    _openDynamicLibrary();
+    return _call_objc_p_p_p_returns_p(
+      _self,
+      _objc.getSelector("pk_encryptedDecimalNumberForKey:"),
+      arg,
+    );
+  }
+
+  static Pointer pk_encryptedDictionaryForKey(
+    Pointer<CKRecord> _self,
+    Pointer arg,
+  ) {
+    _openDynamicLibrary();
+    return _call_objc_p_p_p_returns_p(
+      _self,
+      _objc.getSelector("pk_encryptedDictionaryForKey:"),
+      arg,
+    );
+  }
+
+  static int pk_encryptedIntForKey(
+    Pointer<CKRecord> _self,
+    Pointer arg,
+  ) {
+    _openDynamicLibrary();
+    return _call_objc_p_p_p_returns_Int32(
+      _self,
+      _objc.getSelector("pk_encryptedIntForKey:"),
+      arg,
+    );
+  }
+
+  static int pk_encryptedIntegerForKey(
+    Pointer<CKRecord> _self,
+    Pointer arg,
+  ) {
+    _openDynamicLibrary();
+    return _call_objc_p_p_p_returns_Int64(
+      _self,
+      _objc.getSelector("pk_encryptedIntegerForKey:"),
+      arg,
+    );
+  }
+
+  static Pointer pk_encryptedLocationForKey(
+    Pointer<CKRecord> _self,
+    Pointer arg,
+  ) {
+    _openDynamicLibrary();
+    return _call_objc_p_p_p_returns_p(
+      _self,
+      _objc.getSelector("pk_encryptedLocationForKey:"),
+      arg,
+    );
+  }
+
+  static Pointer pk_encryptedNumberForKey(
+    Pointer<CKRecord> _self,
+    Pointer arg,
+  ) {
+    _openDynamicLibrary();
+    return _call_objc_p_p_p_returns_p(
+      _self,
+      _objc.getSelector("pk_encryptedNumberForKey:"),
+      arg,
+    );
+  }
+
+  static Pointer pk_encryptedObjectForKey(
+    Pointer<CKRecord> _self,
+    Pointer arg, {
+    @required Pointer ofClass,
+  }) {
+    _openDynamicLibrary();
+    return _call_objc_p_p_p_p_returns_p(
+      _self,
+      _objc.getSelector("pk_encryptedObjectForKey:ofClass:"),
+      arg,
+      ofClass,
+    );
+  }
+
+  static Pointer pk_encryptedStringForKey(
+    Pointer<CKRecord> _self,
+    Pointer arg,
+  ) {
+    _openDynamicLibrary();
+    return _call_objc_p_p_p_returns_p(
+      _self,
+      _objc.getSelector("pk_encryptedStringForKey:"),
+      arg,
+    );
+  }
+
+  static Pointer pk_encryptedUUIDForKey(
+    Pointer<CKRecord> _self,
+    Pointer arg,
+  ) {
+    _openDynamicLibrary();
+    return _call_objc_p_p_p_returns_p(
+      _self,
+      _objc.getSelector("pk_encryptedUUIDForKey:"),
+      arg,
+    );
+  }
+
+  static int pk_encryptedUint64ForKey(
+    Pointer<CKRecord> _self,
+    Pointer arg,
+  ) {
+    _openDynamicLibrary();
+    return _call_objc_p_p_p_returns_Uint64(
+      _self,
+      _objc.getSelector("pk_encryptedUint64ForKey:"),
+      arg,
+    );
+  }
+
+  static int pk_encryptedUnsignedIntegerForKey(
+    Pointer<CKRecord> _self,
+    Pointer arg,
+  ) {
+    _openDynamicLibrary();
+    return _call_objc_p_p_p_returns_Uint64(
+      _self,
+      _objc.getSelector("pk_encryptedUnsignedIntegerForKey:"),
+      arg,
+    );
+  }
+
+  static Pointer pk_encryptedUrlForKey(
+    Pointer<CKRecord> _self,
+    Pointer arg,
+  ) {
+    _openDynamicLibrary();
+    return _call_objc_p_p_p_returns_p(
+      _self,
+      _objc.getSelector("pk_encryptedUrlForKey:"),
+      arg,
+    );
+  }
+
+  static int pk_intForKey(
+    Pointer<CKRecord> _self,
+    Pointer arg,
+  ) {
+    _openDynamicLibrary();
+    return _call_objc_p_p_p_returns_Int32(
+      _self,
+      _objc.getSelector("pk_intForKey:"),
+      arg,
+    );
+  }
+
+  static int pk_integerForKey(
+    Pointer<CKRecord> _self,
+    Pointer arg,
+  ) {
+    _openDynamicLibrary();
+    return _call_objc_p_p_p_returns_Int64(
+      _self,
+      _objc.getSelector("pk_integerForKey:"),
+      arg,
+    );
+  }
+
+  static Pointer pk_locationForKey(
+    Pointer<CKRecord> _self,
+    Pointer arg,
+  ) {
+    _openDynamicLibrary();
+    return _call_objc_p_p_p_returns_p(
+      _self,
+      _objc.getSelector("pk_locationForKey:"),
+      arg,
+    );
+  }
+
+  static Pointer pk_numberForKey(
+    Pointer<CKRecord> _self,
+    Pointer arg,
+  ) {
+    _openDynamicLibrary();
+    return _call_objc_p_p_p_returns_p(
+      _self,
+      _objc.getSelector("pk_numberForKey:"),
+      arg,
+    );
+  }
+
+  static Pointer pk_objectForKey(
+    Pointer<CKRecord> _self,
+    Pointer arg, {
+    @required Pointer ofClass,
+  }) {
+    _openDynamicLibrary();
+    return _call_objc_p_p_p_p_returns_p(
+      _self,
+      _objc.getSelector("pk_objectForKey:ofClass:"),
+      arg,
+      ofClass,
+    );
+  }
+
+  static Pointer pk_referenceForKey(
+    Pointer<CKRecord> _self,
+    Pointer arg,
+  ) {
+    _openDynamicLibrary();
+    return _call_objc_p_p_p_returns_p(
+      _self,
+      _objc.getSelector("pk_referenceForKey:"),
+      arg,
+    );
+  }
+
+  static Pointer pk_stringForKey(
+    Pointer<CKRecord> _self,
+    Pointer arg,
+  ) {
+    _openDynamicLibrary();
+    return _call_objc_p_p_p_returns_p(
+      _self,
+      _objc.getSelector("pk_stringForKey:"),
+      arg,
+    );
+  }
+
+  static int pk_uint64ForKey(
+    Pointer<CKRecord> _self,
+    Pointer arg,
+  ) {
+    _openDynamicLibrary();
+    return _call_objc_p_p_p_returns_Uint64(
+      _self,
+      _objc.getSelector("pk_uint64ForKey:"),
+      arg,
+    );
+  }
+
+  static int pk_unsignedIntegerForKey(
+    Pointer<CKRecord> _self,
+    Pointer arg,
+  ) {
+    _openDynamicLibrary();
+    return _call_objc_p_p_p_returns_Uint64(
+      _self,
+      _objc.getSelector("pk_unsignedIntegerForKey:"),
+      arg,
+    );
+  }
+
+  static Pointer pk_urlForKey(
+    Pointer<CKRecord> _self,
+    Pointer arg,
+  ) {
+    _openDynamicLibrary();
+    return _call_objc_p_p_p_returns_p(
+      _self,
+      _objc.getSelector("pk_urlForKey:"),
+      arg,
+    );
+  }
+
+  static Pointer pluginFields(
     Pointer<CKRecord> _self,
   ) {
     _openDynamicLibrary();
@@ -37488,7 +37511,7 @@ class CKRecord extends Struct<CKRecord> {
     );
   }
 
-  static Pointer<Void> previousParent(
+  static Pointer previousParent(
     Pointer<CKRecord> _self,
   ) {
     _openDynamicLibrary();
@@ -37498,7 +37521,7 @@ class CKRecord extends Struct<CKRecord> {
     );
   }
 
-  static Pointer<Void> previousProtectionEtag(
+  static Pointer previousProtectionEtag(
     Pointer<CKRecord> _self,
   ) {
     _openDynamicLibrary();
@@ -37508,7 +37531,7 @@ class CKRecord extends Struct<CKRecord> {
     );
   }
 
-  static Pointer<Void> previousProtectionEtagFromUnitTest(
+  static Pointer previousProtectionEtagFromUnitTest(
     Pointer<CKRecord> _self,
   ) {
     _openDynamicLibrary();
@@ -37518,7 +37541,7 @@ class CKRecord extends Struct<CKRecord> {
     );
   }
 
-  static Pointer<Void> previousShare(
+  static Pointer previousShare(
     Pointer<CKRecord> _self,
   ) {
     _openDynamicLibrary();
@@ -37528,7 +37551,7 @@ class CKRecord extends Struct<CKRecord> {
     );
   }
 
-  static Pointer<Void> privateToken(
+  static Pointer privateToken(
     Pointer<CKRecord> _self,
   ) {
     _openDynamicLibrary();
@@ -37538,7 +37561,7 @@ class CKRecord extends Struct<CKRecord> {
     );
   }
 
-  static Pointer<Void> protectionData(
+  static Pointer protectionData(
     Pointer<CKRecord> _self,
   ) {
     _openDynamicLibrary();
@@ -37548,7 +37571,7 @@ class CKRecord extends Struct<CKRecord> {
     );
   }
 
-  static Pointer<Void> protectionEtag(
+  static Pointer protectionEtag(
     Pointer<CKRecord> _self,
   ) {
     _openDynamicLibrary();
@@ -37558,7 +37581,7 @@ class CKRecord extends Struct<CKRecord> {
     );
   }
 
-  static Pointer<Void> recordChangeTag(
+  static Pointer recordChangeTag(
     Pointer<CKRecord> _self,
   ) {
     _openDynamicLibrary();
@@ -37568,7 +37591,7 @@ class CKRecord extends Struct<CKRecord> {
     );
   }
 
-  static Pointer<Void> recordID(
+  static Pointer recordID(
     Pointer<CKRecord> _self,
   ) {
     _openDynamicLibrary();
@@ -37578,7 +37601,7 @@ class CKRecord extends Struct<CKRecord> {
     );
   }
 
-  static Pointer<Void> recordType(
+  static Pointer recordType(
     Pointer<CKRecord> _self,
   ) {
     _openDynamicLibrary();
@@ -37618,7 +37641,7 @@ class CKRecord extends Struct<CKRecord> {
     );
   }
 
-  static Pointer<Void> routingKey(
+  static Pointer routingKey(
     Pointer<CKRecord> _self,
   ) {
     _openDynamicLibrary();
@@ -37640,7 +37663,7 @@ class CKRecord extends Struct<CKRecord> {
 
   static void setBaseToken(
     Pointer<CKRecord> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -37652,7 +37675,7 @@ class CKRecord extends Struct<CKRecord> {
 
   static void setChainParentPublicKeyID(
     Pointer<CKRecord> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -37664,7 +37687,7 @@ class CKRecord extends Struct<CKRecord> {
 
   static void setChainPrivateKey(
     Pointer<CKRecord> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -37676,7 +37699,7 @@ class CKRecord extends Struct<CKRecord> {
 
   static void setChainProtectionInfo(
     Pointer<CKRecord> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -37688,7 +37711,7 @@ class CKRecord extends Struct<CKRecord> {
 
   static void setChangedKeysSet(
     Pointer<CKRecord> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -37700,7 +37723,7 @@ class CKRecord extends Struct<CKRecord> {
 
   static void setConflictLoserEtags(
     Pointer<CKRecord> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -37712,7 +37735,7 @@ class CKRecord extends Struct<CKRecord> {
 
   static void setContainerID(
     Pointer<CKRecord> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -37724,7 +37747,7 @@ class CKRecord extends Struct<CKRecord> {
 
   static void setCreationDate(
     Pointer<CKRecord> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -37736,7 +37759,7 @@ class CKRecord extends Struct<CKRecord> {
 
   static void setCreatorUserRecordID(
     Pointer<CKRecord> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -37748,7 +37771,7 @@ class CKRecord extends Struct<CKRecord> {
 
   static void setDisplayedHostname(
     Pointer<CKRecord> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -37760,7 +37783,7 @@ class CKRecord extends Struct<CKRecord> {
 
   static void setEncryptedValueStore(
     Pointer<CKRecord> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -37772,7 +37795,7 @@ class CKRecord extends Struct<CKRecord> {
 
   static void setEtag(
     Pointer<CKRecord> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -37820,7 +37843,7 @@ class CKRecord extends Struct<CKRecord> {
 
   static void setLastModifiedUserRecordID(
     Pointer<CKRecord> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -37832,7 +37855,7 @@ class CKRecord extends Struct<CKRecord> {
 
   static void setModificationDate(
     Pointer<CKRecord> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -37844,7 +37867,7 @@ class CKRecord extends Struct<CKRecord> {
 
   static void setModifiedByDevice(
     Pointer<CKRecord> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -37856,7 +37879,7 @@ class CKRecord extends Struct<CKRecord> {
 
   static void setMutableEncryptedPSK(
     Pointer<CKRecord> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -37868,7 +37891,7 @@ class CKRecord extends Struct<CKRecord> {
 
   static void setMutableEncryptedPublicSharingKey(
     Pointer<CKRecord> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -37880,7 +37903,7 @@ class CKRecord extends Struct<CKRecord> {
 
   static void setMutableEncryptedPublicSharingKeyData(
     Pointer<CKRecord> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -37892,7 +37915,7 @@ class CKRecord extends Struct<CKRecord> {
 
   static void setMutableURL(
     Pointer<CKRecord> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -37904,7 +37927,7 @@ class CKRecord extends Struct<CKRecord> {
 
   static void setNilValueForKey(
     Pointer<CKRecord> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -37916,8 +37939,8 @@ class CKRecord extends Struct<CKRecord> {
 
   static void setObject$forKey$(
     Pointer<CKRecord> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> forKey,
+    Pointer arg, {
+    @required Pointer forKey,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -37930,8 +37953,8 @@ class CKRecord extends Struct<CKRecord> {
 
   static void setObject$forKeyedSubscript$(
     Pointer<CKRecord> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> forKeyedSubscript,
+    Pointer arg, {
+    @required Pointer forKeyedSubscript,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -37944,8 +37967,8 @@ class CKRecord extends Struct<CKRecord> {
 
   static void setObjectNoValidate(
     Pointer<CKRecord> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> forKey,
+    Pointer arg, {
+    @required Pointer forKey,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -37958,7 +37981,7 @@ class CKRecord extends Struct<CKRecord> {
 
   static void setParent(
     Pointer<CKRecord> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -37970,7 +37993,7 @@ class CKRecord extends Struct<CKRecord> {
 
   static void setParentReferenceFromRecord(
     Pointer<CKRecord> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -37982,7 +38005,7 @@ class CKRecord extends Struct<CKRecord> {
 
   static void setParentReferenceFromRecordID(
     Pointer<CKRecord> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -37994,7 +38017,7 @@ class CKRecord extends Struct<CKRecord> {
 
   static void setPcsKeyID(
     Pointer<CKRecord> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -38018,7 +38041,7 @@ class CKRecord extends Struct<CKRecord> {
 
   static void setPluginFields(
     Pointer<CKRecord> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -38030,7 +38053,7 @@ class CKRecord extends Struct<CKRecord> {
 
   static void setPreviousParent(
     Pointer<CKRecord> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -38042,7 +38065,7 @@ class CKRecord extends Struct<CKRecord> {
 
   static void setPreviousProtectionEtag(
     Pointer<CKRecord> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -38054,7 +38077,7 @@ class CKRecord extends Struct<CKRecord> {
 
   static void setPreviousProtectionEtagFromUnitTest(
     Pointer<CKRecord> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -38066,7 +38089,7 @@ class CKRecord extends Struct<CKRecord> {
 
   static void setPreviousShare(
     Pointer<CKRecord> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -38078,7 +38101,7 @@ class CKRecord extends Struct<CKRecord> {
 
   static void setProtectionData(
     Pointer<CKRecord> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -38090,7 +38113,7 @@ class CKRecord extends Struct<CKRecord> {
 
   static void setProtectionEtag(
     Pointer<CKRecord> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -38102,7 +38125,7 @@ class CKRecord extends Struct<CKRecord> {
 
   static void setRecordID(
     Pointer<CKRecord> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -38114,7 +38137,7 @@ class CKRecord extends Struct<CKRecord> {
 
   static void setRecordType(
     Pointer<CKRecord> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -38126,7 +38149,7 @@ class CKRecord extends Struct<CKRecord> {
 
   static void setRoutingKey(
     Pointer<CKRecord> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -38150,7 +38173,7 @@ class CKRecord extends Struct<CKRecord> {
 
   static void setShare(
     Pointer<CKRecord> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -38162,7 +38185,7 @@ class CKRecord extends Struct<CKRecord> {
 
   static void setShareEtag(
     Pointer<CKRecord> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -38174,7 +38197,7 @@ class CKRecord extends Struct<CKRecord> {
 
   static void setTombstonedPublicKeyIDs(
     Pointer<CKRecord> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -38210,8 +38233,8 @@ class CKRecord extends Struct<CKRecord> {
 
   static void setValue(
     Pointer<CKRecord> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> forKey,
+    Pointer arg, {
+    @required Pointer forKey,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -38224,7 +38247,7 @@ class CKRecord extends Struct<CKRecord> {
 
   static void setValueStore(
     Pointer<CKRecord> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -38272,7 +38295,7 @@ class CKRecord extends Struct<CKRecord> {
 
   static void setZoneProtectionEtag(
     Pointer<CKRecord> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -38284,7 +38307,7 @@ class CKRecord extends Struct<CKRecord> {
 
   static void setZoneishKeyID(
     Pointer<CKRecord> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -38294,7 +38317,7 @@ class CKRecord extends Struct<CKRecord> {
     );
   }
 
-  static Pointer<Void> share(
+  static Pointer share(
     Pointer<CKRecord> _self,
   ) {
     _openDynamicLibrary();
@@ -38304,7 +38327,7 @@ class CKRecord extends Struct<CKRecord> {
     );
   }
 
-  static Pointer<Void> shareEtag(
+  static Pointer shareEtag(
     Pointer<CKRecord> _self,
   ) {
     _openDynamicLibrary();
@@ -38314,7 +38337,7 @@ class CKRecord extends Struct<CKRecord> {
     );
   }
 
-  static Pointer<Void> shortSharingToken(
+  static Pointer shortSharingToken(
     Pointer<CKRecord> _self,
   ) {
     _openDynamicLibrary();
@@ -38324,7 +38347,7 @@ class CKRecord extends Struct<CKRecord> {
     );
   }
 
-  static Pointer<Void> shortSharingTokenData(
+  static Pointer shortSharingTokenData(
     Pointer<CKRecord> _self,
   ) {
     _openDynamicLibrary();
@@ -38334,7 +38357,7 @@ class CKRecord extends Struct<CKRecord> {
     );
   }
 
-  static Pointer<Void> shortSharingTokenHashData(
+  static Pointer shortSharingTokenHashData(
     Pointer<CKRecord> _self,
   ) {
     _openDynamicLibrary();
@@ -38344,7 +38367,7 @@ class CKRecord extends Struct<CKRecord> {
     );
   }
 
-  static Pointer<Void> shortToken(
+  static Pointer shortToken(
     Pointer<CKRecord> _self,
   ) {
     _openDynamicLibrary();
@@ -38364,7 +38387,7 @@ class CKRecord extends Struct<CKRecord> {
     );
   }
 
-  static Pointer<Void> tombstonedPublicKeyIDs(
+  static Pointer tombstonedPublicKeyIDs(
     Pointer<CKRecord> _self,
   ) {
     _openDynamicLibrary();
@@ -38384,7 +38407,7 @@ class CKRecord extends Struct<CKRecord> {
     );
   }
 
-  static Pointer<Void> uncachedURL(
+  static Pointer uncachedURL(
     Pointer<CKRecord> _self,
   ) {
     _openDynamicLibrary();
@@ -38404,9 +38427,9 @@ class CKRecord extends Struct<CKRecord> {
     );
   }
 
-  static Pointer<Void> valueForKey(
+  static Pointer valueForKey(
     Pointer<CKRecord> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -38416,7 +38439,7 @@ class CKRecord extends Struct<CKRecord> {
     );
   }
 
-  static Pointer<Void> valueStore(
+  static Pointer valueStore(
     Pointer<CKRecord> _self,
   ) {
     _openDynamicLibrary();
@@ -38426,7 +38449,7 @@ class CKRecord extends Struct<CKRecord> {
     );
   }
 
-  static Pointer<Void> values(
+  static Pointer values(
     Pointer<CKRecord> _self,
   ) {
     _openDynamicLibrary();
@@ -38436,7 +38459,7 @@ class CKRecord extends Struct<CKRecord> {
     );
   }
 
-  static Pointer<Void> valuesByKey(
+  static Pointer valuesByKey(
     Pointer<CKRecord> _self,
   ) {
     _openDynamicLibrary();
@@ -38476,7 +38499,7 @@ class CKRecord extends Struct<CKRecord> {
     );
   }
 
-  static Pointer<Void> zoneProtectionEtag(
+  static Pointer zoneProtectionEtag(
     Pointer<CKRecord> _self,
   ) {
     _openDynamicLibrary();
@@ -38486,7 +38509,7 @@ class CKRecord extends Struct<CKRecord> {
     );
   }
 
-  static Pointer<Void> zoneishKeyID(
+  static Pointer zoneishKeyID(
     Pointer<CKRecord> _self,
   ) {
     _openDynamicLibrary();
@@ -38497,11 +38520,9 @@ class CKRecord extends Struct<CKRecord> {
   }
 }
 
-/// Objective-C class _CKRecordGraph_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKRecordGraph extends Struct<CKRecordGraph> {
   factory CKRecordGraph._() {
@@ -38514,8 +38535,8 @@ class CKRecordGraph extends Struct<CKRecordGraph> {
 
   static int addRecords(
     Pointer<CKRecordGraph> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -38526,7 +38547,7 @@ class CKRecordGraph extends Struct<CKRecordGraph> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CKRecordGraph> _self,
   ) {
     _openDynamicLibrary();
@@ -38536,7 +38557,7 @@ class CKRecordGraph extends Struct<CKRecordGraph> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CKRecordGraph> _self,
   ) {
     _openDynamicLibrary();
@@ -38546,7 +38567,7 @@ class CKRecordGraph extends Struct<CKRecordGraph> {
     );
   }
 
-  static Pointer<Void> nodes(
+  static Pointer nodes(
     Pointer<CKRecordGraph> _self,
   ) {
     _openDynamicLibrary();
@@ -38556,9 +38577,9 @@ class CKRecordGraph extends Struct<CKRecordGraph> {
     );
   }
 
-  static Pointer<Void> recordsByTopologicalSortWithError(
+  static Pointer recordsByTopologicalSortWithError(
     Pointer<CKRecordGraph> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -38570,7 +38591,7 @@ class CKRecordGraph extends Struct<CKRecordGraph> {
 
   static void setNodes(
     Pointer<CKRecordGraph> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -38582,7 +38603,7 @@ class CKRecordGraph extends Struct<CKRecordGraph> {
 
   static void setSortedRecords(
     Pointer<CKRecordGraph> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -38592,7 +38613,7 @@ class CKRecordGraph extends Struct<CKRecordGraph> {
     );
   }
 
-  static Pointer<Void> sortedRecords(
+  static Pointer sortedRecords(
     Pointer<CKRecordGraph> _self,
   ) {
     _openDynamicLibrary();
@@ -38603,11 +38624,9 @@ class CKRecordGraph extends Struct<CKRecordGraph> {
   }
 }
 
-/// Objective-C class _CKRecordGraphNode_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKRecordGraphNode extends Struct<CKRecordGraphNode> {
   factory CKRecordGraphNode._() {
@@ -38618,7 +38637,7 @@ class CKRecordGraphNode extends Struct<CKRecordGraphNode> {
     return _objc.allocate("CKRecordGraphNode").cast<CKRecordGraphNode>();
   }
 
-  static Pointer<Void> CKPropertiesDescription(
+  static Pointer CKPropertiesDescription(
     Pointer<CKRecordGraphNode> _self,
   ) {
     _openDynamicLibrary();
@@ -38628,7 +38647,7 @@ class CKRecordGraphNode extends Struct<CKRecordGraphNode> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CKRecordGraphNode> _self,
   ) {
     _openDynamicLibrary();
@@ -38638,7 +38657,7 @@ class CKRecordGraphNode extends Struct<CKRecordGraphNode> {
     );
   }
 
-  static Pointer<Void> edges(
+  static Pointer edges(
     Pointer<CKRecordGraphNode> _self,
   ) {
     _openDynamicLibrary();
@@ -38668,7 +38687,7 @@ class CKRecordGraphNode extends Struct<CKRecordGraphNode> {
     );
   }
 
-  static Pointer<Void> indegrees(
+  static Pointer indegrees(
     Pointer<CKRecordGraphNode> _self,
   ) {
     _openDynamicLibrary();
@@ -38678,7 +38697,7 @@ class CKRecordGraphNode extends Struct<CKRecordGraphNode> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CKRecordGraphNode> _self,
   ) {
     _openDynamicLibrary();
@@ -38690,7 +38709,7 @@ class CKRecordGraphNode extends Struct<CKRecordGraphNode> {
 
   static int isEqual(
     Pointer<CKRecordGraphNode> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -38700,7 +38719,7 @@ class CKRecordGraphNode extends Struct<CKRecordGraphNode> {
     );
   }
 
-  static Pointer<Void> record(
+  static Pointer record(
     Pointer<CKRecordGraphNode> _self,
   ) {
     _openDynamicLibrary();
@@ -38712,7 +38731,7 @@ class CKRecordGraphNode extends Struct<CKRecordGraphNode> {
 
   static void setEdges(
     Pointer<CKRecordGraphNode> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -38724,7 +38743,7 @@ class CKRecordGraphNode extends Struct<CKRecordGraphNode> {
 
   static void setRecord(
     Pointer<CKRecordGraphNode> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -38735,11 +38754,9 @@ class CKRecordGraphNode extends Struct<CKRecordGraphNode> {
   }
 }
 
-/// Objective-C class _CKRecordID_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKRecordID extends Struct<CKRecordID> {
   factory CKRecordID._() {
@@ -38750,7 +38767,7 @@ class CKRecordID extends Struct<CKRecordID> {
     return _objc.allocate("CKRecordID").cast<CKRecordID>();
   }
 
-  static Pointer<Void> CKDescriptionPropertiesWithPublic(
+  static Pointer CKDescriptionPropertiesWithPublic(
     Pointer<CKRecordID> _self,
     int arg, {
     @required int private,
@@ -38767,7 +38784,7 @@ class CKRecordID extends Struct<CKRecordID> {
     );
   }
 
-  static Pointer<Void> CKPropertiesDescription(
+  static Pointer CKPropertiesDescription(
     Pointer<CKRecordID> _self,
   ) {
     _openDynamicLibrary();
@@ -38777,9 +38794,9 @@ class CKRecordID extends Struct<CKRecordID> {
     );
   }
 
-  static Pointer<Void> CKPropertiesDescriptionWithProperties(
+  static Pointer CKPropertiesDescriptionWithProperties(
     Pointer<CKRecordID> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -38789,7 +38806,7 @@ class CKRecordID extends Struct<CKRecordID> {
     );
   }
 
-  static Pointer<Void> CKXPCSuitableString(
+  static Pointer CKXPCSuitableString(
     Pointer<CKRecordID> _self,
   ) {
     _openDynamicLibrary();
@@ -38799,7 +38816,7 @@ class CKRecordID extends Struct<CKRecordID> {
     );
   }
 
-  static Pointer<Void> ckShortDescription(
+  static Pointer ckShortDescription(
     Pointer<CKRecordID> _self,
   ) {
     _openDynamicLibrary();
@@ -38811,7 +38828,7 @@ class CKRecordID extends Struct<CKRecordID> {
 
   static int compareToRecordID(
     Pointer<CKRecordID> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int64(
@@ -38821,9 +38838,9 @@ class CKRecordID extends Struct<CKRecordID> {
     );
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<CKRecordID> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -38833,7 +38850,7 @@ class CKRecordID extends Struct<CKRecordID> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CKRecordID> _self,
   ) {
     _openDynamicLibrary();
@@ -38845,7 +38862,7 @@ class CKRecordID extends Struct<CKRecordID> {
 
   static void encodeWithCoder(
     Pointer<CKRecordID> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -38865,7 +38882,7 @@ class CKRecordID extends Struct<CKRecordID> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CKRecordID> _self,
   ) {
     _openDynamicLibrary();
@@ -38875,9 +38892,9 @@ class CKRecordID extends Struct<CKRecordID> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CKRecordID> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -38887,10 +38904,10 @@ class CKRecordID extends Struct<CKRecordID> {
     );
   }
 
-  static Pointer<Void> initWithRecordName$zoneID$(
+  static Pointer initWithRecordName$zoneID$(
     Pointer<CKRecordID> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> zoneID,
+    Pointer arg, {
+    @required Pointer zoneID,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -38901,9 +38918,9 @@ class CKRecordID extends Struct<CKRecordID> {
     );
   }
 
-  static Pointer<Void> initWithRecordName$(
+  static Pointer initWithRecordName$(
     Pointer<CKRecordID> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -38913,9 +38930,9 @@ class CKRecordID extends Struct<CKRecordID> {
     );
   }
 
-  static Pointer<Void> initWithSqliteRepresentation(
+  static Pointer initWithSqliteRepresentation(
     Pointer<CKRecordID> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -38927,7 +38944,7 @@ class CKRecordID extends Struct<CKRecordID> {
 
   static int isEqual(
     Pointer<CKRecordID> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -38937,7 +38954,7 @@ class CKRecordID extends Struct<CKRecordID> {
     );
   }
 
-  static Pointer<Void> recordName(
+  static Pointer recordName(
     Pointer<CKRecordID> _self,
   ) {
     _openDynamicLibrary();
@@ -38949,7 +38966,7 @@ class CKRecordID extends Struct<CKRecordID> {
 
   static void setRecordName(
     Pointer<CKRecordID> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -38961,7 +38978,7 @@ class CKRecordID extends Struct<CKRecordID> {
 
   static void setZoneID(
     Pointer<CKRecordID> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -38971,7 +38988,7 @@ class CKRecordID extends Struct<CKRecordID> {
     );
   }
 
-  static Pointer<Void> sqliteRepresentation(
+  static Pointer sqliteRepresentation(
     Pointer<CKRecordID> _self,
   ) {
     _openDynamicLibrary();
@@ -38981,7 +38998,7 @@ class CKRecordID extends Struct<CKRecordID> {
     );
   }
 
-  static Pointer<Void> zoneID(
+  static Pointer zoneID(
     Pointer<CKRecordID> _self,
   ) {
     _openDynamicLibrary();
@@ -38992,11 +39009,9 @@ class CKRecordID extends Struct<CKRecordID> {
   }
 }
 
-/// Objective-C class _CKRecordValueStore_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKRecordValueStore extends Struct<CKRecordValueStore> {
   factory CKRecordValueStore._() {
@@ -39007,7 +39022,7 @@ class CKRecordValueStore extends Struct<CKRecordValueStore> {
     return _objc.allocate("CKRecordValueStore").cast<CKRecordValueStore>();
   }
 
-  static Pointer<Void> allKeys(
+  static Pointer allKeys(
     Pointer<CKRecordValueStore> _self,
   ) {
     _openDynamicLibrary();
@@ -39017,7 +39032,7 @@ class CKRecordValueStore extends Struct<CKRecordValueStore> {
     );
   }
 
-  static Pointer<Void> changedKeys(
+  static Pointer changedKeys(
     Pointer<CKRecordValueStore> _self,
   ) {
     _openDynamicLibrary();
@@ -39027,7 +39042,7 @@ class CKRecordValueStore extends Struct<CKRecordValueStore> {
     );
   }
 
-  static Pointer<Void> changedKeysSet(
+  static Pointer changedKeysSet(
     Pointer<CKRecordValueStore> _self,
   ) {
     _openDynamicLibrary();
@@ -39040,7 +39055,7 @@ class CKRecordValueStore extends Struct<CKRecordValueStore> {
   static int checkProperties(
     Pointer<CKRecordValueStore> _self,
     int arg, {
-    @required Pointer<Void> withValueCheckBlock,
+    @required Pointer withValueCheckBlock,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_Int8_p_returns_Int8(
@@ -39055,7 +39070,7 @@ class CKRecordValueStore extends Struct<CKRecordValueStore> {
     Pointer<CKRecordValueStore> _self,
     int arg, {
     @required int includingAllArrayItems,
-    @required Pointer<Void> withValueCheckBlock,
+    @required Pointer withValueCheckBlock,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_Int8_Int8_p_returns_Int8(
@@ -39068,9 +39083,9 @@ class CKRecordValueStore extends Struct<CKRecordValueStore> {
     );
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<CKRecordValueStore> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -39082,7 +39097,7 @@ class CKRecordValueStore extends Struct<CKRecordValueStore> {
 
   static void encodeWithCoder(
     Pointer<CKRecordValueStore> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -39092,9 +39107,9 @@ class CKRecordValueStore extends Struct<CKRecordValueStore> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CKRecordValueStore> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -39104,9 +39119,9 @@ class CKRecordValueStore extends Struct<CKRecordValueStore> {
     );
   }
 
-  static Pointer<Void> initWithRecord(
+  static Pointer initWithRecord(
     Pointer<CKRecordValueStore> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -39116,9 +39131,9 @@ class CKRecordValueStore extends Struct<CKRecordValueStore> {
     );
   }
 
-  static Pointer<Void> objectForKey(
+  static Pointer objectForKey(
     Pointer<CKRecordValueStore> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -39128,9 +39143,9 @@ class CKRecordValueStore extends Struct<CKRecordValueStore> {
     );
   }
 
-  static Pointer<Void> objectForKeyedSubscript(
+  static Pointer objectForKeyedSubscript(
     Pointer<CKRecordValueStore> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -39140,7 +39155,7 @@ class CKRecordValueStore extends Struct<CKRecordValueStore> {
     );
   }
 
-  static Pointer<Void> originalValues(
+  static Pointer originalValues(
     Pointer<CKRecordValueStore> _self,
   ) {
     _openDynamicLibrary();
@@ -39150,7 +39165,7 @@ class CKRecordValueStore extends Struct<CKRecordValueStore> {
     );
   }
 
-  static Pointer<Void> record(
+  static Pointer record(
     Pointer<CKRecordValueStore> _self,
   ) {
     _openDynamicLibrary();
@@ -39160,7 +39175,7 @@ class CKRecordValueStore extends Struct<CKRecordValueStore> {
     );
   }
 
-  static Pointer<Void> recordID(
+  static Pointer recordID(
     Pointer<CKRecordValueStore> _self,
   ) {
     _openDynamicLibrary();
@@ -39182,7 +39197,7 @@ class CKRecordValueStore extends Struct<CKRecordValueStore> {
 
   static void setChangedKeysSet(
     Pointer<CKRecordValueStore> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -39194,7 +39209,7 @@ class CKRecordValueStore extends Struct<CKRecordValueStore> {
 
   static void setNilValueForKey(
     Pointer<CKRecordValueStore> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -39206,8 +39221,8 @@ class CKRecordValueStore extends Struct<CKRecordValueStore> {
 
   static void setObject$forKey$(
     Pointer<CKRecordValueStore> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> forKey,
+    Pointer arg, {
+    @required Pointer forKey,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -39220,8 +39235,8 @@ class CKRecordValueStore extends Struct<CKRecordValueStore> {
 
   static void setObject$forKeyedSubscript$(
     Pointer<CKRecordValueStore> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> forKeyedSubscript,
+    Pointer arg, {
+    @required Pointer forKeyedSubscript,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -39234,8 +39249,8 @@ class CKRecordValueStore extends Struct<CKRecordValueStore> {
 
   static void setObjectNoValidate(
     Pointer<CKRecordValueStore> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> forKey,
+    Pointer arg, {
+    @required Pointer forKey,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -39248,7 +39263,7 @@ class CKRecordValueStore extends Struct<CKRecordValueStore> {
 
   static void setOriginalValues(
     Pointer<CKRecordValueStore> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -39260,7 +39275,7 @@ class CKRecordValueStore extends Struct<CKRecordValueStore> {
 
   static void setRecord(
     Pointer<CKRecordValueStore> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -39284,8 +39299,8 @@ class CKRecordValueStore extends Struct<CKRecordValueStore> {
 
   static void setValue(
     Pointer<CKRecordValueStore> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> forKey,
+    Pointer arg, {
+    @required Pointer forKey,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -39298,7 +39313,7 @@ class CKRecordValueStore extends Struct<CKRecordValueStore> {
 
   static void setValues(
     Pointer<CKRecordValueStore> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -39318,9 +39333,9 @@ class CKRecordValueStore extends Struct<CKRecordValueStore> {
     );
   }
 
-  static Pointer<Void> valueForKey(
+  static Pointer valueForKey(
     Pointer<CKRecordValueStore> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -39330,7 +39345,7 @@ class CKRecordValueStore extends Struct<CKRecordValueStore> {
     );
   }
 
-  static Pointer<Void> values(
+  static Pointer values(
     Pointer<CKRecordValueStore> _self,
   ) {
     _openDynamicLibrary();
@@ -39341,11 +39356,9 @@ class CKRecordValueStore extends Struct<CKRecordValueStore> {
   }
 }
 
-/// Objective-C class _CKRecordZone_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKRecordZone extends Struct<CKRecordZone> {
   factory CKRecordZone._() {
@@ -39358,7 +39371,7 @@ class CKRecordZone extends Struct<CKRecordZone> {
 
   static void CKAssignToContainerWithID(
     Pointer<CKRecordZone> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -39368,7 +39381,7 @@ class CKRecordZone extends Struct<CKRecordZone> {
     );
   }
 
-  static Pointer<Void> CKDescriptionPropertiesWithPublic(
+  static Pointer CKDescriptionPropertiesWithPublic(
     Pointer<CKRecordZone> _self,
     int arg, {
     @required int private,
@@ -39385,7 +39398,7 @@ class CKRecordZone extends Struct<CKRecordZone> {
     );
   }
 
-  static Pointer<Void> CKPropertiesDescription(
+  static Pointer CKPropertiesDescription(
     Pointer<CKRecordZone> _self,
   ) {
     _openDynamicLibrary();
@@ -39415,7 +39428,7 @@ class CKRecordZone extends Struct<CKRecordZone> {
     );
   }
 
-  static Pointer<Void> clientChangeToken(
+  static Pointer clientChangeToken(
     Pointer<CKRecordZone> _self,
   ) {
     _openDynamicLibrary();
@@ -39425,7 +39438,7 @@ class CKRecordZone extends Struct<CKRecordZone> {
     );
   }
 
-  static Pointer<Void> containerID(
+  static Pointer containerID(
     Pointer<CKRecordZone> _self,
   ) {
     _openDynamicLibrary();
@@ -39435,9 +39448,9 @@ class CKRecordZone extends Struct<CKRecordZone> {
     );
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<CKRecordZone> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -39447,7 +39460,7 @@ class CKRecordZone extends Struct<CKRecordZone> {
     );
   }
 
-  static Pointer<Void> currentServerChangeToken(
+  static Pointer currentServerChangeToken(
     Pointer<CKRecordZone> _self,
   ) {
     _openDynamicLibrary();
@@ -39457,7 +39470,7 @@ class CKRecordZone extends Struct<CKRecordZone> {
     );
   }
 
-  static Pointer<Void> currentServerContinuationToken(
+  static Pointer currentServerContinuationToken(
     Pointer<CKRecordZone> _self,
   ) {
     _openDynamicLibrary();
@@ -39467,7 +39480,7 @@ class CKRecordZone extends Struct<CKRecordZone> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CKRecordZone> _self,
   ) {
     _openDynamicLibrary();
@@ -39489,7 +39502,7 @@ class CKRecordZone extends Struct<CKRecordZone> {
 
   static void encodeWithCoder(
     Pointer<CKRecordZone> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -39499,7 +39512,7 @@ class CKRecordZone extends Struct<CKRecordZone> {
     );
   }
 
-  static Pointer<Void> encryptedLastZoneishPCSRollDate(
+  static Pointer encryptedLastZoneishPCSRollDate(
     Pointer<CKRecordZone> _self,
   ) {
     _openDynamicLibrary();
@@ -39509,9 +39522,9 @@ class CKRecordZone extends Struct<CKRecordZone> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CKRecordZone> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -39521,9 +39534,9 @@ class CKRecordZone extends Struct<CKRecordZone> {
     );
   }
 
-  static Pointer<Void> initWithZoneID(
+  static Pointer initWithZoneID(
     Pointer<CKRecordZone> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -39533,9 +39546,9 @@ class CKRecordZone extends Struct<CKRecordZone> {
     );
   }
 
-  static Pointer<Void> initWithZoneName(
+  static Pointer initWithZoneName(
     Pointer<CKRecordZone> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -39565,7 +39578,7 @@ class CKRecordZone extends Struct<CKRecordZone> {
     );
   }
 
-  static Pointer<Void> pcsKeyID(
+  static Pointer pcsKeyID(
     Pointer<CKRecordZone> _self,
   ) {
     _openDynamicLibrary();
@@ -39575,7 +39588,7 @@ class CKRecordZone extends Struct<CKRecordZone> {
     );
   }
 
-  static Pointer<Void> previousProtectionEtag(
+  static Pointer previousProtectionEtag(
     Pointer<CKRecordZone> _self,
   ) {
     _openDynamicLibrary();
@@ -39585,7 +39598,7 @@ class CKRecordZone extends Struct<CKRecordZone> {
     );
   }
 
-  static Pointer<Void> protectionData(
+  static Pointer protectionData(
     Pointer<CKRecordZone> _self,
   ) {
     _openDynamicLibrary();
@@ -39595,7 +39608,7 @@ class CKRecordZone extends Struct<CKRecordZone> {
     );
   }
 
-  static Pointer<Void> protectionEtag(
+  static Pointer protectionEtag(
     Pointer<CKRecordZone> _self,
   ) {
     _openDynamicLibrary();
@@ -39641,7 +39654,7 @@ class CKRecordZone extends Struct<CKRecordZone> {
 
   static void setClientChangeToken(
     Pointer<CKRecordZone> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -39653,7 +39666,7 @@ class CKRecordZone extends Struct<CKRecordZone> {
 
   static void setContainerID(
     Pointer<CKRecordZone> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -39665,7 +39678,7 @@ class CKRecordZone extends Struct<CKRecordZone> {
 
   static void setCurrentServerChangeToken(
     Pointer<CKRecordZone> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -39689,7 +39702,7 @@ class CKRecordZone extends Struct<CKRecordZone> {
 
   static void setEncryptedLastZoneishPCSRollDate(
     Pointer<CKRecordZone> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -39725,7 +39738,7 @@ class CKRecordZone extends Struct<CKRecordZone> {
 
   static void setPcsKeyID(
     Pointer<CKRecordZone> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -39737,7 +39750,7 @@ class CKRecordZone extends Struct<CKRecordZone> {
 
   static void setPreviousProtectionEtag(
     Pointer<CKRecordZone> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -39749,7 +39762,7 @@ class CKRecordZone extends Struct<CKRecordZone> {
 
   static void setProtectionData(
     Pointer<CKRecordZone> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -39761,7 +39774,7 @@ class CKRecordZone extends Struct<CKRecordZone> {
 
   static void setProtectionEtag(
     Pointer<CKRecordZone> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -39785,7 +39798,7 @@ class CKRecordZone extends Struct<CKRecordZone> {
 
   static void setZoneID(
     Pointer<CKRecordZone> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -39809,7 +39822,7 @@ class CKRecordZone extends Struct<CKRecordZone> {
 
   static void setZonePCSLastModifierDevice(
     Pointer<CKRecordZone> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -39821,7 +39834,7 @@ class CKRecordZone extends Struct<CKRecordZone> {
 
   static void setZonePCSModificationDate(
     Pointer<CKRecordZone> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -39833,7 +39846,7 @@ class CKRecordZone extends Struct<CKRecordZone> {
 
   static void setZoneishKeyID(
     Pointer<CKRecordZone> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -39845,7 +39858,7 @@ class CKRecordZone extends Struct<CKRecordZone> {
 
   static void setZoneishProtectionData(
     Pointer<CKRecordZone> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -39855,7 +39868,7 @@ class CKRecordZone extends Struct<CKRecordZone> {
     );
   }
 
-  static Pointer<Void> zoneID(
+  static Pointer zoneID(
     Pointer<CKRecordZone> _self,
   ) {
     _openDynamicLibrary();
@@ -39875,7 +39888,7 @@ class CKRecordZone extends Struct<CKRecordZone> {
     );
   }
 
-  static Pointer<Void> zonePCSLastModifierDevice(
+  static Pointer zonePCSLastModifierDevice(
     Pointer<CKRecordZone> _self,
   ) {
     _openDynamicLibrary();
@@ -39885,7 +39898,7 @@ class CKRecordZone extends Struct<CKRecordZone> {
     );
   }
 
-  static Pointer<Void> zonePCSModificationDate(
+  static Pointer zonePCSModificationDate(
     Pointer<CKRecordZone> _self,
   ) {
     _openDynamicLibrary();
@@ -39895,7 +39908,7 @@ class CKRecordZone extends Struct<CKRecordZone> {
     );
   }
 
-  static Pointer<Void> zoneishKeyID(
+  static Pointer zoneishKeyID(
     Pointer<CKRecordZone> _self,
   ) {
     _openDynamicLibrary();
@@ -39905,7 +39918,7 @@ class CKRecordZone extends Struct<CKRecordZone> {
     );
   }
 
-  static Pointer<Void> zoneishProtectionData(
+  static Pointer zoneishProtectionData(
     Pointer<CKRecordZone> _self,
   ) {
     _openDynamicLibrary();
@@ -39916,11 +39929,9 @@ class CKRecordZone extends Struct<CKRecordZone> {
   }
 }
 
-/// Objective-C class _CKRecordZoneID_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKRecordZoneID extends Struct<CKRecordZoneID> {
   factory CKRecordZoneID._() {
@@ -39931,7 +39942,7 @@ class CKRecordZoneID extends Struct<CKRecordZoneID> {
     return _objc.allocate("CKRecordZoneID").cast<CKRecordZoneID>();
   }
 
-  static Pointer<Void> CKDescriptionPropertiesWithPublic(
+  static Pointer CKDescriptionPropertiesWithPublic(
     Pointer<CKRecordZoneID> _self,
     int arg, {
     @required int private,
@@ -39948,7 +39959,7 @@ class CKRecordZoneID extends Struct<CKRecordZoneID> {
     );
   }
 
-  static Pointer<Void> CKPropertiesDescription(
+  static Pointer CKPropertiesDescription(
     Pointer<CKRecordZoneID> _self,
   ) {
     _openDynamicLibrary();
@@ -39958,9 +39969,9 @@ class CKRecordZoneID extends Struct<CKRecordZoneID> {
     );
   }
 
-  static Pointer<Void> CKPropertiesDescriptionWithProperties(
+  static Pointer CKPropertiesDescriptionWithProperties(
     Pointer<CKRecordZoneID> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -39970,7 +39981,7 @@ class CKRecordZoneID extends Struct<CKRecordZoneID> {
     );
   }
 
-  static Pointer<Void> CKXPCSuitableString(
+  static Pointer CKXPCSuitableString(
     Pointer<CKRecordZoneID> _self,
   ) {
     _openDynamicLibrary();
@@ -39980,7 +39991,7 @@ class CKRecordZoneID extends Struct<CKRecordZoneID> {
     );
   }
 
-  static Pointer<Void> ckShortDescription(
+  static Pointer ckShortDescription(
     Pointer<CKRecordZoneID> _self,
   ) {
     _openDynamicLibrary();
@@ -39992,7 +40003,7 @@ class CKRecordZoneID extends Struct<CKRecordZoneID> {
 
   static int compareToRecordZoneID(
     Pointer<CKRecordZoneID> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int64(
@@ -40002,9 +40013,9 @@ class CKRecordZoneID extends Struct<CKRecordZoneID> {
     );
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<CKRecordZoneID> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -40014,7 +40025,7 @@ class CKRecordZoneID extends Struct<CKRecordZoneID> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CKRecordZoneID> _self,
   ) {
     _openDynamicLibrary();
@@ -40026,7 +40037,7 @@ class CKRecordZoneID extends Struct<CKRecordZoneID> {
 
   static void encodeWithCoder(
     Pointer<CKRecordZoneID> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -40046,7 +40057,7 @@ class CKRecordZoneID extends Struct<CKRecordZoneID> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CKRecordZoneID> _self,
   ) {
     _openDynamicLibrary();
@@ -40056,9 +40067,9 @@ class CKRecordZoneID extends Struct<CKRecordZoneID> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CKRecordZoneID> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -40068,9 +40079,9 @@ class CKRecordZoneID extends Struct<CKRecordZoneID> {
     );
   }
 
-  static Pointer<Void> initWithSqliteRepresentation(
+  static Pointer initWithSqliteRepresentation(
     Pointer<CKRecordZoneID> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -40080,10 +40091,10 @@ class CKRecordZoneID extends Struct<CKRecordZoneID> {
     );
   }
 
-  static Pointer<Void> initWithZoneName(
+  static Pointer initWithZoneName(
     Pointer<CKRecordZoneID> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> ownerName,
+    Pointer arg, {
+    @required Pointer ownerName,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -40106,7 +40117,7 @@ class CKRecordZoneID extends Struct<CKRecordZoneID> {
 
   static int isEqual(
     Pointer<CKRecordZoneID> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -40116,7 +40127,7 @@ class CKRecordZoneID extends Struct<CKRecordZoneID> {
     );
   }
 
-  static Pointer<Void> ownerName(
+  static Pointer ownerName(
     Pointer<CKRecordZoneID> _self,
   ) {
     _openDynamicLibrary();
@@ -40126,7 +40137,7 @@ class CKRecordZoneID extends Struct<CKRecordZoneID> {
     );
   }
 
-  static Pointer<Void> sqliteRepresentation(
+  static Pointer sqliteRepresentation(
     Pointer<CKRecordZoneID> _self,
   ) {
     _openDynamicLibrary();
@@ -40136,7 +40147,7 @@ class CKRecordZoneID extends Struct<CKRecordZoneID> {
     );
   }
 
-  static Pointer<Void> zoneName(
+  static Pointer zoneName(
     Pointer<CKRecordZoneID> _self,
   ) {
     _openDynamicLibrary();
@@ -40147,11 +40158,9 @@ class CKRecordZoneID extends Struct<CKRecordZoneID> {
   }
 }
 
-/// Objective-C class _CKRecordZoneNotification_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKRecordZoneNotification extends Struct<CKRecordZoneNotification> {
   factory CKRecordZoneNotification._() {
@@ -40164,7 +40173,7 @@ class CKRecordZoneNotification extends Struct<CKRecordZoneNotification> {
         .cast<CKRecordZoneNotification>();
   }
 
-  static Pointer<Void> CKPropertiesDescription(
+  static Pointer CKPropertiesDescription(
     Pointer<CKRecordZoneNotification> _self,
   ) {
     _openDynamicLibrary();
@@ -40184,7 +40193,7 @@ class CKRecordZoneNotification extends Struct<CKRecordZoneNotification> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CKRecordZoneNotification> _self,
   ) {
     _openDynamicLibrary();
@@ -40196,7 +40205,7 @@ class CKRecordZoneNotification extends Struct<CKRecordZoneNotification> {
 
   static void encodeWithCoder(
     Pointer<CKRecordZoneNotification> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -40206,9 +40215,9 @@ class CKRecordZoneNotification extends Struct<CKRecordZoneNotification> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CKRecordZoneNotification> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -40218,9 +40227,9 @@ class CKRecordZoneNotification extends Struct<CKRecordZoneNotification> {
     );
   }
 
-  static Pointer<Void> initWithRemoteNotificationDictionary(
+  static Pointer initWithRemoteNotificationDictionary(
     Pointer<CKRecordZoneNotification> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -40230,7 +40239,7 @@ class CKRecordZoneNotification extends Struct<CKRecordZoneNotification> {
     );
   }
 
-  static Pointer<Void> recordZoneID(
+  static Pointer recordZoneID(
     Pointer<CKRecordZoneNotification> _self,
   ) {
     _openDynamicLibrary();
@@ -40254,7 +40263,7 @@ class CKRecordZoneNotification extends Struct<CKRecordZoneNotification> {
 
   static void setRecordZoneID(
     Pointer<CKRecordZoneNotification> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -40265,11 +40274,9 @@ class CKRecordZoneNotification extends Struct<CKRecordZoneNotification> {
   }
 }
 
-/// Objective-C class _CKRecordZoneSubscription_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKRecordZoneSubscription extends Struct<CKRecordZoneSubscription> {
   factory CKRecordZoneSubscription._() {
@@ -40282,9 +40289,9 @@ class CKRecordZoneSubscription extends Struct<CKRecordZoneSubscription> {
         .cast<CKRecordZoneSubscription>();
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<CKRecordZoneSubscription> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -40294,10 +40301,10 @@ class CKRecordZoneSubscription extends Struct<CKRecordZoneSubscription> {
     );
   }
 
-  static Pointer<Void> initWithZoneID$subscriptionID$(
+  static Pointer initWithZoneID$subscriptionID$(
     Pointer<CKRecordZoneSubscription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> subscriptionID,
+    Pointer arg, {
+    @required Pointer subscriptionID,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -40308,9 +40315,9 @@ class CKRecordZoneSubscription extends Struct<CKRecordZoneSubscription> {
     );
   }
 
-  static Pointer<Void> initWithZoneID$(
+  static Pointer initWithZoneID$(
     Pointer<CKRecordZoneSubscription> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -40321,11 +40328,9 @@ class CKRecordZoneSubscription extends Struct<CKRecordZoneSubscription> {
   }
 }
 
-/// Objective-C class _CKRecursivePredicateValidator_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKRecursivePredicateValidator
     extends Struct<CKRecursivePredicateValidator> {
@@ -40339,7 +40344,7 @@ class CKRecursivePredicateValidator
         .cast<CKRecursivePredicateValidator>();
   }
 
-  static Pointer<Void> CKPropertiesDescription(
+  static Pointer CKPropertiesDescription(
     Pointer<CKRecursivePredicateValidator> _self,
   ) {
     _openDynamicLibrary();
@@ -40349,9 +40354,9 @@ class CKRecursivePredicateValidator
     );
   }
 
-  static Pointer<Void> initWithValidator(
+  static Pointer initWithValidator(
     Pointer<CKRecursivePredicateValidator> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -40363,7 +40368,7 @@ class CKRecursivePredicateValidator
 
   static void setValidator(
     Pointer<CKRecursivePredicateValidator> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -40375,8 +40380,8 @@ class CKRecursivePredicateValidator
 
   static int validate(
     Pointer<CKRecursivePredicateValidator> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -40387,7 +40392,7 @@ class CKRecursivePredicateValidator
     );
   }
 
-  static Pointer<Void> validator(
+  static Pointer validator(
     Pointer<CKRecursivePredicateValidator> _self,
   ) {
     _openDynamicLibrary();
@@ -40398,11 +40403,9 @@ class CKRecursivePredicateValidator
   }
 }
 
-/// Objective-C class _CKReference_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKReference extends Struct<CKReference> {
   factory CKReference._() {
@@ -40413,7 +40416,7 @@ class CKReference extends Struct<CKReference> {
     return _objc.allocate("CKReference").cast<CKReference>();
   }
 
-  static Pointer<Void> CKDescriptionPropertiesWithPublic(
+  static Pointer CKDescriptionPropertiesWithPublic(
     Pointer<CKReference> _self,
     int arg, {
     @required int private,
@@ -40430,7 +40433,7 @@ class CKReference extends Struct<CKReference> {
     );
   }
 
-  static Pointer<Void> CKPropertiesDescription(
+  static Pointer CKPropertiesDescription(
     Pointer<CKReference> _self,
   ) {
     _openDynamicLibrary();
@@ -40440,7 +40443,7 @@ class CKReference extends Struct<CKReference> {
     );
   }
 
-  static Pointer<Void> ckShortDescription(
+  static Pointer ckShortDescription(
     Pointer<CKReference> _self,
   ) {
     _openDynamicLibrary();
@@ -40450,9 +40453,9 @@ class CKReference extends Struct<CKReference> {
     );
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<CKReference> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -40462,7 +40465,7 @@ class CKReference extends Struct<CKReference> {
     );
   }
 
-  static Pointer<Void> debugDescription(
+  static Pointer debugDescription(
     Pointer<CKReference> _self,
   ) {
     _openDynamicLibrary();
@@ -40472,7 +40475,7 @@ class CKReference extends Struct<CKReference> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CKReference> _self,
   ) {
     _openDynamicLibrary();
@@ -40484,7 +40487,7 @@ class CKReference extends Struct<CKReference> {
 
   static void encodeWithCoder(
     Pointer<CKReference> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -40504,7 +40507,7 @@ class CKReference extends Struct<CKReference> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CKReference> _self,
   ) {
     _openDynamicLibrary();
@@ -40514,9 +40517,9 @@ class CKReference extends Struct<CKReference> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CKReference> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -40526,9 +40529,9 @@ class CKReference extends Struct<CKReference> {
     );
   }
 
-  static Pointer<Void> initWithRecord(
+  static Pointer initWithRecord(
     Pointer<CKReference> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int action,
   }) {
     _openDynamicLibrary();
@@ -40540,9 +40543,9 @@ class CKReference extends Struct<CKReference> {
     );
   }
 
-  static Pointer<Void> initWithRecordID(
+  static Pointer initWithRecordID(
     Pointer<CKReference> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int action,
   }) {
     _openDynamicLibrary();
@@ -40556,7 +40559,7 @@ class CKReference extends Struct<CKReference> {
 
   static int isEqual(
     Pointer<CKReference> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -40566,7 +40569,7 @@ class CKReference extends Struct<CKReference> {
     );
   }
 
-  static Pointer<Void> recordID(
+  static Pointer recordID(
     Pointer<CKReference> _self,
   ) {
     _openDynamicLibrary();
@@ -40588,7 +40591,7 @@ class CKReference extends Struct<CKReference> {
 
   static void setRecordID(
     Pointer<CKReference> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -40599,11 +40602,9 @@ class CKReference extends Struct<CKReference> {
   }
 }
 
-/// Objective-C class _CKRepairZonePCSOperation_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKRepairZonePCSOperation extends Struct<CKRepairZonePCSOperation> {
   factory CKRepairZonePCSOperation._() {
@@ -40616,7 +40617,7 @@ class CKRepairZonePCSOperation extends Struct<CKRepairZonePCSOperation> {
         .cast<CKRepairZonePCSOperation>();
   }
 
-  static Pointer<Void> activityCreate(
+  static Pointer activityCreate(
     Pointer<CKRepairZonePCSOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -40628,7 +40629,7 @@ class CKRepairZonePCSOperation extends Struct<CKRepairZonePCSOperation> {
 
   static void fillFromOperationInfo(
     Pointer<CKRepairZonePCSOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -40640,7 +40641,7 @@ class CKRepairZonePCSOperation extends Struct<CKRepairZonePCSOperation> {
 
   static void fillOutOperationInfo(
     Pointer<CKRepairZonePCSOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -40660,9 +40661,9 @@ class CKRepairZonePCSOperation extends Struct<CKRepairZonePCSOperation> {
     );
   }
 
-  static Pointer<Void> initWithZoneIDsToRepair(
+  static Pointer initWithZoneIDsToRepair(
     Pointer<CKRepairZonePCSOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -40684,7 +40685,7 @@ class CKRepairZonePCSOperation extends Struct<CKRepairZonePCSOperation> {
 
   static void setZoneIDs(
     Pointer<CKRepairZonePCSOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -40696,7 +40697,7 @@ class CKRepairZonePCSOperation extends Struct<CKRepairZonePCSOperation> {
 
   static void setZoneRepairedBlock(
     Pointer<CKRepairZonePCSOperation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -40706,7 +40707,7 @@ class CKRepairZonePCSOperation extends Struct<CKRepairZonePCSOperation> {
     );
   }
 
-  static Pointer<Void> zoneIDs(
+  static Pointer zoneIDs(
     Pointer<CKRepairZonePCSOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -40716,7 +40717,7 @@ class CKRepairZonePCSOperation extends Struct<CKRepairZonePCSOperation> {
     );
   }
 
-  static Pointer<Void> zoneRepairedBlock(
+  static Pointer zoneRepairedBlock(
     Pointer<CKRepairZonePCSOperation> _self,
   ) {
     _openDynamicLibrary();
@@ -40727,11 +40728,9 @@ class CKRepairZonePCSOperation extends Struct<CKRepairZonePCSOperation> {
   }
 }
 
-/// Objective-C class _CKRepairZonePCSOperationInfo_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKRepairZonePCSOperationInfo
     extends Struct<CKRepairZonePCSOperationInfo> {
@@ -40747,7 +40746,7 @@ class CKRepairZonePCSOperationInfo
 
   static void encodeWithCoder(
     Pointer<CKRepairZonePCSOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -40757,9 +40756,9 @@ class CKRepairZonePCSOperationInfo
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CKRepairZonePCSOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -40771,7 +40770,7 @@ class CKRepairZonePCSOperationInfo
 
   static void setZoneIDs(
     Pointer<CKRepairZonePCSOperationInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -40781,7 +40780,7 @@ class CKRepairZonePCSOperationInfo
     );
   }
 
-  static Pointer<Void> zoneIDs(
+  static Pointer zoneIDs(
     Pointer<CKRepairZonePCSOperationInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -40792,11 +40791,9 @@ class CKRepairZonePCSOperationInfo
   }
 }
 
-/// Objective-C class _CKRequestInfo_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKRequestInfo extends Struct<CKRequestInfo> {
   factory CKRequestInfo._() {
@@ -40809,7 +40806,7 @@ class CKRequestInfo extends Struct<CKRequestInfo> {
 
   static void encodeWithCoder(
     Pointer<CKRequestInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -40819,9 +40816,9 @@ class CKRequestInfo extends Struct<CKRequestInfo> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CKRequestInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -40831,11 +40828,11 @@ class CKRequestInfo extends Struct<CKRequestInfo> {
     );
   }
 
-  static Pointer<Void> initWithRequestUUID(
+  static Pointer initWithRequestUUID(
     Pointer<CKRequestInfo> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> responseHTTPHeaders,
-    @required Pointer<Void> w3cTiming,
+    Pointer arg, {
+    @required Pointer responseHTTPHeaders,
+    @required Pointer w3cTiming,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -40847,7 +40844,7 @@ class CKRequestInfo extends Struct<CKRequestInfo> {
     );
   }
 
-  static Pointer<Void> requestUUID(
+  static Pointer requestUUID(
     Pointer<CKRequestInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -40857,7 +40854,7 @@ class CKRequestInfo extends Struct<CKRequestInfo> {
     );
   }
 
-  static Pointer<Void> responseHTTPHeaders(
+  static Pointer responseHTTPHeaders(
     Pointer<CKRequestInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -40867,7 +40864,7 @@ class CKRequestInfo extends Struct<CKRequestInfo> {
     );
   }
 
-  static Pointer<Void> w3cNavigationTiming(
+  static Pointer w3cNavigationTiming(
     Pointer<CKRequestInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -40878,11 +40875,9 @@ class CKRequestInfo extends Struct<CKRequestInfo> {
   }
 }
 
-/// Objective-C class _CKSQLite_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKSQLite extends Struct<CKSQLite> {
   factory CKSQLite._() {
@@ -40893,7 +40888,7 @@ class CKSQLite extends Struct<CKSQLite> {
     return _objc.allocate("CKSQLite").cast<CKSQLite>();
   }
 
-  static Pointer<Void> allTableNames(
+  static Pointer allTableNames(
     Pointer<CKSQLite> _self,
   ) {
     _openDynamicLibrary();
@@ -40943,9 +40938,9 @@ class CKSQLite extends Struct<CKSQLite> {
     );
   }
 
-  static Pointer<Void> columnNamesForTable(
+  static Pointer columnNamesForTable(
     Pointer<CKSQLite> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -40965,7 +40960,7 @@ class CKSQLite extends Struct<CKSQLite> {
     );
   }
 
-  static Pointer<Void> creationDate(
+  static Pointer creationDate(
     Pointer<CKSQLite> _self,
   ) {
     _openDynamicLibrary();
@@ -40975,7 +40970,7 @@ class CKSQLite extends Struct<CKSQLite> {
     );
   }
 
-  static Pointer<Void> dateFormatter(
+  static Pointer dateFormatter(
     Pointer<CKSQLite> _self,
   ) {
     _openDynamicLibrary();
@@ -40985,9 +40980,9 @@ class CKSQLite extends Struct<CKSQLite> {
     );
   }
 
-  static Pointer<Void> datePropertyForKey(
+  static Pointer datePropertyForKey(
     Pointer<CKSQLite> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -40997,7 +40992,7 @@ class CKSQLite extends Struct<CKSQLite> {
     );
   }
 
-  static Pointer<Pointer<Void>> db(
+  static Pointer<Pointer> db(
     Pointer<CKSQLite> _self,
   ) {
     _openDynamicLibrary();
@@ -41027,7 +41022,7 @@ class CKSQLite extends Struct<CKSQLite> {
     );
   }
 
-  static Pointer<Void> delegate(
+  static Pointer delegate(
     Pointer<CKSQLite> _self,
   ) {
     _openDynamicLibrary();
@@ -41039,9 +41034,9 @@ class CKSQLite extends Struct<CKSQLite> {
 
   static int deleteAllObjectsOfClass(
     Pointer<CKSQLite> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> where,
-    @required Pointer<Void> bindings,
+    Pointer arg, {
+    @required Pointer where,
+    @required Pointer bindings,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_Int32(
@@ -41055,7 +41050,7 @@ class CKSQLite extends Struct<CKSQLite> {
 
   static int deleteExactObject(
     Pointer<CKSQLite> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -41067,8 +41062,8 @@ class CKSQLite extends Struct<CKSQLite> {
 
   static void deleteFrom$matchingValues$(
     Pointer<CKSQLite> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> matchingValues,
+    Pointer arg, {
+    @required Pointer matchingValues,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -41081,9 +41076,9 @@ class CKSQLite extends Struct<CKSQLite> {
 
   static void deleteFrom$where$bindings$(
     Pointer<CKSQLite> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> where,
-    @required Pointer<Void> bindings,
+    Pointer arg, {
+    @required Pointer where,
+    @required Pointer bindings,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_void(
@@ -41117,8 +41112,8 @@ class CKSQLite extends Struct<CKSQLite> {
 
   static void executeSQL$arguments$(
     Pointer<CKSQLite> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> arguments,
+    Pointer arg, {
+    @required Pointer arguments,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -41131,7 +41126,7 @@ class CKSQLite extends Struct<CKSQLite> {
 
   static void executeSQL$(
     Pointer<CKSQLite> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -41151,10 +41146,10 @@ class CKSQLite extends Struct<CKSQLite> {
     );
   }
 
-  static Pointer<Void> initWithPath(
+  static Pointer initWithPath(
     Pointer<CKSQLite> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> schema,
+    Pointer arg, {
+    @required Pointer schema,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -41167,8 +41162,8 @@ class CKSQLite extends Struct<CKSQLite> {
 
   static int insertOrReplaceInto(
     Pointer<CKSQLite> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> values,
+    Pointer arg, {
+    @required Pointer values,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int64(
@@ -41181,7 +41176,7 @@ class CKSQLite extends Struct<CKSQLite> {
 
   static int insertOrReplaceObject(
     Pointer<CKSQLite> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int64(
@@ -41211,7 +41206,7 @@ class CKSQLite extends Struct<CKSQLite> {
     );
   }
 
-  static Pointer<Void> objectClassPrefix(
+  static Pointer objectClassPrefix(
     Pointer<CKSQLite> _self,
   ) {
     _openDynamicLibrary();
@@ -41243,7 +41238,7 @@ class CKSQLite extends Struct<CKSQLite> {
 
   static int openWithError(
     Pointer<CKSQLite> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -41253,7 +41248,7 @@ class CKSQLite extends Struct<CKSQLite> {
     );
   }
 
-  static Pointer<Void> path(
+  static Pointer path(
     Pointer<CKSQLite> _self,
   ) {
     _openDynamicLibrary();
@@ -41263,9 +41258,9 @@ class CKSQLite extends Struct<CKSQLite> {
     );
   }
 
-  static Pointer<Void> propertyForKey(
+  static Pointer propertyForKey(
     Pointer<CKSQLite> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -41277,7 +41272,7 @@ class CKSQLite extends Struct<CKSQLite> {
 
   static void raise(
     Pointer<CKSQLite> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -41309,7 +41304,7 @@ class CKSQLite extends Struct<CKSQLite> {
 
   static void removePropertyForKey(
     Pointer<CKSQLite> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -41329,7 +41324,7 @@ class CKSQLite extends Struct<CKSQLite> {
     );
   }
 
-  static Pointer<Void> schema(
+  static Pointer schema(
     Pointer<CKSQLite> _self,
   ) {
     _openDynamicLibrary();
@@ -41339,7 +41334,7 @@ class CKSQLite extends Struct<CKSQLite> {
     );
   }
 
-  static Pointer<Void> schemaVersion(
+  static Pointer schemaVersion(
     Pointer<CKSQLite> _self,
   ) {
     _openDynamicLibrary();
@@ -41349,12 +41344,12 @@ class CKSQLite extends Struct<CKSQLite> {
     );
   }
 
-  static Pointer<Void> select$from$where$bindings$(
+  static Pointer select$from$where$bindings$(
     Pointer<CKSQLite> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> from,
-    @required Pointer<Void> where,
-    @required Pointer<Void> bindings,
+    Pointer arg, {
+    @required Pointer from,
+    @required Pointer where,
+    @required Pointer bindings,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_returns_p(
@@ -41369,13 +41364,13 @@ class CKSQLite extends Struct<CKSQLite> {
 
   static void select$from$where$bindings$orderBy$limit$block$(
     Pointer<CKSQLite> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> from,
-    @required Pointer<Void> where,
-    @required Pointer<Void> bindings,
-    @required Pointer<Void> orderBy,
-    @required Pointer<Void> limit,
-    @required Pointer<Void> block,
+    Pointer arg, {
+    @required Pointer from,
+    @required Pointer where,
+    @required Pointer bindings,
+    @required Pointer orderBy,
+    @required Pointer limit,
+    @required Pointer block,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_p_p_p_returns_void(
@@ -41391,10 +41386,10 @@ class CKSQLite extends Struct<CKSQLite> {
     );
   }
 
-  static Pointer<Void> select$from$(
+  static Pointer select$from$(
     Pointer<CKSQLite> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> from,
+    Pointer arg, {
+    @required Pointer from,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -41405,11 +41400,11 @@ class CKSQLite extends Struct<CKSQLite> {
     );
   }
 
-  static Pointer<Void> selectAllFrom(
+  static Pointer selectAllFrom(
     Pointer<CKSQLite> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> where,
-    @required Pointer<Void> bindings,
+    Pointer arg, {
+    @required Pointer where,
+    @required Pointer bindings,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -41423,12 +41418,12 @@ class CKSQLite extends Struct<CKSQLite> {
 
   static void selectAllObjectsOfClass$where$bindings$orderBy$limit$block$(
     Pointer<CKSQLite> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> where,
-    @required Pointer<Void> bindings,
-    @required Pointer<Void> orderBy,
-    @required Pointer<Void> limit,
-    @required Pointer<Void> block,
+    Pointer arg, {
+    @required Pointer where,
+    @required Pointer bindings,
+    @required Pointer orderBy,
+    @required Pointer limit,
+    @required Pointer block,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_p_p_returns_void(
@@ -41444,11 +41439,11 @@ class CKSQLite extends Struct<CKSQLite> {
     );
   }
 
-  static Pointer<Void> selectAllObjectsOfClass$where$bindings$(
+  static Pointer selectAllObjectsOfClass$where$bindings$(
     Pointer<CKSQLite> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> where,
-    @required Pointer<Void> bindings,
+    Pointer arg, {
+    @required Pointer where,
+    @required Pointer bindings,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -41460,12 +41455,12 @@ class CKSQLite extends Struct<CKSQLite> {
     );
   }
 
-  static Pointer<Void> selectAllObjectsOfClass$where$bindings$limit$(
+  static Pointer selectAllObjectsOfClass$where$bindings$limit$(
     Pointer<CKSQLite> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> where,
-    @required Pointer<Void> bindings,
-    @required Pointer<Void> limit,
+    Pointer arg, {
+    @required Pointer where,
+    @required Pointer bindings,
+    @required Pointer limit,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_returns_p(
@@ -41478,9 +41473,9 @@ class CKSQLite extends Struct<CKSQLite> {
     );
   }
 
-  static Pointer<Void> selectAllObjectsOfClass$(
+  static Pointer selectAllObjectsOfClass$(
     Pointer<CKSQLite> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -41492,9 +41487,9 @@ class CKSQLite extends Struct<CKSQLite> {
 
   static int selectCountFrom(
     Pointer<CKSQLite> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> where,
-    @required Pointer<Void> bindings,
+    Pointer arg, {
+    @required Pointer where,
+    @required Pointer bindings,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_Uint64(
@@ -41506,12 +41501,12 @@ class CKSQLite extends Struct<CKSQLite> {
     );
   }
 
-  static Pointer<Void> selectFrom$where$bindings$limit$(
+  static Pointer selectFrom$where$bindings$limit$(
     Pointer<CKSQLite> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> where,
-    @required Pointer<Void> bindings,
-    @required Pointer<Void> limit,
+    Pointer arg, {
+    @required Pointer where,
+    @required Pointer bindings,
+    @required Pointer limit,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_returns_p(
@@ -41526,12 +41521,12 @@ class CKSQLite extends Struct<CKSQLite> {
 
   static void selectFrom$where$bindings$orderBy$limit$block$(
     Pointer<CKSQLite> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> where,
-    @required Pointer<Void> bindings,
-    @required Pointer<Void> orderBy,
-    @required Pointer<Void> limit,
-    @required Pointer<Void> block,
+    Pointer arg, {
+    @required Pointer where,
+    @required Pointer bindings,
+    @required Pointer orderBy,
+    @required Pointer limit,
+    @required Pointer block,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_p_p_returns_void(
@@ -41546,11 +41541,11 @@ class CKSQLite extends Struct<CKSQLite> {
     );
   }
 
-  static Pointer<Void> selectObjectOfClass(
+  static Pointer selectObjectOfClass(
     Pointer<CKSQLite> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> where,
-    @required Pointer<Void> bindings,
+    Pointer arg, {
+    @required Pointer where,
+    @required Pointer bindings,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -41576,7 +41571,7 @@ class CKSQLite extends Struct<CKSQLite> {
 
   static void setDateFormatter(
     Pointer<CKSQLite> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -41588,8 +41583,8 @@ class CKSQLite extends Struct<CKSQLite> {
 
   static void setDateProperty(
     Pointer<CKSQLite> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> forKey,
+    Pointer arg, {
+    @required Pointer forKey,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -41602,7 +41597,7 @@ class CKSQLite extends Struct<CKSQLite> {
 
   static void setDb(
     Pointer<CKSQLite> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -41614,7 +41609,7 @@ class CKSQLite extends Struct<CKSQLite> {
 
   static void setDelegate(
     Pointer<CKSQLite> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -41626,7 +41621,7 @@ class CKSQLite extends Struct<CKSQLite> {
 
   static void setObjectClassPrefix(
     Pointer<CKSQLite> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -41650,8 +41645,8 @@ class CKSQLite extends Struct<CKSQLite> {
 
   static void setProperty(
     Pointer<CKSQLite> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> forKey,
+    Pointer arg, {
+    @required Pointer forKey,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -41720,9 +41715,9 @@ class CKSQLite extends Struct<CKSQLite> {
     );
   }
 
-  static Pointer<Void> statementForSQL(
+  static Pointer statementForSQL(
     Pointer<CKSQLite> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -41732,7 +41727,7 @@ class CKSQLite extends Struct<CKSQLite> {
     );
   }
 
-  static Pointer<Void> statementsBySQL(
+  static Pointer statementsBySQL(
     Pointer<CKSQLite> _self,
   ) {
     _openDynamicLibrary();
@@ -41764,11 +41759,11 @@ class CKSQLite extends Struct<CKSQLite> {
 
   static void update(
     Pointer<CKSQLite> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> set,
-    @required Pointer<Void> where,
-    @required Pointer<Void> bindings,
-    @required Pointer<Void> limit,
+    Pointer arg, {
+    @required Pointer set,
+    @required Pointer where,
+    @required Pointer bindings,
+    @required Pointer limit,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_p_returns_void(
@@ -41784,10 +41779,10 @@ class CKSQLite extends Struct<CKSQLite> {
 
   static void updateAllObjectsOfClass(
     Pointer<CKSQLite> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> set,
-    @required Pointer<Void> where,
-    @required Pointer<Void> bindings,
+    Pointer arg, {
+    @required Pointer set,
+    @required Pointer where,
+    @required Pointer bindings,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_p_returns_void(
@@ -41821,11 +41816,9 @@ class CKSQLite extends Struct<CKSQLite> {
   }
 }
 
-/// Objective-C class _CKSQLiteError_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKSQLiteError extends Struct<CKSQLiteError> {
   factory CKSQLiteError._() {
@@ -41837,11 +41830,9 @@ class CKSQLiteError extends Struct<CKSQLiteError> {
   }
 }
 
-/// Objective-C class _CKSQLitePool_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKSQLitePool extends Struct<CKSQLitePool> {
   factory CKSQLitePool._() {
@@ -41852,7 +41843,7 @@ class CKSQLitePool extends Struct<CKSQLitePool> {
     return _objc.allocate("CKSQLitePool").cast<CKSQLitePool>();
   }
 
-  static Pointer<Void> acquireDatabase(
+  static Pointer acquireDatabase(
     Pointer<CKSQLitePool> _self,
     int arg,
   ) {
@@ -41864,9 +41855,9 @@ class CKSQLitePool extends Struct<CKSQLitePool> {
     );
   }
 
-  static Pointer<Void> acquireDatabaseWithError(
+  static Pointer acquireDatabaseWithError(
     Pointer<CKSQLitePool> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -41886,7 +41877,7 @@ class CKSQLitePool extends Struct<CKSQLitePool> {
     );
   }
 
-  static Pointer<Void> dbs(
+  static Pointer dbs(
     Pointer<CKSQLitePool> _self,
   ) {
     _openDynamicLibrary();
@@ -41906,7 +41897,7 @@ class CKSQLitePool extends Struct<CKSQLitePool> {
     );
   }
 
-  static Pointer<Void> factory(
+  static Pointer factory(
     Pointer<CKSQLitePool> _self,
   ) {
     _openDynamicLibrary();
@@ -41916,10 +41907,10 @@ class CKSQLitePool extends Struct<CKSQLitePool> {
     );
   }
 
-  static Pointer<Void> initWithFactory$queueAttr$(
+  static Pointer initWithFactory$queueAttr$(
     Pointer<CKSQLitePool> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> queueAttr,
+    Pointer arg, {
+    @required Pointer queueAttr,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -41930,9 +41921,9 @@ class CKSQLitePool extends Struct<CKSQLitePool> {
     );
   }
 
-  static Pointer<Void> initWithFactory$(
+  static Pointer initWithFactory$(
     Pointer<CKSQLitePool> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -41944,7 +41935,7 @@ class CKSQLitePool extends Struct<CKSQLitePool> {
 
   static void performWithDatabase$(
     Pointer<CKSQLitePool> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -41956,8 +41947,8 @@ class CKSQLitePool extends Struct<CKSQLitePool> {
 
   static int performWithDatabase$error$(
     Pointer<CKSQLitePool> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -41968,7 +41959,7 @@ class CKSQLitePool extends Struct<CKSQLitePool> {
     );
   }
 
-  static Pointer<Void> queue(
+  static Pointer queue(
     Pointer<CKSQLitePool> _self,
   ) {
     _openDynamicLibrary();
@@ -41980,7 +41971,7 @@ class CKSQLitePool extends Struct<CKSQLitePool> {
 
   static void releaseDatabase(
     Pointer<CKSQLitePool> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -41992,7 +41983,7 @@ class CKSQLitePool extends Struct<CKSQLitePool> {
 
   static void setDbs(
     Pointer<CKSQLitePool> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -42016,7 +42007,7 @@ class CKSQLitePool extends Struct<CKSQLitePool> {
 
   static void setQueue(
     Pointer<CKSQLitePool> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -42049,11 +42040,9 @@ class CKSQLitePool extends Struct<CKSQLitePool> {
   }
 }
 
-/// Objective-C class _CKSQLiteStatement_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKSQLiteStatement extends Struct<CKSQLiteStatement> {
   factory CKSQLiteStatement._() {
@@ -42064,7 +42053,7 @@ class CKSQLiteStatement extends Struct<CKSQLiteStatement> {
     return _objc.allocate("CKSQLiteStatement").cast<CKSQLiteStatement>();
   }
 
-  static Pointer<Void> SQL(
+  static Pointer SQL(
     Pointer<CKSQLiteStatement> _self,
   ) {
     _openDynamicLibrary();
@@ -42074,7 +42063,7 @@ class CKSQLiteStatement extends Struct<CKSQLiteStatement> {
     );
   }
 
-  static Pointer<Void> SQLite(
+  static Pointer SQLite(
     Pointer<CKSQLiteStatement> _self,
   ) {
     _openDynamicLibrary();
@@ -42084,7 +42073,7 @@ class CKSQLiteStatement extends Struct<CKSQLiteStatement> {
     );
   }
 
-  static Pointer<Void> allObjects(
+  static Pointer allObjects(
     Pointer<CKSQLiteStatement> _self,
   ) {
     _openDynamicLibrary();
@@ -42094,7 +42083,7 @@ class CKSQLiteStatement extends Struct<CKSQLiteStatement> {
     );
   }
 
-  static Pointer<Void> allObjectsByColumnName(
+  static Pointer allObjectsByColumnName(
     Pointer<CKSQLiteStatement> _self,
   ) {
     _openDynamicLibrary();
@@ -42106,7 +42095,7 @@ class CKSQLiteStatement extends Struct<CKSQLiteStatement> {
 
   static void bindBlob(
     Pointer<CKSQLiteStatement> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int atIndex,
   }) {
     _openDynamicLibrary();
@@ -42174,7 +42163,7 @@ class CKSQLiteStatement extends Struct<CKSQLiteStatement> {
 
   static void bindText(
     Pointer<CKSQLiteStatement> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int atIndex,
   }) {
     _openDynamicLibrary();
@@ -42188,7 +42177,7 @@ class CKSQLiteStatement extends Struct<CKSQLiteStatement> {
 
   static void bindValue(
     Pointer<CKSQLiteStatement> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int atIndex,
   }) {
     _openDynamicLibrary();
@@ -42202,7 +42191,7 @@ class CKSQLiteStatement extends Struct<CKSQLiteStatement> {
 
   static void bindValues(
     Pointer<CKSQLiteStatement> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -42212,7 +42201,7 @@ class CKSQLiteStatement extends Struct<CKSQLiteStatement> {
     );
   }
 
-  static Pointer<Void> blobAtIndex(
+  static Pointer blobAtIndex(
     Pointer<CKSQLiteStatement> _self,
     int arg,
   ) {
@@ -42234,7 +42223,7 @@ class CKSQLiteStatement extends Struct<CKSQLiteStatement> {
     );
   }
 
-  static Pointer<Void> columnNameAtIndex(
+  static Pointer columnNameAtIndex(
     Pointer<CKSQLiteStatement> _self,
     int arg,
   ) {
@@ -42280,7 +42269,7 @@ class CKSQLiteStatement extends Struct<CKSQLiteStatement> {
     );
   }
 
-  static Pointer<Pointer<Void>> handle(
+  static Pointer<Pointer> handle(
     Pointer<CKSQLiteStatement> _self,
   ) {
     _openDynamicLibrary();
@@ -42290,11 +42279,11 @@ class CKSQLiteStatement extends Struct<CKSQLiteStatement> {
     );
   }
 
-  static Pointer<Void> initWithSQLite(
+  static Pointer initWithSQLite(
     Pointer<CKSQLiteStatement> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> SQL,
-    @required Pointer<Pointer<Void>> handle,
+    Pointer arg, {
+    @required Pointer SQL,
+    @required Pointer<Pointer> handle,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -42340,7 +42329,7 @@ class CKSQLiteStatement extends Struct<CKSQLiteStatement> {
     );
   }
 
-  static Pointer<Void> objectAtIndex(
+  static Pointer objectAtIndex(
     Pointer<CKSQLiteStatement> _self,
     int arg,
   ) {
@@ -42372,9 +42361,9 @@ class CKSQLiteStatement extends Struct<CKSQLiteStatement> {
     );
   }
 
-  static Pointer<Void> retainedTemporaryBoundObject(
+  static Pointer retainedTemporaryBoundObject(
     Pointer<CKSQLiteStatement> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -42398,7 +42387,7 @@ class CKSQLiteStatement extends Struct<CKSQLiteStatement> {
 
   static void setTemporaryBoundObjects(
     Pointer<CKSQLiteStatement> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -42418,7 +42407,7 @@ class CKSQLiteStatement extends Struct<CKSQLiteStatement> {
     );
   }
 
-  static Pointer<Void> temporaryBoundObjects(
+  static Pointer temporaryBoundObjects(
     Pointer<CKSQLiteStatement> _self,
   ) {
     _openDynamicLibrary();
@@ -42428,7 +42417,7 @@ class CKSQLiteStatement extends Struct<CKSQLiteStatement> {
     );
   }
 
-  static Pointer<Void> textAtIndex(
+  static Pointer textAtIndex(
     Pointer<CKSQLiteStatement> _self,
     int arg,
   ) {
@@ -42441,11 +42430,9 @@ class CKSQLiteStatement extends Struct<CKSQLiteStatement> {
   }
 }
 
-/// Objective-C class _CKSQLiteStatementEnumerator_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKSQLiteStatementEnumerator extends Struct<CKSQLiteStatementEnumerator> {
   factory CKSQLiteStatementEnumerator._() {
@@ -42458,7 +42445,7 @@ class CKSQLiteStatementEnumerator extends Struct<CKSQLiteStatementEnumerator> {
         .cast<CKSQLiteStatementEnumerator>();
   }
 
-  static Pointer<Void> block(
+  static Pointer block(
     Pointer<CKSQLiteStatementEnumerator> _self,
   ) {
     _openDynamicLibrary();
@@ -42498,10 +42485,10 @@ class CKSQLiteStatementEnumerator extends Struct<CKSQLiteStatementEnumerator> {
     );
   }
 
-  static Pointer<Void> initWithStatement(
+  static Pointer initWithStatement(
     Pointer<CKSQLiteStatementEnumerator> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> block,
+    Pointer arg, {
+    @required Pointer block,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -42512,7 +42499,7 @@ class CKSQLiteStatementEnumerator extends Struct<CKSQLiteStatementEnumerator> {
     );
   }
 
-  static Pointer<Void> nextObject(
+  static Pointer nextObject(
     Pointer<CKSQLiteStatementEnumerator> _self,
   ) {
     _openDynamicLibrary();
@@ -42524,7 +42511,7 @@ class CKSQLiteStatementEnumerator extends Struct<CKSQLiteStatementEnumerator> {
 
   static void setBlock(
     Pointer<CKSQLiteStatementEnumerator> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -42548,7 +42535,7 @@ class CKSQLiteStatementEnumerator extends Struct<CKSQLiteStatementEnumerator> {
 
   static void setStatement(
     Pointer<CKSQLiteStatementEnumerator> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -42558,7 +42545,7 @@ class CKSQLiteStatementEnumerator extends Struct<CKSQLiteStatementEnumerator> {
     );
   }
 
-  static Pointer<Void> statement(
+  static Pointer statement(
     Pointer<CKSQLiteStatementEnumerator> _self,
   ) {
     _openDynamicLibrary();
@@ -42569,11 +42556,9 @@ class CKSQLiteStatementEnumerator extends Struct<CKSQLiteStatementEnumerator> {
   }
 }
 
-/// Objective-C class _CKServerChangeToken_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKServerChangeToken extends Struct<CKServerChangeToken> {
   factory CKServerChangeToken._() {
@@ -42584,7 +42569,7 @@ class CKServerChangeToken extends Struct<CKServerChangeToken> {
     return _objc.allocate("CKServerChangeToken").cast<CKServerChangeToken>();
   }
 
-  static Pointer<Void> CKPropertiesDescription(
+  static Pointer CKPropertiesDescription(
     Pointer<CKServerChangeToken> _self,
   ) {
     _openDynamicLibrary();
@@ -42594,9 +42579,9 @@ class CKServerChangeToken extends Struct<CKServerChangeToken> {
     );
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<CKServerChangeToken> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -42606,7 +42591,7 @@ class CKServerChangeToken extends Struct<CKServerChangeToken> {
     );
   }
 
-  static Pointer<Void> data(
+  static Pointer data(
     Pointer<CKServerChangeToken> _self,
   ) {
     _openDynamicLibrary();
@@ -42616,7 +42601,7 @@ class CKServerChangeToken extends Struct<CKServerChangeToken> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CKServerChangeToken> _self,
   ) {
     _openDynamicLibrary();
@@ -42628,7 +42613,7 @@ class CKServerChangeToken extends Struct<CKServerChangeToken> {
 
   static void encodeWithCoder(
     Pointer<CKServerChangeToken> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -42648,7 +42633,7 @@ class CKServerChangeToken extends Struct<CKServerChangeToken> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CKServerChangeToken> _self,
   ) {
     _openDynamicLibrary();
@@ -42658,9 +42643,9 @@ class CKServerChangeToken extends Struct<CKServerChangeToken> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CKServerChangeToken> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -42670,9 +42655,9 @@ class CKServerChangeToken extends Struct<CKServerChangeToken> {
     );
   }
 
-  static Pointer<Void> initWithData(
+  static Pointer initWithData(
     Pointer<CKServerChangeToken> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -42684,7 +42669,7 @@ class CKServerChangeToken extends Struct<CKServerChangeToken> {
 
   static int isEqual(
     Pointer<CKServerChangeToken> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -42696,7 +42681,7 @@ class CKServerChangeToken extends Struct<CKServerChangeToken> {
 
   static void setData(
     Pointer<CKServerChangeToken> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -42707,11 +42692,9 @@ class CKServerChangeToken extends Struct<CKServerChangeToken> {
   }
 }
 
-/// Objective-C class _CKShare_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKShare extends Struct<CKShare> {
   factory CKShare._() {
@@ -42724,7 +42707,7 @@ class CKShare extends Struct<CKShare> {
 
   static void CKAssignToContainerWithID(
     Pointer<CKShare> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -42734,7 +42717,7 @@ class CKShare extends Struct<CKShare> {
     );
   }
 
-  static Pointer<Void> CKDescriptionPropertiesWithPublic(
+  static Pointer CKDescriptionPropertiesWithPublic(
     Pointer<CKShare> _self,
     int arg, {
     @required int private,
@@ -42753,7 +42736,7 @@ class CKShare extends Struct<CKShare> {
 
   static void addParticipant(
     Pointer<CKShare> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -42763,7 +42746,7 @@ class CKShare extends Struct<CKShare> {
     );
   }
 
-  static Pointer<Void> addedParticipantIDs(
+  static Pointer addedParticipantIDs(
     Pointer<CKShare> _self,
   ) {
     _openDynamicLibrary();
@@ -42773,7 +42756,7 @@ class CKShare extends Struct<CKShare> {
     );
   }
 
-  static Pointer<Void> addedParticipants(
+  static Pointer addedParticipants(
     Pointer<CKShare> _self,
   ) {
     _openDynamicLibrary();
@@ -42783,7 +42766,7 @@ class CKShare extends Struct<CKShare> {
     );
   }
 
-  static Pointer<Void> allParticipants(
+  static Pointer allParticipants(
     Pointer<CKShare> _self,
   ) {
     _openDynamicLibrary();
@@ -42823,7 +42806,7 @@ class CKShare extends Struct<CKShare> {
     );
   }
 
-  static Pointer<Void> containerID(
+  static Pointer containerID(
     Pointer<CKShare> _self,
   ) {
     _openDynamicLibrary();
@@ -42833,7 +42816,7 @@ class CKShare extends Struct<CKShare> {
     );
   }
 
-  static Pointer<Void> copyWithOriginalValues(
+  static Pointer copyWithOriginalValues(
     Pointer<CKShare> _self,
   ) {
     _openDynamicLibrary();
@@ -42843,9 +42826,9 @@ class CKShare extends Struct<CKShare> {
     );
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<CKShare> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -42855,7 +42838,7 @@ class CKShare extends Struct<CKShare> {
     );
   }
 
-  static Pointer<Void> currentUserParticipant(
+  static Pointer currentUserParticipant(
     Pointer<CKShare> _self,
   ) {
     _openDynamicLibrary();
@@ -42865,7 +42848,7 @@ class CKShare extends Struct<CKShare> {
     );
   }
 
-  static Pointer<Void> debugDescription(
+  static Pointer debugDescription(
     Pointer<CKShare> _self,
   ) {
     _openDynamicLibrary();
@@ -42875,7 +42858,7 @@ class CKShare extends Struct<CKShare> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CKShare> _self,
   ) {
     _openDynamicLibrary();
@@ -42887,7 +42870,7 @@ class CKShare extends Struct<CKShare> {
 
   static void encodeSystemFieldsWithCoder(
     Pointer<CKShare> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -42897,7 +42880,7 @@ class CKShare extends Struct<CKShare> {
     );
   }
 
-  static Pointer<Void> encryptedPublicSharingKey(
+  static Pointer encryptedPublicSharingKey(
     Pointer<CKShare> _self,
   ) {
     _openDynamicLibrary();
@@ -42917,7 +42900,7 @@ class CKShare extends Struct<CKShare> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CKShare> _self,
   ) {
     _openDynamicLibrary();
@@ -42927,9 +42910,9 @@ class CKShare extends Struct<CKShare> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CKShare> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -42939,10 +42922,10 @@ class CKShare extends Struct<CKShare> {
     );
   }
 
-  static Pointer<Void> initWithRecordType$recordID$(
+  static Pointer initWithRecordType$recordID$(
     Pointer<CKShare> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> recordID,
+    Pointer arg, {
+    @required Pointer recordID,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -42953,9 +42936,9 @@ class CKShare extends Struct<CKShare> {
     );
   }
 
-  static Pointer<Void> initWithRecordType$(
+  static Pointer initWithRecordType$(
     Pointer<CKShare> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -42965,10 +42948,10 @@ class CKShare extends Struct<CKShare> {
     );
   }
 
-  static Pointer<Void> initWithRecordType$zoneID$(
+  static Pointer initWithRecordType$zoneID$(
     Pointer<CKShare> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> zoneID,
+    Pointer arg, {
+    @required Pointer zoneID,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -42979,9 +42962,9 @@ class CKShare extends Struct<CKShare> {
     );
   }
 
-  static Pointer<Void> initWithRootRecord$(
+  static Pointer initWithRootRecord$(
     Pointer<CKShare> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -42991,10 +42974,10 @@ class CKShare extends Struct<CKShare> {
     );
   }
 
-  static Pointer<Void> initWithRootRecord$shareID$(
+  static Pointer initWithRootRecord$shareID$(
     Pointer<CKShare> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> shareID,
+    Pointer arg, {
+    @required Pointer shareID,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_p(
@@ -43005,7 +42988,7 @@ class CKShare extends Struct<CKShare> {
     );
   }
 
-  static Pointer<Void> invitedKeysToRemove(
+  static Pointer invitedKeysToRemove(
     Pointer<CKShare> _self,
   ) {
     _openDynamicLibrary();
@@ -43015,7 +42998,7 @@ class CKShare extends Struct<CKShare> {
     );
   }
 
-  static Pointer<Void> invitedProtectionData(
+  static Pointer invitedProtectionData(
     Pointer<CKShare> _self,
   ) {
     _openDynamicLibrary();
@@ -43025,7 +43008,7 @@ class CKShare extends Struct<CKShare> {
     );
   }
 
-  static Pointer<Void> invitedProtectionEtag(
+  static Pointer invitedProtectionEtag(
     Pointer<CKShare> _self,
   ) {
     _openDynamicLibrary();
@@ -43035,7 +43018,7 @@ class CKShare extends Struct<CKShare> {
     );
   }
 
-  static Pointer<Void> lastFetchedParticipants(
+  static Pointer lastFetchedParticipants(
     Pointer<CKShare> _self,
   ) {
     _openDynamicLibrary();
@@ -43045,7 +43028,7 @@ class CKShare extends Struct<CKShare> {
     );
   }
 
-  static Pointer<Void> owner(
+  static Pointer owner(
     Pointer<CKShare> _self,
   ) {
     _openDynamicLibrary();
@@ -43055,7 +43038,7 @@ class CKShare extends Struct<CKShare> {
     );
   }
 
-  static Pointer<Void> participants(
+  static Pointer participants(
     Pointer<CKShare> _self,
   ) {
     _openDynamicLibrary();
@@ -43065,7 +43048,7 @@ class CKShare extends Struct<CKShare> {
     );
   }
 
-  static Pointer<Void> previousInvitedProtectionEtag(
+  static Pointer previousInvitedProtectionEtag(
     Pointer<CKShare> _self,
   ) {
     _openDynamicLibrary();
@@ -43075,7 +43058,7 @@ class CKShare extends Struct<CKShare> {
     );
   }
 
-  static Pointer<Void> previousPublicProtectionEtag(
+  static Pointer previousPublicProtectionEtag(
     Pointer<CKShare> _self,
   ) {
     _openDynamicLibrary();
@@ -43085,7 +43068,7 @@ class CKShare extends Struct<CKShare> {
     );
   }
 
-  static Pointer<Void> privateToken(
+  static Pointer privateToken(
     Pointer<CKShare> _self,
   ) {
     _openDynamicLibrary();
@@ -43105,7 +43088,7 @@ class CKShare extends Struct<CKShare> {
     );
   }
 
-  static Pointer<Void> publicProtectionData(
+  static Pointer publicProtectionData(
     Pointer<CKShare> _self,
   ) {
     _openDynamicLibrary();
@@ -43115,7 +43098,7 @@ class CKShare extends Struct<CKShare> {
     );
   }
 
-  static Pointer<Void> publicProtectionEtag(
+  static Pointer publicProtectionEtag(
     Pointer<CKShare> _self,
   ) {
     _openDynamicLibrary();
@@ -43125,7 +43108,7 @@ class CKShare extends Struct<CKShare> {
     );
   }
 
-  static Pointer<Void> publicSharingIdentity(
+  static Pointer publicSharingIdentity(
     Pointer<CKShare> _self,
   ) {
     _openDynamicLibrary();
@@ -43137,7 +43120,7 @@ class CKShare extends Struct<CKShare> {
 
   static void registerFetchedParticipant(
     Pointer<CKShare> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -43149,7 +43132,7 @@ class CKShare extends Struct<CKShare> {
 
   static void removeParticipant(
     Pointer<CKShare> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -43159,7 +43142,7 @@ class CKShare extends Struct<CKShare> {
     );
   }
 
-  static Pointer<Void> removedParticipantIDs(
+  static Pointer removedParticipantIDs(
     Pointer<CKShare> _self,
   ) {
     _openDynamicLibrary();
@@ -43169,7 +43152,7 @@ class CKShare extends Struct<CKShare> {
     );
   }
 
-  static Pointer<Void> removedParticipants(
+  static Pointer removedParticipants(
     Pointer<CKShare> _self,
   ) {
     _openDynamicLibrary();
@@ -43189,7 +43172,7 @@ class CKShare extends Struct<CKShare> {
     );
   }
 
-  static Pointer<Void> rootRecordID(
+  static Pointer rootRecordID(
     Pointer<CKShare> _self,
   ) {
     _openDynamicLibrary();
@@ -43211,7 +43194,7 @@ class CKShare extends Struct<CKShare> {
 
   static void setAddedParticipantIDs(
     Pointer<CKShare> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -43223,7 +43206,7 @@ class CKShare extends Struct<CKShare> {
 
   static void setAllParticipants(
     Pointer<CKShare> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -43259,7 +43242,7 @@ class CKShare extends Struct<CKShare> {
 
   static void setContainerID(
     Pointer<CKShare> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -43271,7 +43254,7 @@ class CKShare extends Struct<CKShare> {
 
   static void setInvitedKeysToRemove(
     Pointer<CKShare> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -43283,7 +43266,7 @@ class CKShare extends Struct<CKShare> {
 
   static void setInvitedProtectionData(
     Pointer<CKShare> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -43295,7 +43278,7 @@ class CKShare extends Struct<CKShare> {
 
   static void setInvitedProtectionEtag(
     Pointer<CKShare> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -43307,7 +43290,7 @@ class CKShare extends Struct<CKShare> {
 
   static void setLastFetchedParticipants(
     Pointer<CKShare> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -43319,7 +43302,7 @@ class CKShare extends Struct<CKShare> {
 
   static void setPreviousInvitedProtectionEtag(
     Pointer<CKShare> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -43331,7 +43314,7 @@ class CKShare extends Struct<CKShare> {
 
   static void setPreviousPublicProtectionEtag(
     Pointer<CKShare> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -43355,7 +43338,7 @@ class CKShare extends Struct<CKShare> {
 
   static void setPublicProtectionData(
     Pointer<CKShare> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -43367,7 +43350,7 @@ class CKShare extends Struct<CKShare> {
 
   static void setPublicProtectionEtag(
     Pointer<CKShare> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -43379,7 +43362,7 @@ class CKShare extends Struct<CKShare> {
 
   static void setPublicSharingIdentity(
     Pointer<CKShare> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -43391,7 +43374,7 @@ class CKShare extends Struct<CKShare> {
 
   static void setRemovedParticipantIDs(
     Pointer<CKShare> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -43403,7 +43386,7 @@ class CKShare extends Struct<CKShare> {
 
   static void setRootRecordID(
     Pointer<CKShare> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -43427,7 +43410,7 @@ class CKShare extends Struct<CKShare> {
 
   static void setShareID(
     Pointer<CKShare> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -43449,7 +43432,7 @@ class CKShare extends Struct<CKShare> {
     );
   }
 
-  static Pointer<Void> shareID(
+  static Pointer shareID(
     Pointer<CKShare> _self,
   ) {
     _openDynamicLibrary();
@@ -43459,7 +43442,7 @@ class CKShare extends Struct<CKShare> {
     );
   }
 
-  static Pointer<Void> shareURL(
+  static Pointer shareURL(
     Pointer<CKShare> _self,
   ) {
     _openDynamicLibrary();
@@ -43469,9 +43452,9 @@ class CKShare extends Struct<CKShare> {
     );
   }
 
-  static Pointer<Void> updateFromServerShare(
+  static Pointer updateFromServerShare(
     Pointer<CKShare> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -43482,11 +43465,9 @@ class CKShare extends Struct<CKShare> {
   }
 }
 
-/// Objective-C class _CKShareMetadata_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKShareMetadata extends Struct<CKShareMetadata> {
   factory CKShareMetadata._() {
@@ -43499,7 +43480,7 @@ class CKShareMetadata extends Struct<CKShareMetadata> {
 
   static void CKAssignToContainerWithID(
     Pointer<CKShareMetadata> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -43509,7 +43490,7 @@ class CKShareMetadata extends Struct<CKShareMetadata> {
     );
   }
 
-  static Pointer<Void> CKDescriptionPropertiesWithPublic(
+  static Pointer CKDescriptionPropertiesWithPublic(
     Pointer<CKShareMetadata> _self,
     int arg, {
     @required int private,
@@ -43536,7 +43517,7 @@ class CKShareMetadata extends Struct<CKShareMetadata> {
     );
   }
 
-  static Pointer<Void> baseToken(
+  static Pointer baseToken(
     Pointer<CKShareMetadata> _self,
   ) {
     _openDynamicLibrary();
@@ -43546,7 +43527,7 @@ class CKShareMetadata extends Struct<CKShareMetadata> {
     );
   }
 
-  static Pointer<Void> callingParticipant(
+  static Pointer callingParticipant(
     Pointer<CKShareMetadata> _self,
   ) {
     _openDynamicLibrary();
@@ -43556,7 +43537,7 @@ class CKShareMetadata extends Struct<CKShareMetadata> {
     );
   }
 
-  static Pointer<Void> ckShortDescription(
+  static Pointer ckShortDescription(
     Pointer<CKShareMetadata> _self,
   ) {
     _openDynamicLibrary();
@@ -43566,7 +43547,7 @@ class CKShareMetadata extends Struct<CKShareMetadata> {
     );
   }
 
-  static Pointer<Void> containerIdentifier(
+  static Pointer containerIdentifier(
     Pointer<CKShareMetadata> _self,
   ) {
     _openDynamicLibrary();
@@ -43576,9 +43557,9 @@ class CKShareMetadata extends Struct<CKShareMetadata> {
     );
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<CKShareMetadata> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -43588,7 +43569,7 @@ class CKShareMetadata extends Struct<CKShareMetadata> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CKShareMetadata> _self,
   ) {
     _openDynamicLibrary();
@@ -43600,7 +43581,7 @@ class CKShareMetadata extends Struct<CKShareMetadata> {
 
   static void encodeWithCoder(
     Pointer<CKShareMetadata> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -43610,7 +43591,7 @@ class CKShareMetadata extends Struct<CKShareMetadata> {
     );
   }
 
-  static Pointer<Void> encryptedData(
+  static Pointer encryptedData(
     Pointer<CKShareMetadata> _self,
   ) {
     _openDynamicLibrary();
@@ -43640,7 +43621,7 @@ class CKShareMetadata extends Struct<CKShareMetadata> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CKShareMetadata> _self,
   ) {
     _openDynamicLibrary();
@@ -43650,9 +43631,9 @@ class CKShareMetadata extends Struct<CKShareMetadata> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CKShareMetadata> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -43664,7 +43645,7 @@ class CKShareMetadata extends Struct<CKShareMetadata> {
 
   static int isEqual(
     Pointer<CKShareMetadata> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -43674,7 +43655,7 @@ class CKShareMetadata extends Struct<CKShareMetadata> {
     );
   }
 
-  static Pointer<Void> outOfNetworkMatches(
+  static Pointer outOfNetworkMatches(
     Pointer<CKShareMetadata> _self,
   ) {
     _openDynamicLibrary();
@@ -43684,7 +43665,7 @@ class CKShareMetadata extends Struct<CKShareMetadata> {
     );
   }
 
-  static Pointer<Void> ownerIdentity(
+  static Pointer ownerIdentity(
     Pointer<CKShareMetadata> _self,
   ) {
     _openDynamicLibrary();
@@ -43734,7 +43715,7 @@ class CKShareMetadata extends Struct<CKShareMetadata> {
     );
   }
 
-  static Pointer<Void> privateToken(
+  static Pointer privateToken(
     Pointer<CKShareMetadata> _self,
   ) {
     _openDynamicLibrary();
@@ -43744,7 +43725,7 @@ class CKShareMetadata extends Struct<CKShareMetadata> {
     );
   }
 
-  static Pointer<Void> protectedFullToken(
+  static Pointer protectedFullToken(
     Pointer<CKShareMetadata> _self,
   ) {
     _openDynamicLibrary();
@@ -43754,7 +43735,7 @@ class CKShareMetadata extends Struct<CKShareMetadata> {
     );
   }
 
-  static Pointer<Void> publicToken(
+  static Pointer publicToken(
     Pointer<CKShareMetadata> _self,
   ) {
     _openDynamicLibrary();
@@ -43764,7 +43745,7 @@ class CKShareMetadata extends Struct<CKShareMetadata> {
     );
   }
 
-  static Pointer<Void> rootRecord(
+  static Pointer rootRecord(
     Pointer<CKShareMetadata> _self,
   ) {
     _openDynamicLibrary();
@@ -43774,7 +43755,7 @@ class CKShareMetadata extends Struct<CKShareMetadata> {
     );
   }
 
-  static Pointer<Void> rootRecordID(
+  static Pointer rootRecordID(
     Pointer<CKShareMetadata> _self,
   ) {
     _openDynamicLibrary();
@@ -43784,7 +43765,7 @@ class CKShareMetadata extends Struct<CKShareMetadata> {
     );
   }
 
-  static Pointer<Void> rootRecordType(
+  static Pointer rootRecordType(
     Pointer<CKShareMetadata> _self,
   ) {
     _openDynamicLibrary();
@@ -43808,7 +43789,7 @@ class CKShareMetadata extends Struct<CKShareMetadata> {
 
   static void setCallingParticipant(
     Pointer<CKShareMetadata> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -43820,7 +43801,7 @@ class CKShareMetadata extends Struct<CKShareMetadata> {
 
   static void setContainerIdentifier(
     Pointer<CKShareMetadata> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -43832,7 +43813,7 @@ class CKShareMetadata extends Struct<CKShareMetadata> {
 
   static void setEncryptedData(
     Pointer<CKShareMetadata> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -43856,7 +43837,7 @@ class CKShareMetadata extends Struct<CKShareMetadata> {
 
   static void setOutOfNetworkMatches(
     Pointer<CKShareMetadata> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -43868,7 +43849,7 @@ class CKShareMetadata extends Struct<CKShareMetadata> {
 
   static void setOwnerIdentity(
     Pointer<CKShareMetadata> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -43916,7 +43897,7 @@ class CKShareMetadata extends Struct<CKShareMetadata> {
 
   static void setPrivateToken(
     Pointer<CKShareMetadata> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -43928,7 +43909,7 @@ class CKShareMetadata extends Struct<CKShareMetadata> {
 
   static void setProtectedFullToken(
     Pointer<CKShareMetadata> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -43940,7 +43921,7 @@ class CKShareMetadata extends Struct<CKShareMetadata> {
 
   static void setPublicToken(
     Pointer<CKShareMetadata> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -43952,7 +43933,7 @@ class CKShareMetadata extends Struct<CKShareMetadata> {
 
   static void setRootRecord(
     Pointer<CKShareMetadata> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -43964,7 +43945,7 @@ class CKShareMetadata extends Struct<CKShareMetadata> {
 
   static void setRootRecordID(
     Pointer<CKShareMetadata> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -43976,7 +43957,7 @@ class CKShareMetadata extends Struct<CKShareMetadata> {
 
   static void setRootRecordType(
     Pointer<CKShareMetadata> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -43988,7 +43969,7 @@ class CKShareMetadata extends Struct<CKShareMetadata> {
 
   static void setShare(
     Pointer<CKShareMetadata> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -44000,7 +43981,7 @@ class CKShareMetadata extends Struct<CKShareMetadata> {
 
   static void setSharedItemHierarchy(
     Pointer<CKShareMetadata> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -44010,7 +43991,7 @@ class CKShareMetadata extends Struct<CKShareMetadata> {
     );
   }
 
-  static Pointer<Void> share(
+  static Pointer share(
     Pointer<CKShareMetadata> _self,
   ) {
     _openDynamicLibrary();
@@ -44020,7 +44001,7 @@ class CKShareMetadata extends Struct<CKShareMetadata> {
     );
   }
 
-  static Pointer<Void> sharedItemHierarchy(
+  static Pointer sharedItemHierarchy(
     Pointer<CKShareMetadata> _self,
   ) {
     _openDynamicLibrary();
@@ -44031,11 +44012,9 @@ class CKShareMetadata extends Struct<CKShareMetadata> {
   }
 }
 
-/// Objective-C class _CKShareParticipant_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKShareParticipant extends Struct<CKShareParticipant> {
   factory CKShareParticipant._() {
@@ -44046,7 +44025,7 @@ class CKShareParticipant extends Struct<CKShareParticipant> {
     return _objc.allocate("CKShareParticipant").cast<CKShareParticipant>();
   }
 
-  static Pointer<Void> CKDescriptionPropertiesWithPublic(
+  static Pointer CKDescriptionPropertiesWithPublic(
     Pointer<CKShareParticipant> _self,
     int arg, {
     @required int private,
@@ -44083,9 +44062,9 @@ class CKShareParticipant extends Struct<CKShareParticipant> {
     );
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<CKShareParticipant> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -44105,7 +44084,7 @@ class CKShareParticipant extends Struct<CKShareParticipant> {
     );
   }
 
-  static Pointer<Void> debugDescription(
+  static Pointer debugDescription(
     Pointer<CKShareParticipant> _self,
   ) {
     _openDynamicLibrary();
@@ -44115,7 +44094,7 @@ class CKShareParticipant extends Struct<CKShareParticipant> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CKShareParticipant> _self,
   ) {
     _openDynamicLibrary();
@@ -44127,7 +44106,7 @@ class CKShareParticipant extends Struct<CKShareParticipant> {
 
   static void encodeWithCoder(
     Pointer<CKShareParticipant> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -44137,7 +44116,7 @@ class CKShareParticipant extends Struct<CKShareParticipant> {
     );
   }
 
-  static Pointer<Void> encryptedPersonalInfo(
+  static Pointer encryptedPersonalInfo(
     Pointer<CKShareParticipant> _self,
   ) {
     _openDynamicLibrary();
@@ -44157,9 +44136,9 @@ class CKShareParticipant extends Struct<CKShareParticipant> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CKShareParticipant> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -44169,7 +44148,7 @@ class CKShareParticipant extends Struct<CKShareParticipant> {
     );
   }
 
-  static Pointer<Void> inviterID(
+  static Pointer inviterID(
     Pointer<CKShareParticipant> _self,
   ) {
     _openDynamicLibrary();
@@ -44191,7 +44170,7 @@ class CKShareParticipant extends Struct<CKShareParticipant> {
 
   static int isEqual(
     Pointer<CKShareParticipant> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -44241,7 +44220,7 @@ class CKShareParticipant extends Struct<CKShareParticipant> {
     );
   }
 
-  static Pointer<Void> participantID(
+  static Pointer participantID(
     Pointer<CKShareParticipant> _self,
   ) {
     _openDynamicLibrary();
@@ -44261,7 +44240,7 @@ class CKShareParticipant extends Struct<CKShareParticipant> {
     );
   }
 
-  static Pointer<Void> protectionInfo(
+  static Pointer protectionInfo(
     Pointer<CKShareParticipant> _self,
   ) {
     _openDynamicLibrary();
@@ -44319,7 +44298,7 @@ class CKShareParticipant extends Struct<CKShareParticipant> {
 
   static void setEncryptedPersonalInfo(
     Pointer<CKShareParticipant> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -44331,7 +44310,7 @@ class CKShareParticipant extends Struct<CKShareParticipant> {
 
   static void setInviterID(
     Pointer<CKShareParticipant> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -44403,7 +44382,7 @@ class CKShareParticipant extends Struct<CKShareParticipant> {
 
   static void setParticipantID(
     Pointer<CKShareParticipant> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -44427,7 +44406,7 @@ class CKShareParticipant extends Struct<CKShareParticipant> {
 
   static void setProtectionInfo(
     Pointer<CKShareParticipant> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -44451,7 +44430,7 @@ class CKShareParticipant extends Struct<CKShareParticipant> {
 
   static void setShareRecordID(
     Pointer<CKShareParticipant> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -44475,7 +44454,7 @@ class CKShareParticipant extends Struct<CKShareParticipant> {
 
   static void setUserIdentity(
     Pointer<CKShareParticipant> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -44485,7 +44464,7 @@ class CKShareParticipant extends Struct<CKShareParticipant> {
     );
   }
 
-  static Pointer<Void> shareRecordID(
+  static Pointer shareRecordID(
     Pointer<CKShareParticipant> _self,
   ) {
     _openDynamicLibrary();
@@ -44505,11 +44484,11 @@ class CKShareParticipant extends Struct<CKShareParticipant> {
     );
   }
 
-  static Pointer<Void> unifiedContactsInStore(
+  static Pointer unifiedContactsInStore(
     Pointer<CKShareParticipant> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> keysToFetch,
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer keysToFetch,
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_p_returns_p(
@@ -44521,7 +44500,7 @@ class CKShareParticipant extends Struct<CKShareParticipant> {
     );
   }
 
-  static Pointer<Void> userIdentity(
+  static Pointer userIdentity(
     Pointer<CKShareParticipant> _self,
   ) {
     _openDynamicLibrary();
@@ -44532,11 +44511,9 @@ class CKShareParticipant extends Struct<CKShareParticipant> {
   }
 }
 
-/// Objective-C class _CKSignatureGenerator_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKSignatureGenerator extends Struct<CKSignatureGenerator> {
   factory CKSignatureGenerator._() {
@@ -44547,7 +44524,7 @@ class CKSignatureGenerator extends Struct<CKSignatureGenerator> {
     return _objc.allocate("CKSignatureGenerator").cast<CKSignatureGenerator>();
   }
 
-  static Pointer<Void> dataByFinishingSignature(
+  static Pointer dataByFinishingSignature(
     Pointer<CKSignatureGenerator> _self,
   ) {
     _openDynamicLibrary();
@@ -44567,7 +44544,7 @@ class CKSignatureGenerator extends Struct<CKSignatureGenerator> {
     );
   }
 
-  static Pointer<Void> generator(
+  static Pointer generator(
     Pointer<CKSignatureGenerator> _self,
   ) {
     _openDynamicLibrary();
@@ -44577,7 +44554,7 @@ class CKSignatureGenerator extends Struct<CKSignatureGenerator> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CKSignatureGenerator> _self,
   ) {
     _openDynamicLibrary();
@@ -44599,7 +44576,7 @@ class CKSignatureGenerator extends Struct<CKSignatureGenerator> {
 
   static void setGenerator(
     Pointer<CKSignatureGenerator> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -44623,7 +44600,7 @@ class CKSignatureGenerator extends Struct<CKSignatureGenerator> {
 
   static void updateWithBytes(
     Pointer<CKSignatureGenerator> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int length,
   }) {
     _openDynamicLibrary();
@@ -44637,7 +44614,7 @@ class CKSignatureGenerator extends Struct<CKSignatureGenerator> {
 
   static void updateWithData(
     Pointer<CKSignatureGenerator> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -44648,11 +44625,9 @@ class CKSignatureGenerator extends Struct<CKSignatureGenerator> {
   }
 }
 
-/// Objective-C class _CKStringValueValidator_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKStringValueValidator extends Struct<CKStringValueValidator> {
   factory CKStringValueValidator._() {
@@ -44665,7 +44640,7 @@ class CKStringValueValidator extends Struct<CKStringValueValidator> {
         .cast<CKStringValueValidator>();
   }
 
-  static Pointer<Void> CKPropertiesDescription(
+  static Pointer CKPropertiesDescription(
     Pointer<CKStringValueValidator> _self,
   ) {
     _openDynamicLibrary();
@@ -44675,9 +44650,9 @@ class CKStringValueValidator extends Struct<CKStringValueValidator> {
     );
   }
 
-  static Pointer<Void> initWithValue(
+  static Pointer initWithValue(
     Pointer<CKStringValueValidator> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -44689,7 +44664,7 @@ class CKStringValueValidator extends Struct<CKStringValueValidator> {
 
   static void setValue(
     Pointer<CKStringValueValidator> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -44701,8 +44676,8 @@ class CKStringValueValidator extends Struct<CKStringValueValidator> {
 
   static int validate(
     Pointer<CKStringValueValidator> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -44713,7 +44688,7 @@ class CKStringValueValidator extends Struct<CKStringValueValidator> {
     );
   }
 
-  static Pointer<Void> value(
+  static Pointer value(
     Pointer<CKStringValueValidator> _self,
   ) {
     _openDynamicLibrary();
@@ -44724,11 +44699,9 @@ class CKStringValueValidator extends Struct<CKStringValueValidator> {
   }
 }
 
-/// Objective-C class _CKSubscription_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKSubscription extends Struct<CKSubscription> {
   factory CKSubscription._() {
@@ -44739,7 +44712,7 @@ class CKSubscription extends Struct<CKSubscription> {
     return _objc.allocate("CKSubscription").cast<CKSubscription>();
   }
 
-  static Pointer<Void> CKPropertiesDescription(
+  static Pointer CKPropertiesDescription(
     Pointer<CKSubscription> _self,
   ) {
     _openDynamicLibrary();
@@ -44749,9 +44722,9 @@ class CKSubscription extends Struct<CKSubscription> {
     );
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<CKSubscription> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -44761,7 +44734,7 @@ class CKSubscription extends Struct<CKSubscription> {
     );
   }
 
-  static Pointer<Void> debugDescription(
+  static Pointer debugDescription(
     Pointer<CKSubscription> _self,
   ) {
     _openDynamicLibrary();
@@ -44771,7 +44744,7 @@ class CKSubscription extends Struct<CKSubscription> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CKSubscription> _self,
   ) {
     _openDynamicLibrary();
@@ -44783,7 +44756,7 @@ class CKSubscription extends Struct<CKSubscription> {
 
   static void encodeWithCoder(
     Pointer<CKSubscription> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -44793,7 +44766,7 @@ class CKSubscription extends Struct<CKSubscription> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CKSubscription> _self,
   ) {
     _openDynamicLibrary();
@@ -44803,9 +44776,9 @@ class CKSubscription extends Struct<CKSubscription> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CKSubscription> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -44815,10 +44788,10 @@ class CKSubscription extends Struct<CKSubscription> {
     );
   }
 
-  static Pointer<Void> initWithRecordType$predicate$options$(
+  static Pointer initWithRecordType$predicate$options$(
     Pointer<CKSubscription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> predicate,
+    Pointer arg, {
+    @required Pointer predicate,
     @required int options,
   }) {
     _openDynamicLibrary();
@@ -44831,11 +44804,11 @@ class CKSubscription extends Struct<CKSubscription> {
     );
   }
 
-  static Pointer<Void> initWithRecordType$predicate$subscriptionID$options$(
+  static Pointer initWithRecordType$predicate$subscriptionID$options$(
     Pointer<CKSubscription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> predicate,
-    @required Pointer<Void> subscriptionID,
+    Pointer arg, {
+    @required Pointer predicate,
+    @required Pointer subscriptionID,
     @required int options,
   }) {
     _openDynamicLibrary();
@@ -44849,9 +44822,9 @@ class CKSubscription extends Struct<CKSubscription> {
     );
   }
 
-  static Pointer<Void> initWithZoneID$options$(
+  static Pointer initWithZoneID$options$(
     Pointer<CKSubscription> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int options,
   }) {
     _openDynamicLibrary();
@@ -44863,10 +44836,10 @@ class CKSubscription extends Struct<CKSubscription> {
     );
   }
 
-  static Pointer<Void> initWithZoneID$subscriptionID$options$(
+  static Pointer initWithZoneID$subscriptionID$options$(
     Pointer<CKSubscription> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> subscriptionID,
+    Pointer arg, {
+    @required Pointer subscriptionID,
     @required int options,
   }) {
     _openDynamicLibrary();
@@ -44879,7 +44852,7 @@ class CKSubscription extends Struct<CKSubscription> {
     );
   }
 
-  static Pointer<Void> notificationInfo(
+  static Pointer notificationInfo(
     Pointer<CKSubscription> _self,
   ) {
     _openDynamicLibrary();
@@ -44889,7 +44862,7 @@ class CKSubscription extends Struct<CKSubscription> {
     );
   }
 
-  static Pointer<Void> predicate(
+  static Pointer predicate(
     Pointer<CKSubscription> _self,
   ) {
     _openDynamicLibrary();
@@ -44899,7 +44872,7 @@ class CKSubscription extends Struct<CKSubscription> {
     );
   }
 
-  static Pointer<Void> recordType(
+  static Pointer recordType(
     Pointer<CKSubscription> _self,
   ) {
     _openDynamicLibrary();
@@ -44911,7 +44884,7 @@ class CKSubscription extends Struct<CKSubscription> {
 
   static void setNotificationInfo(
     Pointer<CKSubscription> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -44923,7 +44896,7 @@ class CKSubscription extends Struct<CKSubscription> {
 
   static void setPredicate(
     Pointer<CKSubscription> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -44935,7 +44908,7 @@ class CKSubscription extends Struct<CKSubscription> {
 
   static void setRecordType(
     Pointer<CKSubscription> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -44947,7 +44920,7 @@ class CKSubscription extends Struct<CKSubscription> {
 
   static void setSubscriptionID(
     Pointer<CKSubscription> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -44983,7 +44956,7 @@ class CKSubscription extends Struct<CKSubscription> {
 
   static void setZoneID(
     Pointer<CKSubscription> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -44993,7 +44966,7 @@ class CKSubscription extends Struct<CKSubscription> {
     );
   }
 
-  static Pointer<Void> subscriptionID(
+  static Pointer subscriptionID(
     Pointer<CKSubscription> _self,
   ) {
     _openDynamicLibrary();
@@ -45023,7 +44996,7 @@ class CKSubscription extends Struct<CKSubscription> {
     );
   }
 
-  static Pointer<Void> zoneID(
+  static Pointer zoneID(
     Pointer<CKSubscription> _self,
   ) {
     _openDynamicLibrary();
@@ -45034,11 +45007,9 @@ class CKSubscription extends Struct<CKSubscription> {
   }
 }
 
-/// Objective-C class _CKTimeLogger_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKTimeLogger extends Struct<CKTimeLogger> {
   factory CKTimeLogger._() {
@@ -45049,7 +45020,7 @@ class CKTimeLogger extends Struct<CKTimeLogger> {
     return _objc.allocate("CKTimeLogger").cast<CKTimeLogger>();
   }
 
-  static Pointer<Void> CKStatusReportArray(
+  static Pointer CKStatusReportArray(
     Pointer<CKTimeLogger> _self,
   ) {
     _openDynamicLibrary();
@@ -45061,7 +45032,7 @@ class CKTimeLogger extends Struct<CKTimeLogger> {
 
   static void addChildLogger(
     Pointer<CKTimeLogger> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -45073,8 +45044,8 @@ class CKTimeLogger extends Struct<CKTimeLogger> {
 
   static void addCustomLogOfType(
     Pointer<CKTimeLogger> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> message,
+    Pointer arg, {
+    @required Pointer message,
     @required double from,
     @required double to,
   }) {
@@ -45091,8 +45062,8 @@ class CKTimeLogger extends Struct<CKTimeLogger> {
 
   static void addLog(
     Pointer<CKTimeLogger> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> forType,
+    Pointer arg, {
+    @required Pointer forType,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -45105,7 +45076,7 @@ class CKTimeLogger extends Struct<CKTimeLogger> {
 
   static void appendBriefStatusReportToString(
     Pointer<CKTimeLogger> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -45117,8 +45088,8 @@ class CKTimeLogger extends Struct<CKTimeLogger> {
 
   static void appendStatusReportForType(
     Pointer<CKTimeLogger> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> toString,
+    Pointer arg, {
+    @required Pointer toString,
     @required int withIndent,
     @required int showingPointers,
   }) {
@@ -45136,7 +45107,7 @@ class CKTimeLogger extends Struct<CKTimeLogger> {
 
   static void appendStatusReportToString(
     Pointer<CKTimeLogger> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int withIndent,
     @required int showingPointers,
   }) {
@@ -45153,8 +45124,8 @@ class CKTimeLogger extends Struct<CKTimeLogger> {
 
   static void beginLoggingSessionOfType(
     Pointer<CKTimeLogger> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> message,
+    Pointer arg, {
+    @required Pointer message,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -45165,7 +45136,7 @@ class CKTimeLogger extends Struct<CKTimeLogger> {
     );
   }
 
-  static Pointer<Void> childLoggers(
+  static Pointer childLoggers(
     Pointer<CKTimeLogger> _self,
   ) {
     _openDynamicLibrary();
@@ -45175,7 +45146,7 @@ class CKTimeLogger extends Struct<CKTimeLogger> {
     );
   }
 
-  static Pointer<Void> currentSessions(
+  static Pointer currentSessions(
     Pointer<CKTimeLogger> _self,
   ) {
     _openDynamicLibrary();
@@ -45195,7 +45166,7 @@ class CKTimeLogger extends Struct<CKTimeLogger> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CKTimeLogger> _self,
   ) {
     _openDynamicLibrary();
@@ -45217,7 +45188,7 @@ class CKTimeLogger extends Struct<CKTimeLogger> {
 
   static void dumpLogsForType(
     Pointer<CKTimeLogger> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -45229,7 +45200,7 @@ class CKTimeLogger extends Struct<CKTimeLogger> {
 
   static void encodeWithCoder(
     Pointer<CKTimeLogger> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -45241,8 +45212,8 @@ class CKTimeLogger extends Struct<CKTimeLogger> {
 
   static void endLoggingSessionOfType(
     Pointer<CKTimeLogger> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> message,
+    Pointer arg, {
+    @required Pointer message,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -45253,7 +45224,7 @@ class CKTimeLogger extends Struct<CKTimeLogger> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CKTimeLogger> _self,
   ) {
     _openDynamicLibrary();
@@ -45263,9 +45234,9 @@ class CKTimeLogger extends Struct<CKTimeLogger> {
     );
   }
 
-  static Pointer<Void> initForObject(
+  static Pointer initForObject(
     Pointer<CKTimeLogger> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -45275,9 +45246,9 @@ class CKTimeLogger extends Struct<CKTimeLogger> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CKTimeLogger> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -45289,8 +45260,8 @@ class CKTimeLogger extends Struct<CKTimeLogger> {
 
   static void intervalLoggingSessionOfType(
     Pointer<CKTimeLogger> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> message,
+    Pointer arg, {
+    @required Pointer message,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -45301,7 +45272,7 @@ class CKTimeLogger extends Struct<CKTimeLogger> {
     );
   }
 
-  static Pointer<Void> logs(
+  static Pointer logs(
     Pointer<CKTimeLogger> _self,
   ) {
     _openDynamicLibrary();
@@ -45311,9 +45282,9 @@ class CKTimeLogger extends Struct<CKTimeLogger> {
     );
   }
 
-  static Pointer<Void> logsForType(
+  static Pointer logsForType(
     Pointer<CKTimeLogger> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -45323,7 +45294,7 @@ class CKTimeLogger extends Struct<CKTimeLogger> {
     );
   }
 
-  static Pointer<Void> observedObjectClassName(
+  static Pointer observedObjectClassName(
     Pointer<CKTimeLogger> _self,
   ) {
     _openDynamicLibrary();
@@ -45333,7 +45304,7 @@ class CKTimeLogger extends Struct<CKTimeLogger> {
     );
   }
 
-  static Pointer<Void> observedObjectDescription(
+  static Pointer observedObjectDescription(
     Pointer<CKTimeLogger> _self,
   ) {
     _openDynamicLibrary();
@@ -45343,7 +45314,7 @@ class CKTimeLogger extends Struct<CKTimeLogger> {
     );
   }
 
-  static Pointer<Void> parentLogger(
+  static Pointer parentLogger(
     Pointer<CKTimeLogger> _self,
   ) {
     _openDynamicLibrary();
@@ -45353,7 +45324,7 @@ class CKTimeLogger extends Struct<CKTimeLogger> {
     );
   }
 
-  static Pointer<Void> parentLoggerDescription(
+  static Pointer parentLoggerDescription(
     Pointer<CKTimeLogger> _self,
   ) {
     _openDynamicLibrary();
@@ -45365,8 +45336,8 @@ class CKTimeLogger extends Struct<CKTimeLogger> {
 
   static void relateAsChildToParent(
     Pointer<CKTimeLogger> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> message,
+    Pointer arg, {
+    @required Pointer message,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -45377,7 +45348,7 @@ class CKTimeLogger extends Struct<CKTimeLogger> {
     );
   }
 
-  static Pointer<Void> relationMessage(
+  static Pointer relationMessage(
     Pointer<CKTimeLogger> _self,
   ) {
     _openDynamicLibrary();
@@ -45399,7 +45370,7 @@ class CKTimeLogger extends Struct<CKTimeLogger> {
 
   static void removeChildLogger(
     Pointer<CKTimeLogger> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -45411,7 +45382,7 @@ class CKTimeLogger extends Struct<CKTimeLogger> {
 
   static void setCurrentSessions(
     Pointer<CKTimeLogger> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -45423,7 +45394,7 @@ class CKTimeLogger extends Struct<CKTimeLogger> {
 
   static void setObservedObject(
     Pointer<CKTimeLogger> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -45435,7 +45406,7 @@ class CKTimeLogger extends Struct<CKTimeLogger> {
 
   static void setObservedObjectClassName(
     Pointer<CKTimeLogger> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -45447,7 +45418,7 @@ class CKTimeLogger extends Struct<CKTimeLogger> {
 
   static void setObservedObjectDescription(
     Pointer<CKTimeLogger> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -45459,7 +45430,7 @@ class CKTimeLogger extends Struct<CKTimeLogger> {
 
   static void setParentLogger(
     Pointer<CKTimeLogger> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -45471,7 +45442,7 @@ class CKTimeLogger extends Struct<CKTimeLogger> {
 
   static void setParentLoggerDescription(
     Pointer<CKTimeLogger> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -45483,7 +45454,7 @@ class CKTimeLogger extends Struct<CKTimeLogger> {
 
   static void setRelationMessage(
     Pointer<CKTimeLogger> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -45507,8 +45478,8 @@ class CKTimeLogger extends Struct<CKTimeLogger> {
 
   static void togglePauseLoggingSessionOfType(
     Pointer<CKTimeLogger> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Void> message,
+    Pointer arg, {
+    @required Pointer message,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_void(
@@ -45521,7 +45492,7 @@ class CKTimeLogger extends Struct<CKTimeLogger> {
 
   static void treeTraversalWithBlock(
     Pointer<CKTimeLogger> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -45532,11 +45503,9 @@ class CKTimeLogger extends Struct<CKTimeLogger> {
   }
 }
 
-/// Objective-C class _CKTimeLoggerLog_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKTimeLoggerLog extends Struct<CKTimeLoggerLog> {
   factory CKTimeLoggerLog._() {
@@ -45549,7 +45518,7 @@ class CKTimeLoggerLog extends Struct<CKTimeLoggerLog> {
 
   static void appendStatusReportToString(
     Pointer<CKTimeLoggerLog> _self,
-    Pointer<Void> arg, {
+    Pointer arg, {
     @required int withIndent,
     @required int showingPointers,
   }) {
@@ -45574,7 +45543,7 @@ class CKTimeLoggerLog extends Struct<CKTimeLoggerLog> {
     );
   }
 
-  static Pointer<Void> beginningMessage(
+  static Pointer beginningMessage(
     Pointer<CKTimeLoggerLog> _self,
   ) {
     _openDynamicLibrary();
@@ -45594,7 +45563,7 @@ class CKTimeLoggerLog extends Struct<CKTimeLoggerLog> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CKTimeLoggerLog> _self,
   ) {
     _openDynamicLibrary();
@@ -45616,7 +45585,7 @@ class CKTimeLoggerLog extends Struct<CKTimeLoggerLog> {
 
   static void encodeWithCoder(
     Pointer<CKTimeLoggerLog> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -45636,7 +45605,7 @@ class CKTimeLoggerLog extends Struct<CKTimeLoggerLog> {
     );
   }
 
-  static Pointer<Void> endingMessage(
+  static Pointer endingMessage(
     Pointer<CKTimeLoggerLog> _self,
   ) {
     _openDynamicLibrary();
@@ -45646,7 +45615,7 @@ class CKTimeLoggerLog extends Struct<CKTimeLoggerLog> {
     );
   }
 
-  static Pointer<Void> init(
+  static Pointer init(
     Pointer<CKTimeLoggerLog> _self,
   ) {
     _openDynamicLibrary();
@@ -45656,9 +45625,9 @@ class CKTimeLoggerLog extends Struct<CKTimeLoggerLog> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CKTimeLoggerLog> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -45668,7 +45637,7 @@ class CKTimeLoggerLog extends Struct<CKTimeLoggerLog> {
     );
   }
 
-  static Pointer<Void> pauseRecords(
+  static Pointer pauseRecords(
     Pointer<CKTimeLoggerLog> _self,
   ) {
     _openDynamicLibrary();
@@ -45692,7 +45661,7 @@ class CKTimeLoggerLog extends Struct<CKTimeLoggerLog> {
 
   static void setBeginningMessage(
     Pointer<CKTimeLoggerLog> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -45716,7 +45685,7 @@ class CKTimeLoggerLog extends Struct<CKTimeLoggerLog> {
 
   static void setEndingMessage(
     Pointer<CKTimeLoggerLog> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -45728,7 +45697,7 @@ class CKTimeLoggerLog extends Struct<CKTimeLoggerLog> {
 
   static void setPauseRecords(
     Pointer<CKTimeLoggerLog> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -45740,7 +45709,7 @@ class CKTimeLoggerLog extends Struct<CKTimeLoggerLog> {
 
   static void setType(
     Pointer<CKTimeLoggerLog> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -45753,7 +45722,7 @@ class CKTimeLoggerLog extends Struct<CKTimeLoggerLog> {
   static void togglePauseWithTime(
     Pointer<CKTimeLoggerLog> _self,
     double arg, {
-    @required Pointer<Void> message,
+    @required Pointer message,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_float64_p_returns_void(
@@ -45764,7 +45733,7 @@ class CKTimeLoggerLog extends Struct<CKTimeLoggerLog> {
     );
   }
 
-  static Pointer<Void> type(
+  static Pointer type(
     Pointer<CKTimeLoggerLog> _self,
   ) {
     _openDynamicLibrary();
@@ -45775,11 +45744,9 @@ class CKTimeLoggerLog extends Struct<CKTimeLoggerLog> {
   }
 }
 
-/// Objective-C class _CKTimeLoggerLogPauseRecord_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKTimeLoggerLogPauseRecord extends Struct<CKTimeLoggerLogPauseRecord> {
   factory CKTimeLoggerLogPauseRecord._() {
@@ -45792,7 +45759,7 @@ class CKTimeLoggerLogPauseRecord extends Struct<CKTimeLoggerLogPauseRecord> {
         .cast<CKTimeLoggerLogPauseRecord>();
   }
 
-  static Pointer<Void> message(
+  static Pointer message(
     Pointer<CKTimeLoggerLogPauseRecord> _self,
   ) {
     _openDynamicLibrary();
@@ -45804,7 +45771,7 @@ class CKTimeLoggerLogPauseRecord extends Struct<CKTimeLoggerLogPauseRecord> {
 
   static void setMessage(
     Pointer<CKTimeLoggerLogPauseRecord> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -45837,11 +45804,9 @@ class CKTimeLoggerLogPauseRecord extends Struct<CKTimeLoggerLogPauseRecord> {
   }
 }
 
-/// Objective-C class _CKTruePredicateValidator_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKTruePredicateValidator extends Struct<CKTruePredicateValidator> {
   factory CKTruePredicateValidator._() {
@@ -45856,8 +45821,8 @@ class CKTruePredicateValidator extends Struct<CKTruePredicateValidator> {
 
   static int validate(
     Pointer<CKTruePredicateValidator> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -45869,11 +45834,9 @@ class CKTruePredicateValidator extends Struct<CKTruePredicateValidator> {
   }
 }
 
-/// Objective-C class _CKTrueValidator_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKTrueValidator extends Struct<CKTrueValidator> {
   factory CKTrueValidator._() {
@@ -45886,8 +45849,8 @@ class CKTrueValidator extends Struct<CKTrueValidator> {
 
   static int validate(
     Pointer<CKTrueValidator> _self,
-    Pointer<Void> arg, {
-    @required Pointer<Pointer<Void>> error,
+    Pointer arg, {
+    @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_p_returns_Int8(
@@ -45899,11 +45862,9 @@ class CKTrueValidator extends Struct<CKTrueValidator> {
   }
 }
 
-/// Objective-C class _CKUserIdentity_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKUserIdentity extends Struct<CKUserIdentity> {
   factory CKUserIdentity._() {
@@ -45914,7 +45875,7 @@ class CKUserIdentity extends Struct<CKUserIdentity> {
     return _objc.allocate("CKUserIdentity").cast<CKUserIdentity>();
   }
 
-  static Pointer<Void> CKDescriptionPropertiesWithPublic(
+  static Pointer CKDescriptionPropertiesWithPublic(
     Pointer<CKUserIdentity> _self,
     int arg, {
     @required int private,
@@ -45931,7 +45892,7 @@ class CKUserIdentity extends Struct<CKUserIdentity> {
     );
   }
 
-  static Pointer<Void> ckShortDescription(
+  static Pointer ckShortDescription(
     Pointer<CKUserIdentity> _self,
   ) {
     _openDynamicLibrary();
@@ -45941,7 +45902,7 @@ class CKUserIdentity extends Struct<CKUserIdentity> {
     );
   }
 
-  static Pointer<Void> contactIdentifiers(
+  static Pointer contactIdentifiers(
     Pointer<CKUserIdentity> _self,
   ) {
     _openDynamicLibrary();
@@ -45951,9 +45912,9 @@ class CKUserIdentity extends Struct<CKUserIdentity> {
     );
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<CKUserIdentity> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -45963,7 +45924,7 @@ class CKUserIdentity extends Struct<CKUserIdentity> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CKUserIdentity> _self,
   ) {
     _openDynamicLibrary();
@@ -45975,7 +45936,7 @@ class CKUserIdentity extends Struct<CKUserIdentity> {
 
   static void encodeWithCoder(
     Pointer<CKUserIdentity> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -45985,7 +45946,7 @@ class CKUserIdentity extends Struct<CKUserIdentity> {
     );
   }
 
-  static Pointer<Void> encryptedPersonalInfo(
+  static Pointer encryptedPersonalInfo(
     Pointer<CKUserIdentity> _self,
   ) {
     _openDynamicLibrary();
@@ -45995,7 +45956,7 @@ class CKUserIdentity extends Struct<CKUserIdentity> {
     );
   }
 
-  static Pointer<Void> firstName(
+  static Pointer firstName(
     Pointer<CKUserIdentity> _self,
   ) {
     _openDynamicLibrary();
@@ -46025,9 +45986,9 @@ class CKUserIdentity extends Struct<CKUserIdentity> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CKUserIdentity> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -46037,9 +45998,9 @@ class CKUserIdentity extends Struct<CKUserIdentity> {
     );
   }
 
-  static Pointer<Void> initWithUserRecordID(
+  static Pointer initWithUserRecordID(
     Pointer<CKUserIdentity> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -46061,7 +46022,7 @@ class CKUserIdentity extends Struct<CKUserIdentity> {
 
   static int isEqual(
     Pointer<CKUserIdentity> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -46073,7 +46034,7 @@ class CKUserIdentity extends Struct<CKUserIdentity> {
 
   static int isEquivalentToUserIdentity(
     Pointer<CKUserIdentity> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -46085,7 +46046,7 @@ class CKUserIdentity extends Struct<CKUserIdentity> {
 
   static int isEquivalentToUserIdentityOrPublicKey(
     Pointer<CKUserIdentity> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -46105,7 +46066,7 @@ class CKUserIdentity extends Struct<CKUserIdentity> {
     );
   }
 
-  static Pointer<Void> lastName(
+  static Pointer lastName(
     Pointer<CKUserIdentity> _self,
   ) {
     _openDynamicLibrary();
@@ -46115,7 +46076,7 @@ class CKUserIdentity extends Struct<CKUserIdentity> {
     );
   }
 
-  static Pointer<Void> lookupInfo(
+  static Pointer lookupInfo(
     Pointer<CKUserIdentity> _self,
   ) {
     _openDynamicLibrary();
@@ -46125,7 +46086,7 @@ class CKUserIdentity extends Struct<CKUserIdentity> {
     );
   }
 
-  static Pointer<Void> nameComponents(
+  static Pointer nameComponents(
     Pointer<CKUserIdentity> _self,
   ) {
     _openDynamicLibrary();
@@ -46135,7 +46096,7 @@ class CKUserIdentity extends Struct<CKUserIdentity> {
     );
   }
 
-  static Pointer<Void> outOfNetworkPrivateKey(
+  static Pointer outOfNetworkPrivateKey(
     Pointer<CKUserIdentity> _self,
   ) {
     _openDynamicLibrary();
@@ -46155,7 +46116,7 @@ class CKUserIdentity extends Struct<CKUserIdentity> {
     );
   }
 
-  static Pointer<Void> publicSharingKey(
+  static Pointer publicSharingKey(
     Pointer<CKUserIdentity> _self,
   ) {
     _openDynamicLibrary();
@@ -46167,7 +46128,7 @@ class CKUserIdentity extends Struct<CKUserIdentity> {
 
   static void setContactIdentifiers(
     Pointer<CKUserIdentity> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -46179,7 +46140,7 @@ class CKUserIdentity extends Struct<CKUserIdentity> {
 
   static void setEncryptedPersonalInfo(
     Pointer<CKUserIdentity> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -46215,7 +46176,7 @@ class CKUserIdentity extends Struct<CKUserIdentity> {
 
   static void setLookupInfo(
     Pointer<CKUserIdentity> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -46227,7 +46188,7 @@ class CKUserIdentity extends Struct<CKUserIdentity> {
 
   static void setNameComponents(
     Pointer<CKUserIdentity> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -46239,7 +46200,7 @@ class CKUserIdentity extends Struct<CKUserIdentity> {
 
   static void setOutOfNetworkPrivateKey(
     Pointer<CKUserIdentity> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -46263,7 +46224,7 @@ class CKUserIdentity extends Struct<CKUserIdentity> {
 
   static void setPublicSharingKey(
     Pointer<CKUserIdentity> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -46275,7 +46236,7 @@ class CKUserIdentity extends Struct<CKUserIdentity> {
 
   static void setUserRecordID(
     Pointer<CKUserIdentity> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -46285,7 +46246,7 @@ class CKUserIdentity extends Struct<CKUserIdentity> {
     );
   }
 
-  static Pointer<Void> userRecordID(
+  static Pointer userRecordID(
     Pointer<CKUserIdentity> _self,
   ) {
     _openDynamicLibrary();
@@ -46296,11 +46257,9 @@ class CKUserIdentity extends Struct<CKUserIdentity> {
   }
 }
 
-/// Objective-C class _CKUserIdentityLookupInfo_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKUserIdentityLookupInfo extends Struct<CKUserIdentityLookupInfo> {
   factory CKUserIdentityLookupInfo._() {
@@ -46313,7 +46272,7 @@ class CKUserIdentityLookupInfo extends Struct<CKUserIdentityLookupInfo> {
         .cast<CKUserIdentityLookupInfo>();
   }
 
-  static Pointer<Void> CKDescriptionPropertiesWithPublic(
+  static Pointer CKDescriptionPropertiesWithPublic(
     Pointer<CKUserIdentityLookupInfo> _self,
     int arg, {
     @required int private,
@@ -46330,7 +46289,7 @@ class CKUserIdentityLookupInfo extends Struct<CKUserIdentityLookupInfo> {
     );
   }
 
-  static Pointer<Void> CKPropertiesDescription(
+  static Pointer CKPropertiesDescription(
     Pointer<CKUserIdentityLookupInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -46340,7 +46299,7 @@ class CKUserIdentityLookupInfo extends Struct<CKUserIdentityLookupInfo> {
     );
   }
 
-  static Pointer<Void> ckShortDescription(
+  static Pointer ckShortDescription(
     Pointer<CKUserIdentityLookupInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -46350,9 +46309,9 @@ class CKUserIdentityLookupInfo extends Struct<CKUserIdentityLookupInfo> {
     );
   }
 
-  static Pointer<Void> copyWithZone(
+  static Pointer copyWithZone(
     Pointer<CKUserIdentityLookupInfo> _self,
-    Pointer<Pointer<Void>> arg,
+    Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -46362,7 +46321,7 @@ class CKUserIdentityLookupInfo extends Struct<CKUserIdentityLookupInfo> {
     );
   }
 
-  static Pointer<Void> description(
+  static Pointer description(
     Pointer<CKUserIdentityLookupInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -46372,7 +46331,7 @@ class CKUserIdentityLookupInfo extends Struct<CKUserIdentityLookupInfo> {
     );
   }
 
-  static Pointer<Void> emailAddress(
+  static Pointer emailAddress(
     Pointer<CKUserIdentityLookupInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -46384,7 +46343,7 @@ class CKUserIdentityLookupInfo extends Struct<CKUserIdentityLookupInfo> {
 
   static void encodeWithCoder(
     Pointer<CKUserIdentityLookupInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -46394,7 +46353,7 @@ class CKUserIdentityLookupInfo extends Struct<CKUserIdentityLookupInfo> {
     );
   }
 
-  static Pointer<Void> encryptedPersonalInfo(
+  static Pointer encryptedPersonalInfo(
     Pointer<CKUserIdentityLookupInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -46414,9 +46373,9 @@ class CKUserIdentityLookupInfo extends Struct<CKUserIdentityLookupInfo> {
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CKUserIdentityLookupInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -46426,9 +46385,9 @@ class CKUserIdentityLookupInfo extends Struct<CKUserIdentityLookupInfo> {
     );
   }
 
-  static Pointer<Void> initWithEmailAddress(
+  static Pointer initWithEmailAddress(
     Pointer<CKUserIdentityLookupInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -46438,9 +46397,9 @@ class CKUserIdentityLookupInfo extends Struct<CKUserIdentityLookupInfo> {
     );
   }
 
-  static Pointer<Void> initWithPhoneNumber(
+  static Pointer initWithPhoneNumber(
     Pointer<CKUserIdentityLookupInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -46450,9 +46409,9 @@ class CKUserIdentityLookupInfo extends Struct<CKUserIdentityLookupInfo> {
     );
   }
 
-  static Pointer<Void> initWithUserRecordID(
+  static Pointer initWithUserRecordID(
     Pointer<CKUserIdentityLookupInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -46464,7 +46423,7 @@ class CKUserIdentityLookupInfo extends Struct<CKUserIdentityLookupInfo> {
 
   static int isEqual(
     Pointer<CKUserIdentityLookupInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_Int8(
@@ -46484,7 +46443,7 @@ class CKUserIdentityLookupInfo extends Struct<CKUserIdentityLookupInfo> {
     );
   }
 
-  static Pointer<Void> lookupValue(
+  static Pointer lookupValue(
     Pointer<CKUserIdentityLookupInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -46494,7 +46453,7 @@ class CKUserIdentityLookupInfo extends Struct<CKUserIdentityLookupInfo> {
     );
   }
 
-  static Pointer<Void> phoneNumber(
+  static Pointer phoneNumber(
     Pointer<CKUserIdentityLookupInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -46506,7 +46465,7 @@ class CKUserIdentityLookupInfo extends Struct<CKUserIdentityLookupInfo> {
 
   static void setEmailAddress(
     Pointer<CKUserIdentityLookupInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -46518,7 +46477,7 @@ class CKUserIdentityLookupInfo extends Struct<CKUserIdentityLookupInfo> {
 
   static void setEncryptedPersonalInfo(
     Pointer<CKUserIdentityLookupInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -46530,7 +46489,7 @@ class CKUserIdentityLookupInfo extends Struct<CKUserIdentityLookupInfo> {
 
   static void setPhoneNumber(
     Pointer<CKUserIdentityLookupInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -46554,7 +46513,7 @@ class CKUserIdentityLookupInfo extends Struct<CKUserIdentityLookupInfo> {
 
   static void setUserRecordID(
     Pointer<CKUserIdentityLookupInfo> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -46574,7 +46533,7 @@ class CKUserIdentityLookupInfo extends Struct<CKUserIdentityLookupInfo> {
     );
   }
 
-  static Pointer<Void> userRecordID(
+  static Pointer userRecordID(
     Pointer<CKUserIdentityLookupInfo> _self,
   ) {
     _openDynamicLibrary();
@@ -46585,11 +46544,9 @@ class CKUserIdentityLookupInfo extends Struct<CKUserIdentityLookupInfo> {
   }
 }
 
-/// Objective-C class _CKUserNotificationUtilities_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKUserNotificationUtilities extends Struct<CKUserNotificationUtilities> {
   factory CKUserNotificationUtilities._() {
@@ -46603,11 +46560,9 @@ class CKUserNotificationUtilities extends Struct<CKUserNotificationUtilities> {
   }
 }
 
-/// Objective-C class _CKZonePCSDiagnosticInformation_.
+/// Automatically generated API. Part of [CloudKit](https://developer.apple.com/documentation/cloudkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
-///
-/// You can find documentation at the [website](https://developer.apple.com/documentation/cloudkit?language=objc).
 @unsized
 class CKZonePCSDiagnosticInformation
     extends Struct<CKZonePCSDiagnosticInformation> {
@@ -46623,7 +46578,7 @@ class CKZonePCSDiagnosticInformation
 
   static void encodeWithCoder(
     Pointer<CKZonePCSDiagnosticInformation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -46633,9 +46588,9 @@ class CKZonePCSDiagnosticInformation
     );
   }
 
-  static Pointer<Void> initWithCoder(
+  static Pointer initWithCoder(
     Pointer<CKZonePCSDiagnosticInformation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_p(
@@ -46645,7 +46600,7 @@ class CKZonePCSDiagnosticInformation
     );
   }
 
-  static Pointer<Void> pcsDiagnosticString(
+  static Pointer pcsDiagnosticString(
     Pointer<CKZonePCSDiagnosticInformation> _self,
   ) {
     _openDynamicLibrary();
@@ -46655,7 +46610,7 @@ class CKZonePCSDiagnosticInformation
     );
   }
 
-  static Pointer<Void> pcsError(
+  static Pointer pcsError(
     Pointer<CKZonePCSDiagnosticInformation> _self,
   ) {
     _openDynamicLibrary();
@@ -46677,7 +46632,7 @@ class CKZonePCSDiagnosticInformation
 
   static void setPcsDiagnosticString(
     Pointer<CKZonePCSDiagnosticInformation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(
@@ -46689,7 +46644,7 @@ class CKZonePCSDiagnosticInformation
 
   static void setPcsError(
     Pointer<CKZonePCSDiagnosticInformation> _self,
-    Pointer<Void> arg,
+    Pointer arg,
   ) {
     _openDynamicLibrary();
     return _call_objc_p_p_p_returns_void(

@@ -20,11 +20,11 @@ final _class_copyMethodList_Dart _class_copyMethodList = dlForObjectiveC
     .lookupFunction<_class_copyMethodList_C, _class_copyMethodList_Dart>(
   "class_copyMethodList",
 );
-typedef Pointer<Pointer<Method>> _class_copyMethodList_C(
+typedef _class_copyMethodList_C = Pointer<Pointer<Method>> Function(
   Pointer<Klass> arg0,
   Pointer<Uint32> arg1,
 );
-typedef Pointer<Pointer<Method>> _class_copyMethodList_Dart(
+typedef _class_copyMethodList_Dart = Pointer<Pointer<Method>> Function(
   Pointer<Klass> arg0,
   Pointer<Uint32> arg1,
 );
@@ -41,11 +41,11 @@ final _class_copyPropertyList_Dart _class_copyPropertyList = dlForObjectiveC
     .lookupFunction<_class_copyPropertyList_C, _class_copyPropertyList_Dart>(
   "class_copyPropertyList",
 );
-typedef Pointer<Pointer<Property>> _class_copyPropertyList_C(
+typedef _class_copyPropertyList_C = Pointer<Pointer<Property>> Function(
   Pointer<Klass> arg0,
   Pointer<Uint32> arg1,
 );
-typedef Pointer<Pointer<Property>> _class_copyPropertyList_Dart(
+typedef _class_copyPropertyList_Dart = Pointer<Pointer<Property>> Function(
   Pointer<Klass> arg0,
   Pointer<Uint32> arg1,
 );
@@ -62,11 +62,11 @@ final _class_getClassMethod_Dart _class_getClassMethod = dlForObjectiveC
     .lookupFunction<_class_getClassMethod_C, _class_getClassMethod_Dart>(
   "class_getClassMethod",
 );
-typedef Pointer<Method> _class_getClassMethod_C(
+typedef _class_getClassMethod_C = Pointer<Method> Function(
   Pointer<Klass> arg0,
   Pointer<SEL> arg1,
 );
-typedef Pointer<Method> _class_getClassMethod_Dart(
+typedef _class_getClassMethod_Dart = Pointer<Method> Function(
   Pointer<Klass> arg0,
   Pointer<SEL> arg1,
 );
@@ -82,10 +82,10 @@ final _class_getImageName_Dart _class_getImageName = dlForObjectiveC
     .lookupFunction<_class_getImageName_C, _class_getImageName_Dart>(
   "class_getImageName",
 );
-typedef Pointer<Utf8> _class_getImageName_C(
+typedef _class_getImageName_C = Pointer<Utf8> Function(
   Pointer<Klass> arg0,
 );
-typedef Pointer<Utf8> _class_getImageName_Dart(
+typedef _class_getImageName_Dart = Pointer<Utf8> Function(
   Pointer<Klass> arg0,
 );
 
@@ -101,11 +101,11 @@ final _class_getInstanceMethod_Dart _class_getInstanceMethod = dlForObjectiveC
     .lookupFunction<_class_getInstanceMethod_C, _class_getInstanceMethod_Dart>(
   "class_getInstanceMethod",
 );
-typedef Pointer<Method> _class_getInstanceMethod_C(
+typedef _class_getInstanceMethod_C = Pointer<Method> Function(
   Pointer<Klass> arg0,
   Pointer<SEL> arg1,
 );
-typedef Pointer<Method> _class_getInstanceMethod_Dart(
+typedef _class_getInstanceMethod_Dart = Pointer<Method> Function(
   Pointer<Klass> arg0,
   Pointer<SEL> arg1,
 );
@@ -123,11 +123,11 @@ final _class_getMethodImplementation_Dart _class_getMethodImplementation =
         _class_getMethodImplementation_Dart>(
   "class_getMethodImplementation",
 );
-typedef Pointer<IMP> _class_getMethodImplementation_C(
+typedef _class_getMethodImplementation_C = Pointer<IMP> Function(
   Pointer<Klass> arg0,
   Pointer<SEL> arg1,
 );
-typedef Pointer<IMP> _class_getMethodImplementation_Dart(
+typedef _class_getMethodImplementation_Dart = Pointer<IMP> Function(
   Pointer<Klass> arg0,
   Pointer<SEL> arg1,
 );
@@ -143,10 +143,10 @@ final _class_getName_Dart _class_getName =
     dlForObjectiveC.lookupFunction<_class_getName_C, _class_getName_Dart>(
   "class_getName",
 );
-typedef Pointer<Utf8> _class_getName_C(
+typedef _class_getName_C = Pointer<Utf8> Function(
   Pointer<Klass> arg0,
 );
-typedef Pointer<Utf8> _class_getName_Dart(
+typedef _class_getName_Dart = Pointer<Utf8> Function(
   Pointer<Klass> arg0,
 );
 
@@ -163,11 +163,11 @@ final _class_respondsToSelector_Dart _class_respondsToSelector =
         _class_respondsToSelector_Dart>(
   "class_respondsToSelector",
 );
-typedef Uint8 _class_respondsToSelector_C(
+typedef _class_respondsToSelector_C = Uint8 Function(
   Pointer<Klass> arg0,
   Pointer<SEL> arg1,
 );
-typedef int _class_respondsToSelector_Dart(
+typedef _class_respondsToSelector_Dart = int Function(
   Pointer<Klass> arg0,
   Pointer<SEL> arg1,
 );
@@ -184,11 +184,11 @@ final _method_copyArgumentType_Dart _method_copyArgumentType = dlForObjectiveC
     .lookupFunction<_method_copyArgumentType_C, _method_copyArgumentType_Dart>(
   "method_copyArgumentType",
 );
-typedef Pointer<Utf8> _method_copyArgumentType_C(
+typedef _method_copyArgumentType_C = Pointer<Utf8> Function(
   Pointer<Method> arg0,
   Int32 arg1,
 );
-typedef Pointer<Utf8> _method_copyArgumentType_Dart(
+typedef _method_copyArgumentType_Dart = Pointer<Utf8> Function(
   Pointer<Method> arg0,
   int arg1,
 );
@@ -204,10 +204,10 @@ final _method_copyReturnType_Dart _method_copyReturnType = dlForObjectiveC
     .lookupFunction<_method_copyReturnType_C, _method_copyReturnType_Dart>(
   "method_copyReturnType",
 );
-typedef Pointer<Utf8> _method_copyReturnType_C(
+typedef _method_copyReturnType_C = Pointer<Utf8> Function(
   Pointer<Method> arg0,
 );
-typedef Pointer<Utf8> _method_copyReturnType_Dart(
+typedef _method_copyReturnType_Dart = Pointer<Utf8> Function(
   Pointer<Method> arg0,
 );
 
@@ -223,11 +223,11 @@ final _class_createInstance_Dart _class_createInstance = dlForObjectiveC
     .lookupFunction<_class_createInstance_C, _class_createInstance_Dart>(
   "class_createInstance",
 );
-typedef Pointer _class_createInstance_C(
+typedef _class_createInstance_C = Pointer Function(
   Pointer<Klass> arg0,
   IntPtr arg1,
 );
-typedef Pointer _class_createInstance_Dart(
+typedef _class_createInstance_Dart = Pointer Function(
   Pointer<Klass> arg0,
   int arg1,
 );
@@ -243,10 +243,10 @@ final _method_getName_Dart _method_getName =
     dlForObjectiveC.lookupFunction<_method_getName_C, _method_getName_Dart>(
   "method_getName",
 );
-typedef Pointer<SEL> _method_getName_C(
+typedef _method_getName_C = Pointer<SEL> Function(
   Pointer<Method> arg0,
 );
-typedef Pointer<SEL> _method_getName_Dart(
+typedef _method_getName_Dart = Pointer<SEL> Function(
   Pointer<Method> arg0,
 );
 
@@ -262,10 +262,10 @@ final _method_getNumberOfArguments_Dart _method_getNumberOfArguments =
         _method_getNumberOfArguments_Dart>(
   "method_getNumberOfArguments",
 );
-typedef Uint32 _method_getNumberOfArguments_C(
+typedef _method_getNumberOfArguments_C = Uint32 Function(
   Pointer<Method> arg0,
 );
-typedef int _method_getNumberOfArguments_Dart(
+typedef _method_getNumberOfArguments_Dart = int Function(
   Pointer<Method> arg0,
 );
 
@@ -280,10 +280,10 @@ final _objc_copyClassList_Dart _objc_copyClassList = dlForObjectiveC
     .lookupFunction<_objc_copyClassList_C, _objc_copyClassList_Dart>(
   "objc_copyClassList",
 );
-typedef Pointer<Pointer<Klass>> _objc_copyClassList_C(
+typedef _objc_copyClassList_C = Pointer<Pointer<Klass>> Function(
   Pointer<Uint32> arg0,
 );
-typedef Pointer<Pointer<Klass>> _objc_copyClassList_Dart(
+typedef _objc_copyClassList_Dart = Pointer<Pointer<Klass>> Function(
   Pointer<Uint32> arg0,
 );
 
@@ -298,10 +298,10 @@ final _objc_getClass_Dart _objc_getClass =
     dlForObjectiveC.lookupFunction<_objc_getClass_C, _objc_getClass_Dart>(
   "objc_getClass",
 );
-typedef Pointer<Klass> _objc_getClass_C(
+typedef _objc_getClass_C = Pointer<Klass> Function(
   Pointer<Utf8> arg0,
 );
-typedef Pointer<Klass> _objc_getClass_Dart(
+typedef _objc_getClass_Dart = Pointer<Klass> Function(
   Pointer<Utf8> arg0,
 );
 
@@ -317,11 +317,11 @@ final _property_getName_Dart _property_getName =
     dlForObjectiveC.lookupFunction<_property_getName_C, _property_getName_Dart>(
   "property_getName",
 );
-typedef Uint32 _property_getName_C(
+typedef _property_getName_C = Uint32 Function(
   Pointer<Klass> arg0,
   Uint32 arg1,
 );
-typedef int _property_getName_Dart(
+typedef _property_getName_Dart = int Function(
   Pointer<Klass> arg0,
   int arg1,
 );
@@ -338,11 +338,11 @@ final _protocol_getName_Dart _protocol_getName =
     dlForObjectiveC.lookupFunction<_protocol_getName_C, _protocol_getName_Dart>(
   "protocol_getName",
 );
-typedef Uint32 _protocol_getName_C(
+typedef _protocol_getName_C = Uint32 Function(
   Pointer<Protocol> arg0,
   Uint32 arg1,
 );
-typedef int _protocol_getName_Dart(
+typedef _protocol_getName_Dart = int Function(
   Pointer<Protocol> arg0,
   int arg1,
 );
@@ -358,10 +358,10 @@ final _sel_getName_Dart _sel_getName =
     dlForObjectiveC.lookupFunction<_sel_getName_C, _sel_getName_Dart>(
   "sel_getName",
 );
-typedef Pointer<Utf8> _sel_getName_C(
+typedef _sel_getName_C = Pointer<Utf8> Function(
   Pointer<SEL> arg0,
 );
-typedef Pointer<Utf8> _sel_getName_Dart(
+typedef _sel_getName_Dart = Pointer<Utf8> Function(
   Pointer<SEL> arg0,
 );
 
@@ -376,9 +376,9 @@ final _sel_registerName_Dart _sel_registerName =
     dlForObjectiveC.lookupFunction<_sel_registerName_C, _sel_registerName_Dart>(
   "sel_registerName",
 );
-typedef Pointer<SEL> _sel_registerName_C(
+typedef _sel_registerName_C = Pointer<SEL> Function(
   Pointer<Utf8> arg0,
 );
-typedef Pointer<SEL> _sel_registerName_Dart(
+typedef _sel_registerName_Dart = Pointer<SEL> Function(
   Pointer<Utf8> arg0,
 );

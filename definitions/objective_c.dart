@@ -35,6 +35,16 @@ final _elements = <Element>[
   Func(
     name: "class_copyMethodList",
     parameterTypes: ["*Klass", "*Uint32"],
+    returnType: "**Method",
+  ),
+  Func(
+    name: "class_copyPropertyList",
+    parameterTypes: ["*Klass", "*Uint32"],
+    returnType: "**Property",
+  ),
+  Func(
+    name: "class_getClassMethod",
+    parameterTypes: ["*Klass", "*SEL"],
     returnType: "*Method",
   ),
   Func(
@@ -43,19 +53,24 @@ final _elements = <Element>[
     returnType: "*Utf8",
   ),
   Func(
+    name: "class_getInstanceMethod",
+    parameterTypes: ["*Klass", "*SEL"],
+    returnType: "*Method",
+  ),
+  Func(
+    name: "class_getMethodImplementation",
+    parameterTypes: ["*Klass", "*SEL"],
+    returnType: "*IMP",
+  ),
+  Func(
     name: "class_getName",
     parameterTypes: ["*Klass"],
     returnType: "*Utf8",
   ),
   Func(
-    name: "method_getName",
-    parameterTypes: ["*Method"],
-    returnType: "*SEL",
-  ),
-  Func(
-    name: "method_getNumberOfArguments",
-    parameterTypes: ["*Method"],
-    returnType: "Uint32",
+    name: "class_respondsToSelector",
+    parameterTypes: ["*Klass", "*SEL"],
+    returnType: "Uint8",
   ),
   Func(
     name: "method_copyArgumentType",
@@ -68,13 +83,38 @@ final _elements = <Element>[
     returnType: "*Utf8",
   ),
   Func(
+    name: "class_createInstance",
+    parameterTypes: ["*Klass", "IntPtr"],
+    returnType: "*void",
+  ),
+  Func(
+    name: "method_getName",
+    parameterTypes: ["*Method"],
+    returnType: "*SEL",
+  ),
+  Func(
+    name: "method_getNumberOfArguments",
+    parameterTypes: ["*Method"],
+    returnType: "Uint32",
+  ),
+  Func(
+    name: "objc_copyClassList",
+    parameterTypes: ["*Uint32"],
+    returnType: "**Klass",
+  ),
+  Func(
     name: "objc_getClass",
     parameterTypes: ["*Utf8"],
     returnType: "*Klass",
   ),
   Func(
-    name: "objc_getClassList",
-    parameterTypes: ["**Klass", "Uint32"],
+    name: "property_getName",
+    parameterTypes: ["*Klass", "Uint32"],
+    returnType: "Uint32",
+  ),
+  Func(
+    name: "protocol_getName",
+    parameterTypes: ["*Protocol", "Uint32"],
     returnType: "Uint32",
   ),
   Func(

@@ -42,7 +42,7 @@ void main() {
     });
 
     test("SecKeyCreateRandomKey (RSA)", () {
-      // Catch randomly occurring segfault.
+      // Try to catch a randomly occurring segfault.
       for (var i = 0; i < 10; i++) {
         final errorPtrPtr = Pointer<Pointer<CFError>>.allocate();
         errorPtrPtr.store(Pointer<CFError>.fromAddress(0));

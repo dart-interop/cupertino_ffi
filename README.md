@@ -2,69 +2,69 @@
 
 # Overview
 
-This package provides C bindings with various APIs in Apple devices (iOS, Mac OS X, etc.). The
-package uses [dart:ffi](https://dart.dev/guides/libraries/c-interop). The Dart APIs are currently
-generated from handwritten definitions and identifiers/signatures are largely identical to the
-original C libraries.
+This package provides thousands of APIs from Apple. The package uses
+[dart:ffi](https://dart.dev/guides/libraries/c-interop) and the APIs are generated with
+[ffi_tool](https://pub.dev/packages/ffi_tool).
 
-This package can be used from:
-  * Flutter (though 'dart:ffi' is an experimental API and not yet fully supported in all platforms)
-  * OS X command-line applications
+Most Flutter developers should not use this package. It's usually a better idea to
+[write a Flutter plugin](https://flutter.dev/docs/development/packages-and-plugins/developing-packages)
+than use this package. Flutter plugins are less likely to contain memory management bugs, they are
+automatically isolated from the UI event loop, and the development experience is just better.
 
-## Contributing
+The advantages of this package are automatic generation of APIs (no need to write message passing
+code) and support for non-Flutter applications (command-line tools).
+
+If you decide to use this package, you MUST follow the correct reference counting patterns. The
+patterns are documented below.
+
+## Github project
   * [Github project](https://github.com/dart-interop/cupertino_ffi)
-  * Instructions for improving definitions of C libraries:
-    * Create a fork of [the repository](https://github.com/dart-interop/cupertino_ffi) in Github.
-    * Run `git clone https://github.com/your_username/cupertino_ffi`.
-    * Edit a definition file such as "definitions/core_foundation.dart".
-    * Run `pub run tool/generate_bindings.dart`
-    * Run `git add -A`
-    * Run `git commit`
-    * Create a pull request in Github.
+  * Please give suggestions / bug reports in the issue tracker.
 
-## Warning
-Please consider [writing a Flutter plugin](https://flutter.dev/docs/development/packages-and-plugins/developing-packages)
-instead of using this package.
-
-Flutter plugins are:
-  * Safer. Swift and Objective-C make all sorts of bugs much less likely.
-  * Concurrent. Flutter plugin system takes care of creating a separate thread for the plugin.
-  * Easier to develop. You can use XCode and other tools.
-
-## Supported C libraries
-### Core Foundation
-  * Documentation: [developer.apple.com](https://developer.apple.com/documentation/corefoundation)
-  * Import: "package:cupertino_ffi/core_foundation.dart"
-  * Examples:
-    * CFArray
-    * CFData
-    * CFError
-    * CFDictionary
-    * CFString
-
-### Security
-  * Documentation: [developer.apple.com](https://developer.apple.com/documentation/security)
-  * Import: "package:cupertino_ffi/security.dart"
-  * Examples:
-    * Cryptographic functions
-      * AES
-      * RSA
+## Interoperability libraries
+  * "Core Foundation" framework
+    * Documentation: [developer.apple.com](https://developer.apple.com/documentation/corefoundation)
+    * Import: "package:cupertino_ffi/core_foundation.dart"
+    * Examples:
+      * CFArray
+      * CFData
+      * CFDictionary
+      * CFError
+      * CFString
       * etc.
-    * Keychain
-      * Keys can be stored in [secure enclave](https://developer.apple.com/documentation/security/certificate_key_and_trust_services/keys/storing_keys_in_the_secure_enclave),
-        a hardware-based key manager that's isolated from the main CPU.
-
-## Supported Objective-C libraries
   * Objective-C runtime
     * Documentation: [developer.apple.com](https://developer.apple.com/documentation/objectivec/objective-c_runtime)
     * Import: "package:cupertino_ffi/objective_c.dart"
-  * Foundation
-    * _Foundation_ types (NSString, etc.) and _Core Foundation_ types (CFString,
-    etc.) are ["toll-free" bridged types](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFDesignConcepts/Articles/tollFreeBridgedTypes.html).
-    This means that `Pointer<CFString>` can be used as `Pointer<NSString>` , and vice-versa.
-    * The other APIs are automatically generated (work-in-progress).
-  * Core Data
-    * Automatically generated (work-in-progress).
+
+## Generated libraries
+  * "Core Data"
+    * Documentation: [developer.apple.com](https://developer.apple.com/documentation/coredata)
+    * Import: "package:cupertino_ffi/core_data.dart"
+    * "Core Data" is for loading and storing data.
+  * "Core ML"
+    * Documentation: [developer.apple.com](https://developer.apple.com/documentation/coreml)
+    * Import: "package:cupertino_ffi/core_ml.dart"
+    * "Core ML" is for doing machine learning.
+  * "Foundation"
+    * Documentation: [developer.apple.com](https://developer.apple.com/documentation/foundation)
+    * Import: "package:cupertino_ffi/foundation.dart"
+    * "Foundation" contains fundamental used by Objective-C libraries.
+    * Note that _Foundation_ types (NSString, etc.) and _Core Foundation_ types (CFString,
+      etc.) are ["toll-free" bridged types](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFDesignConcepts/Articles/tollFreeBridgedTypes.html).
+      This means that `Pointer<CFString>` can be used as `Pointer<NSString>` , and vice-versa.
+  * "Natural Language" framework
+    * Documentation: [developer.apple.com](https://developer.apple.com/documentation/vision)
+    * Import: "package:cupertino_ffi/natural_language.dart"
+    * "Natural Language" framework performs natural language processing (NLP) tasks.
+  * "Security" framework
+    * Documentation: [developer.apple.com](https://developer.apple.com/documentation/security)
+    * Import: "package:cupertino_ffi/security.dart"
+    * "Security" framework contains cryptography, keychain, and other security APIs.
+  * "Vision" framework
+    * Documentation: [developer.apple.com](https://developer.apple.com/documentation/vision)
+    * Import: "package:cupertino_ffi/vision.dart"
+    * "Vision" framework performs computer vision tasks.
+  * _Want to add a library? Create an issue!_
 
 ## Memory management patterns
 ### Calling APIs that return ARC pointers
@@ -106,7 +106,6 @@ Pointer<CFDictionary> example_that_returns_pointer() {
     }
 }
 ```
-
 
 ### Storing ARC pointer
 ```dart

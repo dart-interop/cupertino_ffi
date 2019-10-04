@@ -1,3 +1,6 @@
+# 0.1.3
+  * A large number of fixes.
+
 # 0.1.2
   * Fixed various issues.
 

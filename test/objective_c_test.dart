@@ -19,6 +19,7 @@
 // OR OTHER DEALINGS IN THE SOFTWARE.
 
 import 'dart:ffi';
+import 'package:ffi/ffi.dart';
 
 import 'package:cupertino_ffi/core_foundation.dart';
 import 'package:cupertino_ffi/objective_c.dart';
@@ -31,16 +32,77 @@ void main() {
       addTearDown(() => arcPop());
     });
 
-    test("dynamic library", () {
+    test("dynamic library is loaded", () {
       expect(dlForObjectiveC, isNotNull);
     });
 
-    test("objc_getClassList returns 1k..10k classes", () {
-      final capacity = 10000;
-      final buffer = Pointer<Pointer<Klass>>.allocate(count: capacity);
-      final n = objc_getClassList(buffer, capacity);
-      expect(n, greaterThan(1000));
-      expect(n, lessThan(10000));
+    test("class_get", () {
+      final klass = objc_getClass(Utf8.toUtf8("NSString"));
+
+      {
+        final sel = sel_registerName(Utf8.toUtf8("x:y"));
+        final method = class_getInstanceMethod(klass, sel);
+        expect(method.address, 0);
+      }
+      {
+        final sel = sel_registerName(Utf8.toUtf8("characterAtIndex:"));
+        final method = class_getInstanceMethod(klass, sel);
+        expect(method.address, isNot(0));
+      }
+    });
+
+    test("class_getInstanceMethod", () {
+      final klass = objc_getClass(Utf8.toUtf8("NSString"));
+
+      {
+        final sel = sel_registerName(Utf8.toUtf8("x:y"));
+        final method = class_getInstanceMethod(klass, sel);
+        expect(method.address, 0);
+      }
+      {
+        final sel = sel_registerName(Utf8.toUtf8("characterAtIndex:"));
+        final method = class_getInstanceMethod(klass, sel);
+        expect(method.address, isNot(0));
+      }
+    });
+
+    test("class_getClassMethod", () {
+      final klass = objc_getClass(Utf8.toUtf8("NSString"));
+
+      {
+        final sel = sel_registerName(Utf8.toUtf8("x:y"));
+        final method = class_getInstanceMethod(klass, sel);
+        expect(method.address, 0);
+      }
+      {
+        final sel = sel_registerName(Utf8.toUtf8("characterAtIndex:"));
+        final method = class_getInstanceMethod(klass, sel);
+        expect(method.address, isNot(0));
+      }
+    });
+
+    test("objc_copyClassList", () {
+      final lengthPtr = Pointer<Uint32>.allocate();
+      final classes = objc_copyClassList(lengthPtr);
+      expect(classes.address, isNot(0));
+      final length = lengthPtr.load<int>();
+      expect(length, greaterThan(1000));
+      expect(length, lessThan(10000));
+      for (var i = 0; i < length; i++) {
+        final klass = classes.elementAt(i).load();
+        final name = Utf8.fromUtf8(class_getName(klass));
+        print("'$name'");
+        if (name == "NSString") {
+          return;
+        }
+      }
+      fail("Didn't find NSString");
+    });
+
+    test("sel_getName", () {
+      final sel = sel_registerName(Utf8.toUtf8("x:y"));
+      final name = Utf8.fromUtf8(sel_getName(sel));
+      expect(name, "x:y");
     });
   });
 }

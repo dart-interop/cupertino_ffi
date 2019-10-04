@@ -27,6 +27,7 @@ void main() {
 
     // Get public key
     final publicKey = SecKeyCopyPublicKey(secKey);
+    print(publicKey);
   } finally {
     arcPop();
   }

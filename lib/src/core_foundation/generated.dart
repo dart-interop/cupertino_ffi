@@ -17,8 +17,8 @@ final _CFArrayGetTypeID_Dart _CFArrayGetTypeID = dlForCoreFoundation
     .lookupFunction<_CFArrayGetTypeID_C, _CFArrayGetTypeID_Dart>(
   "CFArrayGetTypeID",
 );
-typedef _CFArrayGetTypeID_C = Int64 Function();
-typedef _CFArrayGetTypeID_Dart = int Function();
+typedef Int64 _CFArrayGetTypeID_C();
+typedef int _CFArrayGetTypeID_Dart();
 
 /// C function 'CFBooleanGetTypeID'.
 int CFBooleanGetTypeID() {
@@ -29,8 +29,8 @@ final _CFBooleanGetTypeID_Dart _CFBooleanGetTypeID = dlForCoreFoundation
     .lookupFunction<_CFBooleanGetTypeID_C, _CFBooleanGetTypeID_Dart>(
   "CFBooleanGetTypeID",
 );
-typedef _CFBooleanGetTypeID_C = Int64 Function();
-typedef _CFBooleanGetTypeID_Dart = int Function();
+typedef Int64 _CFBooleanGetTypeID_C();
+typedef int _CFBooleanGetTypeID_Dart();
 
 /// C function 'CFDataGetTypeID'.
 int CFDataGetTypeID() {
@@ -41,8 +41,8 @@ final _CFDataGetTypeID_Dart _CFDataGetTypeID = dlForCoreFoundation
     .lookupFunction<_CFDataGetTypeID_C, _CFDataGetTypeID_Dart>(
   "CFDataGetTypeID",
 );
-typedef _CFDataGetTypeID_C = Int64 Function();
-typedef _CFDataGetTypeID_Dart = int Function();
+typedef Int64 _CFDataGetTypeID_C();
+typedef int _CFDataGetTypeID_Dart();
 
 /// C function 'CFDictionaryGetTypeID'.
 int CFDictionaryGetTypeID() {
@@ -53,8 +53,8 @@ final _CFDictionaryGetTypeID_Dart _CFDictionaryGetTypeID = dlForCoreFoundation
     .lookupFunction<_CFDictionaryGetTypeID_C, _CFDictionaryGetTypeID_Dart>(
   "CFDictionaryGetTypeID",
 );
-typedef _CFDictionaryGetTypeID_C = Int64 Function();
-typedef _CFDictionaryGetTypeID_Dart = int Function();
+typedef Int64 _CFDictionaryGetTypeID_C();
+typedef int _CFDictionaryGetTypeID_Dart();
 
 /// C function 'CFErrorGetTypeID'.
 int CFErrorGetTypeID() {
@@ -65,8 +65,8 @@ final _CFErrorGetTypeID_Dart _CFErrorGetTypeID = dlForCoreFoundation
     .lookupFunction<_CFErrorGetTypeID_C, _CFErrorGetTypeID_Dart>(
   "CFErrorGetTypeID",
 );
-typedef _CFErrorGetTypeID_C = Int64 Function();
-typedef _CFErrorGetTypeID_Dart = int Function();
+typedef Int64 _CFErrorGetTypeID_C();
+typedef int _CFErrorGetTypeID_Dart();
 
 /// C function 'CFNumberGetTypeID'.
 int CFNumberGetTypeID() {
@@ -77,8 +77,8 @@ final _CFNumberGetTypeID_Dart _CFNumberGetTypeID = dlForCoreFoundation
     .lookupFunction<_CFNumberGetTypeID_C, _CFNumberGetTypeID_Dart>(
   "CFNumberGetTypeID",
 );
-typedef _CFNumberGetTypeID_C = Int64 Function();
-typedef _CFNumberGetTypeID_Dart = int Function();
+typedef Int64 _CFNumberGetTypeID_C();
+typedef int _CFNumberGetTypeID_Dart();
 
 /// C function 'CFStringGetTypeID'.
 int CFStringGetTypeID() {
@@ -89,8 +89,8 @@ final _CFStringGetTypeID_Dart _CFStringGetTypeID = dlForCoreFoundation
     .lookupFunction<_CFStringGetTypeID_C, _CFStringGetTypeID_Dart>(
   "CFStringGetTypeID",
 );
-typedef _CFStringGetTypeID_C = Int64 Function();
-typedef _CFStringGetTypeID_Dart = int Function();
+typedef Int64 _CFStringGetTypeID_C();
+typedef int _CFStringGetTypeID_Dart();
 
 /// C function 'CFGetTypeID'.
 int CFGetTypeID(
@@ -103,10 +103,10 @@ final _CFGetTypeID_Dart _CFGetTypeID =
     dlForCoreFoundation.lookupFunction<_CFGetTypeID_C, _CFGetTypeID_Dart>(
   "CFGetTypeID",
 );
-typedef _CFGetTypeID_C = Int64 Function(
+typedef Int64 _CFGetTypeID_C(
   Pointer arg0,
 );
-typedef _CFGetTypeID_Dart = int Function(
+typedef int _CFGetTypeID_Dart(
   Pointer arg0,
 );
 
@@ -126,13 +126,13 @@ final _CFArrayCreate_Dart _CFArrayCreate =
     dlForCoreFoundation.lookupFunction<_CFArrayCreate_C, _CFArrayCreate_Dart>(
   "CFArrayCreate",
 );
-typedef _CFArrayCreate_C = Pointer<CFArray> Function(
+typedef Pointer<CFArray> _CFArrayCreate_C(
   Pointer<CFAllocator> allocator,
   Pointer pointer,
   IntPtr length,
   Pointer callbacks,
 );
-typedef _CFArrayCreate_Dart = Pointer<CFArray> Function(
+typedef Pointer<CFArray> _CFArrayCreate_Dart(
   Pointer<CFAllocator> allocator,
   Pointer pointer,
   int length,
@@ -150,10 +150,10 @@ final _CFArrayGetCount_Dart _CFArrayGetCount = dlForCoreFoundation
     .lookupFunction<_CFArrayGetCount_C, _CFArrayGetCount_Dart>(
   "CFArrayGetCount",
 );
-typedef _CFArrayGetCount_C = IntPtr Function(
+typedef IntPtr _CFArrayGetCount_C(
   Pointer<CFArray> arg0,
 );
-typedef _CFArrayGetCount_Dart = int Function(
+typedef int _CFArrayGetCount_Dart(
   Pointer<CFArray> arg0,
 );
 
@@ -171,11 +171,11 @@ final _CFArrayGetValueAtIndex_Dart _CFArrayGetValueAtIndex = dlForCoreFoundation
     .lookupFunction<_CFArrayGetValueAtIndex_C, _CFArrayGetValueAtIndex_Dart>(
   "CFArrayGetValueAtIndex",
 );
-typedef _CFArrayGetValueAtIndex_C = Pointer<CFType> Function(
+typedef Pointer<CFType> _CFArrayGetValueAtIndex_C(
   Pointer<CFArray> arg0,
   IntPtr arg1,
 );
-typedef _CFArrayGetValueAtIndex_Dart = Pointer<CFType> Function(
+typedef Pointer<CFType> _CFArrayGetValueAtIndex_Dart(
   Pointer<CFArray> arg0,
   int arg1,
 );
@@ -193,12 +193,12 @@ final _CFArrayCreateMutable_Dart _CFArrayCreateMutable = dlForCoreFoundation
     .lookupFunction<_CFArrayCreateMutable_C, _CFArrayCreateMutable_Dart>(
   "CFArrayCreateMutable",
 );
-typedef _CFArrayCreateMutable_C = Pointer<CFMutableArray> Function(
+typedef Pointer<CFMutableArray> _CFArrayCreateMutable_C(
   Pointer<CFAllocator> arg0,
   IntPtr arg1,
   Pointer arg2,
 );
-typedef _CFArrayCreateMutable_Dart = Pointer<CFMutableArray> Function(
+typedef Pointer<CFMutableArray> _CFArrayCreateMutable_Dart(
   Pointer<CFAllocator> arg0,
   int arg1,
   Pointer arg2,
@@ -216,11 +216,11 @@ final _CFArrayAppendValue_Dart _CFArrayAppendValue = dlForCoreFoundation
     .lookupFunction<_CFArrayAppendValue_C, _CFArrayAppendValue_Dart>(
   "CFArrayAppendValue",
 );
-typedef _CFArrayAppendValue_C = Void Function(
+typedef Void _CFArrayAppendValue_C(
   Pointer<CFMutableArray> arg0,
   Pointer arg1,
 );
-typedef _CFArrayAppendValue_Dart = void Function(
+typedef void _CFArrayAppendValue_Dart(
   Pointer<CFMutableArray> arg0,
   Pointer arg1,
 );
@@ -256,13 +256,13 @@ final _CFDataCreateWithBytesNoCopy_Dart _CFDataCreateWithBytesNoCopy =
         _CFDataCreateWithBytesNoCopy_Dart>(
   "CFDataCreateWithBytesNoCopy",
 );
-typedef _CFDataCreateWithBytesNoCopy_C = Pointer<CFData> Function(
+typedef Pointer<CFData> _CFDataCreateWithBytesNoCopy_C(
   Pointer<CFAllocator> arg0,
   Pointer<Uint8> arg1,
   IntPtr arg2,
   Pointer arg3,
 );
-typedef _CFDataCreateWithBytesNoCopy_Dart = Pointer<CFData> Function(
+typedef Pointer<CFData> _CFDataCreateWithBytesNoCopy_Dart(
   Pointer<CFAllocator> arg0,
   Pointer<Uint8> arg1,
   int arg2,
@@ -280,10 +280,10 @@ final _CFDataGetBytePtr_Dart _CFDataGetBytePtr = dlForCoreFoundation
     .lookupFunction<_CFDataGetBytePtr_C, _CFDataGetBytePtr_Dart>(
   "CFDataGetBytePtr",
 );
-typedef _CFDataGetBytePtr_C = Pointer<Uint8> Function(
+typedef Pointer<Uint8> _CFDataGetBytePtr_C(
   Pointer<CFData> arg0,
 );
-typedef _CFDataGetBytePtr_Dart = Pointer<Uint8> Function(
+typedef Pointer<Uint8> _CFDataGetBytePtr_Dart(
   Pointer<CFData> arg0,
 );
 
@@ -298,10 +298,10 @@ final _CFDataGetLength_Dart _CFDataGetLength = dlForCoreFoundation
     .lookupFunction<_CFDataGetLength_C, _CFDataGetLength_Dart>(
   "CFDataGetLength",
 );
-typedef _CFDataGetLength_C = IntPtr Function(
+typedef IntPtr _CFDataGetLength_C(
   Pointer<CFData> arg0,
 );
-typedef _CFDataGetLength_Dart = int Function(
+typedef int _CFDataGetLength_Dart(
   Pointer<CFData> arg0,
 );
 
@@ -322,13 +322,13 @@ final _CFDictionaryCreateMutable_Dart _CFDictionaryCreateMutable =
         _CFDictionaryCreateMutable_Dart>(
   "CFDictionaryCreateMutable",
 );
-typedef _CFDictionaryCreateMutable_C = Pointer<CFMutableDictionary> Function(
+typedef Pointer<CFMutableDictionary> _CFDictionaryCreateMutable_C(
   Pointer arg0,
   IntPtr arg1,
   Pointer arg2,
   Pointer arg3,
 );
-typedef _CFDictionaryCreateMutable_Dart = Pointer<CFMutableDictionary> Function(
+typedef Pointer<CFMutableDictionary> _CFDictionaryCreateMutable_Dart(
   Pointer arg0,
   int arg1,
   Pointer arg2,
@@ -348,12 +348,12 @@ final _CFDictionarySetValue_Dart _CFDictionarySetValue = dlForCoreFoundation
     .lookupFunction<_CFDictionarySetValue_C, _CFDictionarySetValue_Dart>(
   "CFDictionarySetValue",
 );
-typedef _CFDictionarySetValue_C = Void Function(
+typedef Void _CFDictionarySetValue_C(
   Pointer<CFMutableDictionary> arg0,
   Pointer arg1,
   Pointer arg2,
 );
-typedef _CFDictionarySetValue_Dart = void Function(
+typedef void _CFDictionarySetValue_Dart(
   Pointer<CFMutableDictionary> arg0,
   Pointer arg1,
   Pointer arg2,
@@ -370,10 +370,10 @@ final _CFDictionaryGetCount_Dart _CFDictionaryGetCount = dlForCoreFoundation
     .lookupFunction<_CFDictionaryGetCount_C, _CFDictionaryGetCount_Dart>(
   "CFDictionaryGetCount",
 );
-typedef _CFDictionaryGetCount_C = IntPtr Function(
+typedef IntPtr _CFDictionaryGetCount_C(
   Pointer<CFDictionary> arg0,
 );
-typedef _CFDictionaryGetCount_Dart = int Function(
+typedef int _CFDictionaryGetCount_Dart(
   Pointer<CFDictionary> arg0,
 );
 
@@ -391,12 +391,12 @@ final _CFDictionaryGetKeysAndValues_Dart _CFDictionaryGetKeysAndValues =
         _CFDictionaryGetKeysAndValues_Dart>(
   "CFDictionaryGetKeysAndValues",
 );
-typedef _CFDictionaryGetKeysAndValues_C = Void Function(
+typedef Void _CFDictionaryGetKeysAndValues_C(
   Pointer<CFDictionary> arg0,
   Pointer arg1,
   Pointer arg2,
 );
-typedef _CFDictionaryGetKeysAndValues_Dart = void Function(
+typedef void _CFDictionaryGetKeysAndValues_Dart(
   Pointer<CFDictionary> arg0,
   Pointer arg1,
   Pointer arg2,
@@ -414,11 +414,11 @@ final _CFDictionaryGetValue_Dart _CFDictionaryGetValue = dlForCoreFoundation
     .lookupFunction<_CFDictionaryGetValue_C, _CFDictionaryGetValue_Dart>(
   "CFDictionaryGetValue",
 );
-typedef _CFDictionaryGetValue_C = Pointer Function(
+typedef Pointer _CFDictionaryGetValue_C(
   Pointer<CFDictionary> arg0,
   Pointer arg1,
 );
-typedef _CFDictionaryGetValue_Dart = Pointer Function(
+typedef Pointer _CFDictionaryGetValue_Dart(
   Pointer<CFDictionary> arg0,
   Pointer arg1,
 );
@@ -433,8 +433,8 @@ final _CFStringGetSystemEncoding_Dart _CFStringGetSystemEncoding =
         _CFStringGetSystemEncoding_Dart>(
   "CFStringGetSystemEncoding",
 );
-typedef _CFStringGetSystemEncoding_C = Pointer<CFEncoding> Function();
-typedef _CFStringGetSystemEncoding_Dart = Pointer<CFEncoding> Function();
+typedef Pointer<CFEncoding> _CFStringGetSystemEncoding_C();
+typedef Pointer<CFEncoding> _CFStringGetSystemEncoding_Dart();
 
 /// C function 'CFErrorCreate'.
 Pointer<CFError> CFErrorCreate(
@@ -452,13 +452,13 @@ final _CFErrorCreate_Dart _CFErrorCreate =
     dlForCoreFoundation.lookupFunction<_CFErrorCreate_C, _CFErrorCreate_Dart>(
   "CFErrorCreate",
 );
-typedef _CFErrorCreate_C = Pointer<CFError> Function(
+typedef Pointer<CFError> _CFErrorCreate_C(
   Pointer<CFAllocator> allocator,
   Pointer<CFString> domain,
   Int64 code,
   Pointer<CFDictionary> userInfo,
 );
-typedef _CFErrorCreate_Dart = Pointer<CFError> Function(
+typedef Pointer<CFError> _CFErrorCreate_Dart(
   Pointer<CFAllocator> allocator,
   Pointer<CFString> domain,
   int code,
@@ -476,10 +476,10 @@ final _CFErrorGetCode_Dart _CFErrorGetCode =
     dlForCoreFoundation.lookupFunction<_CFErrorGetCode_C, _CFErrorGetCode_Dart>(
   "CFErrorGetCode",
 );
-typedef _CFErrorGetCode_C = Int64 Function(
+typedef Int64 _CFErrorGetCode_C(
   Pointer<CFError> arg0,
 );
-typedef _CFErrorGetCode_Dart = int Function(
+typedef int _CFErrorGetCode_Dart(
   Pointer<CFError> arg0,
 );
 
@@ -496,10 +496,10 @@ final _CFErrorCopyUserInfo_Dart _CFErrorCopyUserInfo = dlForCoreFoundation
     .lookupFunction<_CFErrorCopyUserInfo_C, _CFErrorCopyUserInfo_Dart>(
   "CFErrorCopyUserInfo",
 );
-typedef _CFErrorCopyUserInfo_C = Pointer<CFDictionary> Function(
+typedef Pointer<CFDictionary> _CFErrorCopyUserInfo_C(
   Pointer<CFError> arg0,
 );
-typedef _CFErrorCopyUserInfo_Dart = Pointer<CFDictionary> Function(
+typedef Pointer<CFDictionary> _CFErrorCopyUserInfo_Dart(
   Pointer<CFError> arg0,
 );
 
@@ -596,12 +596,12 @@ final _CFNumberCreate_Dart _CFNumberCreate =
     dlForCoreFoundation.lookupFunction<_CFNumberCreate_C, _CFNumberCreate_Dart>(
   "CFNumberCreate",
 );
-typedef _CFNumberCreate_C = Pointer<CFNumber> Function(
+typedef Pointer<CFNumber> _CFNumberCreate_C(
   Pointer<CFAllocator> arg0,
   IntPtr arg1,
   Pointer arg2,
 );
-typedef _CFNumberCreate_Dart = Pointer<CFNumber> Function(
+typedef Pointer<CFNumber> _CFNumberCreate_Dart(
   Pointer<CFAllocator> arg0,
   int arg1,
   Pointer arg2,
@@ -618,10 +618,10 @@ final _CFNumberGetType_Dart _CFNumberGetType = dlForCoreFoundation
     .lookupFunction<_CFNumberGetType_C, _CFNumberGetType_Dart>(
   "CFNumberGetType",
 );
-typedef _CFNumberGetType_C = IntPtr Function(
+typedef IntPtr _CFNumberGetType_C(
   Pointer<CFNumber> arg0,
 );
-typedef _CFNumberGetType_Dart = int Function(
+typedef int _CFNumberGetType_Dart(
   Pointer<CFNumber> arg0,
 );
 
@@ -638,12 +638,12 @@ final _CFNumberGetValue_Dart _CFNumberGetValue = dlForCoreFoundation
     .lookupFunction<_CFNumberGetValue_C, _CFNumberGetValue_Dart>(
   "CFNumberGetValue",
 );
-typedef _CFNumberGetValue_C = Uint8 Function(
+typedef Uint8 _CFNumberGetValue_C(
   Pointer<CFNumber> arg0,
   IntPtr arg1,
   Pointer arg2,
 );
-typedef _CFNumberGetValue_Dart = int Function(
+typedef int _CFNumberGetValue_Dart(
   Pointer<CFNumber> arg0,
   int arg1,
   Pointer arg2,
@@ -665,12 +665,12 @@ final _CFStringCreateWithCString_Dart _CFStringCreateWithCString =
         _CFStringCreateWithCString_Dart>(
   "CFStringCreateWithCString",
 );
-typedef _CFStringCreateWithCString_C = Pointer<CFString> Function(
+typedef Pointer<CFString> _CFStringCreateWithCString_C(
   Pointer<CFAllocator> arg0,
   Pointer<Utf8> arg1,
   Pointer<CFEncoding> arg2,
 );
-typedef _CFStringCreateWithCString_Dart = Pointer<CFString> Function(
+typedef Pointer<CFString> _CFStringCreateWithCString_Dart(
   Pointer<CFAllocator> arg0,
   Pointer<Utf8> arg1,
   Pointer<CFEncoding> arg2,
@@ -690,13 +690,13 @@ final _CFStringGetCString_Dart _CFStringGetCString = dlForCoreFoundation
     .lookupFunction<_CFStringGetCString_C, _CFStringGetCString_Dart>(
   "CFStringGetCString",
 );
-typedef _CFStringGetCString_C = IntPtr Function(
+typedef IntPtr _CFStringGetCString_C(
   Pointer<CFString> arg0,
   Pointer<Utf8> arg1,
   IntPtr arg2,
   Pointer<CFEncoding> arg3,
 );
-typedef _CFStringGetCString_Dart = int Function(
+typedef int _CFStringGetCString_Dart(
   Pointer<CFString> arg0,
   Pointer<Utf8> arg1,
   int arg2,
@@ -714,10 +714,10 @@ final _CFStringGetCStringPtr_Dart _CFStringGetCStringPtr = dlForCoreFoundation
     .lookupFunction<_CFStringGetCStringPtr_C, _CFStringGetCStringPtr_Dart>(
   "CFStringGetCStringPtr",
 );
-typedef _CFStringGetCStringPtr_C = Pointer<Utf8> Function(
+typedef Pointer<Utf8> _CFStringGetCStringPtr_C(
   Pointer<CFString> arg0,
 );
-typedef _CFStringGetCStringPtr_Dart = Pointer<Utf8> Function(
+typedef Pointer<Utf8> _CFStringGetCStringPtr_Dart(
   Pointer<CFString> arg0,
 );
 
@@ -732,9 +732,9 @@ final _CFStringGetLength_Dart _CFStringGetLength = dlForCoreFoundation
     .lookupFunction<_CFStringGetLength_C, _CFStringGetLength_Dart>(
   "CFStringGetLength",
 );
-typedef _CFStringGetLength_C = IntPtr Function(
+typedef IntPtr _CFStringGetLength_C(
   Pointer<CFString> arg0,
 );
-typedef _CFStringGetLength_Dart = int Function(
+typedef int _CFStringGetLength_Dart(
   Pointer<CFString> arg0,
 );

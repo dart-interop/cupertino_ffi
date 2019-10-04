@@ -26,14 +26,13 @@ final _SecAccessControlCreateWithFlags_Dart _SecAccessControlCreateWithFlags =
         _SecAccessControlCreateWithFlags_Dart>(
   "SecAccessControlCreateWithFlags",
 );
-typedef _SecAccessControlCreateWithFlags_C = Pointer<SecAccessControl> Function(
+typedef Pointer<SecAccessControl> _SecAccessControlCreateWithFlags_C(
   Pointer<CFAllocator> allocator,
   Pointer protection,
   Int64 flags,
   Pointer<Pointer<CFError>> error,
 );
-typedef _SecAccessControlCreateWithFlags_Dart = Pointer<SecAccessControl>
-    Function(
+typedef Pointer<SecAccessControl> _SecAccessControlCreateWithFlags_Dart(
   Pointer<CFAllocator> allocator,
   Pointer protection,
   int flags,
@@ -52,11 +51,11 @@ final _SecItemAdd_Dart _SecItemAdd =
     dlForSecurity.lookupFunction<_SecItemAdd_C, _SecItemAdd_Dart>(
   "SecItemAdd",
 );
-typedef _SecItemAdd_C = IntPtr Function(
+typedef IntPtr _SecItemAdd_C(
   Pointer<CFDictionary> arg0,
   Pointer<Pointer<CFType>> arg1,
 );
-typedef _SecItemAdd_Dart = int Function(
+typedef int _SecItemAdd_Dart(
   Pointer<CFDictionary> arg0,
   Pointer<Pointer<CFType>> arg1,
 );
@@ -73,11 +72,11 @@ final _SecItemCopyMatching_Dart _SecItemCopyMatching = dlForSecurity
     .lookupFunction<_SecItemCopyMatching_C, _SecItemCopyMatching_Dart>(
   "SecItemCopyMatching",
 );
-typedef _SecItemCopyMatching_C = IntPtr Function(
+typedef IntPtr _SecItemCopyMatching_C(
   Pointer<CFDictionary> query,
   Pointer<Pointer<CFType>> result,
 );
-typedef _SecItemCopyMatching_Dart = int Function(
+typedef int _SecItemCopyMatching_Dart(
   Pointer<CFDictionary> query,
   Pointer<Pointer<CFType>> result,
 );
@@ -94,11 +93,11 @@ final _SecItemUpdate_Dart _SecItemUpdate =
     dlForSecurity.lookupFunction<_SecItemUpdate_C, _SecItemUpdate_Dart>(
   "SecItemUpdate",
 );
-typedef _SecItemUpdate_C = IntPtr Function(
+typedef IntPtr _SecItemUpdate_C(
   Pointer<CFDictionary> arg0,
   Pointer<CFDictionary> arg1,
 );
-typedef _SecItemUpdate_Dart = int Function(
+typedef int _SecItemUpdate_Dart(
   Pointer<CFDictionary> arg0,
   Pointer<CFDictionary> arg1,
 );
@@ -114,10 +113,10 @@ final _SecItemDelete_Dart _SecItemDelete =
     dlForSecurity.lookupFunction<_SecItemDelete_C, _SecItemDelete_Dart>(
   "SecItemDelete",
 );
-typedef _SecItemDelete_C = IntPtr Function(
+typedef IntPtr _SecItemDelete_C(
   Pointer<CFDictionary> arg0,
 );
-typedef _SecItemDelete_Dart = int Function(
+typedef int _SecItemDelete_Dart(
   Pointer<CFDictionary> arg0,
 );
 
@@ -134,10 +133,10 @@ final _SecKeyCopyPublicKey_Dart _SecKeyCopyPublicKey = dlForSecurity
     .lookupFunction<_SecKeyCopyPublicKey_C, _SecKeyCopyPublicKey_Dart>(
   "SecKeyCopyPublicKey",
 );
-typedef _SecKeyCopyPublicKey_C = Pointer<SecKey> Function(
+typedef Pointer<SecKey> _SecKeyCopyPublicKey_C(
   Pointer<SecKey> key,
 );
-typedef _SecKeyCopyPublicKey_Dart = Pointer<SecKey> Function(
+typedef Pointer<SecKey> _SecKeyCopyPublicKey_Dart(
   Pointer<SecKey> key,
 );
 
@@ -160,14 +159,14 @@ final _SecKeyCopyKeyExchangeResult_Dart _SecKeyCopyKeyExchangeResult =
         _SecKeyCopyKeyExchangeResult_Dart>(
   "SecKeyCopyKeyExchangeResult",
 );
-typedef _SecKeyCopyKeyExchangeResult_C = Pointer<CFData> Function(
+typedef Pointer<CFData> _SecKeyCopyKeyExchangeResult_C(
   Pointer<SecKey> privateKey,
   Pointer<CFString> algorithm,
   Pointer<SecKey> publicKey,
   Pointer<CFDictionary> parameters,
   Pointer<Pointer<CFError>> error,
 );
-typedef _SecKeyCopyKeyExchangeResult_Dart = Pointer<CFData> Function(
+typedef Pointer<CFData> _SecKeyCopyKeyExchangeResult_Dart(
   Pointer<SecKey> privateKey,
   Pointer<CFString> algorithm,
   Pointer<SecKey> publicKey,
@@ -191,13 +190,13 @@ final _SecKeyCreateSignature_Dart _SecKeyCreateSignature = dlForSecurity
     .lookupFunction<_SecKeyCreateSignature_C, _SecKeyCreateSignature_Dart>(
   "SecKeyCreateSignature",
 );
-typedef _SecKeyCreateSignature_C = Pointer<CFData> Function(
+typedef Pointer<CFData> _SecKeyCreateSignature_C(
   Pointer<SecKey> key,
   Pointer<CFString> algorithm,
   Pointer<CFData> dataToSign,
   Pointer<Pointer<CFError>> error,
 );
-typedef _SecKeyCreateSignature_Dart = Pointer<CFData> Function(
+typedef Pointer<CFData> _SecKeyCreateSignature_Dart(
   Pointer<SecKey> key,
   Pointer<CFString> algorithm,
   Pointer<CFData> dataToSign,
@@ -221,13 +220,13 @@ final _SecKeyCreateDecryptedData_Dart _SecKeyCreateDecryptedData =
         _SecKeyCreateDecryptedData_Dart>(
   "SecKeyCreateDecryptedData",
 );
-typedef _SecKeyCreateDecryptedData_C = Pointer<CFData> Function(
+typedef Pointer<CFData> _SecKeyCreateDecryptedData_C(
   Pointer<SecKey> key,
   IntPtr algorithm,
   Pointer<CFData> ciphertext,
   Pointer<Pointer<CFError>> error,
 );
-typedef _SecKeyCreateDecryptedData_Dart = Pointer<CFData> Function(
+typedef Pointer<CFData> _SecKeyCreateDecryptedData_Dart(
   Pointer<SecKey> key,
   int algorithm,
   Pointer<CFData> ciphertext,
@@ -251,13 +250,13 @@ final _SecKeyCreateEncryptedData_Dart _SecKeyCreateEncryptedData =
         _SecKeyCreateEncryptedData_Dart>(
   "SecKeyCreateEncryptedData",
 );
-typedef _SecKeyCreateEncryptedData_C = Pointer<CFData> Function(
+typedef Pointer<CFData> _SecKeyCreateEncryptedData_C(
   Pointer<SecKey> key,
   IntPtr algorithm,
   Pointer<CFData> plaintext,
   Pointer<Pointer<CFError>> error,
 );
-typedef _SecKeyCreateEncryptedData_Dart = Pointer<CFData> Function(
+typedef Pointer<CFData> _SecKeyCreateEncryptedData_Dart(
   Pointer<SecKey> key,
   int algorithm,
   Pointer<CFData> plaintext,
@@ -278,11 +277,11 @@ final _SecKeyCreateRandomKey_Dart _SecKeyCreateRandomKey = dlForSecurity
     .lookupFunction<_SecKeyCreateRandomKey_C, _SecKeyCreateRandomKey_Dart>(
   "SecKeyCreateRandomKey",
 );
-typedef _SecKeyCreateRandomKey_C = Pointer<SecKey> Function(
+typedef Pointer<SecKey> _SecKeyCreateRandomKey_C(
   Pointer<CFDictionary> arg0,
   Pointer<Pointer<CFError>> arg1,
 );
-typedef _SecKeyCreateRandomKey_Dart = Pointer<SecKey> Function(
+typedef Pointer<SecKey> _SecKeyCreateRandomKey_Dart(
   Pointer<CFDictionary> arg0,
   Pointer<Pointer<CFError>> arg1,
 );

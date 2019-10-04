@@ -18,57 +18,21 @@
 // OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE
 // OR OTHER DEALINGS IN THE SOFTWARE.
 
-import 'dart:ffi';
+import 'package:ffi_tool/c.dart';
 
-import 'package:ffi/ffi.dart';
-import 'package:cupertino_ffi/libc.dart';
+final libraryForLibc = Library(
+  importedUris: [
+    "package:ffi/ffi.dart",
+  ],
+  dynamicLibraryIdentifier: "dlForLibc",
+  dynamicLibraryPath: "/usr/lib/libc.dylib",
+  elements: _elements,
+);
 
-import 'generated.dart';
-
-final _classes = <String, Pointer<Klass>>{};
-
-final _selectors = <String, Pointer<SEL>>{};
-
-Pointer allocate(String name) {
-  return class_createInstance(getClass(name), 0);
-}
-
-Pointer<Klass> getClass(String name) {
-  return _classes.putIfAbsent(name, () {
-    final stringPtr = Utf8.toUtf8(name);
-    final result = objc_getClass(stringPtr);
-    stringPtr.free();
-    return result;
-  });
-}
-
-Pointer<SEL> getSelector(String name) {
-  return _selectors.putIfAbsent(name, () {
-    final stringPtr = Utf8.toUtf8(name);
-    final result = sel_registerName(stringPtr);
-    stringPtr.free();
-    _selectors[name] = result;
-    return result;
-  });
-}
-
-@unsized
-class IMP extends Struct<IMP> {}
-
-@unsized
-class Instance extends Struct<Instance> {}
-
-@unsized
-class Klass extends Struct<Klass> {}
-
-@unsized
-class Method extends Struct<Method> {}
-
-@unsized
-class Property extends Struct<Property> {}
-
-@unsized
-class Protocol extends Struct<Protocol> {}
-
-@unsized
-class SEL extends Struct<SEL> {}
+final _elements = <Element>[
+  Func(
+    name: "dlopen",
+    parameterTypes: ["*Utf8", "Uint32"],
+    returnType: "*void",
+  ),
+];

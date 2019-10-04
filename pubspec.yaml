@@ -1,5 +1,5 @@
 name: cupertino_ffi
-version: 0.1.2
+version: 0.1.3
 description:
   Provides C bindings ('dart:ffi') for various APIs by Apple. These include Core Foundation,
   Security framework, and Objective-C runtime.

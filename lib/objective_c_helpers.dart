@@ -28,102 +28,202 @@ import 'dart:typed_data';
 import 'package:cupertino_ffi/core_foundation.dart';
 import 'package:cupertino_ffi/objective_c.dart';
 import 'package:ffi/ffi.dart';
+import 'package:meta/meta.dart';
 
-class BindingsGenerator {
-  String libraryFor(LibraryMirror mirror) {
-    final sb = StringBuffer();
-    sb.write("// AUTOMATICALLY GENERATED");
-    for (var className in mirror.classes.keys.toList()..sort()) {
-      sb.write("\n");
-      sb.write("\n");
-      sb.write(classFor(mirror.classes[className]));
+class ClassMirror {
+  final String name;
+  final Map<String, MethodMirror> methodsBySelector = {};
+
+  Map<String, List<MethodMirror>> _methodsByName;
+
+  ClassMirror(this.name);
+
+  bool get isPrivate => name.startsWith("_");
+
+  Map<String, List<MethodMirror>> get methodsByName {
+    if (_methodsByName == null) {
+      final result = <String, List<MethodMirror>>{};
+      for (var method in methodsBySelector.values) {
+        final list =
+            result.putIfAbsent(method.dartIdentifier, () => <MethodMirror>[]);
+        list.add(method);
+      }
+      this._methodsByName = result;
     }
-    return sb.toString();
-  }
-
-  String classFor(ClassMirror mirror) {
-    final name = mirror.name;
-    final sb = StringBuffer();
-    sb.write("class $name extends Struct<$name> {\n");
-    sb.write("  static Pointer<$name> alloc() {\n");
-    sb.write("    throw UnimplementedError();");
-    sb.write("  }\n");
-    sb.write("}\n");
-    return sb.toString();
-  }
-
-  String methodFor(MethodMirror mirror) {
-    final sb = StringBuffer();
-    return sb.toString();
+    return _methodsByName;
   }
 }
 
+class LibraryMirror {
+  final String path;
+  final Map<String, ClassMirror> classes = {};
+
+  LibraryMirror(this.path);
+
+  static LibraryMirror getForPath(String path) {
+    DynamicLibrary.open(path);
+    final system = SystemMirror.get();
+    return system.libraries[path];
+  }
+}
+
+class MethodMirror {
+  final bool isClassMethod;
+  final bool isInstanceMethod;
+  final String selector;
+  final String returnType;
+  final List<ParameterMirror> parameters;
+
+  MethodMirror({
+    @required this.isClassMethod,
+    @required this.isInstanceMethod,
+    @required this.selector,
+    @required this.returnType,
+    @required this.parameters,
+  });
+
+  bool get isPrivate => selector.startsWith("_") || selector.startsWith(".");
+
+  String get dartIdentifier {
+    final s = this.selector;
+    final i = s.indexOf(":");
+    if (i < 0) {
+      return _dartIdentifierFrom(s);
+    }
+    return _dartIdentifierFrom(s.substring(0, i));
+  }
+
+  List<String> get selectorParts {
+    final selector = this.selector;
+    if (!selector.endsWith(":")) {
+      return [selector];
+    }
+    return selector.substring(0, selector.length - 1).split(":");
+  }
+}
+
+class ParameterMirror {
+  final String type;
+  final String name;
+  final String rawType;
+  ParameterMirror({
+    @required this.type,
+    @required this.name,
+    @required this.rawType,
+  });
+}
+
 class SystemMirror {
-  static SystemMirror get() {
+  final Map<String, LibraryMirror> libraries = {};
+
+  static SystemMirror get({bool private = false}) {
     arcPush();
     try {
       final result = SystemMirror();
-      final listCapacity = 100000;
-      final list = Pointer<Pointer<Klass>>.allocate(count: listCapacity);
-      final listLength = objc_getClassList(list, listCapacity);
-      for (var i = 0; i < listLength; i++) {
-        final Pointer<Klass> klass = list.elementAt(i).load();
+      final classLengthPtr = Pointer<Uint32>.allocate();
+      final classes = objc_copyClassList(classLengthPtr);
+      final classLength = classLengthPtr.load<int>();
+      for (var i = 0; i < classLength; i++) {
+        // Load class
+        final Pointer<Klass> klass = classes.elementAt(i).load();
 
         // Library
         final libraryName = Utf8.fromUtf8(class_getImageName(klass));
         var library = result.libraries[libraryName];
         if (library == null) {
-          library = LibraryMirror();
+          library = LibraryMirror(libraryName);
           result.libraries[libraryName] = library;
         }
 
         // Get class name
-        final klassName = Utf8.fromUtf8(class_getName(klass));
-
-        // Ignore private names
-        if (klassName.startsWith("_")) {
+        final className = Utf8.fromUtf8(class_getName(klass));
+        if (!private && className.startsWith("_")) {
           continue;
         }
 
         // Create class
-        final classInfo = ClassMirror(klassName);
-        library.classes[klassName] = classInfo;
+        final classMirror = ClassMirror(className);
+        library.classes[className] = classMirror;
 
         // Methods
         final methodsLengthPtr = Pointer<Uint32>.allocate();
         final methods = class_copyMethodList(klass, methodsLengthPtr);
+        arcAddNoARC(methods);
         final methodsLength = methodsLengthPtr.load<int>();
         for (var i = 0; i < methodsLength; i++) {
-          final method = methods.elementAt(i);
+          final method = methods.elementAt(i).load();
 
           // Get name
-          final selector = method_getName(method);
-          final selectorNamePtr = sel_getName(selector);
-          final methodName = _fromUtf8(selectorNamePtr);
+          final selectorPtr = method_getName(method);
+          final selectorNamePtr = sel_getName(selectorPtr);
+          final selector = Utf8.fromUtf8(selectorNamePtr);
 
-          //
-          // THIS DOES NOT WORK
-          //
+          if (!private &&
+              (selector.startsWith("_") ||
+                  selector.startsWith("bs_") ||
+                  selector.startsWith("."))) {
+            continue;
+          }
 
           // Get return type
-//          final returnTypePtr = method_copyReturnType(method);
-//          final returnType = _fromUtf8(returnTypePtr);
-//
-//          // Get parameters
-//          final parametersLength = method_getNumberOfArguments(method);
-//          final parameters = List<ParameterMirror>(parametersLength);
-//          for (var i = 0; i < parametersLength; i++) {
-//            final parameterNamePtr = method_copyArgumentType(method, i);
-//            final parameterName = _fromUtf8(parameterNamePtr);
-//            parameterNamePtr.free();
-//            parameters[i] = ParameterMirror(parameterName);
-//          }
+          final returnTypePtr = method_copyReturnType(method);
+          var returnType = Utf8.fromUtf8(returnTypePtr);
+          returnType = _typeFromEncoded(
+            className,
+            selector,
+            -1,
+            returnType,
+            returnType,
+          );
+
+          // Determine parameter names
+          final parametersLength = method_getNumberOfArguments(method);
+          final parameterNames = _parameterNamesFromSelector(
+            selector,
+            parametersLength,
+          );
+
+          // Get parameters
+          final parameters = List<ParameterMirror>(parametersLength);
+          for (var i = 0; i < parametersLength; i++) {
+            final rawTypePtr = method_copyArgumentType(method, i);
+            final rawType = Utf8.fromUtf8(rawTypePtr);
+            rawTypePtr.free();
+
+            final type = _typeFromEncoded(
+              className,
+              selector,
+              i,
+              rawType,
+              rawType,
+            );
+            parameters[i] = ParameterMirror(
+              type: type,
+              name: parameterNames[i],
+              rawType: rawType,
+            );
+          }
+          // Is this an instance method?
+          var isInstanceMethod = false;
+
+          // Is this a class method?
+          var isClassMethod = false;
+
+          if (parameters[1].rawType == ":") {
+            if (parameters[0].rawType == "#") {
+              isClassMethod = true;
+            } else {
+              isInstanceMethod = true;
+            }
+          }
 
           // We got all information
-          classInfo.methods[methodName] = MethodMirror(
-            methodName,
-            null, // returnType,
-            null, // parameters,
+          classMirror.methodsBySelector[selector] = MethodMirror(
+            isInstanceMethod: isInstanceMethod,
+            isClassMethod: isClassMethod,
+            selector: selector,
+            returnType: returnType,
+            parameters: parameters,
           );
         }
       }
@@ -133,38 +233,190 @@ class SystemMirror {
     }
   }
 
-  static String _fromUtf8(Pointer<Utf8> pointer) {
-    final length = Utf8.strlen(pointer);
-    final bytes = pointer.cast<Uint8>().asExternalTypedData(
-          count: length,
-        ) as Uint8List;
-    return utf8.decode(
-      bytes,
-      allowMalformed: true,
+  static List<String> _parameterNamesFromSelector(String selector, int length) {
+    if (selector.endsWith(":")) {
+      selector = selector.substring(0, selector.length - 1);
+    }
+    final usedIdentifier = <String>{};
+    final result = List<String>.generate(length, (i) => "_arg$i");
+    final originalNames = selector.split(":").skip(1).toList();
+    for (var i = 0; i < originalNames.length; i++) {
+      final originalName = originalNames[i];
+      if (originalName != "") {
+        for (var nameIndex = 1; nameIndex < 10; nameIndex++) {
+          // First time use the identifier,
+          // Subsequent times append a number after the identifier.
+          String dartIdentifier;
+          if (nameIndex == 1) {
+            dartIdentifier = _dartIdentifierFrom(originalName);
+          } else {
+            dartIdentifier = _dartIdentifierFrom("name$nameIndex");
+          }
+
+          // Does the identifier conflict with a previous identifier?
+          if (usedIdentifier.add(dartIdentifier)) {
+            // No
+            result[length - originalNames.length + i] =
+                _dartIdentifierFrom(dartIdentifier);
+            break;
+          }
+        }
+      }
+    }
+
+    // If possible, choose a pretty name for the third parameter.
+    if (result.length >= 3) {
+      final isNamedAfterFirstThree = result
+          .skip(3)
+          .every((name) => !name.startsWith("_") && !result.contains("arg"));
+      if (isNamedAfterFirstThree) {
+        result[2] = "arg";
+      }
+    }
+
+    return result;
+  }
+}
+
+String _typeFromEncoded(String className, String methodName, int parameter,
+    String original, String type) {
+  if (type.startsWith("[")) {
+    // Array
+    return "*void";
+  }
+  if (type.startsWith("{")) {
+    // Struct
+    return "*void";
+  }
+  if (type.startsWith("(")) {
+    // Union
+    return "*void";
+  }
+  if (type.startsWith("^")) {
+    // Pointer
+    final rest = _typeFromEncoded(
+      className,
+      methodName,
+      parameter,
+      original,
+      type.substring(1),
+    );
+    return "*$rest";
+  }
+  if (type.startsWith("V") ||
+      type.startsWith("r") ||
+      type.startsWith("n") ||
+      type.startsWith("N") ||
+      type.startsWith("o") ||
+      type.startsWith("O")) {
+    return _typeFromEncoded(
+      className,
+      methodName,
+      parameter,
+      original,
+      type.substring(1),
     );
   }
+  switch (type) {
+// Special
+    case "@": // any object
+      return "*void";
+    case "@?": // ?
+      return "*void";
+    case "#": // Class
+      return "*void";
+    case ":": // Selector
+      return "*void";
+    case "v": // void
+      return "void";
+    case "*": // char*
+      return "*Utf8";
+    case "B": // Block
+      return "*void";
+    case "A": // ?
+      return "void";
 
-  final Map<String, LibraryMirror> libraries = {};
+// Signed integer types
+    case "c":
+      return "Int8";
+    case "s":
+      return "Int16";
+    case "i":
+      return "Int32";
+    case "q":
+      return "Int64";
+
+// Unsigned integer types
+    case "C":
+      return "Uint8";
+    case "S":
+      return "Uint16";
+    case "I":
+      return "Uint32";
+    case "Q":
+      return "Uint64";
+
+// Other integer types
+    case "l":
+      return "Int32";
+    case "L":
+      return "Int32";
+
+// Floating-point types
+    case "f":
+      return "float32";
+    case "d":
+      return "float64";
+    case "F":
+      return "float32";
+    case "D":
+      return "float64";
+
+// Bitfields
+    case "0":
+      return "Uint8";
+    case "1":
+      return "Uint8";
+    case "2":
+      return "Uint8";
+    case "3":
+      return "Uint8";
+    case "4":
+      return "Uint8";
+    case "5":
+      return "Uint8";
+    case "6":
+      return "Uint8";
+    case "7":
+      return "Uint8";
+    case "8":
+      return "Uint8";
+    case "9":
+      return "Uint8";
+
+// Unknown
+    case "*r":
+      return "*void";
+    case "?":
+      return "*void";
+    default:
+      throw ArgumentError(
+        "Class '$className' method '$methodName' parameter index $parameter has unsupported type encoding '$original' (what is '${type}'?)",
+      );
+  }
 }
 
-class LibraryMirror {
-  final Map<String, ClassMirror> classes = {};
-}
-
-class ClassMirror {
-  final String name;
-  final Map<String, MethodMirror> methods = {};
-  ClassMirror(this.name);
-}
-
-class MethodMirror {
-  final String name;
-  final String returnType;
-  final List<ParameterMirror> parameters;
-  MethodMirror(this.name, this.returnType, this.parameters);
-}
-
-class ParameterMirror {
-  final String type;
-  ParameterMirror(this.type);
+String _dartIdentifierFrom(String s) {
+  if (s.startsWith("\$")) {
+    final rest = _dartIdentifierFrom(s.substring(1));
+    return "\$\$$rest";
+  }
+  switch (s) {
+    case "for":
+      return "\$for";
+    case "class":
+      return "\$class";
+    default:
+      return s;
+  }
 }

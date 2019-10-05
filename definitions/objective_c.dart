@@ -48,6 +48,11 @@ final _elements = <Element>[
     returnType: "*Method",
   ),
   Func(
+    name: "class_createInstance",
+    parameterTypes: ["*Klass", "IntPtr"],
+    returnType: "*void",
+  ),
+  Func(
     name: "class_getImageName",
     parameterTypes: ["*Klass"],
     returnType: "*Utf8",
@@ -68,9 +73,19 @@ final _elements = <Element>[
     returnType: "*Utf8",
   ),
   Func(
+    name: "class_getProperty",
+    parameterTypes: ["*Klass", "*Utf8"],
+    returnType: "*Property",
+  ),
+  Func(
     name: "class_respondsToSelector",
     parameterTypes: ["*Klass", "*SEL"],
     returnType: "Uint8",
+  ),
+  Func(
+    name: "method_getName",
+    parameterTypes: ["*Method"],
+    returnType: "*SEL",
   ),
   Func(
     name: "method_copyArgumentType",
@@ -83,16 +98,6 @@ final _elements = <Element>[
     returnType: "*Utf8",
   ),
   Func(
-    name: "class_createInstance",
-    parameterTypes: ["*Klass", "IntPtr"],
-    returnType: "*void",
-  ),
-  Func(
-    name: "method_getName",
-    parameterTypes: ["*Method"],
-    returnType: "*SEL",
-  ),
-  Func(
     name: "method_getNumberOfArguments",
     parameterTypes: ["*Method"],
     returnType: "Uint32",
@@ -103,19 +108,29 @@ final _elements = <Element>[
     returnType: "**Klass",
   ),
   Func(
+    name: "objc_copyProtocolList",
+    parameterTypes: ["*Uint32"],
+    returnType: "**Protocol",
+  ),
+  Func(
     name: "objc_getClass",
     parameterTypes: ["*Utf8"],
     returnType: "*Klass",
   ),
   Func(
     name: "property_getName",
-    parameterTypes: ["*Klass", "Uint32"],
-    returnType: "Uint32",
+    parameterTypes: ["*Property"],
+    returnType: "*Utf8",
+  ),
+  Func(
+    name: "property_getAttributeValue",
+    parameterTypes: ["*Property", "*Utf8"],
+    returnType: "*Utf8",
   ),
   Func(
     name: "protocol_getName",
-    parameterTypes: ["*Protocol", "Uint32"],
-    returnType: "Uint32",
+    parameterTypes: ["*Protocol"],
+    returnType: "*Utf8",
   ),
   Func(
     name: "sel_getName",

@@ -13,7 +13,7 @@ void main() {
     final allocated = NSString.allocate();
 
     // Initialize
-    final nsString = NSString.initWithCString$(
+    final nsString = NSString.initWithCString(
       allocated,
       Utf8.toUtf8("example"),
     );

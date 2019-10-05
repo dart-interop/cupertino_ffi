@@ -1,7 +1,8 @@
 name: cupertino_ffi
-version: 0.1.3
+version: 0.1.5
 description:
-  A large number of APIs by Apple. These automatically generated Dart libraries use 'dart:ffi'.
+  A large number of APIs by Apple made available with 'dart:ffi'. Contains helpers for using
+  any Objective-C library.
 homepage: https://github.com/dart-interop/cupertino_ffi
 author: terrier989 <terrier989@gmail.com>
 

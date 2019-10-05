@@ -18,7 +18,7 @@
 // OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE
 // OR OTHER DEALINGS IN THE SOFTWARE.
 
-/// C bindings for _Core Foundation_ in iOS/Mac OS X.
+/// Bindings for _Core Foundation_ in iOS/Mac OS X.
 library cupertino_ffi.core_foundation;
 
 export 'src/core_foundation/allocator.dart';

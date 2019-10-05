@@ -1,3 +1,5 @@
+// AUTOMATICALLY GENERATED. DO NOT EDIT.
+
 /// Automatically generated API for [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
@@ -21,9 +23,6 @@ void _openDynamicLibrary() {
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMAccessControl extends Struct<HMAccessControl> {
   factory HMAccessControl._() {
@@ -38,7 +37,7 @@ class HMAccessControl extends Struct<HMAccessControl> {
     Pointer<HMAccessControl> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("cachedHash"),
     );
@@ -49,7 +48,7 @@ class HMAccessControl extends Struct<HMAccessControl> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("encodeWithCoder:"),
       arg,
@@ -60,7 +59,7 @@ class HMAccessControl extends Struct<HMAccessControl> {
     Pointer<HMAccessControl> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("hash"),
     );
@@ -70,7 +69,7 @@ class HMAccessControl extends Struct<HMAccessControl> {
     Pointer<HMAccessControl> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("init"),
     );
@@ -81,7 +80,7 @@ class HMAccessControl extends Struct<HMAccessControl> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithCoder:"),
       arg,
@@ -93,7 +92,7 @@ class HMAccessControl extends Struct<HMAccessControl> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithUser:"),
       arg,
@@ -105,7 +104,7 @@ class HMAccessControl extends Struct<HMAccessControl> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isEqual:"),
       arg,
@@ -117,7 +116,7 @@ class HMAccessControl extends Struct<HMAccessControl> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setUser:"),
       arg,
@@ -128,16 +127,13 @@ class HMAccessControl extends Struct<HMAccessControl> {
     Pointer<HMAccessControl> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("user"),
     );
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMAccessory extends Struct<HMAccessory> {
   factory HMAccessory._() {
@@ -152,7 +148,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer<HMAccessory> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("accessoryFlags"),
     );
@@ -162,7 +158,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer<HMAccessory> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("accessoryProfiles"),
     );
@@ -172,7 +168,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer<HMAccessory> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("accessoryReprovisionState"),
     );
@@ -182,7 +178,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer<HMAccessory> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("accountIdentifier"),
     );
@@ -194,7 +190,7 @@ class HMAccessory extends Struct<HMAccessory> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("addControlTarget:completionHandler:"),
       arg,
@@ -207,7 +203,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("addControlTargetUUIDs:"),
       arg,
@@ -218,7 +214,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer<HMAccessory> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("additionalSetupStatus"),
     );
@@ -228,7 +224,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer<HMAccessory> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("applicationData"),
     );
@@ -238,7 +234,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer<HMAccessory> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int64(
+    return _call_ptr_ptr_returns_Int64(
       _self,
       _objc.getSelector("associationOptions"),
     );
@@ -248,7 +244,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer<HMAccessory> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("bridgedAccessory"),
     );
@@ -258,7 +254,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer<HMAccessory> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("bundleID"),
     );
@@ -268,7 +264,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer<HMAccessory> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("cameraProfiles"),
     );
@@ -278,7 +274,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer<HMAccessory> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("category"),
     );
@@ -288,7 +284,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer<HMAccessory> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int64(
+    return _call_ptr_ptr_returns_Int64(
       _self,
       _objc.getSelector("certificationStatus"),
     );
@@ -298,7 +294,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer<HMAccessory> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("configuredName"),
     );
@@ -308,7 +304,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer<HMAccessory> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("containerHome"),
     );
@@ -318,7 +314,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer<HMAccessory> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("context"),
     );
@@ -328,7 +324,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer<HMAccessory> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("controlTargetUUIDs"),
     );
@@ -338,7 +334,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer<HMAccessory> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("controlTargets"),
     );
@@ -348,7 +344,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer<HMAccessory> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("currentServices"),
     );
@@ -358,7 +354,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer<HMAccessory> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("dealloc"),
     );
@@ -368,7 +364,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer<HMAccessory> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("delegate"),
     );
@@ -378,7 +374,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer<HMAccessory> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("description"),
     );
@@ -388,7 +384,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer<HMAccessory> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("device"),
     );
@@ -398,7 +394,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer<HMAccessory> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("deviceIdentifier"),
     );
@@ -409,7 +405,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("encodeWithCoder:"),
       arg,
@@ -420,7 +416,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer<HMAccessory> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("firmwareUpdateAvailable"),
     );
@@ -430,7 +426,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer<HMAccessory> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("firmwareVersion"),
     );
@@ -441,7 +437,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("handleRuntimeStateUpdate:"),
       arg,
@@ -452,7 +448,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer<HMAccessory> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("home"),
     );
@@ -462,7 +458,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer<HMAccessory> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("identifier"),
     );
@@ -472,7 +468,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer<HMAccessory> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("identifiersForBridgedAccessories"),
     );
@@ -483,7 +479,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("identifyWithCompletionHandler:"),
       arg,
@@ -494,7 +490,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer<HMAccessory> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("init"),
     );
@@ -505,7 +501,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithCoder:"),
       arg,
@@ -516,7 +512,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer<HMAccessory> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isAdditionalSetupRequired"),
     );
@@ -526,7 +522,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer<HMAccessory> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isBlocked"),
     );
@@ -536,7 +532,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer<HMAccessory> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isBridged"),
     );
@@ -546,7 +542,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer<HMAccessory> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isControllable"),
     );
@@ -556,7 +552,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer<HMAccessory> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isCurrentAccessory"),
     );
@@ -566,7 +562,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer<HMAccessory> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isFirmwareUpdateAvailable"),
     );
@@ -576,7 +572,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer<HMAccessory> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isReachable"),
     );
@@ -586,7 +582,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer<HMAccessory> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isSuspendCapable"),
     );
@@ -596,7 +592,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer<HMAccessory> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("logIdentifier"),
     );
@@ -606,7 +602,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer<HMAccessory> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("manufacturer"),
     );
@@ -616,7 +612,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer<HMAccessory> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("mediaProfile"),
     );
@@ -626,7 +622,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer<HMAccessory> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("messageReceiveQueue"),
     );
@@ -636,7 +632,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer<HMAccessory> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("messageTargetUUID"),
     );
@@ -646,7 +642,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer<HMAccessory> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("model"),
     );
@@ -656,7 +652,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer<HMAccessory> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("name"),
     );
@@ -666,7 +662,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer<HMAccessory> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("needsReprovisioning"),
     );
@@ -677,7 +673,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("notifyDelegateOfAppDataUpdateForService:"),
       arg,
@@ -688,7 +684,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer<HMAccessory> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("paired"),
     );
@@ -698,7 +694,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer<HMAccessory> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("pairingIdentity"),
     );
@@ -710,7 +706,7 @@ class HMAccessory extends Struct<HMAccessory> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_p_returns_void(
+    _call_ptr_ptr_Int8_ptr_returns_void(
       _self,
       _objc.getSelector("pairingIdentityWithPrivateKey:completionHandler:"),
       arg,
@@ -722,7 +718,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer<HMAccessory> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("profiles"),
     );
@@ -733,7 +729,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("queryAdvertisementInformationWithCompletionHandler:"),
       arg,
@@ -744,7 +740,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer<HMAccessory> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int64(
+    return _call_ptr_ptr_returns_Int64(
       _self,
       _objc.getSelector("reachableTransports"),
     );
@@ -754,7 +750,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer<HMAccessory> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("remoteLoginHandler"),
     );
@@ -766,7 +762,7 @@ class HMAccessory extends Struct<HMAccessory> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("removeControlTarget:completionHandler:"),
       arg,
@@ -779,7 +775,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("removeControlTargetUUIDs:"),
       arg,
@@ -790,7 +786,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer<HMAccessory> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("resetControlTargetUUIDs"),
     );
@@ -801,7 +797,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("resetControlTargetsWithCompletionHandler:"),
       arg,
@@ -812,7 +808,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer<HMAccessory> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("room"),
     );
@@ -822,7 +818,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer<HMAccessory> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("serialNumber"),
     );
@@ -832,7 +828,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer<HMAccessory> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("services"),
     );
@@ -843,7 +839,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setAccessoryFlags:"),
       arg,
@@ -855,7 +851,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setAccessoryProfiles:"),
       arg,
@@ -867,7 +863,7 @@ class HMAccessory extends Struct<HMAccessory> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Uint64_returns_void(
+    _call_ptr_ptr_Uint64_returns_void(
       _self,
       _objc.getSelector("setAccessoryReprovisionState:"),
       arg,
@@ -879,7 +875,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setAccountIdentifier:"),
       arg,
@@ -891,7 +887,7 @@ class HMAccessory extends Struct<HMAccessory> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Uint64_returns_void(
+    _call_ptr_ptr_Uint64_returns_void(
       _self,
       _objc.getSelector("setAdditionalSetupStatus:"),
       arg,
@@ -903,7 +899,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setApplicationData:"),
       arg,
@@ -915,7 +911,7 @@ class HMAccessory extends Struct<HMAccessory> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int64_returns_void(
+    _call_ptr_ptr_Int64_returns_void(
       _self,
       _objc.getSelector("setAssociationOptions:"),
       arg,
@@ -927,7 +923,7 @@ class HMAccessory extends Struct<HMAccessory> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setBlocked:"),
       arg,
@@ -939,7 +935,7 @@ class HMAccessory extends Struct<HMAccessory> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setBridgedAccessory:"),
       arg,
@@ -951,7 +947,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setBundleID:"),
       arg,
@@ -963,7 +959,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setCategory:"),
       arg,
@@ -975,7 +971,7 @@ class HMAccessory extends Struct<HMAccessory> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int64_returns_void(
+    _call_ptr_ptr_Int64_returns_void(
       _self,
       _objc.getSelector("setCertificationStatus:"),
       arg,
@@ -987,7 +983,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setConfiguredName:"),
       arg,
@@ -999,7 +995,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setContext:"),
       arg,
@@ -1011,7 +1007,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setControlTargetUUIDs:"),
       arg,
@@ -1023,7 +1019,7 @@ class HMAccessory extends Struct<HMAccessory> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setControllable:"),
       arg,
@@ -1035,7 +1031,7 @@ class HMAccessory extends Struct<HMAccessory> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setCurrentAccessory:"),
       arg,
@@ -1047,7 +1043,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setCurrentServices:"),
       arg,
@@ -1059,7 +1055,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setDelegate:"),
       arg,
@@ -1071,7 +1067,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setDevice:"),
       arg,
@@ -1083,7 +1079,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setDeviceIdentifier:"),
       arg,
@@ -1095,7 +1091,7 @@ class HMAccessory extends Struct<HMAccessory> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setFirmwareUpdateAvailable:"),
       arg,
@@ -1107,7 +1103,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setFirmwareVersion:"),
       arg,
@@ -1119,7 +1115,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setHome:"),
       arg,
@@ -1131,7 +1127,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setManufacturer:"),
       arg,
@@ -1143,7 +1139,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setModel:"),
       arg,
@@ -1155,7 +1151,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setName:"),
       arg,
@@ -1167,7 +1163,7 @@ class HMAccessory extends Struct<HMAccessory> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setNeedsReprovisioning:"),
       arg,
@@ -1179,7 +1175,7 @@ class HMAccessory extends Struct<HMAccessory> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setPaired:"),
       arg,
@@ -1191,7 +1187,7 @@ class HMAccessory extends Struct<HMAccessory> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setReachable:"),
       arg,
@@ -1203,7 +1199,7 @@ class HMAccessory extends Struct<HMAccessory> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int64_returns_void(
+    _call_ptr_ptr_Int64_returns_void(
       _self,
       _objc.getSelector("setReachableTransports:"),
       arg,
@@ -1215,7 +1211,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setRemoteLoginHandler:"),
       arg,
@@ -1227,7 +1223,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setRoom:"),
       arg,
@@ -1239,7 +1235,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setSerialNumber:"),
       arg,
@@ -1251,7 +1247,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setSettings:"),
       arg,
@@ -1263,7 +1259,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setSoftwareUpdateController:"),
       arg,
@@ -1275,7 +1271,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setSoftwareVersion:"),
       arg,
@@ -1287,7 +1283,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setStoreID:"),
       arg,
@@ -1299,7 +1295,7 @@ class HMAccessory extends Struct<HMAccessory> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setSupportsIdentify:"),
       arg,
@@ -1311,7 +1307,7 @@ class HMAccessory extends Struct<HMAccessory> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setSupportsMediaAccessControl:"),
       arg,
@@ -1323,7 +1319,7 @@ class HMAccessory extends Struct<HMAccessory> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setSupportsTargetControl:"),
       arg,
@@ -1335,7 +1331,7 @@ class HMAccessory extends Struct<HMAccessory> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setSupportsTargetController:"),
       arg,
@@ -1347,7 +1343,7 @@ class HMAccessory extends Struct<HMAccessory> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setSuspendCapable:"),
       arg,
@@ -1359,7 +1355,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setSymptomsHandler:"),
       arg,
@@ -1371,7 +1367,7 @@ class HMAccessory extends Struct<HMAccessory> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setTargetControllerHardwareSupport:"),
       arg,
@@ -1383,7 +1379,7 @@ class HMAccessory extends Struct<HMAccessory> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Uint64_returns_void(
+    _call_ptr_ptr_Uint64_returns_void(
       _self,
       _objc.getSelector("setTransportTypes:"),
       arg,
@@ -1395,7 +1391,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setUniqueIdentifiersForBridgedAccessories:"),
       arg,
@@ -1407,7 +1403,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setUuid:"),
       arg,
@@ -1419,7 +1415,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setWifiNetworkInfo:"),
       arg,
@@ -1430,7 +1426,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer<HMAccessory> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("settings"),
     );
@@ -1440,7 +1436,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer<HMAccessory> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("softwareUpdateController"),
     );
@@ -1450,7 +1446,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer<HMAccessory> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("softwareVersion"),
     );
@@ -1460,7 +1456,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer<HMAccessory> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("storeID"),
     );
@@ -1470,7 +1466,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer<HMAccessory> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("supportsIdentify"),
     );
@@ -1480,7 +1476,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer<HMAccessory> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("supportsMediaAccessControl"),
     );
@@ -1490,7 +1486,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer<HMAccessory> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("supportsTargetControl"),
     );
@@ -1500,7 +1496,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer<HMAccessory> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("supportsTargetController"),
     );
@@ -1510,7 +1506,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer<HMAccessory> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("suspendCapable"),
     );
@@ -1520,7 +1516,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer<HMAccessory> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("symptomsHandler"),
     );
@@ -1530,7 +1526,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer<HMAccessory> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("targetControllerHardwareSupport"),
     );
@@ -1540,7 +1536,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer<HMAccessory> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("targetControllers"),
     );
@@ -1550,7 +1546,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer<HMAccessory> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("televisionProfiles"),
     );
@@ -1560,7 +1556,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer<HMAccessory> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("transportTypes"),
     );
@@ -1570,7 +1566,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer<HMAccessory> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("uniqueIdentifier"),
     );
@@ -1580,7 +1576,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer<HMAccessory> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("uniqueIdentifiersForBridgedAccessories"),
     );
@@ -1591,7 +1587,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("updateAccessoryInfo:"),
       arg,
@@ -1604,7 +1600,7 @@ class HMAccessory extends Struct<HMAccessory> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("updateAccessoryName:completionHandler:"),
       arg,
@@ -1612,13 +1608,13 @@ class HMAccessory extends Struct<HMAccessory> {
     );
   }
 
-  static void updateApplicationData$completionHandler$(
+  static void updateApplicationData$completionHandler(
     Pointer<HMAccessory> _self,
     Pointer arg, {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("updateApplicationData:completionHandler:"),
       arg,
@@ -1626,14 +1622,14 @@ class HMAccessory extends Struct<HMAccessory> {
     );
   }
 
-  static void updateApplicationData$forService$completionHandler$(
+  static void updateApplicationData$forService$completionHandler(
     Pointer<HMAccessory> _self,
     Pointer arg, {
     @required Pointer forService,
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("updateApplicationData:forService:completionHandler:"),
       arg,
@@ -1648,7 +1644,7 @@ class HMAccessory extends Struct<HMAccessory> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("updateName:completionHandler:"),
       arg,
@@ -1660,7 +1656,7 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer<HMAccessory> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("uuid"),
     );
@@ -1670,16 +1666,13 @@ class HMAccessory extends Struct<HMAccessory> {
     Pointer<HMAccessory> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("wifiNetworkInfo"),
     );
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMAccessoryAdvertisementInfo
     extends Struct<HMAccessoryAdvertisementInfo> {
@@ -1697,7 +1690,7 @@ class HMAccessoryAdvertisementInfo
     Pointer<HMAccessoryAdvertisementInfo> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("deviceIdentifier"),
     );
@@ -1708,7 +1701,7 @@ class HMAccessoryAdvertisementInfo
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithAccessoryIdentifier:"),
       arg,
@@ -1716,9 +1709,6 @@ class HMAccessoryAdvertisementInfo
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMAccessoryBrowser extends Struct<HMAccessoryBrowser> {
   factory HMAccessoryBrowser._() {
@@ -1733,7 +1723,7 @@ class HMAccessoryBrowser extends Struct<HMAccessoryBrowser> {
     Pointer<HMAccessoryBrowser> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("accessories"),
     );
@@ -1743,7 +1733,7 @@ class HMAccessoryBrowser extends Struct<HMAccessoryBrowser> {
     Pointer<HMAccessoryBrowser> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("context"),
     );
@@ -1753,7 +1743,7 @@ class HMAccessoryBrowser extends Struct<HMAccessoryBrowser> {
     Pointer<HMAccessoryBrowser> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("dealloc"),
     );
@@ -1763,7 +1753,7 @@ class HMAccessoryBrowser extends Struct<HMAccessoryBrowser> {
     Pointer<HMAccessoryBrowser> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("delegate"),
     );
@@ -1773,7 +1763,7 @@ class HMAccessoryBrowser extends Struct<HMAccessoryBrowser> {
     Pointer<HMAccessoryBrowser> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("discoveredAccessories"),
     );
@@ -1783,7 +1773,7 @@ class HMAccessoryBrowser extends Struct<HMAccessoryBrowser> {
     Pointer<HMAccessoryBrowser> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("generationCounter"),
     );
@@ -1795,7 +1785,7 @@ class HMAccessoryBrowser extends Struct<HMAccessoryBrowser> {
     @required Pointer response,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("handleStartWithError:response:"),
       arg,
@@ -1807,7 +1797,7 @@ class HMAccessoryBrowser extends Struct<HMAccessoryBrowser> {
     Pointer<HMAccessoryBrowser> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("init"),
     );
@@ -1817,7 +1807,7 @@ class HMAccessoryBrowser extends Struct<HMAccessoryBrowser> {
     Pointer<HMAccessoryBrowser> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isBrowsing"),
     );
@@ -1827,7 +1817,7 @@ class HMAccessoryBrowser extends Struct<HMAccessoryBrowser> {
     Pointer<HMAccessoryBrowser> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("messageReceiveQueue"),
     );
@@ -1837,7 +1827,7 @@ class HMAccessoryBrowser extends Struct<HMAccessoryBrowser> {
     Pointer<HMAccessoryBrowser> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("messageTargetUUID"),
     );
@@ -1848,7 +1838,7 @@ class HMAccessoryBrowser extends Struct<HMAccessoryBrowser> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setAccessories:"),
       arg,
@@ -1860,7 +1850,7 @@ class HMAccessoryBrowser extends Struct<HMAccessoryBrowser> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setBrowsing:"),
       arg,
@@ -1872,7 +1862,7 @@ class HMAccessoryBrowser extends Struct<HMAccessoryBrowser> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setDelegate:"),
       arg,
@@ -1884,7 +1874,7 @@ class HMAccessoryBrowser extends Struct<HMAccessoryBrowser> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Uint64_returns_void(
+    _call_ptr_ptr_Uint64_returns_void(
       _self,
       _objc.getSelector("setGenerationCounter:"),
       arg,
@@ -1896,7 +1886,7 @@ class HMAccessoryBrowser extends Struct<HMAccessoryBrowser> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setUuid:"),
       arg,
@@ -1907,7 +1897,7 @@ class HMAccessoryBrowser extends Struct<HMAccessoryBrowser> {
     Pointer<HMAccessoryBrowser> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("startSearchingForNewAccessories"),
     );
@@ -1917,7 +1907,7 @@ class HMAccessoryBrowser extends Struct<HMAccessoryBrowser> {
     Pointer<HMAccessoryBrowser> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("stopSearchingForNewAccessories"),
     );
@@ -1927,16 +1917,13 @@ class HMAccessoryBrowser extends Struct<HMAccessoryBrowser> {
     Pointer<HMAccessoryBrowser> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("uuid"),
     );
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMAccessoryCategory extends Struct<HMAccessoryCategory> {
   factory HMAccessoryCategory._() {
@@ -1951,7 +1938,7 @@ class HMAccessoryCategory extends Struct<HMAccessoryCategory> {
     Pointer<HMAccessoryCategory> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("categoryType"),
     );
@@ -1961,7 +1948,7 @@ class HMAccessoryCategory extends Struct<HMAccessoryCategory> {
     Pointer<HMAccessoryCategory> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("description"),
     );
@@ -1971,7 +1958,7 @@ class HMAccessoryCategory extends Struct<HMAccessoryCategory> {
     Pointer<HMAccessoryCategory> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("dumpState"),
     );
@@ -1982,7 +1969,7 @@ class HMAccessoryCategory extends Struct<HMAccessoryCategory> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("encodeWithCoder:"),
       arg,
@@ -1993,7 +1980,7 @@ class HMAccessoryCategory extends Struct<HMAccessoryCategory> {
     Pointer<HMAccessoryCategory> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("hash"),
     );
@@ -2003,7 +1990,7 @@ class HMAccessoryCategory extends Struct<HMAccessoryCategory> {
     Pointer<HMAccessoryCategory> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("init"),
     );
@@ -2014,7 +2001,7 @@ class HMAccessoryCategory extends Struct<HMAccessoryCategory> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithCoder:"),
       arg,
@@ -2027,7 +2014,7 @@ class HMAccessoryCategory extends Struct<HMAccessoryCategory> {
     @required Pointer name,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithType:name:"),
       arg,
@@ -2040,7 +2027,7 @@ class HMAccessoryCategory extends Struct<HMAccessoryCategory> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isEqual:"),
       arg,
@@ -2051,7 +2038,7 @@ class HMAccessoryCategory extends Struct<HMAccessoryCategory> {
     Pointer<HMAccessoryCategory> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("localizedDescription"),
     );
@@ -2061,7 +2048,7 @@ class HMAccessoryCategory extends Struct<HMAccessoryCategory> {
     Pointer<HMAccessoryCategory> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("name"),
     );
@@ -2072,7 +2059,7 @@ class HMAccessoryCategory extends Struct<HMAccessoryCategory> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setCategoryType:"),
       arg,
@@ -2084,7 +2071,7 @@ class HMAccessoryCategory extends Struct<HMAccessoryCategory> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setName:"),
       arg,
@@ -2095,16 +2082,13 @@ class HMAccessoryCategory extends Struct<HMAccessoryCategory> {
     Pointer<HMAccessoryCategory> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("uniqueIdentifier"),
     );
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMAccessoryCollectionSetting
     extends Struct<HMAccessoryCollectionSetting> {
@@ -2124,27 +2108,11 @@ class HMAccessoryCollectionSetting
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("addItem:completionHandler:"),
       arg,
       completionHandler,
-    );
-  }
-
-  static int countByEnumeratingWithState(
-    Pointer<HMAccessoryCollectionSetting> _self,
-    Pointer<Pointer> arg, {
-    @required Pointer<Pointer> objects,
-    @required int count,
-  }) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_p_Uint64_returns_Uint64(
-      _self,
-      _objc.getSelector("countByEnumeratingWithState:objects:count:"),
-      arg,
-      objects,
-      count,
     );
   }
 
@@ -2153,7 +2121,7 @@ class HMAccessoryCollectionSetting
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithInternal:"),
       arg,
@@ -2167,7 +2135,7 @@ class HMAccessoryCollectionSetting
     @required Pointer value,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_Uint64_p_returns_p(
+    return _call_ptr_ptr_ptr_Uint64_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithKey:properties:value:"),
       arg,
@@ -2180,7 +2148,7 @@ class HMAccessoryCollectionSetting
     Pointer<HMAccessoryCollectionSetting> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("itemValueClasses"),
     );
@@ -2192,7 +2160,7 @@ class HMAccessoryCollectionSetting
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("removeItem:completionHandler:"),
       arg,
@@ -2207,7 +2175,7 @@ class HMAccessoryCollectionSetting
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("replaceItem:withItem:completionHandler:"),
       arg,
@@ -2223,7 +2191,7 @@ class HMAccessoryCollectionSetting
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("replaceItems:withItems:completionHandler:"),
       arg,
@@ -2237,7 +2205,7 @@ class HMAccessoryCollectionSetting
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setItemValueClass:"),
       arg,
@@ -2249,7 +2217,7 @@ class HMAccessoryCollectionSetting
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setItemValueClasses:"),
       arg,
@@ -2262,7 +2230,7 @@ class HMAccessoryCollectionSetting
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("updateValue:completionHandler:"),
       arg,
@@ -2274,7 +2242,7 @@ class HMAccessoryCollectionSetting
     Pointer<HMAccessoryCollectionSetting> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("value"),
     );
@@ -2284,16 +2252,13 @@ class HMAccessoryCollectionSetting
     Pointer<HMAccessoryCollectionSetting> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("valueClass"),
     );
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMAccessoryCollectionSettingItem
     extends Struct<HMAccessoryCollectionSettingItem> {
@@ -2307,23 +2272,11 @@ class HMAccessoryCollectionSettingItem
         .cast<HMAccessoryCollectionSettingItem>();
   }
 
-  static Pointer copyWithZone(
-    Pointer<HMAccessoryCollectionSettingItem> _self,
-    Pointer<Pointer> arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
-      _self,
-      _objc.getSelector("copyWithZone:"),
-      arg,
-    );
-  }
-
   static Pointer debugDescription(
     Pointer<HMAccessoryCollectionSettingItem> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("debugDescription"),
     );
@@ -2333,7 +2286,7 @@ class HMAccessoryCollectionSettingItem
     Pointer<HMAccessoryCollectionSettingItem> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("description"),
     );
@@ -2344,7 +2297,7 @@ class HMAccessoryCollectionSettingItem
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_p(
+    return _call_ptr_ptr_Int8_returns_ptr(
       _self,
       _objc.getSelector("descriptionWithPointer:"),
       arg,
@@ -2356,7 +2309,7 @@ class HMAccessoryCollectionSettingItem
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("encodeWithCoder:"),
       arg,
@@ -2367,7 +2320,7 @@ class HMAccessoryCollectionSettingItem
     Pointer<HMAccessoryCollectionSettingItem> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("hash"),
     );
@@ -2377,7 +2330,7 @@ class HMAccessoryCollectionSettingItem
     Pointer<HMAccessoryCollectionSettingItem> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("identifier"),
     );
@@ -2387,7 +2340,7 @@ class HMAccessoryCollectionSettingItem
     Pointer<HMAccessoryCollectionSettingItem> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("init"),
     );
@@ -2398,7 +2351,7 @@ class HMAccessoryCollectionSettingItem
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithCoder:"),
       arg,
@@ -2410,7 +2363,7 @@ class HMAccessoryCollectionSettingItem
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithValue:"),
       arg,
@@ -2422,7 +2375,7 @@ class HMAccessoryCollectionSettingItem
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isEqual:"),
       arg,
@@ -2433,7 +2386,7 @@ class HMAccessoryCollectionSettingItem
     Pointer<HMAccessoryCollectionSettingItem> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("serializedValue"),
     );
@@ -2444,7 +2397,7 @@ class HMAccessoryCollectionSettingItem
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setSetting:"),
       arg,
@@ -2455,7 +2408,7 @@ class HMAccessoryCollectionSettingItem
     Pointer<HMAccessoryCollectionSettingItem> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("setting"),
     );
@@ -2465,7 +2418,7 @@ class HMAccessoryCollectionSettingItem
     Pointer<HMAccessoryCollectionSettingItem> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("shortDescription"),
     );
@@ -2475,16 +2428,13 @@ class HMAccessoryCollectionSettingItem
     Pointer<HMAccessoryCollectionSettingItem> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("value"),
     );
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMAccessoryDataSetting extends Struct<HMAccessoryDataSetting> {
   factory HMAccessoryDataSetting._() {
@@ -2504,7 +2454,7 @@ class HMAccessoryDataSetting extends Struct<HMAccessoryDataSetting> {
     @required Pointer value,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_Uint64_p_returns_p(
+    return _call_ptr_ptr_ptr_Uint64_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithKey:properties:value:"),
       arg,
@@ -2517,16 +2467,13 @@ class HMAccessoryDataSetting extends Struct<HMAccessoryDataSetting> {
     Pointer<HMAccessoryDataSetting> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("valueClass"),
     );
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMAccessoryInvitation extends Struct<HMAccessoryInvitation> {
   factory HMAccessoryInvitation._() {
@@ -2543,7 +2490,7 @@ class HMAccessoryInvitation extends Struct<HMAccessoryInvitation> {
     Pointer<HMAccessoryInvitation> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("accessory"),
     );
@@ -2554,7 +2501,7 @@ class HMAccessoryInvitation extends Struct<HMAccessoryInvitation> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("encodeWithCoder:"),
       arg,
@@ -2565,7 +2512,7 @@ class HMAccessoryInvitation extends Struct<HMAccessoryInvitation> {
     Pointer<HMAccessoryInvitation> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("identifier"),
     );
@@ -2578,7 +2525,7 @@ class HMAccessoryInvitation extends Struct<HMAccessoryInvitation> {
     @required int state,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_Int64_returns_p(
+    return _call_ptr_ptr_ptr_ptr_Int64_returns_ptr(
       _self,
       _objc.getSelector("initWithAccessory:identifier:state:"),
       arg,
@@ -2592,7 +2539,7 @@ class HMAccessoryInvitation extends Struct<HMAccessoryInvitation> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithCoder:"),
       arg,
@@ -2604,7 +2551,7 @@ class HMAccessoryInvitation extends Struct<HMAccessoryInvitation> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setAccessory:"),
       arg,
@@ -2616,7 +2563,7 @@ class HMAccessoryInvitation extends Struct<HMAccessoryInvitation> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setIdentifier:"),
       arg,
@@ -2628,7 +2575,7 @@ class HMAccessoryInvitation extends Struct<HMAccessoryInvitation> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int64_returns_void(
+    _call_ptr_ptr_Int64_returns_void(
       _self,
       _objc.getSelector("setState:"),
       arg,
@@ -2639,7 +2586,7 @@ class HMAccessoryInvitation extends Struct<HMAccessoryInvitation> {
     Pointer<HMAccessoryInvitation> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int64(
+    return _call_ptr_ptr_returns_Int64(
       _self,
       _objc.getSelector("state"),
     );
@@ -2649,16 +2596,13 @@ class HMAccessoryInvitation extends Struct<HMAccessoryInvitation> {
     Pointer<HMAccessoryInvitation> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("uniqueIdentifier"),
     );
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMAccessoryNumberSetting extends Struct<HMAccessoryNumberSetting> {
   factory HMAccessoryNumberSetting._() {
@@ -2671,14 +2615,14 @@ class HMAccessoryNumberSetting extends Struct<HMAccessoryNumberSetting> {
         .cast<HMAccessoryNumberSetting>();
   }
 
-  static Pointer initWithKey$properties$value$(
+  static Pointer initWithKey$properties$value(
     Pointer<HMAccessoryNumberSetting> _self,
     Pointer arg, {
     @required int properties,
     @required Pointer value,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_Uint64_p_returns_p(
+    return _call_ptr_ptr_ptr_Uint64_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithKey:properties:value:"),
       arg,
@@ -2688,7 +2632,7 @@ class HMAccessoryNumberSetting extends Struct<HMAccessoryNumberSetting> {
   }
 
   static Pointer
-      initWithKey$properties$value$minimumValue$maximumValue$stepValue$(
+      initWithKey$properties$value$minimumValue$maximumValue$stepValue(
     Pointer<HMAccessoryNumberSetting> _self,
     Pointer arg, {
     @required int properties,
@@ -2698,7 +2642,7 @@ class HMAccessoryNumberSetting extends Struct<HMAccessoryNumberSetting> {
     @required Pointer stepValue,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_Uint64_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_Uint64_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector(
           "initWithKey:properties:value:minimumValue:maximumValue:stepValue:"),
@@ -2715,7 +2659,7 @@ class HMAccessoryNumberSetting extends Struct<HMAccessoryNumberSetting> {
     Pointer<HMAccessoryNumberSetting> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("maximumValue"),
     );
@@ -2725,7 +2669,7 @@ class HMAccessoryNumberSetting extends Struct<HMAccessoryNumberSetting> {
     Pointer<HMAccessoryNumberSetting> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("minimumValue"),
     );
@@ -2735,7 +2679,7 @@ class HMAccessoryNumberSetting extends Struct<HMAccessoryNumberSetting> {
     Pointer<HMAccessoryNumberSetting> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("stepValue"),
     );
@@ -2745,16 +2689,13 @@ class HMAccessoryNumberSetting extends Struct<HMAccessoryNumberSetting> {
     Pointer<HMAccessoryNumberSetting> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("valueClass"),
     );
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMAccessoryProfile extends Struct<HMAccessoryProfile> {
   factory HMAccessoryProfile._() {
@@ -2769,7 +2710,7 @@ class HMAccessoryProfile extends Struct<HMAccessoryProfile> {
     Pointer<HMAccessoryProfile> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("accessory"),
     );
@@ -2779,7 +2720,7 @@ class HMAccessoryProfile extends Struct<HMAccessoryProfile> {
     Pointer<HMAccessoryProfile> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("accessoryProfile"),
     );
@@ -2789,7 +2730,7 @@ class HMAccessoryProfile extends Struct<HMAccessoryProfile> {
     Pointer<HMAccessoryProfile> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("description"),
     );
@@ -2799,7 +2740,7 @@ class HMAccessoryProfile extends Struct<HMAccessoryProfile> {
     Pointer<HMAccessoryProfile> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("hash"),
     );
@@ -2810,7 +2751,7 @@ class HMAccessoryProfile extends Struct<HMAccessoryProfile> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithAccessoryProfile:"),
       arg,
@@ -2822,7 +2763,7 @@ class HMAccessoryProfile extends Struct<HMAccessoryProfile> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isEqual:"),
       arg,
@@ -2833,7 +2774,7 @@ class HMAccessoryProfile extends Struct<HMAccessoryProfile> {
     Pointer<HMAccessoryProfile> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("services"),
     );
@@ -2843,16 +2784,13 @@ class HMAccessoryProfile extends Struct<HMAccessoryProfile> {
     Pointer<HMAccessoryProfile> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("uniqueIdentifier"),
     );
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMAccessorySelectionSetting extends Struct<HMAccessorySelectionSetting> {
   factory HMAccessorySelectionSetting._() {
@@ -2871,7 +2809,7 @@ class HMAccessorySelectionSetting extends Struct<HMAccessorySelectionSetting> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("addItem:completionHandler:"),
       arg,
@@ -2884,21 +2822,21 @@ class HMAccessorySelectionSetting extends Struct<HMAccessorySelectionSetting> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithInternal:"),
       arg,
     );
   }
 
-  static Pointer initWithKey$properties$value$(
+  static Pointer initWithKey$properties$value(
     Pointer<HMAccessorySelectionSetting> _self,
     Pointer arg, {
     @required int properties,
     @required Pointer value,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_Uint64_p_returns_p(
+    return _call_ptr_ptr_ptr_Uint64_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithKey:properties:value:"),
       arg,
@@ -2907,7 +2845,7 @@ class HMAccessorySelectionSetting extends Struct<HMAccessorySelectionSetting> {
     );
   }
 
-  static Pointer initWithKey$properties$value$items$(
+  static Pointer initWithKey$properties$value$items(
     Pointer<HMAccessorySelectionSetting> _self,
     Pointer arg, {
     @required int properties,
@@ -2915,7 +2853,7 @@ class HMAccessorySelectionSetting extends Struct<HMAccessorySelectionSetting> {
     @required Pointer items,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_Uint64_p_p_returns_p(
+    return _call_ptr_ptr_ptr_Uint64_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithKey:properties:value:items:"),
       arg,
@@ -2929,7 +2867,7 @@ class HMAccessorySelectionSetting extends Struct<HMAccessorySelectionSetting> {
     Pointer<HMAccessorySelectionSetting> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("items"),
     );
@@ -2941,7 +2879,7 @@ class HMAccessorySelectionSetting extends Struct<HMAccessorySelectionSetting> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("removeItem:completionHandler:"),
       arg,
@@ -2950,9 +2888,6 @@ class HMAccessorySelectionSetting extends Struct<HMAccessorySelectionSetting> {
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMAccessorySelectionSettingItem
     extends Struct<HMAccessorySelectionSettingItem> {
@@ -2966,23 +2901,11 @@ class HMAccessorySelectionSettingItem
         .cast<HMAccessorySelectionSettingItem>();
   }
 
-  static Pointer copyWithZone(
-    Pointer<HMAccessorySelectionSettingItem> _self,
-    Pointer<Pointer> arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
-      _self,
-      _objc.getSelector("copyWithZone:"),
-      arg,
-    );
-  }
-
   static Pointer description(
     Pointer<HMAccessorySelectionSettingItem> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("description"),
     );
@@ -2993,7 +2916,7 @@ class HMAccessorySelectionSettingItem
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("encodeWithCoder:"),
       arg,
@@ -3004,7 +2927,7 @@ class HMAccessorySelectionSettingItem
     Pointer<HMAccessorySelectionSettingItem> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("hash"),
     );
@@ -3014,7 +2937,7 @@ class HMAccessorySelectionSettingItem
     Pointer<HMAccessorySelectionSettingItem> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("identifier"),
     );
@@ -3024,7 +2947,7 @@ class HMAccessorySelectionSettingItem
     Pointer<HMAccessorySelectionSettingItem> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("init"),
     );
@@ -3035,7 +2958,7 @@ class HMAccessorySelectionSettingItem
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithCoder:"),
       arg,
@@ -3047,7 +2970,7 @@ class HMAccessorySelectionSettingItem
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithTitle:"),
       arg,
@@ -3059,7 +2982,7 @@ class HMAccessorySelectionSettingItem
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isEqual:"),
       arg,
@@ -3070,7 +2993,7 @@ class HMAccessorySelectionSettingItem
     Pointer<HMAccessorySelectionSettingItem> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("keyPath"),
     );
@@ -3080,7 +3003,7 @@ class HMAccessorySelectionSettingItem
     Pointer<HMAccessorySelectionSettingItem> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("localizedTitle"),
     );
@@ -3091,7 +3014,7 @@ class HMAccessorySelectionSettingItem
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setSetting:"),
       arg,
@@ -3102,7 +3025,7 @@ class HMAccessorySelectionSettingItem
     Pointer<HMAccessorySelectionSettingItem> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("setting"),
     );
@@ -3112,16 +3035,13 @@ class HMAccessorySelectionSettingItem
     Pointer<HMAccessorySelectionSettingItem> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("title"),
     );
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMAccessorySetting extends Struct<HMAccessorySetting> {
   factory HMAccessorySetting._() {
@@ -3136,7 +3056,7 @@ class HMAccessorySetting extends Struct<HMAccessorySetting> {
     Pointer<HMAccessorySetting> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("description"),
     );
@@ -3146,7 +3066,7 @@ class HMAccessorySetting extends Struct<HMAccessorySetting> {
     Pointer<HMAccessorySetting> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("group"),
     );
@@ -3156,7 +3076,7 @@ class HMAccessorySetting extends Struct<HMAccessorySetting> {
     Pointer<HMAccessorySetting> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("hash"),
     );
@@ -3166,7 +3086,7 @@ class HMAccessorySetting extends Struct<HMAccessorySetting> {
     Pointer<HMAccessorySetting> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("init"),
     );
@@ -3177,7 +3097,7 @@ class HMAccessorySetting extends Struct<HMAccessorySetting> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithInternal:"),
       arg,
@@ -3191,7 +3111,7 @@ class HMAccessorySetting extends Struct<HMAccessorySetting> {
     @required Pointer value,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_Uint64_p_returns_p(
+    return _call_ptr_ptr_ptr_Uint64_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithKey:properties:value:"),
       arg,
@@ -3204,7 +3124,7 @@ class HMAccessorySetting extends Struct<HMAccessorySetting> {
     Pointer<HMAccessorySetting> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("internal"),
     );
@@ -3215,7 +3135,7 @@ class HMAccessorySetting extends Struct<HMAccessorySetting> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isEqual:"),
       arg,
@@ -3226,7 +3146,7 @@ class HMAccessorySetting extends Struct<HMAccessorySetting> {
     Pointer<HMAccessorySetting> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isReflected"),
     );
@@ -3236,7 +3156,7 @@ class HMAccessorySetting extends Struct<HMAccessorySetting> {
     Pointer<HMAccessorySetting> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isWritable"),
     );
@@ -3246,7 +3166,7 @@ class HMAccessorySetting extends Struct<HMAccessorySetting> {
     Pointer<HMAccessorySetting> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("keyPath"),
     );
@@ -3256,7 +3176,7 @@ class HMAccessorySetting extends Struct<HMAccessorySetting> {
     Pointer<HMAccessorySetting> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("localizedTitle"),
     );
@@ -3266,7 +3186,7 @@ class HMAccessorySetting extends Struct<HMAccessorySetting> {
     Pointer<HMAccessorySetting> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("logIdentifier"),
     );
@@ -3277,7 +3197,7 @@ class HMAccessorySetting extends Struct<HMAccessorySetting> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setGroup:"),
       arg,
@@ -3290,7 +3210,7 @@ class HMAccessorySetting extends Struct<HMAccessorySetting> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("updateValue:completionHandler:"),
       arg,
@@ -3302,7 +3222,7 @@ class HMAccessorySetting extends Struct<HMAccessorySetting> {
     Pointer<HMAccessorySetting> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("value"),
     );
@@ -3312,16 +3232,13 @@ class HMAccessorySetting extends Struct<HMAccessorySetting> {
     Pointer<HMAccessorySetting> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("valueClass"),
     );
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMAccessorySettingConstraint
     extends Struct<HMAccessorySettingConstraint> {
@@ -3335,23 +3252,11 @@ class HMAccessorySettingConstraint
         .cast<HMAccessorySettingConstraint>();
   }
 
-  static Pointer copyWithZone(
-    Pointer<HMAccessorySettingConstraint> _self,
-    Pointer<Pointer> arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
-      _self,
-      _objc.getSelector("copyWithZone:"),
-      arg,
-    );
-  }
-
   static Pointer debugDescription(
     Pointer<HMAccessorySettingConstraint> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("debugDescription"),
     );
@@ -3361,7 +3266,7 @@ class HMAccessorySettingConstraint
     Pointer<HMAccessorySettingConstraint> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("description"),
     );
@@ -3372,7 +3277,7 @@ class HMAccessorySettingConstraint
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_p(
+    return _call_ptr_ptr_Int8_returns_ptr(
       _self,
       _objc.getSelector("descriptionWithPointer:"),
       arg,
@@ -3384,7 +3289,7 @@ class HMAccessorySettingConstraint
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("encodeWithCoder:"),
       arg,
@@ -3395,7 +3300,7 @@ class HMAccessorySettingConstraint
     Pointer<HMAccessorySettingConstraint> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("hash"),
     );
@@ -3405,7 +3310,7 @@ class HMAccessorySettingConstraint
     Pointer<HMAccessorySettingConstraint> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("identifier"),
     );
@@ -3415,7 +3320,7 @@ class HMAccessorySettingConstraint
     Pointer<HMAccessorySettingConstraint> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("init"),
     );
@@ -3426,7 +3331,7 @@ class HMAccessorySettingConstraint
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithCoder:"),
       arg,
@@ -3439,7 +3344,7 @@ class HMAccessorySettingConstraint
     @required Pointer value,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int64_p_returns_p(
+    return _call_ptr_ptr_Int64_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithType:value:"),
       arg,
@@ -3452,7 +3357,7 @@ class HMAccessorySettingConstraint
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isEqual:"),
       arg,
@@ -3463,7 +3368,7 @@ class HMAccessorySettingConstraint
     Pointer<HMAccessorySettingConstraint> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("shortDescription"),
     );
@@ -3473,7 +3378,7 @@ class HMAccessorySettingConstraint
     Pointer<HMAccessorySettingConstraint> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int64(
+    return _call_ptr_ptr_returns_Int64(
       _self,
       _objc.getSelector("type"),
     );
@@ -3483,16 +3388,13 @@ class HMAccessorySettingConstraint
     Pointer<HMAccessorySettingConstraint> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("value"),
     );
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMAccessorySettingGroup extends Struct<HMAccessorySettingGroup> {
   factory HMAccessorySettingGroup._() {
@@ -3505,13 +3407,13 @@ class HMAccessorySettingGroup extends Struct<HMAccessorySettingGroup> {
         .cast<HMAccessorySettingGroup>();
   }
 
-  static void addGroup$completionHandler$(
+  static void addGroup$completionHandler(
     Pointer<HMAccessorySettingGroup> _self,
     Pointer arg, {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("addGroup:completionHandler:"),
       arg,
@@ -3519,25 +3421,25 @@ class HMAccessorySettingGroup extends Struct<HMAccessorySettingGroup> {
     );
   }
 
-  static void addGroup$(
+  static void addGroup(
     Pointer<HMAccessorySettingGroup> _self,
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("addGroup:"),
       arg,
     );
   }
 
-  static void addSetting$completionHandler$(
+  static void addSetting$completionHandler(
     Pointer<HMAccessorySettingGroup> _self,
     Pointer arg, {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("addSetting:completionHandler:"),
       arg,
@@ -3545,12 +3447,12 @@ class HMAccessorySettingGroup extends Struct<HMAccessorySettingGroup> {
     );
   }
 
-  static void addSetting$(
+  static void addSetting(
     Pointer<HMAccessorySettingGroup> _self,
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("addSetting:"),
       arg,
@@ -3561,7 +3463,7 @@ class HMAccessorySettingGroup extends Struct<HMAccessorySettingGroup> {
     Pointer<HMAccessorySettingGroup> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("description"),
     );
@@ -3571,7 +3473,7 @@ class HMAccessorySettingGroup extends Struct<HMAccessorySettingGroup> {
     Pointer<HMAccessorySettingGroup> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("group"),
     );
@@ -3581,7 +3483,7 @@ class HMAccessorySettingGroup extends Struct<HMAccessorySettingGroup> {
     Pointer<HMAccessorySettingGroup> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("groups"),
     );
@@ -3591,7 +3493,7 @@ class HMAccessorySettingGroup extends Struct<HMAccessorySettingGroup> {
     Pointer<HMAccessorySettingGroup> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("hash"),
     );
@@ -3601,7 +3503,7 @@ class HMAccessorySettingGroup extends Struct<HMAccessorySettingGroup> {
     Pointer<HMAccessorySettingGroup> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("init"),
     );
@@ -3612,7 +3514,7 @@ class HMAccessorySettingGroup extends Struct<HMAccessorySettingGroup> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithInternal:"),
       arg,
@@ -3624,7 +3526,7 @@ class HMAccessorySettingGroup extends Struct<HMAccessorySettingGroup> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithKeyPath:"),
       arg,
@@ -3635,7 +3537,7 @@ class HMAccessorySettingGroup extends Struct<HMAccessorySettingGroup> {
     Pointer<HMAccessorySettingGroup> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("internal"),
     );
@@ -3646,7 +3548,7 @@ class HMAccessorySettingGroup extends Struct<HMAccessorySettingGroup> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isEqual:"),
       arg,
@@ -3657,7 +3559,7 @@ class HMAccessorySettingGroup extends Struct<HMAccessorySettingGroup> {
     Pointer<HMAccessorySettingGroup> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("keyPath"),
     );
@@ -3667,7 +3569,7 @@ class HMAccessorySettingGroup extends Struct<HMAccessorySettingGroup> {
     Pointer<HMAccessorySettingGroup> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("localizedTitle"),
     );
@@ -3677,19 +3579,19 @@ class HMAccessorySettingGroup extends Struct<HMAccessorySettingGroup> {
     Pointer<HMAccessorySettingGroup> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("logIdentifier"),
     );
   }
 
-  static void removeGroup$completionHandler$(
+  static void removeGroup$completionHandler(
     Pointer<HMAccessorySettingGroup> _self,
     Pointer arg, {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("removeGroup:completionHandler:"),
       arg,
@@ -3697,25 +3599,25 @@ class HMAccessorySettingGroup extends Struct<HMAccessorySettingGroup> {
     );
   }
 
-  static void removeGroup$(
+  static void removeGroup(
     Pointer<HMAccessorySettingGroup> _self,
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("removeGroup:"),
       arg,
     );
   }
 
-  static void removeSetting$completionHandler$(
+  static void removeSetting$completionHandler(
     Pointer<HMAccessorySettingGroup> _self,
     Pointer arg, {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("removeSetting:completionHandler:"),
       arg,
@@ -3723,12 +3625,12 @@ class HMAccessorySettingGroup extends Struct<HMAccessorySettingGroup> {
     );
   }
 
-  static void removeSetting$(
+  static void removeSetting(
     Pointer<HMAccessorySettingGroup> _self,
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("removeSetting:"),
       arg,
@@ -3740,7 +3642,7 @@ class HMAccessorySettingGroup extends Struct<HMAccessorySettingGroup> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setGroup:"),
       arg,
@@ -3751,16 +3653,13 @@ class HMAccessorySettingGroup extends Struct<HMAccessorySettingGroup> {
     Pointer<HMAccessorySettingGroup> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("settings"),
     );
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMAccessorySettings extends Struct<HMAccessorySettings> {
   factory HMAccessorySettings._() {
@@ -3775,7 +3674,7 @@ class HMAccessorySettings extends Struct<HMAccessorySettings> {
     Pointer<HMAccessorySettings> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("accessory"),
     );
@@ -3785,7 +3684,7 @@ class HMAccessorySettings extends Struct<HMAccessorySettings> {
     Pointer<HMAccessorySettings> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("context"),
     );
@@ -3795,7 +3694,7 @@ class HMAccessorySettings extends Struct<HMAccessorySettings> {
     Pointer<HMAccessorySettings> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("delegate"),
     );
@@ -3808,7 +3707,7 @@ class HMAccessorySettings extends Struct<HMAccessorySettings> {
     @required Pointer rootGroup,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithSettingsContainer:settingsControl:rootGroup:"),
       arg,
@@ -3821,7 +3720,7 @@ class HMAccessorySettings extends Struct<HMAccessorySettings> {
     Pointer<HMAccessorySettings> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isControllable"),
     );
@@ -3831,7 +3730,7 @@ class HMAccessorySettings extends Struct<HMAccessorySettings> {
     Pointer<HMAccessorySettings> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("rootGroup"),
     );
@@ -3842,7 +3741,7 @@ class HMAccessorySettings extends Struct<HMAccessorySettings> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setDelegate:"),
       arg,
@@ -3854,7 +3753,7 @@ class HMAccessorySettings extends Struct<HMAccessorySettings> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setSettingsContainer:"),
       arg,
@@ -3866,7 +3765,7 @@ class HMAccessorySettings extends Struct<HMAccessorySettings> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setSettingsControl:"),
       arg,
@@ -3877,7 +3776,7 @@ class HMAccessorySettings extends Struct<HMAccessorySettings> {
     Pointer<HMAccessorySettings> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("settingsContainer"),
     );
@@ -3887,7 +3786,7 @@ class HMAccessorySettings extends Struct<HMAccessorySettings> {
     Pointer<HMAccessorySettings> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("settingsControl"),
     );
@@ -3897,16 +3796,13 @@ class HMAccessorySettings extends Struct<HMAccessorySettings> {
     Pointer<HMAccessorySettings> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("uniqueIdentifier"),
     );
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMAccessorySetupCompletedInfo
     extends Struct<HMAccessorySetupCompletedInfo> {
@@ -3924,7 +3820,7 @@ class HMAccessorySetupCompletedInfo
     Pointer<HMAccessorySetupCompletedInfo> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("addedAccessoryUUIDs"),
     );
@@ -3935,7 +3831,7 @@ class HMAccessorySetupCompletedInfo
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("encodeWithCoder:"),
       arg,
@@ -3947,7 +3843,7 @@ class HMAccessorySetupCompletedInfo
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithAccessoryList:"),
       arg,
@@ -3959,7 +3855,7 @@ class HMAccessorySetupCompletedInfo
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithCoder:"),
       arg,
@@ -3971,7 +3867,7 @@ class HMAccessorySetupCompletedInfo
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setAddedAccessoryUUIDs:"),
       arg,
@@ -3979,9 +3875,6 @@ class HMAccessorySetupCompletedInfo
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMAccessorySetupPayload extends Struct<HMAccessorySetupPayload> {
   factory HMAccessorySetupPayload._() {
@@ -3998,7 +3891,7 @@ class HMAccessorySetupPayload extends Struct<HMAccessorySetupPayload> {
     Pointer<HMAccessorySetupPayload> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("accessoryBrowsingRequest"),
     );
@@ -4009,7 +3902,7 @@ class HMAccessorySetupPayload extends Struct<HMAccessorySetupPayload> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithURL:"),
       arg,
@@ -4020,7 +3913,7 @@ class HMAccessorySetupPayload extends Struct<HMAccessorySetupPayload> {
     Pointer<HMAccessorySetupPayload> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("internalSetupPayload"),
     );
@@ -4031,7 +3924,7 @@ class HMAccessorySetupPayload extends Struct<HMAccessorySetupPayload> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setAccessoryBrowsingRequest:"),
       arg,
@@ -4043,7 +3936,7 @@ class HMAccessorySetupPayload extends Struct<HMAccessorySetupPayload> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setInternalSetupPayload:"),
       arg,
@@ -4055,7 +3948,7 @@ class HMAccessorySetupPayload extends Struct<HMAccessorySetupPayload> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setSuggestedRoomName:"),
       arg,
@@ -4066,16 +3959,13 @@ class HMAccessorySetupPayload extends Struct<HMAccessorySetupPayload> {
     Pointer<HMAccessorySetupPayload> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("suggestedRoomName"),
     );
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMAccessoryStringSetting extends Struct<HMAccessoryStringSetting> {
   factory HMAccessoryStringSetting._() {
@@ -4095,7 +3985,7 @@ class HMAccessoryStringSetting extends Struct<HMAccessoryStringSetting> {
     @required Pointer value,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_Uint64_p_returns_p(
+    return _call_ptr_ptr_ptr_Uint64_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithKey:properties:value:"),
       arg,
@@ -4108,16 +3998,13 @@ class HMAccessoryStringSetting extends Struct<HMAccessoryStringSetting> {
     Pointer<HMAccessoryStringSetting> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("valueClass"),
     );
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMAction extends Struct<HMAction> {
   factory HMAction._() {
@@ -4132,7 +4019,7 @@ class HMAction extends Struct<HMAction> {
     Pointer<HMAction> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("actionSet"),
     );
@@ -4142,7 +4029,7 @@ class HMAction extends Struct<HMAction> {
     Pointer<HMAction> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("actionType"),
     );
@@ -4152,7 +4039,7 @@ class HMAction extends Struct<HMAction> {
     Pointer<HMAction> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("context"),
     );
@@ -4162,7 +4049,7 @@ class HMAction extends Struct<HMAction> {
     Pointer<HMAction> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("init"),
     );
@@ -4173,7 +4060,7 @@ class HMAction extends Struct<HMAction> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setActionSet:"),
       arg,
@@ -4185,7 +4072,7 @@ class HMAction extends Struct<HMAction> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Uint64_returns_void(
+    _call_ptr_ptr_Uint64_returns_void(
       _self,
       _objc.getSelector("setActionType:"),
       arg,
@@ -4197,7 +4084,7 @@ class HMAction extends Struct<HMAction> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setContext:"),
       arg,
@@ -4209,7 +4096,7 @@ class HMAction extends Struct<HMAction> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setUuid:"),
       arg,
@@ -4220,7 +4107,7 @@ class HMAction extends Struct<HMAction> {
     Pointer<HMAction> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("uniqueIdentifier"),
     );
@@ -4230,16 +4117,13 @@ class HMAction extends Struct<HMAction> {
     Pointer<HMAction> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("uuid"),
     );
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMActionSet extends Struct<HMActionSet> {
   factory HMActionSet._() {
@@ -4254,7 +4138,7 @@ class HMActionSet extends Struct<HMActionSet> {
     Pointer<HMActionSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("actionSetType"),
     );
@@ -4264,7 +4148,7 @@ class HMActionSet extends Struct<HMActionSet> {
     Pointer<HMActionSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("actions"),
     );
@@ -4276,7 +4160,7 @@ class HMActionSet extends Struct<HMActionSet> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("addAction:completionHandler:"),
       arg,
@@ -4288,7 +4172,7 @@ class HMActionSet extends Struct<HMActionSet> {
     Pointer<HMActionSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("applicationData"),
     );
@@ -4298,7 +4182,7 @@ class HMActionSet extends Struct<HMActionSet> {
     Pointer<HMActionSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("context"),
     );
@@ -4308,7 +4192,7 @@ class HMActionSet extends Struct<HMActionSet> {
     Pointer<HMActionSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("currentActions"),
     );
@@ -4318,7 +4202,7 @@ class HMActionSet extends Struct<HMActionSet> {
     Pointer<HMActionSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("dealloc"),
     );
@@ -4329,7 +4213,7 @@ class HMActionSet extends Struct<HMActionSet> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("encodeWithCoder:"),
       arg,
@@ -4340,7 +4224,7 @@ class HMActionSet extends Struct<HMActionSet> {
     Pointer<HMActionSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("executionInProgress"),
     );
@@ -4350,7 +4234,7 @@ class HMActionSet extends Struct<HMActionSet> {
     Pointer<HMActionSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("home"),
     );
@@ -4360,7 +4244,7 @@ class HMActionSet extends Struct<HMActionSet> {
     Pointer<HMActionSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("init"),
     );
@@ -4371,7 +4255,7 @@ class HMActionSet extends Struct<HMActionSet> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithCoder:"),
       arg,
@@ -4385,7 +4269,7 @@ class HMActionSet extends Struct<HMActionSet> {
     @required Pointer uuid,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithName:type:uuid:"),
       arg,
@@ -4398,7 +4282,7 @@ class HMActionSet extends Struct<HMActionSet> {
     Pointer<HMActionSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isExecuting"),
     );
@@ -4408,7 +4292,7 @@ class HMActionSet extends Struct<HMActionSet> {
     Pointer<HMActionSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("lastExecutionDate"),
     );
@@ -4418,7 +4302,7 @@ class HMActionSet extends Struct<HMActionSet> {
     Pointer<HMActionSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("messageReceiveQueue"),
     );
@@ -4428,7 +4312,7 @@ class HMActionSet extends Struct<HMActionSet> {
     Pointer<HMActionSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("messageTargetUUID"),
     );
@@ -4438,7 +4322,7 @@ class HMActionSet extends Struct<HMActionSet> {
     Pointer<HMActionSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("name"),
     );
@@ -4450,7 +4334,7 @@ class HMActionSet extends Struct<HMActionSet> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("removeAction:completionHandler:"),
       arg,
@@ -4463,7 +4347,7 @@ class HMActionSet extends Struct<HMActionSet> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setApplicationData:"),
       arg,
@@ -4475,7 +4359,7 @@ class HMActionSet extends Struct<HMActionSet> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setContext:"),
       arg,
@@ -4487,7 +4371,7 @@ class HMActionSet extends Struct<HMActionSet> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setCurrentActions:"),
       arg,
@@ -4499,7 +4383,7 @@ class HMActionSet extends Struct<HMActionSet> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setExecutionInProgress:"),
       arg,
@@ -4511,7 +4395,7 @@ class HMActionSet extends Struct<HMActionSet> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setHome:"),
       arg,
@@ -4523,7 +4407,7 @@ class HMActionSet extends Struct<HMActionSet> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setLastExecutionDate:"),
       arg,
@@ -4535,7 +4419,7 @@ class HMActionSet extends Struct<HMActionSet> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setName:"),
       arg,
@@ -4546,7 +4430,7 @@ class HMActionSet extends Struct<HMActionSet> {
     Pointer<HMActionSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("uniqueIdentifier"),
     );
@@ -4558,7 +4442,7 @@ class HMActionSet extends Struct<HMActionSet> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("updateApplicationData:completionHandler:"),
       arg,
@@ -4572,7 +4456,7 @@ class HMActionSet extends Struct<HMActionSet> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("updateName:completionHandler:"),
       arg,
@@ -4584,16 +4468,13 @@ class HMActionSet extends Struct<HMActionSet> {
     Pointer<HMActionSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("uuid"),
     );
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMApplicationData extends Struct<HMApplicationData> {
   factory HMApplicationData._() {
@@ -4608,7 +4489,7 @@ class HMApplicationData extends Struct<HMApplicationData> {
     Pointer<HMApplicationData> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("allKeys"),
     );
@@ -4618,7 +4499,7 @@ class HMApplicationData extends Struct<HMApplicationData> {
     Pointer<HMApplicationData> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("allValues"),
     );
@@ -4628,7 +4509,7 @@ class HMApplicationData extends Struct<HMApplicationData> {
     Pointer<HMApplicationData> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("allowedObjectClasses"),
     );
@@ -4638,7 +4519,7 @@ class HMApplicationData extends Struct<HMApplicationData> {
     Pointer<HMApplicationData> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("applicationData"),
     );
@@ -4648,7 +4529,7 @@ class HMApplicationData extends Struct<HMApplicationData> {
     Pointer<HMApplicationData> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("dictionary"),
     );
@@ -4658,7 +4539,7 @@ class HMApplicationData extends Struct<HMApplicationData> {
     Pointer<HMApplicationData> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("dictionaryRepresentation"),
     );
@@ -4668,7 +4549,7 @@ class HMApplicationData extends Struct<HMApplicationData> {
     Pointer<HMApplicationData> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("hash"),
     );
@@ -4678,19 +4559,19 @@ class HMApplicationData extends Struct<HMApplicationData> {
     Pointer<HMApplicationData> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("init"),
     );
   }
 
-  static Pointer initWithContentsOfDictionary$allowedObjectClasses$(
+  static Pointer initWithContentsOfDictionary$allowedObjectClasses(
     Pointer<HMApplicationData> _self,
     Pointer arg, {
     @required Pointer allowedObjectClasses,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithContentsOfDictionary:allowedObjectClasses:"),
       arg,
@@ -4698,12 +4579,12 @@ class HMApplicationData extends Struct<HMApplicationData> {
     );
   }
 
-  static Pointer initWithContentsOfDictionary$(
+  static Pointer initWithContentsOfDictionary(
     Pointer<HMApplicationData> _self,
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithContentsOfDictionary:"),
       arg,
@@ -4715,7 +4596,7 @@ class HMApplicationData extends Struct<HMApplicationData> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isAllowedClassForObject:"),
       arg,
@@ -4727,7 +4608,7 @@ class HMApplicationData extends Struct<HMApplicationData> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isEqual:"),
       arg,
@@ -4739,7 +4620,7 @@ class HMApplicationData extends Struct<HMApplicationData> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("objectForKey:"),
       arg,
@@ -4751,7 +4632,7 @@ class HMApplicationData extends Struct<HMApplicationData> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("objectForKeyedSubscript:"),
       arg,
@@ -4763,7 +4644,7 @@ class HMApplicationData extends Struct<HMApplicationData> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setAllowedObjectClasses:"),
       arg,
@@ -4775,20 +4656,20 @@ class HMApplicationData extends Struct<HMApplicationData> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setApplicationData:"),
       arg,
     );
   }
 
-  static void setObject$forKey$(
+  static void setObject$forKey(
     Pointer<HMApplicationData> _self,
     Pointer arg, {
     @required Pointer forKey,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setObject:forKey:"),
       arg,
@@ -4796,13 +4677,13 @@ class HMApplicationData extends Struct<HMApplicationData> {
     );
   }
 
-  static void setObject$forKeyedSubscript$(
+  static void setObject$forKeyedSubscript(
     Pointer<HMApplicationData> _self,
     Pointer arg, {
     @required Pointer forKeyedSubscript,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setObject:forKeyedSubscript:"),
       arg,
@@ -4811,9 +4692,6 @@ class HMApplicationData extends Struct<HMApplicationData> {
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMAsset extends Struct<HMAsset> {
   factory HMAsset._() {
@@ -4828,7 +4706,7 @@ class HMAsset extends Struct<HMAsset> {
     Pointer<HMAsset> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("dictionaryRepresentation"),
     );
@@ -4839,7 +4717,7 @@ class HMAsset extends Struct<HMAsset> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("encodeWithCoder:"),
       arg,
@@ -4850,7 +4728,7 @@ class HMAsset extends Struct<HMAsset> {
     Pointer<HMAsset> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("identifier"),
     );
@@ -4861,7 +4739,7 @@ class HMAsset extends Struct<HMAsset> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithCoder:"),
       arg,
@@ -4875,7 +4753,7 @@ class HMAsset extends Struct<HMAsset> {
     @required Pointer resourceURL,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithIdentifier:metadata:resourceURL:"),
       arg,
@@ -4889,7 +4767,7 @@ class HMAsset extends Struct<HMAsset> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isEqual:"),
       arg,
@@ -4900,7 +4778,7 @@ class HMAsset extends Struct<HMAsset> {
     Pointer<HMAsset> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("metadata"),
     );
@@ -4910,16 +4788,13 @@ class HMAsset extends Struct<HMAsset> {
     Pointer<HMAsset> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("resourceURL"),
     );
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMAssistantAccessControl extends Struct<HMAssistantAccessControl> {
   factory HMAssistantAccessControl._() {
@@ -4936,7 +4811,7 @@ class HMAssistantAccessControl extends Struct<HMAssistantAccessControl> {
     Pointer<HMAssistantAccessControl> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("accessories"),
     );
@@ -4946,21 +4821,9 @@ class HMAssistantAccessControl extends Struct<HMAssistantAccessControl> {
     Pointer<HMAssistantAccessControl> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("allowUnauthenticatedRequests"),
-    );
-  }
-
-  static Pointer copyWithZone(
-    Pointer<HMAssistantAccessControl> _self,
-    Pointer<Pointer> arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
-      _self,
-      _objc.getSelector("copyWithZone:"),
-      arg,
     );
   }
 
@@ -4968,7 +4831,7 @@ class HMAssistantAccessControl extends Struct<HMAssistantAccessControl> {
     Pointer<HMAssistantAccessControl> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("debugDescription"),
     );
@@ -4978,7 +4841,7 @@ class HMAssistantAccessControl extends Struct<HMAssistantAccessControl> {
     Pointer<HMAssistantAccessControl> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("description"),
     );
@@ -4989,7 +4852,7 @@ class HMAssistantAccessControl extends Struct<HMAssistantAccessControl> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_p(
+    return _call_ptr_ptr_Int8_returns_ptr(
       _self,
       _objc.getSelector("descriptionWithPointer:"),
       arg,
@@ -5001,7 +4864,7 @@ class HMAssistantAccessControl extends Struct<HMAssistantAccessControl> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("encodeWithCoder:"),
       arg,
@@ -5013,7 +4876,7 @@ class HMAssistantAccessControl extends Struct<HMAssistantAccessControl> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithCoder:"),
       arg,
@@ -5025,7 +4888,7 @@ class HMAssistantAccessControl extends Struct<HMAssistantAccessControl> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithUser:"),
       arg,
@@ -5036,7 +4899,7 @@ class HMAssistantAccessControl extends Struct<HMAssistantAccessControl> {
     Pointer<HMAssistantAccessControl> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isEnabled"),
     );
@@ -5047,21 +4910,9 @@ class HMAssistantAccessControl extends Struct<HMAssistantAccessControl> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isEqual:"),
-      arg,
-    );
-  }
-
-  static Pointer mutableCopyWithZone(
-    Pointer<HMAssistantAccessControl> _self,
-    Pointer<Pointer> arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
-      _self,
-      _objc.getSelector("mutableCopyWithZone:"),
       arg,
     );
   }
@@ -5070,7 +4921,7 @@ class HMAssistantAccessControl extends Struct<HMAssistantAccessControl> {
     Pointer<HMAssistantAccessControl> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("options"),
     );
@@ -5080,16 +4931,13 @@ class HMAssistantAccessControl extends Struct<HMAssistantAccessControl> {
     Pointer<HMAssistantAccessControl> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("shortDescription"),
     );
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMAudioControl extends Struct<HMAudioControl> {
   factory HMAudioControl._() {
@@ -5100,13 +4948,13 @@ class HMAudioControl extends Struct<HMAudioControl> {
     return _objc.allocate("HMAudioControl").cast<HMAudioControl>();
   }
 
-  static void audioControl$didUpdateVolume$(
+  static void audioControl$didUpdateVolume(
     Pointer<HMAudioControl> _self,
     Pointer arg, {
     @required double didUpdateVolume,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_float32_returns_void(
+    _call_ptr_ptr_ptr_float32_returns_void(
       _self,
       _objc.getSelector("audioControl:didUpdateVolume:"),
       arg,
@@ -5114,13 +4962,13 @@ class HMAudioControl extends Struct<HMAudioControl> {
     );
   }
 
-  static void audioControl$didUpdateMuted$(
+  static void audioControl$didUpdateMuted(
     Pointer<HMAudioControl> _self,
     Pointer arg, {
     @required int didUpdateMuted,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_Int8_returns_void(
+    _call_ptr_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("audioControl:didUpdateMuted:"),
       arg,
@@ -5132,7 +4980,7 @@ class HMAudioControl extends Struct<HMAudioControl> {
     Pointer<HMAudioControl> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("audioControl"),
     );
@@ -5142,7 +4990,7 @@ class HMAudioControl extends Struct<HMAudioControl> {
     Pointer<HMAudioControl> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("delegate"),
     );
@@ -5153,7 +5001,7 @@ class HMAudioControl extends Struct<HMAudioControl> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithMediaSession:"),
       arg,
@@ -5164,7 +5012,7 @@ class HMAudioControl extends Struct<HMAudioControl> {
     Pointer<HMAudioControl> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isMuted"),
     );
@@ -5174,7 +5022,7 @@ class HMAudioControl extends Struct<HMAudioControl> {
     Pointer<HMAudioControl> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("mediaSession"),
     );
@@ -5185,7 +5033,7 @@ class HMAudioControl extends Struct<HMAudioControl> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setAudioControl:"),
       arg,
@@ -5197,7 +5045,7 @@ class HMAudioControl extends Struct<HMAudioControl> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setDelegate:"),
       arg,
@@ -5209,7 +5057,7 @@ class HMAudioControl extends Struct<HMAudioControl> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setMediaSession:"),
       arg,
@@ -5221,7 +5069,7 @@ class HMAudioControl extends Struct<HMAudioControl> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setMuted:"),
       arg,
@@ -5233,7 +5081,7 @@ class HMAudioControl extends Struct<HMAudioControl> {
     double arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_float32_returns_void(
+    _call_ptr_ptr_float32_returns_void(
       _self,
       _objc.getSelector("setVolume:"),
       arg,
@@ -5244,7 +5092,7 @@ class HMAudioControl extends Struct<HMAudioControl> {
     Pointer<HMAudioControl> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("uniqueIdentifier"),
     );
@@ -5256,7 +5104,7 @@ class HMAudioControl extends Struct<HMAudioControl> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_p_returns_void(
+    _call_ptr_ptr_Int8_ptr_returns_void(
       _self,
       _objc.getSelector("updateMuted:completionHandler:"),
       arg,
@@ -5270,7 +5118,7 @@ class HMAudioControl extends Struct<HMAudioControl> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_float32_p_returns_void(
+    _call_ptr_ptr_float32_ptr_returns_void(
       _self,
       _objc.getSelector("updateVolume:completionHandler:"),
       arg,
@@ -5282,16 +5130,13 @@ class HMAudioControl extends Struct<HMAudioControl> {
     Pointer<HMAudioControl> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_float32(
+    return _call_ptr_ptr_returns_float32(
       _self,
       _objc.getSelector("volume"),
     );
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMBulletinBoardNotification extends Struct<HMBulletinBoardNotification> {
   factory HMBulletinBoardNotification._() {
@@ -5309,7 +5154,7 @@ class HMBulletinBoardNotification extends Struct<HMBulletinBoardNotification> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("commitWithCompletionHandler:"),
       arg,
@@ -5320,7 +5165,7 @@ class HMBulletinBoardNotification extends Struct<HMBulletinBoardNotification> {
     Pointer<HMBulletinBoardNotification> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("condition"),
     );
@@ -5330,7 +5175,7 @@ class HMBulletinBoardNotification extends Struct<HMBulletinBoardNotification> {
     Pointer<HMBulletinBoardNotification> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("context"),
     );
@@ -5341,7 +5186,7 @@ class HMBulletinBoardNotification extends Struct<HMBulletinBoardNotification> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("encodeWithCoder:"),
       arg,
@@ -5352,7 +5197,7 @@ class HMBulletinBoardNotification extends Struct<HMBulletinBoardNotification> {
     Pointer<HMBulletinBoardNotification> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("init"),
     );
@@ -5363,7 +5208,7 @@ class HMBulletinBoardNotification extends Struct<HMBulletinBoardNotification> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithCoder:"),
       arg,
@@ -5374,7 +5219,7 @@ class HMBulletinBoardNotification extends Struct<HMBulletinBoardNotification> {
     Pointer<HMBulletinBoardNotification> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isEnabled"),
     );
@@ -5384,7 +5229,7 @@ class HMBulletinBoardNotification extends Struct<HMBulletinBoardNotification> {
     Pointer<HMBulletinBoardNotification> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("logID"),
     );
@@ -5394,7 +5239,7 @@ class HMBulletinBoardNotification extends Struct<HMBulletinBoardNotification> {
     Pointer<HMBulletinBoardNotification> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("logIdentifier"),
     );
@@ -5404,7 +5249,7 @@ class HMBulletinBoardNotification extends Struct<HMBulletinBoardNotification> {
     Pointer<HMBulletinBoardNotification> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("messageReceiveQueue"),
     );
@@ -5414,7 +5259,7 @@ class HMBulletinBoardNotification extends Struct<HMBulletinBoardNotification> {
     Pointer<HMBulletinBoardNotification> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("messageTargetUUID"),
     );
@@ -5424,7 +5269,7 @@ class HMBulletinBoardNotification extends Struct<HMBulletinBoardNotification> {
     Pointer<HMBulletinBoardNotification> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("notificationServiceGroup"),
     );
@@ -5434,7 +5279,7 @@ class HMBulletinBoardNotification extends Struct<HMBulletinBoardNotification> {
     Pointer<HMBulletinBoardNotification> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("service"),
     );
@@ -5445,7 +5290,7 @@ class HMBulletinBoardNotification extends Struct<HMBulletinBoardNotification> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setCondition:"),
       arg,
@@ -5457,7 +5302,7 @@ class HMBulletinBoardNotification extends Struct<HMBulletinBoardNotification> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setContext:"),
       arg,
@@ -5469,7 +5314,7 @@ class HMBulletinBoardNotification extends Struct<HMBulletinBoardNotification> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setEnabled:"),
       arg,
@@ -5480,7 +5325,7 @@ class HMBulletinBoardNotification extends Struct<HMBulletinBoardNotification> {
     Pointer<HMBulletinBoardNotification> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("targetUUID"),
     );
@@ -5490,16 +5335,13 @@ class HMBulletinBoardNotification extends Struct<HMBulletinBoardNotification> {
     Pointer<HMBulletinBoardNotification> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("uniqueIdentifier"),
     );
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMBulletinBoardNotificationServiceGroup
     extends Struct<HMBulletinBoardNotificationServiceGroup> {
@@ -5517,7 +5359,7 @@ class HMBulletinBoardNotificationServiceGroup
     Pointer<HMBulletinBoardNotificationServiceGroup> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("associatedServiceUUIDs"),
     );
@@ -5527,7 +5369,7 @@ class HMBulletinBoardNotificationServiceGroup
     Pointer<HMBulletinBoardNotificationServiceGroup> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("associatedServices"),
     );
@@ -5537,7 +5379,7 @@ class HMBulletinBoardNotificationServiceGroup
     Pointer<HMBulletinBoardNotificationServiceGroup> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("bulletinBoardNotification"),
     );
@@ -5547,7 +5389,7 @@ class HMBulletinBoardNotificationServiceGroup
     Pointer<HMBulletinBoardNotificationServiceGroup> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("cameraProfileUUIDs"),
     );
@@ -5557,7 +5399,7 @@ class HMBulletinBoardNotificationServiceGroup
     Pointer<HMBulletinBoardNotificationServiceGroup> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("cameraProfiles"),
     );
@@ -5567,7 +5409,7 @@ class HMBulletinBoardNotificationServiceGroup
     Pointer<HMBulletinBoardNotificationServiceGroup> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("context"),
     );
@@ -5577,7 +5419,7 @@ class HMBulletinBoardNotificationServiceGroup
     Pointer<HMBulletinBoardNotificationServiceGroup> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("dealloc"),
     );
@@ -5588,7 +5430,7 @@ class HMBulletinBoardNotificationServiceGroup
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("encodeWithCoder:"),
       arg,
@@ -5600,7 +5442,7 @@ class HMBulletinBoardNotificationServiceGroup
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("handleConfigureNotification:"),
       arg,
@@ -5611,7 +5453,7 @@ class HMBulletinBoardNotificationServiceGroup
     Pointer<HMBulletinBoardNotificationServiceGroup> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("init"),
     );
@@ -5622,7 +5464,7 @@ class HMBulletinBoardNotificationServiceGroup
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithCoder:"),
       arg,
@@ -5633,7 +5475,7 @@ class HMBulletinBoardNotificationServiceGroup
     Pointer<HMBulletinBoardNotificationServiceGroup> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("logID"),
     );
@@ -5643,7 +5485,7 @@ class HMBulletinBoardNotificationServiceGroup
     Pointer<HMBulletinBoardNotificationServiceGroup> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("logIdentifier"),
     );
@@ -5653,7 +5495,7 @@ class HMBulletinBoardNotificationServiceGroup
     Pointer<HMBulletinBoardNotificationServiceGroup> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("messageReceiveQueue"),
     );
@@ -5663,7 +5505,7 @@ class HMBulletinBoardNotificationServiceGroup
     Pointer<HMBulletinBoardNotificationServiceGroup> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("messageTargetUUID"),
     );
@@ -5674,7 +5516,7 @@ class HMBulletinBoardNotificationServiceGroup
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setAssociatedServiceUUIDs:"),
       arg,
@@ -5686,7 +5528,7 @@ class HMBulletinBoardNotificationServiceGroup
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setAssociatedServices:"),
       arg,
@@ -5698,7 +5540,7 @@ class HMBulletinBoardNotificationServiceGroup
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setCameraProfileUUIDs:"),
       arg,
@@ -5710,7 +5552,7 @@ class HMBulletinBoardNotificationServiceGroup
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setCameraProfiles:"),
       arg,
@@ -5722,7 +5564,7 @@ class HMBulletinBoardNotificationServiceGroup
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setContext:"),
       arg,
@@ -5733,7 +5575,7 @@ class HMBulletinBoardNotificationServiceGroup
     Pointer<HMBulletinBoardNotificationServiceGroup> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("targetUUID"),
     );
@@ -5743,16 +5585,13 @@ class HMBulletinBoardNotificationServiceGroup
     Pointer<HMBulletinBoardNotificationServiceGroup> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("uniqueIdentifier"),
     );
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMBulletinObjectTuple extends Struct<HMBulletinObjectTuple> {
   factory HMBulletinObjectTuple._() {
@@ -5771,7 +5610,7 @@ class HMBulletinObjectTuple extends Struct<HMBulletinObjectTuple> {
     @required Pointer uuidString,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int64_p_returns_p(
+    return _call_ptr_ptr_Int64_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithQueryType:uuidString:"),
       arg,
@@ -5783,7 +5622,7 @@ class HMBulletinObjectTuple extends Struct<HMBulletinObjectTuple> {
     Pointer<HMBulletinObjectTuple> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("queryName"),
     );
@@ -5793,16 +5632,13 @@ class HMBulletinObjectTuple extends Struct<HMBulletinObjectTuple> {
     Pointer<HMBulletinObjectTuple> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("uuidString"),
     );
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMCalendarEvent extends Struct<HMCalendarEvent> {
   factory HMCalendarEvent._() {
@@ -5813,24 +5649,12 @@ class HMCalendarEvent extends Struct<HMCalendarEvent> {
     return _objc.allocate("HMCalendarEvent").cast<HMCalendarEvent>();
   }
 
-  static Pointer copyWithZone(
-    Pointer<HMCalendarEvent> _self,
-    Pointer<Pointer> arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
-      _self,
-      _objc.getSelector("copyWithZone:"),
-      arg,
-    );
-  }
-
   static void encodeWithCoder(
     Pointer<HMCalendarEvent> _self,
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("encodeWithCoder:"),
       arg,
@@ -5841,7 +5665,7 @@ class HMCalendarEvent extends Struct<HMCalendarEvent> {
     Pointer<HMCalendarEvent> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("fireDateComponents"),
     );
@@ -5852,7 +5676,7 @@ class HMCalendarEvent extends Struct<HMCalendarEvent> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithCoder:"),
       arg,
@@ -5865,7 +5689,7 @@ class HMCalendarEvent extends Struct<HMCalendarEvent> {
     @required Pointer fireDateComponents,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithDict:fireDateComponents:"),
       arg,
@@ -5878,21 +5702,9 @@ class HMCalendarEvent extends Struct<HMCalendarEvent> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithFireDateComponents:"),
-      arg,
-    );
-  }
-
-  static Pointer mutableCopyWithZone(
-    Pointer<HMCalendarEvent> _self,
-    Pointer<Pointer> arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
-      _self,
-      _objc.getSelector("mutableCopyWithZone:"),
       arg,
     );
   }
@@ -5902,7 +5714,7 @@ class HMCalendarEvent extends Struct<HMCalendarEvent> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setFireDateComponents:"),
       arg,
@@ -5915,7 +5727,7 @@ class HMCalendarEvent extends Struct<HMCalendarEvent> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("updateFireDateComponents:completionHandler:"),
       arg,
@@ -5924,9 +5736,6 @@ class HMCalendarEvent extends Struct<HMCalendarEvent> {
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMCameraAudioCodec extends Struct<HMCameraAudioCodec> {
   factory HMCameraAudioCodec._() {
@@ -5941,7 +5750,7 @@ class HMCameraAudioCodec extends Struct<HMCameraAudioCodec> {
     Pointer<HMCameraAudioCodec> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("audioCodec"),
     );
@@ -5952,7 +5761,7 @@ class HMCameraAudioCodec extends Struct<HMCameraAudioCodec> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("encodeWithCoder:"),
       arg,
@@ -5963,7 +5772,7 @@ class HMCameraAudioCodec extends Struct<HMCameraAudioCodec> {
     Pointer<HMCameraAudioCodec> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("hash"),
     );
@@ -5974,7 +5783,7 @@ class HMCameraAudioCodec extends Struct<HMCameraAudioCodec> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Uint64_returns_p(
+    return _call_ptr_ptr_Uint64_returns_ptr(
       _self,
       _objc.getSelector("initWithAudioCodecType:"),
       arg,
@@ -5986,7 +5795,7 @@ class HMCameraAudioCodec extends Struct<HMCameraAudioCodec> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithCoder:"),
       arg,
@@ -5998,7 +5807,7 @@ class HMCameraAudioCodec extends Struct<HMCameraAudioCodec> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isEqual:"),
       arg,
@@ -6006,9 +5815,6 @@ class HMCameraAudioCodec extends Struct<HMCameraAudioCodec> {
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMCameraAudioControl extends Struct<HMCameraAudioControl> {
   factory HMCameraAudioControl._() {
@@ -6023,7 +5829,7 @@ class HMCameraAudioControl extends Struct<HMCameraAudioControl> {
     Pointer<HMCameraAudioControl> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("audioControl"),
     );
@@ -6034,7 +5840,7 @@ class HMCameraAudioControl extends Struct<HMCameraAudioControl> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithAudioControl:"),
       arg,
@@ -6045,7 +5851,7 @@ class HMCameraAudioControl extends Struct<HMCameraAudioControl> {
     Pointer<HMCameraAudioControl> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("mute"),
     );
@@ -6056,7 +5862,7 @@ class HMCameraAudioControl extends Struct<HMCameraAudioControl> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setAudioControl:"),
       arg,
@@ -6067,16 +5873,13 @@ class HMCameraAudioControl extends Struct<HMCameraAudioControl> {
     Pointer<HMCameraAudioControl> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("volume"),
     );
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMCameraControl extends Struct<HMCameraControl> {
   factory HMCameraControl._() {
@@ -6088,9 +5891,6 @@ class HMCameraControl extends Struct<HMCameraControl> {
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMCameraProfile extends Struct<HMCameraProfile> {
   factory HMCameraProfile._() {
@@ -6105,7 +5905,7 @@ class HMCameraProfile extends Struct<HMCameraProfile> {
     Pointer<HMCameraProfile> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("cameraProfile"),
     );
@@ -6116,7 +5916,7 @@ class HMCameraProfile extends Struct<HMCameraProfile> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithCameraProfile:"),
       arg,
@@ -6127,7 +5927,7 @@ class HMCameraProfile extends Struct<HMCameraProfile> {
     Pointer<HMCameraProfile> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("microphoneControl"),
     );
@@ -6137,7 +5937,7 @@ class HMCameraProfile extends Struct<HMCameraProfile> {
     Pointer<HMCameraProfile> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("services"),
     );
@@ -6148,7 +5948,7 @@ class HMCameraProfile extends Struct<HMCameraProfile> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setMicrophoneControl:"),
       arg,
@@ -6160,7 +5960,7 @@ class HMCameraProfile extends Struct<HMCameraProfile> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setSettingsControl:"),
       arg,
@@ -6172,7 +5972,7 @@ class HMCameraProfile extends Struct<HMCameraProfile> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setSnapshotControl:"),
       arg,
@@ -6184,7 +5984,7 @@ class HMCameraProfile extends Struct<HMCameraProfile> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setSpeakerControl:"),
       arg,
@@ -6196,7 +5996,7 @@ class HMCameraProfile extends Struct<HMCameraProfile> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setStreamControl:"),
       arg,
@@ -6207,7 +6007,7 @@ class HMCameraProfile extends Struct<HMCameraProfile> {
     Pointer<HMCameraProfile> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("settingsControl"),
     );
@@ -6217,7 +6017,7 @@ class HMCameraProfile extends Struct<HMCameraProfile> {
     Pointer<HMCameraProfile> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("snapshotControl"),
     );
@@ -6227,7 +6027,7 @@ class HMCameraProfile extends Struct<HMCameraProfile> {
     Pointer<HMCameraProfile> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("speakerControl"),
     );
@@ -6237,16 +6037,13 @@ class HMCameraProfile extends Struct<HMCameraProfile> {
     Pointer<HMCameraProfile> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("streamControl"),
     );
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMCameraSettingsControl extends Struct<HMCameraSettingsControl> {
   factory HMCameraSettingsControl._() {
@@ -6263,7 +6060,7 @@ class HMCameraSettingsControl extends Struct<HMCameraSettingsControl> {
     Pointer<HMCameraSettingsControl> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("currentHorizontalTilt"),
     );
@@ -6273,7 +6070,7 @@ class HMCameraSettingsControl extends Struct<HMCameraSettingsControl> {
     Pointer<HMCameraSettingsControl> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("currentVerticalTilt"),
     );
@@ -6283,7 +6080,7 @@ class HMCameraSettingsControl extends Struct<HMCameraSettingsControl> {
     Pointer<HMCameraSettingsControl> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("digitalZoom"),
     );
@@ -6293,7 +6090,7 @@ class HMCameraSettingsControl extends Struct<HMCameraSettingsControl> {
     Pointer<HMCameraSettingsControl> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("imageMirroring"),
     );
@@ -6303,7 +6100,7 @@ class HMCameraSettingsControl extends Struct<HMCameraSettingsControl> {
     Pointer<HMCameraSettingsControl> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("imageRotation"),
     );
@@ -6314,7 +6111,7 @@ class HMCameraSettingsControl extends Struct<HMCameraSettingsControl> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithSettingsControl:"),
       arg,
@@ -6325,7 +6122,7 @@ class HMCameraSettingsControl extends Struct<HMCameraSettingsControl> {
     Pointer<HMCameraSettingsControl> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("nightVision"),
     );
@@ -6335,7 +6132,7 @@ class HMCameraSettingsControl extends Struct<HMCameraSettingsControl> {
     Pointer<HMCameraSettingsControl> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("opticalZoom"),
     );
@@ -6346,7 +6143,7 @@ class HMCameraSettingsControl extends Struct<HMCameraSettingsControl> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setSettingsControl:"),
       arg,
@@ -6357,7 +6154,7 @@ class HMCameraSettingsControl extends Struct<HMCameraSettingsControl> {
     Pointer<HMCameraSettingsControl> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("settingsControl"),
     );
@@ -6367,7 +6164,7 @@ class HMCameraSettingsControl extends Struct<HMCameraSettingsControl> {
     Pointer<HMCameraSettingsControl> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("targetHorizontalTilt"),
     );
@@ -6377,16 +6174,13 @@ class HMCameraSettingsControl extends Struct<HMCameraSettingsControl> {
     Pointer<HMCameraSettingsControl> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("targetVerticalTilt"),
     );
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMCameraSnapshot extends Struct<HMCameraSnapshot> {
   factory HMCameraSnapshot._() {
@@ -6401,7 +6195,7 @@ class HMCameraSnapshot extends Struct<HMCameraSnapshot> {
     Pointer<HMCameraSnapshot> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("captureDate"),
     );
@@ -6412,7 +6206,7 @@ class HMCameraSnapshot extends Struct<HMCameraSnapshot> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithSnapshot:"),
       arg,
@@ -6424,7 +6218,7 @@ class HMCameraSnapshot extends Struct<HMCameraSnapshot> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setSnapshot:"),
       arg,
@@ -6435,16 +6229,13 @@ class HMCameraSnapshot extends Struct<HMCameraSnapshot> {
     Pointer<HMCameraSnapshot> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("snapshot"),
     );
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMCameraSnapshotControl extends Struct<HMCameraSnapshotControl> {
   factory HMCameraSnapshotControl._() {
@@ -6464,7 +6255,7 @@ class HMCameraSnapshotControl extends Struct<HMCameraSnapshotControl> {
     @required Pointer error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("cameraSnapshotControl:didTakeSnapshot:error:"),
       arg,
@@ -6478,7 +6269,7 @@ class HMCameraSnapshotControl extends Struct<HMCameraSnapshotControl> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("cameraSnapshotControlDidUpdateMostRecentSnapshot:"),
       arg,
@@ -6489,7 +6280,7 @@ class HMCameraSnapshotControl extends Struct<HMCameraSnapshotControl> {
     Pointer<HMCameraSnapshotControl> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("delegate"),
     );
@@ -6501,7 +6292,7 @@ class HMCameraSnapshotControl extends Struct<HMCameraSnapshotControl> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector(
           "fetchCameraSnapshotForBulletinContext:completionHandler:"),
@@ -6515,7 +6306,7 @@ class HMCameraSnapshotControl extends Struct<HMCameraSnapshotControl> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithSnapshotControl:"),
       arg,
@@ -6526,7 +6317,7 @@ class HMCameraSnapshotControl extends Struct<HMCameraSnapshotControl> {
     Pointer<HMCameraSnapshotControl> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("mostRecentSnapshot"),
     );
@@ -6537,7 +6328,7 @@ class HMCameraSnapshotControl extends Struct<HMCameraSnapshotControl> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setDelegate:"),
       arg,
@@ -6549,7 +6340,7 @@ class HMCameraSnapshotControl extends Struct<HMCameraSnapshotControl> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setSnapshotControl:"),
       arg,
@@ -6560,7 +6351,7 @@ class HMCameraSnapshotControl extends Struct<HMCameraSnapshotControl> {
     Pointer<HMCameraSnapshotControl> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("snapshotControl"),
     );
@@ -6570,16 +6361,13 @@ class HMCameraSnapshotControl extends Struct<HMCameraSnapshotControl> {
     Pointer<HMCameraSnapshotControl> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("takeSnapshot"),
     );
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMCameraSource extends Struct<HMCameraSource> {
   factory HMCameraSource._() {
@@ -6594,7 +6382,7 @@ class HMCameraSource extends Struct<HMCameraSource> {
     Pointer<HMCameraSource> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("aspectRatio"),
     );
@@ -6605,7 +6393,7 @@ class HMCameraSource extends Struct<HMCameraSource> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithSource:"),
       arg,
@@ -6617,7 +6405,7 @@ class HMCameraSource extends Struct<HMCameraSource> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setSource:"),
       arg,
@@ -6628,16 +6416,13 @@ class HMCameraSource extends Struct<HMCameraSource> {
     Pointer<HMCameraSource> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("source"),
     );
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMCameraStream extends Struct<HMCameraStream> {
   factory HMCameraStream._() {
@@ -6652,7 +6437,7 @@ class HMCameraStream extends Struct<HMCameraStream> {
     Pointer<HMCameraStream> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("audioStreamSetting"),
     );
@@ -6662,7 +6447,7 @@ class HMCameraStream extends Struct<HMCameraStream> {
     Pointer<HMCameraStream> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("audioVolume"),
     );
@@ -6673,7 +6458,7 @@ class HMCameraStream extends Struct<HMCameraStream> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithStream:"),
       arg,
@@ -6685,7 +6470,7 @@ class HMCameraStream extends Struct<HMCameraStream> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Uint64_returns_void(
+    _call_ptr_ptr_Uint64_returns_void(
       _self,
       _objc.getSelector("setAudioStreamSetting:"),
       arg,
@@ -6697,7 +6482,7 @@ class HMCameraStream extends Struct<HMCameraStream> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setStream:"),
       arg,
@@ -6708,7 +6493,7 @@ class HMCameraStream extends Struct<HMCameraStream> {
     Pointer<HMCameraStream> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("stream"),
     );
@@ -6720,7 +6505,7 @@ class HMCameraStream extends Struct<HMCameraStream> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Uint64_p_returns_void(
+    _call_ptr_ptr_Uint64_ptr_returns_void(
       _self,
       _objc.getSelector("updateAudioStreamSetting:completionHandler:"),
       arg,
@@ -6734,7 +6519,7 @@ class HMCameraStream extends Struct<HMCameraStream> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("updateAudioVolume:completionHandler:"),
       arg,
@@ -6743,9 +6528,6 @@ class HMCameraStream extends Struct<HMCameraStream> {
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMCameraStreamAudioPreferences
     extends Struct<HMCameraStreamAudioPreferences> {
@@ -6763,7 +6545,7 @@ class HMCameraStreamAudioPreferences
     Pointer<HMCameraStreamAudioPreferences> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("codecs"),
     );
@@ -6773,7 +6555,7 @@ class HMCameraStreamAudioPreferences
     Pointer<HMCameraStreamAudioPreferences> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("description"),
     );
@@ -6784,7 +6566,7 @@ class HMCameraStreamAudioPreferences
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("encodeWithCoder:"),
       arg,
@@ -6796,7 +6578,7 @@ class HMCameraStreamAudioPreferences
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithCoder:"),
       arg,
@@ -6809,7 +6591,7 @@ class HMCameraStreamAudioPreferences
     @required Pointer codecs,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithVolume:codecs:"),
       arg,
@@ -6822,7 +6604,7 @@ class HMCameraStreamAudioPreferences
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isEqual:"),
       arg,
@@ -6833,16 +6615,13 @@ class HMCameraStreamAudioPreferences
     Pointer<HMCameraStreamAudioPreferences> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("volume"),
     );
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMCameraStreamControl extends Struct<HMCameraStreamControl> {
   factory HMCameraStreamControl._() {
@@ -6859,7 +6638,7 @@ class HMCameraStreamControl extends Struct<HMCameraStreamControl> {
     Pointer<HMCameraStreamControl> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("cameraStream"),
     );
@@ -6871,7 +6650,7 @@ class HMCameraStreamControl extends Struct<HMCameraStreamControl> {
     @required Pointer didStopStream,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("cameraStreamControl:didStopStream:"),
       arg,
@@ -6884,7 +6663,7 @@ class HMCameraStreamControl extends Struct<HMCameraStreamControl> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("cameraStreamControlDidStartStream:"),
       arg,
@@ -6895,7 +6674,7 @@ class HMCameraStreamControl extends Struct<HMCameraStreamControl> {
     Pointer<HMCameraStreamControl> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("delegate"),
     );
@@ -6906,7 +6685,7 @@ class HMCameraStreamControl extends Struct<HMCameraStreamControl> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithStreamControl:"),
       arg,
@@ -6918,7 +6697,7 @@ class HMCameraStreamControl extends Struct<HMCameraStreamControl> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setDelegate:"),
       arg,
@@ -6930,7 +6709,7 @@ class HMCameraStreamControl extends Struct<HMCameraStreamControl> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setStreamControl:"),
       arg,
@@ -6941,7 +6720,7 @@ class HMCameraStreamControl extends Struct<HMCameraStreamControl> {
     Pointer<HMCameraStreamControl> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("startStream"),
     );
@@ -6952,7 +6731,7 @@ class HMCameraStreamControl extends Struct<HMCameraStreamControl> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("startStreamWithPreferences:"),
       arg,
@@ -6963,7 +6742,7 @@ class HMCameraStreamControl extends Struct<HMCameraStreamControl> {
     Pointer<HMCameraStreamControl> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("stopStream"),
     );
@@ -6973,7 +6752,7 @@ class HMCameraStreamControl extends Struct<HMCameraStreamControl> {
     Pointer<HMCameraStreamControl> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("streamControl"),
     );
@@ -6983,16 +6762,13 @@ class HMCameraStreamControl extends Struct<HMCameraStreamControl> {
     Pointer<HMCameraStreamControl> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("streamState"),
     );
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMCameraStreamPreferences extends Struct<HMCameraStreamPreferences> {
   factory HMCameraStreamPreferences._() {
@@ -7009,7 +6785,7 @@ class HMCameraStreamPreferences extends Struct<HMCameraStreamPreferences> {
     Pointer<HMCameraStreamPreferences> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("audioPreferences"),
     );
@@ -7019,7 +6795,7 @@ class HMCameraStreamPreferences extends Struct<HMCameraStreamPreferences> {
     Pointer<HMCameraStreamPreferences> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("description"),
     );
@@ -7030,7 +6806,7 @@ class HMCameraStreamPreferences extends Struct<HMCameraStreamPreferences> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("encodeWithCoder:"),
       arg,
@@ -7043,7 +6819,7 @@ class HMCameraStreamPreferences extends Struct<HMCameraStreamPreferences> {
     @required Pointer videoPreferences,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithAudioPreferences:videoPreferences:"),
       arg,
@@ -7056,7 +6832,7 @@ class HMCameraStreamPreferences extends Struct<HMCameraStreamPreferences> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithCoder:"),
       arg,
@@ -7068,7 +6844,7 @@ class HMCameraStreamPreferences extends Struct<HMCameraStreamPreferences> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isEqual:"),
       arg,
@@ -7079,16 +6855,13 @@ class HMCameraStreamPreferences extends Struct<HMCameraStreamPreferences> {
     Pointer<HMCameraStreamPreferences> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("videoPreferences"),
     );
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMCameraStreamVideoPreferences
     extends Struct<HMCameraStreamVideoPreferences> {
@@ -7106,7 +6879,7 @@ class HMCameraStreamVideoPreferences
     Pointer<HMCameraStreamVideoPreferences> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("description"),
     );
@@ -7117,7 +6890,7 @@ class HMCameraStreamVideoPreferences
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("encodeWithCoder:"),
       arg,
@@ -7129,7 +6902,7 @@ class HMCameraStreamVideoPreferences
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithCoder:"),
       arg,
@@ -7141,7 +6914,7 @@ class HMCameraStreamVideoPreferences
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithResolutions:"),
       arg,
@@ -7153,7 +6926,7 @@ class HMCameraStreamVideoPreferences
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isEqual:"),
       arg,
@@ -7164,16 +6937,13 @@ class HMCameraStreamVideoPreferences
     Pointer<HMCameraStreamVideoPreferences> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("resolutions"),
     );
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMCameraVideoResolution extends Struct<HMCameraVideoResolution> {
   factory HMCameraVideoResolution._() {
@@ -7191,7 +6961,7 @@ class HMCameraVideoResolution extends Struct<HMCameraVideoResolution> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("encodeWithCoder:"),
       arg,
@@ -7202,7 +6972,7 @@ class HMCameraVideoResolution extends Struct<HMCameraVideoResolution> {
     Pointer<HMCameraVideoResolution> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("hash"),
     );
@@ -7213,7 +6983,7 @@ class HMCameraVideoResolution extends Struct<HMCameraVideoResolution> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithCoder:"),
       arg,
@@ -7225,7 +6995,7 @@ class HMCameraVideoResolution extends Struct<HMCameraVideoResolution> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Uint64_returns_p(
+    return _call_ptr_ptr_Uint64_returns_ptr(
       _self,
       _objc.getSelector("initWithVideoResolutionType:"),
       arg,
@@ -7237,7 +7007,7 @@ class HMCameraVideoResolution extends Struct<HMCameraVideoResolution> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isEqual:"),
       arg,
@@ -7248,16 +7018,13 @@ class HMCameraVideoResolution extends Struct<HMCameraVideoResolution> {
     Pointer<HMCameraVideoResolution> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("videoResolution"),
     );
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMCharacteristic extends Struct<HMCharacteristic> {
   factory HMCharacteristic._() {
@@ -7272,7 +7039,7 @@ class HMCharacteristic extends Struct<HMCharacteristic> {
     Pointer<HMCharacteristic> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("characteristicType"),
     );
@@ -7282,7 +7049,7 @@ class HMCharacteristic extends Struct<HMCharacteristic> {
     Pointer<HMCharacteristic> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("context"),
     );
@@ -7294,7 +7061,7 @@ class HMCharacteristic extends Struct<HMCharacteristic> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_p_returns_void(
+    _call_ptr_ptr_Int8_ptr_returns_void(
       _self,
       _objc.getSelector("enableNotification:completionHandler:"),
       arg,
@@ -7307,7 +7074,7 @@ class HMCharacteristic extends Struct<HMCharacteristic> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("encodeWithCoder:"),
       arg,
@@ -7318,7 +7085,7 @@ class HMCharacteristic extends Struct<HMCharacteristic> {
     Pointer<HMCharacteristic> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("hasAuthorizationData"),
     );
@@ -7328,7 +7095,7 @@ class HMCharacteristic extends Struct<HMCharacteristic> {
     Pointer<HMCharacteristic> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("hash"),
     );
@@ -7338,7 +7105,7 @@ class HMCharacteristic extends Struct<HMCharacteristic> {
     Pointer<HMCharacteristic> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("init"),
     );
@@ -7349,7 +7116,7 @@ class HMCharacteristic extends Struct<HMCharacteristic> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithCoder:"),
       arg,
@@ -7360,7 +7127,7 @@ class HMCharacteristic extends Struct<HMCharacteristic> {
     Pointer<HMCharacteristic> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("instanceID"),
     );
@@ -7371,7 +7138,7 @@ class HMCharacteristic extends Struct<HMCharacteristic> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isEqual:"),
       arg,
@@ -7382,7 +7149,7 @@ class HMCharacteristic extends Struct<HMCharacteristic> {
     Pointer<HMCharacteristic> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isNotificationEnabled"),
     );
@@ -7392,7 +7159,7 @@ class HMCharacteristic extends Struct<HMCharacteristic> {
     Pointer<HMCharacteristic> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("localizedDescription"),
     );
@@ -7402,7 +7169,7 @@ class HMCharacteristic extends Struct<HMCharacteristic> {
     Pointer<HMCharacteristic> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("logIdentifier"),
     );
@@ -7413,7 +7180,7 @@ class HMCharacteristic extends Struct<HMCharacteristic> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int64_returns_p(
+    return _call_ptr_ptr_Int64_returns_ptr(
       _self,
       _objc.getSelector("mapHAPProperties:"),
       arg,
@@ -7424,7 +7191,7 @@ class HMCharacteristic extends Struct<HMCharacteristic> {
     Pointer<HMCharacteristic> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("metadata"),
     );
@@ -7434,7 +7201,7 @@ class HMCharacteristic extends Struct<HMCharacteristic> {
     Pointer<HMCharacteristic> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("notificationEnabledByThisClient"),
     );
@@ -7444,7 +7211,7 @@ class HMCharacteristic extends Struct<HMCharacteristic> {
     Pointer<HMCharacteristic> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("notificationEnabledTime"),
     );
@@ -7454,7 +7221,7 @@ class HMCharacteristic extends Struct<HMCharacteristic> {
     Pointer<HMCharacteristic> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("properties"),
     );
@@ -7465,7 +7232,7 @@ class HMCharacteristic extends Struct<HMCharacteristic> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("readValueWithCompletionHandler:"),
       arg,
@@ -7476,7 +7243,7 @@ class HMCharacteristic extends Struct<HMCharacteristic> {
     Pointer<HMCharacteristic> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("requiresDeviceUnlock"),
     );
@@ -7486,7 +7253,7 @@ class HMCharacteristic extends Struct<HMCharacteristic> {
     Pointer<HMCharacteristic> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("service"),
     );
@@ -7497,7 +7264,7 @@ class HMCharacteristic extends Struct<HMCharacteristic> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setCharacteristicType:"),
       arg,
@@ -7509,7 +7276,7 @@ class HMCharacteristic extends Struct<HMCharacteristic> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setContext:"),
       arg,
@@ -7521,7 +7288,7 @@ class HMCharacteristic extends Struct<HMCharacteristic> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setHasAuthorizationData:"),
       arg,
@@ -7533,7 +7300,7 @@ class HMCharacteristic extends Struct<HMCharacteristic> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setNotificationEnabled:"),
       arg,
@@ -7545,7 +7312,7 @@ class HMCharacteristic extends Struct<HMCharacteristic> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setNotificationEnabledByThisClient:"),
       arg,
@@ -7557,7 +7324,7 @@ class HMCharacteristic extends Struct<HMCharacteristic> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setNotificationEnabledTime:"),
       arg,
@@ -7569,7 +7336,7 @@ class HMCharacteristic extends Struct<HMCharacteristic> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setProperties:"),
       arg,
@@ -7581,7 +7348,7 @@ class HMCharacteristic extends Struct<HMCharacteristic> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setRequiresDeviceUnlock:"),
       arg,
@@ -7593,7 +7360,7 @@ class HMCharacteristic extends Struct<HMCharacteristic> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setService:"),
       arg,
@@ -7605,7 +7372,7 @@ class HMCharacteristic extends Struct<HMCharacteristic> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setValue:"),
       arg,
@@ -7617,7 +7384,7 @@ class HMCharacteristic extends Struct<HMCharacteristic> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setValueUpdateTime:"),
       arg,
@@ -7629,7 +7396,7 @@ class HMCharacteristic extends Struct<HMCharacteristic> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setValueUpdatedTime:"),
       arg,
@@ -7640,7 +7407,7 @@ class HMCharacteristic extends Struct<HMCharacteristic> {
     Pointer<HMCharacteristic> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("uniqueIdentifier"),
     );
@@ -7652,7 +7419,7 @@ class HMCharacteristic extends Struct<HMCharacteristic> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("updateAuthorizationData:completionHandler:"),
       arg,
@@ -7664,7 +7431,7 @@ class HMCharacteristic extends Struct<HMCharacteristic> {
     Pointer<HMCharacteristic> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("value"),
     );
@@ -7674,7 +7441,7 @@ class HMCharacteristic extends Struct<HMCharacteristic> {
     Pointer<HMCharacteristic> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("valueUpdatedTime"),
     );
@@ -7686,7 +7453,7 @@ class HMCharacteristic extends Struct<HMCharacteristic> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("writeValue:completionHandler:"),
       arg,
@@ -7695,9 +7462,6 @@ class HMCharacteristic extends Struct<HMCharacteristic> {
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMCharacteristicBatchRequest
     extends Struct<HMCharacteristicBatchRequest> {
@@ -7715,7 +7479,7 @@ class HMCharacteristicBatchRequest
     Pointer<HMCharacteristicBatchRequest> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("completionHandler"),
     );
@@ -7727,7 +7491,7 @@ class HMCharacteristicBatchRequest
     @required Pointer requestClass,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithRequests:requestClass:"),
       arg,
@@ -7739,7 +7503,7 @@ class HMCharacteristicBatchRequest
     Pointer<HMCharacteristicBatchRequest> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("progressHandler"),
     );
@@ -7749,7 +7513,7 @@ class HMCharacteristicBatchRequest
     Pointer<HMCharacteristicBatchRequest> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("requests"),
     );
@@ -7760,7 +7524,7 @@ class HMCharacteristicBatchRequest
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setCompletionHandler:"),
       arg,
@@ -7772,7 +7536,7 @@ class HMCharacteristicBatchRequest
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setProgressHandler:"),
       arg,
@@ -7784,7 +7548,7 @@ class HMCharacteristicBatchRequest
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setRequests:"),
       arg,
@@ -7792,9 +7556,6 @@ class HMCharacteristicBatchRequest
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMCharacteristicEvent extends Struct<HMCharacteristicEvent> {
   factory HMCharacteristicEvent._() {
@@ -7811,21 +7572,9 @@ class HMCharacteristicEvent extends Struct<HMCharacteristicEvent> {
     Pointer<HMCharacteristicEvent> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("characteristic"),
-    );
-  }
-
-  static Pointer copyWithZone(
-    Pointer<HMCharacteristicEvent> _self,
-    Pointer<Pointer> arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
-      _self,
-      _objc.getSelector("copyWithZone:"),
-      arg,
     );
   }
 
@@ -7834,7 +7583,7 @@ class HMCharacteristicEvent extends Struct<HMCharacteristicEvent> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("encodeWithCoder:"),
       arg,
@@ -7847,7 +7596,7 @@ class HMCharacteristicEvent extends Struct<HMCharacteristicEvent> {
     @required Pointer triggerValue,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithCharacteristic:triggerValue:"),
       arg,
@@ -7860,7 +7609,7 @@ class HMCharacteristicEvent extends Struct<HMCharacteristicEvent> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithCoder:"),
       arg,
@@ -7874,7 +7623,7 @@ class HMCharacteristicEvent extends Struct<HMCharacteristicEvent> {
     @required Pointer triggerValue,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithDict:characteristic:triggerValue:"),
       arg,
@@ -7883,24 +7632,12 @@ class HMCharacteristicEvent extends Struct<HMCharacteristicEvent> {
     );
   }
 
-  static Pointer mutableCopyWithZone(
-    Pointer<HMCharacteristicEvent> _self,
-    Pointer<Pointer> arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
-      _self,
-      _objc.getSelector("mutableCopyWithZone:"),
-      arg,
-    );
-  }
-
   static void setCharacteristic(
     Pointer<HMCharacteristicEvent> _self,
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setCharacteristic:"),
       arg,
@@ -7912,7 +7649,7 @@ class HMCharacteristicEvent extends Struct<HMCharacteristicEvent> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setTriggerValue:"),
       arg,
@@ -7923,7 +7660,7 @@ class HMCharacteristicEvent extends Struct<HMCharacteristicEvent> {
     Pointer<HMCharacteristicEvent> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("triggerValue"),
     );
@@ -7935,7 +7672,7 @@ class HMCharacteristicEvent extends Struct<HMCharacteristicEvent> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("updateTriggerValue:completionHandler:"),
       arg,
@@ -7944,9 +7681,6 @@ class HMCharacteristicEvent extends Struct<HMCharacteristicEvent> {
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMCharacteristicMetadata extends Struct<HMCharacteristicMetadata> {
   factory HMCharacteristicMetadata._() {
@@ -7963,7 +7697,7 @@ class HMCharacteristicMetadata extends Struct<HMCharacteristicMetadata> {
     Pointer<HMCharacteristicMetadata> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("description"),
     );
@@ -7974,7 +7708,7 @@ class HMCharacteristicMetadata extends Struct<HMCharacteristicMetadata> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("encodeWithCoder:"),
       arg,
@@ -7985,7 +7719,7 @@ class HMCharacteristicMetadata extends Struct<HMCharacteristicMetadata> {
     Pointer<HMCharacteristicMetadata> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("format"),
     );
@@ -7995,7 +7729,7 @@ class HMCharacteristicMetadata extends Struct<HMCharacteristicMetadata> {
     Pointer<HMCharacteristicMetadata> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("init"),
     );
@@ -8006,7 +7740,7 @@ class HMCharacteristicMetadata extends Struct<HMCharacteristicMetadata> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithCoder:"),
       arg,
@@ -8017,7 +7751,7 @@ class HMCharacteristicMetadata extends Struct<HMCharacteristicMetadata> {
     Pointer<HMCharacteristicMetadata> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("manufacturerDescription"),
     );
@@ -8027,7 +7761,7 @@ class HMCharacteristicMetadata extends Struct<HMCharacteristicMetadata> {
     Pointer<HMCharacteristicMetadata> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("maxLength"),
     );
@@ -8037,7 +7771,7 @@ class HMCharacteristicMetadata extends Struct<HMCharacteristicMetadata> {
     Pointer<HMCharacteristicMetadata> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("maximumValue"),
     );
@@ -8047,7 +7781,7 @@ class HMCharacteristicMetadata extends Struct<HMCharacteristicMetadata> {
     Pointer<HMCharacteristicMetadata> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("minimumValue"),
     );
@@ -8058,7 +7792,7 @@ class HMCharacteristicMetadata extends Struct<HMCharacteristicMetadata> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setFormat:"),
       arg,
@@ -8070,7 +7804,7 @@ class HMCharacteristicMetadata extends Struct<HMCharacteristicMetadata> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setManufacturerDescription:"),
       arg,
@@ -8082,7 +7816,7 @@ class HMCharacteristicMetadata extends Struct<HMCharacteristicMetadata> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setMaxLength:"),
       arg,
@@ -8094,7 +7828,7 @@ class HMCharacteristicMetadata extends Struct<HMCharacteristicMetadata> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setMaximumValue:"),
       arg,
@@ -8106,7 +7840,7 @@ class HMCharacteristicMetadata extends Struct<HMCharacteristicMetadata> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setMinimumValue:"),
       arg,
@@ -8118,7 +7852,7 @@ class HMCharacteristicMetadata extends Struct<HMCharacteristicMetadata> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setStepValue:"),
       arg,
@@ -8130,7 +7864,7 @@ class HMCharacteristicMetadata extends Struct<HMCharacteristicMetadata> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setUnits:"),
       arg,
@@ -8142,7 +7876,7 @@ class HMCharacteristicMetadata extends Struct<HMCharacteristicMetadata> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setValidValues:"),
       arg,
@@ -8153,7 +7887,7 @@ class HMCharacteristicMetadata extends Struct<HMCharacteristicMetadata> {
     Pointer<HMCharacteristicMetadata> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("stepValue"),
     );
@@ -8163,7 +7897,7 @@ class HMCharacteristicMetadata extends Struct<HMCharacteristicMetadata> {
     Pointer<HMCharacteristicMetadata> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("uniqueIdentifier"),
     );
@@ -8173,7 +7907,7 @@ class HMCharacteristicMetadata extends Struct<HMCharacteristicMetadata> {
     Pointer<HMCharacteristicMetadata> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("units"),
     );
@@ -8183,16 +7917,13 @@ class HMCharacteristicMetadata extends Struct<HMCharacteristicMetadata> {
     Pointer<HMCharacteristicMetadata> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("validValues"),
     );
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMCharacteristicReadRequest extends Struct<HMCharacteristicReadRequest> {
   factory HMCharacteristicReadRequest._() {
@@ -8209,7 +7940,7 @@ class HMCharacteristicReadRequest extends Struct<HMCharacteristicReadRequest> {
     Pointer<HMCharacteristicReadRequest> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("hash"),
     );
@@ -8220,7 +7951,7 @@ class HMCharacteristicReadRequest extends Struct<HMCharacteristicReadRequest> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithCharacteristic:"),
       arg,
@@ -8232,7 +7963,7 @@ class HMCharacteristicReadRequest extends Struct<HMCharacteristicReadRequest> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isEqual:"),
       arg,
@@ -8240,9 +7971,6 @@ class HMCharacteristicReadRequest extends Struct<HMCharacteristicReadRequest> {
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMCharacteristicRequest extends Struct<HMCharacteristicRequest> {
   factory HMCharacteristicRequest._() {
@@ -8259,7 +7987,7 @@ class HMCharacteristicRequest extends Struct<HMCharacteristicRequest> {
     Pointer<HMCharacteristicRequest> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("characteristic"),
     );
@@ -8270,7 +7998,7 @@ class HMCharacteristicRequest extends Struct<HMCharacteristicRequest> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithCharacteristic:"),
       arg,
@@ -8278,9 +8006,6 @@ class HMCharacteristicRequest extends Struct<HMCharacteristicRequest> {
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMCharacteristicResponse extends Struct<HMCharacteristicResponse> {
   factory HMCharacteristicResponse._() {
@@ -8297,7 +8022,7 @@ class HMCharacteristicResponse extends Struct<HMCharacteristicResponse> {
     Pointer<HMCharacteristicResponse> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("error"),
     );
@@ -8309,7 +8034,7 @@ class HMCharacteristicResponse extends Struct<HMCharacteristicResponse> {
     @required Pointer error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithRequest:error:"),
       arg,
@@ -8322,7 +8047,7 @@ class HMCharacteristicResponse extends Struct<HMCharacteristicResponse> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isEqual:"),
       arg,
@@ -8333,7 +8058,7 @@ class HMCharacteristicResponse extends Struct<HMCharacteristicResponse> {
     Pointer<HMCharacteristicResponse> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("request"),
     );
@@ -8344,7 +8069,7 @@ class HMCharacteristicResponse extends Struct<HMCharacteristicResponse> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setRequest:"),
       arg,
@@ -8352,9 +8077,6 @@ class HMCharacteristicResponse extends Struct<HMCharacteristicResponse> {
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMCharacteristicThresholdRangeEvent
     extends Struct<HMCharacteristicThresholdRangeEvent> {
@@ -8372,21 +8094,9 @@ class HMCharacteristicThresholdRangeEvent
     Pointer<HMCharacteristicThresholdRangeEvent> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("characteristic"),
-    );
-  }
-
-  static Pointer copyWithZone(
-    Pointer<HMCharacteristicThresholdRangeEvent> _self,
-    Pointer<Pointer> arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
-      _self,
-      _objc.getSelector("copyWithZone:"),
-      arg,
     );
   }
 
@@ -8395,7 +8105,7 @@ class HMCharacteristicThresholdRangeEvent
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("encodeWithCoder:"),
       arg,
@@ -8408,7 +8118,7 @@ class HMCharacteristicThresholdRangeEvent
     @required Pointer thresholdRange,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithCharacteristic:thresholdRange:"),
       arg,
@@ -8421,7 +8131,7 @@ class HMCharacteristicThresholdRangeEvent
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithCoder:"),
       arg,
@@ -8435,7 +8145,7 @@ class HMCharacteristicThresholdRangeEvent
     @required Pointer thresholdRange,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithDict:characteristic:thresholdRange:"),
       arg,
@@ -8444,24 +8154,12 @@ class HMCharacteristicThresholdRangeEvent
     );
   }
 
-  static Pointer mutableCopyWithZone(
-    Pointer<HMCharacteristicThresholdRangeEvent> _self,
-    Pointer<Pointer> arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
-      _self,
-      _objc.getSelector("mutableCopyWithZone:"),
-      arg,
-    );
-  }
-
   static void setCharacteristic(
     Pointer<HMCharacteristicThresholdRangeEvent> _self,
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setCharacteristic:"),
       arg,
@@ -8473,7 +8171,7 @@ class HMCharacteristicThresholdRangeEvent
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setThresholdRange:"),
       arg,
@@ -8484,7 +8182,7 @@ class HMCharacteristicThresholdRangeEvent
     Pointer<HMCharacteristicThresholdRangeEvent> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("thresholdRange"),
     );
@@ -8496,7 +8194,7 @@ class HMCharacteristicThresholdRangeEvent
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("updateThresholdRange:completionHandler:"),
       arg,
@@ -8505,9 +8203,6 @@ class HMCharacteristicThresholdRangeEvent
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMCharacteristicWriteAction extends Struct<HMCharacteristicWriteAction> {
   factory HMCharacteristicWriteAction._() {
@@ -8524,7 +8219,7 @@ class HMCharacteristicWriteAction extends Struct<HMCharacteristicWriteAction> {
     Pointer<HMCharacteristicWriteAction> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("characteristic"),
     );
@@ -8535,7 +8230,7 @@ class HMCharacteristicWriteAction extends Struct<HMCharacteristicWriteAction> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("encodeWithCoder:"),
       arg,
@@ -8548,7 +8243,7 @@ class HMCharacteristicWriteAction extends Struct<HMCharacteristicWriteAction> {
     @required Pointer targetValue,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithCharacteristic:targetValue:"),
       arg,
@@ -8561,7 +8256,7 @@ class HMCharacteristicWriteAction extends Struct<HMCharacteristicWriteAction> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithCoder:"),
       arg,
@@ -8573,7 +8268,7 @@ class HMCharacteristicWriteAction extends Struct<HMCharacteristicWriteAction> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setCharacteristic:"),
       arg,
@@ -8585,7 +8280,7 @@ class HMCharacteristicWriteAction extends Struct<HMCharacteristicWriteAction> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setTargetValue:"),
       arg,
@@ -8596,7 +8291,7 @@ class HMCharacteristicWriteAction extends Struct<HMCharacteristicWriteAction> {
     Pointer<HMCharacteristicWriteAction> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("targetValue"),
     );
@@ -8608,7 +8303,7 @@ class HMCharacteristicWriteAction extends Struct<HMCharacteristicWriteAction> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("updateTargetValue:completionHandler:"),
       arg,
@@ -8617,9 +8312,6 @@ class HMCharacteristicWriteAction extends Struct<HMCharacteristicWriteAction> {
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMCharacteristicWriteRequest
     extends Struct<HMCharacteristicWriteRequest> {
@@ -8637,7 +8329,7 @@ class HMCharacteristicWriteRequest
     Pointer<HMCharacteristicWriteRequest> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("hash"),
     );
@@ -8649,7 +8341,7 @@ class HMCharacteristicWriteRequest
     @required Pointer value,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithCharacteristic:value:"),
       arg,
@@ -8662,7 +8354,7 @@ class HMCharacteristicWriteRequest
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isEqual:"),
       arg,
@@ -8673,16 +8365,13 @@ class HMCharacteristicWriteRequest
     Pointer<HMCharacteristicWriteRequest> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("value"),
     );
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMClientConnection extends Struct<HMClientConnection> {
   factory HMClientConnection._() {
@@ -8697,7 +8386,7 @@ class HMClientConnection extends Struct<HMClientConnection> {
     Pointer<HMClientConnection> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("clientQueue"),
     );
@@ -8707,7 +8396,7 @@ class HMClientConnection extends Struct<HMClientConnection> {
     Pointer<HMClientConnection> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("dealloc"),
     );
@@ -8717,7 +8406,7 @@ class HMClientConnection extends Struct<HMClientConnection> {
     Pointer<HMClientConnection> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("init"),
     );
@@ -8727,7 +8416,7 @@ class HMClientConnection extends Struct<HMClientConnection> {
     Pointer<HMClientConnection> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithNoValidation"),
     );
@@ -8737,7 +8426,7 @@ class HMClientConnection extends Struct<HMClientConnection> {
     Pointer<HMClientConnection> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("messageReceiveQueue"),
     );
@@ -8747,7 +8436,7 @@ class HMClientConnection extends Struct<HMClientConnection> {
     Pointer<HMClientConnection> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("messageTargetUUID"),
     );
@@ -8757,7 +8446,7 @@ class HMClientConnection extends Struct<HMClientConnection> {
     Pointer<HMClientConnection> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("msgDispatcher"),
     );
@@ -8769,7 +8458,7 @@ class HMClientConnection extends Struct<HMClientConnection> {
     @required Pointer completion,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("requestSiriSyncDataWithValidity:completion:"),
       arg,
@@ -8783,7 +8472,7 @@ class HMClientConnection extends Struct<HMClientConnection> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("sendSiriCommand:completionHandler:"),
       arg,
@@ -8796,7 +8485,7 @@ class HMClientConnection extends Struct<HMClientConnection> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setMsgDispatcher:"),
       arg,
@@ -8808,7 +8497,7 @@ class HMClientConnection extends Struct<HMClientConnection> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setUuid:"),
       arg,
@@ -8820,7 +8509,7 @@ class HMClientConnection extends Struct<HMClientConnection> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setXpcClient:"),
       arg,
@@ -8831,7 +8520,7 @@ class HMClientConnection extends Struct<HMClientConnection> {
     Pointer<HMClientConnection> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("uuid"),
     );
@@ -8841,16 +8530,13 @@ class HMClientConnection extends Struct<HMClientConnection> {
     Pointer<HMClientConnection> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("xpcClient"),
     );
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMDIdentifierSaltStore extends Struct<HMDIdentifierSaltStore> {
   factory HMDIdentifierSaltStore._() {
@@ -8867,7 +8553,7 @@ class HMDIdentifierSaltStore extends Struct<HMDIdentifierSaltStore> {
     Pointer<HMDIdentifierSaltStore> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("assistantIdentifierSalt"),
     );
@@ -8877,7 +8563,7 @@ class HMDIdentifierSaltStore extends Struct<HMDIdentifierSaltStore> {
     Pointer<HMDIdentifierSaltStore> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("identifierSalt"),
     );
@@ -8887,7 +8573,7 @@ class HMDIdentifierSaltStore extends Struct<HMDIdentifierSaltStore> {
     Pointer<HMDIdentifierSaltStore> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("init"),
     );
@@ -8898,7 +8584,7 @@ class HMDIdentifierSaltStore extends Struct<HMDIdentifierSaltStore> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setAssistantIdentifierSalt:"),
       arg,
@@ -8910,7 +8596,7 @@ class HMDIdentifierSaltStore extends Struct<HMDIdentifierSaltStore> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setIdentifierSalt:"),
       arg,
@@ -8918,9 +8604,6 @@ class HMDIdentifierSaltStore extends Struct<HMDIdentifierSaltStore> {
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMDelegateCaller extends Struct<HMDelegateCaller> {
   factory HMDelegateCaller._() {
@@ -8931,13 +8614,13 @@ class HMDelegateCaller extends Struct<HMDelegateCaller> {
     return _objc.allocate("HMDelegateCaller").cast<HMDelegateCaller>();
   }
 
-  static void callCompletion$error$(
+  static void callCompletion$error(
     Pointer<HMDelegateCaller> _self,
     Pointer arg, {
     @required Pointer error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("callCompletion:error:"),
       arg,
@@ -8945,14 +8628,14 @@ class HMDelegateCaller extends Struct<HMDelegateCaller> {
     );
   }
 
-  static void callCompletion$error$snapshot$(
+  static void callCompletion$error$snapshot(
     Pointer<HMDelegateCaller> _self,
     Pointer arg, {
     @required Pointer error,
     @required Pointer snapshot,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("callCompletion:error:snapshot:"),
       arg,
@@ -8961,14 +8644,14 @@ class HMDelegateCaller extends Struct<HMDelegateCaller> {
     );
   }
 
-  static void callCompletion$error$obj$(
+  static void callCompletion$error$obj(
     Pointer<HMDelegateCaller> _self,
     Pointer arg, {
     @required Pointer error,
     @required Pointer obj,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("callCompletion:error:obj:"),
       arg,
@@ -8977,14 +8660,14 @@ class HMDelegateCaller extends Struct<HMDelegateCaller> {
     );
   }
 
-  static void callCompletion$obj$error$(
+  static void callCompletion$obj$error(
     Pointer<HMDelegateCaller> _self,
     Pointer arg, {
     @required Pointer obj,
     @required Pointer error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("callCompletion:obj:error:"),
       arg,
@@ -8993,14 +8676,14 @@ class HMDelegateCaller extends Struct<HMDelegateCaller> {
     );
   }
 
-  static void callCompletion$value$error$(
+  static void callCompletion$value$error(
     Pointer<HMDelegateCaller> _self,
     Pointer arg, {
     @required int value,
     @required Pointer error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_Int8_p_returns_void(
+    _call_ptr_ptr_ptr_Int8_ptr_returns_void(
       _self,
       _objc.getSelector("callCompletion:value:error:"),
       arg,
@@ -9009,13 +8692,13 @@ class HMDelegateCaller extends Struct<HMDelegateCaller> {
     );
   }
 
-  static void callCompletion$errorString$(
+  static void callCompletion$errorString(
     Pointer<HMDelegateCaller> _self,
     Pointer arg, {
     @required Pointer errorString,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("callCompletion:errorString:"),
       arg,
@@ -9023,14 +8706,14 @@ class HMDelegateCaller extends Struct<HMDelegateCaller> {
     );
   }
 
-  static void callCompletion$errorString$error$(
+  static void callCompletion$errorString$error(
     Pointer<HMDelegateCaller> _self,
     Pointer arg, {
     @required Pointer errorString,
     @required Pointer error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("callCompletion:errorString:error:"),
       arg,
@@ -9039,14 +8722,14 @@ class HMDelegateCaller extends Struct<HMDelegateCaller> {
     );
   }
 
-  static void callCompletion$error$dictionary$(
+  static void callCompletion$error$dictionary(
     Pointer<HMDelegateCaller> _self,
     Pointer arg, {
     @required Pointer error,
     @required Pointer dictionary,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("callCompletion:error:dictionary:"),
       arg,
@@ -9055,7 +8738,7 @@ class HMDelegateCaller extends Struct<HMDelegateCaller> {
     );
   }
 
-  static void callCompletion$isUsingHomeKit$isUsingCloudServices$error$(
+  static void callCompletion$isUsingHomeKit$isUsingCloudServices$error(
     Pointer<HMDelegateCaller> _self,
     Pointer arg, {
     @required int isUsingHomeKit,
@@ -9063,7 +8746,7 @@ class HMDelegateCaller extends Struct<HMDelegateCaller> {
     @required Pointer error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_Int8_Int8_p_returns_void(
+    _call_ptr_ptr_ptr_Int8_Int8_ptr_returns_void(
       _self,
       _objc.getSelector(
           "callCompletion:isUsingHomeKit:isUsingCloudServices:error:"),
@@ -9074,14 +8757,14 @@ class HMDelegateCaller extends Struct<HMDelegateCaller> {
     );
   }
 
-  static void callCompletion$home$error$(
+  static void callCompletion$home$error(
     Pointer<HMDelegateCaller> _self,
     Pointer arg, {
     @required Pointer home,
     @required Pointer error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("callCompletion:home:error:"),
       arg,
@@ -9090,14 +8773,14 @@ class HMDelegateCaller extends Struct<HMDelegateCaller> {
     );
   }
 
-  static void callCompletion$room$error$(
+  static void callCompletion$room$error(
     Pointer<HMDelegateCaller> _self,
     Pointer arg, {
     @required Pointer room,
     @required Pointer error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("callCompletion:room:error:"),
       arg,
@@ -9106,14 +8789,14 @@ class HMDelegateCaller extends Struct<HMDelegateCaller> {
     );
   }
 
-  static void callCompletion$zone$error$(
+  static void callCompletion$zone$error(
     Pointer<HMDelegateCaller> _self,
     Pointer arg, {
     @required Pointer zone,
     @required Pointer error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("callCompletion:zone:error:"),
       arg,
@@ -9122,14 +8805,14 @@ class HMDelegateCaller extends Struct<HMDelegateCaller> {
     );
   }
 
-  static void callCompletion$serviceGroup$error$(
+  static void callCompletion$serviceGroup$error(
     Pointer<HMDelegateCaller> _self,
     Pointer arg, {
     @required Pointer serviceGroup,
     @required Pointer error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("callCompletion:serviceGroup:error:"),
       arg,
@@ -9138,14 +8821,14 @@ class HMDelegateCaller extends Struct<HMDelegateCaller> {
     );
   }
 
-  static void callCompletion$actionSet$error$(
+  static void callCompletion$actionSet$error(
     Pointer<HMDelegateCaller> _self,
     Pointer arg, {
     @required Pointer actionSet,
     @required Pointer error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("callCompletion:actionSet:error:"),
       arg,
@@ -9154,7 +8837,7 @@ class HMDelegateCaller extends Struct<HMDelegateCaller> {
     );
   }
 
-  static void callCompletion$error$boolValue$array$(
+  static void callCompletion$error$boolValue$array(
     Pointer<HMDelegateCaller> _self,
     Pointer arg, {
     @required Pointer error,
@@ -9162,7 +8845,7 @@ class HMDelegateCaller extends Struct<HMDelegateCaller> {
     @required Pointer array,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_Int8_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_Int8_ptr_returns_void(
       _self,
       _objc.getSelector("callCompletion:error:boolValue:array:"),
       arg,
@@ -9172,14 +8855,14 @@ class HMDelegateCaller extends Struct<HMDelegateCaller> {
     );
   }
 
-  static void callCompletion$error$array$(
+  static void callCompletion$error$array(
     Pointer<HMDelegateCaller> _self,
     Pointer arg, {
     @required Pointer error,
     @required Pointer array,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("callCompletion:error:array:"),
       arg,
@@ -9188,7 +8871,7 @@ class HMDelegateCaller extends Struct<HMDelegateCaller> {
     );
   }
 
-  static void callCompletion$array$additionalAccessoryInfo$error$(
+  static void callCompletion$array$additionalAccessoryInfo$error(
     Pointer<HMDelegateCaller> _self,
     Pointer arg, {
     @required Pointer array,
@@ -9196,7 +8879,7 @@ class HMDelegateCaller extends Struct<HMDelegateCaller> {
     @required Pointer error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("callCompletion:array:additionalAccessoryInfo:error:"),
       arg,
@@ -9206,13 +8889,13 @@ class HMDelegateCaller extends Struct<HMDelegateCaller> {
     );
   }
 
-  static void callCompletion$array$(
+  static void callCompletion$array(
     Pointer<HMDelegateCaller> _self,
     Pointer arg, {
     @required Pointer array,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("callCompletion:array:"),
       arg,
@@ -9220,14 +8903,14 @@ class HMDelegateCaller extends Struct<HMDelegateCaller> {
     );
   }
 
-  static void callCompletion$invitations$error$(
+  static void callCompletion$invitations$error(
     Pointer<HMDelegateCaller> _self,
     Pointer arg, {
     @required Pointer invitations,
     @required Pointer error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("callCompletion:invitations:error:"),
       arg,
@@ -9236,14 +8919,14 @@ class HMDelegateCaller extends Struct<HMDelegateCaller> {
     );
   }
 
-  static void callCompletion$user$error$(
+  static void callCompletion$user$error(
     Pointer<HMDelegateCaller> _self,
     Pointer arg, {
     @required Pointer user,
     @required Pointer error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("callCompletion:user:error:"),
       arg,
@@ -9252,14 +8935,14 @@ class HMDelegateCaller extends Struct<HMDelegateCaller> {
     );
   }
 
-  static void callCompletion$error$proxiedDevice$(
+  static void callCompletion$error$proxiedDevice(
     Pointer<HMDelegateCaller> _self,
     Pointer arg, {
     @required Pointer error,
     @required Pointer proxiedDevice,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("callCompletion:error:proxiedDevice:"),
       arg,
@@ -9268,14 +8951,14 @@ class HMDelegateCaller extends Struct<HMDelegateCaller> {
     );
   }
 
-  static void callCompletion$error$mediaSystem$(
+  static void callCompletion$error$mediaSystem(
     Pointer<HMDelegateCaller> _self,
     Pointer arg, {
     @required Pointer error,
     @required Pointer mediaSystem,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("callCompletion:error:mediaSystem:"),
       arg,
@@ -9284,7 +8967,7 @@ class HMDelegateCaller extends Struct<HMDelegateCaller> {
     );
   }
 
-  static void callCompletion$value$conflictName$error$(
+  static void callCompletion$value$conflictName$error(
     Pointer<HMDelegateCaller> _self,
     Pointer arg, {
     @required int value,
@@ -9292,7 +8975,7 @@ class HMDelegateCaller extends Struct<HMDelegateCaller> {
     @required Pointer error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_Int8_p_p_returns_void(
+    _call_ptr_ptr_ptr_Int8_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("callCompletion:value:conflictName:error:"),
       arg,
@@ -9307,7 +8990,7 @@ class HMDelegateCaller extends Struct<HMDelegateCaller> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithQueue:"),
       arg,
@@ -9319,7 +9002,7 @@ class HMDelegateCaller extends Struct<HMDelegateCaller> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("invokeBlock:"),
       arg,
@@ -9330,16 +9013,13 @@ class HMDelegateCaller extends Struct<HMDelegateCaller> {
     Pointer<HMDelegateCaller> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("queue"),
     );
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMDevice extends Struct<HMDevice> {
   factory HMDevice._() {
@@ -9355,7 +9035,7 @@ class HMDevice extends Struct<HMDevice> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("IDSDeviceForIDSService:"),
       arg,
@@ -9367,7 +9047,7 @@ class HMDevice extends Struct<HMDevice> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("encodeWithCoder:"),
       arg,
@@ -9378,7 +9058,7 @@ class HMDevice extends Struct<HMDevice> {
     Pointer<HMDevice> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("hash"),
     );
@@ -9388,7 +9068,7 @@ class HMDevice extends Struct<HMDevice> {
     Pointer<HMDevice> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("idsIdentifier"),
     );
@@ -9398,7 +9078,7 @@ class HMDevice extends Struct<HMDevice> {
     Pointer<HMDevice> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("init"),
     );
@@ -9409,7 +9089,7 @@ class HMDevice extends Struct<HMDevice> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithCoder:"),
       arg,
@@ -9420,7 +9100,7 @@ class HMDevice extends Struct<HMDevice> {
     Pointer<HMDevice> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isCurrentDevice"),
     );
@@ -9431,7 +9111,7 @@ class HMDevice extends Struct<HMDevice> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isEqual:"),
       arg,
@@ -9442,7 +9122,7 @@ class HMDevice extends Struct<HMDevice> {
     Pointer<HMDevice> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("name"),
     );
@@ -9452,7 +9132,7 @@ class HMDevice extends Struct<HMDevice> {
     Pointer<HMDevice> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("rapportIRK"),
     );
@@ -9463,7 +9143,7 @@ class HMDevice extends Struct<HMDevice> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setName:"),
       arg,
@@ -9475,7 +9155,7 @@ class HMDevice extends Struct<HMDevice> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setRapportIRK:"),
       arg,
@@ -9486,7 +9166,7 @@ class HMDevice extends Struct<HMDevice> {
     Pointer<HMDevice> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("uniqueIdentifier"),
     );
@@ -9496,16 +9176,13 @@ class HMDevice extends Struct<HMDevice> {
     Pointer<HMDevice> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("uuid"),
     );
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMDeviceSetupOperation extends Struct<HMDeviceSetupOperation> {
   factory HMDeviceSetupOperation._() {
@@ -9522,7 +9199,7 @@ class HMDeviceSetupOperation extends Struct<HMDeviceSetupOperation> {
     Pointer<HMDeviceSetupOperation> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("accessory"),
     );
@@ -9532,7 +9209,7 @@ class HMDeviceSetupOperation extends Struct<HMDeviceSetupOperation> {
     Pointer<HMDeviceSetupOperation> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("cancel"),
     );
@@ -9543,7 +9220,7 @@ class HMDeviceSetupOperation extends Struct<HMDeviceSetupOperation> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("cancelWithError:"),
       arg,
@@ -9554,7 +9231,7 @@ class HMDeviceSetupOperation extends Struct<HMDeviceSetupOperation> {
     Pointer<HMDeviceSetupOperation> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("clientQueue"),
     );
@@ -9564,7 +9241,7 @@ class HMDeviceSetupOperation extends Struct<HMDeviceSetupOperation> {
     Pointer<HMDeviceSetupOperation> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("error"),
     );
@@ -9574,7 +9251,7 @@ class HMDeviceSetupOperation extends Struct<HMDeviceSetupOperation> {
     Pointer<HMDeviceSetupOperation> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("finish"),
     );
@@ -9584,7 +9261,7 @@ class HMDeviceSetupOperation extends Struct<HMDeviceSetupOperation> {
     Pointer<HMDeviceSetupOperation> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("init"),
     );
@@ -9595,7 +9272,7 @@ class HMDeviceSetupOperation extends Struct<HMDeviceSetupOperation> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithSession:"),
       arg,
@@ -9606,7 +9283,7 @@ class HMDeviceSetupOperation extends Struct<HMDeviceSetupOperation> {
     Pointer<HMDeviceSetupOperation> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isAsynchronous"),
     );
@@ -9616,7 +9293,7 @@ class HMDeviceSetupOperation extends Struct<HMDeviceSetupOperation> {
     Pointer<HMDeviceSetupOperation> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isExecuting"),
     );
@@ -9626,7 +9303,7 @@ class HMDeviceSetupOperation extends Struct<HMDeviceSetupOperation> {
     Pointer<HMDeviceSetupOperation> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isFinished"),
     );
@@ -9636,7 +9313,7 @@ class HMDeviceSetupOperation extends Struct<HMDeviceSetupOperation> {
     Pointer<HMDeviceSetupOperation> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("logIdentifier"),
     );
@@ -9646,7 +9323,7 @@ class HMDeviceSetupOperation extends Struct<HMDeviceSetupOperation> {
     Pointer<HMDeviceSetupOperation> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("session"),
     );
@@ -9657,7 +9334,7 @@ class HMDeviceSetupOperation extends Struct<HMDeviceSetupOperation> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setAccessory:"),
       arg,
@@ -9669,7 +9346,7 @@ class HMDeviceSetupOperation extends Struct<HMDeviceSetupOperation> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setError:"),
       arg,
@@ -9681,7 +9358,7 @@ class HMDeviceSetupOperation extends Struct<HMDeviceSetupOperation> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setExecuting:"),
       arg,
@@ -9693,7 +9370,7 @@ class HMDeviceSetupOperation extends Struct<HMDeviceSetupOperation> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setFinished:"),
       arg,
@@ -9704,20 +9381,20 @@ class HMDeviceSetupOperation extends Struct<HMDeviceSetupOperation> {
     Pointer<HMDeviceSetupOperation> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("setupSession"),
     );
   }
 
-  static void setupSession$didReceiveExchangeData$completionHandler$(
+  static void setupSession$didReceiveExchangeData$completionHandler(
     Pointer<HMDeviceSetupOperation> _self,
     Pointer arg, {
     @required Pointer didReceiveExchangeData,
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector(
           "setupSession:didReceiveExchangeData:completionHandler:"),
@@ -9727,13 +9404,13 @@ class HMDeviceSetupOperation extends Struct<HMDeviceSetupOperation> {
     );
   }
 
-  static void setupSession$didCloseWithError$(
+  static void setupSession$didCloseWithError(
     Pointer<HMDeviceSetupOperation> _self,
     Pointer arg, {
     @required Pointer didCloseWithError,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setupSession:didCloseWithError:"),
       arg,
@@ -9745,16 +9422,13 @@ class HMDeviceSetupOperation extends Struct<HMDeviceSetupOperation> {
     Pointer<HMDeviceSetupOperation> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("start"),
     );
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMDeviceSetupSession extends Struct<HMDeviceSetupSession> {
   factory HMDeviceSetupSession._() {
@@ -9769,7 +9443,7 @@ class HMDeviceSetupSession extends Struct<HMDeviceSetupSession> {
     Pointer<HMDeviceSetupSession> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("close"),
     );
@@ -9779,7 +9453,7 @@ class HMDeviceSetupSession extends Struct<HMDeviceSetupSession> {
     Pointer<HMDeviceSetupSession> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("context"),
     );
@@ -9789,7 +9463,7 @@ class HMDeviceSetupSession extends Struct<HMDeviceSetupSession> {
     Pointer<HMDeviceSetupSession> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("dealloc"),
     );
@@ -9799,7 +9473,7 @@ class HMDeviceSetupSession extends Struct<HMDeviceSetupSession> {
     Pointer<HMDeviceSetupSession> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("delegate"),
     );
@@ -9809,7 +9483,7 @@ class HMDeviceSetupSession extends Struct<HMDeviceSetupSession> {
     Pointer<HMDeviceSetupSession> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("identifier"),
     );
@@ -9819,7 +9493,7 @@ class HMDeviceSetupSession extends Struct<HMDeviceSetupSession> {
     Pointer<HMDeviceSetupSession> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("init"),
     );
@@ -9831,7 +9505,7 @@ class HMDeviceSetupSession extends Struct<HMDeviceSetupSession> {
     @required Pointer delegate,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int64_p_returns_p(
+    return _call_ptr_ptr_Int64_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithRole:delegate:"),
       arg,
@@ -9843,7 +9517,7 @@ class HMDeviceSetupSession extends Struct<HMDeviceSetupSession> {
     Pointer<HMDeviceSetupSession> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isOpen"),
     );
@@ -9853,7 +9527,7 @@ class HMDeviceSetupSession extends Struct<HMDeviceSetupSession> {
     Pointer<HMDeviceSetupSession> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("logIdentifier"),
     );
@@ -9863,7 +9537,7 @@ class HMDeviceSetupSession extends Struct<HMDeviceSetupSession> {
     Pointer<HMDeviceSetupSession> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("messageDestination"),
     );
@@ -9873,7 +9547,7 @@ class HMDeviceSetupSession extends Struct<HMDeviceSetupSession> {
     Pointer<HMDeviceSetupSession> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("messageReceiveQueue"),
     );
@@ -9883,7 +9557,7 @@ class HMDeviceSetupSession extends Struct<HMDeviceSetupSession> {
     Pointer<HMDeviceSetupSession> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("messageTargetUUID"),
     );
@@ -9893,7 +9567,7 @@ class HMDeviceSetupSession extends Struct<HMDeviceSetupSession> {
     Pointer<HMDeviceSetupSession> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("open"),
     );
@@ -9903,7 +9577,7 @@ class HMDeviceSetupSession extends Struct<HMDeviceSetupSession> {
     Pointer<HMDeviceSetupSession> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int64(
+    return _call_ptr_ptr_returns_Int64(
       _self,
       _objc.getSelector("role"),
     );
@@ -9915,7 +9589,7 @@ class HMDeviceSetupSession extends Struct<HMDeviceSetupSession> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("sendExchangeData:completionHandler:"),
       arg,
@@ -9928,7 +9602,7 @@ class HMDeviceSetupSession extends Struct<HMDeviceSetupSession> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setOpen:"),
       arg,
@@ -9940,7 +9614,7 @@ class HMDeviceSetupSession extends Struct<HMDeviceSetupSession> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setUserInfo:"),
       arg,
@@ -9951,16 +9625,13 @@ class HMDeviceSetupSession extends Struct<HMDeviceSetupSession> {
     Pointer<HMDeviceSetupSession> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("userInfo"),
     );
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMDurationEvent extends Struct<HMDurationEvent> {
   factory HMDurationEvent._() {
@@ -9971,23 +9642,11 @@ class HMDurationEvent extends Struct<HMDurationEvent> {
     return _objc.allocate("HMDurationEvent").cast<HMDurationEvent>();
   }
 
-  static Pointer copyWithZone(
-    Pointer<HMDurationEvent> _self,
-    Pointer<Pointer> arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
-      _self,
-      _objc.getSelector("copyWithZone:"),
-      arg,
-    );
-  }
-
   static double duration(
     Pointer<HMDurationEvent> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_float64(
+    return _call_ptr_ptr_returns_float64(
       _self,
       _objc.getSelector("duration"),
     );
@@ -9998,7 +9657,7 @@ class HMDurationEvent extends Struct<HMDurationEvent> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("encodeWithCoder:"),
       arg,
@@ -10010,7 +9669,7 @@ class HMDurationEvent extends Struct<HMDurationEvent> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithCoder:"),
       arg,
@@ -10023,7 +9682,7 @@ class HMDurationEvent extends Struct<HMDurationEvent> {
     @required double duration,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_float64_returns_p(
+    return _call_ptr_ptr_ptr_float64_returns_ptr(
       _self,
       _objc.getSelector("initWithDict:duration:"),
       arg,
@@ -10036,21 +9695,9 @@ class HMDurationEvent extends Struct<HMDurationEvent> {
     double arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_float64_returns_p(
+    return _call_ptr_ptr_float64_returns_ptr(
       _self,
       _objc.getSelector("initWithDuration:"),
-      arg,
-    );
-  }
-
-  static Pointer mutableCopyWithZone(
-    Pointer<HMDurationEvent> _self,
-    Pointer<Pointer> arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
-      _self,
-      _objc.getSelector("mutableCopyWithZone:"),
       arg,
     );
   }
@@ -10060,7 +9707,7 @@ class HMDurationEvent extends Struct<HMDurationEvent> {
     double arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_float64_returns_void(
+    _call_ptr_ptr_float64_returns_void(
       _self,
       _objc.getSelector("setDuration:"),
       arg,
@@ -10072,7 +9719,7 @@ class HMDurationEvent extends Struct<HMDurationEvent> {
     double arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_float64_returns_void(
+    _call_ptr_ptr_float64_returns_void(
       _self,
       _objc.getSelector("setOffset:"),
       arg,
@@ -10085,7 +9732,7 @@ class HMDurationEvent extends Struct<HMDurationEvent> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_float64_p_returns_void(
+    _call_ptr_ptr_float64_ptr_returns_void(
       _self,
       _objc.getSelector("updateDuration:completionHandler:"),
       arg,
@@ -10094,9 +9741,6 @@ class HMDurationEvent extends Struct<HMDurationEvent> {
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMEraseAnisetteDataRequest extends Struct<HMEraseAnisetteDataRequest> {
   factory HMEraseAnisetteDataRequest._() {
@@ -10113,7 +9757,7 @@ class HMEraseAnisetteDataRequest extends Struct<HMEraseAnisetteDataRequest> {
     Pointer<HMEraseAnisetteDataRequest> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("description"),
     );
@@ -10123,7 +9767,7 @@ class HMEraseAnisetteDataRequest extends Struct<HMEraseAnisetteDataRequest> {
     Pointer<HMEraseAnisetteDataRequest> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("messageName"),
     );
@@ -10133,7 +9777,7 @@ class HMEraseAnisetteDataRequest extends Struct<HMEraseAnisetteDataRequest> {
     Pointer<HMEraseAnisetteDataRequest> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("messagePayload"),
     );
@@ -10143,16 +9787,13 @@ class HMEraseAnisetteDataRequest extends Struct<HMEraseAnisetteDataRequest> {
     Pointer<HMEraseAnisetteDataRequest> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("xpcMessageName"),
     );
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMEraseAnisetteDataResponse extends Struct<HMEraseAnisetteDataResponse> {
   factory HMEraseAnisetteDataResponse._() {
@@ -10169,7 +9810,7 @@ class HMEraseAnisetteDataResponse extends Struct<HMEraseAnisetteDataResponse> {
     Pointer<HMEraseAnisetteDataResponse> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("description"),
     );
@@ -10179,7 +9820,7 @@ class HMEraseAnisetteDataResponse extends Struct<HMEraseAnisetteDataResponse> {
     Pointer<HMEraseAnisetteDataResponse> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("didSucceed"),
     );
@@ -10190,7 +9831,7 @@ class HMEraseAnisetteDataResponse extends Struct<HMEraseAnisetteDataResponse> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("encodeWithCoder:"),
       arg,
@@ -10202,7 +9843,7 @@ class HMEraseAnisetteDataResponse extends Struct<HMEraseAnisetteDataResponse> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithCoder:"),
       arg,
@@ -10213,7 +9854,7 @@ class HMEraseAnisetteDataResponse extends Struct<HMEraseAnisetteDataResponse> {
     Pointer<HMEraseAnisetteDataResponse> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("messageName"),
     );
@@ -10223,7 +9864,7 @@ class HMEraseAnisetteDataResponse extends Struct<HMEraseAnisetteDataResponse> {
     Pointer<HMEraseAnisetteDataResponse> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("messagePayload"),
     );
@@ -10234,7 +9875,7 @@ class HMEraseAnisetteDataResponse extends Struct<HMEraseAnisetteDataResponse> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setDidSucceed:"),
       arg,
@@ -10245,16 +9886,13 @@ class HMEraseAnisetteDataResponse extends Struct<HMEraseAnisetteDataResponse> {
     Pointer<HMEraseAnisetteDataResponse> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("xpcMessageName"),
     );
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMEvent extends Struct<HMEvent> {
   factory HMEvent._() {
@@ -10269,7 +9907,7 @@ class HMEvent extends Struct<HMEvent> {
     Pointer<HMEvent> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("context"),
     );
@@ -10280,7 +9918,7 @@ class HMEvent extends Struct<HMEvent> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("encodeWithCoder:"),
       arg,
@@ -10291,7 +9929,7 @@ class HMEvent extends Struct<HMEvent> {
     Pointer<HMEvent> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("eventTrigger"),
     );
@@ -10301,7 +9939,7 @@ class HMEvent extends Struct<HMEvent> {
     Pointer<HMEvent> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("hash"),
     );
@@ -10311,7 +9949,7 @@ class HMEvent extends Struct<HMEvent> {
     Pointer<HMEvent> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("init"),
     );
@@ -10322,7 +9960,7 @@ class HMEvent extends Struct<HMEvent> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithCoder:"),
       arg,
@@ -10334,7 +9972,7 @@ class HMEvent extends Struct<HMEvent> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithDict:"),
       arg,
@@ -10345,7 +9983,7 @@ class HMEvent extends Struct<HMEvent> {
     Pointer<HMEvent> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isEndEvent"),
     );
@@ -10356,7 +9994,7 @@ class HMEvent extends Struct<HMEvent> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isEqual:"),
       arg,
@@ -10367,7 +10005,7 @@ class HMEvent extends Struct<HMEvent> {
     Pointer<HMEvent> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("messageReceiveQueue"),
     );
@@ -10377,7 +10015,7 @@ class HMEvent extends Struct<HMEvent> {
     Pointer<HMEvent> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("messageTargetUUID"),
     );
@@ -10388,7 +10026,7 @@ class HMEvent extends Struct<HMEvent> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setContext:"),
       arg,
@@ -10400,7 +10038,7 @@ class HMEvent extends Struct<HMEvent> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setEndEvent:"),
       arg,
@@ -10412,7 +10050,7 @@ class HMEvent extends Struct<HMEvent> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setEventTrigger:"),
       arg,
@@ -10423,7 +10061,7 @@ class HMEvent extends Struct<HMEvent> {
     Pointer<HMEvent> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("triggerType"),
     );
@@ -10433,7 +10071,7 @@ class HMEvent extends Struct<HMEvent> {
     Pointer<HMEvent> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("uniqueIdentifier"),
     );
@@ -10443,16 +10081,13 @@ class HMEvent extends Struct<HMEvent> {
     Pointer<HMEvent> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("uuid"),
     );
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMEventTrigger extends Struct<HMEventTrigger> {
   factory HMEventTrigger._() {
@@ -10467,7 +10102,7 @@ class HMEventTrigger extends Struct<HMEventTrigger> {
     Pointer<HMEventTrigger> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("activationState"),
     );
@@ -10479,7 +10114,7 @@ class HMEventTrigger extends Struct<HMEventTrigger> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("addEvent:completionHandler:"),
       arg,
@@ -10492,7 +10127,7 @@ class HMEventTrigger extends Struct<HMEventTrigger> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("addedEvent:"),
       arg,
@@ -10503,7 +10138,7 @@ class HMEventTrigger extends Struct<HMEventTrigger> {
     Pointer<HMEventTrigger> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("allEvents"),
     );
@@ -10513,7 +10148,7 @@ class HMEventTrigger extends Struct<HMEventTrigger> {
     Pointer<HMEventTrigger> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("compatibleWithApp"),
     );
@@ -10523,7 +10158,7 @@ class HMEventTrigger extends Struct<HMEventTrigger> {
     Pointer<HMEventTrigger> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("containsSharedTriggerActivationBits"),
     );
@@ -10533,7 +10168,7 @@ class HMEventTrigger extends Struct<HMEventTrigger> {
     Pointer<HMEventTrigger> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("currentEvents"),
     );
@@ -10544,7 +10179,7 @@ class HMEventTrigger extends Struct<HMEventTrigger> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("encodeWithCoder:"),
       arg,
@@ -10555,7 +10190,7 @@ class HMEventTrigger extends Struct<HMEventTrigger> {
     Pointer<HMEventTrigger> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("endEvents"),
     );
@@ -10565,7 +10200,7 @@ class HMEventTrigger extends Struct<HMEventTrigger> {
     Pointer<HMEventTrigger> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("events"),
     );
@@ -10575,7 +10210,7 @@ class HMEventTrigger extends Struct<HMEventTrigger> {
     Pointer<HMEventTrigger> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("executeOnce"),
     );
@@ -10586,7 +10221,7 @@ class HMEventTrigger extends Struct<HMEventTrigger> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("handleActivationStateNotification:"),
       arg,
@@ -10598,7 +10233,7 @@ class HMEventTrigger extends Struct<HMEventTrigger> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("handleEventAddedNotification:"),
       arg,
@@ -10610,7 +10245,7 @@ class HMEventTrigger extends Struct<HMEventTrigger> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("handleEventsRemovedNotification:"),
       arg,
@@ -10622,7 +10257,7 @@ class HMEventTrigger extends Struct<HMEventTrigger> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("handleEventsUpdatedNotification:"),
       arg,
@@ -10638,7 +10273,7 @@ class HMEventTrigger extends Struct<HMEventTrigger> {
     @required Pointer predicate,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector(
           "initInternalWithName:events:endEvents:recurrences:predicate:"),
@@ -10655,14 +10290,14 @@ class HMEventTrigger extends Struct<HMEventTrigger> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithCoder:"),
       arg,
     );
   }
 
-  static Pointer initWithName$events$endEvents$recurrences$predicate$(
+  static Pointer initWithName$events$endEvents$recurrences$predicate(
     Pointer<HMEventTrigger> _self,
     Pointer arg, {
     @required Pointer events,
@@ -10671,7 +10306,7 @@ class HMEventTrigger extends Struct<HMEventTrigger> {
     @required Pointer predicate,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithName:events:endEvents:recurrences:predicate:"),
       arg,
@@ -10682,14 +10317,14 @@ class HMEventTrigger extends Struct<HMEventTrigger> {
     );
   }
 
-  static Pointer initWithName$events$predicate$(
+  static Pointer initWithName$events$predicate(
     Pointer<HMEventTrigger> _self,
     Pointer arg, {
     @required Pointer events,
     @required Pointer predicate,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithName:events:predicate:"),
       arg,
@@ -10702,7 +10337,7 @@ class HMEventTrigger extends Struct<HMEventTrigger> {
     Pointer<HMEventTrigger> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("internalPredicate"),
     );
@@ -10712,7 +10347,7 @@ class HMEventTrigger extends Struct<HMEventTrigger> {
     Pointer<HMEventTrigger> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("predicate"),
     );
@@ -10722,7 +10357,7 @@ class HMEventTrigger extends Struct<HMEventTrigger> {
     Pointer<HMEventTrigger> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("recurrences"),
     );
@@ -10734,7 +10369,7 @@ class HMEventTrigger extends Struct<HMEventTrigger> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("removeEvent:completionHandler:"),
       arg,
@@ -10747,7 +10382,7 @@ class HMEventTrigger extends Struct<HMEventTrigger> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Uint64_returns_void(
+    _call_ptr_ptr_Uint64_returns_void(
       _self,
       _objc.getSelector("setActivationState:"),
       arg,
@@ -10759,7 +10394,7 @@ class HMEventTrigger extends Struct<HMEventTrigger> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setCurrentEvents:"),
       arg,
@@ -10771,7 +10406,7 @@ class HMEventTrigger extends Struct<HMEventTrigger> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setExecuteOnce:"),
       arg,
@@ -10783,7 +10418,7 @@ class HMEventTrigger extends Struct<HMEventTrigger> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setInternalPredicate:"),
       arg,
@@ -10795,7 +10430,7 @@ class HMEventTrigger extends Struct<HMEventTrigger> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setRecurrences:"),
       arg,
@@ -10806,7 +10441,7 @@ class HMEventTrigger extends Struct<HMEventTrigger> {
     Pointer<HMEventTrigger> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("triggerActivationState"),
     );
@@ -10818,7 +10453,7 @@ class HMEventTrigger extends Struct<HMEventTrigger> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("updateEndEvents:completionHandler:"),
       arg,
@@ -10832,7 +10467,7 @@ class HMEventTrigger extends Struct<HMEventTrigger> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("updateEvents:completionHandler:"),
       arg,
@@ -10846,7 +10481,7 @@ class HMEventTrigger extends Struct<HMEventTrigger> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_p_returns_void(
+    _call_ptr_ptr_Int8_ptr_returns_void(
       _self,
       _objc.getSelector("updateExecuteOnce:completionHandler:"),
       arg,
@@ -10860,7 +10495,7 @@ class HMEventTrigger extends Struct<HMEventTrigger> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("updatePredicate:completionHandler:"),
       arg,
@@ -10874,7 +10509,7 @@ class HMEventTrigger extends Struct<HMEventTrigger> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("updateRecurrences:completionHandler:"),
       arg,
@@ -10883,9 +10518,6 @@ class HMEventTrigger extends Struct<HMEventTrigger> {
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMFetchAnisetteDataRequest extends Struct<HMFetchAnisetteDataRequest> {
   factory HMFetchAnisetteDataRequest._() {
@@ -10902,7 +10534,7 @@ class HMFetchAnisetteDataRequest extends Struct<HMFetchAnisetteDataRequest> {
     Pointer<HMFetchAnisetteDataRequest> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("description"),
     );
@@ -10913,7 +10545,7 @@ class HMFetchAnisetteDataRequest extends Struct<HMFetchAnisetteDataRequest> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("encodeWithCoder:"),
       arg,
@@ -10925,7 +10557,7 @@ class HMFetchAnisetteDataRequest extends Struct<HMFetchAnisetteDataRequest> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithCoder:"),
       arg,
@@ -10936,7 +10568,7 @@ class HMFetchAnisetteDataRequest extends Struct<HMFetchAnisetteDataRequest> {
     Pointer<HMFetchAnisetteDataRequest> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("messageName"),
     );
@@ -10946,7 +10578,7 @@ class HMFetchAnisetteDataRequest extends Struct<HMFetchAnisetteDataRequest> {
     Pointer<HMFetchAnisetteDataRequest> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("messagePayload"),
     );
@@ -10957,7 +10589,7 @@ class HMFetchAnisetteDataRequest extends Struct<HMFetchAnisetteDataRequest> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setShouldProvision:"),
       arg,
@@ -10968,7 +10600,7 @@ class HMFetchAnisetteDataRequest extends Struct<HMFetchAnisetteDataRequest> {
     Pointer<HMFetchAnisetteDataRequest> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("shouldProvision"),
     );
@@ -10978,16 +10610,13 @@ class HMFetchAnisetteDataRequest extends Struct<HMFetchAnisetteDataRequest> {
     Pointer<HMFetchAnisetteDataRequest> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("xpcMessageName"),
     );
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMFetchAnisetteDataResponse extends Struct<HMFetchAnisetteDataResponse> {
   factory HMFetchAnisetteDataResponse._() {
@@ -11004,7 +10633,7 @@ class HMFetchAnisetteDataResponse extends Struct<HMFetchAnisetteDataResponse> {
     Pointer<HMFetchAnisetteDataResponse> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("anisetteData"),
     );
@@ -11014,7 +10643,7 @@ class HMFetchAnisetteDataResponse extends Struct<HMFetchAnisetteDataResponse> {
     Pointer<HMFetchAnisetteDataResponse> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("description"),
     );
@@ -11025,7 +10654,7 @@ class HMFetchAnisetteDataResponse extends Struct<HMFetchAnisetteDataResponse> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("encodeWithCoder:"),
       arg,
@@ -11037,7 +10666,7 @@ class HMFetchAnisetteDataResponse extends Struct<HMFetchAnisetteDataResponse> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithCoder:"),
       arg,
@@ -11048,7 +10677,7 @@ class HMFetchAnisetteDataResponse extends Struct<HMFetchAnisetteDataResponse> {
     Pointer<HMFetchAnisetteDataResponse> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("messageName"),
     );
@@ -11058,7 +10687,7 @@ class HMFetchAnisetteDataResponse extends Struct<HMFetchAnisetteDataResponse> {
     Pointer<HMFetchAnisetteDataResponse> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("messagePayload"),
     );
@@ -11069,7 +10698,7 @@ class HMFetchAnisetteDataResponse extends Struct<HMFetchAnisetteDataResponse> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setAnisetteData:"),
       arg,
@@ -11080,16 +10709,13 @@ class HMFetchAnisetteDataResponse extends Struct<HMFetchAnisetteDataResponse> {
     Pointer<HMFetchAnisetteDataResponse> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("xpcMessageName"),
     );
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMHAPMetadata extends Struct<HMHAPMetadata> {
   factory HMHAPMetadata._() {
@@ -11106,7 +10732,7 @@ class HMHAPMetadata extends Struct<HMHAPMetadata> {
     @required Pointer callbackOperations,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("applyProtoBufData:callbackOperations:"),
       arg,
@@ -11119,7 +10745,7 @@ class HMHAPMetadata extends Struct<HMHAPMetadata> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("categoryForCategoryType:"),
       arg,
@@ -11131,7 +10757,7 @@ class HMHAPMetadata extends Struct<HMHAPMetadata> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("categoryForNumber:"),
       arg,
@@ -11143,7 +10769,7 @@ class HMHAPMetadata extends Struct<HMHAPMetadata> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("characteristicTypeDescription:"),
       arg,
@@ -11154,7 +10780,7 @@ class HMHAPMetadata extends Struct<HMHAPMetadata> {
     Pointer<HMHAPMetadata> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("hapCategoryMap"),
     );
@@ -11164,7 +10790,7 @@ class HMHAPMetadata extends Struct<HMHAPMetadata> {
     Pointer<HMHAPMetadata> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("hapChrMap"),
     );
@@ -11174,7 +10800,7 @@ class HMHAPMetadata extends Struct<HMHAPMetadata> {
     Pointer<HMHAPMetadata> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("hapSvcMap"),
     );
@@ -11185,7 +10811,7 @@ class HMHAPMetadata extends Struct<HMHAPMetadata> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("serviceTypeDescription:"),
       arg,
@@ -11197,7 +10823,7 @@ class HMHAPMetadata extends Struct<HMHAPMetadata> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setHapCategoryMap:"),
       arg,
@@ -11209,7 +10835,7 @@ class HMHAPMetadata extends Struct<HMHAPMetadata> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setHapChrMap:"),
       arg,
@@ -11221,7 +10847,7 @@ class HMHAPMetadata extends Struct<HMHAPMetadata> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setHapSvcMap:"),
       arg,
@@ -11233,7 +10859,7 @@ class HMHAPMetadata extends Struct<HMHAPMetadata> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setVersion:"),
       arg,
@@ -11245,7 +10871,7 @@ class HMHAPMetadata extends Struct<HMHAPMetadata> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("shouldNotCacheCharacteristicOfType:"),
       arg,
@@ -11256,16 +10882,13 @@ class HMHAPMetadata extends Struct<HMHAPMetadata> {
     Pointer<HMHAPMetadata> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("version"),
     );
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMHAPMetadataCategory extends Struct<HMHAPMetadataCategory> {
   factory HMHAPMetadataCategory._() {
@@ -11282,7 +10905,7 @@ class HMHAPMetadataCategory extends Struct<HMHAPMetadataCategory> {
     Pointer<HMHAPMetadataCategory> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("categoryDescription"),
     );
@@ -11292,7 +10915,7 @@ class HMHAPMetadataCategory extends Struct<HMHAPMetadataCategory> {
     Pointer<HMHAPMetadataCategory> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("categoryNumber"),
     );
@@ -11302,7 +10925,7 @@ class HMHAPMetadataCategory extends Struct<HMHAPMetadataCategory> {
     Pointer<HMHAPMetadataCategory> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("categoryType"),
     );
@@ -11313,7 +10936,7 @@ class HMHAPMetadataCategory extends Struct<HMHAPMetadataCategory> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setCategoryDescription:"),
       arg,
@@ -11325,7 +10948,7 @@ class HMHAPMetadataCategory extends Struct<HMHAPMetadataCategory> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setCategoryNumber:"),
       arg,
@@ -11337,7 +10960,7 @@ class HMHAPMetadataCategory extends Struct<HMHAPMetadataCategory> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setCategoryType:"),
       arg,
@@ -11345,9 +10968,6 @@ class HMHAPMetadataCategory extends Struct<HMHAPMetadataCategory> {
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMHAPMetadataCharacteristic extends Struct<HMHAPMetadataCharacteristic> {
   factory HMHAPMetadataCharacteristic._() {
@@ -11364,7 +10984,7 @@ class HMHAPMetadataCharacteristic extends Struct<HMHAPMetadataCharacteristic> {
     Pointer<HMHAPMetadataCharacteristic> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("chrDescription"),
     );
@@ -11375,7 +10995,7 @@ class HMHAPMetadataCharacteristic extends Struct<HMHAPMetadataCharacteristic> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setChrDescription:"),
       arg,
@@ -11387,7 +11007,7 @@ class HMHAPMetadataCharacteristic extends Struct<HMHAPMetadataCharacteristic> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setType:"),
       arg,
@@ -11398,16 +11018,13 @@ class HMHAPMetadataCharacteristic extends Struct<HMHAPMetadataCharacteristic> {
     Pointer<HMHAPMetadataCharacteristic> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("type"),
     );
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMHAPMetadataService extends Struct<HMHAPMetadataService> {
   factory HMHAPMetadataService._() {
@@ -11423,7 +11040,7 @@ class HMHAPMetadataService extends Struct<HMHAPMetadataService> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setSvcDescription:"),
       arg,
@@ -11435,7 +11052,7 @@ class HMHAPMetadataService extends Struct<HMHAPMetadataService> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setType:"),
       arg,
@@ -11446,7 +11063,7 @@ class HMHAPMetadataService extends Struct<HMHAPMetadataService> {
     Pointer<HMHAPMetadataService> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("svcDescription"),
     );
@@ -11456,16 +11073,13 @@ class HMHAPMetadataService extends Struct<HMHAPMetadataService> {
     Pointer<HMHAPMetadataService> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("type"),
     );
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMHTMLDocument extends Struct<HMHTMLDocument> {
   factory HMHTMLDocument._() {
@@ -11480,21 +11094,9 @@ class HMHTMLDocument extends Struct<HMHTMLDocument> {
     Pointer<HMHTMLDocument> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("attributedString"),
-    );
-  }
-
-  static Pointer copyWithZone(
-    Pointer<HMHTMLDocument> _self,
-    Pointer<Pointer> arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
-      _self,
-      _objc.getSelector("copyWithZone:"),
-      arg,
     );
   }
 
@@ -11502,7 +11104,7 @@ class HMHTMLDocument extends Struct<HMHTMLDocument> {
     Pointer<HMHTMLDocument> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("description"),
     );
@@ -11513,7 +11115,7 @@ class HMHTMLDocument extends Struct<HMHTMLDocument> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("encodeWithCoder:"),
       arg,
@@ -11524,7 +11126,7 @@ class HMHTMLDocument extends Struct<HMHTMLDocument> {
     Pointer<HMHTMLDocument> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("hash"),
     );
@@ -11535,7 +11137,7 @@ class HMHTMLDocument extends Struct<HMHTMLDocument> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithCoder:"),
       arg,
@@ -11548,7 +11150,7 @@ class HMHTMLDocument extends Struct<HMHTMLDocument> {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithData:error:"),
       arg,
@@ -11561,7 +11163,7 @@ class HMHTMLDocument extends Struct<HMHTMLDocument> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithString:"),
       arg,
@@ -11574,7 +11176,7 @@ class HMHTMLDocument extends Struct<HMHTMLDocument> {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithURL:error:"),
       arg,
@@ -11587,7 +11189,7 @@ class HMHTMLDocument extends Struct<HMHTMLDocument> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isEqual:"),
       arg,
@@ -11598,7 +11200,7 @@ class HMHTMLDocument extends Struct<HMHTMLDocument> {
     Pointer<HMHTMLDocument> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("stringValue"),
     );
@@ -11609,7 +11211,7 @@ class HMHTMLDocument extends Struct<HMHTMLDocument> {
     Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("validateAndReturnError:"),
       arg,
@@ -11617,9 +11219,6 @@ class HMHTMLDocument extends Struct<HMHTMLDocument> {
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMHome extends Struct<HMHome> {
   factory HMHome._() {
@@ -11634,7 +11233,7 @@ class HMHome extends Struct<HMHome> {
     Pointer<HMHome> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("accessories"),
     );
@@ -11645,7 +11244,7 @@ class HMHome extends Struct<HMHome> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("accessoryWithUUID:"),
       arg,
@@ -11657,7 +11256,7 @@ class HMHome extends Struct<HMHome> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("actionSetWithName:"),
       arg,
@@ -11669,7 +11268,7 @@ class HMHome extends Struct<HMHome> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("actionSetWithUUID:"),
       arg,
@@ -11680,19 +11279,19 @@ class HMHome extends Struct<HMHome> {
     Pointer<HMHome> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("actionSets"),
     );
   }
 
-  static void addAccessory$completionHandler$(
+  static void addAccessory$completionHandler(
     Pointer<HMHome> _self,
     Pointer arg, {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("addAccessory:completionHandler:"),
       arg,
@@ -11700,14 +11299,14 @@ class HMHome extends Struct<HMHome> {
     );
   }
 
-  static void addAccessory$password$completionHandler$(
+  static void addAccessory$password$completionHandler(
     Pointer<HMHome> _self,
     Pointer arg, {
     @required Pointer password,
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("addAccessory:password:completionHandler:"),
       arg,
@@ -11722,7 +11321,7 @@ class HMHome extends Struct<HMHome> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("addAccessoryWithSetupPayload:completionHandler:"),
       arg,
@@ -11736,7 +11335,7 @@ class HMHome extends Struct<HMHome> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("addActionSetWithName:completionHandler:"),
       arg,
@@ -11749,7 +11348,7 @@ class HMHome extends Struct<HMHome> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("addAndSetUpNewAccessoriesWithCompletionHandler:"),
       arg,
@@ -11761,7 +11360,7 @@ class HMHome extends Struct<HMHome> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("addAndSetupAccessoriesWithCompletionHandler:"),
       arg,
@@ -11774,7 +11373,7 @@ class HMHome extends Struct<HMHome> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("addAndSetupAccessoriesWithPayload:completionHandler:"),
       arg,
@@ -11788,7 +11387,7 @@ class HMHome extends Struct<HMHome> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector(
           "addAndSetupAccessoriesWithSetupPayload:completionHandler:"),
@@ -11803,7 +11402,7 @@ class HMHome extends Struct<HMHome> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("addRoomWithName:completionHandler:"),
       arg,
@@ -11817,7 +11416,7 @@ class HMHome extends Struct<HMHome> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("addServiceGroupWithName:completionHandler:"),
       arg,
@@ -11831,7 +11430,7 @@ class HMHome extends Struct<HMHome> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("addTrigger:completionHandler:"),
       arg,
@@ -11845,7 +11444,7 @@ class HMHome extends Struct<HMHome> {
     @required Pointer withCompletionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("addUser:withCompletionHandler:"),
       arg,
@@ -11858,7 +11457,7 @@ class HMHome extends Struct<HMHome> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("addUserWithCompletionHandler:"),
       arg,
@@ -11872,7 +11471,7 @@ class HMHome extends Struct<HMHome> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_Int64_p_returns_void(
+    _call_ptr_ptr_ptr_Int64_ptr_returns_void(
       _self,
       _objc.getSelector(
           "addUserWithoutConfirmation:privilege:completionHandler:"),
@@ -11887,7 +11486,7 @@ class HMHome extends Struct<HMHome> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("addUsersWithCompletionHandler:"),
       arg,
@@ -11900,7 +11499,7 @@ class HMHome extends Struct<HMHome> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("addZoneWithName:completionHandler:"),
       arg,
@@ -11912,7 +11511,7 @@ class HMHome extends Struct<HMHome> {
     Pointer<HMHome> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("administrator"),
     );
@@ -11922,7 +11521,7 @@ class HMHome extends Struct<HMHome> {
     Pointer<HMHome> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("applicationData"),
     );
@@ -11932,7 +11531,7 @@ class HMHome extends Struct<HMHome> {
     Pointer<HMHome> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("areNotificationsEnabled"),
     );
@@ -11945,7 +11544,7 @@ class HMHome extends Struct<HMHome> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("assignAccessory:toRoom:completionHandler:"),
       arg,
@@ -11959,7 +11558,7 @@ class HMHome extends Struct<HMHome> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("builtinActionSetOfType:"),
       arg,
@@ -11972,7 +11571,7 @@ class HMHome extends Struct<HMHome> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector(
           "cancelPairingForAccessoryWithDescription:completionHandler:"),
@@ -11987,7 +11586,7 @@ class HMHome extends Struct<HMHome> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("cancelPairingForAccessoryWithUUID:completionHandler:"),
       arg,
@@ -11999,7 +11598,7 @@ class HMHome extends Struct<HMHome> {
     Pointer<HMHome> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("context"),
     );
@@ -12012,7 +11611,7 @@ class HMHome extends Struct<HMHome> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector(
           "continuePairingForAccessoryWithUUID:setupCode:completionHandler:"),
@@ -12026,7 +11625,7 @@ class HMHome extends Struct<HMHome> {
     Pointer<HMHome> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("controlTargets"),
     );
@@ -12039,7 +11638,7 @@ class HMHome extends Struct<HMHome> {
     @required Pointer uuid,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("createActionSetWithName:type:uuid:"),
       arg,
@@ -12055,7 +11654,7 @@ class HMHome extends Struct<HMHome> {
     @required Pointer uuid,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("createAndAddActionSetWithName:type:uuid:"),
       arg,
@@ -12068,7 +11667,7 @@ class HMHome extends Struct<HMHome> {
     Pointer<HMHome> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("currentAccessories"),
     );
@@ -12078,7 +11677,7 @@ class HMHome extends Struct<HMHome> {
     Pointer<HMHome> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("currentActionSets"),
     );
@@ -12088,7 +11687,7 @@ class HMHome extends Struct<HMHome> {
     Pointer<HMHome> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("currentActions"),
     );
@@ -12098,7 +11697,7 @@ class HMHome extends Struct<HMHome> {
     Pointer<HMHome> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("currentMediaSystems"),
     );
@@ -12108,7 +11707,7 @@ class HMHome extends Struct<HMHome> {
     Pointer<HMHome> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("currentOutgoingInvitations"),
     );
@@ -12118,7 +11717,7 @@ class HMHome extends Struct<HMHome> {
     Pointer<HMHome> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("currentResidentDevices"),
     );
@@ -12128,7 +11727,7 @@ class HMHome extends Struct<HMHome> {
     Pointer<HMHome> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("currentRooms"),
     );
@@ -12138,7 +11737,7 @@ class HMHome extends Struct<HMHome> {
     Pointer<HMHome> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("currentServiceGroups"),
     );
@@ -12148,7 +11747,7 @@ class HMHome extends Struct<HMHome> {
     Pointer<HMHome> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("currentTriggerOwnedActionSets"),
     );
@@ -12158,7 +11757,7 @@ class HMHome extends Struct<HMHome> {
     Pointer<HMHome> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("currentTriggers"),
     );
@@ -12168,7 +11767,7 @@ class HMHome extends Struct<HMHome> {
     Pointer<HMHome> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("currentUser"),
     );
@@ -12178,7 +11777,7 @@ class HMHome extends Struct<HMHome> {
     Pointer<HMHome> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("currentUsers"),
     );
@@ -12188,7 +11787,7 @@ class HMHome extends Struct<HMHome> {
     Pointer<HMHome> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("currentZones"),
     );
@@ -12198,7 +11797,7 @@ class HMHome extends Struct<HMHome> {
     Pointer<HMHome> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("dealloc"),
     );
@@ -12208,7 +11807,7 @@ class HMHome extends Struct<HMHome> {
     Pointer<HMHome> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("delegate"),
     );
@@ -12218,7 +11817,7 @@ class HMHome extends Struct<HMHome> {
     Pointer<HMHome> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("description"),
     );
@@ -12229,7 +11828,7 @@ class HMHome extends Struct<HMHome> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int32_returns_void(
+    _call_ptr_ptr_Int32_returns_void(
       _self,
       _objc.getSelector("didUpdateAuthorization:"),
       arg,
@@ -12243,7 +11842,7 @@ class HMHome extends Struct<HMHome> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_p_p_returns_void(
+    _call_ptr_ptr_Int8_ptr_ptr_returns_void(
       _self,
       _objc.getSelector(
           "enableNotification:forCharacteristics:completionHandler:"),
@@ -12259,7 +11858,7 @@ class HMHome extends Struct<HMHome> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_p_returns_void(
+    _call_ptr_ptr_Int8_ptr_returns_void(
       _self,
       _objc.getSelector("enableNotifications:completionHandler:"),
       arg,
@@ -12273,7 +11872,7 @@ class HMHome extends Struct<HMHome> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_p_returns_void(
+    _call_ptr_ptr_Int8_ptr_returns_void(
       _self,
       _objc.getSelector("enableRemoteAccess:completionHandler:"),
       arg,
@@ -12286,7 +11885,7 @@ class HMHome extends Struct<HMHome> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("encodeWithCoder:"),
       arg,
@@ -12299,7 +11898,7 @@ class HMHome extends Struct<HMHome> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("executeActionSet:completionHandler:"),
       arg,
@@ -12312,7 +11911,7 @@ class HMHome extends Struct<HMHome> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("handleRuntimeStateUpdate:"),
       arg,
@@ -12325,7 +11924,7 @@ class HMHome extends Struct<HMHome> {
     @required Pointer response,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("handleStartWithError:response:"),
       arg,
@@ -12338,7 +11937,7 @@ class HMHome extends Struct<HMHome> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("homeAccessControlForUser:"),
       arg,
@@ -12349,7 +11948,7 @@ class HMHome extends Struct<HMHome> {
     Pointer<HMHome> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("homeAsRoom"),
     );
@@ -12359,7 +11958,7 @@ class HMHome extends Struct<HMHome> {
     Pointer<HMHome> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("homeHubState"),
     );
@@ -12369,7 +11968,7 @@ class HMHome extends Struct<HMHome> {
     Pointer<HMHome> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("homeLocation"),
     );
@@ -12379,7 +11978,7 @@ class HMHome extends Struct<HMHome> {
     Pointer<HMHome> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("homeManager"),
     );
@@ -12389,7 +11988,7 @@ class HMHome extends Struct<HMHome> {
     Pointer<HMHome> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("init"),
     );
@@ -12400,14 +11999,14 @@ class HMHome extends Struct<HMHome> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithCoder:"),
       arg,
     );
   }
 
-  static Pointer initWithName$uuid$homeAsRoomUUID$homeAsRoomName$actionSets$(
+  static Pointer initWithName$uuid$homeAsRoomUUID$homeAsRoomName$actionSets(
     Pointer<HMHome> _self,
     Pointer arg, {
     @required Pointer uuid,
@@ -12416,7 +12015,7 @@ class HMHome extends Struct<HMHome> {
     @required Pointer actionSets,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector(
           "initWithName:uuid:homeAsRoomUUID:homeAsRoomName:actionSets:"),
@@ -12428,13 +12027,13 @@ class HMHome extends Struct<HMHome> {
     );
   }
 
-  static Pointer initWithName$uuid$(
+  static Pointer initWithName$uuid(
     Pointer<HMHome> _self,
     Pointer arg, {
     @required Pointer uuid,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithName:uuid:"),
       arg,
@@ -12446,7 +12045,7 @@ class HMHome extends Struct<HMHome> {
     Pointer<HMHome> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("invalidate"),
     );
@@ -12458,7 +12057,7 @@ class HMHome extends Struct<HMHome> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("inviteUsers:completionHandler:"),
       arg,
@@ -12472,7 +12071,7 @@ class HMHome extends Struct<HMHome> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("inviteUsersWithInviteInformation:completionHandler:"),
       arg,
@@ -12484,7 +12083,7 @@ class HMHome extends Struct<HMHome> {
     Pointer<HMHome> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isAdminUser"),
     );
@@ -12494,7 +12093,7 @@ class HMHome extends Struct<HMHome> {
     Pointer<HMHome> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isAutomaticSoftwareUpdateEnabled"),
     );
@@ -12504,7 +12103,7 @@ class HMHome extends Struct<HMHome> {
     Pointer<HMHome> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isMediaPeerToPeerEnabled"),
     );
@@ -12514,7 +12113,7 @@ class HMHome extends Struct<HMHome> {
     Pointer<HMHome> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isOwnerUser"),
     );
@@ -12524,7 +12123,7 @@ class HMHome extends Struct<HMHome> {
     Pointer<HMHome> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isPrimary"),
     );
@@ -12534,7 +12133,7 @@ class HMHome extends Struct<HMHome> {
     Pointer<HMHome> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("location"),
     );
@@ -12544,7 +12143,7 @@ class HMHome extends Struct<HMHome> {
     Pointer<HMHome> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int32(
+    return _call_ptr_ptr_returns_Int32(
       _self,
       _objc.getSelector("locationAuthorization"),
     );
@@ -12555,7 +12154,7 @@ class HMHome extends Struct<HMHome> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("manageUsersWithCompletionHandler:"),
       arg,
@@ -12566,7 +12165,7 @@ class HMHome extends Struct<HMHome> {
     Pointer<HMHome> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("mediaPassword"),
     );
@@ -12576,7 +12175,7 @@ class HMHome extends Struct<HMHome> {
     Pointer<HMHome> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("mediaSystems"),
     );
@@ -12587,7 +12186,7 @@ class HMHome extends Struct<HMHome> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("mergeWithNewObjectNoMergeCount:"),
       arg,
@@ -12598,7 +12197,7 @@ class HMHome extends Struct<HMHome> {
     Pointer<HMHome> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("messageDestination"),
     );
@@ -12608,7 +12207,7 @@ class HMHome extends Struct<HMHome> {
     Pointer<HMHome> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("messageReceiveQueue"),
     );
@@ -12618,7 +12217,7 @@ class HMHome extends Struct<HMHome> {
     Pointer<HMHome> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("messageTargetUUID"),
     );
@@ -12628,7 +12227,7 @@ class HMHome extends Struct<HMHome> {
     Pointer<HMHome> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int64(
+    return _call_ptr_ptr_returns_Int64(
       _self,
       _objc.getSelector("minimumMediaUserPrivilege"),
     );
@@ -12638,7 +12237,7 @@ class HMHome extends Struct<HMHome> {
     Pointer<HMHome> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("name"),
     );
@@ -12648,7 +12247,7 @@ class HMHome extends Struct<HMHome> {
     Pointer<HMHome> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("notificationEnableRequested"),
     );
@@ -12658,7 +12257,7 @@ class HMHome extends Struct<HMHome> {
     Pointer<HMHome> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("notificationsUpdatedTime"),
     );
@@ -12669,7 +12268,7 @@ class HMHome extends Struct<HMHome> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("notifyDelegateOfAccesoryInvitationsUpdateForUser:"),
       arg,
@@ -12681,7 +12280,7 @@ class HMHome extends Struct<HMHome> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("notifyDelegateOfAccessControlUpdateForUser:"),
       arg,
@@ -12693,7 +12292,7 @@ class HMHome extends Struct<HMHome> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("notifyDelegateOfAppDataUpdateForActionSet:"),
       arg,
@@ -12705,7 +12304,7 @@ class HMHome extends Struct<HMHome> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("notifyDelegateOfAppDataUpdateForRoom:"),
       arg,
@@ -12717,7 +12316,7 @@ class HMHome extends Struct<HMHome> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("notifyDelegateOfAppDataUpdateForServiceGroup:"),
       arg,
@@ -12730,7 +12329,7 @@ class HMHome extends Struct<HMHome> {
     @required Pointer actionSet,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("notifyDelegatesOfExecution:actionSet:"),
       arg,
@@ -12742,7 +12341,7 @@ class HMHome extends Struct<HMHome> {
     Pointer<HMHome> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("outgoingInvitations"),
     );
@@ -12752,7 +12351,7 @@ class HMHome extends Struct<HMHome> {
     Pointer<HMHome> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("owner"),
     );
@@ -12763,7 +12362,7 @@ class HMHome extends Struct<HMHome> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("performBatchCharacteristicRequest:"),
       arg,
@@ -12775,7 +12374,7 @@ class HMHome extends Struct<HMHome> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("queryRemoteAccessWithCompletionHandler:"),
       arg,
@@ -12786,7 +12385,7 @@ class HMHome extends Struct<HMHome> {
     Pointer<HMHome> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("reEnableNotifications"),
     );
@@ -12798,7 +12397,7 @@ class HMHome extends Struct<HMHome> {
     @required Pointer forAccessory,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("registerSetupProgressHandler:forAccessory:"),
       arg,
@@ -12812,7 +12411,7 @@ class HMHome extends Struct<HMHome> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("removeAccessory:completionHandler:"),
       arg,
@@ -12826,7 +12425,7 @@ class HMHome extends Struct<HMHome> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("removeActionSet:completionHandler:"),
       arg,
@@ -12840,7 +12439,7 @@ class HMHome extends Struct<HMHome> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("removeMediaSystem:completionHandler:"),
       arg,
@@ -12854,7 +12453,7 @@ class HMHome extends Struct<HMHome> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("removeRoom:completionHandler:"),
       arg,
@@ -12868,7 +12467,7 @@ class HMHome extends Struct<HMHome> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("removeServiceGroup:completionHandler:"),
       arg,
@@ -12881,7 +12480,7 @@ class HMHome extends Struct<HMHome> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("removeServices:"),
       arg,
@@ -12894,7 +12493,7 @@ class HMHome extends Struct<HMHome> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("removeTrigger:completionHandler:"),
       arg,
@@ -12908,7 +12507,7 @@ class HMHome extends Struct<HMHome> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("removeUser:completionHandler:"),
       arg,
@@ -12922,7 +12521,7 @@ class HMHome extends Struct<HMHome> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("removeUserWithoutConfirmation:completionHandler:"),
       arg,
@@ -12936,7 +12535,7 @@ class HMHome extends Struct<HMHome> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("removeZone:completionHandler:"),
       arg,
@@ -12950,7 +12549,7 @@ class HMHome extends Struct<HMHome> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("reprovisionAccessory:completionHandler:"),
       arg,
@@ -12962,7 +12561,7 @@ class HMHome extends Struct<HMHome> {
     Pointer<HMHome> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("residentDevices"),
     );
@@ -12972,7 +12571,7 @@ class HMHome extends Struct<HMHome> {
     Pointer<HMHome> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("roomForEntireHome"),
     );
@@ -12983,7 +12582,7 @@ class HMHome extends Struct<HMHome> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("roomWithName:"),
       arg,
@@ -12995,7 +12594,7 @@ class HMHome extends Struct<HMHome> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("roomWithUUID:"),
       arg,
@@ -13006,7 +12605,7 @@ class HMHome extends Struct<HMHome> {
     Pointer<HMHome> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("rooms"),
     );
@@ -13016,7 +12615,7 @@ class HMHome extends Struct<HMHome> {
     Pointer<HMHome> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("sendConfigureBulletinNotification"),
     );
@@ -13027,7 +12626,7 @@ class HMHome extends Struct<HMHome> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("serviceGroupWithName:"),
       arg,
@@ -13039,7 +12638,7 @@ class HMHome extends Struct<HMHome> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("serviceGroupWithUUID:"),
       arg,
@@ -13050,7 +12649,7 @@ class HMHome extends Struct<HMHome> {
     Pointer<HMHome> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("serviceGroups"),
     );
@@ -13061,7 +12660,7 @@ class HMHome extends Struct<HMHome> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("servicesWithTypes:"),
       arg,
@@ -13073,7 +12672,7 @@ class HMHome extends Struct<HMHome> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setAdminUser:"),
       arg,
@@ -13085,7 +12684,7 @@ class HMHome extends Struct<HMHome> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setApplicationData:"),
       arg,
@@ -13097,7 +12696,7 @@ class HMHome extends Struct<HMHome> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setAutomaticSoftwareUpdateEnabled:"),
       arg,
@@ -13109,7 +12708,7 @@ class HMHome extends Struct<HMHome> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setContext:"),
       arg,
@@ -13121,7 +12720,7 @@ class HMHome extends Struct<HMHome> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setCurrentAccessories:"),
       arg,
@@ -13133,7 +12732,7 @@ class HMHome extends Struct<HMHome> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setCurrentActionSets:"),
       arg,
@@ -13145,7 +12744,7 @@ class HMHome extends Struct<HMHome> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setCurrentActions:"),
       arg,
@@ -13157,7 +12756,7 @@ class HMHome extends Struct<HMHome> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setCurrentMediaSystems:"),
       arg,
@@ -13169,7 +12768,7 @@ class HMHome extends Struct<HMHome> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setCurrentOutgoingInvitations:"),
       arg,
@@ -13181,7 +12780,7 @@ class HMHome extends Struct<HMHome> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setCurrentResidentDevices:"),
       arg,
@@ -13193,7 +12792,7 @@ class HMHome extends Struct<HMHome> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setCurrentRooms:"),
       arg,
@@ -13205,7 +12804,7 @@ class HMHome extends Struct<HMHome> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setCurrentServiceGroups:"),
       arg,
@@ -13217,7 +12816,7 @@ class HMHome extends Struct<HMHome> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setCurrentTriggerOwnedActionSets:"),
       arg,
@@ -13229,7 +12828,7 @@ class HMHome extends Struct<HMHome> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setCurrentTriggers:"),
       arg,
@@ -13241,7 +12840,7 @@ class HMHome extends Struct<HMHome> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setCurrentUser:"),
       arg,
@@ -13253,7 +12852,7 @@ class HMHome extends Struct<HMHome> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setCurrentUsers:"),
       arg,
@@ -13265,7 +12864,7 @@ class HMHome extends Struct<HMHome> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setCurrentZones:"),
       arg,
@@ -13277,7 +12876,7 @@ class HMHome extends Struct<HMHome> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setDelegate:"),
       arg,
@@ -13289,7 +12888,7 @@ class HMHome extends Struct<HMHome> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setHomeAsRoom:"),
       arg,
@@ -13301,7 +12900,7 @@ class HMHome extends Struct<HMHome> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setHomeLocation:"),
       arg,
@@ -13313,7 +12912,7 @@ class HMHome extends Struct<HMHome> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setHomeManager:"),
       arg,
@@ -13325,7 +12924,7 @@ class HMHome extends Struct<HMHome> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int32_returns_void(
+    _call_ptr_ptr_Int32_returns_void(
       _self,
       _objc.getSelector("setLocationAuthorization:"),
       arg,
@@ -13337,7 +12936,7 @@ class HMHome extends Struct<HMHome> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setMediaPassword:"),
       arg,
@@ -13349,7 +12948,7 @@ class HMHome extends Struct<HMHome> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setMediaPeerToPeerEnabled:"),
       arg,
@@ -13361,7 +12960,7 @@ class HMHome extends Struct<HMHome> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int64_returns_void(
+    _call_ptr_ptr_Int64_returns_void(
       _self,
       _objc.getSelector("setMinimumMediaUserPrivilege:"),
       arg,
@@ -13373,7 +12972,7 @@ class HMHome extends Struct<HMHome> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setName:"),
       arg,
@@ -13385,7 +12984,7 @@ class HMHome extends Struct<HMHome> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setNotificationEnableRequested:"),
       arg,
@@ -13397,7 +12996,7 @@ class HMHome extends Struct<HMHome> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setNotificationsEnabled:"),
       arg,
@@ -13409,7 +13008,7 @@ class HMHome extends Struct<HMHome> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setNotificationsUpdatedTime:"),
       arg,
@@ -13421,7 +13020,7 @@ class HMHome extends Struct<HMHome> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setOwnerUser:"),
       arg,
@@ -13433,7 +13032,7 @@ class HMHome extends Struct<HMHome> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setPrimary:"),
       arg,
@@ -13445,7 +13044,7 @@ class HMHome extends Struct<HMHome> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setSetupRemoteViewController:"),
       arg,
@@ -13457,7 +13056,7 @@ class HMHome extends Struct<HMHome> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setSetupViewController:"),
       arg,
@@ -13468,7 +13067,7 @@ class HMHome extends Struct<HMHome> {
     Pointer<HMHome> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("setupRemoteViewController"),
     );
@@ -13478,7 +13077,7 @@ class HMHome extends Struct<HMHome> {
     Pointer<HMHome> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("setupViewController"),
     );
@@ -13488,7 +13087,7 @@ class HMHome extends Struct<HMHome> {
     Pointer<HMHome> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("startDiscoveringSymptomsForNearbyDevices"),
     );
@@ -13502,7 +13101,7 @@ class HMHome extends Struct<HMHome> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector(
           "startPairingWithAccessory:accessorySetupDescription:setupRemoteViewController:completionHandler:"),
@@ -13514,7 +13113,7 @@ class HMHome extends Struct<HMHome> {
   }
 
   static void
-      startPairingWithAccessoryDescription$setupRemoteViewController$progress$completion$(
+      startPairingWithAccessoryDescription$setupRemoteViewController$progress$completion(
     Pointer<HMHome> _self,
     Pointer arg, {
     @required Pointer setupRemoteViewController,
@@ -13522,7 +13121,7 @@ class HMHome extends Struct<HMHome> {
     @required Pointer completion,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector(
           "startPairingWithAccessoryDescription:setupRemoteViewController:progress:completion:"),
@@ -13534,7 +13133,7 @@ class HMHome extends Struct<HMHome> {
   }
 
   static void
-      startPairingWithAccessoryDescription$setupRemoteViewController$progressHandler$completionHandler$(
+      startPairingWithAccessoryDescription$setupRemoteViewController$progressHandler$completionHandler(
     Pointer<HMHome> _self,
     Pointer arg, {
     @required Pointer setupRemoteViewController,
@@ -13542,7 +13141,7 @@ class HMHome extends Struct<HMHome> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector(
           "startPairingWithAccessoryDescription:setupRemoteViewController:progressHandler:completionHandler:"),
@@ -13557,7 +13156,7 @@ class HMHome extends Struct<HMHome> {
     Pointer<HMHome> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("startSearchForAccessoriesNeedingReprovisioning"),
     );
@@ -13567,7 +13166,7 @@ class HMHome extends Struct<HMHome> {
     Pointer<HMHome> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("stopDiscoveringSymptomsForNearbyDevices"),
     );
@@ -13577,7 +13176,7 @@ class HMHome extends Struct<HMHome> {
     Pointer<HMHome> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("targetControllers"),
     );
@@ -13588,7 +13187,7 @@ class HMHome extends Struct<HMHome> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("triggerOwnedActionSetWithUUID:"),
       arg,
@@ -13599,7 +13198,7 @@ class HMHome extends Struct<HMHome> {
     Pointer<HMHome> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("triggerOwnedActionSets"),
     );
@@ -13610,7 +13209,7 @@ class HMHome extends Struct<HMHome> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("triggerWithName:"),
       arg,
@@ -13622,7 +13221,7 @@ class HMHome extends Struct<HMHome> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("triggerWithUUID:"),
       arg,
@@ -13633,7 +13232,7 @@ class HMHome extends Struct<HMHome> {
     Pointer<HMHome> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("triggers"),
     );
@@ -13645,7 +13244,7 @@ class HMHome extends Struct<HMHome> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("unblockAccessory:completionHandler:"),
       arg,
@@ -13657,7 +13256,7 @@ class HMHome extends Struct<HMHome> {
     Pointer<HMHome> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("unconfigureHome"),
     );
@@ -13667,20 +13266,20 @@ class HMHome extends Struct<HMHome> {
     Pointer<HMHome> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("uniqueIdentifier"),
     );
   }
 
-  static void updateAccessForUser$administrator$completionHandler$(
+  static void updateAccessForUser$administrator$completionHandler(
     Pointer<HMHome> _self,
     Pointer arg, {
     @required int administrator,
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_Int8_p_returns_void(
+    _call_ptr_ptr_ptr_Int8_ptr_returns_void(
       _self,
       _objc.getSelector("updateAccessForUser:administrator:completionHandler:"),
       arg,
@@ -13689,14 +13288,14 @@ class HMHome extends Struct<HMHome> {
     );
   }
 
-  static void updateAccessForUser$remoteAccess$completionHandler$(
+  static void updateAccessForUser$remoteAccess$completionHandler(
     Pointer<HMHome> _self,
     Pointer arg, {
     @required int remoteAccess,
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_Int8_p_returns_void(
+    _call_ptr_ptr_ptr_Int8_ptr_returns_void(
       _self,
       _objc.getSelector("updateAccessForUser:remoteAccess:completionHandler:"),
       arg,
@@ -13705,13 +13304,13 @@ class HMHome extends Struct<HMHome> {
     );
   }
 
-  static void updateApplicationData$completionHandler$(
+  static void updateApplicationData$completionHandler(
     Pointer<HMHome> _self,
     Pointer arg, {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("updateApplicationData:completionHandler:"),
       arg,
@@ -13719,14 +13318,14 @@ class HMHome extends Struct<HMHome> {
     );
   }
 
-  static void updateApplicationData$forRoom$completionHandler$(
+  static void updateApplicationData$forRoom$completionHandler(
     Pointer<HMHome> _self,
     Pointer arg, {
     @required Pointer forRoom,
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("updateApplicationData:forRoom:completionHandler:"),
       arg,
@@ -13735,14 +13334,14 @@ class HMHome extends Struct<HMHome> {
     );
   }
 
-  static void updateApplicationData$forServiceGroup$completionHandler$(
+  static void updateApplicationData$forServiceGroup$completionHandler(
     Pointer<HMHome> _self,
     Pointer arg, {
     @required Pointer forServiceGroup,
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector(
           "updateApplicationData:forServiceGroup:completionHandler:"),
@@ -13753,7 +13352,7 @@ class HMHome extends Struct<HMHome> {
   }
 
   static void
-      updateApplicationData$forAppDataContainerWithUUID$appDataContainerUUIDKeyName$completionHandler$(
+      updateApplicationData$forAppDataContainerWithUUID$appDataContainerUUIDKeyName$completionHandler(
     Pointer<HMHome> _self,
     Pointer arg, {
     @required Pointer forAppDataContainerWithUUID,
@@ -13761,7 +13360,7 @@ class HMHome extends Struct<HMHome> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector(
           "updateApplicationData:forAppDataContainerWithUUID:appDataContainerUUIDKeyName:completionHandler:"),
@@ -13772,14 +13371,14 @@ class HMHome extends Struct<HMHome> {
     );
   }
 
-  static void updateApplicationData$forActionSet$completionHandler$(
+  static void updateApplicationData$forActionSet$completionHandler(
     Pointer<HMHome> _self,
     Pointer arg, {
     @required Pointer forActionSet,
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc
           .getSelector("updateApplicationData:forActionSet:completionHandler:"),
@@ -13795,7 +13394,7 @@ class HMHome extends Struct<HMHome> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_p_returns_void(
+    _call_ptr_ptr_Int8_ptr_returns_void(
       _self,
       _objc.getSelector(
           "updateAutomaticSoftwareUpdateEnabled:completionHandler:"),
@@ -13811,7 +13410,7 @@ class HMHome extends Struct<HMHome> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_Uint64_p_returns_void(
+    _call_ptr_ptr_ptr_Uint64_ptr_returns_void(
       _self,
       _objc.getSelector(
           "updateForUser:presenceAuthorizationStatus:completionHandler:"),
@@ -13827,7 +13426,7 @@ class HMHome extends Struct<HMHome> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("updateMediaPassword:completionHandler:"),
       arg,
@@ -13841,7 +13440,7 @@ class HMHome extends Struct<HMHome> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_p_returns_void(
+    _call_ptr_ptr_Int8_ptr_returns_void(
       _self,
       _objc.getSelector("updateMediaPeerToPeerEnabled:completionHandler:"),
       arg,
@@ -13855,7 +13454,7 @@ class HMHome extends Struct<HMHome> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int64_p_returns_void(
+    _call_ptr_ptr_Int64_ptr_returns_void(
       _self,
       _objc.getSelector("updateMinimumMediaUserPrivilege:completionHandler:"),
       arg,
@@ -13869,7 +13468,7 @@ class HMHome extends Struct<HMHome> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("updateName:completionHandler:"),
       arg,
@@ -13877,14 +13476,14 @@ class HMHome extends Struct<HMHome> {
     );
   }
 
-  static void userDidConfirmExecution$ofTrigger$completionHandler$(
+  static void userDidConfirmExecution$ofTrigger$completionHandler(
     Pointer<HMHome> _self,
     int arg, {
     @required Pointer ofTrigger,
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_p_p_returns_void(
+    _call_ptr_ptr_Int8_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("userDidConfirmExecution:ofTrigger:completionHandler:"),
       arg,
@@ -13893,15 +13492,14 @@ class HMHome extends Struct<HMHome> {
     );
   }
 
-  static void
-      userDidConfirmExecution$ofTriggerWithIdentifier$completionHandler$(
+  static void userDidConfirmExecution$ofTriggerWithIdentifier$completionHandler(
     Pointer<HMHome> _self,
     int arg, {
     @required Pointer ofTriggerWithIdentifier,
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_p_p_returns_void(
+    _call_ptr_ptr_Int8_ptr_ptr_returns_void(
       _self,
       _objc.getSelector(
           "userDidConfirmExecution:ofTriggerWithIdentifier:completionHandler:"),
@@ -13917,7 +13515,7 @@ class HMHome extends Struct<HMHome> {
     @required int withResponse,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_Int64_returns_void(
+    _call_ptr_ptr_ptr_Int64_returns_void(
       _self,
       _objc.getSelector(
           "userDidRespondToConsentRequestForSetupAccessoryDescription:withResponse:"),
@@ -13930,7 +13528,7 @@ class HMHome extends Struct<HMHome> {
     Pointer<HMHome> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("users"),
     );
@@ -13940,7 +13538,7 @@ class HMHome extends Struct<HMHome> {
     Pointer<HMHome> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("uuid"),
     );
@@ -13951,7 +13549,7 @@ class HMHome extends Struct<HMHome> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("zoneWithName:"),
       arg,
@@ -13963,7 +13561,7 @@ class HMHome extends Struct<HMHome> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("zoneWithUUID:"),
       arg,
@@ -13974,16 +13572,13 @@ class HMHome extends Struct<HMHome> {
     Pointer<HMHome> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("zones"),
     );
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMHomeAccessControl extends Struct<HMHomeAccessControl> {
   factory HMHomeAccessControl._() {
@@ -14004,7 +13599,7 @@ class HMHomeAccessControl extends Struct<HMHomeAccessControl> {
     @required Pointer presenceComputeStatus,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_Int8_Int8_Int8_p_p_returns_p(
+    return _call_ptr_ptr_ptr_Int8_Int8_Int8_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector(
           "initWithUser:owner:administratorPrivilege:remoteAccess:presenceAuthStatus:presenceComputeStatus:"),
@@ -14021,7 +13616,7 @@ class HMHomeAccessControl extends Struct<HMHomeAccessControl> {
     Pointer<HMHomeAccessControl> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isAdministrator"),
     );
@@ -14032,7 +13627,7 @@ class HMHomeAccessControl extends Struct<HMHomeAccessControl> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isEqual:"),
       arg,
@@ -14043,7 +13638,7 @@ class HMHomeAccessControl extends Struct<HMHomeAccessControl> {
     Pointer<HMHomeAccessControl> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isOwner"),
     );
@@ -14053,7 +13648,7 @@ class HMHomeAccessControl extends Struct<HMHomeAccessControl> {
     Pointer<HMHomeAccessControl> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isRemoteAccessAllowed"),
     );
@@ -14063,7 +13658,7 @@ class HMHomeAccessControl extends Struct<HMHomeAccessControl> {
     Pointer<HMHomeAccessControl> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("presenceAuthStatus"),
     );
@@ -14073,7 +13668,7 @@ class HMHomeAccessControl extends Struct<HMHomeAccessControl> {
     Pointer<HMHomeAccessControl> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("presenceAuthorizationStatus"),
     );
@@ -14083,7 +13678,7 @@ class HMHomeAccessControl extends Struct<HMHomeAccessControl> {
     Pointer<HMHomeAccessControl> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("presenceComputationStatus"),
     );
@@ -14093,7 +13688,7 @@ class HMHomeAccessControl extends Struct<HMHomeAccessControl> {
     Pointer<HMHomeAccessControl> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("presenceComputeStatus"),
     );
@@ -14104,7 +13699,7 @@ class HMHomeAccessControl extends Struct<HMHomeAccessControl> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setAdministrator:"),
       arg,
@@ -14116,7 +13711,7 @@ class HMHomeAccessControl extends Struct<HMHomeAccessControl> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setOwner:"),
       arg,
@@ -14128,7 +13723,7 @@ class HMHomeAccessControl extends Struct<HMHomeAccessControl> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setPresenceAuthStatus:"),
       arg,
@@ -14140,7 +13735,7 @@ class HMHomeAccessControl extends Struct<HMHomeAccessControl> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setPresenceComputeStatus:"),
       arg,
@@ -14152,7 +13747,7 @@ class HMHomeAccessControl extends Struct<HMHomeAccessControl> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setRemoteAccessAllowed:"),
       arg,
@@ -14165,7 +13760,7 @@ class HMHomeAccessControl extends Struct<HMHomeAccessControl> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_p_returns_void(
+    _call_ptr_ptr_Int8_ptr_returns_void(
       _self,
       _objc.getSelector("updateAdministratorAccess:completionHandler:"),
       arg,
@@ -14179,7 +13774,7 @@ class HMHomeAccessControl extends Struct<HMHomeAccessControl> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Uint64_p_returns_void(
+    _call_ptr_ptr_Uint64_ptr_returns_void(
       _self,
       _objc.getSelector("updatePresenceAuthorizationStatus:completionHandler:"),
       arg,
@@ -14193,7 +13788,7 @@ class HMHomeAccessControl extends Struct<HMHomeAccessControl> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_p_returns_void(
+    _call_ptr_ptr_Int8_ptr_returns_void(
       _self,
       _objc.getSelector("updateRemoteAccess:completionHandler:"),
       arg,
@@ -14202,9 +13797,6 @@ class HMHomeAccessControl extends Struct<HMHomeAccessControl> {
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMHomeInvitation extends Struct<HMHomeInvitation> {
   factory HMHomeInvitation._() {
@@ -14220,7 +13812,7 @@ class HMHomeInvitation extends Struct<HMHomeInvitation> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("cancelInviteWithCompletionHandler:"),
       arg,
@@ -14231,7 +13823,7 @@ class HMHomeInvitation extends Struct<HMHomeInvitation> {
     Pointer<HMHomeInvitation> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("context"),
     );
@@ -14242,7 +13834,7 @@ class HMHomeInvitation extends Struct<HMHomeInvitation> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("encodeWithCoder:"),
       arg,
@@ -14253,7 +13845,7 @@ class HMHomeInvitation extends Struct<HMHomeInvitation> {
     Pointer<HMHomeInvitation> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("endDate"),
     );
@@ -14263,7 +13855,7 @@ class HMHomeInvitation extends Struct<HMHomeInvitation> {
     Pointer<HMHomeInvitation> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("hash"),
     );
@@ -14273,7 +13865,7 @@ class HMHomeInvitation extends Struct<HMHomeInvitation> {
     Pointer<HMHomeInvitation> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("home"),
     );
@@ -14283,7 +13875,7 @@ class HMHomeInvitation extends Struct<HMHomeInvitation> {
     Pointer<HMHomeInvitation> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("homeObjectURL"),
     );
@@ -14293,31 +13885,31 @@ class HMHomeInvitation extends Struct<HMHomeInvitation> {
     Pointer<HMHomeInvitation> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("identifier"),
     );
   }
 
-  static Pointer initWithCoder$(
+  static Pointer initWithCoder(
     Pointer<HMHomeInvitation> _self,
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithCoder:"),
       arg,
     );
   }
 
-  static Pointer initWithCoder$invitationData$(
+  static Pointer initWithCoder$invitationData(
     Pointer<HMHomeInvitation> _self,
     Pointer arg, {
     @required Pointer invitationData,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithCoder:invitationData:"),
       arg,
@@ -14331,7 +13923,7 @@ class HMHomeInvitation extends Struct<HMHomeInvitation> {
     @required Pointer home,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithInvitationData:home:"),
       arg,
@@ -14343,7 +13935,7 @@ class HMHomeInvitation extends Struct<HMHomeInvitation> {
     Pointer<HMHomeInvitation> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("invitationData"),
     );
@@ -14353,7 +13945,7 @@ class HMHomeInvitation extends Struct<HMHomeInvitation> {
     Pointer<HMHomeInvitation> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int64(
+    return _call_ptr_ptr_returns_Int64(
       _self,
       _objc.getSelector("invitationState"),
     );
@@ -14364,7 +13956,7 @@ class HMHomeInvitation extends Struct<HMHomeInvitation> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isEqual:"),
       arg,
@@ -14376,7 +13968,7 @@ class HMHomeInvitation extends Struct<HMHomeInvitation> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setContext:"),
       arg,
@@ -14388,7 +13980,7 @@ class HMHomeInvitation extends Struct<HMHomeInvitation> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setHome:"),
       arg,
@@ -14400,7 +13992,7 @@ class HMHomeInvitation extends Struct<HMHomeInvitation> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setInvitationData:"),
       arg,
@@ -14411,7 +14003,7 @@ class HMHomeInvitation extends Struct<HMHomeInvitation> {
     Pointer<HMHomeInvitation> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("startDate"),
     );
@@ -14421,16 +14013,13 @@ class HMHomeInvitation extends Struct<HMHomeInvitation> {
     Pointer<HMHomeInvitation> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("uniqueIdentifier"),
     );
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMHomeInvitationData extends Struct<HMHomeInvitationData> {
   factory HMHomeInvitationData._() {
@@ -14445,7 +14034,7 @@ class HMHomeInvitationData extends Struct<HMHomeInvitationData> {
     Pointer<HMHomeInvitationData> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("description"),
     );
@@ -14456,7 +14045,7 @@ class HMHomeInvitationData extends Struct<HMHomeInvitationData> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("encodeWithCoder:"),
       arg,
@@ -14467,7 +14056,7 @@ class HMHomeInvitationData extends Struct<HMHomeInvitationData> {
     Pointer<HMHomeInvitationData> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("endDate"),
     );
@@ -14477,7 +14066,7 @@ class HMHomeInvitationData extends Struct<HMHomeInvitationData> {
     Pointer<HMHomeInvitationData> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("identifier"),
     );
@@ -14488,7 +14077,7 @@ class HMHomeInvitationData extends Struct<HMHomeInvitationData> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithCoder:"),
       arg,
@@ -14502,7 +14091,7 @@ class HMHomeInvitationData extends Struct<HMHomeInvitationData> {
     @required Pointer expiryDate,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int64_p_p_returns_p(
+    return _call_ptr_ptr_Int64_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector(
           "initWithInvitationState:invitationIdentifier:expiryDate:"),
@@ -14516,7 +14105,7 @@ class HMHomeInvitationData extends Struct<HMHomeInvitationData> {
     Pointer<HMHomeInvitationData> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int64(
+    return _call_ptr_ptr_returns_Int64(
       _self,
       _objc.getSelector("invitationState"),
     );
@@ -14527,7 +14116,7 @@ class HMHomeInvitationData extends Struct<HMHomeInvitationData> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setEndDate:"),
       arg,
@@ -14539,7 +14128,7 @@ class HMHomeInvitationData extends Struct<HMHomeInvitationData> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int64_returns_void(
+    _call_ptr_ptr_Int64_returns_void(
       _self,
       _objc.getSelector("setInvitationState:"),
       arg,
@@ -14550,16 +14139,13 @@ class HMHomeInvitationData extends Struct<HMHomeInvitationData> {
     Pointer<HMHomeInvitationData> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("startDate"),
     );
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMHomeManager extends Struct<HMHomeManager> {
   factory HMHomeManager._() {
@@ -14576,7 +14162,7 @@ class HMHomeManager extends Struct<HMHomeManager> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("addHomeWithName:completionHandler:"),
       arg,
@@ -14588,7 +14174,7 @@ class HMHomeManager extends Struct<HMHomeManager> {
     Pointer<HMHomeManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("applicationData"),
     );
@@ -14600,7 +14186,7 @@ class HMHomeManager extends Struct<HMHomeManager> {
     @required Pointer completion,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("checkEventValidity:completion:"),
       arg,
@@ -14616,7 +14202,7 @@ class HMHomeManager extends Struct<HMHomeManager> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_Uint64_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_Uint64_ptr_returns_void(
       _self,
       _objc.getSelector(
           "checkName:inHome:withValidationOptions:completionHandler:"),
@@ -14631,7 +14217,7 @@ class HMHomeManager extends Struct<HMHomeManager> {
     Pointer<HMHomeManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("configuration"),
     );
@@ -14643,7 +14229,7 @@ class HMHomeManager extends Struct<HMHomeManager> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("connectivityInfoForAccessory:completionHandler:"),
       arg,
@@ -14655,7 +14241,7 @@ class HMHomeManager extends Struct<HMHomeManager> {
     Pointer<HMHomeManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("context"),
     );
@@ -14665,7 +14251,7 @@ class HMHomeManager extends Struct<HMHomeManager> {
     Pointer<HMHomeManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("currentAccessory"),
     );
@@ -14675,7 +14261,7 @@ class HMHomeManager extends Struct<HMHomeManager> {
     Pointer<HMHomeManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("currentHome"),
     );
@@ -14685,7 +14271,7 @@ class HMHomeManager extends Struct<HMHomeManager> {
     Pointer<HMHomeManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("currentHomes"),
     );
@@ -14695,7 +14281,7 @@ class HMHomeManager extends Struct<HMHomeManager> {
     Pointer<HMHomeManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("dataSyncState"),
     );
@@ -14705,7 +14291,7 @@ class HMHomeManager extends Struct<HMHomeManager> {
     Pointer<HMHomeManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("dealloc"),
     );
@@ -14715,7 +14301,7 @@ class HMHomeManager extends Struct<HMHomeManager> {
     Pointer<HMHomeManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("delegate"),
     );
@@ -14727,7 +14313,7 @@ class HMHomeManager extends Struct<HMHomeManager> {
     @required Pointer completion,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("deleteDuetEvents:completion:"),
       arg,
@@ -14739,7 +14325,7 @@ class HMHomeManager extends Struct<HMHomeManager> {
     Pointer<HMHomeManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("didUpdateHomes"),
     );
@@ -14752,7 +14338,7 @@ class HMHomeManager extends Struct<HMHomeManager> {
     @required Pointer completion,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("dumpState:payload:completion:"),
       arg,
@@ -14767,7 +14353,7 @@ class HMHomeManager extends Struct<HMHomeManager> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_p_returns_void(
+    _call_ptr_ptr_Int8_ptr_returns_void(
       _self,
       _objc.getSelector("eraseHomeDataAndDeleteMetadata:completionHandler:"),
       arg,
@@ -14780,7 +14366,7 @@ class HMHomeManager extends Struct<HMHomeManager> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("eraseHomeDataWithCompletionHandler:"),
       arg,
@@ -14791,7 +14377,7 @@ class HMHomeManager extends Struct<HMHomeManager> {
     Pointer<HMHomeManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("fetchInProgress"),
     );
@@ -14801,7 +14387,7 @@ class HMHomeManager extends Struct<HMHomeManager> {
     Pointer<HMHomeManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("fileGenerationCounter"),
     );
@@ -14811,7 +14397,7 @@ class HMHomeManager extends Struct<HMHomeManager> {
     Pointer<HMHomeManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("fileMetadataVersion"),
     );
@@ -14821,7 +14407,7 @@ class HMHomeManager extends Struct<HMHomeManager> {
     Pointer<HMHomeManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("frameworkMergeComplete"),
     );
@@ -14831,7 +14417,7 @@ class HMHomeManager extends Struct<HMHomeManager> {
     Pointer<HMHomeManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("generationCounter"),
     );
@@ -14841,7 +14427,7 @@ class HMHomeManager extends Struct<HMHomeManager> {
     Pointer<HMHomeManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("homeCacheDir"),
     );
@@ -14851,7 +14437,7 @@ class HMHomeManager extends Struct<HMHomeManager> {
     Pointer<HMHomeManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("homeDataCache"),
     );
@@ -14861,7 +14447,7 @@ class HMHomeManager extends Struct<HMHomeManager> {
     Pointer<HMHomeManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("homeInvitations"),
     );
@@ -14871,7 +14457,7 @@ class HMHomeManager extends Struct<HMHomeManager> {
     Pointer<HMHomeManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("homes"),
     );
@@ -14882,7 +14468,7 @@ class HMHomeManager extends Struct<HMHomeManager> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("idmsAccountUsernameModifiedWithCompletionHandler:"),
       arg,
@@ -14893,7 +14479,7 @@ class HMHomeManager extends Struct<HMHomeManager> {
     Pointer<HMHomeManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("incomingHomeInvitations"),
     );
@@ -14903,7 +14489,7 @@ class HMHomeManager extends Struct<HMHomeManager> {
     Pointer<HMHomeManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("init"),
     );
@@ -14914,7 +14500,7 @@ class HMHomeManager extends Struct<HMHomeManager> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithHomeMangerConfiguration:"),
       arg,
@@ -14926,7 +14512,7 @@ class HMHomeManager extends Struct<HMHomeManager> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Uint64_returns_p(
+    return _call_ptr_ptr_Uint64_returns_ptr(
       _self,
       _objc.getSelector("initWithOptions:"),
       arg,
@@ -14937,7 +14523,7 @@ class HMHomeManager extends Struct<HMHomeManager> {
     Pointer<HMHomeManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isAccessAllowedWhenLocked"),
     );
@@ -14947,7 +14533,7 @@ class HMHomeManager extends Struct<HMHomeManager> {
     Pointer<HMHomeManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isDataSyncInProgress"),
     );
@@ -14957,7 +14543,7 @@ class HMHomeManager extends Struct<HMHomeManager> {
     Pointer<HMHomeManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isResidentEnabledForThisDevice"),
     );
@@ -14967,7 +14553,7 @@ class HMHomeManager extends Struct<HMHomeManager> {
     Pointer<HMHomeManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isThisDeviceResidentCapable"),
     );
@@ -14977,7 +14563,7 @@ class HMHomeManager extends Struct<HMHomeManager> {
     Pointer<HMHomeManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isViewServiceActive"),
     );
@@ -14987,7 +14573,7 @@ class HMHomeManager extends Struct<HMHomeManager> {
     Pointer<HMHomeManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("locationHandler"),
     );
@@ -15002,7 +14588,7 @@ class HMHomeManager extends Struct<HMHomeManager> {
     @required Pointer completion,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("logAppViewEvent:name:uuid:information:completion:"),
       arg,
@@ -15019,7 +14605,7 @@ class HMHomeManager extends Struct<HMHomeManager> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("logControl:completionHandler:"),
       arg,
@@ -15031,7 +14617,7 @@ class HMHomeManager extends Struct<HMHomeManager> {
     Pointer<HMHomeManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("mediaAccessoryControlRequested"),
     );
@@ -15041,7 +14627,7 @@ class HMHomeManager extends Struct<HMHomeManager> {
     Pointer<HMHomeManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("mergeOperationQueue"),
     );
@@ -15051,7 +14637,7 @@ class HMHomeManager extends Struct<HMHomeManager> {
     Pointer<HMHomeManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("messageReceiveQueue"),
     );
@@ -15061,7 +14647,7 @@ class HMHomeManager extends Struct<HMHomeManager> {
     Pointer<HMHomeManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("messageTargetUUID"),
     );
@@ -15071,7 +14657,7 @@ class HMHomeManager extends Struct<HMHomeManager> {
     Pointer<HMHomeManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("metadataCache"),
     );
@@ -15081,7 +14667,7 @@ class HMHomeManager extends Struct<HMHomeManager> {
     Pointer<HMHomeManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("metadataVersion"),
     );
@@ -15092,7 +14678,7 @@ class HMHomeManager extends Struct<HMHomeManager> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("notifyResidentCapableUpdated:"),
       arg,
@@ -15104,7 +14690,7 @@ class HMHomeManager extends Struct<HMHomeManager> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("notifyResidentEnabledUpdated:"),
       arg,
@@ -15115,7 +14701,7 @@ class HMHomeManager extends Struct<HMHomeManager> {
     Pointer<HMHomeManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("options"),
     );
@@ -15127,7 +14713,7 @@ class HMHomeManager extends Struct<HMHomeManager> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector(
           "pairingIdentityForAccessoryWithIdentifier:completionHandler:"),
@@ -15142,7 +14728,7 @@ class HMHomeManager extends Struct<HMHomeManager> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("primaryAccountDidChange:completionHandler:"),
       arg,
@@ -15155,7 +14741,7 @@ class HMHomeManager extends Struct<HMHomeManager> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("primaryAccountWasDeletedWithCompletionHandler:"),
       arg,
@@ -15168,7 +14754,7 @@ class HMHomeManager extends Struct<HMHomeManager> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("primaryAccountWasModified:completionHandler:"),
       arg,
@@ -15180,7 +14766,7 @@ class HMHomeManager extends Struct<HMHomeManager> {
     Pointer<HMHomeManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("primaryHome"),
     );
@@ -15191,7 +14777,7 @@ class HMHomeManager extends Struct<HMHomeManager> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("queryHomeKitUsageStateWithCompletionHandler:"),
       arg,
@@ -15204,7 +14790,7 @@ class HMHomeManager extends Struct<HMHomeManager> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("queryMetadata:completionHandler:"),
       arg,
@@ -15217,7 +14803,7 @@ class HMHomeManager extends Struct<HMHomeManager> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("queryVersionWithCompletionHandler:"),
       arg,
@@ -15229,7 +14815,7 @@ class HMHomeManager extends Struct<HMHomeManager> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("queryiCloudSwitchStateWithCompletionHandler:"),
       arg,
@@ -15242,7 +14828,7 @@ class HMHomeManager extends Struct<HMHomeManager> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_p_returns_void(
+    _call_ptr_ptr_Int8_ptr_returns_void(
       _self,
       _objc.getSelector("registerForMediaAccessoryControl:completionHandler:"),
       arg,
@@ -15256,7 +14842,7 @@ class HMHomeManager extends Struct<HMHomeManager> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("removeHome:completionHandler:"),
       arg,
@@ -15271,7 +14857,7 @@ class HMHomeManager extends Struct<HMHomeManager> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_Int8_p_returns_void(
+    _call_ptr_ptr_Int8_Int8_ptr_returns_void(
       _self,
       _objc.getSelector("resetConfiguration:withoutPopup:completionHandler:"),
       arg,
@@ -15284,7 +14870,7 @@ class HMHomeManager extends Struct<HMHomeManager> {
     Pointer<HMHomeManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("residentProvisioningStatus"),
     );
@@ -15294,7 +14880,7 @@ class HMHomeManager extends Struct<HMHomeManager> {
     Pointer<HMHomeManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("serverGenerationCounter"),
     );
@@ -15304,7 +14890,7 @@ class HMHomeManager extends Struct<HMHomeManager> {
     Pointer<HMHomeManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int32(
+    return _call_ptr_ptr_returns_Int32(
       _self,
       _objc.getSelector("serverGenerationCounterToken"),
     );
@@ -15315,7 +14901,7 @@ class HMHomeManager extends Struct<HMHomeManager> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setAccessAllowedWhenLocked:"),
       arg,
@@ -15327,7 +14913,7 @@ class HMHomeManager extends Struct<HMHomeManager> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setApplicationData:"),
       arg,
@@ -15339,7 +14925,7 @@ class HMHomeManager extends Struct<HMHomeManager> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setCurrentAccessory:"),
       arg,
@@ -15351,7 +14937,7 @@ class HMHomeManager extends Struct<HMHomeManager> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setCurrentHome:"),
       arg,
@@ -15363,7 +14949,7 @@ class HMHomeManager extends Struct<HMHomeManager> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setCurrentHomes:"),
       arg,
@@ -15375,7 +14961,7 @@ class HMHomeManager extends Struct<HMHomeManager> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Uint64_returns_void(
+    _call_ptr_ptr_Uint64_returns_void(
       _self,
       _objc.getSelector("setDataSyncState:"),
       arg,
@@ -15387,7 +14973,7 @@ class HMHomeManager extends Struct<HMHomeManager> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setDelegate:"),
       arg,
@@ -15399,7 +14985,7 @@ class HMHomeManager extends Struct<HMHomeManager> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setDidUpdateHomes:"),
       arg,
@@ -15411,7 +14997,7 @@ class HMHomeManager extends Struct<HMHomeManager> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setFetchInProgress:"),
       arg,
@@ -15423,7 +15009,7 @@ class HMHomeManager extends Struct<HMHomeManager> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setFileGenerationCounter:"),
       arg,
@@ -15435,7 +15021,7 @@ class HMHomeManager extends Struct<HMHomeManager> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setFileMetadataVersion:"),
       arg,
@@ -15447,7 +15033,7 @@ class HMHomeManager extends Struct<HMHomeManager> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setFrameworkMergeComplete:"),
       arg,
@@ -15459,7 +15045,7 @@ class HMHomeManager extends Struct<HMHomeManager> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Uint64_returns_void(
+    _call_ptr_ptr_Uint64_returns_void(
       _self,
       _objc.getSelector("setGenerationCounter:"),
       arg,
@@ -15471,7 +15057,7 @@ class HMHomeManager extends Struct<HMHomeManager> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setHomeCacheDir:"),
       arg,
@@ -15483,7 +15069,7 @@ class HMHomeManager extends Struct<HMHomeManager> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setHomeDataCache:"),
       arg,
@@ -15495,7 +15081,7 @@ class HMHomeManager extends Struct<HMHomeManager> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setHomeInvitations:"),
       arg,
@@ -15507,7 +15093,7 @@ class HMHomeManager extends Struct<HMHomeManager> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setMediaAccessoryControlRequested:"),
       arg,
@@ -15519,7 +15105,7 @@ class HMHomeManager extends Struct<HMHomeManager> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setMergeOperationQueue:"),
       arg,
@@ -15532,7 +15118,7 @@ class HMHomeManager extends Struct<HMHomeManager> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setMetadata:completionHandler:"),
       arg,
@@ -15545,7 +15131,7 @@ class HMHomeManager extends Struct<HMHomeManager> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setMetadataCache:"),
       arg,
@@ -15557,7 +15143,7 @@ class HMHomeManager extends Struct<HMHomeManager> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Uint64_returns_void(
+    _call_ptr_ptr_Uint64_returns_void(
       _self,
       _objc.getSelector("setMetadataVersion:"),
       arg,
@@ -15569,7 +15155,7 @@ class HMHomeManager extends Struct<HMHomeManager> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setPrimaryHome:"),
       arg,
@@ -15581,7 +15167,7 @@ class HMHomeManager extends Struct<HMHomeManager> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setResidentEnabledForThisDevice:"),
       arg,
@@ -15593,7 +15179,7 @@ class HMHomeManager extends Struct<HMHomeManager> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Uint64_returns_void(
+    _call_ptr_ptr_Uint64_returns_void(
       _self,
       _objc.getSelector("setResidentProvisioningStatus:"),
       arg,
@@ -15605,7 +15191,7 @@ class HMHomeManager extends Struct<HMHomeManager> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int32_returns_void(
+    _call_ptr_ptr_Int32_returns_void(
       _self,
       _objc.getSelector("setServerGenerationCounterToken:"),
       arg,
@@ -15617,7 +15203,7 @@ class HMHomeManager extends Struct<HMHomeManager> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Uint64_returns_void(
+    _call_ptr_ptr_Uint64_returns_void(
       _self,
       _objc.getSelector("setStatus:"),
       arg,
@@ -15629,7 +15215,7 @@ class HMHomeManager extends Struct<HMHomeManager> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setThisDeviceResidentCapable:"),
       arg,
@@ -15641,7 +15227,7 @@ class HMHomeManager extends Struct<HMHomeManager> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setViewServiceActive:"),
       arg,
@@ -15653,7 +15239,7 @@ class HMHomeManager extends Struct<HMHomeManager> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("shouldDisplayiCloudSwitchWithCompletionHandler:"),
       arg,
@@ -15664,7 +15250,7 @@ class HMHomeManager extends Struct<HMHomeManager> {
     Pointer<HMHomeManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("status"),
     );
@@ -15676,7 +15262,7 @@ class HMHomeManager extends Struct<HMHomeManager> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_p_returns_void(
+    _call_ptr_ptr_Int8_ptr_returns_void(
       _self,
       _objc.getSelector("updateAccessAllowedWhenLocked:completionHandler:"),
       arg,
@@ -15690,7 +15276,7 @@ class HMHomeManager extends Struct<HMHomeManager> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("updateApplicationData:completionHandler:"),
       arg,
@@ -15704,7 +15290,7 @@ class HMHomeManager extends Struct<HMHomeManager> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("updatePrimaryHome:completionHandler:"),
       arg,
@@ -15718,7 +15304,7 @@ class HMHomeManager extends Struct<HMHomeManager> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_p_returns_void(
+    _call_ptr_ptr_Int8_ptr_returns_void(
       _self,
       _objc
           .getSelector("updateResidentEnabledForThisDevice:completionHandler:"),
@@ -15733,7 +15319,7 @@ class HMHomeManager extends Struct<HMHomeManager> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_p_returns_void(
+    _call_ptr_ptr_Int8_ptr_returns_void(
       _self,
       _objc.getSelector("updateiCloudSwitchState:completionHandler:"),
       arg,
@@ -15745,16 +15331,13 @@ class HMHomeManager extends Struct<HMHomeManager> {
     Pointer<HMHomeManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("uuid"),
     );
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMHomeManagerConfiguration extends Struct<HMHomeManagerConfiguration> {
   factory HMHomeManagerConfiguration._() {
@@ -15771,7 +15354,7 @@ class HMHomeManagerConfiguration extends Struct<HMHomeManagerConfiguration> {
     Pointer<HMHomeManagerConfiguration> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("cachePolicy"),
     );
@@ -15781,21 +15364,9 @@ class HMHomeManagerConfiguration extends Struct<HMHomeManagerConfiguration> {
     Pointer<HMHomeManagerConfiguration> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("canUseCache"),
-    );
-  }
-
-  static Pointer copyWithZone(
-    Pointer<HMHomeManagerConfiguration> _self,
-    Pointer<Pointer> arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
-      _self,
-      _objc.getSelector("copyWithZone:"),
-      arg,
     );
   }
 
@@ -15803,7 +15374,7 @@ class HMHomeManagerConfiguration extends Struct<HMHomeManagerConfiguration> {
     Pointer<HMHomeManagerConfiguration> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("init"),
     );
@@ -15815,7 +15386,7 @@ class HMHomeManagerConfiguration extends Struct<HMHomeManagerConfiguration> {
     @required int cachePolicy,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Uint64_Uint64_returns_p(
+    return _call_ptr_ptr_Uint64_Uint64_returns_ptr(
       _self,
       _objc.getSelector("initWithOptions:cachePolicy:"),
       arg,
@@ -15827,7 +15398,7 @@ class HMHomeManagerConfiguration extends Struct<HMHomeManagerConfiguration> {
     Pointer<HMHomeManagerConfiguration> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("options"),
     );
@@ -15838,7 +15409,7 @@ class HMHomeManagerConfiguration extends Struct<HMHomeManagerConfiguration> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Uint64_returns_void(
+    _call_ptr_ptr_Uint64_returns_void(
       _self,
       _objc.getSelector("setCachePolicy:"),
       arg,
@@ -15850,7 +15421,7 @@ class HMHomeManagerConfiguration extends Struct<HMHomeManagerConfiguration> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setShouldConnect:"),
       arg,
@@ -15861,16 +15432,13 @@ class HMHomeManagerConfiguration extends Struct<HMHomeManagerConfiguration> {
     Pointer<HMHomeManagerConfiguration> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("shouldConnect"),
     );
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMIncomingHomeInvitation extends Struct<HMIncomingHomeInvitation> {
   factory HMIncomingHomeInvitation._() {
@@ -15888,7 +15456,7 @@ class HMIncomingHomeInvitation extends Struct<HMIncomingHomeInvitation> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("acceptInviteWithCompletionHandler:"),
       arg,
@@ -15901,7 +15469,7 @@ class HMIncomingHomeInvitation extends Struct<HMIncomingHomeInvitation> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Uint64_p_returns_void(
+    _call_ptr_ptr_Uint64_ptr_returns_void(
       _self,
       _objc
           .getSelector("acceptInviteWithPresenceAuthStatus:completionHandler:"),
@@ -15915,7 +15483,7 @@ class HMIncomingHomeInvitation extends Struct<HMIncomingHomeInvitation> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("cancelInviteWithCompletionHandler:"),
       arg,
@@ -15927,7 +15495,7 @@ class HMIncomingHomeInvitation extends Struct<HMIncomingHomeInvitation> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("encodeWithCoder:"),
       arg,
@@ -15938,7 +15506,7 @@ class HMIncomingHomeInvitation extends Struct<HMIncomingHomeInvitation> {
     Pointer<HMIncomingHomeInvitation> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("homeManager"),
     );
@@ -15948,7 +15516,7 @@ class HMIncomingHomeInvitation extends Struct<HMIncomingHomeInvitation> {
     Pointer<HMIncomingHomeInvitation> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("homeName"),
     );
@@ -15958,7 +15526,7 @@ class HMIncomingHomeInvitation extends Struct<HMIncomingHomeInvitation> {
     Pointer<HMIncomingHomeInvitation> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("homeUUID"),
     );
@@ -15969,7 +15537,7 @@ class HMIncomingHomeInvitation extends Struct<HMIncomingHomeInvitation> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithCoder:"),
       arg,
@@ -15982,7 +15550,7 @@ class HMIncomingHomeInvitation extends Struct<HMIncomingHomeInvitation> {
     @required Pointer homeManager,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithInvitationData:homeManager:"),
       arg,
@@ -15994,7 +15562,7 @@ class HMIncomingHomeInvitation extends Struct<HMIncomingHomeInvitation> {
     Pointer<HMIncomingHomeInvitation> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("inviter"),
     );
@@ -16005,7 +15573,7 @@ class HMIncomingHomeInvitation extends Struct<HMIncomingHomeInvitation> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setHomeManager:"),
       arg,
@@ -16013,9 +15581,6 @@ class HMIncomingHomeInvitation extends Struct<HMIncomingHomeInvitation> {
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMIncomingHomeInvitationData
     extends Struct<HMIncomingHomeInvitationData> {
@@ -16033,7 +15598,7 @@ class HMIncomingHomeInvitationData
     Pointer<HMIncomingHomeInvitationData> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("description"),
     );
@@ -16044,7 +15609,7 @@ class HMIncomingHomeInvitationData
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("encodeWithCoder:"),
       arg,
@@ -16055,7 +15620,7 @@ class HMIncomingHomeInvitationData
     Pointer<HMIncomingHomeInvitationData> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("homeName"),
     );
@@ -16065,7 +15630,7 @@ class HMIncomingHomeInvitationData
     Pointer<HMIncomingHomeInvitationData> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("homeUUID"),
     );
@@ -16076,7 +15641,7 @@ class HMIncomingHomeInvitationData
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithCoder:"),
       arg,
@@ -16094,7 +15659,7 @@ class HMIncomingHomeInvitationData
     @required Pointer expiryDate,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_Int64_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_Int64_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector(
           "initWithInviterUserID:invitationIdentifier:inviterName:invitationState:homeName:homeUUID:expiryDate:"),
@@ -16112,7 +15677,7 @@ class HMIncomingHomeInvitationData
     Pointer<HMIncomingHomeInvitationData> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("inviterName"),
     );
@@ -16122,7 +15687,7 @@ class HMIncomingHomeInvitationData
     Pointer<HMIncomingHomeInvitationData> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("inviterUUID"),
     );
@@ -16132,7 +15697,7 @@ class HMIncomingHomeInvitationData
     Pointer<HMIncomingHomeInvitationData> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("inviterUserID"),
     );
@@ -16143,7 +15708,7 @@ class HMIncomingHomeInvitationData
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setInviterName:"),
       arg,
@@ -16151,9 +15716,6 @@ class HMIncomingHomeInvitationData
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMLegacyAnisetteDataRequest extends Struct<HMLegacyAnisetteDataRequest> {
   factory HMLegacyAnisetteDataRequest._() {
@@ -16170,7 +15732,7 @@ class HMLegacyAnisetteDataRequest extends Struct<HMLegacyAnisetteDataRequest> {
     Pointer<HMLegacyAnisetteDataRequest> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("description"),
     );
@@ -16180,7 +15742,7 @@ class HMLegacyAnisetteDataRequest extends Struct<HMLegacyAnisetteDataRequest> {
     Pointer<HMLegacyAnisetteDataRequest> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("dsid"),
     );
@@ -16191,7 +15753,7 @@ class HMLegacyAnisetteDataRequest extends Struct<HMLegacyAnisetteDataRequest> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("encodeWithCoder:"),
       arg,
@@ -16203,7 +15765,7 @@ class HMLegacyAnisetteDataRequest extends Struct<HMLegacyAnisetteDataRequest> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithCoder:"),
       arg,
@@ -16214,7 +15776,7 @@ class HMLegacyAnisetteDataRequest extends Struct<HMLegacyAnisetteDataRequest> {
     Pointer<HMLegacyAnisetteDataRequest> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("messageName"),
     );
@@ -16224,7 +15786,7 @@ class HMLegacyAnisetteDataRequest extends Struct<HMLegacyAnisetteDataRequest> {
     Pointer<HMLegacyAnisetteDataRequest> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("messagePayload"),
     );
@@ -16235,7 +15797,7 @@ class HMLegacyAnisetteDataRequest extends Struct<HMLegacyAnisetteDataRequest> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setDsid:"),
       arg,
@@ -16246,16 +15808,13 @@ class HMLegacyAnisetteDataRequest extends Struct<HMLegacyAnisetteDataRequest> {
     Pointer<HMLegacyAnisetteDataRequest> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("xpcMessageName"),
     );
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMLegacyAnisetteDataResponse
     extends Struct<HMLegacyAnisetteDataResponse> {
@@ -16273,7 +15832,7 @@ class HMLegacyAnisetteDataResponse
     Pointer<HMLegacyAnisetteDataResponse> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("anisetteData"),
     );
@@ -16283,7 +15842,7 @@ class HMLegacyAnisetteDataResponse
     Pointer<HMLegacyAnisetteDataResponse> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("description"),
     );
@@ -16294,7 +15853,7 @@ class HMLegacyAnisetteDataResponse
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("encodeWithCoder:"),
       arg,
@@ -16306,7 +15865,7 @@ class HMLegacyAnisetteDataResponse
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithCoder:"),
       arg,
@@ -16317,7 +15876,7 @@ class HMLegacyAnisetteDataResponse
     Pointer<HMLegacyAnisetteDataResponse> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("messageName"),
     );
@@ -16327,7 +15886,7 @@ class HMLegacyAnisetteDataResponse
     Pointer<HMLegacyAnisetteDataResponse> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("messagePayload"),
     );
@@ -16338,7 +15897,7 @@ class HMLegacyAnisetteDataResponse
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setAnisetteData:"),
       arg,
@@ -16349,16 +15908,13 @@ class HMLegacyAnisetteDataResponse
     Pointer<HMLegacyAnisetteDataResponse> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("xpcMessageName"),
     );
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMLocalization extends Struct<HMLocalization> {
   factory HMLocalization._() {
@@ -16373,7 +15929,7 @@ class HMLocalization extends Struct<HMLocalization> {
     Pointer<HMLocalization> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("dealloc"),
     );
@@ -16384,7 +15940,7 @@ class HMLocalization extends Struct<HMLocalization> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("getLocalizedOrCustomString:"),
       arg,
@@ -16396,7 +15952,7 @@ class HMLocalization extends Struct<HMLocalization> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("getLocalizedString:"),
       arg,
@@ -16407,7 +15963,7 @@ class HMLocalization extends Struct<HMLocalization> {
     Pointer<HMLocalization> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("init"),
     );
@@ -16417,16 +15973,13 @@ class HMLocalization extends Struct<HMLocalization> {
     Pointer<HMLocalization> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("localizedStrings"),
     );
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMLocationEvent extends Struct<HMLocationEvent> {
   factory HMLocationEvent._() {
@@ -16437,24 +15990,12 @@ class HMLocationEvent extends Struct<HMLocationEvent> {
     return _objc.allocate("HMLocationEvent").cast<HMLocationEvent>();
   }
 
-  static Pointer copyWithZone(
-    Pointer<HMLocationEvent> _self,
-    Pointer<Pointer> arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
-      _self,
-      _objc.getSelector("copyWithZone:"),
-      arg,
-    );
-  }
-
   static void didUpdateAuthorization(
     Pointer<HMLocationEvent> _self,
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int32_returns_void(
+    _call_ptr_ptr_Int32_returns_void(
       _self,
       _objc.getSelector("didUpdateAuthorization:"),
       arg,
@@ -16466,7 +16007,7 @@ class HMLocationEvent extends Struct<HMLocationEvent> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("encodeWithCoder:"),
       arg,
@@ -16478,7 +16019,7 @@ class HMLocationEvent extends Struct<HMLocationEvent> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithCoder:"),
       arg,
@@ -16491,7 +16032,7 @@ class HMLocationEvent extends Struct<HMLocationEvent> {
     @required Pointer region,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithDict:region:"),
       arg,
@@ -16504,7 +16045,7 @@ class HMLocationEvent extends Struct<HMLocationEvent> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithRegion:"),
       arg,
@@ -16515,21 +16056,9 @@ class HMLocationEvent extends Struct<HMLocationEvent> {
     Pointer<HMLocationEvent> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int32(
+    return _call_ptr_ptr_returns_Int32(
       _self,
       _objc.getSelector("locationAuthorization"),
-    );
-  }
-
-  static Pointer mutableCopyWithZone(
-    Pointer<HMLocationEvent> _self,
-    Pointer<Pointer> arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
-      _self,
-      _objc.getSelector("mutableCopyWithZone:"),
-      arg,
     );
   }
 
@@ -16537,7 +16066,7 @@ class HMLocationEvent extends Struct<HMLocationEvent> {
     Pointer<HMLocationEvent> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("region"),
     );
@@ -16548,7 +16077,7 @@ class HMLocationEvent extends Struct<HMLocationEvent> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int32_returns_void(
+    _call_ptr_ptr_Int32_returns_void(
       _self,
       _objc.getSelector("setLocationAuthorization:"),
       arg,
@@ -16560,7 +16089,7 @@ class HMLocationEvent extends Struct<HMLocationEvent> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setRegion:"),
       arg,
@@ -16573,7 +16102,7 @@ class HMLocationEvent extends Struct<HMLocationEvent> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("updateRegion:completionHandler:"),
       arg,
@@ -16582,9 +16111,6 @@ class HMLocationEvent extends Struct<HMLocationEvent> {
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMMediaProfile extends Struct<HMMediaProfile> {
   factory HMMediaProfile._() {
@@ -16599,7 +16125,7 @@ class HMMediaProfile extends Struct<HMMediaProfile> {
     Pointer<HMMediaProfile> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("containerHome"),
     );
@@ -16609,7 +16135,7 @@ class HMMediaProfile extends Struct<HMMediaProfile> {
     Pointer<HMMediaProfile> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("delegate"),
     );
@@ -16619,7 +16145,7 @@ class HMMediaProfile extends Struct<HMMediaProfile> {
     Pointer<HMMediaProfile> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("init"),
     );
@@ -16630,7 +16156,7 @@ class HMMediaProfile extends Struct<HMMediaProfile> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithAccessoryProfile:"),
       arg,
@@ -16643,7 +16169,7 @@ class HMMediaProfile extends Struct<HMMediaProfile> {
     @required Pointer didUpdateMediaSession,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("mediaProfile:didUpdateMediaSession:"),
       arg,
@@ -16655,7 +16181,7 @@ class HMMediaProfile extends Struct<HMMediaProfile> {
     Pointer<HMMediaProfile> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("mediaSession"),
     );
@@ -16665,7 +16191,7 @@ class HMMediaProfile extends Struct<HMMediaProfile> {
     Pointer<HMMediaProfile> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("routeUID"),
     );
@@ -16676,7 +16202,7 @@ class HMMediaProfile extends Struct<HMMediaProfile> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setDelegate:"),
       arg,
@@ -16687,16 +16213,13 @@ class HMMediaProfile extends Struct<HMMediaProfile> {
     Pointer<HMMediaProfile> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("settings"),
     );
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMMediaSession extends Struct<HMMediaSession> {
   factory HMMediaSession._() {
@@ -16711,7 +16234,7 @@ class HMMediaSession extends Struct<HMMediaSession> {
     Pointer<HMMediaSession> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("audioControl"),
     );
@@ -16723,7 +16246,7 @@ class HMMediaSession extends Struct<HMMediaSession> {
     @required Pointer messageTargetUUID,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("configure:messageTargetUUID:"),
       arg,
@@ -16735,7 +16258,7 @@ class HMMediaSession extends Struct<HMMediaSession> {
     Pointer<HMMediaSession> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("delegate"),
     );
@@ -16746,7 +16269,7 @@ class HMMediaSession extends Struct<HMMediaSession> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("encodeWithCoder:"),
       arg,
@@ -16757,7 +16280,7 @@ class HMMediaSession extends Struct<HMMediaSession> {
     Pointer<HMMediaSession> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("hash"),
     );
@@ -16768,7 +16291,7 @@ class HMMediaSession extends Struct<HMMediaSession> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithCoder:"),
       arg,
@@ -16782,7 +16305,7 @@ class HMMediaSession extends Struct<HMMediaSession> {
     @required int playbackState,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_Int64_returns_p(
+    return _call_ptr_ptr_ptr_ptr_Int64_returns_ptr(
       _self,
       _objc.getSelector("initWithUUID:routeUID:playbackState:"),
       arg,
@@ -16796,7 +16319,7 @@ class HMMediaSession extends Struct<HMMediaSession> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isEqual:"),
       arg,
@@ -16807,19 +16330,19 @@ class HMMediaSession extends Struct<HMMediaSession> {
     Pointer<HMMediaSession> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("mediaProfile"),
     );
   }
 
-  static void mediaSession$didUpdatePlaybackState$(
+  static void mediaSession$didUpdatePlaybackState(
     Pointer<HMMediaSession> _self,
     Pointer arg, {
     @required int didUpdatePlaybackState,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_Int64_returns_void(
+    _call_ptr_ptr_ptr_Int64_returns_void(
       _self,
       _objc.getSelector("mediaSession:didUpdatePlaybackState:"),
       arg,
@@ -16827,13 +16350,13 @@ class HMMediaSession extends Struct<HMMediaSession> {
     );
   }
 
-  static void mediaSession$didUpdateRouteUID$(
+  static void mediaSession$didUpdateRouteUID(
     Pointer<HMMediaSession> _self,
     Pointer arg, {
     @required Pointer didUpdateRouteUID,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("mediaSession:didUpdateRouteUID:"),
       arg,
@@ -16845,7 +16368,7 @@ class HMMediaSession extends Struct<HMMediaSession> {
     Pointer<HMMediaSession> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("mediaSession"),
     );
@@ -16855,7 +16378,7 @@ class HMMediaSession extends Struct<HMMediaSession> {
     Pointer<HMMediaSession> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("messageTargetUUID"),
     );
@@ -16866,7 +16389,7 @@ class HMMediaSession extends Struct<HMMediaSession> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("pauseWithCompletionHandler:"),
       arg,
@@ -16877,7 +16400,7 @@ class HMMediaSession extends Struct<HMMediaSession> {
     Pointer<HMMediaSession> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int64(
+    return _call_ptr_ptr_returns_Int64(
       _self,
       _objc.getSelector("playbackState"),
     );
@@ -16887,7 +16410,7 @@ class HMMediaSession extends Struct<HMMediaSession> {
     Pointer<HMMediaSession> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("playbackStateDescription"),
     );
@@ -16898,7 +16421,7 @@ class HMMediaSession extends Struct<HMMediaSession> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("refreshPlaybackStateWithCompletionHandler:"),
       arg,
@@ -16910,7 +16433,7 @@ class HMMediaSession extends Struct<HMMediaSession> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("resumeWithCompletionHandler:"),
       arg,
@@ -16921,7 +16444,7 @@ class HMMediaSession extends Struct<HMMediaSession> {
     Pointer<HMMediaSession> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("routeUID"),
     );
@@ -16932,7 +16455,7 @@ class HMMediaSession extends Struct<HMMediaSession> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setDelegate:"),
       arg,
@@ -16944,7 +16467,7 @@ class HMMediaSession extends Struct<HMMediaSession> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setMediaProfile:"),
       arg,
@@ -16956,7 +16479,7 @@ class HMMediaSession extends Struct<HMMediaSession> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setMediaSession:"),
       arg,
@@ -16968,7 +16491,7 @@ class HMMediaSession extends Struct<HMMediaSession> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setUuid:"),
       arg,
@@ -16979,7 +16502,7 @@ class HMMediaSession extends Struct<HMMediaSession> {
     Pointer<HMMediaSession> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("uniqueIdentifier"),
     );
@@ -16990,7 +16513,7 @@ class HMMediaSession extends Struct<HMMediaSession> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("updatePlaybackState:"),
       arg,
@@ -17001,16 +16524,13 @@ class HMMediaSession extends Struct<HMMediaSession> {
     Pointer<HMMediaSession> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("uuid"),
     );
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMMediaSystem extends Struct<HMMediaSystem> {
   factory HMMediaSystem._() {
@@ -17025,7 +16545,7 @@ class HMMediaSystem extends Struct<HMMediaSystem> {
     Pointer<HMMediaSystem> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("applicationData"),
     );
@@ -17035,7 +16555,7 @@ class HMMediaSystem extends Struct<HMMediaSystem> {
     Pointer<HMMediaSystem> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("category"),
     );
@@ -17045,7 +16565,7 @@ class HMMediaSystem extends Struct<HMMediaSystem> {
     Pointer<HMMediaSystem> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("components"),
     );
@@ -17055,7 +16575,7 @@ class HMMediaSystem extends Struct<HMMediaSystem> {
     Pointer<HMMediaSystem> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("componentsArray"),
     );
@@ -17065,7 +16585,7 @@ class HMMediaSystem extends Struct<HMMediaSystem> {
     Pointer<HMMediaSystem> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("configuredName"),
     );
@@ -17075,7 +16595,7 @@ class HMMediaSystem extends Struct<HMMediaSystem> {
     Pointer<HMMediaSystem> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("containerHome"),
     );
@@ -17085,7 +16605,7 @@ class HMMediaSystem extends Struct<HMMediaSystem> {
     Pointer<HMMediaSystem> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("context"),
     );
@@ -17095,7 +16615,7 @@ class HMMediaSystem extends Struct<HMMediaSystem> {
     Pointer<HMMediaSystem> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("dealloc"),
     );
@@ -17105,7 +16625,7 @@ class HMMediaSystem extends Struct<HMMediaSystem> {
     Pointer<HMMediaSystem> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("delegate"),
     );
@@ -17115,7 +16635,7 @@ class HMMediaSystem extends Struct<HMMediaSystem> {
     Pointer<HMMediaSystem> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("description"),
     );
@@ -17126,7 +16646,7 @@ class HMMediaSystem extends Struct<HMMediaSystem> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("encodeWithCoder:"),
       arg,
@@ -17137,7 +16657,7 @@ class HMMediaSystem extends Struct<HMMediaSystem> {
     Pointer<HMMediaSystem> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("hash"),
     );
@@ -17147,7 +16667,7 @@ class HMMediaSystem extends Struct<HMMediaSystem> {
     Pointer<HMMediaSystem> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("home"),
     );
@@ -17157,7 +16677,7 @@ class HMMediaSystem extends Struct<HMMediaSystem> {
     Pointer<HMMediaSystem> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("init"),
     );
@@ -17168,7 +16688,7 @@ class HMMediaSystem extends Struct<HMMediaSystem> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithCoder:"),
       arg,
@@ -17187,7 +16707,7 @@ class HMMediaSystem extends Struct<HMMediaSystem> {
     @required Pointer symptomHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_p_Int8_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_ptr_Int8_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector(
           "initWithHome:uuid:name:configuredName:compatible:components:settings:symptomHandler:"),
@@ -17206,7 +16726,7 @@ class HMMediaSystem extends Struct<HMMediaSystem> {
     Pointer<HMMediaSystem> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isCompatible"),
     );
@@ -17216,7 +16736,7 @@ class HMMediaSystem extends Struct<HMMediaSystem> {
     Pointer<HMMediaSystem> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isControllable"),
     );
@@ -17227,7 +16747,7 @@ class HMMediaSystem extends Struct<HMMediaSystem> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isEqual:"),
       arg,
@@ -17238,7 +16758,7 @@ class HMMediaSystem extends Struct<HMMediaSystem> {
     Pointer<HMMediaSystem> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("logIdentifier"),
     );
@@ -17248,7 +16768,7 @@ class HMMediaSystem extends Struct<HMMediaSystem> {
     Pointer<HMMediaSystem> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("mediaSession"),
     );
@@ -17258,7 +16778,7 @@ class HMMediaSystem extends Struct<HMMediaSystem> {
     Pointer<HMMediaSystem> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("messageReceiveQueue"),
     );
@@ -17268,7 +16788,7 @@ class HMMediaSystem extends Struct<HMMediaSystem> {
     Pointer<HMMediaSystem> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("messageTargetUUID"),
     );
@@ -17278,7 +16798,7 @@ class HMMediaSystem extends Struct<HMMediaSystem> {
     Pointer<HMMediaSystem> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("name"),
     );
@@ -17289,7 +16809,7 @@ class HMMediaSystem extends Struct<HMMediaSystem> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("notifyDelegateOfUpdatedApplicationData:"),
       arg,
@@ -17301,7 +16821,7 @@ class HMMediaSystem extends Struct<HMMediaSystem> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("notifyDelegateOfUpdatedComponents:"),
       arg,
@@ -17313,7 +16833,7 @@ class HMMediaSystem extends Struct<HMMediaSystem> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("notifyDelegateOfUpdatedConfiguredName:"),
       arg,
@@ -17325,7 +16845,7 @@ class HMMediaSystem extends Struct<HMMediaSystem> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("notifyDelegateOfUpdatedMediaSession:"),
       arg,
@@ -17337,7 +16857,7 @@ class HMMediaSystem extends Struct<HMMediaSystem> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("notifyDelegateOfUpdatedName:"),
       arg,
@@ -17349,7 +16869,7 @@ class HMMediaSystem extends Struct<HMMediaSystem> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("notifyDelegateOfUpdatedSettings:"),
       arg,
@@ -17361,7 +16881,7 @@ class HMMediaSystem extends Struct<HMMediaSystem> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setApplicationData:"),
       arg,
@@ -17373,7 +16893,7 @@ class HMMediaSystem extends Struct<HMMediaSystem> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setComponentsArray:"),
       arg,
@@ -17385,7 +16905,7 @@ class HMMediaSystem extends Struct<HMMediaSystem> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setConfiguredName:"),
       arg,
@@ -17397,7 +16917,7 @@ class HMMediaSystem extends Struct<HMMediaSystem> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setContext:"),
       arg,
@@ -17409,7 +16929,7 @@ class HMMediaSystem extends Struct<HMMediaSystem> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setDelegate:"),
       arg,
@@ -17421,7 +16941,7 @@ class HMMediaSystem extends Struct<HMMediaSystem> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setHome:"),
       arg,
@@ -17433,7 +16953,7 @@ class HMMediaSystem extends Struct<HMMediaSystem> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setName:"),
       arg,
@@ -17445,7 +16965,7 @@ class HMMediaSystem extends Struct<HMMediaSystem> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setSettings:"),
       arg,
@@ -17456,7 +16976,7 @@ class HMMediaSystem extends Struct<HMMediaSystem> {
     Pointer<HMMediaSystem> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("settings"),
     );
@@ -17466,7 +16986,7 @@ class HMMediaSystem extends Struct<HMMediaSystem> {
     Pointer<HMMediaSystem> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("symptomsHandler"),
     );
@@ -17476,7 +16996,7 @@ class HMMediaSystem extends Struct<HMMediaSystem> {
     Pointer<HMMediaSystem> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("uniqueIdentifier"),
     );
@@ -17488,7 +17008,7 @@ class HMMediaSystem extends Struct<HMMediaSystem> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("updateApplicationData:completionHandler:"),
       arg,
@@ -17502,7 +17022,7 @@ class HMMediaSystem extends Struct<HMMediaSystem> {
     @required Pointer forMediaProfile,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("updateMediaSession:forMediaProfile:"),
       arg,
@@ -17514,16 +17034,13 @@ class HMMediaSystem extends Struct<HMMediaSystem> {
     Pointer<HMMediaSystem> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("uuid"),
     );
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMMediaSystemBuilder extends Struct<HMMediaSystemBuilder> {
   factory HMMediaSystemBuilder._() {
@@ -17538,7 +17055,7 @@ class HMMediaSystemBuilder extends Struct<HMMediaSystemBuilder> {
     Pointer<HMMediaSystemBuilder> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("builderSessionID"),
     );
@@ -17549,7 +17066,7 @@ class HMMediaSystemBuilder extends Struct<HMMediaSystemBuilder> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("commitWithCompletionHandler:"),
       arg,
@@ -17560,7 +17077,7 @@ class HMMediaSystemBuilder extends Struct<HMMediaSystemBuilder> {
     Pointer<HMMediaSystemBuilder> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("components"),
     );
@@ -17570,7 +17087,7 @@ class HMMediaSystemBuilder extends Struct<HMMediaSystemBuilder> {
     Pointer<HMMediaSystemBuilder> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("componentsArray"),
     );
@@ -17580,7 +17097,7 @@ class HMMediaSystemBuilder extends Struct<HMMediaSystemBuilder> {
     Pointer<HMMediaSystemBuilder> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("configuredName"),
     );
@@ -17590,7 +17107,7 @@ class HMMediaSystemBuilder extends Struct<HMMediaSystemBuilder> {
     Pointer<HMMediaSystemBuilder> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("context"),
     );
@@ -17600,7 +17117,7 @@ class HMMediaSystemBuilder extends Struct<HMMediaSystemBuilder> {
     Pointer<HMMediaSystemBuilder> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("dealloc"),
     );
@@ -17610,7 +17127,7 @@ class HMMediaSystemBuilder extends Struct<HMMediaSystemBuilder> {
     Pointer<HMMediaSystemBuilder> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("description"),
     );
@@ -17620,7 +17137,7 @@ class HMMediaSystemBuilder extends Struct<HMMediaSystemBuilder> {
     Pointer<HMMediaSystemBuilder> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("home"),
     );
@@ -17630,7 +17147,7 @@ class HMMediaSystemBuilder extends Struct<HMMediaSystemBuilder> {
     Pointer<HMMediaSystemBuilder> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("init"),
     );
@@ -17641,7 +17158,7 @@ class HMMediaSystemBuilder extends Struct<HMMediaSystemBuilder> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithHome:"),
       arg,
@@ -17653,7 +17170,7 @@ class HMMediaSystemBuilder extends Struct<HMMediaSystemBuilder> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithMediaSystem:"),
       arg,
@@ -17664,7 +17181,7 @@ class HMMediaSystemBuilder extends Struct<HMMediaSystemBuilder> {
     Pointer<HMMediaSystemBuilder> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("logIdentifier"),
     );
@@ -17674,7 +17191,7 @@ class HMMediaSystemBuilder extends Struct<HMMediaSystemBuilder> {
     Pointer<HMMediaSystemBuilder> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("mediaSystem"),
     );
@@ -17684,7 +17201,7 @@ class HMMediaSystemBuilder extends Struct<HMMediaSystemBuilder> {
     Pointer<HMMediaSystemBuilder> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("mediaSystemUUID"),
     );
@@ -17694,7 +17211,7 @@ class HMMediaSystemBuilder extends Struct<HMMediaSystemBuilder> {
     Pointer<HMMediaSystemBuilder> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("name"),
     );
@@ -17705,7 +17222,7 @@ class HMMediaSystemBuilder extends Struct<HMMediaSystemBuilder> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setBuilderSessionID:"),
       arg,
@@ -17717,7 +17234,7 @@ class HMMediaSystemBuilder extends Struct<HMMediaSystemBuilder> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setComponents:"),
       arg,
@@ -17729,7 +17246,7 @@ class HMMediaSystemBuilder extends Struct<HMMediaSystemBuilder> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setComponentsArray:"),
       arg,
@@ -17741,7 +17258,7 @@ class HMMediaSystemBuilder extends Struct<HMMediaSystemBuilder> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setConfiguredName:"),
       arg,
@@ -17753,7 +17270,7 @@ class HMMediaSystemBuilder extends Struct<HMMediaSystemBuilder> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setContext:"),
       arg,
@@ -17765,7 +17282,7 @@ class HMMediaSystemBuilder extends Struct<HMMediaSystemBuilder> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setName:"),
       arg,
@@ -17776,16 +17293,13 @@ class HMMediaSystemBuilder extends Struct<HMMediaSystemBuilder> {
     Pointer<HMMediaSystemBuilder> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("uuid"),
     );
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMMediaSystemComponent extends Struct<HMMediaSystemComponent> {
   factory HMMediaSystemComponent._() {
@@ -17802,21 +17316,9 @@ class HMMediaSystemComponent extends Struct<HMMediaSystemComponent> {
     Pointer<HMMediaSystemComponent> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("accessory"),
-    );
-  }
-
-  static Pointer copyWithZone(
-    Pointer<HMMediaSystemComponent> _self,
-    Pointer<Pointer> arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
-      _self,
-      _objc.getSelector("copyWithZone:"),
-      arg,
     );
   }
 
@@ -17824,7 +17326,7 @@ class HMMediaSystemComponent extends Struct<HMMediaSystemComponent> {
     Pointer<HMMediaSystemComponent> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("dealloc"),
     );
@@ -17834,7 +17336,7 @@ class HMMediaSystemComponent extends Struct<HMMediaSystemComponent> {
     Pointer<HMMediaSystemComponent> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("description"),
     );
@@ -17845,7 +17347,7 @@ class HMMediaSystemComponent extends Struct<HMMediaSystemComponent> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("encodeWithCoder:"),
       arg,
@@ -17856,7 +17358,7 @@ class HMMediaSystemComponent extends Struct<HMMediaSystemComponent> {
     Pointer<HMMediaSystemComponent> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("hash"),
     );
@@ -17866,7 +17368,7 @@ class HMMediaSystemComponent extends Struct<HMMediaSystemComponent> {
     Pointer<HMMediaSystemComponent> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("init"),
     );
@@ -17877,7 +17379,7 @@ class HMMediaSystemComponent extends Struct<HMMediaSystemComponent> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithCoder:"),
       arg,
@@ -17890,7 +17392,7 @@ class HMMediaSystemComponent extends Struct<HMMediaSystemComponent> {
     @required Pointer role,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithMediaProfile:role:"),
       arg,
@@ -17905,7 +17407,7 @@ class HMMediaSystemComponent extends Struct<HMMediaSystemComponent> {
     @required Pointer role,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithUUID:mediaProfile:role:"),
       arg,
@@ -17919,7 +17421,7 @@ class HMMediaSystemComponent extends Struct<HMMediaSystemComponent> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isEqual:"),
       arg,
@@ -17930,7 +17432,7 @@ class HMMediaSystemComponent extends Struct<HMMediaSystemComponent> {
     Pointer<HMMediaSystemComponent> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("logIdentifier"),
     );
@@ -17940,21 +17442,9 @@ class HMMediaSystemComponent extends Struct<HMMediaSystemComponent> {
     Pointer<HMMediaSystemComponent> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("mediaProfile"),
-    );
-  }
-
-  static Pointer mutableCopyWithZone(
-    Pointer<HMMediaSystemComponent> _self,
-    Pointer<Pointer> arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
-      _self,
-      _objc.getSelector("mutableCopyWithZone:"),
-      arg,
     );
   }
 
@@ -17962,7 +17452,7 @@ class HMMediaSystemComponent extends Struct<HMMediaSystemComponent> {
     Pointer<HMMediaSystemComponent> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("role"),
     );
@@ -17972,7 +17462,7 @@ class HMMediaSystemComponent extends Struct<HMMediaSystemComponent> {
     Pointer<HMMediaSystemComponent> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("serialize"),
     );
@@ -17983,7 +17473,7 @@ class HMMediaSystemComponent extends Struct<HMMediaSystemComponent> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setAccessory:"),
       arg,
@@ -17995,7 +17485,7 @@ class HMMediaSystemComponent extends Struct<HMMediaSystemComponent> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setRole:"),
       arg,
@@ -18006,7 +17496,7 @@ class HMMediaSystemComponent extends Struct<HMMediaSystemComponent> {
     Pointer<HMMediaSystemComponent> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("uniqueIdentifier"),
     );
@@ -18016,16 +17506,13 @@ class HMMediaSystemComponent extends Struct<HMMediaSystemComponent> {
     Pointer<HMMediaSystemComponent> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("uuid"),
     );
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMMediaSystemRole extends Struct<HMMediaSystemRole> {
   factory HMMediaSystemRole._() {
@@ -18040,7 +17527,7 @@ class HMMediaSystemRole extends Struct<HMMediaSystemRole> {
     Pointer<HMMediaSystemRole> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("description"),
     );
@@ -18051,7 +17538,7 @@ class HMMediaSystemRole extends Struct<HMMediaSystemRole> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("encodeWithCoder:"),
       arg,
@@ -18062,7 +17549,7 @@ class HMMediaSystemRole extends Struct<HMMediaSystemRole> {
     Pointer<HMMediaSystemRole> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("hash"),
     );
@@ -18073,7 +17560,7 @@ class HMMediaSystemRole extends Struct<HMMediaSystemRole> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithCoder:"),
       arg,
@@ -18085,7 +17572,7 @@ class HMMediaSystemRole extends Struct<HMMediaSystemRole> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithDictionary:"),
       arg,
@@ -18097,7 +17584,7 @@ class HMMediaSystemRole extends Struct<HMMediaSystemRole> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Uint64_returns_p(
+    return _call_ptr_ptr_Uint64_returns_ptr(
       _self,
       _objc.getSelector("initWithRole:"),
       arg,
@@ -18109,7 +17596,7 @@ class HMMediaSystemRole extends Struct<HMMediaSystemRole> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isEqual:"),
       arg,
@@ -18120,7 +17607,7 @@ class HMMediaSystemRole extends Struct<HMMediaSystemRole> {
     Pointer<HMMediaSystemRole> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("serialize"),
     );
@@ -18130,16 +17617,13 @@ class HMMediaSystemRole extends Struct<HMMediaSystemRole> {
     Pointer<HMMediaSystemRole> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("type"),
     );
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMMutableArray extends Struct<HMMutableArray> {
   factory HMMutableArray._() {
@@ -18155,7 +17639,7 @@ class HMMutableArray extends Struct<HMMutableArray> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("addObject:"),
       arg,
@@ -18167,7 +17651,7 @@ class HMMutableArray extends Struct<HMMutableArray> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("addObjectIfNotPresent:"),
       arg,
@@ -18179,7 +17663,7 @@ class HMMutableArray extends Struct<HMMutableArray> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("addObjectsFromArray:"),
       arg,
@@ -18190,7 +17674,7 @@ class HMMutableArray extends Struct<HMMutableArray> {
     Pointer<HMMutableArray> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("array"),
     );
@@ -18201,7 +17685,7 @@ class HMMutableArray extends Struct<HMMutableArray> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("containsObject:"),
       arg,
@@ -18212,7 +17696,7 @@ class HMMutableArray extends Struct<HMMutableArray> {
     Pointer<HMMutableArray> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("count"),
     );
@@ -18223,7 +17707,7 @@ class HMMutableArray extends Struct<HMMutableArray> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("filteredArrayUsingPredicate:"),
       arg,
@@ -18235,7 +17719,7 @@ class HMMutableArray extends Struct<HMMutableArray> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("firstItemWithCharacteristicType:"),
       arg,
@@ -18247,7 +17731,7 @@ class HMMutableArray extends Struct<HMMutableArray> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("firstItemWithInstanceID:"),
       arg,
@@ -18259,7 +17743,7 @@ class HMMutableArray extends Struct<HMMutableArray> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("firstItemWithName:"),
       arg,
@@ -18271,7 +17755,7 @@ class HMMutableArray extends Struct<HMMutableArray> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("firstItemWithUUID:"),
       arg,
@@ -18283,7 +17767,7 @@ class HMMutableArray extends Struct<HMMutableArray> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("firstItemWithUniqueIdentifier:"),
       arg,
@@ -18296,7 +17780,7 @@ class HMMutableArray extends Struct<HMMutableArray> {
     @required Pointer forKey,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("firstItemWithValue:forKey:"),
       arg,
@@ -18309,7 +17793,7 @@ class HMMutableArray extends Struct<HMMutableArray> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithArray:"),
       arg,
@@ -18320,7 +17804,7 @@ class HMMutableArray extends Struct<HMMutableArray> {
     Pointer<HMMutableArray> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("internal"),
     );
@@ -18331,7 +17815,7 @@ class HMMutableArray extends Struct<HMMutableArray> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isEqual:"),
       arg,
@@ -18344,7 +17828,7 @@ class HMMutableArray extends Struct<HMMutableArray> {
     @required Pointer forKey,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("itemsWithValue:forKey:"),
       arg,
@@ -18356,7 +17840,7 @@ class HMMutableArray extends Struct<HMMutableArray> {
     Pointer<HMMutableArray> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("removeAllObjects"),
     );
@@ -18367,7 +17851,7 @@ class HMMutableArray extends Struct<HMMutableArray> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("removeObject:"),
       arg,
@@ -18379,7 +17863,7 @@ class HMMutableArray extends Struct<HMMutableArray> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("removeObjectsInArray:"),
       arg,
@@ -18391,7 +17875,7 @@ class HMMutableArray extends Struct<HMMutableArray> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("replaceObject:"),
       arg,
@@ -18403,7 +17887,7 @@ class HMMutableArray extends Struct<HMMutableArray> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setArray:"),
       arg,
@@ -18415,7 +17899,7 @@ class HMMutableArray extends Struct<HMMutableArray> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setIfDifferent:"),
       arg,
@@ -18423,9 +17907,6 @@ class HMMutableArray extends Struct<HMMutableArray> {
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMMutableAssistantAccessControl
     extends Struct<HMMutableAssistantAccessControl> {
@@ -18443,7 +17924,7 @@ class HMMutableAssistantAccessControl
     Pointer<HMMutableAssistantAccessControl> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("accessories"),
     );
@@ -18454,7 +17935,7 @@ class HMMutableAssistantAccessControl
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("addAccessory:"),
       arg,
@@ -18465,21 +17946,9 @@ class HMMutableAssistantAccessControl
     Pointer<HMMutableAssistantAccessControl> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("allowUnauthenticatedRequests"),
-    );
-  }
-
-  static Pointer copyWithZone(
-    Pointer<HMMutableAssistantAccessControl> _self,
-    Pointer<Pointer> arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
-      _self,
-      _objc.getSelector("copyWithZone:"),
-      arg,
     );
   }
 
@@ -18487,7 +17956,7 @@ class HMMutableAssistantAccessControl
     Pointer<HMMutableAssistantAccessControl> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isEnabled"),
     );
@@ -18497,7 +17966,7 @@ class HMMutableAssistantAccessControl
     Pointer<HMMutableAssistantAccessControl> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("options"),
     );
@@ -18508,7 +17977,7 @@ class HMMutableAssistantAccessControl
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("removeAccessory:"),
       arg,
@@ -18520,7 +17989,7 @@ class HMMutableAssistantAccessControl
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setAccessories:"),
       arg,
@@ -18532,7 +18001,7 @@ class HMMutableAssistantAccessControl
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setAllowUnauthenticatedRequests:"),
       arg,
@@ -18544,7 +18013,7 @@ class HMMutableAssistantAccessControl
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setEnabled:"),
       arg,
@@ -18556,7 +18025,7 @@ class HMMutableAssistantAccessControl
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Uint64_returns_void(
+    _call_ptr_ptr_Uint64_returns_void(
       _self,
       _objc.getSelector("setOptions:"),
       arg,
@@ -18564,9 +18033,6 @@ class HMMutableAssistantAccessControl
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMMutableCalendarEvent extends Struct<HMMutableCalendarEvent> {
   factory HMMutableCalendarEvent._() {
@@ -18580,9 +18046,6 @@ class HMMutableCalendarEvent extends Struct<HMMutableCalendarEvent> {
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMMutableCharacteristicEvent
     extends Struct<HMMutableCharacteristicEvent> {
@@ -18597,9 +18060,6 @@ class HMMutableCharacteristicEvent
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMMutableCharacteristicThresholdRangeEvent
     extends Struct<HMMutableCharacteristicThresholdRangeEvent> {
@@ -18614,9 +18074,6 @@ class HMMutableCharacteristicThresholdRangeEvent
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMMutableDurationEvent extends Struct<HMMutableDurationEvent> {
   factory HMMutableDurationEvent._() {
@@ -18630,9 +18087,6 @@ class HMMutableDurationEvent extends Struct<HMMutableDurationEvent> {
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMMutableLocationEvent extends Struct<HMMutableLocationEvent> {
   factory HMMutableLocationEvent._() {
@@ -18646,9 +18100,6 @@ class HMMutableLocationEvent extends Struct<HMMutableLocationEvent> {
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMMutableMediaSystemComponent
     extends Struct<HMMutableMediaSystemComponent> {
@@ -18663,9 +18114,6 @@ class HMMutableMediaSystemComponent
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMMutablePresenceEvent extends Struct<HMMutablePresenceEvent> {
   factory HMMutablePresenceEvent._() {
@@ -18679,9 +18127,6 @@ class HMMutablePresenceEvent extends Struct<HMMutablePresenceEvent> {
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMMutableSignificantTimeEvent
     extends Struct<HMMutableSignificantTimeEvent> {
@@ -18696,9 +18141,6 @@ class HMMutableSignificantTimeEvent
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMNumberRange extends Struct<HMNumberRange> {
   factory HMNumberRange._() {
@@ -18713,7 +18155,7 @@ class HMNumberRange extends Struct<HMNumberRange> {
     Pointer<HMNumberRange> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("description"),
     );
@@ -18725,7 +18167,7 @@ class HMNumberRange extends Struct<HMNumberRange> {
     @required Pointer maxValue,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithMinValue:maxValue:"),
       arg,
@@ -18737,7 +18179,7 @@ class HMNumberRange extends Struct<HMNumberRange> {
     Pointer<HMNumberRange> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("maxValue"),
     );
@@ -18747,16 +18189,13 @@ class HMNumberRange extends Struct<HMNumberRange> {
     Pointer<HMNumberRange> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("minValue"),
     );
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMObjectMergeCollection extends Struct<HMObjectMergeCollection> {
   factory HMObjectMergeCollection._() {
@@ -18773,7 +18212,7 @@ class HMObjectMergeCollection extends Struct<HMObjectMergeCollection> {
     Pointer<HMObjectMergeCollection> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("addedObjects"),
     );
@@ -18783,7 +18222,7 @@ class HMObjectMergeCollection extends Struct<HMObjectMergeCollection> {
     Pointer<HMObjectMergeCollection> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("commonObjectsMaps"),
     );
@@ -18793,7 +18232,7 @@ class HMObjectMergeCollection extends Struct<HMObjectMergeCollection> {
     Pointer<HMObjectMergeCollection> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("currentAddedObjects"),
     );
@@ -18803,7 +18242,7 @@ class HMObjectMergeCollection extends Struct<HMObjectMergeCollection> {
     Pointer<HMObjectMergeCollection> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("currentExistingObjects"),
     );
@@ -18813,7 +18252,7 @@ class HMObjectMergeCollection extends Struct<HMObjectMergeCollection> {
     Pointer<HMObjectMergeCollection> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("currentModifiedObjects"),
     );
@@ -18823,7 +18262,7 @@ class HMObjectMergeCollection extends Struct<HMObjectMergeCollection> {
     Pointer<HMObjectMergeCollection> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("currentOperations"),
     );
@@ -18833,7 +18272,7 @@ class HMObjectMergeCollection extends Struct<HMObjectMergeCollection> {
     Pointer<HMObjectMergeCollection> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("currentRemovedObjects"),
     );
@@ -18843,7 +18282,7 @@ class HMObjectMergeCollection extends Struct<HMObjectMergeCollection> {
     Pointer<HMObjectMergeCollection> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("existingObjects"),
     );
@@ -18853,7 +18292,7 @@ class HMObjectMergeCollection extends Struct<HMObjectMergeCollection> {
     Pointer<HMObjectMergeCollection> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("init"),
     );
@@ -18866,7 +18305,7 @@ class HMObjectMergeCollection extends Struct<HMObjectMergeCollection> {
     @required Pointer operations,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithExistingObjects:newObjects:operations:"),
       arg,
@@ -18879,7 +18318,7 @@ class HMObjectMergeCollection extends Struct<HMObjectMergeCollection> {
     Pointer<HMObjectMergeCollection> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isModified"),
     );
@@ -18889,7 +18328,7 @@ class HMObjectMergeCollection extends Struct<HMObjectMergeCollection> {
     Pointer<HMObjectMergeCollection> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("mergeCommonObjectsNoMergeCount"),
     );
@@ -18899,7 +18338,7 @@ class HMObjectMergeCollection extends Struct<HMObjectMergeCollection> {
     Pointer<HMObjectMergeCollection> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("modifiedCount"),
     );
@@ -18909,7 +18348,7 @@ class HMObjectMergeCollection extends Struct<HMObjectMergeCollection> {
     Pointer<HMObjectMergeCollection> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("modifiedObjects"),
     );
@@ -18919,7 +18358,7 @@ class HMObjectMergeCollection extends Struct<HMObjectMergeCollection> {
     Pointer<HMObjectMergeCollection> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("removedObjects"),
     );
@@ -18930,7 +18369,7 @@ class HMObjectMergeCollection extends Struct<HMObjectMergeCollection> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setCommonObjectsMaps:"),
       arg,
@@ -18942,7 +18381,7 @@ class HMObjectMergeCollection extends Struct<HMObjectMergeCollection> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setCurrentAddedObjects:"),
       arg,
@@ -18954,7 +18393,7 @@ class HMObjectMergeCollection extends Struct<HMObjectMergeCollection> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setCurrentExistingObjects:"),
       arg,
@@ -18966,7 +18405,7 @@ class HMObjectMergeCollection extends Struct<HMObjectMergeCollection> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setCurrentModifiedObjects:"),
       arg,
@@ -18978,7 +18417,7 @@ class HMObjectMergeCollection extends Struct<HMObjectMergeCollection> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setCurrentOperations:"),
       arg,
@@ -18990,7 +18429,7 @@ class HMObjectMergeCollection extends Struct<HMObjectMergeCollection> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setCurrentRemovedObjects:"),
       arg,
@@ -18998,9 +18437,6 @@ class HMObjectMergeCollection extends Struct<HMObjectMergeCollection> {
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMObjectMergeOperations extends Struct<HMObjectMergeOperations> {
   factory HMObjectMergeOperations._() {
@@ -19017,7 +18453,7 @@ class HMObjectMergeOperations extends Struct<HMObjectMergeOperations> {
     Pointer<HMObjectMergeOperations> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("init"),
     );
@@ -19027,7 +18463,7 @@ class HMObjectMergeOperations extends Struct<HMObjectMergeOperations> {
     Pointer<HMObjectMergeOperations> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("operations"),
     );
@@ -19038,7 +18474,7 @@ class HMObjectMergeOperations extends Struct<HMObjectMergeOperations> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setOperations:"),
       arg,
@@ -19046,9 +18482,6 @@ class HMObjectMergeOperations extends Struct<HMObjectMergeOperations> {
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMOutgoingHomeInvitation extends Struct<HMOutgoingHomeInvitation> {
   factory HMOutgoingHomeInvitation._() {
@@ -19065,7 +18498,7 @@ class HMOutgoingHomeInvitation extends Struct<HMOutgoingHomeInvitation> {
     Pointer<HMOutgoingHomeInvitation> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("accessoryInvitations"),
     );
@@ -19076,7 +18509,7 @@ class HMOutgoingHomeInvitation extends Struct<HMOutgoingHomeInvitation> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("cancelInviteWithCompletionHandler:"),
       arg,
@@ -19088,7 +18521,7 @@ class HMOutgoingHomeInvitation extends Struct<HMOutgoingHomeInvitation> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("encodeWithCoder:"),
       arg,
@@ -19100,7 +18533,7 @@ class HMOutgoingHomeInvitation extends Struct<HMOutgoingHomeInvitation> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithCoder:"),
       arg,
@@ -19113,7 +18546,7 @@ class HMOutgoingHomeInvitation extends Struct<HMOutgoingHomeInvitation> {
     @required Pointer home,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithInvitationData:home:"),
       arg,
@@ -19125,16 +18558,13 @@ class HMOutgoingHomeInvitation extends Struct<HMOutgoingHomeInvitation> {
     Pointer<HMOutgoingHomeInvitation> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("invitee"),
     );
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMOutgoingHomeInvitationData
     extends Struct<HMOutgoingHomeInvitationData> {
@@ -19152,7 +18582,7 @@ class HMOutgoingHomeInvitationData
     Pointer<HMOutgoingHomeInvitationData> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("description"),
     );
@@ -19163,7 +18593,7 @@ class HMOutgoingHomeInvitationData
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("encodeWithCoder:"),
       arg,
@@ -19175,7 +18605,7 @@ class HMOutgoingHomeInvitationData
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithCoder:"),
       arg,
@@ -19191,7 +18621,7 @@ class HMOutgoingHomeInvitationData
     @required Pointer expiryDate,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_Int64_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_Int64_ptr_returns_ptr(
       _self,
       _objc.getSelector(
           "initWithUUID:inviteeUserID:inviteeName:invitationState:expiryDate:"),
@@ -19207,7 +18637,7 @@ class HMOutgoingHomeInvitationData
     Pointer<HMOutgoingHomeInvitationData> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("inviteeName"),
     );
@@ -19217,7 +18647,7 @@ class HMOutgoingHomeInvitationData
     Pointer<HMOutgoingHomeInvitationData> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("inviteeUUID"),
     );
@@ -19227,7 +18657,7 @@ class HMOutgoingHomeInvitationData
     Pointer<HMOutgoingHomeInvitationData> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("inviteeUserID"),
     );
@@ -19238,7 +18668,7 @@ class HMOutgoingHomeInvitationData
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setInviteeName:"),
       arg,
@@ -19246,9 +18676,6 @@ class HMOutgoingHomeInvitationData
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMPBEncodeOption extends Struct<HMPBEncodeOption> {
   factory HMPBEncodeOption._() {
@@ -19264,21 +18691,9 @@ class HMPBEncodeOption extends Struct<HMPBEncodeOption> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("copyTo:"),
-      arg,
-    );
-  }
-
-  static Pointer copyWithZone(
-    Pointer<HMPBEncodeOption> _self,
-    Pointer<Pointer> arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
-      _self,
-      _objc.getSelector("copyWithZone:"),
       arg,
     );
   }
@@ -19287,7 +18702,7 @@ class HMPBEncodeOption extends Struct<HMPBEncodeOption> {
     Pointer<HMPBEncodeOption> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("description"),
     );
@@ -19297,7 +18712,7 @@ class HMPBEncodeOption extends Struct<HMPBEncodeOption> {
     Pointer<HMPBEncodeOption> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("dictionaryRepresentation"),
     );
@@ -19307,7 +18722,7 @@ class HMPBEncodeOption extends Struct<HMPBEncodeOption> {
     Pointer<HMPBEncodeOption> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("hasIsSPI"),
     );
@@ -19317,7 +18732,7 @@ class HMPBEncodeOption extends Struct<HMPBEncodeOption> {
     Pointer<HMPBEncodeOption> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("hasIsXPC"),
     );
@@ -19327,7 +18742,7 @@ class HMPBEncodeOption extends Struct<HMPBEncodeOption> {
     Pointer<HMPBEncodeOption> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("hash"),
     );
@@ -19338,7 +18753,7 @@ class HMPBEncodeOption extends Struct<HMPBEncodeOption> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isEqual:"),
       arg,
@@ -19349,7 +18764,7 @@ class HMPBEncodeOption extends Struct<HMPBEncodeOption> {
     Pointer<HMPBEncodeOption> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isSPI"),
     );
@@ -19359,7 +18774,7 @@ class HMPBEncodeOption extends Struct<HMPBEncodeOption> {
     Pointer<HMPBEncodeOption> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isXPC"),
     );
@@ -19370,7 +18785,7 @@ class HMPBEncodeOption extends Struct<HMPBEncodeOption> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("mergeFrom:"),
       arg,
@@ -19382,7 +18797,7 @@ class HMPBEncodeOption extends Struct<HMPBEncodeOption> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("readFrom:"),
       arg,
@@ -19394,7 +18809,7 @@ class HMPBEncodeOption extends Struct<HMPBEncodeOption> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setHasIsSPI:"),
       arg,
@@ -19406,7 +18821,7 @@ class HMPBEncodeOption extends Struct<HMPBEncodeOption> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setHasIsXPC:"),
       arg,
@@ -19418,7 +18833,7 @@ class HMPBEncodeOption extends Struct<HMPBEncodeOption> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setIsSPI:"),
       arg,
@@ -19430,7 +18845,7 @@ class HMPBEncodeOption extends Struct<HMPBEncodeOption> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setIsXPC:"),
       arg,
@@ -19442,7 +18857,7 @@ class HMPBEncodeOption extends Struct<HMPBEncodeOption> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("writeTo:"),
       arg,
@@ -19450,9 +18865,6 @@ class HMPBEncodeOption extends Struct<HMPBEncodeOption> {
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMPBMetadata extends Struct<HMPBMetadata> {
   factory HMPBMetadata._() {
@@ -19468,7 +18880,7 @@ class HMPBMetadata extends Struct<HMPBMetadata> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("addHapCategories:"),
       arg,
@@ -19480,7 +18892,7 @@ class HMPBMetadata extends Struct<HMPBMetadata> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("addHapCharacteristics:"),
       arg,
@@ -19492,7 +18904,7 @@ class HMPBMetadata extends Struct<HMPBMetadata> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("addHapServices:"),
       arg,
@@ -19503,7 +18915,7 @@ class HMPBMetadata extends Struct<HMPBMetadata> {
     Pointer<HMPBMetadata> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("clearHapCategories"),
     );
@@ -19513,7 +18925,7 @@ class HMPBMetadata extends Struct<HMPBMetadata> {
     Pointer<HMPBMetadata> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("clearHapCharacteristics"),
     );
@@ -19523,7 +18935,7 @@ class HMPBMetadata extends Struct<HMPBMetadata> {
     Pointer<HMPBMetadata> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("clearHapServices"),
     );
@@ -19534,21 +18946,9 @@ class HMPBMetadata extends Struct<HMPBMetadata> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("copyTo:"),
-      arg,
-    );
-  }
-
-  static Pointer copyWithZone(
-    Pointer<HMPBMetadata> _self,
-    Pointer<Pointer> arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
-      _self,
-      _objc.getSelector("copyWithZone:"),
       arg,
     );
   }
@@ -19557,7 +18957,7 @@ class HMPBMetadata extends Struct<HMPBMetadata> {
     Pointer<HMPBMetadata> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("description"),
     );
@@ -19567,7 +18967,7 @@ class HMPBMetadata extends Struct<HMPBMetadata> {
     Pointer<HMPBMetadata> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("dictionaryRepresentation"),
     );
@@ -19577,7 +18977,7 @@ class HMPBMetadata extends Struct<HMPBMetadata> {
     Pointer<HMPBMetadata> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("hapCategories"),
     );
@@ -19588,7 +18988,7 @@ class HMPBMetadata extends Struct<HMPBMetadata> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Uint64_returns_p(
+    return _call_ptr_ptr_Uint64_returns_ptr(
       _self,
       _objc.getSelector("hapCategoriesAtIndex:"),
       arg,
@@ -19599,7 +18999,7 @@ class HMPBMetadata extends Struct<HMPBMetadata> {
     Pointer<HMPBMetadata> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("hapCategoriesCount"),
     );
@@ -19609,7 +19009,7 @@ class HMPBMetadata extends Struct<HMPBMetadata> {
     Pointer<HMPBMetadata> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("hapCharacteristics"),
     );
@@ -19620,7 +19020,7 @@ class HMPBMetadata extends Struct<HMPBMetadata> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Uint64_returns_p(
+    return _call_ptr_ptr_Uint64_returns_ptr(
       _self,
       _objc.getSelector("hapCharacteristicsAtIndex:"),
       arg,
@@ -19631,7 +19031,7 @@ class HMPBMetadata extends Struct<HMPBMetadata> {
     Pointer<HMPBMetadata> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("hapCharacteristicsCount"),
     );
@@ -19641,7 +19041,7 @@ class HMPBMetadata extends Struct<HMPBMetadata> {
     Pointer<HMPBMetadata> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("hapServices"),
     );
@@ -19652,7 +19052,7 @@ class HMPBMetadata extends Struct<HMPBMetadata> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Uint64_returns_p(
+    return _call_ptr_ptr_Uint64_returns_ptr(
       _self,
       _objc.getSelector("hapServicesAtIndex:"),
       arg,
@@ -19663,7 +19063,7 @@ class HMPBMetadata extends Struct<HMPBMetadata> {
     Pointer<HMPBMetadata> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("hapServicesCount"),
     );
@@ -19673,7 +19073,7 @@ class HMPBMetadata extends Struct<HMPBMetadata> {
     Pointer<HMPBMetadata> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("hasVersion"),
     );
@@ -19683,7 +19083,7 @@ class HMPBMetadata extends Struct<HMPBMetadata> {
     Pointer<HMPBMetadata> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("hash"),
     );
@@ -19694,7 +19094,7 @@ class HMPBMetadata extends Struct<HMPBMetadata> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isEqual:"),
       arg,
@@ -19706,7 +19106,7 @@ class HMPBMetadata extends Struct<HMPBMetadata> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("mergeFrom:"),
       arg,
@@ -19718,7 +19118,7 @@ class HMPBMetadata extends Struct<HMPBMetadata> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("readFrom:"),
       arg,
@@ -19730,7 +19130,7 @@ class HMPBMetadata extends Struct<HMPBMetadata> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setHapCategories:"),
       arg,
@@ -19742,7 +19142,7 @@ class HMPBMetadata extends Struct<HMPBMetadata> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setHapCharacteristics:"),
       arg,
@@ -19754,7 +19154,7 @@ class HMPBMetadata extends Struct<HMPBMetadata> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setHapServices:"),
       arg,
@@ -19766,7 +19166,7 @@ class HMPBMetadata extends Struct<HMPBMetadata> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setHasVersion:"),
       arg,
@@ -19778,7 +19178,7 @@ class HMPBMetadata extends Struct<HMPBMetadata> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int32_returns_void(
+    _call_ptr_ptr_Int32_returns_void(
       _self,
       _objc.getSelector("setVersion:"),
       arg,
@@ -19789,7 +19189,7 @@ class HMPBMetadata extends Struct<HMPBMetadata> {
     Pointer<HMPBMetadata> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int32(
+    return _call_ptr_ptr_returns_Int32(
       _self,
       _objc.getSelector("version"),
     );
@@ -19800,7 +19200,7 @@ class HMPBMetadata extends Struct<HMPBMetadata> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("writeTo:"),
       arg,
@@ -19808,9 +19208,6 @@ class HMPBMetadata extends Struct<HMPBMetadata> {
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMPBMetadataCategory extends Struct<HMPBMetadataCategory> {
   factory HMPBMetadataCategory._() {
@@ -19826,21 +19223,9 @@ class HMPBMetadataCategory extends Struct<HMPBMetadataCategory> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("copyTo:"),
-      arg,
-    );
-  }
-
-  static Pointer copyWithZone(
-    Pointer<HMPBMetadataCategory> _self,
-    Pointer<Pointer> arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
-      _self,
-      _objc.getSelector("copyWithZone:"),
       arg,
     );
   }
@@ -19849,7 +19234,7 @@ class HMPBMetadataCategory extends Struct<HMPBMetadataCategory> {
     Pointer<HMPBMetadataCategory> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("desc"),
     );
@@ -19859,7 +19244,7 @@ class HMPBMetadataCategory extends Struct<HMPBMetadataCategory> {
     Pointer<HMPBMetadataCategory> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("description"),
     );
@@ -19869,7 +19254,7 @@ class HMPBMetadataCategory extends Struct<HMPBMetadataCategory> {
     Pointer<HMPBMetadataCategory> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("dictionaryRepresentation"),
     );
@@ -19879,7 +19264,7 @@ class HMPBMetadataCategory extends Struct<HMPBMetadataCategory> {
     Pointer<HMPBMetadataCategory> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("hasDesc"),
     );
@@ -19889,7 +19274,7 @@ class HMPBMetadataCategory extends Struct<HMPBMetadataCategory> {
     Pointer<HMPBMetadataCategory> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("hasNumber"),
     );
@@ -19899,7 +19284,7 @@ class HMPBMetadataCategory extends Struct<HMPBMetadataCategory> {
     Pointer<HMPBMetadataCategory> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("hasType"),
     );
@@ -19909,7 +19294,7 @@ class HMPBMetadataCategory extends Struct<HMPBMetadataCategory> {
     Pointer<HMPBMetadataCategory> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("hash"),
     );
@@ -19920,7 +19305,7 @@ class HMPBMetadataCategory extends Struct<HMPBMetadataCategory> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isEqual:"),
       arg,
@@ -19932,7 +19317,7 @@ class HMPBMetadataCategory extends Struct<HMPBMetadataCategory> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("mergeFrom:"),
       arg,
@@ -19943,7 +19328,7 @@ class HMPBMetadataCategory extends Struct<HMPBMetadataCategory> {
     Pointer<HMPBMetadataCategory> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int32(
+    return _call_ptr_ptr_returns_Int32(
       _self,
       _objc.getSelector("number"),
     );
@@ -19954,7 +19339,7 @@ class HMPBMetadataCategory extends Struct<HMPBMetadataCategory> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("readFrom:"),
       arg,
@@ -19966,7 +19351,7 @@ class HMPBMetadataCategory extends Struct<HMPBMetadataCategory> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setDesc:"),
       arg,
@@ -19978,7 +19363,7 @@ class HMPBMetadataCategory extends Struct<HMPBMetadataCategory> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setHasNumber:"),
       arg,
@@ -19990,7 +19375,7 @@ class HMPBMetadataCategory extends Struct<HMPBMetadataCategory> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int32_returns_void(
+    _call_ptr_ptr_Int32_returns_void(
       _self,
       _objc.getSelector("setNumber:"),
       arg,
@@ -20002,7 +19387,7 @@ class HMPBMetadataCategory extends Struct<HMPBMetadataCategory> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setType:"),
       arg,
@@ -20013,7 +19398,7 @@ class HMPBMetadataCategory extends Struct<HMPBMetadataCategory> {
     Pointer<HMPBMetadataCategory> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("type"),
     );
@@ -20024,7 +19409,7 @@ class HMPBMetadataCategory extends Struct<HMPBMetadataCategory> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("writeTo:"),
       arg,
@@ -20032,9 +19417,6 @@ class HMPBMetadataCategory extends Struct<HMPBMetadataCategory> {
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMPBMetadataCharacteristic extends Struct<HMPBMetadataCharacteristic> {
   factory HMPBMetadataCharacteristic._() {
@@ -20052,21 +19434,9 @@ class HMPBMetadataCharacteristic extends Struct<HMPBMetadataCharacteristic> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("copyTo:"),
-      arg,
-    );
-  }
-
-  static Pointer copyWithZone(
-    Pointer<HMPBMetadataCharacteristic> _self,
-    Pointer<Pointer> arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
-      _self,
-      _objc.getSelector("copyWithZone:"),
       arg,
     );
   }
@@ -20075,7 +19445,7 @@ class HMPBMetadataCharacteristic extends Struct<HMPBMetadataCharacteristic> {
     Pointer<HMPBMetadataCharacteristic> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("desc"),
     );
@@ -20085,7 +19455,7 @@ class HMPBMetadataCharacteristic extends Struct<HMPBMetadataCharacteristic> {
     Pointer<HMPBMetadataCharacteristic> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("description"),
     );
@@ -20095,7 +19465,7 @@ class HMPBMetadataCharacteristic extends Struct<HMPBMetadataCharacteristic> {
     Pointer<HMPBMetadataCharacteristic> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("dictionaryRepresentation"),
     );
@@ -20105,7 +19475,7 @@ class HMPBMetadataCharacteristic extends Struct<HMPBMetadataCharacteristic> {
     Pointer<HMPBMetadataCharacteristic> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("hasDesc"),
     );
@@ -20115,7 +19485,7 @@ class HMPBMetadataCharacteristic extends Struct<HMPBMetadataCharacteristic> {
     Pointer<HMPBMetadataCharacteristic> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("hasType"),
     );
@@ -20125,7 +19495,7 @@ class HMPBMetadataCharacteristic extends Struct<HMPBMetadataCharacteristic> {
     Pointer<HMPBMetadataCharacteristic> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("hash"),
     );
@@ -20136,7 +19506,7 @@ class HMPBMetadataCharacteristic extends Struct<HMPBMetadataCharacteristic> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isEqual:"),
       arg,
@@ -20148,7 +19518,7 @@ class HMPBMetadataCharacteristic extends Struct<HMPBMetadataCharacteristic> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("mergeFrom:"),
       arg,
@@ -20160,7 +19530,7 @@ class HMPBMetadataCharacteristic extends Struct<HMPBMetadataCharacteristic> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("readFrom:"),
       arg,
@@ -20172,7 +19542,7 @@ class HMPBMetadataCharacteristic extends Struct<HMPBMetadataCharacteristic> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setDesc:"),
       arg,
@@ -20184,7 +19554,7 @@ class HMPBMetadataCharacteristic extends Struct<HMPBMetadataCharacteristic> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setType:"),
       arg,
@@ -20195,7 +19565,7 @@ class HMPBMetadataCharacteristic extends Struct<HMPBMetadataCharacteristic> {
     Pointer<HMPBMetadataCharacteristic> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("type"),
     );
@@ -20206,7 +19576,7 @@ class HMPBMetadataCharacteristic extends Struct<HMPBMetadataCharacteristic> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("writeTo:"),
       arg,
@@ -20214,9 +19584,6 @@ class HMPBMetadataCharacteristic extends Struct<HMPBMetadataCharacteristic> {
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMPBMetadataService extends Struct<HMPBMetadataService> {
   factory HMPBMetadataService._() {
@@ -20232,21 +19599,9 @@ class HMPBMetadataService extends Struct<HMPBMetadataService> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("copyTo:"),
-      arg,
-    );
-  }
-
-  static Pointer copyWithZone(
-    Pointer<HMPBMetadataService> _self,
-    Pointer<Pointer> arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
-      _self,
-      _objc.getSelector("copyWithZone:"),
       arg,
     );
   }
@@ -20255,7 +19610,7 @@ class HMPBMetadataService extends Struct<HMPBMetadataService> {
     Pointer<HMPBMetadataService> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("desc"),
     );
@@ -20265,7 +19620,7 @@ class HMPBMetadataService extends Struct<HMPBMetadataService> {
     Pointer<HMPBMetadataService> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("description"),
     );
@@ -20275,7 +19630,7 @@ class HMPBMetadataService extends Struct<HMPBMetadataService> {
     Pointer<HMPBMetadataService> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("dictionaryRepresentation"),
     );
@@ -20285,7 +19640,7 @@ class HMPBMetadataService extends Struct<HMPBMetadataService> {
     Pointer<HMPBMetadataService> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("hasDesc"),
     );
@@ -20295,7 +19650,7 @@ class HMPBMetadataService extends Struct<HMPBMetadataService> {
     Pointer<HMPBMetadataService> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("hasType"),
     );
@@ -20305,7 +19660,7 @@ class HMPBMetadataService extends Struct<HMPBMetadataService> {
     Pointer<HMPBMetadataService> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("hash"),
     );
@@ -20316,7 +19671,7 @@ class HMPBMetadataService extends Struct<HMPBMetadataService> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isEqual:"),
       arg,
@@ -20328,7 +19683,7 @@ class HMPBMetadataService extends Struct<HMPBMetadataService> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("mergeFrom:"),
       arg,
@@ -20340,7 +19695,7 @@ class HMPBMetadataService extends Struct<HMPBMetadataService> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("readFrom:"),
       arg,
@@ -20352,7 +19707,7 @@ class HMPBMetadataService extends Struct<HMPBMetadataService> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setDesc:"),
       arg,
@@ -20364,7 +19719,7 @@ class HMPBMetadataService extends Struct<HMPBMetadataService> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setType:"),
       arg,
@@ -20375,7 +19730,7 @@ class HMPBMetadataService extends Struct<HMPBMetadataService> {
     Pointer<HMPBMetadataService> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("type"),
     );
@@ -20386,7 +19741,7 @@ class HMPBMetadataService extends Struct<HMPBMetadataService> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("writeTo:"),
       arg,
@@ -20394,9 +19749,6 @@ class HMPBMetadataService extends Struct<HMPBMetadataService> {
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMPendingRequests extends Struct<HMPendingRequests> {
   factory HMPendingRequests._() {
@@ -20414,7 +19766,7 @@ class HMPendingRequests extends Struct<HMPendingRequests> {
     @required Pointer forIdentifier,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("addAccessory:andCompletionBlock:forIdentifier:"),
       arg,
@@ -20431,7 +19783,7 @@ class HMPendingRequests extends Struct<HMPendingRequests> {
     @required Pointer forIdentifier,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector(
           "addAccessoryDescription:progressBlock:andCompletionBlock:forIdentifier:"),
@@ -20449,7 +19801,7 @@ class HMPendingRequests extends Struct<HMPendingRequests> {
     @required Pointer forIdentifier,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("addAction:andCompletionBlock:forIdentifier:"),
       arg,
@@ -20465,7 +19817,7 @@ class HMPendingRequests extends Struct<HMPendingRequests> {
     @required Pointer forIdentifier,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("addApplicationData:andCompletionBlock:forIdentifier:"),
       arg,
@@ -20480,7 +19832,7 @@ class HMPendingRequests extends Struct<HMPendingRequests> {
     @required Pointer forIdentifier,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("addCompletionBlock:forIdentifier:"),
       arg,
@@ -20495,7 +19847,7 @@ class HMPendingRequests extends Struct<HMPendingRequests> {
     @required Pointer forIdentifier,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("addEvent:andCompletionBlock:forIdentifier:"),
       arg,
@@ -20511,7 +19863,7 @@ class HMPendingRequests extends Struct<HMPendingRequests> {
     @required Pointer forIdentifier,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("addEvents:andCompletionBlock:forIdentifier:"),
       arg,
@@ -20527,7 +19879,7 @@ class HMPendingRequests extends Struct<HMPendingRequests> {
     @required Pointer forIdentifier,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector(
           "addMediaSystemBuilder:andCompletionBlock:forIdentifier:"),
@@ -20543,7 +19895,7 @@ class HMPendingRequests extends Struct<HMPendingRequests> {
     @required Pointer forAccessoryIdentifier,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("addProgressHandler:forAccessoryIdentifier:"),
       arg,
@@ -20558,7 +19910,7 @@ class HMPendingRequests extends Struct<HMPendingRequests> {
     @required Pointer forIdentifier,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_Int64_p_returns_void(
+    _call_ptr_ptr_ptr_Int64_ptr_returns_void(
       _self,
       _objc.getSelector("addRequest:ofType:forIdentifier:"),
       arg,
@@ -20574,7 +19926,7 @@ class HMPendingRequests extends Struct<HMPendingRequests> {
     @required Pointer forIdentifier,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("addTrigger:andCompletionBlock:forIdentifier:"),
       arg,
@@ -20587,7 +19939,7 @@ class HMPendingRequests extends Struct<HMPendingRequests> {
     Pointer<HMPendingRequests> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("contextLists"),
     );
@@ -20597,7 +19949,7 @@ class HMPendingRequests extends Struct<HMPendingRequests> {
     Pointer<HMPendingRequests> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("init"),
     );
@@ -20608,7 +19960,7 @@ class HMPendingRequests extends Struct<HMPendingRequests> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("removeAccessoryDescriptionForIdentifier:"),
       arg,
@@ -20620,7 +19972,7 @@ class HMPendingRequests extends Struct<HMPendingRequests> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("removeAccessoryForIdentifier:"),
       arg,
@@ -20632,7 +19984,7 @@ class HMPendingRequests extends Struct<HMPendingRequests> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("removeActionForIdentifier:"),
       arg,
@@ -20644,7 +19996,7 @@ class HMPendingRequests extends Struct<HMPendingRequests> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("removeApplicationDataForIdentifier:"),
       arg,
@@ -20656,7 +20008,7 @@ class HMPendingRequests extends Struct<HMPendingRequests> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("removeCompletionBlockForIdentifier:"),
       arg,
@@ -20668,7 +20020,7 @@ class HMPendingRequests extends Struct<HMPendingRequests> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("removeEventForIdentifier:"),
       arg,
@@ -20680,7 +20032,7 @@ class HMPendingRequests extends Struct<HMPendingRequests> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("removeEventsForIdentifier:"),
       arg,
@@ -20692,7 +20044,7 @@ class HMPendingRequests extends Struct<HMPendingRequests> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("removeMediaSystemBuilderForIdentifier:"),
       arg,
@@ -20704,7 +20056,7 @@ class HMPendingRequests extends Struct<HMPendingRequests> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("removeProgressBlockForIdentifier:"),
       arg,
@@ -20717,7 +20069,7 @@ class HMPendingRequests extends Struct<HMPendingRequests> {
     @required Pointer forIdentifier,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int64_p_returns_p(
+    return _call_ptr_ptr_Int64_ptr_returns_ptr(
       _self,
       _objc.getSelector("removeRequestOfType:forIdentifier:"),
       arg,
@@ -20730,7 +20082,7 @@ class HMPendingRequests extends Struct<HMPendingRequests> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("removeTriggerForIdentifier:"),
       arg,
@@ -20742,7 +20094,7 @@ class HMPendingRequests extends Struct<HMPendingRequests> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("retrieveAccessoryDescriptionForIdentifier:"),
       arg,
@@ -20754,7 +20106,7 @@ class HMPendingRequests extends Struct<HMPendingRequests> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("retrieveCompletionBlockForIdentifier:"),
       arg,
@@ -20766,7 +20118,7 @@ class HMPendingRequests extends Struct<HMPendingRequests> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("retrieveProgressBlockForIdentifier:"),
       arg,
@@ -20779,7 +20131,7 @@ class HMPendingRequests extends Struct<HMPendingRequests> {
     @required Pointer forIdentifier,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int64_p_returns_p(
+    return _call_ptr_ptr_Int64_ptr_returns_ptr(
       _self,
       _objc.getSelector("retrieveRequestOfType:forIdentifier:"),
       arg,
@@ -20792,7 +20144,7 @@ class HMPendingRequests extends Struct<HMPendingRequests> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setContextLists:"),
       arg,
@@ -20800,9 +20152,6 @@ class HMPendingRequests extends Struct<HMPendingRequests> {
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMPredicateUtilities extends Struct<HMPredicateUtilities> {
   factory HMPredicateUtilities._() {
@@ -20814,9 +20163,6 @@ class HMPredicateUtilities extends Struct<HMPredicateUtilities> {
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMPresenceEvent extends Struct<HMPresenceEvent> {
   factory HMPresenceEvent._() {
@@ -20831,7 +20177,7 @@ class HMPresenceEvent extends Struct<HMPresenceEvent> {
     Pointer<HMPresenceEvent> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("activation"),
     );
@@ -20841,21 +20187,9 @@ class HMPresenceEvent extends Struct<HMPresenceEvent> {
     Pointer<HMPresenceEvent> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("activationGranularity"),
-    );
-  }
-
-  static Pointer copyWithZone(
-    Pointer<HMPresenceEvent> _self,
-    Pointer<Pointer> arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
-      _self,
-      _objc.getSelector("copyWithZone:"),
-      arg,
     );
   }
 
@@ -20863,7 +20197,7 @@ class HMPresenceEvent extends Struct<HMPresenceEvent> {
     Pointer<HMPresenceEvent> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("description"),
     );
@@ -20874,7 +20208,7 @@ class HMPresenceEvent extends Struct<HMPresenceEvent> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("encodeWithCoder:"),
       arg,
@@ -20886,14 +20220,14 @@ class HMPresenceEvent extends Struct<HMPresenceEvent> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithCoder:"),
       arg,
     );
   }
 
-  static Pointer initWithDict$presenceType$users$activation$(
+  static Pointer initWithDict$presenceType$users$activation(
     Pointer<HMPresenceEvent> _self,
     Pointer arg, {
     @required Pointer presenceType,
@@ -20901,7 +20235,7 @@ class HMPresenceEvent extends Struct<HMPresenceEvent> {
     @required Pointer activation,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithDict:presenceType:users:activation:"),
       arg,
@@ -20911,7 +20245,7 @@ class HMPresenceEvent extends Struct<HMPresenceEvent> {
     );
   }
 
-  static Pointer initWithDict$presenceType$users$activationGranularity$(
+  static Pointer initWithDict$presenceType$users$activationGranularity(
     Pointer<HMPresenceEvent> _self,
     Pointer arg, {
     @required Pointer presenceType,
@@ -20919,7 +20253,7 @@ class HMPresenceEvent extends Struct<HMPresenceEvent> {
     @required int activationGranularity,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_Uint64_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_Uint64_returns_ptr(
       _self,
       _objc.getSelector(
           "initWithDict:presenceType:users:activationGranularity:"),
@@ -20930,14 +20264,14 @@ class HMPresenceEvent extends Struct<HMPresenceEvent> {
     );
   }
 
-  static Pointer initWithPresenceEventType$presenceUserType$users$(
+  static Pointer initWithPresenceEventType$presenceUserType$users(
     Pointer<HMPresenceEvent> _self,
     int arg, {
     @required int presenceUserType,
     @required Pointer users,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Uint64_Uint64_p_returns_p(
+    return _call_ptr_ptr_Uint64_Uint64_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithPresenceEventType:presenceUserType:users:"),
       arg,
@@ -20946,13 +20280,13 @@ class HMPresenceEvent extends Struct<HMPresenceEvent> {
     );
   }
 
-  static Pointer initWithPresenceEventType$presenceUserType$(
+  static Pointer initWithPresenceEventType$presenceUserType(
     Pointer<HMPresenceEvent> _self,
     int arg, {
     @required int presenceUserType,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Uint64_Uint64_returns_p(
+    return _call_ptr_ptr_Uint64_Uint64_returns_ptr(
       _self,
       _objc.getSelector("initWithPresenceEventType:presenceUserType:"),
       arg,
@@ -20960,13 +20294,13 @@ class HMPresenceEvent extends Struct<HMPresenceEvent> {
     );
   }
 
-  static Pointer initWithPresenceType$users$(
+  static Pointer initWithPresenceType$users(
     Pointer<HMPresenceEvent> _self,
     Pointer arg, {
     @required Pointer users,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithPresenceType:users:"),
       arg,
@@ -20974,26 +20308,14 @@ class HMPresenceEvent extends Struct<HMPresenceEvent> {
     );
   }
 
-  static Pointer initWithPresenceType$(
+  static Pointer initWithPresenceType(
     Pointer<HMPresenceEvent> _self,
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithPresenceType:"),
-      arg,
-    );
-  }
-
-  static Pointer mutableCopyWithZone(
-    Pointer<HMPresenceEvent> _self,
-    Pointer<Pointer> arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
-      _self,
-      _objc.getSelector("mutableCopyWithZone:"),
       arg,
     );
   }
@@ -21002,7 +20324,7 @@ class HMPresenceEvent extends Struct<HMPresenceEvent> {
     Pointer<HMPresenceEvent> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("observedUsers"),
     );
@@ -21012,7 +20334,7 @@ class HMPresenceEvent extends Struct<HMPresenceEvent> {
     Pointer<HMPresenceEvent> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("presenceEventType"),
     );
@@ -21022,7 +20344,7 @@ class HMPresenceEvent extends Struct<HMPresenceEvent> {
     Pointer<HMPresenceEvent> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("presenceType"),
     );
@@ -21032,7 +20354,7 @@ class HMPresenceEvent extends Struct<HMPresenceEvent> {
     Pointer<HMPresenceEvent> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("presenceUserType"),
     );
@@ -21043,7 +20365,7 @@ class HMPresenceEvent extends Struct<HMPresenceEvent> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setActivation:"),
       arg,
@@ -21055,7 +20377,7 @@ class HMPresenceEvent extends Struct<HMPresenceEvent> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Uint64_returns_void(
+    _call_ptr_ptr_Uint64_returns_void(
       _self,
       _objc.getSelector("setPresenceEventType:"),
       arg,
@@ -21067,7 +20389,7 @@ class HMPresenceEvent extends Struct<HMPresenceEvent> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setPresenceType:"),
       arg,
@@ -21079,7 +20401,7 @@ class HMPresenceEvent extends Struct<HMPresenceEvent> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Uint64_returns_void(
+    _call_ptr_ptr_Uint64_returns_void(
       _self,
       _objc.getSelector("setPresenceUserType:"),
       arg,
@@ -21092,7 +20414,7 @@ class HMPresenceEvent extends Struct<HMPresenceEvent> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("updatePresenceType:completionHandler:"),
       arg,
@@ -21106,7 +20428,7 @@ class HMPresenceEvent extends Struct<HMPresenceEvent> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("updateUsers:completionHandler:"),
       arg,
@@ -21118,16 +20440,13 @@ class HMPresenceEvent extends Struct<HMPresenceEvent> {
     Pointer<HMPresenceEvent> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("users"),
     );
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMPresenceEventActivation extends Struct<HMPresenceEventActivation> {
   factory HMPresenceEventActivation._() {
@@ -21145,7 +20464,7 @@ class HMPresenceEventActivation extends Struct<HMPresenceEventActivation> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("addToCoder:"),
       arg,
@@ -21157,7 +20476,7 @@ class HMPresenceEventActivation extends Struct<HMPresenceEventActivation> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("addToPayload:"),
       arg,
@@ -21168,7 +20487,7 @@ class HMPresenceEventActivation extends Struct<HMPresenceEventActivation> {
     Pointer<HMPresenceEventActivation> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("description"),
     );
@@ -21179,7 +20498,7 @@ class HMPresenceEventActivation extends Struct<HMPresenceEventActivation> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithNumber:"),
       arg,
@@ -21191,7 +20510,7 @@ class HMPresenceEventActivation extends Struct<HMPresenceEventActivation> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isEqual:"),
       arg,
@@ -21202,7 +20521,7 @@ class HMPresenceEventActivation extends Struct<HMPresenceEventActivation> {
     Pointer<HMPresenceEventActivation> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("number"),
     );
@@ -21212,16 +20531,13 @@ class HMPresenceEventActivation extends Struct<HMPresenceEventActivation> {
     Pointer<HMPresenceEventActivation> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("value"),
     );
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMProvisionAnisetteDataRequest
     extends Struct<HMProvisionAnisetteDataRequest> {
@@ -21239,7 +20555,7 @@ class HMProvisionAnisetteDataRequest
     Pointer<HMProvisionAnisetteDataRequest> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("description"),
     );
@@ -21249,7 +20565,7 @@ class HMProvisionAnisetteDataRequest
     Pointer<HMProvisionAnisetteDataRequest> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("messageName"),
     );
@@ -21259,7 +20575,7 @@ class HMProvisionAnisetteDataRequest
     Pointer<HMProvisionAnisetteDataRequest> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("messagePayload"),
     );
@@ -21269,16 +20585,13 @@ class HMProvisionAnisetteDataRequest
     Pointer<HMProvisionAnisetteDataRequest> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("xpcMessageName"),
     );
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMProvisionAnisetteDataResponse
     extends Struct<HMProvisionAnisetteDataResponse> {
@@ -21296,7 +20609,7 @@ class HMProvisionAnisetteDataResponse
     Pointer<HMProvisionAnisetteDataResponse> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("description"),
     );
@@ -21306,7 +20619,7 @@ class HMProvisionAnisetteDataResponse
     Pointer<HMProvisionAnisetteDataResponse> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("didSucceed"),
     );
@@ -21317,7 +20630,7 @@ class HMProvisionAnisetteDataResponse
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("encodeWithCoder:"),
       arg,
@@ -21329,7 +20642,7 @@ class HMProvisionAnisetteDataResponse
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithCoder:"),
       arg,
@@ -21340,7 +20653,7 @@ class HMProvisionAnisetteDataResponse
     Pointer<HMProvisionAnisetteDataResponse> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("messageName"),
     );
@@ -21350,7 +20663,7 @@ class HMProvisionAnisetteDataResponse
     Pointer<HMProvisionAnisetteDataResponse> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("messagePayload"),
     );
@@ -21361,7 +20674,7 @@ class HMProvisionAnisetteDataResponse
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setDidSucceed:"),
       arg,
@@ -21372,16 +20685,13 @@ class HMProvisionAnisetteDataResponse
     Pointer<HMProvisionAnisetteDataResponse> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("xpcMessageName"),
     );
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMRemoteLoginAnisetteDataProvider
     extends Struct<HMRemoteLoginAnisetteDataProvider> {
@@ -21399,21 +20709,9 @@ class HMRemoteLoginAnisetteDataProvider
     Pointer<HMRemoteLoginAnisetteDataProvider> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("clientQueue"),
-    );
-  }
-
-  static Pointer copyWithZone(
-    Pointer<HMRemoteLoginAnisetteDataProvider> _self,
-    Pointer<Pointer> arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
-      _self,
-      _objc.getSelector("copyWithZone:"),
-      arg,
     );
   }
 
@@ -21421,7 +20719,7 @@ class HMRemoteLoginAnisetteDataProvider
     Pointer<HMRemoteLoginAnisetteDataProvider> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("delegateCaller"),
     );
@@ -21432,7 +20730,7 @@ class HMRemoteLoginAnisetteDataProvider
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("encodeWithCoder:"),
       arg,
@@ -21444,7 +20742,7 @@ class HMRemoteLoginAnisetteDataProvider
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("eraseAnisetteWithCompletion:"),
       arg,
@@ -21457,7 +20755,7 @@ class HMRemoteLoginAnisetteDataProvider
     @required Pointer withCompletion,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_p_returns_void(
+    _call_ptr_ptr_Int8_ptr_returns_void(
       _self,
       _objc.getSelector(
           "fetchAnisetteDataAndProvisionIfNecessary:withCompletion:"),
@@ -21471,7 +20769,7 @@ class HMRemoteLoginAnisetteDataProvider
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithCoder:"),
       arg,
@@ -21484,7 +20782,7 @@ class HMRemoteLoginAnisetteDataProvider
     @required Pointer withCompletion,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("legacyAnisetteDataForDSID:withCompletion:"),
       arg,
@@ -21496,7 +20794,7 @@ class HMRemoteLoginAnisetteDataProvider
     Pointer<HMRemoteLoginAnisetteDataProvider> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("messageReceiveQueue"),
     );
@@ -21506,7 +20804,7 @@ class HMRemoteLoginAnisetteDataProvider
     Pointer<HMRemoteLoginAnisetteDataProvider> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("messageTargetUUID"),
     );
@@ -21516,7 +20814,7 @@ class HMRemoteLoginAnisetteDataProvider
     Pointer<HMRemoteLoginAnisetteDataProvider> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("msgDispatcher"),
     );
@@ -21527,7 +20825,7 @@ class HMRemoteLoginAnisetteDataProvider
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("provisionAnisetteWithCompletion:"),
       arg,
@@ -21539,7 +20837,7 @@ class HMRemoteLoginAnisetteDataProvider
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setClientQueue:"),
       arg,
@@ -21551,7 +20849,7 @@ class HMRemoteLoginAnisetteDataProvider
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setDelegateCaller:"),
       arg,
@@ -21563,7 +20861,7 @@ class HMRemoteLoginAnisetteDataProvider
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setMsgDispatcher:"),
       arg,
@@ -21576,7 +20874,7 @@ class HMRemoteLoginAnisetteDataProvider
     @required Pointer completion,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("syncAnisetteWithSIMData:completion:"),
       arg,
@@ -21588,16 +20886,13 @@ class HMRemoteLoginAnisetteDataProvider
     Pointer<HMRemoteLoginAnisetteDataProvider> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("uuid"),
     );
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMRemoteLoginHandler extends Struct<HMRemoteLoginHandler> {
   factory HMRemoteLoginHandler._() {
@@ -21612,7 +20907,7 @@ class HMRemoteLoginHandler extends Struct<HMRemoteLoginHandler> {
     Pointer<HMRemoteLoginHandler> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("accessory"),
     );
@@ -21622,7 +20917,7 @@ class HMRemoteLoginHandler extends Struct<HMRemoteLoginHandler> {
     Pointer<HMRemoteLoginHandler> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("anisetteDataProvider"),
     );
@@ -21634,7 +20929,7 @@ class HMRemoteLoginHandler extends Struct<HMRemoteLoginHandler> {
     @required Pointer completion,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("companionLoginWithAccount:completion:"),
       arg,
@@ -21646,7 +20941,7 @@ class HMRemoteLoginHandler extends Struct<HMRemoteLoginHandler> {
     Pointer<HMRemoteLoginHandler> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("context"),
     );
@@ -21656,7 +20951,7 @@ class HMRemoteLoginHandler extends Struct<HMRemoteLoginHandler> {
     Pointer<HMRemoteLoginHandler> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("currentSessionID"),
     );
@@ -21667,7 +20962,7 @@ class HMRemoteLoginHandler extends Struct<HMRemoteLoginHandler> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("encodeWithCoder:"),
       arg,
@@ -21678,7 +20973,7 @@ class HMRemoteLoginHandler extends Struct<HMRemoteLoginHandler> {
     Pointer<HMRemoteLoginHandler> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("init"),
     );
@@ -21689,7 +20984,7 @@ class HMRemoteLoginHandler extends Struct<HMRemoteLoginHandler> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithCoder:"),
       arg,
@@ -21700,7 +20995,7 @@ class HMRemoteLoginHandler extends Struct<HMRemoteLoginHandler> {
     Pointer<HMRemoteLoginHandler> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isControllable"),
     );
@@ -21710,7 +21005,7 @@ class HMRemoteLoginHandler extends Struct<HMRemoteLoginHandler> {
     Pointer<HMRemoteLoginHandler> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isSessionInProgress"),
     );
@@ -21720,7 +21015,7 @@ class HMRemoteLoginHandler extends Struct<HMRemoteLoginHandler> {
     Pointer<HMRemoteLoginHandler> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("loggedInAccount"),
     );
@@ -21730,7 +21025,7 @@ class HMRemoteLoginHandler extends Struct<HMRemoteLoginHandler> {
     Pointer<HMRemoteLoginHandler> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("messageDestination"),
     );
@@ -21740,7 +21035,7 @@ class HMRemoteLoginHandler extends Struct<HMRemoteLoginHandler> {
     Pointer<HMRemoteLoginHandler> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("messageReceiveQueue"),
     );
@@ -21750,7 +21045,7 @@ class HMRemoteLoginHandler extends Struct<HMRemoteLoginHandler> {
     Pointer<HMRemoteLoginHandler> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("messageTargetUUID"),
     );
@@ -21762,7 +21057,7 @@ class HMRemoteLoginHandler extends Struct<HMRemoteLoginHandler> {
     @required Pointer completion,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("proxyLoginWithAuthResults:completion:"),
       arg,
@@ -21775,7 +21070,7 @@ class HMRemoteLoginHandler extends Struct<HMRemoteLoginHandler> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("queryProxiedDevice:"),
       arg,
@@ -21786,7 +21081,7 @@ class HMRemoteLoginHandler extends Struct<HMRemoteLoginHandler> {
     Pointer<HMRemoteLoginHandler> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("registerForMessages"),
     );
@@ -21797,7 +21092,7 @@ class HMRemoteLoginHandler extends Struct<HMRemoteLoginHandler> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setContext:"),
       arg,
@@ -21809,7 +21104,7 @@ class HMRemoteLoginHandler extends Struct<HMRemoteLoginHandler> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setCurrentSessionID:"),
       arg,
@@ -21821,7 +21116,7 @@ class HMRemoteLoginHandler extends Struct<HMRemoteLoginHandler> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setLoggedInAccount:"),
       arg,
@@ -21833,7 +21128,7 @@ class HMRemoteLoginHandler extends Struct<HMRemoteLoginHandler> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("signout:"),
       arg,
@@ -21844,7 +21139,7 @@ class HMRemoteLoginHandler extends Struct<HMRemoteLoginHandler> {
     Pointer<HMRemoteLoginHandler> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("uniqueIdentifier"),
     );
@@ -21856,7 +21151,7 @@ class HMRemoteLoginHandler extends Struct<HMRemoteLoginHandler> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("updateLoggedInAccount:completionHandler:"),
       arg,
@@ -21868,16 +21163,13 @@ class HMRemoteLoginHandler extends Struct<HMRemoteLoginHandler> {
     Pointer<HMRemoteLoginHandler> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("uuid"),
     );
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMRemoteLoginMessage extends Struct<HMRemoteLoginMessage> {
   factory HMRemoteLoginMessage._() {
@@ -21892,7 +21184,7 @@ class HMRemoteLoginMessage extends Struct<HMRemoteLoginMessage> {
     Pointer<HMRemoteLoginMessage> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("description"),
     );
@@ -21903,7 +21195,7 @@ class HMRemoteLoginMessage extends Struct<HMRemoteLoginMessage> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("encodeWithCoder:"),
       arg,
@@ -21914,7 +21206,7 @@ class HMRemoteLoginMessage extends Struct<HMRemoteLoginMessage> {
     Pointer<HMRemoteLoginMessage> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("error"),
     );
@@ -21924,7 +21216,7 @@ class HMRemoteLoginMessage extends Struct<HMRemoteLoginMessage> {
     Pointer<HMRemoteLoginMessage> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initNewMessage"),
     );
@@ -21935,7 +21227,7 @@ class HMRemoteLoginMessage extends Struct<HMRemoteLoginMessage> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithCoder:"),
       arg,
@@ -21947,7 +21239,7 @@ class HMRemoteLoginMessage extends Struct<HMRemoteLoginMessage> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithSessionID:"),
       arg,
@@ -21958,7 +21250,7 @@ class HMRemoteLoginMessage extends Struct<HMRemoteLoginMessage> {
     Pointer<HMRemoteLoginMessage> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("sessionID"),
     );
@@ -21969,7 +21261,7 @@ class HMRemoteLoginMessage extends Struct<HMRemoteLoginMessage> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setError:"),
       arg,
@@ -21977,9 +21269,6 @@ class HMRemoteLoginMessage extends Struct<HMRemoteLoginMessage> {
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMResidentDevice extends Struct<HMResidentDevice> {
   factory HMResidentDevice._() {
@@ -21994,7 +21283,7 @@ class HMResidentDevice extends Struct<HMResidentDevice> {
     Pointer<HMResidentDevice> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("accountIdentifier"),
     );
@@ -22004,7 +21293,7 @@ class HMResidentDevice extends Struct<HMResidentDevice> {
     Pointer<HMResidentDevice> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("capabilities"),
     );
@@ -22014,7 +21303,7 @@ class HMResidentDevice extends Struct<HMResidentDevice> {
     Pointer<HMResidentDevice> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("context"),
     );
@@ -22024,7 +21313,7 @@ class HMResidentDevice extends Struct<HMResidentDevice> {
     Pointer<HMResidentDevice> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("delegate"),
     );
@@ -22034,7 +21323,7 @@ class HMResidentDevice extends Struct<HMResidentDevice> {
     Pointer<HMResidentDevice> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("device"),
     );
@@ -22045,7 +21334,7 @@ class HMResidentDevice extends Struct<HMResidentDevice> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("encodeWithCoder:"),
       arg,
@@ -22057,7 +21346,7 @@ class HMResidentDevice extends Struct<HMResidentDevice> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("handleRuntimeStateUpdate:"),
       arg,
@@ -22068,7 +21357,7 @@ class HMResidentDevice extends Struct<HMResidentDevice> {
     Pointer<HMResidentDevice> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("home"),
     );
@@ -22078,7 +21367,7 @@ class HMResidentDevice extends Struct<HMResidentDevice> {
     Pointer<HMResidentDevice> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("init"),
     );
@@ -22089,7 +21378,7 @@ class HMResidentDevice extends Struct<HMResidentDevice> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithCoder:"),
       arg,
@@ -22100,7 +21389,7 @@ class HMResidentDevice extends Struct<HMResidentDevice> {
     Pointer<HMResidentDevice> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isCurrentDevice"),
     );
@@ -22110,7 +21399,7 @@ class HMResidentDevice extends Struct<HMResidentDevice> {
     Pointer<HMResidentDevice> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isEnabled"),
     );
@@ -22120,7 +21409,7 @@ class HMResidentDevice extends Struct<HMResidentDevice> {
     Pointer<HMResidentDevice> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("name"),
     );
@@ -22131,7 +21420,7 @@ class HMResidentDevice extends Struct<HMResidentDevice> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setAccountIdentifier:"),
       arg,
@@ -22143,7 +21432,7 @@ class HMResidentDevice extends Struct<HMResidentDevice> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Uint64_returns_void(
+    _call_ptr_ptr_Uint64_returns_void(
       _self,
       _objc.getSelector("setCapabilities:"),
       arg,
@@ -22155,7 +21444,7 @@ class HMResidentDevice extends Struct<HMResidentDevice> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setContext:"),
       arg,
@@ -22167,7 +21456,7 @@ class HMResidentDevice extends Struct<HMResidentDevice> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setDelegate:"),
       arg,
@@ -22179,7 +21468,7 @@ class HMResidentDevice extends Struct<HMResidentDevice> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setEnabled:"),
       arg,
@@ -22191,7 +21480,7 @@ class HMResidentDevice extends Struct<HMResidentDevice> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setHome:"),
       arg,
@@ -22203,7 +21492,7 @@ class HMResidentDevice extends Struct<HMResidentDevice> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Uint64_returns_void(
+    _call_ptr_ptr_Uint64_returns_void(
       _self,
       _objc.getSelector("setStatus:"),
       arg,
@@ -22214,7 +21503,7 @@ class HMResidentDevice extends Struct<HMResidentDevice> {
     Pointer<HMResidentDevice> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("status"),
     );
@@ -22224,7 +21513,7 @@ class HMResidentDevice extends Struct<HMResidentDevice> {
     Pointer<HMResidentDevice> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("uniqueIdentifier"),
     );
@@ -22236,7 +21525,7 @@ class HMResidentDevice extends Struct<HMResidentDevice> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_p_returns_void(
+    _call_ptr_ptr_Int8_ptr_returns_void(
       _self,
       _objc.getSelector("updatedEnabled:completionHandler:"),
       arg,
@@ -22248,16 +21537,13 @@ class HMResidentDevice extends Struct<HMResidentDevice> {
     Pointer<HMResidentDevice> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("uuid"),
     );
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMRoom extends Struct<HMRoom> {
   factory HMRoom._() {
@@ -22272,7 +21558,7 @@ class HMRoom extends Struct<HMRoom> {
     Pointer<HMRoom> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("accessories"),
     );
@@ -22282,7 +21568,7 @@ class HMRoom extends Struct<HMRoom> {
     Pointer<HMRoom> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("applicationData"),
     );
@@ -22292,7 +21578,7 @@ class HMRoom extends Struct<HMRoom> {
     Pointer<HMRoom> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("context"),
     );
@@ -22302,7 +21588,7 @@ class HMRoom extends Struct<HMRoom> {
     Pointer<HMRoom> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("dealloc"),
     );
@@ -22313,7 +21599,7 @@ class HMRoom extends Struct<HMRoom> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("encodeWithCoder:"),
       arg,
@@ -22324,7 +21610,7 @@ class HMRoom extends Struct<HMRoom> {
     Pointer<HMRoom> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("home"),
     );
@@ -22334,7 +21620,7 @@ class HMRoom extends Struct<HMRoom> {
     Pointer<HMRoom> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("init"),
     );
@@ -22345,7 +21631,7 @@ class HMRoom extends Struct<HMRoom> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithCoder:"),
       arg,
@@ -22357,7 +21643,7 @@ class HMRoom extends Struct<HMRoom> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithName:"),
       arg,
@@ -22368,7 +21654,7 @@ class HMRoom extends Struct<HMRoom> {
     Pointer<HMRoom> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("messageReceiveQueue"),
     );
@@ -22378,7 +21664,7 @@ class HMRoom extends Struct<HMRoom> {
     Pointer<HMRoom> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("messageTargetUUID"),
     );
@@ -22388,7 +21674,7 @@ class HMRoom extends Struct<HMRoom> {
     Pointer<HMRoom> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("name"),
     );
@@ -22399,7 +21685,7 @@ class HMRoom extends Struct<HMRoom> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setApplicationData:"),
       arg,
@@ -22411,7 +21697,7 @@ class HMRoom extends Struct<HMRoom> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setContext:"),
       arg,
@@ -22423,7 +21709,7 @@ class HMRoom extends Struct<HMRoom> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setHome:"),
       arg,
@@ -22435,7 +21721,7 @@ class HMRoom extends Struct<HMRoom> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setName:"),
       arg,
@@ -22447,7 +21733,7 @@ class HMRoom extends Struct<HMRoom> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setUuid:"),
       arg,
@@ -22458,7 +21744,7 @@ class HMRoom extends Struct<HMRoom> {
     Pointer<HMRoom> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("uniqueIdentifier"),
     );
@@ -22470,7 +21756,7 @@ class HMRoom extends Struct<HMRoom> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("updateApplicationData:completionHandler:"),
       arg,
@@ -22484,7 +21770,7 @@ class HMRoom extends Struct<HMRoom> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("updateName:completionHandler:"),
       arg,
@@ -22496,16 +21782,13 @@ class HMRoom extends Struct<HMRoom> {
     Pointer<HMRoom> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("uuid"),
     );
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMService extends Struct<HMService> {
   factory HMService._() {
@@ -22520,7 +21803,7 @@ class HMService extends Struct<HMService> {
     Pointer<HMService> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("accessory"),
     );
@@ -22530,7 +21813,7 @@ class HMService extends Struct<HMService> {
     Pointer<HMService> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("applicationData"),
     );
@@ -22540,7 +21823,7 @@ class HMService extends Struct<HMService> {
     Pointer<HMService> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("associatedServiceType"),
     );
@@ -22550,7 +21833,7 @@ class HMService extends Struct<HMService> {
     Pointer<HMService> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("bulletinBoardNotification"),
     );
@@ -22560,7 +21843,7 @@ class HMService extends Struct<HMService> {
     Pointer<HMService> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("bulletinBoardNotificationInternal"),
     );
@@ -22570,7 +21853,7 @@ class HMService extends Struct<HMService> {
     Pointer<HMService> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("characteristics"),
     );
@@ -22580,7 +21863,7 @@ class HMService extends Struct<HMService> {
     Pointer<HMService> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int64(
+    return _call_ptr_ptr_returns_Int64(
       _self,
       _objc.getSelector("configurationState"),
     );
@@ -22590,7 +21873,7 @@ class HMService extends Struct<HMService> {
     Pointer<HMService> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("configuredName"),
     );
@@ -22600,7 +21883,7 @@ class HMService extends Struct<HMService> {
     Pointer<HMService> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("context"),
     );
@@ -22610,7 +21893,7 @@ class HMService extends Struct<HMService> {
     Pointer<HMService> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("currentCharacteristics"),
     );
@@ -22620,7 +21903,7 @@ class HMService extends Struct<HMService> {
     Pointer<HMService> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("defaultName"),
     );
@@ -22630,7 +21913,7 @@ class HMService extends Struct<HMService> {
     Pointer<HMService> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("description"),
     );
@@ -22641,7 +21924,7 @@ class HMService extends Struct<HMService> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("encodeWithCoder:"),
       arg,
@@ -22652,7 +21935,7 @@ class HMService extends Struct<HMService> {
     Pointer<HMService> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("hasSleepDiscoveryMode"),
     );
@@ -22662,7 +21945,7 @@ class HMService extends Struct<HMService> {
     Pointer<HMService> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("hash"),
     );
@@ -22672,7 +21955,7 @@ class HMService extends Struct<HMService> {
     Pointer<HMService> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("homeObjectURL"),
     );
@@ -22682,7 +21965,7 @@ class HMService extends Struct<HMService> {
     Pointer<HMService> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("homeObjectURLInternal"),
     );
@@ -22692,7 +21975,7 @@ class HMService extends Struct<HMService> {
     Pointer<HMService> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("init"),
     );
@@ -22703,7 +21986,7 @@ class HMService extends Struct<HMService> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithCoder:"),
       arg,
@@ -22714,7 +21997,7 @@ class HMService extends Struct<HMService> {
     Pointer<HMService> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("instanceID"),
     );
@@ -22725,7 +22008,7 @@ class HMService extends Struct<HMService> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isEqual:"),
       arg,
@@ -22736,7 +22019,7 @@ class HMService extends Struct<HMService> {
     Pointer<HMService> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isNameModifiable"),
     );
@@ -22746,7 +22029,7 @@ class HMService extends Struct<HMService> {
     Pointer<HMService> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isPrimaryService"),
     );
@@ -22756,7 +22039,7 @@ class HMService extends Struct<HMService> {
     Pointer<HMService> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isUserInteractive"),
     );
@@ -22766,7 +22049,7 @@ class HMService extends Struct<HMService> {
     Pointer<HMService> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("lastKnownDiscoveryMode"),
     );
@@ -22776,7 +22059,7 @@ class HMService extends Struct<HMService> {
     Pointer<HMService> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int64(
+    return _call_ptr_ptr_returns_Int64(
       _self,
       _objc.getSelector("lastKnownSleepDiscoveryMode"),
     );
@@ -22786,7 +22069,7 @@ class HMService extends Struct<HMService> {
     Pointer<HMService> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("linkedServiceInstanceIDs"),
     );
@@ -22796,7 +22079,7 @@ class HMService extends Struct<HMService> {
     Pointer<HMService> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("linkedServices"),
     );
@@ -22806,7 +22089,7 @@ class HMService extends Struct<HMService> {
     Pointer<HMService> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("localizedDescription"),
     );
@@ -22816,7 +22099,7 @@ class HMService extends Struct<HMService> {
     Pointer<HMService> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("logIdentifier"),
     );
@@ -22826,7 +22109,7 @@ class HMService extends Struct<HMService> {
     Pointer<HMService> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("mediaSourceDisplayOrder"),
     );
@@ -22836,7 +22119,7 @@ class HMService extends Struct<HMService> {
     Pointer<HMService> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("mediaSourceDisplayOrderModifiable"),
     );
@@ -22846,7 +22129,7 @@ class HMService extends Struct<HMService> {
     Pointer<HMService> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("mediaSourceIdentifier"),
     );
@@ -22856,7 +22139,7 @@ class HMService extends Struct<HMService> {
     Pointer<HMService> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("name"),
     );
@@ -22866,7 +22149,7 @@ class HMService extends Struct<HMService> {
     Pointer<HMService> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("nameModifiable"),
     );
@@ -22876,7 +22159,7 @@ class HMService extends Struct<HMService> {
     Pointer<HMService> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("serviceSubtype"),
     );
@@ -22886,7 +22169,7 @@ class HMService extends Struct<HMService> {
     Pointer<HMService> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("serviceType"),
     );
@@ -22897,7 +22180,7 @@ class HMService extends Struct<HMService> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setAccessory:"),
       arg,
@@ -22909,7 +22192,7 @@ class HMService extends Struct<HMService> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setApplicationData:"),
       arg,
@@ -22921,7 +22204,7 @@ class HMService extends Struct<HMService> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setAssociatedServiceType:"),
       arg,
@@ -22933,7 +22216,7 @@ class HMService extends Struct<HMService> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int64_returns_void(
+    _call_ptr_ptr_Int64_returns_void(
       _self,
       _objc.getSelector("setConfigurationState:"),
       arg,
@@ -22945,7 +22228,7 @@ class HMService extends Struct<HMService> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setConfiguredName:"),
       arg,
@@ -22957,7 +22240,7 @@ class HMService extends Struct<HMService> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setContext:"),
       arg,
@@ -22969,7 +22252,7 @@ class HMService extends Struct<HMService> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setCurrentCharacteristics:"),
       arg,
@@ -22981,7 +22264,7 @@ class HMService extends Struct<HMService> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setDefaultName:"),
       arg,
@@ -22993,7 +22276,7 @@ class HMService extends Struct<HMService> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setLastKnownDiscoveryMode:"),
       arg,
@@ -23005,7 +22288,7 @@ class HMService extends Struct<HMService> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setMediaSourceDisplayOrder:"),
       arg,
@@ -23017,7 +22300,7 @@ class HMService extends Struct<HMService> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setMediaSourceDisplayOrderModifiable:"),
       arg,
@@ -23029,7 +22312,7 @@ class HMService extends Struct<HMService> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setMediaSourceIdentifier:"),
       arg,
@@ -23041,7 +22324,7 @@ class HMService extends Struct<HMService> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setName:"),
       arg,
@@ -23053,7 +22336,7 @@ class HMService extends Struct<HMService> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setNameModifiable:"),
       arg,
@@ -23065,7 +22348,7 @@ class HMService extends Struct<HMService> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setServiceSubtype:"),
       arg,
@@ -23077,7 +22360,7 @@ class HMService extends Struct<HMService> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setServiceType:"),
       arg,
@@ -23089,7 +22372,7 @@ class HMService extends Struct<HMService> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setUuid:"),
       arg,
@@ -23100,7 +22383,7 @@ class HMService extends Struct<HMService> {
     Pointer<HMService> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("uniqueIdentifier"),
     );
@@ -23112,7 +22395,7 @@ class HMService extends Struct<HMService> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("updateApplicationData:completionHandler:"),
       arg,
@@ -23126,7 +22409,7 @@ class HMService extends Struct<HMService> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("updateAssociatedServiceType:completionHandler:"),
       arg,
@@ -23140,7 +22423,7 @@ class HMService extends Struct<HMService> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int64_p_returns_void(
+    _call_ptr_ptr_Int64_ptr_returns_void(
       _self,
       _objc.getSelector("updateConfigurationState:completionHandler:"),
       arg,
@@ -23154,7 +22437,7 @@ class HMService extends Struct<HMService> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("updateName:completionHandler:"),
       arg,
@@ -23166,16 +22449,13 @@ class HMService extends Struct<HMService> {
     Pointer<HMService> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("uuid"),
     );
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMServiceGroup extends Struct<HMServiceGroup> {
   factory HMServiceGroup._() {
@@ -23192,7 +22472,7 @@ class HMServiceGroup extends Struct<HMServiceGroup> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("addService:completionHandler:"),
       arg,
@@ -23204,7 +22484,7 @@ class HMServiceGroup extends Struct<HMServiceGroup> {
     Pointer<HMServiceGroup> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("applicationData"),
     );
@@ -23214,7 +22494,7 @@ class HMServiceGroup extends Struct<HMServiceGroup> {
     Pointer<HMServiceGroup> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("context"),
     );
@@ -23224,7 +22504,7 @@ class HMServiceGroup extends Struct<HMServiceGroup> {
     Pointer<HMServiceGroup> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("currentServices"),
     );
@@ -23234,7 +22514,7 @@ class HMServiceGroup extends Struct<HMServiceGroup> {
     Pointer<HMServiceGroup> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("dealloc"),
     );
@@ -23245,7 +22525,7 @@ class HMServiceGroup extends Struct<HMServiceGroup> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("encodeWithCoder:"),
       arg,
@@ -23256,7 +22536,7 @@ class HMServiceGroup extends Struct<HMServiceGroup> {
     Pointer<HMServiceGroup> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("home"),
     );
@@ -23266,7 +22546,7 @@ class HMServiceGroup extends Struct<HMServiceGroup> {
     Pointer<HMServiceGroup> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("init"),
     );
@@ -23277,7 +22557,7 @@ class HMServiceGroup extends Struct<HMServiceGroup> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithCoder:"),
       arg,
@@ -23290,7 +22570,7 @@ class HMServiceGroup extends Struct<HMServiceGroup> {
     @required Pointer uuid,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithName:uuid:"),
       arg,
@@ -23302,7 +22582,7 @@ class HMServiceGroup extends Struct<HMServiceGroup> {
     Pointer<HMServiceGroup> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("logIdentifier"),
     );
@@ -23312,7 +22592,7 @@ class HMServiceGroup extends Struct<HMServiceGroup> {
     Pointer<HMServiceGroup> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("messageReceiveQueue"),
     );
@@ -23322,7 +22602,7 @@ class HMServiceGroup extends Struct<HMServiceGroup> {
     Pointer<HMServiceGroup> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("messageTargetUUID"),
     );
@@ -23332,7 +22612,7 @@ class HMServiceGroup extends Struct<HMServiceGroup> {
     Pointer<HMServiceGroup> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("name"),
     );
@@ -23344,7 +22624,7 @@ class HMServiceGroup extends Struct<HMServiceGroup> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("removeService:completionHandler:"),
       arg,
@@ -23356,7 +22636,7 @@ class HMServiceGroup extends Struct<HMServiceGroup> {
     Pointer<HMServiceGroup> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("services"),
     );
@@ -23367,7 +22647,7 @@ class HMServiceGroup extends Struct<HMServiceGroup> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setApplicationData:"),
       arg,
@@ -23379,7 +22659,7 @@ class HMServiceGroup extends Struct<HMServiceGroup> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setContext:"),
       arg,
@@ -23391,7 +22671,7 @@ class HMServiceGroup extends Struct<HMServiceGroup> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setCurrentServices:"),
       arg,
@@ -23403,7 +22683,7 @@ class HMServiceGroup extends Struct<HMServiceGroup> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setHome:"),
       arg,
@@ -23415,7 +22695,7 @@ class HMServiceGroup extends Struct<HMServiceGroup> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setName:"),
       arg,
@@ -23426,7 +22706,7 @@ class HMServiceGroup extends Struct<HMServiceGroup> {
     Pointer<HMServiceGroup> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("uniqueIdentifier"),
     );
@@ -23438,7 +22718,7 @@ class HMServiceGroup extends Struct<HMServiceGroup> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("updateApplicationData:completionHandler:"),
       arg,
@@ -23452,7 +22732,7 @@ class HMServiceGroup extends Struct<HMServiceGroup> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("updateName:completionHandler:"),
       arg,
@@ -23464,16 +22744,13 @@ class HMServiceGroup extends Struct<HMServiceGroup> {
     Pointer<HMServiceGroup> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("uuid"),
     );
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMSetupAccessoryBrowsingRequest
     extends Struct<HMSetupAccessoryBrowsingRequest> {
@@ -23492,7 +22769,7 @@ class HMSetupAccessoryBrowsingRequest
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("encodeWithCoder:"),
       arg,
@@ -23503,7 +22780,7 @@ class HMSetupAccessoryBrowsingRequest
     Pointer<HMSetupAccessoryBrowsingRequest> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("filterCategories"),
     );
@@ -23513,7 +22790,7 @@ class HMSetupAccessoryBrowsingRequest
     Pointer<HMSetupAccessoryBrowsingRequest> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("hash"),
     );
@@ -23523,7 +22800,7 @@ class HMSetupAccessoryBrowsingRequest
     Pointer<HMSetupAccessoryBrowsingRequest> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("init"),
     );
@@ -23534,7 +22811,7 @@ class HMSetupAccessoryBrowsingRequest
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithCoder:"),
       arg,
@@ -23546,7 +22823,7 @@ class HMSetupAccessoryBrowsingRequest
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithFilterCategories:"),
       arg,
@@ -23558,7 +22835,7 @@ class HMSetupAccessoryBrowsingRequest
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isEqual:"),
       arg,
@@ -23566,9 +22843,6 @@ class HMSetupAccessoryBrowsingRequest
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMSetupAccessoryDescription extends Struct<HMSetupAccessoryDescription> {
   factory HMSetupAccessoryDescription._() {
@@ -23585,7 +22859,7 @@ class HMSetupAccessoryDescription extends Struct<HMSetupAccessoryDescription> {
     Pointer<HMSetupAccessoryDescription> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("accessoryBrowsingRequest"),
     );
@@ -23595,7 +22869,7 @@ class HMSetupAccessoryDescription extends Struct<HMSetupAccessoryDescription> {
     Pointer<HMSetupAccessoryDescription> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("accessoryCategory"),
     );
@@ -23605,7 +22879,7 @@ class HMSetupAccessoryDescription extends Struct<HMSetupAccessoryDescription> {
     Pointer<HMSetupAccessoryDescription> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("accessoryName"),
     );
@@ -23615,7 +22889,7 @@ class HMSetupAccessoryDescription extends Struct<HMSetupAccessoryDescription> {
     Pointer<HMSetupAccessoryDescription> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("accessoryUUID"),
     );
@@ -23625,7 +22899,7 @@ class HMSetupAccessoryDescription extends Struct<HMSetupAccessoryDescription> {
     Pointer<HMSetupAccessoryDescription> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("addAndSetupAccessories"),
     );
@@ -23635,7 +22909,7 @@ class HMSetupAccessoryDescription extends Struct<HMSetupAccessoryDescription> {
     Pointer<HMSetupAccessoryDescription> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("appIdentifier"),
     );
@@ -23645,7 +22919,7 @@ class HMSetupAccessoryDescription extends Struct<HMSetupAccessoryDescription> {
     Pointer<HMSetupAccessoryDescription> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("category"),
     );
@@ -23655,21 +22929,9 @@ class HMSetupAccessoryDescription extends Struct<HMSetupAccessoryDescription> {
     Pointer<HMSetupAccessoryDescription> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("certificationStatus"),
-    );
-  }
-
-  static Pointer copyWithZone(
-    Pointer<HMSetupAccessoryDescription> _self,
-    Pointer<Pointer> arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
-      _self,
-      _objc.getSelector("copyWithZone:"),
-      arg,
     );
   }
 
@@ -23677,7 +22939,7 @@ class HMSetupAccessoryDescription extends Struct<HMSetupAccessoryDescription> {
     Pointer<HMSetupAccessoryDescription> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("description"),
     );
@@ -23687,7 +22949,7 @@ class HMSetupAccessoryDescription extends Struct<HMSetupAccessoryDescription> {
     Pointer<HMSetupAccessoryDescription> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("dumpState"),
     );
@@ -23698,7 +22960,7 @@ class HMSetupAccessoryDescription extends Struct<HMSetupAccessoryDescription> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("encodeWithCoder:"),
       arg,
@@ -23709,7 +22971,7 @@ class HMSetupAccessoryDescription extends Struct<HMSetupAccessoryDescription> {
     Pointer<HMSetupAccessoryDescription> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("hash"),
     );
@@ -23719,7 +22981,7 @@ class HMSetupAccessoryDescription extends Struct<HMSetupAccessoryDescription> {
     Pointer<HMSetupAccessoryDescription> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("homeName"),
     );
@@ -23729,14 +22991,14 @@ class HMSetupAccessoryDescription extends Struct<HMSetupAccessoryDescription> {
     Pointer<HMSetupAccessoryDescription> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("homeUUID"),
     );
   }
 
   static Pointer
-      initToSetupAccessories$legacyAPI$homeName$homeUUID$trustedOrigin$(
+      initToSetupAccessories$legacyAPI$homeName$homeUUID$trustedOrigin(
     Pointer<HMSetupAccessoryDescription> _self,
     Pointer arg, {
     @required int legacyAPI,
@@ -23745,7 +23007,7 @@ class HMSetupAccessoryDescription extends Struct<HMSetupAccessoryDescription> {
     @required int trustedOrigin,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_Int8_p_p_Int8_returns_p(
+    return _call_ptr_ptr_ptr_Int8_ptr_ptr_Int8_returns_ptr(
       _self,
       _objc.getSelector(
           "initToSetupAccessories:legacyAPI:homeName:homeUUID:trustedOrigin:"),
@@ -23758,7 +23020,7 @@ class HMSetupAccessoryDescription extends Struct<HMSetupAccessoryDescription> {
   }
 
   static Pointer
-      initToSetupAccessories$legacyAPI$homeName$homeUUID$trustedOrigin$browseRequest$(
+      initToSetupAccessories$legacyAPI$homeName$homeUUID$trustedOrigin$browseRequest(
     Pointer<HMSetupAccessoryDescription> _self,
     Pointer arg, {
     @required int legacyAPI,
@@ -23768,7 +23030,7 @@ class HMSetupAccessoryDescription extends Struct<HMSetupAccessoryDescription> {
     @required Pointer browseRequest,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_Int8_p_p_Int8_p_returns_p(
+    return _call_ptr_ptr_ptr_Int8_ptr_ptr_Int8_ptr_returns_ptr(
       _self,
       _objc.getSelector(
           "initToSetupAccessories:legacyAPI:homeName:homeUUID:trustedOrigin:browseRequest:"),
@@ -23781,7 +23043,7 @@ class HMSetupAccessoryDescription extends Struct<HMSetupAccessoryDescription> {
     );
   }
 
-  static Pointer initToSetupAccessories$legacyAPI$homeName$homeUUID$(
+  static Pointer initToSetupAccessories$legacyAPI$homeName$homeUUID(
     Pointer<HMSetupAccessoryDescription> _self,
     Pointer arg, {
     @required int legacyAPI,
@@ -23789,7 +23051,7 @@ class HMSetupAccessoryDescription extends Struct<HMSetupAccessoryDescription> {
     @required Pointer homeUUID,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_Int8_p_p_returns_p(
+    return _call_ptr_ptr_ptr_Int8_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initToSetupAccessories:legacyAPI:homeName:homeUUID:"),
       arg,
@@ -23800,7 +23062,7 @@ class HMSetupAccessoryDescription extends Struct<HMSetupAccessoryDescription> {
   }
 
   static Pointer
-      initToSetupAccessoriesWithSetupAccessoryPayload$appID$homeName$homeUUID$trustedOrigin$(
+      initToSetupAccessoriesWithSetupAccessoryPayload$appID$homeName$homeUUID$trustedOrigin(
     Pointer<HMSetupAccessoryDescription> _self,
     Pointer arg, {
     @required Pointer appID,
@@ -23809,7 +23071,7 @@ class HMSetupAccessoryDescription extends Struct<HMSetupAccessoryDescription> {
     @required int trustedOrigin,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_p_Int8_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_ptr_Int8_returns_ptr(
       _self,
       _objc.getSelector(
           "initToSetupAccessoriesWithSetupAccessoryPayload:appID:homeName:homeUUID:trustedOrigin:"),
@@ -23822,7 +23084,7 @@ class HMSetupAccessoryDescription extends Struct<HMSetupAccessoryDescription> {
   }
 
   static Pointer
-      initToSetupAccessoriesWithSetupAccessoryPayload$appID$homeName$homeUUID$(
+      initToSetupAccessoriesWithSetupAccessoryPayload$appID$homeName$homeUUID(
     Pointer<HMSetupAccessoryDescription> _self,
     Pointer arg, {
     @required Pointer appID,
@@ -23830,7 +23092,7 @@ class HMSetupAccessoryDescription extends Struct<HMSetupAccessoryDescription> {
     @required Pointer homeUUID,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector(
           "initToSetupAccessoriesWithSetupAccessoryPayload:appID:homeName:homeUUID:"),
@@ -23841,7 +23103,7 @@ class HMSetupAccessoryDescription extends Struct<HMSetupAccessoryDescription> {
     );
   }
 
-  static Pointer initWithAccessoryUUID$accessoryName$appID$homeName$homeUUID$(
+  static Pointer initWithAccessoryUUID$accessoryName$appID$homeName$homeUUID(
     Pointer<HMSetupAccessoryDescription> _self,
     Pointer arg, {
     @required Pointer accessoryName,
@@ -23850,7 +23112,7 @@ class HMSetupAccessoryDescription extends Struct<HMSetupAccessoryDescription> {
     @required Pointer homeUUID,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector(
           "initWithAccessoryUUID:accessoryName:appID:homeName:homeUUID:"),
@@ -23863,7 +23125,7 @@ class HMSetupAccessoryDescription extends Struct<HMSetupAccessoryDescription> {
   }
 
   static Pointer
-      initWithAccessoryUUID$accessoryName$appID$homeName$homeUUID$trustedOrigin$(
+      initWithAccessoryUUID$accessoryName$appID$homeName$homeUUID$trustedOrigin(
     Pointer<HMSetupAccessoryDescription> _self,
     Pointer arg, {
     @required Pointer accessoryName,
@@ -23873,7 +23135,7 @@ class HMSetupAccessoryDescription extends Struct<HMSetupAccessoryDescription> {
     @required int trustedOrigin,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_p_p_Int8_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_Int8_returns_ptr(
       _self,
       _objc.getSelector(
           "initWithAccessoryUUID:accessoryName:appID:homeName:homeUUID:trustedOrigin:"),
@@ -23891,7 +23153,7 @@ class HMSetupAccessoryDescription extends Struct<HMSetupAccessoryDescription> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithCoder:"),
       arg,
@@ -23903,7 +23165,7 @@ class HMSetupAccessoryDescription extends Struct<HMSetupAccessoryDescription> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isEqual:"),
       arg,
@@ -23914,7 +23176,7 @@ class HMSetupAccessoryDescription extends Struct<HMSetupAccessoryDescription> {
     Pointer<HMSetupAccessoryDescription> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isPaired"),
     );
@@ -23924,7 +23186,7 @@ class HMSetupAccessoryDescription extends Struct<HMSetupAccessoryDescription> {
     Pointer<HMSetupAccessoryDescription> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isTrustedOrigin"),
     );
@@ -23934,7 +23196,7 @@ class HMSetupAccessoryDescription extends Struct<HMSetupAccessoryDescription> {
     Pointer<HMSetupAccessoryDescription> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("legacyAPI"),
     );
@@ -23944,7 +23206,7 @@ class HMSetupAccessoryDescription extends Struct<HMSetupAccessoryDescription> {
     Pointer<HMSetupAccessoryDescription> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("manufacturerName"),
     );
@@ -23955,7 +23217,7 @@ class HMSetupAccessoryDescription extends Struct<HMSetupAccessoryDescription> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setAccessoryBrowsingRequest:"),
       arg,
@@ -23967,7 +23229,7 @@ class HMSetupAccessoryDescription extends Struct<HMSetupAccessoryDescription> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setAccessoryCategory:"),
       arg,
@@ -23979,7 +23241,7 @@ class HMSetupAccessoryDescription extends Struct<HMSetupAccessoryDescription> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setAccessoryName:"),
       arg,
@@ -23991,7 +23253,7 @@ class HMSetupAccessoryDescription extends Struct<HMSetupAccessoryDescription> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setAccessoryUUID:"),
       arg,
@@ -24003,7 +23265,7 @@ class HMSetupAccessoryDescription extends Struct<HMSetupAccessoryDescription> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setAddAndSetupAccessories:"),
       arg,
@@ -24015,7 +23277,7 @@ class HMSetupAccessoryDescription extends Struct<HMSetupAccessoryDescription> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setAppIdentifier:"),
       arg,
@@ -24027,7 +23289,7 @@ class HMSetupAccessoryDescription extends Struct<HMSetupAccessoryDescription> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Uint64_returns_void(
+    _call_ptr_ptr_Uint64_returns_void(
       _self,
       _objc.getSelector("setCertificationStatus:"),
       arg,
@@ -24039,7 +23301,7 @@ class HMSetupAccessoryDescription extends Struct<HMSetupAccessoryDescription> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setIsTrustedOrigin:"),
       arg,
@@ -24051,7 +23313,7 @@ class HMSetupAccessoryDescription extends Struct<HMSetupAccessoryDescription> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setLegacyAPI:"),
       arg,
@@ -24063,7 +23325,7 @@ class HMSetupAccessoryDescription extends Struct<HMSetupAccessoryDescription> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setManufacturerName:"),
       arg,
@@ -24075,7 +23337,7 @@ class HMSetupAccessoryDescription extends Struct<HMSetupAccessoryDescription> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setSetupAccessoryPayload:"),
       arg,
@@ -24087,7 +23349,7 @@ class HMSetupAccessoryDescription extends Struct<HMSetupAccessoryDescription> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setSuggestedRoomName:"),
       arg,
@@ -24098,7 +23360,7 @@ class HMSetupAccessoryDescription extends Struct<HMSetupAccessoryDescription> {
     Pointer<HMSetupAccessoryDescription> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("setupAccessoryPayload"),
     );
@@ -24108,7 +23370,7 @@ class HMSetupAccessoryDescription extends Struct<HMSetupAccessoryDescription> {
     Pointer<HMSetupAccessoryDescription> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("setupCode"),
     );
@@ -24118,7 +23380,7 @@ class HMSetupAccessoryDescription extends Struct<HMSetupAccessoryDescription> {
     Pointer<HMSetupAccessoryDescription> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("setupID"),
     );
@@ -24128,7 +23390,7 @@ class HMSetupAccessoryDescription extends Struct<HMSetupAccessoryDescription> {
     Pointer<HMSetupAccessoryDescription> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("suggestedRoomName"),
     );
@@ -24138,7 +23400,7 @@ class HMSetupAccessoryDescription extends Struct<HMSetupAccessoryDescription> {
     Pointer<HMSetupAccessoryDescription> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("supportsBTLE"),
     );
@@ -24148,7 +23410,7 @@ class HMSetupAccessoryDescription extends Struct<HMSetupAccessoryDescription> {
     Pointer<HMSetupAccessoryDescription> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("supportsIP"),
     );
@@ -24158,7 +23420,7 @@ class HMSetupAccessoryDescription extends Struct<HMSetupAccessoryDescription> {
     Pointer<HMSetupAccessoryDescription> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("supportsWAC"),
     );
@@ -24169,7 +23431,7 @@ class HMSetupAccessoryDescription extends Struct<HMSetupAccessoryDescription> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("updateAppIdentifier:"),
       arg,
@@ -24181,7 +23443,7 @@ class HMSetupAccessoryDescription extends Struct<HMSetupAccessoryDescription> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("updateWithAccessory:"),
       arg,
@@ -24193,7 +23455,7 @@ class HMSetupAccessoryDescription extends Struct<HMSetupAccessoryDescription> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("updateWithSetupAccessoryPayload:"),
       arg,
@@ -24204,16 +23466,13 @@ class HMSetupAccessoryDescription extends Struct<HMSetupAccessoryDescription> {
     Pointer<HMSetupAccessoryDescription> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("userConsentReasons"),
     );
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMSetupAccessoryPayload extends Struct<HMSetupAccessoryPayload> {
   factory HMSetupAccessoryPayload._() {
@@ -24230,7 +23489,7 @@ class HMSetupAccessoryPayload extends Struct<HMSetupAccessoryPayload> {
     Pointer<HMSetupAccessoryPayload> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("accessoryName"),
     );
@@ -24240,7 +23499,7 @@ class HMSetupAccessoryPayload extends Struct<HMSetupAccessoryPayload> {
     Pointer<HMSetupAccessoryPayload> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("category"),
     );
@@ -24250,21 +23509,9 @@ class HMSetupAccessoryPayload extends Struct<HMSetupAccessoryPayload> {
     Pointer<HMSetupAccessoryPayload> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("categoryNumber"),
-    );
-  }
-
-  static Pointer copyWithZone(
-    Pointer<HMSetupAccessoryPayload> _self,
-    Pointer<Pointer> arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
-      _self,
-      _objc.getSelector("copyWithZone:"),
-      arg,
     );
   }
 
@@ -24272,7 +23519,7 @@ class HMSetupAccessoryPayload extends Struct<HMSetupAccessoryPayload> {
     Pointer<HMSetupAccessoryPayload> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("description"),
     );
@@ -24283,7 +23530,7 @@ class HMSetupAccessoryPayload extends Struct<HMSetupAccessoryPayload> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("encodeWithCoder:"),
       arg,
@@ -24294,7 +23541,7 @@ class HMSetupAccessoryPayload extends Struct<HMSetupAccessoryPayload> {
     Pointer<HMSetupAccessoryPayload> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("flags"),
     );
@@ -24304,7 +23551,7 @@ class HMSetupAccessoryPayload extends Struct<HMSetupAccessoryPayload> {
     Pointer<HMSetupAccessoryPayload> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("hash"),
     );
@@ -24315,7 +23562,7 @@ class HMSetupAccessoryPayload extends Struct<HMSetupAccessoryPayload> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithCoder:"),
       arg,
@@ -24327,7 +23574,7 @@ class HMSetupAccessoryPayload extends Struct<HMSetupAccessoryPayload> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithSetupCode:"),
       arg,
@@ -24339,7 +23586,7 @@ class HMSetupAccessoryPayload extends Struct<HMSetupAccessoryPayload> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithSetupPayload:"),
       arg,
@@ -24352,7 +23599,7 @@ class HMSetupAccessoryPayload extends Struct<HMSetupAccessoryPayload> {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithSetupPayloadURL:error:"),
       arg,
@@ -24365,7 +23612,7 @@ class HMSetupAccessoryPayload extends Struct<HMSetupAccessoryPayload> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isEqual:"),
       arg,
@@ -24376,7 +23623,7 @@ class HMSetupAccessoryPayload extends Struct<HMSetupAccessoryPayload> {
     Pointer<HMSetupAccessoryPayload> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("paired"),
     );
@@ -24387,7 +23634,7 @@ class HMSetupAccessoryPayload extends Struct<HMSetupAccessoryPayload> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setAccessoryName:"),
       arg,
@@ -24399,7 +23646,7 @@ class HMSetupAccessoryPayload extends Struct<HMSetupAccessoryPayload> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setCategoryNumber:"),
       arg,
@@ -24411,7 +23658,7 @@ class HMSetupAccessoryPayload extends Struct<HMSetupAccessoryPayload> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setFlags:"),
       arg,
@@ -24423,7 +23670,7 @@ class HMSetupAccessoryPayload extends Struct<HMSetupAccessoryPayload> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setPaired:"),
       arg,
@@ -24435,7 +23682,7 @@ class HMSetupAccessoryPayload extends Struct<HMSetupAccessoryPayload> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setSetupCode:"),
       arg,
@@ -24447,7 +23694,7 @@ class HMSetupAccessoryPayload extends Struct<HMSetupAccessoryPayload> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setSetupID:"),
       arg,
@@ -24459,7 +23706,7 @@ class HMSetupAccessoryPayload extends Struct<HMSetupAccessoryPayload> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setSetupPayloadURL:"),
       arg,
@@ -24471,7 +23718,7 @@ class HMSetupAccessoryPayload extends Struct<HMSetupAccessoryPayload> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setSupportsBTLE:"),
       arg,
@@ -24483,7 +23730,7 @@ class HMSetupAccessoryPayload extends Struct<HMSetupAccessoryPayload> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setSupportsIP:"),
       arg,
@@ -24495,7 +23742,7 @@ class HMSetupAccessoryPayload extends Struct<HMSetupAccessoryPayload> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setSupportsWAC:"),
       arg,
@@ -24506,7 +23753,7 @@ class HMSetupAccessoryPayload extends Struct<HMSetupAccessoryPayload> {
     Pointer<HMSetupAccessoryPayload> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("setupCode"),
     );
@@ -24516,7 +23763,7 @@ class HMSetupAccessoryPayload extends Struct<HMSetupAccessoryPayload> {
     Pointer<HMSetupAccessoryPayload> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("setupID"),
     );
@@ -24526,7 +23773,7 @@ class HMSetupAccessoryPayload extends Struct<HMSetupAccessoryPayload> {
     Pointer<HMSetupAccessoryPayload> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("setupPayloadURL"),
     );
@@ -24536,7 +23783,7 @@ class HMSetupAccessoryPayload extends Struct<HMSetupAccessoryPayload> {
     Pointer<HMSetupAccessoryPayload> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("supportsBTLE"),
     );
@@ -24546,7 +23793,7 @@ class HMSetupAccessoryPayload extends Struct<HMSetupAccessoryPayload> {
     Pointer<HMSetupAccessoryPayload> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("supportsIP"),
     );
@@ -24556,16 +23803,13 @@ class HMSetupAccessoryPayload extends Struct<HMSetupAccessoryPayload> {
     Pointer<HMSetupAccessoryPayload> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("supportsWAC"),
     );
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMSignificantTimeEvent extends Struct<HMSignificantTimeEvent> {
   factory HMSignificantTimeEvent._() {
@@ -24578,24 +23822,12 @@ class HMSignificantTimeEvent extends Struct<HMSignificantTimeEvent> {
         .cast<HMSignificantTimeEvent>();
   }
 
-  static Pointer copyWithZone(
-    Pointer<HMSignificantTimeEvent> _self,
-    Pointer<Pointer> arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
-      _self,
-      _objc.getSelector("copyWithZone:"),
-      arg,
-    );
-  }
-
   static void encodeWithCoder(
     Pointer<HMSignificantTimeEvent> _self,
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("encodeWithCoder:"),
       arg,
@@ -24607,7 +23839,7 @@ class HMSignificantTimeEvent extends Struct<HMSignificantTimeEvent> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithCoder:"),
       arg,
@@ -24621,7 +23853,7 @@ class HMSignificantTimeEvent extends Struct<HMSignificantTimeEvent> {
     @required Pointer offset,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithDict:significantEvent:offset:"),
       arg,
@@ -24636,7 +23868,7 @@ class HMSignificantTimeEvent extends Struct<HMSignificantTimeEvent> {
     @required Pointer offset,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithSignificantEvent:offset:"),
       arg,
@@ -24644,23 +23876,11 @@ class HMSignificantTimeEvent extends Struct<HMSignificantTimeEvent> {
     );
   }
 
-  static Pointer mutableCopyWithZone(
-    Pointer<HMSignificantTimeEvent> _self,
-    Pointer<Pointer> arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
-      _self,
-      _objc.getSelector("mutableCopyWithZone:"),
-      arg,
-    );
-  }
-
   static Pointer offset(
     Pointer<HMSignificantTimeEvent> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("offset"),
     );
@@ -24671,7 +23891,7 @@ class HMSignificantTimeEvent extends Struct<HMSignificantTimeEvent> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setOffset:"),
       arg,
@@ -24683,7 +23903,7 @@ class HMSignificantTimeEvent extends Struct<HMSignificantTimeEvent> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setSignificantEvent:"),
       arg,
@@ -24694,7 +23914,7 @@ class HMSignificantTimeEvent extends Struct<HMSignificantTimeEvent> {
     Pointer<HMSignificantTimeEvent> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("significantEvent"),
     );
@@ -24706,7 +23926,7 @@ class HMSignificantTimeEvent extends Struct<HMSignificantTimeEvent> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("updateOffset:completionHandler:"),
       arg,
@@ -24720,7 +23940,7 @@ class HMSignificantTimeEvent extends Struct<HMSignificantTimeEvent> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("updateSignificantEvent:completionHandler:"),
       arg,
@@ -24729,9 +23949,6 @@ class HMSignificantTimeEvent extends Struct<HMSignificantTimeEvent> {
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMSoftwareUpdate extends Struct<HMSoftwareUpdate> {
   factory HMSoftwareUpdate._() {
@@ -24746,7 +23963,7 @@ class HMSoftwareUpdate extends Struct<HMSoftwareUpdate> {
     Pointer<HMSoftwareUpdate> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("accessory"),
     );
@@ -24757,7 +23974,7 @@ class HMSoftwareUpdate extends Struct<HMSoftwareUpdate> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("configureWithContext:"),
       arg,
@@ -24768,7 +23985,7 @@ class HMSoftwareUpdate extends Struct<HMSoftwareUpdate> {
     Pointer<HMSoftwareUpdate> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("context"),
     );
@@ -24778,7 +23995,7 @@ class HMSoftwareUpdate extends Struct<HMSoftwareUpdate> {
     Pointer<HMSoftwareUpdate> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("dealloc"),
     );
@@ -24788,7 +24005,7 @@ class HMSoftwareUpdate extends Struct<HMSoftwareUpdate> {
     Pointer<HMSoftwareUpdate> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("delegate"),
     );
@@ -24798,7 +24015,7 @@ class HMSoftwareUpdate extends Struct<HMSoftwareUpdate> {
     Pointer<HMSoftwareUpdate> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("description"),
     );
@@ -24808,7 +24025,7 @@ class HMSoftwareUpdate extends Struct<HMSoftwareUpdate> {
     Pointer<HMSoftwareUpdate> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("documentation"),
     );
@@ -24818,7 +24035,7 @@ class HMSoftwareUpdate extends Struct<HMSoftwareUpdate> {
     Pointer<HMSoftwareUpdate> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("documentationMetadata"),
     );
@@ -24828,7 +24045,7 @@ class HMSoftwareUpdate extends Struct<HMSoftwareUpdate> {
     Pointer<HMSoftwareUpdate> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("downloadSize"),
     );
@@ -24839,7 +24056,7 @@ class HMSoftwareUpdate extends Struct<HMSoftwareUpdate> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("encodeWithCoder:"),
       arg,
@@ -24850,7 +24067,7 @@ class HMSoftwareUpdate extends Struct<HMSoftwareUpdate> {
     Pointer<HMSoftwareUpdate> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("hash"),
     );
@@ -24860,7 +24077,7 @@ class HMSoftwareUpdate extends Struct<HMSoftwareUpdate> {
     Pointer<HMSoftwareUpdate> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("identifier"),
     );
@@ -24870,7 +24087,7 @@ class HMSoftwareUpdate extends Struct<HMSoftwareUpdate> {
     Pointer<HMSoftwareUpdate> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("init"),
     );
@@ -24881,21 +24098,21 @@ class HMSoftwareUpdate extends Struct<HMSoftwareUpdate> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithCoder:"),
       arg,
     );
   }
 
-  static Pointer initWithVersion$downloadSize$state$(
+  static Pointer initWithVersion$downloadSize$state(
     Pointer<HMSoftwareUpdate> _self,
     Pointer arg, {
     @required int downloadSize,
     @required int state,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_Uint64_Int64_returns_p(
+    return _call_ptr_ptr_ptr_Uint64_Int64_returns_ptr(
       _self,
       _objc.getSelector("initWithVersion:downloadSize:state:"),
       arg,
@@ -24904,7 +24121,7 @@ class HMSoftwareUpdate extends Struct<HMSoftwareUpdate> {
     );
   }
 
-  static Pointer initWithVersion$downloadSize$state$documentationMetadata$(
+  static Pointer initWithVersion$downloadSize$state$documentationMetadata(
     Pointer<HMSoftwareUpdate> _self,
     Pointer arg, {
     @required int downloadSize,
@@ -24912,7 +24129,7 @@ class HMSoftwareUpdate extends Struct<HMSoftwareUpdate> {
     @required Pointer documentationMetadata,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_Uint64_Int64_p_returns_p(
+    return _call_ptr_ptr_ptr_Uint64_Int64_ptr_returns_ptr(
       _self,
       _objc.getSelector(
           "initWithVersion:downloadSize:state:documentationMetadata:"),
@@ -24923,13 +24140,13 @@ class HMSoftwareUpdate extends Struct<HMSoftwareUpdate> {
     );
   }
 
-  static Pointer initWithVersion$downloadSize$(
+  static Pointer initWithVersion$downloadSize(
     Pointer<HMSoftwareUpdate> _self,
     Pointer arg, {
     @required int downloadSize,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_Uint64_returns_p(
+    return _call_ptr_ptr_ptr_Uint64_returns_ptr(
       _self,
       _objc.getSelector("initWithVersion:downloadSize:"),
       arg,
@@ -24941,7 +24158,7 @@ class HMSoftwareUpdate extends Struct<HMSoftwareUpdate> {
     Pointer<HMSoftwareUpdate> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isDocumentationAvailable"),
     );
@@ -24952,7 +24169,7 @@ class HMSoftwareUpdate extends Struct<HMSoftwareUpdate> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isEqual:"),
       arg,
@@ -24963,7 +24180,7 @@ class HMSoftwareUpdate extends Struct<HMSoftwareUpdate> {
     Pointer<HMSoftwareUpdate> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("logIdentifier"),
     );
@@ -24973,7 +24190,7 @@ class HMSoftwareUpdate extends Struct<HMSoftwareUpdate> {
     Pointer<HMSoftwareUpdate> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("messageDestination"),
     );
@@ -24983,7 +24200,7 @@ class HMSoftwareUpdate extends Struct<HMSoftwareUpdate> {
     Pointer<HMSoftwareUpdate> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("messageReceiveQueue"),
     );
@@ -24993,7 +24210,7 @@ class HMSoftwareUpdate extends Struct<HMSoftwareUpdate> {
     Pointer<HMSoftwareUpdate> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("messageTargetUUID"),
     );
@@ -25003,7 +24220,7 @@ class HMSoftwareUpdate extends Struct<HMSoftwareUpdate> {
     Pointer<HMSoftwareUpdate> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("requestDocumentation"),
     );
@@ -25014,7 +24231,7 @@ class HMSoftwareUpdate extends Struct<HMSoftwareUpdate> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setAccessory:"),
       arg,
@@ -25026,7 +24243,7 @@ class HMSoftwareUpdate extends Struct<HMSoftwareUpdate> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setContext:"),
       arg,
@@ -25038,7 +24255,7 @@ class HMSoftwareUpdate extends Struct<HMSoftwareUpdate> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setDelegate:"),
       arg,
@@ -25050,7 +24267,7 @@ class HMSoftwareUpdate extends Struct<HMSoftwareUpdate> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setDocumentation:"),
       arg,
@@ -25062,7 +24279,7 @@ class HMSoftwareUpdate extends Struct<HMSoftwareUpdate> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setDocumentationMetadata:"),
       arg,
@@ -25074,7 +24291,7 @@ class HMSoftwareUpdate extends Struct<HMSoftwareUpdate> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setIdentifier:"),
       arg,
@@ -25086,7 +24303,7 @@ class HMSoftwareUpdate extends Struct<HMSoftwareUpdate> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int64_returns_void(
+    _call_ptr_ptr_Int64_returns_void(
       _self,
       _objc.getSelector("setState:"),
       arg,
@@ -25097,7 +24314,7 @@ class HMSoftwareUpdate extends Struct<HMSoftwareUpdate> {
     Pointer<HMSoftwareUpdate> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int64(
+    return _call_ptr_ptr_returns_Int64(
       _self,
       _objc.getSelector("state"),
     );
@@ -25107,7 +24324,7 @@ class HMSoftwareUpdate extends Struct<HMSoftwareUpdate> {
     Pointer<HMSoftwareUpdate> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("uniqueIdentifier"),
     );
@@ -25119,7 +24336,7 @@ class HMSoftwareUpdate extends Struct<HMSoftwareUpdate> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("updateDocumentationMetadata:completionHandler:"),
       arg,
@@ -25133,7 +24350,7 @@ class HMSoftwareUpdate extends Struct<HMSoftwareUpdate> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int64_p_returns_void(
+    _call_ptr_ptr_Int64_ptr_returns_void(
       _self,
       _objc.getSelector("updateState:completionHandler:"),
       arg,
@@ -25145,16 +24362,13 @@ class HMSoftwareUpdate extends Struct<HMSoftwareUpdate> {
     Pointer<HMSoftwareUpdate> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("version"),
     );
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMSoftwareUpdateController extends Struct<HMSoftwareUpdateController> {
   factory HMSoftwareUpdateController._() {
@@ -25171,7 +24385,7 @@ class HMSoftwareUpdateController extends Struct<HMSoftwareUpdateController> {
     Pointer<HMSoftwareUpdateController> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("accessory"),
     );
@@ -25181,7 +24395,7 @@ class HMSoftwareUpdateController extends Struct<HMSoftwareUpdateController> {
     Pointer<HMSoftwareUpdateController> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("availableUpdate"),
     );
@@ -25192,7 +24406,7 @@ class HMSoftwareUpdateController extends Struct<HMSoftwareUpdateController> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("configureWithContext:"),
       arg,
@@ -25203,7 +24417,7 @@ class HMSoftwareUpdateController extends Struct<HMSoftwareUpdateController> {
     Pointer<HMSoftwareUpdateController> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("context"),
     );
@@ -25213,7 +24427,7 @@ class HMSoftwareUpdateController extends Struct<HMSoftwareUpdateController> {
     Pointer<HMSoftwareUpdateController> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("delegate"),
     );
@@ -25224,7 +24438,7 @@ class HMSoftwareUpdateController extends Struct<HMSoftwareUpdateController> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("fetchAvailableUpdateWithCompletionHandler:"),
       arg,
@@ -25235,7 +24449,7 @@ class HMSoftwareUpdateController extends Struct<HMSoftwareUpdateController> {
     Pointer<HMSoftwareUpdateController> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("hash"),
     );
@@ -25245,7 +24459,7 @@ class HMSoftwareUpdateController extends Struct<HMSoftwareUpdateController> {
     Pointer<HMSoftwareUpdateController> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("init"),
     );
@@ -25256,7 +24470,7 @@ class HMSoftwareUpdateController extends Struct<HMSoftwareUpdateController> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithAccessory:"),
       arg,
@@ -25267,7 +24481,7 @@ class HMSoftwareUpdateController extends Struct<HMSoftwareUpdateController> {
     Pointer<HMSoftwareUpdateController> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isControllable"),
     );
@@ -25278,7 +24492,7 @@ class HMSoftwareUpdateController extends Struct<HMSoftwareUpdateController> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isEqual:"),
       arg,
@@ -25289,7 +24503,7 @@ class HMSoftwareUpdateController extends Struct<HMSoftwareUpdateController> {
     Pointer<HMSoftwareUpdateController> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("logIdentifier"),
     );
@@ -25299,7 +24513,7 @@ class HMSoftwareUpdateController extends Struct<HMSoftwareUpdateController> {
     Pointer<HMSoftwareUpdateController> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("messageDestination"),
     );
@@ -25309,7 +24523,7 @@ class HMSoftwareUpdateController extends Struct<HMSoftwareUpdateController> {
     Pointer<HMSoftwareUpdateController> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("messageReceiveQueue"),
     );
@@ -25319,7 +24533,7 @@ class HMSoftwareUpdateController extends Struct<HMSoftwareUpdateController> {
     Pointer<HMSoftwareUpdateController> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("messageTargetUUID"),
     );
@@ -25330,7 +24544,7 @@ class HMSoftwareUpdateController extends Struct<HMSoftwareUpdateController> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setAccessory:"),
       arg,
@@ -25342,7 +24556,7 @@ class HMSoftwareUpdateController extends Struct<HMSoftwareUpdateController> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setAvailableUpdate:"),
       arg,
@@ -25354,7 +24568,7 @@ class HMSoftwareUpdateController extends Struct<HMSoftwareUpdateController> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setContext:"),
       arg,
@@ -25366,7 +24580,7 @@ class HMSoftwareUpdateController extends Struct<HMSoftwareUpdateController> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setDelegate:"),
       arg,
@@ -25379,7 +24593,7 @@ class HMSoftwareUpdateController extends Struct<HMSoftwareUpdateController> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("startUpdate:completionHandler:"),
       arg,
@@ -25391,16 +24605,13 @@ class HMSoftwareUpdateController extends Struct<HMSoftwareUpdateController> {
     Pointer<HMSoftwareUpdateController> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("uniqueIdentifier"),
     );
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMSoftwareUpdateDocumentation
     extends Struct<HMSoftwareUpdateDocumentation> {
@@ -25418,7 +24629,7 @@ class HMSoftwareUpdateDocumentation
     Pointer<HMSoftwareUpdateDocumentation> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("debugDescription"),
     );
@@ -25428,7 +24639,7 @@ class HMSoftwareUpdateDocumentation
     Pointer<HMSoftwareUpdateDocumentation> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("description"),
     );
@@ -25439,7 +24650,7 @@ class HMSoftwareUpdateDocumentation
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("encodeWithCoder:"),
       arg,
@@ -25450,7 +24661,7 @@ class HMSoftwareUpdateDocumentation
     Pointer<HMSoftwareUpdateDocumentation> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("init"),
     );
@@ -25461,7 +24672,7 @@ class HMSoftwareUpdateDocumentation
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithCoder:"),
       arg,
@@ -25476,7 +24687,7 @@ class HMSoftwareUpdateDocumentation
     @required Pointer licenseAgreementVersion,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector(
           "initWithReleaseNotesSummary:releaseNotes:licenseAgreement:licenseAgreementVersion:"),
@@ -25491,7 +24702,7 @@ class HMSoftwareUpdateDocumentation
     Pointer<HMSoftwareUpdateDocumentation> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("licenseAgreement"),
     );
@@ -25501,7 +24712,7 @@ class HMSoftwareUpdateDocumentation
     Pointer<HMSoftwareUpdateDocumentation> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("licenseAgreementVersion"),
     );
@@ -25511,7 +24722,7 @@ class HMSoftwareUpdateDocumentation
     Pointer<HMSoftwareUpdateDocumentation> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("releaseNotes"),
     );
@@ -25521,16 +24732,13 @@ class HMSoftwareUpdateDocumentation
     Pointer<HMSoftwareUpdateDocumentation> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("releaseNotesSummary"),
     );
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMSoftwareUpdateDocumentationMetadata
     extends Struct<HMSoftwareUpdateDocumentationMetadata> {
@@ -25548,21 +24756,9 @@ class HMSoftwareUpdateDocumentationMetadata
     Pointer<HMSoftwareUpdateDocumentationMetadata> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("URL"),
-    );
-  }
-
-  static Pointer copyWithZone(
-    Pointer<HMSoftwareUpdateDocumentationMetadata> _self,
-    Pointer<Pointer> arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
-      _self,
-      _objc.getSelector("copyWithZone:"),
-      arg,
     );
   }
 
@@ -25570,7 +24766,7 @@ class HMSoftwareUpdateDocumentationMetadata
     Pointer<HMSoftwareUpdateDocumentationMetadata> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("description"),
     );
@@ -25580,7 +24776,7 @@ class HMSoftwareUpdateDocumentationMetadata
     Pointer<HMSoftwareUpdateDocumentationMetadata> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("digest"),
     );
@@ -25591,7 +24787,7 @@ class HMSoftwareUpdateDocumentationMetadata
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("encodeWithCoder:"),
       arg,
@@ -25602,7 +24798,7 @@ class HMSoftwareUpdateDocumentationMetadata
     Pointer<HMSoftwareUpdateDocumentationMetadata> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("hash"),
     );
@@ -25612,7 +24808,7 @@ class HMSoftwareUpdateDocumentationMetadata
     Pointer<HMSoftwareUpdateDocumentationMetadata> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("init"),
     );
@@ -25623,7 +24819,7 @@ class HMSoftwareUpdateDocumentationMetadata
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithCoder:"),
       arg,
@@ -25636,7 +24832,7 @@ class HMSoftwareUpdateDocumentationMetadata
     @required Pointer digest,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithURL:digest:"),
       arg,
@@ -25649,7 +24845,7 @@ class HMSoftwareUpdateDocumentationMetadata
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isEqual:"),
       arg,
@@ -25657,9 +24853,6 @@ class HMSoftwareUpdateDocumentationMetadata
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMSoftwareUpdateManager extends Struct<HMSoftwareUpdateManager> {
   factory HMSoftwareUpdateManager._() {
@@ -25676,7 +24869,7 @@ class HMSoftwareUpdateManager extends Struct<HMSoftwareUpdateManager> {
     Pointer<HMSoftwareUpdateManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("availableUpdate"),
     );
@@ -25686,7 +24879,7 @@ class HMSoftwareUpdateManager extends Struct<HMSoftwareUpdateManager> {
     Pointer<HMSoftwareUpdateManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("context"),
     );
@@ -25696,7 +24889,7 @@ class HMSoftwareUpdateManager extends Struct<HMSoftwareUpdateManager> {
     Pointer<HMSoftwareUpdateManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("dealloc"),
     );
@@ -25706,7 +24899,7 @@ class HMSoftwareUpdateManager extends Struct<HMSoftwareUpdateManager> {
     Pointer<HMSoftwareUpdateManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("delegate"),
     );
@@ -25716,7 +24909,7 @@ class HMSoftwareUpdateManager extends Struct<HMSoftwareUpdateManager> {
     Pointer<HMSoftwareUpdateManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("identifier"),
     );
@@ -25726,7 +24919,7 @@ class HMSoftwareUpdateManager extends Struct<HMSoftwareUpdateManager> {
     Pointer<HMSoftwareUpdateManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("init"),
     );
@@ -25736,7 +24929,7 @@ class HMSoftwareUpdateManager extends Struct<HMSoftwareUpdateManager> {
     Pointer<HMSoftwareUpdateManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isStarted"),
     );
@@ -25746,7 +24939,7 @@ class HMSoftwareUpdateManager extends Struct<HMSoftwareUpdateManager> {
     Pointer<HMSoftwareUpdateManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("messageDestination"),
     );
@@ -25756,7 +24949,7 @@ class HMSoftwareUpdateManager extends Struct<HMSoftwareUpdateManager> {
     Pointer<HMSoftwareUpdateManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("messageReceiveQueue"),
     );
@@ -25766,7 +24959,7 @@ class HMSoftwareUpdateManager extends Struct<HMSoftwareUpdateManager> {
     Pointer<HMSoftwareUpdateManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("messageTargetUUID"),
     );
@@ -25776,7 +24969,7 @@ class HMSoftwareUpdateManager extends Struct<HMSoftwareUpdateManager> {
     Pointer<HMSoftwareUpdateManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("reconnect"),
     );
@@ -25787,7 +24980,7 @@ class HMSoftwareUpdateManager extends Struct<HMSoftwareUpdateManager> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setAvailableUpdate:"),
       arg,
@@ -25799,7 +24992,7 @@ class HMSoftwareUpdateManager extends Struct<HMSoftwareUpdateManager> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setDelegate:"),
       arg,
@@ -25811,7 +25004,7 @@ class HMSoftwareUpdateManager extends Struct<HMSoftwareUpdateManager> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setStarted:"),
       arg,
@@ -25823,7 +25016,7 @@ class HMSoftwareUpdateManager extends Struct<HMSoftwareUpdateManager> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("startWithCompletionHandler:"),
       arg,
@@ -25834,7 +25027,7 @@ class HMSoftwareUpdateManager extends Struct<HMSoftwareUpdateManager> {
     Pointer<HMSoftwareUpdateManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("stop"),
     );
@@ -25846,7 +25039,7 @@ class HMSoftwareUpdateManager extends Struct<HMSoftwareUpdateManager> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("updateAvailableUpdate:completionHandler:"),
       arg,
@@ -25855,9 +25048,6 @@ class HMSoftwareUpdateManager extends Struct<HMSoftwareUpdateManager> {
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMSymptom extends Struct<HMSymptom> {
   factory HMSymptom._() {
@@ -25872,7 +25062,7 @@ class HMSymptom extends Struct<HMSymptom> {
     Pointer<HMSymptom> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("description"),
     );
@@ -25883,7 +25073,7 @@ class HMSymptom extends Struct<HMSymptom> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("encodeWithCoder:"),
       arg,
@@ -25894,7 +25084,7 @@ class HMSymptom extends Struct<HMSymptom> {
     Pointer<HMSymptom> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("hash"),
     );
@@ -25905,7 +25095,7 @@ class HMSymptom extends Struct<HMSymptom> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithCoder:"),
       arg,
@@ -25917,7 +25107,7 @@ class HMSymptom extends Struct<HMSymptom> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int64_returns_p(
+    return _call_ptr_ptr_Int64_returns_ptr(
       _self,
       _objc.getSelector("initWithType:"),
       arg,
@@ -25929,7 +25119,7 @@ class HMSymptom extends Struct<HMSymptom> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isEqual:"),
       arg,
@@ -25940,7 +25130,7 @@ class HMSymptom extends Struct<HMSymptom> {
     Pointer<HMSymptom> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("localizedTitle"),
     );
@@ -25950,16 +25140,13 @@ class HMSymptom extends Struct<HMSymptom> {
     Pointer<HMSymptom> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int64(
+    return _call_ptr_ptr_returns_Int64(
       _self,
       _objc.getSelector("type"),
     );
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMSymptomsHandler extends Struct<HMSymptomsHandler> {
   factory HMSymptomsHandler._() {
@@ -25974,7 +25161,7 @@ class HMSymptomsHandler extends Struct<HMSymptomsHandler> {
     Pointer<HMSymptomsHandler> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("canInitiateFix"),
     );
@@ -25984,7 +25171,7 @@ class HMSymptomsHandler extends Struct<HMSymptomsHandler> {
     Pointer<HMSymptomsHandler> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("context"),
     );
@@ -25994,7 +25181,7 @@ class HMSymptomsHandler extends Struct<HMSymptomsHandler> {
     Pointer<HMSymptomsHandler> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("currentSymptoms"),
     );
@@ -26004,7 +25191,7 @@ class HMSymptomsHandler extends Struct<HMSymptomsHandler> {
     Pointer<HMSymptomsHandler> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("delegate"),
     );
@@ -26015,7 +25202,7 @@ class HMSymptomsHandler extends Struct<HMSymptomsHandler> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("encodeWithCoder:"),
       arg,
@@ -26026,7 +25213,7 @@ class HMSymptomsHandler extends Struct<HMSymptomsHandler> {
     Pointer<HMSymptomsHandler> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int64(
+    return _call_ptr_ptr_returns_Int64(
       _self,
       _objc.getSelector("fixState"),
     );
@@ -26036,7 +25223,7 @@ class HMSymptomsHandler extends Struct<HMSymptomsHandler> {
     Pointer<HMSymptomsHandler> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("init"),
     );
@@ -26047,7 +25234,7 @@ class HMSymptomsHandler extends Struct<HMSymptomsHandler> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithCoder:"),
       arg,
@@ -26059,7 +25246,7 @@ class HMSymptomsHandler extends Struct<HMSymptomsHandler> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithUUID:"),
       arg,
@@ -26071,7 +25258,7 @@ class HMSymptomsHandler extends Struct<HMSymptomsHandler> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("initiateFixWithCompletionHandler:"),
       arg,
@@ -26082,7 +25269,7 @@ class HMSymptomsHandler extends Struct<HMSymptomsHandler> {
     Pointer<HMSymptomsHandler> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("logIdentifier"),
     );
@@ -26092,7 +25279,7 @@ class HMSymptomsHandler extends Struct<HMSymptomsHandler> {
     Pointer<HMSymptomsHandler> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("messageReceiveQueue"),
     );
@@ -26102,7 +25289,7 @@ class HMSymptomsHandler extends Struct<HMSymptomsHandler> {
     Pointer<HMSymptomsHandler> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("messageTargetUUID"),
     );
@@ -26112,7 +25299,7 @@ class HMSymptomsHandler extends Struct<HMSymptomsHandler> {
     Pointer<HMSymptomsHandler> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("registerForMessages"),
     );
@@ -26123,7 +25310,7 @@ class HMSymptomsHandler extends Struct<HMSymptomsHandler> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setContext:"),
       arg,
@@ -26135,7 +25322,7 @@ class HMSymptomsHandler extends Struct<HMSymptomsHandler> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setDelegate:"),
       arg,
@@ -26147,7 +25334,7 @@ class HMSymptomsHandler extends Struct<HMSymptomsHandler> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setSFDeviceIdentifier:"),
       arg,
@@ -26158,7 +25345,7 @@ class HMSymptomsHandler extends Struct<HMSymptomsHandler> {
     Pointer<HMSymptomsHandler> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("sfDeviceIdentifier"),
     );
@@ -26168,7 +25355,7 @@ class HMSymptomsHandler extends Struct<HMSymptomsHandler> {
     Pointer<HMSymptomsHandler> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("symptoms"),
     );
@@ -26178,7 +25365,7 @@ class HMSymptomsHandler extends Struct<HMSymptomsHandler> {
     Pointer<HMSymptomsHandler> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("uniqueIdentifier"),
     );
@@ -26188,16 +25375,13 @@ class HMSymptomsHandler extends Struct<HMSymptomsHandler> {
     Pointer<HMSymptomsHandler> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("uuid"),
     );
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMSyncAnisetteDataRequest extends Struct<HMSyncAnisetteDataRequest> {
   factory HMSyncAnisetteDataRequest._() {
@@ -26214,7 +25398,7 @@ class HMSyncAnisetteDataRequest extends Struct<HMSyncAnisetteDataRequest> {
     Pointer<HMSyncAnisetteDataRequest> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("description"),
     );
@@ -26225,7 +25409,7 @@ class HMSyncAnisetteDataRequest extends Struct<HMSyncAnisetteDataRequest> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("encodeWithCoder:"),
       arg,
@@ -26237,7 +25421,7 @@ class HMSyncAnisetteDataRequest extends Struct<HMSyncAnisetteDataRequest> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithCoder:"),
       arg,
@@ -26248,7 +25432,7 @@ class HMSyncAnisetteDataRequest extends Struct<HMSyncAnisetteDataRequest> {
     Pointer<HMSyncAnisetteDataRequest> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("messageName"),
     );
@@ -26258,7 +25442,7 @@ class HMSyncAnisetteDataRequest extends Struct<HMSyncAnisetteDataRequest> {
     Pointer<HMSyncAnisetteDataRequest> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("messagePayload"),
     );
@@ -26269,7 +25453,7 @@ class HMSyncAnisetteDataRequest extends Struct<HMSyncAnisetteDataRequest> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setSimData:"),
       arg,
@@ -26280,7 +25464,7 @@ class HMSyncAnisetteDataRequest extends Struct<HMSyncAnisetteDataRequest> {
     Pointer<HMSyncAnisetteDataRequest> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("simData"),
     );
@@ -26290,16 +25474,13 @@ class HMSyncAnisetteDataRequest extends Struct<HMSyncAnisetteDataRequest> {
     Pointer<HMSyncAnisetteDataRequest> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("xpcMessageName"),
     );
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMSyncAnisetteDataResponse extends Struct<HMSyncAnisetteDataResponse> {
   factory HMSyncAnisetteDataResponse._() {
@@ -26316,7 +25497,7 @@ class HMSyncAnisetteDataResponse extends Struct<HMSyncAnisetteDataResponse> {
     Pointer<HMSyncAnisetteDataResponse> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("description"),
     );
@@ -26326,7 +25507,7 @@ class HMSyncAnisetteDataResponse extends Struct<HMSyncAnisetteDataResponse> {
     Pointer<HMSyncAnisetteDataResponse> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("didSucceed"),
     );
@@ -26337,7 +25518,7 @@ class HMSyncAnisetteDataResponse extends Struct<HMSyncAnisetteDataResponse> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("encodeWithCoder:"),
       arg,
@@ -26349,7 +25530,7 @@ class HMSyncAnisetteDataResponse extends Struct<HMSyncAnisetteDataResponse> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithCoder:"),
       arg,
@@ -26360,7 +25541,7 @@ class HMSyncAnisetteDataResponse extends Struct<HMSyncAnisetteDataResponse> {
     Pointer<HMSyncAnisetteDataResponse> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("messageName"),
     );
@@ -26370,7 +25551,7 @@ class HMSyncAnisetteDataResponse extends Struct<HMSyncAnisetteDataResponse> {
     Pointer<HMSyncAnisetteDataResponse> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("messagePayload"),
     );
@@ -26381,7 +25562,7 @@ class HMSyncAnisetteDataResponse extends Struct<HMSyncAnisetteDataResponse> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setDidSucceed:"),
       arg,
@@ -26392,16 +25573,13 @@ class HMSyncAnisetteDataResponse extends Struct<HMSyncAnisetteDataResponse> {
     Pointer<HMSyncAnisetteDataResponse> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("xpcMessageName"),
     );
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMTelevisionProfile extends Struct<HMTelevisionProfile> {
   factory HMTelevisionProfile._() {
@@ -26416,7 +25594,7 @@ class HMTelevisionProfile extends Struct<HMTelevisionProfile> {
     Pointer<HMTelevisionProfile> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("delegate"),
     );
@@ -26428,7 +25606,7 @@ class HMTelevisionProfile extends Struct<HMTelevisionProfile> {
     @required Pointer linkedServices,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithTelevisionService:linkedServices:"),
       arg,
@@ -26440,7 +25618,7 @@ class HMTelevisionProfile extends Struct<HMTelevisionProfile> {
     Pointer<HMTelevisionProfile> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("mediaSourceDisplayOrder"),
     );
@@ -26450,7 +25628,7 @@ class HMTelevisionProfile extends Struct<HMTelevisionProfile> {
     Pointer<HMTelevisionProfile> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("mediaSourceDisplayOrderModifiable"),
     );
@@ -26461,7 +25639,7 @@ class HMTelevisionProfile extends Struct<HMTelevisionProfile> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setDelegate:"),
       arg,
@@ -26473,7 +25651,7 @@ class HMTelevisionProfile extends Struct<HMTelevisionProfile> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("televisionProfileDidUpdateSourceDisplayOrder:"),
       arg,
@@ -26486,7 +25664,7 @@ class HMTelevisionProfile extends Struct<HMTelevisionProfile> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("updateMediaSourceDisplayOrder:completionHandler:"),
       arg,
@@ -26495,9 +25673,6 @@ class HMTelevisionProfile extends Struct<HMTelevisionProfile> {
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMTimeEvent extends Struct<HMTimeEvent> {
   factory HMTimeEvent._() {
@@ -26509,9 +25684,6 @@ class HMTimeEvent extends Struct<HMTimeEvent> {
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMTimerTrigger extends Struct<HMTimerTrigger> {
   factory HMTimerTrigger._() {
@@ -26527,7 +25699,7 @@ class HMTimerTrigger extends Struct<HMTimerTrigger> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("encodeWithCoder:"),
       arg,
@@ -26538,7 +25710,7 @@ class HMTimerTrigger extends Struct<HMTimerTrigger> {
     Pointer<HMTimerTrigger> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("fireDate"),
     );
@@ -26548,7 +25720,7 @@ class HMTimerTrigger extends Struct<HMTimerTrigger> {
     Pointer<HMTimerTrigger> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("init"),
     );
@@ -26559,14 +25731,14 @@ class HMTimerTrigger extends Struct<HMTimerTrigger> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithCoder:"),
       arg,
     );
   }
 
-  static Pointer initWithName$fireDate$timeZone$recurrence$recurrenceCalendar$(
+  static Pointer initWithName$fireDate$timeZone$recurrence$recurrenceCalendar(
     Pointer<HMTimerTrigger> _self,
     Pointer arg, {
     @required Pointer fireDate,
@@ -26575,7 +25747,7 @@ class HMTimerTrigger extends Struct<HMTimerTrigger> {
     @required Pointer recurrenceCalendar,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector(
           "initWithName:fireDate:timeZone:recurrence:recurrenceCalendar:"),
@@ -26587,7 +25759,7 @@ class HMTimerTrigger extends Struct<HMTimerTrigger> {
     );
   }
 
-  static Pointer initWithName$fireDate$timeZone$recurrences$(
+  static Pointer initWithName$fireDate$timeZone$recurrences(
     Pointer<HMTimerTrigger> _self,
     Pointer arg, {
     @required Pointer fireDate,
@@ -26595,7 +25767,7 @@ class HMTimerTrigger extends Struct<HMTimerTrigger> {
     @required Pointer recurrences,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithName:fireDate:timeZone:recurrences:"),
       arg,
@@ -26606,7 +25778,7 @@ class HMTimerTrigger extends Struct<HMTimerTrigger> {
   }
 
   static Pointer
-      initWithName$significantEvent$significantEventOffset$recurrences$(
+      initWithName$significantEvent$significantEventOffset$recurrences(
     Pointer<HMTimerTrigger> _self,
     Pointer arg, {
     @required Pointer significantEvent,
@@ -26614,7 +25786,7 @@ class HMTimerTrigger extends Struct<HMTimerTrigger> {
     @required Pointer recurrences,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector(
           "initWithName:significantEvent:significantEventOffset:recurrences:"),
@@ -26629,7 +25801,7 @@ class HMTimerTrigger extends Struct<HMTimerTrigger> {
     Pointer<HMTimerTrigger> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("recurrence"),
     );
@@ -26639,7 +25811,7 @@ class HMTimerTrigger extends Struct<HMTimerTrigger> {
     Pointer<HMTimerTrigger> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("recurrenceCalendar"),
     );
@@ -26649,7 +25821,7 @@ class HMTimerTrigger extends Struct<HMTimerTrigger> {
     Pointer<HMTimerTrigger> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("recurrences"),
     );
@@ -26660,7 +25832,7 @@ class HMTimerTrigger extends Struct<HMTimerTrigger> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setFireDate:"),
       arg,
@@ -26672,7 +25844,7 @@ class HMTimerTrigger extends Struct<HMTimerTrigger> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setRecurrence:"),
       arg,
@@ -26684,7 +25856,7 @@ class HMTimerTrigger extends Struct<HMTimerTrigger> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setRecurrences:"),
       arg,
@@ -26696,7 +25868,7 @@ class HMTimerTrigger extends Struct<HMTimerTrigger> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setSignificantEvent:"),
       arg,
@@ -26708,7 +25880,7 @@ class HMTimerTrigger extends Struct<HMTimerTrigger> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setSignificantEventOffset:"),
       arg,
@@ -26720,7 +25892,7 @@ class HMTimerTrigger extends Struct<HMTimerTrigger> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setTimeZone:"),
       arg,
@@ -26731,7 +25903,7 @@ class HMTimerTrigger extends Struct<HMTimerTrigger> {
     Pointer<HMTimerTrigger> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("significantEvent"),
     );
@@ -26741,7 +25913,7 @@ class HMTimerTrigger extends Struct<HMTimerTrigger> {
     Pointer<HMTimerTrigger> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("significantEventOffset"),
     );
@@ -26751,7 +25923,7 @@ class HMTimerTrigger extends Struct<HMTimerTrigger> {
     Pointer<HMTimerTrigger> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("timeZone"),
     );
@@ -26763,7 +25935,7 @@ class HMTimerTrigger extends Struct<HMTimerTrigger> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("updateFireDate:completionHandler:"),
       arg,
@@ -26777,7 +25949,7 @@ class HMTimerTrigger extends Struct<HMTimerTrigger> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("updateRecurrence:completionHandler:"),
       arg,
@@ -26791,7 +25963,7 @@ class HMTimerTrigger extends Struct<HMTimerTrigger> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("updateRecurrences:completionHandler:"),
       arg,
@@ -26805,7 +25977,7 @@ class HMTimerTrigger extends Struct<HMTimerTrigger> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("updateSignificantEvent:completionHandler:"),
       arg,
@@ -26819,7 +25991,7 @@ class HMTimerTrigger extends Struct<HMTimerTrigger> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("updateSignificantEventOffset:completionHandler:"),
       arg,
@@ -26833,7 +26005,7 @@ class HMTimerTrigger extends Struct<HMTimerTrigger> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("updateTimeZone:completionHandler:"),
       arg,
@@ -26842,9 +26014,6 @@ class HMTimerTrigger extends Struct<HMTimerTrigger> {
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMTrigger extends Struct<HMTrigger> {
   factory HMTrigger._() {
@@ -26859,7 +26028,7 @@ class HMTrigger extends Struct<HMTrigger> {
     Pointer<HMTrigger> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("actionSets"),
     );
@@ -26871,7 +26040,7 @@ class HMTrigger extends Struct<HMTrigger> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("addActionSet:completionHandler:"),
       arg,
@@ -26884,7 +26053,7 @@ class HMTrigger extends Struct<HMTrigger> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("addActionSetWithCompletionHandler:"),
       arg,
@@ -26895,7 +26064,7 @@ class HMTrigger extends Struct<HMTrigger> {
     Pointer<HMTrigger> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("compatibleWithApp"),
     );
@@ -26905,7 +26074,7 @@ class HMTrigger extends Struct<HMTrigger> {
     Pointer<HMTrigger> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("context"),
     );
@@ -26915,7 +26084,7 @@ class HMTrigger extends Struct<HMTrigger> {
     Pointer<HMTrigger> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("creator"),
     );
@@ -26925,7 +26094,7 @@ class HMTrigger extends Struct<HMTrigger> {
     Pointer<HMTrigger> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("creatorDevice"),
     );
@@ -26935,7 +26104,7 @@ class HMTrigger extends Struct<HMTrigger> {
     Pointer<HMTrigger> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("currentActionSets"),
     );
@@ -26945,7 +26114,7 @@ class HMTrigger extends Struct<HMTrigger> {
     Pointer<HMTrigger> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("dealloc"),
     );
@@ -26957,7 +26126,7 @@ class HMTrigger extends Struct<HMTrigger> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_p_returns_void(
+    _call_ptr_ptr_Int8_ptr_returns_void(
       _self,
       _objc.getSelector("enable:completionHandler:"),
       arg,
@@ -26970,7 +26139,7 @@ class HMTrigger extends Struct<HMTrigger> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("encodeWithCoder:"),
       arg,
@@ -26981,7 +26150,7 @@ class HMTrigger extends Struct<HMTrigger> {
     Pointer<HMTrigger> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("home"),
     );
@@ -26992,7 +26161,7 @@ class HMTrigger extends Struct<HMTrigger> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithCoder:"),
       arg,
@@ -27004,7 +26173,7 @@ class HMTrigger extends Struct<HMTrigger> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithName:"),
       arg,
@@ -27015,7 +26184,7 @@ class HMTrigger extends Struct<HMTrigger> {
     Pointer<HMTrigger> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isEnabled"),
     );
@@ -27025,7 +26194,7 @@ class HMTrigger extends Struct<HMTrigger> {
     Pointer<HMTrigger> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("lastFireDate"),
     );
@@ -27035,7 +26204,7 @@ class HMTrigger extends Struct<HMTrigger> {
     Pointer<HMTrigger> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("messageReceiveQueue"),
     );
@@ -27045,7 +26214,7 @@ class HMTrigger extends Struct<HMTrigger> {
     Pointer<HMTrigger> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("messageTargetUUID"),
     );
@@ -27055,7 +26224,7 @@ class HMTrigger extends Struct<HMTrigger> {
     Pointer<HMTrigger> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("name"),
     );
@@ -27065,7 +26234,7 @@ class HMTrigger extends Struct<HMTrigger> {
     Pointer<HMTrigger> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("owner"),
     );
@@ -27075,7 +26244,7 @@ class HMTrigger extends Struct<HMTrigger> {
     Pointer<HMTrigger> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("ownerDevice"),
     );
@@ -27087,7 +26256,7 @@ class HMTrigger extends Struct<HMTrigger> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("removeActionSet:completionHandler:"),
       arg,
@@ -27100,7 +26269,7 @@ class HMTrigger extends Struct<HMTrigger> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setCurrentActionSets:"),
       arg,
@@ -27112,7 +26281,7 @@ class HMTrigger extends Struct<HMTrigger> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setEnabled:"),
       arg,
@@ -27124,7 +26293,7 @@ class HMTrigger extends Struct<HMTrigger> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setHome:"),
       arg,
@@ -27136,7 +26305,7 @@ class HMTrigger extends Struct<HMTrigger> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setLastFireDate:"),
       arg,
@@ -27148,7 +26317,7 @@ class HMTrigger extends Struct<HMTrigger> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setName:"),
       arg,
@@ -27160,7 +26329,7 @@ class HMTrigger extends Struct<HMTrigger> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setOwner:"),
       arg,
@@ -27172,7 +26341,7 @@ class HMTrigger extends Struct<HMTrigger> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setOwnerDevice:"),
       arg,
@@ -27184,7 +26353,7 @@ class HMTrigger extends Struct<HMTrigger> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setUuid:"),
       arg,
@@ -27195,7 +26364,7 @@ class HMTrigger extends Struct<HMTrigger> {
     Pointer<HMTrigger> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("uniqueIdentifier"),
     );
@@ -27207,7 +26376,7 @@ class HMTrigger extends Struct<HMTrigger> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("updateName:completionHandler:"),
       arg,
@@ -27219,16 +26388,13 @@ class HMTrigger extends Struct<HMTrigger> {
     Pointer<HMTrigger> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("uuid"),
     );
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMUser extends Struct<HMUser> {
   factory HMUser._() {
@@ -27243,7 +26409,7 @@ class HMUser extends Struct<HMUser> {
     Pointer<HMUser> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("assistantAccessControl"),
     );
@@ -27254,7 +26420,7 @@ class HMUser extends Struct<HMUser> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("assistantAccessControlForHome:"),
       arg,
@@ -27265,7 +26431,7 @@ class HMUser extends Struct<HMUser> {
     Pointer<HMUser> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("context"),
     );
@@ -27275,7 +26441,7 @@ class HMUser extends Struct<HMUser> {
     Pointer<HMUser> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("dealloc"),
     );
@@ -27285,7 +26451,7 @@ class HMUser extends Struct<HMUser> {
     Pointer<HMUser> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("delegate"),
     );
@@ -27296,7 +26462,7 @@ class HMUser extends Struct<HMUser> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("encodeWithCoder:"),
       arg,
@@ -27307,7 +26473,7 @@ class HMUser extends Struct<HMUser> {
     Pointer<HMUser> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("home"),
     );
@@ -27317,7 +26483,7 @@ class HMUser extends Struct<HMUser> {
     Pointer<HMUser> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("homeAccessControl"),
     );
@@ -27327,7 +26493,7 @@ class HMUser extends Struct<HMUser> {
     Pointer<HMUser> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("init"),
     );
@@ -27338,7 +26504,7 @@ class HMUser extends Struct<HMUser> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithCoder:"),
       arg,
@@ -27354,7 +26520,7 @@ class HMUser extends Struct<HMUser> {
     @required Pointer accessControls,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithUserID:name:uuid:home:accessControls:"),
       arg,
@@ -27369,7 +26535,7 @@ class HMUser extends Struct<HMUser> {
     Pointer<HMUser> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isCurrentUser"),
     );
@@ -27379,7 +26545,7 @@ class HMUser extends Struct<HMUser> {
     Pointer<HMUser> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("logIdentifier"),
     );
@@ -27391,7 +26557,7 @@ class HMUser extends Struct<HMUser> {
     @required Pointer operations,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector(
           "mergePendingAccessoryInvitationsWithOutgoingInvitation:operations:"),
@@ -27404,7 +26570,7 @@ class HMUser extends Struct<HMUser> {
     Pointer<HMUser> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("messageDestination"),
     );
@@ -27414,7 +26580,7 @@ class HMUser extends Struct<HMUser> {
     Pointer<HMUser> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("messageReceiveQueue"),
     );
@@ -27424,7 +26590,7 @@ class HMUser extends Struct<HMUser> {
     Pointer<HMUser> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("messageTargetUUID"),
     );
@@ -27434,7 +26600,7 @@ class HMUser extends Struct<HMUser> {
     Pointer<HMUser> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("name"),
     );
@@ -27444,7 +26610,7 @@ class HMUser extends Struct<HMUser> {
     Pointer<HMUser> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("pairingIdentity"),
     );
@@ -27455,7 +26621,7 @@ class HMUser extends Struct<HMUser> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("pairingIdentityWithCompletionHandler:"),
       arg,
@@ -27466,7 +26632,7 @@ class HMUser extends Struct<HMUser> {
     Pointer<HMUser> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("pendingAccessoryInvitations"),
     );
@@ -27477,7 +26643,7 @@ class HMUser extends Struct<HMUser> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setAssistantAccessControl:"),
       arg,
@@ -27489,7 +26655,7 @@ class HMUser extends Struct<HMUser> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setContext:"),
       arg,
@@ -27501,7 +26667,7 @@ class HMUser extends Struct<HMUser> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setCurrentUser:"),
       arg,
@@ -27513,7 +26679,7 @@ class HMUser extends Struct<HMUser> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setDelegate:"),
       arg,
@@ -27525,7 +26691,7 @@ class HMUser extends Struct<HMUser> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setHome:"),
       arg,
@@ -27537,7 +26703,7 @@ class HMUser extends Struct<HMUser> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setHomeAccessControl:"),
       arg,
@@ -27549,7 +26715,7 @@ class HMUser extends Struct<HMUser> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setName:"),
       arg,
@@ -27561,7 +26727,7 @@ class HMUser extends Struct<HMUser> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setPairingIdentity:"),
       arg,
@@ -27573,7 +26739,7 @@ class HMUser extends Struct<HMUser> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc
           .getSelector("setPendingAccessoryInvitationsWithOutgoingInvitation:"),
@@ -27586,7 +26752,7 @@ class HMUser extends Struct<HMUser> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setUserID:"),
       arg,
@@ -27597,7 +26763,7 @@ class HMUser extends Struct<HMUser> {
     Pointer<HMUser> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("uniqueIdentifier"),
     );
@@ -27610,7 +26776,7 @@ class HMUser extends Struct<HMUser> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector(
           "updateAssistantAccessControl:forHome:completionHandler:"),
@@ -27626,7 +26792,7 @@ class HMUser extends Struct<HMUser> {
     @required int remoteAccess,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_Int8_returns_void(
+    _call_ptr_ptr_Int8_Int8_returns_void(
       _self,
       _objc.getSelector("updateHomeAccessControl:remoteAccess:"),
       arg,
@@ -27640,7 +26806,7 @@ class HMUser extends Struct<HMUser> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Uint64_p_returns_void(
+    _call_ptr_ptr_Uint64_ptr_returns_void(
       _self,
       _objc.getSelector("updatePresenceAuthorizationStatus:completionHandler:"),
       arg,
@@ -27652,7 +26818,7 @@ class HMUser extends Struct<HMUser> {
     Pointer<HMUser> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("userID"),
     );
@@ -27662,16 +26828,13 @@ class HMUser extends Struct<HMUser> {
     Pointer<HMUser> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("uuid"),
     );
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMUserInviteInformation extends Struct<HMUserInviteInformation> {
   factory HMUserInviteInformation._() {
@@ -27688,7 +26851,7 @@ class HMUserInviteInformation extends Struct<HMUserInviteInformation> {
     Pointer<HMUserInviteInformation> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("init"),
     );
@@ -27701,7 +26864,7 @@ class HMUserInviteInformation extends Struct<HMUserInviteInformation> {
     @required int remoteAccess,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_Int8_Int8_returns_p(
+    return _call_ptr_ptr_ptr_Int8_Int8_returns_ptr(
       _self,
       _objc.getSelector("initWithUser:administrator:remoteAccess:"),
       arg,
@@ -27714,7 +26877,7 @@ class HMUserInviteInformation extends Struct<HMUserInviteInformation> {
     Pointer<HMUserInviteInformation> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isAdministrator"),
     );
@@ -27724,7 +26887,7 @@ class HMUserInviteInformation extends Struct<HMUserInviteInformation> {
     Pointer<HMUserInviteInformation> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isRemoteAccessAllowed"),
     );
@@ -27734,16 +26897,13 @@ class HMUserInviteInformation extends Struct<HMUserInviteInformation> {
     Pointer<HMUserInviteInformation> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("userID"),
     );
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMUserPresenceAuthorization extends Struct<HMUserPresenceAuthorization> {
   factory HMUserPresenceAuthorization._() {
@@ -27761,7 +26921,7 @@ class HMUserPresenceAuthorization extends Struct<HMUserPresenceAuthorization> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("addToCoder:"),
       arg,
@@ -27773,7 +26933,7 @@ class HMUserPresenceAuthorization extends Struct<HMUserPresenceAuthorization> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("addToPayload:"),
       arg,
@@ -27784,7 +26944,7 @@ class HMUserPresenceAuthorization extends Struct<HMUserPresenceAuthorization> {
     Pointer<HMUserPresenceAuthorization> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("description"),
     );
@@ -27795,7 +26955,7 @@ class HMUserPresenceAuthorization extends Struct<HMUserPresenceAuthorization> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithNumber:"),
       arg,
@@ -27807,7 +26967,7 @@ class HMUserPresenceAuthorization extends Struct<HMUserPresenceAuthorization> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isEqual:"),
       arg,
@@ -27818,7 +26978,7 @@ class HMUserPresenceAuthorization extends Struct<HMUserPresenceAuthorization> {
     Pointer<HMUserPresenceAuthorization> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("number"),
     );
@@ -27828,16 +26988,13 @@ class HMUserPresenceAuthorization extends Struct<HMUserPresenceAuthorization> {
     Pointer<HMUserPresenceAuthorization> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("value"),
     );
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMUserPresenceCompute extends Struct<HMUserPresenceCompute> {
   factory HMUserPresenceCompute._() {
@@ -27855,7 +27012,7 @@ class HMUserPresenceCompute extends Struct<HMUserPresenceCompute> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("addToCoder:"),
       arg,
@@ -27867,7 +27024,7 @@ class HMUserPresenceCompute extends Struct<HMUserPresenceCompute> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("addToPayload:"),
       arg,
@@ -27878,7 +27035,7 @@ class HMUserPresenceCompute extends Struct<HMUserPresenceCompute> {
     Pointer<HMUserPresenceCompute> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("description"),
     );
@@ -27889,7 +27046,7 @@ class HMUserPresenceCompute extends Struct<HMUserPresenceCompute> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithNumber:"),
       arg,
@@ -27901,7 +27058,7 @@ class HMUserPresenceCompute extends Struct<HMUserPresenceCompute> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isEqual:"),
       arg,
@@ -27912,7 +27069,7 @@ class HMUserPresenceCompute extends Struct<HMUserPresenceCompute> {
     Pointer<HMUserPresenceCompute> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("number"),
     );
@@ -27922,16 +27079,13 @@ class HMUserPresenceCompute extends Struct<HMUserPresenceCompute> {
     Pointer<HMUserPresenceCompute> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("value"),
     );
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMXPCClient extends Struct<HMXPCClient> {
   factory HMXPCClient._() {
@@ -27946,7 +27100,7 @@ class HMXPCClient extends Struct<HMXPCClient> {
     Pointer<HMXPCClient> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("callbackQueue"),
     );
@@ -27956,7 +27110,7 @@ class HMXPCClient extends Struct<HMXPCClient> {
     Pointer<HMXPCClient> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("connection"),
     );
@@ -27966,7 +27120,7 @@ class HMXPCClient extends Struct<HMXPCClient> {
     Pointer<HMXPCClient> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("connectionValid"),
     );
@@ -27976,13 +27130,13 @@ class HMXPCClient extends Struct<HMXPCClient> {
     Pointer<HMXPCClient> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("dealloc"),
     );
   }
 
-  static void handleMessageWithName$messageIdentifier$messagePayload$target$(
+  static void handleMessageWithName$messageIdentifier$messagePayload$target(
     Pointer<HMXPCClient> _self,
     Pointer arg, {
     @required Pointer messageIdentifier,
@@ -27990,7 +27144,7 @@ class HMXPCClient extends Struct<HMXPCClient> {
     @required Pointer target,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector(
           "handleMessageWithName:messageIdentifier:messagePayload:target:"),
@@ -28002,7 +27156,7 @@ class HMXPCClient extends Struct<HMXPCClient> {
   }
 
   static void
-      handleMessageWithName$messageIdentifier$messagePayload$target$responseHandler$(
+      handleMessageWithName$messageIdentifier$messagePayload$target$responseHandler(
     Pointer<HMXPCClient> _self,
     Pointer arg, {
     @required Pointer messageIdentifier,
@@ -28011,7 +27165,7 @@ class HMXPCClient extends Struct<HMXPCClient> {
     @required Pointer responseHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector(
           "handleMessageWithName:messageIdentifier:messagePayload:target:responseHandler:"),
@@ -28027,7 +27181,7 @@ class HMXPCClient extends Struct<HMXPCClient> {
     Pointer<HMXPCClient> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("init"),
     );
@@ -28037,7 +27191,7 @@ class HMXPCClient extends Struct<HMXPCClient> {
     Pointer<HMXPCClient> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int32(
+    return _call_ptr_ptr_returns_Int32(
       _self,
       _objc.getSelector("notifyRegisterToken"),
     );
@@ -28047,7 +27201,7 @@ class HMXPCClient extends Struct<HMXPCClient> {
     Pointer<HMXPCClient> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("notifyRegistered"),
     );
@@ -28058,7 +27212,7 @@ class HMXPCClient extends Struct<HMXPCClient> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("recheckinIfRequired:"),
       arg,
@@ -28069,7 +27223,7 @@ class HMXPCClient extends Struct<HMXPCClient> {
     Pointer<HMXPCClient> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("reconnectionHandler"),
     );
@@ -28080,7 +27234,7 @@ class HMXPCClient extends Struct<HMXPCClient> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("registerReconnectionHandler:"),
       arg,
@@ -28091,7 +27245,7 @@ class HMXPCClient extends Struct<HMXPCClient> {
     Pointer<HMXPCClient> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("requiresCheckin"),
     );
@@ -28103,7 +27257,7 @@ class HMXPCClient extends Struct<HMXPCClient> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("sendMessage:completionHandler:"),
       arg,
@@ -28116,7 +27270,7 @@ class HMXPCClient extends Struct<HMXPCClient> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setCallbackQueue:"),
       arg,
@@ -28128,7 +27282,7 @@ class HMXPCClient extends Struct<HMXPCClient> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setConnectionValid:"),
       arg,
@@ -28140,7 +27294,7 @@ class HMXPCClient extends Struct<HMXPCClient> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int32_returns_void(
+    _call_ptr_ptr_Int32_returns_void(
       _self,
       _objc.getSelector("setNotifyRegisterToken:"),
       arg,
@@ -28152,7 +27306,7 @@ class HMXPCClient extends Struct<HMXPCClient> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setNotifyRegistered:"),
       arg,
@@ -28164,7 +27318,7 @@ class HMXPCClient extends Struct<HMXPCClient> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setReconnectionHandler:"),
       arg,
@@ -28176,7 +27330,7 @@ class HMXPCClient extends Struct<HMXPCClient> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setRequiresCheckin:"),
       arg,
@@ -28188,7 +27342,7 @@ class HMXPCClient extends Struct<HMXPCClient> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setXpcConnection:"),
       arg,
@@ -28199,16 +27353,13 @@ class HMXPCClient extends Struct<HMXPCClient> {
     Pointer<HMXPCClient> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("xpcConnection"),
     );
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMXPCClientConnectionProxy extends Struct<HMXPCClientConnectionProxy> {
   factory HMXPCClientConnectionProxy._() {
@@ -28221,7 +27372,7 @@ class HMXPCClientConnectionProxy extends Struct<HMXPCClientConnectionProxy> {
         .cast<HMXPCClientConnectionProxy>();
   }
 
-  static void handleMessageWithName$messageIdentifier$messagePayload$target$(
+  static void handleMessageWithName$messageIdentifier$messagePayload$target(
     Pointer<HMXPCClientConnectionProxy> _self,
     Pointer arg, {
     @required Pointer messageIdentifier,
@@ -28229,7 +27380,7 @@ class HMXPCClientConnectionProxy extends Struct<HMXPCClientConnectionProxy> {
     @required Pointer target,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector(
           "handleMessageWithName:messageIdentifier:messagePayload:target:"),
@@ -28241,7 +27392,7 @@ class HMXPCClientConnectionProxy extends Struct<HMXPCClientConnectionProxy> {
   }
 
   static void
-      handleMessageWithName$messageIdentifier$messagePayload$target$responseHandler$(
+      handleMessageWithName$messageIdentifier$messagePayload$target$responseHandler(
     Pointer<HMXPCClientConnectionProxy> _self,
     Pointer arg, {
     @required Pointer messageIdentifier,
@@ -28250,7 +27401,7 @@ class HMXPCClientConnectionProxy extends Struct<HMXPCClientConnectionProxy> {
     @required Pointer responseHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector(
           "handleMessageWithName:messageIdentifier:messagePayload:target:responseHandler:"),
@@ -28267,7 +27418,7 @@ class HMXPCClientConnectionProxy extends Struct<HMXPCClientConnectionProxy> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithRefreshHandler:"),
       arg,
@@ -28278,7 +27429,7 @@ class HMXPCClientConnectionProxy extends Struct<HMXPCClientConnectionProxy> {
     Pointer<HMXPCClientConnectionProxy> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("refreshHandler"),
     );
@@ -28290,7 +27441,7 @@ class HMXPCClientConnectionProxy extends Struct<HMXPCClientConnectionProxy> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("sendMessage:completionHandler:"),
       arg,
@@ -28303,7 +27454,7 @@ class HMXPCClientConnectionProxy extends Struct<HMXPCClientConnectionProxy> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setRefreshHandler:"),
       arg,
@@ -28311,9 +27462,6 @@ class HMXPCClientConnectionProxy extends Struct<HMXPCClientConnectionProxy> {
   }
 }
 
-/// Automatically generated API. Part of [HomeKit](https://developer.apple.com/documentation/homekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class HMZone extends Struct<HMZone> {
   factory HMZone._() {
@@ -28330,7 +27478,7 @@ class HMZone extends Struct<HMZone> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("addRoom:completionHandler:"),
       arg,
@@ -28342,7 +27490,7 @@ class HMZone extends Struct<HMZone> {
     Pointer<HMZone> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("context"),
     );
@@ -28352,7 +27500,7 @@ class HMZone extends Struct<HMZone> {
     Pointer<HMZone> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("currentRooms"),
     );
@@ -28362,7 +27510,7 @@ class HMZone extends Struct<HMZone> {
     Pointer<HMZone> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("dealloc"),
     );
@@ -28373,7 +27521,7 @@ class HMZone extends Struct<HMZone> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("encodeWithCoder:"),
       arg,
@@ -28384,7 +27532,7 @@ class HMZone extends Struct<HMZone> {
     Pointer<HMZone> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("home"),
     );
@@ -28394,7 +27542,7 @@ class HMZone extends Struct<HMZone> {
     Pointer<HMZone> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("init"),
     );
@@ -28405,7 +27553,7 @@ class HMZone extends Struct<HMZone> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithCoder:"),
       arg,
@@ -28418,7 +27566,7 @@ class HMZone extends Struct<HMZone> {
     @required Pointer uuid,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithName:uuid:"),
       arg,
@@ -28430,7 +27578,7 @@ class HMZone extends Struct<HMZone> {
     Pointer<HMZone> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("messageReceiveQueue"),
     );
@@ -28440,7 +27588,7 @@ class HMZone extends Struct<HMZone> {
     Pointer<HMZone> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("messageTargetUUID"),
     );
@@ -28450,7 +27598,7 @@ class HMZone extends Struct<HMZone> {
     Pointer<HMZone> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("name"),
     );
@@ -28462,7 +27610,7 @@ class HMZone extends Struct<HMZone> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("removeRoom:completionHandler:"),
       arg,
@@ -28475,7 +27623,7 @@ class HMZone extends Struct<HMZone> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("roomWithUUID:"),
       arg,
@@ -28486,7 +27634,7 @@ class HMZone extends Struct<HMZone> {
     Pointer<HMZone> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("rooms"),
     );
@@ -28497,7 +27645,7 @@ class HMZone extends Struct<HMZone> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setContext:"),
       arg,
@@ -28509,7 +27657,7 @@ class HMZone extends Struct<HMZone> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setCurrentRooms:"),
       arg,
@@ -28521,7 +27669,7 @@ class HMZone extends Struct<HMZone> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setHome:"),
       arg,
@@ -28533,7 +27681,7 @@ class HMZone extends Struct<HMZone> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setName:"),
       arg,
@@ -28545,7 +27693,7 @@ class HMZone extends Struct<HMZone> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setUuid:"),
       arg,
@@ -28556,7 +27704,7 @@ class HMZone extends Struct<HMZone> {
     Pointer<HMZone> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("uniqueIdentifier"),
     );
@@ -28568,7 +27716,7 @@ class HMZone extends Struct<HMZone> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("updateName:completionHandler:"),
       arg,
@@ -28580,262 +27728,278 @@ class HMZone extends Struct<HMZone> {
     Pointer<HMZone> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("uuid"),
     );
   }
 }
 
-final _call_objc_p_p_Int32_returns_void = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_Int32_returns_void_C,
-    _call_objc_p_p_Int32_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_Int32_returns_void_C = Void Function(
+final _call_ptr_ptr_Int32_returns_void = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_Int32_returns_void_C,
+    _call_ptr_ptr_Int32_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_Int32_returns_void_C = Void Function(
     Pointer _arg0, Pointer _arg1, Int32 arg);
-typedef _call_objc_p_p_Int32_returns_void_Dart = void Function(
+typedef _call_ptr_ptr_Int32_returns_void_Dart = void Function(
     Pointer _arg0, Pointer _arg1, int arg);
 
-final _call_objc_p_p_Int64_p_p_returns_p = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_Int64_p_p_returns_p_C,
-    _call_objc_p_p_Int64_p_p_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_Int64_p_p_returns_p_C = Pointer Function(Pointer _arg0,
-    Pointer _arg1, Int64 arg, Pointer invitationIdentifier, Pointer expiryDate);
-typedef _call_objc_p_p_Int64_p_p_returns_p_Dart = Pointer Function(
+final _call_ptr_ptr_Int64_ptr_ptr_returns_ptr = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_Int64_ptr_ptr_returns_ptr_C,
+        _call_ptr_ptr_Int64_ptr_ptr_returns_ptr_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_Int64_ptr_ptr_returns_ptr_C = Pointer Function(
+    Pointer _arg0,
+    Pointer _arg1,
+    Int64 arg,
+    Pointer invitationIdentifier,
+    Pointer expiryDate);
+typedef _call_ptr_ptr_Int64_ptr_ptr_returns_ptr_Dart = Pointer Function(
     Pointer _arg0,
     Pointer _arg1,
     int arg,
     Pointer invitationIdentifier,
     Pointer expiryDate);
 
-final _call_objc_p_p_Int64_p_returns_p = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_Int64_p_returns_p_C,
-    _call_objc_p_p_Int64_p_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_Int64_p_returns_p_C = Pointer Function(
+final _call_ptr_ptr_Int64_ptr_returns_ptr = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_Int64_ptr_returns_ptr_C,
+        _call_ptr_ptr_Int64_ptr_returns_ptr_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_Int64_ptr_returns_ptr_C = Pointer Function(
     Pointer _arg0, Pointer _arg1, Int64 arg, Pointer forIdentifier);
-typedef _call_objc_p_p_Int64_p_returns_p_Dart = Pointer Function(
+typedef _call_ptr_ptr_Int64_ptr_returns_ptr_Dart = Pointer Function(
     Pointer _arg0, Pointer _arg1, int arg, Pointer forIdentifier);
 
-final _call_objc_p_p_Int64_p_returns_void = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_Int64_p_returns_void_C,
-        _call_objc_p_p_Int64_p_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_Int64_p_returns_void_C = Void Function(
+final _call_ptr_ptr_Int64_ptr_returns_void = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_Int64_ptr_returns_void_C,
+        _call_ptr_ptr_Int64_ptr_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_Int64_ptr_returns_void_C = Void Function(
     Pointer _arg0, Pointer _arg1, Int64 arg, Pointer completionHandler);
-typedef _call_objc_p_p_Int64_p_returns_void_Dart = void Function(
+typedef _call_ptr_ptr_Int64_ptr_returns_void_Dart = void Function(
     Pointer _arg0, Pointer _arg1, int arg, Pointer completionHandler);
 
-final _call_objc_p_p_Int64_returns_p = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_Int64_returns_p_C,
-    _call_objc_p_p_Int64_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_Int64_returns_p_C = Pointer Function(
+final _call_ptr_ptr_Int64_returns_ptr = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_Int64_returns_ptr_C,
+    _call_ptr_ptr_Int64_returns_ptr_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_Int64_returns_ptr_C = Pointer Function(
     Pointer _arg0, Pointer _arg1, Int64 arg);
-typedef _call_objc_p_p_Int64_returns_p_Dart = Pointer Function(
+typedef _call_ptr_ptr_Int64_returns_ptr_Dart = Pointer Function(
     Pointer _arg0, Pointer _arg1, int arg);
 
-final _call_objc_p_p_Int64_returns_void = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_Int64_returns_void_C,
-    _call_objc_p_p_Int64_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_Int64_returns_void_C = Void Function(
+final _call_ptr_ptr_Int64_returns_void = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_Int64_returns_void_C,
+    _call_ptr_ptr_Int64_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_Int64_returns_void_C = Void Function(
     Pointer _arg0, Pointer _arg1, Int64 arg);
-typedef _call_objc_p_p_Int64_returns_void_Dart = void Function(
+typedef _call_ptr_ptr_Int64_returns_void_Dart = void Function(
     Pointer _arg0, Pointer _arg1, int arg);
 
-final _call_objc_p_p_Int8_Int8_p_returns_void = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_Int8_Int8_p_returns_void_C,
-        _call_objc_p_p_Int8_Int8_p_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_Int8_Int8_p_returns_void_C = Void Function(Pointer _arg0,
-    Pointer _arg1, Int8 arg, Int8 withoutPopup, Pointer completionHandler);
-typedef _call_objc_p_p_Int8_Int8_p_returns_void_Dart = void Function(
+final _call_ptr_ptr_Int8_Int8_ptr_returns_void = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_Int8_Int8_ptr_returns_void_C,
+        _call_ptr_ptr_Int8_Int8_ptr_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_Int8_Int8_ptr_returns_void_C = Void Function(
+    Pointer _arg0,
+    Pointer _arg1,
+    Int8 arg,
+    Int8 withoutPopup,
+    Pointer completionHandler);
+typedef _call_ptr_ptr_Int8_Int8_ptr_returns_void_Dart = void Function(
     Pointer _arg0,
     Pointer _arg1,
     int arg,
     int withoutPopup,
     Pointer completionHandler);
 
-final _call_objc_p_p_Int8_Int8_returns_void = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_Int8_Int8_returns_void_C,
-        _call_objc_p_p_Int8_Int8_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_Int8_Int8_returns_void_C = Void Function(
+final _call_ptr_ptr_Int8_Int8_returns_void = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_Int8_Int8_returns_void_C,
+        _call_ptr_ptr_Int8_Int8_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_Int8_Int8_returns_void_C = Void Function(
     Pointer _arg0, Pointer _arg1, Int8 arg, Int8 remoteAccess);
-typedef _call_objc_p_p_Int8_Int8_returns_void_Dart = void Function(
+typedef _call_ptr_ptr_Int8_Int8_returns_void_Dart = void Function(
     Pointer _arg0, Pointer _arg1, int arg, int remoteAccess);
 
-final _call_objc_p_p_Int8_p_p_returns_void = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_Int8_p_p_returns_void_C,
-        _call_objc_p_p_Int8_p_p_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_Int8_p_p_returns_void_C = Void Function(
+final _call_ptr_ptr_Int8_ptr_ptr_returns_void = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_Int8_ptr_ptr_returns_void_C,
+        _call_ptr_ptr_Int8_ptr_ptr_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_Int8_ptr_ptr_returns_void_C = Void Function(
     Pointer _arg0,
     Pointer _arg1,
     Int8 arg,
     Pointer ofTriggerWithIdentifier,
     Pointer completionHandler);
-typedef _call_objc_p_p_Int8_p_p_returns_void_Dart = void Function(
+typedef _call_ptr_ptr_Int8_ptr_ptr_returns_void_Dart = void Function(
     Pointer _arg0,
     Pointer _arg1,
     int arg,
     Pointer ofTriggerWithIdentifier,
     Pointer completionHandler);
 
-final _call_objc_p_p_Int8_p_returns_void = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_Int8_p_returns_void_C,
-    _call_objc_p_p_Int8_p_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_Int8_p_returns_void_C = Void Function(
+final _call_ptr_ptr_Int8_ptr_returns_void = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_Int8_ptr_returns_void_C,
+        _call_ptr_ptr_Int8_ptr_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_Int8_ptr_returns_void_C = Void Function(
     Pointer _arg0, Pointer _arg1, Int8 arg, Pointer completionHandler);
-typedef _call_objc_p_p_Int8_p_returns_void_Dart = void Function(
+typedef _call_ptr_ptr_Int8_ptr_returns_void_Dart = void Function(
     Pointer _arg0, Pointer _arg1, int arg, Pointer completionHandler);
 
-final _call_objc_p_p_Int8_returns_p = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_Int8_returns_p_C,
-    _call_objc_p_p_Int8_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_Int8_returns_p_C = Pointer Function(
+final _call_ptr_ptr_Int8_returns_ptr = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_Int8_returns_ptr_C,
+    _call_ptr_ptr_Int8_returns_ptr_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_Int8_returns_ptr_C = Pointer Function(
     Pointer _arg0, Pointer _arg1, Int8 arg);
-typedef _call_objc_p_p_Int8_returns_p_Dart = Pointer Function(
+typedef _call_ptr_ptr_Int8_returns_ptr_Dart = Pointer Function(
     Pointer _arg0, Pointer _arg1, int arg);
 
-final _call_objc_p_p_Int8_returns_void = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_Int8_returns_void_C,
-    _call_objc_p_p_Int8_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_Int8_returns_void_C = Void Function(
+final _call_ptr_ptr_Int8_returns_void = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_Int8_returns_void_C,
+    _call_ptr_ptr_Int8_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_Int8_returns_void_C = Void Function(
     Pointer _arg0, Pointer _arg1, Int8 arg);
-typedef _call_objc_p_p_Int8_returns_void_Dart = void Function(
+typedef _call_ptr_ptr_Int8_returns_void_Dart = void Function(
     Pointer _arg0, Pointer _arg1, int arg);
 
-final _call_objc_p_p_Uint64_Uint64_p_returns_p = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_Uint64_Uint64_p_returns_p_C,
-        _call_objc_p_p_Uint64_Uint64_p_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_Uint64_Uint64_p_returns_p_C = Pointer Function(
+final _call_ptr_ptr_Uint64_Uint64_ptr_returns_ptr = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_Uint64_Uint64_ptr_returns_ptr_C,
+        _call_ptr_ptr_Uint64_Uint64_ptr_returns_ptr_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_Uint64_Uint64_ptr_returns_ptr_C = Pointer Function(
     Pointer _arg0,
     Pointer _arg1,
     Uint64 arg,
     Uint64 presenceUserType,
     Pointer users);
-typedef _call_objc_p_p_Uint64_Uint64_p_returns_p_Dart = Pointer Function(
+typedef _call_ptr_ptr_Uint64_Uint64_ptr_returns_ptr_Dart = Pointer Function(
     Pointer _arg0, Pointer _arg1, int arg, int presenceUserType, Pointer users);
 
-final _call_objc_p_p_Uint64_Uint64_returns_p = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_Uint64_Uint64_returns_p_C,
-        _call_objc_p_p_Uint64_Uint64_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_Uint64_Uint64_returns_p_C = Pointer Function(
+final _call_ptr_ptr_Uint64_Uint64_returns_ptr = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_Uint64_Uint64_returns_ptr_C,
+        _call_ptr_ptr_Uint64_Uint64_returns_ptr_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_Uint64_Uint64_returns_ptr_C = Pointer Function(
     Pointer _arg0, Pointer _arg1, Uint64 arg, Uint64 presenceUserType);
-typedef _call_objc_p_p_Uint64_Uint64_returns_p_Dart = Pointer Function(
+typedef _call_ptr_ptr_Uint64_Uint64_returns_ptr_Dart = Pointer Function(
     Pointer _arg0, Pointer _arg1, int arg, int presenceUserType);
 
-final _call_objc_p_p_Uint64_p_returns_void = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_Uint64_p_returns_void_C,
-        _call_objc_p_p_Uint64_p_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_Uint64_p_returns_void_C = Void Function(
+final _call_ptr_ptr_Uint64_ptr_returns_void = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_Uint64_ptr_returns_void_C,
+        _call_ptr_ptr_Uint64_ptr_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_Uint64_ptr_returns_void_C = Void Function(
     Pointer _arg0, Pointer _arg1, Uint64 arg, Pointer completionHandler);
-typedef _call_objc_p_p_Uint64_p_returns_void_Dart = void Function(
+typedef _call_ptr_ptr_Uint64_ptr_returns_void_Dart = void Function(
     Pointer _arg0, Pointer _arg1, int arg, Pointer completionHandler);
 
-final _call_objc_p_p_Uint64_returns_p = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_Uint64_returns_p_C,
-    _call_objc_p_p_Uint64_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_Uint64_returns_p_C = Pointer Function(
+final _call_ptr_ptr_Uint64_returns_ptr = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_Uint64_returns_ptr_C,
+    _call_ptr_ptr_Uint64_returns_ptr_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_Uint64_returns_ptr_C = Pointer Function(
     Pointer _arg0, Pointer _arg1, Uint64 arg);
-typedef _call_objc_p_p_Uint64_returns_p_Dart = Pointer Function(
+typedef _call_ptr_ptr_Uint64_returns_ptr_Dart = Pointer Function(
     Pointer _arg0, Pointer _arg1, int arg);
 
-final _call_objc_p_p_Uint64_returns_void = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_Uint64_returns_void_C,
-    _call_objc_p_p_Uint64_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_Uint64_returns_void_C = Void Function(
+final _call_ptr_ptr_Uint64_returns_void = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_Uint64_returns_void_C,
+    _call_ptr_ptr_Uint64_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_Uint64_returns_void_C = Void Function(
     Pointer _arg0, Pointer _arg1, Uint64 arg);
-typedef _call_objc_p_p_Uint64_returns_void_Dart = void Function(
+typedef _call_ptr_ptr_Uint64_returns_void_Dart = void Function(
     Pointer _arg0, Pointer _arg1, int arg);
 
-final _call_objc_p_p_float32_p_returns_void = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_float32_p_returns_void_C,
-        _call_objc_p_p_float32_p_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_float32_p_returns_void_C = Void Function(
+final _call_ptr_ptr_float32_ptr_returns_void = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_float32_ptr_returns_void_C,
+        _call_ptr_ptr_float32_ptr_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_float32_ptr_returns_void_C = Void Function(
     Pointer _arg0, Pointer _arg1, Float arg, Pointer completionHandler);
-typedef _call_objc_p_p_float32_p_returns_void_Dart = void Function(
+typedef _call_ptr_ptr_float32_ptr_returns_void_Dart = void Function(
     Pointer _arg0, Pointer _arg1, double arg, Pointer completionHandler);
 
-final _call_objc_p_p_float32_returns_void = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_float32_returns_void_C,
-        _call_objc_p_p_float32_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_float32_returns_void_C = Void Function(
+final _call_ptr_ptr_float32_returns_void = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_float32_returns_void_C,
+    _call_ptr_ptr_float32_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_float32_returns_void_C = Void Function(
     Pointer _arg0, Pointer _arg1, Float arg);
-typedef _call_objc_p_p_float32_returns_void_Dart = void Function(
+typedef _call_ptr_ptr_float32_returns_void_Dart = void Function(
     Pointer _arg0, Pointer _arg1, double arg);
 
-final _call_objc_p_p_float64_p_returns_void = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_float64_p_returns_void_C,
-        _call_objc_p_p_float64_p_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_float64_p_returns_void_C = Void Function(
+final _call_ptr_ptr_float64_ptr_returns_void = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_float64_ptr_returns_void_C,
+        _call_ptr_ptr_float64_ptr_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_float64_ptr_returns_void_C = Void Function(
     Pointer _arg0, Pointer _arg1, Float arg, Pointer completionHandler);
-typedef _call_objc_p_p_float64_p_returns_void_Dart = void Function(
+typedef _call_ptr_ptr_float64_ptr_returns_void_Dart = void Function(
     Pointer _arg0, Pointer _arg1, double arg, Pointer completionHandler);
 
-final _call_objc_p_p_float64_returns_p = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_float64_returns_p_C,
-    _call_objc_p_p_float64_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_float64_returns_p_C = Pointer Function(
+final _call_ptr_ptr_float64_returns_ptr = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_float64_returns_ptr_C,
+    _call_ptr_ptr_float64_returns_ptr_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_float64_returns_ptr_C = Pointer Function(
     Pointer _arg0, Pointer _arg1, Float arg);
-typedef _call_objc_p_p_float64_returns_p_Dart = Pointer Function(
+typedef _call_ptr_ptr_float64_returns_ptr_Dart = Pointer Function(
     Pointer _arg0, Pointer _arg1, double arg);
 
-final _call_objc_p_p_float64_returns_void = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_float64_returns_void_C,
-        _call_objc_p_p_float64_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_float64_returns_void_C = Void Function(
+final _call_ptr_ptr_float64_returns_void = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_float64_returns_void_C,
+    _call_ptr_ptr_float64_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_float64_returns_void_C = Void Function(
     Pointer _arg0, Pointer _arg1, Float arg);
-typedef _call_objc_p_p_float64_returns_void_Dart = void Function(
+typedef _call_ptr_ptr_float64_returns_void_Dart = void Function(
     Pointer _arg0, Pointer _arg1, double arg);
 
-final _call_objc_p_p_p_Int64_p_returns_void = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_p_Int64_p_returns_void_C,
-        _call_objc_p_p_p_Int64_p_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_Int64_p_returns_void_C = Void Function(Pointer _arg0,
-    Pointer _arg1, Pointer arg, Int64 ofType, Pointer forIdentifier);
-typedef _call_objc_p_p_p_Int64_p_returns_void_Dart = void Function(
+final _call_ptr_ptr_ptr_Int64_ptr_returns_void = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_Int64_ptr_returns_void_C,
+        _call_ptr_ptr_ptr_Int64_ptr_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_Int64_ptr_returns_void_C = Void Function(
+    Pointer _arg0,
+    Pointer _arg1,
+    Pointer arg,
+    Int64 ofType,
+    Pointer forIdentifier);
+typedef _call_ptr_ptr_ptr_Int64_ptr_returns_void_Dart = void Function(
     Pointer _arg0,
     Pointer _arg1,
     Pointer arg,
     int ofType,
     Pointer forIdentifier);
 
-final _call_objc_p_p_p_Int64_returns_void = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_p_Int64_returns_void_C,
-        _call_objc_p_p_p_Int64_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_Int64_returns_void_C = Void Function(
+final _call_ptr_ptr_ptr_Int64_returns_void = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_Int64_returns_void_C,
+        _call_ptr_ptr_ptr_Int64_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_Int64_returns_void_C = Void Function(
     Pointer _arg0, Pointer _arg1, Pointer arg, Int64 didUpdatePlaybackState);
-typedef _call_objc_p_p_p_Int64_returns_void_Dart = void Function(
+typedef _call_ptr_ptr_ptr_Int64_returns_void_Dart = void Function(
     Pointer _arg0, Pointer _arg1, Pointer arg, int didUpdatePlaybackState);
 
-final _call_objc_p_p_p_Int8_Int8_Int8_p_p_returns_p = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_p_Int8_Int8_Int8_p_p_returns_p_C,
-        _call_objc_p_p_p_Int8_Int8_Int8_p_p_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_Int8_Int8_Int8_p_p_returns_p_C = Pointer Function(
-    Pointer _arg0,
-    Pointer _arg1,
-    Pointer arg,
-    Int8 owner,
-    Int8 administratorPrivilege,
-    Int8 remoteAccess,
-    Pointer presenceAuthStatus,
-    Pointer presenceComputeStatus);
-typedef _call_objc_p_p_p_Int8_Int8_Int8_p_p_returns_p_Dart = Pointer Function(
-    Pointer _arg0,
-    Pointer _arg1,
-    Pointer arg,
-    int owner,
-    int administratorPrivilege,
-    int remoteAccess,
-    Pointer presenceAuthStatus,
-    Pointer presenceComputeStatus);
+final _call_ptr_ptr_ptr_Int8_Int8_Int8_ptr_ptr_returns_ptr =
+    _objc.dlForObjectiveC.lookupFunction<
+            _call_ptr_ptr_ptr_Int8_Int8_Int8_ptr_ptr_returns_ptr_C,
+            _call_ptr_ptr_ptr_Int8_Int8_Int8_ptr_ptr_returns_ptr_Dart>(
+        "objc_msgSend");
+typedef _call_ptr_ptr_ptr_Int8_Int8_Int8_ptr_ptr_returns_ptr_C
+    = Pointer Function(
+        Pointer _arg0,
+        Pointer _arg1,
+        Pointer arg,
+        Int8 owner,
+        Int8 administratorPrivilege,
+        Int8 remoteAccess,
+        Pointer presenceAuthStatus,
+        Pointer presenceComputeStatus);
+typedef _call_ptr_ptr_ptr_Int8_Int8_Int8_ptr_ptr_returns_ptr_Dart
+    = Pointer Function(
+        Pointer _arg0,
+        Pointer _arg1,
+        Pointer arg,
+        int owner,
+        int administratorPrivilege,
+        int remoteAccess,
+        Pointer presenceAuthStatus,
+        Pointer presenceComputeStatus);
 
-final _call_objc_p_p_p_Int8_Int8_p_returns_void = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_p_Int8_Int8_p_returns_void_C,
-        _call_objc_p_p_p_Int8_Int8_p_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_Int8_Int8_p_returns_void_C = Void Function(
+final _call_ptr_ptr_ptr_Int8_Int8_ptr_returns_void = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_Int8_Int8_ptr_returns_void_C,
+        _call_ptr_ptr_ptr_Int8_Int8_ptr_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_Int8_Int8_ptr_returns_void_C = Void Function(
     Pointer _arg0,
     Pointer _arg1,
     Pointer arg,
     Int8 isUsingHomeKit,
     Int8 isUsingCloudServices,
     Pointer error);
-typedef _call_objc_p_p_p_Int8_Int8_p_returns_void_Dart = void Function(
+typedef _call_ptr_ptr_ptr_Int8_Int8_ptr_returns_void_Dart = void Function(
     Pointer _arg0,
     Pointer _arg1,
     Pointer arg,
@@ -28843,44 +28007,52 @@ typedef _call_objc_p_p_p_Int8_Int8_p_returns_void_Dart = void Function(
     int isUsingCloudServices,
     Pointer error);
 
-final _call_objc_p_p_p_Int8_Int8_returns_p = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_p_Int8_Int8_returns_p_C,
-        _call_objc_p_p_p_Int8_Int8_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_Int8_Int8_returns_p_C = Pointer Function(Pointer _arg0,
-    Pointer _arg1, Pointer arg, Int8 administrator, Int8 remoteAccess);
-typedef _call_objc_p_p_p_Int8_Int8_returns_p_Dart = Pointer Function(
+final _call_ptr_ptr_ptr_Int8_Int8_returns_ptr = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_Int8_Int8_returns_ptr_C,
+        _call_ptr_ptr_ptr_Int8_Int8_returns_ptr_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_Int8_Int8_returns_ptr_C = Pointer Function(
+    Pointer _arg0,
+    Pointer _arg1,
+    Pointer arg,
+    Int8 administrator,
+    Int8 remoteAccess);
+typedef _call_ptr_ptr_ptr_Int8_Int8_returns_ptr_Dart = Pointer Function(
     Pointer _arg0,
     Pointer _arg1,
     Pointer arg,
     int administrator,
     int remoteAccess);
 
-final _call_objc_p_p_p_Int8_p_p_Int8_p_returns_p = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_p_Int8_p_p_Int8_p_returns_p_C,
-        _call_objc_p_p_p_Int8_p_p_Int8_p_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_Int8_p_p_Int8_p_returns_p_C = Pointer Function(
-    Pointer _arg0,
-    Pointer _arg1,
-    Pointer arg,
-    Int8 legacyAPI,
-    Pointer homeName,
-    Pointer homeUUID,
-    Int8 trustedOrigin,
-    Pointer browseRequest);
-typedef _call_objc_p_p_p_Int8_p_p_Int8_p_returns_p_Dart = Pointer Function(
-    Pointer _arg0,
-    Pointer _arg1,
-    Pointer arg,
-    int legacyAPI,
-    Pointer homeName,
-    Pointer homeUUID,
-    int trustedOrigin,
-    Pointer browseRequest);
+final _call_ptr_ptr_ptr_Int8_ptr_ptr_Int8_ptr_returns_ptr =
+    _objc.dlForObjectiveC.lookupFunction<
+            _call_ptr_ptr_ptr_Int8_ptr_ptr_Int8_ptr_returns_ptr_C,
+            _call_ptr_ptr_ptr_Int8_ptr_ptr_Int8_ptr_returns_ptr_Dart>(
+        "objc_msgSend");
+typedef _call_ptr_ptr_ptr_Int8_ptr_ptr_Int8_ptr_returns_ptr_C
+    = Pointer Function(
+        Pointer _arg0,
+        Pointer _arg1,
+        Pointer arg,
+        Int8 legacyAPI,
+        Pointer homeName,
+        Pointer homeUUID,
+        Int8 trustedOrigin,
+        Pointer browseRequest);
+typedef _call_ptr_ptr_ptr_Int8_ptr_ptr_Int8_ptr_returns_ptr_Dart
+    = Pointer Function(
+        Pointer _arg0,
+        Pointer _arg1,
+        Pointer arg,
+        int legacyAPI,
+        Pointer homeName,
+        Pointer homeUUID,
+        int trustedOrigin,
+        Pointer browseRequest);
 
-final _call_objc_p_p_p_Int8_p_p_Int8_returns_p = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_p_Int8_p_p_Int8_returns_p_C,
-        _call_objc_p_p_p_Int8_p_p_Int8_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_Int8_p_p_Int8_returns_p_C = Pointer Function(
+final _call_ptr_ptr_ptr_Int8_ptr_ptr_Int8_returns_ptr = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_Int8_ptr_ptr_Int8_returns_ptr_C,
+        _call_ptr_ptr_ptr_Int8_ptr_ptr_Int8_returns_ptr_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_Int8_ptr_ptr_Int8_returns_ptr_C = Pointer Function(
     Pointer _arg0,
     Pointer _arg1,
     Pointer arg,
@@ -28888,7 +28060,7 @@ typedef _call_objc_p_p_p_Int8_p_p_Int8_returns_p_C = Pointer Function(
     Pointer homeName,
     Pointer homeUUID,
     Int8 trustedOrigin);
-typedef _call_objc_p_p_p_Int8_p_p_Int8_returns_p_Dart = Pointer Function(
+typedef _call_ptr_ptr_ptr_Int8_ptr_ptr_Int8_returns_ptr_Dart = Pointer Function(
     Pointer _arg0,
     Pointer _arg1,
     Pointer arg,
@@ -28897,17 +28069,17 @@ typedef _call_objc_p_p_p_Int8_p_p_Int8_returns_p_Dart = Pointer Function(
     Pointer homeUUID,
     int trustedOrigin);
 
-final _call_objc_p_p_p_Int8_p_p_returns_p = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_p_Int8_p_p_returns_p_C,
-        _call_objc_p_p_p_Int8_p_p_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_Int8_p_p_returns_p_C = Pointer Function(
+final _call_ptr_ptr_ptr_Int8_ptr_ptr_returns_ptr = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_Int8_ptr_ptr_returns_ptr_C,
+        _call_ptr_ptr_ptr_Int8_ptr_ptr_returns_ptr_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_Int8_ptr_ptr_returns_ptr_C = Pointer Function(
     Pointer _arg0,
     Pointer _arg1,
     Pointer arg,
     Int8 legacyAPI,
     Pointer homeName,
     Pointer homeUUID);
-typedef _call_objc_p_p_p_Int8_p_p_returns_p_Dart = Pointer Function(
+typedef _call_ptr_ptr_ptr_Int8_ptr_ptr_returns_ptr_Dart = Pointer Function(
     Pointer _arg0,
     Pointer _arg1,
     Pointer arg,
@@ -28915,17 +28087,17 @@ typedef _call_objc_p_p_p_Int8_p_p_returns_p_Dart = Pointer Function(
     Pointer homeName,
     Pointer homeUUID);
 
-final _call_objc_p_p_p_Int8_p_p_returns_void = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_p_Int8_p_p_returns_void_C,
-        _call_objc_p_p_p_Int8_p_p_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_Int8_p_p_returns_void_C = Void Function(
+final _call_ptr_ptr_ptr_Int8_ptr_ptr_returns_void = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_Int8_ptr_ptr_returns_void_C,
+        _call_ptr_ptr_ptr_Int8_ptr_ptr_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_Int8_ptr_ptr_returns_void_C = Void Function(
     Pointer _arg0,
     Pointer _arg1,
     Pointer arg,
     Int8 value,
     Pointer conflictName,
     Pointer error);
-typedef _call_objc_p_p_p_Int8_p_p_returns_void_Dart = void Function(
+typedef _call_ptr_ptr_ptr_Int8_ptr_ptr_returns_void_Dart = void Function(
     Pointer _arg0,
     Pointer _arg1,
     Pointer arg,
@@ -28933,33 +28105,37 @@ typedef _call_objc_p_p_p_Int8_p_p_returns_void_Dart = void Function(
     Pointer conflictName,
     Pointer error);
 
-final _call_objc_p_p_p_Int8_p_returns_void = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_p_Int8_p_returns_void_C,
-        _call_objc_p_p_p_Int8_p_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_Int8_p_returns_void_C = Void Function(Pointer _arg0,
+final _call_ptr_ptr_ptr_Int8_ptr_returns_void = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_Int8_ptr_returns_void_C,
+        _call_ptr_ptr_ptr_Int8_ptr_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_Int8_ptr_returns_void_C = Void Function(Pointer _arg0,
     Pointer _arg1, Pointer arg, Int8 remoteAccess, Pointer completionHandler);
-typedef _call_objc_p_p_p_Int8_p_returns_void_Dart = void Function(Pointer _arg0,
-    Pointer _arg1, Pointer arg, int remoteAccess, Pointer completionHandler);
+typedef _call_ptr_ptr_ptr_Int8_ptr_returns_void_Dart = void Function(
+    Pointer _arg0,
+    Pointer _arg1,
+    Pointer arg,
+    int remoteAccess,
+    Pointer completionHandler);
 
-final _call_objc_p_p_p_Int8_returns_void = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_p_Int8_returns_void_C,
-    _call_objc_p_p_p_Int8_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_Int8_returns_void_C = Void Function(
+final _call_ptr_ptr_ptr_Int8_returns_void = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_Int8_returns_void_C,
+        _call_ptr_ptr_ptr_Int8_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_Int8_returns_void_C = Void Function(
     Pointer _arg0, Pointer _arg1, Pointer arg, Int8 didUpdateMuted);
-typedef _call_objc_p_p_p_Int8_returns_void_Dart = void Function(
+typedef _call_ptr_ptr_ptr_Int8_returns_void_Dart = void Function(
     Pointer _arg0, Pointer _arg1, Pointer arg, int didUpdateMuted);
 
-final _call_objc_p_p_p_Uint64_Int64_p_returns_p = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_p_Uint64_Int64_p_returns_p_C,
-        _call_objc_p_p_p_Uint64_Int64_p_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_Uint64_Int64_p_returns_p_C = Pointer Function(
+final _call_ptr_ptr_ptr_Uint64_Int64_ptr_returns_ptr = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_Uint64_Int64_ptr_returns_ptr_C,
+        _call_ptr_ptr_ptr_Uint64_Int64_ptr_returns_ptr_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_Uint64_Int64_ptr_returns_ptr_C = Pointer Function(
     Pointer _arg0,
     Pointer _arg1,
     Pointer arg,
     Uint64 downloadSize,
     Int64 state,
     Pointer documentationMetadata);
-typedef _call_objc_p_p_p_Uint64_Int64_p_returns_p_Dart = Pointer Function(
+typedef _call_ptr_ptr_ptr_Uint64_Int64_ptr_returns_ptr_Dart = Pointer Function(
     Pointer _arg0,
     Pointer _arg1,
     Pointer arg,
@@ -28967,51 +28143,55 @@ typedef _call_objc_p_p_p_Uint64_Int64_p_returns_p_Dart = Pointer Function(
     int state,
     Pointer documentationMetadata);
 
-final _call_objc_p_p_p_Uint64_Int64_returns_p = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_p_Uint64_Int64_returns_p_C,
-        _call_objc_p_p_p_Uint64_Int64_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_Uint64_Int64_returns_p_C = Pointer Function(
+final _call_ptr_ptr_ptr_Uint64_Int64_returns_ptr = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_Uint64_Int64_returns_ptr_C,
+        _call_ptr_ptr_ptr_Uint64_Int64_returns_ptr_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_Uint64_Int64_returns_ptr_C = Pointer Function(
     Pointer _arg0,
     Pointer _arg1,
     Pointer arg,
     Uint64 downloadSize,
     Int64 state);
-typedef _call_objc_p_p_p_Uint64_Int64_returns_p_Dart = Pointer Function(
+typedef _call_ptr_ptr_ptr_Uint64_Int64_returns_ptr_Dart = Pointer Function(
     Pointer _arg0, Pointer _arg1, Pointer arg, int downloadSize, int state);
 
-final _call_objc_p_p_p_Uint64_p_p_p_p_returns_p = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_p_Uint64_p_p_p_p_returns_p_C,
-        _call_objc_p_p_p_Uint64_p_p_p_p_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_Uint64_p_p_p_p_returns_p_C = Pointer Function(
-    Pointer _arg0,
-    Pointer _arg1,
-    Pointer arg,
-    Uint64 properties,
-    Pointer value,
-    Pointer minimumValue,
-    Pointer maximumValue,
-    Pointer stepValue);
-typedef _call_objc_p_p_p_Uint64_p_p_p_p_returns_p_Dart = Pointer Function(
-    Pointer _arg0,
-    Pointer _arg1,
-    Pointer arg,
-    int properties,
-    Pointer value,
-    Pointer minimumValue,
-    Pointer maximumValue,
-    Pointer stepValue);
+final _call_ptr_ptr_ptr_Uint64_ptr_ptr_ptr_ptr_returns_ptr =
+    _objc.dlForObjectiveC.lookupFunction<
+            _call_ptr_ptr_ptr_Uint64_ptr_ptr_ptr_ptr_returns_ptr_C,
+            _call_ptr_ptr_ptr_Uint64_ptr_ptr_ptr_ptr_returns_ptr_Dart>(
+        "objc_msgSend");
+typedef _call_ptr_ptr_ptr_Uint64_ptr_ptr_ptr_ptr_returns_ptr_C
+    = Pointer Function(
+        Pointer _arg0,
+        Pointer _arg1,
+        Pointer arg,
+        Uint64 properties,
+        Pointer value,
+        Pointer minimumValue,
+        Pointer maximumValue,
+        Pointer stepValue);
+typedef _call_ptr_ptr_ptr_Uint64_ptr_ptr_ptr_ptr_returns_ptr_Dart
+    = Pointer Function(
+        Pointer _arg0,
+        Pointer _arg1,
+        Pointer arg,
+        int properties,
+        Pointer value,
+        Pointer minimumValue,
+        Pointer maximumValue,
+        Pointer stepValue);
 
-final _call_objc_p_p_p_Uint64_p_p_returns_p = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_p_Uint64_p_p_returns_p_C,
-        _call_objc_p_p_p_Uint64_p_p_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_Uint64_p_p_returns_p_C = Pointer Function(
+final _call_ptr_ptr_ptr_Uint64_ptr_ptr_returns_ptr = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_Uint64_ptr_ptr_returns_ptr_C,
+        _call_ptr_ptr_ptr_Uint64_ptr_ptr_returns_ptr_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_Uint64_ptr_ptr_returns_ptr_C = Pointer Function(
     Pointer _arg0,
     Pointer _arg1,
     Pointer arg,
     Uint64 properties,
     Pointer value,
     Pointer items);
-typedef _call_objc_p_p_p_Uint64_p_p_returns_p_Dart = Pointer Function(
+typedef _call_ptr_ptr_ptr_Uint64_ptr_ptr_returns_ptr_Dart = Pointer Function(
     Pointer _arg0,
     Pointer _arg1,
     Pointer arg,
@@ -29019,72 +28199,85 @@ typedef _call_objc_p_p_p_Uint64_p_p_returns_p_Dart = Pointer Function(
     Pointer value,
     Pointer items);
 
-final _call_objc_p_p_p_Uint64_p_returns_p = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_p_Uint64_p_returns_p_C,
-        _call_objc_p_p_p_Uint64_p_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_Uint64_p_returns_p_C = Pointer Function(Pointer _arg0,
-    Pointer _arg1, Pointer arg, Uint64 properties, Pointer value);
-typedef _call_objc_p_p_p_Uint64_p_returns_p_Dart = Pointer Function(
+final _call_ptr_ptr_ptr_Uint64_ptr_returns_ptr = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_Uint64_ptr_returns_ptr_C,
+        _call_ptr_ptr_ptr_Uint64_ptr_returns_ptr_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_Uint64_ptr_returns_ptr_C = Pointer Function(
+    Pointer _arg0,
+    Pointer _arg1,
+    Pointer arg,
+    Uint64 properties,
+    Pointer value);
+typedef _call_ptr_ptr_ptr_Uint64_ptr_returns_ptr_Dart = Pointer Function(
     Pointer _arg0, Pointer _arg1, Pointer arg, int properties, Pointer value);
 
-final _call_objc_p_p_p_Uint64_p_returns_void = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_p_Uint64_p_returns_void_C,
-        _call_objc_p_p_p_Uint64_p_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_Uint64_p_returns_void_C = Void Function(
+final _call_ptr_ptr_ptr_Uint64_ptr_returns_void = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_Uint64_ptr_returns_void_C,
+        _call_ptr_ptr_ptr_Uint64_ptr_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_Uint64_ptr_returns_void_C = Void Function(
     Pointer _arg0,
     Pointer _arg1,
     Pointer arg,
     Uint64 presenceAuthorizationStatus,
     Pointer completionHandler);
-typedef _call_objc_p_p_p_Uint64_p_returns_void_Dart = void Function(
+typedef _call_ptr_ptr_ptr_Uint64_ptr_returns_void_Dart = void Function(
     Pointer _arg0,
     Pointer _arg1,
     Pointer arg,
     int presenceAuthorizationStatus,
     Pointer completionHandler);
 
-final _call_objc_p_p_p_Uint64_returns_p = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_p_Uint64_returns_p_C,
-    _call_objc_p_p_p_Uint64_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_Uint64_returns_p_C = Pointer Function(
+final _call_ptr_ptr_ptr_Uint64_returns_ptr = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_Uint64_returns_ptr_C,
+        _call_ptr_ptr_ptr_Uint64_returns_ptr_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_Uint64_returns_ptr_C = Pointer Function(
     Pointer _arg0, Pointer _arg1, Pointer arg, Uint64 downloadSize);
-typedef _call_objc_p_p_p_Uint64_returns_p_Dart = Pointer Function(
+typedef _call_ptr_ptr_ptr_Uint64_returns_ptr_Dart = Pointer Function(
     Pointer _arg0, Pointer _arg1, Pointer arg, int downloadSize);
 
-final _call_objc_p_p_p_float32_returns_void = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_p_float32_returns_void_C,
-        _call_objc_p_p_p_float32_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_float32_returns_void_C = Void Function(
+final _call_ptr_ptr_ptr_float32_returns_void = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_float32_returns_void_C,
+        _call_ptr_ptr_ptr_float32_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_float32_returns_void_C = Void Function(
     Pointer _arg0, Pointer _arg1, Pointer arg, Float didUpdateVolume);
-typedef _call_objc_p_p_p_float32_returns_void_Dart = void Function(
+typedef _call_ptr_ptr_ptr_float32_returns_void_Dart = void Function(
     Pointer _arg0, Pointer _arg1, Pointer arg, double didUpdateVolume);
 
-final _call_objc_p_p_p_float64_returns_p = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_p_float64_returns_p_C,
-    _call_objc_p_p_p_float64_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_float64_returns_p_C = Pointer Function(
+final _call_ptr_ptr_ptr_float64_returns_ptr = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_float64_returns_ptr_C,
+        _call_ptr_ptr_ptr_float64_returns_ptr_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_float64_returns_ptr_C = Pointer Function(
     Pointer _arg0, Pointer _arg1, Pointer arg, Float duration);
-typedef _call_objc_p_p_p_float64_returns_p_Dart = Pointer Function(
+typedef _call_ptr_ptr_ptr_float64_returns_ptr_Dart = Pointer Function(
     Pointer _arg0, Pointer _arg1, Pointer arg, double duration);
 
-final _call_objc_p_p_p_p_Int64_returns_p = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_p_p_Int64_returns_p_C,
-    _call_objc_p_p_p_p_Int64_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_p_Int64_returns_p_C = Pointer Function(Pointer _arg0,
-    Pointer _arg1, Pointer arg, Pointer routeUID, Int64 playbackState);
-typedef _call_objc_p_p_p_p_Int64_returns_p_Dart = Pointer Function(
+final _call_ptr_ptr_ptr_ptr_Int64_returns_ptr = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_ptr_Int64_returns_ptr_C,
+        _call_ptr_ptr_ptr_ptr_Int64_returns_ptr_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_ptr_Int64_returns_ptr_C = Pointer Function(
+    Pointer _arg0,
+    Pointer _arg1,
+    Pointer arg,
+    Pointer routeUID,
+    Int64 playbackState);
+typedef _call_ptr_ptr_ptr_ptr_Int64_returns_ptr_Dart = Pointer Function(
     Pointer _arg0,
     Pointer _arg1,
     Pointer arg,
     Pointer routeUID,
     int playbackState);
 
-final _call_objc_p_p_p_p_Int8_p_returns_void = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_p_p_Int8_p_returns_void_C,
-        _call_objc_p_p_p_p_Int8_p_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_p_Int8_p_returns_void_C = Void Function(Pointer _arg0,
-    Pointer _arg1, Pointer arg, Pointer error, Int8 boolValue, Pointer array);
-typedef _call_objc_p_p_p_p_Int8_p_returns_void_Dart = void Function(
+final _call_ptr_ptr_ptr_ptr_Int8_ptr_returns_void = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_ptr_Int8_ptr_returns_void_C,
+        _call_ptr_ptr_ptr_ptr_Int8_ptr_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_ptr_Int8_ptr_returns_void_C = Void Function(
+    Pointer _arg0,
+    Pointer _arg1,
+    Pointer arg,
+    Pointer error,
+    Int8 boolValue,
+    Pointer array);
+typedef _call_ptr_ptr_ptr_ptr_Int8_ptr_returns_void_Dart = void Function(
     Pointer _arg0,
     Pointer _arg1,
     Pointer arg,
@@ -29092,17 +28285,17 @@ typedef _call_objc_p_p_p_p_Int8_p_returns_void_Dart = void Function(
     int boolValue,
     Pointer array);
 
-final _call_objc_p_p_p_p_Uint64_p_returns_void = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_p_p_Uint64_p_returns_void_C,
-        _call_objc_p_p_p_p_Uint64_p_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_p_Uint64_p_returns_void_C = Void Function(
+final _call_ptr_ptr_ptr_ptr_Uint64_ptr_returns_void = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_ptr_Uint64_ptr_returns_void_C,
+        _call_ptr_ptr_ptr_ptr_Uint64_ptr_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_ptr_Uint64_ptr_returns_void_C = Void Function(
     Pointer _arg0,
     Pointer _arg1,
     Pointer arg,
     Pointer inHome,
     Uint64 withValidationOptions,
     Pointer completionHandler);
-typedef _call_objc_p_p_p_p_Uint64_p_returns_void_Dart = void Function(
+typedef _call_ptr_ptr_ptr_ptr_Uint64_ptr_returns_void_Dart = void Function(
     Pointer _arg0,
     Pointer _arg1,
     Pointer arg,
@@ -29110,42 +28303,38 @@ typedef _call_objc_p_p_p_p_Uint64_p_returns_void_Dart = void Function(
     int withValidationOptions,
     Pointer completionHandler);
 
-final _call_objc_p_p_p_p_Uint64_returns_Uint64 = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_p_p_Uint64_returns_Uint64_C,
-        _call_objc_p_p_p_p_Uint64_returns_Uint64_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_p_Uint64_returns_Uint64_C = Uint64 Function(
-    Pointer _arg0, Pointer _arg1, Pointer arg, Pointer objects, Uint64 count);
-typedef _call_objc_p_p_p_p_Uint64_returns_Uint64_Dart = int Function(
-    Pointer _arg0, Pointer _arg1, Pointer arg, Pointer objects, int count);
+final _call_ptr_ptr_ptr_ptr_ptr_Int64_ptr_ptr_ptr_returns_ptr =
+    _objc.dlForObjectiveC.lookupFunction<
+            _call_ptr_ptr_ptr_ptr_ptr_Int64_ptr_ptr_ptr_returns_ptr_C,
+            _call_ptr_ptr_ptr_ptr_ptr_Int64_ptr_ptr_ptr_returns_ptr_Dart>(
+        "objc_msgSend");
+typedef _call_ptr_ptr_ptr_ptr_ptr_Int64_ptr_ptr_ptr_returns_ptr_C
+    = Pointer Function(
+        Pointer _arg0,
+        Pointer _arg1,
+        Pointer arg,
+        Pointer invitationIdentifier,
+        Pointer inviterName,
+        Int64 invitationState,
+        Pointer homeName,
+        Pointer homeUUID,
+        Pointer expiryDate);
+typedef _call_ptr_ptr_ptr_ptr_ptr_Int64_ptr_ptr_ptr_returns_ptr_Dart
+    = Pointer Function(
+        Pointer _arg0,
+        Pointer _arg1,
+        Pointer arg,
+        Pointer invitationIdentifier,
+        Pointer inviterName,
+        int invitationState,
+        Pointer homeName,
+        Pointer homeUUID,
+        Pointer expiryDate);
 
-final _call_objc_p_p_p_p_p_Int64_p_p_p_returns_p = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_p_p_p_Int64_p_p_p_returns_p_C,
-        _call_objc_p_p_p_p_p_Int64_p_p_p_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_p_p_Int64_p_p_p_returns_p_C = Pointer Function(
-    Pointer _arg0,
-    Pointer _arg1,
-    Pointer arg,
-    Pointer invitationIdentifier,
-    Pointer inviterName,
-    Int64 invitationState,
-    Pointer homeName,
-    Pointer homeUUID,
-    Pointer expiryDate);
-typedef _call_objc_p_p_p_p_p_Int64_p_p_p_returns_p_Dart = Pointer Function(
-    Pointer _arg0,
-    Pointer _arg1,
-    Pointer arg,
-    Pointer invitationIdentifier,
-    Pointer inviterName,
-    int invitationState,
-    Pointer homeName,
-    Pointer homeUUID,
-    Pointer expiryDate);
-
-final _call_objc_p_p_p_p_p_Int64_p_returns_p = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_p_p_p_Int64_p_returns_p_C,
-        _call_objc_p_p_p_p_p_Int64_p_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_p_p_Int64_p_returns_p_C = Pointer Function(
+final _call_ptr_ptr_ptr_ptr_ptr_Int64_ptr_returns_ptr = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_ptr_ptr_Int64_ptr_returns_ptr_C,
+        _call_ptr_ptr_ptr_ptr_ptr_Int64_ptr_returns_ptr_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_ptr_ptr_Int64_ptr_returns_ptr_C = Pointer Function(
     Pointer _arg0,
     Pointer _arg1,
     Pointer arg,
@@ -29153,7 +28342,7 @@ typedef _call_objc_p_p_p_p_p_Int64_p_returns_p_C = Pointer Function(
     Pointer inviteeName,
     Int64 invitationState,
     Pointer expiryDate);
-typedef _call_objc_p_p_p_p_p_Int64_p_returns_p_Dart = Pointer Function(
+typedef _call_ptr_ptr_ptr_ptr_ptr_Int64_ptr_returns_ptr_Dart = Pointer Function(
     Pointer _arg0,
     Pointer _arg1,
     Pointer arg,
@@ -29162,17 +28351,17 @@ typedef _call_objc_p_p_p_p_p_Int64_p_returns_p_Dart = Pointer Function(
     int invitationState,
     Pointer expiryDate);
 
-final _call_objc_p_p_p_p_p_Uint64_returns_p = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_p_p_p_Uint64_returns_p_C,
-        _call_objc_p_p_p_p_p_Uint64_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_p_p_Uint64_returns_p_C = Pointer Function(
+final _call_ptr_ptr_ptr_ptr_ptr_Uint64_returns_ptr = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_ptr_ptr_Uint64_returns_ptr_C,
+        _call_ptr_ptr_ptr_ptr_ptr_Uint64_returns_ptr_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_ptr_ptr_Uint64_returns_ptr_C = Pointer Function(
     Pointer _arg0,
     Pointer _arg1,
     Pointer arg,
     Pointer presenceType,
     Pointer users,
     Uint64 activationGranularity);
-typedef _call_objc_p_p_p_p_p_Uint64_returns_p_Dart = Pointer Function(
+typedef _call_ptr_ptr_ptr_ptr_ptr_Uint64_returns_ptr_Dart = Pointer Function(
     Pointer _arg0,
     Pointer _arg1,
     Pointer arg,
@@ -29180,274 +28369,292 @@ typedef _call_objc_p_p_p_p_p_Uint64_returns_p_Dart = Pointer Function(
     Pointer users,
     int activationGranularity);
 
-final _call_objc_p_p_p_p_p_p_Int8_p_p_p_returns_p = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_p_p_p_p_Int8_p_p_p_returns_p_C,
-        _call_objc_p_p_p_p_p_p_Int8_p_p_p_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_p_p_p_Int8_p_p_p_returns_p_C = Pointer Function(
-    Pointer _arg0,
-    Pointer _arg1,
-    Pointer arg,
-    Pointer uuid,
-    Pointer name,
-    Pointer configuredName,
-    Int8 compatible,
-    Pointer components,
-    Pointer settings,
-    Pointer symptomHandler);
-typedef _call_objc_p_p_p_p_p_p_Int8_p_p_p_returns_p_Dart = Pointer Function(
-    Pointer _arg0,
-    Pointer _arg1,
-    Pointer arg,
-    Pointer uuid,
-    Pointer name,
-    Pointer configuredName,
-    int compatible,
-    Pointer components,
-    Pointer settings,
-    Pointer symptomHandler);
-
-final _call_objc_p_p_p_p_p_p_Int8_returns_p = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_p_p_p_p_Int8_returns_p_C,
-        _call_objc_p_p_p_p_p_p_Int8_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_p_p_p_Int8_returns_p_C = Pointer Function(
-    Pointer _arg0,
-    Pointer _arg1,
-    Pointer arg,
-    Pointer appID,
-    Pointer homeName,
-    Pointer homeUUID,
-    Int8 trustedOrigin);
-typedef _call_objc_p_p_p_p_p_p_Int8_returns_p_Dart = Pointer Function(
-    Pointer _arg0,
-    Pointer _arg1,
-    Pointer arg,
-    Pointer appID,
-    Pointer homeName,
-    Pointer homeUUID,
-    int trustedOrigin);
-
-final _call_objc_p_p_p_p_p_p_p_Int8_returns_p = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_p_p_p_p_p_Int8_returns_p_C,
-        _call_objc_p_p_p_p_p_p_p_Int8_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_p_p_p_p_Int8_returns_p_C = Pointer Function(
-    Pointer _arg0,
-    Pointer _arg1,
-    Pointer arg,
-    Pointer accessoryName,
-    Pointer appID,
-    Pointer homeName,
-    Pointer homeUUID,
-    Int8 trustedOrigin);
-typedef _call_objc_p_p_p_p_p_p_p_Int8_returns_p_Dart = Pointer Function(
-    Pointer _arg0,
-    Pointer _arg1,
-    Pointer arg,
-    Pointer accessoryName,
-    Pointer appID,
-    Pointer homeName,
-    Pointer homeUUID,
-    int trustedOrigin);
-
-final _call_objc_p_p_p_p_p_p_p_returns_p = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_p_p_p_p_p_returns_p_C,
-    _call_objc_p_p_p_p_p_p_p_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_p_p_p_p_returns_p_C = Pointer Function(
-    Pointer _arg0,
-    Pointer _arg1,
-    Pointer arg,
-    Pointer name,
-    Pointer uuid,
-    Pointer home,
-    Pointer accessControls);
-typedef _call_objc_p_p_p_p_p_p_p_returns_p_Dart = Pointer Function(
-    Pointer _arg0,
-    Pointer _arg1,
-    Pointer arg,
-    Pointer name,
-    Pointer uuid,
-    Pointer home,
-    Pointer accessControls);
-
-final _call_objc_p_p_p_p_p_p_p_returns_void = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_p_p_p_p_p_returns_void_C,
-        _call_objc_p_p_p_p_p_p_p_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_p_p_p_p_returns_void_C = Void Function(
-    Pointer _arg0,
-    Pointer _arg1,
-    Pointer arg,
-    Pointer messageIdentifier,
-    Pointer messagePayload,
-    Pointer target,
-    Pointer responseHandler);
-typedef _call_objc_p_p_p_p_p_p_p_returns_void_Dart = void Function(
-    Pointer _arg0,
-    Pointer _arg1,
-    Pointer arg,
-    Pointer messageIdentifier,
-    Pointer messagePayload,
-    Pointer target,
-    Pointer responseHandler);
-
-final _call_objc_p_p_p_p_p_p_returns_p = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_p_p_p_p_returns_p_C,
-    _call_objc_p_p_p_p_p_p_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_p_p_p_returns_p_C = Pointer Function(
-    Pointer _arg0,
-    Pointer _arg1,
-    Pointer arg,
-    Pointer significantEvent,
-    Pointer significantEventOffset,
-    Pointer recurrences);
-typedef _call_objc_p_p_p_p_p_p_returns_p_Dart = Pointer Function(
-    Pointer _arg0,
-    Pointer _arg1,
-    Pointer arg,
-    Pointer significantEvent,
-    Pointer significantEventOffset,
-    Pointer recurrences);
-
-final _call_objc_p_p_p_p_p_p_returns_void = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_p_p_p_p_returns_void_C,
-        _call_objc_p_p_p_p_p_p_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_p_p_p_returns_void_C = Void Function(
-    Pointer _arg0,
-    Pointer _arg1,
-    Pointer arg,
-    Pointer messageIdentifier,
-    Pointer messagePayload,
-    Pointer target);
-typedef _call_objc_p_p_p_p_p_p_returns_void_Dart = void Function(
-    Pointer _arg0,
-    Pointer _arg1,
-    Pointer arg,
-    Pointer messageIdentifier,
-    Pointer messagePayload,
-    Pointer target);
-
-final _call_objc_p_p_p_p_p_returns_p = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_p_p_p_returns_p_C,
-    _call_objc_p_p_p_p_p_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_p_p_returns_p_C = Pointer Function(Pointer _arg0,
-    Pointer _arg1, Pointer arg, Pointer significantEvent, Pointer offset);
-typedef _call_objc_p_p_p_p_p_returns_p_Dart = Pointer Function(Pointer _arg0,
-    Pointer _arg1, Pointer arg, Pointer significantEvent, Pointer offset);
-
-final _call_objc_p_p_p_p_p_returns_void = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_p_p_p_returns_void_C,
-    _call_objc_p_p_p_p_p_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_p_p_returns_void_C = Void Function(Pointer _arg0,
-    Pointer _arg1, Pointer arg, Pointer forHome, Pointer completionHandler);
-typedef _call_objc_p_p_p_p_p_returns_void_Dart = void Function(Pointer _arg0,
-    Pointer _arg1, Pointer arg, Pointer forHome, Pointer completionHandler);
-
-final _call_objc_p_p_p_p_returns_Int8 = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_p_p_returns_Int8_C,
-    _call_objc_p_p_p_p_returns_Int8_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_p_returns_Int8_C = Int8 Function(
-    Pointer _arg0, Pointer _arg1, Pointer arg, Pointer operations);
-typedef _call_objc_p_p_p_p_returns_Int8_Dart = int Function(
-    Pointer _arg0, Pointer _arg1, Pointer arg, Pointer operations);
-
-final _call_objc_p_p_p_p_returns_p = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_p_p_returns_p_C,
-    _call_objc_p_p_p_p_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_p_returns_p_C = Pointer Function(
-    Pointer _arg0, Pointer _arg1, Pointer arg, Pointer uuid);
-typedef _call_objc_p_p_p_p_returns_p_Dart = Pointer Function(
-    Pointer _arg0, Pointer _arg1, Pointer arg, Pointer uuid);
-
-final _call_objc_p_p_p_p_returns_void = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_p_p_returns_void_C,
-    _call_objc_p_p_p_p_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_p_returns_void_C = Void Function(
-    Pointer _arg0, Pointer _arg1, Pointer arg, Pointer completionHandler);
-typedef _call_objc_p_p_p_p_returns_void_Dart = void Function(
-    Pointer _arg0, Pointer _arg1, Pointer arg, Pointer completionHandler);
-
-final _call_objc_p_p_p_returns_Int8 = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_p_returns_Int8_C,
-    _call_objc_p_p_p_returns_Int8_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_returns_Int8_C = Int8 Function(
-    Pointer _arg0, Pointer _arg1, Pointer arg);
-typedef _call_objc_p_p_p_returns_Int8_Dart = int Function(
-    Pointer _arg0, Pointer _arg1, Pointer arg);
-
-final _call_objc_p_p_p_returns_p = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_p_returns_p_C,
-    _call_objc_p_p_p_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_returns_p_C = Pointer Function(
-    Pointer _arg0, Pointer _arg1, Pointer arg);
-typedef _call_objc_p_p_p_returns_p_Dart = Pointer Function(
-    Pointer _arg0, Pointer _arg1, Pointer arg);
-
-final _call_objc_p_p_p_returns_void = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_p_returns_void_C,
-    _call_objc_p_p_p_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_returns_void_C = Void Function(
-    Pointer _arg0, Pointer _arg1, Pointer arg);
-typedef _call_objc_p_p_p_returns_void_Dart = void Function(
-    Pointer _arg0, Pointer _arg1, Pointer arg);
-
-final _call_objc_p_p_returns_Int32 = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_returns_Int32_C,
-    _call_objc_p_p_returns_Int32_Dart>("objc_msgSend");
-typedef _call_objc_p_p_returns_Int32_C = Int32 Function(
-    Pointer _arg0, Pointer _arg1);
-typedef _call_objc_p_p_returns_Int32_Dart = int Function(
-    Pointer _arg0, Pointer _arg1);
-
-final _call_objc_p_p_returns_Int64 = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_returns_Int64_C,
-    _call_objc_p_p_returns_Int64_Dart>("objc_msgSend");
-typedef _call_objc_p_p_returns_Int64_C = Int64 Function(
-    Pointer _arg0, Pointer _arg1);
-typedef _call_objc_p_p_returns_Int64_Dart = int Function(
-    Pointer _arg0, Pointer _arg1);
-
-final _call_objc_p_p_returns_Int8 = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_returns_Int8_C,
-    _call_objc_p_p_returns_Int8_Dart>("objc_msgSend");
-typedef _call_objc_p_p_returns_Int8_C = Int8 Function(
-    Pointer _arg0, Pointer _arg1);
-typedef _call_objc_p_p_returns_Int8_Dart = int Function(
-    Pointer _arg0, Pointer _arg1);
-
-final _call_objc_p_p_returns_Uint64 = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_returns_Uint64_C,
-    _call_objc_p_p_returns_Uint64_Dart>("objc_msgSend");
-typedef _call_objc_p_p_returns_Uint64_C = Uint64 Function(
-    Pointer _arg0, Pointer _arg1);
-typedef _call_objc_p_p_returns_Uint64_Dart = int Function(
-    Pointer _arg0, Pointer _arg1);
-
-final _call_objc_p_p_returns_float32 = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_returns_float32_C,
-    _call_objc_p_p_returns_float32_Dart>("objc_msgSend");
-typedef _call_objc_p_p_returns_float32_C = Float Function(
-    Pointer _arg0, Pointer _arg1);
-typedef _call_objc_p_p_returns_float32_Dart = double Function(
-    Pointer _arg0, Pointer _arg1);
-
-final _call_objc_p_p_returns_float64 = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_returns_float64_C,
-    _call_objc_p_p_returns_float64_Dart>("objc_msgSend");
-typedef _call_objc_p_p_returns_float64_C = Float Function(
-    Pointer _arg0, Pointer _arg1);
-typedef _call_objc_p_p_returns_float64_Dart = double Function(
-    Pointer _arg0, Pointer _arg1);
-
-final _call_objc_p_p_returns_p = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_returns_p_C, _call_objc_p_p_returns_p_Dart>(
+final _call_ptr_ptr_ptr_ptr_ptr_ptr_Int8_ptr_ptr_ptr_returns_ptr =
+    _objc.dlForObjectiveC.lookupFunction<
+            _call_ptr_ptr_ptr_ptr_ptr_ptr_Int8_ptr_ptr_ptr_returns_ptr_C,
+            _call_ptr_ptr_ptr_ptr_ptr_ptr_Int8_ptr_ptr_ptr_returns_ptr_Dart>(
         "objc_msgSend");
-typedef _call_objc_p_p_returns_p_C = Pointer Function(
+typedef _call_ptr_ptr_ptr_ptr_ptr_ptr_Int8_ptr_ptr_ptr_returns_ptr_C
+    = Pointer Function(
+        Pointer _arg0,
+        Pointer _arg1,
+        Pointer arg,
+        Pointer uuid,
+        Pointer name,
+        Pointer configuredName,
+        Int8 compatible,
+        Pointer components,
+        Pointer settings,
+        Pointer symptomHandler);
+typedef _call_ptr_ptr_ptr_ptr_ptr_ptr_Int8_ptr_ptr_ptr_returns_ptr_Dart
+    = Pointer Function(
+        Pointer _arg0,
+        Pointer _arg1,
+        Pointer arg,
+        Pointer uuid,
+        Pointer name,
+        Pointer configuredName,
+        int compatible,
+        Pointer components,
+        Pointer settings,
+        Pointer symptomHandler);
+
+final _call_ptr_ptr_ptr_ptr_ptr_ptr_Int8_returns_ptr = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_ptr_ptr_ptr_Int8_returns_ptr_C,
+        _call_ptr_ptr_ptr_ptr_ptr_ptr_Int8_returns_ptr_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_ptr_ptr_ptr_Int8_returns_ptr_C = Pointer Function(
+    Pointer _arg0,
+    Pointer _arg1,
+    Pointer arg,
+    Pointer appID,
+    Pointer homeName,
+    Pointer homeUUID,
+    Int8 trustedOrigin);
+typedef _call_ptr_ptr_ptr_ptr_ptr_ptr_Int8_returns_ptr_Dart = Pointer Function(
+    Pointer _arg0,
+    Pointer _arg1,
+    Pointer arg,
+    Pointer appID,
+    Pointer homeName,
+    Pointer homeUUID,
+    int trustedOrigin);
+
+final _call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_Int8_returns_ptr = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_Int8_returns_ptr_C,
+            _call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_Int8_returns_ptr_Dart>(
+        "objc_msgSend");
+typedef _call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_Int8_returns_ptr_C = Pointer Function(
+    Pointer _arg0,
+    Pointer _arg1,
+    Pointer arg,
+    Pointer accessoryName,
+    Pointer appID,
+    Pointer homeName,
+    Pointer homeUUID,
+    Int8 trustedOrigin);
+typedef _call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_Int8_returns_ptr_Dart
+    = Pointer Function(
+        Pointer _arg0,
+        Pointer _arg1,
+        Pointer arg,
+        Pointer accessoryName,
+        Pointer appID,
+        Pointer homeName,
+        Pointer homeUUID,
+        int trustedOrigin);
+
+final _call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr_C,
+        _call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr_C = Pointer Function(
+    Pointer _arg0,
+    Pointer _arg1,
+    Pointer arg,
+    Pointer name,
+    Pointer uuid,
+    Pointer home,
+    Pointer accessControls);
+typedef _call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr_Dart = Pointer Function(
+    Pointer _arg0,
+    Pointer _arg1,
+    Pointer arg,
+    Pointer name,
+    Pointer uuid,
+    Pointer home,
+    Pointer accessControls);
+
+final _call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_returns_void = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_returns_void_C,
+        _call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_returns_void_C = Void Function(
+    Pointer _arg0,
+    Pointer _arg1,
+    Pointer arg,
+    Pointer messageIdentifier,
+    Pointer messagePayload,
+    Pointer target,
+    Pointer responseHandler);
+typedef _call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_returns_void_Dart = void Function(
+    Pointer _arg0,
+    Pointer _arg1,
+    Pointer arg,
+    Pointer messageIdentifier,
+    Pointer messagePayload,
+    Pointer target,
+    Pointer responseHandler);
+
+final _call_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr_C,
+        _call_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr_C = Pointer Function(
+    Pointer _arg0,
+    Pointer _arg1,
+    Pointer arg,
+    Pointer significantEvent,
+    Pointer significantEventOffset,
+    Pointer recurrences);
+typedef _call_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr_Dart = Pointer Function(
+    Pointer _arg0,
+    Pointer _arg1,
+    Pointer arg,
+    Pointer significantEvent,
+    Pointer significantEventOffset,
+    Pointer recurrences);
+
+final _call_ptr_ptr_ptr_ptr_ptr_ptr_returns_void = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_ptr_ptr_ptr_returns_void_C,
+        _call_ptr_ptr_ptr_ptr_ptr_ptr_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_ptr_ptr_ptr_returns_void_C = Void Function(
+    Pointer _arg0,
+    Pointer _arg1,
+    Pointer arg,
+    Pointer messageIdentifier,
+    Pointer messagePayload,
+    Pointer target);
+typedef _call_ptr_ptr_ptr_ptr_ptr_ptr_returns_void_Dart = void Function(
+    Pointer _arg0,
+    Pointer _arg1,
+    Pointer arg,
+    Pointer messageIdentifier,
+    Pointer messagePayload,
+    Pointer target);
+
+final _call_ptr_ptr_ptr_ptr_ptr_returns_ptr = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_ptr_ptr_returns_ptr_C,
+        _call_ptr_ptr_ptr_ptr_ptr_returns_ptr_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_ptr_ptr_returns_ptr_C = Pointer Function(
+    Pointer _arg0,
+    Pointer _arg1,
+    Pointer arg,
+    Pointer significantEvent,
+    Pointer offset);
+typedef _call_ptr_ptr_ptr_ptr_ptr_returns_ptr_Dart = Pointer Function(
+    Pointer _arg0,
+    Pointer _arg1,
+    Pointer arg,
+    Pointer significantEvent,
+    Pointer offset);
+
+final _call_ptr_ptr_ptr_ptr_ptr_returns_void = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_ptr_ptr_returns_void_C,
+        _call_ptr_ptr_ptr_ptr_ptr_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_ptr_ptr_returns_void_C = Void Function(Pointer _arg0,
+    Pointer _arg1, Pointer arg, Pointer forHome, Pointer completionHandler);
+typedef _call_ptr_ptr_ptr_ptr_ptr_returns_void_Dart = void Function(
+    Pointer _arg0,
+    Pointer _arg1,
+    Pointer arg,
+    Pointer forHome,
+    Pointer completionHandler);
+
+final _call_ptr_ptr_ptr_ptr_returns_Int8 = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_ptr_ptr_returns_Int8_C,
+    _call_ptr_ptr_ptr_ptr_returns_Int8_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_ptr_returns_Int8_C = Int8 Function(
+    Pointer _arg0, Pointer _arg1, Pointer arg, Pointer operations);
+typedef _call_ptr_ptr_ptr_ptr_returns_Int8_Dart = int Function(
+    Pointer _arg0, Pointer _arg1, Pointer arg, Pointer operations);
+
+final _call_ptr_ptr_ptr_ptr_returns_ptr = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_ptr_ptr_returns_ptr_C,
+    _call_ptr_ptr_ptr_ptr_returns_ptr_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_ptr_returns_ptr_C = Pointer Function(
+    Pointer _arg0, Pointer _arg1, Pointer arg, Pointer uuid);
+typedef _call_ptr_ptr_ptr_ptr_returns_ptr_Dart = Pointer Function(
+    Pointer _arg0, Pointer _arg1, Pointer arg, Pointer uuid);
+
+final _call_ptr_ptr_ptr_ptr_returns_void = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_ptr_ptr_returns_void_C,
+    _call_ptr_ptr_ptr_ptr_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_ptr_returns_void_C = Void Function(
+    Pointer _arg0, Pointer _arg1, Pointer arg, Pointer completionHandler);
+typedef _call_ptr_ptr_ptr_ptr_returns_void_Dart = void Function(
+    Pointer _arg0, Pointer _arg1, Pointer arg, Pointer completionHandler);
+
+final _call_ptr_ptr_ptr_returns_Int8 = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_ptr_returns_Int8_C,
+    _call_ptr_ptr_ptr_returns_Int8_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_returns_Int8_C = Int8 Function(
+    Pointer _arg0, Pointer _arg1, Pointer arg);
+typedef _call_ptr_ptr_ptr_returns_Int8_Dart = int Function(
+    Pointer _arg0, Pointer _arg1, Pointer arg);
+
+final _call_ptr_ptr_ptr_returns_ptr = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_ptr_returns_ptr_C,
+    _call_ptr_ptr_ptr_returns_ptr_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_returns_ptr_C = Pointer Function(
+    Pointer _arg0, Pointer _arg1, Pointer arg);
+typedef _call_ptr_ptr_ptr_returns_ptr_Dart = Pointer Function(
+    Pointer _arg0, Pointer _arg1, Pointer arg);
+
+final _call_ptr_ptr_ptr_returns_void = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_ptr_returns_void_C,
+    _call_ptr_ptr_ptr_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_returns_void_C = Void Function(
+    Pointer _arg0, Pointer _arg1, Pointer arg);
+typedef _call_ptr_ptr_ptr_returns_void_Dart = void Function(
+    Pointer _arg0, Pointer _arg1, Pointer arg);
+
+final _call_ptr_ptr_returns_Int32 = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_returns_Int32_C,
+    _call_ptr_ptr_returns_Int32_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_returns_Int32_C = Int32 Function(
     Pointer _arg0, Pointer _arg1);
-typedef _call_objc_p_p_returns_p_Dart = Pointer Function(
+typedef _call_ptr_ptr_returns_Int32_Dart = int Function(
     Pointer _arg0, Pointer _arg1);
 
-final _call_objc_p_p_returns_void = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_returns_void_C,
-    _call_objc_p_p_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_returns_void_C = Void Function(
+final _call_ptr_ptr_returns_Int64 = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_returns_Int64_C,
+    _call_ptr_ptr_returns_Int64_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_returns_Int64_C = Int64 Function(
     Pointer _arg0, Pointer _arg1);
-typedef _call_objc_p_p_returns_void_Dart = void Function(
+typedef _call_ptr_ptr_returns_Int64_Dart = int Function(
+    Pointer _arg0, Pointer _arg1);
+
+final _call_ptr_ptr_returns_Int8 = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_returns_Int8_C,
+    _call_ptr_ptr_returns_Int8_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_returns_Int8_C = Int8 Function(
+    Pointer _arg0, Pointer _arg1);
+typedef _call_ptr_ptr_returns_Int8_Dart = int Function(
+    Pointer _arg0, Pointer _arg1);
+
+final _call_ptr_ptr_returns_Uint64 = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_returns_Uint64_C,
+    _call_ptr_ptr_returns_Uint64_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_returns_Uint64_C = Uint64 Function(
+    Pointer _arg0, Pointer _arg1);
+typedef _call_ptr_ptr_returns_Uint64_Dart = int Function(
+    Pointer _arg0, Pointer _arg1);
+
+final _call_ptr_ptr_returns_float32 = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_returns_float32_C,
+    _call_ptr_ptr_returns_float32_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_returns_float32_C = Float Function(
+    Pointer _arg0, Pointer _arg1);
+typedef _call_ptr_ptr_returns_float32_Dart = double Function(
+    Pointer _arg0, Pointer _arg1);
+
+final _call_ptr_ptr_returns_float64 = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_returns_float64_C,
+    _call_ptr_ptr_returns_float64_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_returns_float64_C = Float Function(
+    Pointer _arg0, Pointer _arg1);
+typedef _call_ptr_ptr_returns_float64_Dart = double Function(
+    Pointer _arg0, Pointer _arg1);
+
+final _call_ptr_ptr_returns_ptr = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_returns_ptr_C,
+    _call_ptr_ptr_returns_ptr_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_returns_ptr_C = Pointer Function(
+    Pointer _arg0, Pointer _arg1);
+typedef _call_ptr_ptr_returns_ptr_Dart = Pointer Function(
+    Pointer _arg0, Pointer _arg1);
+
+final _call_ptr_ptr_returns_void = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_returns_void_C,
+    _call_ptr_ptr_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_returns_void_C = Void Function(
+    Pointer _arg0, Pointer _arg1);
+typedef _call_ptr_ptr_returns_void_Dart = void Function(
     Pointer _arg0, Pointer _arg1);

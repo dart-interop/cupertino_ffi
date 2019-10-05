@@ -50,7 +50,7 @@ void main() {
 
         final attributes = CFDictionary.fromPointerMap({
           kSecAttrKeyType: kSecAttrKeyTypeRSA,
-          kSecAttrKeySizeInBits: CFNumber.fromDartInt(2048),
+          kSecAttrKeySizeInBits: CFNumber.fromDart(2048),
           kSecPrivateKeyAttrs: CFDictionary.fromPointerMap({
             kSecAttrIsPermanent: CFBoolean.fromDart(true),
             kSecAttrApplicationTag: CFData.fromDart([65, 65, 65]),

@@ -5,7 +5,6 @@ import 'package:ffi_tool/c.dart';
 import '../definitions/core_foundation.dart';
 import '../definitions/objective_c.dart';
 import '../definitions/security.dart';
-import '../definitions/libc.dart';
 
 void main() {
   // Core Foundation
@@ -24,11 +23,5 @@ void main() {
   generateFile(
     File("lib/src/objective_c/generated.dart"),
     libraryForObjectiveC,
-  );
-
-  // Objective-C runtime
-  generateFile(
-    File("lib/libc.dart"),
-    libraryForLibc,
   );
 }

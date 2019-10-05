@@ -1,3 +1,5 @@
+// AUTOMATICALLY GENERATED. DO NOT EDIT.
+
 /// Automatically generated API for [Natural Language](https://developer.apple.com/documentation/naturallanguage?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
@@ -21,9 +23,6 @@ void _openDynamicLibrary() {
   }
 }
 
-/// Automatically generated API. Part of [Natural Language](https://developer.apple.com/documentation/naturallanguage?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class NLClassifierModel extends Struct<NLClassifierModel> {
   factory NLClassifierModel._() {
@@ -35,9 +34,6 @@ class NLClassifierModel extends Struct<NLClassifierModel> {
   }
 }
 
-/// Automatically generated API. Part of [Natural Language](https://developer.apple.com/documentation/naturallanguage?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class NLClassifierModelDataInstance
     extends Struct<NLClassifierModelDataInstance> {
@@ -57,7 +53,7 @@ class NLClassifierModelDataInstance
     @required Pointer vocabularyMap,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("formattedLineWithLabelMap:vocabularyMap:"),
       arg,
@@ -65,43 +61,13 @@ class NLClassifierModelDataInstance
     );
   }
 
-  static Pointer initWithLine(
-    Pointer<NLClassifierModelDataInstance> _self,
-    Pointer arg, {
-    @required Pointer<Pointer> tokenizer,
-  }) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_p(
-      _self,
-      _objc.getSelector("initWithLine:tokenizer:"),
-      arg,
-      tokenizer,
-    );
-  }
-
-  static Pointer initWithString$label$tokenizer$(
-    Pointer<NLClassifierModelDataInstance> _self,
-    Pointer arg, {
-    @required Pointer label,
-    @required Pointer<Pointer> tokenizer,
-  }) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_p(
-      _self,
-      _objc.getSelector("initWithString:label:tokenizer:"),
-      arg,
-      label,
-      tokenizer,
-    );
-  }
-
-  static Pointer initWithString$label$(
+  static Pointer initWithString(
     Pointer<NLClassifierModelDataInstance> _self,
     Pointer arg, {
     @required Pointer label,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithString:label:"),
       arg,
@@ -109,21 +75,11 @@ class NLClassifierModelDataInstance
     );
   }
 
-  static Pointer<Pointer> instanceDictionary(
-    Pointer<NLClassifierModelDataInstance> _self,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
-      _self,
-      _objc.getSelector("instanceDictionary"),
-    );
-  }
-
   static Pointer label(
     Pointer<NLClassifierModelDataInstance> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("label"),
     );
@@ -133,27 +89,9 @@ class NLClassifierModelDataInstance
     Pointer<NLClassifierModelDataInstance> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("labels"),
-    );
-  }
-
-  static Pointer locatorsWithIndex(
-    Pointer<NLClassifierModelDataInstance> _self,
-    int arg, {
-    @required Pointer parameters,
-    @required Pointer tagger,
-    @required Pointer<Pointer> tokenizer,
-  }) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_Uint64_p_p_p_returns_p(
-      _self,
-      _objc.getSelector("locatorsWithIndex:parameters:tagger:tokenizer:"),
-      arg,
-      parameters,
-      tagger,
-      tokenizer,
     );
   }
 
@@ -161,23 +99,9 @@ class NLClassifierModelDataInstance
     Pointer<NLClassifierModelDataInstance> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("string"),
-    );
-  }
-
-  static Pointer subInstanceWithLocator(
-    Pointer<NLClassifierModelDataInstance> _self,
-    Pointer arg, {
-    @required Pointer<Pointer> tokenizer,
-  }) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_p(
-      _self,
-      _objc.getSelector("subInstanceWithLocator:tokenizer:"),
-      arg,
-      tokenizer,
     );
   }
 
@@ -185,16 +109,13 @@ class NLClassifierModelDataInstance
     Pointer<NLClassifierModelDataInstance> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("tokens"),
     );
   }
 }
 
-/// Automatically generated API. Part of [Natural Language](https://developer.apple.com/documentation/naturallanguage?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class NLConcatenatedDataProvider extends Struct<NLConcatenatedDataProvider> {
   factory NLConcatenatedDataProvider._() {
@@ -211,7 +132,7 @@ class NLConcatenatedDataProvider extends Struct<NLConcatenatedDataProvider> {
     Pointer<NLConcatenatedDataProvider> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("configuration"),
     );
@@ -221,7 +142,7 @@ class NLConcatenatedDataProvider extends Struct<NLConcatenatedDataProvider> {
     Pointer<NLConcatenatedDataProvider> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("documentFrequencyMap"),
     );
@@ -232,7 +153,7 @@ class NLConcatenatedDataProvider extends Struct<NLConcatenatedDataProvider> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithDataProviders:"),
       arg,
@@ -244,7 +165,7 @@ class NLConcatenatedDataProvider extends Struct<NLConcatenatedDataProvider> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Uint64_returns_p(
+    return _call_ptr_ptr_Uint64_returns_ptr(
       _self,
       _objc.getSelector("instanceAtIndex:"),
       arg,
@@ -255,7 +176,7 @@ class NLConcatenatedDataProvider extends Struct<NLConcatenatedDataProvider> {
     Pointer<NLConcatenatedDataProvider> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("inverseLabelMap"),
     );
@@ -265,7 +186,7 @@ class NLConcatenatedDataProvider extends Struct<NLConcatenatedDataProvider> {
     Pointer<NLConcatenatedDataProvider> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("labelMap"),
     );
@@ -275,7 +196,7 @@ class NLConcatenatedDataProvider extends Struct<NLConcatenatedDataProvider> {
     Pointer<NLConcatenatedDataProvider> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("numberOfInstances"),
     );
@@ -285,7 +206,7 @@ class NLConcatenatedDataProvider extends Struct<NLConcatenatedDataProvider> {
     Pointer<NLConcatenatedDataProvider> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("numberOfLabels"),
     );
@@ -295,19 +216,9 @@ class NLConcatenatedDataProvider extends Struct<NLConcatenatedDataProvider> {
     Pointer<NLConcatenatedDataProvider> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("numberOfVocabularyEntries"),
-    );
-  }
-
-  static Pointer<Pointer> tokenizer(
-    Pointer<NLConcatenatedDataProvider> _self,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
-      _self,
-      _objc.getSelector("tokenizer"),
     );
   }
 
@@ -315,16 +226,13 @@ class NLConcatenatedDataProvider extends Struct<NLConcatenatedDataProvider> {
     Pointer<NLConcatenatedDataProvider> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("vocabularyMap"),
     );
   }
 }
 
-/// Automatically generated API. Part of [Natural Language](https://developer.apple.com/documentation/naturallanguage?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class NLConstrainedDataProvider extends Struct<NLConstrainedDataProvider> {
   factory NLConstrainedDataProvider._() {
@@ -341,7 +249,7 @@ class NLConstrainedDataProvider extends Struct<NLConstrainedDataProvider> {
     Pointer<NLConstrainedDataProvider> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("configuration"),
     );
@@ -351,25 +259,9 @@ class NLConstrainedDataProvider extends Struct<NLConstrainedDataProvider> {
     Pointer<NLConstrainedDataProvider> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("documentFrequencyMap"),
-    );
-  }
-
-  static Pointer initWithDataProvider(
-    Pointer<NLConstrainedDataProvider> _self,
-    Pointer arg, {
-    @required Pointer parameters,
-    @required Pointer modelTrainer,
-  }) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_p(
-      _self,
-      _objc.getSelector("initWithDataProvider:parameters:modelTrainer:"),
-      arg,
-      parameters,
-      modelTrainer,
     );
   }
 
@@ -378,7 +270,7 @@ class NLConstrainedDataProvider extends Struct<NLConstrainedDataProvider> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Uint64_returns_p(
+    return _call_ptr_ptr_Uint64_returns_ptr(
       _self,
       _objc.getSelector("instanceAtIndex:"),
       arg,
@@ -389,7 +281,7 @@ class NLConstrainedDataProvider extends Struct<NLConstrainedDataProvider> {
     Pointer<NLConstrainedDataProvider> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("inverseLabelMap"),
     );
@@ -399,7 +291,7 @@ class NLConstrainedDataProvider extends Struct<NLConstrainedDataProvider> {
     Pointer<NLConstrainedDataProvider> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("labelMap"),
     );
@@ -409,7 +301,7 @@ class NLConstrainedDataProvider extends Struct<NLConstrainedDataProvider> {
     Pointer<NLConstrainedDataProvider> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("numberOfInstances"),
     );
@@ -419,7 +311,7 @@ class NLConstrainedDataProvider extends Struct<NLConstrainedDataProvider> {
     Pointer<NLConstrainedDataProvider> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("numberOfLabels"),
     );
@@ -429,19 +321,9 @@ class NLConstrainedDataProvider extends Struct<NLConstrainedDataProvider> {
     Pointer<NLConstrainedDataProvider> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("numberOfVocabularyEntries"),
-    );
-  }
-
-  static Pointer<Pointer> tokenizer(
-    Pointer<NLConstrainedDataProvider> _self,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
-      _self,
-      _objc.getSelector("tokenizer"),
     );
   }
 
@@ -449,16 +331,13 @@ class NLConstrainedDataProvider extends Struct<NLConstrainedDataProvider> {
     Pointer<NLConstrainedDataProvider> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("vocabularyMap"),
     );
   }
 }
 
-/// Automatically generated API. Part of [Natural Language](https://developer.apple.com/documentation/naturallanguage?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class NLDataEnumerator extends Struct<NLDataEnumerator> {
   factory NLDataEnumerator._() {
@@ -474,7 +353,7 @@ class NLDataEnumerator extends Struct<NLDataEnumerator> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithDataProvider:"),
       arg,
@@ -485,16 +364,13 @@ class NLDataEnumerator extends Struct<NLDataEnumerator> {
     Pointer<NLDataEnumerator> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("nextInstance"),
     );
   }
 }
 
-/// Automatically generated API. Part of [Natural Language](https://developer.apple.com/documentation/naturallanguage?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class NLDataInstance extends Struct<NLDataInstance> {
   factory NLDataInstance._() {
@@ -511,25 +387,11 @@ class NLDataInstance extends Struct<NLDataInstance> {
     @required Pointer vocabularyMap,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("formattedLineWithLabelMap:vocabularyMap:"),
       arg,
       vocabularyMap,
-    );
-  }
-
-  static Pointer initWithLine(
-    Pointer<NLDataInstance> _self,
-    Pointer arg, {
-    @required Pointer<Pointer> tokenizer,
-  }) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_p(
-      _self,
-      _objc.getSelector("initWithLine:tokenizer:"),
-      arg,
-      tokenizer,
     );
   }
 
@@ -539,7 +401,7 @@ class NLDataInstance extends Struct<NLDataInstance> {
     @required Pointer label,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithString:label:"),
       arg,
@@ -547,21 +409,11 @@ class NLDataInstance extends Struct<NLDataInstance> {
     );
   }
 
-  static Pointer<Pointer> instanceDictionary(
-    Pointer<NLDataInstance> _self,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
-      _self,
-      _objc.getSelector("instanceDictionary"),
-    );
-  }
-
   static Pointer label(
     Pointer<NLDataInstance> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("label"),
     );
@@ -571,27 +423,9 @@ class NLDataInstance extends Struct<NLDataInstance> {
     Pointer<NLDataInstance> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("labels"),
-    );
-  }
-
-  static Pointer locatorsWithIndex(
-    Pointer<NLDataInstance> _self,
-    int arg, {
-    @required Pointer parameters,
-    @required Pointer tagger,
-    @required Pointer<Pointer> tokenizer,
-  }) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_Uint64_p_p_p_returns_p(
-      _self,
-      _objc.getSelector("locatorsWithIndex:parameters:tagger:tokenizer:"),
-      arg,
-      parameters,
-      tagger,
-      tokenizer,
     );
   }
 
@@ -599,23 +433,9 @@ class NLDataInstance extends Struct<NLDataInstance> {
     Pointer<NLDataInstance> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("string"),
-    );
-  }
-
-  static Pointer subInstanceWithLocator(
-    Pointer<NLDataInstance> _self,
-    Pointer arg, {
-    @required Pointer<Pointer> tokenizer,
-  }) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_p(
-      _self,
-      _objc.getSelector("subInstanceWithLocator:tokenizer:"),
-      arg,
-      tokenizer,
     );
   }
 
@@ -623,16 +443,13 @@ class NLDataInstance extends Struct<NLDataInstance> {
     Pointer<NLDataInstance> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("tokens"),
     );
   }
 }
 
-/// Automatically generated API. Part of [Natural Language](https://developer.apple.com/documentation/naturallanguage?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class NLDataInstanceLocator extends Struct<NLDataInstanceLocator> {
   factory NLDataInstanceLocator._() {
@@ -649,26 +466,9 @@ class NLDataInstanceLocator extends Struct<NLDataInstanceLocator> {
     Pointer<NLDataInstanceLocator> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("description"),
-    );
-  }
-
-  static Pointer initWithInstanceIndex(
-    Pointer<NLDataInstanceLocator> _self,
-    int arg, {
-    @required Pointer rangeOfCharacters,
-    @required Pointer rangeOfTokens,
-  }) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_Uint64_p_p_returns_p(
-      _self,
-      _objc.getSelector(
-          "initWithInstanceIndex:rangeOfCharacters:rangeOfTokens:"),
-      arg,
-      rangeOfCharacters,
-      rangeOfTokens,
     );
   }
 
@@ -676,36 +476,13 @@ class NLDataInstanceLocator extends Struct<NLDataInstanceLocator> {
     Pointer<NLDataInstanceLocator> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("instanceIndex"),
     );
   }
-
-  static Pointer rangeOfCharacters(
-    Pointer<NLDataInstanceLocator> _self,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
-      _self,
-      _objc.getSelector("rangeOfCharacters"),
-    );
-  }
-
-  static Pointer rangeOfTokens(
-    Pointer<NLDataInstanceLocator> _self,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
-      _self,
-      _objc.getSelector("rangeOfTokens"),
-    );
-  }
 }
 
-/// Automatically generated API. Part of [Natural Language](https://developer.apple.com/documentation/naturallanguage?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class NLDataProvider extends Struct<NLDataProvider> {
   factory NLDataProvider._() {
@@ -720,7 +497,7 @@ class NLDataProvider extends Struct<NLDataProvider> {
     Pointer<NLDataProvider> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("configuration"),
     );
@@ -730,7 +507,7 @@ class NLDataProvider extends Struct<NLDataProvider> {
     Pointer<NLDataProvider> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("dealloc"),
     );
@@ -740,7 +517,7 @@ class NLDataProvider extends Struct<NLDataProvider> {
     Pointer<NLDataProvider> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("documentFrequencyMap"),
     );
@@ -751,7 +528,7 @@ class NLDataProvider extends Struct<NLDataProvider> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("generateMapsWithModelTrainer:"),
       arg,
@@ -764,7 +541,7 @@ class NLDataProvider extends Struct<NLDataProvider> {
     @required Pointer dataURL,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithConfiguration:dataURL:"),
       arg,
@@ -777,7 +554,7 @@ class NLDataProvider extends Struct<NLDataProvider> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Uint64_returns_p(
+    return _call_ptr_ptr_Uint64_returns_ptr(
       _self,
       _objc.getSelector("instanceAtIndex:"),
       arg,
@@ -788,7 +565,7 @@ class NLDataProvider extends Struct<NLDataProvider> {
     Pointer<NLDataProvider> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("inverseLabelMap"),
     );
@@ -798,7 +575,7 @@ class NLDataProvider extends Struct<NLDataProvider> {
     Pointer<NLDataProvider> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("labelMap"),
     );
@@ -808,7 +585,7 @@ class NLDataProvider extends Struct<NLDataProvider> {
     Pointer<NLDataProvider> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("numberOfInstances"),
     );
@@ -818,7 +595,7 @@ class NLDataProvider extends Struct<NLDataProvider> {
     Pointer<NLDataProvider> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("numberOfLabels"),
     );
@@ -828,7 +605,7 @@ class NLDataProvider extends Struct<NLDataProvider> {
     Pointer<NLDataProvider> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("numberOfTokens"),
     );
@@ -838,19 +615,9 @@ class NLDataProvider extends Struct<NLDataProvider> {
     Pointer<NLDataProvider> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("numberOfVocabularyEntries"),
-    );
-  }
-
-  static Pointer<Pointer> tokenizer(
-    Pointer<NLDataProvider> _self,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
-      _self,
-      _objc.getSelector("tokenizer"),
     );
   }
 
@@ -858,16 +625,13 @@ class NLDataProvider extends Struct<NLDataProvider> {
     Pointer<NLDataProvider> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("vocabularyMap"),
     );
   }
 }
 
-/// Automatically generated API. Part of [Natural Language](https://developer.apple.com/documentation/naturallanguage?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class NLDataSet extends Struct<NLDataSet> {
   factory NLDataSet._() {
@@ -882,7 +646,7 @@ class NLDataSet extends Struct<NLDataSet> {
     Pointer<NLDataSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("configuration"),
     );
@@ -893,7 +657,7 @@ class NLDataSet extends Struct<NLDataSet> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int64_returns_p(
+    return _call_ptr_ptr_Int64_returns_ptr(
       _self,
       _objc.getSelector("dataProviderOfType:"),
       arg,
@@ -904,14 +668,14 @@ class NLDataSet extends Struct<NLDataSet> {
     Pointer<NLDataSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("documentFrequencyMap"),
     );
   }
 
   static Pointer
-      initWithConfiguration$trainingDataURL$validationDataURL$testDataURL$(
+      initWithConfiguration$trainingDataURL$validationDataURL$testDataURL(
     Pointer<NLDataSet> _self,
     Pointer arg, {
     @required Pointer trainingDataURL,
@@ -919,7 +683,7 @@ class NLDataSet extends Struct<NLDataSet> {
     @required Pointer testDataURL,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector(
           "initWithConfiguration:trainingDataURL:validationDataURL:testDataURL:"),
@@ -931,7 +695,7 @@ class NLDataSet extends Struct<NLDataSet> {
   }
 
   static Pointer
-      initWithConfiguration$trainingDataProvider$validationDataProvider$testDataProvider$(
+      initWithConfiguration$trainingDataProvider$validationDataProvider$testDataProvider(
     Pointer<NLDataSet> _self,
     Pointer arg, {
     @required Pointer trainingDataProvider,
@@ -939,7 +703,7 @@ class NLDataSet extends Struct<NLDataSet> {
     @required Pointer testDataProvider,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector(
           "initWithConfiguration:trainingDataProvider:validationDataProvider:testDataProvider:"),
@@ -951,7 +715,7 @@ class NLDataSet extends Struct<NLDataSet> {
   }
 
   static Pointer
-      initWithConfiguration$dataProvider$validationSplit$testingSplit$(
+      initWithConfiguration$dataProvider$validationSplit$testingSplit(
     Pointer<NLDataSet> _self,
     Pointer arg, {
     @required Pointer dataProvider,
@@ -959,7 +723,7 @@ class NLDataSet extends Struct<NLDataSet> {
     @required double testingSplit,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_float64_float64_returns_p(
+    return _call_ptr_ptr_ptr_ptr_float64_float64_returns_ptr(
       _self,
       _objc.getSelector(
           "initWithConfiguration:dataProvider:validationSplit:testingSplit:"),
@@ -974,7 +738,7 @@ class NLDataSet extends Struct<NLDataSet> {
     Pointer<NLDataSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("inverseLabelMap"),
     );
@@ -984,7 +748,7 @@ class NLDataSet extends Struct<NLDataSet> {
     Pointer<NLDataSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("labelMap"),
     );
@@ -994,7 +758,7 @@ class NLDataSet extends Struct<NLDataSet> {
     Pointer<NLDataSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("numberOfLabels"),
     );
@@ -1004,7 +768,7 @@ class NLDataSet extends Struct<NLDataSet> {
     Pointer<NLDataSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("numberOfTestInstances"),
     );
@@ -1014,7 +778,7 @@ class NLDataSet extends Struct<NLDataSet> {
     Pointer<NLDataSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("numberOfTrainingInstances"),
     );
@@ -1024,7 +788,7 @@ class NLDataSet extends Struct<NLDataSet> {
     Pointer<NLDataSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("numberOfValidationInstances"),
     );
@@ -1034,7 +798,7 @@ class NLDataSet extends Struct<NLDataSet> {
     Pointer<NLDataSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("numberOfVocabularyEntries"),
     );
@@ -1045,7 +809,7 @@ class NLDataSet extends Struct<NLDataSet> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Uint64_returns_p(
+    return _call_ptr_ptr_Uint64_returns_ptr(
       _self,
       _objc.getSelector("testInstanceAtIndex:"),
       arg,
@@ -1057,7 +821,7 @@ class NLDataSet extends Struct<NLDataSet> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Uint64_returns_p(
+    return _call_ptr_ptr_Uint64_returns_ptr(
       _self,
       _objc.getSelector("trainingInstanceAtIndex:"),
       arg,
@@ -1069,7 +833,7 @@ class NLDataSet extends Struct<NLDataSet> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Uint64_returns_p(
+    return _call_ptr_ptr_Uint64_returns_ptr(
       _self,
       _objc.getSelector("validationInstanceAtIndex:"),
       arg,
@@ -1080,16 +844,13 @@ class NLDataSet extends Struct<NLDataSet> {
     Pointer<NLDataSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("vocabularyMap"),
     );
   }
 }
 
-/// Automatically generated API. Part of [Natural Language](https://developer.apple.com/documentation/naturallanguage?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class NLLanguageModel extends Struct<NLLanguageModel> {
   factory NLLanguageModel._() {
@@ -1106,7 +867,7 @@ class NLLanguageModel extends Struct<NLLanguageModel> {
     @required Pointer context,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_float64(
+    return _call_ptr_ptr_ptr_ptr_returns_float64(
       _self,
       _objc.getSelector("conditionalProbabilityForEntry:context:"),
       arg,
@@ -1120,7 +881,7 @@ class NLLanguageModel extends Struct<NLLanguageModel> {
     @required Pointer context,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_float64(
+    return _call_ptr_ptr_ptr_ptr_returns_float64(
       _self,
       _objc.getSelector("conditionalProbabilityForWord:context:"),
       arg,
@@ -1132,7 +893,7 @@ class NLLanguageModel extends Struct<NLLanguageModel> {
     Pointer<NLLanguageModel> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("dealloc"),
     );
@@ -1142,21 +903,20 @@ class NLLanguageModel extends Struct<NLLanguageModel> {
     Pointer<NLLanguageModel> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("description"),
     );
   }
 
-  static void
-      enumeratePredictionsForContext$maxEntriesPerPrediction$usingBlock$(
+  static void enumeratePredictionsForContext$maxEntriesPerPrediction$usingBlock(
     Pointer<NLLanguageModel> _self,
     Pointer arg, {
     @required int maxEntriesPerPrediction,
     @required Pointer usingBlock,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_Uint64_p_returns_void(
+    _call_ptr_ptr_ptr_Uint64_ptr_returns_void(
       _self,
       _objc.getSelector(
           "enumeratePredictionsForContext:maxEntriesPerPrediction:usingBlock:"),
@@ -1166,14 +926,14 @@ class NLLanguageModel extends Struct<NLLanguageModel> {
     );
   }
 
-  static void enumeratePredictionsForContext$maxWordsPerPrediction$usingBlock$(
+  static void enumeratePredictionsForContext$maxWordsPerPrediction$usingBlock(
     Pointer<NLLanguageModel> _self,
     Pointer arg, {
     @required int maxWordsPerPrediction,
     @required Pointer usingBlock,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_Uint64_p_returns_void(
+    _call_ptr_ptr_ptr_Uint64_ptr_returns_void(
       _self,
       _objc.getSelector(
           "enumeratePredictionsForContext:maxWordsPerPrediction:usingBlock:"),
@@ -1191,7 +951,7 @@ class NLLanguageModel extends Struct<NLLanguageModel> {
     @required Pointer<Float> probability,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Uint32_p_Uint64_p_returns_Int8(
+    return _call_ptr_ptr_Uint32_ptr_Uint64_ptr_returns_Int8(
       _self,
       _objc.getSelector(
           "getConditionalProbabilityForTokenID:context:length:probability:"),
@@ -1207,7 +967,7 @@ class NLLanguageModel extends Struct<NLLanguageModel> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithLocalization:"),
       arg,
@@ -1218,7 +978,7 @@ class NLLanguageModel extends Struct<NLLanguageModel> {
     Pointer<NLLanguageModel> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("lexicon"),
     );
@@ -1228,16 +988,13 @@ class NLLanguageModel extends Struct<NLLanguageModel> {
     Pointer<NLLanguageModel> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("localization"),
     );
   }
 }
 
-/// Automatically generated API. Part of [Natural Language](https://developer.apple.com/documentation/naturallanguage?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class NLLanguageRecognizer extends Struct<NLLanguageRecognizer> {
   factory NLLanguageRecognizer._() {
@@ -1252,7 +1009,7 @@ class NLLanguageRecognizer extends Struct<NLLanguageRecognizer> {
     Pointer<NLLanguageRecognizer> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("dealloc"),
     );
@@ -1262,7 +1019,7 @@ class NLLanguageRecognizer extends Struct<NLLanguageRecognizer> {
     Pointer<NLLanguageRecognizer> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("dominantLanguage"),
     );
@@ -1272,7 +1029,7 @@ class NLLanguageRecognizer extends Struct<NLLanguageRecognizer> {
     Pointer<NLLanguageRecognizer> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("init"),
     );
@@ -1282,7 +1039,7 @@ class NLLanguageRecognizer extends Struct<NLLanguageRecognizer> {
     Pointer<NLLanguageRecognizer> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("languageConstraints"),
     );
@@ -1292,7 +1049,7 @@ class NLLanguageRecognizer extends Struct<NLLanguageRecognizer> {
     Pointer<NLLanguageRecognizer> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("languageHints"),
     );
@@ -1303,33 +1060,19 @@ class NLLanguageRecognizer extends Struct<NLLanguageRecognizer> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Uint64_returns_p(
+    return _call_ptr_ptr_Uint64_returns_ptr(
       _self,
       _objc.getSelector("languageHypothesesWithMaximum:"),
       arg,
     );
   }
 
-  static void processString$range$(
-    Pointer<NLLanguageRecognizer> _self,
-    Pointer arg, {
-    @required Pointer range,
-  }) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
-      _self,
-      _objc.getSelector("processString:range:"),
-      arg,
-      range,
-    );
-  }
-
-  static void processString$(
+  static void processString(
     Pointer<NLLanguageRecognizer> _self,
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("processString:"),
       arg,
@@ -1340,7 +1083,7 @@ class NLLanguageRecognizer extends Struct<NLLanguageRecognizer> {
     Pointer<NLLanguageRecognizer> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("reset"),
     );
@@ -1351,7 +1094,7 @@ class NLLanguageRecognizer extends Struct<NLLanguageRecognizer> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setLanguageConstraints:"),
       arg,
@@ -1363,7 +1106,7 @@ class NLLanguageRecognizer extends Struct<NLLanguageRecognizer> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setLanguageHints:"),
       arg,
@@ -1371,9 +1114,6 @@ class NLLanguageRecognizer extends Struct<NLLanguageRecognizer> {
   }
 }
 
-/// Automatically generated API. Part of [Natural Language](https://developer.apple.com/documentation/naturallanguage?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class NLLexicon extends Struct<NLLexicon> {
   factory NLLexicon._() {
@@ -1388,7 +1128,7 @@ class NLLexicon extends Struct<NLLexicon> {
     Pointer<NLLexicon> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("dealloc"),
     );
@@ -1398,7 +1138,7 @@ class NLLexicon extends Struct<NLLexicon> {
     Pointer<NLLexicon> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("description"),
     );
@@ -1409,7 +1149,7 @@ class NLLexicon extends Struct<NLLexicon> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("entryForString:"),
       arg,
@@ -1421,7 +1161,7 @@ class NLLexicon extends Struct<NLLexicon> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Uint32_returns_p(
+    return _call_ptr_ptr_Uint32_returns_ptr(
       _self,
       _objc.getSelector("entryForTokenID:"),
       arg,
@@ -1434,7 +1174,7 @@ class NLLexicon extends Struct<NLLexicon> {
     @required Pointer usingBlock,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("enumerateCompletionsForPrefix:usingBlock:"),
       arg,
@@ -1448,7 +1188,7 @@ class NLLexicon extends Struct<NLLexicon> {
     @required Pointer<Float> probability,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("getProbabilityForString:probability:"),
       arg,
@@ -1462,7 +1202,7 @@ class NLLexicon extends Struct<NLLexicon> {
     @required Pointer<Float> probability,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Uint32_p_returns_Int8(
+    return _call_ptr_ptr_Uint32_ptr_returns_Int8(
       _self,
       _objc.getSelector("getProbabilityForTokenID:probability:"),
       arg,
@@ -1475,20 +1215,10 @@ class NLLexicon extends Struct<NLLexicon> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithLocalization:"),
       arg,
-    );
-  }
-
-  static Pointer<Pointer> lexicon(
-    Pointer<NLLexicon> _self,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
-      _self,
-      _objc.getSelector("lexicon"),
     );
   }
 
@@ -1496,16 +1226,13 @@ class NLLexicon extends Struct<NLLexicon> {
     Pointer<NLLexicon> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("localization"),
     );
   }
 }
 
-/// Automatically generated API. Part of [Natural Language](https://developer.apple.com/documentation/naturallanguage?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class NLLexiconCompletion extends Struct<NLLexiconCompletion> {
   factory NLLexiconCompletion._() {
@@ -1520,7 +1247,7 @@ class NLLexiconCompletion extends Struct<NLLexiconCompletion> {
     Pointer<NLLexiconCompletion> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("description"),
     );
@@ -1532,7 +1259,7 @@ class NLLexiconCompletion extends Struct<NLLexiconCompletion> {
     @required double score,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Uint32_float64_returns_p(
+    return _call_ptr_ptr_Uint32_float64_returns_ptr(
       _self,
       _objc.getSelector("initWithTokenID:score:"),
       arg,
@@ -1544,7 +1271,7 @@ class NLLexiconCompletion extends Struct<NLLexiconCompletion> {
     Pointer<NLLexiconCompletion> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_float64(
+    return _call_ptr_ptr_returns_float64(
       _self,
       _objc.getSelector("score"),
     );
@@ -1554,16 +1281,13 @@ class NLLexiconCompletion extends Struct<NLLexiconCompletion> {
     Pointer<NLLexiconCompletion> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint32(
+    return _call_ptr_ptr_returns_Uint32(
       _self,
       _objc.getSelector("tokenID"),
     );
   }
 }
 
-/// Automatically generated API. Part of [Natural Language](https://developer.apple.com/documentation/naturallanguage?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class NLLexiconCursor extends Struct<NLLexiconCursor> {
   factory NLLexiconCursor._() {
@@ -1579,7 +1303,7 @@ class NLLexiconCursor extends Struct<NLLexiconCursor> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("cursorByAdvancingWithString:"),
       arg,
@@ -1590,7 +1314,7 @@ class NLLexiconCursor extends Struct<NLLexiconCursor> {
     Pointer<NLLexiconCursor> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("dealloc"),
     );
@@ -1601,7 +1325,7 @@ class NLLexiconCursor extends Struct<NLLexiconCursor> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("enumerateChildrenUsingBlock:"),
       arg,
@@ -1613,7 +1337,7 @@ class NLLexiconCursor extends Struct<NLLexiconCursor> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("enumerateCompletionsUsingBlock:"),
       arg,
@@ -1625,7 +1349,7 @@ class NLLexiconCursor extends Struct<NLLexiconCursor> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("enumerateEntriesUsingBlock:"),
       arg,
@@ -1636,7 +1360,7 @@ class NLLexiconCursor extends Struct<NLLexiconCursor> {
     Pointer<NLLexiconCursor> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("hasChildren"),
     );
@@ -1646,33 +1370,19 @@ class NLLexiconCursor extends Struct<NLLexiconCursor> {
     Pointer<NLLexiconCursor> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("hasEntries"),
     );
   }
 
-  static Pointer initWithLexicon$cursor$(
-    Pointer<NLLexiconCursor> _self,
-    Pointer arg, {
-    @required Pointer<Pointer> cursor,
-  }) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_p(
-      _self,
-      _objc.getSelector("initWithLexicon:cursor:"),
-      arg,
-      cursor,
-    );
-  }
-
-  static Pointer initWithLexicon$string$(
+  static Pointer initWithLexicon(
     Pointer<NLLexiconCursor> _self,
     Pointer arg, {
     @required Pointer string,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithLexicon:string:"),
       arg,
@@ -1684,7 +1394,7 @@ class NLLexiconCursor extends Struct<NLLexiconCursor> {
     Pointer<NLLexiconCursor> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_float64(
+    return _call_ptr_ptr_returns_float64(
       _self,
       _objc.getSelector("prefixProbability"),
     );
@@ -1694,7 +1404,7 @@ class NLLexiconCursor extends Struct<NLLexiconCursor> {
     Pointer<NLLexiconCursor> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_float64(
+    return _call_ptr_ptr_returns_float64(
       _self,
       _objc.getSelector("terminationProbability"),
     );
@@ -1704,16 +1414,13 @@ class NLLexiconCursor extends Struct<NLLexiconCursor> {
     Pointer<NLLexiconCursor> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("traversedString"),
     );
   }
 }
 
-/// Automatically generated API. Part of [Natural Language](https://developer.apple.com/documentation/naturallanguage?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class NLLexiconEntry extends Struct<NLLexiconEntry> {
   factory NLLexiconEntry._() {
@@ -1728,7 +1435,7 @@ class NLLexiconEntry extends Struct<NLLexiconEntry> {
     Pointer<NLLexiconEntry> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("flags"),
     );
@@ -1742,7 +1449,7 @@ class NLLexiconEntry extends Struct<NLLexiconEntry> {
     @required double probability,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_Uint32_Uint64_float64_returns_p(
+    return _call_ptr_ptr_ptr_Uint32_Uint64_float64_returns_ptr(
       _self,
       _objc.getSelector("initWithString:tokenID:flags:probability:"),
       arg,
@@ -1756,7 +1463,7 @@ class NLLexiconEntry extends Struct<NLLexiconEntry> {
     Pointer<NLLexiconEntry> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_float64(
+    return _call_ptr_ptr_returns_float64(
       _self,
       _objc.getSelector("probability"),
     );
@@ -1766,7 +1473,7 @@ class NLLexiconEntry extends Struct<NLLexiconEntry> {
     Pointer<NLLexiconEntry> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("string"),
     );
@@ -1776,16 +1483,13 @@ class NLLexiconEntry extends Struct<NLLexiconEntry> {
     Pointer<NLLexiconEntry> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint32(
+    return _call_ptr_ptr_returns_Uint32(
       _self,
       _objc.getSelector("tokenID"),
     );
   }
 }
 
-/// Automatically generated API. Part of [Natural Language](https://developer.apple.com/documentation/naturallanguage?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class NLLogCategory extends Struct<NLLogCategory> {
   factory NLLogCategory._() {
@@ -1802,7 +1506,7 @@ class NLLogCategory extends Struct<NLLogCategory> {
     @required Pointer inSubsystem,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initCategory:inSubsystem:"),
       arg,
@@ -1814,7 +1518,7 @@ class NLLogCategory extends Struct<NLLogCategory> {
     Pointer<NLLogCategory> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("internal"),
     );
@@ -1824,7 +1528,7 @@ class NLLogCategory extends Struct<NLLogCategory> {
     Pointer<NLLogCategory> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("loggingCategory"),
     );
@@ -1834,16 +1538,13 @@ class NLLogCategory extends Struct<NLLogCategory> {
     Pointer<NLLogCategory> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("loggingSubsystem"),
     );
   }
 }
 
-/// Automatically generated API. Part of [Natural Language](https://developer.apple.com/documentation/naturallanguage?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class NLModel extends Struct<NLModel> {
   factory NLModel._() {
@@ -1859,7 +1560,7 @@ class NLModel extends Struct<NLModel> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("classifierTestResultsWithDataProvider:"),
       arg,
@@ -1870,7 +1571,7 @@ class NLModel extends Struct<NLModel> {
     Pointer<NLModel> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("configuration"),
     );
@@ -1880,7 +1581,7 @@ class NLModel extends Struct<NLModel> {
     Pointer<NLModel> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("data"),
     );
@@ -1890,7 +1591,7 @@ class NLModel extends Struct<NLModel> {
     Pointer<NLModel> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("dealloc"),
     );
@@ -1900,7 +1601,7 @@ class NLModel extends Struct<NLModel> {
     Pointer<NLModel> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("documentFrequencyMap"),
     );
@@ -1911,7 +1612,7 @@ class NLModel extends Struct<NLModel> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithClassifierMLModel:"),
       arg,
@@ -1924,7 +1625,7 @@ class NLModel extends Struct<NLModel> {
     @required Pointer modelImpl,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithConfiguration:modelImpl:"),
       arg,
@@ -1938,7 +1639,7 @@ class NLModel extends Struct<NLModel> {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithContentsOfURL:error:"),
       arg,
@@ -1946,13 +1647,13 @@ class NLModel extends Struct<NLModel> {
     );
   }
 
-  static Pointer initWithData$error$(
+  static Pointer initWithData$error(
     Pointer<NLModel> _self,
     Pointer arg, {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithData:error:"),
       arg,
@@ -1960,14 +1661,14 @@ class NLModel extends Struct<NLModel> {
     );
   }
 
-  static Pointer initWithData$mlModel$error$(
+  static Pointer initWithData$mlModel$error(
     Pointer<NLModel> _self,
     Pointer arg, {
     @required Pointer mlModel,
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithData:mlModel:error:"),
       arg,
@@ -1982,7 +1683,7 @@ class NLModel extends Struct<NLModel> {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithMLModel:error:"),
       arg,
@@ -1994,7 +1695,7 @@ class NLModel extends Struct<NLModel> {
     Pointer<NLModel> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("labelMap"),
     );
@@ -2004,7 +1705,7 @@ class NLModel extends Struct<NLModel> {
     Pointer<NLModel> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("mlModel"),
     );
@@ -2015,7 +1716,7 @@ class NLModel extends Struct<NLModel> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("predictedLabelForString:"),
       arg,
@@ -2027,7 +1728,7 @@ class NLModel extends Struct<NLModel> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("predictedLabelsForTokens:"),
       arg,
@@ -2039,7 +1740,7 @@ class NLModel extends Struct<NLModel> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("sequenceTestResultsWithDataProvider:"),
       arg,
@@ -2051,7 +1752,7 @@ class NLModel extends Struct<NLModel> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("testResultsWithDataProvider:"),
       arg,
@@ -2063,7 +1764,7 @@ class NLModel extends Struct<NLModel> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("testResultsWithDataSet:"),
       arg,
@@ -2074,20 +1775,20 @@ class NLModel extends Struct<NLModel> {
     Pointer<NLModel> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("vocabularyMap"),
     );
   }
 
-  static int writeMLModelToURL$options$error$(
+  static int writeMLModelToURL$options$error(
     Pointer<NLModel> _self,
     Pointer arg, {
     @required Pointer options,
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("writeMLModelToURL:options:error:"),
       arg,
@@ -2096,14 +1797,14 @@ class NLModel extends Struct<NLModel> {
     );
   }
 
-  static int writeMLModelToURL$atomically$error$(
+  static int writeMLModelToURL$atomically$error(
     Pointer<NLModel> _self,
     Pointer arg, {
     @required int atomically,
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_Int8_p_returns_Int8(
+    return _call_ptr_ptr_ptr_Int8_ptr_returns_Int8(
       _self,
       _objc.getSelector("writeMLModelToURL:atomically:error:"),
       arg,
@@ -2119,7 +1820,7 @@ class NLModel extends Struct<NLModel> {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_Int8_p_returns_Int8(
+    return _call_ptr_ptr_ptr_Int8_ptr_returns_Int8(
       _self,
       _objc.getSelector("writeToURL:atomically:error:"),
       arg,
@@ -2129,9 +1830,6 @@ class NLModel extends Struct<NLModel> {
   }
 }
 
-/// Automatically generated API. Part of [Natural Language](https://developer.apple.com/documentation/naturallanguage?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class NLModelConfiguration extends Struct<NLModelConfiguration> {
   factory NLModelConfiguration._() {
@@ -2142,24 +1840,12 @@ class NLModelConfiguration extends Struct<NLModelConfiguration> {
     return _objc.allocate("NLModelConfiguration").cast<NLModelConfiguration>();
   }
 
-  static Pointer copyWithZone(
-    Pointer<NLModelConfiguration> _self,
-    Pointer<Pointer> arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
-      _self,
-      _objc.getSelector("copyWithZone:"),
-      arg,
-    );
-  }
-
   static void encodeWithCoder(
     Pointer<NLModelConfiguration> _self,
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("encodeWithCoder:"),
       arg,
@@ -2170,7 +1856,7 @@ class NLModelConfiguration extends Struct<NLModelConfiguration> {
     Pointer<NLModelConfiguration> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("hash"),
     );
@@ -2181,7 +1867,7 @@ class NLModelConfiguration extends Struct<NLModelConfiguration> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithCoder:"),
       arg,
@@ -2195,7 +1881,7 @@ class NLModelConfiguration extends Struct<NLModelConfiguration> {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int64_p_p_returns_p(
+    return _call_ptr_ptr_Int64_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithModelType:options:error:"),
       arg,
@@ -2209,7 +1895,7 @@ class NLModelConfiguration extends Struct<NLModelConfiguration> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isEqual:"),
       arg,
@@ -2220,7 +1906,7 @@ class NLModelConfiguration extends Struct<NLModelConfiguration> {
     Pointer<NLModelConfiguration> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("language"),
     );
@@ -2230,7 +1916,7 @@ class NLModelConfiguration extends Struct<NLModelConfiguration> {
     Pointer<NLModelConfiguration> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("options"),
     );
@@ -2240,7 +1926,7 @@ class NLModelConfiguration extends Struct<NLModelConfiguration> {
     Pointer<NLModelConfiguration> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("revision"),
     );
@@ -2250,16 +1936,13 @@ class NLModelConfiguration extends Struct<NLModelConfiguration> {
     Pointer<NLModelConfiguration> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int64(
+    return _call_ptr_ptr_returns_Int64(
       _self,
       _objc.getSelector("type"),
     );
   }
 }
 
-/// Automatically generated API. Part of [Natural Language](https://developer.apple.com/documentation/naturallanguage?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class NLModelImpl extends Struct<NLModelImpl> {
   factory NLModelImpl._() {
@@ -2274,7 +1957,7 @@ class NLModelImpl extends Struct<NLModelImpl> {
     Pointer<NLModelImpl> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("configuration"),
     );
@@ -2284,7 +1967,7 @@ class NLModelImpl extends Struct<NLModelImpl> {
     Pointer<NLModelImpl> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("documentFrequencyMap"),
     );
@@ -2300,7 +1983,7 @@ class NLModelImpl extends Struct<NLModelImpl> {
     @required int numberOfTrainingInstances,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_p_p_Uint64_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_Uint64_returns_ptr(
       _self,
       _objc.getSelector(
           "initWithModelData:configuration:labelMap:vocabularyMap:documentFrequencyMap:numberOfTrainingInstances:"),
@@ -2318,7 +2001,7 @@ class NLModelImpl extends Struct<NLModelImpl> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithModelTrainer:"),
       arg,
@@ -2329,7 +2012,7 @@ class NLModelImpl extends Struct<NLModelImpl> {
     Pointer<NLModelImpl> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("labelMap"),
     );
@@ -2339,7 +2022,7 @@ class NLModelImpl extends Struct<NLModelImpl> {
     Pointer<NLModelImpl> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("modelData"),
     );
@@ -2349,7 +2032,7 @@ class NLModelImpl extends Struct<NLModelImpl> {
     Pointer<NLModelImpl> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("numberOfTrainingInstances"),
     );
@@ -2360,7 +2043,7 @@ class NLModelImpl extends Struct<NLModelImpl> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("predictedLabelForString:"),
       arg,
@@ -2372,7 +2055,7 @@ class NLModelImpl extends Struct<NLModelImpl> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("predictedLabelsForTokens:"),
       arg,
@@ -2383,16 +2066,13 @@ class NLModelImpl extends Struct<NLModelImpl> {
     Pointer<NLModelImpl> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("vocabularyMap"),
     );
   }
 }
 
-/// Automatically generated API. Part of [Natural Language](https://developer.apple.com/documentation/naturallanguage?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class NLModelImplL extends Struct<NLModelImplL> {
   factory NLModelImplL._() {
@@ -2407,7 +2087,7 @@ class NLModelImplL extends Struct<NLModelImplL> {
     Pointer<NLModelImplL> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("configuration"),
     );
@@ -2417,7 +2097,7 @@ class NLModelImplL extends Struct<NLModelImplL> {
     Pointer<NLModelImplL> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("dealloc"),
     );
@@ -2427,7 +2107,7 @@ class NLModelImplL extends Struct<NLModelImplL> {
     Pointer<NLModelImplL> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("documentFrequencyMap"),
     );
@@ -2443,7 +2123,7 @@ class NLModelImplL extends Struct<NLModelImplL> {
     @required int numberOfTrainingInstances,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_p_p_Uint64_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_Uint64_returns_ptr(
       _self,
       _objc.getSelector(
           "initWithModelData:configuration:labelMap:vocabularyMap:documentFrequencyMap:numberOfTrainingInstances:"),
@@ -2461,7 +2141,7 @@ class NLModelImplL extends Struct<NLModelImplL> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithModelTrainer:"),
       arg,
@@ -2478,7 +2158,7 @@ class NLModelImplL extends Struct<NLModelImplL> {
     @required int numberOfTrainingInstances,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_p_p_Uint64_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_Uint64_returns_ptr(
       _self,
       _objc.getSelector(
           "initWithOwnedModelObject:configuration:labelMap:vocabularyMap:documentFrequencyMap:numberOfTrainingInstances:"),
@@ -2495,7 +2175,7 @@ class NLModelImplL extends Struct<NLModelImplL> {
     Pointer<NLModelImplL> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("labelMap"),
     );
@@ -2505,7 +2185,7 @@ class NLModelImplL extends Struct<NLModelImplL> {
     Pointer<NLModelImplL> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("modelData"),
     );
@@ -2515,7 +2195,7 @@ class NLModelImplL extends Struct<NLModelImplL> {
     Pointer<NLModelImplL> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("numberOfTrainingInstances"),
     );
@@ -2526,7 +2206,7 @@ class NLModelImplL extends Struct<NLModelImplL> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("predictedLabelForString:"),
       arg,
@@ -2538,7 +2218,7 @@ class NLModelImplL extends Struct<NLModelImplL> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("predictedLabelsForTokens:"),
       arg,
@@ -2549,16 +2229,13 @@ class NLModelImplL extends Struct<NLModelImplL> {
     Pointer<NLModelImplL> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("vocabularyMap"),
     );
   }
 }
 
-/// Automatically generated API. Part of [Natural Language](https://developer.apple.com/documentation/naturallanguage?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class NLModelImplLC extends Struct<NLModelImplLC> {
   factory NLModelImplLC._() {
@@ -2573,7 +2250,7 @@ class NLModelImplLC extends Struct<NLModelImplLC> {
     Pointer<NLModelImplLC> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("configuration"),
     );
@@ -2583,7 +2260,7 @@ class NLModelImplLC extends Struct<NLModelImplLC> {
     Pointer<NLModelImplLC> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("dealloc"),
     );
@@ -2593,7 +2270,7 @@ class NLModelImplLC extends Struct<NLModelImplLC> {
     Pointer<NLModelImplLC> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("documentFrequencyMap"),
     );
@@ -2609,7 +2286,7 @@ class NLModelImplLC extends Struct<NLModelImplLC> {
     @required int numberOfTrainingInstances,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_p_p_Uint64_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_Uint64_returns_ptr(
       _self,
       _objc.getSelector(
           "initWithModelData:configuration:labelMap:vocabularyMap:documentFrequencyMap:numberOfTrainingInstances:"),
@@ -2627,7 +2304,7 @@ class NLModelImplLC extends Struct<NLModelImplLC> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithModelTrainer:"),
       arg,
@@ -2638,7 +2315,7 @@ class NLModelImplLC extends Struct<NLModelImplLC> {
     Pointer<NLModelImplLC> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("labelMap"),
     );
@@ -2648,7 +2325,7 @@ class NLModelImplLC extends Struct<NLModelImplLC> {
     Pointer<NLModelImplLC> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("modelData"),
     );
@@ -2658,7 +2335,7 @@ class NLModelImplLC extends Struct<NLModelImplLC> {
     Pointer<NLModelImplLC> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("numberOfTrainingInstances"),
     );
@@ -2669,7 +2346,7 @@ class NLModelImplLC extends Struct<NLModelImplLC> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("predictedLabelForString:"),
       arg,
@@ -2681,7 +2358,7 @@ class NLModelImplLC extends Struct<NLModelImplLC> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("predictedLabelsForTokens:"),
       arg,
@@ -2692,16 +2369,13 @@ class NLModelImplLC extends Struct<NLModelImplLC> {
     Pointer<NLModelImplLC> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("vocabularyMap"),
     );
   }
 }
 
-/// Automatically generated API. Part of [Natural Language](https://developer.apple.com/documentation/naturallanguage?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class NLModelImplM extends Struct<NLModelImplM> {
   factory NLModelImplM._() {
@@ -2716,7 +2390,7 @@ class NLModelImplM extends Struct<NLModelImplM> {
     Pointer<NLModelImplM> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("configuration"),
     );
@@ -2726,7 +2400,7 @@ class NLModelImplM extends Struct<NLModelImplM> {
     Pointer<NLModelImplM> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("dealloc"),
     );
@@ -2736,7 +2410,7 @@ class NLModelImplM extends Struct<NLModelImplM> {
     Pointer<NLModelImplM> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("documentFrequencyMap"),
     );
@@ -2752,7 +2426,7 @@ class NLModelImplM extends Struct<NLModelImplM> {
     @required int numberOfTrainingInstances,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_p_p_Uint64_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_Uint64_returns_ptr(
       _self,
       _objc.getSelector(
           "initWithModelData:configuration:labelMap:vocabularyMap:documentFrequencyMap:numberOfTrainingInstances:"),
@@ -2770,7 +2444,7 @@ class NLModelImplM extends Struct<NLModelImplM> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithModelTrainer:"),
       arg,
@@ -2786,7 +2460,7 @@ class NLModelImplM extends Struct<NLModelImplM> {
     @required int numberOfTrainingInstances,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_p_Uint64_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_ptr_Uint64_returns_ptr(
       _self,
       _objc.getSelector(
           "initWithOwnedModelObject:configuration:labelMap:vocabularyMap:numberOfTrainingInstances:"),
@@ -2802,7 +2476,7 @@ class NLModelImplM extends Struct<NLModelImplM> {
     Pointer<NLModelImplM> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("labelMap"),
     );
@@ -2812,7 +2486,7 @@ class NLModelImplM extends Struct<NLModelImplM> {
     Pointer<NLModelImplM> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("modelData"),
     );
@@ -2822,7 +2496,7 @@ class NLModelImplM extends Struct<NLModelImplM> {
     Pointer<NLModelImplM> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("numberOfTrainingInstances"),
     );
@@ -2833,7 +2507,7 @@ class NLModelImplM extends Struct<NLModelImplM> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("predictedLabelForString:"),
       arg,
@@ -2845,7 +2519,7 @@ class NLModelImplM extends Struct<NLModelImplM> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("predictedLabelsForTokens:"),
       arg,
@@ -2856,16 +2530,13 @@ class NLModelImplM extends Struct<NLModelImplM> {
     Pointer<NLModelImplM> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("vocabularyMap"),
     );
   }
 }
 
-/// Automatically generated API. Part of [Natural Language](https://developer.apple.com/documentation/naturallanguage?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class NLModelImplML extends Struct<NLModelImplML> {
   factory NLModelImplML._() {
@@ -2880,7 +2551,7 @@ class NLModelImplML extends Struct<NLModelImplML> {
     Pointer<NLModelImplML> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("configuration"),
     );
@@ -2892,7 +2563,7 @@ class NLModelImplML extends Struct<NLModelImplML> {
     @required Pointer configuration,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithMLModel:configuration:"),
       arg,
@@ -2910,7 +2581,7 @@ class NLModelImplML extends Struct<NLModelImplML> {
     @required int numberOfTrainingInstances,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_p_p_Uint64_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_Uint64_returns_ptr(
       _self,
       _objc.getSelector(
           "initWithModelData:configuration:labelMap:vocabularyMap:documentFrequencyMap:numberOfTrainingInstances:"),
@@ -2928,7 +2599,7 @@ class NLModelImplML extends Struct<NLModelImplML> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithModelTrainer:"),
       arg,
@@ -2939,7 +2610,7 @@ class NLModelImplML extends Struct<NLModelImplML> {
     Pointer<NLModelImplML> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("modelData"),
     );
@@ -2950,7 +2621,7 @@ class NLModelImplML extends Struct<NLModelImplML> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("predictedLabelForString:"),
       arg,
@@ -2962,7 +2633,7 @@ class NLModelImplML extends Struct<NLModelImplML> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("predictedLabelsForTokens:"),
       arg,
@@ -2970,9 +2641,6 @@ class NLModelImplML extends Struct<NLModelImplML> {
   }
 }
 
-/// Automatically generated API. Part of [Natural Language](https://developer.apple.com/documentation/naturallanguage?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class NLModelImplN extends Struct<NLModelImplN> {
   factory NLModelImplN._() {
@@ -2987,7 +2655,7 @@ class NLModelImplN extends Struct<NLModelImplN> {
     Pointer<NLModelImplN> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("configuration"),
     );
@@ -2997,7 +2665,7 @@ class NLModelImplN extends Struct<NLModelImplN> {
     Pointer<NLModelImplN> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("dealloc"),
     );
@@ -3007,7 +2675,7 @@ class NLModelImplN extends Struct<NLModelImplN> {
     Pointer<NLModelImplN> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("documentFrequencyMap"),
     );
@@ -3023,7 +2691,7 @@ class NLModelImplN extends Struct<NLModelImplN> {
     @required int numberOfTrainingInstances,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_p_p_Uint64_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_Uint64_returns_ptr(
       _self,
       _objc.getSelector(
           "initWithModelData:configuration:labelMap:vocabularyMap:documentFrequencyMap:numberOfTrainingInstances:"),
@@ -3041,7 +2709,7 @@ class NLModelImplN extends Struct<NLModelImplN> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithModelTrainer:"),
       arg,
@@ -3052,7 +2720,7 @@ class NLModelImplN extends Struct<NLModelImplN> {
     Pointer<NLModelImplN> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("labelMap"),
     );
@@ -3062,7 +2730,7 @@ class NLModelImplN extends Struct<NLModelImplN> {
     Pointer<NLModelImplN> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("modelData"),
     );
@@ -3072,7 +2740,7 @@ class NLModelImplN extends Struct<NLModelImplN> {
     Pointer<NLModelImplN> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("numberOfTrainingInstances"),
     );
@@ -3083,7 +2751,7 @@ class NLModelImplN extends Struct<NLModelImplN> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("predictedLabelForString:"),
       arg,
@@ -3095,7 +2763,7 @@ class NLModelImplN extends Struct<NLModelImplN> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("predictedLabelsDictionaryForString:"),
       arg,
@@ -3107,7 +2775,7 @@ class NLModelImplN extends Struct<NLModelImplN> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("predictedLabelsForTokens:"),
       arg,
@@ -3118,16 +2786,13 @@ class NLModelImplN extends Struct<NLModelImplN> {
     Pointer<NLModelImplN> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("vocabularyMap"),
     );
   }
 }
 
-/// Automatically generated API. Part of [Natural Language](https://developer.apple.com/documentation/naturallanguage?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class NLModelTrainer extends Struct<NLModelTrainer> {
   factory NLModelTrainer._() {
@@ -3142,7 +2807,7 @@ class NLModelTrainer extends Struct<NLModelTrainer> {
     Pointer<NLModelTrainer> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("configuration"),
     );
@@ -3152,7 +2817,7 @@ class NLModelTrainer extends Struct<NLModelTrainer> {
     Pointer<NLModelTrainer> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("dataSet"),
     );
@@ -3162,7 +2827,7 @@ class NLModelTrainer extends Struct<NLModelTrainer> {
     Pointer<NLModelTrainer> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("delegate"),
     );
@@ -3176,7 +2841,7 @@ class NLModelTrainer extends Struct<NLModelTrainer> {
     @required Pointer delegate,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithConfiguration:dataSet:options:delegate:"),
       arg,
@@ -3191,7 +2856,7 @@ class NLModelTrainer extends Struct<NLModelTrainer> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("logMessage:"),
       arg,
@@ -3202,7 +2867,7 @@ class NLModelTrainer extends Struct<NLModelTrainer> {
     Pointer<NLModelTrainer> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("model"),
     );
@@ -3212,7 +2877,7 @@ class NLModelTrainer extends Struct<NLModelTrainer> {
     Pointer<NLModelTrainer> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("modelImplClass"),
     );
@@ -3222,7 +2887,7 @@ class NLModelTrainer extends Struct<NLModelTrainer> {
     Pointer<NLModelTrainer> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("options"),
     );
@@ -3233,7 +2898,7 @@ class NLModelTrainer extends Struct<NLModelTrainer> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setModel:"),
       arg,
@@ -3244,7 +2909,7 @@ class NLModelTrainer extends Struct<NLModelTrainer> {
     Pointer<NLModelTrainer> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("shouldStop"),
     );
@@ -3254,7 +2919,7 @@ class NLModelTrainer extends Struct<NLModelTrainer> {
     Pointer<NLModelTrainer> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("testResults"),
     );
@@ -3264,7 +2929,7 @@ class NLModelTrainer extends Struct<NLModelTrainer> {
     Pointer<NLModelTrainer> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("trainModel"),
     );
@@ -3274,7 +2939,7 @@ class NLModelTrainer extends Struct<NLModelTrainer> {
     Pointer<NLModelTrainer> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("trainedModel"),
     );
@@ -3286,7 +2951,7 @@ class NLModelTrainer extends Struct<NLModelTrainer> {
     @required Pointer logMessage,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("trainer:logMessage:"),
       arg,
@@ -3299,7 +2964,7 @@ class NLModelTrainer extends Struct<NLModelTrainer> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("trainerShouldStop:"),
       arg,
@@ -3307,9 +2972,6 @@ class NLModelTrainer extends Struct<NLModelTrainer> {
   }
 }
 
-/// Automatically generated API. Part of [Natural Language](https://developer.apple.com/documentation/naturallanguage?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class NLModelTrainingDataSet extends Struct<NLModelTrainingDataSet> {
   factory NLModelTrainingDataSet._() {
@@ -3327,7 +2989,7 @@ class NLModelTrainingDataSet extends Struct<NLModelTrainingDataSet> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int64_returns_p(
+    return _call_ptr_ptr_Int64_returns_ptr(
       _self,
       _objc.getSelector("dataProviderOfType:"),
       arg,
@@ -3344,7 +3006,7 @@ class NLModelTrainingDataSet extends Struct<NLModelTrainingDataSet> {
     @required Pointer instanceDataProvider,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_Uint64_Uint64_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_Uint64_Uint64_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector(
           "initWithConfiguration:numberOfTrainingInstances:numberOfValidationInstances:trainingDataSource:validationDataSource:instanceDataProvider:"),
@@ -3358,9 +3020,6 @@ class NLModelTrainingDataSet extends Struct<NLModelTrainingDataSet> {
   }
 }
 
-/// Automatically generated API. Part of [Natural Language](https://developer.apple.com/documentation/naturallanguage?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class NLNumberGenerator extends Struct<NLNumberGenerator> {
   factory NLNumberGenerator._() {
@@ -3375,21 +3034,9 @@ class NLNumberGenerator extends Struct<NLNumberGenerator> {
     Pointer<NLNumberGenerator> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("init"),
-    );
-  }
-
-  static int numberInRange(
-    Pointer<NLNumberGenerator> _self,
-    Pointer arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_Uint64(
-      _self,
-      _objc.getSelector("numberInRange:"),
-      arg,
     );
   }
 
@@ -3397,7 +3044,7 @@ class NLNumberGenerator extends Struct<NLNumberGenerator> {
     Pointer<NLNumberGenerator> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("reset"),
     );
@@ -3408,7 +3055,7 @@ class NLNumberGenerator extends Struct<NLNumberGenerator> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Uint64_returns_void(
+    _call_ptr_ptr_Uint64_returns_void(
       _self,
       _objc.getSelector("resetWithSeed:"),
       arg,
@@ -3416,9 +3063,6 @@ class NLNumberGenerator extends Struct<NLNumberGenerator> {
   }
 }
 
-/// Automatically generated API. Part of [Natural Language](https://developer.apple.com/documentation/naturallanguage?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class NLPMLClassifierModel extends Struct<NLPMLClassifierModel> {
   factory NLPMLClassifierModel._() {
@@ -3436,7 +3080,7 @@ class NLPMLClassifierModel extends Struct<NLPMLClassifierModel> {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithModelDescription:parameterDictionary:error:"),
       arg,
@@ -3449,7 +3093,7 @@ class NLPMLClassifierModel extends Struct<NLPMLClassifierModel> {
     Pointer<NLPMLClassifierModel> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("modelDescription"),
     );
@@ -3462,7 +3106,7 @@ class NLPMLClassifierModel extends Struct<NLPMLClassifierModel> {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("predictionFromFeatures:options:error:"),
       arg,
@@ -3472,9 +3116,6 @@ class NLPMLClassifierModel extends Struct<NLPMLClassifierModel> {
   }
 }
 
-/// Automatically generated API. Part of [Natural Language](https://developer.apple.com/documentation/naturallanguage?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class NLPMLSequenceModel extends Struct<NLPMLSequenceModel> {
   factory NLPMLSequenceModel._() {
@@ -3492,7 +3133,7 @@ class NLPMLSequenceModel extends Struct<NLPMLSequenceModel> {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithModelDescription:parameterDictionary:error:"),
       arg,
@@ -3505,7 +3146,7 @@ class NLPMLSequenceModel extends Struct<NLPMLSequenceModel> {
     Pointer<NLPMLSequenceModel> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("modelDescription"),
     );
@@ -3518,7 +3159,7 @@ class NLPMLSequenceModel extends Struct<NLPMLSequenceModel> {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("predictionFromFeatures:options:error:"),
       arg,
@@ -3528,9 +3169,6 @@ class NLPMLSequenceModel extends Struct<NLPMLSequenceModel> {
   }
 }
 
-/// Automatically generated API. Part of [Natural Language](https://developer.apple.com/documentation/naturallanguage?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class NLPModelTrainingDataProvider
     extends Struct<NLPModelTrainingDataProvider> {
@@ -3552,7 +3190,7 @@ class NLPModelTrainingDataProvider
     @required Pointer instanceDataProvider,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_Uint64_p_p_returns_p(
+    return _call_ptr_ptr_ptr_Uint64_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector(
           "initWithConfiguration:numberOfInstances:dataSource:instanceDataProvider:"),
@@ -3568,7 +3206,7 @@ class NLPModelTrainingDataProvider
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Uint64_returns_p(
+    return _call_ptr_ptr_Uint64_returns_ptr(
       _self,
       _objc.getSelector("instanceAtIndex:"),
       arg,
@@ -3579,16 +3217,13 @@ class NLPModelTrainingDataProvider
     Pointer<NLPModelTrainingDataProvider> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("numberOfInstances"),
     );
   }
 }
 
-/// Automatically generated API. Part of [Natural Language](https://developer.apple.com/documentation/naturallanguage?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class NLPModelTrainingDelegate extends Struct<NLPModelTrainingDelegate> {
   factory NLPModelTrainingDelegate._() {
@@ -3606,7 +3241,7 @@ class NLPModelTrainingDelegate extends Struct<NLPModelTrainingDelegate> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithLogHandler:"),
       arg,
@@ -3619,7 +3254,7 @@ class NLPModelTrainingDelegate extends Struct<NLPModelTrainingDelegate> {
     @required Pointer logMessage,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("modelTrainer:logMessage:"),
       arg,
@@ -3632,7 +3267,7 @@ class NLPModelTrainingDelegate extends Struct<NLPModelTrainingDelegate> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("modelTrainerShouldStop:"),
       arg,
@@ -3640,9 +3275,6 @@ class NLPModelTrainingDelegate extends Struct<NLPModelTrainingDelegate> {
   }
 }
 
-/// Automatically generated API. Part of [Natural Language](https://developer.apple.com/documentation/naturallanguage?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class NLSequenceModel extends Struct<NLSequenceModel> {
   factory NLSequenceModel._() {
@@ -3654,9 +3286,6 @@ class NLSequenceModel extends Struct<NLSequenceModel> {
   }
 }
 
-/// Automatically generated API. Part of [Natural Language](https://developer.apple.com/documentation/naturallanguage?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class NLSequenceModelDataInstance extends Struct<NLSequenceModelDataInstance> {
   factory NLSequenceModelDataInstance._() {
@@ -3675,25 +3304,11 @@ class NLSequenceModelDataInstance extends Struct<NLSequenceModelDataInstance> {
     @required Pointer vocabularyMap,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("formattedLineWithLabelMap:vocabularyMap:"),
       arg,
       vocabularyMap,
-    );
-  }
-
-  static Pointer initWithLine(
-    Pointer<NLSequenceModelDataInstance> _self,
-    Pointer arg, {
-    @required Pointer<Pointer> tokenizer,
-  }) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_p(
-      _self,
-      _objc.getSelector("initWithLine:tokenizer:"),
-      arg,
-      tokenizer,
     );
   }
 
@@ -3703,7 +3318,7 @@ class NLSequenceModelDataInstance extends Struct<NLSequenceModelDataInstance> {
     @required Pointer labels,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithTokens:labels:"),
       arg,
@@ -3711,21 +3326,11 @@ class NLSequenceModelDataInstance extends Struct<NLSequenceModelDataInstance> {
     );
   }
 
-  static Pointer<Pointer> instanceDictionary(
-    Pointer<NLSequenceModelDataInstance> _self,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
-      _self,
-      _objc.getSelector("instanceDictionary"),
-    );
-  }
-
   static Pointer label(
     Pointer<NLSequenceModelDataInstance> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("label"),
     );
@@ -3735,27 +3340,9 @@ class NLSequenceModelDataInstance extends Struct<NLSequenceModelDataInstance> {
     Pointer<NLSequenceModelDataInstance> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("labels"),
-    );
-  }
-
-  static Pointer locatorsWithIndex(
-    Pointer<NLSequenceModelDataInstance> _self,
-    int arg, {
-    @required Pointer parameters,
-    @required Pointer tagger,
-    @required Pointer<Pointer> tokenizer,
-  }) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_Uint64_p_p_p_returns_p(
-      _self,
-      _objc.getSelector("locatorsWithIndex:parameters:tagger:tokenizer:"),
-      arg,
-      parameters,
-      tagger,
-      tokenizer,
     );
   }
 
@@ -3763,23 +3350,9 @@ class NLSequenceModelDataInstance extends Struct<NLSequenceModelDataInstance> {
     Pointer<NLSequenceModelDataInstance> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("string"),
-    );
-  }
-
-  static Pointer subInstanceWithLocator(
-    Pointer<NLSequenceModelDataInstance> _self,
-    Pointer arg, {
-    @required Pointer<Pointer> tokenizer,
-  }) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_p(
-      _self,
-      _objc.getSelector("subInstanceWithLocator:tokenizer:"),
-      arg,
-      tokenizer,
     );
   }
 
@@ -3787,16 +3360,13 @@ class NLSequenceModelDataInstance extends Struct<NLSequenceModelDataInstance> {
     Pointer<NLSequenceModelDataInstance> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("tokens"),
     );
   }
 }
 
-/// Automatically generated API. Part of [Natural Language](https://developer.apple.com/documentation/naturallanguage?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class NLSplitDataProvider extends Struct<NLSplitDataProvider> {
   factory NLSplitDataProvider._() {
@@ -3811,7 +3381,7 @@ class NLSplitDataProvider extends Struct<NLSplitDataProvider> {
     Pointer<NLSplitDataProvider> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("configuration"),
     );
@@ -3821,7 +3391,7 @@ class NLSplitDataProvider extends Struct<NLSplitDataProvider> {
     Pointer<NLSplitDataProvider> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("documentFrequencyMap"),
     );
@@ -3833,7 +3403,7 @@ class NLSplitDataProvider extends Struct<NLSplitDataProvider> {
     @required Pointer indexes,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithDataProvider:indexes:"),
       arg,
@@ -3846,7 +3416,7 @@ class NLSplitDataProvider extends Struct<NLSplitDataProvider> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Uint64_returns_p(
+    return _call_ptr_ptr_Uint64_returns_ptr(
       _self,
       _objc.getSelector("instanceAtIndex:"),
       arg,
@@ -3857,7 +3427,7 @@ class NLSplitDataProvider extends Struct<NLSplitDataProvider> {
     Pointer<NLSplitDataProvider> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("inverseLabelMap"),
     );
@@ -3867,7 +3437,7 @@ class NLSplitDataProvider extends Struct<NLSplitDataProvider> {
     Pointer<NLSplitDataProvider> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("labelMap"),
     );
@@ -3877,7 +3447,7 @@ class NLSplitDataProvider extends Struct<NLSplitDataProvider> {
     Pointer<NLSplitDataProvider> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("numberOfInstances"),
     );
@@ -3887,7 +3457,7 @@ class NLSplitDataProvider extends Struct<NLSplitDataProvider> {
     Pointer<NLSplitDataProvider> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("numberOfLabels"),
     );
@@ -3897,19 +3467,9 @@ class NLSplitDataProvider extends Struct<NLSplitDataProvider> {
     Pointer<NLSplitDataProvider> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("numberOfVocabularyEntries"),
-    );
-  }
-
-  static Pointer<Pointer> tokenizer(
-    Pointer<NLSplitDataProvider> _self,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
-      _self,
-      _objc.getSelector("tokenizer"),
     );
   }
 
@@ -3917,16 +3477,13 @@ class NLSplitDataProvider extends Struct<NLSplitDataProvider> {
     Pointer<NLSplitDataProvider> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("vocabularyMap"),
     );
   }
 }
 
-/// Automatically generated API. Part of [Natural Language](https://developer.apple.com/documentation/naturallanguage?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class NLTagger extends Struct<NLTagger> {
   factory NLTagger._() {
@@ -3941,7 +3498,7 @@ class NLTagger extends Struct<NLTagger> {
     Pointer<NLTagger> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("dealloc"),
     );
@@ -3951,7 +3508,7 @@ class NLTagger extends Struct<NLTagger> {
     Pointer<NLTagger> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("description"),
     );
@@ -3961,29 +3518,9 @@ class NLTagger extends Struct<NLTagger> {
     Pointer<NLTagger> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("dominantLanguage"),
-    );
-  }
-
-  static void enumerateTagsInRange(
-    Pointer<NLTagger> _self,
-    Pointer arg, {
-    @required int unit,
-    @required Pointer scheme,
-    @required int options,
-    @required Pointer usingBlock,
-  }) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_Int64_p_Uint64_p_returns_void(
-      _self,
-      _objc.getSelector("enumerateTagsInRange:unit:scheme:options:usingBlock:"),
-      arg,
-      unit,
-      scheme,
-      options,
-      usingBlock,
     );
   }
 
@@ -3992,7 +3529,7 @@ class NLTagger extends Struct<NLTagger> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithTagSchemes:"),
       arg,
@@ -4004,36 +3541,10 @@ class NLTagger extends Struct<NLTagger> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("modelsForTagScheme:"),
       arg,
-    );
-  }
-
-  static Pointer sentenceRangeForRange(
-    Pointer<NLTagger> _self,
-    Pointer arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
-      _self,
-      _objc.getSelector("sentenceRangeForRange:"),
-      arg,
-    );
-  }
-
-  static void setLanguage(
-    Pointer<NLTagger> _self,
-    Pointer arg, {
-    @required Pointer range,
-  }) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
-      _self,
-      _objc.getSelector("setLanguage:range:"),
-      arg,
-      range,
     );
   }
 
@@ -4043,25 +3554,11 @@ class NLTagger extends Struct<NLTagger> {
     @required Pointer forTagScheme,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setModels:forTagScheme:"),
       arg,
       forTagScheme,
-    );
-  }
-
-  static void setOrthography(
-    Pointer<NLTagger> _self,
-    Pointer arg, {
-    @required Pointer range,
-  }) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
-      _self,
-      _objc.getSelector("setOrthography:range:"),
-      arg,
-      range,
     );
   }
 
@@ -4070,7 +3567,7 @@ class NLTagger extends Struct<NLTagger> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setString:"),
       arg,
@@ -4081,41 +3578,9 @@ class NLTagger extends Struct<NLTagger> {
     Pointer<NLTagger> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("string"),
-    );
-  }
-
-  static void stringEditedInRange(
-    Pointer<NLTagger> _self,
-    Pointer arg, {
-    @required int changeInLength,
-  }) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_Int64_returns_void(
-      _self,
-      _objc.getSelector("stringEditedInRange:changeInLength:"),
-      arg,
-      changeInLength,
-    );
-  }
-
-  static Pointer tagAtIndex(
-    Pointer<NLTagger> _self,
-    int arg, {
-    @required int unit,
-    @required Pointer scheme,
-    @required Pointer<Pointer> tokenRange,
-  }) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_Uint64_Int64_p_p_returns_p(
-      _self,
-      _objc.getSelector("tagAtIndex:unit:scheme:tokenRange:"),
-      arg,
-      unit,
-      scheme,
-      tokenRange,
     );
   }
 
@@ -4123,50 +3588,13 @@ class NLTagger extends Struct<NLTagger> {
     Pointer<NLTagger> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("tagSchemes"),
     );
   }
-
-  static Pointer tagsInRange(
-    Pointer<NLTagger> _self,
-    Pointer arg, {
-    @required int unit,
-    @required Pointer scheme,
-    @required int options,
-    @required Pointer<Pointer> tokenRanges,
-  }) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_Int64_p_Uint64_p_returns_p(
-      _self,
-      _objc.getSelector("tagsInRange:unit:scheme:options:tokenRanges:"),
-      arg,
-      unit,
-      scheme,
-      options,
-      tokenRanges,
-    );
-  }
-
-  static Pointer tokenRangeAtIndex(
-    Pointer<NLTagger> _self,
-    int arg, {
-    @required int unit,
-  }) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_Uint64_Int64_returns_p(
-      _self,
-      _objc.getSelector("tokenRangeAtIndex:unit:"),
-      arg,
-      unit,
-    );
-  }
 }
 
-/// Automatically generated API. Part of [Natural Language](https://developer.apple.com/documentation/naturallanguage?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class NLTokenizer extends Struct<NLTokenizer> {
   factory NLTokenizer._() {
@@ -4181,23 +3609,9 @@ class NLTokenizer extends Struct<NLTokenizer> {
     Pointer<NLTokenizer> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("dealloc"),
-    );
-  }
-
-  static void enumerateTokensInRange(
-    Pointer<NLTokenizer> _self,
-    Pointer arg, {
-    @required Pointer usingBlock,
-  }) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
-      _self,
-      _objc.getSelector("enumerateTokensInRange:usingBlock:"),
-      arg,
-      usingBlock,
     );
   }
 
@@ -4206,7 +3620,7 @@ class NLTokenizer extends Struct<NLTokenizer> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int64_returns_p(
+    return _call_ptr_ptr_Int64_returns_ptr(
       _self,
       _objc.getSelector("initWithUnit:"),
       arg,
@@ -4217,7 +3631,7 @@ class NLTokenizer extends Struct<NLTokenizer> {
     Pointer<NLTokenizer> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("language"),
     );
@@ -4228,7 +3642,7 @@ class NLTokenizer extends Struct<NLTokenizer> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setLanguage:"),
       arg,
@@ -4240,7 +3654,7 @@ class NLTokenizer extends Struct<NLTokenizer> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setString:"),
       arg,
@@ -4251,33 +3665,9 @@ class NLTokenizer extends Struct<NLTokenizer> {
     Pointer<NLTokenizer> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("string"),
-    );
-  }
-
-  static Pointer tokenRangeAtIndex(
-    Pointer<NLTokenizer> _self,
-    int arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_Uint64_returns_p(
-      _self,
-      _objc.getSelector("tokenRangeAtIndex:"),
-      arg,
-    );
-  }
-
-  static Pointer tokensForRange(
-    Pointer<NLTokenizer> _self,
-    Pointer arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
-      _self,
-      _objc.getSelector("tokensForRange:"),
-      arg,
     );
   }
 
@@ -4285,48 +3675,48 @@ class NLTokenizer extends Struct<NLTokenizer> {
     Pointer<NLTokenizer> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int64(
+    return _call_ptr_ptr_returns_Int64(
       _self,
       _objc.getSelector("unit"),
     );
   }
 }
 
-final _call_objc_p_p_Int64_p_p_returns_p = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_Int64_p_p_returns_p_C,
-    _call_objc_p_p_Int64_p_p_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_Int64_p_p_returns_p_C = Pointer Function(
+final _call_ptr_ptr_Int64_ptr_ptr_returns_ptr = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_Int64_ptr_ptr_returns_ptr_C,
+        _call_ptr_ptr_Int64_ptr_ptr_returns_ptr_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_Int64_ptr_ptr_returns_ptr_C = Pointer Function(
     Pointer _arg0, Pointer _arg1, Int64 arg, Pointer options, Pointer error);
-typedef _call_objc_p_p_Int64_p_p_returns_p_Dart = Pointer Function(
+typedef _call_ptr_ptr_Int64_ptr_ptr_returns_ptr_Dart = Pointer Function(
     Pointer _arg0, Pointer _arg1, int arg, Pointer options, Pointer error);
 
-final _call_objc_p_p_Int64_returns_p = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_Int64_returns_p_C,
-    _call_objc_p_p_Int64_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_Int64_returns_p_C = Pointer Function(
+final _call_ptr_ptr_Int64_returns_ptr = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_Int64_returns_ptr_C,
+    _call_ptr_ptr_Int64_returns_ptr_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_Int64_returns_ptr_C = Pointer Function(
     Pointer _arg0, Pointer _arg1, Int64 arg);
-typedef _call_objc_p_p_Int64_returns_p_Dart = Pointer Function(
+typedef _call_ptr_ptr_Int64_returns_ptr_Dart = Pointer Function(
     Pointer _arg0, Pointer _arg1, int arg);
 
-final _call_objc_p_p_Uint32_float64_returns_p = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_Uint32_float64_returns_p_C,
-        _call_objc_p_p_Uint32_float64_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_Uint32_float64_returns_p_C = Pointer Function(
+final _call_ptr_ptr_Uint32_float64_returns_ptr = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_Uint32_float64_returns_ptr_C,
+        _call_ptr_ptr_Uint32_float64_returns_ptr_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_Uint32_float64_returns_ptr_C = Pointer Function(
     Pointer _arg0, Pointer _arg1, Uint32 arg, Float score);
-typedef _call_objc_p_p_Uint32_float64_returns_p_Dart = Pointer Function(
+typedef _call_ptr_ptr_Uint32_float64_returns_ptr_Dart = Pointer Function(
     Pointer _arg0, Pointer _arg1, int arg, double score);
 
-final _call_objc_p_p_Uint32_p_Uint64_p_returns_Int8 = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_Uint32_p_Uint64_p_returns_Int8_C,
-        _call_objc_p_p_Uint32_p_Uint64_p_returns_Int8_Dart>("objc_msgSend");
-typedef _call_objc_p_p_Uint32_p_Uint64_p_returns_Int8_C = Int8 Function(
+final _call_ptr_ptr_Uint32_ptr_Uint64_ptr_returns_Int8 = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_Uint32_ptr_Uint64_ptr_returns_Int8_C,
+        _call_ptr_ptr_Uint32_ptr_Uint64_ptr_returns_Int8_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_Uint32_ptr_Uint64_ptr_returns_Int8_C = Int8 Function(
     Pointer _arg0,
     Pointer _arg1,
     Uint32 arg,
     Pointer context,
     Uint64 length,
     Pointer probability);
-typedef _call_objc_p_p_Uint32_p_Uint64_p_returns_Int8_Dart = int Function(
+typedef _call_ptr_ptr_Uint32_ptr_Uint64_ptr_returns_Int8_Dart = int Function(
     Pointer _arg0,
     Pointer _arg1,
     int arg,
@@ -4334,201 +3724,95 @@ typedef _call_objc_p_p_Uint32_p_Uint64_p_returns_Int8_Dart = int Function(
     int length,
     Pointer probability);
 
-final _call_objc_p_p_Uint32_p_returns_Int8 = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_Uint32_p_returns_Int8_C,
-        _call_objc_p_p_Uint32_p_returns_Int8_Dart>("objc_msgSend");
-typedef _call_objc_p_p_Uint32_p_returns_Int8_C = Int8 Function(
+final _call_ptr_ptr_Uint32_ptr_returns_Int8 = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_Uint32_ptr_returns_Int8_C,
+        _call_ptr_ptr_Uint32_ptr_returns_Int8_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_Uint32_ptr_returns_Int8_C = Int8 Function(
     Pointer _arg0, Pointer _arg1, Uint32 arg, Pointer probability);
-typedef _call_objc_p_p_Uint32_p_returns_Int8_Dart = int Function(
+typedef _call_ptr_ptr_Uint32_ptr_returns_Int8_Dart = int Function(
     Pointer _arg0, Pointer _arg1, int arg, Pointer probability);
 
-final _call_objc_p_p_Uint32_returns_p = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_Uint32_returns_p_C,
-    _call_objc_p_p_Uint32_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_Uint32_returns_p_C = Pointer Function(
+final _call_ptr_ptr_Uint32_returns_ptr = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_Uint32_returns_ptr_C,
+    _call_ptr_ptr_Uint32_returns_ptr_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_Uint32_returns_ptr_C = Pointer Function(
     Pointer _arg0, Pointer _arg1, Uint32 arg);
-typedef _call_objc_p_p_Uint32_returns_p_Dart = Pointer Function(
+typedef _call_ptr_ptr_Uint32_returns_ptr_Dart = Pointer Function(
     Pointer _arg0, Pointer _arg1, int arg);
 
-final _call_objc_p_p_Uint64_Int64_p_p_returns_p = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_Uint64_Int64_p_p_returns_p_C,
-        _call_objc_p_p_Uint64_Int64_p_p_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_Uint64_Int64_p_p_returns_p_C = Pointer Function(
-    Pointer _arg0,
-    Pointer _arg1,
-    Uint64 arg,
-    Int64 unit,
-    Pointer scheme,
-    Pointer tokenRange);
-typedef _call_objc_p_p_Uint64_Int64_p_p_returns_p_Dart = Pointer Function(
-    Pointer _arg0,
-    Pointer _arg1,
-    int arg,
-    int unit,
-    Pointer scheme,
-    Pointer tokenRange);
-
-final _call_objc_p_p_Uint64_Int64_returns_p = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_Uint64_Int64_returns_p_C,
-        _call_objc_p_p_Uint64_Int64_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_Uint64_Int64_returns_p_C = Pointer Function(
-    Pointer _arg0, Pointer _arg1, Uint64 arg, Int64 unit);
-typedef _call_objc_p_p_Uint64_Int64_returns_p_Dart = Pointer Function(
-    Pointer _arg0, Pointer _arg1, int arg, int unit);
-
-final _call_objc_p_p_Uint64_p_p_p_returns_p = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_Uint64_p_p_p_returns_p_C,
-        _call_objc_p_p_Uint64_p_p_p_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_Uint64_p_p_p_returns_p_C = Pointer Function(
-    Pointer _arg0,
-    Pointer _arg1,
-    Uint64 arg,
-    Pointer parameters,
-    Pointer tagger,
-    Pointer tokenizer);
-typedef _call_objc_p_p_Uint64_p_p_p_returns_p_Dart = Pointer Function(
-    Pointer _arg0,
-    Pointer _arg1,
-    int arg,
-    Pointer parameters,
-    Pointer tagger,
-    Pointer tokenizer);
-
-final _call_objc_p_p_Uint64_p_p_returns_p = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_Uint64_p_p_returns_p_C,
-        _call_objc_p_p_Uint64_p_p_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_Uint64_p_p_returns_p_C = Pointer Function(
-    Pointer _arg0,
-    Pointer _arg1,
-    Uint64 arg,
-    Pointer rangeOfCharacters,
-    Pointer rangeOfTokens);
-typedef _call_objc_p_p_Uint64_p_p_returns_p_Dart = Pointer Function(
-    Pointer _arg0,
-    Pointer _arg1,
-    int arg,
-    Pointer rangeOfCharacters,
-    Pointer rangeOfTokens);
-
-final _call_objc_p_p_Uint64_returns_p = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_Uint64_returns_p_C,
-    _call_objc_p_p_Uint64_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_Uint64_returns_p_C = Pointer Function(
+final _call_ptr_ptr_Uint64_returns_ptr = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_Uint64_returns_ptr_C,
+    _call_ptr_ptr_Uint64_returns_ptr_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_Uint64_returns_ptr_C = Pointer Function(
     Pointer _arg0, Pointer _arg1, Uint64 arg);
-typedef _call_objc_p_p_Uint64_returns_p_Dart = Pointer Function(
+typedef _call_ptr_ptr_Uint64_returns_ptr_Dart = Pointer Function(
     Pointer _arg0, Pointer _arg1, int arg);
 
-final _call_objc_p_p_Uint64_returns_void = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_Uint64_returns_void_C,
-    _call_objc_p_p_Uint64_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_Uint64_returns_void_C = Void Function(
+final _call_ptr_ptr_Uint64_returns_void = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_Uint64_returns_void_C,
+    _call_ptr_ptr_Uint64_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_Uint64_returns_void_C = Void Function(
     Pointer _arg0, Pointer _arg1, Uint64 arg);
-typedef _call_objc_p_p_Uint64_returns_void_Dart = void Function(
+typedef _call_ptr_ptr_Uint64_returns_void_Dart = void Function(
     Pointer _arg0, Pointer _arg1, int arg);
 
-final _call_objc_p_p_p_Int64_p_Uint64_p_returns_p = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_p_Int64_p_Uint64_p_returns_p_C,
-        _call_objc_p_p_p_Int64_p_Uint64_p_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_Int64_p_Uint64_p_returns_p_C = Pointer Function(
-    Pointer _arg0,
-    Pointer _arg1,
-    Pointer arg,
-    Int64 unit,
-    Pointer scheme,
-    Uint64 options,
-    Pointer tokenRanges);
-typedef _call_objc_p_p_p_Int64_p_Uint64_p_returns_p_Dart = Pointer Function(
-    Pointer _arg0,
-    Pointer _arg1,
-    Pointer arg,
-    int unit,
-    Pointer scheme,
-    int options,
-    Pointer tokenRanges);
-
-final _call_objc_p_p_p_Int64_p_Uint64_p_returns_void = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_p_Int64_p_Uint64_p_returns_void_C,
-        _call_objc_p_p_p_Int64_p_Uint64_p_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_Int64_p_Uint64_p_returns_void_C = Void Function(
-    Pointer _arg0,
-    Pointer _arg1,
-    Pointer arg,
-    Int64 unit,
-    Pointer scheme,
-    Uint64 options,
-    Pointer usingBlock);
-typedef _call_objc_p_p_p_Int64_p_Uint64_p_returns_void_Dart = void Function(
-    Pointer _arg0,
-    Pointer _arg1,
-    Pointer arg,
-    int unit,
-    Pointer scheme,
-    int options,
-    Pointer usingBlock);
-
-final _call_objc_p_p_p_Int64_returns_void = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_p_Int64_returns_void_C,
-        _call_objc_p_p_p_Int64_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_Int64_returns_void_C = Void Function(
-    Pointer _arg0, Pointer _arg1, Pointer arg, Int64 changeInLength);
-typedef _call_objc_p_p_p_Int64_returns_void_Dart = void Function(
-    Pointer _arg0, Pointer _arg1, Pointer arg, int changeInLength);
-
-final _call_objc_p_p_p_Int8_p_returns_Int8 = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_p_Int8_p_returns_Int8_C,
-        _call_objc_p_p_p_Int8_p_returns_Int8_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_Int8_p_returns_Int8_C = Int8 Function(
+final _call_ptr_ptr_ptr_Int8_ptr_returns_Int8 = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_Int8_ptr_returns_Int8_C,
+        _call_ptr_ptr_ptr_Int8_ptr_returns_Int8_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_Int8_ptr_returns_Int8_C = Int8 Function(
     Pointer _arg0, Pointer _arg1, Pointer arg, Int8 atomically, Pointer error);
-typedef _call_objc_p_p_p_Int8_p_returns_Int8_Dart = int Function(
+typedef _call_ptr_ptr_ptr_Int8_ptr_returns_Int8_Dart = int Function(
     Pointer _arg0, Pointer _arg1, Pointer arg, int atomically, Pointer error);
 
-final _call_objc_p_p_p_Uint32_Uint64_float64_returns_p = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_p_Uint32_Uint64_float64_returns_p_C,
-        _call_objc_p_p_p_Uint32_Uint64_float64_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_Uint32_Uint64_float64_returns_p_C = Pointer Function(
-    Pointer _arg0,
-    Pointer _arg1,
-    Pointer arg,
-    Uint32 tokenID,
-    Uint64 flags,
-    Float probability);
-typedef _call_objc_p_p_p_Uint32_Uint64_float64_returns_p_Dart
+final _call_ptr_ptr_ptr_Uint32_Uint64_float64_returns_ptr =
+    _objc.dlForObjectiveC.lookupFunction<
+            _call_ptr_ptr_ptr_Uint32_Uint64_float64_returns_ptr_C,
+            _call_ptr_ptr_ptr_Uint32_Uint64_float64_returns_ptr_Dart>(
+        "objc_msgSend");
+typedef _call_ptr_ptr_ptr_Uint32_Uint64_float64_returns_ptr_C
+    = Pointer Function(Pointer _arg0, Pointer _arg1, Pointer arg,
+        Uint32 tokenID, Uint64 flags, Float probability);
+typedef _call_ptr_ptr_ptr_Uint32_Uint64_float64_returns_ptr_Dart
     = Pointer Function(Pointer _arg0, Pointer _arg1, Pointer arg, int tokenID,
         int flags, double probability);
 
-final _call_objc_p_p_p_Uint64_Uint64_p_p_p_returns_p = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_p_Uint64_Uint64_p_p_p_returns_p_C,
-        _call_objc_p_p_p_Uint64_Uint64_p_p_p_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_Uint64_Uint64_p_p_p_returns_p_C = Pointer Function(
-    Pointer _arg0,
-    Pointer _arg1,
-    Pointer arg,
-    Uint64 numberOfTrainingInstances,
-    Uint64 numberOfValidationInstances,
-    Pointer trainingDataSource,
-    Pointer validationDataSource,
-    Pointer instanceDataProvider);
-typedef _call_objc_p_p_p_Uint64_Uint64_p_p_p_returns_p_Dart = Pointer Function(
-    Pointer _arg0,
-    Pointer _arg1,
-    Pointer arg,
-    int numberOfTrainingInstances,
-    int numberOfValidationInstances,
-    Pointer trainingDataSource,
-    Pointer validationDataSource,
-    Pointer instanceDataProvider);
+final _call_ptr_ptr_ptr_Uint64_Uint64_ptr_ptr_ptr_returns_ptr =
+    _objc.dlForObjectiveC.lookupFunction<
+            _call_ptr_ptr_ptr_Uint64_Uint64_ptr_ptr_ptr_returns_ptr_C,
+            _call_ptr_ptr_ptr_Uint64_Uint64_ptr_ptr_ptr_returns_ptr_Dart>(
+        "objc_msgSend");
+typedef _call_ptr_ptr_ptr_Uint64_Uint64_ptr_ptr_ptr_returns_ptr_C
+    = Pointer Function(
+        Pointer _arg0,
+        Pointer _arg1,
+        Pointer arg,
+        Uint64 numberOfTrainingInstances,
+        Uint64 numberOfValidationInstances,
+        Pointer trainingDataSource,
+        Pointer validationDataSource,
+        Pointer instanceDataProvider);
+typedef _call_ptr_ptr_ptr_Uint64_Uint64_ptr_ptr_ptr_returns_ptr_Dart
+    = Pointer Function(
+        Pointer _arg0,
+        Pointer _arg1,
+        Pointer arg,
+        int numberOfTrainingInstances,
+        int numberOfValidationInstances,
+        Pointer trainingDataSource,
+        Pointer validationDataSource,
+        Pointer instanceDataProvider);
 
-final _call_objc_p_p_p_Uint64_p_p_returns_p = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_p_Uint64_p_p_returns_p_C,
-        _call_objc_p_p_p_Uint64_p_p_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_Uint64_p_p_returns_p_C = Pointer Function(
+final _call_ptr_ptr_ptr_Uint64_ptr_ptr_returns_ptr = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_Uint64_ptr_ptr_returns_ptr_C,
+        _call_ptr_ptr_ptr_Uint64_ptr_ptr_returns_ptr_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_Uint64_ptr_ptr_returns_ptr_C = Pointer Function(
     Pointer _arg0,
     Pointer _arg1,
     Pointer arg,
     Uint64 numberOfInstances,
     Pointer dataSource,
     Pointer instanceDataProvider);
-typedef _call_objc_p_p_p_Uint64_p_p_returns_p_Dart = Pointer Function(
+typedef _call_ptr_ptr_ptr_Uint64_ptr_ptr_returns_ptr_Dart = Pointer Function(
     Pointer _arg0,
     Pointer _arg1,
     Pointer arg,
@@ -4536,44 +3820,40 @@ typedef _call_objc_p_p_p_Uint64_p_p_returns_p_Dart = Pointer Function(
     Pointer dataSource,
     Pointer instanceDataProvider);
 
-final _call_objc_p_p_p_Uint64_p_returns_void = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_p_Uint64_p_returns_void_C,
-        _call_objc_p_p_p_Uint64_p_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_Uint64_p_returns_void_C = Void Function(
+final _call_ptr_ptr_ptr_Uint64_ptr_returns_void = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_Uint64_ptr_returns_void_C,
+        _call_ptr_ptr_ptr_Uint64_ptr_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_Uint64_ptr_returns_void_C = Void Function(
     Pointer _arg0,
     Pointer _arg1,
     Pointer arg,
     Uint64 maxWordsPerPrediction,
     Pointer usingBlock);
-typedef _call_objc_p_p_p_Uint64_p_returns_void_Dart = void Function(
+typedef _call_ptr_ptr_ptr_Uint64_ptr_returns_void_Dart = void Function(
     Pointer _arg0,
     Pointer _arg1,
     Pointer arg,
     int maxWordsPerPrediction,
     Pointer usingBlock);
 
-final _call_objc_p_p_p_p_float64_float64_returns_p = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_p_p_float64_float64_returns_p_C,
-        _call_objc_p_p_p_p_float64_float64_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_p_float64_float64_returns_p_C = Pointer Function(
+final _call_ptr_ptr_ptr_ptr_float64_float64_returns_ptr = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_ptr_float64_float64_returns_ptr_C,
+        _call_ptr_ptr_ptr_ptr_float64_float64_returns_ptr_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_ptr_float64_float64_returns_ptr_C = Pointer Function(
     Pointer _arg0,
     Pointer _arg1,
     Pointer arg,
     Pointer dataProvider,
     Float validationSplit,
     Float testingSplit);
-typedef _call_objc_p_p_p_p_float64_float64_returns_p_Dart = Pointer Function(
-    Pointer _arg0,
-    Pointer _arg1,
-    Pointer arg,
-    Pointer dataProvider,
-    double validationSplit,
-    double testingSplit);
+typedef _call_ptr_ptr_ptr_ptr_float64_float64_returns_ptr_Dart
+    = Pointer Function(Pointer _arg0, Pointer _arg1, Pointer arg,
+        Pointer dataProvider, double validationSplit, double testingSplit);
 
-final _call_objc_p_p_p_p_p_p_Uint64_returns_p = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_p_p_p_p_Uint64_returns_p_C,
-        _call_objc_p_p_p_p_p_p_Uint64_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_p_p_p_Uint64_returns_p_C = Pointer Function(
+final _call_ptr_ptr_ptr_ptr_ptr_ptr_Uint64_returns_ptr = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_ptr_ptr_ptr_Uint64_returns_ptr_C,
+        _call_ptr_ptr_ptr_ptr_ptr_ptr_Uint64_returns_ptr_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_ptr_ptr_ptr_Uint64_returns_ptr_C = Pointer Function(
     Pointer _arg0,
     Pointer _arg1,
     Pointer arg,
@@ -4581,187 +3861,184 @@ typedef _call_objc_p_p_p_p_p_p_Uint64_returns_p_C = Pointer Function(
     Pointer labelMap,
     Pointer vocabularyMap,
     Uint64 numberOfTrainingInstances);
-typedef _call_objc_p_p_p_p_p_p_Uint64_returns_p_Dart = Pointer Function(
-    Pointer _arg0,
-    Pointer _arg1,
-    Pointer arg,
-    Pointer configuration,
-    Pointer labelMap,
-    Pointer vocabularyMap,
-    int numberOfTrainingInstances);
+typedef _call_ptr_ptr_ptr_ptr_ptr_ptr_Uint64_returns_ptr_Dart
+    = Pointer Function(
+        Pointer _arg0,
+        Pointer _arg1,
+        Pointer arg,
+        Pointer configuration,
+        Pointer labelMap,
+        Pointer vocabularyMap,
+        int numberOfTrainingInstances);
 
-final _call_objc_p_p_p_p_p_p_p_Uint64_returns_p = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_p_p_p_p_p_Uint64_returns_p_C,
-        _call_objc_p_p_p_p_p_p_p_Uint64_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_p_p_p_p_Uint64_returns_p_C = Pointer Function(
-    Pointer _arg0,
-    Pointer _arg1,
-    Pointer arg,
-    Pointer configuration,
-    Pointer labelMap,
-    Pointer vocabularyMap,
-    Pointer documentFrequencyMap,
-    Uint64 numberOfTrainingInstances);
-typedef _call_objc_p_p_p_p_p_p_p_Uint64_returns_p_Dart = Pointer Function(
-    Pointer _arg0,
-    Pointer _arg1,
-    Pointer arg,
-    Pointer configuration,
-    Pointer labelMap,
-    Pointer vocabularyMap,
-    Pointer documentFrequencyMap,
-    int numberOfTrainingInstances);
-
-final _call_objc_p_p_p_p_p_p_returns_p = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_p_p_p_p_returns_p_C,
-    _call_objc_p_p_p_p_p_p_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_p_p_p_returns_p_C = Pointer Function(
-    Pointer _arg0,
-    Pointer _arg1,
-    Pointer arg,
-    Pointer dataSet,
-    Pointer options,
-    Pointer delegate);
-typedef _call_objc_p_p_p_p_p_p_returns_p_Dart = Pointer Function(
-    Pointer _arg0,
-    Pointer _arg1,
-    Pointer arg,
-    Pointer dataSet,
-    Pointer options,
-    Pointer delegate);
-
-final _call_objc_p_p_p_p_p_returns_Int8 = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_p_p_p_returns_Int8_C,
-    _call_objc_p_p_p_p_p_returns_Int8_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_p_p_returns_Int8_C = Int8 Function(
-    Pointer _arg0, Pointer _arg1, Pointer arg, Pointer options, Pointer error);
-typedef _call_objc_p_p_p_p_p_returns_Int8_Dart = int Function(
-    Pointer _arg0, Pointer _arg1, Pointer arg, Pointer options, Pointer error);
-
-final _call_objc_p_p_p_p_p_returns_p = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_p_p_p_returns_p_C,
-    _call_objc_p_p_p_p_p_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_p_p_returns_p_C = Pointer Function(
-    Pointer _arg0, Pointer _arg1, Pointer arg, Pointer options, Pointer error);
-typedef _call_objc_p_p_p_p_p_returns_p_Dart = Pointer Function(
-    Pointer _arg0, Pointer _arg1, Pointer arg, Pointer options, Pointer error);
-
-final _call_objc_p_p_p_p_returns_Int8 = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_p_p_returns_Int8_C,
-    _call_objc_p_p_p_p_returns_Int8_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_p_returns_Int8_C = Int8 Function(
-    Pointer _arg0, Pointer _arg1, Pointer arg, Pointer probability);
-typedef _call_objc_p_p_p_p_returns_Int8_Dart = int Function(
-    Pointer _arg0, Pointer _arg1, Pointer arg, Pointer probability);
-
-final _call_objc_p_p_p_p_returns_float64 = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_p_p_returns_float64_C,
-    _call_objc_p_p_p_p_returns_float64_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_p_returns_float64_C = Float Function(
-    Pointer _arg0, Pointer _arg1, Pointer arg, Pointer context);
-typedef _call_objc_p_p_p_p_returns_float64_Dart = double Function(
-    Pointer _arg0, Pointer _arg1, Pointer arg, Pointer context);
-
-final _call_objc_p_p_p_p_returns_p = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_p_p_returns_p_C,
-    _call_objc_p_p_p_p_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_p_returns_p_C = Pointer Function(
-    Pointer _arg0, Pointer _arg1, Pointer arg, Pointer indexes);
-typedef _call_objc_p_p_p_p_returns_p_Dart = Pointer Function(
-    Pointer _arg0, Pointer _arg1, Pointer arg, Pointer indexes);
-
-final _call_objc_p_p_p_p_returns_void = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_p_p_returns_void_C,
-    _call_objc_p_p_p_p_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_p_returns_void_C = Void Function(
-    Pointer _arg0, Pointer _arg1, Pointer arg, Pointer usingBlock);
-typedef _call_objc_p_p_p_p_returns_void_Dart = void Function(
-    Pointer _arg0, Pointer _arg1, Pointer arg, Pointer usingBlock);
-
-final _call_objc_p_p_p_returns_Int8 = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_p_returns_Int8_C,
-    _call_objc_p_p_p_returns_Int8_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_returns_Int8_C = Int8 Function(
-    Pointer _arg0, Pointer _arg1, Pointer arg);
-typedef _call_objc_p_p_p_returns_Int8_Dart = int Function(
-    Pointer _arg0, Pointer _arg1, Pointer arg);
-
-final _call_objc_p_p_p_returns_Uint64 = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_p_returns_Uint64_C,
-    _call_objc_p_p_p_returns_Uint64_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_returns_Uint64_C = Uint64 Function(
-    Pointer _arg0, Pointer _arg1, Pointer arg);
-typedef _call_objc_p_p_p_returns_Uint64_Dart = int Function(
-    Pointer _arg0, Pointer _arg1, Pointer arg);
-
-final _call_objc_p_p_p_returns_p = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_p_returns_p_C,
-    _call_objc_p_p_p_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_returns_p_C = Pointer Function(
-    Pointer _arg0, Pointer _arg1, Pointer arg);
-typedef _call_objc_p_p_p_returns_p_Dart = Pointer Function(
-    Pointer _arg0, Pointer _arg1, Pointer arg);
-
-final _call_objc_p_p_p_returns_void = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_p_returns_void_C,
-    _call_objc_p_p_p_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_returns_void_C = Void Function(
-    Pointer _arg0, Pointer _arg1, Pointer arg);
-typedef _call_objc_p_p_p_returns_void_Dart = void Function(
-    Pointer _arg0, Pointer _arg1, Pointer arg);
-
-final _call_objc_p_p_returns_Int64 = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_returns_Int64_C,
-    _call_objc_p_p_returns_Int64_Dart>("objc_msgSend");
-typedef _call_objc_p_p_returns_Int64_C = Int64 Function(
-    Pointer _arg0, Pointer _arg1);
-typedef _call_objc_p_p_returns_Int64_Dart = int Function(
-    Pointer _arg0, Pointer _arg1);
-
-final _call_objc_p_p_returns_Int8 = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_returns_Int8_C,
-    _call_objc_p_p_returns_Int8_Dart>("objc_msgSend");
-typedef _call_objc_p_p_returns_Int8_C = Int8 Function(
-    Pointer _arg0, Pointer _arg1);
-typedef _call_objc_p_p_returns_Int8_Dart = int Function(
-    Pointer _arg0, Pointer _arg1);
-
-final _call_objc_p_p_returns_Uint32 = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_returns_Uint32_C,
-    _call_objc_p_p_returns_Uint32_Dart>("objc_msgSend");
-typedef _call_objc_p_p_returns_Uint32_C = Uint32 Function(
-    Pointer _arg0, Pointer _arg1);
-typedef _call_objc_p_p_returns_Uint32_Dart = int Function(
-    Pointer _arg0, Pointer _arg1);
-
-final _call_objc_p_p_returns_Uint64 = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_returns_Uint64_C,
-    _call_objc_p_p_returns_Uint64_Dart>("objc_msgSend");
-typedef _call_objc_p_p_returns_Uint64_C = Uint64 Function(
-    Pointer _arg0, Pointer _arg1);
-typedef _call_objc_p_p_returns_Uint64_Dart = int Function(
-    Pointer _arg0, Pointer _arg1);
-
-final _call_objc_p_p_returns_float64 = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_returns_float64_C,
-    _call_objc_p_p_returns_float64_Dart>("objc_msgSend");
-typedef _call_objc_p_p_returns_float64_C = Float Function(
-    Pointer _arg0, Pointer _arg1);
-typedef _call_objc_p_p_returns_float64_Dart = double Function(
-    Pointer _arg0, Pointer _arg1);
-
-final _call_objc_p_p_returns_p = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_returns_p_C, _call_objc_p_p_returns_p_Dart>(
+final _call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_Uint64_returns_ptr =
+    _objc.dlForObjectiveC.lookupFunction<
+            _call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_Uint64_returns_ptr_C,
+            _call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_Uint64_returns_ptr_Dart>(
         "objc_msgSend");
-typedef _call_objc_p_p_returns_p_C = Pointer Function(
+typedef _call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_Uint64_returns_ptr_C
+    = Pointer Function(
+        Pointer _arg0,
+        Pointer _arg1,
+        Pointer arg,
+        Pointer configuration,
+        Pointer labelMap,
+        Pointer vocabularyMap,
+        Pointer documentFrequencyMap,
+        Uint64 numberOfTrainingInstances);
+typedef _call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_Uint64_returns_ptr_Dart
+    = Pointer Function(
+        Pointer _arg0,
+        Pointer _arg1,
+        Pointer arg,
+        Pointer configuration,
+        Pointer labelMap,
+        Pointer vocabularyMap,
+        Pointer documentFrequencyMap,
+        int numberOfTrainingInstances);
+
+final _call_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr_C,
+        _call_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr_C = Pointer Function(
+    Pointer _arg0,
+    Pointer _arg1,
+    Pointer arg,
+    Pointer dataSet,
+    Pointer options,
+    Pointer delegate);
+typedef _call_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr_Dart = Pointer Function(
+    Pointer _arg0,
+    Pointer _arg1,
+    Pointer arg,
+    Pointer dataSet,
+    Pointer options,
+    Pointer delegate);
+
+final _call_ptr_ptr_ptr_ptr_ptr_returns_Int8 = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_ptr_ptr_returns_Int8_C,
+        _call_ptr_ptr_ptr_ptr_ptr_returns_Int8_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_ptr_ptr_returns_Int8_C = Int8 Function(
+    Pointer _arg0, Pointer _arg1, Pointer arg, Pointer options, Pointer error);
+typedef _call_ptr_ptr_ptr_ptr_ptr_returns_Int8_Dart = int Function(
+    Pointer _arg0, Pointer _arg1, Pointer arg, Pointer options, Pointer error);
+
+final _call_ptr_ptr_ptr_ptr_ptr_returns_ptr = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_ptr_ptr_returns_ptr_C,
+        _call_ptr_ptr_ptr_ptr_ptr_returns_ptr_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_ptr_ptr_returns_ptr_C = Pointer Function(
+    Pointer _arg0, Pointer _arg1, Pointer arg, Pointer options, Pointer error);
+typedef _call_ptr_ptr_ptr_ptr_ptr_returns_ptr_Dart = Pointer Function(
+    Pointer _arg0, Pointer _arg1, Pointer arg, Pointer options, Pointer error);
+
+final _call_ptr_ptr_ptr_ptr_returns_Int8 = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_ptr_ptr_returns_Int8_C,
+    _call_ptr_ptr_ptr_ptr_returns_Int8_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_ptr_returns_Int8_C = Int8 Function(
+    Pointer _arg0, Pointer _arg1, Pointer arg, Pointer probability);
+typedef _call_ptr_ptr_ptr_ptr_returns_Int8_Dart = int Function(
+    Pointer _arg0, Pointer _arg1, Pointer arg, Pointer probability);
+
+final _call_ptr_ptr_ptr_ptr_returns_float64 = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_ptr_returns_float64_C,
+        _call_ptr_ptr_ptr_ptr_returns_float64_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_ptr_returns_float64_C = Float Function(
+    Pointer _arg0, Pointer _arg1, Pointer arg, Pointer context);
+typedef _call_ptr_ptr_ptr_ptr_returns_float64_Dart = double Function(
+    Pointer _arg0, Pointer _arg1, Pointer arg, Pointer context);
+
+final _call_ptr_ptr_ptr_ptr_returns_ptr = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_ptr_ptr_returns_ptr_C,
+    _call_ptr_ptr_ptr_ptr_returns_ptr_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_ptr_returns_ptr_C = Pointer Function(
+    Pointer _arg0, Pointer _arg1, Pointer arg, Pointer indexes);
+typedef _call_ptr_ptr_ptr_ptr_returns_ptr_Dart = Pointer Function(
+    Pointer _arg0, Pointer _arg1, Pointer arg, Pointer indexes);
+
+final _call_ptr_ptr_ptr_ptr_returns_void = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_ptr_ptr_returns_void_C,
+    _call_ptr_ptr_ptr_ptr_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_ptr_returns_void_C = Void Function(
+    Pointer _arg0, Pointer _arg1, Pointer arg, Pointer forTagScheme);
+typedef _call_ptr_ptr_ptr_ptr_returns_void_Dart = void Function(
+    Pointer _arg0, Pointer _arg1, Pointer arg, Pointer forTagScheme);
+
+final _call_ptr_ptr_ptr_returns_Int8 = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_ptr_returns_Int8_C,
+    _call_ptr_ptr_ptr_returns_Int8_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_returns_Int8_C = Int8 Function(
+    Pointer _arg0, Pointer _arg1, Pointer arg);
+typedef _call_ptr_ptr_ptr_returns_Int8_Dart = int Function(
+    Pointer _arg0, Pointer _arg1, Pointer arg);
+
+final _call_ptr_ptr_ptr_returns_ptr = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_ptr_returns_ptr_C,
+    _call_ptr_ptr_ptr_returns_ptr_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_returns_ptr_C = Pointer Function(
+    Pointer _arg0, Pointer _arg1, Pointer arg);
+typedef _call_ptr_ptr_ptr_returns_ptr_Dart = Pointer Function(
+    Pointer _arg0, Pointer _arg1, Pointer arg);
+
+final _call_ptr_ptr_ptr_returns_void = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_ptr_returns_void_C,
+    _call_ptr_ptr_ptr_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_returns_void_C = Void Function(
+    Pointer _arg0, Pointer _arg1, Pointer arg);
+typedef _call_ptr_ptr_ptr_returns_void_Dart = void Function(
+    Pointer _arg0, Pointer _arg1, Pointer arg);
+
+final _call_ptr_ptr_returns_Int64 = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_returns_Int64_C,
+    _call_ptr_ptr_returns_Int64_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_returns_Int64_C = Int64 Function(
     Pointer _arg0, Pointer _arg1);
-typedef _call_objc_p_p_returns_p_Dart = Pointer Function(
+typedef _call_ptr_ptr_returns_Int64_Dart = int Function(
     Pointer _arg0, Pointer _arg1);
 
-final _call_objc_p_p_returns_void = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_returns_void_C,
-    _call_objc_p_p_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_returns_void_C = Void Function(
+final _call_ptr_ptr_returns_Int8 = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_returns_Int8_C,
+    _call_ptr_ptr_returns_Int8_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_returns_Int8_C = Int8 Function(
     Pointer _arg0, Pointer _arg1);
-typedef _call_objc_p_p_returns_void_Dart = void Function(
+typedef _call_ptr_ptr_returns_Int8_Dart = int Function(
+    Pointer _arg0, Pointer _arg1);
+
+final _call_ptr_ptr_returns_Uint32 = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_returns_Uint32_C,
+    _call_ptr_ptr_returns_Uint32_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_returns_Uint32_C = Uint32 Function(
+    Pointer _arg0, Pointer _arg1);
+typedef _call_ptr_ptr_returns_Uint32_Dart = int Function(
+    Pointer _arg0, Pointer _arg1);
+
+final _call_ptr_ptr_returns_Uint64 = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_returns_Uint64_C,
+    _call_ptr_ptr_returns_Uint64_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_returns_Uint64_C = Uint64 Function(
+    Pointer _arg0, Pointer _arg1);
+typedef _call_ptr_ptr_returns_Uint64_Dart = int Function(
+    Pointer _arg0, Pointer _arg1);
+
+final _call_ptr_ptr_returns_float64 = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_returns_float64_C,
+    _call_ptr_ptr_returns_float64_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_returns_float64_C = Float Function(
+    Pointer _arg0, Pointer _arg1);
+typedef _call_ptr_ptr_returns_float64_Dart = double Function(
+    Pointer _arg0, Pointer _arg1);
+
+final _call_ptr_ptr_returns_ptr = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_returns_ptr_C,
+    _call_ptr_ptr_returns_ptr_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_returns_ptr_C = Pointer Function(
+    Pointer _arg0, Pointer _arg1);
+typedef _call_ptr_ptr_returns_ptr_Dart = Pointer Function(
+    Pointer _arg0, Pointer _arg1);
+
+final _call_ptr_ptr_returns_void = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_returns_void_C,
+    _call_ptr_ptr_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_returns_void_C = Void Function(
+    Pointer _arg0, Pointer _arg1);
+typedef _call_ptr_ptr_returns_void_Dart = void Function(
     Pointer _arg0, Pointer _arg1);

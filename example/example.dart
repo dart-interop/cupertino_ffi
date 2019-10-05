@@ -13,7 +13,7 @@ void main() {
     // Define RSA key attributes
     final attributes = CFDictionary.fromPointerMap({
       kSecAttrKeyType: kSecAttrKeyTypeRSA,
-      kSecAttrKeySizeInBits: CFNumber.fromDartInt(2048),
+      kSecAttrKeySizeInBits: CFNumber.fromDart(2048),
     });
 
     // Generate a random key.

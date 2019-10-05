@@ -38,33 +38,35 @@ class CFNumber extends Struct<CFNumber> {
     throw UnimplementedError();
   }
 
-  static Pointer<CFNumber> fromDartDouble(double value, {int type}) {
-    type ??= kCFNumberFloat64Type;
-    if (type == kCFNumberFloat64Type) {
-      final ptr = _int64Ptr.cast<Double>();
-      ptr.store(value);
-      return arcReturn(CFNumberCreate(
-        CFAllocator.getDefault(),
-        kCFNumberFloat64Type,
-        ptr,
-      ));
+  static Pointer<CFNumber> fromDart(num value, {int type}) {
+    if (value is int) {
+      type ??= kCFNumberSInt64Type;
+      if (type == kCFNumberSInt64Type) {
+        final ptr = _int64Ptr;
+        ptr.store(value);
+        return arcReturn(CFNumberCreate(
+          CFAllocator.getDefault(),
+          kCFNumberSInt64Type,
+          ptr,
+        ));
+      } else {
+        throw ArgumentError.value(type, "type");
+      }
+    } else if (value is double) {
+      type ??= kCFNumberFloat64Type;
+      if (type == kCFNumberFloat64Type) {
+        final ptr = _int64Ptr.cast<Double>();
+        ptr.store(value);
+        return arcReturn(CFNumberCreate(
+          CFAllocator.getDefault(),
+          kCFNumberFloat64Type,
+          ptr,
+        ));
+      } else {
+        throw ArgumentError.value(type, "type");
+      }
     } else {
-      throw ArgumentError.value(type, "type");
-    }
-  }
-
-  static Pointer<CFNumber> fromDartInt(int value, {int type}) {
-    type ??= kCFNumberSInt64Type;
-    if (type == kCFNumberSInt64Type) {
-      final ptr = _int64Ptr;
-      ptr.store(value);
-      return arcReturn(CFNumberCreate(
-        CFAllocator.getDefault(),
-        kCFNumberSInt64Type,
-        ptr,
-      ));
-    } else {
-      throw ArgumentError.value(type, "type");
+      throw ArgumentError.value(value);
     }
   }
 

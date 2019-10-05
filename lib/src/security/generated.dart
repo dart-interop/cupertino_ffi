@@ -1,5 +1,6 @@
 // AUTOMATICALLY GENERATED. DO NOT EDIT.
 import 'dart:ffi';
+
 import 'package:cupertino_ffi/core_foundation.dart';
 import 'package:cupertino_ffi/security.dart';
 

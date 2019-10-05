@@ -19,10 +19,10 @@
 // OR OTHER DEALINGS IN THE SOFTWARE.
 
 import 'dart:ffi';
-import 'package:ffi/ffi.dart';
 
 import 'package:cupertino_ffi/core_foundation.dart';
 import 'package:cupertino_ffi/objective_c.dart';
+import 'package:ffi/ffi.dart';
 import 'package:test/test.dart';
 
 void main() {
@@ -34,6 +34,11 @@ void main() {
 
     test("dynamic library is loaded", () {
       expect(dlForObjectiveC, isNotNull);
+    });
+
+    test("allocate", () {
+      final result = allocate("NSString");
+      expect(result.address, isNot(0));
     });
 
     test("class_get", () {

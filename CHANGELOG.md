@@ -1,3 +1,9 @@
+# 0.1.5
+  * Improved documentation.
+
+# 0.1.4
+  * A large number of fixes.
+
 # 0.1.3
   * A large number of fixes.
 

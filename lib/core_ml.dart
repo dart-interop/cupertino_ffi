@@ -1,3 +1,5 @@
+// AUTOMATICALLY GENERATED. DO NOT EDIT.
+
 /// Automatically generated API for [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
@@ -21,9 +23,6 @@ void _openDynamicLibrary() {
   }
 }
 
-/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class CoreMLVersion extends Struct<CoreMLVersion> {
   factory CoreMLVersion._() {
@@ -38,7 +37,7 @@ class CoreMLVersion extends Struct<CoreMLVersion> {
     Pointer<CoreMLVersion> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("frameworkVersionNumber"),
     );
@@ -48,7 +47,7 @@ class CoreMLVersion extends Struct<CoreMLVersion> {
     Pointer<CoreMLVersion> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("init"),
     );
@@ -59,7 +58,7 @@ class CoreMLVersion extends Struct<CoreMLVersion> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setFrameworkVersionNumber:"),
       arg,
@@ -67,9 +66,6 @@ class CoreMLVersion extends Struct<CoreMLVersion> {
   }
 }
 
-/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class MLAppleImageFeatureExtractor
     extends Struct<MLAppleImageFeatureExtractor> {
@@ -83,31 +79,13 @@ class MLAppleImageFeatureExtractor
         .cast<MLAppleImageFeatureExtractor>();
   }
 
-  static Pointer computeScenePrintFeatures(
-    Pointer<MLAppleImageFeatureExtractor> _self,
-    Pointer<Pointer> arg, {
-    @required Pointer handle,
-    @required int useCPUOnly,
-    @required Pointer<Pointer> error,
-  }) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_p_Int8_p_returns_p(
-      _self,
-      _objc.getSelector("computeScenePrintFeatures:handle:useCPUOnly:error:"),
-      arg,
-      handle,
-      useCPUOnly,
-      error,
-    );
-  }
-
   static Pointer featureValueFromScenePrint(
     Pointer<MLAppleImageFeatureExtractor> _self,
     Pointer arg, {
     @required int elementSize,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_Uint64_returns_p(
+    return _call_ptr_ptr_ptr_Uint64_returns_ptr(
       _self,
       _objc.getSelector("featureValueFromScenePrint:elementSize:"),
       arg,
@@ -124,7 +102,7 @@ class MLAppleImageFeatureExtractor
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_Int32_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_Int32_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector(
           "initWithParameters:modelDescription:featureExtractorType:configuration:error:"),
@@ -140,7 +118,7 @@ class MLAppleImageFeatureExtractor
     Pointer<MLAppleImageFeatureExtractor> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("parameters"),
     );
@@ -153,7 +131,7 @@ class MLAppleImageFeatureExtractor
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("predictionFromFeatures:options:error:"),
       arg,
@@ -163,9 +141,6 @@ class MLAppleImageFeatureExtractor
   }
 }
 
-/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class MLAppleImageFeatureExtractorParameters
     extends Struct<MLAppleImageFeatureExtractorParameters> {
@@ -183,7 +158,7 @@ class MLAppleImageFeatureExtractorParameters
     Pointer<MLAppleImageFeatureExtractorParameters> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("featureExtractorParameters"),
     );
@@ -195,7 +170,7 @@ class MLAppleImageFeatureExtractorParameters
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithScenePrintParameters:error:"),
       arg,
@@ -204,9 +179,6 @@ class MLAppleImageFeatureExtractorParameters
   }
 }
 
-/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class MLAppleImageFeatureExtractorScenePrintParameters
     extends Struct<MLAppleImageFeatureExtractorScenePrintParameters> {
@@ -220,25 +192,11 @@ class MLAppleImageFeatureExtractorScenePrintParameters
         .cast<MLAppleImageFeatureExtractorScenePrintParameters>();
   }
 
-  static Pointer initWithSpec(
-    Pointer<MLAppleImageFeatureExtractorScenePrintParameters> _self,
-    Pointer<Pointer> arg, {
-    @required Pointer<Pointer> error,
-  }) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_p(
-      _self,
-      _objc.getSelector("initWithSpec:error:"),
-      arg,
-      error,
-    );
-  }
-
   static int scenePrintVersion(
     Pointer<MLAppleImageFeatureExtractorScenePrintParameters> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int64(
+    return _call_ptr_ptr_returns_Int64(
       _self,
       _objc.getSelector("scenePrintVersion"),
     );
@@ -249,7 +207,7 @@ class MLAppleImageFeatureExtractorScenePrintParameters
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int64_returns_void(
+    _call_ptr_ptr_Int64_returns_void(
       _self,
       _objc.getSelector("setScenePrintVersion:"),
       arg,
@@ -257,9 +215,6 @@ class MLAppleImageFeatureExtractorScenePrintParameters
   }
 }
 
-/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class MLAppleTextClassifier extends Struct<MLAppleTextClassifier> {
   factory MLAppleTextClassifier._() {
@@ -281,7 +236,7 @@ class MLAppleTextClassifier extends Struct<MLAppleTextClassifier> {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector(
           "initWithParameters:modelDescription:nlpHandle:configuration:error:"),
@@ -297,7 +252,7 @@ class MLAppleTextClassifier extends Struct<MLAppleTextClassifier> {
     Pointer<MLAppleTextClassifier> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("parameters"),
     );
@@ -310,7 +265,7 @@ class MLAppleTextClassifier extends Struct<MLAppleTextClassifier> {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("predictionFromFeatures:options:error:"),
       arg,
@@ -320,9 +275,6 @@ class MLAppleTextClassifier extends Struct<MLAppleTextClassifier> {
   }
 }
 
-/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class MLAppleTextClassifierParameters
     extends Struct<MLAppleTextClassifierParameters> {
@@ -347,7 +299,7 @@ class MLAppleTextClassifierParameters
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Uint64_p_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_Uint64_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector(
           "initWithData:language:inputFeatureName:outputFeatureName:modelData:labelNames:error:"),
@@ -365,7 +317,7 @@ class MLAppleTextClassifierParameters
     Pointer<MLAppleTextClassifierParameters> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("inputFeatureName"),
     );
@@ -375,7 +327,7 @@ class MLAppleTextClassifierParameters
     Pointer<MLAppleTextClassifierParameters> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("labelNames"),
     );
@@ -385,7 +337,7 @@ class MLAppleTextClassifierParameters
     Pointer<MLAppleTextClassifierParameters> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("language"),
     );
@@ -395,7 +347,7 @@ class MLAppleTextClassifierParameters
     Pointer<MLAppleTextClassifierParameters> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("modelParameterData"),
     );
@@ -405,7 +357,7 @@ class MLAppleTextClassifierParameters
     Pointer<MLAppleTextClassifierParameters> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("outputFeatureName"),
     );
@@ -415,7 +367,7 @@ class MLAppleTextClassifierParameters
     Pointer<MLAppleTextClassifierParameters> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("revision"),
     );
@@ -426,7 +378,7 @@ class MLAppleTextClassifierParameters
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setInputFeatureName:"),
       arg,
@@ -438,7 +390,7 @@ class MLAppleTextClassifierParameters
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setLabelNames:"),
       arg,
@@ -450,7 +402,7 @@ class MLAppleTextClassifierParameters
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setLanguage:"),
       arg,
@@ -462,7 +414,7 @@ class MLAppleTextClassifierParameters
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setModelParameterData:"),
       arg,
@@ -474,7 +426,7 @@ class MLAppleTextClassifierParameters
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setOutputFeatureName:"),
       arg,
@@ -486,7 +438,7 @@ class MLAppleTextClassifierParameters
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Uint64_returns_void(
+    _call_ptr_ptr_Uint64_returns_void(
       _self,
       _objc.getSelector("setRevision:"),
       arg,
@@ -494,9 +446,6 @@ class MLAppleTextClassifierParameters
   }
 }
 
-/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class MLAppleWordTagger extends Struct<MLAppleWordTagger> {
   factory MLAppleWordTagger._() {
@@ -516,7 +465,7 @@ class MLAppleWordTagger extends Struct<MLAppleWordTagger> {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector(
           "initWithParameters:modelDescription:nlpHandle:configuration:error:"),
@@ -532,7 +481,7 @@ class MLAppleWordTagger extends Struct<MLAppleWordTagger> {
     Pointer<MLAppleWordTagger> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("parameters"),
     );
@@ -545,7 +494,7 @@ class MLAppleWordTagger extends Struct<MLAppleWordTagger> {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("predictionFromFeatures:options:error:"),
       arg,
@@ -555,9 +504,6 @@ class MLAppleWordTagger extends Struct<MLAppleWordTagger> {
   }
 }
 
-/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class MLAppleWordTaggerParameters extends Struct<MLAppleWordTaggerParameters> {
   factory MLAppleWordTaggerParameters._() {
@@ -584,7 +530,7 @@ class MLAppleWordTaggerParameters extends Struct<MLAppleWordTaggerParameters> {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Uint64_p_p_p_p_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_Uint64_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector(
           "initWithData:language:inputFeatureName:tokensFeatureName:tokenTagsFeatureName:tokenLocationsFeatureName:tokenLengthsFeatureName:modelData:tagNames:error:"),
@@ -605,7 +551,7 @@ class MLAppleWordTaggerParameters extends Struct<MLAppleWordTaggerParameters> {
     Pointer<MLAppleWordTaggerParameters> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("inputFeatureName"),
     );
@@ -615,7 +561,7 @@ class MLAppleWordTaggerParameters extends Struct<MLAppleWordTaggerParameters> {
     Pointer<MLAppleWordTaggerParameters> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("language"),
     );
@@ -625,7 +571,7 @@ class MLAppleWordTaggerParameters extends Struct<MLAppleWordTaggerParameters> {
     Pointer<MLAppleWordTaggerParameters> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("modelParameterData"),
     );
@@ -635,7 +581,7 @@ class MLAppleWordTaggerParameters extends Struct<MLAppleWordTaggerParameters> {
     Pointer<MLAppleWordTaggerParameters> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("revision"),
     );
@@ -646,7 +592,7 @@ class MLAppleWordTaggerParameters extends Struct<MLAppleWordTaggerParameters> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setInputFeatureName:"),
       arg,
@@ -658,7 +604,7 @@ class MLAppleWordTaggerParameters extends Struct<MLAppleWordTaggerParameters> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setLanguage:"),
       arg,
@@ -670,7 +616,7 @@ class MLAppleWordTaggerParameters extends Struct<MLAppleWordTaggerParameters> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setModelParameterData:"),
       arg,
@@ -682,7 +628,7 @@ class MLAppleWordTaggerParameters extends Struct<MLAppleWordTaggerParameters> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Uint64_returns_void(
+    _call_ptr_ptr_Uint64_returns_void(
       _self,
       _objc.getSelector("setRevision:"),
       arg,
@@ -694,7 +640,7 @@ class MLAppleWordTaggerParameters extends Struct<MLAppleWordTaggerParameters> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setTagNames:"),
       arg,
@@ -706,7 +652,7 @@ class MLAppleWordTaggerParameters extends Struct<MLAppleWordTaggerParameters> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setTokenLengthsOutputFeatureName:"),
       arg,
@@ -718,7 +664,7 @@ class MLAppleWordTaggerParameters extends Struct<MLAppleWordTaggerParameters> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setTokenLocationsOutputFeatureName:"),
       arg,
@@ -730,7 +676,7 @@ class MLAppleWordTaggerParameters extends Struct<MLAppleWordTaggerParameters> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setTokenTagsOutputFeatureName:"),
       arg,
@@ -742,7 +688,7 @@ class MLAppleWordTaggerParameters extends Struct<MLAppleWordTaggerParameters> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setTokensOutputFeatureName:"),
       arg,
@@ -753,7 +699,7 @@ class MLAppleWordTaggerParameters extends Struct<MLAppleWordTaggerParameters> {
     Pointer<MLAppleWordTaggerParameters> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("tagNames"),
     );
@@ -763,7 +709,7 @@ class MLAppleWordTaggerParameters extends Struct<MLAppleWordTaggerParameters> {
     Pointer<MLAppleWordTaggerParameters> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("tokenLengthsOutputFeatureName"),
     );
@@ -773,7 +719,7 @@ class MLAppleWordTaggerParameters extends Struct<MLAppleWordTaggerParameters> {
     Pointer<MLAppleWordTaggerParameters> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("tokenLocationsOutputFeatureName"),
     );
@@ -783,7 +729,7 @@ class MLAppleWordTaggerParameters extends Struct<MLAppleWordTaggerParameters> {
     Pointer<MLAppleWordTaggerParameters> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("tokenTagsOutputFeatureName"),
     );
@@ -793,16 +739,13 @@ class MLAppleWordTaggerParameters extends Struct<MLAppleWordTaggerParameters> {
     Pointer<MLAppleWordTaggerParameters> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("tokensOutputFeatureName"),
     );
   }
 }
 
-/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class MLArrayBatchProvider extends Struct<MLArrayBatchProvider> {
   factory MLArrayBatchProvider._() {
@@ -817,7 +760,7 @@ class MLArrayBatchProvider extends Struct<MLArrayBatchProvider> {
     Pointer<MLArrayBatchProvider> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("array"),
     );
@@ -827,7 +770,7 @@ class MLArrayBatchProvider extends Struct<MLArrayBatchProvider> {
     Pointer<MLArrayBatchProvider> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int64(
+    return _call_ptr_ptr_returns_Int64(
       _self,
       _objc.getSelector("count"),
     );
@@ -838,7 +781,7 @@ class MLArrayBatchProvider extends Struct<MLArrayBatchProvider> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int64_returns_p(
+    return _call_ptr_ptr_Int64_returns_ptr(
       _self,
       _objc.getSelector("featuresAtIndex:"),
       arg,
@@ -851,7 +794,7 @@ class MLArrayBatchProvider extends Struct<MLArrayBatchProvider> {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithDictionary:error:"),
       arg,
@@ -864,7 +807,7 @@ class MLArrayBatchProvider extends Struct<MLArrayBatchProvider> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithFeatureProviderArray:"),
       arg,
@@ -872,9 +815,6 @@ class MLArrayBatchProvider extends Struct<MLArrayBatchProvider> {
   }
 }
 
-/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class MLArrayFeatureExtractor extends Struct<MLArrayFeatureExtractor> {
   factory MLArrayFeatureExtractor._() {
@@ -891,7 +831,7 @@ class MLArrayFeatureExtractor extends Struct<MLArrayFeatureExtractor> {
     Pointer<MLArrayFeatureExtractor> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("arrayColumnName"),
     );
@@ -901,7 +841,7 @@ class MLArrayFeatureExtractor extends Struct<MLArrayFeatureExtractor> {
     Pointer<MLArrayFeatureExtractor> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("extractIndices"),
     );
@@ -919,7 +859,7 @@ class MLArrayFeatureExtractor extends Struct<MLArrayFeatureExtractor> {
     @required Pointer configuration,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector(
           "initWith:indices:dataTransformerName:inputDescription:outputDescription:orderedInputFeatureNames:orderedOutputFeatureNames:configuration:"),
@@ -938,7 +878,7 @@ class MLArrayFeatureExtractor extends Struct<MLArrayFeatureExtractor> {
     Pointer<MLArrayFeatureExtractor> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int64(
+    return _call_ptr_ptr_returns_Int64(
       _self,
       _objc.getSelector("outputType"),
     );
@@ -951,7 +891,7 @@ class MLArrayFeatureExtractor extends Struct<MLArrayFeatureExtractor> {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("predictionFromFeatures:options:error:"),
       arg,
@@ -961,9 +901,6 @@ class MLArrayFeatureExtractor extends Struct<MLArrayFeatureExtractor> {
   }
 }
 
-/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class MLBatchProviderUtils extends Struct<MLBatchProviderUtils> {
   factory MLBatchProviderUtils._() {
@@ -975,9 +912,6 @@ class MLBatchProviderUtils extends Struct<MLBatchProviderUtils> {
   }
 }
 
-/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class MLBayesianProbitRegression extends Struct<MLBayesianProbitRegression> {
   factory MLBayesianProbitRegression._() {
@@ -994,7 +928,7 @@ class MLBayesianProbitRegression extends Struct<MLBayesianProbitRegression> {
     Pointer<MLBayesianProbitRegression> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("FeatureCount"),
     );
@@ -1008,7 +942,7 @@ class MLBayesianProbitRegression extends Struct<MLBayesianProbitRegression> {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector(
           "convertOutputFeatureToPredictionValues:event:importance:error:"),
@@ -1023,21 +957,9 @@ class MLBayesianProbitRegression extends Struct<MLBayesianProbitRegression> {
     Pointer<MLBayesianProbitRegression> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("createCheckpoint"),
-    );
-  }
-
-  static Pointer createRegressorResult(
-    Pointer<MLBayesianProbitRegression> _self,
-    Pointer<Pointer> arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
-      _self,
-      _objc.getSelector("createRegressorResult:"),
-      arg,
     );
   }
 
@@ -1046,7 +968,7 @@ class MLBayesianProbitRegression extends Struct<MLBayesianProbitRegression> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("getArrayFeatureValue:"),
       arg,
@@ -1060,7 +982,7 @@ class MLBayesianProbitRegression extends Struct<MLBayesianProbitRegression> {
     @required int withType,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_Int64_returns_float64(
+    return _call_ptr_ptr_ptr_ptr_Int64_returns_float64(
       _self,
       _objc.getSelector("getFeatureValue:forName:withType:"),
       arg,
@@ -1069,26 +991,12 @@ class MLBayesianProbitRegression extends Struct<MLBayesianProbitRegression> {
     );
   }
 
-  static Pointer getOneHotFeatureValues(
-    Pointer<MLBayesianProbitRegression> _self,
-    Pointer arg, {
-    @required Pointer<Pointer> error,
-  }) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_p(
-      _self,
-      _objc.getSelector("getOneHotFeatureValues:error:"),
-      arg,
-      error,
-    );
-  }
-
   static double getOptimism(
     Pointer<MLBayesianProbitRegression> _self,
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_float64(
+    return _call_ptr_ptr_ptr_returns_float64(
       _self,
       _objc.getSelector("getOptimism:"),
       arg,
@@ -1100,7 +1008,7 @@ class MLBayesianProbitRegression extends Struct<MLBayesianProbitRegression> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_float64(
+    return _call_ptr_ptr_ptr_returns_float64(
       _self,
       _objc.getSelector("getSamplingScale:"),
       arg,
@@ -1112,7 +1020,7 @@ class MLBayesianProbitRegression extends Struct<MLBayesianProbitRegression> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_float64(
+    return _call_ptr_ptr_ptr_returns_float64(
       _self,
       _objc.getSelector("getSamplingTruncation:"),
       arg,
@@ -1120,7 +1028,7 @@ class MLBayesianProbitRegression extends Struct<MLBayesianProbitRegression> {
   }
 
   static Pointer
-      initWithDescription$numberOfFeatures$priorMean$regressionInputName$optimismInputName$samplingScaleInputName$samplingTruncationInputName$meanOutputName$varianceOutputName$pessimisticProbabilityOutputName$sampledProbabilityOutputName$(
+      initWithDescription$numberOfFeatures$priorMean$regressionInputName$optimismInputName$samplingScaleInputName$samplingTruncationInputName$meanOutputName$varianceOutputName$pessimisticProbabilityOutputName$sampledProbabilityOutputName(
     Pointer<MLBayesianProbitRegression> _self,
     Pointer arg, {
     @required int numberOfFeatures,
@@ -1135,7 +1043,7 @@ class MLBayesianProbitRegression extends Struct<MLBayesianProbitRegression> {
     @required Pointer sampledProbabilityOutputName,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_Int64_p_p_p_p_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_Int64_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector(
           "initWithDescription:numberOfFeatures:priorMean:regressionInputName:optimismInputName:samplingScaleInputName:samplingTruncationInputName:meanOutputName:varianceOutputName:pessimisticProbabilityOutputName:sampledProbabilityOutputName:"),
@@ -1153,14 +1061,14 @@ class MLBayesianProbitRegression extends Struct<MLBayesianProbitRegression> {
     );
   }
 
-  static Pointer initWithDescription$numberOfFeatures$priorMean$(
+  static Pointer initWithDescription$numberOfFeatures$priorMean(
     Pointer<MLBayesianProbitRegression> _self,
     Pointer arg, {
     @required int numberOfFeatures,
     @required Pointer priorMean,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_Int64_p_returns_p(
+    return _call_ptr_ptr_ptr_Int64_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithDescription:numberOfFeatures:priorMean:"),
       arg,
@@ -1169,28 +1077,12 @@ class MLBayesianProbitRegression extends Struct<MLBayesianProbitRegression> {
     );
   }
 
-  static Pointer initWithSpecification(
-    Pointer<MLBayesianProbitRegression> _self,
-    Pointer<Pointer> arg, {
-    @required Pointer configuration,
-    @required Pointer<Pointer> error,
-  }) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_p(
-      _self,
-      _objc.getSelector("initWithSpecification:configuration:error:"),
-      arg,
-      configuration,
-      error,
-    );
-  }
-
   static int isEqual(
     Pointer<MLBayesianProbitRegression> _self,
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isEqual:"),
       arg,
@@ -1202,20 +1094,10 @@ class MLBayesianProbitRegression extends Struct<MLBayesianProbitRegression> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isEqualToBopr:"),
       arg,
-    );
-  }
-
-  static Pointer model(
-    Pointer<MLBayesianProbitRegression> _self,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
-      _self,
-      _objc.getSelector("model"),
     );
   }
 
@@ -1226,7 +1108,7 @@ class MLBayesianProbitRegression extends Struct<MLBayesianProbitRegression> {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("regress:options:error:"),
       arg,
@@ -1239,7 +1121,7 @@ class MLBayesianProbitRegression extends Struct<MLBayesianProbitRegression> {
     Pointer<MLBayesianProbitRegression> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("reset"),
     );
@@ -1250,21 +1132,9 @@ class MLBayesianProbitRegression extends Struct<MLBayesianProbitRegression> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("resetToLastCheckpointBeforeDate:"),
-      arg,
-    );
-  }
-
-  static Pointer<Pointer> saveModelToSpecification(
-    Pointer<MLBayesianProbitRegression> _self,
-    Pointer<Pointer> arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
-      _self,
-      _objc.getSelector("saveModelToSpecification:"),
       arg,
     );
   }
@@ -1274,7 +1144,7 @@ class MLBayesianProbitRegression extends Struct<MLBayesianProbitRegression> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Uint64_returns_Int8(
+    return _call_ptr_ptr_Uint64_returns_Int8(
       _self,
       _objc.getSelector("setFeatureCount:"),
       arg,
@@ -1287,7 +1157,7 @@ class MLBayesianProbitRegression extends Struct<MLBayesianProbitRegression> {
     @required Pointer to,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("setInputFeatureName:to:"),
       arg,
@@ -1301,7 +1171,7 @@ class MLBayesianProbitRegression extends Struct<MLBayesianProbitRegression> {
     @required Pointer to,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("setOutputFeatureName:to:"),
       arg,
@@ -1309,14 +1179,14 @@ class MLBayesianProbitRegression extends Struct<MLBayesianProbitRegression> {
     );
   }
 
-  static void updateModelFromFeatures$toTarget$error$(
+  static void updateModelFromFeatures$toTarget$error(
     Pointer<MLBayesianProbitRegression> _self,
     Pointer arg, {
     @required Pointer toTarget,
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("updateModelFromFeatures:toTarget:error:"),
       arg,
@@ -1325,7 +1195,7 @@ class MLBayesianProbitRegression extends Struct<MLBayesianProbitRegression> {
     );
   }
 
-  static void updateModelFromFeatures$toTarget$options$error$(
+  static void updateModelFromFeatures$toTarget$options$error(
     Pointer<MLBayesianProbitRegression> _self,
     Pointer arg, {
     @required Pointer toTarget,
@@ -1333,7 +1203,7 @@ class MLBayesianProbitRegression extends Struct<MLBayesianProbitRegression> {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("updateModelFromFeatures:toTarget:options:error:"),
       arg,
@@ -1344,9 +1214,6 @@ class MLBayesianProbitRegression extends Struct<MLBayesianProbitRegression> {
   }
 }
 
-/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class MLCategoricalMapping extends Struct<MLCategoricalMapping> {
   factory MLCategoricalMapping._() {
@@ -1369,7 +1236,7 @@ class MLCategoricalMapping extends Struct<MLCategoricalMapping> {
     @required Pointer configuration,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector(
           "initWithMapping:valueOnUnknown:dataTransformerName:inputDescription:outputDescription:orderedInputFeatureNames:orderedOutputFeatureNames:configuration:"),
@@ -1390,7 +1257,7 @@ class MLCategoricalMapping extends Struct<MLCategoricalMapping> {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("mapFeature:error:"),
       arg,
@@ -1402,7 +1269,7 @@ class MLCategoricalMapping extends Struct<MLCategoricalMapping> {
     Pointer<MLCategoricalMapping> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("mapping"),
     );
@@ -1415,7 +1282,7 @@ class MLCategoricalMapping extends Struct<MLCategoricalMapping> {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("predictionFromFeatures:options:error:"),
       arg,
@@ -1428,16 +1295,13 @@ class MLCategoricalMapping extends Struct<MLCategoricalMapping> {
     Pointer<MLCategoricalMapping> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("valueOnUnknown"),
     );
   }
 }
 
-/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class MLClassifier extends Struct<MLClassifier> {
   factory MLClassifier._() {
@@ -1452,7 +1316,7 @@ class MLClassifier extends Struct<MLClassifier> {
     Pointer<MLClassifier> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("classLabels"),
     );
@@ -1464,7 +1328,7 @@ class MLClassifier extends Struct<MLClassifier> {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("classifierResultFromOutputFeatures:error:"),
       arg,
@@ -1479,28 +1343,11 @@ class MLClassifier extends Struct<MLClassifier> {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("classify:options:error:"),
       arg,
       options,
-      error,
-    );
-  }
-
-  static Pointer initDescriptionOnlyWithSpecification(
-    Pointer<MLClassifier> _self,
-    Pointer<Pointer> arg, {
-    @required Pointer configuration,
-    @required Pointer<Pointer> error,
-  }) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_p(
-      _self,
-      _objc.getSelector(
-          "initDescriptionOnlyWithSpecification:configuration:error:"),
-      arg,
-      configuration,
       error,
     );
   }
@@ -1513,7 +1360,7 @@ class MLClassifier extends Struct<MLClassifier> {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithInterface:metadata:configuration:error:"),
       arg,
@@ -1530,7 +1377,7 @@ class MLClassifier extends Struct<MLClassifier> {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("predictionFromFeatures:options:error:"),
       arg,
@@ -1540,9 +1387,6 @@ class MLClassifier extends Struct<MLClassifier> {
   }
 }
 
-/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class MLClassifierResult extends Struct<MLClassifierResult> {
   factory MLClassifierResult._() {
@@ -1557,7 +1401,7 @@ class MLClassifierResult extends Struct<MLClassifierResult> {
     Pointer<MLClassifierResult> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("additionalFeatures"),
     );
@@ -1569,7 +1413,7 @@ class MLClassifierResult extends Struct<MLClassifierResult> {
     @required Pointer classProbabilityDescription,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector(
           "asFeatureDictionaryWithPredictedClassDescription:classProbabilityDescription:"),
@@ -1582,7 +1426,7 @@ class MLClassifierResult extends Struct<MLClassifierResult> {
     Pointer<MLClassifierResult> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("classProbability"),
     );
@@ -1595,7 +1439,7 @@ class MLClassifierResult extends Struct<MLClassifierResult> {
     @required Pointer classLabelOfMaxProbability,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector(
           "initWithClassProbability:additionalFeatures:classLabelOfMaxProbability:"),
@@ -1612,7 +1456,7 @@ class MLClassifierResult extends Struct<MLClassifierResult> {
     @required Pointer additionalFeatures,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_Int64_p_returns_p(
+    return _call_ptr_ptr_ptr_Int64_ptr_returns_ptr(
       _self,
       _objc.getSelector(
           "initWithIntClassProbability:classFeatureType:additionalFeatures:"),
@@ -1629,7 +1473,7 @@ class MLClassifierResult extends Struct<MLClassifierResult> {
     @required Pointer additionalFeatures,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_Int64_p_returns_p(
+    return _call_ptr_ptr_ptr_Int64_ptr_returns_ptr(
       _self,
       _objc.getSelector(
           "initWithStringClassProbability:classFeatureType:additionalFeatures:"),
@@ -1643,7 +1487,7 @@ class MLClassifierResult extends Struct<MLClassifierResult> {
     Pointer<MLClassifierResult> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("predictedClass"),
     );
@@ -1653,16 +1497,13 @@ class MLClassifierResult extends Struct<MLClassifierResult> {
     Pointer<MLClassifierResult> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int64(
+    return _call_ptr_ptr_returns_Int64(
       _self,
       _objc.getSelector("predictedClassFeatureType"),
     );
   }
 }
 
-/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class MLCompiler extends Struct<MLCompiler> {
   factory MLCompiler._() {
@@ -1674,9 +1515,6 @@ class MLCompiler extends Struct<MLCompiler> {
   }
 }
 
-/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class MLCompilerOptions extends Struct<MLCompilerOptions> {
   factory MLCompilerOptions._() {
@@ -1691,7 +1529,7 @@ class MLCompilerOptions extends Struct<MLCompilerOptions> {
     Pointer<MLCompilerOptions> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("dryRun"),
     );
@@ -1701,7 +1539,7 @@ class MLCompilerOptions extends Struct<MLCompilerOptions> {
     Pointer<MLCompilerOptions> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("init"),
     );
@@ -1711,7 +1549,7 @@ class MLCompilerOptions extends Struct<MLCompilerOptions> {
     Pointer<MLCompilerOptions> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("platform"),
     );
@@ -1721,7 +1559,7 @@ class MLCompilerOptions extends Struct<MLCompilerOptions> {
     Pointer<MLCompilerOptions> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("platformVersion"),
     );
@@ -1732,7 +1570,7 @@ class MLCompilerOptions extends Struct<MLCompilerOptions> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setDryRun:"),
       arg,
@@ -1744,7 +1582,7 @@ class MLCompilerOptions extends Struct<MLCompilerOptions> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setPlatform:"),
       arg,
@@ -1756,7 +1594,7 @@ class MLCompilerOptions extends Struct<MLCompilerOptions> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setPlatformVersion:"),
       arg,
@@ -1764,9 +1602,6 @@ class MLCompilerOptions extends Struct<MLCompilerOptions> {
   }
 }
 
-/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class MLCompilerResult extends Struct<MLCompilerResult> {
   factory MLCompilerResult._() {
@@ -1781,7 +1616,7 @@ class MLCompilerResult extends Struct<MLCompilerResult> {
     Pointer<MLCompilerResult> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("outputFiles"),
     );
@@ -1792,7 +1627,7 @@ class MLCompilerResult extends Struct<MLCompilerResult> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setOutputFiles:"),
       arg,
@@ -1800,9 +1635,6 @@ class MLCompilerResult extends Struct<MLCompilerResult> {
   }
 }
 
-/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class MLCustomLayerWrapper extends Struct<MLCustomLayerWrapper> {
   factory MLCustomLayerWrapper._() {
@@ -1817,7 +1649,7 @@ class MLCustomLayerWrapper extends Struct<MLCustomLayerWrapper> {
     Pointer<MLCustomLayerWrapper> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("className"),
     );
@@ -1829,7 +1661,7 @@ class MLCustomLayerWrapper extends Struct<MLCustomLayerWrapper> {
     @required Pointer outputTensors,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("computeOnCPUWithInputTensors:outputTensors:"),
       arg,
@@ -1841,7 +1673,7 @@ class MLCustomLayerWrapper extends Struct<MLCustomLayerWrapper> {
     Pointer<MLCustomLayerWrapper> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("customImpl"),
     );
@@ -1854,7 +1686,7 @@ class MLCustomLayerWrapper extends Struct<MLCustomLayerWrapper> {
     @required Pointer outputTensors,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector(
           "encodeToMetalCommandBuffer:inputTensors:outputTensors:"),
@@ -1868,7 +1700,7 @@ class MLCustomLayerWrapper extends Struct<MLCustomLayerWrapper> {
     Pointer<MLCustomLayerWrapper> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("hasGPUSupport"),
     );
@@ -1879,7 +1711,7 @@ class MLCustomLayerWrapper extends Struct<MLCustomLayerWrapper> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithParameters:"),
       arg,
@@ -1891,7 +1723,7 @@ class MLCustomLayerWrapper extends Struct<MLCustomLayerWrapper> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setCustomImpl:"),
       arg,
@@ -1904,7 +1736,7 @@ class MLCustomLayerWrapper extends Struct<MLCustomLayerWrapper> {
     @required int sizeInBytes,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_Uint64_returns_void(
+    _call_ptr_ptr_ptr_Uint64_returns_void(
       _self,
       _objc.getSelector("setMappedWeights:sizeInBytes:"),
       arg,
@@ -1918,7 +1750,7 @@ class MLCustomLayerWrapper extends Struct<MLCustomLayerWrapper> {
     @required Pointer withParameters,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("setupForInputShapes:withParameters:"),
       arg,
@@ -1927,9 +1759,6 @@ class MLCustomLayerWrapper extends Struct<MLCustomLayerWrapper> {
   }
 }
 
-/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class MLCustomModelLoader extends Struct<MLCustomModelLoader> {
   factory MLCustomModelLoader._() {
@@ -1941,9 +1770,6 @@ class MLCustomModelLoader extends Struct<MLCustomModelLoader> {
   }
 }
 
-/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class MLCustomModelWrapper extends Struct<MLCustomModelWrapper> {
   factory MLCustomModelWrapper._() {
@@ -1958,7 +1784,7 @@ class MLCustomModelWrapper extends Struct<MLCustomModelWrapper> {
     Pointer<MLCustomModelWrapper> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("customModel"),
     );
@@ -1971,7 +1797,7 @@ class MLCustomModelWrapper extends Struct<MLCustomModelWrapper> {
     @required Pointer configuration,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithModelDescription:customModel:configuration:"),
       arg,
@@ -1987,7 +1813,7 @@ class MLCustomModelWrapper extends Struct<MLCustomModelWrapper> {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("predictionFromFeatures:options:error:"),
       arg,
@@ -2003,7 +1829,7 @@ class MLCustomModelWrapper extends Struct<MLCustomModelWrapper> {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("predictionsFromBatch:options:error:"),
       arg,
@@ -2017,7 +1843,7 @@ class MLCustomModelWrapper extends Struct<MLCustomModelWrapper> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setCustomModel:"),
       arg,
@@ -2025,9 +1851,6 @@ class MLCustomModelWrapper extends Struct<MLCustomModelWrapper> {
   }
 }
 
-/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class MLDefaultCustomLayerFactory extends Struct<MLDefaultCustomLayerFactory> {
   factory MLDefaultCustomLayerFactory._() {
@@ -2047,7 +1870,7 @@ class MLDefaultCustomLayerFactory extends Struct<MLDefaultCustomLayerFactory> {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("createCustomLayer:withParameters:error:"),
       arg,
@@ -2057,9 +1880,6 @@ class MLDefaultCustomLayerFactory extends Struct<MLDefaultCustomLayerFactory> {
   }
 }
 
-/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class MLDefaultCustomModelFactory extends Struct<MLDefaultCustomModelFactory> {
   factory MLDefaultCustomModelFactory._() {
@@ -2080,7 +1900,7 @@ class MLDefaultCustomModelFactory extends Struct<MLDefaultCustomModelFactory> {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector(
           "customModelWithName:modelDescription:parameterDictionary:error:"),
@@ -2092,9 +1912,6 @@ class MLDefaultCustomModelFactory extends Struct<MLDefaultCustomModelFactory> {
   }
 }
 
-/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class MLDictVectorizer extends Struct<MLDictVectorizer> {
   factory MLDictVectorizer._() {
@@ -2109,7 +1926,7 @@ class MLDictVectorizer extends Struct<MLDictVectorizer> {
     Pointer<MLDictVectorizer> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("categoryName"),
     );
@@ -2121,7 +1938,7 @@ class MLDictVectorizer extends Struct<MLDictVectorizer> {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("constructDictionary:error:"),
       arg,
@@ -2141,7 +1958,7 @@ class MLDictVectorizer extends Struct<MLDictVectorizer> {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector(
           "initWith:dataTransformerName:inputDescription:outputDescription:orderedInputFeatureNames:orderedOutputFeatureNames:configuration:error:"),
@@ -2163,7 +1980,7 @@ class MLDictVectorizer extends Struct<MLDictVectorizer> {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("predictionFromFeatures:options:error:"),
       arg,
@@ -2173,9 +1990,6 @@ class MLDictVectorizer extends Struct<MLDictVectorizer> {
   }
 }
 
-/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class MLDictionaryConstraint extends Struct<MLDictionaryConstraint> {
   factory MLDictionaryConstraint._() {
@@ -2188,23 +2002,11 @@ class MLDictionaryConstraint extends Struct<MLDictionaryConstraint> {
         .cast<MLDictionaryConstraint>();
   }
 
-  static Pointer copyWithZone(
-    Pointer<MLDictionaryConstraint> _self,
-    Pointer<Pointer> arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
-      _self,
-      _objc.getSelector("copyWithZone:"),
-      arg,
-    );
-  }
-
   static Pointer description(
     Pointer<MLDictionaryConstraint> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("description"),
     );
@@ -2215,7 +2017,7 @@ class MLDictionaryConstraint extends Struct<MLDictionaryConstraint> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int64_returns_p(
+    return _call_ptr_ptr_Int64_returns_ptr(
       _self,
       _objc.getSelector("initWithKeyType:"),
       arg,
@@ -2228,7 +2030,7 @@ class MLDictionaryConstraint extends Struct<MLDictionaryConstraint> {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isAllowedValue:error:"),
       arg,
@@ -2240,16 +2042,13 @@ class MLDictionaryConstraint extends Struct<MLDictionaryConstraint> {
     Pointer<MLDictionaryConstraint> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int64(
+    return _call_ptr_ptr_returns_Int64(
       _self,
       _objc.getSelector("keyType"),
     );
   }
 }
 
-/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class MLDictionaryFeatureProvider extends Struct<MLDictionaryFeatureProvider> {
   factory MLDictionaryFeatureProvider._() {
@@ -2262,27 +2061,11 @@ class MLDictionaryFeatureProvider extends Struct<MLDictionaryFeatureProvider> {
         .cast<MLDictionaryFeatureProvider>();
   }
 
-  static int countByEnumeratingWithState(
-    Pointer<MLDictionaryFeatureProvider> _self,
-    Pointer<Pointer> arg, {
-    @required Pointer<Pointer> objects,
-    @required int count,
-  }) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_p_Uint64_returns_Uint64(
-      _self,
-      _objc.getSelector("countByEnumeratingWithState:objects:count:"),
-      arg,
-      objects,
-      count,
-    );
-  }
-
   static Pointer dictionary(
     Pointer<MLDictionaryFeatureProvider> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("dictionary"),
     );
@@ -2292,7 +2075,7 @@ class MLDictionaryFeatureProvider extends Struct<MLDictionaryFeatureProvider> {
     Pointer<MLDictionaryFeatureProvider> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("featureNames"),
     );
@@ -2303,7 +2086,7 @@ class MLDictionaryFeatureProvider extends Struct<MLDictionaryFeatureProvider> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("featureValueForName:"),
       arg,
@@ -2316,7 +2099,7 @@ class MLDictionaryFeatureProvider extends Struct<MLDictionaryFeatureProvider> {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithDictionary:error:"),
       arg,
@@ -2324,25 +2107,25 @@ class MLDictionaryFeatureProvider extends Struct<MLDictionaryFeatureProvider> {
     );
   }
 
-  static Pointer initWithFeatureProvider$(
+  static Pointer initWithFeatureProvider(
     Pointer<MLDictionaryFeatureProvider> _self,
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithFeatureProvider:"),
       arg,
     );
   }
 
-  static Pointer initWithFeatureProvider$featureNames$(
+  static Pointer initWithFeatureProvider$featureNames(
     Pointer<MLDictionaryFeatureProvider> _self,
     Pointer arg, {
     @required Pointer featureNames,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithFeatureProvider:featureNames:"),
       arg,
@@ -2355,7 +2138,7 @@ class MLDictionaryFeatureProvider extends Struct<MLDictionaryFeatureProvider> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithFeatureValueDictionary:"),
       arg,
@@ -2367,7 +2150,7 @@ class MLDictionaryFeatureProvider extends Struct<MLDictionaryFeatureProvider> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("objectForKeyedSubscript:"),
       arg,
@@ -2379,7 +2162,7 @@ class MLDictionaryFeatureProvider extends Struct<MLDictionaryFeatureProvider> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setDictionary:"),
       arg,
@@ -2387,9 +2170,6 @@ class MLDictionaryFeatureProvider extends Struct<MLDictionaryFeatureProvider> {
   }
 }
 
-/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class MLFeatureDescription extends Struct<MLFeatureDescription> {
   factory MLFeatureDescription._() {
@@ -2405,21 +2185,9 @@ class MLFeatureDescription extends Struct<MLFeatureDescription> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("allowsValuesWithDescription:"),
-      arg,
-    );
-  }
-
-  static Pointer copyWithZone(
-    Pointer<MLFeatureDescription> _self,
-    Pointer<Pointer> arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
-      _self,
-      _objc.getSelector("copyWithZone:"),
       arg,
     );
   }
@@ -2428,7 +2196,7 @@ class MLFeatureDescription extends Struct<MLFeatureDescription> {
     Pointer<MLFeatureDescription> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("debugQuickLookObject"),
     );
@@ -2438,7 +2206,7 @@ class MLFeatureDescription extends Struct<MLFeatureDescription> {
     Pointer<MLFeatureDescription> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("description"),
     );
@@ -2448,7 +2216,7 @@ class MLFeatureDescription extends Struct<MLFeatureDescription> {
     Pointer<MLFeatureDescription> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("dictionaryConstraint"),
     );
@@ -2458,7 +2226,7 @@ class MLFeatureDescription extends Struct<MLFeatureDescription> {
     Pointer<MLFeatureDescription> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("dictionaryConstraintCached"),
     );
@@ -2468,7 +2236,7 @@ class MLFeatureDescription extends Struct<MLFeatureDescription> {
     Pointer<MLFeatureDescription> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("imageConstraint"),
     );
@@ -2478,7 +2246,7 @@ class MLFeatureDescription extends Struct<MLFeatureDescription> {
     Pointer<MLFeatureDescription> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("imageConstraintCached"),
     );
@@ -2492,7 +2260,7 @@ class MLFeatureDescription extends Struct<MLFeatureDescription> {
     @required Pointer contraints,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_Int64_Int8_p_returns_p(
+    return _call_ptr_ptr_ptr_Int64_Int8_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithName:type:optional:contraints:"),
       arg,
@@ -2502,13 +2270,13 @@ class MLFeatureDescription extends Struct<MLFeatureDescription> {
     );
   }
 
-  static int isAllowedValue$error$(
+  static int isAllowedValue$error(
     Pointer<MLFeatureDescription> _self,
     Pointer arg, {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isAllowedValue:error:"),
       arg,
@@ -2516,12 +2284,12 @@ class MLFeatureDescription extends Struct<MLFeatureDescription> {
     );
   }
 
-  static int isAllowedValue$(
+  static int isAllowedValue(
     Pointer<MLFeatureDescription> _self,
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isAllowedValue:"),
       arg,
@@ -2532,7 +2300,7 @@ class MLFeatureDescription extends Struct<MLFeatureDescription> {
     Pointer<MLFeatureDescription> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isOptional"),
     );
@@ -2542,7 +2310,7 @@ class MLFeatureDescription extends Struct<MLFeatureDescription> {
     Pointer<MLFeatureDescription> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("multiArrayConstraint"),
     );
@@ -2552,7 +2320,7 @@ class MLFeatureDescription extends Struct<MLFeatureDescription> {
     Pointer<MLFeatureDescription> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("multiArrayConstraintCached"),
     );
@@ -2562,7 +2330,7 @@ class MLFeatureDescription extends Struct<MLFeatureDescription> {
     Pointer<MLFeatureDescription> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("name"),
     );
@@ -2572,7 +2340,7 @@ class MLFeatureDescription extends Struct<MLFeatureDescription> {
     Pointer<MLFeatureDescription> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("sequenceConstraint"),
     );
@@ -2582,7 +2350,7 @@ class MLFeatureDescription extends Struct<MLFeatureDescription> {
     Pointer<MLFeatureDescription> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("sequenceConstraintCached"),
     );
@@ -2593,7 +2361,7 @@ class MLFeatureDescription extends Struct<MLFeatureDescription> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setValueConstraints:"),
       arg,
@@ -2604,7 +2372,7 @@ class MLFeatureDescription extends Struct<MLFeatureDescription> {
     Pointer<MLFeatureDescription> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int64(
+    return _call_ptr_ptr_returns_Int64(
       _self,
       _objc.getSelector("type"),
     );
@@ -2614,16 +2382,13 @@ class MLFeatureDescription extends Struct<MLFeatureDescription> {
     Pointer<MLFeatureDescription> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("valueConstraints"),
     );
   }
 }
 
-/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class MLFeatureProviderUtils extends Struct<MLFeatureProviderUtils> {
   factory MLFeatureProviderUtils._() {
@@ -2637,9 +2402,6 @@ class MLFeatureProviderUtils extends Struct<MLFeatureProviderUtils> {
   }
 }
 
-/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class MLFeatureTypeUtils extends Struct<MLFeatureTypeUtils> {
   factory MLFeatureTypeUtils._() {
@@ -2651,9 +2413,6 @@ class MLFeatureTypeUtils extends Struct<MLFeatureTypeUtils> {
   }
 }
 
-/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class MLFeatureValue extends Struct<MLFeatureValue> {
   factory MLFeatureValue._() {
@@ -2664,23 +2423,11 @@ class MLFeatureValue extends Struct<MLFeatureValue> {
     return _objc.allocate("MLFeatureValue").cast<MLFeatureValue>();
   }
 
-  static Pointer copyWithZone(
-    Pointer<MLFeatureValue> _self,
-    Pointer<Pointer> arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
-      _self,
-      _objc.getSelector("copyWithZone:"),
-      arg,
-    );
-  }
-
   static void dealloc(
     Pointer<MLFeatureValue> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("dealloc"),
     );
@@ -2690,7 +2437,7 @@ class MLFeatureValue extends Struct<MLFeatureValue> {
     Pointer<MLFeatureValue> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("debugQuickLookObject"),
     );
@@ -2700,7 +2447,7 @@ class MLFeatureValue extends Struct<MLFeatureValue> {
     Pointer<MLFeatureValue> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("description"),
     );
@@ -2710,7 +2457,7 @@ class MLFeatureValue extends Struct<MLFeatureValue> {
     Pointer<MLFeatureValue> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("dictionaryValue"),
     );
@@ -2720,7 +2467,7 @@ class MLFeatureValue extends Struct<MLFeatureValue> {
     Pointer<MLFeatureValue> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_float64(
+    return _call_ptr_ptr_returns_float64(
       _self,
       _objc.getSelector("doubleValue"),
     );
@@ -2731,7 +2478,7 @@ class MLFeatureValue extends Struct<MLFeatureValue> {
     Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("getFeatureSize:"),
       arg,
@@ -2742,19 +2489,9 @@ class MLFeatureValue extends Struct<MLFeatureValue> {
     Pointer<MLFeatureValue> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("hash"),
-    );
-  }
-
-  static Pointer<Pointer> imageBufferValue(
-    Pointer<MLFeatureValue> _self,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
-      _self,
-      _objc.getSelector("imageBufferValue"),
     );
   }
 
@@ -2763,7 +2500,7 @@ class MLFeatureValue extends Struct<MLFeatureValue> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int64_returns_p(
+    return _call_ptr_ptr_Int64_returns_ptr(
       _self,
       _objc.getSelector("initWithUndefinedValueAndType:"),
       arg,
@@ -2776,7 +2513,7 @@ class MLFeatureValue extends Struct<MLFeatureValue> {
     @required int type,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_Int64_returns_p(
+    return _call_ptr_ptr_ptr_Int64_returns_ptr(
       _self,
       _objc.getSelector("initWithValue:type:"),
       arg,
@@ -2788,7 +2525,7 @@ class MLFeatureValue extends Struct<MLFeatureValue> {
     Pointer<MLFeatureValue> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int64(
+    return _call_ptr_ptr_returns_Int64(
       _self,
       _objc.getSelector("int64Value"),
     );
@@ -2799,7 +2536,7 @@ class MLFeatureValue extends Struct<MLFeatureValue> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isEqual:"),
       arg,
@@ -2811,7 +2548,7 @@ class MLFeatureValue extends Struct<MLFeatureValue> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isEqualToFeatureValue:"),
       arg,
@@ -2822,7 +2559,7 @@ class MLFeatureValue extends Struct<MLFeatureValue> {
     Pointer<MLFeatureValue> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isUndefined"),
     );
@@ -2832,7 +2569,7 @@ class MLFeatureValue extends Struct<MLFeatureValue> {
     Pointer<MLFeatureValue> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("multiArrayValue"),
     );
@@ -2842,7 +2579,7 @@ class MLFeatureValue extends Struct<MLFeatureValue> {
     Pointer<MLFeatureValue> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("objectValue"),
     );
@@ -2852,7 +2589,7 @@ class MLFeatureValue extends Struct<MLFeatureValue> {
     Pointer<MLFeatureValue> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("sequenceValue"),
     );
@@ -2863,7 +2600,7 @@ class MLFeatureValue extends Struct<MLFeatureValue> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setObjectValue:"),
       arg,
@@ -2875,7 +2612,7 @@ class MLFeatureValue extends Struct<MLFeatureValue> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setValue:"),
       arg,
@@ -2886,7 +2623,7 @@ class MLFeatureValue extends Struct<MLFeatureValue> {
     Pointer<MLFeatureValue> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("stringValue"),
     );
@@ -2896,7 +2633,7 @@ class MLFeatureValue extends Struct<MLFeatureValue> {
     Pointer<MLFeatureValue> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int64(
+    return _call_ptr_ptr_returns_Int64(
       _self,
       _objc.getSelector("type"),
     );
@@ -2906,16 +2643,13 @@ class MLFeatureValue extends Struct<MLFeatureValue> {
     Pointer<MLFeatureValue> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("value"),
     );
   }
 }
 
-/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class MLFeatureVectorizer extends Struct<MLFeatureVectorizer> {
   factory MLFeatureVectorizer._() {
@@ -2930,7 +2664,7 @@ class MLFeatureVectorizer extends Struct<MLFeatureVectorizer> {
     Pointer<MLFeatureVectorizer> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("columnNameEncoding"),
     );
@@ -2940,7 +2674,7 @@ class MLFeatureVectorizer extends Struct<MLFeatureVectorizer> {
     Pointer<MLFeatureVectorizer> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("dimensionEncoding"),
     );
@@ -2958,7 +2692,7 @@ class MLFeatureVectorizer extends Struct<MLFeatureVectorizer> {
     @required Pointer configuration,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector(
           "initWith:dimensionEncoding:dataTransformerName:inputDescription:outputDescription:orderedInputFeatureNames:orderedOutputFeatureNames:configuration:"),
@@ -2980,7 +2714,7 @@ class MLFeatureVectorizer extends Struct<MLFeatureVectorizer> {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("predictionFromFeatures:options:error:"),
       arg,
@@ -2996,7 +2730,7 @@ class MLFeatureVectorizer extends Struct<MLFeatureVectorizer> {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_Uint64_p_returns_p(
+    return _call_ptr_ptr_ptr_Uint64_ptr_returns_ptr(
       _self,
       _objc.getSelector("vectorizeOneHotEncoderDict:index:error:"),
       arg,
@@ -3006,9 +2740,6 @@ class MLFeatureVectorizer extends Struct<MLFeatureVectorizer> {
   }
 }
 
-/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class MLGKDecisionTree extends Struct<MLGKDecisionTree> {
   factory MLGKDecisionTree._() {
@@ -3023,7 +2754,7 @@ class MLGKDecisionTree extends Struct<MLGKDecisionTree> {
     Pointer<MLGKDecisionTree> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("dealloc"),
     );
@@ -3034,7 +2765,7 @@ class MLGKDecisionTree extends Struct<MLGKDecisionTree> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("set_attributes:"),
       arg,
@@ -3046,7 +2777,7 @@ class MLGKDecisionTree extends Struct<MLGKDecisionTree> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("set_objectStore:"),
       arg,
@@ -3054,9 +2785,6 @@ class MLGKDecisionTree extends Struct<MLGKDecisionTree> {
   }
 }
 
-/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class MLGLMClassification extends Struct<MLGLMClassification> {
   factory MLGLMClassification._() {
@@ -3074,7 +2802,7 @@ class MLGLMClassification extends Struct<MLGLMClassification> {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("calculateClassProbability:input:error:"),
       arg,
@@ -3083,14 +2811,14 @@ class MLGLMClassification extends Struct<MLGLMClassification> {
     );
   }
 
-  static Pointer classify$options$error$(
+  static Pointer classify$options$error(
     Pointer<MLGLMClassification> _self,
     Pointer arg, {
     @required Pointer options,
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("classify:options:error:"),
       arg,
@@ -3099,13 +2827,13 @@ class MLGLMClassification extends Struct<MLGLMClassification> {
     );
   }
 
-  static Pointer classify$error$(
+  static Pointer classify$error(
     Pointer<MLGLMClassification> _self,
     Pointer arg, {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("classify:error:"),
       arg,
@@ -3113,14 +2841,14 @@ class MLGLMClassification extends Struct<MLGLMClassification> {
     );
   }
 
-  static Pointer classify$topK$error$(
+  static Pointer classify$topK$error(
     Pointer<MLGLMClassification> _self,
     Pointer arg, {
     @required int topK,
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_Uint64_p_returns_p(
+    return _call_ptr_ptr_ptr_Uint64_ptr_returns_ptr(
       _self,
       _objc.getSelector("classify:topK:error:"),
       arg,
@@ -3128,27 +2856,8 @@ class MLGLMClassification extends Struct<MLGLMClassification> {
       error,
     );
   }
-
-  static Pointer initWithSpecification(
-    Pointer<MLGLMClassification> _self,
-    Pointer<Pointer> arg, {
-    @required Pointer configuration,
-    @required Pointer<Pointer> error,
-  }) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_p(
-      _self,
-      _objc.getSelector("initWithSpecification:configuration:error:"),
-      arg,
-      configuration,
-      error,
-    );
-  }
 }
 
-/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class MLGLMRegression extends Struct<MLGLMRegression> {
   factory MLGLMRegression._() {
@@ -3159,38 +2868,6 @@ class MLGLMRegression extends Struct<MLGLMRegression> {
     return _objc.allocate("MLGLMRegression").cast<MLGLMRegression>();
   }
 
-  static Pointer initWithLRSpec(
-    Pointer<MLGLMRegression> _self,
-    Pointer<Pointer> arg, {
-    @required Pointer configuration,
-    @required Pointer<Pointer> error,
-  }) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_p(
-      _self,
-      _objc.getSelector("initWithLRSpec:configuration:error:"),
-      arg,
-      configuration,
-      error,
-    );
-  }
-
-  static Pointer initWithSpecification(
-    Pointer<MLGLMRegression> _self,
-    Pointer<Pointer> arg, {
-    @required Pointer configuration,
-    @required Pointer<Pointer> error,
-  }) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_p(
-      _self,
-      _objc.getSelector("initWithSpecification:configuration:error:"),
-      arg,
-      configuration,
-      error,
-    );
-  }
-
   static Pointer regress(
     Pointer<MLGLMRegression> _self,
     Pointer arg, {
@@ -3198,7 +2875,7 @@ class MLGLMRegression extends Struct<MLGLMRegression> {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("regress:options:error:"),
       arg,
@@ -3208,9 +2885,6 @@ class MLGLMRegression extends Struct<MLGLMRegression> {
   }
 }
 
-/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class MLIdentity extends Struct<MLIdentity> {
   factory MLIdentity._() {
@@ -3225,7 +2899,7 @@ class MLIdentity extends Struct<MLIdentity> {
     Pointer<MLIdentity> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("init"),
     );
@@ -3238,7 +2912,7 @@ class MLIdentity extends Struct<MLIdentity> {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("predictionFromFeatures:options:error:"),
       arg,
@@ -3248,9 +2922,6 @@ class MLIdentity extends Struct<MLIdentity> {
   }
 }
 
-/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class MLImageConstraint extends Struct<MLImageConstraint> {
   factory MLImageConstraint._() {
@@ -3261,23 +2932,11 @@ class MLImageConstraint extends Struct<MLImageConstraint> {
     return _objc.allocate("MLImageConstraint").cast<MLImageConstraint>();
   }
 
-  static Pointer copyWithZone(
-    Pointer<MLImageConstraint> _self,
-    Pointer<Pointer> arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
-      _self,
-      _objc.getSelector("copyWithZone:"),
-      arg,
-    );
-  }
-
   static Pointer description(
     Pointer<MLImageConstraint> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("description"),
     );
@@ -3287,7 +2946,7 @@ class MLImageConstraint extends Struct<MLImageConstraint> {
     Pointer<MLImageConstraint> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("imageHeight"),
     );
@@ -3297,7 +2956,7 @@ class MLImageConstraint extends Struct<MLImageConstraint> {
     Pointer<MLImageConstraint> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("imageWidth"),
     );
@@ -3311,7 +2970,7 @@ class MLImageConstraint extends Struct<MLImageConstraint> {
     @required Pointer sizeConstraint,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int64_Int64_Uint64_p_returns_p(
+    return _call_ptr_ptr_Int64_Int64_Uint64_ptr_returns_ptr(
       _self,
       _objc.getSelector(
           "initWithPixelsWide:pixelsHigh:pixelType:sizeConstraint:"),
@@ -3328,7 +2987,7 @@ class MLImageConstraint extends Struct<MLImageConstraint> {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isAllowedValue:error:"),
       arg,
@@ -3340,7 +2999,7 @@ class MLImageConstraint extends Struct<MLImageConstraint> {
     Pointer<MLImageConstraint> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint32(
+    return _call_ptr_ptr_returns_Uint32(
       _self,
       _objc.getSelector("osType"),
     );
@@ -3350,7 +3009,7 @@ class MLImageConstraint extends Struct<MLImageConstraint> {
     Pointer<MLImageConstraint> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint32(
+    return _call_ptr_ptr_returns_Uint32(
       _self,
       _objc.getSelector("pixelFormatType"),
     );
@@ -3360,7 +3019,7 @@ class MLImageConstraint extends Struct<MLImageConstraint> {
     Pointer<MLImageConstraint> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("pixelType"),
     );
@@ -3370,7 +3029,7 @@ class MLImageConstraint extends Struct<MLImageConstraint> {
     Pointer<MLImageConstraint> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int64(
+    return _call_ptr_ptr_returns_Int64(
       _self,
       _objc.getSelector("pixelsHigh"),
     );
@@ -3380,7 +3039,7 @@ class MLImageConstraint extends Struct<MLImageConstraint> {
     Pointer<MLImageConstraint> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int64(
+    return _call_ptr_ptr_returns_Int64(
       _self,
       _objc.getSelector("pixelsWide"),
     );
@@ -3390,16 +3049,13 @@ class MLImageConstraint extends Struct<MLImageConstraint> {
     Pointer<MLImageConstraint> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("sizeConstraint"),
     );
   }
 }
 
-/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class MLImageSize extends Struct<MLImageSize> {
   factory MLImageSize._() {
@@ -3414,7 +3070,7 @@ class MLImageSize extends Struct<MLImageSize> {
     Pointer<MLImageSize> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("description"),
     );
@@ -3424,7 +3080,7 @@ class MLImageSize extends Struct<MLImageSize> {
     Pointer<MLImageSize> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("hash"),
     );
@@ -3436,7 +3092,7 @@ class MLImageSize extends Struct<MLImageSize> {
     @required int pixelsHigh,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int64_Int64_returns_p(
+    return _call_ptr_ptr_Int64_Int64_returns_ptr(
       _self,
       _objc.getSelector("initWithPixelsWide:pixelsHigh:"),
       arg,
@@ -3449,7 +3105,7 @@ class MLImageSize extends Struct<MLImageSize> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isEqual:"),
       arg,
@@ -3461,7 +3117,7 @@ class MLImageSize extends Struct<MLImageSize> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isEqualToImageSize:"),
       arg,
@@ -3472,7 +3128,7 @@ class MLImageSize extends Struct<MLImageSize> {
     Pointer<MLImageSize> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int64(
+    return _call_ptr_ptr_returns_Int64(
       _self,
       _objc.getSelector("pixelsHigh"),
     );
@@ -3482,16 +3138,13 @@ class MLImageSize extends Struct<MLImageSize> {
     Pointer<MLImageSize> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int64(
+    return _call_ptr_ptr_returns_Int64(
       _self,
       _objc.getSelector("pixelsWide"),
     );
   }
 }
 
-/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class MLImageSizeConstraint extends Struct<MLImageSizeConstraint> {
   factory MLImageSizeConstraint._() {
@@ -3512,7 +3165,7 @@ class MLImageSizeConstraint extends Struct<MLImageSizeConstraint> {
     @required int preferInputAspectRatio,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int64_Int64_Int8_Int8_returns_p(
+    return _call_ptr_ptr_Int64_Int64_Int8_Int8_returns_ptr(
       _self,
       _objc.getSelector(
           "allowedImageSizeClosestToPixelsWide:pixelsHigh:preferDownScaling:preferInputAspectRatio:"),
@@ -3527,7 +3180,7 @@ class MLImageSizeConstraint extends Struct<MLImageSizeConstraint> {
     Pointer<MLImageSizeConstraint> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("enumeratedImageSizes"),
     );
@@ -3537,7 +3190,7 @@ class MLImageSizeConstraint extends Struct<MLImageSizeConstraint> {
     Pointer<MLImageSizeConstraint> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("imageSizeSet"),
     );
@@ -3547,7 +3200,7 @@ class MLImageSizeConstraint extends Struct<MLImageSizeConstraint> {
     Pointer<MLImageSizeConstraint> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initUnspecified"),
     );
@@ -3558,24 +3211,10 @@ class MLImageSizeConstraint extends Struct<MLImageSizeConstraint> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithEnumeratedImageSizes:"),
       arg,
-    );
-  }
-
-  static Pointer initWithPixelsWideRange(
-    Pointer<MLImageSizeConstraint> _self,
-    Pointer arg, {
-    @required Pointer pixelsHighRange,
-  }) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_p(
-      _self,
-      _objc.getSelector("initWithPixelsWideRange:pixelsHighRange:"),
-      arg,
-      pixelsHighRange,
     );
   }
 
@@ -3585,7 +3224,7 @@ class MLImageSizeConstraint extends Struct<MLImageSizeConstraint> {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isAllowedImageSize:error:"),
       arg,
@@ -3593,40 +3232,17 @@ class MLImageSizeConstraint extends Struct<MLImageSizeConstraint> {
     );
   }
 
-  static Pointer pixelsHighRange(
-    Pointer<MLImageSizeConstraint> _self,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
-      _self,
-      _objc.getSelector("pixelsHighRange"),
-    );
-  }
-
-  static Pointer pixelsWideRange(
-    Pointer<MLImageSizeConstraint> _self,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
-      _self,
-      _objc.getSelector("pixelsWideRange"),
-    );
-  }
-
   static int type(
     Pointer<MLImageSizeConstraint> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int64(
+    return _call_ptr_ptr_returns_Int64(
       _self,
       _objc.getSelector("type"),
     );
   }
 }
 
-/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class MLImputer extends Struct<MLImputer> {
   factory MLImputer._() {
@@ -3641,7 +3257,7 @@ class MLImputer extends Struct<MLImputer> {
     Pointer<MLImputer> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("imputeValue"),
     );
@@ -3660,7 +3276,7 @@ class MLImputer extends Struct<MLImputer> {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_p_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector(
           "initWith:imputeValue:replaceValue:inputDescription:outputDescription:orderedInputFeatureNames:orderedOutputFeatureNames:configuration:error:"),
@@ -3683,7 +3299,7 @@ class MLImputer extends Struct<MLImputer> {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("predictionFromFeatures:options:error:"),
       arg,
@@ -3696,16 +3312,13 @@ class MLImputer extends Struct<MLImputer> {
     Pointer<MLImputer> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("replaceValue"),
     );
   }
 }
 
-/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class MLIndexedBatchProvider extends Struct<MLIndexedBatchProvider> {
   factory MLIndexedBatchProvider._() {
@@ -3722,7 +3335,7 @@ class MLIndexedBatchProvider extends Struct<MLIndexedBatchProvider> {
     Pointer<MLIndexedBatchProvider> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int64(
+    return _call_ptr_ptr_returns_Int64(
       _self,
       _objc.getSelector("count"),
     );
@@ -3733,7 +3346,7 @@ class MLIndexedBatchProvider extends Struct<MLIndexedBatchProvider> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int64_returns_p(
+    return _call_ptr_ptr_Int64_returns_ptr(
       _self,
       _objc.getSelector("featuresAtIndex:"),
       arg,
@@ -3744,7 +3357,7 @@ class MLIndexedBatchProvider extends Struct<MLIndexedBatchProvider> {
     Pointer<MLIndexedBatchProvider> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("fullBatch"),
     );
@@ -3754,7 +3367,7 @@ class MLIndexedBatchProvider extends Struct<MLIndexedBatchProvider> {
     Pointer<MLIndexedBatchProvider> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("indices"),
     );
@@ -3767,7 +3380,7 @@ class MLIndexedBatchProvider extends Struct<MLIndexedBatchProvider> {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithBatch:indices:error:"),
       arg,
@@ -3781,7 +3394,7 @@ class MLIndexedBatchProvider extends Struct<MLIndexedBatchProvider> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setFullBatch:"),
       arg,
@@ -3793,7 +3406,7 @@ class MLIndexedBatchProvider extends Struct<MLIndexedBatchProvider> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setIndices:"),
       arg,
@@ -3801,9 +3414,6 @@ class MLIndexedBatchProvider extends Struct<MLIndexedBatchProvider> {
   }
 }
 
-/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class MLInt64ProbabilityDictionary
     extends Struct<MLInt64ProbabilityDictionary> {
@@ -3821,7 +3431,7 @@ class MLInt64ProbabilityDictionary
     Pointer<MLInt64ProbabilityDictionary> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("copy"),
     );
@@ -3831,7 +3441,7 @@ class MLInt64ProbabilityDictionary
     Pointer<MLInt64ProbabilityDictionary> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("count"),
     );
@@ -3842,7 +3452,7 @@ class MLInt64ProbabilityDictionary
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithIntLabels:"),
       arg,
@@ -3853,19 +3463,9 @@ class MLInt64ProbabilityDictionary
     Pointer<MLInt64ProbabilityDictionary> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("keyEnumerator"),
-    );
-  }
-
-  static Pointer mapIntLabelToIndex(
-    Pointer<MLInt64ProbabilityDictionary> _self,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
-      _self,
-      _objc.getSelector("mapIntLabelToIndex"),
     );
   }
 
@@ -3874,7 +3474,7 @@ class MLInt64ProbabilityDictionary
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("objectForKey:"),
       arg,
@@ -3886,21 +3486,9 @@ class MLInt64ProbabilityDictionary
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("removeObjectForKey:"),
-      arg,
-    );
-  }
-
-  static void setMapIntLabelToIndex(
-    Pointer<MLInt64ProbabilityDictionary> _self,
-    Pointer arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
-      _self,
-      _objc.getSelector("setMapIntLabelToIndex:"),
       arg,
     );
   }
@@ -3911,7 +3499,7 @@ class MLInt64ProbabilityDictionary
     @required Pointer forKey,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setObject:forKey:"),
       arg,
@@ -3920,9 +3508,6 @@ class MLInt64ProbabilityDictionary
   }
 }
 
-/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class MLInt64ProbabilityDictionaryEnumerator
     extends Struct<MLInt64ProbabilityDictionaryEnumerator> {
@@ -3936,76 +3521,17 @@ class MLInt64ProbabilityDictionaryEnumerator
         .cast<MLInt64ProbabilityDictionaryEnumerator>();
   }
 
-  static Pointer initWithIntMap(
-    Pointer<MLInt64ProbabilityDictionaryEnumerator> _self,
-    Pointer<Pointer> arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
-      _self,
-      _objc.getSelector("initWithIntMap:"),
-      arg,
-    );
-  }
-
-  static Pointer iter(
-    Pointer<MLInt64ProbabilityDictionaryEnumerator> _self,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
-      _self,
-      _objc.getSelector("iter"),
-    );
-  }
-
-  static Pointer iterEnd(
-    Pointer<MLInt64ProbabilityDictionaryEnumerator> _self,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
-      _self,
-      _objc.getSelector("iterEnd"),
-    );
-  }
-
   static Pointer nextObject(
     Pointer<MLInt64ProbabilityDictionaryEnumerator> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("nextObject"),
     );
   }
-
-  static void setIter(
-    Pointer<MLInt64ProbabilityDictionaryEnumerator> _self,
-    Pointer arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
-      _self,
-      _objc.getSelector("setIter:"),
-      arg,
-    );
-  }
-
-  static void setIterEnd(
-    Pointer<MLInt64ProbabilityDictionaryEnumerator> _self,
-    Pointer arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
-      _self,
-      _objc.getSelector("setIterEnd:"),
-      arg,
-    );
-  }
 }
 
-/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class MLInternalSettings extends Struct<MLInternalSettings> {
   factory MLInternalSettings._() {
@@ -4020,7 +3546,7 @@ class MLInternalSettings extends Struct<MLInternalSettings> {
     Pointer<MLInternalSettings> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("experimentalMode"),
     );
@@ -4030,7 +3556,7 @@ class MLInternalSettings extends Struct<MLInternalSettings> {
     Pointer<MLInternalSettings> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("init"),
     );
@@ -4040,7 +3566,7 @@ class MLInternalSettings extends Struct<MLInternalSettings> {
     Pointer<MLInternalSettings> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isNeuralNetworkEnergyEfficientPathForbidden"),
     );
@@ -4050,7 +3576,7 @@ class MLInternalSettings extends Struct<MLInternalSettings> {
     Pointer<MLInternalSettings> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isNeuralNetworkGPUPathForbidden"),
     );
@@ -4060,7 +3586,7 @@ class MLInternalSettings extends Struct<MLInternalSettings> {
     Pointer<MLInternalSettings> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("restrictNeuralNetworksToUseCPUOnly"),
     );
@@ -4070,7 +3596,7 @@ class MLInternalSettings extends Struct<MLInternalSettings> {
     Pointer<MLInternalSettings> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("restrictNeuralNetworksToUseNonEnergyEfficientMode"),
     );
@@ -4081,7 +3607,7 @@ class MLInternalSettings extends Struct<MLInternalSettings> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setExperimentalMode:"),
       arg,
@@ -4093,7 +3619,7 @@ class MLInternalSettings extends Struct<MLInternalSettings> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setRestrictNeuralNetworksToUseCPUOnly:"),
       arg,
@@ -4105,7 +3631,7 @@ class MLInternalSettings extends Struct<MLInternalSettings> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc
           .getSelector("setRestrictNeuralNetworksToUseNonEnergyEfficientMode:"),
@@ -4114,9 +3640,6 @@ class MLInternalSettings extends Struct<MLInternalSettings> {
   }
 }
 
-/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class MLLazyUnionBatchProvider extends Struct<MLLazyUnionBatchProvider> {
   factory MLLazyUnionBatchProvider._() {
@@ -4133,7 +3656,7 @@ class MLLazyUnionBatchProvider extends Struct<MLLazyUnionBatchProvider> {
     Pointer<MLLazyUnionBatchProvider> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int64(
+    return _call_ptr_ptr_returns_Int64(
       _self,
       _objc.getSelector("count"),
     );
@@ -4144,7 +3667,7 @@ class MLLazyUnionBatchProvider extends Struct<MLLazyUnionBatchProvider> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int64_returns_p(
+    return _call_ptr_ptr_Int64_returns_ptr(
       _self,
       _objc.getSelector("featuresAtIndex:"),
       arg,
@@ -4155,7 +3678,7 @@ class MLLazyUnionBatchProvider extends Struct<MLLazyUnionBatchProvider> {
     Pointer<MLLazyUnionBatchProvider> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("first"),
     );
@@ -4168,7 +3691,7 @@ class MLLazyUnionBatchProvider extends Struct<MLLazyUnionBatchProvider> {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithFeaturesFrom:addedToFeaturesFrom:error:"),
       arg,
@@ -4181,7 +3704,7 @@ class MLLazyUnionBatchProvider extends Struct<MLLazyUnionBatchProvider> {
     Pointer<MLLazyUnionBatchProvider> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("second"),
     );
@@ -4192,7 +3715,7 @@ class MLLazyUnionBatchProvider extends Struct<MLLazyUnionBatchProvider> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setFirst:"),
       arg,
@@ -4204,7 +3727,7 @@ class MLLazyUnionBatchProvider extends Struct<MLLazyUnionBatchProvider> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setSecond:"),
       arg,
@@ -4212,9 +3735,6 @@ class MLLazyUnionBatchProvider extends Struct<MLLazyUnionBatchProvider> {
   }
 }
 
-/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class MLLazyUnionFeatureProvider extends Struct<MLLazyUnionFeatureProvider> {
   factory MLLazyUnionFeatureProvider._() {
@@ -4231,7 +3751,7 @@ class MLLazyUnionFeatureProvider extends Struct<MLLazyUnionFeatureProvider> {
     Pointer<MLLazyUnionFeatureProvider> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("featureNames"),
     );
@@ -4242,7 +3762,7 @@ class MLLazyUnionFeatureProvider extends Struct<MLLazyUnionFeatureProvider> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("featureValueForName:"),
       arg,
@@ -4253,7 +3773,7 @@ class MLLazyUnionFeatureProvider extends Struct<MLLazyUnionFeatureProvider> {
     Pointer<MLLazyUnionFeatureProvider> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("first"),
     );
@@ -4265,7 +3785,7 @@ class MLLazyUnionFeatureProvider extends Struct<MLLazyUnionFeatureProvider> {
     @required Pointer addedToFeaturesFrom,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithFeaturesFrom:addedToFeaturesFrom:"),
       arg,
@@ -4277,7 +3797,7 @@ class MLLazyUnionFeatureProvider extends Struct<MLLazyUnionFeatureProvider> {
     Pointer<MLLazyUnionFeatureProvider> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("second"),
     );
@@ -4288,7 +3808,7 @@ class MLLazyUnionFeatureProvider extends Struct<MLLazyUnionFeatureProvider> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setFirst:"),
       arg,
@@ -4300,7 +3820,7 @@ class MLLazyUnionFeatureProvider extends Struct<MLLazyUnionFeatureProvider> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setSecond:"),
       arg,
@@ -4311,16 +3831,13 @@ class MLLazyUnionFeatureProvider extends Struct<MLLazyUnionFeatureProvider> {
     Pointer<MLLazyUnionFeatureProvider> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("unionFeatureProvider"),
     );
   }
 }
 
-/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class MLLoader extends Struct<MLLoader> {
   factory MLLoader._() {
@@ -4332,9 +3849,6 @@ class MLLoader extends Struct<MLLoader> {
   }
 }
 
-/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class MLLogging extends Struct<MLLogging> {
   factory MLLogging._() {
@@ -4346,9 +3860,6 @@ class MLLogging extends Struct<MLLogging> {
   }
 }
 
-/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class MLModel extends Struct<MLModel> {
   factory MLModel._() {
@@ -4363,7 +3874,7 @@ class MLModel extends Struct<MLModel> {
     Pointer<MLModel> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("configuration"),
     );
@@ -4373,7 +3884,7 @@ class MLModel extends Struct<MLModel> {
     Pointer<MLModel> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("debugQuickLookObject"),
     );
@@ -4383,40 +3894,9 @@ class MLModel extends Struct<MLModel> {
     Pointer<MLModel> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("description"),
-    );
-  }
-
-  static Pointer initDescriptionOnlyWithSpecification(
-    Pointer<MLModel> _self,
-    Pointer<Pointer> arg, {
-    @required Pointer configuration,
-    @required Pointer<Pointer> error,
-  }) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_p(
-      _self,
-      _objc.getSelector(
-          "initDescriptionOnlyWithSpecification:configuration:error:"),
-      arg,
-      configuration,
-      error,
-    );
-  }
-
-  static Pointer initInterfaceAndMetadataWithCompiledArchive(
-    Pointer<MLModel> _self,
-    Pointer<Pointer> arg, {
-    @required Pointer<Pointer> error,
-  }) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_p(
-      _self,
-      _objc.getSelector("initInterfaceAndMetadataWithCompiledArchive:error:"),
-      arg,
-      error,
     );
   }
 
@@ -4425,20 +3905,20 @@ class MLModel extends Struct<MLModel> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithConfiguration:"),
       arg,
     );
   }
 
-  static Pointer initWithDescription$configuration$(
+  static Pointer initWithDescription$configuration(
     Pointer<MLModel> _self,
     Pointer arg, {
     @required Pointer configuration,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithDescription:configuration:"),
       arg,
@@ -4446,12 +3926,12 @@ class MLModel extends Struct<MLModel> {
     );
   }
 
-  static Pointer initWithDescription$(
+  static Pointer initWithDescription(
     Pointer<MLModel> _self,
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithDescription:"),
       arg,
@@ -4465,7 +3945,7 @@ class MLModel extends Struct<MLModel> {
     @required Pointer configuration,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithInterface:metadata:configuration:"),
       arg,
@@ -4484,7 +3964,7 @@ class MLModel extends Struct<MLModel> {
     @required Pointer configuration,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector(
           "initWithName:inputDescription:outputDescription:orderedInputFeatureNames:orderedOutputFeatureNames:configuration:"),
@@ -4501,7 +3981,7 @@ class MLModel extends Struct<MLModel> {
     Pointer<MLModel> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("interface"),
     );
@@ -4511,7 +3991,7 @@ class MLModel extends Struct<MLModel> {
     Pointer<MLModel> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("metadata"),
     );
@@ -4521,7 +4001,7 @@ class MLModel extends Struct<MLModel> {
     Pointer<MLModel> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("modelDescription"),
     );
@@ -4531,19 +4011,19 @@ class MLModel extends Struct<MLModel> {
     Pointer<MLModel> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("objectBoundingBoxOutputDescription"),
     );
   }
 
-  static Pointer predictionFromFeatures$error$(
+  static Pointer predictionFromFeatures$error(
     Pointer<MLModel> _self,
     Pointer arg, {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("predictionFromFeatures:error:"),
       arg,
@@ -4551,14 +4031,14 @@ class MLModel extends Struct<MLModel> {
     );
   }
 
-  static Pointer predictionFromFeatures$options$error$(
+  static Pointer predictionFromFeatures$options$error(
     Pointer<MLModel> _self,
     Pointer arg, {
     @required Pointer options,
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("predictionFromFeatures:options:error:"),
       arg,
@@ -4574,7 +4054,7 @@ class MLModel extends Struct<MLModel> {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("predictionsFromBatch:options:error:"),
       arg,
@@ -4588,7 +4068,7 @@ class MLModel extends Struct<MLModel> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setConfiguration:"),
       arg,
@@ -4600,7 +4080,7 @@ class MLModel extends Struct<MLModel> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setModelDescription:"),
       arg,
@@ -4613,7 +4093,7 @@ class MLModel extends Struct<MLModel> {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("vectorizeInput:error:"),
       arg,
@@ -4625,16 +4105,13 @@ class MLModel extends Struct<MLModel> {
     Pointer<MLModel> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("visionFeaturePrintInfo"),
     );
   }
 }
 
-/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class MLModelAsset extends Struct<MLModelAsset> {
   factory MLModelAsset._() {
@@ -4649,7 +4126,7 @@ class MLModelAsset extends Struct<MLModelAsset> {
     Pointer<MLModelAsset> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("asset"),
     );
@@ -4659,7 +4136,7 @@ class MLModelAsset extends Struct<MLModelAsset> {
     Pointer<MLModelAsset> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("classifier"),
     );
@@ -4670,7 +4147,7 @@ class MLModelAsset extends Struct<MLModelAsset> {
     Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("classifierWithError:"),
       arg,
@@ -4681,7 +4158,7 @@ class MLModelAsset extends Struct<MLModelAsset> {
     Pointer<MLModelAsset> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("compiledURL"),
     );
@@ -4691,19 +4168,19 @@ class MLModelAsset extends Struct<MLModelAsset> {
     Pointer<MLModelAsset> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("description"),
     );
   }
 
-  static Pointer initWithURL$error$(
+  static Pointer initWithURL$error(
     Pointer<MLModelAsset> _self,
     Pointer arg, {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithURL:error:"),
       arg,
@@ -4711,14 +4188,14 @@ class MLModelAsset extends Struct<MLModelAsset> {
     );
   }
 
-  static Pointer initWithURL$configuration$error$(
+  static Pointer initWithURL$configuration$error(
     Pointer<MLModelAsset> _self,
     Pointer arg, {
     @required Pointer configuration,
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithURL:configuration:error:"),
       arg,
@@ -4732,7 +4209,7 @@ class MLModelAsset extends Struct<MLModelAsset> {
     Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("load:"),
       arg,
@@ -4743,7 +4220,7 @@ class MLModelAsset extends Struct<MLModelAsset> {
     Pointer<MLModelAsset> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("loadConfiguration"),
     );
@@ -4753,7 +4230,7 @@ class MLModelAsset extends Struct<MLModelAsset> {
     Pointer<MLModelAsset> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("model"),
     );
@@ -4764,7 +4241,7 @@ class MLModelAsset extends Struct<MLModelAsset> {
     Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("modelWithError:"),
       arg,
@@ -4775,7 +4252,7 @@ class MLModelAsset extends Struct<MLModelAsset> {
     Pointer<MLModelAsset> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("ranLoad"),
     );
@@ -4785,7 +4262,7 @@ class MLModelAsset extends Struct<MLModelAsset> {
     Pointer<MLModelAsset> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("regressor"),
     );
@@ -4796,7 +4273,7 @@ class MLModelAsset extends Struct<MLModelAsset> {
     Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("regressorWithError:"),
       arg,
@@ -4808,7 +4285,7 @@ class MLModelAsset extends Struct<MLModelAsset> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setAsset:"),
       arg,
@@ -4820,7 +4297,7 @@ class MLModelAsset extends Struct<MLModelAsset> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setRanLoad:"),
       arg,
@@ -4828,9 +4305,6 @@ class MLModelAsset extends Struct<MLModelAsset> {
   }
 }
 
-/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class MLModelConfiguration extends Struct<MLModelConfiguration> {
   factory MLModelConfiguration._() {
@@ -4845,21 +4319,9 @@ class MLModelConfiguration extends Struct<MLModelConfiguration> {
     Pointer<MLModelConfiguration> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int64(
+    return _call_ptr_ptr_returns_Int64(
       _self,
       _objc.getSelector("computeUnits"),
-    );
-  }
-
-  static Pointer copyWithZone(
-    Pointer<MLModelConfiguration> _self,
-    Pointer<Pointer> arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
-      _self,
-      _objc.getSelector("copyWithZone:"),
-      arg,
     );
   }
 
@@ -4867,7 +4329,7 @@ class MLModelConfiguration extends Struct<MLModelConfiguration> {
     Pointer<MLModelConfiguration> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("hash"),
     );
@@ -4877,7 +4339,7 @@ class MLModelConfiguration extends Struct<MLModelConfiguration> {
     Pointer<MLModelConfiguration> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("init"),
     );
@@ -4888,7 +4350,7 @@ class MLModelConfiguration extends Struct<MLModelConfiguration> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int64_returns_p(
+    return _call_ptr_ptr_Int64_returns_ptr(
       _self,
       _objc.getSelector("initWithComputeUnits:"),
       arg,
@@ -4900,7 +4362,7 @@ class MLModelConfiguration extends Struct<MLModelConfiguration> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isEqual:"),
       arg,
@@ -4912,7 +4374,7 @@ class MLModelConfiguration extends Struct<MLModelConfiguration> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isEqualToModelConfiguration:"),
       arg,
@@ -4924,7 +4386,7 @@ class MLModelConfiguration extends Struct<MLModelConfiguration> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int64_returns_void(
+    _call_ptr_ptr_Int64_returns_void(
       _self,
       _objc.getSelector("setComputeUnits:"),
       arg,
@@ -4936,7 +4398,7 @@ class MLModelConfiguration extends Struct<MLModelConfiguration> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setUseWatchSPIForScribble:"),
       arg,
@@ -4947,16 +4409,13 @@ class MLModelConfiguration extends Struct<MLModelConfiguration> {
     Pointer<MLModelConfiguration> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("useWatchSPIForScribble"),
     );
   }
 }
 
-/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class MLModelDescription extends Struct<MLModelDescription> {
   factory MLModelDescription._() {
@@ -4971,7 +4430,7 @@ class MLModelDescription extends Struct<MLModelDescription> {
     Pointer<MLModelDescription> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("debugQuickLookObject"),
     );
@@ -4981,7 +4440,7 @@ class MLModelDescription extends Struct<MLModelDescription> {
     Pointer<MLModelDescription> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("description"),
     );
@@ -4996,7 +4455,7 @@ class MLModelDescription extends Struct<MLModelDescription> {
     @required Pointer metadata,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector(
           "initWithInputDescriptions:outputDescriptions:predictedFeatureName:predictedProbabilitiesName:metadata:"),
@@ -5008,25 +4467,11 @@ class MLModelDescription extends Struct<MLModelDescription> {
     );
   }
 
-  static Pointer initWithModelDescriptionSpecification(
-    Pointer<MLModelDescription> _self,
-    Pointer<Pointer> arg, {
-    @required Pointer<Pointer> error,
-  }) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_p(
-      _self,
-      _objc.getSelector("initWithModelDescriptionSpecification:error:"),
-      arg,
-      error,
-    );
-  }
-
   static Pointer inputDescriptionsByName(
     Pointer<MLModelDescription> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("inputDescriptionsByName"),
     );
@@ -5036,7 +4481,7 @@ class MLModelDescription extends Struct<MLModelDescription> {
     Pointer<MLModelDescription> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("inputFeatureNames"),
     );
@@ -5047,7 +4492,7 @@ class MLModelDescription extends Struct<MLModelDescription> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isEqual:"),
       arg,
@@ -5059,7 +4504,7 @@ class MLModelDescription extends Struct<MLModelDescription> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isEqualToDescription:"),
       arg,
@@ -5070,7 +4515,7 @@ class MLModelDescription extends Struct<MLModelDescription> {
     Pointer<MLModelDescription> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("metadata"),
     );
@@ -5080,7 +4525,7 @@ class MLModelDescription extends Struct<MLModelDescription> {
     Pointer<MLModelDescription> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("outputDescriptionsByName"),
     );
@@ -5090,7 +4535,7 @@ class MLModelDescription extends Struct<MLModelDescription> {
     Pointer<MLModelDescription> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("outputFeatureNames"),
     );
@@ -5100,7 +4545,7 @@ class MLModelDescription extends Struct<MLModelDescription> {
     Pointer<MLModelDescription> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("predictedFeatureName"),
     );
@@ -5110,7 +4555,7 @@ class MLModelDescription extends Struct<MLModelDescription> {
     Pointer<MLModelDescription> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("predictedProbabilitiesName"),
     );
@@ -5121,7 +4566,7 @@ class MLModelDescription extends Struct<MLModelDescription> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setInputFeatureNames:"),
       arg,
@@ -5133,7 +4578,7 @@ class MLModelDescription extends Struct<MLModelDescription> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setOutputFeatureNames:"),
       arg,
@@ -5146,7 +4591,7 @@ class MLModelDescription extends Struct<MLModelDescription> {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("verifyInput:error:"),
       arg,
@@ -5155,9 +4600,6 @@ class MLModelDescription extends Struct<MLModelDescription> {
   }
 }
 
-/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class MLModelDescriptionUtils extends Struct<MLModelDescriptionUtils> {
   factory MLModelDescriptionUtils._() {
@@ -5171,9 +4613,6 @@ class MLModelDescriptionUtils extends Struct<MLModelDescriptionUtils> {
   }
 }
 
-/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class MLModelErrorUtils extends Struct<MLModelErrorUtils> {
   factory MLModelErrorUtils._() {
@@ -5185,9 +4624,6 @@ class MLModelErrorUtils extends Struct<MLModelErrorUtils> {
   }
 }
 
-/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class MLModelIOUtils extends Struct<MLModelIOUtils> {
   factory MLModelIOUtils._() {
@@ -5199,9 +4635,6 @@ class MLModelIOUtils extends Struct<MLModelIOUtils> {
   }
 }
 
-/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class MLModelInterface extends Struct<MLModelInterface> {
   factory MLModelInterface._() {
@@ -5216,7 +4649,7 @@ class MLModelInterface extends Struct<MLModelInterface> {
     Pointer<MLModelInterface> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("classProbabilityFeatureDescription"),
     );
@@ -5232,7 +4665,7 @@ class MLModelInterface extends Struct<MLModelInterface> {
     @required Pointer predictedProbabilitiesName,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector(
           "initWithInputDescription:outputDescription:orderedInputFeatureNames:orderedOutputFeatureNames:predictedFeatureName:predictedProbabilitiesName:"),
@@ -5245,39 +4678,11 @@ class MLModelInterface extends Struct<MLModelInterface> {
     );
   }
 
-  static Pointer initWithInterfaceFormat(
-    Pointer<MLModelInterface> _self,
-    Pointer<Pointer> arg, {
-    @required Pointer<Pointer> error,
-  }) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_p(
-      _self,
-      _objc.getSelector("initWithInterfaceFormat:error:"),
-      arg,
-      error,
-    );
-  }
-
-  static Pointer initWithSpecification(
-    Pointer<MLModelInterface> _self,
-    Pointer<Pointer> arg, {
-    @required Pointer<Pointer> error,
-  }) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_p(
-      _self,
-      _objc.getSelector("initWithSpecification:error:"),
-      arg,
-      error,
-    );
-  }
-
   static Pointer inputDescription(
     Pointer<MLModelInterface> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("inputDescription"),
     );
@@ -5287,7 +4692,7 @@ class MLModelInterface extends Struct<MLModelInterface> {
     Pointer<MLModelInterface> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("inputFeatureNames"),
     );
@@ -5297,7 +4702,7 @@ class MLModelInterface extends Struct<MLModelInterface> {
     Pointer<MLModelInterface> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isValidClassifierInterface"),
     );
@@ -5307,7 +4712,7 @@ class MLModelInterface extends Struct<MLModelInterface> {
     Pointer<MLModelInterface> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isValidRegressorInterface"),
     );
@@ -5317,7 +4722,7 @@ class MLModelInterface extends Struct<MLModelInterface> {
     Pointer<MLModelInterface> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("outputDescription"),
     );
@@ -5327,7 +4732,7 @@ class MLModelInterface extends Struct<MLModelInterface> {
     Pointer<MLModelInterface> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("outputFeatureNames"),
     );
@@ -5337,7 +4742,7 @@ class MLModelInterface extends Struct<MLModelInterface> {
     Pointer<MLModelInterface> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("predictedClassFeatureDescription"),
     );
@@ -5347,7 +4752,7 @@ class MLModelInterface extends Struct<MLModelInterface> {
     Pointer<MLModelInterface> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("predictedFeatureName"),
     );
@@ -5357,7 +4762,7 @@ class MLModelInterface extends Struct<MLModelInterface> {
     Pointer<MLModelInterface> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("predictedProbabilitiesName"),
     );
@@ -5367,7 +4772,7 @@ class MLModelInterface extends Struct<MLModelInterface> {
     Pointer<MLModelInterface> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("predictedValueFeatureDescription"),
     );
@@ -5378,7 +4783,7 @@ class MLModelInterface extends Struct<MLModelInterface> {
     Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("validateClassifierInterfaceWithError:"),
       arg,
@@ -5390,7 +4795,7 @@ class MLModelInterface extends Struct<MLModelInterface> {
     Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("validateRegressorInterfaceWithError:"),
       arg,
@@ -5398,9 +4803,6 @@ class MLModelInterface extends Struct<MLModelInterface> {
   }
 }
 
-/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class MLModelMetadata extends Struct<MLModelMetadata> {
   factory MLModelMetadata._() {
@@ -5415,7 +4817,7 @@ class MLModelMetadata extends Struct<MLModelMetadata> {
     Pointer<MLModelMetadata> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("author"),
     );
@@ -5425,7 +4827,7 @@ class MLModelMetadata extends Struct<MLModelMetadata> {
     Pointer<MLModelMetadata> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("creatorDefined"),
     );
@@ -5435,18 +4837,18 @@ class MLModelMetadata extends Struct<MLModelMetadata> {
     Pointer<MLModelMetadata> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("debugDescription"),
     );
   }
 
-  static Pointer initWithName$(
+  static Pointer initWithName(
     Pointer<MLModelMetadata> _self,
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithName:"),
       arg,
@@ -5454,7 +4856,7 @@ class MLModelMetadata extends Struct<MLModelMetadata> {
   }
 
   static Pointer
-      initWithName$shortDescription$versionString$author$license$creatorDefined$(
+      initWithName$shortDescription$versionString$author$license$creatorDefined(
     Pointer<MLModelMetadata> _self,
     Pointer arg, {
     @required Pointer shortDescription,
@@ -5464,7 +4866,7 @@ class MLModelMetadata extends Struct<MLModelMetadata> {
     @required Pointer creatorDefined,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector(
           "initWithName:shortDescription:versionString:author:license:creatorDefined:"),
@@ -5481,7 +4883,7 @@ class MLModelMetadata extends Struct<MLModelMetadata> {
     Pointer<MLModelMetadata> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("license"),
     );
@@ -5491,7 +4893,7 @@ class MLModelMetadata extends Struct<MLModelMetadata> {
     Pointer<MLModelMetadata> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("name"),
     );
@@ -5501,7 +4903,7 @@ class MLModelMetadata extends Struct<MLModelMetadata> {
     Pointer<MLModelMetadata> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("shortDescription"),
     );
@@ -5511,16 +4913,13 @@ class MLModelMetadata extends Struct<MLModelMetadata> {
     Pointer<MLModelMetadata> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("versionString"),
     );
   }
 }
 
-/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class MLModelTypeRegistry extends Struct<MLModelTypeRegistry> {
   factory MLModelTypeRegistry._() {
@@ -5536,7 +4935,7 @@ class MLModelTypeRegistry extends Struct<MLModelTypeRegistry> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int32_returns_p(
+    return _call_ptr_ptr_Int32_returns_ptr(
       _self,
       _objc.getSelector("classForCompilingModelType:"),
       arg,
@@ -5548,7 +4947,7 @@ class MLModelTypeRegistry extends Struct<MLModelTypeRegistry> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int32_returns_p(
+    return _call_ptr_ptr_Int32_returns_ptr(
       _self,
       _objc.getSelector("classForLoadingModelType:"),
       arg,
@@ -5559,16 +4958,13 @@ class MLModelTypeRegistry extends Struct<MLModelTypeRegistry> {
     Pointer<MLModelTypeRegistry> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("init"),
     );
   }
 }
 
-/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class MLModelVisionFeaturePrintInfo
     extends Struct<MLModelVisionFeaturePrintInfo> {
@@ -5586,7 +4982,7 @@ class MLModelVisionFeaturePrintInfo
     Pointer<MLModelVisionFeaturePrintInfo> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("postVisionFeaturePrintModel"),
     );
@@ -5597,7 +4993,7 @@ class MLModelVisionFeaturePrintInfo
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setPostVisionFeaturePrintModel:"),
       arg,
@@ -5609,7 +5005,7 @@ class MLModelVisionFeaturePrintInfo
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int64_returns_void(
+    _call_ptr_ptr_Int64_returns_void(
       _self,
       _objc.getSelector("setVersion:"),
       arg,
@@ -5620,16 +5016,13 @@ class MLModelVisionFeaturePrintInfo
     Pointer<MLModelVisionFeaturePrintInfo> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int64(
+    return _call_ptr_ptr_returns_Int64(
       _self,
       _objc.getSelector("version"),
     );
   }
 }
 
-/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class MLMultiArray extends Struct<MLMultiArray> {
   factory MLMultiArray._() {
@@ -5646,7 +5039,7 @@ class MLMultiArray extends Struct<MLMultiArray> {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("copyIntoMultiArray:error:"),
       arg,
@@ -5658,7 +5051,7 @@ class MLMultiArray extends Struct<MLMultiArray> {
     Pointer<MLMultiArray> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int64(
+    return _call_ptr_ptr_returns_Int64(
       _self,
       _objc.getSelector("count"),
     );
@@ -5668,7 +5061,7 @@ class MLMultiArray extends Struct<MLMultiArray> {
     Pointer<MLMultiArray> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("dataPointer"),
     );
@@ -5678,7 +5071,7 @@ class MLMultiArray extends Struct<MLMultiArray> {
     Pointer<MLMultiArray> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int64(
+    return _call_ptr_ptr_returns_Int64(
       _self,
       _objc.getSelector("dataType"),
     );
@@ -5688,7 +5081,7 @@ class MLMultiArray extends Struct<MLMultiArray> {
     Pointer<MLMultiArray> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("dealloc"),
     );
@@ -5698,7 +5091,7 @@ class MLMultiArray extends Struct<MLMultiArray> {
     Pointer<MLMultiArray> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("debugQuickLookObject"),
     );
@@ -5708,7 +5101,7 @@ class MLMultiArray extends Struct<MLMultiArray> {
     Pointer<MLMultiArray> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("description"),
     );
@@ -5718,7 +5111,7 @@ class MLMultiArray extends Struct<MLMultiArray> {
     Pointer<MLMultiArray> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("doublePointer"),
     );
@@ -5729,7 +5122,7 @@ class MLMultiArray extends Struct<MLMultiArray> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("fillWithNumber:"),
       arg,
@@ -5746,7 +5139,7 @@ class MLMultiArray extends Struct<MLMultiArray> {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_Int64_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_Int64_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector(
           "initWithDataPointer:shape:dataType:strides:deallocator:error:"),
@@ -5759,7 +5152,7 @@ class MLMultiArray extends Struct<MLMultiArray> {
     );
   }
 
-  static Pointer initWithShape$dataType$storageOrder$error$(
+  static Pointer initWithShape$dataType$storageOrder$error(
     Pointer<MLMultiArray> _self,
     Pointer arg, {
     @required int dataType,
@@ -5767,7 +5160,7 @@ class MLMultiArray extends Struct<MLMultiArray> {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_Int64_Int64_p_returns_p(
+    return _call_ptr_ptr_ptr_Int64_Int64_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithShape:dataType:storageOrder:error:"),
       arg,
@@ -5777,14 +5170,14 @@ class MLMultiArray extends Struct<MLMultiArray> {
     );
   }
 
-  static Pointer initWithShape$dataType$error$(
+  static Pointer initWithShape$dataType$error(
     Pointer<MLMultiArray> _self,
     Pointer arg, {
     @required int dataType,
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_Int64_p_returns_p(
+    return _call_ptr_ptr_ptr_Int64_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithShape:dataType:error:"),
       arg,
@@ -5797,7 +5190,7 @@ class MLMultiArray extends Struct<MLMultiArray> {
     Pointer<MLMultiArray> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isContiguous"),
     );
@@ -5808,7 +5201,7 @@ class MLMultiArray extends Struct<MLMultiArray> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int64_returns_Int8(
+    return _call_ptr_ptr_Int64_returns_Int8(
       _self,
       _objc.getSelector("isContiguousInOrder:"),
       arg,
@@ -5820,7 +5213,7 @@ class MLMultiArray extends Struct<MLMultiArray> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isEqual:"),
       arg,
@@ -5832,7 +5225,7 @@ class MLMultiArray extends Struct<MLMultiArray> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isEqualToMultiArray:"),
       arg,
@@ -5843,7 +5236,7 @@ class MLMultiArray extends Struct<MLMultiArray> {
     Pointer<MLMultiArray> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isManagingData"),
     );
@@ -5853,7 +5246,7 @@ class MLMultiArray extends Struct<MLMultiArray> {
     Pointer<MLMultiArray> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("multiArrayBuffer"),
     );
@@ -5863,7 +5256,7 @@ class MLMultiArray extends Struct<MLMultiArray> {
     Pointer<MLMultiArray> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("numberArray"),
     );
@@ -5874,7 +5267,7 @@ class MLMultiArray extends Struct<MLMultiArray> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Uint64_returns_p(
+    return _call_ptr_ptr_Uint64_returns_ptr(
       _self,
       _objc.getSelector("numberAtOffset:"),
       arg,
@@ -5885,7 +5278,7 @@ class MLMultiArray extends Struct<MLMultiArray> {
     Pointer<MLMultiArray> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("numberOfBytesPerElement"),
     );
@@ -5896,7 +5289,7 @@ class MLMultiArray extends Struct<MLMultiArray> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int64_returns_p(
+    return _call_ptr_ptr_Int64_returns_ptr(
       _self,
       _objc.getSelector("objectAtIndexedSubscript:"),
       arg,
@@ -5908,7 +5301,7 @@ class MLMultiArray extends Struct<MLMultiArray> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("objectForKeyedSubscript:"),
       arg,
@@ -5920,7 +5313,7 @@ class MLMultiArray extends Struct<MLMultiArray> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_Uint64(
+    return _call_ptr_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("offsetForKeyedSubscript:"),
       arg,
@@ -5931,7 +5324,7 @@ class MLMultiArray extends Struct<MLMultiArray> {
     Pointer<MLMultiArray> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("sequeeze"),
     );
@@ -5943,7 +5336,7 @@ class MLMultiArray extends Struct<MLMultiArray> {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("sequeezeDimensions:error:"),
       arg,
@@ -5957,7 +5350,7 @@ class MLMultiArray extends Struct<MLMultiArray> {
     @required int atOffset,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_Uint64_returns_void(
+    _call_ptr_ptr_ptr_Uint64_returns_void(
       _self,
       _objc.getSelector("setNumber:atOffset:"),
       arg,
@@ -5965,13 +5358,13 @@ class MLMultiArray extends Struct<MLMultiArray> {
     );
   }
 
-  static void setObject$forKeyedSubscript$(
+  static void setObject$forKeyedSubscript(
     Pointer<MLMultiArray> _self,
     Pointer arg, {
     @required Pointer forKeyedSubscript,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setObject:forKeyedSubscript:"),
       arg,
@@ -5979,13 +5372,13 @@ class MLMultiArray extends Struct<MLMultiArray> {
     );
   }
 
-  static void setObject$atIndexedSubscript$(
+  static void setObject$atIndexedSubscript(
     Pointer<MLMultiArray> _self,
     Pointer arg, {
     @required int atIndexedSubscript,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_Int64_returns_void(
+    _call_ptr_ptr_ptr_Int64_returns_void(
       _self,
       _objc.getSelector("setObject:atIndexedSubscript:"),
       arg,
@@ -6000,7 +5393,7 @@ class MLMultiArray extends Struct<MLMultiArray> {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_Uint64_p_returns_Int8(
+    return _call_ptr_ptr_ptr_Uint64_ptr_returns_Int8(
       _self,
       _objc.getSelector("setRangeWithRawData:destIndex:error:"),
       arg,
@@ -6013,7 +5406,7 @@ class MLMultiArray extends Struct<MLMultiArray> {
     Pointer<MLMultiArray> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("shape"),
     );
@@ -6027,7 +5420,7 @@ class MLMultiArray extends Struct<MLMultiArray> {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_Int8_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_Int8_ptr_returns_ptr(
       _self,
       _objc.getSelector("sliceAtOrigin:shape:squeeze:error:"),
       arg,
@@ -6041,7 +5434,7 @@ class MLMultiArray extends Struct<MLMultiArray> {
     Pointer<MLMultiArray> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("strides"),
     );
@@ -6054,7 +5447,7 @@ class MLMultiArray extends Struct<MLMultiArray> {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_Int64_p_returns_Int8(
+    return _call_ptr_ptr_ptr_Int64_ptr_returns_Int8(
       _self,
       _objc.getSelector("vectorizeIntoMultiArray:storageOrder:error:"),
       arg,
@@ -6064,9 +5457,6 @@ class MLMultiArray extends Struct<MLMultiArray> {
   }
 }
 
-/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class MLMultiArrayAsNSArrayWrapper
     extends Struct<MLMultiArrayAsNSArrayWrapper> {
@@ -6084,7 +5474,7 @@ class MLMultiArrayAsNSArrayWrapper
     Pointer<MLMultiArrayAsNSArrayWrapper> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("count"),
     );
@@ -6095,7 +5485,7 @@ class MLMultiArrayAsNSArrayWrapper
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWrappingMultiArray:"),
       arg,
@@ -6106,7 +5496,7 @@ class MLMultiArrayAsNSArrayWrapper
     Pointer<MLMultiArrayAsNSArrayWrapper> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("multiArray"),
     );
@@ -6117,7 +5507,7 @@ class MLMultiArrayAsNSArrayWrapper
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Uint64_returns_p(
+    return _call_ptr_ptr_Uint64_returns_ptr(
       _self,
       _objc.getSelector("objectAtIndex:"),
       arg,
@@ -6129,7 +5519,7 @@ class MLMultiArrayAsNSArrayWrapper
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setMultiArray:"),
       arg,
@@ -6137,9 +5527,6 @@ class MLMultiArrayAsNSArrayWrapper
   }
 }
 
-/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class MLMultiArrayConstraint extends Struct<MLMultiArrayConstraint> {
   factory MLMultiArrayConstraint._() {
@@ -6152,23 +5539,11 @@ class MLMultiArrayConstraint extends Struct<MLMultiArrayConstraint> {
         .cast<MLMultiArrayConstraint>();
   }
 
-  static Pointer copyWithZone(
-    Pointer<MLMultiArrayConstraint> _self,
-    Pointer<Pointer> arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
-      _self,
-      _objc.getSelector("copyWithZone:"),
-      arg,
-    );
-  }
-
   static int dataType(
     Pointer<MLMultiArrayConstraint> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int64(
+    return _call_ptr_ptr_returns_Int64(
       _self,
       _objc.getSelector("dataType"),
     );
@@ -6178,7 +5553,7 @@ class MLMultiArrayConstraint extends Struct<MLMultiArrayConstraint> {
     Pointer<MLMultiArrayConstraint> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("description"),
     );
@@ -6191,7 +5566,7 @@ class MLMultiArrayConstraint extends Struct<MLMultiArrayConstraint> {
     @required Pointer shapeConstraint,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_Int64_p_returns_p(
+    return _call_ptr_ptr_ptr_Int64_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithShape:dataType:shapeConstraint:"),
       arg,
@@ -6206,7 +5581,7 @@ class MLMultiArrayConstraint extends Struct<MLMultiArrayConstraint> {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int64_p_returns_Int8(
+    return _call_ptr_ptr_Int64_ptr_returns_Int8(
       _self,
       _objc.getSelector("isAllowedDataType:error:"),
       arg,
@@ -6220,7 +5595,7 @@ class MLMultiArrayConstraint extends Struct<MLMultiArrayConstraint> {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isAllowedShape:error:"),
       arg,
@@ -6228,13 +5603,13 @@ class MLMultiArrayConstraint extends Struct<MLMultiArrayConstraint> {
     );
   }
 
-  static int isAllowedValue$error$(
+  static int isAllowedValue$error(
     Pointer<MLMultiArrayConstraint> _self,
     Pointer arg, {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isAllowedValue:error:"),
       arg,
@@ -6242,14 +5617,14 @@ class MLMultiArrayConstraint extends Struct<MLMultiArrayConstraint> {
     );
   }
 
-  static int isAllowedValue$neuralNetworkInput$error$(
+  static int isAllowedValue$neuralNetworkInput$error(
     Pointer<MLMultiArrayConstraint> _self,
     Pointer arg, {
     @required int neuralNetworkInput,
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_Int8_p_returns_Int8(
+    return _call_ptr_ptr_ptr_Int8_ptr_returns_Int8(
       _self,
       _objc.getSelector("isAllowedValue:neuralNetworkInput:error:"),
       arg,
@@ -6262,7 +5637,7 @@ class MLMultiArrayConstraint extends Struct<MLMultiArrayConstraint> {
     Pointer<MLMultiArrayConstraint> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("shape"),
     );
@@ -6272,16 +5647,13 @@ class MLMultiArrayConstraint extends Struct<MLMultiArrayConstraint> {
     Pointer<MLMultiArrayConstraint> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("shapeConstraint"),
     );
   }
 }
 
-/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class MLMultiArrayShapeConstraint extends Struct<MLMultiArrayShapeConstraint> {
   factory MLMultiArrayShapeConstraint._() {
@@ -6298,7 +5670,7 @@ class MLMultiArrayShapeConstraint extends Struct<MLMultiArrayShapeConstraint> {
     Pointer<MLMultiArrayShapeConstraint> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("enumeratedShapes"),
     );
@@ -6309,7 +5681,7 @@ class MLMultiArrayShapeConstraint extends Struct<MLMultiArrayShapeConstraint> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("findAvailableShape:"),
       arg,
@@ -6320,7 +5692,7 @@ class MLMultiArrayShapeConstraint extends Struct<MLMultiArrayShapeConstraint> {
     Pointer<MLMultiArrayShapeConstraint> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initUnspecified"),
     );
@@ -6331,7 +5703,7 @@ class MLMultiArrayShapeConstraint extends Struct<MLMultiArrayShapeConstraint> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithEnumeratedShapes:"),
       arg,
@@ -6343,7 +5715,7 @@ class MLMultiArrayShapeConstraint extends Struct<MLMultiArrayShapeConstraint> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithSizeRangeForDimension:"),
       arg,
@@ -6356,7 +5728,7 @@ class MLMultiArrayShapeConstraint extends Struct<MLMultiArrayShapeConstraint> {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isAllowedShape:error:"),
       arg,
@@ -6368,7 +5740,7 @@ class MLMultiArrayShapeConstraint extends Struct<MLMultiArrayShapeConstraint> {
     Pointer<MLMultiArrayShapeConstraint> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("shapeSet"),
     );
@@ -6378,7 +5750,7 @@ class MLMultiArrayShapeConstraint extends Struct<MLMultiArrayShapeConstraint> {
     Pointer<MLMultiArrayShapeConstraint> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("sizeRangeForDimension"),
     );
@@ -6388,16 +5760,13 @@ class MLMultiArrayShapeConstraint extends Struct<MLMultiArrayShapeConstraint> {
     Pointer<MLMultiArrayShapeConstraint> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int64(
+    return _call_ptr_ptr_returns_Int64(
       _self,
       _objc.getSelector("type"),
     );
   }
 }
 
-/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class MLMultiArrayUtils extends Struct<MLMultiArrayUtils> {
   factory MLMultiArrayUtils._() {
@@ -6409,9 +5778,6 @@ class MLMultiArrayUtils extends Struct<MLMultiArrayUtils> {
   }
 }
 
-/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class MLMultiArrayView extends Struct<MLMultiArrayView> {
   factory MLMultiArrayView._() {
@@ -6431,7 +5797,7 @@ class MLMultiArrayView extends Struct<MLMultiArrayView> {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_Int8_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_Int8_ptr_returns_ptr(
       _self,
       _objc.getSelector("initSlicingMultiArray:origin:shape:squeeze:error:"),
       arg,
@@ -6449,7 +5815,7 @@ class MLMultiArrayView extends Struct<MLMultiArrayView> {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initSqueezingMultiArray:dimensions:error:"),
       arg,
@@ -6462,16 +5828,13 @@ class MLMultiArrayView extends Struct<MLMultiArrayView> {
     Pointer<MLMultiArrayView> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("parent"),
     );
   }
 }
 
-/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
   factory MLNeuralNetworkEngine._() {
@@ -6491,7 +5854,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("addClassifierInformationToOutput:options:error:"),
       arg,
@@ -6500,50 +5863,11 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     );
   }
 
-  static Pointer batches(
-    Pointer<MLNeuralNetworkEngine> _self,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
-      _self,
-      _objc.getSelector("batches"),
-    );
-  }
-
-  static int bindInputsAndOutputs(
-    Pointer<MLNeuralNetworkEngine> _self,
-    Pointer arg, {
-    @required Pointer<Pointer> allocatedImageData,
-    @required int bufferIndex,
-    @required Pointer<Pointer> error,
-  }) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_p_Uint64_p_returns_Int8(
-      _self,
-      _objc.getSelector(
-          "bindInputsAndOutputs:allocatedImageData:bufferIndex:error:"),
-      arg,
-      allocatedImageData,
-      bufferIndex,
-      error,
-    );
-  }
-
-  static Pointer bufferAvailable(
-    Pointer<MLNeuralNetworkEngine> _self,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
-      _self,
-      _objc.getSelector("bufferAvailable"),
-    );
-  }
-
   static Pointer bufferSemaphore(
     Pointer<MLNeuralNetworkEngine> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("bufferSemaphore"),
     );
@@ -6553,7 +5877,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     Pointer<MLNeuralNetworkEngine> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("classLabels"),
     );
@@ -6563,7 +5887,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     Pointer<MLNeuralNetworkEngine> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("classScoreVectorName"),
     );
@@ -6576,7 +5900,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("classify:options:error:"),
       arg,
@@ -6585,21 +5909,11 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     );
   }
 
-  static Pointer configurationNames(
-    Pointer<MLNeuralNetworkEngine> _self,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
-      _self,
-      _objc.getSelector("configurationNames"),
-    );
-  }
-
   static Pointer context(
     Pointer<MLNeuralNetworkEngine> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("context"),
     );
@@ -6612,7 +5926,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector(
           "convertPredictionToClassifierResult:withOptions:error:"),
@@ -6622,21 +5936,11 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     );
   }
 
-  static Pointer currentConfigurationName(
-    Pointer<MLNeuralNetworkEngine> _self,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
-      _self,
-      _objc.getSelector("currentConfigurationName"),
-    );
-  }
-
   static void dealloc(
     Pointer<MLNeuralNetworkEngine> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("dealloc"),
     );
@@ -6646,7 +5950,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     Pointer<MLNeuralNetworkEngine> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int32(
+    return _call_ptr_ptr_returns_Int32(
       _self,
       _objc.getSelector("engine"),
     );
@@ -6656,7 +5960,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     Pointer<MLNeuralNetworkEngine> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("espressoQueue"),
     );
@@ -6668,7 +5972,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("evaluate:error:"),
       arg,
@@ -6683,7 +5987,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("evaluateBatch:options:error:"),
       arg,
@@ -6698,7 +6002,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("evaluateNoAutoRelease:error:"),
       arg,
@@ -6711,7 +6015,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("fillInInitialShapeFromEspressoNet:"),
       arg,
@@ -6722,7 +6026,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     Pointer<MLNeuralNetworkEngine> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("getAvailableOutputBlobList"),
     );
@@ -6732,7 +6036,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     Pointer<MLNeuralNetworkEngine> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("hardwareFallbackDetected"),
     );
@@ -6742,7 +6046,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     Pointer<MLNeuralNetworkEngine> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("has1DConvOptional"),
     );
@@ -6752,24 +6056,14 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     Pointer<MLNeuralNetworkEngine> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("hasBidirectionalLayer"),
     );
   }
 
-  static Pointer heights(
-    Pointer<MLNeuralNetworkEngine> _self,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
-      _self,
-      _objc.getSelector("heights"),
-    );
-  }
-
   static Pointer
-      initWithSpec$classScoreVectorName$classLabels$configuration$error$(
+      initWithSpec$classScoreVectorName$classLabels$configuration$error(
     Pointer<MLNeuralNetworkEngine> _self,
     Pointer arg, {
     @required Pointer classScoreVectorName,
@@ -6778,7 +6072,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector(
           "initWithSpec:classScoreVectorName:classLabels:configuration:error:"),
@@ -6790,7 +6084,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     );
   }
 
-  static Pointer initWithSpec$classScoreVectorName$classLabels$error$(
+  static Pointer initWithSpec$classScoreVectorName$classLabels$error(
     Pointer<MLNeuralNetworkEngine> _self,
     Pointer arg, {
     @required Pointer classScoreVectorName,
@@ -6798,7 +6092,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithSpec:classScoreVectorName:classLabels:error:"),
       arg,
@@ -6808,21 +6102,11 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     );
   }
 
-  static Pointer inputBuffers(
-    Pointer<MLNeuralNetworkEngine> _self,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
-      _self,
-      _objc.getSelector("inputBuffers"),
-    );
-  }
-
   static Pointer inputLayers(
     Pointer<MLNeuralNetworkEngine> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("inputLayers"),
     );
@@ -6832,7 +6116,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     Pointer<MLNeuralNetworkEngine> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isEnergyEfficientPathForbidden"),
     );
@@ -6842,7 +6126,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     Pointer<MLNeuralNetworkEngine> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("isEspresoBiasPreprocessingShared"),
     );
@@ -6852,19 +6136,9 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     Pointer<MLNeuralNetworkEngine> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isGPUPathForbidden"),
-    );
-  }
-
-  static Pointer ks(
-    Pointer<MLNeuralNetworkEngine> _self,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
-      _self,
-      _objc.getSelector("ks"),
     );
   }
 
@@ -6872,19 +6146,9 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     Pointer<MLNeuralNetworkEngine> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("modelFilePath"),
-    );
-  }
-
-  static Pointer network(
-    Pointer<MLNeuralNetworkEngine> _self,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
-      _self,
-      _objc.getSelector("network"),
     );
   }
 
@@ -6892,7 +6156,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     Pointer<MLNeuralNetworkEngine> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("numInputs"),
     );
@@ -6902,7 +6166,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     Pointer<MLNeuralNetworkEngine> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("numOutputs"),
     );
@@ -6912,29 +6176,9 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     Pointer<MLNeuralNetworkEngine> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("obtainBuffer"),
-    );
-  }
-
-  static Pointer optionalInputTypes(
-    Pointer<MLNeuralNetworkEngine> _self,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
-      _self,
-      _objc.getSelector("optionalInputTypes"),
-    );
-  }
-
-  static Pointer outputBuffers(
-    Pointer<MLNeuralNetworkEngine> _self,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
-      _self,
-      _objc.getSelector("outputBuffers"),
     );
   }
 
@@ -6942,19 +6186,9 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     Pointer<MLNeuralNetworkEngine> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("outputLayers"),
-    );
-  }
-
-  static Pointer params(
-    Pointer<MLNeuralNetworkEngine> _self,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
-      _self,
-      _objc.getSelector("params"),
     );
   }
 
@@ -6962,7 +6196,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     Pointer<MLNeuralNetworkEngine> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("plan"),
     );
@@ -6974,7 +6208,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Uint64_p_returns_p(
+    return _call_ptr_ptr_Uint64_ptr_returns_ptr(
       _self,
       _objc.getSelector("populateOutputs:error:"),
       arg,
@@ -6986,7 +6220,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     Pointer<MLNeuralNetworkEngine> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int32(
+    return _call_ptr_ptr_returns_Int32(
       _self,
       _objc.getSelector("precision"),
     );
@@ -6999,7 +6233,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("predictionFromFeatures:options:error:"),
       arg,
@@ -7015,7 +6249,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("predictionsFromBatch:options:error:"),
       arg,
@@ -7028,7 +6262,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     Pointer<MLNeuralNetworkEngine> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("predictionsQueue"),
     );
@@ -7038,7 +6272,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     Pointer<MLNeuralNetworkEngine> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("probDict"),
     );
@@ -7048,7 +6282,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     Pointer<MLNeuralNetworkEngine> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int32(
+    return _call_ptr_ptr_returns_Int32(
       _self,
       _objc.getSelector("qos"),
     );
@@ -7059,7 +6293,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("rebuildPlan:"),
       arg,
@@ -7073,7 +6307,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("regress:options:error:"),
       arg,
@@ -7087,7 +6321,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Uint64_returns_void(
+    _call_ptr_ptr_Uint64_returns_void(
       _self,
       _objc.getSelector("releaseBuffer:"),
       arg,
@@ -7100,7 +6334,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("resetSizes:error:"),
       arg,
@@ -7114,7 +6348,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("resetSizesNoAutoRelease:error:"),
       arg,
@@ -7128,7 +6362,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("resetSizesWithEspressoConfigurations:error:"),
       arg,
@@ -7141,43 +6375,9 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_Int32(
+    return _call_ptr_ptr_ptr_returns_Int32(
       _self,
       _objc.getSelector("sequenceNamed:"),
-      arg,
-    );
-  }
-
-  static Pointer sequences(
-    Pointer<MLNeuralNetworkEngine> _self,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
-      _self,
-      _objc.getSelector("sequences"),
-    );
-  }
-
-  static void setBatches(
-    Pointer<MLNeuralNetworkEngine> _self,
-    Pointer arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
-      _self,
-      _objc.getSelector("setBatches:"),
-      arg,
-    );
-  }
-
-  static void setBufferAvailable(
-    Pointer<MLNeuralNetworkEngine> _self,
-    Pointer arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
-      _self,
-      _objc.getSelector("setBufferAvailable:"),
       arg,
     );
   }
@@ -7187,7 +6387,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setBufferSemaphore:"),
       arg,
@@ -7199,7 +6399,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setClassLabels:"),
       arg,
@@ -7211,21 +6411,9 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setClassScoreVectorName:"),
-      arg,
-    );
-  }
-
-  static void setConfigurationNames(
-    Pointer<MLNeuralNetworkEngine> _self,
-    Pointer arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
-      _self,
-      _objc.getSelector("setConfigurationNames:"),
       arg,
     );
   }
@@ -7235,21 +6423,9 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setContext:"),
-      arg,
-    );
-  }
-
-  static void setCurrentConfigurationName(
-    Pointer<MLNeuralNetworkEngine> _self,
-    Pointer arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
-      _self,
-      _objc.getSelector("setCurrentConfigurationName:"),
       arg,
     );
   }
@@ -7259,7 +6435,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int32_returns_void(
+    _call_ptr_ptr_Int32_returns_void(
       _self,
       _objc.getSelector("setEngine:"),
       arg,
@@ -7271,7 +6447,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setEspressoQueue:"),
       arg,
@@ -7283,7 +6459,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setHardwareFallbackDetected:"),
       arg,
@@ -7295,7 +6471,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setHas1DConvOptional:"),
       arg,
@@ -7307,33 +6483,9 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setHasBidirectionalLayer:"),
-      arg,
-    );
-  }
-
-  static void setHeights(
-    Pointer<MLNeuralNetworkEngine> _self,
-    Pointer arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
-      _self,
-      _objc.getSelector("setHeights:"),
-      arg,
-    );
-  }
-
-  static void setInputBuffers(
-    Pointer<MLNeuralNetworkEngine> _self,
-    Pointer arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
-      _self,
-      _objc.getSelector("setInputBuffers:"),
       arg,
     );
   }
@@ -7343,7 +6495,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setIsEnergyEfficientPathForbidden:"),
       arg,
@@ -7355,7 +6507,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setIsEspresoBiasPreprocessingShared:"),
       arg,
@@ -7367,21 +6519,9 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setIsGPUPathForbidden:"),
-      arg,
-    );
-  }
-
-  static void setKs(
-    Pointer<MLNeuralNetworkEngine> _self,
-    Pointer arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
-      _self,
-      _objc.getSelector("setKs:"),
       arg,
     );
   }
@@ -7391,57 +6531,9 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setModelFilePath:"),
-      arg,
-    );
-  }
-
-  static void setNetwork(
-    Pointer<MLNeuralNetworkEngine> _self,
-    Pointer arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
-      _self,
-      _objc.getSelector("setNetwork:"),
-      arg,
-    );
-  }
-
-  static void setOptionalInputTypes(
-    Pointer<MLNeuralNetworkEngine> _self,
-    Pointer arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
-      _self,
-      _objc.getSelector("setOptionalInputTypes:"),
-      arg,
-    );
-  }
-
-  static void setOutputBuffers(
-    Pointer<MLNeuralNetworkEngine> _self,
-    Pointer arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
-      _self,
-      _objc.getSelector("setOutputBuffers:"),
-      arg,
-    );
-  }
-
-  static void setParams(
-    Pointer<MLNeuralNetworkEngine> _self,
-    Pointer arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
-      _self,
-      _objc.getSelector("setParams:"),
       arg,
     );
   }
@@ -7451,7 +6543,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setPlan:"),
       arg,
@@ -7463,7 +6555,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int32_returns_void(
+    _call_ptr_ptr_Int32_returns_void(
       _self,
       _objc.getSelector("setPrecision:"),
       arg,
@@ -7475,7 +6567,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setPredictionsQueue:"),
       arg,
@@ -7487,7 +6579,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setProbDict:"),
       arg,
@@ -7499,21 +6591,9 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int32_returns_void(
+    _call_ptr_ptr_Int32_returns_void(
       _self,
       _objc.getSelector("setQos:"),
-      arg,
-    );
-  }
-
-  static void setSequences(
-    Pointer<MLNeuralNetworkEngine> _self,
-    Pointer arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
-      _self,
-      _objc.getSelector("setSequences:"),
       arg,
     );
   }
@@ -7523,7 +6603,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setSubmitSemaphore:"),
       arg,
@@ -7535,21 +6615,9 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setUsingCPU:"),
-      arg,
-    );
-  }
-
-  static void setWidths(
-    Pointer<MLNeuralNetworkEngine> _self,
-    Pointer arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
-      _self,
-      _objc.getSelector("setWidths:"),
       arg,
     );
   }
@@ -7561,7 +6629,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("sortBatchByShape:withMap:error:"),
       arg,
@@ -7574,7 +6642,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     Pointer<MLNeuralNetworkEngine> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("submitSemaphore"),
     );
@@ -7586,7 +6654,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("unlockCVPixelBuffers:error:"),
       arg,
@@ -7598,7 +6666,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     Pointer<MLNeuralNetworkEngine> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("usingCPU"),
     );
@@ -7608,7 +6676,7 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     Pointer<MLNeuralNetworkEngine> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("usingEspressoConfigurations"),
     );
@@ -7620,28 +6688,15 @@ class MLNeuralNetworkEngine extends Struct<MLNeuralNetworkEngine> {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("verifyInputs:error:"),
       arg,
       error,
     );
   }
-
-  static Pointer widths(
-    Pointer<MLNeuralNetworkEngine> _self,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
-      _self,
-      _objc.getSelector("widths"),
-    );
-  }
 }
 
-/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class MLNeuralNetworkSpecification
     extends Struct<MLNeuralNetworkSpecification> {
@@ -7655,58 +6710,17 @@ class MLNeuralNetworkSpecification
         .cast<MLNeuralNetworkSpecification>();
   }
 
-  static Pointer blueBias(
-    Pointer<MLNeuralNetworkSpecification> _self,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
-      _self,
-      _objc.getSelector("blueBias"),
-    );
-  }
-
-  static Pointer configurationNames(
-    Pointer<MLNeuralNetworkSpecification> _self,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
-      _self,
-      _objc.getSelector("configurationNames"),
-    );
-  }
-
   static int engine(
     Pointer<MLNeuralNetworkSpecification> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int32(
+    return _call_ptr_ptr_returns_Int32(
       _self,
       _objc.getSelector("engine"),
     );
   }
 
-  static Pointer grayBias(
-    Pointer<MLNeuralNetworkSpecification> _self,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
-      _self,
-      _objc.getSelector("grayBias"),
-    );
-  }
-
-  static Pointer greenBias(
-    Pointer<MLNeuralNetworkSpecification> _self,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
-      _self,
-      _objc.getSelector("greenBias"),
-    );
-  }
-
-  static Pointer
-      initWithFeatureDescriptions$inputDesc$outputDesc$outputLayerNames$parameters$(
+  static Pointer initWithFeatureDescriptions(
     Pointer<MLNeuralNetworkSpecification> _self,
     Pointer arg, {
     @required Pointer inputDesc,
@@ -7715,7 +6729,7 @@ class MLNeuralNetworkSpecification
     @required Pointer parameters,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector(
           "initWithFeatureDescriptions:inputDesc:outputDesc:outputLayerNames:parameters:"),
@@ -7727,30 +6741,6 @@ class MLNeuralNetworkSpecification
     );
   }
 
-  static Pointer
-      initWithFeatureDescriptions$inputDesc$outputDesc$outputLayerNames$parameters$configurations$(
-    Pointer<MLNeuralNetworkSpecification> _self,
-    Pointer arg, {
-    @required Pointer inputDesc,
-    @required Pointer outputDesc,
-    @required Pointer outputLayerNames,
-    @required Pointer parameters,
-    @required Pointer configurations,
-  }) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_p_p_p_returns_p(
-      _self,
-      _objc.getSelector(
-          "initWithFeatureDescriptions:inputDesc:outputDesc:outputLayerNames:parameters:configurations:"),
-      arg,
-      inputDesc,
-      outputDesc,
-      outputLayerNames,
-      parameters,
-      configurations,
-    );
-  }
-
   static Pointer initWithFilePath(
     Pointer<MLNeuralNetworkSpecification> _self,
     Pointer arg, {
@@ -7759,7 +6749,7 @@ class MLNeuralNetworkSpecification
     @required Pointer parameters,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector(
           "initWithFilePath:inputLayerNames:outputLayerNames:parameters:"),
@@ -7774,7 +6764,7 @@ class MLNeuralNetworkSpecification
     Pointer<MLNeuralNetworkSpecification> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("inputDescription"),
     );
@@ -7784,7 +6774,7 @@ class MLNeuralNetworkSpecification
     Pointer<MLNeuralNetworkSpecification> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("inputLayerNames"),
     );
@@ -7794,29 +6784,9 @@ class MLNeuralNetworkSpecification
     Pointer<MLNeuralNetworkSpecification> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("isBiasPreprocessingShared"),
-    );
-  }
-
-  static Pointer isGrayScale(
-    Pointer<MLNeuralNetworkSpecification> _self,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
-      _self,
-      _objc.getSelector("isGrayScale"),
-    );
-  }
-
-  static Pointer isOrderedBgr(
-    Pointer<MLNeuralNetworkSpecification> _self,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
-      _self,
-      _objc.getSelector("isOrderedBgr"),
     );
   }
 
@@ -7824,7 +6794,7 @@ class MLNeuralNetworkSpecification
     Pointer<MLNeuralNetworkSpecification> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("modelFilePath"),
     );
@@ -7834,7 +6804,7 @@ class MLNeuralNetworkSpecification
     Pointer<MLNeuralNetworkSpecification> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("name"),
     );
@@ -7844,7 +6814,7 @@ class MLNeuralNetworkSpecification
     Pointer<MLNeuralNetworkSpecification> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("outputDescription"),
     );
@@ -7854,7 +6824,7 @@ class MLNeuralNetworkSpecification
     Pointer<MLNeuralNetworkSpecification> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("outputLayerNames"),
     );
@@ -7864,7 +6834,7 @@ class MLNeuralNetworkSpecification
     Pointer<MLNeuralNetworkSpecification> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int32(
+    return _call_ptr_ptr_returns_Int32(
       _self,
       _objc.getSelector("precision"),
     );
@@ -7874,53 +6844,9 @@ class MLNeuralNetworkSpecification
     Pointer<MLNeuralNetworkSpecification> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int32(
+    return _call_ptr_ptr_returns_Int32(
       _self,
       _objc.getSelector("qos"),
-    );
-  }
-
-  static Pointer redBias(
-    Pointer<MLNeuralNetworkSpecification> _self,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
-      _self,
-      _objc.getSelector("redBias"),
-    );
-  }
-
-  static Pointer scale(
-    Pointer<MLNeuralNetworkSpecification> _self,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
-      _self,
-      _objc.getSelector("scale"),
-    );
-  }
-
-  static void setBlueBias(
-    Pointer<MLNeuralNetworkSpecification> _self,
-    Pointer arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
-      _self,
-      _objc.getSelector("setBlueBias:"),
-      arg,
-    );
-  }
-
-  static void setConfigurationNames(
-    Pointer<MLNeuralNetworkSpecification> _self,
-    Pointer arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
-      _self,
-      _objc.getSelector("setConfigurationNames:"),
-      arg,
     );
   }
 
@@ -7929,33 +6855,9 @@ class MLNeuralNetworkSpecification
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int32_returns_void(
+    _call_ptr_ptr_Int32_returns_void(
       _self,
       _objc.getSelector("setEngine:"),
-      arg,
-    );
-  }
-
-  static void setGrayBias(
-    Pointer<MLNeuralNetworkSpecification> _self,
-    Pointer arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
-      _self,
-      _objc.getSelector("setGrayBias:"),
-      arg,
-    );
-  }
-
-  static void setGreenBias(
-    Pointer<MLNeuralNetworkSpecification> _self,
-    Pointer arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
-      _self,
-      _objc.getSelector("setGreenBias:"),
       arg,
     );
   }
@@ -7965,7 +6867,7 @@ class MLNeuralNetworkSpecification
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setInputDescription:"),
       arg,
@@ -7977,21 +6879,9 @@ class MLNeuralNetworkSpecification
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setIsBiasPreprocessingShared:"),
-      arg,
-    );
-  }
-
-  static void setIsGrayScale(
-    Pointer<MLNeuralNetworkSpecification> _self,
-    Pointer arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
-      _self,
-      _objc.getSelector("setIsGrayScale:"),
       arg,
     );
   }
@@ -8001,7 +6891,7 @@ class MLNeuralNetworkSpecification
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setModelFilePath:"),
       arg,
@@ -8013,21 +6903,9 @@ class MLNeuralNetworkSpecification
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setName:"),
-      arg,
-    );
-  }
-
-  static void setOrderedBgr(
-    Pointer<MLNeuralNetworkSpecification> _self,
-    Pointer arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
-      _self,
-      _objc.getSelector("setOrderedBgr:"),
       arg,
     );
   }
@@ -8037,7 +6915,7 @@ class MLNeuralNetworkSpecification
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setOutputDescription:"),
       arg,
@@ -8049,7 +6927,7 @@ class MLNeuralNetworkSpecification
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int32_returns_void(
+    _call_ptr_ptr_Int32_returns_void(
       _self,
       _objc.getSelector("setPrecision:"),
       arg,
@@ -8061,41 +6939,14 @@ class MLNeuralNetworkSpecification
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int32_returns_void(
+    _call_ptr_ptr_Int32_returns_void(
       _self,
       _objc.getSelector("setQos:"),
       arg,
     );
   }
-
-  static void setRedBias(
-    Pointer<MLNeuralNetworkSpecification> _self,
-    Pointer arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
-      _self,
-      _objc.getSelector("setRedBias:"),
-      arg,
-    );
-  }
-
-  static void setScale(
-    Pointer<MLNeuralNetworkSpecification> _self,
-    Pointer arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
-      _self,
-      _objc.getSelector("setScale:"),
-      arg,
-    );
-  }
 }
 
-/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class MLNonMaximumSuppression extends Struct<MLNonMaximumSuppression> {
   factory MLNonMaximumSuppression._() {
@@ -8116,7 +6967,7 @@ class MLNonMaximumSuppression extends Struct<MLNonMaximumSuppression> {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector(
           "initWithParameters:modelDescription:configuration:error:"),
@@ -8131,7 +6982,7 @@ class MLNonMaximumSuppression extends Struct<MLNonMaximumSuppression> {
     Pointer<MLNonMaximumSuppression> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("parameters"),
     );
@@ -8144,7 +6995,7 @@ class MLNonMaximumSuppression extends Struct<MLNonMaximumSuppression> {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("predictionFromFeatures:options:error:"),
       arg,
@@ -8154,9 +7005,6 @@ class MLNonMaximumSuppression extends Struct<MLNonMaximumSuppression> {
   }
 }
 
-/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class MLNonMaximumSuppressionParameters
     extends Struct<MLNonMaximumSuppressionParameters> {
@@ -8174,7 +7022,7 @@ class MLNonMaximumSuppressionParameters
     Pointer<MLNonMaximumSuppressionParameters> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("confidenceInputFeatureName"),
     );
@@ -8184,7 +7032,7 @@ class MLNonMaximumSuppressionParameters
     Pointer<MLNonMaximumSuppressionParameters> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("confidenceOutputFeatureName"),
     );
@@ -8194,7 +7042,7 @@ class MLNonMaximumSuppressionParameters
     Pointer<MLNonMaximumSuppressionParameters> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_float64(
+    return _call_ptr_ptr_returns_float64(
       _self,
       _objc.getSelector("confidenceThreshold"),
     );
@@ -8204,7 +7052,7 @@ class MLNonMaximumSuppressionParameters
     Pointer<MLNonMaximumSuppressionParameters> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("confidenceThresholdInputFeatureName"),
     );
@@ -8214,7 +7062,7 @@ class MLNonMaximumSuppressionParameters
     Pointer<MLNonMaximumSuppressionParameters> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("coordinatesInputFeatureName"),
     );
@@ -8224,7 +7072,7 @@ class MLNonMaximumSuppressionParameters
     Pointer<MLNonMaximumSuppressionParameters> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("coordinatesOutputFeatureName"),
     );
@@ -8234,7 +7082,7 @@ class MLNonMaximumSuppressionParameters
     Pointer<MLNonMaximumSuppressionParameters> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_float64(
+    return _call_ptr_ptr_returns_float64(
       _self,
       _objc.getSelector("iouThreshold"),
     );
@@ -8244,7 +7092,7 @@ class MLNonMaximumSuppressionParameters
     Pointer<MLNonMaximumSuppressionParameters> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("iouThresholdInputFeatureName"),
     );
@@ -8254,7 +7102,7 @@ class MLNonMaximumSuppressionParameters
     Pointer<MLNonMaximumSuppressionParameters> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("labelNames"),
     );
@@ -8264,7 +7112,7 @@ class MLNonMaximumSuppressionParameters
     Pointer<MLNonMaximumSuppressionParameters> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int64(
+    return _call_ptr_ptr_returns_Int64(
       _self,
       _objc.getSelector("maxBoxes"),
     );
@@ -8274,7 +7122,7 @@ class MLNonMaximumSuppressionParameters
     Pointer<MLNonMaximumSuppressionParameters> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("minBoxes"),
     );
@@ -8284,7 +7132,7 @@ class MLNonMaximumSuppressionParameters
     Pointer<MLNonMaximumSuppressionParameters> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("numClasses"),
     );
@@ -8294,7 +7142,7 @@ class MLNonMaximumSuppressionParameters
     Pointer<MLNonMaximumSuppressionParameters> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("objectBoundingBoxOutputDescription"),
     );
@@ -8304,7 +7152,7 @@ class MLNonMaximumSuppressionParameters
     Pointer<MLNonMaximumSuppressionParameters> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("perClass"),
     );
@@ -8315,7 +7163,7 @@ class MLNonMaximumSuppressionParameters
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setConfidenceInputFeatureName:"),
       arg,
@@ -8327,7 +7175,7 @@ class MLNonMaximumSuppressionParameters
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setConfidenceOutputFeatureName:"),
       arg,
@@ -8339,7 +7187,7 @@ class MLNonMaximumSuppressionParameters
     double arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_float64_returns_void(
+    _call_ptr_ptr_float64_returns_void(
       _self,
       _objc.getSelector("setConfidenceThreshold:"),
       arg,
@@ -8351,7 +7199,7 @@ class MLNonMaximumSuppressionParameters
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setConfidenceThresholdInputFeatureName:"),
       arg,
@@ -8363,7 +7211,7 @@ class MLNonMaximumSuppressionParameters
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setCoordinatesInputFeatureName:"),
       arg,
@@ -8375,7 +7223,7 @@ class MLNonMaximumSuppressionParameters
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setCoordinatesOutputFeatureName:"),
       arg,
@@ -8387,7 +7235,7 @@ class MLNonMaximumSuppressionParameters
     double arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_float64_returns_void(
+    _call_ptr_ptr_float64_returns_void(
       _self,
       _objc.getSelector("setIouThreshold:"),
       arg,
@@ -8399,7 +7247,7 @@ class MLNonMaximumSuppressionParameters
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setIouThresholdInputFeatureName:"),
       arg,
@@ -8411,7 +7259,7 @@ class MLNonMaximumSuppressionParameters
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setLabelNames:"),
       arg,
@@ -8423,7 +7271,7 @@ class MLNonMaximumSuppressionParameters
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int64_returns_void(
+    _call_ptr_ptr_Int64_returns_void(
       _self,
       _objc.getSelector("setMaxBoxes:"),
       arg,
@@ -8435,7 +7283,7 @@ class MLNonMaximumSuppressionParameters
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Uint64_returns_void(
+    _call_ptr_ptr_Uint64_returns_void(
       _self,
       _objc.getSelector("setMinBoxes:"),
       arg,
@@ -8447,7 +7295,7 @@ class MLNonMaximumSuppressionParameters
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Uint64_returns_void(
+    _call_ptr_ptr_Uint64_returns_void(
       _self,
       _objc.getSelector("setNumClasses:"),
       arg,
@@ -8459,7 +7307,7 @@ class MLNonMaximumSuppressionParameters
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setPerClass:"),
       arg,
@@ -8471,7 +7319,7 @@ class MLNonMaximumSuppressionParameters
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int32_returns_void(
+    _call_ptr_ptr_Int32_returns_void(
       _self,
       _objc.getSelector("setSuppressionMethod:"),
       arg,
@@ -8482,16 +7330,13 @@ class MLNonMaximumSuppressionParameters
     Pointer<MLNonMaximumSuppressionParameters> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int32(
+    return _call_ptr_ptr_returns_Int32(
       _self,
       _objc.getSelector("suppressionMethod"),
     );
   }
 }
 
-/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class MLNormalizer extends Struct<MLNormalizer> {
   factory MLNormalizer._() {
@@ -8508,7 +7353,7 @@ class MLNormalizer extends Struct<MLNormalizer> {
     @required Pointer<Float> lastValue,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_float64_p_returns_void(
+    _call_ptr_ptr_float64_ptr_returns_void(
       _self,
       _objc.getSelector("computeSingleNorm:lastValue:"),
       arg,
@@ -8527,7 +7372,7 @@ class MLNormalizer extends Struct<MLNormalizer> {
     @required Pointer configuration,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int32_p_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_Int32_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector(
           "initWith:dataTransformerName:inputDescription:outputDescription:orderedInputFeatureNames:orderedOutputFeatureNames:configuration:"),
@@ -8545,7 +7390,7 @@ class MLNormalizer extends Struct<MLNormalizer> {
     Pointer<MLNormalizer> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int32(
+    return _call_ptr_ptr_returns_Int32(
       _self,
       _objc.getSelector("norm"),
     );
@@ -8558,7 +7403,7 @@ class MLNormalizer extends Struct<MLNormalizer> {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("predictionFromFeatures:options:error:"),
       arg,
@@ -8568,9 +7413,6 @@ class MLNormalizer extends Struct<MLNormalizer> {
   }
 }
 
-/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class MLObjectBoundingBoxOutputDescription
     extends Struct<MLObjectBoundingBoxOutputDescription> {
@@ -8588,7 +7430,7 @@ class MLObjectBoundingBoxOutputDescription
     Pointer<MLObjectBoundingBoxOutputDescription> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("confidenceFeatureName"),
     );
@@ -8598,7 +7440,7 @@ class MLObjectBoundingBoxOutputDescription
     Pointer<MLObjectBoundingBoxOutputDescription> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("coordinatesFeatureName"),
     );
@@ -8608,7 +7450,7 @@ class MLObjectBoundingBoxOutputDescription
     Pointer<MLObjectBoundingBoxOutputDescription> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int32(
+    return _call_ptr_ptr_returns_Int32(
       _self,
       _objc.getSelector("format"),
     );
@@ -8618,7 +7460,7 @@ class MLObjectBoundingBoxOutputDescription
     Pointer<MLObjectBoundingBoxOutputDescription> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("labelNames"),
     );
@@ -8629,7 +7471,7 @@ class MLObjectBoundingBoxOutputDescription
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setConfidenceFeatureName:"),
       arg,
@@ -8641,7 +7483,7 @@ class MLObjectBoundingBoxOutputDescription
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setCoordinatesFeatureName:"),
       arg,
@@ -8653,7 +7495,7 @@ class MLObjectBoundingBoxOutputDescription
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int32_returns_void(
+    _call_ptr_ptr_Int32_returns_void(
       _self,
       _objc.getSelector("setFormat:"),
       arg,
@@ -8665,7 +7507,7 @@ class MLObjectBoundingBoxOutputDescription
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setLabelNames:"),
       arg,
@@ -8673,9 +7515,6 @@ class MLObjectBoundingBoxOutputDescription
   }
 }
 
-/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class MLOneHotEncoder extends Struct<MLOneHotEncoder> {
   factory MLOneHotEncoder._() {
@@ -8691,7 +7530,7 @@ class MLOneHotEncoder extends Struct<MLOneHotEncoder> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("encodeFeatureValue:"),
       arg,
@@ -8703,7 +7542,7 @@ class MLOneHotEncoder extends Struct<MLOneHotEncoder> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Uint64_returns_p(
+    return _call_ptr_ptr_Uint64_returns_ptr(
       _self,
       _objc.getSelector("encodeFeatureValueIntString:"),
       arg,
@@ -8714,7 +7553,7 @@ class MLOneHotEncoder extends Struct<MLOneHotEncoder> {
     Pointer<MLOneHotEncoder> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("featureEncoding"),
     );
@@ -8724,7 +7563,7 @@ class MLOneHotEncoder extends Struct<MLOneHotEncoder> {
     Pointer<MLOneHotEncoder> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("handleUnknown"),
     );
@@ -8743,7 +7582,7 @@ class MLOneHotEncoder extends Struct<MLOneHotEncoder> {
     @required Pointer configuration,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_Int8_Int8_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_Int8_Int8_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector(
           "initWith:dataTransformerName:ouputSparse:handleUnknown:inputDescription:outputDescription:orderedInputFeatureNames:orderedOutputFeatureNames:configuration:"),
@@ -8763,7 +7602,7 @@ class MLOneHotEncoder extends Struct<MLOneHotEncoder> {
     Pointer<MLOneHotEncoder> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("ouputSparse"),
     );
@@ -8776,7 +7615,7 @@ class MLOneHotEncoder extends Struct<MLOneHotEncoder> {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("predictionFromFeatures:options:error:"),
       arg,
@@ -8789,16 +7628,13 @@ class MLOneHotEncoder extends Struct<MLOneHotEncoder> {
     Pointer<MLOneHotEncoder> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("unknownDenseVector"),
     );
   }
 }
 
-/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class MLPipeline extends Struct<MLPipeline> {
   factory MLPipeline._() {
@@ -8809,34 +7645,11 @@ class MLPipeline extends Struct<MLPipeline> {
     return _objc.allocate("MLPipeline").cast<MLPipeline>();
   }
 
-  static Pointer initModelFromMetadataAndArchive(
-    Pointer<MLPipeline> _self,
-    Pointer<Pointer> arg, {
-    @required Pointer versionInfo,
-    @required Pointer interface,
-    @required Pointer metadata,
-    @required Pointer configuration,
-    @required Pointer<Pointer> error,
-  }) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_p_p_p_returns_p(
-      _self,
-      _objc.getSelector(
-          "initModelFromMetadataAndArchive:versionInfo:interface:metadata:configuration:error:"),
-      arg,
-      versionInfo,
-      interface,
-      metadata,
-      configuration,
-      error,
-    );
-  }
-
   static Pointer models(
     Pointer<MLPipeline> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("models"),
     );
@@ -8849,7 +7662,7 @@ class MLPipeline extends Struct<MLPipeline> {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("predictionFromFeatures:options:error:"),
       arg,
@@ -8865,7 +7678,7 @@ class MLPipeline extends Struct<MLPipeline> {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("predictionsFromBatch:options:error:"),
       arg,
@@ -8875,9 +7688,6 @@ class MLPipeline extends Struct<MLPipeline> {
   }
 }
 
-/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class MLPipelineClassifier extends Struct<MLPipelineClassifier> {
   factory MLPipelineClassifier._() {
@@ -8895,7 +7705,7 @@ class MLPipelineClassifier extends Struct<MLPipelineClassifier> {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("classify:options:error:"),
       arg,
@@ -8908,7 +7718,7 @@ class MLPipelineClassifier extends Struct<MLPipelineClassifier> {
     Pointer<MLPipelineClassifier> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("engine"),
     );
@@ -8923,7 +7733,7 @@ class MLPipelineClassifier extends Struct<MLPipelineClassifier> {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector(
           "initWithEngine:interface:metadata:configuration:error:"),
@@ -8939,7 +7749,7 @@ class MLPipelineClassifier extends Struct<MLPipelineClassifier> {
     Pointer<MLPipelineClassifier> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("pipeline"),
     );
@@ -8950,7 +7760,7 @@ class MLPipelineClassifier extends Struct<MLPipelineClassifier> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setEngine:"),
       arg,
@@ -8958,9 +7768,6 @@ class MLPipelineClassifier extends Struct<MLPipelineClassifier> {
   }
 }
 
-/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class MLPipelineLoader extends Struct<MLPipelineLoader> {
   factory MLPipelineLoader._() {
@@ -8972,9 +7779,6 @@ class MLPipelineLoader extends Struct<MLPipelineLoader> {
   }
 }
 
-/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class MLPipelineRegressor extends Struct<MLPipelineRegressor> {
   factory MLPipelineRegressor._() {
@@ -8989,7 +7793,7 @@ class MLPipelineRegressor extends Struct<MLPipelineRegressor> {
     Pointer<MLPipelineRegressor> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("engine"),
     );
@@ -9003,7 +7807,7 @@ class MLPipelineRegressor extends Struct<MLPipelineRegressor> {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithEngine:interface:metadata:error:"),
       arg,
@@ -9017,7 +7821,7 @@ class MLPipelineRegressor extends Struct<MLPipelineRegressor> {
     Pointer<MLPipelineRegressor> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("pipeline"),
     );
@@ -9030,7 +7834,7 @@ class MLPipelineRegressor extends Struct<MLPipelineRegressor> {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("regress:options:error:"),
       arg,
@@ -9044,7 +7848,7 @@ class MLPipelineRegressor extends Struct<MLPipelineRegressor> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setEngine:"),
       arg,
@@ -9052,9 +7856,6 @@ class MLPipelineRegressor extends Struct<MLPipelineRegressor> {
   }
 }
 
-/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class MLPredictionOptions extends Struct<MLPredictionOptions> {
   factory MLPredictionOptions._() {
@@ -9069,7 +7870,7 @@ class MLPredictionOptions extends Struct<MLPredictionOptions> {
     Pointer<MLPredictionOptions> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("classifyTopK"),
     );
@@ -9079,7 +7880,7 @@ class MLPredictionOptions extends Struct<MLPredictionOptions> {
     Pointer<MLPredictionOptions> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("init"),
     );
@@ -9090,7 +7891,7 @@ class MLPredictionOptions extends Struct<MLPredictionOptions> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_p(
+    return _call_ptr_ptr_Int8_returns_ptr(
       _self,
       _objc.getSelector("initWithUseCPUOnly:"),
       arg,
@@ -9102,7 +7903,7 @@ class MLPredictionOptions extends Struct<MLPredictionOptions> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_p(
+    return _call_ptr_ptr_Int8_returns_ptr(
       _self,
       _objc.getSelector("initWithUsesCPUOnly:"),
       arg,
@@ -9113,7 +7914,7 @@ class MLPredictionOptions extends Struct<MLPredictionOptions> {
     Pointer<MLPredictionOptions> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("maxComputationBatchSize"),
     );
@@ -9124,7 +7925,7 @@ class MLPredictionOptions extends Struct<MLPredictionOptions> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Uint64_returns_void(
+    _call_ptr_ptr_Uint64_returns_void(
       _self,
       _objc.getSelector("setClassifyTopK:"),
       arg,
@@ -9136,7 +7937,7 @@ class MLPredictionOptions extends Struct<MLPredictionOptions> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Uint64_returns_void(
+    _call_ptr_ptr_Uint64_returns_void(
       _self,
       _objc.getSelector("setMaxComputationBatchSize:"),
       arg,
@@ -9148,7 +7949,7 @@ class MLPredictionOptions extends Struct<MLPredictionOptions> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setUseCPUOnly:"),
       arg,
@@ -9160,7 +7961,7 @@ class MLPredictionOptions extends Struct<MLPredictionOptions> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setUsesCPUOnly:"),
       arg,
@@ -9171,7 +7972,7 @@ class MLPredictionOptions extends Struct<MLPredictionOptions> {
     Pointer<MLPredictionOptions> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("useCPUOnly"),
     );
@@ -9181,16 +7982,13 @@ class MLPredictionOptions extends Struct<MLPredictionOptions> {
     Pointer<MLPredictionOptions> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("usesCPUOnly"),
     );
   }
 }
 
-/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class MLProbabilityDictionary extends Struct<MLProbabilityDictionary> {
   factory MLProbabilityDictionary._() {
@@ -9208,7 +8006,7 @@ class MLProbabilityDictionary extends Struct<MLProbabilityDictionary> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("classLabelOfMaxProbability:"),
       arg,
@@ -9222,7 +8020,7 @@ class MLProbabilityDictionary extends Struct<MLProbabilityDictionary> {
     @required int count,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_Uint64_returns_p(
+    return _call_ptr_ptr_ptr_ptr_Uint64_returns_ptr(
       _self,
       _objc.getSelector("initWithObjects:forKeys:count:"),
       arg,
@@ -9236,7 +8034,7 @@ class MLProbabilityDictionary extends Struct<MLProbabilityDictionary> {
     Pointer<Float> arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("replaceDoubleVectorWith:"),
       arg,
@@ -9244,9 +8042,6 @@ class MLProbabilityDictionary extends Struct<MLProbabilityDictionary> {
   }
 }
 
-/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class MLRegressor extends Struct<MLRegressor> {
   factory MLRegressor._() {
@@ -9257,23 +8052,6 @@ class MLRegressor extends Struct<MLRegressor> {
     return _objc.allocate("MLRegressor").cast<MLRegressor>();
   }
 
-  static Pointer initDescriptionOnlyWithSpecification(
-    Pointer<MLRegressor> _self,
-    Pointer<Pointer> arg, {
-    @required Pointer configuration,
-    @required Pointer<Pointer> error,
-  }) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_p(
-      _self,
-      _objc.getSelector(
-          "initDescriptionOnlyWithSpecification:configuration:error:"),
-      arg,
-      configuration,
-      error,
-    );
-  }
-
   static Pointer initWithInterface(
     Pointer<MLRegressor> _self,
     Pointer arg, {
@@ -9281,7 +8059,7 @@ class MLRegressor extends Struct<MLRegressor> {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithInterface:metadata:error:"),
       arg,
@@ -9297,7 +8075,7 @@ class MLRegressor extends Struct<MLRegressor> {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("predictionFromFeatures:options:error:"),
       arg,
@@ -9313,7 +8091,7 @@ class MLRegressor extends Struct<MLRegressor> {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("regress:options:error:"),
       arg,
@@ -9328,7 +8106,7 @@ class MLRegressor extends Struct<MLRegressor> {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("regressorResultFromOutputFeatures:error:"),
       arg,
@@ -9337,9 +8115,6 @@ class MLRegressor extends Struct<MLRegressor> {
   }
 }
 
-/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class MLRegressorResult extends Struct<MLRegressorResult> {
   factory MLRegressorResult._() {
@@ -9354,7 +8129,7 @@ class MLRegressorResult extends Struct<MLRegressorResult> {
     Pointer<MLRegressorResult> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("additionalFeatures"),
     );
@@ -9365,7 +8140,7 @@ class MLRegressorResult extends Struct<MLRegressorResult> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("asFeatureDictionaryWithPredictedValueDescription:"),
       arg,
@@ -9378,7 +8153,7 @@ class MLRegressorResult extends Struct<MLRegressorResult> {
     @required Pointer additionalFeatures,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithValue:additionalFeatures:"),
       arg,
@@ -9390,16 +8165,13 @@ class MLRegressorResult extends Struct<MLRegressorResult> {
     Pointer<MLRegressorResult> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("predictedValue"),
     );
   }
 }
 
-/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class MLSVMEngine extends Struct<MLSVMEngine> {
   factory MLSVMEngine._() {
@@ -9410,23 +8182,11 @@ class MLSVMEngine extends Struct<MLSVMEngine> {
     return _objc.allocate("MLSVMEngine").cast<MLSVMEngine>();
   }
 
-  static Pointer<Pointer> allocSVMNodeVector(
-    Pointer<MLSVMEngine> _self,
-    int arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_Uint64_returns_p(
-      _self,
-      _objc.getSelector("allocSVMNodeVector:"),
-      arg,
-    );
-  }
-
   static Pointer classLabels(
     Pointer<MLSVMEngine> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("classLabels"),
     );
@@ -9436,37 +8196,9 @@ class MLSVMEngine extends Struct<MLSVMEngine> {
     Pointer<MLSVMEngine> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("dealloc"),
-    );
-  }
-
-  static void deallocSVMNodeVector(
-    Pointer<MLSVMEngine> _self,
-    Pointer<Pointer> arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
-      _self,
-      _objc.getSelector("deallocSVMNodeVector:"),
-      arg,
-    );
-  }
-
-  static void fillSVMNodeVector(
-    Pointer<MLSVMEngine> _self,
-    Pointer<Pointer> arg, {
-    @required Pointer<Float> values,
-    @required int count,
-  }) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_p_Uint64_returns_void(
-      _self,
-      _objc.getSelector("fillSVMNodeVector:values:count:"),
-      arg,
-      values,
-      count,
     );
   }
 
@@ -9474,7 +8206,7 @@ class MLSVMEngine extends Struct<MLSVMEngine> {
     Pointer<MLSVMEngine> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("freeModelOnDealloc"),
     );
@@ -9484,7 +8216,7 @@ class MLSVMEngine extends Struct<MLSVMEngine> {
     Pointer<MLSVMEngine> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("hasProbabilityPredictionEnabled"),
     );
@@ -9496,31 +8228,10 @@ class MLSVMEngine extends Struct<MLSVMEngine> {
     @required Pointer classLabels,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithLibSVMFile:classLabels:"),
       arg,
-      classLabels,
-    );
-  }
-
-  static Pointer initWithSVMModel(
-    Pointer<MLSVMEngine> _self,
-    Pointer<Pointer> arg, {
-    @required int freeOnDealloc,
-    @required int isInputSizeLowerBoundOnly,
-    @required int inputSize,
-    @required Pointer classLabels,
-  }) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_Int8_Int8_Uint64_p_returns_p(
-      _self,
-      _objc.getSelector(
-          "initWithSVMModel:freeOnDealloc:isInputSizeLowerBoundOnly:inputSize:classLabels:"),
-      arg,
-      freeOnDealloc,
-      isInputSizeLowerBoundOnly,
-      inputSize,
       classLabels,
     );
   }
@@ -9529,7 +8240,7 @@ class MLSVMEngine extends Struct<MLSVMEngine> {
     Pointer<MLSVMEngine> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("inputSize"),
     );
@@ -9539,19 +8250,9 @@ class MLSVMEngine extends Struct<MLSVMEngine> {
     Pointer<MLSVMEngine> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isInputSizeLowerBoundOnly"),
-    );
-  }
-
-  static Pointer<Pointer> model(
-    Pointer<MLSVMEngine> _self,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
-      _self,
-      _objc.getSelector("model"),
     );
   }
 
@@ -9559,7 +8260,7 @@ class MLSVMEngine extends Struct<MLSVMEngine> {
     Pointer<MLSVMEngine> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("numberOfClasses"),
     );
@@ -9570,7 +8271,7 @@ class MLSVMEngine extends Struct<MLSVMEngine> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("predict:"),
       arg,
@@ -9583,7 +8284,7 @@ class MLSVMEngine extends Struct<MLSVMEngine> {
     @required Pointer<Float> probabilities,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("predictProbabilities:probabilities:"),
       arg,
@@ -9596,7 +8297,7 @@ class MLSVMEngine extends Struct<MLSVMEngine> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setClassLabels:"),
       arg,
@@ -9608,7 +8309,7 @@ class MLSVMEngine extends Struct<MLSVMEngine> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setFreeModelOnDealloc:"),
       arg,
@@ -9620,7 +8321,7 @@ class MLSVMEngine extends Struct<MLSVMEngine> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Uint64_returns_void(
+    _call_ptr_ptr_Uint64_returns_void(
       _self,
       _objc.getSelector("setInputSize:"),
       arg,
@@ -9632,29 +8333,14 @@ class MLSVMEngine extends Struct<MLSVMEngine> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setIsInputSizeLowerBoundOnly:"),
       arg,
     );
   }
-
-  static void setModel(
-    Pointer<MLSVMEngine> _self,
-    Pointer<Pointer> arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
-      _self,
-      _objc.getSelector("setModel:"),
-      arg,
-    );
-  }
 }
 
-/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class MLSVMLoader extends Struct<MLSVMLoader> {
   factory MLSVMLoader._() {
@@ -9666,9 +8352,6 @@ class MLSVMLoader extends Struct<MLSVMLoader> {
   }
 }
 
-/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class MLSVREngine extends Struct<MLSVREngine> {
   factory MLSVREngine._() {
@@ -9679,53 +8362,13 @@ class MLSVREngine extends Struct<MLSVREngine> {
     return _objc.allocate("MLSVREngine").cast<MLSVREngine>();
   }
 
-  static Pointer<Pointer> allocSVMNodeVector(
-    Pointer<MLSVREngine> _self,
-    int arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_Uint64_returns_p(
-      _self,
-      _objc.getSelector("allocSVMNodeVector:"),
-      arg,
-    );
-  }
-
   static void dealloc(
     Pointer<MLSVREngine> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("dealloc"),
-    );
-  }
-
-  static void deallocSVMNodeVector(
-    Pointer<MLSVREngine> _self,
-    Pointer<Pointer> arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
-      _self,
-      _objc.getSelector("deallocSVMNodeVector:"),
-      arg,
-    );
-  }
-
-  static void fillSVMNodeVector(
-    Pointer<MLSVREngine> _self,
-    Pointer<Pointer> arg, {
-    @required Pointer<Float> values,
-    @required int count,
-  }) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_p_Uint64_returns_void(
-      _self,
-      _objc.getSelector("fillSVMNodeVector:values:count:"),
-      arg,
-      values,
-      count,
     );
   }
 
@@ -9733,7 +8376,7 @@ class MLSVREngine extends Struct<MLSVREngine> {
     Pointer<MLSVREngine> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("freeModelOnDealloc"),
     );
@@ -9744,29 +8387,10 @@ class MLSVREngine extends Struct<MLSVREngine> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithLibSVMFile:"),
       arg,
-    );
-  }
-
-  static Pointer initWithSVMModel(
-    Pointer<MLSVREngine> _self,
-    Pointer<Pointer> arg, {
-    @required int freeOnDealloc,
-    @required int isInputSizeLowerBoundOnly,
-    @required int inputSize,
-  }) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_Int8_Int8_Uint64_returns_p(
-      _self,
-      _objc.getSelector(
-          "initWithSVMModel:freeOnDealloc:isInputSizeLowerBoundOnly:inputSize:"),
-      arg,
-      freeOnDealloc,
-      isInputSizeLowerBoundOnly,
-      inputSize,
     );
   }
 
@@ -9774,7 +8398,7 @@ class MLSVREngine extends Struct<MLSVREngine> {
     Pointer<MLSVREngine> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("inputSize"),
     );
@@ -9784,19 +8408,9 @@ class MLSVREngine extends Struct<MLSVREngine> {
     Pointer<MLSVREngine> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isInputSizeLowerBoundOnly"),
-    );
-  }
-
-  static Pointer<Pointer> model(
-    Pointer<MLSVREngine> _self,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
-      _self,
-      _objc.getSelector("model"),
     );
   }
 
@@ -9805,7 +8419,7 @@ class MLSVREngine extends Struct<MLSVREngine> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("predict:"),
       arg,
@@ -9817,29 +8431,14 @@ class MLSVREngine extends Struct<MLSVREngine> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setFreeModelOnDealloc:"),
       arg,
     );
   }
-
-  static void setModel(
-    Pointer<MLSVREngine> _self,
-    Pointer<Pointer> arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
-      _self,
-      _objc.getSelector("setModel:"),
-      arg,
-    );
-  }
 }
 
-/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class MLSVRLoader extends Struct<MLSVRLoader> {
   factory MLSVRLoader._() {
@@ -9851,9 +8450,6 @@ class MLSVRLoader extends Struct<MLSVRLoader> {
   }
 }
 
-/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class MLSaver extends Struct<MLSaver> {
   factory MLSaver._() {
@@ -9865,9 +8461,6 @@ class MLSaver extends Struct<MLSaver> {
   }
 }
 
-/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class MLScaler extends Struct<MLScaler> {
   factory MLScaler._() {
@@ -9891,7 +8484,7 @@ class MLScaler extends Struct<MLScaler> {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_p_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector(
           "initWith:scaleValue:dataTransformerName:inputDescription:outputDescription:orderedInputFeatureNames:orderedOutputFeatureNames:configuration:error:"),
@@ -9914,7 +8507,7 @@ class MLScaler extends Struct<MLScaler> {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("predictionFromFeatures:options:error:"),
       arg,
@@ -9927,7 +8520,7 @@ class MLScaler extends Struct<MLScaler> {
     Pointer<MLScaler> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("scaleValue"),
     );
@@ -9937,16 +8530,13 @@ class MLScaler extends Struct<MLScaler> {
     Pointer<MLScaler> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("shiftValue"),
     );
   }
 }
 
-/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class MLSequence extends Struct<MLSequence> {
   factory MLSequence._() {
@@ -9961,7 +8551,7 @@ class MLSequence extends Struct<MLSequence> {
     Pointer<MLSequence> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("featureValues"),
     );
@@ -9973,7 +8563,7 @@ class MLSequence extends Struct<MLSequence> {
     @required int type,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_Int64_returns_p(
+    return _call_ptr_ptr_ptr_Int64_returns_ptr(
       _self,
       _objc.getSelector("initWithArray:type:"),
       arg,
@@ -9985,7 +8575,7 @@ class MLSequence extends Struct<MLSequence> {
     Pointer<MLSequence> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("int64Values"),
     );
@@ -9995,7 +8585,7 @@ class MLSequence extends Struct<MLSequence> {
     Pointer<MLSequence> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("stringValues"),
     );
@@ -10005,7 +8595,7 @@ class MLSequence extends Struct<MLSequence> {
     Pointer<MLSequence> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int64(
+    return _call_ptr_ptr_returns_Int64(
       _self,
       _objc.getSelector("type"),
     );
@@ -10015,16 +8605,13 @@ class MLSequence extends Struct<MLSequence> {
     Pointer<MLSequence> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("values"),
     );
   }
 }
 
-/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class MLSequenceConstraint extends Struct<MLSequenceConstraint> {
   factory MLSequenceConstraint._() {
@@ -10035,49 +8622,13 @@ class MLSequenceConstraint extends Struct<MLSequenceConstraint> {
     return _objc.allocate("MLSequenceConstraint").cast<MLSequenceConstraint>();
   }
 
-  static Pointer copyWithZone(
-    Pointer<MLSequenceConstraint> _self,
-    Pointer<Pointer> arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
-      _self,
-      _objc.getSelector("copyWithZone:"),
-      arg,
-    );
-  }
-
-  static Pointer countRange(
-    Pointer<MLSequenceConstraint> _self,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
-      _self,
-      _objc.getSelector("countRange"),
-    );
-  }
-
-  static Pointer initWithValueDescription(
-    Pointer<MLSequenceConstraint> _self,
-    Pointer arg, {
-    @required Pointer countRange,
-  }) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_p(
-      _self,
-      _objc.getSelector("initWithValueDescription:countRange:"),
-      arg,
-      countRange,
-    );
-  }
-
   static int isAllowedValue(
     Pointer<MLSequenceConstraint> _self,
     Pointer arg, {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isAllowedValue:error:"),
       arg,
@@ -10089,16 +8640,13 @@ class MLSequenceConstraint extends Struct<MLSequenceConstraint> {
     Pointer<MLSequenceConstraint> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("valueDescription"),
     );
   }
 }
 
-/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class MLSequnceAsFeatureValueArray
     extends Struct<MLSequnceAsFeatureValueArray> {
@@ -10116,7 +8664,7 @@ class MLSequnceAsFeatureValueArray
     Pointer<MLSequnceAsFeatureValueArray> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("count"),
     );
@@ -10127,7 +8675,7 @@ class MLSequnceAsFeatureValueArray
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWrappingSequence:"),
       arg,
@@ -10139,7 +8687,7 @@ class MLSequnceAsFeatureValueArray
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Uint64_returns_p(
+    return _call_ptr_ptr_Uint64_returns_ptr(
       _self,
       _objc.getSelector("objectAtIndex:"),
       arg,
@@ -10150,16 +8698,13 @@ class MLSequnceAsFeatureValueArray
     Pointer<MLSequnceAsFeatureValueArray> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("sequence"),
     );
   }
 }
 
-/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class MLStringProbabilityDictionary
     extends Struct<MLStringProbabilityDictionary> {
@@ -10177,7 +8722,7 @@ class MLStringProbabilityDictionary
     Pointer<MLStringProbabilityDictionary> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("copy"),
     );
@@ -10187,7 +8732,7 @@ class MLStringProbabilityDictionary
     Pointer<MLStringProbabilityDictionary> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("count"),
     );
@@ -10198,7 +8743,7 @@ class MLStringProbabilityDictionary
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithStrLabels:"),
       arg,
@@ -10209,19 +8754,9 @@ class MLStringProbabilityDictionary
     Pointer<MLStringProbabilityDictionary> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("keyEnumerator"),
-    );
-  }
-
-  static Pointer mapStrLabelToIndex(
-    Pointer<MLStringProbabilityDictionary> _self,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
-      _self,
-      _objc.getSelector("mapStrLabelToIndex"),
     );
   }
 
@@ -10230,7 +8765,7 @@ class MLStringProbabilityDictionary
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("objectForKey:"),
       arg,
@@ -10242,21 +8777,9 @@ class MLStringProbabilityDictionary
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("removeObjectForKey:"),
-      arg,
-    );
-  }
-
-  static void setMapStrLabelToIndex(
-    Pointer<MLStringProbabilityDictionary> _self,
-    Pointer arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
-      _self,
-      _objc.getSelector("setMapStrLabelToIndex:"),
       arg,
     );
   }
@@ -10267,7 +8790,7 @@ class MLStringProbabilityDictionary
     @required Pointer forKey,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setObject:forKey:"),
       arg,
@@ -10276,9 +8799,6 @@ class MLStringProbabilityDictionary
   }
 }
 
-/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class MLStringProbabilityDictionaryEnumerator
     extends Struct<MLStringProbabilityDictionaryEnumerator> {
@@ -10292,76 +8812,17 @@ class MLStringProbabilityDictionaryEnumerator
         .cast<MLStringProbabilityDictionaryEnumerator>();
   }
 
-  static Pointer initWithStrMap(
-    Pointer<MLStringProbabilityDictionaryEnumerator> _self,
-    Pointer<Pointer> arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
-      _self,
-      _objc.getSelector("initWithStrMap:"),
-      arg,
-    );
-  }
-
-  static Pointer iter(
-    Pointer<MLStringProbabilityDictionaryEnumerator> _self,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
-      _self,
-      _objc.getSelector("iter"),
-    );
-  }
-
-  static Pointer iterEnd(
-    Pointer<MLStringProbabilityDictionaryEnumerator> _self,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
-      _self,
-      _objc.getSelector("iterEnd"),
-    );
-  }
-
   static Pointer nextObject(
     Pointer<MLStringProbabilityDictionaryEnumerator> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("nextObject"),
     );
   }
-
-  static void setIter(
-    Pointer<MLStringProbabilityDictionaryEnumerator> _self,
-    Pointer arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
-      _self,
-      _objc.getSelector("setIter:"),
-      arg,
-    );
-  }
-
-  static void setIterEnd(
-    Pointer<MLStringProbabilityDictionaryEnumerator> _self,
-    Pointer arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
-      _self,
-      _objc.getSelector("setIterEnd:"),
-      arg,
-    );
-  }
 }
 
-/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class MLSupervisedOnlineUpdateOptions
     extends Struct<MLSupervisedOnlineUpdateOptions> {
@@ -10376,9 +8837,6 @@ class MLSupervisedOnlineUpdateOptions
   }
 }
 
-/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class MLSupportVectorClassifier extends Struct<MLSupportVectorClassifier> {
   factory MLSupportVectorClassifier._() {
@@ -10398,7 +8856,7 @@ class MLSupportVectorClassifier extends Struct<MLSupportVectorClassifier> {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("classify:options:error:"),
       arg,
@@ -10411,7 +8869,7 @@ class MLSupportVectorClassifier extends Struct<MLSupportVectorClassifier> {
     Pointer<MLSupportVectorClassifier> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("engine"),
     );
@@ -10426,7 +8884,7 @@ class MLSupportVectorClassifier extends Struct<MLSupportVectorClassifier> {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector(
           "initWithEngine:interface:metadata:configuration:error:"),
@@ -10443,7 +8901,7 @@ class MLSupportVectorClassifier extends Struct<MLSupportVectorClassifier> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setEngine:"),
       arg,
@@ -10451,9 +8909,6 @@ class MLSupportVectorClassifier extends Struct<MLSupportVectorClassifier> {
   }
 }
 
-/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class MLSupportVectorRegressor extends Struct<MLSupportVectorRegressor> {
   factory MLSupportVectorRegressor._() {
@@ -10470,7 +8925,7 @@ class MLSupportVectorRegressor extends Struct<MLSupportVectorRegressor> {
     Pointer<MLSupportVectorRegressor> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("engine"),
     );
@@ -10484,7 +8939,7 @@ class MLSupportVectorRegressor extends Struct<MLSupportVectorRegressor> {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithEngine:interface:metadata:error:"),
       arg,
@@ -10501,7 +8956,7 @@ class MLSupportVectorRegressor extends Struct<MLSupportVectorRegressor> {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("regress:options:error:"),
       arg,
@@ -10515,7 +8970,7 @@ class MLSupportVectorRegressor extends Struct<MLSupportVectorRegressor> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setEngine:"),
       arg,
@@ -10523,9 +8978,6 @@ class MLSupportVectorRegressor extends Struct<MLSupportVectorRegressor> {
   }
 }
 
-/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class MLTreeEnsembleClassifier extends Struct<MLTreeEnsembleClassifier> {
   factory MLTreeEnsembleClassifier._() {
@@ -10545,7 +8997,7 @@ class MLTreeEnsembleClassifier extends Struct<MLTreeEnsembleClassifier> {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("classify:options:error:"),
       arg,
@@ -10555,9 +9007,6 @@ class MLTreeEnsembleClassifier extends Struct<MLTreeEnsembleClassifier> {
   }
 }
 
-/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class MLTreeEnsembleRegressor extends Struct<MLTreeEnsembleRegressor> {
   factory MLTreeEnsembleRegressor._() {
@@ -10577,7 +9026,7 @@ class MLTreeEnsembleRegressor extends Struct<MLTreeEnsembleRegressor> {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("regress:options:error:"),
       arg,
@@ -10586,13 +9035,13 @@ class MLTreeEnsembleRegressor extends Struct<MLTreeEnsembleRegressor> {
     );
   }
 
-  static double scalarRegress$error$(
+  static double scalarRegress$error(
     Pointer<MLTreeEnsembleRegressor> _self,
     Pointer arg, {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_float64(
+    return _call_ptr_ptr_ptr_ptr_returns_float64(
       _self,
       _objc.getSelector("scalarRegress:error:"),
       arg,
@@ -10600,12 +9049,12 @@ class MLTreeEnsembleRegressor extends Struct<MLTreeEnsembleRegressor> {
     );
   }
 
-  static double scalarRegress$(
+  static double scalarRegress(
     Pointer<MLTreeEnsembleRegressor> _self,
     Pointer<Float> arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_float64(
+    return _call_ptr_ptr_ptr_returns_float64(
       _self,
       _objc.getSelector("scalarRegress:"),
       arg,
@@ -10618,7 +9067,7 @@ class MLTreeEnsembleRegressor extends Struct<MLTreeEnsembleRegressor> {
     @required Pointer<Float> dest,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("vectorRegress:dest:"),
       arg,
@@ -10627,9 +9076,6 @@ class MLTreeEnsembleRegressor extends Struct<MLTreeEnsembleRegressor> {
   }
 }
 
-/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class MLVersionInfo extends Struct<MLVersionInfo> {
   factory MLVersionInfo._() {
@@ -10648,7 +9094,7 @@ class MLVersionInfo extends Struct<MLVersionInfo> {
     @required Pointer variant,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int64_Int64_Int64_p_returns_p(
+    return _call_ptr_ptr_Int64_Int64_Int64_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithMajor:minor:patch:variant:"),
       arg,
@@ -10662,7 +9108,7 @@ class MLVersionInfo extends Struct<MLVersionInfo> {
     Pointer<MLVersionInfo> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int64(
+    return _call_ptr_ptr_returns_Int64(
       _self,
       _objc.getSelector("majorVersion"),
     );
@@ -10672,7 +9118,7 @@ class MLVersionInfo extends Struct<MLVersionInfo> {
     Pointer<MLVersionInfo> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int64(
+    return _call_ptr_ptr_returns_Int64(
       _self,
       _objc.getSelector("minorVersion"),
     );
@@ -10683,7 +9129,7 @@ class MLVersionInfo extends Struct<MLVersionInfo> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("olderThan:"),
       arg,
@@ -10694,7 +9140,7 @@ class MLVersionInfo extends Struct<MLVersionInfo> {
     Pointer<MLVersionInfo> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int64(
+    return _call_ptr_ptr_returns_Int64(
       _self,
       _objc.getSelector("patchVersion"),
     );
@@ -10704,7 +9150,7 @@ class MLVersionInfo extends Struct<MLVersionInfo> {
     Pointer<MLVersionInfo> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("variantString"),
     );
@@ -10714,7 +9160,7 @@ class MLVersionInfo extends Struct<MLVersionInfo> {
     Pointer<MLVersionInfo> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("versionNumberString"),
     );
@@ -10724,16 +9170,13 @@ class MLVersionInfo extends Struct<MLVersionInfo> {
     Pointer<MLVersionInfo> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("versionString"),
     );
   }
 }
 
-/// Automatically generated API. Part of [Core ML](https://developer.apple.com/documentation/coreml?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class MLWindowedBatchProvider extends Struct<MLWindowedBatchProvider> {
   factory MLWindowedBatchProvider._() {
@@ -10750,7 +9193,7 @@ class MLWindowedBatchProvider extends Struct<MLWindowedBatchProvider> {
     Pointer<MLWindowedBatchProvider> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int64(
+    return _call_ptr_ptr_returns_Int64(
       _self,
       _objc.getSelector("count"),
     );
@@ -10761,7 +9204,7 @@ class MLWindowedBatchProvider extends Struct<MLWindowedBatchProvider> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int64_returns_p(
+    return _call_ptr_ptr_Int64_returns_ptr(
       _self,
       _objc.getSelector("featuresAtIndex:"),
       arg,
@@ -10772,7 +9215,7 @@ class MLWindowedBatchProvider extends Struct<MLWindowedBatchProvider> {
     Pointer<MLWindowedBatchProvider> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("fullBatch"),
     );
@@ -10786,7 +9229,7 @@ class MLWindowedBatchProvider extends Struct<MLWindowedBatchProvider> {
     @required Pointer<Pointer> error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_Int64_Int64_p_returns_p(
+    return _call_ptr_ptr_ptr_Int64_Int64_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithBatch:startIndex:windowLength:error:"),
       arg,
@@ -10801,7 +9244,7 @@ class MLWindowedBatchProvider extends Struct<MLWindowedBatchProvider> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setFullBatch:"),
       arg,
@@ -10813,7 +9256,7 @@ class MLWindowedBatchProvider extends Struct<MLWindowedBatchProvider> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int64_returns_void(
+    _call_ptr_ptr_Int64_returns_void(
       _self,
       _objc.getSelector("setStartIndex:"),
       arg,
@@ -10825,7 +9268,7 @@ class MLWindowedBatchProvider extends Struct<MLWindowedBatchProvider> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int64_returns_void(
+    _call_ptr_ptr_Int64_returns_void(
       _self,
       _objc.getSelector("setWindowLength:"),
       arg,
@@ -10836,7 +9279,7 @@ class MLWindowedBatchProvider extends Struct<MLWindowedBatchProvider> {
     Pointer<MLWindowedBatchProvider> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int64(
+    return _call_ptr_ptr_returns_Int64(
       _self,
       _objc.getSelector("startIndex"),
     );
@@ -10846,64 +9289,68 @@ class MLWindowedBatchProvider extends Struct<MLWindowedBatchProvider> {
     Pointer<MLWindowedBatchProvider> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int64(
+    return _call_ptr_ptr_returns_Int64(
       _self,
       _objc.getSelector("windowLength"),
     );
   }
 }
 
-final _call_objc_p_p_Int32_p_p_p_p_p_p_returns_p = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_Int32_p_p_p_p_p_p_returns_p_C,
-        _call_objc_p_p_Int32_p_p_p_p_p_p_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_Int32_p_p_p_p_p_p_returns_p_C = Pointer Function(
-    Pointer _arg0,
-    Pointer _arg1,
-    Int32 arg,
-    Pointer dataTransformerName,
-    Pointer inputDescription,
-    Pointer outputDescription,
-    Pointer orderedInputFeatureNames,
-    Pointer orderedOutputFeatureNames,
-    Pointer configuration);
-typedef _call_objc_p_p_Int32_p_p_p_p_p_p_returns_p_Dart = Pointer Function(
-    Pointer _arg0,
-    Pointer _arg1,
-    int arg,
-    Pointer dataTransformerName,
-    Pointer inputDescription,
-    Pointer outputDescription,
-    Pointer orderedInputFeatureNames,
-    Pointer orderedOutputFeatureNames,
-    Pointer configuration);
+final _call_ptr_ptr_Int32_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr =
+    _objc.dlForObjectiveC.lookupFunction<
+            _call_ptr_ptr_Int32_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr_C,
+            _call_ptr_ptr_Int32_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr_Dart>(
+        "objc_msgSend");
+typedef _call_ptr_ptr_Int32_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr_C
+    = Pointer Function(
+        Pointer _arg0,
+        Pointer _arg1,
+        Int32 arg,
+        Pointer dataTransformerName,
+        Pointer inputDescription,
+        Pointer outputDescription,
+        Pointer orderedInputFeatureNames,
+        Pointer orderedOutputFeatureNames,
+        Pointer configuration);
+typedef _call_ptr_ptr_Int32_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr_Dart
+    = Pointer Function(
+        Pointer _arg0,
+        Pointer _arg1,
+        int arg,
+        Pointer dataTransformerName,
+        Pointer inputDescription,
+        Pointer outputDescription,
+        Pointer orderedInputFeatureNames,
+        Pointer orderedOutputFeatureNames,
+        Pointer configuration);
 
-final _call_objc_p_p_Int32_returns_p = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_Int32_returns_p_C,
-    _call_objc_p_p_Int32_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_Int32_returns_p_C = Pointer Function(
+final _call_ptr_ptr_Int32_returns_ptr = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_Int32_returns_ptr_C,
+    _call_ptr_ptr_Int32_returns_ptr_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_Int32_returns_ptr_C = Pointer Function(
     Pointer _arg0, Pointer _arg1, Int32 arg);
-typedef _call_objc_p_p_Int32_returns_p_Dart = Pointer Function(
+typedef _call_ptr_ptr_Int32_returns_ptr_Dart = Pointer Function(
     Pointer _arg0, Pointer _arg1, int arg);
 
-final _call_objc_p_p_Int32_returns_void = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_Int32_returns_void_C,
-    _call_objc_p_p_Int32_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_Int32_returns_void_C = Void Function(
+final _call_ptr_ptr_Int32_returns_void = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_Int32_returns_void_C,
+    _call_ptr_ptr_Int32_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_Int32_returns_void_C = Void Function(
     Pointer _arg0, Pointer _arg1, Int32 arg);
-typedef _call_objc_p_p_Int32_returns_void_Dart = void Function(
+typedef _call_ptr_ptr_Int32_returns_void_Dart = void Function(
     Pointer _arg0, Pointer _arg1, int arg);
 
-final _call_objc_p_p_Int64_Int64_Int64_p_returns_p = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_Int64_Int64_Int64_p_returns_p_C,
-        _call_objc_p_p_Int64_Int64_Int64_p_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_Int64_Int64_Int64_p_returns_p_C = Pointer Function(
+final _call_ptr_ptr_Int64_Int64_Int64_ptr_returns_ptr = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_Int64_Int64_Int64_ptr_returns_ptr_C,
+        _call_ptr_ptr_Int64_Int64_Int64_ptr_returns_ptr_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_Int64_Int64_Int64_ptr_returns_ptr_C = Pointer Function(
     Pointer _arg0,
     Pointer _arg1,
     Int64 arg,
     Int64 minor,
     Int64 patch,
     Pointer variant);
-typedef _call_objc_p_p_Int64_Int64_Int64_p_returns_p_Dart = Pointer Function(
+typedef _call_ptr_ptr_Int64_Int64_Int64_ptr_returns_ptr_Dart = Pointer Function(
     Pointer _arg0,
     Pointer _arg1,
     int arg,
@@ -10911,17 +9358,17 @@ typedef _call_objc_p_p_Int64_Int64_Int64_p_returns_p_Dart = Pointer Function(
     int patch,
     Pointer variant);
 
-final _call_objc_p_p_Int64_Int64_Int8_Int8_returns_p = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_Int64_Int64_Int8_Int8_returns_p_C,
-        _call_objc_p_p_Int64_Int64_Int8_Int8_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_Int64_Int64_Int8_Int8_returns_p_C = Pointer Function(
+final _call_ptr_ptr_Int64_Int64_Int8_Int8_returns_ptr = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_Int64_Int64_Int8_Int8_returns_ptr_C,
+        _call_ptr_ptr_Int64_Int64_Int8_Int8_returns_ptr_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_Int64_Int64_Int8_Int8_returns_ptr_C = Pointer Function(
     Pointer _arg0,
     Pointer _arg1,
     Int64 arg,
     Int64 pixelsHigh,
     Int8 preferDownScaling,
     Int8 preferInputAspectRatio);
-typedef _call_objc_p_p_Int64_Int64_Int8_Int8_returns_p_Dart = Pointer Function(
+typedef _call_ptr_ptr_Int64_Int64_Int8_Int8_returns_ptr_Dart = Pointer Function(
     Pointer _arg0,
     Pointer _arg1,
     int arg,
@@ -10929,97 +9376,96 @@ typedef _call_objc_p_p_Int64_Int64_Int8_Int8_returns_p_Dart = Pointer Function(
     int preferDownScaling,
     int preferInputAspectRatio);
 
-final _call_objc_p_p_Int64_Int64_Uint64_p_returns_p = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_Int64_Int64_Uint64_p_returns_p_C,
-        _call_objc_p_p_Int64_Int64_Uint64_p_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_Int64_Int64_Uint64_p_returns_p_C = Pointer Function(
+final _call_ptr_ptr_Int64_Int64_Uint64_ptr_returns_ptr = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_Int64_Int64_Uint64_ptr_returns_ptr_C,
+        _call_ptr_ptr_Int64_Int64_Uint64_ptr_returns_ptr_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_Int64_Int64_Uint64_ptr_returns_ptr_C = Pointer Function(
     Pointer _arg0,
     Pointer _arg1,
     Int64 arg,
     Int64 pixelsHigh,
     Uint64 pixelType,
     Pointer sizeConstraint);
-typedef _call_objc_p_p_Int64_Int64_Uint64_p_returns_p_Dart = Pointer Function(
-    Pointer _arg0,
-    Pointer _arg1,
-    int arg,
-    int pixelsHigh,
-    int pixelType,
-    Pointer sizeConstraint);
+typedef _call_ptr_ptr_Int64_Int64_Uint64_ptr_returns_ptr_Dart
+    = Pointer Function(Pointer _arg0, Pointer _arg1, int arg, int pixelsHigh,
+        int pixelType, Pointer sizeConstraint);
 
-final _call_objc_p_p_Int64_Int64_returns_p = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_Int64_Int64_returns_p_C,
-        _call_objc_p_p_Int64_Int64_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_Int64_Int64_returns_p_C = Pointer Function(
+final _call_ptr_ptr_Int64_Int64_returns_ptr = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_Int64_Int64_returns_ptr_C,
+        _call_ptr_ptr_Int64_Int64_returns_ptr_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_Int64_Int64_returns_ptr_C = Pointer Function(
     Pointer _arg0, Pointer _arg1, Int64 arg, Int64 pixelsHigh);
-typedef _call_objc_p_p_Int64_Int64_returns_p_Dart = Pointer Function(
+typedef _call_ptr_ptr_Int64_Int64_returns_ptr_Dart = Pointer Function(
     Pointer _arg0, Pointer _arg1, int arg, int pixelsHigh);
 
-final _call_objc_p_p_Int64_p_returns_Int8 = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_Int64_p_returns_Int8_C,
-        _call_objc_p_p_Int64_p_returns_Int8_Dart>("objc_msgSend");
-typedef _call_objc_p_p_Int64_p_returns_Int8_C = Int8 Function(
+final _call_ptr_ptr_Int64_ptr_returns_Int8 = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_Int64_ptr_returns_Int8_C,
+        _call_ptr_ptr_Int64_ptr_returns_Int8_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_Int64_ptr_returns_Int8_C = Int8 Function(
     Pointer _arg0, Pointer _arg1, Int64 arg, Pointer error);
-typedef _call_objc_p_p_Int64_p_returns_Int8_Dart = int Function(
+typedef _call_ptr_ptr_Int64_ptr_returns_Int8_Dart = int Function(
     Pointer _arg0, Pointer _arg1, int arg, Pointer error);
 
-final _call_objc_p_p_Int64_returns_Int8 = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_Int64_returns_Int8_C,
-    _call_objc_p_p_Int64_returns_Int8_Dart>("objc_msgSend");
-typedef _call_objc_p_p_Int64_returns_Int8_C = Int8 Function(
+final _call_ptr_ptr_Int64_returns_Int8 = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_Int64_returns_Int8_C,
+    _call_ptr_ptr_Int64_returns_Int8_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_Int64_returns_Int8_C = Int8 Function(
     Pointer _arg0, Pointer _arg1, Int64 arg);
-typedef _call_objc_p_p_Int64_returns_Int8_Dart = int Function(
+typedef _call_ptr_ptr_Int64_returns_Int8_Dart = int Function(
     Pointer _arg0, Pointer _arg1, int arg);
 
-final _call_objc_p_p_Int64_returns_p = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_Int64_returns_p_C,
-    _call_objc_p_p_Int64_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_Int64_returns_p_C = Pointer Function(
+final _call_ptr_ptr_Int64_returns_ptr = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_Int64_returns_ptr_C,
+    _call_ptr_ptr_Int64_returns_ptr_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_Int64_returns_ptr_C = Pointer Function(
     Pointer _arg0, Pointer _arg1, Int64 arg);
-typedef _call_objc_p_p_Int64_returns_p_Dart = Pointer Function(
+typedef _call_ptr_ptr_Int64_returns_ptr_Dart = Pointer Function(
     Pointer _arg0, Pointer _arg1, int arg);
 
-final _call_objc_p_p_Int64_returns_void = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_Int64_returns_void_C,
-    _call_objc_p_p_Int64_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_Int64_returns_void_C = Void Function(
+final _call_ptr_ptr_Int64_returns_void = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_Int64_returns_void_C,
+    _call_ptr_ptr_Int64_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_Int64_returns_void_C = Void Function(
     Pointer _arg0, Pointer _arg1, Int64 arg);
-typedef _call_objc_p_p_Int64_returns_void_Dart = void Function(
+typedef _call_ptr_ptr_Int64_returns_void_Dart = void Function(
     Pointer _arg0, Pointer _arg1, int arg);
 
-final _call_objc_p_p_Int8_returns_p = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_Int8_returns_p_C,
-    _call_objc_p_p_Int8_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_Int8_returns_p_C = Pointer Function(
+final _call_ptr_ptr_Int8_returns_ptr = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_Int8_returns_ptr_C,
+    _call_ptr_ptr_Int8_returns_ptr_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_Int8_returns_ptr_C = Pointer Function(
     Pointer _arg0, Pointer _arg1, Int8 arg);
-typedef _call_objc_p_p_Int8_returns_p_Dart = Pointer Function(
+typedef _call_ptr_ptr_Int8_returns_ptr_Dart = Pointer Function(
     Pointer _arg0, Pointer _arg1, int arg);
 
-final _call_objc_p_p_Int8_returns_void = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_Int8_returns_void_C,
-    _call_objc_p_p_Int8_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_Int8_returns_void_C = Void Function(
+final _call_ptr_ptr_Int8_returns_void = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_Int8_returns_void_C,
+    _call_ptr_ptr_Int8_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_Int8_returns_void_C = Void Function(
     Pointer _arg0, Pointer _arg1, Int8 arg);
-typedef _call_objc_p_p_Int8_returns_void_Dart = void Function(
+typedef _call_ptr_ptr_Int8_returns_void_Dart = void Function(
     Pointer _arg0, Pointer _arg1, int arg);
 
-final _call_objc_p_p_Uint64_p_p_p_p_p_p_p_p_p_returns_p = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_Uint64_p_p_p_p_p_p_p_p_p_returns_p_C,
-        _call_objc_p_p_Uint64_p_p_p_p_p_p_p_p_p_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_Uint64_p_p_p_p_p_p_p_p_p_returns_p_C = Pointer Function(
-    Pointer _arg0,
-    Pointer _arg1,
-    Uint64 arg,
-    Pointer language,
-    Pointer inputFeatureName,
-    Pointer tokensFeatureName,
-    Pointer tokenTagsFeatureName,
-    Pointer tokenLocationsFeatureName,
-    Pointer tokenLengthsFeatureName,
-    Pointer modelData,
-    Pointer tagNames,
-    Pointer error);
-typedef _call_objc_p_p_Uint64_p_p_p_p_p_p_p_p_p_returns_p_Dart
+final _call_ptr_ptr_Uint64_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr =
+    _objc.dlForObjectiveC.lookupFunction<
+            _call_ptr_ptr_Uint64_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr_C,
+            _call_ptr_ptr_Uint64_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr_Dart>(
+        "objc_msgSend");
+typedef _call_ptr_ptr_Uint64_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr_C
+    = Pointer Function(
+        Pointer _arg0,
+        Pointer _arg1,
+        Uint64 arg,
+        Pointer language,
+        Pointer inputFeatureName,
+        Pointer tokensFeatureName,
+        Pointer tokenTagsFeatureName,
+        Pointer tokenLocationsFeatureName,
+        Pointer tokenLengthsFeatureName,
+        Pointer modelData,
+        Pointer tagNames,
+        Pointer error);
+typedef _call_ptr_ptr_Uint64_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr_Dart
     = Pointer Function(
         Pointer _arg0,
         Pointer _arg1,
@@ -11034,89 +9480,93 @@ typedef _call_objc_p_p_Uint64_p_p_p_p_p_p_p_p_p_returns_p_Dart
         Pointer tagNames,
         Pointer error);
 
-final _call_objc_p_p_Uint64_p_p_p_p_p_p_returns_p = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_Uint64_p_p_p_p_p_p_returns_p_C,
-        _call_objc_p_p_Uint64_p_p_p_p_p_p_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_Uint64_p_p_p_p_p_p_returns_p_C = Pointer Function(
-    Pointer _arg0,
-    Pointer _arg1,
-    Uint64 arg,
-    Pointer language,
-    Pointer inputFeatureName,
-    Pointer outputFeatureName,
-    Pointer modelData,
-    Pointer labelNames,
-    Pointer error);
-typedef _call_objc_p_p_Uint64_p_p_p_p_p_p_returns_p_Dart = Pointer Function(
-    Pointer _arg0,
-    Pointer _arg1,
-    int arg,
-    Pointer language,
-    Pointer inputFeatureName,
-    Pointer outputFeatureName,
-    Pointer modelData,
-    Pointer labelNames,
-    Pointer error);
+final _call_ptr_ptr_Uint64_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr =
+    _objc.dlForObjectiveC.lookupFunction<
+            _call_ptr_ptr_Uint64_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr_C,
+            _call_ptr_ptr_Uint64_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr_Dart>(
+        "objc_msgSend");
+typedef _call_ptr_ptr_Uint64_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr_C
+    = Pointer Function(
+        Pointer _arg0,
+        Pointer _arg1,
+        Uint64 arg,
+        Pointer language,
+        Pointer inputFeatureName,
+        Pointer outputFeatureName,
+        Pointer modelData,
+        Pointer labelNames,
+        Pointer error);
+typedef _call_ptr_ptr_Uint64_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr_Dart
+    = Pointer Function(
+        Pointer _arg0,
+        Pointer _arg1,
+        int arg,
+        Pointer language,
+        Pointer inputFeatureName,
+        Pointer outputFeatureName,
+        Pointer modelData,
+        Pointer labelNames,
+        Pointer error);
 
-final _call_objc_p_p_Uint64_p_returns_p = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_Uint64_p_returns_p_C,
-    _call_objc_p_p_Uint64_p_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_Uint64_p_returns_p_C = Pointer Function(
+final _call_ptr_ptr_Uint64_ptr_returns_ptr = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_Uint64_ptr_returns_ptr_C,
+        _call_ptr_ptr_Uint64_ptr_returns_ptr_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_Uint64_ptr_returns_ptr_C = Pointer Function(
     Pointer _arg0, Pointer _arg1, Uint64 arg, Pointer error);
-typedef _call_objc_p_p_Uint64_p_returns_p_Dart = Pointer Function(
+typedef _call_ptr_ptr_Uint64_ptr_returns_ptr_Dart = Pointer Function(
     Pointer _arg0, Pointer _arg1, int arg, Pointer error);
 
-final _call_objc_p_p_Uint64_returns_Int8 = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_Uint64_returns_Int8_C,
-    _call_objc_p_p_Uint64_returns_Int8_Dart>("objc_msgSend");
-typedef _call_objc_p_p_Uint64_returns_Int8_C = Int8 Function(
+final _call_ptr_ptr_Uint64_returns_Int8 = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_Uint64_returns_Int8_C,
+    _call_ptr_ptr_Uint64_returns_Int8_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_Uint64_returns_Int8_C = Int8 Function(
     Pointer _arg0, Pointer _arg1, Uint64 arg);
-typedef _call_objc_p_p_Uint64_returns_Int8_Dart = int Function(
+typedef _call_ptr_ptr_Uint64_returns_Int8_Dart = int Function(
     Pointer _arg0, Pointer _arg1, int arg);
 
-final _call_objc_p_p_Uint64_returns_p = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_Uint64_returns_p_C,
-    _call_objc_p_p_Uint64_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_Uint64_returns_p_C = Pointer Function(
+final _call_ptr_ptr_Uint64_returns_ptr = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_Uint64_returns_ptr_C,
+    _call_ptr_ptr_Uint64_returns_ptr_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_Uint64_returns_ptr_C = Pointer Function(
     Pointer _arg0, Pointer _arg1, Uint64 arg);
-typedef _call_objc_p_p_Uint64_returns_p_Dart = Pointer Function(
+typedef _call_ptr_ptr_Uint64_returns_ptr_Dart = Pointer Function(
     Pointer _arg0, Pointer _arg1, int arg);
 
-final _call_objc_p_p_Uint64_returns_void = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_Uint64_returns_void_C,
-    _call_objc_p_p_Uint64_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_Uint64_returns_void_C = Void Function(
+final _call_ptr_ptr_Uint64_returns_void = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_Uint64_returns_void_C,
+    _call_ptr_ptr_Uint64_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_Uint64_returns_void_C = Void Function(
     Pointer _arg0, Pointer _arg1, Uint64 arg);
-typedef _call_objc_p_p_Uint64_returns_void_Dart = void Function(
+typedef _call_ptr_ptr_Uint64_returns_void_Dart = void Function(
     Pointer _arg0, Pointer _arg1, int arg);
 
-final _call_objc_p_p_float64_p_returns_void = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_float64_p_returns_void_C,
-        _call_objc_p_p_float64_p_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_float64_p_returns_void_C = Void Function(
+final _call_ptr_ptr_float64_ptr_returns_void = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_float64_ptr_returns_void_C,
+        _call_ptr_ptr_float64_ptr_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_float64_ptr_returns_void_C = Void Function(
     Pointer _arg0, Pointer _arg1, Float arg, Pointer lastValue);
-typedef _call_objc_p_p_float64_p_returns_void_Dart = void Function(
+typedef _call_ptr_ptr_float64_ptr_returns_void_Dart = void Function(
     Pointer _arg0, Pointer _arg1, double arg, Pointer lastValue);
 
-final _call_objc_p_p_float64_returns_void = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_float64_returns_void_C,
-        _call_objc_p_p_float64_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_float64_returns_void_C = Void Function(
+final _call_ptr_ptr_float64_returns_void = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_float64_returns_void_C,
+    _call_ptr_ptr_float64_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_float64_returns_void_C = Void Function(
     Pointer _arg0, Pointer _arg1, Float arg);
-typedef _call_objc_p_p_float64_returns_void_Dart = void Function(
+typedef _call_ptr_ptr_float64_returns_void_Dart = void Function(
     Pointer _arg0, Pointer _arg1, double arg);
 
-final _call_objc_p_p_p_Int64_Int64_p_returns_p = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_p_Int64_Int64_p_returns_p_C,
-        _call_objc_p_p_p_Int64_Int64_p_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_Int64_Int64_p_returns_p_C = Pointer Function(
+final _call_ptr_ptr_ptr_Int64_Int64_ptr_returns_ptr = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_Int64_Int64_ptr_returns_ptr_C,
+        _call_ptr_ptr_ptr_Int64_Int64_ptr_returns_ptr_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_Int64_Int64_ptr_returns_ptr_C = Pointer Function(
     Pointer _arg0,
     Pointer _arg1,
     Pointer arg,
     Int64 startIndex,
     Int64 windowLength,
     Pointer error);
-typedef _call_objc_p_p_p_Int64_Int64_p_returns_p_Dart = Pointer Function(
+typedef _call_ptr_ptr_ptr_Int64_Int64_ptr_returns_ptr_Dart = Pointer Function(
     Pointer _arg0,
     Pointer _arg1,
     Pointer arg,
@@ -11124,17 +9574,17 @@ typedef _call_objc_p_p_p_Int64_Int64_p_returns_p_Dart = Pointer Function(
     int windowLength,
     Pointer error);
 
-final _call_objc_p_p_p_Int64_Int8_p_returns_p = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_p_Int64_Int8_p_returns_p_C,
-        _call_objc_p_p_p_Int64_Int8_p_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_Int64_Int8_p_returns_p_C = Pointer Function(
+final _call_ptr_ptr_ptr_Int64_Int8_ptr_returns_ptr = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_Int64_Int8_ptr_returns_ptr_C,
+        _call_ptr_ptr_ptr_Int64_Int8_ptr_returns_ptr_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_Int64_Int8_ptr_returns_ptr_C = Pointer Function(
     Pointer _arg0,
     Pointer _arg1,
     Pointer arg,
     Int64 type,
     Int8 optional,
     Pointer contraints);
-typedef _call_objc_p_p_p_Int64_Int8_p_returns_p_Dart = Pointer Function(
+typedef _call_ptr_ptr_ptr_Int64_Int8_ptr_returns_ptr_Dart = Pointer Function(
     Pointer _arg0,
     Pointer _arg1,
     Pointer arg,
@@ -11142,25 +9592,27 @@ typedef _call_objc_p_p_p_Int64_Int8_p_returns_p_Dart = Pointer Function(
     int optional,
     Pointer contraints);
 
-final _call_objc_p_p_p_Int64_p_p_p_p_p_p_p_p_p_returns_p = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_p_Int64_p_p_p_p_p_p_p_p_p_returns_p_C,
-            _call_objc_p_p_p_Int64_p_p_p_p_p_p_p_p_p_returns_p_Dart>(
+final _call_ptr_ptr_ptr_Int64_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr =
+    _objc.dlForObjectiveC.lookupFunction<
+            _call_ptr_ptr_ptr_Int64_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr_C,
+            _call_ptr_ptr_ptr_Int64_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr_Dart>(
         "objc_msgSend");
-typedef _call_objc_p_p_p_Int64_p_p_p_p_p_p_p_p_p_returns_p_C = Pointer Function(
-    Pointer _arg0,
-    Pointer _arg1,
-    Pointer arg,
-    Int64 numberOfFeatures,
-    Pointer priorMean,
-    Pointer regressionInputName,
-    Pointer optimismInputName,
-    Pointer samplingScaleInputName,
-    Pointer samplingTruncationInputName,
-    Pointer meanOutputName,
-    Pointer varianceOutputName,
-    Pointer pessimisticProbabilityOutputName,
-    Pointer sampledProbabilityOutputName);
-typedef _call_objc_p_p_p_Int64_p_p_p_p_p_p_p_p_p_returns_p_Dart
+typedef _call_ptr_ptr_ptr_Int64_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr_C
+    = Pointer Function(
+        Pointer _arg0,
+        Pointer _arg1,
+        Pointer arg,
+        Int64 numberOfFeatures,
+        Pointer priorMean,
+        Pointer regressionInputName,
+        Pointer optimismInputName,
+        Pointer samplingScaleInputName,
+        Pointer samplingTruncationInputName,
+        Pointer meanOutputName,
+        Pointer varianceOutputName,
+        Pointer pessimisticProbabilityOutputName,
+        Pointer sampledProbabilityOutputName);
+typedef _call_ptr_ptr_ptr_Int64_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr_Dart
     = Pointer Function(
         Pointer _arg0,
         Pointer _arg1,
@@ -11176,124 +9628,98 @@ typedef _call_objc_p_p_p_Int64_p_p_p_p_p_p_p_p_p_returns_p_Dart
         Pointer pessimisticProbabilityOutputName,
         Pointer sampledProbabilityOutputName);
 
-final _call_objc_p_p_p_Int64_p_returns_Int8 = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_p_Int64_p_returns_Int8_C,
-        _call_objc_p_p_p_Int64_p_returns_Int8_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_Int64_p_returns_Int8_C = Int8 Function(Pointer _arg0,
-    Pointer _arg1, Pointer arg, Int64 storageOrder, Pointer error);
-typedef _call_objc_p_p_p_Int64_p_returns_Int8_Dart = int Function(
+final _call_ptr_ptr_ptr_Int64_ptr_returns_Int8 = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_Int64_ptr_returns_Int8_C,
+        _call_ptr_ptr_ptr_Int64_ptr_returns_Int8_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_Int64_ptr_returns_Int8_C = Int8 Function(
+    Pointer _arg0,
+    Pointer _arg1,
+    Pointer arg,
+    Int64 storageOrder,
+    Pointer error);
+typedef _call_ptr_ptr_ptr_Int64_ptr_returns_Int8_Dart = int Function(
     Pointer _arg0, Pointer _arg1, Pointer arg, int storageOrder, Pointer error);
 
-final _call_objc_p_p_p_Int64_p_returns_p = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_p_Int64_p_returns_p_C,
-    _call_objc_p_p_p_Int64_p_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_Int64_p_returns_p_C = Pointer Function(Pointer _arg0,
-    Pointer _arg1, Pointer arg, Int64 dataType, Pointer shapeConstraint);
-typedef _call_objc_p_p_p_Int64_p_returns_p_Dart = Pointer Function(
+final _call_ptr_ptr_ptr_Int64_ptr_returns_ptr = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_Int64_ptr_returns_ptr_C,
+        _call_ptr_ptr_ptr_Int64_ptr_returns_ptr_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_Int64_ptr_returns_ptr_C = Pointer Function(
+    Pointer _arg0,
+    Pointer _arg1,
+    Pointer arg,
+    Int64 dataType,
+    Pointer shapeConstraint);
+typedef _call_ptr_ptr_ptr_Int64_ptr_returns_ptr_Dart = Pointer Function(
     Pointer _arg0,
     Pointer _arg1,
     Pointer arg,
     int dataType,
     Pointer shapeConstraint);
 
-final _call_objc_p_p_p_Int64_returns_p = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_p_Int64_returns_p_C,
-    _call_objc_p_p_p_Int64_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_Int64_returns_p_C = Pointer Function(
+final _call_ptr_ptr_ptr_Int64_returns_ptr = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_Int64_returns_ptr_C,
+        _call_ptr_ptr_ptr_Int64_returns_ptr_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_Int64_returns_ptr_C = Pointer Function(
     Pointer _arg0, Pointer _arg1, Pointer arg, Int64 type);
-typedef _call_objc_p_p_p_Int64_returns_p_Dart = Pointer Function(
+typedef _call_ptr_ptr_ptr_Int64_returns_ptr_Dart = Pointer Function(
     Pointer _arg0, Pointer _arg1, Pointer arg, int type);
 
-final _call_objc_p_p_p_Int64_returns_void = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_p_Int64_returns_void_C,
-        _call_objc_p_p_p_Int64_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_Int64_returns_void_C = Void Function(
+final _call_ptr_ptr_ptr_Int64_returns_void = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_Int64_returns_void_C,
+        _call_ptr_ptr_ptr_Int64_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_Int64_returns_void_C = Void Function(
     Pointer _arg0, Pointer _arg1, Pointer arg, Int64 atIndexedSubscript);
-typedef _call_objc_p_p_p_Int64_returns_void_Dart = void Function(
+typedef _call_ptr_ptr_ptr_Int64_returns_void_Dart = void Function(
     Pointer _arg0, Pointer _arg1, Pointer arg, int atIndexedSubscript);
 
-final _call_objc_p_p_p_Int8_Int8_Uint64_p_returns_p = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_p_Int8_Int8_Uint64_p_returns_p_C,
-        _call_objc_p_p_p_Int8_Int8_Uint64_p_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_Int8_Int8_Uint64_p_returns_p_C = Pointer Function(
-    Pointer _arg0,
-    Pointer _arg1,
-    Pointer arg,
-    Int8 freeOnDealloc,
-    Int8 isInputSizeLowerBoundOnly,
-    Uint64 inputSize,
-    Pointer classLabels);
-typedef _call_objc_p_p_p_Int8_Int8_Uint64_p_returns_p_Dart = Pointer Function(
-    Pointer _arg0,
-    Pointer _arg1,
-    Pointer arg,
-    int freeOnDealloc,
-    int isInputSizeLowerBoundOnly,
-    int inputSize,
-    Pointer classLabels);
-
-final _call_objc_p_p_p_Int8_Int8_Uint64_returns_p = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_p_Int8_Int8_Uint64_returns_p_C,
-        _call_objc_p_p_p_Int8_Int8_Uint64_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_Int8_Int8_Uint64_returns_p_C = Pointer Function(
-    Pointer _arg0,
-    Pointer _arg1,
-    Pointer arg,
-    Int8 freeOnDealloc,
-    Int8 isInputSizeLowerBoundOnly,
-    Uint64 inputSize);
-typedef _call_objc_p_p_p_Int8_Int8_Uint64_returns_p_Dart = Pointer Function(
-    Pointer _arg0,
-    Pointer _arg1,
-    Pointer arg,
-    int freeOnDealloc,
-    int isInputSizeLowerBoundOnly,
-    int inputSize);
-
-final _call_objc_p_p_p_Int8_p_returns_Int8 = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_p_Int8_p_returns_Int8_C,
-        _call_objc_p_p_p_Int8_p_returns_Int8_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_Int8_p_returns_Int8_C = Int8 Function(Pointer _arg0,
+final _call_ptr_ptr_ptr_Int8_ptr_returns_Int8 = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_Int8_ptr_returns_Int8_C,
+        _call_ptr_ptr_ptr_Int8_ptr_returns_Int8_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_Int8_ptr_returns_Int8_C = Int8 Function(Pointer _arg0,
     Pointer _arg1, Pointer arg, Int8 neuralNetworkInput, Pointer error);
-typedef _call_objc_p_p_p_Int8_p_returns_Int8_Dart = int Function(Pointer _arg0,
-    Pointer _arg1, Pointer arg, int neuralNetworkInput, Pointer error);
+typedef _call_ptr_ptr_ptr_Int8_ptr_returns_Int8_Dart = int Function(
+    Pointer _arg0,
+    Pointer _arg1,
+    Pointer arg,
+    int neuralNetworkInput,
+    Pointer error);
 
-final _call_objc_p_p_p_Uint64_p_returns_Int8 = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_p_Uint64_p_returns_Int8_C,
-        _call_objc_p_p_p_Uint64_p_returns_Int8_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_Uint64_p_returns_Int8_C = Int8 Function(
+final _call_ptr_ptr_ptr_Uint64_ptr_returns_Int8 = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_Uint64_ptr_returns_Int8_C,
+        _call_ptr_ptr_ptr_Uint64_ptr_returns_Int8_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_Uint64_ptr_returns_Int8_C = Int8 Function(
     Pointer _arg0, Pointer _arg1, Pointer arg, Uint64 destIndex, Pointer error);
-typedef _call_objc_p_p_p_Uint64_p_returns_Int8_Dart = int Function(
+typedef _call_ptr_ptr_ptr_Uint64_ptr_returns_Int8_Dart = int Function(
     Pointer _arg0, Pointer _arg1, Pointer arg, int destIndex, Pointer error);
 
-final _call_objc_p_p_p_Uint64_p_returns_p = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_p_Uint64_p_returns_p_C,
-        _call_objc_p_p_p_Uint64_p_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_Uint64_p_returns_p_C = Pointer Function(
+final _call_ptr_ptr_ptr_Uint64_ptr_returns_ptr = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_Uint64_ptr_returns_ptr_C,
+        _call_ptr_ptr_ptr_Uint64_ptr_returns_ptr_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_Uint64_ptr_returns_ptr_C = Pointer Function(
     Pointer _arg0, Pointer _arg1, Pointer arg, Uint64 topK, Pointer error);
-typedef _call_objc_p_p_p_Uint64_p_returns_p_Dart = Pointer Function(
+typedef _call_ptr_ptr_ptr_Uint64_ptr_returns_ptr_Dart = Pointer Function(
     Pointer _arg0, Pointer _arg1, Pointer arg, int topK, Pointer error);
 
-final _call_objc_p_p_p_Uint64_returns_p = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_p_Uint64_returns_p_C,
-    _call_objc_p_p_p_Uint64_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_Uint64_returns_p_C = Pointer Function(
+final _call_ptr_ptr_ptr_Uint64_returns_ptr = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_Uint64_returns_ptr_C,
+        _call_ptr_ptr_ptr_Uint64_returns_ptr_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_Uint64_returns_ptr_C = Pointer Function(
     Pointer _arg0, Pointer _arg1, Pointer arg, Uint64 elementSize);
-typedef _call_objc_p_p_p_Uint64_returns_p_Dart = Pointer Function(
+typedef _call_ptr_ptr_ptr_Uint64_returns_ptr_Dart = Pointer Function(
     Pointer _arg0, Pointer _arg1, Pointer arg, int elementSize);
 
-final _call_objc_p_p_p_Uint64_returns_void = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_p_Uint64_returns_void_C,
-        _call_objc_p_p_p_Uint64_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_Uint64_returns_void_C = Void Function(
+final _call_ptr_ptr_ptr_Uint64_returns_void = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_Uint64_returns_void_C,
+        _call_ptr_ptr_ptr_Uint64_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_Uint64_returns_void_C = Void Function(
     Pointer _arg0, Pointer _arg1, Pointer arg, Uint64 atOffset);
-typedef _call_objc_p_p_p_Uint64_returns_void_Dart = void Function(
+typedef _call_ptr_ptr_ptr_Uint64_returns_void_Dart = void Function(
     Pointer _arg0, Pointer _arg1, Pointer arg, int atOffset);
 
-final _call_objc_p_p_p_p_Int32_p_p_returns_p = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_p_p_Int32_p_p_returns_p_C,
-        _call_objc_p_p_p_p_Int32_p_p_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_p_Int32_p_p_returns_p_C = Pointer Function(
+final _call_ptr_ptr_ptr_ptr_Int32_ptr_ptr_returns_ptr = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_ptr_Int32_ptr_ptr_returns_ptr_C,
+        _call_ptr_ptr_ptr_ptr_Int32_ptr_ptr_returns_ptr_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_ptr_Int32_ptr_ptr_returns_ptr_C = Pointer Function(
     Pointer _arg0,
     Pointer _arg1,
     Pointer arg,
@@ -11301,7 +9727,7 @@ typedef _call_objc_p_p_p_p_Int32_p_p_returns_p_C = Pointer Function(
     Int32 featureExtractorType,
     Pointer configuration,
     Pointer error);
-typedef _call_objc_p_p_p_p_Int32_p_p_returns_p_Dart = Pointer Function(
+typedef _call_ptr_ptr_ptr_ptr_Int32_ptr_ptr_returns_ptr_Dart = Pointer Function(
     Pointer _arg0,
     Pointer _arg1,
     Pointer arg,
@@ -11310,52 +9736,45 @@ typedef _call_objc_p_p_p_p_Int32_p_p_returns_p_Dart = Pointer Function(
     Pointer configuration,
     Pointer error);
 
-final _call_objc_p_p_p_p_Int64_p_p_p_returns_p = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_p_p_Int64_p_p_p_returns_p_C,
-        _call_objc_p_p_p_p_Int64_p_p_p_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_p_Int64_p_p_p_returns_p_C = Pointer Function(
-    Pointer _arg0,
-    Pointer _arg1,
-    Pointer arg,
-    Pointer shape,
-    Int64 dataType,
-    Pointer strides,
-    Pointer deallocator,
-    Pointer error);
-typedef _call_objc_p_p_p_p_Int64_p_p_p_returns_p_Dart = Pointer Function(
-    Pointer _arg0,
-    Pointer _arg1,
-    Pointer arg,
-    Pointer shape,
-    int dataType,
-    Pointer strides,
-    Pointer deallocator,
-    Pointer error);
+final _call_ptr_ptr_ptr_ptr_Int64_ptr_ptr_ptr_returns_ptr =
+    _objc.dlForObjectiveC.lookupFunction<
+            _call_ptr_ptr_ptr_ptr_Int64_ptr_ptr_ptr_returns_ptr_C,
+            _call_ptr_ptr_ptr_ptr_Int64_ptr_ptr_ptr_returns_ptr_Dart>(
+        "objc_msgSend");
+typedef _call_ptr_ptr_ptr_ptr_Int64_ptr_ptr_ptr_returns_ptr_C
+    = Pointer Function(Pointer _arg0, Pointer _arg1, Pointer arg, Pointer shape,
+        Int64 dataType, Pointer strides, Pointer deallocator, Pointer error);
+typedef _call_ptr_ptr_ptr_ptr_Int64_ptr_ptr_ptr_returns_ptr_Dart
+    = Pointer Function(Pointer _arg0, Pointer _arg1, Pointer arg, Pointer shape,
+        int dataType, Pointer strides, Pointer deallocator, Pointer error);
 
-final _call_objc_p_p_p_p_Int64_returns_float64 = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_p_p_Int64_returns_float64_C,
-        _call_objc_p_p_p_p_Int64_returns_float64_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_p_Int64_returns_float64_C = Float Function(
+final _call_ptr_ptr_ptr_ptr_Int64_returns_float64 = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_ptr_Int64_returns_float64_C,
+        _call_ptr_ptr_ptr_ptr_Int64_returns_float64_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_ptr_Int64_returns_float64_C = Float Function(
     Pointer _arg0, Pointer _arg1, Pointer arg, Pointer forName, Int64 withType);
-typedef _call_objc_p_p_p_p_Int64_returns_float64_Dart = double Function(
+typedef _call_ptr_ptr_ptr_ptr_Int64_returns_float64_Dart = double Function(
     Pointer _arg0, Pointer _arg1, Pointer arg, Pointer forName, int withType);
 
-final _call_objc_p_p_p_p_Int8_Int8_p_p_p_p_p_returns_p = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_p_p_Int8_Int8_p_p_p_p_p_returns_p_C,
-        _call_objc_p_p_p_p_Int8_Int8_p_p_p_p_p_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_p_Int8_Int8_p_p_p_p_p_returns_p_C = Pointer Function(
-    Pointer _arg0,
-    Pointer _arg1,
-    Pointer arg,
-    Pointer dataTransformerName,
-    Int8 ouputSparse,
-    Int8 handleUnknown,
-    Pointer inputDescription,
-    Pointer outputDescription,
-    Pointer orderedInputFeatureNames,
-    Pointer orderedOutputFeatureNames,
-    Pointer configuration);
-typedef _call_objc_p_p_p_p_Int8_Int8_p_p_p_p_p_returns_p_Dart
+final _call_ptr_ptr_ptr_ptr_Int8_Int8_ptr_ptr_ptr_ptr_ptr_returns_ptr =
+    _objc.dlForObjectiveC.lookupFunction<
+            _call_ptr_ptr_ptr_ptr_Int8_Int8_ptr_ptr_ptr_ptr_ptr_returns_ptr_C,
+            _call_ptr_ptr_ptr_ptr_Int8_Int8_ptr_ptr_ptr_ptr_ptr_returns_ptr_Dart>(
+        "objc_msgSend");
+typedef _call_ptr_ptr_ptr_ptr_Int8_Int8_ptr_ptr_ptr_ptr_ptr_returns_ptr_C
+    = Pointer Function(
+        Pointer _arg0,
+        Pointer _arg1,
+        Pointer arg,
+        Pointer dataTransformerName,
+        Int8 ouputSparse,
+        Int8 handleUnknown,
+        Pointer inputDescription,
+        Pointer outputDescription,
+        Pointer orderedInputFeatureNames,
+        Pointer orderedOutputFeatureNames,
+        Pointer configuration);
+typedef _call_ptr_ptr_ptr_ptr_Int8_Int8_ptr_ptr_ptr_ptr_ptr_returns_ptr_Dart
     = Pointer Function(
         Pointer _arg0,
         Pointer _arg1,
@@ -11369,12 +9788,17 @@ typedef _call_objc_p_p_p_p_Int8_Int8_p_p_p_p_p_returns_p_Dart
         Pointer orderedOutputFeatureNames,
         Pointer configuration);
 
-final _call_objc_p_p_p_p_Int8_p_returns_p = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_p_p_Int8_p_returns_p_C,
-        _call_objc_p_p_p_p_Int8_p_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_p_Int8_p_returns_p_C = Pointer Function(Pointer _arg0,
-    Pointer _arg1, Pointer arg, Pointer shape, Int8 squeeze, Pointer error);
-typedef _call_objc_p_p_p_p_Int8_p_returns_p_Dart = Pointer Function(
+final _call_ptr_ptr_ptr_ptr_Int8_ptr_returns_ptr = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_ptr_Int8_ptr_returns_ptr_C,
+        _call_ptr_ptr_ptr_ptr_Int8_ptr_returns_ptr_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_ptr_Int8_ptr_returns_ptr_C = Pointer Function(
+    Pointer _arg0,
+    Pointer _arg1,
+    Pointer arg,
+    Pointer shape,
+    Int8 squeeze,
+    Pointer error);
+typedef _call_ptr_ptr_ptr_ptr_Int8_ptr_returns_ptr_Dart = Pointer Function(
     Pointer _arg0,
     Pointer _arg1,
     Pointer arg,
@@ -11382,52 +9806,18 @@ typedef _call_objc_p_p_p_p_Int8_p_returns_p_Dart = Pointer Function(
     int squeeze,
     Pointer error);
 
-final _call_objc_p_p_p_p_Uint64_p_returns_Int8 = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_p_p_Uint64_p_returns_Int8_C,
-        _call_objc_p_p_p_p_Uint64_p_returns_Int8_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_p_Uint64_p_returns_Int8_C = Int8 Function(
-    Pointer _arg0,
-    Pointer _arg1,
-    Pointer arg,
-    Pointer allocatedImageData,
-    Uint64 bufferIndex,
-    Pointer error);
-typedef _call_objc_p_p_p_p_Uint64_p_returns_Int8_Dart = int Function(
-    Pointer _arg0,
-    Pointer _arg1,
-    Pointer arg,
-    Pointer allocatedImageData,
-    int bufferIndex,
-    Pointer error);
-
-final _call_objc_p_p_p_p_Uint64_returns_Uint64 = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_p_p_Uint64_returns_Uint64_C,
-        _call_objc_p_p_p_p_Uint64_returns_Uint64_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_p_Uint64_returns_Uint64_C = Uint64 Function(
-    Pointer _arg0, Pointer _arg1, Pointer arg, Pointer objects, Uint64 count);
-typedef _call_objc_p_p_p_p_Uint64_returns_Uint64_Dart = int Function(
-    Pointer _arg0, Pointer _arg1, Pointer arg, Pointer objects, int count);
-
-final _call_objc_p_p_p_p_Uint64_returns_p = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_p_p_Uint64_returns_p_C,
-        _call_objc_p_p_p_p_Uint64_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_p_Uint64_returns_p_C = Pointer Function(
+final _call_ptr_ptr_ptr_ptr_Uint64_returns_ptr = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_ptr_Uint64_returns_ptr_C,
+        _call_ptr_ptr_ptr_ptr_Uint64_returns_ptr_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_ptr_Uint64_returns_ptr_C = Pointer Function(
     Pointer _arg0, Pointer _arg1, Pointer arg, Pointer forKeys, Uint64 count);
-typedef _call_objc_p_p_p_p_Uint64_returns_p_Dart = Pointer Function(
+typedef _call_ptr_ptr_ptr_ptr_Uint64_returns_ptr_Dart = Pointer Function(
     Pointer _arg0, Pointer _arg1, Pointer arg, Pointer forKeys, int count);
 
-final _call_objc_p_p_p_p_Uint64_returns_void = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_p_p_Uint64_returns_void_C,
-        _call_objc_p_p_p_p_Uint64_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_p_Uint64_returns_void_C = Void Function(
-    Pointer _arg0, Pointer _arg1, Pointer arg, Pointer values, Uint64 count);
-typedef _call_objc_p_p_p_p_Uint64_returns_void_Dart = void Function(
-    Pointer _arg0, Pointer _arg1, Pointer arg, Pointer values, int count);
-
-final _call_objc_p_p_p_p_p_Int8_p_returns_p = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_p_p_p_Int8_p_returns_p_C,
-        _call_objc_p_p_p_p_p_Int8_p_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_p_p_Int8_p_returns_p_C = Pointer Function(
+final _call_ptr_ptr_ptr_ptr_ptr_Int8_ptr_returns_ptr = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_ptr_ptr_Int8_ptr_returns_ptr_C,
+        _call_ptr_ptr_ptr_ptr_ptr_Int8_ptr_returns_ptr_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_ptr_ptr_Int8_ptr_returns_ptr_C = Pointer Function(
     Pointer _arg0,
     Pointer _arg1,
     Pointer arg,
@@ -11435,7 +9825,7 @@ typedef _call_objc_p_p_p_p_p_Int8_p_returns_p_C = Pointer Function(
     Pointer shape,
     Int8 squeeze,
     Pointer error);
-typedef _call_objc_p_p_p_p_p_Int8_p_returns_p_Dart = Pointer Function(
+typedef _call_ptr_ptr_ptr_ptr_ptr_Int8_ptr_returns_ptr_Dart = Pointer Function(
     Pointer _arg0,
     Pointer _arg1,
     Pointer arg,
@@ -11444,294 +9834,307 @@ typedef _call_objc_p_p_p_p_p_Int8_p_returns_p_Dart = Pointer Function(
     int squeeze,
     Pointer error);
 
-final _call_objc_p_p_p_p_p_p_p_p_p_p_p_returns_p = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_p_p_p_p_p_p_p_p_p_returns_p_C,
-        _call_objc_p_p_p_p_p_p_p_p_p_p_p_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_p_p_p_p_p_p_p_p_returns_p_C = Pointer Function(
-    Pointer _arg0,
-    Pointer _arg1,
-    Pointer arg,
-    Pointer scaleValue,
-    Pointer dataTransformerName,
-    Pointer inputDescription,
-    Pointer outputDescription,
-    Pointer orderedInputFeatureNames,
-    Pointer orderedOutputFeatureNames,
-    Pointer configuration,
-    Pointer error);
-typedef _call_objc_p_p_p_p_p_p_p_p_p_p_p_returns_p_Dart = Pointer Function(
-    Pointer _arg0,
-    Pointer _arg1,
-    Pointer arg,
-    Pointer scaleValue,
-    Pointer dataTransformerName,
-    Pointer inputDescription,
-    Pointer outputDescription,
-    Pointer orderedInputFeatureNames,
-    Pointer orderedOutputFeatureNames,
-    Pointer configuration,
-    Pointer error);
-
-final _call_objc_p_p_p_p_p_p_p_p_p_p_returns_p = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_p_p_p_p_p_p_p_p_returns_p_C,
-        _call_objc_p_p_p_p_p_p_p_p_p_p_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_p_p_p_p_p_p_p_returns_p_C = Pointer Function(
-    Pointer _arg0,
-    Pointer _arg1,
-    Pointer arg,
-    Pointer dimensionEncoding,
-    Pointer dataTransformerName,
-    Pointer inputDescription,
-    Pointer outputDescription,
-    Pointer orderedInputFeatureNames,
-    Pointer orderedOutputFeatureNames,
-    Pointer configuration);
-typedef _call_objc_p_p_p_p_p_p_p_p_p_p_returns_p_Dart = Pointer Function(
-    Pointer _arg0,
-    Pointer _arg1,
-    Pointer arg,
-    Pointer dimensionEncoding,
-    Pointer dataTransformerName,
-    Pointer inputDescription,
-    Pointer outputDescription,
-    Pointer orderedInputFeatureNames,
-    Pointer orderedOutputFeatureNames,
-    Pointer configuration);
-
-final _call_objc_p_p_p_p_p_p_p_p_returns_p = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_p_p_p_p_p_p_returns_p_C,
-        _call_objc_p_p_p_p_p_p_p_p_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_p_p_p_p_p_returns_p_C = Pointer Function(
-    Pointer _arg0,
-    Pointer _arg1,
-    Pointer arg,
-    Pointer versionInfo,
-    Pointer interface,
-    Pointer metadata,
-    Pointer configuration,
-    Pointer error);
-typedef _call_objc_p_p_p_p_p_p_p_p_returns_p_Dart = Pointer Function(
-    Pointer _arg0,
-    Pointer _arg1,
-    Pointer arg,
-    Pointer versionInfo,
-    Pointer interface,
-    Pointer metadata,
-    Pointer configuration,
-    Pointer error);
-
-final _call_objc_p_p_p_p_p_p_p_returns_p = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_p_p_p_p_p_returns_p_C,
-    _call_objc_p_p_p_p_p_p_p_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_p_p_p_p_returns_p_C = Pointer Function(
-    Pointer _arg0,
-    Pointer _arg1,
-    Pointer arg,
-    Pointer interface,
-    Pointer metadata,
-    Pointer configuration,
-    Pointer error);
-typedef _call_objc_p_p_p_p_p_p_p_returns_p_Dart = Pointer Function(
-    Pointer _arg0,
-    Pointer _arg1,
-    Pointer arg,
-    Pointer interface,
-    Pointer metadata,
-    Pointer configuration,
-    Pointer error);
-
-final _call_objc_p_p_p_p_p_p_returns_p = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_p_p_p_p_returns_p_C,
-    _call_objc_p_p_p_p_p_p_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_p_p_p_returns_p_C = Pointer Function(
-    Pointer _arg0,
-    Pointer _arg1,
-    Pointer arg,
-    Pointer interface,
-    Pointer metadata,
-    Pointer error);
-typedef _call_objc_p_p_p_p_p_p_returns_p_Dart = Pointer Function(
-    Pointer _arg0,
-    Pointer _arg1,
-    Pointer arg,
-    Pointer interface,
-    Pointer metadata,
-    Pointer error);
-
-final _call_objc_p_p_p_p_p_p_returns_void = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_p_p_p_p_returns_void_C,
-        _call_objc_p_p_p_p_p_p_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_p_p_p_returns_void_C = Void Function(
-    Pointer _arg0,
-    Pointer _arg1,
-    Pointer arg,
-    Pointer toTarget,
-    Pointer options,
-    Pointer error);
-typedef _call_objc_p_p_p_p_p_p_returns_void_Dart = void Function(
-    Pointer _arg0,
-    Pointer _arg1,
-    Pointer arg,
-    Pointer toTarget,
-    Pointer options,
-    Pointer error);
-
-final _call_objc_p_p_p_p_p_returns_p = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_p_p_p_returns_p_C,
-    _call_objc_p_p_p_p_p_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_p_p_returns_p_C = Pointer Function(
-    Pointer _arg0, Pointer _arg1, Pointer arg, Pointer options, Pointer error);
-typedef _call_objc_p_p_p_p_p_returns_p_Dart = Pointer Function(
-    Pointer _arg0, Pointer _arg1, Pointer arg, Pointer options, Pointer error);
-
-final _call_objc_p_p_p_p_p_returns_void = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_p_p_p_returns_void_C,
-    _call_objc_p_p_p_p_p_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_p_p_returns_void_C = Void Function(Pointer _arg0,
-    Pointer _arg1, Pointer arg, Pointer inputTensors, Pointer outputTensors);
-typedef _call_objc_p_p_p_p_p_returns_void_Dart = void Function(Pointer _arg0,
-    Pointer _arg1, Pointer arg, Pointer inputTensors, Pointer outputTensors);
-
-final _call_objc_p_p_p_p_returns_Int8 = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_p_p_returns_Int8_C,
-    _call_objc_p_p_p_p_returns_Int8_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_p_returns_Int8_C = Int8 Function(
-    Pointer _arg0, Pointer _arg1, Pointer arg, Pointer error);
-typedef _call_objc_p_p_p_p_returns_Int8_Dart = int Function(
-    Pointer _arg0, Pointer _arg1, Pointer arg, Pointer error);
-
-final _call_objc_p_p_p_p_returns_float64 = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_p_p_returns_float64_C,
-    _call_objc_p_p_p_p_returns_float64_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_p_returns_float64_C = Float Function(
-    Pointer _arg0, Pointer _arg1, Pointer arg, Pointer error);
-typedef _call_objc_p_p_p_p_returns_float64_Dart = double Function(
-    Pointer _arg0, Pointer _arg1, Pointer arg, Pointer error);
-
-final _call_objc_p_p_p_p_returns_p = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_p_p_returns_p_C,
-    _call_objc_p_p_p_p_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_p_returns_p_C = Pointer Function(
-    Pointer _arg0, Pointer _arg1, Pointer arg, Pointer countRange);
-typedef _call_objc_p_p_p_p_returns_p_Dart = Pointer Function(
-    Pointer _arg0, Pointer _arg1, Pointer arg, Pointer countRange);
-
-final _call_objc_p_p_p_p_returns_void = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_p_p_returns_void_C,
-    _call_objc_p_p_p_p_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_p_returns_void_C = Void Function(
-    Pointer _arg0, Pointer _arg1, Pointer arg, Pointer dest);
-typedef _call_objc_p_p_p_p_returns_void_Dart = void Function(
-    Pointer _arg0, Pointer _arg1, Pointer arg, Pointer dest);
-
-final _call_objc_p_p_p_returns_Int32 = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_p_returns_Int32_C,
-    _call_objc_p_p_p_returns_Int32_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_returns_Int32_C = Int32 Function(
-    Pointer _arg0, Pointer _arg1, Pointer arg);
-typedef _call_objc_p_p_p_returns_Int32_Dart = int Function(
-    Pointer _arg0, Pointer _arg1, Pointer arg);
-
-final _call_objc_p_p_p_returns_Int8 = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_p_returns_Int8_C,
-    _call_objc_p_p_p_returns_Int8_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_returns_Int8_C = Int8 Function(
-    Pointer _arg0, Pointer _arg1, Pointer arg);
-typedef _call_objc_p_p_p_returns_Int8_Dart = int Function(
-    Pointer _arg0, Pointer _arg1, Pointer arg);
-
-final _call_objc_p_p_p_returns_Uint64 = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_p_returns_Uint64_C,
-    _call_objc_p_p_p_returns_Uint64_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_returns_Uint64_C = Uint64 Function(
-    Pointer _arg0, Pointer _arg1, Pointer arg);
-typedef _call_objc_p_p_p_returns_Uint64_Dart = int Function(
-    Pointer _arg0, Pointer _arg1, Pointer arg);
-
-final _call_objc_p_p_p_returns_float64 = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_p_returns_float64_C,
-    _call_objc_p_p_p_returns_float64_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_returns_float64_C = Float Function(
-    Pointer _arg0, Pointer _arg1, Pointer arg);
-typedef _call_objc_p_p_p_returns_float64_Dart = double Function(
-    Pointer _arg0, Pointer _arg1, Pointer arg);
-
-final _call_objc_p_p_p_returns_p = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_p_returns_p_C,
-    _call_objc_p_p_p_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_returns_p_C = Pointer Function(
-    Pointer _arg0, Pointer _arg1, Pointer arg);
-typedef _call_objc_p_p_p_returns_p_Dart = Pointer Function(
-    Pointer _arg0, Pointer _arg1, Pointer arg);
-
-final _call_objc_p_p_p_returns_void = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_p_returns_void_C,
-    _call_objc_p_p_p_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_returns_void_C = Void Function(
-    Pointer _arg0, Pointer _arg1, Pointer arg);
-typedef _call_objc_p_p_p_returns_void_Dart = void Function(
-    Pointer _arg0, Pointer _arg1, Pointer arg);
-
-final _call_objc_p_p_returns_Int32 = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_returns_Int32_C,
-    _call_objc_p_p_returns_Int32_Dart>("objc_msgSend");
-typedef _call_objc_p_p_returns_Int32_C = Int32 Function(
-    Pointer _arg0, Pointer _arg1);
-typedef _call_objc_p_p_returns_Int32_Dart = int Function(
-    Pointer _arg0, Pointer _arg1);
-
-final _call_objc_p_p_returns_Int64 = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_returns_Int64_C,
-    _call_objc_p_p_returns_Int64_Dart>("objc_msgSend");
-typedef _call_objc_p_p_returns_Int64_C = Int64 Function(
-    Pointer _arg0, Pointer _arg1);
-typedef _call_objc_p_p_returns_Int64_Dart = int Function(
-    Pointer _arg0, Pointer _arg1);
-
-final _call_objc_p_p_returns_Int8 = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_returns_Int8_C,
-    _call_objc_p_p_returns_Int8_Dart>("objc_msgSend");
-typedef _call_objc_p_p_returns_Int8_C = Int8 Function(
-    Pointer _arg0, Pointer _arg1);
-typedef _call_objc_p_p_returns_Int8_Dart = int Function(
-    Pointer _arg0, Pointer _arg1);
-
-final _call_objc_p_p_returns_Uint32 = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_returns_Uint32_C,
-    _call_objc_p_p_returns_Uint32_Dart>("objc_msgSend");
-typedef _call_objc_p_p_returns_Uint32_C = Uint32 Function(
-    Pointer _arg0, Pointer _arg1);
-typedef _call_objc_p_p_returns_Uint32_Dart = int Function(
-    Pointer _arg0, Pointer _arg1);
-
-final _call_objc_p_p_returns_Uint64 = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_returns_Uint64_C,
-    _call_objc_p_p_returns_Uint64_Dart>("objc_msgSend");
-typedef _call_objc_p_p_returns_Uint64_C = Uint64 Function(
-    Pointer _arg0, Pointer _arg1);
-typedef _call_objc_p_p_returns_Uint64_Dart = int Function(
-    Pointer _arg0, Pointer _arg1);
-
-final _call_objc_p_p_returns_float64 = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_returns_float64_C,
-    _call_objc_p_p_returns_float64_Dart>("objc_msgSend");
-typedef _call_objc_p_p_returns_float64_C = Float Function(
-    Pointer _arg0, Pointer _arg1);
-typedef _call_objc_p_p_returns_float64_Dart = double Function(
-    Pointer _arg0, Pointer _arg1);
-
-final _call_objc_p_p_returns_p = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_returns_p_C, _call_objc_p_p_returns_p_Dart>(
+final _call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr =
+    _objc.dlForObjectiveC.lookupFunction<
+            _call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr_C,
+            _call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr_Dart>(
         "objc_msgSend");
-typedef _call_objc_p_p_returns_p_C = Pointer Function(
+typedef _call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr_C
+    = Pointer Function(
+        Pointer _arg0,
+        Pointer _arg1,
+        Pointer arg,
+        Pointer scaleValue,
+        Pointer dataTransformerName,
+        Pointer inputDescription,
+        Pointer outputDescription,
+        Pointer orderedInputFeatureNames,
+        Pointer orderedOutputFeatureNames,
+        Pointer configuration,
+        Pointer error);
+typedef _call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr_Dart
+    = Pointer Function(
+        Pointer _arg0,
+        Pointer _arg1,
+        Pointer arg,
+        Pointer scaleValue,
+        Pointer dataTransformerName,
+        Pointer inputDescription,
+        Pointer outputDescription,
+        Pointer orderedInputFeatureNames,
+        Pointer orderedOutputFeatureNames,
+        Pointer configuration,
+        Pointer error);
+
+final _call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr =
+    _objc.dlForObjectiveC.lookupFunction<
+            _call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr_C,
+            _call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr_Dart>(
+        "objc_msgSend");
+typedef _call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr_C
+    = Pointer Function(
+        Pointer _arg0,
+        Pointer _arg1,
+        Pointer arg,
+        Pointer dimensionEncoding,
+        Pointer dataTransformerName,
+        Pointer inputDescription,
+        Pointer outputDescription,
+        Pointer orderedInputFeatureNames,
+        Pointer orderedOutputFeatureNames,
+        Pointer configuration);
+typedef _call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr_Dart
+    = Pointer Function(
+        Pointer _arg0,
+        Pointer _arg1,
+        Pointer arg,
+        Pointer dimensionEncoding,
+        Pointer dataTransformerName,
+        Pointer inputDescription,
+        Pointer outputDescription,
+        Pointer orderedInputFeatureNames,
+        Pointer orderedOutputFeatureNames,
+        Pointer configuration);
+
+final _call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr_C,
+        _call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr_C = Pointer Function(
+    Pointer _arg0,
+    Pointer _arg1,
+    Pointer arg,
+    Pointer shortDescription,
+    Pointer versionString,
+    Pointer author,
+    Pointer license,
+    Pointer creatorDefined);
+typedef _call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr_Dart
+    = Pointer Function(
+        Pointer _arg0,
+        Pointer _arg1,
+        Pointer arg,
+        Pointer shortDescription,
+        Pointer versionString,
+        Pointer author,
+        Pointer license,
+        Pointer creatorDefined);
+
+final _call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr_C,
+        _call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr_C = Pointer Function(
+    Pointer _arg0,
+    Pointer _arg1,
+    Pointer arg,
+    Pointer interface,
+    Pointer metadata,
+    Pointer configuration,
+    Pointer error);
+typedef _call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr_Dart = Pointer Function(
+    Pointer _arg0,
+    Pointer _arg1,
+    Pointer arg,
+    Pointer interface,
+    Pointer metadata,
+    Pointer configuration,
+    Pointer error);
+
+final _call_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr_C,
+        _call_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr_C = Pointer Function(
+    Pointer _arg0,
+    Pointer _arg1,
+    Pointer arg,
+    Pointer interface,
+    Pointer metadata,
+    Pointer error);
+typedef _call_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr_Dart = Pointer Function(
+    Pointer _arg0,
+    Pointer _arg1,
+    Pointer arg,
+    Pointer interface,
+    Pointer metadata,
+    Pointer error);
+
+final _call_ptr_ptr_ptr_ptr_ptr_ptr_returns_void = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_ptr_ptr_ptr_returns_void_C,
+        _call_ptr_ptr_ptr_ptr_ptr_ptr_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_ptr_ptr_ptr_returns_void_C = Void Function(
+    Pointer _arg0,
+    Pointer _arg1,
+    Pointer arg,
+    Pointer toTarget,
+    Pointer options,
+    Pointer error);
+typedef _call_ptr_ptr_ptr_ptr_ptr_ptr_returns_void_Dart = void Function(
+    Pointer _arg0,
+    Pointer _arg1,
+    Pointer arg,
+    Pointer toTarget,
+    Pointer options,
+    Pointer error);
+
+final _call_ptr_ptr_ptr_ptr_ptr_returns_ptr = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_ptr_ptr_returns_ptr_C,
+        _call_ptr_ptr_ptr_ptr_ptr_returns_ptr_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_ptr_ptr_returns_ptr_C = Pointer Function(
+    Pointer _arg0, Pointer _arg1, Pointer arg, Pointer options, Pointer error);
+typedef _call_ptr_ptr_ptr_ptr_ptr_returns_ptr_Dart = Pointer Function(
+    Pointer _arg0, Pointer _arg1, Pointer arg, Pointer options, Pointer error);
+
+final _call_ptr_ptr_ptr_ptr_ptr_returns_void = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_ptr_ptr_returns_void_C,
+        _call_ptr_ptr_ptr_ptr_ptr_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_ptr_ptr_returns_void_C = Void Function(Pointer _arg0,
+    Pointer _arg1, Pointer arg, Pointer inputTensors, Pointer outputTensors);
+typedef _call_ptr_ptr_ptr_ptr_ptr_returns_void_Dart = void Function(
+    Pointer _arg0,
+    Pointer _arg1,
+    Pointer arg,
+    Pointer inputTensors,
+    Pointer outputTensors);
+
+final _call_ptr_ptr_ptr_ptr_returns_Int8 = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_ptr_ptr_returns_Int8_C,
+    _call_ptr_ptr_ptr_ptr_returns_Int8_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_ptr_returns_Int8_C = Int8 Function(
+    Pointer _arg0, Pointer _arg1, Pointer arg, Pointer error);
+typedef _call_ptr_ptr_ptr_ptr_returns_Int8_Dart = int Function(
+    Pointer _arg0, Pointer _arg1, Pointer arg, Pointer error);
+
+final _call_ptr_ptr_ptr_ptr_returns_float64 = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_ptr_returns_float64_C,
+        _call_ptr_ptr_ptr_ptr_returns_float64_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_ptr_returns_float64_C = Float Function(
+    Pointer _arg0, Pointer _arg1, Pointer arg, Pointer error);
+typedef _call_ptr_ptr_ptr_ptr_returns_float64_Dart = double Function(
+    Pointer _arg0, Pointer _arg1, Pointer arg, Pointer error);
+
+final _call_ptr_ptr_ptr_ptr_returns_ptr = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_ptr_ptr_returns_ptr_C,
+    _call_ptr_ptr_ptr_ptr_returns_ptr_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_ptr_returns_ptr_C = Pointer Function(
+    Pointer _arg0, Pointer _arg1, Pointer arg, Pointer classLabels);
+typedef _call_ptr_ptr_ptr_ptr_returns_ptr_Dart = Pointer Function(
+    Pointer _arg0, Pointer _arg1, Pointer arg, Pointer classLabels);
+
+final _call_ptr_ptr_ptr_ptr_returns_void = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_ptr_ptr_returns_void_C,
+    _call_ptr_ptr_ptr_ptr_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_ptr_returns_void_C = Void Function(
+    Pointer _arg0, Pointer _arg1, Pointer arg, Pointer dest);
+typedef _call_ptr_ptr_ptr_ptr_returns_void_Dart = void Function(
+    Pointer _arg0, Pointer _arg1, Pointer arg, Pointer dest);
+
+final _call_ptr_ptr_ptr_returns_Int32 = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_ptr_returns_Int32_C,
+    _call_ptr_ptr_ptr_returns_Int32_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_returns_Int32_C = Int32 Function(
+    Pointer _arg0, Pointer _arg1, Pointer arg);
+typedef _call_ptr_ptr_ptr_returns_Int32_Dart = int Function(
+    Pointer _arg0, Pointer _arg1, Pointer arg);
+
+final _call_ptr_ptr_ptr_returns_Int8 = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_ptr_returns_Int8_C,
+    _call_ptr_ptr_ptr_returns_Int8_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_returns_Int8_C = Int8 Function(
+    Pointer _arg0, Pointer _arg1, Pointer arg);
+typedef _call_ptr_ptr_ptr_returns_Int8_Dart = int Function(
+    Pointer _arg0, Pointer _arg1, Pointer arg);
+
+final _call_ptr_ptr_ptr_returns_Uint64 = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_ptr_returns_Uint64_C,
+    _call_ptr_ptr_ptr_returns_Uint64_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_returns_Uint64_C = Uint64 Function(
+    Pointer _arg0, Pointer _arg1, Pointer arg);
+typedef _call_ptr_ptr_ptr_returns_Uint64_Dart = int Function(
+    Pointer _arg0, Pointer _arg1, Pointer arg);
+
+final _call_ptr_ptr_ptr_returns_float64 = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_ptr_returns_float64_C,
+    _call_ptr_ptr_ptr_returns_float64_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_returns_float64_C = Float Function(
+    Pointer _arg0, Pointer _arg1, Pointer arg);
+typedef _call_ptr_ptr_ptr_returns_float64_Dart = double Function(
+    Pointer _arg0, Pointer _arg1, Pointer arg);
+
+final _call_ptr_ptr_ptr_returns_ptr = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_ptr_returns_ptr_C,
+    _call_ptr_ptr_ptr_returns_ptr_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_returns_ptr_C = Pointer Function(
+    Pointer _arg0, Pointer _arg1, Pointer arg);
+typedef _call_ptr_ptr_ptr_returns_ptr_Dart = Pointer Function(
+    Pointer _arg0, Pointer _arg1, Pointer arg);
+
+final _call_ptr_ptr_ptr_returns_void = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_ptr_returns_void_C,
+    _call_ptr_ptr_ptr_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_returns_void_C = Void Function(
+    Pointer _arg0, Pointer _arg1, Pointer arg);
+typedef _call_ptr_ptr_ptr_returns_void_Dart = void Function(
+    Pointer _arg0, Pointer _arg1, Pointer arg);
+
+final _call_ptr_ptr_returns_Int32 = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_returns_Int32_C,
+    _call_ptr_ptr_returns_Int32_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_returns_Int32_C = Int32 Function(
     Pointer _arg0, Pointer _arg1);
-typedef _call_objc_p_p_returns_p_Dart = Pointer Function(
+typedef _call_ptr_ptr_returns_Int32_Dart = int Function(
     Pointer _arg0, Pointer _arg1);
 
-final _call_objc_p_p_returns_void = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_returns_void_C,
-    _call_objc_p_p_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_returns_void_C = Void Function(
+final _call_ptr_ptr_returns_Int64 = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_returns_Int64_C,
+    _call_ptr_ptr_returns_Int64_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_returns_Int64_C = Int64 Function(
     Pointer _arg0, Pointer _arg1);
-typedef _call_objc_p_p_returns_void_Dart = void Function(
+typedef _call_ptr_ptr_returns_Int64_Dart = int Function(
+    Pointer _arg0, Pointer _arg1);
+
+final _call_ptr_ptr_returns_Int8 = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_returns_Int8_C,
+    _call_ptr_ptr_returns_Int8_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_returns_Int8_C = Int8 Function(
+    Pointer _arg0, Pointer _arg1);
+typedef _call_ptr_ptr_returns_Int8_Dart = int Function(
+    Pointer _arg0, Pointer _arg1);
+
+final _call_ptr_ptr_returns_Uint32 = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_returns_Uint32_C,
+    _call_ptr_ptr_returns_Uint32_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_returns_Uint32_C = Uint32 Function(
+    Pointer _arg0, Pointer _arg1);
+typedef _call_ptr_ptr_returns_Uint32_Dart = int Function(
+    Pointer _arg0, Pointer _arg1);
+
+final _call_ptr_ptr_returns_Uint64 = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_returns_Uint64_C,
+    _call_ptr_ptr_returns_Uint64_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_returns_Uint64_C = Uint64 Function(
+    Pointer _arg0, Pointer _arg1);
+typedef _call_ptr_ptr_returns_Uint64_Dart = int Function(
+    Pointer _arg0, Pointer _arg1);
+
+final _call_ptr_ptr_returns_float64 = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_returns_float64_C,
+    _call_ptr_ptr_returns_float64_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_returns_float64_C = Float Function(
+    Pointer _arg0, Pointer _arg1);
+typedef _call_ptr_ptr_returns_float64_Dart = double Function(
+    Pointer _arg0, Pointer _arg1);
+
+final _call_ptr_ptr_returns_ptr = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_returns_ptr_C,
+    _call_ptr_ptr_returns_ptr_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_returns_ptr_C = Pointer Function(
+    Pointer _arg0, Pointer _arg1);
+typedef _call_ptr_ptr_returns_ptr_Dart = Pointer Function(
+    Pointer _arg0, Pointer _arg1);
+
+final _call_ptr_ptr_returns_void = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_returns_void_C,
+    _call_ptr_ptr_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_returns_void_C = Void Function(
+    Pointer _arg0, Pointer _arg1);
+typedef _call_ptr_ptr_returns_void_Dart = void Function(
     Pointer _arg0, Pointer _arg1);

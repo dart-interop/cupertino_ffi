@@ -18,7 +18,7 @@
 // OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE
 // OR OTHER DEALINGS IN THE SOFTWARE.
 
-/// C bindings for _Security_ framework in iOS/Mac OS X.
+/// Bindings for _Security_ framework in iOS/Mac OS X.
 library cupertino_ffi.security;
 
 export 'src/security/classes.dart';

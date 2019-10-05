@@ -71,6 +71,27 @@ typedef _class_getClassMethod_Dart = Pointer<Method> Function(
   Pointer<SEL> arg1,
 );
 
+/// C function 'class_createInstance'.
+Pointer class_createInstance(
+  Pointer<Klass> arg0,
+  int arg1,
+) {
+  return _class_createInstance(arg0, arg1);
+}
+
+final _class_createInstance_Dart _class_createInstance = dlForObjectiveC
+    .lookupFunction<_class_createInstance_C, _class_createInstance_Dart>(
+  "class_createInstance",
+);
+typedef _class_createInstance_C = Pointer Function(
+  Pointer<Klass> arg0,
+  IntPtr arg1,
+);
+typedef _class_createInstance_Dart = Pointer Function(
+  Pointer<Klass> arg0,
+  int arg1,
+);
+
 /// C function 'class_getImageName'.
 Pointer<Utf8> class_getImageName(
   Pointer<Klass> arg0,
@@ -150,6 +171,27 @@ typedef _class_getName_Dart = Pointer<Utf8> Function(
   Pointer<Klass> arg0,
 );
 
+/// C function 'class_getProperty'.
+Pointer<Property> class_getProperty(
+  Pointer<Klass> arg0,
+  Pointer<Utf8> arg1,
+) {
+  return _class_getProperty(arg0, arg1);
+}
+
+final _class_getProperty_Dart _class_getProperty = dlForObjectiveC
+    .lookupFunction<_class_getProperty_C, _class_getProperty_Dart>(
+  "class_getProperty",
+);
+typedef _class_getProperty_C = Pointer<Property> Function(
+  Pointer<Klass> arg0,
+  Pointer<Utf8> arg1,
+);
+typedef _class_getProperty_Dart = Pointer<Property> Function(
+  Pointer<Klass> arg0,
+  Pointer<Utf8> arg1,
+);
+
 /// C function 'class_respondsToSelector'.
 int class_respondsToSelector(
   Pointer<Klass> arg0,
@@ -170,6 +212,24 @@ typedef _class_respondsToSelector_C = Uint8 Function(
 typedef _class_respondsToSelector_Dart = int Function(
   Pointer<Klass> arg0,
   Pointer<SEL> arg1,
+);
+
+/// C function 'method_getName'.
+Pointer<SEL> method_getName(
+  Pointer<Method> arg0,
+) {
+  return _method_getName(arg0);
+}
+
+final _method_getName_Dart _method_getName =
+    dlForObjectiveC.lookupFunction<_method_getName_C, _method_getName_Dart>(
+  "method_getName",
+);
+typedef _method_getName_C = Pointer<SEL> Function(
+  Pointer<Method> arg0,
+);
+typedef _method_getName_Dart = Pointer<SEL> Function(
+  Pointer<Method> arg0,
 );
 
 /// C function 'method_copyArgumentType'.
@@ -211,45 +271,6 @@ typedef _method_copyReturnType_Dart = Pointer<Utf8> Function(
   Pointer<Method> arg0,
 );
 
-/// C function 'class_createInstance'.
-Pointer class_createInstance(
-  Pointer<Klass> arg0,
-  int arg1,
-) {
-  return _class_createInstance(arg0, arg1);
-}
-
-final _class_createInstance_Dart _class_createInstance = dlForObjectiveC
-    .lookupFunction<_class_createInstance_C, _class_createInstance_Dart>(
-  "class_createInstance",
-);
-typedef _class_createInstance_C = Pointer Function(
-  Pointer<Klass> arg0,
-  IntPtr arg1,
-);
-typedef _class_createInstance_Dart = Pointer Function(
-  Pointer<Klass> arg0,
-  int arg1,
-);
-
-/// C function 'method_getName'.
-Pointer<SEL> method_getName(
-  Pointer<Method> arg0,
-) {
-  return _method_getName(arg0);
-}
-
-final _method_getName_Dart _method_getName =
-    dlForObjectiveC.lookupFunction<_method_getName_C, _method_getName_Dart>(
-  "method_getName",
-);
-typedef _method_getName_C = Pointer<SEL> Function(
-  Pointer<Method> arg0,
-);
-typedef _method_getName_Dart = Pointer<SEL> Function(
-  Pointer<Method> arg0,
-);
-
 /// C function 'method_getNumberOfArguments'.
 int method_getNumberOfArguments(
   Pointer<Method> arg0,
@@ -287,6 +308,24 @@ typedef _objc_copyClassList_Dart = Pointer<Pointer<Klass>> Function(
   Pointer<Uint32> arg0,
 );
 
+/// C function 'objc_copyProtocolList'.
+Pointer<Pointer<Protocol>> objc_copyProtocolList(
+  Pointer<Uint32> arg0,
+) {
+  return _objc_copyProtocolList(arg0);
+}
+
+final _objc_copyProtocolList_Dart _objc_copyProtocolList = dlForObjectiveC
+    .lookupFunction<_objc_copyProtocolList_C, _objc_copyProtocolList_Dart>(
+  "objc_copyProtocolList",
+);
+typedef _objc_copyProtocolList_C = Pointer<Pointer<Protocol>> Function(
+  Pointer<Uint32> arg0,
+);
+typedef _objc_copyProtocolList_Dart = Pointer<Pointer<Protocol>> Function(
+  Pointer<Uint32> arg0,
+);
+
 /// C function 'objc_getClass'.
 Pointer<Klass> objc_getClass(
   Pointer<Utf8> arg0,
@@ -306,45 +345,61 @@ typedef _objc_getClass_Dart = Pointer<Klass> Function(
 );
 
 /// C function 'property_getName'.
-int property_getName(
-  Pointer<Klass> arg0,
-  int arg1,
+Pointer<Utf8> property_getName(
+  Pointer<Property> arg0,
 ) {
-  return _property_getName(arg0, arg1);
+  return _property_getName(arg0);
 }
 
 final _property_getName_Dart _property_getName =
     dlForObjectiveC.lookupFunction<_property_getName_C, _property_getName_Dart>(
   "property_getName",
 );
-typedef _property_getName_C = Uint32 Function(
-  Pointer<Klass> arg0,
-  Uint32 arg1,
+typedef _property_getName_C = Pointer<Utf8> Function(
+  Pointer<Property> arg0,
 );
-typedef _property_getName_Dart = int Function(
-  Pointer<Klass> arg0,
-  int arg1,
+typedef _property_getName_Dart = Pointer<Utf8> Function(
+  Pointer<Property> arg0,
+);
+
+/// C function 'property_getAttributeValue'.
+Pointer<Utf8> property_getAttributeValue(
+  Pointer<Property> arg0,
+  Pointer<Utf8> arg1,
+) {
+  return _property_getAttributeValue(arg0, arg1);
+}
+
+final _property_getAttributeValue_Dart _property_getAttributeValue =
+    dlForObjectiveC.lookupFunction<_property_getAttributeValue_C,
+        _property_getAttributeValue_Dart>(
+  "property_getAttributeValue",
+);
+typedef _property_getAttributeValue_C = Pointer<Utf8> Function(
+  Pointer<Property> arg0,
+  Pointer<Utf8> arg1,
+);
+typedef _property_getAttributeValue_Dart = Pointer<Utf8> Function(
+  Pointer<Property> arg0,
+  Pointer<Utf8> arg1,
 );
 
 /// C function 'protocol_getName'.
-int protocol_getName(
+Pointer<Utf8> protocol_getName(
   Pointer<Protocol> arg0,
-  int arg1,
 ) {
-  return _protocol_getName(arg0, arg1);
+  return _protocol_getName(arg0);
 }
 
 final _protocol_getName_Dart _protocol_getName =
     dlForObjectiveC.lookupFunction<_protocol_getName_C, _protocol_getName_Dart>(
   "protocol_getName",
 );
-typedef _protocol_getName_C = Uint32 Function(
+typedef _protocol_getName_C = Pointer<Utf8> Function(
   Pointer<Protocol> arg0,
-  Uint32 arg1,
 );
-typedef _protocol_getName_Dart = int Function(
+typedef _protocol_getName_Dart = Pointer<Utf8> Function(
   Pointer<Protocol> arg0,
-  int arg1,
 );
 
 /// C function 'sel_getName'.

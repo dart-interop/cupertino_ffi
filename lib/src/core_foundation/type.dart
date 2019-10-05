@@ -35,11 +35,8 @@ class CFType extends Struct<CFType> {
     if (value is bool) {
       return CFBoolean.fromDart(value).cast<CFType>();
     }
-    if (value is int) {
-      return CFNumber.fromDartInt(value).cast<CFType>();
-    }
-    if (value is double) {
-      return CFNumber.fromDartDouble(value).cast<CFType>();
+    if (value is num) {
+      return CFNumber.fromDart(value).cast<CFType>();
     }
     if (value is String) {
       return CFString.fromDart(value).cast<CFType>();

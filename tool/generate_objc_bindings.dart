@@ -10,6 +10,22 @@ void main() {
 }
 
 final libraries = [
+//  ObjcLibrary(
+//    productName: "Accounts",
+//    uri: "https://developer.apple.com/documentation/accounts?language=objc",
+//    generatedPath: "lib/accounts.dart",
+//    libraryName: "cupertino_ffi.accounts",
+//    libraryPath:
+//        "/System/Library/Frameworks/Accounts.framework/Versions/A/Accounts",
+//  ),
+//  ObjcLibrary(
+//    productName: "AppKit",
+//    uri: "https://developer.apple.com/documentation/appkit?language=objc",
+//    generatedPath: "lib/appkit.dart",
+//    libraryName: "cupertino_ffi.accounts",
+//    libraryPath:
+//        "/System/Library/Frameworks/AppKit.framework/Versions/A/AppKit",
+//  ),
   ObjcLibrary(
     productName: "CloudKit",
     uri: "https://developer.apple.com/documentation/cloudkit?language=objc",
@@ -52,6 +68,14 @@ final libraries = [
         "/System/Library/Frameworks/CoreSpotlight.framework/Versions/A/CoreSpotlight",
   ),
   ObjcLibrary(
+    productName: "Core WLAN",
+    uri: "https://developer.apple.com/documentation/corewlan?language=objc",
+    generatedPath: "lib/core_wlan.dart",
+    libraryName: "cupertino_ffi.core_wlan",
+    libraryPath:
+        "/System/Library/Frameworks/CoreWLAN.framework/Versions/A/CoreWLAN",
+  ),
+  ObjcLibrary(
     productName: "Contacts",
     uri: "https://developer.apple.com/documentation/contacts?language=objc",
     generatedPath: "lib/contacts.dart",
@@ -85,9 +109,31 @@ final libraries = [
     libraryName: "cupertino_ffi.foundation",
     libraryPath:
         "/System/Library/Frameworks/Foundation.framework/Versions/C/Foundation",
+    injection: """
+import 'package:cupertino_ffi/core_foundation.dart' show
+  CFNumber,
+  CFString;
+""",
+    injectionsByClass: {
+      "NSNumber": """
+  static Pointer<NSNumber> fromDart(num value) {
+    return CFNumber.fromDart(value).cast<NSNumber>();
+  }
+  static num toDart(Pointer<NSNumber> ptr) {
+    return CFNumber.toDart(ptr.cast<CFNumber>());
+  }
+""",
+      "NSString": """
+  static Pointer<NSString> fromDart(String s) {
+    return CFString.fromDart(s).cast<NSString>();
+  }
+  static String toDart(Pointer<NSString> ptr) {
+    return CFString.toDart(ptr.cast<CFString>());
+  }
+""",
+    },
   ),
 
-  // TODO: Add iOS library
 //  ObjcLibrary(
 //    productName: "HealthKit",
 //    uri: "https://developer.apple.com/documentation/healthkit?language=objc",
@@ -100,11 +146,20 @@ final libraries = [
   ObjcLibrary(
     productName: "HomeKit",
     uri: "https://developer.apple.com/documentation/homekit?language=objc",
-    generatedPath: "lib/healthkit.dart",
+    generatedPath: "lib/homekit.dart",
     libraryName: "cupertino_ffi.homekit",
     libraryPath:
         "/System/Library/PrivateFrameworks/HomeKit.framework/Versions/A/HomeKit",
   ),
+//  ObjcLibrary(
+//    productName: "Javascript Core",
+//    uri:
+//        "https://developer.apple.com/documentation/javascriptcore?language=objc",
+//    generatedPath: "lib/javascript_core.dart",
+//    libraryName: "cupertino_ffi.javascript_core",
+//    libraryPath:
+//        "/System/Library/Frameworks/JavascriptCore.framework/Versions/A/JavascriptCore",
+//  ),
   ObjcLibrary(
     productName: "Natural Language",
     uri:
@@ -115,12 +170,63 @@ final libraries = [
         "/System/Library/Frameworks/NaturalLanguage.framework/Versions/A/NaturalLanguage",
   ),
   ObjcLibrary(
+    productName: "NetworkExtension",
+    uri:
+        "https://developer.apple.com/documentation/networkextension?language=objc",
+    generatedPath: "lib/speech.dart",
+    libraryName: "cupertino_ffi.speech",
+    libraryPath:
+        "/System/Library/Frameworks/NetworkExtension.framework/Versions/A/NetworkExtension",
+  ),
+  ObjcLibrary(
     productName: "PassKit",
     uri: "https://developer.apple.com/documentation/passkit?language=objc",
     generatedPath: "lib/passkit.dart",
     libraryName: "cupertino_ffi.passkit",
     libraryPath:
         "/System/Library/PrivateFrameworks/PassKit.framework/Versions/A/PassKit",
+  ),
+  ObjcLibrary(
+    productName: "PreferencePanes",
+    uri:
+        "https://developer.apple.com/documentation/preferencepanes?language=objc",
+    generatedPath: "lib/preferencepanes.dart",
+    libraryName: "cupertino_ffi.preferencepanes",
+    libraryPath:
+        "/System/Library/Frameworks/PreferencePanes.framework/Versions/A/PreferencePanes",
+  ),
+  ObjcLibrary(
+    productName: "SafariServices",
+    uri:
+        "https://developer.apple.com/documentation/safariservices?language=objc",
+    generatedPath: "lib/safari_services.dart",
+    libraryName: "cupertino_ffi.safari_services",
+    libraryPath:
+        "/System/Library/Frameworks/SafariServices.framework/Versions/A/SafariServices",
+  ),
+//  ObjcLibrary(
+//    productName: "SiriKit",
+//    uri: "https://developer.apple.com/documentation/sirikit?language=objc",
+//    generatedPath: "lib/sirikit.dart",
+//    libraryName: "cupertino_ffi.sirikit",
+//    libraryPath:
+//        "/System/Library/Frameworks/SiriKit.framework/Versions/A/SiriKit",
+//  ),
+  ObjcLibrary(
+    productName: "Speech",
+    uri: "https://developer.apple.com/documentation/speech?language=objc",
+    generatedPath: "lib/speech.dart",
+    libraryName: "cupertino_ffi.speech",
+    libraryPath:
+        "/System/Library/PrivateFrameworks/Speech.framework/Versions/A/Speech",
+  ),
+  ObjcLibrary(
+    productName: "Social",
+    uri: "https://developer.apple.com/documentation/social?language=objc",
+    generatedPath: "lib/social.dart",
+    libraryName: "cupertino_ffi.social",
+    libraryPath:
+        "/System/Library/Frameworks/Social.framework/Versions/A/Social",
   ),
   ObjcLibrary(
     productName: "StoreKit",
@@ -137,6 +243,14 @@ final libraries = [
     libraryName: "cupertino_ffi.vision",
     libraryPath:
         "/System/Library/Frameworks/Vision.framework/Versions/A/Vision",
+  ),
+  ObjcLibrary(
+    productName: "WebKit",
+    uri: "https://developer.apple.com/documentation/webkit?language=objc",
+    generatedPath: "lib/webkit.dart",
+    libraryName: "cupertino_ffi.webkit",
+    libraryPath:
+        "/System/Library/Frameworks/WebKit.framework/Versions/A/WebKit",
   ),
 ];
 
@@ -174,8 +288,10 @@ class ObjcLibrary {
   final String libraryName;
   final String libraryPath;
   final String productName;
-  final Set<String> exports;
   final String uri;
+
+  final String injection;
+  final Map<String, String> injectionsByClass;
 
   ObjcLibrary({
     @required this.productName,
@@ -183,19 +299,22 @@ class ObjcLibrary {
     @required this.generatedPath,
     @required this.libraryName,
     @required this.libraryPath,
-    this.exports = const {},
+    this.injection = "",
+    this.injectionsByClass = const {},
   });
 
   void validate() {
     final library = LibraryMirror.getForPath(libraryPath);
     if (library == null) {
-      throw StateError("Library '$libraryPath' does have classes");
+      throw StateError("Library '$libraryPath' does not have any classes");
     }
   }
 
   String generateBindings() {
     final sb = StringBuffer();
     sb.writeln("""
+// AUTOMATICALLY GENERATED. DO NOT EDIT.
+
 /// Automatically generated API for [$productName]($uri).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
@@ -210,9 +329,6 @@ library $libraryName;
     for (var uri in imports.toList()..sort()) {
       sb.writeln("import '$uri';");
     }
-    for (var uri in exports) {
-      sb.writeln("export '$uri';");
-    }
     sb.writeln("""
 import 'package:cupertino_ffi/objective_c.dart' as _objc;
 export 'package:cupertino_ffi/core_foundation.dart' show
@@ -221,6 +337,7 @@ export 'package:cupertino_ffi/core_foundation.dart' show
   arcReturn,
   arcFieldGet,
   arcFieldSet;
+$injection
 
 bool _isDynamicLibraryOpened = false;
 
@@ -239,12 +356,8 @@ void _openDynamicLibrary() {
     final library = LibraryMirror.getForPath(libraryPath);
     for (var className in library.classes.keys.toList()..sort()) {
       final klass = library.classes[className];
-      try {
-        sb.writeln("""
+      sb.writeln("""
 
-/// Automatically generated API. Part of [$productName]($uri).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class $className extends Struct<$className> {
   factory $className._() { throw UnimplementedError(); }
@@ -253,9 +366,13 @@ class $className extends Struct<$className> {
     return _objc.allocate(\"$className\").cast<$className>();
   }
 """);
-      } catch (e, s) {
-        print(s);
+      final injection = injectionsByClass[className];
+      if (injection != null) {
+        sb.writeln(injection);
       }
+
+      // When selector is "x:y:z:", methodName is "x".
+      // For each methodName.
       for (var methodName in klass.methodsByName.keys.toList()..sort()) {
         final methods = klass.methodsByName[methodName];
         for (var method in methods) {
@@ -263,14 +380,28 @@ class $className extends Struct<$className> {
           if (!method.isInstanceMethod && !method.isClassMethod) {
             continue;
           }
+
+          // Call type
           final callType = _ObjcCallType(method);
           final callIdentifier = callType.toIdentifier();
           callers[callIdentifier] = callType;
 
+          // Return type
           final returnType = _toDartType(method.returnType);
-          final identifier = methods.length == 1
-              ? methodName
-              : method.selector.replaceAll(":", "\$");
+
+          // Method identifier
+          // (selector "x:y:z" --> identifier "x$y$z")
+          var selector = method.selector;
+          if (selector.endsWith(":")) {
+            final newSelector = selector.substring(0, selector.length - 1);
+            if (methods.every((m) => m.selector != newSelector)) {
+              selector = newSelector;
+            }
+          }
+          var identifier = selector.replaceAll(":", "\$");
+          if (methods.length == 1) {
+            identifier = method.dartIdentifier;
+          }
 
           // Begin parameters
           sb.writeln("  static $returnType $identifier(");
@@ -335,7 +466,11 @@ class $className extends Struct<$className> {
             sb.writeln("  ) {");
           }
           sb.writeln("    _openDynamicLibrary();");
-          sb.writeln("    return $callIdentifier(");
+          sb.write("    ");
+          if (method.returnType != "void") {
+            sb.write("return ");
+          }
+          sb.writeln("$callIdentifier(");
           if (method.isClassMethod) {
             sb.writeln("      _objc.getClass(\"$className\"),");
             sb.writeln("      _objc.getSelector(\"${method.selector}\"),");
@@ -399,7 +534,7 @@ class _ObjcCallType {
 
   String toIdentifier() {
     final sb = StringBuffer();
-    sb.write("_call_objc");
+    sb.write("_call");
 
     // Parameter types
     for (var parameter in method.parameters) {
@@ -416,7 +551,7 @@ class _ObjcCallType {
 
   static String _identifierFromType(String type) {
     if (type.startsWith("*")) {
-      return "p";
+      return "ptr";
     }
     return type;
   }
@@ -504,23 +639,11 @@ String _toCType(String s, {bool simple = false}) {
 }
 
 String _toDartType(String s, {bool simple = false}) {
-  if (s == "*void") {
-    return "Pointer";
-  }
-  if (s.startsWith("*")) {
-    // Is immediate type enough?
-    if (simple) {
-      return "Pointer";
-    }
-
-    // Note that we have to call _toCType, not _toDartType.
-    final rest = _toCType(s.substring(1));
-
-    return "Pointer<$rest>";
-  }
   switch (s.toLowerCase()) {
     case "void":
       return "void";
+    case "*void":
+      return "Pointer";
     case "int8":
       return "int";
     case "int16":
@@ -544,6 +667,17 @@ String _toDartType(String s, {bool simple = false}) {
     case "utf8":
       return "Utf8";
     default:
+      if (s.startsWith("*")) {
+        // Is immediate type enough?
+        if (simple) {
+          return "Pointer";
+        }
+
+        // Note that we have to call _toCType, not _toDartType.
+        final rest = _toCType(s.substring(1));
+
+        return "Pointer<$rest>";
+      }
       throw ArgumentError.value(s);
   }
 }

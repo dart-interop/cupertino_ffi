@@ -1,3 +1,5 @@
+// AUTOMATICALLY GENERATED. DO NOT EDIT.
+
 /// Automatically generated API for [Core Spotlight](https://developer.apple.com/documentation/corespotlight?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
@@ -21,9 +23,6 @@ void _openDynamicLibrary() {
   }
 }
 
-/// Automatically generated API. Part of [Core Spotlight](https://developer.apple.com/documentation/corespotlight?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class CSAttributeEvaluator extends Struct<CSAttributeEvaluator> {
   factory CSAttributeEvaluator._() {
@@ -38,7 +37,7 @@ class CSAttributeEvaluator extends Struct<CSAttributeEvaluator> {
     Pointer<CSAttributeEvaluator> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("attributeTokenCount"),
     );
@@ -48,14 +47,14 @@ class CSAttributeEvaluator extends Struct<CSAttributeEvaluator> {
     Pointer<CSAttributeEvaluator> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("dealloc"),
     );
   }
 
   static int
-      evaluateAttribute$ignoreSubtokens$skipTranscriptions$withFuzzyHandler$(
+      evaluateAttribute$ignoreSubtokens$skipTranscriptions$withFuzzyHandler(
     Pointer<CSAttributeEvaluator> _self,
     Pointer arg, {
     @required int ignoreSubtokens,
@@ -63,7 +62,7 @@ class CSAttributeEvaluator extends Struct<CSAttributeEvaluator> {
     @required Pointer withFuzzyHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_Int8_Int8_p_returns_Uint64(
+    return _call_ptr_ptr_ptr_Int8_Int8_ptr_returns_Uint64(
       _self,
       _objc.getSelector(
           "evaluateAttribute:ignoreSubtokens:skipTranscriptions:withFuzzyHandler:"),
@@ -74,14 +73,14 @@ class CSAttributeEvaluator extends Struct<CSAttributeEvaluator> {
     );
   }
 
-  static int evaluateAttribute$ignoreSubtokens$withHandler$(
+  static int evaluateAttribute$ignoreSubtokens$withHandler(
     Pointer<CSAttributeEvaluator> _self,
     Pointer arg, {
     @required int ignoreSubtokens,
     @required Pointer withHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_Int8_p_returns_Uint64(
+    return _call_ptr_ptr_ptr_Int8_ptr_returns_Uint64(
       _self,
       _objc.getSelector("evaluateAttribute:ignoreSubtokens:withHandler:"),
       arg,
@@ -90,7 +89,7 @@ class CSAttributeEvaluator extends Struct<CSAttributeEvaluator> {
     );
   }
 
-  static int evaluateAttribute$ignoreSubtokens$skipTranscriptions$withHandler$(
+  static int evaluateAttribute$ignoreSubtokens$skipTranscriptions$withHandler(
     Pointer<CSAttributeEvaluator> _self,
     Pointer arg, {
     @required int ignoreSubtokens,
@@ -98,7 +97,7 @@ class CSAttributeEvaluator extends Struct<CSAttributeEvaluator> {
     @required Pointer withHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_Int8_Int8_p_returns_Uint64(
+    return _call_ptr_ptr_ptr_Int8_Int8_ptr_returns_Uint64(
       _self,
       _objc.getSelector(
           "evaluateAttribute:ignoreSubtokens:skipTranscriptions:withHandler:"),
@@ -113,7 +112,7 @@ class CSAttributeEvaluator extends Struct<CSAttributeEvaluator> {
     Pointer<CSAttributeEvaluator> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("fuzzyMatching"),
     );
@@ -123,7 +122,7 @@ class CSAttributeEvaluator extends Struct<CSAttributeEvaluator> {
     Pointer<CSAttributeEvaluator> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("handler"),
     );
@@ -137,7 +136,7 @@ class CSAttributeEvaluator extends Struct<CSAttributeEvaluator> {
     @required int options,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_Uint8_Uint64_returns_p(
+    return _call_ptr_ptr_ptr_ptr_Uint8_Uint64_returns_ptr(
       _self,
       _objc.getSelector("initWithQuery:language:fuzzyThreshold:options:"),
       arg,
@@ -151,7 +150,7 @@ class CSAttributeEvaluator extends Struct<CSAttributeEvaluator> {
     Pointer<CSAttributeEvaluator> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("language"),
     );
@@ -161,7 +160,7 @@ class CSAttributeEvaluator extends Struct<CSAttributeEvaluator> {
     Pointer<CSAttributeEvaluator> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("matchOncePerTerm"),
     );
@@ -171,7 +170,7 @@ class CSAttributeEvaluator extends Struct<CSAttributeEvaluator> {
     Pointer<CSAttributeEvaluator> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("matcherCount"),
     );
@@ -181,7 +180,7 @@ class CSAttributeEvaluator extends Struct<CSAttributeEvaluator> {
     Pointer<CSAttributeEvaluator> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("matchers"),
     );
@@ -191,7 +190,7 @@ class CSAttributeEvaluator extends Struct<CSAttributeEvaluator> {
     Pointer<CSAttributeEvaluator> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("queryString"),
     );
@@ -201,7 +200,7 @@ class CSAttributeEvaluator extends Struct<CSAttributeEvaluator> {
     Pointer<CSAttributeEvaluator> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("queryTermCount"),
     );
@@ -211,7 +210,7 @@ class CSAttributeEvaluator extends Struct<CSAttributeEvaluator> {
     Pointer<CSAttributeEvaluator> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("queryTerms"),
     );
@@ -222,7 +221,7 @@ class CSAttributeEvaluator extends Struct<CSAttributeEvaluator> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Uint64_returns_void(
+    _call_ptr_ptr_Uint64_returns_void(
       _self,
       _objc.getSelector("setAttributeTokenCount:"),
       arg,
@@ -234,7 +233,7 @@ class CSAttributeEvaluator extends Struct<CSAttributeEvaluator> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setFuzzyMatching:"),
       arg,
@@ -246,7 +245,7 @@ class CSAttributeEvaluator extends Struct<CSAttributeEvaluator> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setHandler:"),
       arg,
@@ -258,7 +257,7 @@ class CSAttributeEvaluator extends Struct<CSAttributeEvaluator> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setLanguage:"),
       arg,
@@ -270,7 +269,7 @@ class CSAttributeEvaluator extends Struct<CSAttributeEvaluator> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setMatchOncePerTerm:"),
       arg,
@@ -282,7 +281,7 @@ class CSAttributeEvaluator extends Struct<CSAttributeEvaluator> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Uint64_returns_void(
+    _call_ptr_ptr_Uint64_returns_void(
       _self,
       _objc.getSelector("setMatcherCount:"),
       arg,
@@ -294,7 +293,7 @@ class CSAttributeEvaluator extends Struct<CSAttributeEvaluator> {
     Pointer<Pointer> arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setMatchers:"),
       arg,
@@ -306,7 +305,7 @@ class CSAttributeEvaluator extends Struct<CSAttributeEvaluator> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Uint64_returns_void(
+    _call_ptr_ptr_Uint64_returns_void(
       _self,
       _objc.getSelector("setQueryTermCount:"),
       arg,
@@ -318,7 +317,7 @@ class CSAttributeEvaluator extends Struct<CSAttributeEvaluator> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setTokenizedQueryTerms:"),
       arg,
@@ -330,7 +329,7 @@ class CSAttributeEvaluator extends Struct<CSAttributeEvaluator> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setTokenizer:"),
       arg,
@@ -341,7 +340,7 @@ class CSAttributeEvaluator extends Struct<CSAttributeEvaluator> {
     Pointer<CSAttributeEvaluator> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("tokenizedQueryTerms"),
     );
@@ -351,16 +350,13 @@ class CSAttributeEvaluator extends Struct<CSAttributeEvaluator> {
     Pointer<CSAttributeEvaluator> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("tokenizer"),
     );
   }
 }
 
-/// Automatically generated API. Part of [Core Spotlight](https://developer.apple.com/documentation/corespotlight?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class CSCoder extends Struct<CSCoder> {
   factory CSCoder._() {
@@ -375,7 +371,7 @@ class CSCoder extends Struct<CSCoder> {
     Pointer<CSCoder> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("beginArray"),
     );
@@ -385,7 +381,7 @@ class CSCoder extends Struct<CSCoder> {
     Pointer<CSCoder> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("beginDictionary"),
     );
@@ -396,20 +392,10 @@ class CSCoder extends Struct<CSCoder> {
     Pointer<Utf8> arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("beginType:"),
       arg,
-    );
-  }
-
-  static Pointer<Pointer> container(
-    Pointer<CSCoder> _self,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
-      _self,
-      _objc.getSelector("container"),
     );
   }
 
@@ -417,7 +403,7 @@ class CSCoder extends Struct<CSCoder> {
     Pointer<CSCoder> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("data"),
     );
@@ -427,7 +413,7 @@ class CSCoder extends Struct<CSCoder> {
     Pointer<CSCoder> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("dealloc"),
     );
@@ -438,7 +424,7 @@ class CSCoder extends Struct<CSCoder> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("encodeBool:"),
       arg,
@@ -451,7 +437,7 @@ class CSCoder extends Struct<CSCoder> {
     @required int length,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_Int64_returns_void(
+    _call_ptr_ptr_ptr_Int64_returns_void(
       _self,
       _objc.getSelector("encodeData:length:"),
       arg,
@@ -464,7 +450,7 @@ class CSCoder extends Struct<CSCoder> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int32_returns_void(
+    _call_ptr_ptr_Int32_returns_void(
       _self,
       _objc.getSelector("encodeInt32:"),
       arg,
@@ -476,21 +462,9 @@ class CSCoder extends Struct<CSCoder> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int64_returns_void(
+    _call_ptr_ptr_Int64_returns_void(
       _self,
       _objc.getSelector("encodeInt64:"),
-      arg,
-    );
-  }
-
-  static void encodeMDPlistObject(
-    Pointer<CSCoder> _self,
-    Pointer arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
-      _self,
-      _objc.getSelector("encodeMDPlistObject:"),
       arg,
     );
   }
@@ -500,33 +474,33 @@ class CSCoder extends Struct<CSCoder> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("encodeNSString:"),
       arg,
     );
   }
 
-  static void encodeObject$(
+  static void encodeObject(
     Pointer<CSCoder> _self,
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("encodeObject:"),
       arg,
     );
   }
 
-  static void encodeObject$forKey$keyLength$(
+  static void encodeObject$forKey$keyLength(
     Pointer<CSCoder> _self,
     Pointer arg, {
     @required Pointer<Utf8> forKey,
     @required int keyLength,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_Int64_returns_void(
+    _call_ptr_ptr_ptr_ptr_Int64_returns_void(
       _self,
       _objc.getSelector("encodeObject:forKey:keyLength:"),
       arg,
@@ -535,13 +509,13 @@ class CSCoder extends Struct<CSCoder> {
     );
   }
 
-  static void encodeString$length$(
+  static void encodeString$length(
     Pointer<CSCoder> _self,
     Pointer<Utf8> arg, {
     @required int length,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_Int64_returns_void(
+    _call_ptr_ptr_ptr_Int64_returns_void(
       _self,
       _objc.getSelector("encodeString:length:"),
       arg,
@@ -549,7 +523,7 @@ class CSCoder extends Struct<CSCoder> {
     );
   }
 
-  static void encodeString$stringLength$forKey$keyLength$(
+  static void encodeString$stringLength$forKey$keyLength(
     Pointer<CSCoder> _self,
     Pointer<Utf8> arg, {
     @required int stringLength,
@@ -557,7 +531,7 @@ class CSCoder extends Struct<CSCoder> {
     @required int keyLength,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_Int64_p_Int64_returns_void(
+    _call_ptr_ptr_ptr_Int64_ptr_Int64_returns_void(
       _self,
       _objc.getSelector("encodeString:stringLength:forKey:keyLength:"),
       arg,
@@ -567,12 +541,12 @@ class CSCoder extends Struct<CSCoder> {
     );
   }
 
-  static void encodeString$(
+  static void encodeString(
     Pointer<CSCoder> _self,
     Pointer<Utf8> arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("encodeString:"),
       arg,
@@ -583,7 +557,7 @@ class CSCoder extends Struct<CSCoder> {
     Pointer<CSCoder> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("endArray"),
     );
@@ -593,7 +567,7 @@ class CSCoder extends Struct<CSCoder> {
     Pointer<CSCoder> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("endDictionary"),
     );
@@ -603,7 +577,7 @@ class CSCoder extends Struct<CSCoder> {
     Pointer<CSCoder> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("endType"),
     );
@@ -613,7 +587,7 @@ class CSCoder extends Struct<CSCoder> {
     Pointer<CSCoder> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("finalized"),
     );
@@ -623,16 +597,13 @@ class CSCoder extends Struct<CSCoder> {
     Pointer<CSCoder> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("init"),
     );
   }
 }
 
-/// Automatically generated API. Part of [Core Spotlight](https://developer.apple.com/documentation/corespotlight?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class CSContactsWrapper extends Struct<CSContactsWrapper> {
   factory CSContactsWrapper._() {
@@ -647,7 +618,7 @@ class CSContactsWrapper extends Struct<CSContactsWrapper> {
     Pointer<CSContactsWrapper> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("CNContactEmailAddressKeyString"),
     );
@@ -657,16 +628,13 @@ class CSContactsWrapper extends Struct<CSContactsWrapper> {
     Pointer<CSContactsWrapper> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("CNContactPropertyClass"),
     );
   }
 }
 
-/// Automatically generated API. Part of [Core Spotlight](https://developer.apple.com/documentation/corespotlight?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class CSCustomAttributeKey extends Struct<CSCustomAttributeKey> {
   factory CSCustomAttributeKey._() {
@@ -677,23 +645,11 @@ class CSCustomAttributeKey extends Struct<CSCustomAttributeKey> {
     return _objc.allocate("CSCustomAttributeKey").cast<CSCustomAttributeKey>();
   }
 
-  static Pointer copyWithZone(
-    Pointer<CSCustomAttributeKey> _self,
-    Pointer<Pointer> arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
-      _self,
-      _objc.getSelector("copyWithZone:"),
-      arg,
-    );
-  }
-
   static Pointer description(
     Pointer<CSCustomAttributeKey> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("description"),
     );
@@ -704,7 +660,7 @@ class CSCustomAttributeKey extends Struct<CSCustomAttributeKey> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("encodeWithCoder:"),
       arg,
@@ -715,7 +671,7 @@ class CSCustomAttributeKey extends Struct<CSCustomAttributeKey> {
     Pointer<CSCustomAttributeKey> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("hash"),
     );
@@ -725,7 +681,7 @@ class CSCustomAttributeKey extends Struct<CSCustomAttributeKey> {
     Pointer<CSCustomAttributeKey> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("init"),
     );
@@ -736,7 +692,7 @@ class CSCustomAttributeKey extends Struct<CSCustomAttributeKey> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithCoder:"),
       arg,
@@ -744,7 +700,7 @@ class CSCustomAttributeKey extends Struct<CSCustomAttributeKey> {
   }
 
   static Pointer
-      initWithKeyName$searchable$searchableByDefault$unique$multiValued$(
+      initWithKeyName$searchable$searchableByDefault$unique$multiValued(
     Pointer<CSCustomAttributeKey> _self,
     Pointer arg, {
     @required int searchable,
@@ -753,7 +709,7 @@ class CSCustomAttributeKey extends Struct<CSCustomAttributeKey> {
     @required int multiValued,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_Int8_Int8_Int8_Int8_returns_p(
+    return _call_ptr_ptr_ptr_Int8_Int8_Int8_Int8_returns_ptr(
       _self,
       _objc.getSelector(
           "initWithKeyName:searchable:searchableByDefault:unique:multiValued:"),
@@ -765,12 +721,12 @@ class CSCustomAttributeKey extends Struct<CSCustomAttributeKey> {
     );
   }
 
-  static Pointer initWithKeyName$(
+  static Pointer initWithKeyName(
     Pointer<CSCustomAttributeKey> _self,
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithKeyName:"),
       arg,
@@ -782,7 +738,7 @@ class CSCustomAttributeKey extends Struct<CSCustomAttributeKey> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isEqual:"),
       arg,
@@ -793,7 +749,7 @@ class CSCustomAttributeKey extends Struct<CSCustomAttributeKey> {
     Pointer<CSCustomAttributeKey> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isMultiValued"),
     );
@@ -803,7 +759,7 @@ class CSCustomAttributeKey extends Struct<CSCustomAttributeKey> {
     Pointer<CSCustomAttributeKey> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isSearchable"),
     );
@@ -813,7 +769,7 @@ class CSCustomAttributeKey extends Struct<CSCustomAttributeKey> {
     Pointer<CSCustomAttributeKey> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isSearchableByDefault"),
     );
@@ -823,7 +779,7 @@ class CSCustomAttributeKey extends Struct<CSCustomAttributeKey> {
     Pointer<CSCustomAttributeKey> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isUnique"),
     );
@@ -833,7 +789,7 @@ class CSCustomAttributeKey extends Struct<CSCustomAttributeKey> {
     Pointer<CSCustomAttributeKey> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("keyName"),
     );
@@ -844,7 +800,7 @@ class CSCustomAttributeKey extends Struct<CSCustomAttributeKey> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setKeyName:"),
       arg,
@@ -856,7 +812,7 @@ class CSCustomAttributeKey extends Struct<CSCustomAttributeKey> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setMultiValued:"),
       arg,
@@ -868,7 +824,7 @@ class CSCustomAttributeKey extends Struct<CSCustomAttributeKey> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setSearchable:"),
       arg,
@@ -880,7 +836,7 @@ class CSCustomAttributeKey extends Struct<CSCustomAttributeKey> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setSearchableByDefault:"),
       arg,
@@ -892,7 +848,7 @@ class CSCustomAttributeKey extends Struct<CSCustomAttributeKey> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setUnique:"),
       arg,
@@ -900,9 +856,6 @@ class CSCustomAttributeKey extends Struct<CSCustomAttributeKey> {
   }
 }
 
-/// Automatically generated API. Part of [Core Spotlight](https://developer.apple.com/documentation/corespotlight?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class CSDataWrapper extends Struct<CSDataWrapper> {
   factory CSDataWrapper._() {
@@ -917,7 +870,7 @@ class CSDataWrapper extends Struct<CSDataWrapper> {
     Pointer<CSDataWrapper> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("data"),
     );
@@ -927,7 +880,7 @@ class CSDataWrapper extends Struct<CSDataWrapper> {
     Pointer<CSDataWrapper> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("dataPtr"),
     );
@@ -937,7 +890,7 @@ class CSDataWrapper extends Struct<CSDataWrapper> {
     Pointer<CSDataWrapper> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("dataSize"),
     );
@@ -947,7 +900,7 @@ class CSDataWrapper extends Struct<CSDataWrapper> {
     Pointer<CSDataWrapper> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("dealloc"),
     );
@@ -958,7 +911,7 @@ class CSDataWrapper extends Struct<CSDataWrapper> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithData:"),
       arg,
@@ -970,7 +923,7 @@ class CSDataWrapper extends Struct<CSDataWrapper> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithXPCValue:"),
       arg,
@@ -981,7 +934,7 @@ class CSDataWrapper extends Struct<CSDataWrapper> {
     Pointer<CSDataWrapper> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("mapSize"),
     );
@@ -991,7 +944,7 @@ class CSDataWrapper extends Struct<CSDataWrapper> {
     Pointer<CSDataWrapper> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("mapped"),
     );
@@ -1002,7 +955,7 @@ class CSDataWrapper extends Struct<CSDataWrapper> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Uint64_returns_void(
+    _call_ptr_ptr_Uint64_returns_void(
       _self,
       _objc.getSelector("setDataSize:"),
       arg,
@@ -1013,16 +966,13 @@ class CSDataWrapper extends Struct<CSDataWrapper> {
     Pointer<CSDataWrapper> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("xpcData"),
     );
   }
 }
 
-/// Automatically generated API. Part of [Core Spotlight](https://developer.apple.com/documentation/corespotlight?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class CSDecoder extends Struct<CSDecoder> {
   factory CSDecoder._() {
@@ -1037,19 +987,9 @@ class CSDecoder extends Struct<CSDecoder> {
     Pointer<CSDecoder> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("backingStore"),
-    );
-  }
-
-  static Pointer<Pointer> contentDeallocator(
-    Pointer<CSDecoder> _self,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
-      _self,
-      _objc.getSelector("contentDeallocator"),
     );
   }
 
@@ -1057,7 +997,7 @@ class CSDecoder extends Struct<CSDecoder> {
     Pointer<CSDecoder> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("data"),
     );
@@ -1067,7 +1007,7 @@ class CSDecoder extends Struct<CSDecoder> {
     Pointer<CSDecoder> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("dealloc"),
     );
@@ -1077,7 +1017,7 @@ class CSDecoder extends Struct<CSDecoder> {
     Pointer<CSDecoder> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("debugDescription"),
     );
@@ -1087,33 +1027,9 @@ class CSDecoder extends Struct<CSDecoder> {
     Pointer<CSDecoder> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("decode"),
-    );
-  }
-
-  static Pointer decodeObject(
-    Pointer<CSDecoder> _self,
-    Pointer arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
-      _self,
-      _objc.getSelector("decodeObject:"),
-      arg,
-    );
-  }
-
-  static Pointer decodeObjectNoCopy(
-    Pointer<CSDecoder> _self,
-    Pointer arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
-      _self,
-      _objc.getSelector("decodeObjectNoCopy:"),
-      arg,
     );
   }
 
@@ -1121,45 +1037,21 @@ class CSDecoder extends Struct<CSDecoder> {
     Pointer<CSDecoder> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("description"),
     );
   }
 
-  static Pointer initWithData$(
+  static Pointer initWithData(
     Pointer<CSDecoder> _self,
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithData:"),
       arg,
-    );
-  }
-
-  static Pointer initWithData$obj$(
-    Pointer<CSDecoder> _self,
-    Pointer arg, {
-    @required Pointer obj,
-  }) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_p(
-      _self,
-      _objc.getSelector("initWithData:obj:"),
-      arg,
-      obj,
-    );
-  }
-
-  static Pointer obj(
-    Pointer<CSDecoder> _self,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
-      _self,
-      _objc.getSelector("obj"),
     );
   }
 
@@ -1168,7 +1060,7 @@ class CSDecoder extends Struct<CSDecoder> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setBackingStore:"),
       arg,
@@ -1176,9 +1068,6 @@ class CSDecoder extends Struct<CSDecoder> {
   }
 }
 
-/// Automatically generated API. Part of [Core Spotlight](https://developer.apple.com/documentation/corespotlight?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class CSExtensionJobThrottle extends Struct<CSExtensionJobThrottle> {
   factory CSExtensionJobThrottle._() {
@@ -1195,7 +1084,7 @@ class CSExtensionJobThrottle extends Struct<CSExtensionJobThrottle> {
     Pointer<CSExtensionJobThrottle> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("countersByBundleID"),
     );
@@ -1206,7 +1095,7 @@ class CSExtensionJobThrottle extends Struct<CSExtensionJobThrottle> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithDictionary:"),
       arg,
@@ -1217,7 +1106,7 @@ class CSExtensionJobThrottle extends Struct<CSExtensionJobThrottle> {
     Pointer<CSExtensionJobThrottle> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("maxRetryCount"),
     );
@@ -1227,7 +1116,7 @@ class CSExtensionJobThrottle extends Struct<CSExtensionJobThrottle> {
     Pointer<CSExtensionJobThrottle> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("maxSecondsBetweenRetries"),
     );
@@ -1237,7 +1126,7 @@ class CSExtensionJobThrottle extends Struct<CSExtensionJobThrottle> {
     Pointer<CSExtensionJobThrottle> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("maxSecondsBetweenRetriesUnderMemoryPressure"),
     );
@@ -1247,7 +1136,7 @@ class CSExtensionJobThrottle extends Struct<CSExtensionJobThrottle> {
     Pointer<CSExtensionJobThrottle> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("minSecondsBetweenRetries"),
     );
@@ -1257,7 +1146,7 @@ class CSExtensionJobThrottle extends Struct<CSExtensionJobThrottle> {
     Pointer<CSExtensionJobThrottle> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("minSecondsBetweenRetriesUnderMemoryPressure"),
     );
@@ -1270,7 +1159,7 @@ class CSExtensionJobThrottle extends Struct<CSExtensionJobThrottle> {
     @required int memoryPressure,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_Int8_returns_Int64(
+    return _call_ptr_ptr_ptr_ptr_Int8_returns_Int64(
       _self,
       _objc
           .getSelector("nextDispatchTimeDeltaForExtension:job:memoryPressure:"),
@@ -1285,7 +1174,7 @@ class CSExtensionJobThrottle extends Struct<CSExtensionJobThrottle> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setCountersByBundleID:"),
       arg,
@@ -1297,7 +1186,7 @@ class CSExtensionJobThrottle extends Struct<CSExtensionJobThrottle> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Uint64_returns_void(
+    _call_ptr_ptr_Uint64_returns_void(
       _self,
       _objc.getSelector("setMaxRetryCount:"),
       arg,
@@ -1309,7 +1198,7 @@ class CSExtensionJobThrottle extends Struct<CSExtensionJobThrottle> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Uint64_returns_void(
+    _call_ptr_ptr_Uint64_returns_void(
       _self,
       _objc.getSelector("setMaxSecondsBetweenRetries:"),
       arg,
@@ -1321,7 +1210,7 @@ class CSExtensionJobThrottle extends Struct<CSExtensionJobThrottle> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Uint64_returns_void(
+    _call_ptr_ptr_Uint64_returns_void(
       _self,
       _objc.getSelector("setMaxSecondsBetweenRetriesUnderMemoryPressure:"),
       arg,
@@ -1333,7 +1222,7 @@ class CSExtensionJobThrottle extends Struct<CSExtensionJobThrottle> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Uint64_returns_void(
+    _call_ptr_ptr_Uint64_returns_void(
       _self,
       _objc.getSelector("setMinSecondsBetweenRetries:"),
       arg,
@@ -1345,7 +1234,7 @@ class CSExtensionJobThrottle extends Struct<CSExtensionJobThrottle> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Uint64_returns_void(
+    _call_ptr_ptr_Uint64_returns_void(
       _self,
       _objc.getSelector("setMinSecondsBetweenRetriesUnderMemoryPressure:"),
       arg,
@@ -1353,9 +1242,6 @@ class CSExtensionJobThrottle extends Struct<CSExtensionJobThrottle> {
   }
 }
 
-/// Automatically generated API. Part of [Core Spotlight](https://developer.apple.com/documentation/corespotlight?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class CSIndexConnection extends Struct<CSIndexConnection> {
   factory CSIndexConnection._() {
@@ -1372,7 +1258,7 @@ class CSIndexConnection extends Struct<CSIndexConnection> {
     @required int forID,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_Uint32_returns_void(
+    _call_ptr_ptr_ptr_Uint32_returns_void(
       _self,
       _objc.getSelector("addIndex:forID:"),
       arg,
@@ -1385,7 +1271,7 @@ class CSIndexConnection extends Struct<CSIndexConnection> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Uint32_returns_void(
+    _call_ptr_ptr_Uint32_returns_void(
       _self,
       _objc.getSelector("dropIndexID:"),
       arg,
@@ -1397,7 +1283,7 @@ class CSIndexConnection extends Struct<CSIndexConnection> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("handleError:"),
       arg,
@@ -1409,7 +1295,7 @@ class CSIndexConnection extends Struct<CSIndexConnection> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("handleReply:"),
       arg,
@@ -1421,7 +1307,7 @@ class CSIndexConnection extends Struct<CSIndexConnection> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Uint32_returns_p(
+    return _call_ptr_ptr_Uint32_returns_ptr(
       _self,
       _objc.getSelector("indexForID:"),
       arg,
@@ -1432,7 +1318,7 @@ class CSIndexConnection extends Struct<CSIndexConnection> {
     Pointer<CSIndexConnection> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("indexMap"),
     );
@@ -1442,7 +1328,7 @@ class CSIndexConnection extends Struct<CSIndexConnection> {
     Pointer<CSIndexConnection> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("previouslyInitialized"),
     );
@@ -1454,7 +1340,7 @@ class CSIndexConnection extends Struct<CSIndexConnection> {
     @required Pointer completion,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("sendMessageAsync:completion:"),
       arg,
@@ -1463,9 +1349,6 @@ class CSIndexConnection extends Struct<CSIndexConnection> {
   }
 }
 
-/// Automatically generated API. Part of [Core Spotlight](https://developer.apple.com/documentation/corespotlight?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class CSIndexExtensionRequestHandler
     extends Struct<CSIndexExtensionRequestHandler> {
@@ -1484,7 +1367,7 @@ class CSIndexExtensionRequestHandler
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("beginRequestWithExtensionContext:"),
       arg,
@@ -1495,7 +1378,7 @@ class CSIndexExtensionRequestHandler
     Pointer<CSIndexExtensionRequestHandler> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("dealloc"),
     );
@@ -1508,7 +1391,7 @@ class CSIndexExtensionRequestHandler
     @required Pointer acknowledgementHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector(
           "index:reindexSearchableItemsWithIdentifiers:acknowledgementHandler:"),
@@ -1524,7 +1407,7 @@ class CSIndexExtensionRequestHandler
     @required Pointer acknowledgementHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector(
           "reindexAllSearchableItemsForIndex:acknowledgementHandler:"),
@@ -1534,13 +1417,13 @@ class CSIndexExtensionRequestHandler
   }
 
   static void
-      searchableIndex$reindexAllSearchableItemsWithAcknowledgementHandler$(
+      searchableIndex$reindexAllSearchableItemsWithAcknowledgementHandler(
     Pointer<CSIndexExtensionRequestHandler> _self,
     Pointer arg, {
     @required Pointer reindexAllSearchableItemsWithAcknowledgementHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector(
           "searchableIndex:reindexAllSearchableItemsWithAcknowledgementHandler:"),
@@ -1550,14 +1433,14 @@ class CSIndexExtensionRequestHandler
   }
 
   static void
-      searchableIndex$reindexSearchableItemsWithIdentifiers$acknowledgementHandler$(
+      searchableIndex$reindexSearchableItemsWithIdentifiers$acknowledgementHandler(
     Pointer<CSIndexExtensionRequestHandler> _self,
     Pointer arg, {
     @required Pointer reindexSearchableItemsWithIdentifiers,
     @required Pointer acknowledgementHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector(
           "searchableIndex:reindexSearchableItemsWithIdentifiers:acknowledgementHandler:"),
@@ -1572,7 +1455,7 @@ class CSIndexExtensionRequestHandler
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("searchableIndexDidFinishThrottle:"),
       arg,
@@ -1584,7 +1467,7 @@ class CSIndexExtensionRequestHandler
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("searchableIndexDidThrottle:"),
       arg,
@@ -1592,9 +1475,6 @@ class CSIndexExtensionRequestHandler
   }
 }
 
-/// Automatically generated API. Part of [Core Spotlight](https://developer.apple.com/documentation/corespotlight?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class CSIndexJob extends Struct<CSIndexJob> {
   factory CSIndexJob._() {
@@ -1609,21 +1489,9 @@ class CSIndexJob extends Struct<CSIndexJob> {
     Pointer<CSIndexJob> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("bundleIDs"),
-    );
-  }
-
-  static Pointer copyWithZone(
-    Pointer<CSIndexJob> _self,
-    Pointer<Pointer> arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
-      _self,
-      _objc.getSelector("copyWithZone:"),
-      arg,
     );
   }
 
@@ -1631,7 +1499,7 @@ class CSIndexJob extends Struct<CSIndexJob> {
     Pointer<CSIndexJob> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("description"),
     );
@@ -1642,7 +1510,7 @@ class CSIndexJob extends Struct<CSIndexJob> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("encodeWithCoder:"),
       arg,
@@ -1653,7 +1521,7 @@ class CSIndexJob extends Struct<CSIndexJob> {
     Pointer<CSIndexJob> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("excludedBundleIDs"),
     );
@@ -1663,7 +1531,7 @@ class CSIndexJob extends Struct<CSIndexJob> {
     Pointer<CSIndexJob> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("extensionBundleID"),
     );
@@ -1673,7 +1541,7 @@ class CSIndexJob extends Struct<CSIndexJob> {
     Pointer<CSIndexJob> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("hash"),
     );
@@ -1683,7 +1551,7 @@ class CSIndexJob extends Struct<CSIndexJob> {
     Pointer<CSIndexJob> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("identifiersToReindex"),
     );
@@ -1694,20 +1562,20 @@ class CSIndexJob extends Struct<CSIndexJob> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithCoder:"),
       arg,
     );
   }
 
-  static Pointer initWithJobType$jobOptions$(
+  static Pointer initWithJobType$jobOptions(
     Pointer<CSIndexJob> _self,
     int arg, {
     @required int jobOptions,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int64_Int64_returns_p(
+    return _call_ptr_ptr_Int64_Int64_returns_ptr(
       _self,
       _objc.getSelector("initWithJobType:jobOptions:"),
       arg,
@@ -1715,12 +1583,12 @@ class CSIndexJob extends Struct<CSIndexJob> {
     );
   }
 
-  static Pointer initWithJobType$(
+  static Pointer initWithJobType(
     Pointer<CSIndexJob> _self,
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int64_returns_p(
+    return _call_ptr_ptr_Int64_returns_ptr(
       _self,
       _objc.getSelector("initWithJobType:"),
       arg,
@@ -1732,7 +1600,7 @@ class CSIndexJob extends Struct<CSIndexJob> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithXPCDict:"),
       arg,
@@ -1744,7 +1612,7 @@ class CSIndexJob extends Struct<CSIndexJob> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isEqual:"),
       arg,
@@ -1755,7 +1623,7 @@ class CSIndexJob extends Struct<CSIndexJob> {
     Pointer<CSIndexJob> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int64(
+    return _call_ptr_ptr_returns_Int64(
       _self,
       _objc.getSelector("jobOptions"),
     );
@@ -1765,7 +1633,7 @@ class CSIndexJob extends Struct<CSIndexJob> {
     Pointer<CSIndexJob> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int64(
+    return _call_ptr_ptr_returns_Int64(
       _self,
       _objc.getSelector("jobType"),
     );
@@ -1775,7 +1643,7 @@ class CSIndexJob extends Struct<CSIndexJob> {
     Pointer<CSIndexJob> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("providerIdentifier"),
     );
@@ -1785,7 +1653,7 @@ class CSIndexJob extends Struct<CSIndexJob> {
     Pointer<CSIndexJob> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("providerType"),
     );
@@ -1796,7 +1664,7 @@ class CSIndexJob extends Struct<CSIndexJob> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setBundleIDs:"),
       arg,
@@ -1808,7 +1676,7 @@ class CSIndexJob extends Struct<CSIndexJob> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setExcludedBundleIDs:"),
       arg,
@@ -1820,7 +1688,7 @@ class CSIndexJob extends Struct<CSIndexJob> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setExtensionBundleID:"),
       arg,
@@ -1832,7 +1700,7 @@ class CSIndexJob extends Struct<CSIndexJob> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setIdentifiersToReindex:"),
       arg,
@@ -1844,7 +1712,7 @@ class CSIndexJob extends Struct<CSIndexJob> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int64_returns_void(
+    _call_ptr_ptr_Int64_returns_void(
       _self,
       _objc.getSelector("setJobOptions:"),
       arg,
@@ -1856,7 +1724,7 @@ class CSIndexJob extends Struct<CSIndexJob> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int64_returns_void(
+    _call_ptr_ptr_Int64_returns_void(
       _self,
       _objc.getSelector("setJobType:"),
       arg,
@@ -1868,7 +1736,7 @@ class CSIndexJob extends Struct<CSIndexJob> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setProviderIdentifier:"),
       arg,
@@ -1880,7 +1748,7 @@ class CSIndexJob extends Struct<CSIndexJob> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setProviderType:"),
       arg,
@@ -1891,16 +1759,13 @@ class CSIndexJob extends Struct<CSIndexJob> {
     Pointer<CSIndexJob> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("xpc_dictionary"),
     );
   }
 }
 
-/// Automatically generated API. Part of [Core Spotlight](https://developer.apple.com/documentation/corespotlight?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class CSIndexingQueue extends Struct<CSIndexingQueue> {
   factory CSIndexingQueue._() {
@@ -1915,7 +1780,7 @@ class CSIndexingQueue extends Struct<CSIndexingQueue> {
     Pointer<CSIndexingQueue> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("coalescingQueue"),
     );
@@ -1925,7 +1790,7 @@ class CSIndexingQueue extends Struct<CSIndexingQueue> {
     Pointer<CSIndexingQueue> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("coalescingTimer"),
     );
@@ -1935,7 +1800,7 @@ class CSIndexingQueue extends Struct<CSIndexingQueue> {
     Pointer<CSIndexingQueue> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("dealloc"),
     );
@@ -1945,7 +1810,7 @@ class CSIndexingQueue extends Struct<CSIndexingQueue> {
     Pointer<CSIndexingQueue> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("flush"),
     );
@@ -1955,7 +1820,7 @@ class CSIndexingQueue extends Struct<CSIndexingQueue> {
     Pointer<CSIndexingQueue> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_float64(
+    return _call_ptr_ptr_returns_float64(
       _self,
       _objc.getSelector("idleTime"),
     );
@@ -1965,7 +1830,7 @@ class CSIndexingQueue extends Struct<CSIndexingQueue> {
     Pointer<CSIndexingQueue> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_float64(
+    return _call_ptr_ptr_returns_float64(
       _self,
       _objc.getSelector("idleTimeLeeway"),
     );
@@ -1980,7 +1845,7 @@ class CSIndexingQueue extends Struct<CSIndexingQueue> {
     @required Pointer notifyBlock,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_float64_float64_Uint64_Int64_p_returns_p(
+    return _call_ptr_ptr_float64_float64_Uint64_Int64_ptr_returns_ptr(
       _self,
       _objc.getSelector(
           "initWithIdleTime:idleTimeLeeway:maximumBatchSize:mode:notifyBlock:"),
@@ -1998,7 +1863,7 @@ class CSIndexingQueue extends Struct<CSIndexingQueue> {
     @required Pointer notifyBlock,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int64_p_returns_p(
+    return _call_ptr_ptr_Int64_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithMode:notifyBlock:"),
       arg,
@@ -2010,7 +1875,7 @@ class CSIndexingQueue extends Struct<CSIndexingQueue> {
     Pointer<CSIndexingQueue> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("maximumBatchSize"),
     );
@@ -2020,7 +1885,7 @@ class CSIndexingQueue extends Struct<CSIndexingQueue> {
     Pointer<CSIndexingQueue> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int64(
+    return _call_ptr_ptr_returns_Int64(
       _self,
       _objc.getSelector("mode"),
     );
@@ -2030,7 +1895,7 @@ class CSIndexingQueue extends Struct<CSIndexingQueue> {
     Pointer<CSIndexingQueue> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("notifyBlock"),
     );
@@ -2041,7 +1906,7 @@ class CSIndexingQueue extends Struct<CSIndexingQueue> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("queueItem:"),
       arg,
@@ -2053,7 +1918,7 @@ class CSIndexingQueue extends Struct<CSIndexingQueue> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("queueItems:"),
       arg,
@@ -2064,7 +1929,7 @@ class CSIndexingQueue extends Struct<CSIndexingQueue> {
     Pointer<CSIndexingQueue> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("queuedItems"),
     );
@@ -2075,7 +1940,7 @@ class CSIndexingQueue extends Struct<CSIndexingQueue> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setCoalescingQueue:"),
       arg,
@@ -2087,7 +1952,7 @@ class CSIndexingQueue extends Struct<CSIndexingQueue> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setCoalescingTimer:"),
       arg,
@@ -2099,7 +1964,7 @@ class CSIndexingQueue extends Struct<CSIndexingQueue> {
     double arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_float64_returns_void(
+    _call_ptr_ptr_float64_returns_void(
       _self,
       _objc.getSelector("setIdleTime:"),
       arg,
@@ -2111,7 +1976,7 @@ class CSIndexingQueue extends Struct<CSIndexingQueue> {
     double arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_float64_returns_void(
+    _call_ptr_ptr_float64_returns_void(
       _self,
       _objc.getSelector("setIdleTimeLeeway:"),
       arg,
@@ -2123,7 +1988,7 @@ class CSIndexingQueue extends Struct<CSIndexingQueue> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Uint64_returns_void(
+    _call_ptr_ptr_Uint64_returns_void(
       _self,
       _objc.getSelector("setMaximumBatchSize:"),
       arg,
@@ -2135,7 +2000,7 @@ class CSIndexingQueue extends Struct<CSIndexingQueue> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int64_returns_void(
+    _call_ptr_ptr_Int64_returns_void(
       _self,
       _objc.getSelector("setMode:"),
       arg,
@@ -2147,7 +2012,7 @@ class CSIndexingQueue extends Struct<CSIndexingQueue> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setNotifyBlock:"),
       arg,
@@ -2159,7 +2024,7 @@ class CSIndexingQueue extends Struct<CSIndexingQueue> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setQueuedItems:"),
       arg,
@@ -2167,9 +2032,6 @@ class CSIndexingQueue extends Struct<CSIndexingQueue> {
   }
 }
 
-/// Automatically generated API. Part of [Core Spotlight](https://developer.apple.com/documentation/corespotlight?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class CSIntentsWrapper extends Struct<CSIntentsWrapper> {
   factory CSIntentsWrapper._() {
@@ -2184,16 +2046,13 @@ class CSIntentsWrapper extends Struct<CSIntentsWrapper> {
     Pointer<CSIntentsWrapper> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("INInteractionClass"),
     );
   }
 }
 
-/// Automatically generated API. Part of [Core Spotlight](https://developer.apple.com/documentation/corespotlight?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class CSLocalizedString extends Struct<CSLocalizedString> {
   factory CSLocalizedString._() {
@@ -2209,21 +2068,9 @@ class CSLocalizedString extends Struct<CSLocalizedString> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Uint64_returns_Uint16(
+    return _call_ptr_ptr_Uint64_returns_Uint16(
       _self,
       _objc.getSelector("characterAtIndex:"),
-      arg,
-    );
-  }
-
-  static Pointer copyWithZone(
-    Pointer<CSLocalizedString> _self,
-    Pointer<Pointer> arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
-      _self,
-      _objc.getSelector("copyWithZone:"),
       arg,
     );
   }
@@ -2232,7 +2079,7 @@ class CSLocalizedString extends Struct<CSLocalizedString> {
     Pointer<CSLocalizedString> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("defaultString"),
     );
@@ -2242,7 +2089,7 @@ class CSLocalizedString extends Struct<CSLocalizedString> {
     Pointer<CSLocalizedString> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("didTrySettingDefaultString"),
     );
@@ -2253,7 +2100,7 @@ class CSLocalizedString extends Struct<CSLocalizedString> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("encodeWithCSCoder:"),
       arg,
@@ -2265,24 +2112,10 @@ class CSLocalizedString extends Struct<CSLocalizedString> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("encodeWithCoder:"),
       arg,
-    );
-  }
-
-  static void getCharacters(
-    Pointer<CSLocalizedString> _self,
-    Pointer<Uint16> arg, {
-    @required Pointer range,
-  }) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
-      _self,
-      _objc.getSelector("getCharacters:range:"),
-      arg,
-      range,
     );
   }
 
@@ -2291,7 +2124,7 @@ class CSLocalizedString extends Struct<CSLocalizedString> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithCoder:"),
       arg,
@@ -2303,7 +2136,7 @@ class CSLocalizedString extends Struct<CSLocalizedString> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithLocalizedStrings:"),
       arg,
@@ -2314,7 +2147,7 @@ class CSLocalizedString extends Struct<CSLocalizedString> {
     Pointer<CSLocalizedString> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("length"),
     );
@@ -2324,7 +2157,7 @@ class CSLocalizedString extends Struct<CSLocalizedString> {
     Pointer<CSLocalizedString> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("localizedString"),
     );
@@ -2334,7 +2167,7 @@ class CSLocalizedString extends Struct<CSLocalizedString> {
     Pointer<CSLocalizedString> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("localizedStrings"),
     );
@@ -2345,7 +2178,7 @@ class CSLocalizedString extends Struct<CSLocalizedString> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setDidTrySettingDefaultString:"),
       arg,
@@ -2353,9 +2186,6 @@ class CSLocalizedString extends Struct<CSLocalizedString> {
   }
 }
 
-/// Automatically generated API. Part of [Core Spotlight](https://developer.apple.com/documentation/corespotlight?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class CSPerson extends Struct<CSPerson> {
   factory CSPerson._() {
@@ -2370,21 +2200,9 @@ class CSPerson extends Struct<CSPerson> {
     Pointer<CSPerson> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("contactIdentifier"),
-    );
-  }
-
-  static Pointer copyWithZone(
-    Pointer<CSPerson> _self,
-    Pointer<Pointer> arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
-      _self,
-      _objc.getSelector("copyWithZone:"),
-      arg,
     );
   }
 
@@ -2392,7 +2210,7 @@ class CSPerson extends Struct<CSPerson> {
     Pointer<CSPerson> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("description"),
     );
@@ -2402,7 +2220,7 @@ class CSPerson extends Struct<CSPerson> {
     Pointer<CSPerson> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("displayName"),
     );
@@ -2413,7 +2231,7 @@ class CSPerson extends Struct<CSPerson> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("encodeWithCSCoder:"),
       arg,
@@ -2425,7 +2243,7 @@ class CSPerson extends Struct<CSPerson> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("encodeWithCoder:"),
       arg,
@@ -2436,7 +2254,7 @@ class CSPerson extends Struct<CSPerson> {
     Pointer<CSPerson> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("handleIdentifier"),
     );
@@ -2446,7 +2264,7 @@ class CSPerson extends Struct<CSPerson> {
     Pointer<CSPerson> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("handles"),
     );
@@ -2456,7 +2274,7 @@ class CSPerson extends Struct<CSPerson> {
     Pointer<CSPerson> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("hash"),
     );
@@ -2467,7 +2285,7 @@ class CSPerson extends Struct<CSPerson> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithCoder:"),
       arg,
@@ -2481,7 +2299,7 @@ class CSPerson extends Struct<CSPerson> {
     @required Pointer handleIdentifier,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithDisplayName:handles:handleIdentifier:"),
       arg,
@@ -2495,7 +2313,7 @@ class CSPerson extends Struct<CSPerson> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isEqual:"),
       arg,
@@ -2507,7 +2325,7 @@ class CSPerson extends Struct<CSPerson> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setContactIdentifier:"),
       arg,
@@ -2519,7 +2337,7 @@ class CSPerson extends Struct<CSPerson> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setDisplayName:"),
       arg,
@@ -2531,7 +2349,7 @@ class CSPerson extends Struct<CSPerson> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setHandleIdentifier:"),
       arg,
@@ -2543,7 +2361,7 @@ class CSPerson extends Struct<CSPerson> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setHandles:"),
       arg,
@@ -2551,9 +2369,6 @@ class CSPerson extends Struct<CSPerson> {
   }
 }
 
-/// Automatically generated API. Part of [Core Spotlight](https://developer.apple.com/documentation/corespotlight?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class CSPowerLog extends Struct<CSPowerLog> {
   factory CSPowerLog._() {
@@ -2568,7 +2383,7 @@ class CSPowerLog extends Struct<CSPowerLog> {
     Pointer<CSPowerLog> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("cachedCount"),
     );
@@ -2578,7 +2393,7 @@ class CSPowerLog extends Struct<CSPowerLog> {
     Pointer<CSPowerLog> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("flushToPowerLog"),
     );
@@ -2588,7 +2403,7 @@ class CSPowerLog extends Struct<CSPowerLog> {
     Pointer<CSPowerLog> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("init"),
     );
@@ -2598,7 +2413,7 @@ class CSPowerLog extends Struct<CSPowerLog> {
     Pointer<CSPowerLog> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("lastFlushDate"),
     );
@@ -2611,7 +2426,7 @@ class CSPowerLog extends Struct<CSPowerLog> {
     @required int itemCount,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_Int64_Uint64_returns_void(
+    _call_ptr_ptr_ptr_Int64_Uint64_returns_void(
       _self,
       _objc.getSelector("logWithBundleID:indexOperation:itemCount:"),
       arg,
@@ -2624,7 +2439,7 @@ class CSPowerLog extends Struct<CSPowerLog> {
     Pointer<CSPowerLog> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("operationsByBundleID"),
     );
@@ -2635,7 +2450,7 @@ class CSPowerLog extends Struct<CSPowerLog> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Uint64_returns_void(
+    _call_ptr_ptr_Uint64_returns_void(
       _self,
       _objc.getSelector("setCachedCount:"),
       arg,
@@ -2647,7 +2462,7 @@ class CSPowerLog extends Struct<CSPowerLog> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setLastFlushDate:"),
       arg,
@@ -2659,7 +2474,7 @@ class CSPowerLog extends Struct<CSPowerLog> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setOperationsByBundleID:"),
       arg,
@@ -2667,9 +2482,6 @@ class CSPowerLog extends Struct<CSPowerLog> {
   }
 }
 
-/// Automatically generated API. Part of [Core Spotlight](https://developer.apple.com/documentation/corespotlight?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class CSPrivateIndexConnection extends Struct<CSPrivateIndexConnection> {
   factory CSPrivateIndexConnection._() {
@@ -2688,7 +2500,7 @@ class CSPrivateIndexConnection extends Struct<CSPrivateIndexConnection> {
     @required Pointer completion,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("sendMessageAsync:completion:"),
       arg,
@@ -2697,9 +2509,6 @@ class CSPrivateIndexConnection extends Struct<CSPrivateIndexConnection> {
   }
 }
 
-/// Automatically generated API. Part of [Core Spotlight](https://developer.apple.com/documentation/corespotlight?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class CSPrivateSearchConnection extends Struct<CSPrivateSearchConnection> {
   factory CSPrivateSearchConnection._() {
@@ -2720,7 +2529,7 @@ class CSPrivateSearchConnection extends Struct<CSPrivateSearchConnection> {
     @required int needsInitialization,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_Int64_p_Int8_returns_p(
+    return _call_ptr_ptr_ptr_Int64_ptr_Int8_returns_ptr(
       _self,
       _objc.getSelector(
           "createXPCDictionaryForQuery:queryID:queryContext:needsInitialization:"),
@@ -2736,7 +2545,7 @@ class CSPrivateSearchConnection extends Struct<CSPrivateSearchConnection> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithToken:"),
       arg,
@@ -2749,7 +2558,7 @@ class CSPrivateSearchConnection extends Struct<CSPrivateSearchConnection> {
     @required Pointer completion,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("sendMessageAsync:completion:"),
       arg,
@@ -2762,7 +2571,7 @@ class CSPrivateSearchConnection extends Struct<CSPrivateSearchConnection> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setToken:"),
       arg,
@@ -2773,16 +2582,13 @@ class CSPrivateSearchConnection extends Struct<CSPrivateSearchConnection> {
     Pointer<CSPrivateSearchConnection> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("token"),
     );
   }
 }
 
-/// Automatically generated API. Part of [Core Spotlight](https://developer.apple.com/documentation/corespotlight?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class CSPrivateSearchQuery extends Struct<CSPrivateSearchQuery> {
   factory CSPrivateSearchQuery._() {
@@ -2797,7 +2603,7 @@ class CSPrivateSearchQuery extends Struct<CSPrivateSearchQuery> {
     Pointer<CSPrivateSearchQuery> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("connection"),
     );
@@ -2807,13 +2613,13 @@ class CSPrivateSearchQuery extends Struct<CSPrivateSearchQuery> {
     Pointer<CSPrivateSearchQuery> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("indexPath"),
     );
   }
 
-  static Pointer initWithPath$queryString$context$attributes$(
+  static Pointer initWithPath$queryString$context$attributes(
     Pointer<CSPrivateSearchQuery> _self,
     Pointer arg, {
     @required Pointer queryString,
@@ -2821,7 +2627,7 @@ class CSPrivateSearchQuery extends Struct<CSPrivateSearchQuery> {
     @required Pointer attributes,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithPath:queryString:context:attributes:"),
       arg,
@@ -2831,14 +2637,14 @@ class CSPrivateSearchQuery extends Struct<CSPrivateSearchQuery> {
     );
   }
 
-  static Pointer initWithPath$queryString$attributers$(
+  static Pointer initWithPath$queryString$attributers(
     Pointer<CSPrivateSearchQuery> _self,
     Pointer arg, {
     @required Pointer queryString,
     @required Pointer attributers,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithPath:queryString:attributers:"),
       arg,
@@ -2847,14 +2653,14 @@ class CSPrivateSearchQuery extends Struct<CSPrivateSearchQuery> {
     );
   }
 
-  static Pointer initWithPath$queryString$context$(
+  static Pointer initWithPath$queryString$context(
     Pointer<CSPrivateSearchQuery> _self,
     Pointer arg, {
     @required Pointer queryString,
     @required Pointer context,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithPath:queryString:context:"),
       arg,
@@ -2867,7 +2673,7 @@ class CSPrivateSearchQuery extends Struct<CSPrivateSearchQuery> {
     Pointer<CSPrivateSearchQuery> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("resolvedIndexPath"),
     );
@@ -2877,7 +2683,7 @@ class CSPrivateSearchQuery extends Struct<CSPrivateSearchQuery> {
     Pointer<CSPrivateSearchQuery> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("savedConnection"),
     );
@@ -2888,7 +2694,7 @@ class CSPrivateSearchQuery extends Struct<CSPrivateSearchQuery> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setIndexPath:"),
       arg,
@@ -2900,7 +2706,7 @@ class CSPrivateSearchQuery extends Struct<CSPrivateSearchQuery> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setResolvedIndexPath:"),
       arg,
@@ -2912,7 +2718,7 @@ class CSPrivateSearchQuery extends Struct<CSPrivateSearchQuery> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setSavedConnection:"),
       arg,
@@ -2923,16 +2729,13 @@ class CSPrivateSearchQuery extends Struct<CSPrivateSearchQuery> {
     Pointer<CSPrivateSearchQuery> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("start"),
     );
   }
 }
 
-/// Automatically generated API. Part of [Core Spotlight](https://developer.apple.com/documentation/corespotlight?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class CSPrivateSearchableIndex extends Struct<CSPrivateSearchableIndex> {
   factory CSPrivateSearchableIndex._() {
@@ -2949,7 +2752,7 @@ class CSPrivateSearchableIndex extends Struct<CSPrivateSearchableIndex> {
     Pointer<CSPrivateSearchableIndex> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("attemptedIndexPathResolution"),
     );
@@ -2959,7 +2762,7 @@ class CSPrivateSearchableIndex extends Struct<CSPrivateSearchableIndex> {
     Pointer<CSPrivateSearchableIndex> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("connection"),
     );
@@ -2969,7 +2772,7 @@ class CSPrivateSearchableIndex extends Struct<CSPrivateSearchableIndex> {
     Pointer<CSPrivateSearchableIndex> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("dealloc"),
     );
@@ -2979,7 +2782,7 @@ class CSPrivateSearchableIndex extends Struct<CSPrivateSearchableIndex> {
     Pointer<CSPrivateSearchableIndex> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("indexPath"),
     );
@@ -2990,7 +2793,7 @@ class CSPrivateSearchableIndex extends Struct<CSPrivateSearchableIndex> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithPath:"),
       arg,
@@ -3001,7 +2804,7 @@ class CSPrivateSearchableIndex extends Struct<CSPrivateSearchableIndex> {
     Pointer<CSPrivateSearchableIndex> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("resolvedIndexPath"),
     );
@@ -3011,7 +2814,7 @@ class CSPrivateSearchableIndex extends Struct<CSPrivateSearchableIndex> {
     Pointer<CSPrivateSearchableIndex> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("savedConnection"),
     );
@@ -3022,7 +2825,7 @@ class CSPrivateSearchableIndex extends Struct<CSPrivateSearchableIndex> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setAttemptedIndexPathResolution:"),
       arg,
@@ -3034,7 +2837,7 @@ class CSPrivateSearchableIndex extends Struct<CSPrivateSearchableIndex> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setIndexPath:"),
       arg,
@@ -3046,7 +2849,7 @@ class CSPrivateSearchableIndex extends Struct<CSPrivateSearchableIndex> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setResolvedIndexPath:"),
       arg,
@@ -3058,7 +2861,7 @@ class CSPrivateSearchableIndex extends Struct<CSPrivateSearchableIndex> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setSavedConnection:"),
       arg,
@@ -3071,7 +2874,7 @@ class CSPrivateSearchableIndex extends Struct<CSPrivateSearchableIndex> {
     @required int requiresInitialization,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_Int8_returns_p(
+    return _call_ptr_ptr_ptr_Int8_returns_ptr(
       _self,
       _objc.getSelector("xpc_dictionary_for_command:requiresInitialization:"),
       arg,
@@ -3080,9 +2883,6 @@ class CSPrivateSearchableIndex extends Struct<CSPrivateSearchableIndex> {
   }
 }
 
-/// Automatically generated API. Part of [Core Spotlight](https://developer.apple.com/documentation/corespotlight?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class CSReceiverPreferences extends Struct<CSReceiverPreferences> {
   factory CSReceiverPreferences._() {
@@ -3099,7 +2899,7 @@ class CSReceiverPreferences extends Struct<CSReceiverPreferences> {
     Pointer<CSReceiverPreferences> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("dictionary"),
     );
@@ -3110,7 +2910,7 @@ class CSReceiverPreferences extends Struct<CSReceiverPreferences> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("disableBundleIdentifier:"),
       arg,
@@ -3122,7 +2922,7 @@ class CSReceiverPreferences extends Struct<CSReceiverPreferences> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("enableBundleIdentifier:"),
       arg,
@@ -3133,16 +2933,13 @@ class CSReceiverPreferences extends Struct<CSReceiverPreferences> {
     Pointer<CSReceiverPreferences> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("init"),
     );
   }
 }
 
-/// Automatically generated API. Part of [Core Spotlight](https://developer.apple.com/documentation/corespotlight?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class CSReceiverServerPreferences extends Struct<CSReceiverServerPreferences> {
   factory CSReceiverServerPreferences._() {
@@ -3160,7 +2957,7 @@ class CSReceiverServerPreferences extends Struct<CSReceiverServerPreferences> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("disableService:"),
       arg,
@@ -3171,7 +2968,7 @@ class CSReceiverServerPreferences extends Struct<CSReceiverServerPreferences> {
     Pointer<CSReceiverServerPreferences> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("disabledServices"),
     );
@@ -3182,7 +2979,7 @@ class CSReceiverServerPreferences extends Struct<CSReceiverServerPreferences> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("enableService:"),
       arg,
@@ -3193,16 +2990,13 @@ class CSReceiverServerPreferences extends Struct<CSReceiverServerPreferences> {
     Pointer<CSReceiverServerPreferences> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("init"),
     );
   }
 }
 
-/// Automatically generated API. Part of [Core Spotlight](https://developer.apple.com/documentation/corespotlight?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class CSSearchConnection extends Struct<CSSearchConnection> {
   factory CSSearchConnection._() {
@@ -3218,7 +3012,7 @@ class CSSearchConnection extends Struct<CSSearchConnection> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Uint64_returns_void(
+    _call_ptr_ptr_Uint64_returns_void(
       _self,
       _objc.getSelector("cancelQuery:"),
       arg,
@@ -3233,7 +3027,7 @@ class CSSearchConnection extends Struct<CSSearchConnection> {
     @required int needsInitialization,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_Int64_p_Int8_returns_p(
+    return _call_ptr_ptr_ptr_Int64_ptr_Int8_returns_ptr(
       _self,
       _objc.getSelector(
           "createXPCDictionaryForQuery:queryID:queryContext:needsInitialization:"),
@@ -3249,7 +3043,7 @@ class CSSearchConnection extends Struct<CSSearchConnection> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("handleError:"),
       arg,
@@ -3261,7 +3055,7 @@ class CSSearchConnection extends Struct<CSSearchConnection> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("handleReply:"),
       arg,
@@ -3272,7 +3066,7 @@ class CSSearchConnection extends Struct<CSSearchConnection> {
     Pointer<CSSearchConnection> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("init"),
     );
@@ -3282,7 +3076,7 @@ class CSSearchConnection extends Struct<CSSearchConnection> {
     Pointer<CSSearchConnection> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("previouslyInitialized"),
     );
@@ -3292,7 +3086,7 @@ class CSSearchConnection extends Struct<CSSearchConnection> {
     Pointer<CSSearchConnection> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("queries"),
     );
@@ -3303,7 +3097,7 @@ class CSSearchConnection extends Struct<CSSearchConnection> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("queryForID:"),
       arg,
@@ -3315,7 +3109,7 @@ class CSSearchConnection extends Struct<CSSearchConnection> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("removeQueryForID:"),
       arg,
@@ -3328,7 +3122,7 @@ class CSSearchConnection extends Struct<CSSearchConnection> {
     @required Pointer completion,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("sendMessageAsync:completion:"),
       arg,
@@ -3341,7 +3135,7 @@ class CSSearchConnection extends Struct<CSSearchConnection> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setQueries:"),
       arg,
@@ -3354,7 +3148,7 @@ class CSSearchConnection extends Struct<CSSearchConnection> {
     @required Pointer forID,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setQuery:forID:"),
       arg,
@@ -3368,7 +3162,7 @@ class CSSearchConnection extends Struct<CSSearchConnection> {
     @required Pointer context,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("startQuery:context:"),
       arg,
@@ -3377,9 +3171,6 @@ class CSSearchConnection extends Struct<CSSearchConnection> {
   }
 }
 
-/// Automatically generated API. Part of [Core Spotlight](https://developer.apple.com/documentation/corespotlight?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class CSSearchQuery extends Struct<CSSearchQuery> {
   factory CSSearchQuery._() {
@@ -3394,7 +3185,7 @@ class CSSearchQuery extends Struct<CSSearchQuery> {
     Pointer<CSSearchQuery> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("attribute"),
     );
@@ -3404,7 +3195,7 @@ class CSSearchQuery extends Struct<CSSearchQuery> {
     Pointer<CSSearchQuery> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("bundleIDs"),
     );
@@ -3414,7 +3205,7 @@ class CSSearchQuery extends Struct<CSSearchQuery> {
     Pointer<CSSearchQuery> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("cancel"),
     );
@@ -3424,7 +3215,7 @@ class CSSearchQuery extends Struct<CSSearchQuery> {
     Pointer<CSSearchQuery> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("changedAttributesHandler"),
     );
@@ -3434,7 +3225,7 @@ class CSSearchQuery extends Struct<CSSearchQuery> {
     Pointer<CSSearchQuery> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("changedItemsHandler"),
     );
@@ -3444,7 +3235,7 @@ class CSSearchQuery extends Struct<CSSearchQuery> {
     Pointer<CSSearchQuery> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("completionHandler"),
     );
@@ -3454,7 +3245,7 @@ class CSSearchQuery extends Struct<CSSearchQuery> {
     Pointer<CSSearchQuery> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("completionsHandler"),
     );
@@ -3464,7 +3255,7 @@ class CSSearchQuery extends Struct<CSSearchQuery> {
     Pointer<CSSearchQuery> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("connection"),
     );
@@ -3474,7 +3265,7 @@ class CSSearchQuery extends Struct<CSSearchQuery> {
     Pointer<CSSearchQuery> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("countChangedHandler"),
     );
@@ -3484,7 +3275,7 @@ class CSSearchQuery extends Struct<CSSearchQuery> {
     Pointer<CSSearchQuery> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("counting"),
     );
@@ -3499,7 +3290,7 @@ class CSSearchQuery extends Struct<CSSearchQuery> {
     @required int isTopHitQuery,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int64_p_Uint64_p_Int8_returns_p(
+    return _call_ptr_ptr_Int64_ptr_Uint64_ptr_Int8_returns_ptr(
       _self,
       _objc.getSelector(
           "createCSSearchableItemWithOID:values:valueCount:protectionClass:isTopHitQuery:"),
@@ -3515,7 +3306,7 @@ class CSSearchQuery extends Struct<CSSearchQuery> {
     Pointer<CSSearchQuery> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_float64(
+    return _call_ptr_ptr_returns_float64(
       _self,
       _objc.getSelector("currentTime"),
     );
@@ -3525,7 +3316,7 @@ class CSSearchQuery extends Struct<CSSearchQuery> {
     Pointer<CSSearchQuery> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("debugDescription"),
     );
@@ -3535,7 +3326,7 @@ class CSSearchQuery extends Struct<CSSearchQuery> {
     Pointer<CSSearchQuery> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("description"),
     );
@@ -3546,7 +3337,7 @@ class CSSearchQuery extends Struct<CSSearchQuery> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("didFinishWithError:"),
       arg,
@@ -3558,7 +3349,7 @@ class CSSearchQuery extends Struct<CSSearchQuery> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("didResolveFriendlyAttributeNames:"),
       arg,
@@ -3574,7 +3365,7 @@ class CSSearchQuery extends Struct<CSSearchQuery> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int64_p_p_p_p_returns_void(
+    _call_ptr_ptr_Int64_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector(
           "didReturnResults:resultsData:oidData:protectionClass:completionHandler:"),
@@ -3590,7 +3381,7 @@ class CSSearchQuery extends Struct<CSSearchQuery> {
     Pointer<CSSearchQuery> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("fetchAttributes"),
     );
@@ -3600,7 +3391,7 @@ class CSSearchQuery extends Struct<CSSearchQuery> {
     Pointer<CSSearchQuery> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("foundAttributesHandler"),
     );
@@ -3610,7 +3401,7 @@ class CSSearchQuery extends Struct<CSSearchQuery> {
     Pointer<CSSearchQuery> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("foundItemCount"),
     );
@@ -3620,7 +3411,7 @@ class CSSearchQuery extends Struct<CSSearchQuery> {
     Pointer<CSSearchQuery> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("foundItemsHandler"),
     );
@@ -3630,7 +3421,7 @@ class CSSearchQuery extends Struct<CSSearchQuery> {
     Pointer<CSSearchQuery> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("gatherEndedHandler"),
     );
@@ -3640,7 +3431,7 @@ class CSSearchQuery extends Struct<CSSearchQuery> {
     Pointer<CSSearchQuery> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("grouped"),
     );
@@ -3650,19 +3441,19 @@ class CSSearchQuery extends Struct<CSSearchQuery> {
     Pointer<CSSearchQuery> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("init"),
     );
   }
 
-  static Pointer initWithQueryString$options$(
+  static Pointer initWithQueryString$options(
     Pointer<CSSearchQuery> _self,
     Pointer arg, {
     @required Pointer options,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithQueryString:options:"),
       arg,
@@ -3670,13 +3461,13 @@ class CSSearchQuery extends Struct<CSSearchQuery> {
     );
   }
 
-  static Pointer initWithQueryString$context$(
+  static Pointer initWithQueryString$context(
     Pointer<CSSearchQuery> _self,
     Pointer arg, {
     @required Pointer context,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithQueryString:context:"),
       arg,
@@ -3684,13 +3475,13 @@ class CSSearchQuery extends Struct<CSSearchQuery> {
     );
   }
 
-  static Pointer initWithQueryString$attributes$(
+  static Pointer initWithQueryString$attributes(
     Pointer<CSSearchQuery> _self,
     Pointer arg, {
     @required Pointer attributes,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithQueryString:attributes:"),
       arg,
@@ -3702,7 +3493,7 @@ class CSSearchQuery extends Struct<CSSearchQuery> {
     Pointer<CSSearchQuery> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("internal"),
     );
@@ -3712,7 +3503,7 @@ class CSSearchQuery extends Struct<CSSearchQuery> {
     Pointer<CSSearchQuery> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isCancelled"),
     );
@@ -3722,7 +3513,7 @@ class CSSearchQuery extends Struct<CSSearchQuery> {
     Pointer<CSSearchQuery> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("live"),
     );
@@ -3732,7 +3523,7 @@ class CSSearchQuery extends Struct<CSSearchQuery> {
     Pointer<CSSearchQuery> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("liveIndexBundleIDToBundleString"),
     );
@@ -3742,7 +3533,7 @@ class CSSearchQuery extends Struct<CSSearchQuery> {
     Pointer<CSSearchQuery> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("liveIndexBundleIDToIndexItemIDMap"),
     );
@@ -3752,7 +3543,7 @@ class CSSearchQuery extends Struct<CSSearchQuery> {
     Pointer<CSSearchQuery> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("options"),
     );
@@ -3762,7 +3553,7 @@ class CSSearchQuery extends Struct<CSSearchQuery> {
     Pointer<CSSearchQuery> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("privateBundleID"),
     );
@@ -3772,7 +3563,7 @@ class CSSearchQuery extends Struct<CSSearchQuery> {
     Pointer<CSSearchQuery> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("privateIndex"),
     );
@@ -3785,7 +3576,7 @@ class CSSearchQuery extends Struct<CSSearchQuery> {
     @required Pointer protectionClass,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_Int8_p_returns_void(
+    _call_ptr_ptr_ptr_Int8_ptr_returns_void(
       _self,
       _objc.getSelector("processAttributesData:update:protectionClass:"),
       arg,
@@ -3801,7 +3592,7 @@ class CSSearchQuery extends Struct<CSSearchQuery> {
     @required int isTopHitQuery,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_Int8_returns_void(
+    _call_ptr_ptr_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector(
           "processCompletionsResultsData:protectionClass:isTopHitQuery:"),
@@ -3819,7 +3610,7 @@ class CSSearchQuery extends Struct<CSSearchQuery> {
     @required int isTopHitQuery,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_Int8_returns_void(
+    _call_ptr_ptr_ptr_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector(
           "processLiveResultsData:oidData:protectionClass:isTopHitQuery:"),
@@ -3836,7 +3627,7 @@ class CSSearchQuery extends Struct<CSSearchQuery> {
     @required Pointer protectionClass,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("processRemoveResultsData:protectionClass:"),
       arg,
@@ -3844,14 +3635,14 @@ class CSSearchQuery extends Struct<CSSearchQuery> {
     );
   }
 
-  static Pointer processResultFromPlist$protectionClass$isTopHitQuery$(
+  static Pointer processResultFromPlist$protectionClass$isTopHitQuery(
     Pointer<CSSearchQuery> _self,
     Pointer arg, {
     @required Pointer protectionClass,
     @required int isTopHitQuery,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_Int8_returns_p(
+    return _call_ptr_ptr_ptr_ptr_Int8_returns_ptr(
       _self,
       _objc
           .getSelector("processResultFromPlist:protectionClass:isTopHitQuery:"),
@@ -3862,7 +3653,7 @@ class CSSearchQuery extends Struct<CSSearchQuery> {
   }
 
   static void
-      processResultFromPlist$atIndex$protectionClass$oids$oidCount$items$isTopHitQuery$(
+      processResultFromPlist$atIndex$protectionClass$oids$oidCount$items$isTopHitQuery(
     Pointer<CSSearchQuery> _self,
     Pointer arg, {
     @required int atIndex,
@@ -3873,7 +3664,7 @@ class CSSearchQuery extends Struct<CSSearchQuery> {
     @required int isTopHitQuery,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_Uint64_p_p_Uint32_p_Int8_returns_void(
+    _call_ptr_ptr_ptr_Uint64_ptr_ptr_Uint32_ptr_Int8_returns_void(
       _self,
       _objc.getSelector(
           "processResultFromPlist:atIndex:protectionClass:oids:oidCount:items:isTopHitQuery:"),
@@ -3894,7 +3685,7 @@ class CSSearchQuery extends Struct<CSSearchQuery> {
     @required int isTopHitQuery,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_Int8_returns_void(
+    _call_ptr_ptr_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("processResultsData:protectionClass:isTopHitQuery:"),
       arg,
@@ -3907,7 +3698,7 @@ class CSSearchQuery extends Struct<CSSearchQuery> {
     Pointer<CSSearchQuery> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("protectionClasses"),
     );
@@ -3917,7 +3708,7 @@ class CSSearchQuery extends Struct<CSSearchQuery> {
     Pointer<CSSearchQuery> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("queryContext"),
     );
@@ -3927,7 +3718,7 @@ class CSSearchQuery extends Struct<CSSearchQuery> {
     Pointer<CSSearchQuery> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("queryString"),
     );
@@ -3937,7 +3728,7 @@ class CSSearchQuery extends Struct<CSSearchQuery> {
     Pointer<CSSearchQuery> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("queue"),
     );
@@ -3950,7 +3741,7 @@ class CSSearchQuery extends Struct<CSSearchQuery> {
     @required Pointer<Pointer> outIdentifier,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int64_p_p_returns_Int8(
+    return _call_ptr_ptr_Int64_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("removeLiveOID:outBundleID:outIdentifier:"),
       arg,
@@ -3963,7 +3754,7 @@ class CSSearchQuery extends Struct<CSSearchQuery> {
     Pointer<CSSearchQuery> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("removedItemsHandler"),
     );
@@ -3973,7 +3764,7 @@ class CSSearchQuery extends Struct<CSSearchQuery> {
     Pointer<CSSearchQuery> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("resolvedAttributeNamesHandler"),
     );
@@ -3983,7 +3774,7 @@ class CSSearchQuery extends Struct<CSSearchQuery> {
     Pointer<CSSearchQuery> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("resolvedFetchAttributes"),
     );
@@ -3994,7 +3785,7 @@ class CSSearchQuery extends Struct<CSSearchQuery> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setBundleIDs:"),
       arg,
@@ -4006,7 +3797,7 @@ class CSSearchQuery extends Struct<CSSearchQuery> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setChangedAttributesHandler:"),
       arg,
@@ -4018,7 +3809,7 @@ class CSSearchQuery extends Struct<CSSearchQuery> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setChangedItemsHandler:"),
       arg,
@@ -4030,7 +3821,7 @@ class CSSearchQuery extends Struct<CSSearchQuery> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setCompletionHandler:"),
       arg,
@@ -4042,7 +3833,7 @@ class CSSearchQuery extends Struct<CSSearchQuery> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setCompletionsHandler:"),
       arg,
@@ -4054,7 +3845,7 @@ class CSSearchQuery extends Struct<CSSearchQuery> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setCountChangedHandler:"),
       arg,
@@ -4066,7 +3857,7 @@ class CSSearchQuery extends Struct<CSSearchQuery> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setFoundAttributesHandler:"),
       arg,
@@ -4078,7 +3869,7 @@ class CSSearchQuery extends Struct<CSSearchQuery> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setFoundItemsHandler:"),
       arg,
@@ -4090,7 +3881,7 @@ class CSSearchQuery extends Struct<CSSearchQuery> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setGatherEndedHandler:"),
       arg,
@@ -4102,7 +3893,7 @@ class CSSearchQuery extends Struct<CSSearchQuery> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setLiveIndexBundleIDToBundleString:"),
       arg,
@@ -4114,7 +3905,7 @@ class CSSearchQuery extends Struct<CSSearchQuery> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setLiveIndexBundleIDToIndexItemIDMap:"),
       arg,
@@ -4126,7 +3917,7 @@ class CSSearchQuery extends Struct<CSSearchQuery> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setPrivateBundleID:"),
       arg,
@@ -4138,7 +3929,7 @@ class CSSearchQuery extends Struct<CSSearchQuery> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setPrivateIndex:"),
       arg,
@@ -4150,7 +3941,7 @@ class CSSearchQuery extends Struct<CSSearchQuery> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setProtectionClasses:"),
       arg,
@@ -4162,7 +3953,7 @@ class CSSearchQuery extends Struct<CSSearchQuery> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setQueryContext:"),
       arg,
@@ -4174,7 +3965,7 @@ class CSSearchQuery extends Struct<CSSearchQuery> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setQueryString:"),
       arg,
@@ -4186,7 +3977,7 @@ class CSSearchQuery extends Struct<CSSearchQuery> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setQueue:"),
       arg,
@@ -4198,7 +3989,7 @@ class CSSearchQuery extends Struct<CSSearchQuery> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setRemovedItemsHandler:"),
       arg,
@@ -4210,7 +4001,7 @@ class CSSearchQuery extends Struct<CSSearchQuery> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setResolvedAttributeNamesHandler:"),
       arg,
@@ -4222,7 +4013,7 @@ class CSSearchQuery extends Struct<CSSearchQuery> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setResolvedFetchAttributes:"),
       arg,
@@ -4233,7 +4024,7 @@ class CSSearchQuery extends Struct<CSSearchQuery> {
     Pointer<CSSearchQuery> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("start"),
     );
@@ -4246,7 +4037,7 @@ class CSSearchQuery extends Struct<CSSearchQuery> {
     @required Pointer identifier,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int64_p_p_returns_void(
+    _call_ptr_ptr_Int64_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("updateLiveOID:bundleID:identifier:"),
       arg,
@@ -4261,7 +4052,7 @@ class CSSearchQuery extends Struct<CSSearchQuery> {
     @required int interactionType,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_Int32_returns_void(
+    _call_ptr_ptr_ptr_Int32_returns_void(
       _self,
       _objc.getSelector("userEngagedWithResult:interactionType:"),
       arg,
@@ -4270,9 +4061,6 @@ class CSSearchQuery extends Struct<CSSearchQuery> {
   }
 }
 
-/// Automatically generated API. Part of [Core Spotlight](https://developer.apple.com/documentation/corespotlight?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class CSSearchQueryContext extends Struct<CSSearchQueryContext> {
   factory CSSearchQueryContext._() {
@@ -4287,7 +4075,7 @@ class CSSearchQueryContext extends Struct<CSSearchQueryContext> {
     Pointer<CSSearchQueryContext> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("attribute"),
     );
@@ -4297,7 +4085,7 @@ class CSSearchQueryContext extends Struct<CSSearchQueryContext> {
     Pointer<CSSearchQueryContext> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("bundleIDs"),
     );
@@ -4307,7 +4095,7 @@ class CSSearchQueryContext extends Struct<CSSearchQueryContext> {
     Pointer<CSSearchQueryContext> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("clientBundleID"),
     );
@@ -4317,7 +4105,7 @@ class CSSearchQueryContext extends Struct<CSSearchQueryContext> {
     Pointer<CSSearchQueryContext> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("completionAttributes"),
     );
@@ -4327,7 +4115,7 @@ class CSSearchQueryContext extends Struct<CSSearchQueryContext> {
     Pointer<CSSearchQueryContext> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int64(
+    return _call_ptr_ptr_returns_Int64(
       _self,
       _objc.getSelector("completionResultCount"),
     );
@@ -4337,21 +4125,9 @@ class CSSearchQueryContext extends Struct<CSSearchQueryContext> {
     Pointer<CSSearchQueryContext> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("completionString"),
-    );
-  }
-
-  static Pointer copyWithZone(
-    Pointer<CSSearchQueryContext> _self,
-    Pointer<Pointer> arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
-      _self,
-      _objc.getSelector("copyWithZone:"),
-      arg,
     );
   }
 
@@ -4359,7 +4135,7 @@ class CSSearchQueryContext extends Struct<CSSearchQueryContext> {
     Pointer<CSSearchQueryContext> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("counting"),
     );
@@ -4369,7 +4145,7 @@ class CSSearchQueryContext extends Struct<CSSearchQueryContext> {
     Pointer<CSSearchQueryContext> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_float64(
+    return _call_ptr_ptr_returns_float64(
       _self,
       _objc.getSelector("currentTime"),
     );
@@ -4379,7 +4155,7 @@ class CSSearchQueryContext extends Struct<CSSearchQueryContext> {
     Pointer<CSSearchQueryContext> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("debugDescription"),
     );
@@ -4389,7 +4165,7 @@ class CSSearchQueryContext extends Struct<CSSearchQueryContext> {
     Pointer<CSSearchQueryContext> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("description"),
     );
@@ -4399,7 +4175,7 @@ class CSSearchQueryContext extends Struct<CSSearchQueryContext> {
     Pointer<CSSearchQueryContext> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("disableBundles"),
     );
@@ -4409,7 +4185,7 @@ class CSSearchQueryContext extends Struct<CSSearchQueryContext> {
     Pointer<CSSearchQueryContext> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int64(
+    return _call_ptr_ptr_returns_Int64(
       _self,
       _objc.getSelector("dominantRankingQueryCount"),
     );
@@ -4419,7 +4195,7 @@ class CSSearchQueryContext extends Struct<CSSearchQueryContext> {
     Pointer<CSSearchQueryContext> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int64(
+    return _call_ptr_ptr_returns_Int64(
       _self,
       _objc.getSelector("dominatedRankingQueryCount"),
     );
@@ -4430,7 +4206,7 @@ class CSSearchQueryContext extends Struct<CSSearchQueryContext> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("encodeWithCoder:"),
       arg,
@@ -4441,7 +4217,7 @@ class CSSearchQueryContext extends Struct<CSSearchQueryContext> {
     Pointer<CSSearchQueryContext> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("fetchAttributes"),
     );
@@ -4451,7 +4227,7 @@ class CSSearchQueryContext extends Struct<CSSearchQueryContext> {
     Pointer<CSSearchQueryContext> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("filterQueries"),
     );
@@ -4461,7 +4237,7 @@ class CSSearchQueryContext extends Struct<CSSearchQueryContext> {
     Pointer<CSSearchQueryContext> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("filterQuery"),
     );
@@ -4471,29 +4247,9 @@ class CSSearchQueryContext extends Struct<CSSearchQueryContext> {
     Pointer<CSSearchQueryContext> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint8(
+    return _call_ptr_ptr_returns_Uint8(
       _self,
       _objc.getSelector("flags"),
-    );
-  }
-
-  static Pointer fuzzyMask(
-    Pointer<CSSearchQueryContext> _self,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
-      _self,
-      _objc.getSelector("fuzzyMask"),
-    );
-  }
-
-  static Pointer fuzzyMatch(
-    Pointer<CSSearchQueryContext> _self,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
-      _self,
-      _objc.getSelector("fuzzyMatch"),
     );
   }
 
@@ -4501,7 +4257,7 @@ class CSSearchQueryContext extends Struct<CSSearchQueryContext> {
     Pointer<CSSearchQueryContext> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("grouped"),
     );
@@ -4511,7 +4267,7 @@ class CSSearchQueryContext extends Struct<CSSearchQueryContext> {
     Pointer<CSSearchQueryContext> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("init"),
     );
@@ -4522,7 +4278,7 @@ class CSSearchQueryContext extends Struct<CSSearchQueryContext> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithCoder:"),
       arg,
@@ -4534,7 +4290,7 @@ class CSSearchQueryContext extends Struct<CSSearchQueryContext> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithXPCDictionary:"),
       arg,
@@ -4545,7 +4301,7 @@ class CSSearchQueryContext extends Struct<CSSearchQueryContext> {
     Pointer<CSSearchQueryContext> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("internal"),
     );
@@ -4555,7 +4311,7 @@ class CSSearchQueryContext extends Struct<CSSearchQueryContext> {
     Pointer<CSSearchQueryContext> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("keyboardLanguage"),
     );
@@ -4565,7 +4321,7 @@ class CSSearchQueryContext extends Struct<CSSearchQueryContext> {
     Pointer<CSSearchQueryContext> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("live"),
     );
@@ -4575,7 +4331,7 @@ class CSSearchQueryContext extends Struct<CSSearchQueryContext> {
     Pointer<CSSearchQueryContext> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("lowPriority"),
     );
@@ -4585,7 +4341,7 @@ class CSSearchQueryContext extends Struct<CSSearchQueryContext> {
     Pointer<CSSearchQueryContext> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("markedTextArray"),
     );
@@ -4595,7 +4351,7 @@ class CSSearchQueryContext extends Struct<CSSearchQueryContext> {
     Pointer<CSSearchQueryContext> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int64(
+    return _call_ptr_ptr_returns_Int64(
       _self,
       _objc.getSelector("maxCount"),
     );
@@ -4605,7 +4361,7 @@ class CSSearchQueryContext extends Struct<CSSearchQueryContext> {
     Pointer<CSSearchQueryContext> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("options"),
     );
@@ -4615,7 +4371,7 @@ class CSSearchQueryContext extends Struct<CSSearchQueryContext> {
     Pointer<CSSearchQueryContext> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("preferredLanguages"),
     );
@@ -4625,7 +4381,7 @@ class CSSearchQueryContext extends Struct<CSSearchQueryContext> {
     Pointer<CSSearchQueryContext> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("protectionClasses"),
     );
@@ -4635,7 +4391,7 @@ class CSSearchQueryContext extends Struct<CSSearchQueryContext> {
     Pointer<CSSearchQueryContext> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int64(
+    return _call_ptr_ptr_returns_Int64(
       _self,
       _objc.getSelector("queryID"),
     );
@@ -4645,7 +4401,7 @@ class CSSearchQueryContext extends Struct<CSSearchQueryContext> {
     Pointer<CSSearchQueryContext> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("rankingQueries"),
     );
@@ -4655,7 +4411,7 @@ class CSSearchQueryContext extends Struct<CSSearchQueryContext> {
     Pointer<CSSearchQueryContext> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int32(
+    return _call_ptr_ptr_returns_Int32(
       _self,
       _objc.getSelector("rankingType"),
     );
@@ -4666,7 +4422,7 @@ class CSSearchQueryContext extends Struct<CSSearchQueryContext> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setAttribute:"),
       arg,
@@ -4678,7 +4434,7 @@ class CSSearchQueryContext extends Struct<CSSearchQueryContext> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setBundleIDs:"),
       arg,
@@ -4690,7 +4446,7 @@ class CSSearchQueryContext extends Struct<CSSearchQueryContext> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setClientBundleID:"),
       arg,
@@ -4702,7 +4458,7 @@ class CSSearchQueryContext extends Struct<CSSearchQueryContext> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setCompletionAttributes:"),
       arg,
@@ -4714,7 +4470,7 @@ class CSSearchQueryContext extends Struct<CSSearchQueryContext> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int64_returns_void(
+    _call_ptr_ptr_Int64_returns_void(
       _self,
       _objc.getSelector("setCompletionResultCount:"),
       arg,
@@ -4726,7 +4482,7 @@ class CSSearchQueryContext extends Struct<CSSearchQueryContext> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setCompletionString:"),
       arg,
@@ -4738,7 +4494,7 @@ class CSSearchQueryContext extends Struct<CSSearchQueryContext> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setCounting:"),
       arg,
@@ -4750,7 +4506,7 @@ class CSSearchQueryContext extends Struct<CSSearchQueryContext> {
     double arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_float64_returns_void(
+    _call_ptr_ptr_float64_returns_void(
       _self,
       _objc.getSelector("setCurrentTime:"),
       arg,
@@ -4762,7 +4518,7 @@ class CSSearchQueryContext extends Struct<CSSearchQueryContext> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setDisableBundles:"),
       arg,
@@ -4774,7 +4530,7 @@ class CSSearchQueryContext extends Struct<CSSearchQueryContext> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int64_returns_void(
+    _call_ptr_ptr_Int64_returns_void(
       _self,
       _objc.getSelector("setDominantRankingQueryCount:"),
       arg,
@@ -4786,7 +4542,7 @@ class CSSearchQueryContext extends Struct<CSSearchQueryContext> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int64_returns_void(
+    _call_ptr_ptr_Int64_returns_void(
       _self,
       _objc.getSelector("setDominatedRankingQueryCount:"),
       arg,
@@ -4798,7 +4554,7 @@ class CSSearchQueryContext extends Struct<CSSearchQueryContext> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setFetchAttributes:"),
       arg,
@@ -4810,7 +4566,7 @@ class CSSearchQueryContext extends Struct<CSSearchQueryContext> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setFilterQueries:"),
       arg,
@@ -4822,7 +4578,7 @@ class CSSearchQueryContext extends Struct<CSSearchQueryContext> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setFilterQuery:"),
       arg,
@@ -4834,33 +4590,9 @@ class CSSearchQueryContext extends Struct<CSSearchQueryContext> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Uint8_returns_void(
+    _call_ptr_ptr_Uint8_returns_void(
       _self,
       _objc.getSelector("setFlags:"),
-      arg,
-    );
-  }
-
-  static void setFuzzyMask(
-    Pointer<CSSearchQueryContext> _self,
-    Pointer arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
-      _self,
-      _objc.getSelector("setFuzzyMask:"),
-      arg,
-    );
-  }
-
-  static void setFuzzyMatch(
-    Pointer<CSSearchQueryContext> _self,
-    Pointer arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
-      _self,
-      _objc.getSelector("setFuzzyMatch:"),
       arg,
     );
   }
@@ -4870,7 +4602,7 @@ class CSSearchQueryContext extends Struct<CSSearchQueryContext> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setGrouped:"),
       arg,
@@ -4882,7 +4614,7 @@ class CSSearchQueryContext extends Struct<CSSearchQueryContext> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setInternal:"),
       arg,
@@ -4894,7 +4626,7 @@ class CSSearchQueryContext extends Struct<CSSearchQueryContext> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setKeyboardLanguage:"),
       arg,
@@ -4906,7 +4638,7 @@ class CSSearchQueryContext extends Struct<CSSearchQueryContext> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setLive:"),
       arg,
@@ -4918,7 +4650,7 @@ class CSSearchQueryContext extends Struct<CSSearchQueryContext> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setLowPriority:"),
       arg,
@@ -4930,7 +4662,7 @@ class CSSearchQueryContext extends Struct<CSSearchQueryContext> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setMarkedTextArray:"),
       arg,
@@ -4942,7 +4674,7 @@ class CSSearchQueryContext extends Struct<CSSearchQueryContext> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int64_returns_void(
+    _call_ptr_ptr_Int64_returns_void(
       _self,
       _objc.getSelector("setMaxCount:"),
       arg,
@@ -4954,7 +4686,7 @@ class CSSearchQueryContext extends Struct<CSSearchQueryContext> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setOptions:"),
       arg,
@@ -4966,7 +4698,7 @@ class CSSearchQueryContext extends Struct<CSSearchQueryContext> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setPreferredLanguages:"),
       arg,
@@ -4978,7 +4710,7 @@ class CSSearchQueryContext extends Struct<CSSearchQueryContext> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setProtectionClasses:"),
       arg,
@@ -4990,7 +4722,7 @@ class CSSearchQueryContext extends Struct<CSSearchQueryContext> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int64_returns_void(
+    _call_ptr_ptr_Int64_returns_void(
       _self,
       _objc.getSelector("setQueryID:"),
       arg,
@@ -5002,7 +4734,7 @@ class CSSearchQueryContext extends Struct<CSSearchQueryContext> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setRankingQueries:"),
       arg,
@@ -5014,7 +4746,7 @@ class CSSearchQueryContext extends Struct<CSSearchQueryContext> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int32_returns_void(
+    _call_ptr_ptr_Int32_returns_void(
       _self,
       _objc.getSelector("setRankingType:"),
       arg,
@@ -5026,7 +4758,7 @@ class CSSearchQueryContext extends Struct<CSSearchQueryContext> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int64_returns_void(
+    _call_ptr_ptr_Int64_returns_void(
       _self,
       _objc.getSelector("setStrongRankingQueryCount:"),
       arg,
@@ -5038,7 +4770,7 @@ class CSSearchQueryContext extends Struct<CSSearchQueryContext> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setUserQuery:"),
       arg,
@@ -5049,7 +4781,7 @@ class CSSearchQueryContext extends Struct<CSSearchQueryContext> {
     Pointer<CSSearchQueryContext> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int64(
+    return _call_ptr_ptr_returns_Int64(
       _self,
       _objc.getSelector("strongRankingQueryCount"),
     );
@@ -5059,7 +4791,7 @@ class CSSearchQueryContext extends Struct<CSSearchQueryContext> {
     Pointer<CSSearchQueryContext> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("userQuery"),
     );
@@ -5069,16 +4801,13 @@ class CSSearchQueryContext extends Struct<CSSearchQueryContext> {
     Pointer<CSSearchQueryContext> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("xpc_dictionary"),
     );
   }
 }
 
-/// Automatically generated API. Part of [Core Spotlight](https://developer.apple.com/documentation/corespotlight?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class CSSearchableIndex extends Struct<CSSearchableIndex> {
   factory CSSearchableIndex._() {
@@ -5093,19 +4822,19 @@ class CSSearchableIndex extends Struct<CSSearchableIndex> {
     Pointer<CSSearchableIndex> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("activityQueue"),
     );
   }
 
-  static void addInteraction$completionHandler$(
+  static void addInteraction$completionHandler(
     Pointer<CSSearchableIndex> _self,
     Pointer arg, {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("addInteraction:completionHandler:"),
       arg,
@@ -5113,7 +4842,7 @@ class CSSearchableIndex extends Struct<CSSearchableIndex> {
     );
   }
 
-  static void addInteraction$bundleID$protectionClass$completionHandler$(
+  static void addInteraction$bundleID$protectionClass$completionHandler(
     Pointer<CSSearchableIndex> _self,
     Pointer arg, {
     @required Pointer bundleID,
@@ -5121,7 +4850,7 @@ class CSSearchableIndex extends Struct<CSSearchableIndex> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector(
           "addInteraction:bundleID:protectionClass:completionHandler:"),
@@ -5136,7 +4865,7 @@ class CSSearchableIndex extends Struct<CSSearchableIndex> {
     Pointer<CSSearchableIndex> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int32(
+    return _call_ptr_ptr_returns_Int32(
       _self,
       _objc.getSelector("awakeNotifyToken"),
     );
@@ -5146,7 +4875,7 @@ class CSSearchableIndex extends Struct<CSSearchableIndex> {
     Pointer<CSSearchableIndex> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("batchOpen"),
     );
@@ -5156,7 +4885,7 @@ class CSSearchableIndex extends Struct<CSSearchableIndex> {
     Pointer<CSSearchableIndex> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("batchedItemIdentifiersToDelete"),
     );
@@ -5166,7 +4895,7 @@ class CSSearchableIndex extends Struct<CSSearchableIndex> {
     Pointer<CSSearchableIndex> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("batchedItemsToIndex"),
     );
@@ -5176,7 +4905,7 @@ class CSSearchableIndex extends Struct<CSSearchableIndex> {
     Pointer<CSSearchableIndex> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("beginIndexBatch"),
     );
@@ -5186,7 +4915,7 @@ class CSSearchableIndex extends Struct<CSSearchableIndex> {
     Pointer<CSSearchableIndex> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("bundleIdentifier"),
     );
@@ -5198,7 +4927,7 @@ class CSSearchableIndex extends Struct<CSSearchableIndex> {
     @required int toState,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_Int64_returns_void(
+    _call_ptr_ptr_ptr_Int64_returns_void(
       _self,
       _objc.getSelector("changeStateOfSearchableItemsWithUIDs:toState:"),
       arg,
@@ -5210,7 +4939,7 @@ class CSSearchableIndex extends Struct<CSSearchableIndex> {
     Pointer<CSSearchableIndex> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("connection"),
     );
@@ -5220,7 +4949,7 @@ class CSSearchableIndex extends Struct<CSSearchableIndex> {
     Pointer<CSSearchableIndex> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("dealloc"),
     );
@@ -5230,7 +4959,7 @@ class CSSearchableIndex extends Struct<CSSearchableIndex> {
     Pointer<CSSearchableIndex> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("delegateQueue"),
     );
@@ -5243,7 +4972,7 @@ class CSSearchableIndex extends Struct<CSSearchableIndex> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector(
           "deleteAllInteractionsWithBundleID:protectionClass:completionHandler:"),
@@ -5258,7 +4987,7 @@ class CSSearchableIndex extends Struct<CSSearchableIndex> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("deleteAllInteractionsWithCompletionHandler:"),
       arg,
@@ -5271,7 +5000,7 @@ class CSSearchableIndex extends Struct<CSSearchableIndex> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector(
           "deleteAllSearchableItemsForBundleID:completionHandler:"),
@@ -5285,7 +5014,7 @@ class CSSearchableIndex extends Struct<CSSearchableIndex> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("deleteAllSearchableItemsWithCompletionHandler:"),
       arg,
@@ -5300,7 +5029,7 @@ class CSSearchableIndex extends Struct<CSSearchableIndex> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_Int64_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_Int64_ptr_returns_void(
       _self,
       _objc.getSelector(
           "deleteAllSearchableItemsWithProtectionClass:forBundleID:options:completionHandler:"),
@@ -5317,7 +5046,7 @@ class CSSearchableIndex extends Struct<CSSearchableIndex> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("deleteAllUserActivities:completionHandler:"),
       arg,
@@ -5325,13 +5054,13 @@ class CSSearchableIndex extends Struct<CSSearchableIndex> {
     );
   }
 
-  static void deleteInteractionsWithGroupIdentifiers$completionHandler$(
+  static void deleteInteractionsWithGroupIdentifiers$completionHandler(
     Pointer<CSSearchableIndex> _self,
     Pointer arg, {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector(
           "deleteInteractionsWithGroupIdentifiers:completionHandler:"),
@@ -5341,7 +5070,7 @@ class CSSearchableIndex extends Struct<CSSearchableIndex> {
   }
 
   static void
-      deleteInteractionsWithGroupIdentifiers$bundleID$protectionClass$completionHandler$(
+      deleteInteractionsWithGroupIdentifiers$bundleID$protectionClass$completionHandler(
     Pointer<CSSearchableIndex> _self,
     Pointer arg, {
     @required Pointer bundleID,
@@ -5349,7 +5078,7 @@ class CSSearchableIndex extends Struct<CSSearchableIndex> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector(
           "deleteInteractionsWithGroupIdentifiers:bundleID:protectionClass:completionHandler:"),
@@ -5360,13 +5089,13 @@ class CSSearchableIndex extends Struct<CSSearchableIndex> {
     );
   }
 
-  static void deleteInteractionsWithIdentifiers$completionHandler$(
+  static void deleteInteractionsWithIdentifiers$completionHandler(
     Pointer<CSSearchableIndex> _self,
     Pointer arg, {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("deleteInteractionsWithIdentifiers:completionHandler:"),
       arg,
@@ -5375,7 +5104,7 @@ class CSSearchableIndex extends Struct<CSSearchableIndex> {
   }
 
   static void
-      deleteInteractionsWithIdentifiers$bundleID$protectionClass$completionHandler$(
+      deleteInteractionsWithIdentifiers$bundleID$protectionClass$completionHandler(
     Pointer<CSSearchableIndex> _self,
     Pointer arg, {
     @required Pointer bundleID,
@@ -5383,7 +5112,7 @@ class CSSearchableIndex extends Struct<CSSearchableIndex> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector(
           "deleteInteractionsWithIdentifiers:bundleID:protectionClass:completionHandler:"),
@@ -5395,7 +5124,7 @@ class CSSearchableIndex extends Struct<CSSearchableIndex> {
   }
 
   static void
-      deleteSearchableItemsSinceDate$protectionClass$forBundleID$options$completionHandler$(
+      deleteSearchableItemsSinceDate$protectionClass$forBundleID$options$completionHandler(
     Pointer<CSSearchableIndex> _self,
     Pointer arg, {
     @required Pointer protectionClass,
@@ -5404,7 +5133,7 @@ class CSSearchableIndex extends Struct<CSSearchableIndex> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_Int64_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_ptr_Int64_ptr_returns_void(
       _self,
       _objc.getSelector(
           "deleteSearchableItemsSinceDate:protectionClass:forBundleID:options:completionHandler:"),
@@ -5416,13 +5145,13 @@ class CSSearchableIndex extends Struct<CSSearchableIndex> {
     );
   }
 
-  static void deleteSearchableItemsSinceDate$completionHandler$(
+  static void deleteSearchableItemsSinceDate$completionHandler(
     Pointer<CSSearchableIndex> _self,
     Pointer arg, {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("deleteSearchableItemsSinceDate:completionHandler:"),
       arg,
@@ -5431,7 +5160,7 @@ class CSSearchableIndex extends Struct<CSSearchableIndex> {
   }
 
   static void
-      deleteSearchableItemsWithDomainIdentifiers$protectionClass$forBundleID$options$completionHandler$(
+      deleteSearchableItemsWithDomainIdentifiers$protectionClass$forBundleID$options$completionHandler(
     Pointer<CSSearchableIndex> _self,
     Pointer arg, {
     @required Pointer protectionClass,
@@ -5440,7 +5169,7 @@ class CSSearchableIndex extends Struct<CSSearchableIndex> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_Int64_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_ptr_Int64_ptr_returns_void(
       _self,
       _objc.getSelector(
           "deleteSearchableItemsWithDomainIdentifiers:protectionClass:forBundleID:options:completionHandler:"),
@@ -5452,13 +5181,13 @@ class CSSearchableIndex extends Struct<CSSearchableIndex> {
     );
   }
 
-  static void deleteSearchableItemsWithDomainIdentifiers$completionHandler$(
+  static void deleteSearchableItemsWithDomainIdentifiers$completionHandler(
     Pointer<CSSearchableIndex> _self,
     Pointer arg, {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector(
           "deleteSearchableItemsWithDomainIdentifiers:completionHandler:"),
@@ -5473,7 +5202,7 @@ class CSSearchableIndex extends Struct<CSSearchableIndex> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector(
           "deleteSearchableItemsWithIdentifiers:completionHandler:"),
@@ -5489,7 +5218,7 @@ class CSSearchableIndex extends Struct<CSSearchableIndex> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector(
           "deleteUserActivitiesWithPersistentIdentifiers:bundleID:completionHandler:"),
@@ -5503,7 +5232,7 @@ class CSSearchableIndex extends Struct<CSSearchableIndex> {
     Pointer<CSSearchableIndex> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("description"),
     );
@@ -5516,7 +5245,7 @@ class CSSearchableIndex extends Struct<CSSearchableIndex> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("donateRelevantActions:bundleID:completionHandler:"),
       arg,
@@ -5532,7 +5261,7 @@ class CSSearchableIndex extends Struct<CSSearchableIndex> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("donateRelevantShortcuts:bundleID:completionHandler:"),
       arg,
@@ -5547,7 +5276,7 @@ class CSSearchableIndex extends Struct<CSSearchableIndex> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("endIndexBatchWithClientState:completionHandler:"),
       arg,
@@ -5560,7 +5289,7 @@ class CSSearchableIndex extends Struct<CSSearchableIndex> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("fetchLastClientStateWithCompletionHandler:"),
       arg,
@@ -5576,7 +5305,7 @@ class CSSearchableIndex extends Struct<CSSearchableIndex> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_Int64_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_ptr_Int64_ptr_returns_void(
       _self,
       _objc.getSelector(
           "fetchLastClientStateWithProtectionClass:forBundleID:clientStateName:options:completionHandler:"),
@@ -5592,7 +5321,7 @@ class CSSearchableIndex extends Struct<CSSearchableIndex> {
     Pointer<CSSearchableIndex> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("flushUserActivities"),
     );
@@ -5602,7 +5331,7 @@ class CSSearchableIndex extends Struct<CSSearchableIndex> {
     Pointer<CSSearchableIndex> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("indexDelegate"),
     );
@@ -5612,19 +5341,19 @@ class CSSearchableIndex extends Struct<CSSearchableIndex> {
     Pointer<CSSearchableIndex> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int32(
+    return _call_ptr_ptr_returns_Int32(
       _self,
       _objc.getSelector("indexID"),
     );
   }
 
-  static void indexSearchableItems$completionHandler$(
+  static void indexSearchableItems$completionHandler(
     Pointer<CSSearchableIndex> _self,
     Pointer arg, {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("indexSearchableItems:completionHandler:"),
       arg,
@@ -5633,7 +5362,7 @@ class CSSearchableIndex extends Struct<CSSearchableIndex> {
   }
 
   static void
-      indexSearchableItems$deleteSearchableItemsWithIdentifiers$clientState$completionHandler$(
+      indexSearchableItems$deleteSearchableItemsWithIdentifiers$clientState$completionHandler(
     Pointer<CSSearchableIndex> _self,
     Pointer arg, {
     @required Pointer deleteSearchableItemsWithIdentifiers,
@@ -5641,7 +5370,7 @@ class CSSearchableIndex extends Struct<CSSearchableIndex> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector(
           "indexSearchableItems:deleteSearchableItemsWithIdentifiers:clientState:completionHandler:"),
@@ -5653,7 +5382,7 @@ class CSSearchableIndex extends Struct<CSSearchableIndex> {
   }
 
   static void
-      indexSearchableItems$deleteSearchableItemsWithIdentifiers$clientState$clientStateName$protectionClass$forBundleID$options$completionHandler$(
+      indexSearchableItems$deleteSearchableItemsWithIdentifiers$clientState$clientStateName$protectionClass$forBundleID$options$completionHandler(
     Pointer<CSSearchableIndex> _self,
     Pointer arg, {
     @required Pointer deleteSearchableItemsWithIdentifiers,
@@ -5665,7 +5394,7 @@ class CSSearchableIndex extends Struct<CSSearchableIndex> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_p_p_p_Int64_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_Int64_ptr_returns_void(
       _self,
       _objc.getSelector(
           "indexSearchableItems:deleteSearchableItemsWithIdentifiers:clientState:clientStateName:protectionClass:forBundleID:options:completionHandler:"),
@@ -5680,13 +5409,13 @@ class CSSearchableIndex extends Struct<CSSearchableIndex> {
     );
   }
 
-  static void indexSearchableItems$returningItemsSanitizedForSpotlightTo$(
+  static void indexSearchableItems$returningItemsSanitizedForSpotlightTo(
     Pointer<CSSearchableIndex> _self,
     Pointer arg, {
     @required Pointer returningItemsSanitizedForSpotlightTo,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector(
           "indexSearchableItems:returningItemsSanitizedForSpotlightTo:"),
@@ -5696,7 +5425,7 @@ class CSSearchableIndex extends Struct<CSSearchableIndex> {
   }
 
   static void
-      indexSearchableItems$deleteSearchableItemsWithIdentifiers$clientState$protectionClass$forBundleID$options$completionHandler$(
+      indexSearchableItems$deleteSearchableItemsWithIdentifiers$clientState$protectionClass$forBundleID$options$completionHandler(
     Pointer<CSSearchableIndex> _self,
     Pointer arg, {
     @required Pointer deleteSearchableItemsWithIdentifiers,
@@ -5707,7 +5436,7 @@ class CSSearchableIndex extends Struct<CSSearchableIndex> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_p_p_Int64_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_Int64_ptr_returns_void(
       _self,
       _objc.getSelector(
           "indexSearchableItems:deleteSearchableItemsWithIdentifiers:clientState:protectionClass:forBundleID:options:completionHandler:"),
@@ -5726,7 +5455,7 @@ class CSSearchableIndex extends Struct<CSSearchableIndex> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("indexUserActivity:"),
       arg,
@@ -5737,31 +5466,31 @@ class CSSearchableIndex extends Struct<CSSearchableIndex> {
     Pointer<CSSearchableIndex> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("init"),
     );
   }
 
-  static Pointer initWithName$(
+  static Pointer initWithName(
     Pointer<CSSearchableIndex> _self,
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithName:"),
       arg,
     );
   }
 
-  static Pointer initWithName$options$(
+  static Pointer initWithName$options(
     Pointer<CSSearchableIndex> _self,
     Pointer arg, {
     @required int options,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_Int64_returns_p(
+    return _call_ptr_ptr_ptr_Int64_returns_ptr(
       _self,
       _objc.getSelector("initWithName:options:"),
       arg,
@@ -5769,14 +5498,14 @@ class CSSearchableIndex extends Struct<CSSearchableIndex> {
     );
   }
 
-  static Pointer initWithName$protectionClass$bundleIdentifier$(
+  static Pointer initWithName$protectionClass$bundleIdentifier(
     Pointer<CSSearchableIndex> _self,
     Pointer arg, {
     @required Pointer protectionClass,
     @required Pointer bundleIdentifier,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithName:protectionClass:bundleIdentifier:"),
       arg,
@@ -5785,13 +5514,13 @@ class CSSearchableIndex extends Struct<CSSearchableIndex> {
     );
   }
 
-  static Pointer initWithName$protectionClass$(
+  static Pointer initWithName$protectionClass(
     Pointer<CSSearchableIndex> _self,
     Pointer arg, {
     @required Pointer protectionClass,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithName:protectionClass:"),
       arg,
@@ -5799,13 +5528,13 @@ class CSSearchableIndex extends Struct<CSSearchableIndex> {
     );
   }
 
-  static Pointer initWithName$bundleIdentifier$(
+  static Pointer initWithName$bundleIdentifier(
     Pointer<CSSearchableIndex> _self,
     Pointer arg, {
     @required Pointer bundleIdentifier,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithName:bundleIdentifier:"),
       arg,
@@ -5817,7 +5546,7 @@ class CSSearchableIndex extends Struct<CSSearchableIndex> {
     Pointer<CSSearchableIndex> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("name"),
     );
@@ -5827,7 +5556,7 @@ class CSSearchableIndex extends Struct<CSSearchableIndex> {
     Pointer<CSSearchableIndex> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int64(
+    return _call_ptr_ptr_returns_Int64(
       _self,
       _objc.getSelector("options"),
     );
@@ -5839,7 +5568,7 @@ class CSSearchableIndex extends Struct<CSSearchableIndex> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_float64_p_returns_void(
+    _call_ptr_ptr_float64_ptr_returns_void(
       _self,
       _objc.getSelector("performDataMigrationWithTimeout:completionHandler:"),
       arg,
@@ -5847,13 +5576,13 @@ class CSSearchableIndex extends Struct<CSSearchableIndex> {
     );
   }
 
-  static void performIndexJob$acknowledgementHandler$(
+  static void performIndexJob$acknowledgementHandler(
     Pointer<CSSearchableIndex> _self,
     Pointer arg, {
     @required Pointer acknowledgementHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("performIndexJob:acknowledgementHandler:"),
       arg,
@@ -5861,12 +5590,12 @@ class CSSearchableIndex extends Struct<CSSearchableIndex> {
     );
   }
 
-  static void performIndexJob$(
+  static void performIndexJob(
     Pointer<CSSearchableIndex> _self,
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("performIndexJob:"),
       arg,
@@ -5877,7 +5606,7 @@ class CSSearchableIndex extends Struct<CSSearchableIndex> {
     Pointer<CSSearchableIndex> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("protectionClass"),
     );
@@ -5891,7 +5620,7 @@ class CSSearchableIndex extends Struct<CSSearchableIndex> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector(
           "provideDataForBundle:identifier:type:completionHandler:"),
@@ -5910,7 +5639,7 @@ class CSSearchableIndex extends Struct<CSSearchableIndex> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector(
           "provideFileURLForBundle:identifier:type:completionHandler:"),
@@ -5925,7 +5654,7 @@ class CSSearchableIndex extends Struct<CSSearchableIndex> {
     Pointer<CSSearchableIndex> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("requestQueue"),
     );
@@ -5936,7 +5665,7 @@ class CSSearchableIndex extends Struct<CSSearchableIndex> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int32_returns_void(
+    _call_ptr_ptr_Int32_returns_void(
       _self,
       _objc.getSelector("setAwakeNotifyToken:"),
       arg,
@@ -5948,7 +5677,7 @@ class CSSearchableIndex extends Struct<CSSearchableIndex> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setBatchOpen:"),
       arg,
@@ -5960,7 +5689,7 @@ class CSSearchableIndex extends Struct<CSSearchableIndex> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setBatchedItemIdentifiersToDelete:"),
       arg,
@@ -5972,7 +5701,7 @@ class CSSearchableIndex extends Struct<CSSearchableIndex> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setBatchedItemsToIndex:"),
       arg,
@@ -5984,7 +5713,7 @@ class CSSearchableIndex extends Struct<CSSearchableIndex> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setBundleIdentifier:"),
       arg,
@@ -5996,7 +5725,7 @@ class CSSearchableIndex extends Struct<CSSearchableIndex> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setDelegateQueue:"),
       arg,
@@ -6008,7 +5737,7 @@ class CSSearchableIndex extends Struct<CSSearchableIndex> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setIndexDelegate:"),
       arg,
@@ -6020,7 +5749,7 @@ class CSSearchableIndex extends Struct<CSSearchableIndex> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setName:"),
       arg,
@@ -6032,7 +5761,7 @@ class CSSearchableIndex extends Struct<CSSearchableIndex> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int64_returns_void(
+    _call_ptr_ptr_Int64_returns_void(
       _self,
       _objc.getSelector("setOptions:"),
       arg,
@@ -6044,7 +5773,7 @@ class CSSearchableIndex extends Struct<CSSearchableIndex> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setProtectionClass:"),
       arg,
@@ -6060,7 +5789,7 @@ class CSSearchableIndex extends Struct<CSSearchableIndex> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector(
           "slowFetchAttributes:protectionClass:bundleID:identifiers:completionHandler:"),
@@ -6076,7 +5805,7 @@ class CSSearchableIndex extends Struct<CSSearchableIndex> {
     Pointer<CSSearchableIndex> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("throttle"),
     );
@@ -6086,7 +5815,7 @@ class CSSearchableIndex extends Struct<CSSearchableIndex> {
     Pointer<CSSearchableIndex> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("throttleQueue"),
     );
@@ -6096,14 +5825,14 @@ class CSSearchableIndex extends Struct<CSSearchableIndex> {
     Pointer<CSSearchableIndex> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("unthrottle"),
     );
   }
 
   static void
-      willModifySearchableItemsWithIdentifiers$protectionClass$forBundleID$options$completionHandler$(
+      willModifySearchableItemsWithIdentifiers$protectionClass$forBundleID$options$completionHandler(
     Pointer<CSSearchableIndex> _self,
     Pointer arg, {
     @required Pointer protectionClass,
@@ -6112,7 +5841,7 @@ class CSSearchableIndex extends Struct<CSSearchableIndex> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_Int64_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_ptr_Int64_ptr_returns_void(
       _self,
       _objc.getSelector(
           "willModifySearchableItemsWithIdentifiers:protectionClass:forBundleID:options:completionHandler:"),
@@ -6124,13 +5853,13 @@ class CSSearchableIndex extends Struct<CSSearchableIndex> {
     );
   }
 
-  static void willModifySearchableItemsWithIdentifiers$completionHandler$(
+  static void willModifySearchableItemsWithIdentifiers$completionHandler(
     Pointer<CSSearchableIndex> _self,
     Pointer arg, {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector(
           "willModifySearchableItemsWithIdentifiers:completionHandler:"),
@@ -6145,7 +5874,7 @@ class CSSearchableIndex extends Struct<CSSearchableIndex> {
     @required int requiresInitialization,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_Int8_returns_p(
+    return _call_ptr_ptr_ptr_Int8_returns_ptr(
       _self,
       _objc.getSelector("xpc_dictionary_for_command:requiresInitialization:"),
       arg,
@@ -6154,9 +5883,6 @@ class CSSearchableIndex extends Struct<CSSearchableIndex> {
   }
 }
 
-/// Automatically generated API. Part of [Core Spotlight](https://developer.apple.com/documentation/corespotlight?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class CSSearchableIndexRequest extends Struct<CSSearchableIndexRequest> {
   factory CSSearchableIndexRequest._() {
@@ -6173,7 +5899,7 @@ class CSSearchableIndexRequest extends Struct<CSSearchableIndexRequest> {
     Pointer<CSSearchableIndexRequest> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("completionBlock"),
     );
@@ -6183,7 +5909,7 @@ class CSSearchableIndexRequest extends Struct<CSSearchableIndexRequest> {
     Pointer<CSSearchableIndexRequest> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("completionDataBlock"),
     );
@@ -6193,7 +5919,7 @@ class CSSearchableIndexRequest extends Struct<CSSearchableIndexRequest> {
     Pointer<CSSearchableIndexRequest> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("data"),
     );
@@ -6203,7 +5929,7 @@ class CSSearchableIndexRequest extends Struct<CSSearchableIndexRequest> {
     Pointer<CSSearchableIndexRequest> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("dataWrapper"),
     );
@@ -6213,7 +5939,7 @@ class CSSearchableIndexRequest extends Struct<CSSearchableIndexRequest> {
     Pointer<CSSearchableIndexRequest> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("dealloc"),
     );
@@ -6223,7 +5949,7 @@ class CSSearchableIndexRequest extends Struct<CSSearchableIndexRequest> {
     Pointer<CSSearchableIndexRequest> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("description"),
     );
@@ -6234,7 +5960,7 @@ class CSSearchableIndexRequest extends Struct<CSSearchableIndexRequest> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("finishWithError:"),
       arg,
@@ -6245,7 +5971,7 @@ class CSSearchableIndexRequest extends Struct<CSSearchableIndexRequest> {
     Pointer<CSSearchableIndexRequest> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("finished"),
     );
@@ -6255,7 +5981,7 @@ class CSSearchableIndexRequest extends Struct<CSSearchableIndexRequest> {
     Pointer<CSSearchableIndexRequest> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("index"),
     );
@@ -6267,7 +5993,7 @@ class CSSearchableIndexRequest extends Struct<CSSearchableIndexRequest> {
     @required Pointer label,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithSearchableIndex:label:"),
       arg,
@@ -6279,7 +6005,7 @@ class CSSearchableIndexRequest extends Struct<CSSearchableIndexRequest> {
     Pointer<CSSearchableIndexRequest> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("label"),
     );
@@ -6289,7 +6015,7 @@ class CSSearchableIndexRequest extends Struct<CSSearchableIndexRequest> {
     Pointer<CSSearchableIndexRequest> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("maxRetryCount"),
     );
@@ -6299,7 +6025,7 @@ class CSSearchableIndexRequest extends Struct<CSSearchableIndexRequest> {
     Pointer<CSSearchableIndexRequest> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("performBlock"),
     );
@@ -6309,7 +6035,7 @@ class CSSearchableIndexRequest extends Struct<CSSearchableIndexRequest> {
     Pointer<CSSearchableIndexRequest> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint32(
+    return _call_ptr_ptr_returns_Uint32(
       _self,
       _objc.getSelector("requestID"),
     );
@@ -6319,31 +6045,31 @@ class CSSearchableIndexRequest extends Struct<CSSearchableIndexRequest> {
     Pointer<CSSearchableIndexRequest> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("retryCount"),
     );
   }
 
-  static void retryIfNecessaryWithError$(
+  static void retryIfNecessaryWithError(
     Pointer<CSSearchableIndexRequest> _self,
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("retryIfNecessaryWithError:"),
       arg,
     );
   }
 
-  static void retryIfNecessaryWithError$dataWrapper$(
+  static void retryIfNecessaryWithError$dataWrapper(
     Pointer<CSSearchableIndexRequest> _self,
     Pointer arg, {
     @required Pointer dataWrapper,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("retryIfNecessaryWithError:dataWrapper:"),
       arg,
@@ -6356,7 +6082,7 @@ class CSSearchableIndexRequest extends Struct<CSSearchableIndexRequest> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setCompletionBlock:"),
       arg,
@@ -6368,7 +6094,7 @@ class CSSearchableIndexRequest extends Struct<CSSearchableIndexRequest> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setCompletionDataBlock:"),
       arg,
@@ -6380,7 +6106,7 @@ class CSSearchableIndexRequest extends Struct<CSSearchableIndexRequest> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setDataWrapper:"),
       arg,
@@ -6392,7 +6118,7 @@ class CSSearchableIndexRequest extends Struct<CSSearchableIndexRequest> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setFinished:"),
       arg,
@@ -6404,7 +6130,7 @@ class CSSearchableIndexRequest extends Struct<CSSearchableIndexRequest> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setIndex:"),
       arg,
@@ -6416,7 +6142,7 @@ class CSSearchableIndexRequest extends Struct<CSSearchableIndexRequest> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setLabel:"),
       arg,
@@ -6428,7 +6154,7 @@ class CSSearchableIndexRequest extends Struct<CSSearchableIndexRequest> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Uint64_returns_void(
+    _call_ptr_ptr_Uint64_returns_void(
       _self,
       _objc.getSelector("setMaxRetryCount:"),
       arg,
@@ -6440,7 +6166,7 @@ class CSSearchableIndexRequest extends Struct<CSSearchableIndexRequest> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setPerformBlock:"),
       arg,
@@ -6452,7 +6178,7 @@ class CSSearchableIndexRequest extends Struct<CSSearchableIndexRequest> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Uint32_returns_void(
+    _call_ptr_ptr_Uint32_returns_void(
       _self,
       _objc.getSelector("setRequestID:"),
       arg,
@@ -6464,7 +6190,7 @@ class CSSearchableIndexRequest extends Struct<CSSearchableIndexRequest> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Uint64_returns_void(
+    _call_ptr_ptr_Uint64_returns_void(
       _self,
       _objc.getSelector("setRetryCount:"),
       arg,
@@ -6476,7 +6202,7 @@ class CSSearchableIndexRequest extends Struct<CSSearchableIndexRequest> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setShouldThrottle:"),
       arg,
@@ -6488,7 +6214,7 @@ class CSSearchableIndexRequest extends Struct<CSSearchableIndexRequest> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setStarted:"),
       arg,
@@ -6500,7 +6226,7 @@ class CSSearchableIndexRequest extends Struct<CSSearchableIndexRequest> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setThrottled:"),
       arg,
@@ -6511,7 +6237,7 @@ class CSSearchableIndexRequest extends Struct<CSSearchableIndexRequest> {
     Pointer<CSSearchableIndexRequest> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("shouldThrottle"),
     );
@@ -6521,7 +6247,7 @@ class CSSearchableIndexRequest extends Struct<CSSearchableIndexRequest> {
     Pointer<CSSearchableIndexRequest> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("start"),
     );
@@ -6531,7 +6257,7 @@ class CSSearchableIndexRequest extends Struct<CSSearchableIndexRequest> {
     Pointer<CSSearchableIndexRequest> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("started"),
     );
@@ -6541,16 +6267,13 @@ class CSSearchableIndexRequest extends Struct<CSSearchableIndexRequest> {
     Pointer<CSSearchableIndexRequest> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("throttled"),
     );
   }
 }
 
-/// Automatically generated API. Part of [Core Spotlight](https://developer.apple.com/documentation/corespotlight?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class CSSearchableItem extends Struct<CSSearchableItem> {
   factory CSSearchableItem._() {
@@ -6565,7 +6288,7 @@ class CSSearchableItem extends Struct<CSSearchableItem> {
     Pointer<CSSearchableItem> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("attributeSet"),
     );
@@ -6575,7 +6298,7 @@ class CSSearchableItem extends Struct<CSSearchableItem> {
     Pointer<CSSearchableItem> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("attributes"),
     );
@@ -6594,7 +6317,7 @@ class CSSearchableItem extends Struct<CSSearchableItem> {
     @required Pointer attributeSet,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_p_p_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector(
           "breakOutPersonInformationInSet:withName:emails:contactIdentifiers:nameKey:emailKey:contactIdentifierKey:emailAddressKey:attributeSet:"),
@@ -6614,21 +6337,9 @@ class CSSearchableItem extends Struct<CSSearchableItem> {
     Pointer<CSSearchableItem> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("bundleID"),
-    );
-  }
-
-  static Pointer copyWithZone(
-    Pointer<CSSearchableItem> _self,
-    Pointer<Pointer> arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
-      _self,
-      _objc.getSelector("copyWithZone:"),
-      arg,
     );
   }
 
@@ -6636,7 +6347,7 @@ class CSSearchableItem extends Struct<CSSearchableItem> {
     Pointer<CSSearchableItem> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("debugDescription"),
     );
@@ -6646,7 +6357,7 @@ class CSSearchableItem extends Struct<CSSearchableItem> {
     Pointer<CSSearchableItem> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("description"),
     );
@@ -6656,7 +6367,7 @@ class CSSearchableItem extends Struct<CSSearchableItem> {
     Pointer<CSSearchableItem> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("domainIdentifier"),
     );
@@ -6667,7 +6378,7 @@ class CSSearchableItem extends Struct<CSSearchableItem> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("encodeWithCoder:"),
       arg,
@@ -6678,7 +6389,7 @@ class CSSearchableItem extends Struct<CSSearchableItem> {
     Pointer<CSSearchableItem> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("expirationDate"),
     );
@@ -6688,7 +6399,7 @@ class CSSearchableItem extends Struct<CSSearchableItem> {
     Pointer<CSSearchableItem> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("filteredSpotlightAttributes"),
     );
@@ -6698,7 +6409,7 @@ class CSSearchableItem extends Struct<CSSearchableItem> {
     Pointer<CSSearchableItem> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("hash"),
     );
@@ -6708,7 +6419,7 @@ class CSSearchableItem extends Struct<CSSearchableItem> {
     Pointer<CSSearchableItem> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("init"),
     );
@@ -6719,7 +6430,7 @@ class CSSearchableItem extends Struct<CSSearchableItem> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithAttributeSet:"),
       arg,
@@ -6731,7 +6442,7 @@ class CSSearchableItem extends Struct<CSSearchableItem> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithCoder:"),
       arg,
@@ -6745,7 +6456,7 @@ class CSSearchableItem extends Struct<CSSearchableItem> {
     @required Pointer attributeSet,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector(
           "initWithUniqueIdentifier:domainIdentifier:attributeSet:"),
@@ -6760,7 +6471,7 @@ class CSSearchableItem extends Struct<CSSearchableItem> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isEqual:"),
       arg,
@@ -6771,7 +6482,7 @@ class CSSearchableItem extends Struct<CSSearchableItem> {
     Pointer<CSSearchableItem> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isUpdate"),
     );
@@ -6781,7 +6492,7 @@ class CSSearchableItem extends Struct<CSSearchableItem> {
     Pointer<CSSearchableItem> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("machTime"),
     );
@@ -6791,7 +6502,7 @@ class CSSearchableItem extends Struct<CSSearchableItem> {
     Pointer<CSSearchableItem> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("noIndex"),
     );
@@ -6801,19 +6512,9 @@ class CSSearchableItem extends Struct<CSSearchableItem> {
     Pointer<CSSearchableItem> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("protection"),
-    );
-  }
-
-  static Pointer score(
-    Pointer<CSSearchableItem> _self,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
-      _self,
-      _objc.getSelector("score"),
     );
   }
 
@@ -6821,7 +6522,7 @@ class CSSearchableItem extends Struct<CSSearchableItem> {
     Pointer<CSSearchableItem> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("searchableItem"),
     );
@@ -6832,7 +6533,7 @@ class CSSearchableItem extends Struct<CSSearchableItem> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setAttributeSet:"),
       arg,
@@ -6844,7 +6545,7 @@ class CSSearchableItem extends Struct<CSSearchableItem> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setAttributes:"),
       arg,
@@ -6856,7 +6557,7 @@ class CSSearchableItem extends Struct<CSSearchableItem> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setBundleID:"),
       arg,
@@ -6868,7 +6569,7 @@ class CSSearchableItem extends Struct<CSSearchableItem> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setDomainIdentifier:"),
       arg,
@@ -6880,7 +6581,7 @@ class CSSearchableItem extends Struct<CSSearchableItem> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setExpirationDate:"),
       arg,
@@ -6892,7 +6593,7 @@ class CSSearchableItem extends Struct<CSSearchableItem> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setIsUpdate:"),
       arg,
@@ -6904,7 +6605,7 @@ class CSSearchableItem extends Struct<CSSearchableItem> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Uint64_returns_void(
+    _call_ptr_ptr_Uint64_returns_void(
       _self,
       _objc.getSelector("setMachTime:"),
       arg,
@@ -6916,7 +6617,7 @@ class CSSearchableItem extends Struct<CSSearchableItem> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setNoIndex:"),
       arg,
@@ -6928,21 +6629,9 @@ class CSSearchableItem extends Struct<CSSearchableItem> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setProtection:"),
-      arg,
-    );
-  }
-
-  static void setScore(
-    Pointer<CSSearchableItem> _self,
-    Pointer arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
-      _self,
-      _objc.getSelector("setScore:"),
       arg,
     );
   }
@@ -6952,7 +6641,7 @@ class CSSearchableItem extends Struct<CSSearchableItem> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setShouldSetSpotlightMailMessageAttributes:"),
       arg,
@@ -6964,7 +6653,7 @@ class CSSearchableItem extends Struct<CSSearchableItem> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setUniqueIdentifier:"),
       arg,
@@ -6975,7 +6664,7 @@ class CSSearchableItem extends Struct<CSSearchableItem> {
     Pointer<CSSearchableItem> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("shouldSetSpotlightMailMessageAttributes"),
     );
@@ -6985,7 +6674,7 @@ class CSSearchableItem extends Struct<CSSearchableItem> {
     Pointer<CSSearchableItem> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("standardizeAttributes"),
     );
@@ -6995,16 +6684,13 @@ class CSSearchableItem extends Struct<CSSearchableItem> {
     Pointer<CSSearchableItem> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("uniqueIdentifier"),
     );
   }
 }
 
-/// Automatically generated API. Part of [Core Spotlight](https://developer.apple.com/documentation/corespotlight?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class CSSearchableItemAttributeSet
     extends Struct<CSSearchableItemAttributeSet> {
@@ -7022,7 +6708,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("EXIFGPSVersion"),
     );
@@ -7032,7 +6718,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("EXIFVersion"),
     );
@@ -7042,7 +6728,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("GPSAreaInformation"),
     );
@@ -7052,7 +6738,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("GPSDOP"),
     );
@@ -7062,7 +6748,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("GPSDateStamp"),
     );
@@ -7072,7 +6758,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("GPSDestBearing"),
     );
@@ -7082,7 +6768,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("GPSDestDistance"),
     );
@@ -7092,7 +6778,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("GPSDestLatitude"),
     );
@@ -7102,7 +6788,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("GPSDestLongitude"),
     );
@@ -7112,7 +6798,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("GPSDifferental"),
     );
@@ -7122,7 +6808,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("GPSMapDatum"),
     );
@@ -7132,7 +6818,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("GPSMeasureMode"),
     );
@@ -7142,7 +6828,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("GPSProcessingMethod"),
     );
@@ -7152,7 +6838,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("GPSStatus"),
     );
@@ -7162,7 +6848,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("GPSTrack"),
     );
@@ -7172,7 +6858,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("HTMLContentData"),
     );
@@ -7182,7 +6868,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("HTMLContentDataNoCopy"),
     );
@@ -7192,7 +6878,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("ISOSpeed"),
     );
@@ -7202,7 +6888,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("URL"),
     );
@@ -7212,7 +6898,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("accountHandles"),
     );
@@ -7222,7 +6908,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("accountIdentifier"),
     );
@@ -7232,7 +6918,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("accountType"),
     );
@@ -7242,7 +6928,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("acquisitionMake"),
     );
@@ -7252,7 +6938,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("acquisitionModel"),
     );
@@ -7262,7 +6948,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("adamID"),
     );
@@ -7273,7 +6959,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("addAttributesFromAttributeSet:"),
       arg,
@@ -7285,7 +6971,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("addAttributesFromDictionary:"),
       arg,
@@ -7296,7 +6982,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("addedDate"),
     );
@@ -7306,7 +6992,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("additionalRecipients"),
     );
@@ -7316,7 +7002,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("album"),
     );
@@ -7326,7 +7012,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("albumPersistentID"),
     );
@@ -7336,7 +7022,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("allDay"),
     );
@@ -7346,7 +7032,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("alternateNames"),
     );
@@ -7356,7 +7042,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("altitude"),
     );
@@ -7366,7 +7052,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("aperture"),
     );
@@ -7376,7 +7062,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("appleLoopDescriptors"),
     );
@@ -7386,7 +7072,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("appleLoopsKeyFilterType"),
     );
@@ -7396,7 +7082,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("appleLoopsLoopMode"),
     );
@@ -7406,7 +7092,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("appleLoopsRootKey"),
     );
@@ -7416,7 +7102,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("applicationCategories"),
     );
@@ -7426,7 +7112,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("applicationName"),
     );
@@ -7436,7 +7122,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("artist"),
     );
@@ -7446,7 +7132,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("attachmentNames"),
     );
@@ -7456,7 +7142,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("attachmentPaths"),
     );
@@ -7466,7 +7152,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("attachmentTypes"),
     );
@@ -7476,7 +7162,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("attributeDictionary"),
     );
@@ -7487,7 +7173,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("attributeForKey:"),
       arg,
@@ -7498,7 +7184,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("attributes"),
     );
@@ -7508,7 +7194,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("audiences"),
     );
@@ -7518,7 +7204,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("audioBitRate"),
     );
@@ -7528,7 +7214,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("audioChannelCount"),
     );
@@ -7538,7 +7224,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("audioEncodingApplication"),
     );
@@ -7548,7 +7234,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("audioSampleRate"),
     );
@@ -7558,7 +7244,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("audioTrackNumber"),
     );
@@ -7568,7 +7254,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("authorAddresses"),
     );
@@ -7578,7 +7264,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("authorEmailAddresses"),
     );
@@ -7588,7 +7274,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("authorNames"),
     );
@@ -7598,7 +7284,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("authors"),
     );
@@ -7608,7 +7294,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("backgroundRunnable"),
     );
@@ -7618,7 +7304,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("bitsPerSample"),
     );
@@ -7628,7 +7314,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("bundleID"),
     );
@@ -7638,7 +7324,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("bundleIdentifier"),
     );
@@ -7648,7 +7334,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("calendarHolidayIdentifier"),
     );
@@ -7658,7 +7344,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("cameraOwner"),
     );
@@ -7668,7 +7354,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("city"),
     );
@@ -7678,29 +7364,9 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("codecs"),
-    );
-  }
-
-  static Pointer codedAttributes(
-    Pointer<CSSearchableItemAttributeSet> _self,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
-      _self,
-      _objc.getSelector("codedAttributes"),
-    );
-  }
-
-  static Pointer codedCustomAttributes(
-    Pointer<CSSearchableItemAttributeSet> _self,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
-      _self,
-      _objc.getSelector("codedCustomAttributes"),
     );
   }
 
@@ -7708,7 +7374,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("colorSpace"),
     );
@@ -7718,7 +7384,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("comment"),
     );
@@ -7728,7 +7394,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("completionDate"),
     );
@@ -7738,7 +7404,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("composer"),
     );
@@ -7748,7 +7414,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("contactKeywords"),
     );
@@ -7758,7 +7424,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("containerDisplayName"),
     );
@@ -7768,7 +7434,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("containerIdentifier"),
     );
@@ -7778,7 +7444,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("containerOrder"),
     );
@@ -7788,7 +7454,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("containerTitle"),
     );
@@ -7798,7 +7464,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("contentCreationDate"),
     );
@@ -7808,7 +7474,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("contentDecoder"),
     );
@@ -7818,7 +7484,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("contentDescription"),
     );
@@ -7828,19 +7494,9 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("contentModificationDate"),
-    );
-  }
-
-  static Pointer contentObj(
-    Pointer<CSSearchableItemAttributeSet> _self,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
-      _self,
-      _objc.getSelector("contentObj"),
     );
   }
 
@@ -7848,7 +7504,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("contentRating"),
     );
@@ -7858,7 +7514,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("contentSnippet"),
     );
@@ -7868,7 +7524,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("contentSources"),
     );
@@ -7878,7 +7534,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("contentType"),
     );
@@ -7888,7 +7544,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("contentTypeTree"),
     );
@@ -7898,7 +7554,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("contentURL"),
     );
@@ -7908,21 +7564,9 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("contributors"),
-    );
-  }
-
-  static Pointer copyWithZone(
-    Pointer<CSSearchableItemAttributeSet> _self,
-    Pointer<Pointer> arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
-      _self,
-      _objc.getSelector("copyWithZone:"),
-      arg,
     );
   }
 
@@ -7930,7 +7574,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("copyright"),
     );
@@ -7940,7 +7584,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("country"),
     );
@@ -7950,7 +7594,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("coverage"),
     );
@@ -7960,7 +7604,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("creator"),
     );
@@ -7970,7 +7614,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("customAttributeDictionary"),
     );
@@ -7980,7 +7624,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("customAttributes"),
     );
@@ -7990,7 +7634,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("dataOwnerType"),
     );
@@ -8000,7 +7644,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("debugDescription"),
     );
@@ -8010,7 +7654,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("decoder"),
     );
@@ -8020,7 +7664,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("deliveryType"),
     );
@@ -8030,7 +7674,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("description"),
     );
@@ -8040,7 +7684,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("director"),
     );
@@ -8050,7 +7694,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("displayName"),
     );
@@ -8060,7 +7704,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("documentIdentifier"),
     );
@@ -8070,7 +7714,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("domainIdentifier"),
     );
@@ -8080,7 +7724,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("downloadError"),
     );
@@ -8090,7 +7734,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("downloadedDate"),
     );
@@ -8100,7 +7744,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("downloadingStatus"),
     );
@@ -8110,7 +7754,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("dueDate"),
     );
@@ -8120,7 +7764,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("duration"),
     );
@@ -8130,7 +7774,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("editors"),
     );
@@ -8140,7 +7784,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("emailAddresses"),
     );
@@ -8150,19 +7794,19 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("emailHeaders"),
     );
   }
 
-  static void encodeWithCSCoder$includeText$(
+  static void encodeWithCSCoder$includeText(
     Pointer<CSSearchableItemAttributeSet> _self,
     Pointer arg, {
     @required int includeText,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_Int8_returns_void(
+    _call_ptr_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("encodeWithCSCoder:includeText:"),
       arg,
@@ -8170,12 +7814,12 @@ class CSSearchableItemAttributeSet
     );
   }
 
-  static void encodeWithCSCoder$(
+  static void encodeWithCSCoder(
     Pointer<CSSearchableItemAttributeSet> _self,
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("encodeWithCSCoder:"),
       arg,
@@ -8187,7 +7831,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("encodeWithCoder:"),
       arg,
@@ -8198,7 +7842,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("encodingApplications"),
     );
@@ -8208,7 +7852,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("endDate"),
     );
@@ -8218,7 +7862,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("executableArchitectures"),
     );
@@ -8228,7 +7872,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("executablePlatform"),
     );
@@ -8238,7 +7882,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("expirationDate"),
     );
@@ -8248,7 +7892,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("exposureMode"),
     );
@@ -8258,7 +7902,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("exposureProgram"),
     );
@@ -8268,7 +7912,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("exposureTime"),
     );
@@ -8278,7 +7922,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("exposureTimeString"),
     );
@@ -8288,7 +7932,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("extendedContentRating"),
     );
@@ -8298,7 +7942,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("extraData"),
     );
@@ -8308,7 +7952,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("fNumber"),
     );
@@ -8318,7 +7962,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("favoriteRank"),
     );
@@ -8328,7 +7972,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("fileIdentifier"),
     );
@@ -8338,7 +7982,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("fileItemID"),
     );
@@ -8348,7 +7992,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("fileProviderDomaindentifier"),
     );
@@ -8358,7 +8002,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("fileProviderID"),
     );
@@ -8368,7 +8012,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("fileProviderUserInfoKeys"),
     );
@@ -8378,7 +8022,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("fileProviderUserInfoValues"),
     );
@@ -8388,7 +8032,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("fileSize"),
     );
@@ -8398,7 +8042,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("filename"),
     );
@@ -8408,7 +8052,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("finderComment"),
     );
@@ -8418,7 +8062,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("focalLength"),
     );
@@ -8428,7 +8072,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("fontNames"),
     );
@@ -8438,7 +8082,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("fullyFormattedAddress"),
     );
@@ -8448,7 +8092,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("genre"),
     );
@@ -8458,7 +8102,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("hasAlphaChannel"),
     );
@@ -8468,7 +8112,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("hasCodedCustomAttributes"),
     );
@@ -8478,7 +8122,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("hash"),
     );
@@ -8488,7 +8132,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("headline"),
     );
@@ -8498,7 +8142,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("hiddenAdditionalRecipients"),
     );
@@ -8508,7 +8152,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("identifier"),
     );
@@ -8518,7 +8162,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("imageDirection"),
     );
@@ -8528,7 +8172,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("importantDates"),
     );
@@ -8540,7 +8184,7 @@ class CSSearchableItemAttributeSet
     @required Pointer forKey,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("incrementAttributeValue:forKey:"),
       arg,
@@ -8552,7 +8196,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("information"),
     );
@@ -8562,7 +8206,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("init"),
     );
@@ -8573,7 +8217,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithAttributeSet:"),
       arg,
@@ -8585,7 +8229,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithAttributes:"),
       arg,
@@ -8597,24 +8241,10 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithCoder:"),
       arg,
-    );
-  }
-
-  static Pointer initWithDecoder(
-    Pointer<CSSearchableItemAttributeSet> _self,
-    Pointer arg, {
-    @required Pointer obj,
-  }) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_p(
-      _self,
-      _objc.getSelector("initWithDecoder:obj:"),
-      arg,
-      obj,
     );
   }
 
@@ -8623,7 +8253,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithItemContentType:"),
       arg,
@@ -8635,7 +8265,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithSerializedAttributes:"),
       arg,
@@ -8646,7 +8276,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("instantMessageAddresses"),
     );
@@ -8656,7 +8286,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("instructions"),
     );
@@ -8666,7 +8296,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("intentData"),
     );
@@ -8676,7 +8306,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("isApplicationManaged"),
     );
@@ -8686,7 +8316,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("isDownloading"),
     );
@@ -8697,7 +8327,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isEqual:"),
       arg,
@@ -8708,7 +8338,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("isExistingThread"),
     );
@@ -8718,7 +8348,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("isFlashOn"),
     );
@@ -8728,7 +8358,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("isFocalLength35mm"),
     );
@@ -8738,7 +8368,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("isGeneralMIDISequence"),
     );
@@ -8748,7 +8378,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("isLikelyJunk"),
     );
@@ -8758,7 +8388,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("isLocal"),
     );
@@ -8768,7 +8398,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("isPartiallyDownloaded"),
     );
@@ -8778,7 +8408,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("isPlaceholder"),
     );
@@ -8788,7 +8418,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("isReaderView"),
     );
@@ -8798,7 +8428,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("isRedEyeOn"),
     );
@@ -8808,7 +8438,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("isShared"),
     );
@@ -8818,7 +8448,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("isStreamable"),
     );
@@ -8828,7 +8458,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("isTrashed"),
     );
@@ -8838,7 +8468,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("isUploaded"),
     );
@@ -8848,7 +8478,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("isUploading"),
     );
@@ -8858,7 +8488,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("isUserCreated"),
     );
@@ -8868,7 +8498,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("isUserCurated"),
     );
@@ -8878,7 +8508,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("isUserOwned"),
     );
@@ -8888,7 +8518,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isValidAttributeSet"),
     );
@@ -8898,7 +8528,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("keySignature"),
     );
@@ -8908,7 +8538,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("keywords"),
     );
@@ -8918,7 +8548,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("kind"),
     );
@@ -8928,7 +8558,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("languages"),
     );
@@ -8938,7 +8568,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("lastApplicationLaunchedDate"),
     );
@@ -8948,7 +8578,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("lastEditorIdentifier"),
     );
@@ -8958,7 +8588,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("lastEditorName"),
     );
@@ -8968,7 +8598,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("lastUsedDate"),
     );
@@ -8978,7 +8608,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("latitude"),
     );
@@ -8988,7 +8618,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("layerNames"),
     );
@@ -8998,7 +8628,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("lensModel"),
     );
@@ -9008,7 +8638,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("longitude"),
     );
@@ -9018,7 +8648,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("lyricist"),
     );
@@ -9028,7 +8658,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("mailAttachmentKinds"),
     );
@@ -9038,7 +8668,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("mailAttachmentNames"),
     );
@@ -9048,7 +8678,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("mailAttachmentTypes"),
     );
@@ -9058,7 +8688,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("mailCategory"),
     );
@@ -9068,7 +8698,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("mailConversationID"),
     );
@@ -9078,7 +8708,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("mailDateLastViewed"),
     );
@@ -9088,7 +8718,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("mailDateReceived"),
     );
@@ -9098,7 +8728,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("mailFlagColor"),
     );
@@ -9108,7 +8738,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("mailFlagged"),
     );
@@ -9118,7 +8748,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("mailGMailLabels"),
     );
@@ -9128,7 +8758,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("mailMessageID"),
     );
@@ -9138,7 +8768,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("mailPriority"),
     );
@@ -9148,7 +8778,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("mailRead"),
     );
@@ -9158,7 +8788,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("mailRepliedTo"),
     );
@@ -9168,7 +8798,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("mailboxIdentifiers"),
     );
@@ -9180,7 +8810,7 @@ class CSSearchableItemAttributeSet
     @required Pointer userHandle,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("markAsCreated:userHandle:"),
       arg,
@@ -9194,7 +8824,7 @@ class CSSearchableItemAttributeSet
     @required Pointer userHandle,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("markAsDownloaded:userHandle:"),
       arg,
@@ -9208,7 +8838,7 @@ class CSSearchableItemAttributeSet
     @required Pointer userHandle,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("markAsModified:userHandle:"),
       arg,
@@ -9222,7 +8852,7 @@ class CSSearchableItemAttributeSet
     @required Pointer userHandle,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("markAsPrinted:userHandle:"),
       arg,
@@ -9240,7 +8870,7 @@ class CSSearchableItemAttributeSet
     @required Pointer transport,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector(
           "markAsReceived:sender:senderHandle:recipients:recipientHandles:transport:"),
@@ -9263,7 +8893,7 @@ class CSSearchableItemAttributeSet
     @required Pointer transport,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector(
           "markAsSent:sender:senderHandle:recipients:recipientHandles:transport:"),
@@ -9280,7 +8910,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("maxAperture"),
     );
@@ -9290,7 +8920,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("mediaTypes"),
     );
@@ -9300,7 +8930,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("metadataModificationDate"),
     );
@@ -9310,7 +8940,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("meteringMode"),
     );
@@ -9320,7 +8950,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("musicalGenre"),
     );
@@ -9330,7 +8960,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("musicalInstrumentCategory"),
     );
@@ -9340,7 +8970,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("musicalInstrumentName"),
     );
@@ -9350,7 +8980,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("mutableAttributes"),
     );
@@ -9360,7 +8990,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("namedLocation"),
     );
@@ -9370,7 +9000,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("organizations"),
     );
@@ -9380,7 +9010,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("orientation"),
     );
@@ -9390,7 +9020,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("originalFormat"),
     );
@@ -9400,7 +9030,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("originalSource"),
     );
@@ -9410,7 +9040,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("ownerIdentifier"),
     );
@@ -9420,7 +9050,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("ownerName"),
     );
@@ -9430,7 +9060,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("pageCount"),
     );
@@ -9440,7 +9070,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("pageHeight"),
     );
@@ -9450,7 +9080,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("pageWidth"),
     );
@@ -9460,7 +9090,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("parentFileIdentifier"),
     );
@@ -9470,7 +9100,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("parentFileItemID"),
     );
@@ -9480,7 +9110,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("participants"),
     );
@@ -9490,7 +9120,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("path"),
     );
@@ -9500,7 +9130,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("performers"),
     );
@@ -9510,7 +9140,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("phoneNumbers"),
     );
@@ -9520,7 +9150,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("pixelCount"),
     );
@@ -9530,7 +9160,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("pixelHeight"),
     );
@@ -9540,7 +9170,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("pixelWidth"),
     );
@@ -9550,7 +9180,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("playCount"),
     );
@@ -9560,7 +9190,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("postalCode"),
     );
@@ -9570,7 +9200,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("primaryRecipients"),
     );
@@ -9580,7 +9210,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("producer"),
     );
@@ -9590,7 +9220,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("profileName"),
     );
@@ -9600,7 +9230,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("projects"),
     );
@@ -9610,7 +9240,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("protectionClass"),
     );
@@ -9620,7 +9250,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("providerDataTypeIdentifiers"),
     );
@@ -9630,7 +9260,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("providerDataTypes"),
     );
@@ -9640,7 +9270,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("providerFileTypeIdentifiers"),
     );
@@ -9650,7 +9280,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("providerFileTypes"),
     );
@@ -9660,7 +9290,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("providerInPlaceFileTypeIdentifiers"),
     );
@@ -9670,7 +9300,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("publishers"),
     );
@@ -9680,7 +9310,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("punchoutLabel"),
     );
@@ -9690,7 +9320,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("queryResultMatchedFields"),
     );
@@ -9700,7 +9330,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("queryResultRelevance"),
     );
@@ -9710,7 +9340,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("rankingHint"),
     );
@@ -9720,7 +9350,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("rating"),
     );
@@ -9730,7 +9360,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("ratingDescription"),
     );
@@ -9740,7 +9370,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("recipientAddresses"),
     );
@@ -9750,7 +9380,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("recipientEmailAddresses"),
     );
@@ -9760,7 +9390,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("recipientNames"),
     );
@@ -9770,7 +9400,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("recordingDate"),
     );
@@ -9780,7 +9410,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("relatedAppBundleIdentifier"),
     );
@@ -9790,7 +9420,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("relatedUniqueIdentifier"),
     );
@@ -9800,7 +9430,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("requiredAttributes"),
     );
@@ -9810,7 +9440,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("resolutionHeightDPI"),
     );
@@ -9820,7 +9450,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("resolutionWidthDPI"),
     );
@@ -9830,7 +9460,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("rights"),
     );
@@ -9840,7 +9470,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("role"),
     );
@@ -9850,7 +9480,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int64(
+    return _call_ptr_ptr_returns_Int64(
       _self,
       _objc.getSelector("searchableItemFlags"),
     );
@@ -9860,7 +9490,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("securityMethod"),
     );
@@ -9870,7 +9500,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("serializedAttributes"),
     );
@@ -9881,7 +9511,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setAccountHandles:"),
       arg,
@@ -9893,7 +9523,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setAccountIdentifier:"),
       arg,
@@ -9905,7 +9535,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setAccountType:"),
       arg,
@@ -9917,7 +9547,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setAcquisitionMake:"),
       arg,
@@ -9929,7 +9559,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setAcquisitionModel:"),
       arg,
@@ -9941,7 +9571,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setAdamID:"),
       arg,
@@ -9953,7 +9583,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setAddedDate:"),
       arg,
@@ -9965,7 +9595,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setAdditionalRecipients:"),
       arg,
@@ -9977,7 +9607,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setAlbum:"),
       arg,
@@ -9989,7 +9619,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setAlbumPersistentID:"),
       arg,
@@ -10001,7 +9631,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setAllDay:"),
       arg,
@@ -10013,7 +9643,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setAlternateNames:"),
       arg,
@@ -10025,7 +9655,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setAltitude:"),
       arg,
@@ -10037,7 +9667,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setAperture:"),
       arg,
@@ -10049,7 +9679,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setAppleLoopDescriptors:"),
       arg,
@@ -10061,7 +9691,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setAppleLoopsKeyFilterType:"),
       arg,
@@ -10073,7 +9703,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setAppleLoopsLoopMode:"),
       arg,
@@ -10085,7 +9715,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setAppleLoopsRootKey:"),
       arg,
@@ -10097,7 +9727,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setApplicationCategories:"),
       arg,
@@ -10109,7 +9739,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setApplicationManaged:"),
       arg,
@@ -10121,7 +9751,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setApplicationName:"),
       arg,
@@ -10133,7 +9763,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setArtist:"),
       arg,
@@ -10145,7 +9775,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setAttachmentNames:"),
       arg,
@@ -10157,7 +9787,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setAttachmentPaths:"),
       arg,
@@ -10169,7 +9799,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setAttachmentTypes:"),
       arg,
@@ -10182,7 +9812,7 @@ class CSSearchableItemAttributeSet
     @required Pointer forKey,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setAttribute:forKey:"),
       arg,
@@ -10195,7 +9825,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setAudiences:"),
       arg,
@@ -10207,7 +9837,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setAudioBitRate:"),
       arg,
@@ -10219,7 +9849,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setAudioChannelCount:"),
       arg,
@@ -10231,7 +9861,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setAudioEncodingApplication:"),
       arg,
@@ -10243,7 +9873,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setAudioSampleRate:"),
       arg,
@@ -10255,7 +9885,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setAudioTrackNumber:"),
       arg,
@@ -10267,7 +9897,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setAuthorAddresses:"),
       arg,
@@ -10279,7 +9909,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setAuthorEmailAddresses:"),
       arg,
@@ -10291,7 +9921,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setAuthorNames:"),
       arg,
@@ -10303,7 +9933,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setAuthors:"),
       arg,
@@ -10315,7 +9945,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setBackgroundRunnable:"),
       arg,
@@ -10327,7 +9957,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setBitsPerSample:"),
       arg,
@@ -10339,7 +9969,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setBundleID:"),
       arg,
@@ -10351,7 +9981,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setBundleIdentifier:"),
       arg,
@@ -10363,7 +9993,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setCalendarHolidayIdentifier:"),
       arg,
@@ -10375,7 +10005,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setCameraOwner:"),
       arg,
@@ -10387,7 +10017,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setCity:"),
       arg,
@@ -10399,7 +10029,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setCodecs:"),
       arg,
@@ -10411,7 +10041,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setColorSpace:"),
       arg,
@@ -10423,7 +10053,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setComment:"),
       arg,
@@ -10435,7 +10065,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setCompletionDate:"),
       arg,
@@ -10447,7 +10077,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setComposer:"),
       arg,
@@ -10459,7 +10089,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setContactKeywords:"),
       arg,
@@ -10471,7 +10101,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setContainerDisplayName:"),
       arg,
@@ -10483,7 +10113,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setContainerIdentifier:"),
       arg,
@@ -10495,7 +10125,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setContainerOrder:"),
       arg,
@@ -10507,7 +10137,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setContainerTitle:"),
       arg,
@@ -10519,7 +10149,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setContentCreationDate:"),
       arg,
@@ -10531,7 +10161,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setContentDescription:"),
       arg,
@@ -10543,24 +10173,10 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setContentModificationDate:"),
       arg,
-    );
-  }
-
-  static void setContentObj(
-    Pointer<CSSearchableItemAttributeSet> _self,
-    Pointer arg, {
-    @required Pointer obj,
-  }) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
-      _self,
-      _objc.getSelector("setContentObj:obj:"),
-      arg,
-      obj,
     );
   }
 
@@ -10569,7 +10185,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setContentRating:"),
       arg,
@@ -10581,7 +10197,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setContentSources:"),
       arg,
@@ -10593,7 +10209,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setContentType:"),
       arg,
@@ -10605,7 +10221,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setContentTypeTree:"),
       arg,
@@ -10617,7 +10233,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setContentURL:"),
       arg,
@@ -10629,7 +10245,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setContributors:"),
       arg,
@@ -10641,7 +10257,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setCopyright:"),
       arg,
@@ -10653,7 +10269,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setCountry:"),
       arg,
@@ -10665,7 +10281,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setCoverage:"),
       arg,
@@ -10677,7 +10293,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setCreator:"),
       arg,
@@ -10689,7 +10305,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setDataOwnerType:"),
       arg,
@@ -10701,7 +10317,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setDeliveryType:"),
       arg,
@@ -10713,7 +10329,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setDirector:"),
       arg,
@@ -10725,7 +10341,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setDisplayName:"),
       arg,
@@ -10737,7 +10353,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setDocumentIdentifier:"),
       arg,
@@ -10749,7 +10365,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setDomainIdentifier:"),
       arg,
@@ -10761,7 +10377,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setDownloadError:"),
       arg,
@@ -10773,7 +10389,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setDownloadedDate:"),
       arg,
@@ -10785,7 +10401,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setDownloading:"),
       arg,
@@ -10797,7 +10413,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setDownloadingStatus:"),
       arg,
@@ -10809,7 +10425,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setDueDate:"),
       arg,
@@ -10821,7 +10437,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setDuration:"),
       arg,
@@ -10833,7 +10449,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setEXIFGPSVersion:"),
       arg,
@@ -10845,7 +10461,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setEXIFVersion:"),
       arg,
@@ -10857,7 +10473,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setEditors:"),
       arg,
@@ -10869,7 +10485,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setEmailAddresses:"),
       arg,
@@ -10881,7 +10497,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setEmailHeaders:"),
       arg,
@@ -10893,7 +10509,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setEncodingApplications:"),
       arg,
@@ -10905,7 +10521,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setEndDate:"),
       arg,
@@ -10917,7 +10533,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setExecutableArchitectures:"),
       arg,
@@ -10929,7 +10545,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setExecutablePlatform:"),
       arg,
@@ -10941,7 +10557,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setExistingThread:"),
       arg,
@@ -10953,7 +10569,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setExpirationDate:"),
       arg,
@@ -10965,7 +10581,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setExposureMode:"),
       arg,
@@ -10977,7 +10593,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setExposureProgram:"),
       arg,
@@ -10989,7 +10605,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setExposureTime:"),
       arg,
@@ -11001,7 +10617,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setExposureTimeString:"),
       arg,
@@ -11013,7 +10629,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setExtendedContentRating:"),
       arg,
@@ -11025,7 +10641,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setExtraData:"),
       arg,
@@ -11037,7 +10653,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setFNumber:"),
       arg,
@@ -11049,7 +10665,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setFavoriteRank:"),
       arg,
@@ -11061,7 +10677,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setFileIdentifier:"),
       arg,
@@ -11073,7 +10689,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setFileItemID:"),
       arg,
@@ -11085,7 +10701,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setFileProviderDomaindentifier:"),
       arg,
@@ -11097,7 +10713,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setFileProviderID:"),
       arg,
@@ -11109,7 +10725,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setFileProviderUserInfoKeys:"),
       arg,
@@ -11121,7 +10737,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setFileProviderUserInfoValues:"),
       arg,
@@ -11133,7 +10749,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setFileSize:"),
       arg,
@@ -11145,7 +10761,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setFilename:"),
       arg,
@@ -11157,7 +10773,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setFinderComment:"),
       arg,
@@ -11169,7 +10785,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setFlashOn:"),
       arg,
@@ -11181,7 +10797,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setFocalLength:"),
       arg,
@@ -11193,7 +10809,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setFocalLength35mm:"),
       arg,
@@ -11205,7 +10821,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setFontNames:"),
       arg,
@@ -11217,7 +10833,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setFullyFormattedAddress:"),
       arg,
@@ -11229,7 +10845,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setGPSAreaInformation:"),
       arg,
@@ -11241,7 +10857,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setGPSDOP:"),
       arg,
@@ -11253,7 +10869,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setGPSDateStamp:"),
       arg,
@@ -11265,7 +10881,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setGPSDestBearing:"),
       arg,
@@ -11277,7 +10893,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setGPSDestDistance:"),
       arg,
@@ -11289,7 +10905,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setGPSDestLatitude:"),
       arg,
@@ -11301,7 +10917,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setGPSDestLongitude:"),
       arg,
@@ -11313,7 +10929,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setGPSDifferental:"),
       arg,
@@ -11325,7 +10941,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setGPSMapDatum:"),
       arg,
@@ -11337,7 +10953,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setGPSMeasureMode:"),
       arg,
@@ -11349,7 +10965,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setGPSProcessingMethod:"),
       arg,
@@ -11361,7 +10977,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setGPSStatus:"),
       arg,
@@ -11373,7 +10989,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setGPSTrack:"),
       arg,
@@ -11385,7 +11001,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setGeneralMIDISequence:"),
       arg,
@@ -11397,7 +11013,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setGenre:"),
       arg,
@@ -11409,7 +11025,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setHTMLContentData:"),
       arg,
@@ -11421,7 +11037,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setHasAlphaChannel:"),
       arg,
@@ -11433,7 +11049,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setHeadline:"),
       arg,
@@ -11445,7 +11061,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setHiddenAdditionalRecipients:"),
       arg,
@@ -11457,7 +11073,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setISOSpeed:"),
       arg,
@@ -11469,7 +11085,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setIdentifier:"),
       arg,
@@ -11481,7 +11097,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setImageDirection:"),
       arg,
@@ -11493,7 +11109,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setImportantDates:"),
       arg,
@@ -11505,7 +11121,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setInformation:"),
       arg,
@@ -11517,7 +11133,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setInstantMessageAddresses:"),
       arg,
@@ -11529,7 +11145,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setInstructions:"),
       arg,
@@ -11541,7 +11157,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setIntentData:"),
       arg,
@@ -11553,7 +11169,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setIsPlaceholder:"),
       arg,
@@ -11565,7 +11181,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setKeySignature:"),
       arg,
@@ -11577,7 +11193,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setKeywords:"),
       arg,
@@ -11589,7 +11205,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setKind:"),
       arg,
@@ -11601,7 +11217,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setLanguages:"),
       arg,
@@ -11613,7 +11229,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setLastApplicationLaunchedDate:"),
       arg,
@@ -11625,7 +11241,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setLastEditorIdentifier:"),
       arg,
@@ -11637,7 +11253,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setLastEditorName:"),
       arg,
@@ -11649,7 +11265,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setLastUsedDate:"),
       arg,
@@ -11661,7 +11277,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setLatitude:"),
       arg,
@@ -11673,7 +11289,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setLayerNames:"),
       arg,
@@ -11685,7 +11301,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setLensModel:"),
       arg,
@@ -11697,7 +11313,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setLikelyJunk:"),
       arg,
@@ -11709,7 +11325,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setLocal:"),
       arg,
@@ -11721,7 +11337,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setLongitude:"),
       arg,
@@ -11733,7 +11349,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setLyricist:"),
       arg,
@@ -11745,7 +11361,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setMailAttachmentKinds:"),
       arg,
@@ -11757,7 +11373,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setMailAttachmentNames:"),
       arg,
@@ -11769,7 +11385,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setMailAttachmentTypes:"),
       arg,
@@ -11781,7 +11397,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setMailCategory:"),
       arg,
@@ -11793,7 +11409,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setMailConversationID:"),
       arg,
@@ -11805,7 +11421,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setMailDateLastViewed:"),
       arg,
@@ -11817,7 +11433,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setMailDateReceived:"),
       arg,
@@ -11829,7 +11445,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setMailFlagColor:"),
       arg,
@@ -11841,7 +11457,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setMailFlagged:"),
       arg,
@@ -11853,7 +11469,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setMailGMailLabels:"),
       arg,
@@ -11865,7 +11481,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setMailMessageID:"),
       arg,
@@ -11877,7 +11493,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setMailPriority:"),
       arg,
@@ -11889,7 +11505,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setMailRead:"),
       arg,
@@ -11901,7 +11517,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setMailRepliedTo:"),
       arg,
@@ -11913,7 +11529,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setMailboxIdentifiers:"),
       arg,
@@ -11925,7 +11541,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setMaxAperture:"),
       arg,
@@ -11937,7 +11553,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setMediaTypes:"),
       arg,
@@ -11949,7 +11565,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setMetadataModificationDate:"),
       arg,
@@ -11961,7 +11577,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setMeteringMode:"),
       arg,
@@ -11973,7 +11589,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setMusicalGenre:"),
       arg,
@@ -11985,7 +11601,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setMusicalInstrumentCategory:"),
       arg,
@@ -11997,7 +11613,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setMusicalInstrumentName:"),
       arg,
@@ -12009,7 +11625,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setNamedLocation:"),
       arg,
@@ -12021,7 +11637,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setOrganizations:"),
       arg,
@@ -12033,7 +11649,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setOrientation:"),
       arg,
@@ -12045,7 +11661,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setOriginalFormat:"),
       arg,
@@ -12057,7 +11673,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setOriginalSource:"),
       arg,
@@ -12069,7 +11685,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setOwnerIdentifier:"),
       arg,
@@ -12081,7 +11697,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setOwnerName:"),
       arg,
@@ -12093,7 +11709,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setPageCount:"),
       arg,
@@ -12105,7 +11721,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setPageHeight:"),
       arg,
@@ -12117,7 +11733,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setPageWidth:"),
       arg,
@@ -12129,7 +11745,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setParentFileIdentifier:"),
       arg,
@@ -12141,7 +11757,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setParentFileItemID:"),
       arg,
@@ -12153,7 +11769,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setPartiallyDownloaded:"),
       arg,
@@ -12165,7 +11781,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setParticipants:"),
       arg,
@@ -12177,7 +11793,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setPath:"),
       arg,
@@ -12189,7 +11805,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setPerformers:"),
       arg,
@@ -12201,7 +11817,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setPhoneNumbers:"),
       arg,
@@ -12213,7 +11829,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setPixelCount:"),
       arg,
@@ -12225,7 +11841,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setPixelHeight:"),
       arg,
@@ -12237,7 +11853,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setPixelWidth:"),
       arg,
@@ -12249,7 +11865,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setPlayCount:"),
       arg,
@@ -12261,7 +11877,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setPostalCode:"),
       arg,
@@ -12273,7 +11889,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setPrimaryRecipients:"),
       arg,
@@ -12285,7 +11901,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setProducer:"),
       arg,
@@ -12297,7 +11913,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setProfileName:"),
       arg,
@@ -12309,7 +11925,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setProjects:"),
       arg,
@@ -12321,7 +11937,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setProtectionClass:"),
       arg,
@@ -12333,7 +11949,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setProviderDataTypeIdentifiers:"),
       arg,
@@ -12345,7 +11961,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setProviderDataTypes:"),
       arg,
@@ -12357,7 +11973,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setProviderFileTypeIdentifiers:"),
       arg,
@@ -12369,7 +11985,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setProviderFileTypes:"),
       arg,
@@ -12381,7 +11997,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setProviderInPlaceFileTypeIdentifiers:"),
       arg,
@@ -12393,7 +12009,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setPublishers:"),
       arg,
@@ -12405,7 +12021,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setPunchoutLabel:"),
       arg,
@@ -12417,7 +12033,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setQueryResultMatchedFields:"),
       arg,
@@ -12429,7 +12045,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setQueryResultRelevance:"),
       arg,
@@ -12441,7 +12057,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setRankingHint:"),
       arg,
@@ -12453,7 +12069,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setRating:"),
       arg,
@@ -12465,7 +12081,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setRatingDescription:"),
       arg,
@@ -12477,7 +12093,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setReaderView:"),
       arg,
@@ -12489,7 +12105,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setRecipientAddresses:"),
       arg,
@@ -12501,7 +12117,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setRecipientEmailAddresses:"),
       arg,
@@ -12513,7 +12129,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setRecipientNames:"),
       arg,
@@ -12525,7 +12141,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setRecordingDate:"),
       arg,
@@ -12537,7 +12153,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setRedEyeOn:"),
       arg,
@@ -12549,7 +12165,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setRelatedAppBundleIdentifier:"),
       arg,
@@ -12561,7 +12177,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setRelatedUniqueIdentifier:"),
       arg,
@@ -12573,7 +12189,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setResolutionHeightDPI:"),
       arg,
@@ -12585,7 +12201,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setResolutionWidthDPI:"),
       arg,
@@ -12597,7 +12213,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setRights:"),
       arg,
@@ -12609,7 +12225,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setRole:"),
       arg,
@@ -12621,7 +12237,7 @@ class CSSearchableItemAttributeSet
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int64_returns_void(
+    _call_ptr_ptr_Int64_returns_void(
       _self,
       _objc.getSelector("setSearchableItemFlags:"),
       arg,
@@ -12633,7 +12249,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setSecurityMethod:"),
       arg,
@@ -12645,7 +12261,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setShared:"),
       arg,
@@ -12657,7 +12273,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setSharedItemCurrentUserRole:"),
       arg,
@@ -12669,7 +12285,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setSpeed:"),
       arg,
@@ -12681,7 +12297,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setStartDate:"),
       arg,
@@ -12693,7 +12309,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setStateOrProvince:"),
       arg,
@@ -12705,7 +12321,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setStreamable:"),
       arg,
@@ -12717,7 +12333,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setSubItemCount:"),
       arg,
@@ -12729,7 +12345,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setSubThoroughfare:"),
       arg,
@@ -12741,7 +12357,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setSubject:"),
       arg,
@@ -12753,7 +12369,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setSubtitle:"),
       arg,
@@ -12765,7 +12381,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setSuggestedInvocationPhrase:"),
       arg,
@@ -12777,7 +12393,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setSupportFileType:"),
       arg,
@@ -12789,7 +12405,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setSupportsNavigation:"),
       arg,
@@ -12801,7 +12417,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setSupportsPhoneCall:"),
       arg,
@@ -12813,7 +12429,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setTempo:"),
       arg,
@@ -12825,7 +12441,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setTextContent:"),
       arg,
@@ -12837,7 +12453,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setTextContentDataSource:"),
       arg,
@@ -12849,7 +12465,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setTextSelected:"),
       arg,
@@ -12861,7 +12477,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setTheme:"),
       arg,
@@ -12873,7 +12489,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setThoroughfare:"),
       arg,
@@ -12885,7 +12501,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setThumbnailData:"),
       arg,
@@ -12897,7 +12513,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setThumbnailURL:"),
       arg,
@@ -12909,7 +12525,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setTimeSignature:"),
       arg,
@@ -12921,7 +12537,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setTimestamp:"),
       arg,
@@ -12933,7 +12549,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setTitle:"),
       arg,
@@ -12945,7 +12561,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setTotalBitRate:"),
       arg,
@@ -12957,7 +12573,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setTrashed:"),
       arg,
@@ -12969,7 +12585,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setURL:"),
       arg,
@@ -12981,7 +12597,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setUniqueIdentifier:"),
       arg,
@@ -12993,7 +12609,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setUploadError:"),
       arg,
@@ -13005,7 +12621,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setUploaded:"),
       arg,
@@ -13017,7 +12633,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setUploading:"),
       arg,
@@ -13029,7 +12645,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setUserActivityType:"),
       arg,
@@ -13041,7 +12657,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setUserCreated:"),
       arg,
@@ -13053,7 +12669,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setUserCurated:"),
       arg,
@@ -13065,7 +12681,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setUserOwned:"),
       arg,
@@ -13077,7 +12693,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setUserTags:"),
       arg,
@@ -13090,7 +12706,7 @@ class CSSearchableItemAttributeSet
     @required Pointer forCustomKey,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setValue:forCustomKey:"),
       arg,
@@ -13103,7 +12719,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setVendorName:"),
       arg,
@@ -13115,7 +12731,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setVersion:"),
       arg,
@@ -13127,7 +12743,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setVersionIdentifier:"),
       arg,
@@ -13139,7 +12755,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setVideoBitRate:"),
       arg,
@@ -13151,7 +12767,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setWeakRelatedUniqueIdentifier:"),
       arg,
@@ -13163,7 +12779,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setWhiteBalance:"),
       arg,
@@ -13174,7 +12790,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("sharedItemCurrentUserRole"),
     );
@@ -13184,7 +12800,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("speed"),
     );
@@ -13194,7 +12810,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("startDate"),
     );
@@ -13204,7 +12820,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("stateOrProvince"),
     );
@@ -13214,7 +12830,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("subItemCount"),
     );
@@ -13224,7 +12840,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("subThoroughfare"),
     );
@@ -13234,7 +12850,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("subject"),
     );
@@ -13244,7 +12860,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("subtitle"),
     );
@@ -13254,7 +12870,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("suggestedInvocationPhrase"),
     );
@@ -13264,7 +12880,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("supportFileType"),
     );
@@ -13274,7 +12890,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("supportsNavigation"),
     );
@@ -13284,7 +12900,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("supportsPhoneCall"),
     );
@@ -13294,7 +12910,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("tempo"),
     );
@@ -13304,7 +12920,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("textContent"),
     );
@@ -13314,7 +12930,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("textContentDataSource"),
     );
@@ -13324,7 +12940,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("textContentNoCopy"),
     );
@@ -13334,7 +12950,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("textSelected"),
     );
@@ -13344,7 +12960,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("theme"),
     );
@@ -13354,7 +12970,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("thoroughfare"),
     );
@@ -13364,7 +12980,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("thumbnailData"),
     );
@@ -13374,7 +12990,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("thumbnailURL"),
     );
@@ -13384,7 +13000,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("timeSignature"),
     );
@@ -13394,7 +13010,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("timestamp"),
     );
@@ -13404,7 +13020,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("title"),
     );
@@ -13414,7 +13030,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("totalBitRate"),
     );
@@ -13424,7 +13040,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("uniqueIdentifier"),
     );
@@ -13434,7 +13050,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("uploadError"),
     );
@@ -13444,7 +13060,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("userActivityType"),
     );
@@ -13454,7 +13070,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("userCreatedDate"),
     );
@@ -13464,7 +13080,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("userCreatedUserHandle"),
     );
@@ -13474,7 +13090,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("userDownloadedDate"),
     );
@@ -13484,7 +13100,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("userDownloadedUserHandle"),
     );
@@ -13494,7 +13110,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("userModifiedDate"),
     );
@@ -13504,7 +13120,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("userModifiedUserHandle"),
     );
@@ -13514,7 +13130,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("userPrintedDate"),
     );
@@ -13524,7 +13140,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("userPrintedUserHandle"),
     );
@@ -13534,7 +13150,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("userSharedReceivedDate"),
     );
@@ -13544,7 +13160,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("userSharedReceivedRecipient"),
     );
@@ -13554,7 +13170,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("userSharedReceivedRecipientHandle"),
     );
@@ -13564,7 +13180,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("userSharedReceivedSender"),
     );
@@ -13574,7 +13190,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("userSharedReceivedSenderHandle"),
     );
@@ -13584,7 +13200,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("userSharedReceivedTransport"),
     );
@@ -13594,7 +13210,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("userSharedSentDate"),
     );
@@ -13604,7 +13220,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("userSharedSentRecipient"),
     );
@@ -13614,7 +13230,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("userSharedSentRecipientHandle"),
     );
@@ -13624,7 +13240,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("userSharedSentSender"),
     );
@@ -13634,7 +13250,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("userSharedSentSenderHandle"),
     );
@@ -13644,7 +13260,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("userSharedSentTransport"),
     );
@@ -13654,7 +13270,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("userTags"),
     );
@@ -13665,7 +13281,7 @@ class CSSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("valueForCustomKey:"),
       arg,
@@ -13676,7 +13292,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("vendorName"),
     );
@@ -13686,7 +13302,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("version"),
     );
@@ -13696,7 +13312,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("versionIdentifier"),
     );
@@ -13706,7 +13322,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("videoBitRate"),
     );
@@ -13716,7 +13332,7 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("weakRelatedUniqueIdentifier"),
     );
@@ -13726,16 +13342,13 @@ class CSSearchableItemAttributeSet
     Pointer<CSSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("whiteBalance"),
     );
   }
 }
 
-/// Automatically generated API. Part of [Core Spotlight](https://developer.apple.com/documentation/corespotlight?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class CSSearchableItemCodedArray extends Struct<CSSearchableItemCodedArray> {
   factory CSSearchableItemCodedArray._() {
@@ -13752,7 +13365,7 @@ class CSSearchableItemCodedArray extends Struct<CSSearchableItemCodedArray> {
     Pointer<CSSearchableItemCodedArray> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("bundleID"),
     );
@@ -13762,31 +13375,31 @@ class CSSearchableItemCodedArray extends Struct<CSSearchableItemCodedArray> {
     Pointer<CSSearchableItemCodedArray> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("count"),
     );
   }
 
-  static Pointer initWithItems$(
+  static Pointer initWithItems(
     Pointer<CSSearchableItemCodedArray> _self,
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithItems:"),
       arg,
     );
   }
 
-  static Pointer initWithItems$itemsContent$(
+  static Pointer initWithItems$itemsContent(
     Pointer<CSSearchableItemCodedArray> _self,
     Pointer arg, {
     @required Pointer itemsContent,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithItems:itemsContent:"),
       arg,
@@ -13798,7 +13411,7 @@ class CSSearchableItemCodedArray extends Struct<CSSearchableItemCodedArray> {
     Pointer<CSSearchableItemCodedArray> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("items"),
     );
@@ -13808,19 +13421,9 @@ class CSSearchableItemCodedArray extends Struct<CSSearchableItemCodedArray> {
     Pointer<CSSearchableItemCodedArray> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("itemsContent"),
-    );
-  }
-
-  static Pointer obj(
-    Pointer<CSSearchableItemCodedArray> _self,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
-      _self,
-      _objc.getSelector("obj"),
     );
   }
 
@@ -13829,7 +13432,7 @@ class CSSearchableItemCodedArray extends Struct<CSSearchableItemCodedArray> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Uint64_returns_p(
+    return _call_ptr_ptr_Uint64_returns_ptr(
       _self,
       _objc.getSelector("objectAtIndex:"),
       arg,
@@ -13840,7 +13443,7 @@ class CSSearchableItemCodedArray extends Struct<CSSearchableItemCodedArray> {
     Pointer<CSSearchableItemCodedArray> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("protectionClass"),
     );
@@ -13851,7 +13454,7 @@ class CSSearchableItemCodedArray extends Struct<CSSearchableItemCodedArray> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setBundleID:"),
       arg,
@@ -13863,7 +13466,7 @@ class CSSearchableItemCodedArray extends Struct<CSSearchableItemCodedArray> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setProtectionClass:"),
       arg,
@@ -13871,9 +13474,6 @@ class CSSearchableItemCodedArray extends Struct<CSSearchableItemCodedArray> {
   }
 }
 
-/// Automatically generated API. Part of [Core Spotlight](https://developer.apple.com/documentation/corespotlight?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class CSSubscriptionManager extends Struct<CSSubscriptionManager> {
   factory CSSubscriptionManager._() {
@@ -13890,7 +13490,7 @@ class CSSubscriptionManager extends Struct<CSSubscriptionManager> {
     Pointer<CSSubscriptionManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("init"),
     );
@@ -13902,7 +13502,7 @@ class CSSubscriptionManager extends Struct<CSSubscriptionManager> {
     @required Pointer expirationDate,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("registerSubscriptionWithInfo:expirationDate:"),
       arg,
@@ -13914,7 +13514,7 @@ class CSSubscriptionManager extends Struct<CSSubscriptionManager> {
     Pointer<CSSubscriptionManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("unregisterAllSubscriptions"),
     );
@@ -13925,7 +13525,7 @@ class CSSubscriptionManager extends Struct<CSSubscriptionManager> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("unregisterSubscriptionWithInfo:"),
       arg,
@@ -13933,9 +13533,6 @@ class CSSubscriptionManager extends Struct<CSSubscriptionManager> {
   }
 }
 
-/// Automatically generated API. Part of [Core Spotlight](https://developer.apple.com/documentation/corespotlight?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class CSUserAction extends Struct<CSUserAction> {
   factory CSUserAction._() {
@@ -13950,21 +13547,9 @@ class CSUserAction extends Struct<CSUserAction> {
     Pointer<CSUserAction> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("contentAction"),
-    );
-  }
-
-  static Pointer copyWithZone(
-    Pointer<CSUserAction> _self,
-    Pointer<Pointer> arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
-      _self,
-      _objc.getSelector("copyWithZone:"),
-      arg,
     );
   }
 
@@ -13972,7 +13557,7 @@ class CSUserAction extends Struct<CSUserAction> {
     Pointer<CSUserAction> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("debugDescription"),
     );
@@ -13982,7 +13567,7 @@ class CSUserAction extends Struct<CSUserAction> {
     Pointer<CSUserAction> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("description"),
     );
@@ -13992,7 +13577,7 @@ class CSUserAction extends Struct<CSUserAction> {
     Pointer<CSUserAction> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("eligibility"),
     );
@@ -14003,7 +13588,7 @@ class CSUserAction extends Struct<CSUserAction> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("encodeWithCSCoder:"),
       arg,
@@ -14015,7 +13600,7 @@ class CSUserAction extends Struct<CSUserAction> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("encodeWithCoder:"),
       arg,
@@ -14026,7 +13611,7 @@ class CSUserAction extends Struct<CSUserAction> {
     Pointer<CSUserAction> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("hash"),
     );
@@ -14037,7 +13622,7 @@ class CSUserAction extends Struct<CSUserAction> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithCoder:"),
       arg,
@@ -14049,7 +13634,7 @@ class CSUserAction extends Struct<CSUserAction> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithXPCDict:"),
       arg,
@@ -14061,7 +13646,7 @@ class CSUserAction extends Struct<CSUserAction> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isEqual:"),
       arg,
@@ -14072,7 +13657,7 @@ class CSUserAction extends Struct<CSUserAction> {
     Pointer<CSUserAction> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("itemIdentifier"),
     );
@@ -14082,7 +13667,7 @@ class CSUserAction extends Struct<CSUserAction> {
     Pointer<CSUserAction> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("keywords"),
     );
@@ -14093,7 +13678,7 @@ class CSUserAction extends Struct<CSUserAction> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setContentAction:"),
       arg,
@@ -14105,7 +13690,7 @@ class CSUserAction extends Struct<CSUserAction> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Uint64_returns_void(
+    _call_ptr_ptr_Uint64_returns_void(
       _self,
       _objc.getSelector("setEligibility:"),
       arg,
@@ -14117,7 +13702,7 @@ class CSUserAction extends Struct<CSUserAction> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setItemIdentifier:"),
       arg,
@@ -14129,7 +13714,7 @@ class CSUserAction extends Struct<CSUserAction> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setKeywords:"),
       arg,
@@ -14141,7 +13726,7 @@ class CSUserAction extends Struct<CSUserAction> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setUaIdentifier:"),
       arg,
@@ -14153,7 +13738,7 @@ class CSUserAction extends Struct<CSUserAction> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setUserInfo:"),
       arg,
@@ -14164,7 +13749,7 @@ class CSUserAction extends Struct<CSUserAction> {
     Pointer<CSUserAction> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("uaIdentifier"),
     );
@@ -14174,7 +13759,7 @@ class CSUserAction extends Struct<CSUserAction> {
     Pointer<CSUserAction> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("userInfo"),
     );
@@ -14184,16 +13769,13 @@ class CSUserAction extends Struct<CSUserAction> {
     Pointer<CSUserAction> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("xpc_dictionary"),
     );
   }
 }
 
-/// Automatically generated API. Part of [Core Spotlight](https://developer.apple.com/documentation/corespotlight?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class CSUserActivityTuple extends Struct<CSUserActivityTuple> {
   factory CSUserActivityTuple._() {
@@ -14208,7 +13790,7 @@ class CSUserActivityTuple extends Struct<CSUserActivityTuple> {
     Pointer<CSUserActivityTuple> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("action"),
     );
@@ -14220,7 +13802,7 @@ class CSUserActivityTuple extends Struct<CSUserActivityTuple> {
     @required Pointer item,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithAction:item:"),
       arg,
@@ -14232,7 +13814,7 @@ class CSUserActivityTuple extends Struct<CSUserActivityTuple> {
     Pointer<CSUserActivityTuple> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("item"),
     );
@@ -14242,7 +13824,7 @@ class CSUserActivityTuple extends Struct<CSUserActivityTuple> {
     Pointer<CSUserActivityTuple> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("protectionClass"),
     );
@@ -14252,7 +13834,7 @@ class CSUserActivityTuple extends Struct<CSUserActivityTuple> {
     Pointer<CSUserActivityTuple> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("searchableItem"),
     );
@@ -14263,7 +13845,7 @@ class CSUserActivityTuple extends Struct<CSUserActivityTuple> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setAction:"),
       arg,
@@ -14275,7 +13857,7 @@ class CSUserActivityTuple extends Struct<CSUserActivityTuple> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setItem:"),
       arg,
@@ -14287,7 +13869,7 @@ class CSUserActivityTuple extends Struct<CSUserActivityTuple> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setProtectionClass:"),
       arg,
@@ -14295,9 +13877,6 @@ class CSUserActivityTuple extends Struct<CSUserActivityTuple> {
   }
 }
 
-/// Automatically generated API. Part of [Core Spotlight](https://developer.apple.com/documentation/corespotlight?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class CSXPCConnection extends Struct<CSXPCConnection> {
   factory CSXPCConnection._() {
@@ -14313,7 +13892,7 @@ class CSXPCConnection extends Struct<CSXPCConnection> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("addClientConnectionIfAllowedForConfiguration:"),
       arg,
@@ -14325,7 +13904,7 @@ class CSXPCConnection extends Struct<CSXPCConnection> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("addClientConnectionIfAllowedForConnection:"),
       arg,
@@ -14336,7 +13915,7 @@ class CSXPCConnection extends Struct<CSXPCConnection> {
     Pointer<CSXPCConnection> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("connection"),
     );
@@ -14349,7 +13928,7 @@ class CSXPCConnection extends Struct<CSXPCConnection> {
     @required Pointer connection,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("handleCommand:info:connection:"),
       arg,
@@ -14363,26 +13942,10 @@ class CSXPCConnection extends Struct<CSXPCConnection> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("handleError:"),
       arg,
-    );
-  }
-
-  static int handleMessage(
-    Pointer<CSXPCConnection> _self,
-    Pointer arg, {
-    @required Pointer<Pointer> type,
-    @required Pointer connection,
-  }) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_Int8(
-      _self,
-      _objc.getSelector("handleMessage:type:connection:"),
-      arg,
-      type,
-      connection,
     );
   }
 
@@ -14391,7 +13954,7 @@ class CSXPCConnection extends Struct<CSXPCConnection> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("handleReply:"),
       arg,
@@ -14403,7 +13966,7 @@ class CSXPCConnection extends Struct<CSXPCConnection> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initListenerWithName:"),
       arg,
@@ -14415,7 +13978,7 @@ class CSXPCConnection extends Struct<CSXPCConnection> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initMachServiceListenerWithName:"),
       arg,
@@ -14427,21 +13990,21 @@ class CSXPCConnection extends Struct<CSXPCConnection> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithMachServiceName:"),
       arg,
     );
   }
 
-  static Pointer initWithServiceName$machService$uuid$(
+  static Pointer initWithServiceName$machService$uuid(
     Pointer<CSXPCConnection> _self,
     Pointer arg, {
     @required int machService,
     @required Pointer uuid,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_Int8_p_returns_p(
+    return _call_ptr_ptr_ptr_Int8_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithServiceName:machService:uuid:"),
       arg,
@@ -14450,13 +14013,13 @@ class CSXPCConnection extends Struct<CSXPCConnection> {
     );
   }
 
-  static Pointer initWithServiceName$machService$(
+  static Pointer initWithServiceName$machService(
     Pointer<CSXPCConnection> _self,
     Pointer arg, {
     @required int machService,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_Int8_returns_p(
+    return _call_ptr_ptr_ptr_Int8_returns_ptr(
       _self,
       _objc.getSelector("initWithServiceName:machService:"),
       arg,
@@ -14464,12 +14027,12 @@ class CSXPCConnection extends Struct<CSXPCConnection> {
     );
   }
 
-  static Pointer initWithServiceName$(
+  static Pointer initWithServiceName(
     Pointer<CSXPCConnection> _self,
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithServiceName:"),
       arg,
@@ -14480,7 +14043,7 @@ class CSXPCConnection extends Struct<CSXPCConnection> {
     Pointer<CSXPCConnection> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("listener"),
     );
@@ -14492,7 +14055,7 @@ class CSXPCConnection extends Struct<CSXPCConnection> {
     @required Pointer error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("lostClientConnection:error:"),
       arg,
@@ -14504,7 +14067,7 @@ class CSXPCConnection extends Struct<CSXPCConnection> {
     Pointer<CSXPCConnection> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("machService"),
     );
@@ -14514,19 +14077,19 @@ class CSXPCConnection extends Struct<CSXPCConnection> {
     Pointer<CSXPCConnection> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("queue"),
     );
   }
 
-  static void sendMessageAsync$completion$(
+  static void sendMessageAsync$completion(
     Pointer<CSXPCConnection> _self,
     Pointer arg, {
     @required Pointer completion,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("sendMessageAsync:completion:"),
       arg,
@@ -14534,12 +14097,12 @@ class CSXPCConnection extends Struct<CSXPCConnection> {
     );
   }
 
-  static void sendMessageAsync$(
+  static void sendMessageAsync(
     Pointer<CSXPCConnection> _self,
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("sendMessageAsync:"),
       arg,
@@ -14550,7 +14113,7 @@ class CSXPCConnection extends Struct<CSXPCConnection> {
     Pointer<CSXPCConnection> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("serviceName"),
     );
@@ -14561,7 +14124,7 @@ class CSXPCConnection extends Struct<CSXPCConnection> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setConnection:"),
       arg,
@@ -14573,7 +14136,7 @@ class CSXPCConnection extends Struct<CSXPCConnection> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setQueue:"),
       arg,
@@ -14584,7 +14147,7 @@ class CSXPCConnection extends Struct<CSXPCConnection> {
     Pointer<CSXPCConnection> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("startListener"),
     );
@@ -14594,16 +14157,13 @@ class CSXPCConnection extends Struct<CSXPCConnection> {
     Pointer<CSXPCConnection> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("uuid"),
     );
   }
 }
 
-/// Automatically generated API. Part of [Core Spotlight](https://developer.apple.com/documentation/corespotlight?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class CoreSpotlightPreferences extends Struct<CoreSpotlightPreferences> {
   factory CoreSpotlightPreferences._() {
@@ -14620,7 +14180,7 @@ class CoreSpotlightPreferences extends Struct<CoreSpotlightPreferences> {
     Pointer<CoreSpotlightPreferences> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("dealloc"),
     );
@@ -14630,7 +14190,7 @@ class CoreSpotlightPreferences extends Struct<CoreSpotlightPreferences> {
     Pointer<CoreSpotlightPreferences> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("handlePreferencesChanged"),
     );
@@ -14640,7 +14200,7 @@ class CoreSpotlightPreferences extends Struct<CoreSpotlightPreferences> {
     Pointer<CoreSpotlightPreferences> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("notification_key"),
     );
@@ -14650,7 +14210,7 @@ class CoreSpotlightPreferences extends Struct<CoreSpotlightPreferences> {
     Pointer<CoreSpotlightPreferences> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("notifyHandler"),
     );
@@ -14660,7 +14220,7 @@ class CoreSpotlightPreferences extends Struct<CoreSpotlightPreferences> {
     Pointer<CoreSpotlightPreferences> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("notifyQueue"),
     );
@@ -14670,7 +14230,7 @@ class CoreSpotlightPreferences extends Struct<CoreSpotlightPreferences> {
     Pointer<CoreSpotlightPreferences> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("notifyStart"),
     );
@@ -14680,7 +14240,7 @@ class CoreSpotlightPreferences extends Struct<CoreSpotlightPreferences> {
     Pointer<CoreSpotlightPreferences> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int32(
+    return _call_ptr_ptr_returns_Int32(
       _self,
       _objc.getSelector("notifyToken"),
     );
@@ -14690,7 +14250,7 @@ class CoreSpotlightPreferences extends Struct<CoreSpotlightPreferences> {
     Pointer<CoreSpotlightPreferences> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("notify_handler"),
     );
@@ -14701,7 +14261,7 @@ class CoreSpotlightPreferences extends Struct<CoreSpotlightPreferences> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("saveState:"),
       arg,
@@ -14713,7 +14273,7 @@ class CoreSpotlightPreferences extends Struct<CoreSpotlightPreferences> {
     Pointer<Utf8> arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setNotification_key:"),
       arg,
@@ -14725,7 +14285,7 @@ class CoreSpotlightPreferences extends Struct<CoreSpotlightPreferences> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setNotifyHandler:"),
       arg,
@@ -14737,7 +14297,7 @@ class CoreSpotlightPreferences extends Struct<CoreSpotlightPreferences> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setNotifyQueue:"),
       arg,
@@ -14749,7 +14309,7 @@ class CoreSpotlightPreferences extends Struct<CoreSpotlightPreferences> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setState_key:"),
       arg,
@@ -14760,16 +14320,13 @@ class CoreSpotlightPreferences extends Struct<CoreSpotlightPreferences> {
     Pointer<CoreSpotlightPreferences> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("state_key"),
     );
   }
 }
 
-/// Automatically generated API. Part of [Core Spotlight](https://developer.apple.com/documentation/corespotlight?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class CoreSpotlightUtils extends Struct<CoreSpotlightUtils> {
   factory CoreSpotlightUtils._() {
@@ -14781,9 +14338,6 @@ class CoreSpotlightUtils extends Struct<CoreSpotlightUtils> {
   }
 }
 
-/// Automatically generated API. Part of [Core Spotlight](https://developer.apple.com/documentation/corespotlight?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class MDCustomAttributeKey extends Struct<MDCustomAttributeKey> {
   factory MDCustomAttributeKey._() {
@@ -14795,9 +14349,6 @@ class MDCustomAttributeKey extends Struct<MDCustomAttributeKey> {
   }
 }
 
-/// Automatically generated API. Part of [Core Spotlight](https://developer.apple.com/documentation/corespotlight?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class MDIndexExtensionRequestHandler
     extends Struct<MDIndexExtensionRequestHandler> {
@@ -14812,9 +14363,6 @@ class MDIndexExtensionRequestHandler
   }
 }
 
-/// Automatically generated API. Part of [Core Spotlight](https://developer.apple.com/documentation/corespotlight?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class MDLocalizedString extends Struct<MDLocalizedString> {
   factory MDLocalizedString._() {
@@ -14826,9 +14374,6 @@ class MDLocalizedString extends Struct<MDLocalizedString> {
   }
 }
 
-/// Automatically generated API. Part of [Core Spotlight](https://developer.apple.com/documentation/corespotlight?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class MDPerson extends Struct<MDPerson> {
   factory MDPerson._() {
@@ -14843,7 +14388,7 @@ class MDPerson extends Struct<MDPerson> {
     Pointer<MDPerson> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("handle"),
     );
@@ -14856,7 +14401,7 @@ class MDPerson extends Struct<MDPerson> {
     @required Pointer handleIdentifier,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithDisplayName:handle:handleIdentifier:"),
       arg,
@@ -14866,9 +14411,6 @@ class MDPerson extends Struct<MDPerson> {
   }
 }
 
-/// Automatically generated API. Part of [Core Spotlight](https://developer.apple.com/documentation/corespotlight?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class MDSearchQuery extends Struct<MDSearchQuery> {
   factory MDSearchQuery._() {
@@ -14883,7 +14425,7 @@ class MDSearchQuery extends Struct<MDSearchQuery> {
     Pointer<MDSearchQuery> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("cancel"),
     );
@@ -14893,7 +14435,7 @@ class MDSearchQuery extends Struct<MDSearchQuery> {
     Pointer<MDSearchQuery> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("clientBundleID"),
     );
@@ -14903,7 +14445,7 @@ class MDSearchQuery extends Struct<MDSearchQuery> {
     Pointer<MDSearchQuery> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("delegate"),
     );
@@ -14915,7 +14457,7 @@ class MDSearchQuery extends Struct<MDSearchQuery> {
     @required Pointer options,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithPredicate:options:"),
       arg,
@@ -14929,7 +14471,7 @@ class MDSearchQuery extends Struct<MDSearchQuery> {
     @required Pointer options,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithQueryString:options:"),
       arg,
@@ -14941,7 +14483,7 @@ class MDSearchQuery extends Struct<MDSearchQuery> {
     Pointer<MDSearchQuery> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("options"),
     );
@@ -14951,7 +14493,7 @@ class MDSearchQuery extends Struct<MDSearchQuery> {
     Pointer<MDSearchQuery> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("predicate"),
     );
@@ -14961,7 +14503,7 @@ class MDSearchQuery extends Struct<MDSearchQuery> {
     Pointer<MDSearchQuery> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("query"),
     );
@@ -14971,7 +14513,7 @@ class MDSearchQuery extends Struct<MDSearchQuery> {
     Pointer<MDSearchQuery> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("queryString"),
     );
@@ -14981,7 +14523,7 @@ class MDSearchQuery extends Struct<MDSearchQuery> {
     Pointer<MDSearchQuery> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("queue"),
     );
@@ -14992,7 +14534,7 @@ class MDSearchQuery extends Struct<MDSearchQuery> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setClientBundleID:"),
       arg,
@@ -15004,7 +14546,7 @@ class MDSearchQuery extends Struct<MDSearchQuery> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setDelegate:"),
       arg,
@@ -15016,7 +14558,7 @@ class MDSearchQuery extends Struct<MDSearchQuery> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setPredicate:"),
       arg,
@@ -15028,7 +14570,7 @@ class MDSearchQuery extends Struct<MDSearchQuery> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setQuery:"),
       arg,
@@ -15040,7 +14582,7 @@ class MDSearchQuery extends Struct<MDSearchQuery> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setQueue:"),
       arg,
@@ -15052,7 +14594,7 @@ class MDSearchQuery extends Struct<MDSearchQuery> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Uint64_returns_void(
+    _call_ptr_ptr_Uint64_returns_void(
       _self,
       _objc.getSelector("setStatus:"),
       arg,
@@ -15063,7 +14605,7 @@ class MDSearchQuery extends Struct<MDSearchQuery> {
     Pointer<MDSearchQuery> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("start"),
     );
@@ -15073,16 +14615,13 @@ class MDSearchQuery extends Struct<MDSearchQuery> {
     Pointer<MDSearchQuery> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("status"),
     );
   }
 }
 
-/// Automatically generated API. Part of [Core Spotlight](https://developer.apple.com/documentation/corespotlight?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class MDSearchableIndex extends Struct<MDSearchableIndex> {
   factory MDSearchableIndex._() {
@@ -15100,7 +14639,7 @@ class MDSearchableIndex extends Struct<MDSearchableIndex> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("indexSearchableItems:stateInfo:completionHandler:"),
       arg,
@@ -15109,13 +14648,13 @@ class MDSearchableIndex extends Struct<MDSearchableIndex> {
     );
   }
 
-  static void performIndexJob$acknowledgementHandler$(
+  static void performIndexJob$acknowledgementHandler(
     Pointer<MDSearchableIndex> _self,
     Pointer arg, {
     @required Pointer acknowledgementHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("performIndexJob:acknowledgementHandler:"),
       arg,
@@ -15123,12 +14662,12 @@ class MDSearchableIndex extends Struct<MDSearchableIndex> {
     );
   }
 
-  static void performIndexJob$(
+  static void performIndexJob(
     Pointer<MDSearchableIndex> _self,
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("performIndexJob:"),
       arg,
@@ -15136,9 +14675,6 @@ class MDSearchableIndex extends Struct<MDSearchableIndex> {
   }
 }
 
-/// Automatically generated API. Part of [Core Spotlight](https://developer.apple.com/documentation/corespotlight?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class MDSearchableItem extends Struct<MDSearchableItem> {
   factory MDSearchableItem._() {
@@ -15153,7 +14689,7 @@ class MDSearchableItem extends Struct<MDSearchableItem> {
     Pointer<MDSearchableItem> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("attributes"),
     );
@@ -15163,7 +14699,7 @@ class MDSearchableItem extends Struct<MDSearchableItem> {
     Pointer<MDSearchableItem> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("contentURL"),
     );
@@ -15173,21 +14709,9 @@ class MDSearchableItem extends Struct<MDSearchableItem> {
     Pointer<MDSearchableItem> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("contentUTI"),
-    );
-  }
-
-  static Pointer copyWithZone(
-    Pointer<MDSearchableItem> _self,
-    Pointer<Pointer> arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
-      _self,
-      _objc.getSelector("copyWithZone:"),
-      arg,
     );
   }
 
@@ -15195,7 +14719,7 @@ class MDSearchableItem extends Struct<MDSearchableItem> {
     Pointer<MDSearchableItem> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("displayName"),
     );
@@ -15206,7 +14730,7 @@ class MDSearchableItem extends Struct<MDSearchableItem> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("encodeWithCoder:"),
       arg,
@@ -15218,7 +14742,7 @@ class MDSearchableItem extends Struct<MDSearchableItem> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithCoder:"),
       arg,
@@ -15232,7 +14756,7 @@ class MDSearchableItem extends Struct<MDSearchableItem> {
     @required Pointer attributes,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc
           .getSelector("initWithUniqueIdentifier:domainIdentifier:attributes:"),
@@ -15246,7 +14770,7 @@ class MDSearchableItem extends Struct<MDSearchableItem> {
     Pointer<MDSearchableItem> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("localizedDisplayName"),
     );
@@ -15256,7 +14780,7 @@ class MDSearchableItem extends Struct<MDSearchableItem> {
     Pointer<MDSearchableItem> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("secondaryDisplayName"),
     );
@@ -15267,7 +14791,7 @@ class MDSearchableItem extends Struct<MDSearchableItem> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setAttributes:"),
       arg,
@@ -15279,7 +14803,7 @@ class MDSearchableItem extends Struct<MDSearchableItem> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setContentURL:"),
       arg,
@@ -15291,7 +14815,7 @@ class MDSearchableItem extends Struct<MDSearchableItem> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setContentUTI:"),
       arg,
@@ -15303,7 +14827,7 @@ class MDSearchableItem extends Struct<MDSearchableItem> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setDisplayName:"),
       arg,
@@ -15315,7 +14839,7 @@ class MDSearchableItem extends Struct<MDSearchableItem> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setSecondaryDisplayName:"),
       arg,
@@ -15327,7 +14851,7 @@ class MDSearchableItem extends Struct<MDSearchableItem> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setThumbnailImageData:"),
       arg,
@@ -15339,7 +14863,7 @@ class MDSearchableItem extends Struct<MDSearchableItem> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setThumbnailURL:"),
       arg,
@@ -15350,7 +14874,7 @@ class MDSearchableItem extends Struct<MDSearchableItem> {
     Pointer<MDSearchableItem> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("thumbnailImageData"),
     );
@@ -15360,16 +14884,13 @@ class MDSearchableItem extends Struct<MDSearchableItem> {
     Pointer<MDSearchableItem> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("thumbnailURL"),
     );
   }
 }
 
-/// Automatically generated API. Part of [Core Spotlight](https://developer.apple.com/documentation/corespotlight?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class MDSearchableItemAttributeSet
     extends Struct<MDSearchableItemAttributeSet> {
@@ -15387,7 +14908,7 @@ class MDSearchableItemAttributeSet
     Pointer<MDSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("authorPersons"),
     );
@@ -15397,7 +14918,7 @@ class MDSearchableItemAttributeSet
     Pointer<MDSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("primaryRecipientPersons"),
     );
@@ -15407,7 +14928,7 @@ class MDSearchableItemAttributeSet
     Pointer<MDSearchableItemAttributeSet> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("recipients"),
     );
@@ -15418,7 +14939,7 @@ class MDSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setAuthorPersons:"),
       arg,
@@ -15430,7 +14951,7 @@ class MDSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setPrimaryRecipientPersons:"),
       arg,
@@ -15442,7 +14963,7 @@ class MDSearchableItemAttributeSet
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setRecipients:"),
       arg,
@@ -15450,9 +14971,6 @@ class MDSearchableItemAttributeSet
   }
 }
 
-/// Automatically generated API. Part of [Core Spotlight](https://developer.apple.com/documentation/corespotlight?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class MDUserAction extends Struct<MDUserAction> {
   factory MDUserAction._() {
@@ -15464,9 +14982,6 @@ class MDUserAction extends Struct<MDUserAction> {
   }
 }
 
-/// Automatically generated API. Part of [Core Spotlight](https://developer.apple.com/documentation/corespotlight?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class TokenEnumeratorContext extends Struct<TokenEnumeratorContext> {
   factory TokenEnumeratorContext._() {
@@ -15483,7 +14998,7 @@ class TokenEnumeratorContext extends Struct<TokenEnumeratorContext> {
     Pointer<TokenEnumeratorContext> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("handler"),
     );
@@ -15494,7 +15009,7 @@ class TokenEnumeratorContext extends Struct<TokenEnumeratorContext> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setHandler:"),
       arg,
@@ -15502,46 +15017,38 @@ class TokenEnumeratorContext extends Struct<TokenEnumeratorContext> {
   }
 }
 
-final _call_objc_p_p_Int32_returns_void = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_Int32_returns_void_C,
-    _call_objc_p_p_Int32_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_Int32_returns_void_C = Void Function(
+final _call_ptr_ptr_Int32_returns_void = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_Int32_returns_void_C,
+    _call_ptr_ptr_Int32_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_Int32_returns_void_C = Void Function(
     Pointer _arg0, Pointer _arg1, Int32 arg);
-typedef _call_objc_p_p_Int32_returns_void_Dart = void Function(
+typedef _call_ptr_ptr_Int32_returns_void_Dart = void Function(
     Pointer _arg0, Pointer _arg1, int arg);
 
-final _call_objc_p_p_Int64_Int64_returns_p = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_Int64_Int64_returns_p_C,
-        _call_objc_p_p_Int64_Int64_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_Int64_Int64_returns_p_C = Pointer Function(
+final _call_ptr_ptr_Int64_Int64_returns_ptr = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_Int64_Int64_returns_ptr_C,
+        _call_ptr_ptr_Int64_Int64_returns_ptr_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_Int64_Int64_returns_ptr_C = Pointer Function(
     Pointer _arg0, Pointer _arg1, Int64 arg, Int64 jobOptions);
-typedef _call_objc_p_p_Int64_Int64_returns_p_Dart = Pointer Function(
+typedef _call_ptr_ptr_Int64_Int64_returns_ptr_Dart = Pointer Function(
     Pointer _arg0, Pointer _arg1, int arg, int jobOptions);
 
-final _call_objc_p_p_Int64_p_Uint64_p_Int8_returns_p = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_Int64_p_Uint64_p_Int8_returns_p_C,
-        _call_objc_p_p_Int64_p_Uint64_p_Int8_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_Int64_p_Uint64_p_Int8_returns_p_C = Pointer Function(
-    Pointer _arg0,
-    Pointer _arg1,
-    Int64 arg,
-    Pointer values,
-    Uint64 valueCount,
-    Pointer protectionClass,
-    Int8 isTopHitQuery);
-typedef _call_objc_p_p_Int64_p_Uint64_p_Int8_returns_p_Dart = Pointer Function(
-    Pointer _arg0,
-    Pointer _arg1,
-    int arg,
-    Pointer values,
-    int valueCount,
-    Pointer protectionClass,
-    int isTopHitQuery);
+final _call_ptr_ptr_Int64_ptr_Uint64_ptr_Int8_returns_ptr =
+    _objc.dlForObjectiveC.lookupFunction<
+            _call_ptr_ptr_Int64_ptr_Uint64_ptr_Int8_returns_ptr_C,
+            _call_ptr_ptr_Int64_ptr_Uint64_ptr_Int8_returns_ptr_Dart>(
+        "objc_msgSend");
+typedef _call_ptr_ptr_Int64_ptr_Uint64_ptr_Int8_returns_ptr_C
+    = Pointer Function(Pointer _arg0, Pointer _arg1, Int64 arg, Pointer values,
+        Uint64 valueCount, Pointer protectionClass, Int8 isTopHitQuery);
+typedef _call_ptr_ptr_Int64_ptr_Uint64_ptr_Int8_returns_ptr_Dart
+    = Pointer Function(Pointer _arg0, Pointer _arg1, int arg, Pointer values,
+        int valueCount, Pointer protectionClass, int isTopHitQuery);
 
-final _call_objc_p_p_Int64_p_p_p_p_returns_void = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_Int64_p_p_p_p_returns_void_C,
-        _call_objc_p_p_Int64_p_p_p_p_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_Int64_p_p_p_p_returns_void_C = Void Function(
+final _call_ptr_ptr_Int64_ptr_ptr_ptr_ptr_returns_void = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_Int64_ptr_ptr_ptr_ptr_returns_void_C,
+        _call_ptr_ptr_Int64_ptr_ptr_ptr_ptr_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_Int64_ptr_ptr_ptr_ptr_returns_void_C = Void Function(
     Pointer _arg0,
     Pointer _arg1,
     Int64 arg,
@@ -15549,7 +15056,7 @@ typedef _call_objc_p_p_Int64_p_p_p_p_returns_void_C = Void Function(
     Pointer oidData,
     Pointer protectionClass,
     Pointer completionHandler);
-typedef _call_objc_p_p_Int64_p_p_p_p_returns_void_Dart = void Function(
+typedef _call_ptr_ptr_Int64_ptr_ptr_ptr_ptr_returns_void_Dart = void Function(
     Pointer _arg0,
     Pointer _arg1,
     int arg,
@@ -15558,112 +15065,124 @@ typedef _call_objc_p_p_Int64_p_p_p_p_returns_void_Dart = void Function(
     Pointer protectionClass,
     Pointer completionHandler);
 
-final _call_objc_p_p_Int64_p_p_returns_Int8 = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_Int64_p_p_returns_Int8_C,
-        _call_objc_p_p_Int64_p_p_returns_Int8_Dart>("objc_msgSend");
-typedef _call_objc_p_p_Int64_p_p_returns_Int8_C = Int8 Function(Pointer _arg0,
-    Pointer _arg1, Int64 arg, Pointer outBundleID, Pointer outIdentifier);
-typedef _call_objc_p_p_Int64_p_p_returns_Int8_Dart = int Function(Pointer _arg0,
-    Pointer _arg1, int arg, Pointer outBundleID, Pointer outIdentifier);
+final _call_ptr_ptr_Int64_ptr_ptr_returns_Int8 = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_Int64_ptr_ptr_returns_Int8_C,
+        _call_ptr_ptr_Int64_ptr_ptr_returns_Int8_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_Int64_ptr_ptr_returns_Int8_C = Int8 Function(
+    Pointer _arg0,
+    Pointer _arg1,
+    Int64 arg,
+    Pointer outBundleID,
+    Pointer outIdentifier);
+typedef _call_ptr_ptr_Int64_ptr_ptr_returns_Int8_Dart = int Function(
+    Pointer _arg0,
+    Pointer _arg1,
+    int arg,
+    Pointer outBundleID,
+    Pointer outIdentifier);
 
-final _call_objc_p_p_Int64_p_p_returns_void = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_Int64_p_p_returns_void_C,
-        _call_objc_p_p_Int64_p_p_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_Int64_p_p_returns_void_C = Void Function(Pointer _arg0,
-    Pointer _arg1, Int64 arg, Pointer bundleID, Pointer identifier);
-typedef _call_objc_p_p_Int64_p_p_returns_void_Dart = void Function(
+final _call_ptr_ptr_Int64_ptr_ptr_returns_void = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_Int64_ptr_ptr_returns_void_C,
+        _call_ptr_ptr_Int64_ptr_ptr_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_Int64_ptr_ptr_returns_void_C = Void Function(
+    Pointer _arg0,
+    Pointer _arg1,
+    Int64 arg,
+    Pointer bundleID,
+    Pointer identifier);
+typedef _call_ptr_ptr_Int64_ptr_ptr_returns_void_Dart = void Function(
     Pointer _arg0,
     Pointer _arg1,
     int arg,
     Pointer bundleID,
     Pointer identifier);
 
-final _call_objc_p_p_Int64_p_returns_p = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_Int64_p_returns_p_C,
-    _call_objc_p_p_Int64_p_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_Int64_p_returns_p_C = Pointer Function(
+final _call_ptr_ptr_Int64_ptr_returns_ptr = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_Int64_ptr_returns_ptr_C,
+        _call_ptr_ptr_Int64_ptr_returns_ptr_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_Int64_ptr_returns_ptr_C = Pointer Function(
     Pointer _arg0, Pointer _arg1, Int64 arg, Pointer notifyBlock);
-typedef _call_objc_p_p_Int64_p_returns_p_Dart = Pointer Function(
+typedef _call_ptr_ptr_Int64_ptr_returns_ptr_Dart = Pointer Function(
     Pointer _arg0, Pointer _arg1, int arg, Pointer notifyBlock);
 
-final _call_objc_p_p_Int64_returns_p = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_Int64_returns_p_C,
-    _call_objc_p_p_Int64_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_Int64_returns_p_C = Pointer Function(
+final _call_ptr_ptr_Int64_returns_ptr = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_Int64_returns_ptr_C,
+    _call_ptr_ptr_Int64_returns_ptr_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_Int64_returns_ptr_C = Pointer Function(
     Pointer _arg0, Pointer _arg1, Int64 arg);
-typedef _call_objc_p_p_Int64_returns_p_Dart = Pointer Function(
+typedef _call_ptr_ptr_Int64_returns_ptr_Dart = Pointer Function(
     Pointer _arg0, Pointer _arg1, int arg);
 
-final _call_objc_p_p_Int64_returns_void = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_Int64_returns_void_C,
-    _call_objc_p_p_Int64_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_Int64_returns_void_C = Void Function(
+final _call_ptr_ptr_Int64_returns_void = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_Int64_returns_void_C,
+    _call_ptr_ptr_Int64_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_Int64_returns_void_C = Void Function(
     Pointer _arg0, Pointer _arg1, Int64 arg);
-typedef _call_objc_p_p_Int64_returns_void_Dart = void Function(
+typedef _call_ptr_ptr_Int64_returns_void_Dart = void Function(
     Pointer _arg0, Pointer _arg1, int arg);
 
-final _call_objc_p_p_Int8_returns_void = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_Int8_returns_void_C,
-    _call_objc_p_p_Int8_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_Int8_returns_void_C = Void Function(
+final _call_ptr_ptr_Int8_returns_void = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_Int8_returns_void_C,
+    _call_ptr_ptr_Int8_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_Int8_returns_void_C = Void Function(
     Pointer _arg0, Pointer _arg1, Int8 arg);
-typedef _call_objc_p_p_Int8_returns_void_Dart = void Function(
+typedef _call_ptr_ptr_Int8_returns_void_Dart = void Function(
     Pointer _arg0, Pointer _arg1, int arg);
 
-final _call_objc_p_p_Uint32_returns_p = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_Uint32_returns_p_C,
-    _call_objc_p_p_Uint32_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_Uint32_returns_p_C = Pointer Function(
+final _call_ptr_ptr_Uint32_returns_ptr = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_Uint32_returns_ptr_C,
+    _call_ptr_ptr_Uint32_returns_ptr_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_Uint32_returns_ptr_C = Pointer Function(
     Pointer _arg0, Pointer _arg1, Uint32 arg);
-typedef _call_objc_p_p_Uint32_returns_p_Dart = Pointer Function(
+typedef _call_ptr_ptr_Uint32_returns_ptr_Dart = Pointer Function(
     Pointer _arg0, Pointer _arg1, int arg);
 
-final _call_objc_p_p_Uint32_returns_void = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_Uint32_returns_void_C,
-    _call_objc_p_p_Uint32_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_Uint32_returns_void_C = Void Function(
+final _call_ptr_ptr_Uint32_returns_void = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_Uint32_returns_void_C,
+    _call_ptr_ptr_Uint32_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_Uint32_returns_void_C = Void Function(
     Pointer _arg0, Pointer _arg1, Uint32 arg);
-typedef _call_objc_p_p_Uint32_returns_void_Dart = void Function(
+typedef _call_ptr_ptr_Uint32_returns_void_Dart = void Function(
     Pointer _arg0, Pointer _arg1, int arg);
 
-final _call_objc_p_p_Uint64_returns_Uint16 = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_Uint64_returns_Uint16_C,
-        _call_objc_p_p_Uint64_returns_Uint16_Dart>("objc_msgSend");
-typedef _call_objc_p_p_Uint64_returns_Uint16_C = Uint16 Function(
+final _call_ptr_ptr_Uint64_returns_Uint16 = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_Uint64_returns_Uint16_C,
+        _call_ptr_ptr_Uint64_returns_Uint16_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_Uint64_returns_Uint16_C = Uint16 Function(
     Pointer _arg0, Pointer _arg1, Uint64 arg);
-typedef _call_objc_p_p_Uint64_returns_Uint16_Dart = int Function(
+typedef _call_ptr_ptr_Uint64_returns_Uint16_Dart = int Function(
     Pointer _arg0, Pointer _arg1, int arg);
 
-final _call_objc_p_p_Uint64_returns_p = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_Uint64_returns_p_C,
-    _call_objc_p_p_Uint64_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_Uint64_returns_p_C = Pointer Function(
+final _call_ptr_ptr_Uint64_returns_ptr = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_Uint64_returns_ptr_C,
+    _call_ptr_ptr_Uint64_returns_ptr_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_Uint64_returns_ptr_C = Pointer Function(
     Pointer _arg0, Pointer _arg1, Uint64 arg);
-typedef _call_objc_p_p_Uint64_returns_p_Dart = Pointer Function(
+typedef _call_ptr_ptr_Uint64_returns_ptr_Dart = Pointer Function(
     Pointer _arg0, Pointer _arg1, int arg);
 
-final _call_objc_p_p_Uint64_returns_void = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_Uint64_returns_void_C,
-    _call_objc_p_p_Uint64_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_Uint64_returns_void_C = Void Function(
+final _call_ptr_ptr_Uint64_returns_void = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_Uint64_returns_void_C,
+    _call_ptr_ptr_Uint64_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_Uint64_returns_void_C = Void Function(
     Pointer _arg0, Pointer _arg1, Uint64 arg);
-typedef _call_objc_p_p_Uint64_returns_void_Dart = void Function(
+typedef _call_ptr_ptr_Uint64_returns_void_Dart = void Function(
     Pointer _arg0, Pointer _arg1, int arg);
 
-final _call_objc_p_p_Uint8_returns_void = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_Uint8_returns_void_C,
-    _call_objc_p_p_Uint8_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_Uint8_returns_void_C = Void Function(
+final _call_ptr_ptr_Uint8_returns_void = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_Uint8_returns_void_C,
+    _call_ptr_ptr_Uint8_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_Uint8_returns_void_C = Void Function(
     Pointer _arg0, Pointer _arg1, Uint8 arg);
-typedef _call_objc_p_p_Uint8_returns_void_Dart = void Function(
+typedef _call_ptr_ptr_Uint8_returns_void_Dart = void Function(
     Pointer _arg0, Pointer _arg1, int arg);
 
-final _call_objc_p_p_float64_float64_Uint64_Int64_p_returns_p =
+final _call_ptr_ptr_float64_float64_Uint64_Int64_ptr_returns_ptr =
     _objc.dlForObjectiveC.lookupFunction<
-            _call_objc_p_p_float64_float64_Uint64_Int64_p_returns_p_C,
-            _call_objc_p_p_float64_float64_Uint64_Int64_p_returns_p_Dart>(
+            _call_ptr_ptr_float64_float64_Uint64_Int64_ptr_returns_ptr_C,
+            _call_ptr_ptr_float64_float64_Uint64_Int64_ptr_returns_ptr_Dart>(
         "objc_msgSend");
-typedef _call_objc_p_p_float64_float64_Uint64_Int64_p_returns_p_C
+typedef _call_ptr_ptr_float64_float64_Uint64_Int64_ptr_returns_ptr_C
     = Pointer Function(
         Pointer _arg0,
         Pointer _arg1,
@@ -15672,7 +15191,7 @@ typedef _call_objc_p_p_float64_float64_Uint64_Int64_p_returns_p_C
         Uint64 maximumBatchSize,
         Int64 mode,
         Pointer notifyBlock);
-typedef _call_objc_p_p_float64_float64_Uint64_Int64_p_returns_p_Dart
+typedef _call_ptr_ptr_float64_float64_Uint64_Int64_ptr_returns_ptr_Dart
     = Pointer Function(
         Pointer _arg0,
         Pointer _arg1,
@@ -15682,57 +15201,57 @@ typedef _call_objc_p_p_float64_float64_Uint64_Int64_p_returns_p_Dart
         int mode,
         Pointer notifyBlock);
 
-final _call_objc_p_p_float64_p_returns_void = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_float64_p_returns_void_C,
-        _call_objc_p_p_float64_p_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_float64_p_returns_void_C = Void Function(
+final _call_ptr_ptr_float64_ptr_returns_void = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_float64_ptr_returns_void_C,
+        _call_ptr_ptr_float64_ptr_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_float64_ptr_returns_void_C = Void Function(
     Pointer _arg0, Pointer _arg1, Float arg, Pointer completionHandler);
-typedef _call_objc_p_p_float64_p_returns_void_Dart = void Function(
+typedef _call_ptr_ptr_float64_ptr_returns_void_Dart = void Function(
     Pointer _arg0, Pointer _arg1, double arg, Pointer completionHandler);
 
-final _call_objc_p_p_float64_returns_void = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_float64_returns_void_C,
-        _call_objc_p_p_float64_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_float64_returns_void_C = Void Function(
+final _call_ptr_ptr_float64_returns_void = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_float64_returns_void_C,
+    _call_ptr_ptr_float64_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_float64_returns_void_C = Void Function(
     Pointer _arg0, Pointer _arg1, Float arg);
-typedef _call_objc_p_p_float64_returns_void_Dart = void Function(
+typedef _call_ptr_ptr_float64_returns_void_Dart = void Function(
     Pointer _arg0, Pointer _arg1, double arg);
 
-final _call_objc_p_p_p_Int32_returns_void = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_p_Int32_returns_void_C,
-        _call_objc_p_p_p_Int32_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_Int32_returns_void_C = Void Function(
+final _call_ptr_ptr_ptr_Int32_returns_void = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_Int32_returns_void_C,
+        _call_ptr_ptr_ptr_Int32_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_Int32_returns_void_C = Void Function(
     Pointer _arg0, Pointer _arg1, Pointer arg, Int32 interactionType);
-typedef _call_objc_p_p_p_Int32_returns_void_Dart = void Function(
+typedef _call_ptr_ptr_ptr_Int32_returns_void_Dart = void Function(
     Pointer _arg0, Pointer _arg1, Pointer arg, int interactionType);
 
-final _call_objc_p_p_p_Int64_Uint64_returns_void = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_p_Int64_Uint64_returns_void_C,
-        _call_objc_p_p_p_Int64_Uint64_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_Int64_Uint64_returns_void_C = Void Function(
+final _call_ptr_ptr_ptr_Int64_Uint64_returns_void = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_Int64_Uint64_returns_void_C,
+        _call_ptr_ptr_ptr_Int64_Uint64_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_Int64_Uint64_returns_void_C = Void Function(
     Pointer _arg0,
     Pointer _arg1,
     Pointer arg,
     Int64 indexOperation,
     Uint64 itemCount);
-typedef _call_objc_p_p_p_Int64_Uint64_returns_void_Dart = void Function(
+typedef _call_ptr_ptr_ptr_Int64_Uint64_returns_void_Dart = void Function(
     Pointer _arg0,
     Pointer _arg1,
     Pointer arg,
     int indexOperation,
     int itemCount);
 
-final _call_objc_p_p_p_Int64_p_Int64_returns_void = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_p_Int64_p_Int64_returns_void_C,
-        _call_objc_p_p_p_Int64_p_Int64_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_Int64_p_Int64_returns_void_C = Void Function(
+final _call_ptr_ptr_ptr_Int64_ptr_Int64_returns_void = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_Int64_ptr_Int64_returns_void_C,
+        _call_ptr_ptr_ptr_Int64_ptr_Int64_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_Int64_ptr_Int64_returns_void_C = Void Function(
     Pointer _arg0,
     Pointer _arg1,
     Pointer arg,
     Int64 stringLength,
     Pointer forKey,
     Int64 keyLength);
-typedef _call_objc_p_p_p_Int64_p_Int64_returns_void_Dart = void Function(
+typedef _call_ptr_ptr_ptr_Int64_ptr_Int64_returns_void_Dart = void Function(
     Pointer _arg0,
     Pointer _arg1,
     Pointer arg,
@@ -15740,17 +15259,17 @@ typedef _call_objc_p_p_p_Int64_p_Int64_returns_void_Dart = void Function(
     Pointer forKey,
     int keyLength);
 
-final _call_objc_p_p_p_Int64_p_Int8_returns_p = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_p_Int64_p_Int8_returns_p_C,
-        _call_objc_p_p_p_Int64_p_Int8_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_Int64_p_Int8_returns_p_C = Pointer Function(
+final _call_ptr_ptr_ptr_Int64_ptr_Int8_returns_ptr = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_Int64_ptr_Int8_returns_ptr_C,
+        _call_ptr_ptr_ptr_Int64_ptr_Int8_returns_ptr_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_Int64_ptr_Int8_returns_ptr_C = Pointer Function(
     Pointer _arg0,
     Pointer _arg1,
     Pointer arg,
     Int64 queryID,
     Pointer queryContext,
     Int8 needsInitialization);
-typedef _call_objc_p_p_p_Int64_p_Int8_returns_p_Dart = Pointer Function(
+typedef _call_ptr_ptr_ptr_Int64_ptr_Int8_returns_ptr_Dart = Pointer Function(
     Pointer _arg0,
     Pointer _arg1,
     Pointer arg,
@@ -15758,26 +15277,26 @@ typedef _call_objc_p_p_p_Int64_p_Int8_returns_p_Dart = Pointer Function(
     Pointer queryContext,
     int needsInitialization);
 
-final _call_objc_p_p_p_Int64_returns_p = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_p_Int64_returns_p_C,
-    _call_objc_p_p_p_Int64_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_Int64_returns_p_C = Pointer Function(
+final _call_ptr_ptr_ptr_Int64_returns_ptr = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_Int64_returns_ptr_C,
+        _call_ptr_ptr_ptr_Int64_returns_ptr_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_Int64_returns_ptr_C = Pointer Function(
     Pointer _arg0, Pointer _arg1, Pointer arg, Int64 options);
-typedef _call_objc_p_p_p_Int64_returns_p_Dart = Pointer Function(
+typedef _call_ptr_ptr_ptr_Int64_returns_ptr_Dart = Pointer Function(
     Pointer _arg0, Pointer _arg1, Pointer arg, int options);
 
-final _call_objc_p_p_p_Int64_returns_void = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_p_Int64_returns_void_C,
-        _call_objc_p_p_p_Int64_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_Int64_returns_void_C = Void Function(
+final _call_ptr_ptr_ptr_Int64_returns_void = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_Int64_returns_void_C,
+        _call_ptr_ptr_ptr_Int64_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_Int64_returns_void_C = Void Function(
     Pointer _arg0, Pointer _arg1, Pointer arg, Int64 toState);
-typedef _call_objc_p_p_p_Int64_returns_void_Dart = void Function(
+typedef _call_ptr_ptr_ptr_Int64_returns_void_Dart = void Function(
     Pointer _arg0, Pointer _arg1, Pointer arg, int toState);
 
-final _call_objc_p_p_p_Int8_Int8_Int8_Int8_returns_p = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_p_Int8_Int8_Int8_Int8_returns_p_C,
-        _call_objc_p_p_p_Int8_Int8_Int8_Int8_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_Int8_Int8_Int8_Int8_returns_p_C = Pointer Function(
+final _call_ptr_ptr_ptr_Int8_Int8_Int8_Int8_returns_ptr = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_Int8_Int8_Int8_Int8_returns_ptr_C,
+        _call_ptr_ptr_ptr_Int8_Int8_Int8_Int8_returns_ptr_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_Int8_Int8_Int8_Int8_returns_ptr_C = Pointer Function(
     Pointer _arg0,
     Pointer _arg1,
     Pointer arg,
@@ -15785,26 +15304,21 @@ typedef _call_objc_p_p_p_Int8_Int8_Int8_Int8_returns_p_C = Pointer Function(
     Int8 searchableByDefault,
     Int8 unique,
     Int8 multiValued);
-typedef _call_objc_p_p_p_Int8_Int8_Int8_Int8_returns_p_Dart = Pointer Function(
-    Pointer _arg0,
-    Pointer _arg1,
-    Pointer arg,
-    int searchable,
-    int searchableByDefault,
-    int unique,
-    int multiValued);
+typedef _call_ptr_ptr_ptr_Int8_Int8_Int8_Int8_returns_ptr_Dart
+    = Pointer Function(Pointer _arg0, Pointer _arg1, Pointer arg,
+        int searchable, int searchableByDefault, int unique, int multiValued);
 
-final _call_objc_p_p_p_Int8_Int8_p_returns_Uint64 = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_p_Int8_Int8_p_returns_Uint64_C,
-        _call_objc_p_p_p_Int8_Int8_p_returns_Uint64_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_Int8_Int8_p_returns_Uint64_C = Uint64 Function(
+final _call_ptr_ptr_ptr_Int8_Int8_ptr_returns_Uint64 = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_Int8_Int8_ptr_returns_Uint64_C,
+        _call_ptr_ptr_ptr_Int8_Int8_ptr_returns_Uint64_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_Int8_Int8_ptr_returns_Uint64_C = Uint64 Function(
     Pointer _arg0,
     Pointer _arg1,
     Pointer arg,
     Int8 ignoreSubtokens,
     Int8 skipTranscriptions,
     Pointer withHandler);
-typedef _call_objc_p_p_p_Int8_Int8_p_returns_Uint64_Dart = int Function(
+typedef _call_ptr_ptr_ptr_Int8_Int8_ptr_returns_Uint64_Dart = int Function(
     Pointer _arg0,
     Pointer _arg1,
     Pointer arg,
@@ -15812,68 +15326,72 @@ typedef _call_objc_p_p_p_Int8_Int8_p_returns_Uint64_Dart = int Function(
     int skipTranscriptions,
     Pointer withHandler);
 
-final _call_objc_p_p_p_Int8_p_returns_Uint64 = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_p_Int8_p_returns_Uint64_C,
-        _call_objc_p_p_p_Int8_p_returns_Uint64_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_Int8_p_returns_Uint64_C = Uint64 Function(
+final _call_ptr_ptr_ptr_Int8_ptr_returns_Uint64 = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_Int8_ptr_returns_Uint64_C,
+        _call_ptr_ptr_ptr_Int8_ptr_returns_Uint64_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_Int8_ptr_returns_Uint64_C = Uint64 Function(
     Pointer _arg0,
     Pointer _arg1,
     Pointer arg,
     Int8 ignoreSubtokens,
     Pointer withHandler);
-typedef _call_objc_p_p_p_Int8_p_returns_Uint64_Dart = int Function(
+typedef _call_ptr_ptr_ptr_Int8_ptr_returns_Uint64_Dart = int Function(
     Pointer _arg0,
     Pointer _arg1,
     Pointer arg,
     int ignoreSubtokens,
     Pointer withHandler);
 
-final _call_objc_p_p_p_Int8_p_returns_p = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_p_Int8_p_returns_p_C,
-    _call_objc_p_p_p_Int8_p_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_Int8_p_returns_p_C = Pointer Function(
+final _call_ptr_ptr_ptr_Int8_ptr_returns_ptr = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_Int8_ptr_returns_ptr_C,
+        _call_ptr_ptr_ptr_Int8_ptr_returns_ptr_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_Int8_ptr_returns_ptr_C = Pointer Function(
     Pointer _arg0, Pointer _arg1, Pointer arg, Int8 machService, Pointer uuid);
-typedef _call_objc_p_p_p_Int8_p_returns_p_Dart = Pointer Function(
+typedef _call_ptr_ptr_ptr_Int8_ptr_returns_ptr_Dart = Pointer Function(
     Pointer _arg0, Pointer _arg1, Pointer arg, int machService, Pointer uuid);
 
-final _call_objc_p_p_p_Int8_p_returns_void = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_p_Int8_p_returns_void_C,
-        _call_objc_p_p_p_Int8_p_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_Int8_p_returns_void_C = Void Function(Pointer _arg0,
+final _call_ptr_ptr_ptr_Int8_ptr_returns_void = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_Int8_ptr_returns_void_C,
+        _call_ptr_ptr_ptr_Int8_ptr_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_Int8_ptr_returns_void_C = Void Function(Pointer _arg0,
     Pointer _arg1, Pointer arg, Int8 update, Pointer protectionClass);
-typedef _call_objc_p_p_p_Int8_p_returns_void_Dart = void Function(Pointer _arg0,
-    Pointer _arg1, Pointer arg, int update, Pointer protectionClass);
+typedef _call_ptr_ptr_ptr_Int8_ptr_returns_void_Dart = void Function(
+    Pointer _arg0,
+    Pointer _arg1,
+    Pointer arg,
+    int update,
+    Pointer protectionClass);
 
-final _call_objc_p_p_p_Int8_returns_p = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_p_Int8_returns_p_C,
-    _call_objc_p_p_p_Int8_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_Int8_returns_p_C = Pointer Function(
+final _call_ptr_ptr_ptr_Int8_returns_ptr = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_ptr_Int8_returns_ptr_C,
+    _call_ptr_ptr_ptr_Int8_returns_ptr_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_Int8_returns_ptr_C = Pointer Function(
     Pointer _arg0, Pointer _arg1, Pointer arg, Int8 machService);
-typedef _call_objc_p_p_p_Int8_returns_p_Dart = Pointer Function(
+typedef _call_ptr_ptr_ptr_Int8_returns_ptr_Dart = Pointer Function(
     Pointer _arg0, Pointer _arg1, Pointer arg, int machService);
 
-final _call_objc_p_p_p_Int8_returns_void = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_p_Int8_returns_void_C,
-    _call_objc_p_p_p_Int8_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_Int8_returns_void_C = Void Function(
+final _call_ptr_ptr_ptr_Int8_returns_void = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_Int8_returns_void_C,
+        _call_ptr_ptr_ptr_Int8_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_Int8_returns_void_C = Void Function(
     Pointer _arg0, Pointer _arg1, Pointer arg, Int8 includeText);
-typedef _call_objc_p_p_p_Int8_returns_void_Dart = void Function(
+typedef _call_ptr_ptr_ptr_Int8_returns_void_Dart = void Function(
     Pointer _arg0, Pointer _arg1, Pointer arg, int includeText);
 
-final _call_objc_p_p_p_Uint32_returns_void = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_p_Uint32_returns_void_C,
-        _call_objc_p_p_p_Uint32_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_Uint32_returns_void_C = Void Function(
+final _call_ptr_ptr_ptr_Uint32_returns_void = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_Uint32_returns_void_C,
+        _call_ptr_ptr_ptr_Uint32_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_Uint32_returns_void_C = Void Function(
     Pointer _arg0, Pointer _arg1, Pointer arg, Uint32 forID);
-typedef _call_objc_p_p_p_Uint32_returns_void_Dart = void Function(
+typedef _call_ptr_ptr_ptr_Uint32_returns_void_Dart = void Function(
     Pointer _arg0, Pointer _arg1, Pointer arg, int forID);
 
-final _call_objc_p_p_p_Uint64_p_p_Uint32_p_Int8_returns_void =
+final _call_ptr_ptr_ptr_Uint64_ptr_ptr_Uint32_ptr_Int8_returns_void =
     _objc.dlForObjectiveC.lookupFunction<
-            _call_objc_p_p_p_Uint64_p_p_Uint32_p_Int8_returns_void_C,
-            _call_objc_p_p_p_Uint64_p_p_Uint32_p_Int8_returns_void_Dart>(
+            _call_ptr_ptr_ptr_Uint64_ptr_ptr_Uint32_ptr_Int8_returns_void_C,
+            _call_ptr_ptr_ptr_Uint64_ptr_ptr_Uint32_ptr_Int8_returns_void_Dart>(
         "objc_msgSend");
-typedef _call_objc_p_p_p_Uint64_p_p_Uint32_p_Int8_returns_void_C
+typedef _call_ptr_ptr_ptr_Uint64_ptr_ptr_Uint32_ptr_Int8_returns_void_C
     = Void Function(
         Pointer _arg0,
         Pointer _arg1,
@@ -15884,7 +15402,7 @@ typedef _call_objc_p_p_p_Uint64_p_p_Uint32_p_Int8_returns_void_C
         Uint32 oidCount,
         Pointer items,
         Int8 isTopHitQuery);
-typedef _call_objc_p_p_p_Uint64_p_p_Uint32_p_Int8_returns_void_Dart
+typedef _call_ptr_ptr_ptr_Uint64_ptr_ptr_Uint32_ptr_Int8_returns_void_Dart
     = void Function(
         Pointer _arg0,
         Pointer _arg1,
@@ -15896,17 +15414,17 @@ typedef _call_objc_p_p_p_Uint64_p_p_Uint32_p_Int8_returns_void_Dart
         Pointer items,
         int isTopHitQuery);
 
-final _call_objc_p_p_p_p_Int64_p_returns_void = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_p_p_Int64_p_returns_void_C,
-        _call_objc_p_p_p_p_Int64_p_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_p_Int64_p_returns_void_C = Void Function(
+final _call_ptr_ptr_ptr_ptr_Int64_ptr_returns_void = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_ptr_Int64_ptr_returns_void_C,
+        _call_ptr_ptr_ptr_ptr_Int64_ptr_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_ptr_Int64_ptr_returns_void_C = Void Function(
     Pointer _arg0,
     Pointer _arg1,
     Pointer arg,
     Pointer forBundleID,
     Int64 options,
     Pointer completionHandler);
-typedef _call_objc_p_p_p_p_Int64_p_returns_void_Dart = void Function(
+typedef _call_ptr_ptr_ptr_ptr_Int64_ptr_returns_void_Dart = void Function(
     Pointer _arg0,
     Pointer _arg1,
     Pointer arg,
@@ -15914,49 +15432,65 @@ typedef _call_objc_p_p_p_p_Int64_p_returns_void_Dart = void Function(
     int options,
     Pointer completionHandler);
 
-final _call_objc_p_p_p_p_Int64_returns_void = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_p_p_Int64_returns_void_C,
-        _call_objc_p_p_p_p_Int64_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_p_Int64_returns_void_C = Void Function(
+final _call_ptr_ptr_ptr_ptr_Int64_returns_void = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_ptr_Int64_returns_void_C,
+        _call_ptr_ptr_ptr_ptr_Int64_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_ptr_Int64_returns_void_C = Void Function(
     Pointer _arg0, Pointer _arg1, Pointer arg, Pointer forKey, Int64 keyLength);
-typedef _call_objc_p_p_p_p_Int64_returns_void_Dart = void Function(
+typedef _call_ptr_ptr_ptr_ptr_Int64_returns_void_Dart = void Function(
     Pointer _arg0, Pointer _arg1, Pointer arg, Pointer forKey, int keyLength);
 
-final _call_objc_p_p_p_p_Int8_returns_Int64 = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_p_p_Int8_returns_Int64_C,
-        _call_objc_p_p_p_p_Int8_returns_Int64_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_p_Int8_returns_Int64_C = Int64 Function(Pointer _arg0,
-    Pointer _arg1, Pointer arg, Pointer job, Int8 memoryPressure);
-typedef _call_objc_p_p_p_p_Int8_returns_Int64_Dart = int Function(
+final _call_ptr_ptr_ptr_ptr_Int8_returns_Int64 = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_ptr_Int8_returns_Int64_C,
+        _call_ptr_ptr_ptr_ptr_Int8_returns_Int64_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_ptr_Int8_returns_Int64_C = Int64 Function(
+    Pointer _arg0,
+    Pointer _arg1,
+    Pointer arg,
+    Pointer job,
+    Int8 memoryPressure);
+typedef _call_ptr_ptr_ptr_ptr_Int8_returns_Int64_Dart = int Function(
     Pointer _arg0, Pointer _arg1, Pointer arg, Pointer job, int memoryPressure);
 
-final _call_objc_p_p_p_p_Int8_returns_p = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_p_p_Int8_returns_p_C,
-    _call_objc_p_p_p_p_Int8_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_p_Int8_returns_p_C = Pointer Function(Pointer _arg0,
-    Pointer _arg1, Pointer arg, Pointer protectionClass, Int8 isTopHitQuery);
-typedef _call_objc_p_p_p_p_Int8_returns_p_Dart = Pointer Function(Pointer _arg0,
-    Pointer _arg1, Pointer arg, Pointer protectionClass, int isTopHitQuery);
+final _call_ptr_ptr_ptr_ptr_Int8_returns_ptr = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_ptr_Int8_returns_ptr_C,
+        _call_ptr_ptr_ptr_ptr_Int8_returns_ptr_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_ptr_Int8_returns_ptr_C = Pointer Function(
+    Pointer _arg0,
+    Pointer _arg1,
+    Pointer arg,
+    Pointer protectionClass,
+    Int8 isTopHitQuery);
+typedef _call_ptr_ptr_ptr_ptr_Int8_returns_ptr_Dart = Pointer Function(
+    Pointer _arg0,
+    Pointer _arg1,
+    Pointer arg,
+    Pointer protectionClass,
+    int isTopHitQuery);
 
-final _call_objc_p_p_p_p_Int8_returns_void = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_p_p_Int8_returns_void_C,
-        _call_objc_p_p_p_p_Int8_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_p_Int8_returns_void_C = Void Function(Pointer _arg0,
+final _call_ptr_ptr_ptr_ptr_Int8_returns_void = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_ptr_Int8_returns_void_C,
+        _call_ptr_ptr_ptr_ptr_Int8_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_ptr_Int8_returns_void_C = Void Function(Pointer _arg0,
     Pointer _arg1, Pointer arg, Pointer protectionClass, Int8 isTopHitQuery);
-typedef _call_objc_p_p_p_p_Int8_returns_void_Dart = void Function(Pointer _arg0,
-    Pointer _arg1, Pointer arg, Pointer protectionClass, int isTopHitQuery);
+typedef _call_ptr_ptr_ptr_ptr_Int8_returns_void_Dart = void Function(
+    Pointer _arg0,
+    Pointer _arg1,
+    Pointer arg,
+    Pointer protectionClass,
+    int isTopHitQuery);
 
-final _call_objc_p_p_p_p_Uint8_Uint64_returns_p = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_p_p_Uint8_Uint64_returns_p_C,
-        _call_objc_p_p_p_p_Uint8_Uint64_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_p_Uint8_Uint64_returns_p_C = Pointer Function(
+final _call_ptr_ptr_ptr_ptr_Uint8_Uint64_returns_ptr = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_ptr_Uint8_Uint64_returns_ptr_C,
+        _call_ptr_ptr_ptr_ptr_Uint8_Uint64_returns_ptr_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_ptr_Uint8_Uint64_returns_ptr_C = Pointer Function(
     Pointer _arg0,
     Pointer _arg1,
     Pointer arg,
     Pointer language,
     Uint8 fuzzyThreshold,
     Uint64 options);
-typedef _call_objc_p_p_p_p_Uint8_Uint64_returns_p_Dart = Pointer Function(
+typedef _call_ptr_ptr_ptr_ptr_Uint8_Uint64_returns_ptr_Dart = Pointer Function(
     Pointer _arg0,
     Pointer _arg1,
     Pointer arg,
@@ -15964,10 +15498,10 @@ typedef _call_objc_p_p_p_p_Uint8_Uint64_returns_p_Dart = Pointer Function(
     int fuzzyThreshold,
     int options);
 
-final _call_objc_p_p_p_p_p_Int64_p_returns_void = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_p_p_p_Int64_p_returns_void_C,
-        _call_objc_p_p_p_p_p_Int64_p_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_p_p_Int64_p_returns_void_C = Void Function(
+final _call_ptr_ptr_ptr_ptr_ptr_Int64_ptr_returns_void = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_ptr_ptr_Int64_ptr_returns_void_C,
+        _call_ptr_ptr_ptr_ptr_ptr_Int64_ptr_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_ptr_ptr_Int64_ptr_returns_void_C = Void Function(
     Pointer _arg0,
     Pointer _arg1,
     Pointer arg,
@@ -15975,7 +15509,7 @@ typedef _call_objc_p_p_p_p_p_Int64_p_returns_void_C = Void Function(
     Pointer forBundleID,
     Int64 options,
     Pointer completionHandler);
-typedef _call_objc_p_p_p_p_p_Int64_p_returns_void_Dart = void Function(
+typedef _call_ptr_ptr_ptr_ptr_ptr_Int64_ptr_returns_void_Dart = void Function(
     Pointer _arg0,
     Pointer _arg1,
     Pointer arg,
@@ -15984,17 +15518,17 @@ typedef _call_objc_p_p_p_p_p_Int64_p_returns_void_Dart = void Function(
     int options,
     Pointer completionHandler);
 
-final _call_objc_p_p_p_p_p_Int8_returns_void = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_p_p_p_Int8_returns_void_C,
-        _call_objc_p_p_p_p_p_Int8_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_p_p_Int8_returns_void_C = Void Function(
+final _call_ptr_ptr_ptr_ptr_ptr_Int8_returns_void = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_ptr_ptr_Int8_returns_void_C,
+        _call_ptr_ptr_ptr_ptr_ptr_Int8_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_ptr_ptr_Int8_returns_void_C = Void Function(
     Pointer _arg0,
     Pointer _arg1,
     Pointer arg,
     Pointer oidData,
     Pointer protectionClass,
     Int8 isTopHitQuery);
-typedef _call_objc_p_p_p_p_p_Int8_returns_void_Dart = void Function(
+typedef _call_ptr_ptr_ptr_ptr_ptr_Int8_returns_void_Dart = void Function(
     Pointer _arg0,
     Pointer _arg1,
     Pointer arg,
@@ -16002,302 +15536,331 @@ typedef _call_objc_p_p_p_p_p_Int8_returns_void_Dart = void Function(
     Pointer protectionClass,
     int isTopHitQuery);
 
-final _call_objc_p_p_p_p_p_p_p_Int64_p_returns_void = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_p_p_p_p_p_Int64_p_returns_void_C,
-        _call_objc_p_p_p_p_p_p_p_Int64_p_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_p_p_p_p_Int64_p_returns_void_C = Void Function(
-    Pointer _arg0,
-    Pointer _arg1,
-    Pointer arg,
-    Pointer deleteSearchableItemsWithIdentifiers,
-    Pointer clientState,
-    Pointer protectionClass,
-    Pointer forBundleID,
-    Int64 options,
-    Pointer completionHandler);
-typedef _call_objc_p_p_p_p_p_p_p_Int64_p_returns_void_Dart = void Function(
-    Pointer _arg0,
-    Pointer _arg1,
-    Pointer arg,
-    Pointer deleteSearchableItemsWithIdentifiers,
-    Pointer clientState,
-    Pointer protectionClass,
-    Pointer forBundleID,
-    int options,
-    Pointer completionHandler);
-
-final _call_objc_p_p_p_p_p_p_p_p_Int64_p_returns_void = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_p_p_p_p_p_p_Int64_p_returns_void_C,
-        _call_objc_p_p_p_p_p_p_p_p_Int64_p_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_p_p_p_p_p_Int64_p_returns_void_C = Void Function(
-    Pointer _arg0,
-    Pointer _arg1,
-    Pointer arg,
-    Pointer deleteSearchableItemsWithIdentifiers,
-    Pointer clientState,
-    Pointer clientStateName,
-    Pointer protectionClass,
-    Pointer forBundleID,
-    Int64 options,
-    Pointer completionHandler);
-typedef _call_objc_p_p_p_p_p_p_p_p_Int64_p_returns_void_Dart = void Function(
-    Pointer _arg0,
-    Pointer _arg1,
-    Pointer arg,
-    Pointer deleteSearchableItemsWithIdentifiers,
-    Pointer clientState,
-    Pointer clientStateName,
-    Pointer protectionClass,
-    Pointer forBundleID,
-    int options,
-    Pointer completionHandler);
-
-final _call_objc_p_p_p_p_p_p_p_p_p_p_p_returns_void = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_p_p_p_p_p_p_p_p_p_returns_void_C,
-        _call_objc_p_p_p_p_p_p_p_p_p_p_p_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_p_p_p_p_p_p_p_p_returns_void_C = Void Function(
-    Pointer _arg0,
-    Pointer _arg1,
-    Pointer arg,
-    Pointer withName,
-    Pointer emails,
-    Pointer contactIdentifiers,
-    Pointer nameKey,
-    Pointer emailKey,
-    Pointer contactIdentifierKey,
-    Pointer emailAddressKey,
-    Pointer attributeSet);
-typedef _call_objc_p_p_p_p_p_p_p_p_p_p_p_returns_void_Dart = void Function(
-    Pointer _arg0,
-    Pointer _arg1,
-    Pointer arg,
-    Pointer withName,
-    Pointer emails,
-    Pointer contactIdentifiers,
-    Pointer nameKey,
-    Pointer emailKey,
-    Pointer contactIdentifierKey,
-    Pointer emailAddressKey,
-    Pointer attributeSet);
-
-final _call_objc_p_p_p_p_p_p_p_p_returns_void = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_p_p_p_p_p_p_returns_void_C,
-        _call_objc_p_p_p_p_p_p_p_p_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_p_p_p_p_p_returns_void_C = Void Function(
-    Pointer _arg0,
-    Pointer _arg1,
-    Pointer arg,
-    Pointer sender,
-    Pointer senderHandle,
-    Pointer recipients,
-    Pointer recipientHandles,
-    Pointer transport);
-typedef _call_objc_p_p_p_p_p_p_p_p_returns_void_Dart = void Function(
-    Pointer _arg0,
-    Pointer _arg1,
-    Pointer arg,
-    Pointer sender,
-    Pointer senderHandle,
-    Pointer recipients,
-    Pointer recipientHandles,
-    Pointer transport);
-
-final _call_objc_p_p_p_p_p_p_p_returns_void = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_p_p_p_p_p_returns_void_C,
-        _call_objc_p_p_p_p_p_p_p_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_p_p_p_p_returns_void_C = Void Function(
-    Pointer _arg0,
-    Pointer _arg1,
-    Pointer arg,
-    Pointer protectionClass,
-    Pointer bundleID,
-    Pointer identifiers,
-    Pointer completionHandler);
-typedef _call_objc_p_p_p_p_p_p_p_returns_void_Dart = void Function(
-    Pointer _arg0,
-    Pointer _arg1,
-    Pointer arg,
-    Pointer protectionClass,
-    Pointer bundleID,
-    Pointer identifiers,
-    Pointer completionHandler);
-
-final _call_objc_p_p_p_p_p_p_returns_p = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_p_p_p_p_returns_p_C,
-    _call_objc_p_p_p_p_p_p_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_p_p_p_returns_p_C = Pointer Function(
-    Pointer _arg0,
-    Pointer _arg1,
-    Pointer arg,
-    Pointer queryString,
-    Pointer context,
-    Pointer attributes);
-typedef _call_objc_p_p_p_p_p_p_returns_p_Dart = Pointer Function(
-    Pointer _arg0,
-    Pointer _arg1,
-    Pointer arg,
-    Pointer queryString,
-    Pointer context,
-    Pointer attributes);
-
-final _call_objc_p_p_p_p_p_p_returns_void = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_p_p_p_p_returns_void_C,
-        _call_objc_p_p_p_p_p_p_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_p_p_p_returns_void_C = Void Function(
-    Pointer _arg0,
-    Pointer _arg1,
-    Pointer arg,
-    Pointer identifier,
-    Pointer type,
-    Pointer completionHandler);
-typedef _call_objc_p_p_p_p_p_p_returns_void_Dart = void Function(
-    Pointer _arg0,
-    Pointer _arg1,
-    Pointer arg,
-    Pointer identifier,
-    Pointer type,
-    Pointer completionHandler);
-
-final _call_objc_p_p_p_p_p_returns_Int8 = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_p_p_p_returns_Int8_C,
-    _call_objc_p_p_p_p_p_returns_Int8_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_p_p_returns_Int8_C = Int8 Function(Pointer _arg0,
-    Pointer _arg1, Pointer arg, Pointer type, Pointer connection);
-typedef _call_objc_p_p_p_p_p_returns_Int8_Dart = int Function(Pointer _arg0,
-    Pointer _arg1, Pointer arg, Pointer type, Pointer connection);
-
-final _call_objc_p_p_p_p_p_returns_p = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_p_p_p_returns_p_C,
-    _call_objc_p_p_p_p_p_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_p_p_returns_p_C = Pointer Function(Pointer _arg0,
-    Pointer _arg1, Pointer arg, Pointer domainIdentifier, Pointer attributes);
-typedef _call_objc_p_p_p_p_p_returns_p_Dart = Pointer Function(Pointer _arg0,
-    Pointer _arg1, Pointer arg, Pointer domainIdentifier, Pointer attributes);
-
-final _call_objc_p_p_p_p_p_returns_void = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_p_p_p_returns_void_C,
-    _call_objc_p_p_p_p_p_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_p_p_returns_void_C = Void Function(Pointer _arg0,
-    Pointer _arg1, Pointer arg, Pointer stateInfo, Pointer completionHandler);
-typedef _call_objc_p_p_p_p_p_returns_void_Dart = void Function(Pointer _arg0,
-    Pointer _arg1, Pointer arg, Pointer stateInfo, Pointer completionHandler);
-
-final _call_objc_p_p_p_p_returns_Int8 = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_p_p_returns_Int8_C,
-    _call_objc_p_p_p_p_returns_Int8_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_p_returns_Int8_C = Int8 Function(
-    Pointer _arg0, Pointer _arg1, Pointer arg, Pointer error);
-typedef _call_objc_p_p_p_p_returns_Int8_Dart = int Function(
-    Pointer _arg0, Pointer _arg1, Pointer arg, Pointer error);
-
-final _call_objc_p_p_p_p_returns_p = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_p_p_returns_p_C,
-    _call_objc_p_p_p_p_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_p_returns_p_C = Pointer Function(
-    Pointer _arg0, Pointer _arg1, Pointer arg, Pointer options);
-typedef _call_objc_p_p_p_p_returns_p_Dart = Pointer Function(
-    Pointer _arg0, Pointer _arg1, Pointer arg, Pointer options);
-
-final _call_objc_p_p_p_p_returns_void = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_p_p_returns_void_C,
-    _call_objc_p_p_p_p_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_p_returns_void_C = Void Function(
-    Pointer _arg0, Pointer _arg1, Pointer arg, Pointer acknowledgementHandler);
-typedef _call_objc_p_p_p_p_returns_void_Dart = void Function(
-    Pointer _arg0, Pointer _arg1, Pointer arg, Pointer acknowledgementHandler);
-
-final _call_objc_p_p_p_returns_Int8 = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_p_returns_Int8_C,
-    _call_objc_p_p_p_returns_Int8_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_returns_Int8_C = Int8 Function(
-    Pointer _arg0, Pointer _arg1, Pointer arg);
-typedef _call_objc_p_p_p_returns_Int8_Dart = int Function(
-    Pointer _arg0, Pointer _arg1, Pointer arg);
-
-final _call_objc_p_p_p_returns_p = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_p_returns_p_C,
-    _call_objc_p_p_p_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_returns_p_C = Pointer Function(
-    Pointer _arg0, Pointer _arg1, Pointer arg);
-typedef _call_objc_p_p_p_returns_p_Dart = Pointer Function(
-    Pointer _arg0, Pointer _arg1, Pointer arg);
-
-final _call_objc_p_p_p_returns_void = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_p_returns_void_C,
-    _call_objc_p_p_p_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_returns_void_C = Void Function(
-    Pointer _arg0, Pointer _arg1, Pointer arg);
-typedef _call_objc_p_p_p_returns_void_Dart = void Function(
-    Pointer _arg0, Pointer _arg1, Pointer arg);
-
-final _call_objc_p_p_returns_Int32 = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_returns_Int32_C,
-    _call_objc_p_p_returns_Int32_Dart>("objc_msgSend");
-typedef _call_objc_p_p_returns_Int32_C = Int32 Function(
-    Pointer _arg0, Pointer _arg1);
-typedef _call_objc_p_p_returns_Int32_Dart = int Function(
-    Pointer _arg0, Pointer _arg1);
-
-final _call_objc_p_p_returns_Int64 = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_returns_Int64_C,
-    _call_objc_p_p_returns_Int64_Dart>("objc_msgSend");
-typedef _call_objc_p_p_returns_Int64_C = Int64 Function(
-    Pointer _arg0, Pointer _arg1);
-typedef _call_objc_p_p_returns_Int64_Dart = int Function(
-    Pointer _arg0, Pointer _arg1);
-
-final _call_objc_p_p_returns_Int8 = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_returns_Int8_C,
-    _call_objc_p_p_returns_Int8_Dart>("objc_msgSend");
-typedef _call_objc_p_p_returns_Int8_C = Int8 Function(
-    Pointer _arg0, Pointer _arg1);
-typedef _call_objc_p_p_returns_Int8_Dart = int Function(
-    Pointer _arg0, Pointer _arg1);
-
-final _call_objc_p_p_returns_Uint32 = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_returns_Uint32_C,
-    _call_objc_p_p_returns_Uint32_Dart>("objc_msgSend");
-typedef _call_objc_p_p_returns_Uint32_C = Uint32 Function(
-    Pointer _arg0, Pointer _arg1);
-typedef _call_objc_p_p_returns_Uint32_Dart = int Function(
-    Pointer _arg0, Pointer _arg1);
-
-final _call_objc_p_p_returns_Uint64 = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_returns_Uint64_C,
-    _call_objc_p_p_returns_Uint64_Dart>("objc_msgSend");
-typedef _call_objc_p_p_returns_Uint64_C = Uint64 Function(
-    Pointer _arg0, Pointer _arg1);
-typedef _call_objc_p_p_returns_Uint64_Dart = int Function(
-    Pointer _arg0, Pointer _arg1);
-
-final _call_objc_p_p_returns_Uint8 = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_returns_Uint8_C,
-    _call_objc_p_p_returns_Uint8_Dart>("objc_msgSend");
-typedef _call_objc_p_p_returns_Uint8_C = Uint8 Function(
-    Pointer _arg0, Pointer _arg1);
-typedef _call_objc_p_p_returns_Uint8_Dart = int Function(
-    Pointer _arg0, Pointer _arg1);
-
-final _call_objc_p_p_returns_float64 = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_returns_float64_C,
-    _call_objc_p_p_returns_float64_Dart>("objc_msgSend");
-typedef _call_objc_p_p_returns_float64_C = Float Function(
-    Pointer _arg0, Pointer _arg1);
-typedef _call_objc_p_p_returns_float64_Dart = double Function(
-    Pointer _arg0, Pointer _arg1);
-
-final _call_objc_p_p_returns_p = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_returns_p_C, _call_objc_p_p_returns_p_Dart>(
+final _call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_Int64_ptr_returns_void =
+    _objc.dlForObjectiveC.lookupFunction<
+            _call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_Int64_ptr_returns_void_C,
+            _call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_Int64_ptr_returns_void_Dart>(
         "objc_msgSend");
-typedef _call_objc_p_p_returns_p_C = Pointer Function(
+typedef _call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_Int64_ptr_returns_void_C
+    = Void Function(
+        Pointer _arg0,
+        Pointer _arg1,
+        Pointer arg,
+        Pointer deleteSearchableItemsWithIdentifiers,
+        Pointer clientState,
+        Pointer protectionClass,
+        Pointer forBundleID,
+        Int64 options,
+        Pointer completionHandler);
+typedef _call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_Int64_ptr_returns_void_Dart
+    = void Function(
+        Pointer _arg0,
+        Pointer _arg1,
+        Pointer arg,
+        Pointer deleteSearchableItemsWithIdentifiers,
+        Pointer clientState,
+        Pointer protectionClass,
+        Pointer forBundleID,
+        int options,
+        Pointer completionHandler);
+
+final _call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_Int64_ptr_returns_void =
+    _objc.dlForObjectiveC.lookupFunction<
+            _call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_Int64_ptr_returns_void_C,
+            _call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_Int64_ptr_returns_void_Dart>(
+        "objc_msgSend");
+typedef _call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_Int64_ptr_returns_void_C
+    = Void Function(
+        Pointer _arg0,
+        Pointer _arg1,
+        Pointer arg,
+        Pointer deleteSearchableItemsWithIdentifiers,
+        Pointer clientState,
+        Pointer clientStateName,
+        Pointer protectionClass,
+        Pointer forBundleID,
+        Int64 options,
+        Pointer completionHandler);
+typedef _call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_Int64_ptr_returns_void_Dart
+    = void Function(
+        Pointer _arg0,
+        Pointer _arg1,
+        Pointer arg,
+        Pointer deleteSearchableItemsWithIdentifiers,
+        Pointer clientState,
+        Pointer clientStateName,
+        Pointer protectionClass,
+        Pointer forBundleID,
+        int options,
+        Pointer completionHandler);
+
+final _call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_returns_void =
+    _objc.dlForObjectiveC.lookupFunction<
+            _call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_returns_void_C,
+            _call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_returns_void_Dart>(
+        "objc_msgSend");
+typedef _call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_returns_void_C
+    = Void Function(
+        Pointer _arg0,
+        Pointer _arg1,
+        Pointer arg,
+        Pointer withName,
+        Pointer emails,
+        Pointer contactIdentifiers,
+        Pointer nameKey,
+        Pointer emailKey,
+        Pointer contactIdentifierKey,
+        Pointer emailAddressKey,
+        Pointer attributeSet);
+typedef _call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_returns_void_Dart
+    = void Function(
+        Pointer _arg0,
+        Pointer _arg1,
+        Pointer arg,
+        Pointer withName,
+        Pointer emails,
+        Pointer contactIdentifiers,
+        Pointer nameKey,
+        Pointer emailKey,
+        Pointer contactIdentifierKey,
+        Pointer emailAddressKey,
+        Pointer attributeSet);
+
+final _call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_returns_void = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_returns_void_C,
+            _call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_returns_void_Dart>(
+        "objc_msgSend");
+typedef _call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_returns_void_C = Void Function(
+    Pointer _arg0,
+    Pointer _arg1,
+    Pointer arg,
+    Pointer sender,
+    Pointer senderHandle,
+    Pointer recipients,
+    Pointer recipientHandles,
+    Pointer transport);
+typedef _call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_ptr_returns_void_Dart = void Function(
+    Pointer _arg0,
+    Pointer _arg1,
+    Pointer arg,
+    Pointer sender,
+    Pointer senderHandle,
+    Pointer recipients,
+    Pointer recipientHandles,
+    Pointer transport);
+
+final _call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_returns_void = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_returns_void_C,
+        _call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_returns_void_C = Void Function(
+    Pointer _arg0,
+    Pointer _arg1,
+    Pointer arg,
+    Pointer protectionClass,
+    Pointer bundleID,
+    Pointer identifiers,
+    Pointer completionHandler);
+typedef _call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_returns_void_Dart = void Function(
+    Pointer _arg0,
+    Pointer _arg1,
+    Pointer arg,
+    Pointer protectionClass,
+    Pointer bundleID,
+    Pointer identifiers,
+    Pointer completionHandler);
+
+final _call_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr_C,
+        _call_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr_C = Pointer Function(
+    Pointer _arg0,
+    Pointer _arg1,
+    Pointer arg,
+    Pointer queryString,
+    Pointer context,
+    Pointer attributes);
+typedef _call_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr_Dart = Pointer Function(
+    Pointer _arg0,
+    Pointer _arg1,
+    Pointer arg,
+    Pointer queryString,
+    Pointer context,
+    Pointer attributes);
+
+final _call_ptr_ptr_ptr_ptr_ptr_ptr_returns_void = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_ptr_ptr_ptr_returns_void_C,
+        _call_ptr_ptr_ptr_ptr_ptr_ptr_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_ptr_ptr_ptr_returns_void_C = Void Function(
+    Pointer _arg0,
+    Pointer _arg1,
+    Pointer arg,
+    Pointer identifier,
+    Pointer type,
+    Pointer completionHandler);
+typedef _call_ptr_ptr_ptr_ptr_ptr_ptr_returns_void_Dart = void Function(
+    Pointer _arg0,
+    Pointer _arg1,
+    Pointer arg,
+    Pointer identifier,
+    Pointer type,
+    Pointer completionHandler);
+
+final _call_ptr_ptr_ptr_ptr_ptr_returns_Int8 = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_ptr_ptr_returns_Int8_C,
+        _call_ptr_ptr_ptr_ptr_ptr_returns_Int8_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_ptr_ptr_returns_Int8_C = Int8 Function(Pointer _arg0,
+    Pointer _arg1, Pointer arg, Pointer info, Pointer connection);
+typedef _call_ptr_ptr_ptr_ptr_ptr_returns_Int8_Dart = int Function(
+    Pointer _arg0,
+    Pointer _arg1,
+    Pointer arg,
+    Pointer info,
+    Pointer connection);
+
+final _call_ptr_ptr_ptr_ptr_ptr_returns_ptr = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_ptr_ptr_returns_ptr_C,
+        _call_ptr_ptr_ptr_ptr_ptr_returns_ptr_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_ptr_ptr_returns_ptr_C = Pointer Function(
+    Pointer _arg0,
+    Pointer _arg1,
+    Pointer arg,
+    Pointer domainIdentifier,
+    Pointer attributes);
+typedef _call_ptr_ptr_ptr_ptr_ptr_returns_ptr_Dart = Pointer Function(
+    Pointer _arg0,
+    Pointer _arg1,
+    Pointer arg,
+    Pointer domainIdentifier,
+    Pointer attributes);
+
+final _call_ptr_ptr_ptr_ptr_ptr_returns_void = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_ptr_ptr_returns_void_C,
+        _call_ptr_ptr_ptr_ptr_ptr_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_ptr_ptr_returns_void_C = Void Function(Pointer _arg0,
+    Pointer _arg1, Pointer arg, Pointer stateInfo, Pointer completionHandler);
+typedef _call_ptr_ptr_ptr_ptr_ptr_returns_void_Dart = void Function(
+    Pointer _arg0,
+    Pointer _arg1,
+    Pointer arg,
+    Pointer stateInfo,
+    Pointer completionHandler);
+
+final _call_ptr_ptr_ptr_ptr_returns_Int8 = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_ptr_ptr_returns_Int8_C,
+    _call_ptr_ptr_ptr_ptr_returns_Int8_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_ptr_returns_Int8_C = Int8 Function(
+    Pointer _arg0, Pointer _arg1, Pointer arg, Pointer error);
+typedef _call_ptr_ptr_ptr_ptr_returns_Int8_Dart = int Function(
+    Pointer _arg0, Pointer _arg1, Pointer arg, Pointer error);
+
+final _call_ptr_ptr_ptr_ptr_returns_ptr = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_ptr_ptr_returns_ptr_C,
+    _call_ptr_ptr_ptr_ptr_returns_ptr_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_ptr_returns_ptr_C = Pointer Function(
+    Pointer _arg0, Pointer _arg1, Pointer arg, Pointer options);
+typedef _call_ptr_ptr_ptr_ptr_returns_ptr_Dart = Pointer Function(
+    Pointer _arg0, Pointer _arg1, Pointer arg, Pointer options);
+
+final _call_ptr_ptr_ptr_ptr_returns_void = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_ptr_ptr_returns_void_C,
+    _call_ptr_ptr_ptr_ptr_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_ptr_returns_void_C = Void Function(
+    Pointer _arg0, Pointer _arg1, Pointer arg, Pointer acknowledgementHandler);
+typedef _call_ptr_ptr_ptr_ptr_returns_void_Dart = void Function(
+    Pointer _arg0, Pointer _arg1, Pointer arg, Pointer acknowledgementHandler);
+
+final _call_ptr_ptr_ptr_returns_Int8 = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_ptr_returns_Int8_C,
+    _call_ptr_ptr_ptr_returns_Int8_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_returns_Int8_C = Int8 Function(
+    Pointer _arg0, Pointer _arg1, Pointer arg);
+typedef _call_ptr_ptr_ptr_returns_Int8_Dart = int Function(
+    Pointer _arg0, Pointer _arg1, Pointer arg);
+
+final _call_ptr_ptr_ptr_returns_ptr = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_ptr_returns_ptr_C,
+    _call_ptr_ptr_ptr_returns_ptr_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_returns_ptr_C = Pointer Function(
+    Pointer _arg0, Pointer _arg1, Pointer arg);
+typedef _call_ptr_ptr_ptr_returns_ptr_Dart = Pointer Function(
+    Pointer _arg0, Pointer _arg1, Pointer arg);
+
+final _call_ptr_ptr_ptr_returns_void = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_ptr_returns_void_C,
+    _call_ptr_ptr_ptr_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_returns_void_C = Void Function(
+    Pointer _arg0, Pointer _arg1, Pointer arg);
+typedef _call_ptr_ptr_ptr_returns_void_Dart = void Function(
+    Pointer _arg0, Pointer _arg1, Pointer arg);
+
+final _call_ptr_ptr_returns_Int32 = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_returns_Int32_C,
+    _call_ptr_ptr_returns_Int32_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_returns_Int32_C = Int32 Function(
     Pointer _arg0, Pointer _arg1);
-typedef _call_objc_p_p_returns_p_Dart = Pointer Function(
+typedef _call_ptr_ptr_returns_Int32_Dart = int Function(
     Pointer _arg0, Pointer _arg1);
 
-final _call_objc_p_p_returns_void = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_returns_void_C,
-    _call_objc_p_p_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_returns_void_C = Void Function(
+final _call_ptr_ptr_returns_Int64 = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_returns_Int64_C,
+    _call_ptr_ptr_returns_Int64_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_returns_Int64_C = Int64 Function(
     Pointer _arg0, Pointer _arg1);
-typedef _call_objc_p_p_returns_void_Dart = void Function(
+typedef _call_ptr_ptr_returns_Int64_Dart = int Function(
+    Pointer _arg0, Pointer _arg1);
+
+final _call_ptr_ptr_returns_Int8 = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_returns_Int8_C,
+    _call_ptr_ptr_returns_Int8_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_returns_Int8_C = Int8 Function(
+    Pointer _arg0, Pointer _arg1);
+typedef _call_ptr_ptr_returns_Int8_Dart = int Function(
+    Pointer _arg0, Pointer _arg1);
+
+final _call_ptr_ptr_returns_Uint32 = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_returns_Uint32_C,
+    _call_ptr_ptr_returns_Uint32_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_returns_Uint32_C = Uint32 Function(
+    Pointer _arg0, Pointer _arg1);
+typedef _call_ptr_ptr_returns_Uint32_Dart = int Function(
+    Pointer _arg0, Pointer _arg1);
+
+final _call_ptr_ptr_returns_Uint64 = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_returns_Uint64_C,
+    _call_ptr_ptr_returns_Uint64_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_returns_Uint64_C = Uint64 Function(
+    Pointer _arg0, Pointer _arg1);
+typedef _call_ptr_ptr_returns_Uint64_Dart = int Function(
+    Pointer _arg0, Pointer _arg1);
+
+final _call_ptr_ptr_returns_Uint8 = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_returns_Uint8_C,
+    _call_ptr_ptr_returns_Uint8_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_returns_Uint8_C = Uint8 Function(
+    Pointer _arg0, Pointer _arg1);
+typedef _call_ptr_ptr_returns_Uint8_Dart = int Function(
+    Pointer _arg0, Pointer _arg1);
+
+final _call_ptr_ptr_returns_float64 = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_returns_float64_C,
+    _call_ptr_ptr_returns_float64_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_returns_float64_C = Float Function(
+    Pointer _arg0, Pointer _arg1);
+typedef _call_ptr_ptr_returns_float64_Dart = double Function(
+    Pointer _arg0, Pointer _arg1);
+
+final _call_ptr_ptr_returns_ptr = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_returns_ptr_C,
+    _call_ptr_ptr_returns_ptr_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_returns_ptr_C = Pointer Function(
+    Pointer _arg0, Pointer _arg1);
+typedef _call_ptr_ptr_returns_ptr_Dart = Pointer Function(
+    Pointer _arg0, Pointer _arg1);
+
+final _call_ptr_ptr_returns_void = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_returns_void_C,
+    _call_ptr_ptr_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_returns_void_C = Void Function(
+    Pointer _arg0, Pointer _arg1);
+typedef _call_ptr_ptr_returns_void_Dart = void Function(
     Pointer _arg0, Pointer _arg1);

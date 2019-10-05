@@ -144,28 +144,27 @@ Pointer<T> arcFieldGet<T extends NativeType>(Pointer<T> pointer) {
 /// of the value.
 Pointer<T> arcFieldSet<T extends NativeType>(
     Pointer<T> oldPointer, Pointer<T> newPointer) {
-  if (oldPointer != null) {
-    release(oldPointer);
-  }
-  if (newPointer != null) {
-    retain(newPointer);
+  if (oldPointer != newPointer) {
+    if (newPointer != null) {
+      retain(newPointer);
+    }
+    if (oldPointer != null) {
+      release(oldPointer);
+    }
   }
   return newPointer;
 }
 
-/// Increments a reference counter.
+/// Increments the reference count of the argument.
 ///
-/// This means that reference count is incremented. It must be later decremented
-/// with [release].
+/// The reference count should be later decremented with [release].
 void retain<R extends NativeType>(Pointer<R> pointer) {
   _retain(pointer);
 }
 
-/// Decrements a reference counter.
+/// Decrements the reference count of the argument.
 ///
-///
-/// This means that reference count is decremented. If it reaches zero, the
-/// memory is released.
+/// If it reaches zero, the memory is freed.
 void release<R extends NativeType>(Pointer<R> pointer) {
   _release(pointer);
 }

@@ -21,7 +21,6 @@
 import 'dart:ffi';
 
 import 'package:ffi/ffi.dart';
-import 'package:cupertino_ffi/libc.dart';
 
 import 'generated.dart';
 

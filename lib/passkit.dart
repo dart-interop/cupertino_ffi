@@ -1,3 +1,5 @@
+// AUTOMATICALLY GENERATED. DO NOT EDIT.
+
 /// Automatically generated API for [PassKit](https://developer.apple.com/documentation/passkit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
@@ -21,9 +23,6 @@ void _openDynamicLibrary() {
   }
 }
 
-/// Automatically generated API. Part of [PassKit](https://developer.apple.com/documentation/passkit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class PKDisbursementAuthorizationController
     extends Struct<PKDisbursementAuthorizationController> {
@@ -42,7 +41,7 @@ class PKDisbursementAuthorizationController
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("authorizeDisbursementWithCompletion:"),
       arg,
@@ -53,7 +52,7 @@ class PKDisbursementAuthorizationController
     Pointer<PKDisbursementAuthorizationController> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("delegate"),
     );
@@ -65,7 +64,7 @@ class PKDisbursementAuthorizationController
     @required Pointer delegate,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithDisbursementRequest:delegate:"),
       arg,
@@ -73,14 +72,14 @@ class PKDisbursementAuthorizationController
     );
   }
 
-  static void paymentAuthorizationCoordinator$didAuthorizePayment$handler$(
+  static void paymentAuthorizationCoordinator$didAuthorizePayment$handler(
     Pointer<PKDisbursementAuthorizationController> _self,
     Pointer arg, {
     @required Pointer didAuthorizePayment,
     @required Pointer handler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector(
           "paymentAuthorizationCoordinator:didAuthorizePayment:handler:"),
@@ -91,14 +90,14 @@ class PKDisbursementAuthorizationController
   }
 
   static void
-      paymentAuthorizationCoordinator$didAuthorizeDisbursementVoucher$handler$(
+      paymentAuthorizationCoordinator$didAuthorizeDisbursementVoucher$handler(
     Pointer<PKDisbursementAuthorizationController> _self,
     Pointer arg, {
     @required Pointer didAuthorizeDisbursementVoucher,
     @required Pointer handler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector(
           "paymentAuthorizationCoordinator:didAuthorizeDisbursementVoucher:handler:"),
@@ -113,7 +112,7 @@ class PKDisbursementAuthorizationController
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("paymentAuthorizationCoordinatorDidFinish:"),
       arg,
@@ -121,9 +120,6 @@ class PKDisbursementAuthorizationController
   }
 }
 
-/// Automatically generated API. Part of [PassKit](https://developer.apple.com/documentation/passkit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class PKExtension extends Struct<PKExtension> {
   factory PKExtension._() {
@@ -140,7 +136,7 @@ class PKExtension extends Struct<PKExtension> {
     @required Pointer completion,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector(
           "beginRemoteViewControllerExtensionServiceWithInputItems:completion:"),
@@ -153,7 +149,7 @@ class PKExtension extends Struct<PKExtension> {
     Pointer<PKExtension> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("description"),
     );
@@ -163,7 +159,7 @@ class PKExtension extends Struct<PKExtension> {
     Pointer<PKExtension> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("extension"),
     );
@@ -173,7 +169,7 @@ class PKExtension extends Struct<PKExtension> {
     Pointer<PKExtension> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("extensionPointIdentifier"),
     );
@@ -183,7 +179,7 @@ class PKExtension extends Struct<PKExtension> {
     Pointer<PKExtension> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("identifier"),
     );
@@ -195,7 +191,7 @@ class PKExtension extends Struct<PKExtension> {
     @required Pointer provider,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithIdentifier:provider:"),
       arg,
@@ -207,7 +203,7 @@ class PKExtension extends Struct<PKExtension> {
     Pointer<PKExtension> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("provider"),
     );
@@ -218,7 +214,7 @@ class PKExtension extends Struct<PKExtension> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setProvider:"),
       arg,
@@ -229,16 +225,13 @@ class PKExtension extends Struct<PKExtension> {
     Pointer<PKExtension> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int64(
+    return _call_ptr_ptr_returns_Int64(
       _self,
       _objc.getSelector("type"),
     );
   }
 }
 
-/// Automatically generated API. Part of [PassKit](https://developer.apple.com/documentation/passkit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class PKExtensionBaseContext extends Struct<PKExtensionBaseContext> {
   factory PKExtensionBaseContext._() {
@@ -255,7 +248,7 @@ class PKExtensionBaseContext extends Struct<PKExtensionBaseContext> {
     Pointer<PKExtensionBaseContext> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("remoteContext"),
     );
@@ -266,7 +259,7 @@ class PKExtensionBaseContext extends Struct<PKExtensionBaseContext> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("remoteContextWithErrorHandler:"),
       arg,
@@ -274,9 +267,6 @@ class PKExtensionBaseContext extends Struct<PKExtensionBaseContext> {
   }
 }
 
-/// Automatically generated API. Part of [PassKit](https://developer.apple.com/documentation/passkit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class PKExtensionHostContext extends Struct<PKExtensionHostContext> {
   factory PKExtensionHostContext._() {
@@ -294,7 +284,7 @@ class PKExtensionHostContext extends Struct<PKExtensionHostContext> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("authorizationDidAuthorizeApplePayTrustSignature:"),
       arg,
@@ -306,7 +296,7 @@ class PKExtensionHostContext extends Struct<PKExtensionHostContext> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("authorizationDidAuthorizeDisbursement:"),
       arg,
@@ -318,7 +308,7 @@ class PKExtensionHostContext extends Struct<PKExtensionHostContext> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("authorizationDidAuthorizePayment:"),
       arg,
@@ -330,7 +320,7 @@ class PKExtensionHostContext extends Struct<PKExtensionHostContext> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("authorizationDidAuthorizePeerPaymentQuote:"),
       arg,
@@ -342,7 +332,7 @@ class PKExtensionHostContext extends Struct<PKExtensionHostContext> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("authorizationDidAuthorizePurchase:"),
       arg,
@@ -354,7 +344,7 @@ class PKExtensionHostContext extends Struct<PKExtensionHostContext> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("authorizationDidFinishWithError:"),
       arg,
@@ -365,7 +355,7 @@ class PKExtensionHostContext extends Struct<PKExtensionHostContext> {
     Pointer<PKExtensionHostContext> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("authorizationDidPresent"),
     );
@@ -375,7 +365,7 @@ class PKExtensionHostContext extends Struct<PKExtensionHostContext> {
     Pointer<PKExtensionHostContext> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("authorizationDidRequestMerchantSession"),
     );
@@ -386,7 +376,7 @@ class PKExtensionHostContext extends Struct<PKExtensionHostContext> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("authorizationDidSelectPaymentMethod:"),
       arg,
@@ -398,7 +388,7 @@ class PKExtensionHostContext extends Struct<PKExtensionHostContext> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("authorizationDidSelectShippingAddress:"),
       arg,
@@ -410,7 +400,7 @@ class PKExtensionHostContext extends Struct<PKExtensionHostContext> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("authorizationDidSelectShippingMethod:"),
       arg,
@@ -422,7 +412,7 @@ class PKExtensionHostContext extends Struct<PKExtensionHostContext> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("authorizationDidUpdateAccountServicePaymentMethod:"),
       arg,
@@ -433,7 +423,7 @@ class PKExtensionHostContext extends Struct<PKExtensionHostContext> {
     Pointer<PKExtensionHostContext> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("authorizationWillStart"),
     );
@@ -443,7 +433,7 @@ class PKExtensionHostContext extends Struct<PKExtensionHostContext> {
     Pointer<PKExtensionHostContext> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("beginDelayingCallbacks"),
     );
@@ -453,7 +443,7 @@ class PKExtensionHostContext extends Struct<PKExtensionHostContext> {
     Pointer<PKExtensionHostContext> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("delayCallbacksGroup"),
     );
@@ -463,7 +453,7 @@ class PKExtensionHostContext extends Struct<PKExtensionHostContext> {
     Pointer<PKExtensionHostContext> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("delegate"),
     );
@@ -474,7 +464,7 @@ class PKExtensionHostContext extends Struct<PKExtensionHostContext> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Uint64_returns_void(
+    _call_ptr_ptr_Uint64_returns_void(
       _self,
       _objc.getSelector("didEncounterAuthorizationEvent:"),
       arg,
@@ -485,7 +475,7 @@ class PKExtensionHostContext extends Struct<PKExtensionHostContext> {
     Pointer<PKExtensionHostContext> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("endDelayingCallbacks"),
     );
@@ -498,7 +488,7 @@ class PKExtensionHostContext extends Struct<PKExtensionHostContext> {
     @required Pointer contextUUID,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithInputItems:listenerEndpoint:contextUUID:"),
       arg,
@@ -512,7 +502,7 @@ class PKExtensionHostContext extends Struct<PKExtensionHostContext> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setDelayCallbacksGroup:"),
       arg,
@@ -524,7 +514,7 @@ class PKExtensionHostContext extends Struct<PKExtensionHostContext> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setDelegate:"),
       arg,
@@ -535,7 +525,7 @@ class PKExtensionHostContext extends Struct<PKExtensionHostContext> {
     Pointer<PKExtensionHostContext> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("vendorContext"),
     );
@@ -546,7 +536,7 @@ class PKExtensionHostContext extends Struct<PKExtensionHostContext> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("vendorContextWithErrorHandler:"),
       arg,
@@ -554,9 +544,6 @@ class PKExtensionHostContext extends Struct<PKExtensionHostContext> {
   }
 }
 
-/// Automatically generated API. Part of [PassKit](https://developer.apple.com/documentation/passkit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class PKExtensionProvider extends Struct<PKExtensionProvider> {
   factory PKExtensionProvider._() {
@@ -571,7 +558,7 @@ class PKExtensionProvider extends Struct<PKExtensionProvider> {
     Pointer<PKExtensionProvider> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("allExtensions"),
     );
@@ -581,7 +568,7 @@ class PKExtensionProvider extends Struct<PKExtensionProvider> {
     Pointer<PKExtensionProvider> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("beginMatchingExtensions"),
     );
@@ -591,7 +578,7 @@ class PKExtensionProvider extends Struct<PKExtensionProvider> {
     Pointer<PKExtensionProvider> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("dealloc"),
     );
@@ -601,7 +588,7 @@ class PKExtensionProvider extends Struct<PKExtensionProvider> {
     Pointer<PKExtensionProvider> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("didReceiveExtensions"),
     );
@@ -611,7 +598,7 @@ class PKExtensionProvider extends Struct<PKExtensionProvider> {
     Pointer<PKExtensionProvider> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("endMatchingExtensions"),
     );
@@ -621,7 +608,7 @@ class PKExtensionProvider extends Struct<PKExtensionProvider> {
     Pointer<PKExtensionProvider> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("extensionQueue"),
     );
@@ -631,31 +618,31 @@ class PKExtensionProvider extends Struct<PKExtensionProvider> {
     Pointer<PKExtensionProvider> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("extensionSema"),
     );
   }
 
-  static Pointer extensionWithIdentifier$(
+  static Pointer extensionWithIdentifier(
     Pointer<PKExtensionProvider> _self,
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("extensionWithIdentifier:"),
       arg,
     );
   }
 
-  static void extensionWithIdentifier$completion$(
+  static void extensionWithIdentifier$completion(
     Pointer<PKExtensionProvider> _self,
     Pointer arg, {
     @required Pointer completion,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("extensionWithIdentifier:completion:"),
       arg,
@@ -667,7 +654,7 @@ class PKExtensionProvider extends Struct<PKExtensionProvider> {
     Pointer<PKExtensionProvider> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("extensions"),
     );
@@ -677,7 +664,7 @@ class PKExtensionProvider extends Struct<PKExtensionProvider> {
     Pointer<PKExtensionProvider> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("init"),
     );
@@ -687,7 +674,7 @@ class PKExtensionProvider extends Struct<PKExtensionProvider> {
     Pointer<PKExtensionProvider> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("matchingContext"),
     );
@@ -697,7 +684,7 @@ class PKExtensionProvider extends Struct<PKExtensionProvider> {
     Pointer<PKExtensionProvider> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("passKitExtensions"),
     );
@@ -708,7 +695,7 @@ class PKExtensionProvider extends Struct<PKExtensionProvider> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setDidReceiveExtensions:"),
       arg,
@@ -720,7 +707,7 @@ class PKExtensionProvider extends Struct<PKExtensionProvider> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setExtensionQueue:"),
       arg,
@@ -732,7 +719,7 @@ class PKExtensionProvider extends Struct<PKExtensionProvider> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setExtensionSema:"),
       arg,
@@ -744,7 +731,7 @@ class PKExtensionProvider extends Struct<PKExtensionProvider> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setExtensions:"),
       arg,
@@ -756,7 +743,7 @@ class PKExtensionProvider extends Struct<PKExtensionProvider> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setMatchingContext:"),
       arg,
@@ -768,7 +755,7 @@ class PKExtensionProvider extends Struct<PKExtensionProvider> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setPassKitExtensions:"),
       arg,
@@ -776,9 +763,6 @@ class PKExtensionProvider extends Struct<PKExtensionProvider> {
   }
 }
 
-/// Automatically generated API. Part of [PassKit](https://developer.apple.com/documentation/passkit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class PKExtensionRemoteViewController
     extends Struct<PKExtensionRemoteViewController> {
@@ -796,7 +780,7 @@ class PKExtensionRemoteViewController
     Pointer<PKExtensionRemoteViewController> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("delegate"),
     );
@@ -806,7 +790,7 @@ class PKExtensionRemoteViewController
     Pointer<PKExtensionRemoteViewController> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("exportedInterface"),
     );
@@ -816,7 +800,7 @@ class PKExtensionRemoteViewController
     Pointer<PKExtensionRemoteViewController> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("serviceViewControllerInterface"),
     );
@@ -827,7 +811,7 @@ class PKExtensionRemoteViewController
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setDelegate:"),
       arg,
@@ -839,7 +823,7 @@ class PKExtensionRemoteViewController
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("viewServiceDidTerminateWithError:"),
       arg,
@@ -847,9 +831,6 @@ class PKExtensionRemoteViewController
   }
 }
 
-/// Automatically generated API. Part of [PassKit](https://developer.apple.com/documentation/passkit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class PKExtensionServiceViewController
     extends Struct<PKExtensionServiceViewController> {
@@ -869,7 +850,7 @@ class PKExtensionServiceViewController
     @required Pointer withCompletion,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("connectToContextWithSessionID:withCompletion:"),
       arg,
@@ -881,7 +862,7 @@ class PKExtensionServiceViewController
     Pointer<PKExtensionServiceViewController> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("exportedInterface"),
     );
@@ -891,7 +872,7 @@ class PKExtensionServiceViewController
     Pointer<PKExtensionServiceViewController> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("loadView"),
     );
@@ -901,7 +882,7 @@ class PKExtensionServiceViewController
     Pointer<PKExtensionServiceViewController> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("serviceViewControllerInterface"),
     );
@@ -912,7 +893,7 @@ class PKExtensionServiceViewController
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setWindow:"),
       arg,
@@ -923,16 +904,13 @@ class PKExtensionServiceViewController
     Pointer<PKExtensionServiceViewController> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("window"),
     );
   }
 }
 
-/// Automatically generated API. Part of [PassKit](https://developer.apple.com/documentation/passkit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class PKExtensionVendorContext extends Struct<PKExtensionVendorContext> {
   factory PKExtensionVendorContext._() {
@@ -950,7 +928,7 @@ class PKExtensionVendorContext extends Struct<PKExtensionVendorContext> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector(
           "authorizationDidAuthorizeApplePayTrustSignatureCompleteWithResult:"),
@@ -963,7 +941,7 @@ class PKExtensionVendorContext extends Struct<PKExtensionVendorContext> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("authorizationDidAuthorizeDisbursementWithResult:"),
       arg,
@@ -975,7 +953,7 @@ class PKExtensionVendorContext extends Struct<PKExtensionVendorContext> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("authorizationDidAuthorizePaymentCompleteWithResult:"),
       arg,
@@ -987,7 +965,7 @@ class PKExtensionVendorContext extends Struct<PKExtensionVendorContext> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int64_returns_void(
+    _call_ptr_ptr_Int64_returns_void(
       _self,
       _objc.getSelector("authorizationDidAuthorizePaymentCompleteWithStatus:"),
       arg,
@@ -999,7 +977,7 @@ class PKExtensionVendorContext extends Struct<PKExtensionVendorContext> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector(
           "authorizationDidAuthorizePeerPaymentQuoteCompleteWithResult:"),
@@ -1012,7 +990,7 @@ class PKExtensionVendorContext extends Struct<PKExtensionVendorContext> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int64_returns_void(
+    _call_ptr_ptr_Int64_returns_void(
       _self,
       _objc.getSelector("authorizationDidAuthorizePurchaseCompleteWithStatus:"),
       arg,
@@ -1025,7 +1003,7 @@ class PKExtensionVendorContext extends Struct<PKExtensionVendorContext> {
     @required Pointer error,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector(
           "authorizationDidRequestMerchantSessionCompleteWithSession:error:"),
@@ -1040,7 +1018,7 @@ class PKExtensionVendorContext extends Struct<PKExtensionVendorContext> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector(
           "authorizationDidSelectPaymentMethodCompleteWithPaymentSummaryItems:"),
@@ -1053,7 +1031,7 @@ class PKExtensionVendorContext extends Struct<PKExtensionVendorContext> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector(
           "authorizationDidSelectPaymentMethodCompleteWithUpdate:"),
@@ -1068,7 +1046,7 @@ class PKExtensionVendorContext extends Struct<PKExtensionVendorContext> {
     @required Pointer paymentSummaryItems,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int64_p_p_returns_void(
+    _call_ptr_ptr_Int64_ptr_ptr_returns_void(
       _self,
       _objc.getSelector(
           "authorizationDidSelectShippingAddressCompleteWithStatus:shippingMethods:paymentSummaryItems:"),
@@ -1083,7 +1061,7 @@ class PKExtensionVendorContext extends Struct<PKExtensionVendorContext> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector(
           "authorizationDidSelectShippingAddressCompleteWithUpdate:"),
@@ -1097,7 +1075,7 @@ class PKExtensionVendorContext extends Struct<PKExtensionVendorContext> {
     @required Pointer paymentSummaryItems,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int64_p_returns_void(
+    _call_ptr_ptr_Int64_ptr_returns_void(
       _self,
       _objc.getSelector(
           "authorizationDidSelectShippingMethodCompleteWithStatus:paymentSummaryItems:"),
@@ -1111,7 +1089,7 @@ class PKExtensionVendorContext extends Struct<PKExtensionVendorContext> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector(
           "authorizationDidSelectShippingMethodCompleteWithUpdate:"),
@@ -1126,7 +1104,7 @@ class PKExtensionVendorContext extends Struct<PKExtensionVendorContext> {
     @required Pointer signatureRequest,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector(
           "authorizationDidUpdateAccountServicePaymentMethodCompleteWithUpdate:signatureRequest:"),
@@ -1139,7 +1117,7 @@ class PKExtensionVendorContext extends Struct<PKExtensionVendorContext> {
     Pointer<PKExtensionVendorContext> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("entitlementWhitelist"),
     );
@@ -1150,7 +1128,7 @@ class PKExtensionVendorContext extends Struct<PKExtensionVendorContext> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("handleDismissWithCompletion:"),
       arg,
@@ -1161,7 +1139,7 @@ class PKExtensionVendorContext extends Struct<PKExtensionVendorContext> {
     Pointer<PKExtensionVendorContext> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("handleHostApplicationDidBecomeActive"),
     );
@@ -1171,7 +1149,7 @@ class PKExtensionVendorContext extends Struct<PKExtensionVendorContext> {
     Pointer<PKExtensionVendorContext> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("handleHostApplicationDidCancel"),
     );
@@ -1182,7 +1160,7 @@ class PKExtensionVendorContext extends Struct<PKExtensionVendorContext> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("handleHostApplicationWillResignActive:"),
       arg,
@@ -1193,7 +1171,7 @@ class PKExtensionVendorContext extends Struct<PKExtensionVendorContext> {
     Pointer<PKExtensionVendorContext> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("hostContext"),
     );
@@ -1204,7 +1182,7 @@ class PKExtensionVendorContext extends Struct<PKExtensionVendorContext> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("hostContextWithErrorHandler:"),
       arg,
@@ -1217,7 +1195,7 @@ class PKExtensionVendorContext extends Struct<PKExtensionVendorContext> {
     @required Pointer completion,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("prepareWithPaymentRequest:completion:"),
       arg,
@@ -1226,9 +1204,6 @@ class PKExtensionVendorContext extends Struct<PKExtensionVendorContext> {
   }
 }
 
-/// Automatically generated API. Part of [PassKit](https://developer.apple.com/documentation/passkit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class PKPaymentAuthorizationViewController
     extends Struct<PKPaymentAuthorizationViewController> {
@@ -1247,7 +1222,7 @@ class PKPaymentAuthorizationViewController
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("authorizationDidAuthorizePayment:"),
       arg,
@@ -1259,7 +1234,7 @@ class PKPaymentAuthorizationViewController
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("authorizationDidAuthorizePeerPaymentQuote:"),
       arg,
@@ -1271,7 +1246,7 @@ class PKPaymentAuthorizationViewController
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("authorizationDidAuthorizePurchase:"),
       arg,
@@ -1283,7 +1258,7 @@ class PKPaymentAuthorizationViewController
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("authorizationDidFinishWithError:"),
       arg,
@@ -1294,7 +1269,7 @@ class PKPaymentAuthorizationViewController
     Pointer<PKPaymentAuthorizationViewController> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("authorizationDidPresent"),
     );
@@ -1304,7 +1279,7 @@ class PKPaymentAuthorizationViewController
     Pointer<PKPaymentAuthorizationViewController> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("authorizationDidRequestMerchantSession"),
     );
@@ -1315,7 +1290,7 @@ class PKPaymentAuthorizationViewController
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("authorizationDidSelectPaymentMethod:"),
       arg,
@@ -1327,7 +1302,7 @@ class PKPaymentAuthorizationViewController
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("authorizationDidSelectShippingAddress:"),
       arg,
@@ -1339,7 +1314,7 @@ class PKPaymentAuthorizationViewController
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("authorizationDidSelectShippingMethod:"),
       arg,
@@ -1350,7 +1325,7 @@ class PKPaymentAuthorizationViewController
     Pointer<PKPaymentAuthorizationViewController> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("authorizationWillStart"),
     );
@@ -1360,7 +1335,7 @@ class PKPaymentAuthorizationViewController
     Pointer<PKPaymentAuthorizationViewController> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("connectionDidOpen"),
     );
@@ -1370,7 +1345,7 @@ class PKPaymentAuthorizationViewController
     Pointer<PKPaymentAuthorizationViewController> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("dealloc"),
     );
@@ -1380,7 +1355,7 @@ class PKPaymentAuthorizationViewController
     Pointer<PKPaymentAuthorizationViewController> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("delegate"),
     );
@@ -1392,7 +1367,7 @@ class PKPaymentAuthorizationViewController
     @required Pointer didTerminateWithError,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("extensionRemoteViewController:didTerminateWithError:"),
       arg,
@@ -1404,7 +1379,7 @@ class PKPaymentAuthorizationViewController
     Pointer<PKPaymentAuthorizationViewController> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("hostExtension"),
     );
@@ -1415,7 +1390,7 @@ class PKPaymentAuthorizationViewController
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithCoder:"),
       arg,
@@ -1428,7 +1403,7 @@ class PKPaymentAuthorizationViewController
     @required Pointer bundle,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithNibName:bundle:"),
       arg,
@@ -1441,7 +1416,7 @@ class PKPaymentAuthorizationViewController
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithPaymentRequest:"),
       arg,
@@ -1452,7 +1427,7 @@ class PKPaymentAuthorizationViewController
     Pointer<PKPaymentAuthorizationViewController> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("invalidate"),
     );
@@ -1462,7 +1437,7 @@ class PKPaymentAuthorizationViewController
     Pointer<PKPaymentAuthorizationViewController> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("loadView"),
     );
@@ -1472,7 +1447,7 @@ class PKPaymentAuthorizationViewController
     Pointer<PKPaymentAuthorizationViewController> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("paymentAuthorizationHostContext"),
     );
@@ -1482,7 +1457,7 @@ class PKPaymentAuthorizationViewController
     Pointer<PKPaymentAuthorizationViewController> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("privateDelegate"),
     );
@@ -1492,7 +1467,7 @@ class PKPaymentAuthorizationViewController
     Pointer<PKPaymentAuthorizationViewController> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("remoteViewController"),
     );
@@ -1502,7 +1477,7 @@ class PKPaymentAuthorizationViewController
     Pointer<PKPaymentAuthorizationViewController> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("serviceIdentifier"),
     );
@@ -1513,7 +1488,7 @@ class PKPaymentAuthorizationViewController
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setDelegate:"),
       arg,
@@ -1525,7 +1500,7 @@ class PKPaymentAuthorizationViewController
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setHostExtension:"),
       arg,
@@ -1537,7 +1512,7 @@ class PKPaymentAuthorizationViewController
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setPaymentAuthorizationHostContext:"),
       arg,
@@ -1549,7 +1524,7 @@ class PKPaymentAuthorizationViewController
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setPrivateDelegate:"),
       arg,
@@ -1561,7 +1536,7 @@ class PKPaymentAuthorizationViewController
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setRemoteViewController:"),
       arg,
@@ -1573,7 +1548,7 @@ class PKPaymentAuthorizationViewController
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setServiceIdentifier:"),
       arg,
@@ -1581,9 +1556,6 @@ class PKPaymentAuthorizationViewController
   }
 }
 
-/// Automatically generated API. Part of [PassKit](https://developer.apple.com/documentation/passkit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class PKPaymentSetupController extends Struct<PKPaymentSetupController> {
   factory PKPaymentSetupController._() {
@@ -1602,7 +1574,7 @@ class PKPaymentSetupController extends Struct<PKPaymentSetupController> {
     @required Pointer completion,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("presentPaymentSetupRequest:completion:"),
       arg,
@@ -1611,138 +1583,146 @@ class PKPaymentSetupController extends Struct<PKPaymentSetupController> {
   }
 }
 
-final _call_objc_p_p_Int64_p_p_returns_void = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_Int64_p_p_returns_void_C,
-        _call_objc_p_p_Int64_p_p_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_Int64_p_p_returns_void_C = Void Function(
+final _call_ptr_ptr_Int64_ptr_ptr_returns_void = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_Int64_ptr_ptr_returns_void_C,
+        _call_ptr_ptr_Int64_ptr_ptr_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_Int64_ptr_ptr_returns_void_C = Void Function(
     Pointer _arg0,
     Pointer _arg1,
     Int64 arg,
     Pointer shippingMethods,
     Pointer paymentSummaryItems);
-typedef _call_objc_p_p_Int64_p_p_returns_void_Dart = void Function(
+typedef _call_ptr_ptr_Int64_ptr_ptr_returns_void_Dart = void Function(
     Pointer _arg0,
     Pointer _arg1,
     int arg,
     Pointer shippingMethods,
     Pointer paymentSummaryItems);
 
-final _call_objc_p_p_Int64_p_returns_void = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_Int64_p_returns_void_C,
-        _call_objc_p_p_Int64_p_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_Int64_p_returns_void_C = Void Function(
+final _call_ptr_ptr_Int64_ptr_returns_void = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_Int64_ptr_returns_void_C,
+        _call_ptr_ptr_Int64_ptr_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_Int64_ptr_returns_void_C = Void Function(
     Pointer _arg0, Pointer _arg1, Int64 arg, Pointer paymentSummaryItems);
-typedef _call_objc_p_p_Int64_p_returns_void_Dart = void Function(
+typedef _call_ptr_ptr_Int64_ptr_returns_void_Dart = void Function(
     Pointer _arg0, Pointer _arg1, int arg, Pointer paymentSummaryItems);
 
-final _call_objc_p_p_Int64_returns_void = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_Int64_returns_void_C,
-    _call_objc_p_p_Int64_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_Int64_returns_void_C = Void Function(
+final _call_ptr_ptr_Int64_returns_void = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_Int64_returns_void_C,
+    _call_ptr_ptr_Int64_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_Int64_returns_void_C = Void Function(
     Pointer _arg0, Pointer _arg1, Int64 arg);
-typedef _call_objc_p_p_Int64_returns_void_Dart = void Function(
+typedef _call_ptr_ptr_Int64_returns_void_Dart = void Function(
     Pointer _arg0, Pointer _arg1, int arg);
 
-final _call_objc_p_p_Int8_returns_void = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_Int8_returns_void_C,
-    _call_objc_p_p_Int8_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_Int8_returns_void_C = Void Function(
+final _call_ptr_ptr_Int8_returns_void = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_Int8_returns_void_C,
+    _call_ptr_ptr_Int8_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_Int8_returns_void_C = Void Function(
     Pointer _arg0, Pointer _arg1, Int8 arg);
-typedef _call_objc_p_p_Int8_returns_void_Dart = void Function(
+typedef _call_ptr_ptr_Int8_returns_void_Dart = void Function(
     Pointer _arg0, Pointer _arg1, int arg);
 
-final _call_objc_p_p_Uint64_returns_void = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_Uint64_returns_void_C,
-    _call_objc_p_p_Uint64_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_Uint64_returns_void_C = Void Function(
+final _call_ptr_ptr_Uint64_returns_void = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_Uint64_returns_void_C,
+    _call_ptr_ptr_Uint64_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_Uint64_returns_void_C = Void Function(
     Pointer _arg0, Pointer _arg1, Uint64 arg);
-typedef _call_objc_p_p_Uint64_returns_void_Dart = void Function(
+typedef _call_ptr_ptr_Uint64_returns_void_Dart = void Function(
     Pointer _arg0, Pointer _arg1, int arg);
 
-final _call_objc_p_p_p_p_p_returns_p = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_p_p_p_returns_p_C,
-    _call_objc_p_p_p_p_p_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_p_p_returns_p_C = Pointer Function(Pointer _arg0,
-    Pointer _arg1, Pointer arg, Pointer listenerEndpoint, Pointer contextUUID);
-typedef _call_objc_p_p_p_p_p_returns_p_Dart = Pointer Function(Pointer _arg0,
-    Pointer _arg1, Pointer arg, Pointer listenerEndpoint, Pointer contextUUID);
+final _call_ptr_ptr_ptr_ptr_ptr_returns_ptr = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_ptr_ptr_returns_ptr_C,
+        _call_ptr_ptr_ptr_ptr_ptr_returns_ptr_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_ptr_ptr_returns_ptr_C = Pointer Function(
+    Pointer _arg0,
+    Pointer _arg1,
+    Pointer arg,
+    Pointer listenerEndpoint,
+    Pointer contextUUID);
+typedef _call_ptr_ptr_ptr_ptr_ptr_returns_ptr_Dart = Pointer Function(
+    Pointer _arg0,
+    Pointer _arg1,
+    Pointer arg,
+    Pointer listenerEndpoint,
+    Pointer contextUUID);
 
-final _call_objc_p_p_p_p_p_returns_void = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_p_p_p_returns_void_C,
-    _call_objc_p_p_p_p_p_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_p_p_returns_void_C = Void Function(
+final _call_ptr_ptr_ptr_ptr_ptr_returns_void = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_ptr_ptr_returns_void_C,
+        _call_ptr_ptr_ptr_ptr_ptr_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_ptr_ptr_returns_void_C = Void Function(
     Pointer _arg0,
     Pointer _arg1,
     Pointer arg,
     Pointer didAuthorizeDisbursementVoucher,
     Pointer handler);
-typedef _call_objc_p_p_p_p_p_returns_void_Dart = void Function(
+typedef _call_ptr_ptr_ptr_ptr_ptr_returns_void_Dart = void Function(
     Pointer _arg0,
     Pointer _arg1,
     Pointer arg,
     Pointer didAuthorizeDisbursementVoucher,
     Pointer handler);
 
-final _call_objc_p_p_p_p_returns_p = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_p_p_returns_p_C,
-    _call_objc_p_p_p_p_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_p_returns_p_C = Pointer Function(
+final _call_ptr_ptr_ptr_ptr_returns_ptr = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_ptr_ptr_returns_ptr_C,
+    _call_ptr_ptr_ptr_ptr_returns_ptr_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_ptr_returns_ptr_C = Pointer Function(
     Pointer _arg0, Pointer _arg1, Pointer arg, Pointer bundle);
-typedef _call_objc_p_p_p_p_returns_p_Dart = Pointer Function(
+typedef _call_ptr_ptr_ptr_ptr_returns_ptr_Dart = Pointer Function(
     Pointer _arg0, Pointer _arg1, Pointer arg, Pointer bundle);
 
-final _call_objc_p_p_p_p_returns_void = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_p_p_returns_void_C,
-    _call_objc_p_p_p_p_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_p_returns_void_C = Void Function(
+final _call_ptr_ptr_ptr_ptr_returns_void = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_ptr_ptr_returns_void_C,
+    _call_ptr_ptr_ptr_ptr_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_ptr_returns_void_C = Void Function(
     Pointer _arg0, Pointer _arg1, Pointer arg, Pointer completion);
-typedef _call_objc_p_p_p_p_returns_void_Dart = void Function(
+typedef _call_ptr_ptr_ptr_ptr_returns_void_Dart = void Function(
     Pointer _arg0, Pointer _arg1, Pointer arg, Pointer completion);
 
-final _call_objc_p_p_p_returns_p = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_p_returns_p_C,
-    _call_objc_p_p_p_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_returns_p_C = Pointer Function(
+final _call_ptr_ptr_ptr_returns_ptr = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_ptr_returns_ptr_C,
+    _call_ptr_ptr_ptr_returns_ptr_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_returns_ptr_C = Pointer Function(
     Pointer _arg0, Pointer _arg1, Pointer arg);
-typedef _call_objc_p_p_p_returns_p_Dart = Pointer Function(
-    Pointer _arg0, Pointer _arg1, Pointer arg);
-
-final _call_objc_p_p_p_returns_void = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_p_returns_void_C,
-    _call_objc_p_p_p_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_returns_void_C = Void Function(
-    Pointer _arg0, Pointer _arg1, Pointer arg);
-typedef _call_objc_p_p_p_returns_void_Dart = void Function(
+typedef _call_ptr_ptr_ptr_returns_ptr_Dart = Pointer Function(
     Pointer _arg0, Pointer _arg1, Pointer arg);
 
-final _call_objc_p_p_returns_Int64 = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_returns_Int64_C,
-    _call_objc_p_p_returns_Int64_Dart>("objc_msgSend");
-typedef _call_objc_p_p_returns_Int64_C = Int64 Function(
+final _call_ptr_ptr_ptr_returns_void = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_ptr_returns_void_C,
+    _call_ptr_ptr_ptr_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_returns_void_C = Void Function(
+    Pointer _arg0, Pointer _arg1, Pointer arg);
+typedef _call_ptr_ptr_ptr_returns_void_Dart = void Function(
+    Pointer _arg0, Pointer _arg1, Pointer arg);
+
+final _call_ptr_ptr_returns_Int64 = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_returns_Int64_C,
+    _call_ptr_ptr_returns_Int64_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_returns_Int64_C = Int64 Function(
     Pointer _arg0, Pointer _arg1);
-typedef _call_objc_p_p_returns_Int64_Dart = int Function(
+typedef _call_ptr_ptr_returns_Int64_Dart = int Function(
     Pointer _arg0, Pointer _arg1);
 
-final _call_objc_p_p_returns_Int8 = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_returns_Int8_C,
-    _call_objc_p_p_returns_Int8_Dart>("objc_msgSend");
-typedef _call_objc_p_p_returns_Int8_C = Int8 Function(
+final _call_ptr_ptr_returns_Int8 = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_returns_Int8_C,
+    _call_ptr_ptr_returns_Int8_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_returns_Int8_C = Int8 Function(
     Pointer _arg0, Pointer _arg1);
-typedef _call_objc_p_p_returns_Int8_Dart = int Function(
-    Pointer _arg0, Pointer _arg1);
-
-final _call_objc_p_p_returns_p = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_returns_p_C, _call_objc_p_p_returns_p_Dart>(
-        "objc_msgSend");
-typedef _call_objc_p_p_returns_p_C = Pointer Function(
-    Pointer _arg0, Pointer _arg1);
-typedef _call_objc_p_p_returns_p_Dart = Pointer Function(
+typedef _call_ptr_ptr_returns_Int8_Dart = int Function(
     Pointer _arg0, Pointer _arg1);
 
-final _call_objc_p_p_returns_void = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_returns_void_C,
-    _call_objc_p_p_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_returns_void_C = Void Function(
+final _call_ptr_ptr_returns_ptr = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_returns_ptr_C,
+    _call_ptr_ptr_returns_ptr_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_returns_ptr_C = Pointer Function(
     Pointer _arg0, Pointer _arg1);
-typedef _call_objc_p_p_returns_void_Dart = void Function(
+typedef _call_ptr_ptr_returns_ptr_Dart = Pointer Function(
+    Pointer _arg0, Pointer _arg1);
+
+final _call_ptr_ptr_returns_void = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_returns_void_C,
+    _call_ptr_ptr_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_returns_void_C = Void Function(
+    Pointer _arg0, Pointer _arg1);
+typedef _call_ptr_ptr_returns_void_Dart = void Function(
     Pointer _arg0, Pointer _arg1);

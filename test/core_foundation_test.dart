@@ -71,49 +71,49 @@ void main() {
 
     group("CFNumber: ", () {
       test("-1 (int)", () {
-        final pointer = CFNumber.fromDartInt(-1);
+        final pointer = CFNumber.fromDart(-1);
         expect(pointer.address, -1 * 256 + 55); // Tagged pointer
         expect(CFNumber.toDart(pointer), -1);
       });
 
       test("0 (int)", () {
-        final pointer = CFNumber.fromDartInt(0);
+        final pointer = CFNumber.fromDart(0);
         expect(pointer.address, 0 * 256 + 55); // Tagged pointer
         expect(CFNumber.toDart(pointer), 0);
       });
 
       test("1 (int)", () {
-        final pointer = CFNumber.fromDartInt(1);
+        final pointer = CFNumber.fromDart(1);
         expect(pointer.address, 1 * 256 + 55); // Tagged pointer
         expect(CFNumber.toDart(pointer), 1);
       });
 
       test("2 (int)", () {
-        final pointer = CFNumber.fromDartInt(2);
+        final pointer = CFNumber.fromDart(2);
         expect(pointer.address, 2 * 256 + 55); // Tagged pointer
         expect(CFNumber.toDart(pointer), 2);
       });
 
       test("3 (int)", () {
-        final pointer = CFNumber.fromDartInt(3);
+        final pointer = CFNumber.fromDart(3);
         expect(pointer.address, 3 * 256 + 55); // Tagged pointer
         expect(CFNumber.toDart(pointer), 3);
       });
 
       test("0.0 (double)", () {
-        final pointer = CFNumber.fromDartDouble(0.0);
+        final pointer = CFNumber.fromDart(0.0);
         expect(pointer.address, 0 * 256 + 87); // Tagged pointer
         expect(CFNumber.toDart(pointer), 0.0);
       });
 
       test("1.0 (double)", () {
-        final pointer = CFNumber.fromDartDouble(1.0);
+        final pointer = CFNumber.fromDart(1.0);
         expect(pointer.address, 1 * 256 + 87); // Tagged pointer
         expect(CFNumber.toDart(pointer), 1.0);
       });
 
       test("3.14 (double)", () {
-        final pointer = CFNumber.fromDartDouble(3.14);
+        final pointer = CFNumber.fromDart(3.14);
         expect(CFNumber.toDart(pointer), 3.14);
       });
     });

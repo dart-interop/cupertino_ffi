@@ -1,3 +1,5 @@
+// AUTOMATICALLY GENERATED. DO NOT EDIT.
+
 /// Automatically generated API for [Core Location](https://developer.apple.com/documentation/corelocation?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
@@ -21,9 +23,6 @@ void _openDynamicLibrary() {
   }
 }
 
-/// Automatically generated API. Part of [Core Location](https://developer.apple.com/documentation/corelocation?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class CLAssertion extends Struct<CLAssertion> {
   factory CLAssertion._() {
@@ -38,7 +37,7 @@ class CLAssertion extends Struct<CLAssertion> {
     Pointer<CLAssertion> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("dealloc"),
     );
@@ -50,7 +49,7 @@ class CLAssertion extends Struct<CLAssertion> {
     @required Pointer messageDictionary,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithRegistrationMessageName:messageDictionary:"),
       arg,
@@ -62,16 +61,13 @@ class CLAssertion extends Struct<CLAssertion> {
     Pointer<CLAssertion> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("invalidate"),
     );
   }
 }
 
-/// Automatically generated API. Part of [Core Location](https://developer.apple.com/documentation/corelocation?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class CLBeacon extends Struct<CLBeacon> {
   factory CLBeacon._() {
@@ -86,21 +82,9 @@ class CLBeacon extends Struct<CLBeacon> {
     Pointer<CLBeacon> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_float64(
+    return _call_ptr_ptr_returns_float64(
       _self,
       _objc.getSelector("accuracy"),
-    );
-  }
-
-  static Pointer copyWithZone(
-    Pointer<CLBeacon> _self,
-    Pointer<Pointer> arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
-      _self,
-      _objc.getSelector("copyWithZone:"),
-      arg,
     );
   }
 
@@ -108,7 +92,7 @@ class CLBeacon extends Struct<CLBeacon> {
     Pointer<CLBeacon> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("dealloc"),
     );
@@ -118,7 +102,7 @@ class CLBeacon extends Struct<CLBeacon> {
     Pointer<CLBeacon> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("description"),
     );
@@ -129,7 +113,7 @@ class CLBeacon extends Struct<CLBeacon> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("encodeWithCoder:"),
       arg,
@@ -141,7 +125,7 @@ class CLBeacon extends Struct<CLBeacon> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithCoder:"),
       arg,
@@ -158,7 +142,7 @@ class CLBeacon extends Struct<CLBeacon> {
     @required int rssi,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_Int64_float64_Int64_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_Int64_float64_Int64_returns_ptr(
       _self,
       _objc.getSelector(
           "initWithProximityUUID:major:minor:proximity:accuracy:rssi:"),
@@ -175,7 +159,7 @@ class CLBeacon extends Struct<CLBeacon> {
     Pointer<CLBeacon> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("major"),
     );
@@ -185,7 +169,7 @@ class CLBeacon extends Struct<CLBeacon> {
     Pointer<CLBeacon> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("minor"),
     );
@@ -195,7 +179,7 @@ class CLBeacon extends Struct<CLBeacon> {
     Pointer<CLBeacon> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int64(
+    return _call_ptr_ptr_returns_Int64(
       _self,
       _objc.getSelector("proximity"),
     );
@@ -205,7 +189,7 @@ class CLBeacon extends Struct<CLBeacon> {
     Pointer<CLBeacon> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("proximityUUID"),
     );
@@ -215,16 +199,13 @@ class CLBeacon extends Struct<CLBeacon> {
     Pointer<CLBeacon> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int64(
+    return _call_ptr_ptr_returns_Int64(
       _self,
       _objc.getSelector("rssi"),
     );
   }
 }
 
-/// Automatically generated API. Part of [Core Location](https://developer.apple.com/documentation/corelocation?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class CLBeaconInternal extends Struct<CLBeaconInternal> {
   factory CLBeaconInternal._() {
@@ -236,9 +217,6 @@ class CLBeaconInternal extends Struct<CLBeaconInternal> {
   }
 }
 
-/// Automatically generated API. Part of [Core Location](https://developer.apple.com/documentation/corelocation?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class CLBeaconRegion extends Struct<CLBeaconRegion> {
   factory CLBeaconRegion._() {
@@ -253,7 +231,7 @@ class CLBeaconRegion extends Struct<CLBeaconRegion> {
     Pointer<CLBeaconRegion> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("description"),
     );
@@ -264,7 +242,7 @@ class CLBeaconRegion extends Struct<CLBeaconRegion> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("encodeWithCoder:"),
       arg,
@@ -275,7 +253,7 @@ class CLBeaconRegion extends Struct<CLBeaconRegion> {
     Pointer<CLBeaconRegion> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("init"),
     );
@@ -286,7 +264,7 @@ class CLBeaconRegion extends Struct<CLBeaconRegion> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithCoder:"),
       arg,
@@ -298,14 +276,14 @@ class CLBeaconRegion extends Struct<CLBeaconRegion> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithIdentifier:"),
       arg,
     );
   }
 
-  static Pointer initWithProximityUUID$major$minor$identifier$(
+  static Pointer initWithProximityUUID$major$minor$identifier(
     Pointer<CLBeaconRegion> _self,
     Pointer arg, {
     @required int major,
@@ -313,7 +291,7 @@ class CLBeaconRegion extends Struct<CLBeaconRegion> {
     @required Pointer identifier,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_Uint16_Uint16_p_returns_p(
+    return _call_ptr_ptr_ptr_Uint16_Uint16_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithProximityUUID:major:minor:identifier:"),
       arg,
@@ -323,14 +301,14 @@ class CLBeaconRegion extends Struct<CLBeaconRegion> {
     );
   }
 
-  static Pointer initWithProximityUUID$major$identifier$(
+  static Pointer initWithProximityUUID$major$identifier(
     Pointer<CLBeaconRegion> _self,
     Pointer arg, {
     @required int major,
     @required Pointer identifier,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_Uint16_p_returns_p(
+    return _call_ptr_ptr_ptr_Uint16_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithProximityUUID:major:identifier:"),
       arg,
@@ -339,13 +317,13 @@ class CLBeaconRegion extends Struct<CLBeaconRegion> {
     );
   }
 
-  static Pointer initWithProximityUUID$identifier$(
+  static Pointer initWithProximityUUID$identifier(
     Pointer<CLBeaconRegion> _self,
     Pointer arg, {
     @required Pointer identifier,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithProximityUUID:identifier:"),
       arg,
@@ -357,7 +335,7 @@ class CLBeaconRegion extends Struct<CLBeaconRegion> {
     Pointer<CLBeaconRegion> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("major"),
     );
@@ -367,7 +345,7 @@ class CLBeaconRegion extends Struct<CLBeaconRegion> {
     Pointer<CLBeaconRegion> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("minor"),
     );
@@ -377,7 +355,7 @@ class CLBeaconRegion extends Struct<CLBeaconRegion> {
     Pointer<CLBeaconRegion> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("notifyEntryStateOnDisplay"),
     );
@@ -388,7 +366,7 @@ class CLBeaconRegion extends Struct<CLBeaconRegion> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("peripheralDataWithMeasuredPower:"),
       arg,
@@ -399,7 +377,7 @@ class CLBeaconRegion extends Struct<CLBeaconRegion> {
     Pointer<CLBeaconRegion> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("proximityUUID"),
     );
@@ -413,7 +391,7 @@ class CLBeaconRegion extends Struct<CLBeaconRegion> {
     @required int notifyOnDisplay,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_Int8_returns_void(
+    _call_ptr_ptr_ptr_ptr_ptr_Int8_returns_void(
       _self,
       _objc
           .getSelector("setGutsWithProximityUUID:major:minor:notifyOnDisplay:"),
@@ -429,7 +407,7 @@ class CLBeaconRegion extends Struct<CLBeaconRegion> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setNotifyEntryStateOnDisplay:"),
       arg,
@@ -437,9 +415,6 @@ class CLBeaconRegion extends Struct<CLBeaconRegion> {
   }
 }
 
-/// Automatically generated API. Part of [Core Location](https://developer.apple.com/documentation/corelocation?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class CLCircularRegion extends Struct<CLCircularRegion> {
   factory CLCircularRegion._() {
@@ -450,33 +425,11 @@ class CLCircularRegion extends Struct<CLCircularRegion> {
     return _objc.allocate("CLCircularRegion").cast<CLCircularRegion>();
   }
 
-  static Pointer center(
-    Pointer<CLCircularRegion> _self,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
-      _self,
-      _objc.getSelector("center"),
-    );
-  }
-
-  static int containsCoordinate(
-    Pointer<CLCircularRegion> _self,
-    Pointer arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_Int8(
-      _self,
-      _objc.getSelector("containsCoordinate:"),
-      arg,
-    );
-  }
-
   static Pointer description(
     Pointer<CLCircularRegion> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("description"),
     );
@@ -487,26 +440,10 @@ class CLCircularRegion extends Struct<CLCircularRegion> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("encodeWithCoder:"),
       arg,
-    );
-  }
-
-  static Pointer initWithCenter(
-    Pointer<CLCircularRegion> _self,
-    Pointer arg, {
-    @required double radius,
-    @required Pointer identifier,
-  }) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_float64_p_returns_p(
-      _self,
-      _objc.getSelector("initWithCenter:radius:identifier:"),
-      arg,
-      radius,
-      identifier,
     );
   }
 
@@ -515,7 +452,7 @@ class CLCircularRegion extends Struct<CLCircularRegion> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithCoder:"),
       arg,
@@ -526,16 +463,13 @@ class CLCircularRegion extends Struct<CLCircularRegion> {
     Pointer<CLCircularRegion> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_float64(
+    return _call_ptr_ptr_returns_float64(
       _self,
       _objc.getSelector("radius"),
     );
   }
 }
 
-/// Automatically generated API. Part of [Core Location](https://developer.apple.com/documentation/corelocation?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class CLEmergencyEnablementAssertion
     extends Struct<CLEmergencyEnablementAssertion> {
@@ -550,9 +484,6 @@ class CLEmergencyEnablementAssertion
   }
 }
 
-/// Automatically generated API. Part of [Core Location](https://developer.apple.com/documentation/corelocation?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class CLGeocoder extends Struct<CLGeocoder> {
   factory CLGeocoder._() {
@@ -567,7 +498,7 @@ class CLGeocoder extends Struct<CLGeocoder> {
     Pointer<CLGeocoder> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("cancelGeocode"),
     );
@@ -577,20 +508,20 @@ class CLGeocoder extends Struct<CLGeocoder> {
     Pointer<CLGeocoder> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("dealloc"),
     );
   }
 
-  static void geocodeAddressDictionary$preferredLocale$completionHandler$(
+  static void geocodeAddressDictionary$preferredLocale$completionHandler(
     Pointer<CLGeocoder> _self,
     Pointer arg, {
     @required Pointer preferredLocale,
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector(
           "geocodeAddressDictionary:preferredLocale:completionHandler:"),
@@ -600,13 +531,13 @@ class CLGeocoder extends Struct<CLGeocoder> {
     );
   }
 
-  static void geocodeAddressDictionary$completionHandler$(
+  static void geocodeAddressDictionary$completionHandler(
     Pointer<CLGeocoder> _self,
     Pointer arg, {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("geocodeAddressDictionary:completionHandler:"),
       arg,
@@ -614,7 +545,7 @@ class CLGeocoder extends Struct<CLGeocoder> {
     );
   }
 
-  static void geocodeAddressString$inRegion$preferredLocale$completionHandler$(
+  static void geocodeAddressString$inRegion$preferredLocale$completionHandler(
     Pointer<CLGeocoder> _self,
     Pointer arg, {
     @required Pointer inRegion,
@@ -622,7 +553,7 @@ class CLGeocoder extends Struct<CLGeocoder> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector(
           "geocodeAddressString:inRegion:preferredLocale:completionHandler:"),
@@ -633,14 +564,14 @@ class CLGeocoder extends Struct<CLGeocoder> {
     );
   }
 
-  static void geocodeAddressString$inRegion$completionHandler$(
+  static void geocodeAddressString$inRegion$completionHandler(
     Pointer<CLGeocoder> _self,
     Pointer arg, {
     @required Pointer inRegion,
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("geocodeAddressString:inRegion:completionHandler:"),
       arg,
@@ -649,13 +580,13 @@ class CLGeocoder extends Struct<CLGeocoder> {
     );
   }
 
-  static void geocodeAddressString$completionHandler$(
+  static void geocodeAddressString$completionHandler(
     Pointer<CLGeocoder> _self,
     Pointer arg, {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("geocodeAddressString:completionHandler:"),
       arg,
@@ -663,13 +594,13 @@ class CLGeocoder extends Struct<CLGeocoder> {
     );
   }
 
-  static void geocodePostalAddress$completionHandler$(
+  static void geocodePostalAddress$completionHandler(
     Pointer<CLGeocoder> _self,
     Pointer arg, {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("geocodePostalAddress:completionHandler:"),
       arg,
@@ -677,14 +608,14 @@ class CLGeocoder extends Struct<CLGeocoder> {
     );
   }
 
-  static void geocodePostalAddress$preferredLocale$completionHandler$(
+  static void geocodePostalAddress$preferredLocale$completionHandler(
     Pointer<CLGeocoder> _self,
     Pointer arg, {
     @required Pointer preferredLocale,
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector(
           "geocodePostalAddress:preferredLocale:completionHandler:"),
@@ -698,7 +629,7 @@ class CLGeocoder extends Struct<CLGeocoder> {
     Pointer<CLGeocoder> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("init"),
     );
@@ -708,14 +639,14 @@ class CLGeocoder extends Struct<CLGeocoder> {
     Pointer<CLGeocoder> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isGeocoding"),
     );
   }
 
   static void
-      reverseGeocodeLocation$preferredLocale$heading$localResultsOnly$completionHandler$(
+      reverseGeocodeLocation$preferredLocale$heading$localResultsOnly$completionHandler(
     Pointer<CLGeocoder> _self,
     Pointer arg, {
     @required Pointer preferredLocale,
@@ -724,7 +655,7 @@ class CLGeocoder extends Struct<CLGeocoder> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_float64_Int8_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_float64_Int8_ptr_returns_void(
       _self,
       _objc.getSelector(
           "reverseGeocodeLocation:preferredLocale:heading:localResultsOnly:completionHandler:"),
@@ -736,14 +667,14 @@ class CLGeocoder extends Struct<CLGeocoder> {
     );
   }
 
-  static void reverseGeocodeLocation$localResultsOnly$completionHandler$(
+  static void reverseGeocodeLocation$localResultsOnly$completionHandler(
     Pointer<CLGeocoder> _self,
     Pointer arg, {
     @required int localResultsOnly,
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_Int8_p_returns_void(
+    _call_ptr_ptr_ptr_Int8_ptr_returns_void(
       _self,
       _objc.getSelector(
           "reverseGeocodeLocation:localResultsOnly:completionHandler:"),
@@ -753,14 +684,14 @@ class CLGeocoder extends Struct<CLGeocoder> {
     );
   }
 
-  static void reverseGeocodeLocation$preferredLocale$completionHandler$(
+  static void reverseGeocodeLocation$preferredLocale$completionHandler(
     Pointer<CLGeocoder> _self,
     Pointer arg, {
     @required Pointer preferredLocale,
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector(
           "reverseGeocodeLocation:preferredLocale:completionHandler:"),
@@ -770,14 +701,14 @@ class CLGeocoder extends Struct<CLGeocoder> {
     );
   }
 
-  static void reverseGeocodeLocation$heading$completionHandler$(
+  static void reverseGeocodeLocation$heading$completionHandler(
     Pointer<CLGeocoder> _self,
     Pointer arg, {
     @required double heading,
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_float64_p_returns_void(
+    _call_ptr_ptr_ptr_float64_ptr_returns_void(
       _self,
       _objc.getSelector("reverseGeocodeLocation:heading:completionHandler:"),
       arg,
@@ -786,8 +717,7 @@ class CLGeocoder extends Struct<CLGeocoder> {
     );
   }
 
-  static void
-      reverseGeocodeLocation$heading$localResultsOnly$completionHandler$(
+  static void reverseGeocodeLocation$heading$localResultsOnly$completionHandler(
     Pointer<CLGeocoder> _self,
     Pointer arg, {
     @required double heading,
@@ -795,7 +725,7 @@ class CLGeocoder extends Struct<CLGeocoder> {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_float64_Int8_p_returns_void(
+    _call_ptr_ptr_ptr_float64_Int8_ptr_returns_void(
       _self,
       _objc.getSelector(
           "reverseGeocodeLocation:heading:localResultsOnly:completionHandler:"),
@@ -806,13 +736,13 @@ class CLGeocoder extends Struct<CLGeocoder> {
     );
   }
 
-  static void reverseGeocodeLocation$completionHandler$(
+  static void reverseGeocodeLocation$completionHandler(
     Pointer<CLGeocoder> _self,
     Pointer arg, {
     @required Pointer completionHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("reverseGeocodeLocation:completionHandler:"),
       arg,
@@ -821,9 +751,6 @@ class CLGeocoder extends Struct<CLGeocoder> {
   }
 }
 
-/// Automatically generated API. Part of [Core Location](https://developer.apple.com/documentation/corelocation?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class CLGeocoderInternal extends Struct<CLGeocoderInternal> {
   factory CLGeocoderInternal._() {
@@ -835,9 +762,6 @@ class CLGeocoderInternal extends Struct<CLGeocoderInternal> {
   }
 }
 
-/// Automatically generated API. Part of [Core Location](https://developer.apple.com/documentation/corelocation?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class CLHarvester extends Struct<CLHarvester> {
   factory CLHarvester._() {
@@ -852,7 +776,7 @@ class CLHarvester extends Struct<CLHarvester> {
     Pointer<CLHarvester> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("connect"),
     );
@@ -862,7 +786,7 @@ class CLHarvester extends Struct<CLHarvester> {
     Pointer<CLHarvester> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("currentStateDictionary"),
     );
@@ -872,7 +796,7 @@ class CLHarvester extends Struct<CLHarvester> {
     Pointer<CLHarvester> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("dealloc"),
     );
@@ -883,7 +807,7 @@ class CLHarvester extends Struct<CLHarvester> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("submitSample:"),
       arg,
@@ -891,9 +815,6 @@ class CLHarvester extends Struct<CLHarvester> {
   }
 }
 
-/// Automatically generated API. Part of [Core Location](https://developer.apple.com/documentation/corelocation?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class CLHeading extends Struct<CLHeading> {
   factory CLHeading._() {
@@ -908,21 +829,9 @@ class CLHeading extends Struct<CLHeading> {
     Pointer<CLHeading> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("compactDescription"),
-    );
-  }
-
-  static Pointer copyWithZone(
-    Pointer<CLHeading> _self,
-    Pointer<Pointer> arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
-      _self,
-      _objc.getSelector("copyWithZone:"),
-      arg,
     );
   }
 
@@ -930,7 +839,7 @@ class CLHeading extends Struct<CLHeading> {
     Pointer<CLHeading> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("dealloc"),
     );
@@ -940,7 +849,7 @@ class CLHeading extends Struct<CLHeading> {
     Pointer<CLHeading> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("description"),
     );
@@ -951,7 +860,7 @@ class CLHeading extends Struct<CLHeading> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("encodeWithCoder:"),
       arg,
@@ -962,7 +871,7 @@ class CLHeading extends Struct<CLHeading> {
     Pointer<CLHeading> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("hasGeomagneticVector"),
     );
@@ -972,7 +881,7 @@ class CLHeading extends Struct<CLHeading> {
     Pointer<CLHeading> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_float64(
+    return _call_ptr_ptr_returns_float64(
       _self,
       _objc.getSelector("heading"),
     );
@@ -982,21 +891,9 @@ class CLHeading extends Struct<CLHeading> {
     Pointer<CLHeading> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_float64(
+    return _call_ptr_ptr_returns_float64(
       _self,
       _objc.getSelector("headingAccuracy"),
-    );
-  }
-
-  static Pointer initWithClientHeading(
-    Pointer<CLHeading> _self,
-    Pointer arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
-      _self,
-      _objc.getSelector("initWithClientHeading:"),
-      arg,
     );
   }
 
@@ -1005,7 +902,7 @@ class CLHeading extends Struct<CLHeading> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithCoder:"),
       arg,
@@ -1018,7 +915,7 @@ class CLHeading extends Struct<CLHeading> {
     @required double accuracy,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_float64_float64_returns_p(
+    return _call_ptr_ptr_float64_float64_returns_ptr(
       _self,
       _objc.getSelector("initWithHeading:accuracy:"),
       arg,
@@ -1030,7 +927,7 @@ class CLHeading extends Struct<CLHeading> {
     Pointer<CLHeading> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_float64(
+    return _call_ptr_ptr_returns_float64(
       _self,
       _objc.getSelector("magneticHeading"),
     );
@@ -1040,7 +937,7 @@ class CLHeading extends Struct<CLHeading> {
     Pointer<CLHeading> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("shortDescription"),
     );
@@ -1050,7 +947,7 @@ class CLHeading extends Struct<CLHeading> {
     Pointer<CLHeading> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("timestamp"),
     );
@@ -1060,7 +957,7 @@ class CLHeading extends Struct<CLHeading> {
     Pointer<CLHeading> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_float64(
+    return _call_ptr_ptr_returns_float64(
       _self,
       _objc.getSelector("trueHeading"),
     );
@@ -1070,7 +967,7 @@ class CLHeading extends Struct<CLHeading> {
     Pointer<CLHeading> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_float64(
+    return _call_ptr_ptr_returns_float64(
       _self,
       _objc.getSelector("x"),
     );
@@ -1080,7 +977,7 @@ class CLHeading extends Struct<CLHeading> {
     Pointer<CLHeading> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_float64(
+    return _call_ptr_ptr_returns_float64(
       _self,
       _objc.getSelector("y"),
     );
@@ -1090,16 +987,13 @@ class CLHeading extends Struct<CLHeading> {
     Pointer<CLHeading> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_float64(
+    return _call_ptr_ptr_returns_float64(
       _self,
       _objc.getSelector("z"),
     );
   }
 }
 
-/// Automatically generated API. Part of [Core Location](https://developer.apple.com/documentation/corelocation?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class CLHeadingInternal extends Struct<CLHeadingInternal> {
   factory CLHeadingInternal._() {
@@ -1109,35 +1003,8 @@ class CLHeadingInternal extends Struct<CLHeadingInternal> {
     _openDynamicLibrary();
     return _objc.allocate("CLHeadingInternal").cast<CLHeadingInternal>();
   }
-
-  static Pointer copyWithZone(
-    Pointer<CLHeadingInternal> _self,
-    Pointer<Pointer> arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
-      _self,
-      _objc.getSelector("copyWithZone:"),
-      arg,
-    );
-  }
-
-  static Pointer initWithClientHeading(
-    Pointer<CLHeadingInternal> _self,
-    Pointer arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
-      _self,
-      _objc.getSelector("initWithClientHeading:"),
-      arg,
-    );
-  }
 }
 
-/// Automatically generated API. Part of [Core Location](https://developer.apple.com/documentation/corelocation?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class CLLocation extends Struct<CLLocation> {
   factory CLLocation._() {
@@ -1155,7 +1022,7 @@ class CLLocation extends Struct<CLLocation> {
     @required int shouldExpand,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_Int8_Int8_returns_p(
+    return _call_ptr_ptr_Int8_Int8_Int8_returns_ptr(
       _self,
       _objc.getSelector(
           "CKDescriptionPropertiesWithPublic:private:shouldExpand:"),
@@ -1169,41 +1036,9 @@ class CLLocation extends Struct<CLLocation> {
     Pointer<CLLocation> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_float64(
+    return _call_ptr_ptr_returns_float64(
       _self,
       _objc.getSelector("altitude"),
-    );
-  }
-
-  static Pointer clientLocation(
-    Pointer<CLLocation> _self,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
-      _self,
-      _objc.getSelector("clientLocation"),
-    );
-  }
-
-  static Pointer coordinate(
-    Pointer<CLLocation> _self,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
-      _self,
-      _objc.getSelector("coordinate"),
-    );
-  }
-
-  static Pointer copyWithZone(
-    Pointer<CLLocation> _self,
-    Pointer<Pointer> arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
-      _self,
-      _objc.getSelector("copyWithZone:"),
-      arg,
     );
   }
 
@@ -1211,7 +1046,7 @@ class CLLocation extends Struct<CLLocation> {
     Pointer<CLLocation> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_float64(
+    return _call_ptr_ptr_returns_float64(
       _self,
       _objc.getSelector("course"),
     );
@@ -1221,7 +1056,7 @@ class CLLocation extends Struct<CLLocation> {
     Pointer<CLLocation> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("dealloc"),
     );
@@ -1231,7 +1066,7 @@ class CLLocation extends Struct<CLLocation> {
     Pointer<CLLocation> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("description"),
     );
@@ -1242,7 +1077,7 @@ class CLLocation extends Struct<CLLocation> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_float64(
+    return _call_ptr_ptr_ptr_returns_float64(
       _self,
       _objc.getSelector("distanceFromLocation:"),
       arg,
@@ -1254,7 +1089,7 @@ class CLLocation extends Struct<CLLocation> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("encodeWithCoder:"),
       arg,
@@ -1265,7 +1100,7 @@ class CLLocation extends Struct<CLLocation> {
     Pointer<CLLocation> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("floor"),
     );
@@ -1276,7 +1111,7 @@ class CLLocation extends Struct<CLLocation> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_float64(
+    return _call_ptr_ptr_ptr_returns_float64(
       _self,
       _objc.getSelector("getDistanceFrom:"),
       arg,
@@ -1287,7 +1122,7 @@ class CLLocation extends Struct<CLLocation> {
     Pointer<CLLocation> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_float64(
+    return _call_ptr_ptr_returns_float64(
       _self,
       _objc.getSelector("horizontalAccuracy"),
     );
@@ -1297,21 +1132,9 @@ class CLLocation extends Struct<CLLocation> {
     Pointer<CLLocation> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("init"),
-    );
-  }
-
-  static Pointer initWithClientLocation(
-    Pointer<CLLocation> _self,
-    Pointer arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
-      _self,
-      _objc.getSelector("initWithClientLocation:"),
-      arg,
     );
   }
 
@@ -1320,96 +1143,10 @@ class CLLocation extends Struct<CLLocation> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithCoder:"),
       arg,
-    );
-  }
-
-  static Pointer
-      initWithCoordinate$rawCoordinate$course$rawCourse$courseAccuracy$speed$speedAccuracy$altitude$timestamp$horizontalAccuracy$verticalAccuracy$type$referenceFrame$(
-    Pointer<CLLocation> _self,
-    Pointer arg, {
-    @required Pointer rawCoordinate,
-    @required double course,
-    @required double rawCourse,
-    @required double courseAccuracy,
-    @required double speed,
-    @required double speedAccuracy,
-    @required double altitude,
-    @required double timestamp,
-    @required double horizontalAccuracy,
-    @required double verticalAccuracy,
-    @required int type,
-    @required int referenceFrame,
-  }) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_p_float64_float64_float64_float64_float64_float64_float64_float64_float64_Int32_Int32_returns_p(
-      _self,
-      _objc.getSelector(
-          "initWithCoordinate:rawCoordinate:course:rawCourse:courseAccuracy:speed:speedAccuracy:altitude:timestamp:horizontalAccuracy:verticalAccuracy:type:referenceFrame:"),
-      arg,
-      rawCoordinate,
-      course,
-      rawCourse,
-      courseAccuracy,
-      speed,
-      speedAccuracy,
-      altitude,
-      timestamp,
-      horizontalAccuracy,
-      verticalAccuracy,
-      type,
-      referenceFrame,
-    );
-  }
-
-  static Pointer
-      initWithCoordinate$altitude$horizontalAccuracy$verticalAccuracy$timestamp$(
-    Pointer<CLLocation> _self,
-    Pointer arg, {
-    @required double altitude,
-    @required double horizontalAccuracy,
-    @required double verticalAccuracy,
-    @required Pointer timestamp,
-  }) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_float64_float64_float64_p_returns_p(
-      _self,
-      _objc.getSelector(
-          "initWithCoordinate:altitude:horizontalAccuracy:verticalAccuracy:timestamp:"),
-      arg,
-      altitude,
-      horizontalAccuracy,
-      verticalAccuracy,
-      timestamp,
-    );
-  }
-
-  static Pointer
-      initWithCoordinate$altitude$horizontalAccuracy$verticalAccuracy$course$speed$timestamp$(
-    Pointer<CLLocation> _self,
-    Pointer arg, {
-    @required double altitude,
-    @required double horizontalAccuracy,
-    @required double verticalAccuracy,
-    @required double course,
-    @required double speed,
-    @required Pointer timestamp,
-  }) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_float64_float64_float64_float64_float64_p_returns_p(
-      _self,
-      _objc.getSelector(
-          "initWithCoordinate:altitude:horizontalAccuracy:verticalAccuracy:course:speed:timestamp:"),
-      arg,
-      altitude,
-      horizontalAccuracy,
-      verticalAccuracy,
-      course,
-      speed,
-      timestamp,
     );
   }
 
@@ -1418,7 +1155,7 @@ class CLLocation extends Struct<CLLocation> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithGeoLocation:"),
       arg,
@@ -1431,7 +1168,7 @@ class CLLocation extends Struct<CLLocation> {
     @required double longitude,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_float64_float64_returns_p(
+    return _call_ptr_ptr_float64_float64_returns_ptr(
       _self,
       _objc.getSelector("initWithLatitude:longitude:"),
       arg,
@@ -1443,7 +1180,7 @@ class CLLocation extends Struct<CLLocation> {
     Pointer<CLLocation> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint32(
+    return _call_ptr_ptr_returns_Uint32(
       _self,
       _objc.getSelector("integrity"),
     );
@@ -1453,7 +1190,7 @@ class CLLocation extends Struct<CLLocation> {
     Pointer<CLLocation> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("iso6709Notation"),
     );
@@ -1464,20 +1201,10 @@ class CLLocation extends Struct<CLLocation> {
     double arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_float64_returns_p(
+    return _call_ptr_ptr_float64_returns_ptr(
       _self,
       _objc.getSelector("propagateLocationToTime:"),
       arg,
-    );
-  }
-
-  static Pointer rawCoordinate(
-    Pointer<CLLocation> _self,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
-      _self,
-      _objc.getSelector("rawCoordinate"),
     );
   }
 
@@ -1485,7 +1212,7 @@ class CLLocation extends Struct<CLLocation> {
     Pointer<CLLocation> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_float64(
+    return _call_ptr_ptr_returns_float64(
       _self,
       _objc.getSelector("rawCourse"),
     );
@@ -1495,7 +1222,7 @@ class CLLocation extends Struct<CLLocation> {
     Pointer<CLLocation> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int32(
+    return _call_ptr_ptr_returns_Int32(
       _self,
       _objc.getSelector("referenceFrame"),
     );
@@ -1506,7 +1233,7 @@ class CLLocation extends Struct<CLLocation> {
     double arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_float64_returns_void(
+    _call_ptr_ptr_float64_returns_void(
       _self,
       _objc.getSelector("setHorizontalAccuracy:"),
       arg,
@@ -1518,7 +1245,7 @@ class CLLocation extends Struct<CLLocation> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int32_returns_void(
+    _call_ptr_ptr_Int32_returns_void(
       _self,
       _objc.getSelector("setReferenceFrame:"),
       arg,
@@ -1529,7 +1256,7 @@ class CLLocation extends Struct<CLLocation> {
     Pointer<CLLocation> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("shortDescription"),
     );
@@ -1540,7 +1267,7 @@ class CLLocation extends Struct<CLLocation> {
     double arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_float64_returns_p(
+    return _call_ptr_ptr_float64_returns_ptr(
       _self,
       _objc.getSelector("snapToResolution:"),
       arg,
@@ -1551,7 +1278,7 @@ class CLLocation extends Struct<CLLocation> {
     Pointer<CLLocation> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_float64(
+    return _call_ptr_ptr_returns_float64(
       _self,
       _objc.getSelector("speed"),
     );
@@ -1561,7 +1288,7 @@ class CLLocation extends Struct<CLLocation> {
     Pointer<CLLocation> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_float64(
+    return _call_ptr_ptr_returns_float64(
       _self,
       _objc.getSelector("speedAccuracy"),
     );
@@ -1571,7 +1298,7 @@ class CLLocation extends Struct<CLLocation> {
     Pointer<CLLocation> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("timestamp"),
     );
@@ -1581,7 +1308,7 @@ class CLLocation extends Struct<CLLocation> {
     Pointer<CLLocation> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_float64(
+    return _call_ptr_ptr_returns_float64(
       _self,
       _objc.getSelector("trustedTimestamp"),
     );
@@ -1591,7 +1318,7 @@ class CLLocation extends Struct<CLLocation> {
     Pointer<CLLocation> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int32(
+    return _call_ptr_ptr_returns_Int32(
       _self,
       _objc.getSelector("type"),
     );
@@ -1601,16 +1328,13 @@ class CLLocation extends Struct<CLLocation> {
     Pointer<CLLocation> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_float64(
+    return _call_ptr_ptr_returns_float64(
       _self,
       _objc.getSelector("verticalAccuracy"),
     );
   }
 }
 
-/// Automatically generated API. Part of [Core Location](https://developer.apple.com/documentation/corelocation?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class CLLocationInternal extends Struct<CLLocationInternal> {
   factory CLLocationInternal._() {
@@ -1620,35 +1344,8 @@ class CLLocationInternal extends Struct<CLLocationInternal> {
     _openDynamicLibrary();
     return _objc.allocate("CLLocationInternal").cast<CLLocationInternal>();
   }
-
-  static Pointer copyWithZone(
-    Pointer<CLLocationInternal> _self,
-    Pointer<Pointer> arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
-      _self,
-      _objc.getSelector("copyWithZone:"),
-      arg,
-    );
-  }
-
-  static Pointer initWithClientLocation(
-    Pointer<CLLocationInternal> _self,
-    Pointer arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
-      _self,
-      _objc.getSelector("initWithClientLocation:"),
-      arg,
-    );
-  }
 }
 
-/// Automatically generated API. Part of [Core Location](https://developer.apple.com/documentation/corelocation?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class CLLocationInternalClient extends Struct<CLLocationInternalClient> {
   factory CLLocationInternalClient._() {
@@ -1665,19 +1362,9 @@ class CLLocationInternalClient extends Struct<CLLocationInternalClient> {
     Pointer<CLLocationInternalClient> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint8(
+    return _call_ptr_ptr_returns_Uint8(
       _self,
       _objc.getSelector("clearLocationAuthorizations"),
-    );
-  }
-
-  static Pointer<Pointer> copyAppsUsingLocation(
-    Pointer<CLLocationInternalClient> _self,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
-      _self,
-      _objc.getSelector("copyAppsUsingLocation"),
     );
   }
 
@@ -1685,34 +1372,9 @@ class CLLocationInternalClient extends Struct<CLLocationInternalClient> {
     Pointer<CLLocationInternalClient> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint8(
+    return _call_ptr_ptr_returns_Uint8(
       _self,
       _objc.getSelector("copyLastLog"),
-    );
-  }
-
-  static Pointer<Pointer> copyMonitoredRegionsForBundleIdentifier(
-    Pointer<CLLocationInternalClient> _self,
-    Pointer<Pointer> arg, {
-    @required Pointer<Pointer> orBundlePath,
-  }) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_p(
-      _self,
-      _objc
-          .getSelector("copyMonitoredRegionsForBundleIdentifier:orBundlePath:"),
-      arg,
-      orBundlePath,
-    );
-  }
-
-  static Pointer<Pointer> copyTechnologiesInUse(
-    Pointer<CLLocationInternalClient> _self,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
-      _self,
-      _objc.getSelector("copyTechnologiesInUse"),
     );
   }
 
@@ -1720,56 +1382,9 @@ class CLLocationInternalClient extends Struct<CLLocationInternalClient> {
     Pointer<CLLocationInternalClient> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint8(
+    return _call_ptr_ptr_returns_Uint8(
       _self,
       _objc.getSelector("displayStatistics"),
-    );
-  }
-
-  static int dumpLogs(
-    Pointer<CLLocationInternalClient> _self,
-    Pointer<Pointer> arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_Uint8(
-      _self,
-      _objc.getSelector("dumpLogs:"),
-      arg,
-    );
-  }
-
-  static int getAuthorizationStatus(
-    Pointer<CLLocationInternalClient> _self,
-    Pointer<Int32> arg, {
-    @required Pointer<Pointer> forBundleID,
-    @required Pointer<Pointer> orBundlePath,
-  }) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_Uint8(
-      _self,
-      _objc.getSelector("getAuthorizationStatus:forBundleID:orBundlePath:"),
-      arg,
-      forBundleID,
-      orBundlePath,
-    );
-  }
-
-  static int getAuthorizationStatusForService(
-    Pointer<CLLocationInternalClient> _self,
-    Pointer<Int32> arg, {
-    @required Pointer<Pointer> forBundleID,
-    @required Pointer<Pointer> orBundlePath,
-    @required int serviceMask,
-  }) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_Uint64_returns_Uint8(
-      _self,
-      _objc.getSelector(
-          "getAuthorizationStatusForService:forBundleID:orBundlePath:serviceMask:"),
-      arg,
-      forBundleID,
-      orBundlePath,
-      serviceMask,
     );
   }
 
@@ -1778,43 +1393,10 @@ class CLLocationInternalClient extends Struct<CLLocationInternalClient> {
     Pointer<Utf8> arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_Uint8(
+    return _call_ptr_ptr_ptr_returns_Uint8(
       _self,
       _objc.getSelector("getGestureServiceEnabled:"),
       arg,
-    );
-  }
-
-  static Pointer getLocationDefaultForKey(
-    Pointer<CLLocationInternalClient> _self,
-    Pointer<Pointer> arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
-      _self,
-      _objc.getSelector("getLocationDefaultForKey:"),
-      arg,
-    );
-  }
-
-  static int getLocationForBundleID(
-    Pointer<CLLocationInternalClient> _self,
-    Pointer<Pointer> arg, {
-    @required Pointer<Pointer> orBundlePath,
-    @required int dynamicAccuracyReductionEnabled,
-    @required int allowsAlteredAccessoryLocations,
-    @required Pointer<Pointer> location,
-  }) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_p_Uint8_Uint8_p_returns_Uint8(
-      _self,
-      _objc.getSelector(
-          "getLocationForBundleID:orBundlePath:dynamicAccuracyReductionEnabled:allowsAlteredAccessoryLocations:location:"),
-      arg,
-      orBundlePath,
-      dynamicAccuracyReductionEnabled,
-      allowsAlteredAccessoryLocations,
-      location,
     );
   }
 
@@ -1823,7 +1405,7 @@ class CLLocationInternalClient extends Struct<CLLocationInternalClient> {
     Pointer<Utf8> arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_Uint8(
+    return _call_ptr_ptr_ptr_returns_Uint8(
       _self,
       _objc.getSelector("getLocationServicesEnabled:"),
       arg,
@@ -1834,7 +1416,7 @@ class CLLocationInternalClient extends Struct<CLLocationInternalClient> {
     Pointer<CLLocationInternalClient> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint8(
+    return _call_ptr_ptr_returns_Uint8(
       _self,
       _objc.getSelector("getPrivateMode"),
     );
@@ -1846,7 +1428,7 @@ class CLLocationInternalClient extends Struct<CLLocationInternalClient> {
     @required int forEntityClass,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_Int32_returns_Uint8(
+    return _call_ptr_ptr_ptr_Int32_returns_Uint8(
       _self,
       _objc.getSelector("getStatusBarIconEnabled:forEntityClass:"),
       arg,
@@ -1858,7 +1440,7 @@ class CLLocationInternalClient extends Struct<CLLocationInternalClient> {
     Pointer<CLLocationInternalClient> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int32(
+    return _call_ptr_ptr_returns_Int32(
       _self,
       _objc.getSelector("getStatusBarIconState"),
     );
@@ -1868,7 +1450,7 @@ class CLLocationInternalClient extends Struct<CLLocationInternalClient> {
     Pointer<CLLocationInternalClient> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint8(
+    return _call_ptr_ptr_returns_Uint8(
       _self,
       _objc.getSelector("isLocationServicesCapable"),
     );
@@ -1878,7 +1460,7 @@ class CLLocationInternalClient extends Struct<CLLocationInternalClient> {
     Pointer<CLLocationInternalClient> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint8(
+    return _call_ptr_ptr_returns_Uint8(
       _self,
       _objc.getSelector("performMigration"),
     );
@@ -1888,25 +1470,9 @@ class CLLocationInternalClient extends Struct<CLLocationInternalClient> {
     Pointer<CLLocationInternalClient> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint8(
+    return _call_ptr_ptr_returns_Uint8(
       _self,
       _objc.getSelector("pingDaemon"),
-    );
-  }
-
-  static int setAuthorizationStatus(
-    Pointer<CLLocationInternalClient> _self,
-    int arg, {
-    @required Pointer<Pointer> forBundleID,
-    @required Pointer<Pointer> orBundlePath,
-  }) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_Uint8_p_p_returns_Uint8(
-      _self,
-      _objc.getSelector("setAuthorizationStatus:forBundleID:orBundlePath:"),
-      arg,
-      forBundleID,
-      orBundlePath,
     );
   }
 
@@ -1915,24 +1481,10 @@ class CLLocationInternalClient extends Struct<CLLocationInternalClient> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Uint8_returns_void(
+    _call_ptr_ptr_Uint8_returns_void(
       _self,
       _objc.getSelector("setGestureServiceEnabled:"),
       arg,
-    );
-  }
-
-  static void setLocationDefaultForKey(
-    Pointer<CLLocationInternalClient> _self,
-    Pointer<Pointer> arg, {
-    @required Pointer value,
-  }) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
-      _self,
-      _objc.getSelector("setLocationDefaultForKey:value:"),
-      arg,
-      value,
     );
   }
 
@@ -1941,7 +1493,7 @@ class CLLocationInternalClient extends Struct<CLLocationInternalClient> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Uint8_returns_void(
+    _call_ptr_ptr_Uint8_returns_void(
       _self,
       _objc.getSelector("setLocationServicesEnabled:"),
       arg,
@@ -1954,7 +1506,7 @@ class CLLocationInternalClient extends Struct<CLLocationInternalClient> {
     @required int count,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_Int32_returns_void(
+    _call_ptr_ptr_ptr_Int32_returns_void(
       _self,
       _objc.getSelector("setMapMatchingRouteHint:count:"),
       arg,
@@ -1967,7 +1519,7 @@ class CLLocationInternalClient extends Struct<CLLocationInternalClient> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Uint8_returns_void(
+    _call_ptr_ptr_Uint8_returns_void(
       _self,
       _objc.getSelector("setPrivateMode:"),
       arg,
@@ -1980,7 +1532,7 @@ class CLLocationInternalClient extends Struct<CLLocationInternalClient> {
     @required int forEntityClass,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_Int32_returns_Uint8(
+    return _call_ptr_ptr_Int8_Int32_returns_Uint8(
       _self,
       _objc.getSelector("setStatusBarIconEnabled:forEntityClass:"),
       arg,
@@ -1992,7 +1544,7 @@ class CLLocationInternalClient extends Struct<CLLocationInternalClient> {
     Pointer<CLLocationInternalClient> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint8(
+    return _call_ptr_ptr_returns_Uint8(
       _self,
       _objc.getSelector("shutdownDaemon"),
     );
@@ -2002,7 +1554,7 @@ class CLLocationInternalClient extends Struct<CLLocationInternalClient> {
     Pointer<CLLocationInternalClient> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("synchronousRemoteObject"),
     );
@@ -2013,7 +1565,7 @@ class CLLocationInternalClient extends Struct<CLLocationInternalClient> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("timeZoneAtLocation:"),
       arg,
@@ -2021,9 +1573,6 @@ class CLLocationInternalClient extends Struct<CLLocationInternalClient> {
   }
 }
 
-/// Automatically generated API. Part of [Core Location](https://developer.apple.com/documentation/corelocation?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class CLLocationManager extends Struct<CLLocationManager> {
   factory CLLocationManager._() {
@@ -2038,7 +1587,7 @@ class CLLocationManager extends Struct<CLLocationManager> {
     Pointer<CLLocationManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int64(
+    return _call_ptr_ptr_returns_Int64(
       _self,
       _objc.getSelector("activityType"),
     );
@@ -2050,7 +1599,7 @@ class CLLocationManager extends Struct<CLLocationManager> {
     @required double timeout,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_float64_float64_returns_void(
+    _call_ptr_ptr_float64_float64_returns_void(
       _self,
       _objc.getSelector("allowDeferredLocationUpdatesUntilTraveled:timeout:"),
       arg,
@@ -2062,7 +1611,7 @@ class CLLocationManager extends Struct<CLLocationManager> {
     Pointer<CLLocationManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("allowsAlteredAccessoryLocations"),
     );
@@ -2072,7 +1621,7 @@ class CLLocationManager extends Struct<CLLocationManager> {
     Pointer<CLLocationManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("allowsBackgroundLocationUpdates"),
     );
@@ -2082,7 +1631,7 @@ class CLLocationManager extends Struct<CLLocationManager> {
     Pointer<CLLocationManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("appsUsingLocation"),
     );
@@ -2092,7 +1641,7 @@ class CLLocationManager extends Struct<CLLocationManager> {
     Pointer<CLLocationManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("appsUsingLocationWithDetails"),
     );
@@ -2102,7 +1651,7 @@ class CLLocationManager extends Struct<CLLocationManager> {
     Pointer<CLLocationManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("dealloc"),
     );
@@ -2112,7 +1661,7 @@ class CLLocationManager extends Struct<CLLocationManager> {
     Pointer<CLLocationManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("delegate"),
     );
@@ -2122,7 +1671,7 @@ class CLLocationManager extends Struct<CLLocationManager> {
     Pointer<CLLocationManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_float64(
+    return _call_ptr_ptr_returns_float64(
       _self,
       _objc.getSelector("desiredAccuracy"),
     );
@@ -2132,7 +1681,7 @@ class CLLocationManager extends Struct<CLLocationManager> {
     Pointer<CLLocationManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("disallowDeferredLocationUpdates"),
     );
@@ -2142,7 +1691,7 @@ class CLLocationManager extends Struct<CLLocationManager> {
     Pointer<CLLocationManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("dismissHeadingCalibrationDisplay"),
     );
@@ -2152,7 +1701,7 @@ class CLLocationManager extends Struct<CLLocationManager> {
     Pointer<CLLocationManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_float64(
+    return _call_ptr_ptr_returns_float64(
       _self,
       _objc.getSelector("distanceFilter"),
     );
@@ -2162,7 +1711,7 @@ class CLLocationManager extends Struct<CLLocationManager> {
     Pointer<CLLocationManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_float64(
+    return _call_ptr_ptr_returns_float64(
       _self,
       _objc.getSelector("expectedGpsUpdateInterval"),
     );
@@ -2172,7 +1721,7 @@ class CLLocationManager extends Struct<CLLocationManager> {
     Pointer<CLLocationManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("heading"),
     );
@@ -2182,7 +1731,7 @@ class CLLocationManager extends Struct<CLLocationManager> {
     Pointer<CLLocationManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("headingAvailable"),
     );
@@ -2192,7 +1741,7 @@ class CLLocationManager extends Struct<CLLocationManager> {
     Pointer<CLLocationManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_float64(
+    return _call_ptr_ptr_returns_float64(
       _self,
       _objc.getSelector("headingFilter"),
     );
@@ -2202,7 +1751,7 @@ class CLLocationManager extends Struct<CLLocationManager> {
     Pointer<CLLocationManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int32(
+    return _call_ptr_ptr_returns_Int32(
       _self,
       _objc.getSelector("headingOrientation"),
     );
@@ -2212,7 +1761,7 @@ class CLLocationManager extends Struct<CLLocationManager> {
     Pointer<CLLocationManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("init"),
     );
@@ -2223,20 +1772,20 @@ class CLLocationManager extends Struct<CLLocationManager> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithEffectiveBundle:"),
       arg,
     );
   }
 
-  static Pointer initWithEffectiveBundleIdentifier$bundle$(
+  static Pointer initWithEffectiveBundleIdentifier$bundle(
     Pointer<CLLocationManager> _self,
     Pointer arg, {
     @required Pointer bundle,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithEffectiveBundleIdentifier:bundle:"),
       arg,
@@ -2244,25 +1793,15 @@ class CLLocationManager extends Struct<CLLocationManager> {
     );
   }
 
-  static Pointer initWithEffectiveBundleIdentifier$(
+  static Pointer initWithEffectiveBundleIdentifier(
     Pointer<CLLocationManager> _self,
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithEffectiveBundleIdentifier:"),
       arg,
-    );
-  }
-
-  static Pointer<Pointer> internalClient(
-    Pointer<CLLocationManager> _self,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
-      _self,
-      _objc.getSelector("internalClient"),
     );
   }
 
@@ -2270,7 +1809,7 @@ class CLLocationManager extends Struct<CLLocationManager> {
     Pointer<CLLocationManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isDynamicAccuracyReductionEnabled"),
     );
@@ -2280,7 +1819,7 @@ class CLLocationManager extends Struct<CLLocationManager> {
     Pointer<CLLocationManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isLocationServicesPreferencesDialogEnabled"),
     );
@@ -2290,7 +1829,7 @@ class CLLocationManager extends Struct<CLLocationManager> {
     Pointer<CLLocationManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isPersistentMonitoringEnabled"),
     );
@@ -2300,7 +1839,7 @@ class CLLocationManager extends Struct<CLLocationManager> {
     Pointer<CLLocationManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("location"),
     );
@@ -2310,7 +1849,7 @@ class CLLocationManager extends Struct<CLLocationManager> {
     Pointer<CLLocationManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("locationServicesApproved"),
     );
@@ -2320,7 +1859,7 @@ class CLLocationManager extends Struct<CLLocationManager> {
     Pointer<CLLocationManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("locationServicesAvailable"),
     );
@@ -2330,7 +1869,7 @@ class CLLocationManager extends Struct<CLLocationManager> {
     Pointer<CLLocationManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("locationServicesEnabled"),
     );
@@ -2340,7 +1879,7 @@ class CLLocationManager extends Struct<CLLocationManager> {
     Pointer<CLLocationManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("markAsHavingReceivedLocation"),
     );
@@ -2350,7 +1889,7 @@ class CLLocationManager extends Struct<CLLocationManager> {
     Pointer<CLLocationManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_float64(
+    return _call_ptr_ptr_returns_float64(
       _self,
       _objc.getSelector("maximumRegionMonitoringDistance"),
     );
@@ -2360,7 +1899,7 @@ class CLLocationManager extends Struct<CLLocationManager> {
     Pointer<CLLocationManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("monitoredRegions"),
     );
@@ -2372,7 +1911,7 @@ class CLLocationManager extends Struct<CLLocationManager> {
     @required Pointer supportInfo,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int32_p_returns_void(
+    _call_ptr_ptr_Int32_ptr_returns_void(
       _self,
       _objc.getSelector("onClientEvent:supportInfo:"),
       arg,
@@ -2385,7 +1924,7 @@ class CLLocationManager extends Struct<CLLocationManager> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("onClientEventAuthStatus:"),
       arg,
@@ -2397,7 +1936,7 @@ class CLLocationManager extends Struct<CLLocationManager> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("onClientEventAutopauseStatus:"),
       arg,
@@ -2409,7 +1948,7 @@ class CLLocationManager extends Struct<CLLocationManager> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("onClientEventBatch:"),
       arg,
@@ -2421,7 +1960,7 @@ class CLLocationManager extends Struct<CLLocationManager> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("onClientEventError:"),
       arg,
@@ -2433,7 +1972,7 @@ class CLLocationManager extends Struct<CLLocationManager> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("onClientEventHeading:"),
       arg,
@@ -2445,7 +1984,7 @@ class CLLocationManager extends Struct<CLLocationManager> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("onClientEventHeadingCalibration:"),
       arg,
@@ -2457,7 +1996,7 @@ class CLLocationManager extends Struct<CLLocationManager> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("onClientEventInterrupted:"),
       arg,
@@ -2469,7 +2008,7 @@ class CLLocationManager extends Struct<CLLocationManager> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("onClientEventLocation:"),
       arg,
@@ -2481,7 +2020,7 @@ class CLLocationManager extends Struct<CLLocationManager> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("onClientEventLocationUnavailable:"),
       arg,
@@ -2493,7 +2032,7 @@ class CLLocationManager extends Struct<CLLocationManager> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("onClientEventPeerRanging:"),
       arg,
@@ -2505,7 +2044,7 @@ class CLLocationManager extends Struct<CLLocationManager> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("onClientEventPeerRangingError:"),
       arg,
@@ -2517,7 +2056,7 @@ class CLLocationManager extends Struct<CLLocationManager> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("onClientEventPeerRangingRequestProcessed:"),
       arg,
@@ -2529,7 +2068,7 @@ class CLLocationManager extends Struct<CLLocationManager> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("onClientEventRanging:"),
       arg,
@@ -2541,7 +2080,7 @@ class CLLocationManager extends Struct<CLLocationManager> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("onClientEventRangingError:"),
       arg,
@@ -2553,7 +2092,7 @@ class CLLocationManager extends Struct<CLLocationManager> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("onClientEventRegion:"),
       arg,
@@ -2565,7 +2104,7 @@ class CLLocationManager extends Struct<CLLocationManager> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("onClientEventRegionError:"),
       arg,
@@ -2577,7 +2116,7 @@ class CLLocationManager extends Struct<CLLocationManager> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("onClientEventRegionResponseDelayed:"),
       arg,
@@ -2589,7 +2128,7 @@ class CLLocationManager extends Struct<CLLocationManager> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("onClientEventRegionSetupCompleted:"),
       arg,
@@ -2601,7 +2140,7 @@ class CLLocationManager extends Struct<CLLocationManager> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("onClientEventRegionState:"),
       arg,
@@ -2613,7 +2152,7 @@ class CLLocationManager extends Struct<CLLocationManager> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("onClientEventVehicleHeading:"),
       arg,
@@ -2625,7 +2164,7 @@ class CLLocationManager extends Struct<CLLocationManager> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("onClientEventVehicleSpeed:"),
       arg,
@@ -2637,7 +2176,7 @@ class CLLocationManager extends Struct<CLLocationManager> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("onDidBecomeActive:"),
       arg,
@@ -2648,7 +2187,7 @@ class CLLocationManager extends Struct<CLLocationManager> {
     Pointer<CLLocationManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("onEventAppStatus"),
     );
@@ -2658,7 +2197,7 @@ class CLLocationManager extends Struct<CLLocationManager> {
     Pointer<CLLocationManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("onLocationRequestTimeout"),
     );
@@ -2668,7 +2207,7 @@ class CLLocationManager extends Struct<CLLocationManager> {
     Pointer<CLLocationManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("onRangingRequestTimeout"),
     );
@@ -2679,7 +2218,7 @@ class CLLocationManager extends Struct<CLLocationManager> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("pauseLocationUpdates:"),
       arg,
@@ -2690,7 +2229,7 @@ class CLLocationManager extends Struct<CLLocationManager> {
     Pointer<CLLocationManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("pausesLocationUpdatesAutomatically"),
     );
@@ -2700,7 +2239,7 @@ class CLLocationManager extends Struct<CLLocationManager> {
     Pointer<CLLocationManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("privateMode"),
     );
@@ -2710,7 +2249,7 @@ class CLLocationManager extends Struct<CLLocationManager> {
     Pointer<CLLocationManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("purpose"),
     );
@@ -2720,7 +2259,7 @@ class CLLocationManager extends Struct<CLLocationManager> {
     Pointer<CLLocationManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("rangedRegions"),
     );
@@ -2730,7 +2269,7 @@ class CLLocationManager extends Struct<CLLocationManager> {
     Pointer<CLLocationManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("registerAsLocationClient"),
     );
@@ -2740,7 +2279,7 @@ class CLLocationManager extends Struct<CLLocationManager> {
     Pointer<CLLocationManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("requestAlwaysAuthorization"),
     );
@@ -2750,7 +2289,7 @@ class CLLocationManager extends Struct<CLLocationManager> {
     Pointer<CLLocationManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("requestLocation"),
     );
@@ -2762,7 +2301,7 @@ class CLLocationManager extends Struct<CLLocationManager> {
     @required double timeoutSeconds,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_float64_returns_void(
+    _call_ptr_ptr_ptr_float64_returns_void(
       _self,
       _objc.getSelector("requestRangingToPeers:timeoutSeconds:"),
       arg,
@@ -2775,7 +2314,7 @@ class CLLocationManager extends Struct<CLLocationManager> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("requestStateForRegion:"),
       arg,
@@ -2786,7 +2325,7 @@ class CLLocationManager extends Struct<CLLocationManager> {
     Pointer<CLLocationManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("requestWhenInUseAuthorization"),
     );
@@ -2796,7 +2335,7 @@ class CLLocationManager extends Struct<CLLocationManager> {
     Pointer<CLLocationManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("requestWhenInUseAuthorizationWithPrompt"),
     );
@@ -2806,7 +2345,7 @@ class CLLocationManager extends Struct<CLLocationManager> {
     Pointer<CLLocationManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("resetApps"),
     );
@@ -2818,7 +2357,7 @@ class CLLocationManager extends Struct<CLLocationManager> {
     @required double timeoutSeconds,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_float64_returns_void(
+    _call_ptr_ptr_ptr_float64_returns_void(
       _self,
       _objc.getSelector("respondToRangingFromPeers:timeoutSeconds:"),
       arg,
@@ -2830,7 +2369,7 @@ class CLLocationManager extends Struct<CLLocationManager> {
     Pointer<CLLocationManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("resumeLocationUpdates"),
     );
@@ -2841,7 +2380,7 @@ class CLLocationManager extends Struct<CLLocationManager> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int64_returns_void(
+    _call_ptr_ptr_Int64_returns_void(
       _self,
       _objc.getSelector("setActivityType:"),
       arg,
@@ -2853,7 +2392,7 @@ class CLLocationManager extends Struct<CLLocationManager> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setAllowsAlteredAccessoryLocations:"),
       arg,
@@ -2865,7 +2404,7 @@ class CLLocationManager extends Struct<CLLocationManager> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setAllowsBackgroundLocationUpdates:"),
       arg,
@@ -2877,7 +2416,7 @@ class CLLocationManager extends Struct<CLLocationManager> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setDelegate:"),
       arg,
@@ -2889,7 +2428,7 @@ class CLLocationManager extends Struct<CLLocationManager> {
     double arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_float64_returns_void(
+    _call_ptr_ptr_float64_returns_void(
       _self,
       _objc.getSelector("setDesiredAccuracy:"),
       arg,
@@ -2901,7 +2440,7 @@ class CLLocationManager extends Struct<CLLocationManager> {
     double arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_float64_returns_void(
+    _call_ptr_ptr_float64_returns_void(
       _self,
       _objc.getSelector("setDistanceFilter:"),
       arg,
@@ -2913,7 +2452,7 @@ class CLLocationManager extends Struct<CLLocationManager> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setDynamicAccuracyReductionEnabled:"),
       arg,
@@ -2925,7 +2464,7 @@ class CLLocationManager extends Struct<CLLocationManager> {
     double arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_float64_returns_void(
+    _call_ptr_ptr_float64_returns_void(
       _self,
       _objc.getSelector("setHeadingFilter:"),
       arg,
@@ -2937,7 +2476,7 @@ class CLLocationManager extends Struct<CLLocationManager> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int32_returns_void(
+    _call_ptr_ptr_Int32_returns_void(
       _self,
       _objc.getSelector("setHeadingOrientation:"),
       arg,
@@ -2949,7 +2488,7 @@ class CLLocationManager extends Struct<CLLocationManager> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setLocationServicesPreferencesDialogEnabled:"),
       arg,
@@ -2961,7 +2500,7 @@ class CLLocationManager extends Struct<CLLocationManager> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setPausesLocationUpdatesAutomatically:"),
       arg,
@@ -2973,7 +2512,7 @@ class CLLocationManager extends Struct<CLLocationManager> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setPersistentMonitoringEnabled:"),
       arg,
@@ -2985,7 +2524,7 @@ class CLLocationManager extends Struct<CLLocationManager> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setPrivateMode:"),
       arg,
@@ -2997,7 +2536,7 @@ class CLLocationManager extends Struct<CLLocationManager> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setPurpose:"),
       arg,
@@ -3009,7 +2548,7 @@ class CLLocationManager extends Struct<CLLocationManager> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setShowsBackgroundLocationIndicator:"),
       arg,
@@ -3021,7 +2560,7 @@ class CLLocationManager extends Struct<CLLocationManager> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setSupportInfo:"),
       arg,
@@ -3032,7 +2571,7 @@ class CLLocationManager extends Struct<CLLocationManager> {
     Pointer<CLLocationManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("showsBackgroundLocationIndicator"),
     );
@@ -3042,19 +2581,19 @@ class CLLocationManager extends Struct<CLLocationManager> {
     Pointer<CLLocationManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("startAppStatusUpdates"),
     );
   }
 
-  static void startMonitoringForRegion$desiredAccuracy$(
+  static void startMonitoringForRegion$desiredAccuracy(
     Pointer<CLLocationManager> _self,
     Pointer arg, {
     @required double desiredAccuracy,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_float64_returns_void(
+    _call_ptr_ptr_ptr_float64_returns_void(
       _self,
       _objc.getSelector("startMonitoringForRegion:desiredAccuracy:"),
       arg,
@@ -3062,12 +2601,12 @@ class CLLocationManager extends Struct<CLLocationManager> {
     );
   }
 
-  static void startMonitoringForRegion$(
+  static void startMonitoringForRegion(
     Pointer<CLLocationManager> _self,
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("startMonitoringForRegion:"),
       arg,
@@ -3078,7 +2617,7 @@ class CLLocationManager extends Struct<CLLocationManager> {
     Pointer<CLLocationManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("startMonitoringSignificantLocationChanges"),
     );
@@ -3089,7 +2628,7 @@ class CLLocationManager extends Struct<CLLocationManager> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("startRangingFromPeers:"),
       arg,
@@ -3102,7 +2641,7 @@ class CLLocationManager extends Struct<CLLocationManager> {
     @required int intervalSeconds,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_Uint64_returns_void(
+    _call_ptr_ptr_ptr_Uint64_returns_void(
       _self,
       _objc.getSelector("startRangingToPeers:intervalSeconds:"),
       arg,
@@ -3114,7 +2653,7 @@ class CLLocationManager extends Struct<CLLocationManager> {
     Pointer<CLLocationManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("startTechStatusUpdates"),
     );
@@ -3124,7 +2663,7 @@ class CLLocationManager extends Struct<CLLocationManager> {
     Pointer<CLLocationManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("startUpdatingHeading"),
     );
@@ -3134,7 +2673,7 @@ class CLLocationManager extends Struct<CLLocationManager> {
     Pointer<CLLocationManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("startUpdatingLocation"),
     );
@@ -3144,7 +2683,7 @@ class CLLocationManager extends Struct<CLLocationManager> {
     Pointer<CLLocationManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("startUpdatingLocationWithPrompt"),
     );
@@ -3154,7 +2693,7 @@ class CLLocationManager extends Struct<CLLocationManager> {
     Pointer<CLLocationManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("startUpdatingVehicleHeading"),
     );
@@ -3164,7 +2703,7 @@ class CLLocationManager extends Struct<CLLocationManager> {
     Pointer<CLLocationManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("startUpdatingVehicleSpeed"),
     );
@@ -3174,7 +2713,7 @@ class CLLocationManager extends Struct<CLLocationManager> {
     Pointer<CLLocationManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("stopAppStatusUpdates"),
     );
@@ -3185,7 +2724,7 @@ class CLLocationManager extends Struct<CLLocationManager> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("stopMonitoringForRegion:"),
       arg,
@@ -3196,7 +2735,7 @@ class CLLocationManager extends Struct<CLLocationManager> {
     Pointer<CLLocationManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("stopMonitoringSignificantLocationChanges"),
     );
@@ -3207,7 +2746,7 @@ class CLLocationManager extends Struct<CLLocationManager> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("stopRangingFromPeers:"),
       arg,
@@ -3219,7 +2758,7 @@ class CLLocationManager extends Struct<CLLocationManager> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("stopRangingToPeers:"),
       arg,
@@ -3230,7 +2769,7 @@ class CLLocationManager extends Struct<CLLocationManager> {
     Pointer<CLLocationManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("stopTechStatusUpdates"),
     );
@@ -3240,7 +2779,7 @@ class CLLocationManager extends Struct<CLLocationManager> {
     Pointer<CLLocationManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("stopUpdatingHeading"),
     );
@@ -3250,7 +2789,7 @@ class CLLocationManager extends Struct<CLLocationManager> {
     Pointer<CLLocationManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("stopUpdatingLocation"),
     );
@@ -3260,7 +2799,7 @@ class CLLocationManager extends Struct<CLLocationManager> {
     Pointer<CLLocationManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("stopUpdatingVehicleHeading"),
     );
@@ -3270,7 +2809,7 @@ class CLLocationManager extends Struct<CLLocationManager> {
     Pointer<CLLocationManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("stopUpdatingVehicleSpeed"),
     );
@@ -3280,7 +2819,7 @@ class CLLocationManager extends Struct<CLLocationManager> {
     Pointer<CLLocationManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("supportInfo"),
     );
@@ -3290,16 +2829,13 @@ class CLLocationManager extends Struct<CLLocationManager> {
     Pointer<CLLocationManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("technologiesInUse"),
     );
   }
 }
 
-/// Automatically generated API. Part of [Core Location](https://developer.apple.com/documentation/corelocation?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class CLLocationManagerInternal extends Struct<CLLocationManagerInternal> {
   factory CLLocationManagerInternal._() {
@@ -3316,7 +2852,7 @@ class CLLocationManagerInternal extends Struct<CLLocationManagerInternal> {
     Pointer<CLLocationManagerInternal> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int32(
+    return _call_ptr_ptr_returns_Int32(
       _self,
       _objc.getSelector("PausesLocationUpdatesAutomatically"),
     );
@@ -3326,7 +2862,7 @@ class CLLocationManagerInternal extends Struct<CLLocationManagerInternal> {
     Pointer<CLLocationManagerInternal> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("cancelLingeringRangingRequest"),
     );
@@ -3336,7 +2872,7 @@ class CLLocationManagerInternal extends Struct<CLLocationManagerInternal> {
     Pointer<CLLocationManagerInternal> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("cancelLocationRequest"),
     );
@@ -3346,7 +2882,7 @@ class CLLocationManagerInternal extends Struct<CLLocationManagerInternal> {
     Pointer<CLLocationManagerInternal> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("cancelRangingRequest"),
     );
@@ -3356,7 +2892,7 @@ class CLLocationManagerInternal extends Struct<CLLocationManagerInternal> {
     Pointer<CLLocationManagerInternal> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("dealloc"),
     );
@@ -3366,7 +2902,7 @@ class CLLocationManagerInternal extends Struct<CLLocationManagerInternal> {
     Pointer<CLLocationManagerInternal> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("hasLingeringRangingRequest"),
     );
@@ -3379,7 +2915,7 @@ class CLLocationManagerInternal extends Struct<CLLocationManagerInternal> {
     @required Pointer bundle,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithInfo:bundleIdentifier:bundle:"),
       arg,
@@ -3392,7 +2928,7 @@ class CLLocationManagerInternal extends Struct<CLLocationManagerInternal> {
     Pointer<CLLocationManagerInternal> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("rangedRegions"),
     );
@@ -3403,7 +2939,7 @@ class CLLocationManagerInternal extends Struct<CLLocationManagerInternal> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int32_returns_void(
+    _call_ptr_ptr_Int32_returns_void(
       _self,
       _objc.getSelector("setPausesLocationUpdatesAutomatically:"),
       arg,
@@ -3414,16 +2950,13 @@ class CLLocationManagerInternal extends Struct<CLLocationManagerInternal> {
     Pointer<CLLocationManagerInternal> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("stopUpdatingLocationAutoPaused"),
     );
   }
 }
 
-/// Automatically generated API. Part of [Core Location](https://developer.apple.com/documentation/corelocation?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class CLLocationManagerRoutine extends Struct<CLLocationManagerRoutine> {
   factory CLLocationManagerRoutine._() {
@@ -3440,7 +2973,7 @@ class CLLocationManagerRoutine extends Struct<CLLocationManagerRoutine> {
     Pointer<CLLocationManagerRoutine> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("dealloc"),
     );
@@ -3450,7 +2983,7 @@ class CLLocationManagerRoutine extends Struct<CLLocationManagerRoutine> {
     Pointer<CLLocationManagerRoutine> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("delegate"),
     );
@@ -3460,7 +2993,7 @@ class CLLocationManagerRoutine extends Struct<CLLocationManagerRoutine> {
     Pointer<CLLocationManagerRoutine> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("init"),
     );
@@ -3470,7 +3003,7 @@ class CLLocationManagerRoutine extends Struct<CLLocationManagerRoutine> {
     Pointer<CLLocationManagerRoutine> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("locationManagerRoutineProxy"),
     );
@@ -3481,7 +3014,7 @@ class CLLocationManagerRoutine extends Struct<CLLocationManagerRoutine> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setDelegate:"),
       arg,
@@ -3493,7 +3026,7 @@ class CLLocationManagerRoutine extends Struct<CLLocationManagerRoutine> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setLocationManagerRoutineProxy:"),
       arg,
@@ -3504,7 +3037,7 @@ class CLLocationManagerRoutine extends Struct<CLLocationManagerRoutine> {
     Pointer<CLLocationManagerRoutine> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("startUpdatingLocation"),
     );
@@ -3514,16 +3047,13 @@ class CLLocationManagerRoutine extends Struct<CLLocationManagerRoutine> {
     Pointer<CLLocationManagerRoutine> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("stopUpdatingLocation"),
     );
   }
 }
 
-/// Automatically generated API. Part of [Core Location](https://developer.apple.com/documentation/corelocation?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class CLLocationManagerStateTracker
     extends Struct<CLLocationManagerStateTracker> {
@@ -3541,7 +3071,7 @@ class CLLocationManagerStateTracker
     Pointer<CLLocationManagerStateTracker> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int64(
+    return _call_ptr_ptr_returns_Int64(
       _self,
       _objc.getSelector("activityType"),
     );
@@ -3551,7 +3081,7 @@ class CLLocationManagerStateTracker
     Pointer<CLLocationManagerStateTracker> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("allowsAlteredAccessoryLocations"),
     );
@@ -3561,7 +3091,7 @@ class CLLocationManagerStateTracker
     Pointer<CLLocationManagerStateTracker> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("allowsBackgroundLocationUpdates"),
     );
@@ -3571,7 +3101,7 @@ class CLLocationManagerStateTracker
     Pointer<CLLocationManagerStateTracker> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("allowsLocationPrompts"),
     );
@@ -3581,7 +3111,7 @@ class CLLocationManagerStateTracker
     Pointer<CLLocationManagerStateTracker> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("allowsMapCorrection"),
     );
@@ -3591,7 +3121,7 @@ class CLLocationManagerStateTracker
     Pointer<CLLocationManagerStateTracker> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("batchingLocation"),
     );
@@ -3601,7 +3131,7 @@ class CLLocationManagerStateTracker
     Pointer<CLLocationManagerStateTracker> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("courtesyPromptNeeded"),
     );
@@ -3611,7 +3141,7 @@ class CLLocationManagerStateTracker
     Pointer<CLLocationManagerStateTracker> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("dealloc"),
     );
@@ -3621,7 +3151,7 @@ class CLLocationManagerStateTracker
     Pointer<CLLocationManagerStateTracker> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_float64(
+    return _call_ptr_ptr_returns_float64(
       _self,
       _objc.getSelector("desiredAccuracy"),
     );
@@ -3631,25 +3161,9 @@ class CLLocationManagerStateTracker
     Pointer<CLLocationManagerStateTracker> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_float64(
+    return _call_ptr_ptr_returns_float64(
       _self,
       _objc.getSelector("distanceFilter"),
-    );
-  }
-
-  static int dumpState(
-    Pointer<CLLocationManagerStateTracker> _self,
-    Pointer arg, {
-    @required int withSize,
-    @required Pointer<Pointer> hints,
-  }) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_Uint64_p_returns_Int8(
-      _self,
-      _objc.getSelector("dumpState:withSize:hints:"),
-      arg,
-      withSize,
-      hints,
     );
   }
 
@@ -3657,7 +3171,7 @@ class CLLocationManagerStateTracker
     Pointer<CLLocationManagerStateTracker> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("dynamicAccuracyReductionEnabled"),
     );
@@ -3667,7 +3181,7 @@ class CLLocationManagerStateTracker
     Pointer<CLLocationManagerStateTracker> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_float64(
+    return _call_ptr_ptr_returns_float64(
       _self,
       _objc.getSelector("headingFilter"),
     );
@@ -3677,20 +3191,20 @@ class CLLocationManagerStateTracker
     Pointer<CLLocationManagerStateTracker> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("identifier"),
     );
   }
 
-  static Pointer initInSilo$withIdentifier$state$(
+  static Pointer initInSilo$withIdentifier$state(
     Pointer<CLLocationManagerStateTracker> _self,
     Pointer arg, {
     @required Pointer withIdentifier,
     @required Pointer state,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initInSilo:withIdentifier:state:"),
       arg,
@@ -3699,13 +3213,13 @@ class CLLocationManagerStateTracker
     );
   }
 
-  static Pointer initInSilo$withIdentifier$(
+  static Pointer initInSilo$withIdentifier(
     Pointer<CLLocationManagerStateTracker> _self,
     Pointer arg, {
     @required Pointer withIdentifier,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initInSilo:withIdentifier:"),
       arg,
@@ -3713,14 +3227,14 @@ class CLLocationManagerStateTracker
     );
   }
 
-  static Pointer initWithQueue$identifier$state$(
+  static Pointer initWithQueue$identifier$state(
     Pointer<CLLocationManagerStateTracker> _self,
     Pointer arg, {
     @required Pointer identifier,
     @required Pointer state,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithQueue:identifier:state:"),
       arg,
@@ -3729,13 +3243,13 @@ class CLLocationManagerStateTracker
     );
   }
 
-  static Pointer initWithQueue$identifier$(
+  static Pointer initWithQueue$identifier(
     Pointer<CLLocationManagerStateTracker> _self,
     Pointer arg, {
     @required Pointer identifier,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithQueue:identifier:"),
       arg,
@@ -3747,7 +3261,7 @@ class CLLocationManagerStateTracker
     Pointer<CLLocationManagerStateTracker> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("matchInfoEnabled"),
     );
@@ -3757,7 +3271,7 @@ class CLLocationManagerStateTracker
     Pointer<CLLocationManagerStateTracker> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("paused"),
     );
@@ -3767,7 +3281,7 @@ class CLLocationManagerStateTracker
     Pointer<CLLocationManagerStateTracker> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int32(
+    return _call_ptr_ptr_returns_Int32(
       _self,
       _objc.getSelector("pausesLocationUpdatesAutomatically"),
     );
@@ -3777,7 +3291,7 @@ class CLLocationManagerStateTracker
     Pointer<CLLocationManagerStateTracker> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("persistentMonitoringEnabled"),
     );
@@ -3787,7 +3301,7 @@ class CLLocationManagerStateTracker
     Pointer<CLLocationManagerStateTracker> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int32(
+    return _call_ptr_ptr_returns_Int32(
       _self,
       _objc.getSelector("previousAuthorizationStatus"),
     );
@@ -3797,7 +3311,7 @@ class CLLocationManagerStateTracker
     Pointer<CLLocationManagerStateTracker> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("previousAuthorizationStatusValid"),
     );
@@ -3807,7 +3321,7 @@ class CLLocationManagerStateTracker
     Pointer<CLLocationManagerStateTracker> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("requestingLocation"),
     );
@@ -3817,7 +3331,7 @@ class CLLocationManagerStateTracker
     Pointer<CLLocationManagerStateTracker> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("requestingRanging"),
     );
@@ -3828,7 +3342,7 @@ class CLLocationManagerStateTracker
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int64_returns_void(
+    _call_ptr_ptr_Int64_returns_void(
       _self,
       _objc.getSelector("setActivityType:"),
       arg,
@@ -3840,7 +3354,7 @@ class CLLocationManagerStateTracker
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setAllowsAlteredAccessoryLocations:"),
       arg,
@@ -3852,7 +3366,7 @@ class CLLocationManagerStateTracker
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setAllowsBackgroundLocationUpdates:"),
       arg,
@@ -3864,7 +3378,7 @@ class CLLocationManagerStateTracker
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setAllowsLocationPrompts:"),
       arg,
@@ -3876,7 +3390,7 @@ class CLLocationManagerStateTracker
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setAllowsMapCorrection:"),
       arg,
@@ -3888,7 +3402,7 @@ class CLLocationManagerStateTracker
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setBatchingLocation:"),
       arg,
@@ -3900,7 +3414,7 @@ class CLLocationManagerStateTracker
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setCourtesyPromptNeeded:"),
       arg,
@@ -3912,7 +3426,7 @@ class CLLocationManagerStateTracker
     double arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_float64_returns_void(
+    _call_ptr_ptr_float64_returns_void(
       _self,
       _objc.getSelector("setDesiredAccuracy:"),
       arg,
@@ -3924,7 +3438,7 @@ class CLLocationManagerStateTracker
     double arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_float64_returns_void(
+    _call_ptr_ptr_float64_returns_void(
       _self,
       _objc.getSelector("setDistanceFilter:"),
       arg,
@@ -3936,7 +3450,7 @@ class CLLocationManagerStateTracker
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setDynamicAccuracyReductionEnabled:"),
       arg,
@@ -3948,7 +3462,7 @@ class CLLocationManagerStateTracker
     double arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_float64_returns_void(
+    _call_ptr_ptr_float64_returns_void(
       _self,
       _objc.getSelector("setHeadingFilter:"),
       arg,
@@ -3960,7 +3474,7 @@ class CLLocationManagerStateTracker
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setMatchInfoEnabled:"),
       arg,
@@ -3972,7 +3486,7 @@ class CLLocationManagerStateTracker
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setPaused:"),
       arg,
@@ -3984,7 +3498,7 @@ class CLLocationManagerStateTracker
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int32_returns_void(
+    _call_ptr_ptr_Int32_returns_void(
       _self,
       _objc.getSelector("setPausesLocationUpdatesAutomatically:"),
       arg,
@@ -3996,7 +3510,7 @@ class CLLocationManagerStateTracker
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setPersistentMonitoringEnabled:"),
       arg,
@@ -4008,7 +3522,7 @@ class CLLocationManagerStateTracker
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int32_returns_void(
+    _call_ptr_ptr_Int32_returns_void(
       _self,
       _objc.getSelector("setPreviousAuthorizationStatus:"),
       arg,
@@ -4020,7 +3534,7 @@ class CLLocationManagerStateTracker
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setPreviousAuthorizationStatusValid:"),
       arg,
@@ -4032,7 +3546,7 @@ class CLLocationManagerStateTracker
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setRequestingLocation:"),
       arg,
@@ -4044,7 +3558,7 @@ class CLLocationManagerStateTracker
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setRequestingRanging:"),
       arg,
@@ -4056,7 +3570,7 @@ class CLLocationManagerStateTracker
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setShowsBackgroundLocationIndicator:"),
       arg,
@@ -4068,7 +3582,7 @@ class CLLocationManagerStateTracker
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setUpdatingHeading:"),
       arg,
@@ -4080,7 +3594,7 @@ class CLLocationManagerStateTracker
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setUpdatingLocation:"),
       arg,
@@ -4092,7 +3606,7 @@ class CLLocationManagerStateTracker
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setUpdatingRanging:"),
       arg,
@@ -4104,7 +3618,7 @@ class CLLocationManagerStateTracker
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setUpdatingVehicleHeading:"),
       arg,
@@ -4116,7 +3630,7 @@ class CLLocationManagerStateTracker
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setUpdatingVehicleSpeed:"),
       arg,
@@ -4127,7 +3641,7 @@ class CLLocationManagerStateTracker
     Pointer<CLLocationManagerStateTracker> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("showsBackgroundLocationIndicator"),
     );
@@ -4138,7 +3652,7 @@ class CLLocationManagerStateTracker
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("updateState:"),
       arg,
@@ -4149,7 +3663,7 @@ class CLLocationManagerStateTracker
     Pointer<CLLocationManagerStateTracker> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("updatingHeading"),
     );
@@ -4159,7 +3673,7 @@ class CLLocationManagerStateTracker
     Pointer<CLLocationManagerStateTracker> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("updatingLocation"),
     );
@@ -4169,7 +3683,7 @@ class CLLocationManagerStateTracker
     Pointer<CLLocationManagerStateTracker> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("updatingRanging"),
     );
@@ -4179,7 +3693,7 @@ class CLLocationManagerStateTracker
     Pointer<CLLocationManagerStateTracker> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("updatingVehicleHeading"),
     );
@@ -4189,16 +3703,13 @@ class CLLocationManagerStateTracker
     Pointer<CLLocationManagerStateTracker> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("updatingVehicleSpeed"),
     );
   }
 }
 
-/// Automatically generated API. Part of [Core Location](https://developer.apple.com/documentation/corelocation?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class CLPlacemark extends Struct<CLPlacemark> {
   factory CLPlacemark._() {
@@ -4213,7 +3724,7 @@ class CLPlacemark extends Struct<CLPlacemark> {
     Pointer<CLPlacemark> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("ISOcountryCode"),
     );
@@ -4223,7 +3734,7 @@ class CLPlacemark extends Struct<CLPlacemark> {
     Pointer<CLPlacemark> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("addressDictionary"),
     );
@@ -4233,7 +3744,7 @@ class CLPlacemark extends Struct<CLPlacemark> {
     Pointer<CLPlacemark> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("administrativeArea"),
     );
@@ -4243,21 +3754,9 @@ class CLPlacemark extends Struct<CLPlacemark> {
     Pointer<CLPlacemark> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("areasOfInterest"),
-    );
-  }
-
-  static Pointer copyWithZone(
-    Pointer<CLPlacemark> _self,
-    Pointer<Pointer> arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
-      _self,
-      _objc.getSelector("copyWithZone:"),
-      arg,
     );
   }
 
@@ -4265,7 +3764,7 @@ class CLPlacemark extends Struct<CLPlacemark> {
     Pointer<CLPlacemark> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("country"),
     );
@@ -4275,7 +3774,7 @@ class CLPlacemark extends Struct<CLPlacemark> {
     Pointer<CLPlacemark> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("dealloc"),
     );
@@ -4285,7 +3784,7 @@ class CLPlacemark extends Struct<CLPlacemark> {
     Pointer<CLPlacemark> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("description"),
     );
@@ -4296,7 +3795,7 @@ class CLPlacemark extends Struct<CLPlacemark> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("encodeWithCoder:"),
       arg,
@@ -4307,7 +3806,7 @@ class CLPlacemark extends Struct<CLPlacemark> {
     Pointer<CLPlacemark> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("formattedAddressLines"),
     );
@@ -4317,7 +3816,7 @@ class CLPlacemark extends Struct<CLPlacemark> {
     Pointer<CLPlacemark> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("fullThoroughfare"),
     );
@@ -4329,7 +3828,7 @@ class CLPlacemark extends Struct<CLPlacemark> {
     @required Pointer addressDictionary,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initIntentPlacemarkWithLocation:addressDictionary:"),
       arg,
@@ -4342,7 +3841,7 @@ class CLPlacemark extends Struct<CLPlacemark> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithCoder:"),
       arg,
@@ -4357,7 +3856,7 @@ class CLPlacemark extends Struct<CLPlacemark> {
     @required Pointer areasOfInterest,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector(
           "initWithLocation:addressDictionary:region:areasOfInterest:"),
@@ -4373,7 +3872,7 @@ class CLPlacemark extends Struct<CLPlacemark> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithPlacemark:"),
       arg,
@@ -4384,7 +3883,7 @@ class CLPlacemark extends Struct<CLPlacemark> {
     Pointer<CLPlacemark> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("inlandWater"),
     );
@@ -4394,7 +3893,7 @@ class CLPlacemark extends Struct<CLPlacemark> {
     Pointer<CLPlacemark> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("locality"),
     );
@@ -4404,7 +3903,7 @@ class CLPlacemark extends Struct<CLPlacemark> {
     Pointer<CLPlacemark> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("location"),
     );
@@ -4414,7 +3913,7 @@ class CLPlacemark extends Struct<CLPlacemark> {
     Pointer<CLPlacemark> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("name"),
     );
@@ -4424,7 +3923,7 @@ class CLPlacemark extends Struct<CLPlacemark> {
     Pointer<CLPlacemark> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("ocean"),
     );
@@ -4434,7 +3933,7 @@ class CLPlacemark extends Struct<CLPlacemark> {
     Pointer<CLPlacemark> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("postalAddress"),
     );
@@ -4444,7 +3943,7 @@ class CLPlacemark extends Struct<CLPlacemark> {
     Pointer<CLPlacemark> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("postalCode"),
     );
@@ -4454,7 +3953,7 @@ class CLPlacemark extends Struct<CLPlacemark> {
     Pointer<CLPlacemark> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("region"),
     );
@@ -4464,7 +3963,7 @@ class CLPlacemark extends Struct<CLPlacemark> {
     Pointer<CLPlacemark> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("subAdministrativeArea"),
     );
@@ -4474,7 +3973,7 @@ class CLPlacemark extends Struct<CLPlacemark> {
     Pointer<CLPlacemark> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("subLocality"),
     );
@@ -4484,7 +3983,7 @@ class CLPlacemark extends Struct<CLPlacemark> {
     Pointer<CLPlacemark> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("subThoroughfare"),
     );
@@ -4494,7 +3993,7 @@ class CLPlacemark extends Struct<CLPlacemark> {
     Pointer<CLPlacemark> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("thoroughfare"),
     );
@@ -4504,16 +4003,13 @@ class CLPlacemark extends Struct<CLPlacemark> {
     Pointer<CLPlacemark> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("timeZone"),
     );
   }
 }
 
-/// Automatically generated API. Part of [Core Location](https://developer.apple.com/documentation/corelocation?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class CLPlacemarkInternal extends Struct<CLPlacemarkInternal> {
   factory CLPlacemarkInternal._() {
@@ -4528,16 +4024,13 @@ class CLPlacemarkInternal extends Struct<CLPlacemarkInternal> {
     Pointer<CLPlacemarkInternal> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("init"),
     );
   }
 }
 
-/// Automatically generated API. Part of [Core Location](https://developer.apple.com/documentation/corelocation?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class CLRegion extends Struct<CLRegion> {
   factory CLRegion._() {
@@ -4548,57 +4041,13 @@ class CLRegion extends Struct<CLRegion> {
     return _objc.allocate("CLRegion").cast<CLRegion>();
   }
 
-  static Pointer center(
-    Pointer<CLRegion> _self,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
-      _self,
-      _objc.getSelector("center"),
-    );
-  }
-
-  static Pointer clientRegion(
-    Pointer<CLRegion> _self,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
-      _self,
-      _objc.getSelector("clientRegion"),
-    );
-  }
-
   static int conservativeEntry(
     Pointer<CLRegion> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("conservativeEntry"),
-    );
-  }
-
-  static int containsCoordinate(
-    Pointer<CLRegion> _self,
-    Pointer arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_Int8(
-      _self,
-      _objc.getSelector("containsCoordinate:"),
-      arg,
-    );
-  }
-
-  static Pointer copyWithZone(
-    Pointer<CLRegion> _self,
-    Pointer<Pointer> arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
-      _self,
-      _objc.getSelector("copyWithZone:"),
-      arg,
     );
   }
 
@@ -4606,7 +4055,7 @@ class CLRegion extends Struct<CLRegion> {
     Pointer<CLRegion> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("dealloc"),
     );
@@ -4616,7 +4065,7 @@ class CLRegion extends Struct<CLRegion> {
     Pointer<CLRegion> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("description"),
     );
@@ -4627,7 +4076,7 @@ class CLRegion extends Struct<CLRegion> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("encodeWithCoder:"),
       arg,
@@ -4638,7 +4087,7 @@ class CLRegion extends Struct<CLRegion> {
     Pointer<CLRegion> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("hash"),
     );
@@ -4648,37 +4097,9 @@ class CLRegion extends Struct<CLRegion> {
     Pointer<CLRegion> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("identifier"),
-    );
-  }
-
-  static Pointer initCircularRegionWithCenter(
-    Pointer<CLRegion> _self,
-    Pointer arg, {
-    @required double radius,
-    @required Pointer identifier,
-  }) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_float64_p_returns_p(
-      _self,
-      _objc.getSelector("initCircularRegionWithCenter:radius:identifier:"),
-      arg,
-      radius,
-      identifier,
-    );
-  }
-
-  static Pointer initWithClientRegion(
-    Pointer<CLRegion> _self,
-    Pointer arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
-      _self,
-      _objc.getSelector("initWithClientRegion:"),
-      arg,
     );
   }
 
@@ -4687,7 +4108,7 @@ class CLRegion extends Struct<CLRegion> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithCoder:"),
       arg,
@@ -4699,7 +4120,7 @@ class CLRegion extends Struct<CLRegion> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithIdentifier:"),
       arg,
@@ -4711,7 +4132,7 @@ class CLRegion extends Struct<CLRegion> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isEqual:"),
       arg,
@@ -4722,7 +4143,7 @@ class CLRegion extends Struct<CLRegion> {
     Pointer<CLRegion> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("notifyOnEntry"),
     );
@@ -4732,7 +4153,7 @@ class CLRegion extends Struct<CLRegion> {
     Pointer<CLRegion> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("notifyOnExit"),
     );
@@ -4742,7 +4163,7 @@ class CLRegion extends Struct<CLRegion> {
     Pointer<CLRegion> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("onBehalfOfBundleId"),
     );
@@ -4752,7 +4173,7 @@ class CLRegion extends Struct<CLRegion> {
     Pointer<CLRegion> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_float64(
+    return _call_ptr_ptr_returns_float64(
       _self,
       _objc.getSelector("radius"),
     );
@@ -4762,7 +4183,7 @@ class CLRegion extends Struct<CLRegion> {
     Pointer<CLRegion> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int32(
+    return _call_ptr_ptr_returns_Int32(
       _self,
       _objc.getSelector("referenceFrame"),
     );
@@ -4773,7 +4194,7 @@ class CLRegion extends Struct<CLRegion> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setConservativeEntry:"),
       arg,
@@ -4785,7 +4206,7 @@ class CLRegion extends Struct<CLRegion> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setNotifyOnEntry:"),
       arg,
@@ -4797,7 +4218,7 @@ class CLRegion extends Struct<CLRegion> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setNotifyOnExit:"),
       arg,
@@ -4809,7 +4230,7 @@ class CLRegion extends Struct<CLRegion> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setOnBehalfOfBundleId:"),
       arg,
@@ -4821,7 +4242,7 @@ class CLRegion extends Struct<CLRegion> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int32_returns_void(
+    _call_ptr_ptr_Int32_returns_void(
       _self,
       _objc.getSelector("setReferenceFrame:"),
       arg,
@@ -4829,9 +4250,6 @@ class CLRegion extends Struct<CLRegion> {
   }
 }
 
-/// Automatically generated API. Part of [Core Location](https://developer.apple.com/documentation/corelocation?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class CLRegionInternal extends Struct<CLRegionInternal> {
   factory CLRegionInternal._() {
@@ -4843,9 +4261,6 @@ class CLRegionInternal extends Struct<CLRegionInternal> {
   }
 }
 
-/// Automatically generated API. Part of [Core Location](https://developer.apple.com/documentation/corelocation?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class CLSimulationManager extends Struct<CLSimulationManager> {
   factory CLSimulationManager._() {
@@ -4861,7 +4276,7 @@ class CLSimulationManager extends Struct<CLSimulationManager> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("appendSimulatedLocation:"),
       arg,
@@ -4872,7 +4287,7 @@ class CLSimulationManager extends Struct<CLSimulationManager> {
     Pointer<CLSimulationManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("availableScenarios"),
     );
@@ -4882,7 +4297,7 @@ class CLSimulationManager extends Struct<CLSimulationManager> {
     Pointer<CLSimulationManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("clearSimulatedCells"),
     );
@@ -4892,7 +4307,7 @@ class CLSimulationManager extends Struct<CLSimulationManager> {
     Pointer<CLSimulationManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("clearSimulatedLocations"),
     );
@@ -4902,7 +4317,7 @@ class CLSimulationManager extends Struct<CLSimulationManager> {
     Pointer<CLSimulationManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("connection"),
     );
@@ -4912,7 +4327,7 @@ class CLSimulationManager extends Struct<CLSimulationManager> {
     Pointer<CLSimulationManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("daemonProxy"),
     );
@@ -4922,7 +4337,7 @@ class CLSimulationManager extends Struct<CLSimulationManager> {
     Pointer<CLSimulationManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("flush"),
     );
@@ -4934,7 +4349,7 @@ class CLSimulationManager extends Struct<CLSimulationManager> {
     @required Pointer withHandler,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("getFencesForBundleID:withHandler:"),
       arg,
@@ -4946,7 +4361,7 @@ class CLSimulationManager extends Struct<CLSimulationManager> {
     Pointer<CLSimulationManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("init"),
     );
@@ -4957,7 +4372,7 @@ class CLSimulationManager extends Struct<CLSimulationManager> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("loadScenarioFromURL:"),
       arg,
@@ -4969,7 +4384,7 @@ class CLSimulationManager extends Struct<CLSimulationManager> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("localizedNameForScenario:"),
       arg,
@@ -4980,7 +4395,7 @@ class CLSimulationManager extends Struct<CLSimulationManager> {
     Pointer<CLSimulationManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint8(
+    return _call_ptr_ptr_returns_Uint8(
       _self,
       _objc.getSelector("locationDeliveryBehavior"),
     );
@@ -4990,7 +4405,7 @@ class CLSimulationManager extends Struct<CLSimulationManager> {
     Pointer<CLSimulationManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_float64(
+    return _call_ptr_ptr_returns_float64(
       _self,
       _objc.getSelector("locationDistance"),
     );
@@ -5000,7 +4415,7 @@ class CLSimulationManager extends Struct<CLSimulationManager> {
     Pointer<CLSimulationManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_float64(
+    return _call_ptr_ptr_returns_float64(
       _self,
       _objc.getSelector("locationInterval"),
     );
@@ -5010,7 +4425,7 @@ class CLSimulationManager extends Struct<CLSimulationManager> {
     Pointer<CLSimulationManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint8(
+    return _call_ptr_ptr_returns_Uint8(
       _self,
       _objc.getSelector("locationRepeatBehavior"),
     );
@@ -5020,7 +4435,7 @@ class CLSimulationManager extends Struct<CLSimulationManager> {
     Pointer<CLSimulationManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_float64(
+    return _call_ptr_ptr_returns_float64(
       _self,
       _objc.getSelector("locationSpeed"),
     );
@@ -5030,7 +4445,7 @@ class CLSimulationManager extends Struct<CLSimulationManager> {
     Pointer<CLSimulationManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("scenariosPath"),
     );
@@ -5041,7 +4456,7 @@ class CLSimulationManager extends Struct<CLSimulationManager> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("selectScenario:"),
       arg,
@@ -5053,7 +4468,7 @@ class CLSimulationManager extends Struct<CLSimulationManager> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setConnection:"),
       arg,
@@ -5065,7 +4480,7 @@ class CLSimulationManager extends Struct<CLSimulationManager> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Uint8_returns_void(
+    _call_ptr_ptr_Uint8_returns_void(
       _self,
       _objc.getSelector("setLocationDeliveryBehavior:"),
       arg,
@@ -5077,7 +4492,7 @@ class CLSimulationManager extends Struct<CLSimulationManager> {
     double arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_float64_returns_void(
+    _call_ptr_ptr_float64_returns_void(
       _self,
       _objc.getSelector("setLocationDistance:"),
       arg,
@@ -5089,7 +4504,7 @@ class CLSimulationManager extends Struct<CLSimulationManager> {
     double arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_float64_returns_void(
+    _call_ptr_ptr_float64_returns_void(
       _self,
       _objc.getSelector("setLocationInterval:"),
       arg,
@@ -5101,7 +4516,7 @@ class CLSimulationManager extends Struct<CLSimulationManager> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Uint8_returns_void(
+    _call_ptr_ptr_Uint8_returns_void(
       _self,
       _objc.getSelector("setLocationRepeatBehavior:"),
       arg,
@@ -5113,7 +4528,7 @@ class CLSimulationManager extends Struct<CLSimulationManager> {
     double arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_float64_returns_void(
+    _call_ptr_ptr_float64_returns_void(
       _self,
       _objc.getSelector("setLocationSpeed:"),
       arg,
@@ -5125,7 +4540,7 @@ class CLSimulationManager extends Struct<CLSimulationManager> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setSimulatedCell:"),
       arg,
@@ -5137,7 +4552,7 @@ class CLSimulationManager extends Struct<CLSimulationManager> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setSimulatedCellRegistrationStatus:"),
       arg,
@@ -5149,7 +4564,7 @@ class CLSimulationManager extends Struct<CLSimulationManager> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setSimulatedWifiPower:"),
       arg,
@@ -5161,7 +4576,7 @@ class CLSimulationManager extends Struct<CLSimulationManager> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setWifiScanResults:"),
       arg,
@@ -5176,7 +4591,7 @@ class CLSimulationManager extends Struct<CLSimulationManager> {
     @required Pointer atLocation,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_Uint8_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_Uint8_ptr_returns_void(
       _self,
       _objc.getSelector(
           "simulateFenceWithBundleID:andFenceID:eventType:atLocation:"),
@@ -5192,7 +4607,7 @@ class CLSimulationManager extends Struct<CLSimulationManager> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("simulateSignificantLocationChange:"),
       arg,
@@ -5204,7 +4619,7 @@ class CLSimulationManager extends Struct<CLSimulationManager> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("simulateVisit:"),
       arg,
@@ -5215,7 +4630,7 @@ class CLSimulationManager extends Struct<CLSimulationManager> {
     Pointer<CLSimulationManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("startCellSimulation"),
     );
@@ -5225,7 +4640,7 @@ class CLSimulationManager extends Struct<CLSimulationManager> {
     Pointer<CLSimulationManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("startLocationSimulation"),
     );
@@ -5235,7 +4650,7 @@ class CLSimulationManager extends Struct<CLSimulationManager> {
     Pointer<CLSimulationManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("startWifiSimulation"),
     );
@@ -5245,7 +4660,7 @@ class CLSimulationManager extends Struct<CLSimulationManager> {
     Pointer<CLSimulationManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("stopCellSimulation"),
     );
@@ -5255,7 +4670,7 @@ class CLSimulationManager extends Struct<CLSimulationManager> {
     Pointer<CLSimulationManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("stopLocationSimulation"),
     );
@@ -5265,16 +4680,13 @@ class CLSimulationManager extends Struct<CLSimulationManager> {
     Pointer<CLSimulationManager> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("stopWifiSimulation"),
     );
   }
 }
 
-/// Automatically generated API. Part of [Core Location](https://developer.apple.com/documentation/corelocation?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class CLStateTracker extends Struct<CLStateTracker> {
   factory CLStateTracker._() {
@@ -5289,25 +4701,9 @@ class CLStateTracker extends Struct<CLStateTracker> {
     Pointer<CLStateTracker> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("dealloc"),
-    );
-  }
-
-  static int dumpState(
-    Pointer<CLStateTracker> _self,
-    Pointer arg, {
-    @required int withSize,
-    @required Pointer<Pointer> hints,
-  }) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_Uint64_p_returns_Int8(
-      _self,
-      _objc.getSelector("dumpState:withSize:hints:"),
-      arg,
-      withSize,
-      hints,
     );
   }
 
@@ -5315,7 +4711,7 @@ class CLStateTracker extends Struct<CLStateTracker> {
     Pointer<CLStateTracker> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("identifier"),
     );
@@ -5326,7 +4722,7 @@ class CLStateTracker extends Struct<CLStateTracker> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithQueue:"),
       arg,
@@ -5334,9 +4730,6 @@ class CLStateTracker extends Struct<CLStateTracker> {
   }
 }
 
-/// Automatically generated API. Part of [Core Location](https://developer.apple.com/documentation/corelocation?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class CLTilesManagerClient extends Struct<CLTilesManagerClient> {
   factory CLTilesManagerClient._() {
@@ -5351,7 +4744,7 @@ class CLTilesManagerClient extends Struct<CLTilesManagerClient> {
     Pointer<CLTilesManagerClient> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("dealloc"),
     );
@@ -5364,7 +4757,7 @@ class CLTilesManagerClient extends Struct<CLTilesManagerClient> {
     @required Pointer responseBlock,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("executeAsynchronousQuery:onQueue:responseBlock:"),
       arg,
@@ -5377,7 +4770,7 @@ class CLTilesManagerClient extends Struct<CLTilesManagerClient> {
     Pointer<CLTilesManagerClient> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("init"),
     );
@@ -5388,7 +4781,7 @@ class CLTilesManagerClient extends Struct<CLTilesManagerClient> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("onNotificationReceived:"),
       arg,
@@ -5402,7 +4795,7 @@ class CLTilesManagerClient extends Struct<CLTilesManagerClient> {
     @required Pointer responseBlock,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("precacheHint:onQueue:responseBlock:"),
       arg,
@@ -5415,7 +4808,7 @@ class CLTilesManagerClient extends Struct<CLTilesManagerClient> {
     Pointer<CLTilesManagerClient> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("reconnect"),
     );
@@ -5428,7 +4821,7 @@ class CLTilesManagerClient extends Struct<CLTilesManagerClient> {
     @required Pointer block,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("registerTo:onQueue:block:"),
       arg,
@@ -5443,7 +4836,7 @@ class CLTilesManagerClient extends Struct<CLTilesManagerClient> {
     @required int isRegister,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_Int8_returns_void(
+    _call_ptr_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("sendNotificationRegistrationMessage:isRegister:"),
       arg,
@@ -5456,7 +4849,7 @@ class CLTilesManagerClient extends Struct<CLTilesManagerClient> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("unregisterFrom:"),
       arg,
@@ -5464,9 +4857,6 @@ class CLTilesManagerClient extends Struct<CLTilesManagerClient> {
   }
 }
 
-/// Automatically generated API. Part of [Core Location](https://developer.apple.com/documentation/corelocation?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class CLTilesManagerClientInternal
     extends Struct<CLTilesManagerClientInternal> {
@@ -5481,157 +4871,145 @@ class CLTilesManagerClientInternal
   }
 }
 
-final _call_objc_p_p_Int32_p_returns_void = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_Int32_p_returns_void_C,
-        _call_objc_p_p_Int32_p_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_Int32_p_returns_void_C = Void Function(
+final _call_ptr_ptr_Int32_ptr_returns_void = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_Int32_ptr_returns_void_C,
+        _call_ptr_ptr_Int32_ptr_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_Int32_ptr_returns_void_C = Void Function(
     Pointer _arg0, Pointer _arg1, Int32 arg, Pointer supportInfo);
-typedef _call_objc_p_p_Int32_p_returns_void_Dart = void Function(
+typedef _call_ptr_ptr_Int32_ptr_returns_void_Dart = void Function(
     Pointer _arg0, Pointer _arg1, int arg, Pointer supportInfo);
 
-final _call_objc_p_p_Int32_returns_void = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_Int32_returns_void_C,
-    _call_objc_p_p_Int32_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_Int32_returns_void_C = Void Function(
+final _call_ptr_ptr_Int32_returns_void = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_Int32_returns_void_C,
+    _call_ptr_ptr_Int32_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_Int32_returns_void_C = Void Function(
     Pointer _arg0, Pointer _arg1, Int32 arg);
-typedef _call_objc_p_p_Int32_returns_void_Dart = void Function(
+typedef _call_ptr_ptr_Int32_returns_void_Dart = void Function(
     Pointer _arg0, Pointer _arg1, int arg);
 
-final _call_objc_p_p_Int64_returns_void = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_Int64_returns_void_C,
-    _call_objc_p_p_Int64_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_Int64_returns_void_C = Void Function(
+final _call_ptr_ptr_Int64_returns_void = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_Int64_returns_void_C,
+    _call_ptr_ptr_Int64_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_Int64_returns_void_C = Void Function(
     Pointer _arg0, Pointer _arg1, Int64 arg);
-typedef _call_objc_p_p_Int64_returns_void_Dart = void Function(
+typedef _call_ptr_ptr_Int64_returns_void_Dart = void Function(
     Pointer _arg0, Pointer _arg1, int arg);
 
-final _call_objc_p_p_Int8_Int32_returns_Uint8 = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_Int8_Int32_returns_Uint8_C,
-        _call_objc_p_p_Int8_Int32_returns_Uint8_Dart>("objc_msgSend");
-typedef _call_objc_p_p_Int8_Int32_returns_Uint8_C = Uint8 Function(
+final _call_ptr_ptr_Int8_Int32_returns_Uint8 = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_Int8_Int32_returns_Uint8_C,
+        _call_ptr_ptr_Int8_Int32_returns_Uint8_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_Int8_Int32_returns_Uint8_C = Uint8 Function(
     Pointer _arg0, Pointer _arg1, Int8 arg, Int32 forEntityClass);
-typedef _call_objc_p_p_Int8_Int32_returns_Uint8_Dart = int Function(
+typedef _call_ptr_ptr_Int8_Int32_returns_Uint8_Dart = int Function(
     Pointer _arg0, Pointer _arg1, int arg, int forEntityClass);
 
-final _call_objc_p_p_Int8_Int8_Int8_returns_p = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_Int8_Int8_Int8_returns_p_C,
-        _call_objc_p_p_Int8_Int8_Int8_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_Int8_Int8_Int8_returns_p_C = Pointer Function(
+final _call_ptr_ptr_Int8_Int8_Int8_returns_ptr = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_Int8_Int8_Int8_returns_ptr_C,
+        _call_ptr_ptr_Int8_Int8_Int8_returns_ptr_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_Int8_Int8_Int8_returns_ptr_C = Pointer Function(
     Pointer _arg0, Pointer _arg1, Int8 arg, Int8 private, Int8 shouldExpand);
-typedef _call_objc_p_p_Int8_Int8_Int8_returns_p_Dart = Pointer Function(
+typedef _call_ptr_ptr_Int8_Int8_Int8_returns_ptr_Dart = Pointer Function(
     Pointer _arg0, Pointer _arg1, int arg, int private, int shouldExpand);
 
-final _call_objc_p_p_Int8_returns_void = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_Int8_returns_void_C,
-    _call_objc_p_p_Int8_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_Int8_returns_void_C = Void Function(
+final _call_ptr_ptr_Int8_returns_void = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_Int8_returns_void_C,
+    _call_ptr_ptr_Int8_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_Int8_returns_void_C = Void Function(
     Pointer _arg0, Pointer _arg1, Int8 arg);
-typedef _call_objc_p_p_Int8_returns_void_Dart = void Function(
+typedef _call_ptr_ptr_Int8_returns_void_Dart = void Function(
     Pointer _arg0, Pointer _arg1, int arg);
 
-final _call_objc_p_p_Uint8_p_p_returns_Uint8 = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_Uint8_p_p_returns_Uint8_C,
-        _call_objc_p_p_Uint8_p_p_returns_Uint8_Dart>("objc_msgSend");
-typedef _call_objc_p_p_Uint8_p_p_returns_Uint8_C = Uint8 Function(Pointer _arg0,
-    Pointer _arg1, Uint8 arg, Pointer forBundleID, Pointer orBundlePath);
-typedef _call_objc_p_p_Uint8_p_p_returns_Uint8_Dart = int Function(
-    Pointer _arg0,
-    Pointer _arg1,
-    int arg,
-    Pointer forBundleID,
-    Pointer orBundlePath);
-
-final _call_objc_p_p_Uint8_returns_void = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_Uint8_returns_void_C,
-    _call_objc_p_p_Uint8_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_Uint8_returns_void_C = Void Function(
+final _call_ptr_ptr_Uint8_returns_void = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_Uint8_returns_void_C,
+    _call_ptr_ptr_Uint8_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_Uint8_returns_void_C = Void Function(
     Pointer _arg0, Pointer _arg1, Uint8 arg);
-typedef _call_objc_p_p_Uint8_returns_void_Dart = void Function(
+typedef _call_ptr_ptr_Uint8_returns_void_Dart = void Function(
     Pointer _arg0, Pointer _arg1, int arg);
 
-final _call_objc_p_p_float64_float64_returns_p = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_float64_float64_returns_p_C,
-        _call_objc_p_p_float64_float64_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_float64_float64_returns_p_C = Pointer Function(
+final _call_ptr_ptr_float64_float64_returns_ptr = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_float64_float64_returns_ptr_C,
+        _call_ptr_ptr_float64_float64_returns_ptr_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_float64_float64_returns_ptr_C = Pointer Function(
     Pointer _arg0, Pointer _arg1, Float arg, Float longitude);
-typedef _call_objc_p_p_float64_float64_returns_p_Dart = Pointer Function(
+typedef _call_ptr_ptr_float64_float64_returns_ptr_Dart = Pointer Function(
     Pointer _arg0, Pointer _arg1, double arg, double longitude);
 
-final _call_objc_p_p_float64_float64_returns_void = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_float64_float64_returns_void_C,
-        _call_objc_p_p_float64_float64_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_float64_float64_returns_void_C = Void Function(
+final _call_ptr_ptr_float64_float64_returns_void = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_float64_float64_returns_void_C,
+        _call_ptr_ptr_float64_float64_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_float64_float64_returns_void_C = Void Function(
     Pointer _arg0, Pointer _arg1, Float arg, Float timeout);
-typedef _call_objc_p_p_float64_float64_returns_void_Dart = void Function(
+typedef _call_ptr_ptr_float64_float64_returns_void_Dart = void Function(
     Pointer _arg0, Pointer _arg1, double arg, double timeout);
 
-final _call_objc_p_p_float64_returns_p = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_float64_returns_p_C,
-    _call_objc_p_p_float64_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_float64_returns_p_C = Pointer Function(
+final _call_ptr_ptr_float64_returns_ptr = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_float64_returns_ptr_C,
+    _call_ptr_ptr_float64_returns_ptr_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_float64_returns_ptr_C = Pointer Function(
     Pointer _arg0, Pointer _arg1, Float arg);
-typedef _call_objc_p_p_float64_returns_p_Dart = Pointer Function(
+typedef _call_ptr_ptr_float64_returns_ptr_Dart = Pointer Function(
     Pointer _arg0, Pointer _arg1, double arg);
 
-final _call_objc_p_p_float64_returns_void = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_float64_returns_void_C,
-        _call_objc_p_p_float64_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_float64_returns_void_C = Void Function(
+final _call_ptr_ptr_float64_returns_void = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_float64_returns_void_C,
+    _call_ptr_ptr_float64_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_float64_returns_void_C = Void Function(
     Pointer _arg0, Pointer _arg1, Float arg);
-typedef _call_objc_p_p_float64_returns_void_Dart = void Function(
+typedef _call_ptr_ptr_float64_returns_void_Dart = void Function(
     Pointer _arg0, Pointer _arg1, double arg);
 
-final _call_objc_p_p_p_Int32_returns_Uint8 = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_p_Int32_returns_Uint8_C,
-        _call_objc_p_p_p_Int32_returns_Uint8_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_Int32_returns_Uint8_C = Uint8 Function(
+final _call_ptr_ptr_ptr_Int32_returns_Uint8 = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_Int32_returns_Uint8_C,
+        _call_ptr_ptr_ptr_Int32_returns_Uint8_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_Int32_returns_Uint8_C = Uint8 Function(
     Pointer _arg0, Pointer _arg1, Pointer arg, Int32 forEntityClass);
-typedef _call_objc_p_p_p_Int32_returns_Uint8_Dart = int Function(
+typedef _call_ptr_ptr_ptr_Int32_returns_Uint8_Dart = int Function(
     Pointer _arg0, Pointer _arg1, Pointer arg, int forEntityClass);
 
-final _call_objc_p_p_p_Int32_returns_void = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_p_Int32_returns_void_C,
-        _call_objc_p_p_p_Int32_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_Int32_returns_void_C = Void Function(
+final _call_ptr_ptr_ptr_Int32_returns_void = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_Int32_returns_void_C,
+        _call_ptr_ptr_ptr_Int32_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_Int32_returns_void_C = Void Function(
     Pointer _arg0, Pointer _arg1, Pointer arg, Int32 count);
-typedef _call_objc_p_p_p_Int32_returns_void_Dart = void Function(
+typedef _call_ptr_ptr_ptr_Int32_returns_void_Dart = void Function(
     Pointer _arg0, Pointer _arg1, Pointer arg, int count);
 
-final _call_objc_p_p_p_Int8_p_returns_void = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_p_Int8_p_returns_void_C,
-        _call_objc_p_p_p_Int8_p_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_Int8_p_returns_void_C = Void Function(
+final _call_ptr_ptr_ptr_Int8_ptr_returns_void = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_Int8_ptr_returns_void_C,
+        _call_ptr_ptr_ptr_Int8_ptr_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_Int8_ptr_returns_void_C = Void Function(
     Pointer _arg0,
     Pointer _arg1,
     Pointer arg,
     Int8 localResultsOnly,
     Pointer completionHandler);
-typedef _call_objc_p_p_p_Int8_p_returns_void_Dart = void Function(
+typedef _call_ptr_ptr_ptr_Int8_ptr_returns_void_Dart = void Function(
     Pointer _arg0,
     Pointer _arg1,
     Pointer arg,
     int localResultsOnly,
     Pointer completionHandler);
 
-final _call_objc_p_p_p_Int8_returns_void = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_p_Int8_returns_void_C,
-    _call_objc_p_p_p_Int8_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_Int8_returns_void_C = Void Function(
+final _call_ptr_ptr_ptr_Int8_returns_void = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_Int8_returns_void_C,
+        _call_ptr_ptr_ptr_Int8_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_Int8_returns_void_C = Void Function(
     Pointer _arg0, Pointer _arg1, Pointer arg, Int8 isRegister);
-typedef _call_objc_p_p_p_Int8_returns_void_Dart = void Function(
+typedef _call_ptr_ptr_ptr_Int8_returns_void_Dart = void Function(
     Pointer _arg0, Pointer _arg1, Pointer arg, int isRegister);
 
-final _call_objc_p_p_p_Uint16_Uint16_p_returns_p = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_p_Uint16_Uint16_p_returns_p_C,
-        _call_objc_p_p_p_Uint16_Uint16_p_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_Uint16_Uint16_p_returns_p_C = Pointer Function(
+final _call_ptr_ptr_ptr_Uint16_Uint16_ptr_returns_ptr = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_Uint16_Uint16_ptr_returns_ptr_C,
+        _call_ptr_ptr_ptr_Uint16_Uint16_ptr_returns_ptr_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_Uint16_Uint16_ptr_returns_ptr_C = Pointer Function(
     Pointer _arg0,
     Pointer _arg1,
     Pointer arg,
     Uint16 major,
     Uint16 minor,
     Pointer identifier);
-typedef _call_objc_p_p_p_Uint16_Uint16_p_returns_p_Dart = Pointer Function(
+typedef _call_ptr_ptr_ptr_Uint16_Uint16_ptr_returns_ptr_Dart = Pointer Function(
     Pointer _arg0,
     Pointer _arg1,
     Pointer arg,
@@ -5639,41 +5017,37 @@ typedef _call_objc_p_p_p_Uint16_Uint16_p_returns_p_Dart = Pointer Function(
     int minor,
     Pointer identifier);
 
-final _call_objc_p_p_p_Uint16_p_returns_p = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_p_Uint16_p_returns_p_C,
-        _call_objc_p_p_p_Uint16_p_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_Uint16_p_returns_p_C = Pointer Function(Pointer _arg0,
-    Pointer _arg1, Pointer arg, Uint16 major, Pointer identifier);
-typedef _call_objc_p_p_p_Uint16_p_returns_p_Dart = Pointer Function(
+final _call_ptr_ptr_ptr_Uint16_ptr_returns_ptr = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_Uint16_ptr_returns_ptr_C,
+        _call_ptr_ptr_ptr_Uint16_ptr_returns_ptr_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_Uint16_ptr_returns_ptr_C = Pointer Function(
+    Pointer _arg0,
+    Pointer _arg1,
+    Pointer arg,
+    Uint16 major,
+    Pointer identifier);
+typedef _call_ptr_ptr_ptr_Uint16_ptr_returns_ptr_Dart = Pointer Function(
     Pointer _arg0, Pointer _arg1, Pointer arg, int major, Pointer identifier);
 
-final _call_objc_p_p_p_Uint64_p_returns_Int8 = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_p_Uint64_p_returns_Int8_C,
-        _call_objc_p_p_p_Uint64_p_returns_Int8_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_Uint64_p_returns_Int8_C = Int8 Function(
-    Pointer _arg0, Pointer _arg1, Pointer arg, Uint64 withSize, Pointer hints);
-typedef _call_objc_p_p_p_Uint64_p_returns_Int8_Dart = int Function(
-    Pointer _arg0, Pointer _arg1, Pointer arg, int withSize, Pointer hints);
-
-final _call_objc_p_p_p_Uint64_returns_void = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_p_Uint64_returns_void_C,
-        _call_objc_p_p_p_Uint64_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_Uint64_returns_void_C = Void Function(
+final _call_ptr_ptr_ptr_Uint64_returns_void = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_Uint64_returns_void_C,
+        _call_ptr_ptr_ptr_Uint64_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_Uint64_returns_void_C = Void Function(
     Pointer _arg0, Pointer _arg1, Pointer arg, Uint64 intervalSeconds);
-typedef _call_objc_p_p_p_Uint64_returns_void_Dart = void Function(
+typedef _call_ptr_ptr_ptr_Uint64_returns_void_Dart = void Function(
     Pointer _arg0, Pointer _arg1, Pointer arg, int intervalSeconds);
 
-final _call_objc_p_p_p_float64_Int8_p_returns_void = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_p_float64_Int8_p_returns_void_C,
-        _call_objc_p_p_p_float64_Int8_p_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_float64_Int8_p_returns_void_C = Void Function(
+final _call_ptr_ptr_ptr_float64_Int8_ptr_returns_void = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_float64_Int8_ptr_returns_void_C,
+        _call_ptr_ptr_ptr_float64_Int8_ptr_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_float64_Int8_ptr_returns_void_C = Void Function(
     Pointer _arg0,
     Pointer _arg1,
     Pointer arg,
     Float heading,
     Int8 localResultsOnly,
     Pointer completionHandler);
-typedef _call_objc_p_p_p_float64_Int8_p_returns_void_Dart = void Function(
+typedef _call_ptr_ptr_ptr_float64_Int8_ptr_returns_void_Dart = void Function(
     Pointer _arg0,
     Pointer _arg1,
     Pointer arg,
@@ -5681,121 +5055,41 @@ typedef _call_objc_p_p_p_float64_Int8_p_returns_void_Dart = void Function(
     int localResultsOnly,
     Pointer completionHandler);
 
-final _call_objc_p_p_p_float64_float64_float64_float64_float64_p_returns_p =
-    _objc.dlForObjectiveC.lookupFunction<
-            _call_objc_p_p_p_float64_float64_float64_float64_float64_p_returns_p_C,
-            _call_objc_p_p_p_float64_float64_float64_float64_float64_p_returns_p_Dart>(
-        "objc_msgSend");
-typedef _call_objc_p_p_p_float64_float64_float64_float64_float64_p_returns_p_C
-    = Pointer Function(
-        Pointer _arg0,
-        Pointer _arg1,
-        Pointer arg,
-        Float altitude,
-        Float horizontalAccuracy,
-        Float verticalAccuracy,
-        Float course,
-        Float speed,
-        Pointer timestamp);
-typedef _call_objc_p_p_p_float64_float64_float64_float64_float64_p_returns_p_Dart
-    = Pointer Function(
-        Pointer _arg0,
-        Pointer _arg1,
-        Pointer arg,
-        double altitude,
-        double horizontalAccuracy,
-        double verticalAccuracy,
-        double course,
-        double speed,
-        Pointer timestamp);
-
-final _call_objc_p_p_p_float64_float64_float64_p_returns_p =
-    _objc.dlForObjectiveC.lookupFunction<
-            _call_objc_p_p_p_float64_float64_float64_p_returns_p_C,
-            _call_objc_p_p_p_float64_float64_float64_p_returns_p_Dart>(
-        "objc_msgSend");
-typedef _call_objc_p_p_p_float64_float64_float64_p_returns_p_C
-    = Pointer Function(
-        Pointer _arg0,
-        Pointer _arg1,
-        Pointer arg,
-        Float altitude,
-        Float horizontalAccuracy,
-        Float verticalAccuracy,
-        Pointer timestamp);
-typedef _call_objc_p_p_p_float64_float64_float64_p_returns_p_Dart
-    = Pointer Function(
-        Pointer _arg0,
-        Pointer _arg1,
-        Pointer arg,
-        double altitude,
-        double horizontalAccuracy,
-        double verticalAccuracy,
-        Pointer timestamp);
-
-final _call_objc_p_p_p_float64_p_returns_p = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_p_float64_p_returns_p_C,
-        _call_objc_p_p_p_float64_p_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_float64_p_returns_p_C = Pointer Function(Pointer _arg0,
-    Pointer _arg1, Pointer arg, Float radius, Pointer identifier);
-typedef _call_objc_p_p_p_float64_p_returns_p_Dart = Pointer Function(
+final _call_ptr_ptr_ptr_float64_ptr_returns_void = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_float64_ptr_returns_void_C,
+        _call_ptr_ptr_ptr_float64_ptr_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_float64_ptr_returns_void_C = Void Function(
     Pointer _arg0,
     Pointer _arg1,
     Pointer arg,
-    double radius,
-    Pointer identifier);
-
-final _call_objc_p_p_p_float64_p_returns_void = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_p_float64_p_returns_void_C,
-        _call_objc_p_p_p_float64_p_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_float64_p_returns_void_C = Void Function(Pointer _arg0,
-    Pointer _arg1, Pointer arg, Float heading, Pointer completionHandler);
-typedef _call_objc_p_p_p_float64_p_returns_void_Dart = void Function(
+    Float heading,
+    Pointer completionHandler);
+typedef _call_ptr_ptr_ptr_float64_ptr_returns_void_Dart = void Function(
     Pointer _arg0,
     Pointer _arg1,
     Pointer arg,
     double heading,
     Pointer completionHandler);
 
-final _call_objc_p_p_p_float64_returns_void = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_p_float64_returns_void_C,
-        _call_objc_p_p_p_float64_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_float64_returns_void_C = Void Function(
+final _call_ptr_ptr_ptr_float64_returns_void = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_float64_returns_void_C,
+        _call_ptr_ptr_ptr_float64_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_float64_returns_void_C = Void Function(
     Pointer _arg0, Pointer _arg1, Pointer arg, Float desiredAccuracy);
-typedef _call_objc_p_p_p_float64_returns_void_Dart = void Function(
+typedef _call_ptr_ptr_ptr_float64_returns_void_Dart = void Function(
     Pointer _arg0, Pointer _arg1, Pointer arg, double desiredAccuracy);
 
-final _call_objc_p_p_p_p_Uint8_Uint8_p_returns_Uint8 = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_p_p_Uint8_Uint8_p_returns_Uint8_C,
-        _call_objc_p_p_p_p_Uint8_Uint8_p_returns_Uint8_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_p_Uint8_Uint8_p_returns_Uint8_C = Uint8 Function(
-    Pointer _arg0,
-    Pointer _arg1,
-    Pointer arg,
-    Pointer orBundlePath,
-    Uint8 dynamicAccuracyReductionEnabled,
-    Uint8 allowsAlteredAccessoryLocations,
-    Pointer location);
-typedef _call_objc_p_p_p_p_Uint8_Uint8_p_returns_Uint8_Dart = int Function(
-    Pointer _arg0,
-    Pointer _arg1,
-    Pointer arg,
-    Pointer orBundlePath,
-    int dynamicAccuracyReductionEnabled,
-    int allowsAlteredAccessoryLocations,
-    Pointer location);
-
-final _call_objc_p_p_p_p_Uint8_p_returns_void = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_p_p_Uint8_p_returns_void_C,
-        _call_objc_p_p_p_p_Uint8_p_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_p_Uint8_p_returns_void_C = Void Function(
+final _call_ptr_ptr_ptr_ptr_Uint8_ptr_returns_void = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_ptr_Uint8_ptr_returns_void_C,
+        _call_ptr_ptr_ptr_ptr_Uint8_ptr_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_ptr_Uint8_ptr_returns_void_C = Void Function(
     Pointer _arg0,
     Pointer _arg1,
     Pointer arg,
     Pointer andFenceID,
     Uint8 eventType,
     Pointer atLocation);
-typedef _call_objc_p_p_p_p_Uint8_p_returns_void_Dart = void Function(
+typedef _call_ptr_ptr_ptr_ptr_Uint8_ptr_returns_void_Dart = void Function(
     Pointer _arg0,
     Pointer _arg1,
     Pointer arg,
@@ -5803,10 +5097,12 @@ typedef _call_objc_p_p_p_p_Uint8_p_returns_void_Dart = void Function(
     int eventType,
     Pointer atLocation);
 
-final _call_objc_p_p_p_p_float64_Int8_p_returns_void = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_p_p_float64_Int8_p_returns_void_C,
-        _call_objc_p_p_p_p_float64_Int8_p_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_p_float64_Int8_p_returns_void_C = Void Function(
+final _call_ptr_ptr_ptr_ptr_float64_Int8_ptr_returns_void =
+    _objc.dlForObjectiveC.lookupFunction<
+            _call_ptr_ptr_ptr_ptr_float64_Int8_ptr_returns_void_C,
+            _call_ptr_ptr_ptr_ptr_float64_Int8_ptr_returns_void_Dart>(
+        "objc_msgSend");
+typedef _call_ptr_ptr_ptr_ptr_float64_Int8_ptr_returns_void_C = Void Function(
     Pointer _arg0,
     Pointer _arg1,
     Pointer arg,
@@ -5814,83 +5110,39 @@ typedef _call_objc_p_p_p_p_float64_Int8_p_returns_void_C = Void Function(
     Float heading,
     Int8 localResultsOnly,
     Pointer completionHandler);
-typedef _call_objc_p_p_p_p_float64_Int8_p_returns_void_Dart = void Function(
-    Pointer _arg0,
-    Pointer _arg1,
-    Pointer arg,
-    Pointer preferredLocale,
-    double heading,
-    int localResultsOnly,
-    Pointer completionHandler);
+typedef _call_ptr_ptr_ptr_ptr_float64_Int8_ptr_returns_void_Dart
+    = void Function(
+        Pointer _arg0,
+        Pointer _arg1,
+        Pointer arg,
+        Pointer preferredLocale,
+        double heading,
+        int localResultsOnly,
+        Pointer completionHandler);
 
-final _call_objc_p_p_p_p_float64_float64_float64_float64_float64_float64_float64_float64_float64_Int32_Int32_returns_p =
+final _call_ptr_ptr_ptr_ptr_ptr_Int64_float64_Int64_returns_ptr =
     _objc.dlForObjectiveC.lookupFunction<
-            _call_objc_p_p_p_p_float64_float64_float64_float64_float64_float64_float64_float64_float64_Int32_Int32_returns_p_C,
-            _call_objc_p_p_p_p_float64_float64_float64_float64_float64_float64_float64_float64_float64_Int32_Int32_returns_p_Dart>(
+            _call_ptr_ptr_ptr_ptr_ptr_Int64_float64_Int64_returns_ptr_C,
+            _call_ptr_ptr_ptr_ptr_ptr_Int64_float64_Int64_returns_ptr_Dart>(
         "objc_msgSend");
-typedef _call_objc_p_p_p_p_float64_float64_float64_float64_float64_float64_float64_float64_float64_Int32_Int32_returns_p_C
-    = Pointer Function(
-        Pointer _arg0,
-        Pointer _arg1,
-        Pointer arg,
-        Pointer rawCoordinate,
-        Float course,
-        Float rawCourse,
-        Float courseAccuracy,
-        Float speed,
-        Float speedAccuracy,
-        Float altitude,
-        Float timestamp,
-        Float horizontalAccuracy,
-        Float verticalAccuracy,
-        Int32 type,
-        Int32 referenceFrame);
-typedef _call_objc_p_p_p_p_float64_float64_float64_float64_float64_float64_float64_float64_float64_Int32_Int32_returns_p_Dart
-    = Pointer Function(
-        Pointer _arg0,
-        Pointer _arg1,
-        Pointer arg,
-        Pointer rawCoordinate,
-        double course,
-        double rawCourse,
-        double courseAccuracy,
-        double speed,
-        double speedAccuracy,
-        double altitude,
-        double timestamp,
-        double horizontalAccuracy,
-        double verticalAccuracy,
-        int type,
-        int referenceFrame);
-
-final _call_objc_p_p_p_p_p_Int64_float64_Int64_returns_p = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_p_p_p_Int64_float64_Int64_returns_p_C,
-            _call_objc_p_p_p_p_p_Int64_float64_Int64_returns_p_Dart>(
-        "objc_msgSend");
-typedef _call_objc_p_p_p_p_p_Int64_float64_Int64_returns_p_C = Pointer Function(
-    Pointer _arg0,
-    Pointer _arg1,
-    Pointer arg,
-    Pointer major,
-    Pointer minor,
-    Int64 proximity,
-    Float accuracy,
-    Int64 rssi);
-typedef _call_objc_p_p_p_p_p_Int64_float64_Int64_returns_p_Dart
+typedef _call_ptr_ptr_ptr_ptr_ptr_Int64_float64_Int64_returns_ptr_C
+    = Pointer Function(Pointer _arg0, Pointer _arg1, Pointer arg, Pointer major,
+        Pointer minor, Int64 proximity, Float accuracy, Int64 rssi);
+typedef _call_ptr_ptr_ptr_ptr_ptr_Int64_float64_Int64_returns_ptr_Dart
     = Pointer Function(Pointer _arg0, Pointer _arg1, Pointer arg, Pointer major,
         Pointer minor, int proximity, double accuracy, int rssi);
 
-final _call_objc_p_p_p_p_p_Int8_returns_void = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_p_p_p_Int8_returns_void_C,
-        _call_objc_p_p_p_p_p_Int8_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_p_p_Int8_returns_void_C = Void Function(
+final _call_ptr_ptr_ptr_ptr_ptr_Int8_returns_void = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_ptr_ptr_Int8_returns_void_C,
+        _call_ptr_ptr_ptr_ptr_ptr_Int8_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_ptr_ptr_Int8_returns_void_C = Void Function(
     Pointer _arg0,
     Pointer _arg1,
     Pointer arg,
     Pointer major,
     Pointer minor,
     Int8 notifyOnDisplay);
-typedef _call_objc_p_p_p_p_p_Int8_returns_void_Dart = void Function(
+typedef _call_ptr_ptr_ptr_ptr_ptr_Int8_returns_void_Dart = void Function(
     Pointer _arg0,
     Pointer _arg1,
     Pointer arg,
@@ -5898,35 +5150,17 @@ typedef _call_objc_p_p_p_p_p_Int8_returns_void_Dart = void Function(
     Pointer minor,
     int notifyOnDisplay);
 
-final _call_objc_p_p_p_p_p_Uint64_returns_Uint8 = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_p_p_p_Uint64_returns_Uint8_C,
-        _call_objc_p_p_p_p_p_Uint64_returns_Uint8_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_p_p_Uint64_returns_Uint8_C = Uint8 Function(
-    Pointer _arg0,
-    Pointer _arg1,
-    Pointer arg,
-    Pointer forBundleID,
-    Pointer orBundlePath,
-    Uint64 serviceMask);
-typedef _call_objc_p_p_p_p_p_Uint64_returns_Uint8_Dart = int Function(
-    Pointer _arg0,
-    Pointer _arg1,
-    Pointer arg,
-    Pointer forBundleID,
-    Pointer orBundlePath,
-    int serviceMask);
-
-final _call_objc_p_p_p_p_p_p_returns_p = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_p_p_p_p_returns_p_C,
-    _call_objc_p_p_p_p_p_p_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_p_p_p_returns_p_C = Pointer Function(
+final _call_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr_C,
+        _call_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr_C = Pointer Function(
     Pointer _arg0,
     Pointer _arg1,
     Pointer arg,
     Pointer addressDictionary,
     Pointer region,
     Pointer areasOfInterest);
-typedef _call_objc_p_p_p_p_p_p_returns_p_Dart = Pointer Function(
+typedef _call_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr_Dart = Pointer Function(
     Pointer _arg0,
     Pointer _arg1,
     Pointer arg,
@@ -5934,17 +5168,17 @@ typedef _call_objc_p_p_p_p_p_p_returns_p_Dart = Pointer Function(
     Pointer region,
     Pointer areasOfInterest);
 
-final _call_objc_p_p_p_p_p_p_returns_void = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_p_p_p_p_returns_void_C,
-        _call_objc_p_p_p_p_p_p_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_p_p_p_returns_void_C = Void Function(
+final _call_ptr_ptr_ptr_ptr_ptr_ptr_returns_void = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_ptr_ptr_ptr_returns_void_C,
+        _call_ptr_ptr_ptr_ptr_ptr_ptr_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_ptr_ptr_ptr_returns_void_C = Void Function(
     Pointer _arg0,
     Pointer _arg1,
     Pointer arg,
     Pointer inRegion,
     Pointer preferredLocale,
     Pointer completionHandler);
-typedef _call_objc_p_p_p_p_p_p_returns_void_Dart = void Function(
+typedef _call_ptr_ptr_ptr_ptr_ptr_ptr_returns_void_Dart = void Function(
     Pointer _arg0,
     Pointer _arg1,
     Pointer arg,
@@ -5952,170 +5186,170 @@ typedef _call_objc_p_p_p_p_p_p_returns_void_Dart = void Function(
     Pointer preferredLocale,
     Pointer completionHandler);
 
-final _call_objc_p_p_p_p_p_returns_Int8 = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_p_p_p_returns_Int8_C,
-    _call_objc_p_p_p_p_p_returns_Int8_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_p_p_returns_Int8_C = Int8 Function(
+final _call_ptr_ptr_ptr_ptr_ptr_returns_Int8 = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_ptr_ptr_returns_Int8_C,
+        _call_ptr_ptr_ptr_ptr_ptr_returns_Int8_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_ptr_ptr_returns_Int8_C = Int8 Function(
     Pointer _arg0, Pointer _arg1, Pointer arg, Pointer onQueue, Pointer block);
-typedef _call_objc_p_p_p_p_p_returns_Int8_Dart = int Function(
+typedef _call_ptr_ptr_ptr_ptr_ptr_returns_Int8_Dart = int Function(
     Pointer _arg0, Pointer _arg1, Pointer arg, Pointer onQueue, Pointer block);
 
-final _call_objc_p_p_p_p_p_returns_Uint8 = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_p_p_p_returns_Uint8_C,
-    _call_objc_p_p_p_p_p_returns_Uint8_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_p_p_returns_Uint8_C = Uint8 Function(Pointer _arg0,
-    Pointer _arg1, Pointer arg, Pointer forBundleID, Pointer orBundlePath);
-typedef _call_objc_p_p_p_p_p_returns_Uint8_Dart = int Function(Pointer _arg0,
-    Pointer _arg1, Pointer arg, Pointer forBundleID, Pointer orBundlePath);
+final _call_ptr_ptr_ptr_ptr_ptr_returns_ptr = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_ptr_ptr_returns_ptr_C,
+        _call_ptr_ptr_ptr_ptr_ptr_returns_ptr_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_ptr_ptr_returns_ptr_C = Pointer Function(
+    Pointer _arg0,
+    Pointer _arg1,
+    Pointer arg,
+    Pointer identifier,
+    Pointer state);
+typedef _call_ptr_ptr_ptr_ptr_ptr_returns_ptr_Dart = Pointer Function(
+    Pointer _arg0,
+    Pointer _arg1,
+    Pointer arg,
+    Pointer identifier,
+    Pointer state);
 
-final _call_objc_p_p_p_p_p_returns_p = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_p_p_p_returns_p_C,
-    _call_objc_p_p_p_p_p_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_p_p_returns_p_C = Pointer Function(Pointer _arg0,
-    Pointer _arg1, Pointer arg, Pointer identifier, Pointer state);
-typedef _call_objc_p_p_p_p_p_returns_p_Dart = Pointer Function(Pointer _arg0,
-    Pointer _arg1, Pointer arg, Pointer identifier, Pointer state);
-
-final _call_objc_p_p_p_p_p_returns_void = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_p_p_p_returns_void_C,
-    _call_objc_p_p_p_p_p_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_p_p_returns_void_C = Void Function(
+final _call_ptr_ptr_ptr_ptr_ptr_returns_void = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_ptr_ptr_returns_void_C,
+        _call_ptr_ptr_ptr_ptr_ptr_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_ptr_ptr_returns_void_C = Void Function(
     Pointer _arg0,
     Pointer _arg1,
     Pointer arg,
     Pointer preferredLocale,
     Pointer completionHandler);
-typedef _call_objc_p_p_p_p_p_returns_void_Dart = void Function(
+typedef _call_ptr_ptr_ptr_ptr_ptr_returns_void_Dart = void Function(
     Pointer _arg0,
     Pointer _arg1,
     Pointer arg,
     Pointer preferredLocale,
     Pointer completionHandler);
 
-final _call_objc_p_p_p_p_returns_p = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_p_p_returns_p_C,
-    _call_objc_p_p_p_p_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_p_returns_p_C = Pointer Function(
+final _call_ptr_ptr_ptr_ptr_returns_ptr = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_ptr_ptr_returns_ptr_C,
+    _call_ptr_ptr_ptr_ptr_returns_ptr_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_ptr_returns_ptr_C = Pointer Function(
     Pointer _arg0, Pointer _arg1, Pointer arg, Pointer addressDictionary);
-typedef _call_objc_p_p_p_p_returns_p_Dart = Pointer Function(
+typedef _call_ptr_ptr_ptr_ptr_returns_ptr_Dart = Pointer Function(
     Pointer _arg0, Pointer _arg1, Pointer arg, Pointer addressDictionary);
 
-final _call_objc_p_p_p_p_returns_void = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_p_p_returns_void_C,
-    _call_objc_p_p_p_p_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_p_returns_void_C = Void Function(
+final _call_ptr_ptr_ptr_ptr_returns_void = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_ptr_ptr_returns_void_C,
+    _call_ptr_ptr_ptr_ptr_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_ptr_returns_void_C = Void Function(
     Pointer _arg0, Pointer _arg1, Pointer arg, Pointer withHandler);
-typedef _call_objc_p_p_p_p_returns_void_Dart = void Function(
+typedef _call_ptr_ptr_ptr_ptr_returns_void_Dart = void Function(
     Pointer _arg0, Pointer _arg1, Pointer arg, Pointer withHandler);
 
-final _call_objc_p_p_p_returns_Int8 = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_p_returns_Int8_C,
-    _call_objc_p_p_p_returns_Int8_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_returns_Int8_C = Int8 Function(
+final _call_ptr_ptr_ptr_returns_Int8 = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_ptr_returns_Int8_C,
+    _call_ptr_ptr_ptr_returns_Int8_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_returns_Int8_C = Int8 Function(
     Pointer _arg0, Pointer _arg1, Pointer arg);
-typedef _call_objc_p_p_p_returns_Int8_Dart = int Function(
-    Pointer _arg0, Pointer _arg1, Pointer arg);
-
-final _call_objc_p_p_p_returns_Uint8 = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_p_returns_Uint8_C,
-    _call_objc_p_p_p_returns_Uint8_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_returns_Uint8_C = Uint8 Function(
-    Pointer _arg0, Pointer _arg1, Pointer arg);
-typedef _call_objc_p_p_p_returns_Uint8_Dart = int Function(
+typedef _call_ptr_ptr_ptr_returns_Int8_Dart = int Function(
     Pointer _arg0, Pointer _arg1, Pointer arg);
 
-final _call_objc_p_p_p_returns_float64 = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_p_returns_float64_C,
-    _call_objc_p_p_p_returns_float64_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_returns_float64_C = Float Function(
+final _call_ptr_ptr_ptr_returns_Uint8 = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_ptr_returns_Uint8_C,
+    _call_ptr_ptr_ptr_returns_Uint8_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_returns_Uint8_C = Uint8 Function(
     Pointer _arg0, Pointer _arg1, Pointer arg);
-typedef _call_objc_p_p_p_returns_float64_Dart = double Function(
-    Pointer _arg0, Pointer _arg1, Pointer arg);
-
-final _call_objc_p_p_p_returns_p = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_p_returns_p_C,
-    _call_objc_p_p_p_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_returns_p_C = Pointer Function(
-    Pointer _arg0, Pointer _arg1, Pointer arg);
-typedef _call_objc_p_p_p_returns_p_Dart = Pointer Function(
+typedef _call_ptr_ptr_ptr_returns_Uint8_Dart = int Function(
     Pointer _arg0, Pointer _arg1, Pointer arg);
 
-final _call_objc_p_p_p_returns_void = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_p_returns_void_C,
-    _call_objc_p_p_p_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_returns_void_C = Void Function(
+final _call_ptr_ptr_ptr_returns_float64 = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_ptr_returns_float64_C,
+    _call_ptr_ptr_ptr_returns_float64_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_returns_float64_C = Float Function(
     Pointer _arg0, Pointer _arg1, Pointer arg);
-typedef _call_objc_p_p_p_returns_void_Dart = void Function(
+typedef _call_ptr_ptr_ptr_returns_float64_Dart = double Function(
     Pointer _arg0, Pointer _arg1, Pointer arg);
 
-final _call_objc_p_p_returns_Int32 = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_returns_Int32_C,
-    _call_objc_p_p_returns_Int32_Dart>("objc_msgSend");
-typedef _call_objc_p_p_returns_Int32_C = Int32 Function(
+final _call_ptr_ptr_ptr_returns_ptr = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_ptr_returns_ptr_C,
+    _call_ptr_ptr_ptr_returns_ptr_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_returns_ptr_C = Pointer Function(
+    Pointer _arg0, Pointer _arg1, Pointer arg);
+typedef _call_ptr_ptr_ptr_returns_ptr_Dart = Pointer Function(
+    Pointer _arg0, Pointer _arg1, Pointer arg);
+
+final _call_ptr_ptr_ptr_returns_void = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_ptr_returns_void_C,
+    _call_ptr_ptr_ptr_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_returns_void_C = Void Function(
+    Pointer _arg0, Pointer _arg1, Pointer arg);
+typedef _call_ptr_ptr_ptr_returns_void_Dart = void Function(
+    Pointer _arg0, Pointer _arg1, Pointer arg);
+
+final _call_ptr_ptr_returns_Int32 = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_returns_Int32_C,
+    _call_ptr_ptr_returns_Int32_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_returns_Int32_C = Int32 Function(
     Pointer _arg0, Pointer _arg1);
-typedef _call_objc_p_p_returns_Int32_Dart = int Function(
+typedef _call_ptr_ptr_returns_Int32_Dart = int Function(
     Pointer _arg0, Pointer _arg1);
 
-final _call_objc_p_p_returns_Int64 = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_returns_Int64_C,
-    _call_objc_p_p_returns_Int64_Dart>("objc_msgSend");
-typedef _call_objc_p_p_returns_Int64_C = Int64 Function(
+final _call_ptr_ptr_returns_Int64 = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_returns_Int64_C,
+    _call_ptr_ptr_returns_Int64_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_returns_Int64_C = Int64 Function(
     Pointer _arg0, Pointer _arg1);
-typedef _call_objc_p_p_returns_Int64_Dart = int Function(
-    Pointer _arg0, Pointer _arg1);
-
-final _call_objc_p_p_returns_Int8 = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_returns_Int8_C,
-    _call_objc_p_p_returns_Int8_Dart>("objc_msgSend");
-typedef _call_objc_p_p_returns_Int8_C = Int8 Function(
-    Pointer _arg0, Pointer _arg1);
-typedef _call_objc_p_p_returns_Int8_Dart = int Function(
+typedef _call_ptr_ptr_returns_Int64_Dart = int Function(
     Pointer _arg0, Pointer _arg1);
 
-final _call_objc_p_p_returns_Uint32 = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_returns_Uint32_C,
-    _call_objc_p_p_returns_Uint32_Dart>("objc_msgSend");
-typedef _call_objc_p_p_returns_Uint32_C = Uint32 Function(
+final _call_ptr_ptr_returns_Int8 = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_returns_Int8_C,
+    _call_ptr_ptr_returns_Int8_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_returns_Int8_C = Int8 Function(
     Pointer _arg0, Pointer _arg1);
-typedef _call_objc_p_p_returns_Uint32_Dart = int Function(
-    Pointer _arg0, Pointer _arg1);
-
-final _call_objc_p_p_returns_Uint64 = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_returns_Uint64_C,
-    _call_objc_p_p_returns_Uint64_Dart>("objc_msgSend");
-typedef _call_objc_p_p_returns_Uint64_C = Uint64 Function(
-    Pointer _arg0, Pointer _arg1);
-typedef _call_objc_p_p_returns_Uint64_Dart = int Function(
+typedef _call_ptr_ptr_returns_Int8_Dart = int Function(
     Pointer _arg0, Pointer _arg1);
 
-final _call_objc_p_p_returns_Uint8 = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_returns_Uint8_C,
-    _call_objc_p_p_returns_Uint8_Dart>("objc_msgSend");
-typedef _call_objc_p_p_returns_Uint8_C = Uint8 Function(
+final _call_ptr_ptr_returns_Uint32 = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_returns_Uint32_C,
+    _call_ptr_ptr_returns_Uint32_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_returns_Uint32_C = Uint32 Function(
     Pointer _arg0, Pointer _arg1);
-typedef _call_objc_p_p_returns_Uint8_Dart = int Function(
-    Pointer _arg0, Pointer _arg1);
-
-final _call_objc_p_p_returns_float64 = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_returns_float64_C,
-    _call_objc_p_p_returns_float64_Dart>("objc_msgSend");
-typedef _call_objc_p_p_returns_float64_C = Float Function(
-    Pointer _arg0, Pointer _arg1);
-typedef _call_objc_p_p_returns_float64_Dart = double Function(
+typedef _call_ptr_ptr_returns_Uint32_Dart = int Function(
     Pointer _arg0, Pointer _arg1);
 
-final _call_objc_p_p_returns_p = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_returns_p_C, _call_objc_p_p_returns_p_Dart>(
-        "objc_msgSend");
-typedef _call_objc_p_p_returns_p_C = Pointer Function(
+final _call_ptr_ptr_returns_Uint64 = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_returns_Uint64_C,
+    _call_ptr_ptr_returns_Uint64_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_returns_Uint64_C = Uint64 Function(
     Pointer _arg0, Pointer _arg1);
-typedef _call_objc_p_p_returns_p_Dart = Pointer Function(
+typedef _call_ptr_ptr_returns_Uint64_Dart = int Function(
     Pointer _arg0, Pointer _arg1);
 
-final _call_objc_p_p_returns_void = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_returns_void_C,
-    _call_objc_p_p_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_returns_void_C = Void Function(
+final _call_ptr_ptr_returns_Uint8 = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_returns_Uint8_C,
+    _call_ptr_ptr_returns_Uint8_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_returns_Uint8_C = Uint8 Function(
     Pointer _arg0, Pointer _arg1);
-typedef _call_objc_p_p_returns_void_Dart = void Function(
+typedef _call_ptr_ptr_returns_Uint8_Dart = int Function(
+    Pointer _arg0, Pointer _arg1);
+
+final _call_ptr_ptr_returns_float64 = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_returns_float64_C,
+    _call_ptr_ptr_returns_float64_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_returns_float64_C = Float Function(
+    Pointer _arg0, Pointer _arg1);
+typedef _call_ptr_ptr_returns_float64_Dart = double Function(
+    Pointer _arg0, Pointer _arg1);
+
+final _call_ptr_ptr_returns_ptr = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_returns_ptr_C,
+    _call_ptr_ptr_returns_ptr_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_returns_ptr_C = Pointer Function(
+    Pointer _arg0, Pointer _arg1);
+typedef _call_ptr_ptr_returns_ptr_Dart = Pointer Function(
+    Pointer _arg0, Pointer _arg1);
+
+final _call_ptr_ptr_returns_void = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_returns_void_C,
+    _call_ptr_ptr_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_returns_void_C = Void Function(
+    Pointer _arg0, Pointer _arg1);
+typedef _call_ptr_ptr_returns_void_Dart = void Function(
     Pointer _arg0, Pointer _arg1);

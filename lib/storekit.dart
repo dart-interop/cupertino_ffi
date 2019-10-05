@@ -1,3 +1,5 @@
+// AUTOMATICALLY GENERATED. DO NOT EDIT.
+
 /// Automatically generated API for [StoreKit](https://developer.apple.com/documentation/storekit?language=objc).
 ///
 /// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
@@ -21,9 +23,6 @@ void _openDynamicLibrary() {
   }
 }
 
-/// Automatically generated API. Part of [StoreKit](https://developer.apple.com/documentation/storekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class SKDownload extends Struct<SKDownload> {
   factory SKDownload._() {
@@ -38,7 +37,7 @@ class SKDownload extends Struct<SKDownload> {
     Pointer<SKDownload> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("contentIdentifier"),
     );
@@ -48,7 +47,7 @@ class SKDownload extends Struct<SKDownload> {
     Pointer<SKDownload> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("contentLength"),
     );
@@ -58,7 +57,7 @@ class SKDownload extends Struct<SKDownload> {
     Pointer<SKDownload> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("contentURL"),
     );
@@ -68,7 +67,7 @@ class SKDownload extends Struct<SKDownload> {
     Pointer<SKDownload> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("contentVersion"),
     );
@@ -78,7 +77,7 @@ class SKDownload extends Struct<SKDownload> {
     Pointer<SKDownload> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("copyXPCEncoding"),
     );
@@ -88,7 +87,7 @@ class SKDownload extends Struct<SKDownload> {
     Pointer<SKDownload> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int64(
+    return _call_ptr_ptr_returns_Int64(
       _self,
       _objc.getSelector("downloadState"),
     );
@@ -98,7 +97,7 @@ class SKDownload extends Struct<SKDownload> {
     Pointer<SKDownload> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("error"),
     );
@@ -108,7 +107,7 @@ class SKDownload extends Struct<SKDownload> {
     Pointer<SKDownload> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("init"),
     );
@@ -119,7 +118,7 @@ class SKDownload extends Struct<SKDownload> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithXPCEncoding:"),
       arg,
@@ -131,7 +130,7 @@ class SKDownload extends Struct<SKDownload> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isEqual:"),
       arg,
@@ -142,7 +141,7 @@ class SKDownload extends Struct<SKDownload> {
     Pointer<SKDownload> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_float32(
+    return _call_ptr_ptr_returns_float32(
       _self,
       _objc.getSelector("progress"),
     );
@@ -152,7 +151,7 @@ class SKDownload extends Struct<SKDownload> {
     Pointer<SKDownload> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int64(
+    return _call_ptr_ptr_returns_Int64(
       _self,
       _objc.getSelector("state"),
     );
@@ -162,7 +161,7 @@ class SKDownload extends Struct<SKDownload> {
     Pointer<SKDownload> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_float64(
+    return _call_ptr_ptr_returns_float64(
       _self,
       _objc.getSelector("timeRemaining"),
     );
@@ -172,16 +171,13 @@ class SKDownload extends Struct<SKDownload> {
     Pointer<SKDownload> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("transaction"),
     );
   }
 }
 
-/// Automatically generated API. Part of [StoreKit](https://developer.apple.com/documentation/storekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class SKDownloadChangeset extends Struct<SKDownloadChangeset> {
   factory SKDownloadChangeset._() {
@@ -196,7 +192,7 @@ class SKDownloadChangeset extends Struct<SKDownloadChangeset> {
     Pointer<SKDownloadChangeset> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("contentLength"),
     );
@@ -206,21 +202,9 @@ class SKDownloadChangeset extends Struct<SKDownloadChangeset> {
     Pointer<SKDownloadChangeset> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("contentURL"),
-    );
-  }
-
-  static Pointer copyWithZone(
-    Pointer<SKDownloadChangeset> _self,
-    Pointer<Pointer> arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
-      _self,
-      _objc.getSelector("copyWithZone:"),
-      arg,
     );
   }
 
@@ -228,7 +212,7 @@ class SKDownloadChangeset extends Struct<SKDownloadChangeset> {
     Pointer<SKDownloadChangeset> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("copyXPCEncoding"),
     );
@@ -238,7 +222,7 @@ class SKDownloadChangeset extends Struct<SKDownloadChangeset> {
     Pointer<SKDownloadChangeset> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("downloadID"),
     );
@@ -248,7 +232,7 @@ class SKDownloadChangeset extends Struct<SKDownloadChangeset> {
     Pointer<SKDownloadChangeset> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("downloadState"),
     );
@@ -258,7 +242,7 @@ class SKDownloadChangeset extends Struct<SKDownloadChangeset> {
     Pointer<SKDownloadChangeset> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("error"),
     );
@@ -269,7 +253,7 @@ class SKDownloadChangeset extends Struct<SKDownloadChangeset> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithXPCEncoding:"),
       arg,
@@ -280,7 +264,7 @@ class SKDownloadChangeset extends Struct<SKDownloadChangeset> {
     Pointer<SKDownloadChangeset> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("progress"),
     );
@@ -291,7 +275,7 @@ class SKDownloadChangeset extends Struct<SKDownloadChangeset> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setContentLength:"),
       arg,
@@ -303,7 +287,7 @@ class SKDownloadChangeset extends Struct<SKDownloadChangeset> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setContentURL:"),
       arg,
@@ -315,7 +299,7 @@ class SKDownloadChangeset extends Struct<SKDownloadChangeset> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setDownloadID:"),
       arg,
@@ -327,7 +311,7 @@ class SKDownloadChangeset extends Struct<SKDownloadChangeset> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setDownloadState:"),
       arg,
@@ -339,7 +323,7 @@ class SKDownloadChangeset extends Struct<SKDownloadChangeset> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setError:"),
       arg,
@@ -351,7 +335,7 @@ class SKDownloadChangeset extends Struct<SKDownloadChangeset> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setProgress:"),
       arg,
@@ -363,7 +347,7 @@ class SKDownloadChangeset extends Struct<SKDownloadChangeset> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setTimeRemaining:"),
       arg,
@@ -374,16 +358,13 @@ class SKDownloadChangeset extends Struct<SKDownloadChangeset> {
     Pointer<SKDownloadChangeset> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("timeRemaining"),
     );
   }
 }
 
-/// Automatically generated API. Part of [StoreKit](https://developer.apple.com/documentation/storekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class SKDownloadInternal extends Struct<SKDownloadInternal> {
   factory SKDownloadInternal._() {
@@ -395,9 +376,6 @@ class SKDownloadInternal extends Struct<SKDownloadInternal> {
   }
 }
 
-/// Automatically generated API. Part of [StoreKit](https://developer.apple.com/documentation/storekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class SKHandleInvalidReceiptRequest
     extends Struct<SKHandleInvalidReceiptRequest> {
@@ -412,9 +390,6 @@ class SKHandleInvalidReceiptRequest
   }
 }
 
-/// Automatically generated API. Part of [StoreKit](https://developer.apple.com/documentation/storekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class SKMutablePayment extends Struct<SKMutablePayment> {
   factory SKMutablePayment._() {
@@ -430,7 +405,7 @@ class SKMutablePayment extends Struct<SKMutablePayment> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setApplicationUsername:"),
       arg,
@@ -442,7 +417,7 @@ class SKMutablePayment extends Struct<SKMutablePayment> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setIsStoreOriginated:"),
       arg,
@@ -454,7 +429,7 @@ class SKMutablePayment extends Struct<SKMutablePayment> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setPartnerIdentifier:"),
       arg,
@@ -466,7 +441,7 @@ class SKMutablePayment extends Struct<SKMutablePayment> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setPartnerTransactionIdentifier:"),
       arg,
@@ -478,7 +453,7 @@ class SKMutablePayment extends Struct<SKMutablePayment> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setPaymentDiscount:"),
       arg,
@@ -490,7 +465,7 @@ class SKMutablePayment extends Struct<SKMutablePayment> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setProductIdentifier:"),
       arg,
@@ -502,7 +477,7 @@ class SKMutablePayment extends Struct<SKMutablePayment> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int64_returns_void(
+    _call_ptr_ptr_Int64_returns_void(
       _self,
       _objc.getSelector("setQuantity:"),
       arg,
@@ -514,7 +489,7 @@ class SKMutablePayment extends Struct<SKMutablePayment> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setRequestData:"),
       arg,
@@ -526,7 +501,7 @@ class SKMutablePayment extends Struct<SKMutablePayment> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setRequestParameters:"),
       arg,
@@ -538,7 +513,7 @@ class SKMutablePayment extends Struct<SKMutablePayment> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setSimulatesAskToBuyInSandbox:"),
       arg,
@@ -546,9 +521,6 @@ class SKMutablePayment extends Struct<SKMutablePayment> {
   }
 }
 
-/// Automatically generated API. Part of [StoreKit](https://developer.apple.com/documentation/storekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class SKPayment extends Struct<SKPayment> {
   factory SKPayment._() {
@@ -563,21 +535,9 @@ class SKPayment extends Struct<SKPayment> {
     Pointer<SKPayment> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("applicationUsername"),
-    );
-  }
-
-  static Pointer copyWithZone(
-    Pointer<SKPayment> _self,
-    Pointer<Pointer> arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
-      _self,
-      _objc.getSelector("copyWithZone:"),
-      arg,
     );
   }
 
@@ -585,7 +545,7 @@ class SKPayment extends Struct<SKPayment> {
     Pointer<SKPayment> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("hash"),
     );
@@ -595,7 +555,7 @@ class SKPayment extends Struct<SKPayment> {
     Pointer<SKPayment> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("init"),
     );
@@ -606,7 +566,7 @@ class SKPayment extends Struct<SKPayment> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isEqual:"),
       arg,
@@ -617,21 +577,9 @@ class SKPayment extends Struct<SKPayment> {
     Pointer<SKPayment> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isStoreOriginated"),
-    );
-  }
-
-  static Pointer mutableCopyWithZone(
-    Pointer<SKPayment> _self,
-    Pointer<Pointer> arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
-      _self,
-      _objc.getSelector("mutableCopyWithZone:"),
-      arg,
     );
   }
 
@@ -639,7 +587,7 @@ class SKPayment extends Struct<SKPayment> {
     Pointer<SKPayment> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("partnerIdentifier"),
     );
@@ -649,7 +597,7 @@ class SKPayment extends Struct<SKPayment> {
     Pointer<SKPayment> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("partnerTransactionIdentifier"),
     );
@@ -659,7 +607,7 @@ class SKPayment extends Struct<SKPayment> {
     Pointer<SKPayment> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("paymentDiscount"),
     );
@@ -669,7 +617,7 @@ class SKPayment extends Struct<SKPayment> {
     Pointer<SKPayment> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("productIdentifier"),
     );
@@ -679,7 +627,7 @@ class SKPayment extends Struct<SKPayment> {
     Pointer<SKPayment> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int64(
+    return _call_ptr_ptr_returns_Int64(
       _self,
       _objc.getSelector("quantity"),
     );
@@ -689,7 +637,7 @@ class SKPayment extends Struct<SKPayment> {
     Pointer<SKPayment> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("requestData"),
     );
@@ -699,7 +647,7 @@ class SKPayment extends Struct<SKPayment> {
     Pointer<SKPayment> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("requestParameters"),
     );
@@ -709,16 +657,13 @@ class SKPayment extends Struct<SKPayment> {
     Pointer<SKPayment> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("simulatesAskToBuyInSandbox"),
     );
   }
 }
 
-/// Automatically generated API. Part of [StoreKit](https://developer.apple.com/documentation/storekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class SKPaymentDiscount extends Struct<SKPaymentDiscount> {
   factory SKPaymentDiscount._() {
@@ -733,7 +678,7 @@ class SKPaymentDiscount extends Struct<SKPaymentDiscount> {
     Pointer<SKPaymentDiscount> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("identifier"),
     );
@@ -748,7 +693,7 @@ class SKPaymentDiscount extends Struct<SKPaymentDiscount> {
     @required Pointer timestamp,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector(
           "initWithIdentifier:keyIdentifier:nonce:signature:timestamp:"),
@@ -764,7 +709,7 @@ class SKPaymentDiscount extends Struct<SKPaymentDiscount> {
     Pointer<SKPaymentDiscount> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("keyIdentifier"),
     );
@@ -774,7 +719,7 @@ class SKPaymentDiscount extends Struct<SKPaymentDiscount> {
     Pointer<SKPaymentDiscount> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("nonce"),
     );
@@ -784,7 +729,7 @@ class SKPaymentDiscount extends Struct<SKPaymentDiscount> {
     Pointer<SKPaymentDiscount> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("signature"),
     );
@@ -794,16 +739,13 @@ class SKPaymentDiscount extends Struct<SKPaymentDiscount> {
     Pointer<SKPaymentDiscount> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("timestamp"),
     );
   }
 }
 
-/// Automatically generated API. Part of [StoreKit](https://developer.apple.com/documentation/storekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class SKPaymentDiscountInternal extends Struct<SKPaymentDiscountInternal> {
   factory SKPaymentDiscountInternal._() {
@@ -817,9 +759,6 @@ class SKPaymentDiscountInternal extends Struct<SKPaymentDiscountInternal> {
   }
 }
 
-/// Automatically generated API. Part of [StoreKit](https://developer.apple.com/documentation/storekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class SKPaymentInternal extends Struct<SKPaymentInternal> {
   factory SKPaymentInternal._() {
@@ -830,32 +769,17 @@ class SKPaymentInternal extends Struct<SKPaymentInternal> {
     return _objc.allocate("SKPaymentInternal").cast<SKPaymentInternal>();
   }
 
-  static Pointer copyWithZone(
-    Pointer<SKPaymentInternal> _self,
-    Pointer<Pointer> arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
-      _self,
-      _objc.getSelector("copyWithZone:"),
-      arg,
-    );
-  }
-
   static Pointer init(
     Pointer<SKPaymentInternal> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("init"),
     );
   }
 }
 
-/// Automatically generated API. Part of [StoreKit](https://developer.apple.com/documentation/storekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class SKPaymentQueue extends Struct<SKPaymentQueue> {
   factory SKPaymentQueue._() {
@@ -871,7 +795,7 @@ class SKPaymentQueue extends Struct<SKPaymentQueue> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("addPayment:"),
       arg,
@@ -883,7 +807,7 @@ class SKPaymentQueue extends Struct<SKPaymentQueue> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("addTransactionObserver:"),
       arg,
@@ -895,7 +819,7 @@ class SKPaymentQueue extends Struct<SKPaymentQueue> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("cancelDownloads:"),
       arg,
@@ -906,7 +830,7 @@ class SKPaymentQueue extends Struct<SKPaymentQueue> {
     Pointer<SKPaymentQueue> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("dealloc"),
     );
@@ -917,7 +841,7 @@ class SKPaymentQueue extends Struct<SKPaymentQueue> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("downloadAdded:"),
       arg,
@@ -929,7 +853,7 @@ class SKPaymentQueue extends Struct<SKPaymentQueue> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("downloadRemoved:"),
       arg,
@@ -941,7 +865,7 @@ class SKPaymentQueue extends Struct<SKPaymentQueue> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("downloadStatusChanged:"),
       arg,
@@ -953,7 +877,7 @@ class SKPaymentQueue extends Struct<SKPaymentQueue> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("finishTransaction:"),
       arg,
@@ -964,7 +888,7 @@ class SKPaymentQueue extends Struct<SKPaymentQueue> {
     Pointer<SKPaymentQueue> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("init"),
     );
@@ -975,7 +899,7 @@ class SKPaymentQueue extends Struct<SKPaymentQueue> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithPaymentQueueClient:"),
       arg,
@@ -987,7 +911,7 @@ class SKPaymentQueue extends Struct<SKPaymentQueue> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("pauseDownloads:"),
       arg,
@@ -998,7 +922,7 @@ class SKPaymentQueue extends Struct<SKPaymentQueue> {
     Pointer<SKPaymentQueue> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("paymentQueueClient"),
     );
@@ -1009,7 +933,7 @@ class SKPaymentQueue extends Struct<SKPaymentQueue> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("removeTransactionObserver:"),
       arg,
@@ -1021,7 +945,7 @@ class SKPaymentQueue extends Struct<SKPaymentQueue> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("removedTransactions:"),
       arg,
@@ -1032,7 +956,7 @@ class SKPaymentQueue extends Struct<SKPaymentQueue> {
     Pointer<SKPaymentQueue> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("restoreCompletedTransactions"),
     );
@@ -1043,7 +967,7 @@ class SKPaymentQueue extends Struct<SKPaymentQueue> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("restoreCompletedTransactionsWithApplicationUsername:"),
       arg,
@@ -1055,7 +979,7 @@ class SKPaymentQueue extends Struct<SKPaymentQueue> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("resumeDownloads:"),
       arg,
@@ -1067,7 +991,7 @@ class SKPaymentQueue extends Struct<SKPaymentQueue> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("startDownloads:"),
       arg,
@@ -1078,7 +1002,7 @@ class SKPaymentQueue extends Struct<SKPaymentQueue> {
     Pointer<SKPaymentQueue> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("transactions"),
     );
@@ -1089,7 +1013,7 @@ class SKPaymentQueue extends Struct<SKPaymentQueue> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("updatedTransactions:"),
       arg,
@@ -1097,9 +1021,6 @@ class SKPaymentQueue extends Struct<SKPaymentQueue> {
   }
 }
 
-/// Automatically generated API. Part of [StoreKit](https://developer.apple.com/documentation/storekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class SKPaymentQueueClient extends Struct<SKPaymentQueueClient> {
   factory SKPaymentQueueClient._() {
@@ -1114,7 +1035,7 @@ class SKPaymentQueueClient extends Struct<SKPaymentQueueClient> {
     Pointer<SKPaymentQueueClient> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("allowsBootstrapCellularData"),
     );
@@ -1124,7 +1045,7 @@ class SKPaymentQueueClient extends Struct<SKPaymentQueueClient> {
     Pointer<SKPaymentQueueClient> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("bundleIdentifier"),
     );
@@ -1134,21 +1055,9 @@ class SKPaymentQueueClient extends Struct<SKPaymentQueueClient> {
     Pointer<SKPaymentQueueClient> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("bundleVersion"),
-    );
-  }
-
-  static Pointer copyWithZone(
-    Pointer<SKPaymentQueueClient> _self,
-    Pointer<Pointer> arg,
-  ) {
-    _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
-      _self,
-      _objc.getSelector("copyWithZone:"),
-      arg,
     );
   }
 
@@ -1156,7 +1065,7 @@ class SKPaymentQueueClient extends Struct<SKPaymentQueueClient> {
     Pointer<SKPaymentQueueClient> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("copyXPCEncoding"),
     );
@@ -1166,7 +1075,7 @@ class SKPaymentQueueClient extends Struct<SKPaymentQueueClient> {
     Pointer<SKPaymentQueueClient> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int64(
+    return _call_ptr_ptr_returns_Int64(
       _self,
       _objc.getSelector("environmentType"),
     );
@@ -1176,7 +1085,7 @@ class SKPaymentQueueClient extends Struct<SKPaymentQueueClient> {
     Pointer<SKPaymentQueueClient> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("hidesConfirmationDialogs"),
     );
@@ -1186,7 +1095,7 @@ class SKPaymentQueueClient extends Struct<SKPaymentQueueClient> {
     Pointer<SKPaymentQueueClient> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("ignoresInAppPurchaseRestriction"),
     );
@@ -1197,7 +1106,7 @@ class SKPaymentQueueClient extends Struct<SKPaymentQueueClient> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithXPCEncoding:"),
       arg,
@@ -1208,7 +1117,7 @@ class SKPaymentQueueClient extends Struct<SKPaymentQueueClient> {
     Pointer<SKPaymentQueueClient> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("plist"),
     );
@@ -1218,7 +1127,7 @@ class SKPaymentQueueClient extends Struct<SKPaymentQueueClient> {
     Pointer<SKPaymentQueueClient> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("receiptDirectoryPath"),
     );
@@ -1228,7 +1137,7 @@ class SKPaymentQueueClient extends Struct<SKPaymentQueueClient> {
     Pointer<SKPaymentQueueClient> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("requiresAuthenticationForPayment"),
     );
@@ -1239,7 +1148,7 @@ class SKPaymentQueueClient extends Struct<SKPaymentQueueClient> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setAllowsBootstrapCellularData:"),
       arg,
@@ -1251,7 +1160,7 @@ class SKPaymentQueueClient extends Struct<SKPaymentQueueClient> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setBundleIdentifier:"),
       arg,
@@ -1263,7 +1172,7 @@ class SKPaymentQueueClient extends Struct<SKPaymentQueueClient> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setBundleVersion:"),
       arg,
@@ -1275,7 +1184,7 @@ class SKPaymentQueueClient extends Struct<SKPaymentQueueClient> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int64_returns_void(
+    _call_ptr_ptr_Int64_returns_void(
       _self,
       _objc.getSelector("setEnvironmentType:"),
       arg,
@@ -1287,7 +1196,7 @@ class SKPaymentQueueClient extends Struct<SKPaymentQueueClient> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setHidesConfirmationDialogs:"),
       arg,
@@ -1299,7 +1208,7 @@ class SKPaymentQueueClient extends Struct<SKPaymentQueueClient> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setIgnoresInAppPurchaseRestriction:"),
       arg,
@@ -1311,7 +1220,7 @@ class SKPaymentQueueClient extends Struct<SKPaymentQueueClient> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setReceiptDirectoryPath:"),
       arg,
@@ -1323,7 +1232,7 @@ class SKPaymentQueueClient extends Struct<SKPaymentQueueClient> {
     int arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_Int8_returns_void(
+    _call_ptr_ptr_Int8_returns_void(
       _self,
       _objc.getSelector("setRequiresAuthenticationForPayment:"),
       arg,
@@ -1335,7 +1244,7 @@ class SKPaymentQueueClient extends Struct<SKPaymentQueueClient> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setStoreExternalVersion:"),
       arg,
@@ -1347,7 +1256,7 @@ class SKPaymentQueueClient extends Struct<SKPaymentQueueClient> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setStoreItemIdentifier:"),
       arg,
@@ -1359,7 +1268,7 @@ class SKPaymentQueueClient extends Struct<SKPaymentQueueClient> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setVendorIdentifier:"),
       arg,
@@ -1370,7 +1279,7 @@ class SKPaymentQueueClient extends Struct<SKPaymentQueueClient> {
     Pointer<SKPaymentQueueClient> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("storeExternalVersion"),
     );
@@ -1380,7 +1289,7 @@ class SKPaymentQueueClient extends Struct<SKPaymentQueueClient> {
     Pointer<SKPaymentQueueClient> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("storeItemIdentifier"),
     );
@@ -1390,16 +1299,13 @@ class SKPaymentQueueClient extends Struct<SKPaymentQueueClient> {
     Pointer<SKPaymentQueueClient> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("vendorIdentifier"),
     );
   }
 }
 
-/// Automatically generated API. Part of [StoreKit](https://developer.apple.com/documentation/storekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class SKPaymentQueueInternal extends Struct<SKPaymentQueueInternal> {
   factory SKPaymentQueueInternal._() {
@@ -1416,16 +1322,13 @@ class SKPaymentQueueInternal extends Struct<SKPaymentQueueInternal> {
     Pointer<SKPaymentQueueInternal> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("init"),
     );
   }
 }
 
-/// Automatically generated API. Part of [StoreKit](https://developer.apple.com/documentation/storekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class SKPaymentTransaction extends Struct<SKPaymentTransaction> {
   factory SKPaymentTransaction._() {
@@ -1440,7 +1343,7 @@ class SKPaymentTransaction extends Struct<SKPaymentTransaction> {
     Pointer<SKPaymentTransaction> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("UUID"),
     );
@@ -1451,7 +1354,7 @@ class SKPaymentTransaction extends Struct<SKPaymentTransaction> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("canMergeWithTransaction:"),
       arg,
@@ -1462,7 +1365,7 @@ class SKPaymentTransaction extends Struct<SKPaymentTransaction> {
     Pointer<SKPaymentTransaction> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("copyXPCEncoding"),
     );
@@ -1472,7 +1375,7 @@ class SKPaymentTransaction extends Struct<SKPaymentTransaction> {
     Pointer<SKPaymentTransaction> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("downloads"),
     );
@@ -1482,7 +1385,7 @@ class SKPaymentTransaction extends Struct<SKPaymentTransaction> {
     Pointer<SKPaymentTransaction> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("error"),
     );
@@ -1493,7 +1396,7 @@ class SKPaymentTransaction extends Struct<SKPaymentTransaction> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("getPaymentDiscountFromTransactionXPCEncoding:"),
       arg,
@@ -1504,7 +1407,7 @@ class SKPaymentTransaction extends Struct<SKPaymentTransaction> {
     Pointer<SKPaymentTransaction> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("init"),
     );
@@ -1515,7 +1418,7 @@ class SKPaymentTransaction extends Struct<SKPaymentTransaction> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithPayment:"),
       arg,
@@ -1527,7 +1430,7 @@ class SKPaymentTransaction extends Struct<SKPaymentTransaction> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithServerTransaction:"),
       arg,
@@ -1539,7 +1442,7 @@ class SKPaymentTransaction extends Struct<SKPaymentTransaction> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithXPCEncoding:"),
       arg,
@@ -1550,7 +1453,7 @@ class SKPaymentTransaction extends Struct<SKPaymentTransaction> {
     Pointer<SKPaymentTransaction> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("matchingIdentifier"),
     );
@@ -1561,7 +1464,7 @@ class SKPaymentTransaction extends Struct<SKPaymentTransaction> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("mergeWithServerTransaction:"),
       arg,
@@ -1573,7 +1476,7 @@ class SKPaymentTransaction extends Struct<SKPaymentTransaction> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_Int8(
+    return _call_ptr_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("mergeWithTransaction:"),
       arg,
@@ -1584,7 +1487,7 @@ class SKPaymentTransaction extends Struct<SKPaymentTransaction> {
     Pointer<SKPaymentTransaction> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("originalTransaction"),
     );
@@ -1594,7 +1497,7 @@ class SKPaymentTransaction extends Struct<SKPaymentTransaction> {
     Pointer<SKPaymentTransaction> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("payment"),
     );
@@ -1604,7 +1507,7 @@ class SKPaymentTransaction extends Struct<SKPaymentTransaction> {
     Pointer<SKPaymentTransaction> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("transactionDate"),
     );
@@ -1614,7 +1517,7 @@ class SKPaymentTransaction extends Struct<SKPaymentTransaction> {
     Pointer<SKPaymentTransaction> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("transactionIdentifier"),
     );
@@ -1624,7 +1527,7 @@ class SKPaymentTransaction extends Struct<SKPaymentTransaction> {
     Pointer<SKPaymentTransaction> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("transactionReceipt"),
     );
@@ -1634,16 +1537,13 @@ class SKPaymentTransaction extends Struct<SKPaymentTransaction> {
     Pointer<SKPaymentTransaction> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int64(
+    return _call_ptr_ptr_returns_Int64(
       _self,
       _objc.getSelector("transactionState"),
     );
   }
 }
 
-/// Automatically generated API. Part of [StoreKit](https://developer.apple.com/documentation/storekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class SKPaymentTransactionInternal
     extends Struct<SKPaymentTransactionInternal> {
@@ -1661,16 +1561,13 @@ class SKPaymentTransactionInternal
     Pointer<SKPaymentTransactionInternal> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("init"),
     );
   }
 }
 
-/// Automatically generated API. Part of [StoreKit](https://developer.apple.com/documentation/storekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class SKProduct extends Struct<SKProduct> {
   factory SKProduct._() {
@@ -1685,7 +1582,7 @@ class SKProduct extends Struct<SKProduct> {
     Pointer<SKProduct> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("contentLengths"),
     );
@@ -1695,7 +1592,7 @@ class SKProduct extends Struct<SKProduct> {
     Pointer<SKProduct> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("contentVersion"),
     );
@@ -1705,7 +1602,7 @@ class SKProduct extends Struct<SKProduct> {
     Pointer<SKProduct> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("copyXPCEncoding"),
     );
@@ -1715,7 +1612,7 @@ class SKProduct extends Struct<SKProduct> {
     Pointer<SKProduct> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("discounts"),
     );
@@ -1725,7 +1622,7 @@ class SKProduct extends Struct<SKProduct> {
     Pointer<SKProduct> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("downloadContentLengths"),
     );
@@ -1735,7 +1632,7 @@ class SKProduct extends Struct<SKProduct> {
     Pointer<SKProduct> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("downloadContentVersion"),
     );
@@ -1745,7 +1642,7 @@ class SKProduct extends Struct<SKProduct> {
     Pointer<SKProduct> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("downloadable"),
     );
@@ -1755,7 +1652,7 @@ class SKProduct extends Struct<SKProduct> {
     Pointer<SKProduct> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("init"),
     );
@@ -1766,7 +1663,7 @@ class SKProduct extends Struct<SKProduct> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initMinusLocaleWithDictionary:"),
       arg,
@@ -1778,7 +1675,7 @@ class SKProduct extends Struct<SKProduct> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initMinusLocaleWithXPCEncoding:"),
       arg,
@@ -1790,7 +1687,7 @@ class SKProduct extends Struct<SKProduct> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithDictionary:"),
       arg,
@@ -1802,7 +1699,7 @@ class SKProduct extends Struct<SKProduct> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithXPCEncoding:"),
       arg,
@@ -1813,7 +1710,7 @@ class SKProduct extends Struct<SKProduct> {
     Pointer<SKProduct> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("introductoryPrice"),
     );
@@ -1823,7 +1720,7 @@ class SKProduct extends Struct<SKProduct> {
     Pointer<SKProduct> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Int8(
+    return _call_ptr_ptr_returns_Int8(
       _self,
       _objc.getSelector("isDownloadable"),
     );
@@ -1833,7 +1730,7 @@ class SKProduct extends Struct<SKProduct> {
     Pointer<SKProduct> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("localizedDescription"),
     );
@@ -1843,7 +1740,7 @@ class SKProduct extends Struct<SKProduct> {
     Pointer<SKProduct> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("localizedTitle"),
     );
@@ -1853,7 +1750,7 @@ class SKProduct extends Struct<SKProduct> {
     Pointer<SKProduct> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("price"),
     );
@@ -1863,7 +1760,7 @@ class SKProduct extends Struct<SKProduct> {
     Pointer<SKProduct> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("priceLocale"),
     );
@@ -1873,7 +1770,7 @@ class SKProduct extends Struct<SKProduct> {
     Pointer<SKProduct> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("productIdentifier"),
     );
@@ -1883,7 +1780,7 @@ class SKProduct extends Struct<SKProduct> {
     Pointer<SKProduct> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("subscriptionGroupIdentifier"),
     );
@@ -1893,16 +1790,13 @@ class SKProduct extends Struct<SKProduct> {
     Pointer<SKProduct> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("subscriptionPeriod"),
     );
   }
 }
 
-/// Automatically generated API. Part of [StoreKit](https://developer.apple.com/documentation/storekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class SKProductDiscount extends Struct<SKProductDiscount> {
   factory SKProductDiscount._() {
@@ -1917,7 +1811,7 @@ class SKProductDiscount extends Struct<SKProductDiscount> {
     Pointer<SKProductDiscount> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("copyXPCEncoding"),
     );
@@ -1927,7 +1821,7 @@ class SKProductDiscount extends Struct<SKProductDiscount> {
     Pointer<SKProductDiscount> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("identifier"),
     );
@@ -1937,7 +1831,7 @@ class SKProductDiscount extends Struct<SKProductDiscount> {
     Pointer<SKProductDiscount> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("init"),
     );
@@ -1948,7 +1842,7 @@ class SKProductDiscount extends Struct<SKProductDiscount> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithDictionary:"),
       arg,
@@ -1960,7 +1854,7 @@ class SKProductDiscount extends Struct<SKProductDiscount> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithXPCEncoding:"),
       arg,
@@ -1971,7 +1865,7 @@ class SKProductDiscount extends Struct<SKProductDiscount> {
     Pointer<SKProductDiscount> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("numberOfPeriods"),
     );
@@ -1981,7 +1875,7 @@ class SKProductDiscount extends Struct<SKProductDiscount> {
     Pointer<SKProductDiscount> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("paymentMode"),
     );
@@ -1991,7 +1885,7 @@ class SKProductDiscount extends Struct<SKProductDiscount> {
     Pointer<SKProductDiscount> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("price"),
     );
@@ -2001,7 +1895,7 @@ class SKProductDiscount extends Struct<SKProductDiscount> {
     Pointer<SKProductDiscount> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("priceLocale"),
     );
@@ -2011,7 +1905,7 @@ class SKProductDiscount extends Struct<SKProductDiscount> {
     Pointer<SKProductDiscount> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("subscriptionPeriod"),
     );
@@ -2021,16 +1915,13 @@ class SKProductDiscount extends Struct<SKProductDiscount> {
     Pointer<SKProductDiscount> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("type"),
     );
   }
 }
 
-/// Automatically generated API. Part of [StoreKit](https://developer.apple.com/documentation/storekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class SKProductDiscountInternal extends Struct<SKProductDiscountInternal> {
   factory SKProductDiscountInternal._() {
@@ -2044,9 +1935,6 @@ class SKProductDiscountInternal extends Struct<SKProductDiscountInternal> {
   }
 }
 
-/// Automatically generated API. Part of [StoreKit](https://developer.apple.com/documentation/storekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class SKProductInternal extends Struct<SKProductInternal> {
   factory SKProductInternal._() {
@@ -2058,9 +1946,6 @@ class SKProductInternal extends Struct<SKProductInternal> {
   }
 }
 
-/// Automatically generated API. Part of [StoreKit](https://developer.apple.com/documentation/storekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class SKProductSubscriptionPeriod extends Struct<SKProductSubscriptionPeriod> {
   factory SKProductSubscriptionPeriod._() {
@@ -2077,7 +1962,7 @@ class SKProductSubscriptionPeriod extends Struct<SKProductSubscriptionPeriod> {
     Pointer<SKProductSubscriptionPeriod> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("copyXPCEncoding"),
     );
@@ -2087,7 +1972,7 @@ class SKProductSubscriptionPeriod extends Struct<SKProductSubscriptionPeriod> {
     Pointer<SKProductSubscriptionPeriod> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("init"),
     );
@@ -2098,7 +1983,7 @@ class SKProductSubscriptionPeriod extends Struct<SKProductSubscriptionPeriod> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithISO8601String:"),
       arg,
@@ -2110,7 +1995,7 @@ class SKProductSubscriptionPeriod extends Struct<SKProductSubscriptionPeriod> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithXPCEncoding:"),
       arg,
@@ -2121,7 +2006,7 @@ class SKProductSubscriptionPeriod extends Struct<SKProductSubscriptionPeriod> {
     Pointer<SKProductSubscriptionPeriod> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("numberOfUnits"),
     );
@@ -2131,16 +2016,13 @@ class SKProductSubscriptionPeriod extends Struct<SKProductSubscriptionPeriod> {
     Pointer<SKProductSubscriptionPeriod> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_Uint64(
+    return _call_ptr_ptr_returns_Uint64(
       _self,
       _objc.getSelector("unit"),
     );
   }
 }
 
-/// Automatically generated API. Part of [StoreKit](https://developer.apple.com/documentation/storekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class SKProductSubscriptionPeriodInternal
     extends Struct<SKProductSubscriptionPeriodInternal> {
@@ -2155,9 +2037,6 @@ class SKProductSubscriptionPeriodInternal
   }
 }
 
-/// Automatically generated API. Part of [StoreKit](https://developer.apple.com/documentation/storekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class SKProductsRequest extends Struct<SKProductsRequest> {
   factory SKProductsRequest._() {
@@ -2172,7 +2051,7 @@ class SKProductsRequest extends Struct<SKProductsRequest> {
     Pointer<SKProductsRequest> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("init"),
     );
@@ -2183,7 +2062,7 @@ class SKProductsRequest extends Struct<SKProductsRequest> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithProductIdentifiers:"),
       arg,
@@ -2191,9 +2070,6 @@ class SKProductsRequest extends Struct<SKProductsRequest> {
   }
 }
 
-/// Automatically generated API. Part of [StoreKit](https://developer.apple.com/documentation/storekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class SKProductsRequestInternal extends Struct<SKProductsRequestInternal> {
   factory SKProductsRequestInternal._() {
@@ -2210,16 +2086,13 @@ class SKProductsRequestInternal extends Struct<SKProductsRequestInternal> {
     Pointer<SKProductsRequestInternal> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("init"),
     );
   }
 }
 
-/// Automatically generated API. Part of [StoreKit](https://developer.apple.com/documentation/storekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class SKProductsResponse extends Struct<SKProductsResponse> {
   factory SKProductsResponse._() {
@@ -2234,7 +2107,7 @@ class SKProductsResponse extends Struct<SKProductsResponse> {
     Pointer<SKProductsResponse> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("copyXPCEncoding"),
     );
@@ -2244,7 +2117,7 @@ class SKProductsResponse extends Struct<SKProductsResponse> {
     Pointer<SKProductsResponse> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("init"),
     );
@@ -2255,7 +2128,7 @@ class SKProductsResponse extends Struct<SKProductsResponse> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithXPCEncoding:"),
       arg,
@@ -2266,7 +2139,7 @@ class SKProductsResponse extends Struct<SKProductsResponse> {
     Pointer<SKProductsResponse> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("invalidProductIdentifiers"),
     );
@@ -2276,16 +2149,13 @@ class SKProductsResponse extends Struct<SKProductsResponse> {
     Pointer<SKProductsResponse> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("products"),
     );
   }
 }
 
-/// Automatically generated API. Part of [StoreKit](https://developer.apple.com/documentation/storekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class SKProductsResponseInternal extends Struct<SKProductsResponseInternal> {
   factory SKProductsResponseInternal._() {
@@ -2299,9 +2169,6 @@ class SKProductsResponseInternal extends Struct<SKProductsResponseInternal> {
   }
 }
 
-/// Automatically generated API. Part of [StoreKit](https://developer.apple.com/documentation/storekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class SKReceiptRefreshRequest extends Struct<SKReceiptRefreshRequest> {
   factory SKReceiptRefreshRequest._() {
@@ -2319,7 +2186,7 @@ class SKReceiptRefreshRequest extends Struct<SKReceiptRefreshRequest> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithReceiptProperties:"),
       arg,
@@ -2330,16 +2197,13 @@ class SKReceiptRefreshRequest extends Struct<SKReceiptRefreshRequest> {
     Pointer<SKReceiptRefreshRequest> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("receiptProperties"),
     );
   }
 }
 
-/// Automatically generated API. Part of [StoreKit](https://developer.apple.com/documentation/storekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class SKRequest extends Struct<SKRequest> {
   factory SKRequest._() {
@@ -2354,7 +2218,7 @@ class SKRequest extends Struct<SKRequest> {
     Pointer<SKRequest> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("cancel"),
     );
@@ -2364,7 +2228,7 @@ class SKRequest extends Struct<SKRequest> {
     Pointer<SKRequest> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("delegate"),
     );
@@ -2374,7 +2238,7 @@ class SKRequest extends Struct<SKRequest> {
     Pointer<SKRequest> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("init"),
     );
@@ -2384,7 +2248,7 @@ class SKRequest extends Struct<SKRequest> {
     Pointer<SKRequest> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("paymentQueueClient"),
     );
@@ -2395,7 +2259,7 @@ class SKRequest extends Struct<SKRequest> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setDelegate:"),
       arg,
@@ -2407,7 +2271,7 @@ class SKRequest extends Struct<SKRequest> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setPaymentQueueClient:"),
       arg,
@@ -2418,16 +2282,13 @@ class SKRequest extends Struct<SKRequest> {
     Pointer<SKRequest> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("start"),
     );
   }
 }
 
-/// Automatically generated API. Part of [StoreKit](https://developer.apple.com/documentation/storekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class SKRequestInternal extends Struct<SKRequestInternal> {
   factory SKRequestInternal._() {
@@ -2442,7 +2303,7 @@ class SKRequestInternal extends Struct<SKRequestInternal> {
     Pointer<SKRequestInternal> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_void(
+    _call_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("dealloc"),
     );
@@ -2452,16 +2313,13 @@ class SKRequestInternal extends Struct<SKRequestInternal> {
     Pointer<SKRequestInternal> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("init"),
     );
   }
 }
 
-/// Automatically generated API. Part of [StoreKit](https://developer.apple.com/documentation/storekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class SKServiceClient extends Struct<SKServiceClient> {
   factory SKServiceClient._() {
@@ -2477,7 +2335,7 @@ class SKServiceClient extends Struct<SKServiceClient> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("downloadAdded:"),
       arg,
@@ -2489,7 +2347,7 @@ class SKServiceClient extends Struct<SKServiceClient> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("downloadRemoved:"),
       arg,
@@ -2501,7 +2359,7 @@ class SKServiceClient extends Struct<SKServiceClient> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("downloadStatusChanged:"),
       arg,
@@ -2512,7 +2370,7 @@ class SKServiceClient extends Struct<SKServiceClient> {
     Pointer<SKServiceClient> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("init"),
     );
@@ -2524,7 +2382,7 @@ class SKServiceClient extends Struct<SKServiceClient> {
     @required Pointer withIdentifier,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("registerInAppClient:withIdentifier:"),
       arg,
@@ -2537,7 +2395,7 @@ class SKServiceClient extends Struct<SKServiceClient> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("removedTransactions:"),
       arg,
@@ -2549,7 +2407,7 @@ class SKServiceClient extends Struct<SKServiceClient> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("unregisterInAppClientWithIdentifier:"),
       arg,
@@ -2561,7 +2419,7 @@ class SKServiceClient extends Struct<SKServiceClient> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("updatedTransactions:"),
       arg,
@@ -2569,9 +2427,6 @@ class SKServiceClient extends Struct<SKServiceClient> {
   }
 }
 
-/// Automatically generated API. Part of [StoreKit](https://developer.apple.com/documentation/storekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class SKServiceProxy extends Struct<SKServiceProxy> {
   factory SKServiceProxy._() {
@@ -2586,7 +2441,7 @@ class SKServiceProxy extends Struct<SKServiceProxy> {
     Pointer<SKServiceProxy> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("inAppService"),
     );
@@ -2597,7 +2452,7 @@ class SKServiceProxy extends Struct<SKServiceProxy> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("inAppServiceWithErrorHandler:"),
       arg,
@@ -2608,7 +2463,7 @@ class SKServiceProxy extends Struct<SKServiceProxy> {
     Pointer<SKServiceProxy> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("init"),
     );
@@ -2619,7 +2474,7 @@ class SKServiceProxy extends Struct<SKServiceProxy> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("objectProxyWithErrorHandler:"),
       arg,
@@ -2630,16 +2485,13 @@ class SKServiceProxy extends Struct<SKServiceProxy> {
     Pointer<SKServiceProxy> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("serviceConnection"),
     );
   }
 }
 
-/// Automatically generated API. Part of [StoreKit](https://developer.apple.com/documentation/storekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class SKStoreReviewController extends Struct<SKStoreReviewController> {
   factory SKStoreReviewController._() {
@@ -2653,9 +2505,6 @@ class SKStoreReviewController extends Struct<SKStoreReviewController> {
   }
 }
 
-/// Automatically generated API. Part of [StoreKit](https://developer.apple.com/documentation/storekit?language=objc).
-///
-/// Generated with [ffi_tool](https://pub.dev/packages/ffi_tool).
 @unsized
 class SKXPCConnection extends Struct<SKXPCConnection> {
   factory SKXPCConnection._() {
@@ -2670,7 +2519,7 @@ class SKXPCConnection extends Struct<SKXPCConnection> {
     Pointer<SKXPCConnection> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("createXPCEndpoint"),
     );
@@ -2680,7 +2529,7 @@ class SKXPCConnection extends Struct<SKXPCConnection> {
     Pointer<SKXPCConnection> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("disconnectBlock"),
     );
@@ -2690,7 +2539,7 @@ class SKXPCConnection extends Struct<SKXPCConnection> {
     Pointer<SKXPCConnection> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("init"),
     );
@@ -2701,7 +2550,7 @@ class SKXPCConnection extends Struct<SKXPCConnection> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithServiceName:"),
       arg,
@@ -2713,7 +2562,7 @@ class SKXPCConnection extends Struct<SKXPCConnection> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_p(
+    return _call_ptr_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("initWithXPCConnection:"),
       arg,
@@ -2724,31 +2573,31 @@ class SKXPCConnection extends Struct<SKXPCConnection> {
     Pointer<SKXPCConnection> _self,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_returns_p(
+    return _call_ptr_ptr_returns_ptr(
       _self,
       _objc.getSelector("messageBlock"),
     );
   }
 
-  static void sendMessage$(
+  static void sendMessage(
     Pointer<SKXPCConnection> _self,
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("sendMessage:"),
       arg,
     );
   }
 
-  static void sendMessage$withReply$(
+  static void sendMessage$withReply(
     Pointer<SKXPCConnection> _self,
     Pointer arg, {
     @required Pointer withReply,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("sendMessage:withReply:"),
       arg,
@@ -2762,7 +2611,7 @@ class SKXPCConnection extends Struct<SKXPCConnection> {
     @required Pointer withReply,
   }) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("sendSynchronousMessage:withReply:"),
       arg,
@@ -2775,7 +2624,7 @@ class SKXPCConnection extends Struct<SKXPCConnection> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setDisconnectBlock:"),
       arg,
@@ -2787,7 +2636,7 @@ class SKXPCConnection extends Struct<SKXPCConnection> {
     Pointer arg,
   ) {
     _openDynamicLibrary();
-    return _call_objc_p_p_p_returns_void(
+    _call_ptr_ptr_ptr_returns_void(
       _self,
       _objc.getSelector("setMessageBlock:"),
       arg,
@@ -2795,26 +2644,26 @@ class SKXPCConnection extends Struct<SKXPCConnection> {
   }
 }
 
-final _call_objc_p_p_Int64_returns_void = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_Int64_returns_void_C,
-    _call_objc_p_p_Int64_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_Int64_returns_void_C = Void Function(
+final _call_ptr_ptr_Int64_returns_void = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_Int64_returns_void_C,
+    _call_ptr_ptr_Int64_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_Int64_returns_void_C = Void Function(
     Pointer _arg0, Pointer _arg1, Int64 arg);
-typedef _call_objc_p_p_Int64_returns_void_Dart = void Function(
+typedef _call_ptr_ptr_Int64_returns_void_Dart = void Function(
     Pointer _arg0, Pointer _arg1, int arg);
 
-final _call_objc_p_p_Int8_returns_void = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_Int8_returns_void_C,
-    _call_objc_p_p_Int8_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_Int8_returns_void_C = Void Function(
+final _call_ptr_ptr_Int8_returns_void = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_Int8_returns_void_C,
+    _call_ptr_ptr_Int8_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_Int8_returns_void_C = Void Function(
     Pointer _arg0, Pointer _arg1, Int8 arg);
-typedef _call_objc_p_p_Int8_returns_void_Dart = void Function(
+typedef _call_ptr_ptr_Int8_returns_void_Dart = void Function(
     Pointer _arg0, Pointer _arg1, int arg);
 
-final _call_objc_p_p_p_p_p_p_p_returns_p = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_p_p_p_p_p_returns_p_C,
-    _call_objc_p_p_p_p_p_p_p_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_p_p_p_p_returns_p_C = Pointer Function(
+final _call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr = _objc.dlForObjectiveC
+    .lookupFunction<_call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr_C,
+        _call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr_C = Pointer Function(
     Pointer _arg0,
     Pointer _arg1,
     Pointer arg,
@@ -2822,7 +2671,7 @@ typedef _call_objc_p_p_p_p_p_p_p_returns_p_C = Pointer Function(
     Pointer nonce,
     Pointer signature,
     Pointer timestamp);
-typedef _call_objc_p_p_p_p_p_p_p_returns_p_Dart = Pointer Function(
+typedef _call_ptr_ptr_ptr_ptr_ptr_ptr_ptr_returns_ptr_Dart = Pointer Function(
     Pointer _arg0,
     Pointer _arg1,
     Pointer arg,
@@ -2831,90 +2680,90 @@ typedef _call_objc_p_p_p_p_p_p_p_returns_p_Dart = Pointer Function(
     Pointer signature,
     Pointer timestamp);
 
-final _call_objc_p_p_p_p_returns_void = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_p_p_returns_void_C,
-    _call_objc_p_p_p_p_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_p_returns_void_C = Void Function(
+final _call_ptr_ptr_ptr_ptr_returns_void = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_ptr_ptr_returns_void_C,
+    _call_ptr_ptr_ptr_ptr_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_ptr_returns_void_C = Void Function(
     Pointer _arg0, Pointer _arg1, Pointer arg, Pointer withReply);
-typedef _call_objc_p_p_p_p_returns_void_Dart = void Function(
+typedef _call_ptr_ptr_ptr_ptr_returns_void_Dart = void Function(
     Pointer _arg0, Pointer _arg1, Pointer arg, Pointer withReply);
 
-final _call_objc_p_p_p_returns_Int8 = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_p_returns_Int8_C,
-    _call_objc_p_p_p_returns_Int8_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_returns_Int8_C = Int8 Function(
+final _call_ptr_ptr_ptr_returns_Int8 = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_ptr_returns_Int8_C,
+    _call_ptr_ptr_ptr_returns_Int8_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_returns_Int8_C = Int8 Function(
     Pointer _arg0, Pointer _arg1, Pointer arg);
-typedef _call_objc_p_p_p_returns_Int8_Dart = int Function(
-    Pointer _arg0, Pointer _arg1, Pointer arg);
-
-final _call_objc_p_p_p_returns_p = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_p_returns_p_C,
-    _call_objc_p_p_p_returns_p_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_returns_p_C = Pointer Function(
-    Pointer _arg0, Pointer _arg1, Pointer arg);
-typedef _call_objc_p_p_p_returns_p_Dart = Pointer Function(
+typedef _call_ptr_ptr_ptr_returns_Int8_Dart = int Function(
     Pointer _arg0, Pointer _arg1, Pointer arg);
 
-final _call_objc_p_p_p_returns_void = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_p_returns_void_C,
-    _call_objc_p_p_p_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_p_returns_void_C = Void Function(
+final _call_ptr_ptr_ptr_returns_ptr = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_ptr_returns_ptr_C,
+    _call_ptr_ptr_ptr_returns_ptr_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_returns_ptr_C = Pointer Function(
     Pointer _arg0, Pointer _arg1, Pointer arg);
-typedef _call_objc_p_p_p_returns_void_Dart = void Function(
+typedef _call_ptr_ptr_ptr_returns_ptr_Dart = Pointer Function(
     Pointer _arg0, Pointer _arg1, Pointer arg);
 
-final _call_objc_p_p_returns_Int64 = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_returns_Int64_C,
-    _call_objc_p_p_returns_Int64_Dart>("objc_msgSend");
-typedef _call_objc_p_p_returns_Int64_C = Int64 Function(
+final _call_ptr_ptr_ptr_returns_void = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_ptr_returns_void_C,
+    _call_ptr_ptr_ptr_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_ptr_returns_void_C = Void Function(
+    Pointer _arg0, Pointer _arg1, Pointer arg);
+typedef _call_ptr_ptr_ptr_returns_void_Dart = void Function(
+    Pointer _arg0, Pointer _arg1, Pointer arg);
+
+final _call_ptr_ptr_returns_Int64 = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_returns_Int64_C,
+    _call_ptr_ptr_returns_Int64_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_returns_Int64_C = Int64 Function(
     Pointer _arg0, Pointer _arg1);
-typedef _call_objc_p_p_returns_Int64_Dart = int Function(
+typedef _call_ptr_ptr_returns_Int64_Dart = int Function(
     Pointer _arg0, Pointer _arg1);
 
-final _call_objc_p_p_returns_Int8 = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_returns_Int8_C,
-    _call_objc_p_p_returns_Int8_Dart>("objc_msgSend");
-typedef _call_objc_p_p_returns_Int8_C = Int8 Function(
+final _call_ptr_ptr_returns_Int8 = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_returns_Int8_C,
+    _call_ptr_ptr_returns_Int8_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_returns_Int8_C = Int8 Function(
     Pointer _arg0, Pointer _arg1);
-typedef _call_objc_p_p_returns_Int8_Dart = int Function(
-    Pointer _arg0, Pointer _arg1);
-
-final _call_objc_p_p_returns_Uint64 = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_returns_Uint64_C,
-    _call_objc_p_p_returns_Uint64_Dart>("objc_msgSend");
-typedef _call_objc_p_p_returns_Uint64_C = Uint64 Function(
-    Pointer _arg0, Pointer _arg1);
-typedef _call_objc_p_p_returns_Uint64_Dart = int Function(
+typedef _call_ptr_ptr_returns_Int8_Dart = int Function(
     Pointer _arg0, Pointer _arg1);
 
-final _call_objc_p_p_returns_float32 = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_returns_float32_C,
-    _call_objc_p_p_returns_float32_Dart>("objc_msgSend");
-typedef _call_objc_p_p_returns_float32_C = Float Function(
+final _call_ptr_ptr_returns_Uint64 = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_returns_Uint64_C,
+    _call_ptr_ptr_returns_Uint64_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_returns_Uint64_C = Uint64 Function(
     Pointer _arg0, Pointer _arg1);
-typedef _call_objc_p_p_returns_float32_Dart = double Function(
-    Pointer _arg0, Pointer _arg1);
-
-final _call_objc_p_p_returns_float64 = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_returns_float64_C,
-    _call_objc_p_p_returns_float64_Dart>("objc_msgSend");
-typedef _call_objc_p_p_returns_float64_C = Float Function(
-    Pointer _arg0, Pointer _arg1);
-typedef _call_objc_p_p_returns_float64_Dart = double Function(
+typedef _call_ptr_ptr_returns_Uint64_Dart = int Function(
     Pointer _arg0, Pointer _arg1);
 
-final _call_objc_p_p_returns_p = _objc.dlForObjectiveC
-    .lookupFunction<_call_objc_p_p_returns_p_C, _call_objc_p_p_returns_p_Dart>(
-        "objc_msgSend");
-typedef _call_objc_p_p_returns_p_C = Pointer Function(
+final _call_ptr_ptr_returns_float32 = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_returns_float32_C,
+    _call_ptr_ptr_returns_float32_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_returns_float32_C = Float Function(
     Pointer _arg0, Pointer _arg1);
-typedef _call_objc_p_p_returns_p_Dart = Pointer Function(
+typedef _call_ptr_ptr_returns_float32_Dart = double Function(
     Pointer _arg0, Pointer _arg1);
 
-final _call_objc_p_p_returns_void = _objc.dlForObjectiveC.lookupFunction<
-    _call_objc_p_p_returns_void_C,
-    _call_objc_p_p_returns_void_Dart>("objc_msgSend");
-typedef _call_objc_p_p_returns_void_C = Void Function(
+final _call_ptr_ptr_returns_float64 = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_returns_float64_C,
+    _call_ptr_ptr_returns_float64_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_returns_float64_C = Float Function(
     Pointer _arg0, Pointer _arg1);
-typedef _call_objc_p_p_returns_void_Dart = void Function(
+typedef _call_ptr_ptr_returns_float64_Dart = double Function(
+    Pointer _arg0, Pointer _arg1);
+
+final _call_ptr_ptr_returns_ptr = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_returns_ptr_C,
+    _call_ptr_ptr_returns_ptr_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_returns_ptr_C = Pointer Function(
+    Pointer _arg0, Pointer _arg1);
+typedef _call_ptr_ptr_returns_ptr_Dart = Pointer Function(
+    Pointer _arg0, Pointer _arg1);
+
+final _call_ptr_ptr_returns_void = _objc.dlForObjectiveC.lookupFunction<
+    _call_ptr_ptr_returns_void_C,
+    _call_ptr_ptr_returns_void_Dart>("objc_msgSend");
+typedef _call_ptr_ptr_returns_void_C = Void Function(
+    Pointer _arg0, Pointer _arg1);
+typedef _call_ptr_ptr_returns_void_Dart = void Function(
     Pointer _arg0, Pointer _arg1);

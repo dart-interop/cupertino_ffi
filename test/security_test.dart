@@ -19,6 +19,7 @@
 // OR OTHER DEALINGS IN THE SOFTWARE.
 
 import 'dart:ffi';
+import 'package:ffi/ffi.dart';
 
 import 'package:cupertino_ffi/core_foundation.dart';
 import 'package:cupertino_ffi/security.dart';
@@ -28,7 +29,9 @@ void main() {
   group("Security", () {
     setUp(() {
       arcPush();
-      addTearDown(() => arcPop());
+    });
+    tearDown(() {
+      arcPop();
     });
     test("attributes ", () {
       final attrs = <Pointer<CFString>>[
@@ -44,9 +47,9 @@ void main() {
     test("SecKeyCreateRandomKey (RSA)", () {
       // Try to catch a randomly occurring segfault.
       for (var i = 0; i < 10; i++) {
-        final errorPtrPtr = Pointer<Pointer<CFError>>.allocate();
-        errorPtrPtr.store(Pointer<CFError>.fromAddress(0));
-        expect(errorPtrPtr.cast<IntPtr>().load<int>(), 0);
+        final errorPtrPtr = arcAllocate<Pointer<CFError>>();
+        errorPtrPtr.value = Pointer<CFError>.fromAddress(0);
+        expect(errorPtrPtr.cast<IntPtr>().value, 0);
 
         final attributes = CFDictionary.fromPointerMap({
           kSecAttrKeyType: kSecAttrKeyTypeRSA,
@@ -58,7 +61,7 @@ void main() {
         });
 
         final secKey = SecKeyCreateRandomKey(attributes, errorPtrPtr);
-        final error = CFError.toDart(errorPtrPtr.load<Pointer<CFError>>());
+        final error = errorPtrPtr.value.toDart();
         if (error != null) {
           throw error;
         }

@@ -23,7 +23,7 @@ import 'dart:typed_data';
 
 import 'package:cupertino_ffi/core_foundation.dart';
 
-class CFType extends Struct<CFType> {
+class CFType extends Struct {
   factory CFType._() {
     throw UnimplementedError();
   }
@@ -52,29 +52,31 @@ class CFType extends Struct<CFType> {
     }
     throw ArgumentError.value(value);
   }
+}
 
-  static Object toDart(Pointer<CFType> pointer) {
-    if (pointer.address == 0) {
+extension CFTypePointer on Pointer<CFType> {
+  Object toDart() {
+    if (address == 0) {
       return null;
     }
-    final id = CFGetTypeID(pointer);
+    final id = CFGetTypeID(this);
     if (id == CFBooleanTypeID) {
-      return CFBoolean.toDart(pointer.cast<CFBoolean>());
+      return cast<CFBoolean>().toDart();
     }
     if (id == CFNumberTypeID) {
-      return CFNumber.toDart(pointer.cast<CFNumber>());
+      return cast<CFNumber>().toDart();
     }
     if (id == CFStringTypeID) {
-      return CFString.toDart(pointer.cast<CFString>());
+      return cast<CFString>().toDart();
     }
     if (id == CFDataTypeID) {
-      return CFData.toDart(pointer.cast<CFData>());
+      return cast<CFData>().toDart();
     }
     if (id == CFArrayTypeID) {
-      return CFArray.toDart(pointer.cast<CFArray>());
+      return cast<CFArray>().toDart();
     }
     if (id == CFDictionaryTypeID) {
-      return CFDictionary.toDart(pointer.cast<CFDictionary>());
+      return cast<CFDictionary>().toDart();
     }
     throw UnsupportedError("Unsupported type ID: $id");
   }

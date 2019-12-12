@@ -25,7 +25,7 @@ import 'package:cupertino_ffi/core_foundation.dart';
 final int CFErrorTypeID = CFErrorGetTypeID();
 
 @unsized
-class CFError extends Struct<CFError> {
+class CFError extends Struct {
   static Pointer<CFError> fromDart(Object value) {
     if (value == null) {
       return Pointer<CFError>.fromAddress(0);
@@ -51,23 +51,25 @@ class CFError extends Struct<CFError> {
     }
     return fromDart(CupertinoError(description: "Error: $value"));
   }
+}
 
-  static CupertinoError toDart(Pointer<CFError> pointer) {
-    if (pointer.address == 0) {
+extension CFErrorPointer on Pointer<CFError> {
+  CupertinoError toDart() {
+    if (address == 0) {
       return null;
     }
     arcPush();
     try {
-      final code = CFErrorGetCode(pointer);
-      final userInfo = CFErrorCopyUserInfo(pointer);
-      final description = CFString.toDart(CFDictionaryGetValue(
+      final code = CFErrorGetCode(this);
+      final userInfo = CFErrorCopyUserInfo(this);
+      final description = CFDictionaryGetValue(
         userInfo,
         kCFErrorLocalizedDescriptionKey,
-      ).cast<CFString>());
-      final failureReason = CFString.toDart(CFDictionaryGetValue(
+      ).cast<CFString>().toDart();
+      final failureReason = CFDictionaryGetValue(
         userInfo,
         kCFErrorLocalizedFailureReasonKey,
-      ).cast<CFString>());
+      ).cast<CFString>().toDart();
       return CupertinoError(
         code: code,
         description: description,

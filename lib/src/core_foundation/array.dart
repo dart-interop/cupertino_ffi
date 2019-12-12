@@ -19,13 +19,14 @@
 // OR OTHER DEALINGS IN THE SOFTWARE.
 
 import 'dart:ffi';
+import 'package:ffi/ffi.dart';
 
 import 'package:cupertino_ffi/core_foundation.dart';
 
 final int CFArrayTypeID = CFArrayGetTypeID();
 
 @unsized
-class CFArray extends Struct<CFArray> {
+class CFArray extends Struct {
   factory CFArray._() {
     throw UnimplementedError();
   }
@@ -44,25 +45,27 @@ class CFArray extends Struct<CFArray> {
   }
 
   static Pointer<CFArray> fromPointers(List<Pointer> pointers) {
-    final ptr = Pointer<Pointer>.allocate(count: pointers.length);
+    final ptr = allocate<Pointer<Pointer>>(count: pointers.length);
     for (var i = 0; i < pointers.length; i++) {
-      ptr.elementAt(i).store(pointers[i]);
+      ptr
+          .elementAt(i)
+          .value = pointers[i];
     }
     return fromCPointers(ptr, pointers.length);
   }
+}
 
-  static List<T> toDart<T>(Pointer<CFArray> pointer) {
-    if (pointer.address == 0) {
+extension CFArrayPointer on Pointer<CFArray> {
+  List<T> toDart<T>() {
+    if (address == 0) {
       return null;
     }
     arcPush();
     try {
-      final length = CFArrayGetCount(pointer);
+      final length = CFArrayGetCount(this);
       final result = List<T>(length);
       for (var i = 0; i < length; i++) {
-        final item = CFType.toDart(
-          CFArrayGetValueAtIndex(pointer, i).cast<CFType>(),
-        );
+        final item = CFArrayGetValueAtIndex(this, i).cast<CFType>().toDart();
         if (item == null || item is T) {
           result[i] = item;
         } else {

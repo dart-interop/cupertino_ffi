@@ -19,13 +19,14 @@
 // OR OTHER DEALINGS IN THE SOFTWARE.
 
 import 'dart:ffi';
+import 'package:ffi/ffi.dart';
 
 import 'package:cupertino_ffi/core_foundation.dart';
 
 final int CFDictionaryTypeID = CFDictionaryGetTypeID();
 
 @unsized
-class CFDictionary extends Struct<CFDictionary> {
+class CFDictionary extends Struct {
   factory CFDictionary._() {
     throw UnimplementedError();
   }
@@ -43,47 +44,48 @@ class CFDictionary extends Struct<CFDictionary> {
     }
     return CFMutableDictionary.fromPointerMap(map).cast();
   }
+}
 
-  static List<MapEntry<Pointer<CFType>, Pointer<CFType>>> getDictionaryEntries(
-      Pointer<CFDictionary> dictionary) {
+extension CFDictionaryPointer on Pointer<CFDictionary> {
+  Map toDart() {
+    if (address == 0) {
+      return null;
+    }
+    final result = {};
+    for (var entry in getDictionaryEntries()) {
+      final key = entry.key.toDart();
+      final value = entry.value.toDart();
+      result[key] = value;
+    }
+    return result;
+  }
+
+  List<MapEntry<Pointer<CFType>, Pointer<CFType>>> getDictionaryEntries() {
     arcPush();
     try {
-      final length = CFDictionaryGetCount(dictionary);
+      final length = CFDictionaryGetCount(this);
 
       // Buffer for keys
-      final keysPtr = Pointer<Pointer<CFType>>.allocate(count: length);
+      final keysPtr = allocate<Pointer<CFType>>(count: length);
       arcAddNoARC(keysPtr);
 
       // Buffer for values
-      final valuesPtr = Pointer<Pointer<CFType>>.allocate(count: length);
+      final valuesPtr = allocate<Pointer<CFType>>(count: length);
       arcAddNoARC(valuesPtr);
 
-      CFDictionaryGetKeysAndValues(dictionary, keysPtr, valuesPtr);
+      CFDictionaryGetKeysAndValues(this, keysPtr, valuesPtr);
 
       // Result
       final result = <MapEntry<Pointer<CFType>, Pointer<CFType>>>[];
       for (var i = 0; i < length; i++) {
         result.add(MapEntry(
-          arcReturn(keysPtr.elementAt(i).load<Pointer<CFType>>()),
-          arcReturn(valuesPtr.elementAt(i).load<Pointer<CFType>>()),
+          arcReturn(keysPtr.elementAt(i).value),
+          arcReturn(valuesPtr.elementAt(i).value),
         ));
       }
       return result;
     } finally {
       arcPop();
     }
-  }
-
-  static Map toDart(Pointer<CFDictionary> pointer) {
-    if (pointer.address == 0) {
-      return null;
-    }
-    final result = {};
-    for (var entry in getDictionaryEntries(pointer)) {
-      final key = CFType.toDart(entry.key);
-      final value = CFType.toDart(entry.value);
-      result[key] = value;
-    }
-    return result;
   }
 }

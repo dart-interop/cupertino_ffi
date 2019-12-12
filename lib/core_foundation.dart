@@ -29,7 +29,7 @@ export 'src/core_foundation/data.dart';
 export 'src/core_foundation/dictionary.dart';
 export 'src/core_foundation/encoding.dart';
 export 'src/core_foundation/error.dart';
-export 'src/core_foundation/generated.dart';
+export 'src/generated/core_foundation/generated.dart';
 export 'src/core_foundation/memory_management.dart';
 export 'src/core_foundation/mutable_array.dart';
 export 'src/core_foundation/mutable_dictionary.dart';

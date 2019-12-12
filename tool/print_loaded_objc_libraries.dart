@@ -1,6 +1,6 @@
 import 'dart:ffi';
 
-import 'package:cupertino_ffi/objective_c_helpers.dart';
+import 'package:cupertino_ffi/objc_helpers.dart';
 
 final system = SystemMirror.get();
 

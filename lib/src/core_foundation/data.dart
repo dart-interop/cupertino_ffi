@@ -20,13 +20,14 @@
 
 import 'dart:ffi';
 import 'dart:typed_data';
+import 'package:ffi/ffi.dart';
 
 import 'package:cupertino_ffi/core_foundation.dart';
 
 final int CFDataTypeID = CFDataGetTypeID();
 
 @unsized
-class CFData extends Struct<CFData> {
+class CFData extends Struct {
   static Pointer<CFData> fromDart(List<int> data) {
     if (data == null) {
       return Pointer<CFData>.fromAddress(0);
@@ -34,10 +35,8 @@ class CFData extends Struct<CFData> {
     final length = data.length;
 
     // Allocate memory
-    final clonePtr = Pointer<Uint8>.allocate(count: length);
-    final cloneUint8List = clonePtr.asExternalTypedData(
-      count: length,
-    ) as Uint8List;
+    final clonePtr = allocate<Uint8>(count: length);
+    final cloneUint8List = clonePtr.asTypedList(length);
 
     // Write data
     cloneUint8List.setAll(0, data);
@@ -50,16 +49,18 @@ class CFData extends Struct<CFData> {
       Pointer.fromAddress(0),
     ));
   }
+}
 
-  static Uint8List toDart(Pointer<CFData> pointer) {
-    if (pointer.address == 0) {
+extension CFDataPointer on Pointer<CFData> {
+  Uint8List toDart() {
+    if (address == 0) {
       return null;
     }
-    final length = CFDataGetLength(pointer);
-    final bufferPointer = CFDataGetBytePtr(pointer);
+    final length = CFDataGetLength(this);
+    final bufferPointer = CFDataGetBytePtr(this);
     if (bufferPointer.address == 0) {
       throw UnimplementedError();
     }
-    return bufferPointer.asExternalTypedData(count: length) as Uint8List;
+    return bufferPointer.asTypedList(length);
   }
 }

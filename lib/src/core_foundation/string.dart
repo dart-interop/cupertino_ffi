@@ -26,7 +26,7 @@ import 'package:ffi/ffi.dart';
 final int CFStringTypeID = CFStringGetTypeID();
 
 @unsized
-class CFString extends Struct<CFString> {
+class CFString extends Struct {
   static Pointer<CFString> fromDart(String value) {
     if (value == null) {
       return Pointer<CFString>.fromAddress(0);
@@ -39,26 +39,28 @@ class CFString extends Struct<CFString> {
       CFEncoding.getSystemEncoding(),
     ));
   }
+}
 
-  static String toDart(Pointer<CFString> pointer) {
-    if (pointer.address == 0) {
+extension CFStringPointer on Pointer<CFString> {
+  String toDart() {
+    if (address == 0) {
       return null;
     }
     arcPush();
     try {
-      final length = CFStringGetLength(pointer);
+      final length = CFStringGetLength(this);
       if (length == 0) {
         return "";
       }
-      var utf8Pointer = CFStringGetCStringPtr(pointer);
+      var utf8Pointer = CFStringGetCStringPtr(this);
       if (utf8Pointer.address != 0) {
         return Utf8.fromUtf8(utf8Pointer);
       }
       final bufferLength = 6 * (length + 1);
-      final bufferPointer = Pointer<Utf8>.allocate(count: bufferLength);
+      final bufferPointer = allocate<Utf8>(count: bufferLength);
       arcAddNoARC(bufferPointer);
       final ok = CFStringGetCString(
-        pointer,
+        this,
         bufferPointer,
         bufferLength,
         CFEncoding.getSystemEncoding(),

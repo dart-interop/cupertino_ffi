@@ -4,23 +4,24 @@ import 'package:cupertino_ffi/core_foundation.dart';
 import 'package:cupertino_ffi/foundation.dart';
 
 void main() {
+  setUp(() {
+    arcPush();
+  });
+  tearDown(() {
+    arcPop();
+  });
   test("Contains classes", () {
     expect(NSUnarchiver, isNotNull);
   });
 
   test("NSString --> CFString", () {
-    // Allocate
-    final allocated = NSString.allocate();
-
     // Initialize
-    final nsString = NSString.initWithCString(
-      allocated,
-      Utf8.toUtf8("example"),
+    final cString = Utf8.toUtf8("example");
+    final nsString = NSString.allocate();
+    nsString.initWithCString(
+      cString,
     );
 
-    // Convert to CFString
-    final cfString = nsString.cast<CFString>();
-
-    expect(CFString.toDart(cfString), "example");
+    expect(nsString.cast<CFString>().toDart(), "example");
   });
 }

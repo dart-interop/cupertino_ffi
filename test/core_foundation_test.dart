@@ -40,9 +40,9 @@ void main() {
         expect(CFBoolean.fromDart(false), kCFBooleanFalse);
         expect(CFBoolean.fromDart(true), kCFBooleanTrue);
 
-        expect(CFBoolean.toDart(Pointer.fromAddress(0)), isNull);
-        expect(CFBoolean.toDart(kCFBooleanFalse), isFalse);
-        expect(CFBoolean.toDart(kCFBooleanTrue), isTrue);
+        expect(Pointer.fromAddress(0).cast<CFBoolean>().toDart(), isNull);
+        expect(kCFBooleanFalse.toDart(), isFalse);
+        expect(kCFBooleanTrue.toDart(), isTrue);
       });
     });
 
@@ -50,7 +50,7 @@ void main() {
       test("[1,2,3]", () {
         final pointer = CFData.fromDart([1, 2, 3]);
         expect(pointer.address, isNot(0));
-        expect(CFData.toDart(pointer), [1, 2, 3]);
+        expect(pointer.toDart(), [1, 2, 3]);
       });
     });
 
@@ -58,14 +58,14 @@ void main() {
       test("empty", () {
         final pointer = CFDictionary.fromDart({});
         expect(CFDictionaryGetCount(pointer), 0);
-        expect(CFDictionary.getDictionaryEntries(pointer).toList().length, 0);
-        expect(CFDictionary.toDart(pointer), {});
+        expect(pointer.getDictionaryEntries().toList().length, 0);
+        expect(pointer.toDart(), {});
       });
       test("two entries", () {
         final pointer = CFDictionary.fromDart({"k0": "v0", "k1": "v1"});
         expect(CFDictionaryGetCount(pointer), 2);
-        expect(CFDictionary.getDictionaryEntries(pointer).toList().length, 2);
-        expect(CFDictionary.toDart(pointer), {"k0": "v0", "k1": "v1"});
+        expect(pointer.getDictionaryEntries().toList().length, 2);
+        expect(pointer.toDart(), {"k0": "v0", "k1": "v1"});
       });
     });
 
@@ -73,123 +73,123 @@ void main() {
       test("-1 (int)", () {
         final pointer = CFNumber.fromDart(-1);
         expect(pointer.address, -1 * 256 + 55); // Tagged pointer
-        expect(CFNumber.toDart(pointer), -1);
+        expect(pointer.toDart(), -1);
       });
 
       test("0 (int)", () {
         final pointer = CFNumber.fromDart(0);
         expect(pointer.address, 0 * 256 + 55); // Tagged pointer
-        expect(CFNumber.toDart(pointer), 0);
+        expect(pointer.toDart(), 0);
       });
 
       test("1 (int)", () {
         final pointer = CFNumber.fromDart(1);
         expect(pointer.address, 1 * 256 + 55); // Tagged pointer
-        expect(CFNumber.toDart(pointer), 1);
+        expect(pointer.toDart(), 1);
       });
 
       test("2 (int)", () {
         final pointer = CFNumber.fromDart(2);
         expect(pointer.address, 2 * 256 + 55); // Tagged pointer
-        expect(CFNumber.toDart(pointer), 2);
+        expect(pointer.toDart(), 2);
       });
 
       test("3 (int)", () {
         final pointer = CFNumber.fromDart(3);
         expect(pointer.address, 3 * 256 + 55); // Tagged pointer
-        expect(CFNumber.toDart(pointer), 3);
+        expect(pointer.toDart(), 3);
       });
 
       test("0.0 (double)", () {
         final pointer = CFNumber.fromDart(0.0);
         expect(pointer.address, 0 * 256 + 87); // Tagged pointer
-        expect(CFNumber.toDart(pointer), 0.0);
+        expect(pointer.toDart(), 0.0);
       });
 
       test("1.0 (double)", () {
         final pointer = CFNumber.fromDart(1.0);
         expect(pointer.address, 1 * 256 + 87); // Tagged pointer
-        expect(CFNumber.toDart(pointer), 1.0);
+        expect(pointer.toDart(), 1.0);
       });
 
       test("3.14 (double)", () {
         final pointer = CFNumber.fromDart(3.14);
-        expect(CFNumber.toDart(pointer), 3.14);
+        expect(pointer.toDart(), 3.14);
       });
     });
 
     group("CFString: ", () {
       test("''", () {
         final pointer = CFString.fromDart("");
-        expect(CFString.toDart(pointer), "");
+        expect(pointer.toDart(), "");
       });
 
       test("'abc", () {
         final pointer = CFString.fromDart("abc");
-        expect(CFString.toDart(pointer), "abc");
+        expect(pointer.toDart(), "abc");
       });
 
       test("'12345678901234567890'", () {
         final pointer = CFString.fromDart("abc");
-        expect(CFString.toDart(pointer), "abc");
+        expect(pointer.toDart(), "abc");
       });
 
       test("'€'", () {
         final pointer = CFString.fromDart("€");
-        expect(CFString.toDart(pointer), "€");
+        expect(pointer.toDart(), "€");
       });
 
       test("'𐍈' (𐍈 takes 4 bytes)", () {
         final pointer = CFString.fromDart("𐍈𐍈𐍈𐍈");
-        expect(CFString.toDart(pointer), "𐍈𐍈𐍈𐍈");
+        expect(pointer.toDart(), "𐍈𐍈𐍈𐍈");
       });
 
       test("'𐍈𐍈𐍈𐍈' (𐍈 takes 4 bytes)", () {
         final pointer = CFString.fromDart("𐍈𐍈𐍈𐍈");
-        expect(CFString.toDart(pointer), "𐍈𐍈𐍈𐍈");
+        expect(pointer.toDart(), "𐍈𐍈𐍈𐍈");
       });
     });
 
     group("CFType: ", () {
       test("null", () {
         final value = null;
-        final wrapped = CFType.fromDart(value);
-        expect(CFType.toDart(wrapped), value);
+        final pointer = CFType.fromDart(value);
+        expect(pointer.toDart(), value);
       });
       test("CFBoolean (false)", () {
         final value = false;
-        final wrapped = CFType.fromDart(value);
-        expect(CFType.toDart(wrapped), value);
+        final pointer = CFType.fromDart(value);
+        expect(pointer.toDart(), value);
       });
       test("CFBoolean (true)", () {
         final value = true;
-        final wrapped = CFType.fromDart(value);
-        expect(CFType.toDart(wrapped), value);
+        final pointer = CFType.fromDart(value);
+        expect(pointer.toDart(), value);
       });
       test("CFNumber (int)", () {
         final value = 3;
-        final wrapped = CFType.fromDart(value);
-        expect(CFType.toDart(wrapped), value);
+        final pointer = CFType.fromDart(value);
+        expect(pointer.toDart(), value);
       });
       test("CFNumber (double)", () {
         final value = 3.14;
-        final wrapped = CFType.fromDart(value);
-        expect(CFType.toDart(wrapped), value);
+        final pointer = CFType.fromDart(value);
+        expect(pointer.toDart(), value);
       });
       test("CFString", () {
         final value = "abc";
-        final wrapped = CFType.fromDart(value);
-        expect(CFType.toDart(wrapped), value);
+        final pointer = CFType.fromDart(value);
+        expect(pointer.toDart(), value);
       });
       test("CFArray", () {
         final value = [1, 2, 3];
-        final wrapped = CFType.fromDart(value);
-        expect(CFType.toDart(wrapped), value);
+        final pointer = CFType.fromDart(value);
+        expect(pointer.toDart(), value);
       });
       test("CFDictionary", () {
         final value = {"k": "v"};
-        final wrapped = CFType.fromDart(value);
-        expect(CFType.toDart(wrapped), value);
+        final pointer = CFType.fromDart(value);
+        expect(pointer.toDart(), value);
       });
     });
   });

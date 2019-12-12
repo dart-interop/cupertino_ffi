@@ -23,14 +23,14 @@ import 'dart:ffi';
 // TODO: Generate structs from definition files?
 
 @unsized
-class SecKey extends Struct<SecKey> {
+class SecKey extends Struct {
   factory SecKey._() {
     throw UnimplementedError();
   }
 }
 
 @unsized
-class SecAccessControl extends Struct<SecAccessControl> {
+class SecAccessControl extends Struct {
   factory SecAccessControl._() {
     throw UnimplementedError();
   }

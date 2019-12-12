@@ -25,7 +25,7 @@ import 'package:cupertino_ffi/core_foundation.dart';
 final _systemEncoding = CFStringGetSystemEncoding();
 
 @unsized
-class CFEncoding extends Struct<CFEncoding> {
+class CFEncoding extends Struct {
   static Pointer<CFEncoding> getSystemEncoding() => _systemEncoding;
   factory CFEncoding._() {
     throw UnimplementedError();

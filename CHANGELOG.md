@@ -1,3 +1,6 @@
+# 0.1.6
+  * Support for Dart 2.6 and extension classes.
+
 # 0.1.5
   * Improved documentation.
 

@@ -22,4 +22,4 @@
 library cupertino_ffi.security;
 
 export 'src/security/classes.dart';
-export 'src/security/generated.dart';
+export 'src/generated/security/generated.dart';

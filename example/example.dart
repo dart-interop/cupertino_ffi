@@ -1,4 +1,5 @@
 import 'dart:ffi';
+import 'package:ffi/ffi.dart';
 
 import 'package:cupertino_ffi/core_foundation.dart';
 import 'package:cupertino_ffi/security.dart';
@@ -7,8 +8,7 @@ void main() {
   arcPush();
   try {
     // Allocate an error variable on heap.
-    final errorPtrPtr = Pointer<Pointer<CFError>>.allocate();
-    errorPtrPtr.cast<IntPtr>().store(0);
+    final errorPtrPtr = allocate<Pointer<CFError>>();
 
     // Define RSA key attributes
     final attributes = CFDictionary.fromPointerMap({
@@ -20,7 +20,7 @@ void main() {
     final secKey = SecKeyCreateRandomKey(attributes, errorPtrPtr);
 
     // Check for errors
-    final error = CFError.toDart(errorPtrPtr.load<Pointer<CFError>>());
+    final error = errorPtrPtr.value.toDart();
     if (error != null) {
       throw error;
     }

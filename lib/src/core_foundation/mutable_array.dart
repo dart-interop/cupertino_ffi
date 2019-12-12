@@ -23,7 +23,7 @@ import 'dart:ffi';
 import 'package:cupertino_ffi/core_foundation.dart';
 
 @unsized
-class CFMutableArray extends Struct<CFMutableArray> {
+class CFMutableArray extends Struct {
   factory CFMutableArray._() {
     throw UnimplementedError();
   }

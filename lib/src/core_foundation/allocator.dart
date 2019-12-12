@@ -34,7 +34,7 @@ typedef _CFAllocatorGetDefault_C = Pointer<CFAllocator> Function();
 typedef _CFAllocatorGetDefault_Dart = Pointer<CFAllocator> Function();
 
 @unsized
-class CFAllocator extends Struct<CFAllocator> {
+class CFAllocator extends Struct {
   factory CFAllocator._() {
     throw UnimplementedError();
   }

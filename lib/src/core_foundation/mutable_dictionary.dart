@@ -23,7 +23,7 @@ import 'dart:ffi';
 import 'package:cupertino_ffi/core_foundation.dart';
 
 @unsized
-class CFMutableDictionary extends Struct<CFMutableDictionary> {
+class CFMutableDictionary extends Struct {
   factory CFMutableDictionary._() {
     throw UnimplementedError();
   }

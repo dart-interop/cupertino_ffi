@@ -19,11 +19,18 @@
 // OR OTHER DEALINGS IN THE SOFTWARE.
 
 import 'dart:ffi';
+import 'package:ffi/ffi.dart';
 
 import 'package:cupertino_ffi/core_foundation.dart';
 
 final List<Pointer<NativeType>> _arcPointers = <Pointer<NativeType>>[];
 final List<int> _arcPointersLengths = <int>[];
+
+Pointer<T> arcAllocate<T extends NativeType>() {
+  final pointer = allocate<T>();
+  arcAdd(pointer);
+  return pointer;
+}
 
 /// Adds the ARC pointer the ARC frame. The reference count will be decremented
 /// when [arcPop] is called.
@@ -85,7 +92,7 @@ Pointer<R> arcReturn<R extends NativeType>(Pointer<R> pointer) {
 
   // Handle null
   if (pointer.address != 0) {
-    retain(pointer);
+    arcRetain(pointer);
     final length = _arcPointersLengths.last;
     _arcPointers[length - 1] = pointer;
   }
@@ -116,10 +123,10 @@ void arcPop() {
       if (address != 0) {
         if (address % 4 == 1) {
           // Ordinary no-ARC pointer
-          Pointer.fromAddress(address - 1).free();
+          free(Pointer.fromAddress(address - 1));
         } else {
           // ARC pointer
-          release(lastPointer);
+          arcRelease(lastPointer);
         }
       }
     }
@@ -134,7 +141,7 @@ void arcPop() {
 /// Increments reference counter if the reference is non-zero.
 Pointer<T> arcFieldGet<T extends NativeType>(Pointer<T> pointer) {
   if (pointer != null) {
-    retain(pointer);
+    arcRetain(pointer);
     arcAdd(pointer);
   }
   return pointer;
@@ -146,10 +153,10 @@ Pointer<T> arcFieldSet<T extends NativeType>(
     Pointer<T> oldPointer, Pointer<T> newPointer) {
   if (oldPointer != newPointer) {
     if (newPointer != null) {
-      retain(newPointer);
+      arcRetain(newPointer);
     }
     if (oldPointer != null) {
-      release(oldPointer);
+      arcRelease(oldPointer);
     }
   }
   return newPointer;
@@ -157,15 +164,15 @@ Pointer<T> arcFieldSet<T extends NativeType>(
 
 /// Increments the reference count of the argument.
 ///
-/// The reference count should be later decremented with [release].
-void retain<R extends NativeType>(Pointer<R> pointer) {
+/// The reference count should be later decremented with [arcRelease].
+void arcRetain<R extends NativeType>(Pointer<R> pointer) {
   _retain(pointer);
 }
 
 /// Decrements the reference count of the argument.
 ///
 /// If it reaches zero, the memory is freed.
-void release<R extends NativeType>(Pointer<R> pointer) {
+void arcRelease<R extends NativeType>(Pointer<R> pointer) {
   _release(pointer);
 }
 

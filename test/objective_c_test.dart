@@ -21,7 +21,7 @@
 import 'dart:ffi';
 
 import 'package:cupertino_ffi/core_foundation.dart';
-import 'package:cupertino_ffi/objective_c.dart';
+import 'package:cupertino_ffi/objc.dart';
 import 'package:ffi/ffi.dart';
 import 'package:test/test.dart';
 
@@ -37,7 +37,7 @@ void main() {
     });
 
     test("allocate", () {
-      final result = allocate("NSString");
+      final result = allocateByClassName("NSString");
       expect(result.address, isNot(0));
     });
 
@@ -87,16 +87,15 @@ void main() {
     });
 
     test("objc_copyClassList", () {
-      final lengthPtr = Pointer<Uint32>.allocate();
+      final lengthPtr = allocate<Uint32>();
       final classes = objc_copyClassList(lengthPtr);
       expect(classes.address, isNot(0));
-      final length = lengthPtr.load<int>();
+      final length = lengthPtr.value;
       expect(length, greaterThan(1000));
       expect(length, lessThan(10000));
       for (var i = 0; i < length; i++) {
-        final klass = classes.elementAt(i).load();
+        final klass = classes.elementAt(i).value;
         final name = Utf8.fromUtf8(class_getName(klass));
-        print("'$name'");
         if (name == "NSString") {
           return;
         }

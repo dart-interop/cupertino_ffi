@@ -13,5 +13,5 @@ pubspec.lock
 doc/api/
 
 # IDEs
-.idea/
-.VSCode/
+.idea
+.VSCode

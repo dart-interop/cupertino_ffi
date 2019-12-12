@@ -19,6 +19,7 @@
 // OR OTHER DEALINGS IN THE SOFTWARE.
 
 import 'dart:ffi';
+import 'package:ffi/ffi.dart';
 
 import 'package:cupertino_ffi/core_foundation.dart';
 
@@ -33,7 +34,7 @@ const int kCFNumberSInt8Type = 1,
     kCFNumberCFIndexType = 14;
 
 @unsized
-class CFNumber extends Struct<CFNumber> {
+class CFNumber extends Struct {
   factory CFNumber._() {
     throw UnimplementedError();
   }
@@ -43,7 +44,7 @@ class CFNumber extends Struct<CFNumber> {
       type ??= kCFNumberSInt64Type;
       if (type == kCFNumberSInt64Type) {
         final ptr = _int64Ptr;
-        ptr.store(value);
+        ptr.value = value;
         return arcReturn(CFNumberCreate(
           CFAllocator.getDefault(),
           kCFNumberSInt64Type,
@@ -56,7 +57,7 @@ class CFNumber extends Struct<CFNumber> {
       type ??= kCFNumberFloat64Type;
       if (type == kCFNumberFloat64Type) {
         final ptr = _int64Ptr.cast<Double>();
-        ptr.store(value);
+        ptr.value = value;
         return arcReturn(CFNumberCreate(
           CFAllocator.getDefault(),
           kCFNumberFloat64Type,
@@ -69,32 +70,35 @@ class CFNumber extends Struct<CFNumber> {
       throw ArgumentError.value(value);
     }
   }
+}
 
-  static num toDart(Pointer<CFNumber> pointer) {
-    if (pointer.address == 0) {
+extension CFNumberPointer on Pointer<CFNumber> {
+  num toDart() {
+    if (address == 0) {
       return null;
     }
-    final type = CFNumberGetType(pointer);
-    final ptr = Pointer<Int64>.allocate();
+    final type = CFNumberGetType(this);
 
     // Int64
     if (type == kCFNumberSInt64Type) {
+      final ptr = allocate<Int64>();
       CFNumberGetValue(
-        pointer,
+        this,
         kCFNumberSInt64Type,
         ptr,
       );
-      return ptr.load<int>();
+      return ptr.value;
     }
 
     // Float64
     if (type == kCFNumberFloat64Type) {
+      final ptr = allocate<Double>();
       CFNumberGetValue(
-        pointer,
+        this,
         kCFNumberFloat64Type,
         ptr,
       );
-      return ptr.cast<Double>().load<double>();
+      return ptr.value;
     }
 
     // TODO: Other CFNumber types
@@ -102,4 +106,4 @@ class CFNumber extends Struct<CFNumber> {
   }
 }
 
-final _int64Ptr = Pointer<Int64>.allocate();
+final _int64Ptr = allocate<Int64>();

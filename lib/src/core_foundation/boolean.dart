@@ -25,7 +25,7 @@ import 'package:cupertino_ffi/core_foundation.dart';
 final CFBooleanTypeID = CFBooleanGetTypeID();
 
 @unsized
-class CFBoolean extends Struct<CFBoolean> {
+class CFBoolean extends Struct {
   static Pointer<CFBoolean> fromDart(bool value) {
     if (value == null) {
       return Pointer<CFBoolean>.fromAddress(0);
@@ -35,17 +35,20 @@ class CFBoolean extends Struct<CFBoolean> {
     }
     return kCFBooleanTrue;
   }
+}
 
-  static bool toDart(Pointer<CFBoolean> pointer) {
-    if (pointer.address == 0) {
+extension CFBooleanPointer on Pointer<CFBoolean> {
+  bool toDart() {
+    final address = this.address;
+    if (this.address == 0) {
       return null;
     }
-    if (pointer.address == kCFBooleanFalse.address) {
+    if (address == kCFBooleanFalse.address) {
       return false;
     }
-    if (pointer.address == kCFBooleanTrue.address) {
+    if (address == kCFBooleanTrue.address) {
       return true;
     }
-    throw ArgumentError.value(pointer);
+    throw ArgumentError.value(this);
   }
 }

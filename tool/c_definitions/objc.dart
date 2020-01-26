@@ -24,6 +24,7 @@ final libraryForObjc = Library(
   importedUris: {
     ImportedUri("package:cupertino_ffi/objc.dart"),
   },
+  dynamicLibraryIdentifier: 'dlForObjectiveC',
   dynamicLibraryPath:
       "/System/Library/Frameworks/Foundation.framework/Versions/Current/Foundation",
   elements: _elements,

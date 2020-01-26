@@ -1,5 +1,5 @@
 name: cupertino_ffi
-version: 0.2.0
+version: 0.2.1
 description:
   This package enables Dart developers to use various C APIs by Apple (Core Foundation, Security,
   etc.).

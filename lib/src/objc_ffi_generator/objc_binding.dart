@@ -73,7 +73,7 @@ class ObjcLibraryBinding {
   ObjcLibraryBinding({
     @required this.dynamicLibrary,
     @required this.name,
-    this.packageName = "cupertino_ffi",
+    @required this.packageName,
     String path,
     String classPathPattern,
     String libraryName,

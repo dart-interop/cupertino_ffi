@@ -1,3 +1,7 @@
+# 0.2.1
+  * Improved generated documentation.
+  * Fixed bugs.
+
 # 0.2.0
   * Moved automatically generated Objective-C APIs to the package [cupertino_ffi_generated](https://pub.dev/packages/cupertino_ffi_generated).
   * Upgraded 'ffi_tool'.

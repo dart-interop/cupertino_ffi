@@ -1,4 +1,4 @@
-// Copyright (c) 2019 cupertino_ffi authors.
+// Copyright (c) 2019 terrier989@gmail.com.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -21,11 +21,10 @@
 import 'package:ffi_tool/c.dart';
 
 final libraryForCoreFoundation = Library(
-  importedUris: [
-    "package:cupertino_ffi/core_foundation.dart",
-    "package:ffi/ffi.dart",
-  ],
-  dynamicLibraryIdentifier: "dlForCoreFoundation",
+  importedUris: {
+    ImportedUri("package:cupertino_ffi/core_foundation.dart"),
+  },
+  dynamicLibraryIdentifier: 'dlForCoreFoundation',
   dynamicLibraryPath:
       "/System/Library/Frameworks/CoreFoundation.framework/Versions/Current/CoreFoundation",
   elements: _elements,

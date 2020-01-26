@@ -1,655 +1,658 @@
 // AUTOMATICALLY GENERATED. DO NOT EDIT.
-import 'dart:ffi';
+
+import 'dart:ffi' as ffi;
 import 'package:cupertino_ffi/core_foundation.dart';
+import 'package:cupertino_ffi/objc.dart' as ffi;
 import 'package:cupertino_ffi/security.dart';
-import 'package:cupertino_ffi/objc.dart';
 
 /// Dynamic library
-final DynamicLibrary dlForSecurity = DynamicLibrary.open(
-  "/System/Library/Frameworks/Security.framework/Versions/Current/Security",
+final ffi.DynamicLibrary dlForSecurity = ffi.DynamicLibrary.open(
+  '/System/Library/Frameworks/Security.framework/Versions/Current/Security',
 );
 
-/// C function 'SecAccessControlCreateWithFlags'.
-Pointer<SecAccessControl> SecAccessControlCreateWithFlags(
-  Pointer<CFAllocator> allocator,
-  Pointer protection,
+/// C function `SecAccessControlCreateWithFlags`.
+ffi.Pointer<SecAccessControl> SecAccessControlCreateWithFlags(
+  ffi.Pointer<CFAllocator> allocator,
+  ffi.Pointer protection,
   int flags,
-  Pointer<Pointer<CFError>> error,
+  ffi.Pointer<ffi.Pointer<CFError>> error,
 ) {
-  final _result =
+  final result =
       _SecAccessControlCreateWithFlags(allocator, protection, flags, error);
-  arcAdd(_result);
-  return _result;
+  arcAdd(result);
+  return result;
 }
 
 final _SecAccessControlCreateWithFlags_Dart _SecAccessControlCreateWithFlags =
     dlForSecurity.lookupFunction<_SecAccessControlCreateWithFlags_C,
         _SecAccessControlCreateWithFlags_Dart>(
-  "SecAccessControlCreateWithFlags",
+  'SecAccessControlCreateWithFlags',
 );
-typedef Pointer<SecAccessControl> _SecAccessControlCreateWithFlags_C(
-  Pointer<CFAllocator> allocator,
-  Pointer protection,
-  Int64 flags,
-  Pointer<Pointer<CFError>> error,
+typedef _SecAccessControlCreateWithFlags_C = ffi.Pointer<SecAccessControl>
+    Function(
+  ffi.Pointer<CFAllocator> allocator,
+  ffi.Pointer protection,
+  ffi.Int64 flags,
+  ffi.Pointer<ffi.Pointer<CFError>> error,
 );
-typedef Pointer<SecAccessControl> _SecAccessControlCreateWithFlags_Dart(
-  Pointer<CFAllocator> allocator,
-  Pointer protection,
+typedef _SecAccessControlCreateWithFlags_Dart = ffi.Pointer<SecAccessControl>
+    Function(
+  ffi.Pointer<CFAllocator> allocator,
+  ffi.Pointer protection,
   int flags,
-  Pointer<Pointer<CFError>> error,
+  ffi.Pointer<ffi.Pointer<CFError>> error,
 );
 
-/// C function 'SecItemAdd'.
+/// C function `SecItemAdd`.
 int SecItemAdd(
-  Pointer<CFDictionary> arg0,
-  Pointer<Pointer<CFType>> arg1,
+  ffi.Pointer<CFDictionary> arg0,
+  ffi.Pointer<ffi.Pointer<CFType>> arg1,
 ) {
   return _SecItemAdd(arg0, arg1);
 }
 
 final _SecItemAdd_Dart _SecItemAdd =
     dlForSecurity.lookupFunction<_SecItemAdd_C, _SecItemAdd_Dart>(
-  "SecItemAdd",
+  'SecItemAdd',
 );
-typedef IntPtr _SecItemAdd_C(
-  Pointer<CFDictionary> arg0,
-  Pointer<Pointer<CFType>> arg1,
+typedef _SecItemAdd_C = ffi.IntPtr Function(
+  ffi.Pointer<CFDictionary> arg0,
+  ffi.Pointer<ffi.Pointer<CFType>> arg1,
 );
-typedef int _SecItemAdd_Dart(
-  Pointer<CFDictionary> arg0,
-  Pointer<Pointer<CFType>> arg1,
+typedef _SecItemAdd_Dart = int Function(
+  ffi.Pointer<CFDictionary> arg0,
+  ffi.Pointer<ffi.Pointer<CFType>> arg1,
 );
 
-/// C function 'SecItemCopyMatching'.
+/// C function `SecItemCopyMatching`.
 int SecItemCopyMatching(
-  Pointer<CFDictionary> query,
-  Pointer<Pointer<CFType>> result,
+  ffi.Pointer<CFDictionary> query,
+  ffi.Pointer<ffi.Pointer<CFType>> result,
 ) {
   return _SecItemCopyMatching(query, result);
 }
 
 final _SecItemCopyMatching_Dart _SecItemCopyMatching = dlForSecurity
     .lookupFunction<_SecItemCopyMatching_C, _SecItemCopyMatching_Dart>(
-  "SecItemCopyMatching",
+  'SecItemCopyMatching',
 );
-typedef IntPtr _SecItemCopyMatching_C(
-  Pointer<CFDictionary> query,
-  Pointer<Pointer<CFType>> result,
+typedef _SecItemCopyMatching_C = ffi.IntPtr Function(
+  ffi.Pointer<CFDictionary> query,
+  ffi.Pointer<ffi.Pointer<CFType>> result,
 );
-typedef int _SecItemCopyMatching_Dart(
-  Pointer<CFDictionary> query,
-  Pointer<Pointer<CFType>> result,
+typedef _SecItemCopyMatching_Dart = int Function(
+  ffi.Pointer<CFDictionary> query,
+  ffi.Pointer<ffi.Pointer<CFType>> result,
 );
 
-/// C function 'SecItemUpdate'.
+/// C function `SecItemUpdate`.
 int SecItemUpdate(
-  Pointer<CFDictionary> arg0,
-  Pointer<CFDictionary> arg1,
+  ffi.Pointer<CFDictionary> arg0,
+  ffi.Pointer<CFDictionary> arg1,
 ) {
   return _SecItemUpdate(arg0, arg1);
 }
 
 final _SecItemUpdate_Dart _SecItemUpdate =
     dlForSecurity.lookupFunction<_SecItemUpdate_C, _SecItemUpdate_Dart>(
-  "SecItemUpdate",
+  'SecItemUpdate',
 );
-typedef IntPtr _SecItemUpdate_C(
-  Pointer<CFDictionary> arg0,
-  Pointer<CFDictionary> arg1,
+typedef _SecItemUpdate_C = ffi.IntPtr Function(
+  ffi.Pointer<CFDictionary> arg0,
+  ffi.Pointer<CFDictionary> arg1,
 );
-typedef int _SecItemUpdate_Dart(
-  Pointer<CFDictionary> arg0,
-  Pointer<CFDictionary> arg1,
+typedef _SecItemUpdate_Dart = int Function(
+  ffi.Pointer<CFDictionary> arg0,
+  ffi.Pointer<CFDictionary> arg1,
 );
 
-/// C function 'SecItemDelete'.
+/// C function `SecItemDelete`.
 int SecItemDelete(
-  Pointer<CFDictionary> arg0,
+  ffi.Pointer<CFDictionary> arg0,
 ) {
   return _SecItemDelete(arg0);
 }
 
 final _SecItemDelete_Dart _SecItemDelete =
     dlForSecurity.lookupFunction<_SecItemDelete_C, _SecItemDelete_Dart>(
-  "SecItemDelete",
+  'SecItemDelete',
 );
-typedef IntPtr _SecItemDelete_C(
-  Pointer<CFDictionary> arg0,
+typedef _SecItemDelete_C = ffi.IntPtr Function(
+  ffi.Pointer<CFDictionary> arg0,
 );
-typedef int _SecItemDelete_Dart(
-  Pointer<CFDictionary> arg0,
+typedef _SecItemDelete_Dart = int Function(
+  ffi.Pointer<CFDictionary> arg0,
 );
 
-/// C function 'SecKeyCopyPublicKey'.
-Pointer<SecKey> SecKeyCopyPublicKey(
-  Pointer<SecKey> key,
+/// C function `SecKeyCopyPublicKey`.
+ffi.Pointer<SecKey> SecKeyCopyPublicKey(
+  ffi.Pointer<SecKey> key,
 ) {
-  final _result = _SecKeyCopyPublicKey(key);
-  arcAdd(_result);
-  return _result;
+  final result = _SecKeyCopyPublicKey(key);
+  arcAdd(result);
+  return result;
 }
 
 final _SecKeyCopyPublicKey_Dart _SecKeyCopyPublicKey = dlForSecurity
     .lookupFunction<_SecKeyCopyPublicKey_C, _SecKeyCopyPublicKey_Dart>(
-  "SecKeyCopyPublicKey",
+  'SecKeyCopyPublicKey',
 );
-typedef Pointer<SecKey> _SecKeyCopyPublicKey_C(
-  Pointer<SecKey> key,
+typedef _SecKeyCopyPublicKey_C = ffi.Pointer<SecKey> Function(
+  ffi.Pointer<SecKey> key,
 );
-typedef Pointer<SecKey> _SecKeyCopyPublicKey_Dart(
-  Pointer<SecKey> key,
+typedef _SecKeyCopyPublicKey_Dart = ffi.Pointer<SecKey> Function(
+  ffi.Pointer<SecKey> key,
 );
 
-/// C function 'SecKeyCopyKeyExchangeResult'.
-Pointer<CFData> SecKeyCopyKeyExchangeResult(
-  Pointer<SecKey> privateKey,
-  Pointer<CFString> algorithm,
-  Pointer<SecKey> publicKey,
-  Pointer<CFDictionary> parameters,
-  Pointer<Pointer<CFError>> error,
+/// C function `SecKeyCopyKeyExchangeResult`.
+ffi.Pointer<CFData> SecKeyCopyKeyExchangeResult(
+  ffi.Pointer<SecKey> privateKey,
+  ffi.Pointer<CFString> algorithm,
+  ffi.Pointer<SecKey> publicKey,
+  ffi.Pointer<CFDictionary> parameters,
+  ffi.Pointer<ffi.Pointer<CFError>> error,
 ) {
-  final _result = _SecKeyCopyKeyExchangeResult(
+  final result = _SecKeyCopyKeyExchangeResult(
       privateKey, algorithm, publicKey, parameters, error);
-  arcAdd(_result);
-  return _result;
+  arcAdd(result);
+  return result;
 }
 
 final _SecKeyCopyKeyExchangeResult_Dart _SecKeyCopyKeyExchangeResult =
     dlForSecurity.lookupFunction<_SecKeyCopyKeyExchangeResult_C,
         _SecKeyCopyKeyExchangeResult_Dart>(
-  "SecKeyCopyKeyExchangeResult",
+  'SecKeyCopyKeyExchangeResult',
 );
-typedef Pointer<CFData> _SecKeyCopyKeyExchangeResult_C(
-  Pointer<SecKey> privateKey,
-  Pointer<CFString> algorithm,
-  Pointer<SecKey> publicKey,
-  Pointer<CFDictionary> parameters,
-  Pointer<Pointer<CFError>> error,
+typedef _SecKeyCopyKeyExchangeResult_C = ffi.Pointer<CFData> Function(
+  ffi.Pointer<SecKey> privateKey,
+  ffi.Pointer<CFString> algorithm,
+  ffi.Pointer<SecKey> publicKey,
+  ffi.Pointer<CFDictionary> parameters,
+  ffi.Pointer<ffi.Pointer<CFError>> error,
 );
-typedef Pointer<CFData> _SecKeyCopyKeyExchangeResult_Dart(
-  Pointer<SecKey> privateKey,
-  Pointer<CFString> algorithm,
-  Pointer<SecKey> publicKey,
-  Pointer<CFDictionary> parameters,
-  Pointer<Pointer<CFError>> error,
+typedef _SecKeyCopyKeyExchangeResult_Dart = ffi.Pointer<CFData> Function(
+  ffi.Pointer<SecKey> privateKey,
+  ffi.Pointer<CFString> algorithm,
+  ffi.Pointer<SecKey> publicKey,
+  ffi.Pointer<CFDictionary> parameters,
+  ffi.Pointer<ffi.Pointer<CFError>> error,
 );
 
-/// C function 'SecKeyCreateSignature'.
-Pointer<CFData> SecKeyCreateSignature(
-  Pointer<SecKey> key,
-  Pointer<CFString> algorithm,
-  Pointer<CFData> dataToSign,
-  Pointer<Pointer<CFError>> error,
+/// C function `SecKeyCreateSignature`.
+ffi.Pointer<CFData> SecKeyCreateSignature(
+  ffi.Pointer<SecKey> key,
+  ffi.Pointer<CFString> algorithm,
+  ffi.Pointer<CFData> dataToSign,
+  ffi.Pointer<ffi.Pointer<CFError>> error,
 ) {
-  final _result = _SecKeyCreateSignature(key, algorithm, dataToSign, error);
-  arcAdd(_result);
-  return _result;
+  final result = _SecKeyCreateSignature(key, algorithm, dataToSign, error);
+  arcAdd(result);
+  return result;
 }
 
 final _SecKeyCreateSignature_Dart _SecKeyCreateSignature = dlForSecurity
     .lookupFunction<_SecKeyCreateSignature_C, _SecKeyCreateSignature_Dart>(
-  "SecKeyCreateSignature",
+  'SecKeyCreateSignature',
 );
-typedef Pointer<CFData> _SecKeyCreateSignature_C(
-  Pointer<SecKey> key,
-  Pointer<CFString> algorithm,
-  Pointer<CFData> dataToSign,
-  Pointer<Pointer<CFError>> error,
+typedef _SecKeyCreateSignature_C = ffi.Pointer<CFData> Function(
+  ffi.Pointer<SecKey> key,
+  ffi.Pointer<CFString> algorithm,
+  ffi.Pointer<CFData> dataToSign,
+  ffi.Pointer<ffi.Pointer<CFError>> error,
 );
-typedef Pointer<CFData> _SecKeyCreateSignature_Dart(
-  Pointer<SecKey> key,
-  Pointer<CFString> algorithm,
-  Pointer<CFData> dataToSign,
-  Pointer<Pointer<CFError>> error,
+typedef _SecKeyCreateSignature_Dart = ffi.Pointer<CFData> Function(
+  ffi.Pointer<SecKey> key,
+  ffi.Pointer<CFString> algorithm,
+  ffi.Pointer<CFData> dataToSign,
+  ffi.Pointer<ffi.Pointer<CFError>> error,
 );
 
-/// C function 'SecKeyCreateDecryptedData'.
-Pointer<CFData> SecKeyCreateDecryptedData(
-  Pointer<SecKey> key,
+/// C function `SecKeyCreateDecryptedData`.
+ffi.Pointer<CFData> SecKeyCreateDecryptedData(
+  ffi.Pointer<SecKey> key,
   int algorithm,
-  Pointer<CFData> ciphertext,
-  Pointer<Pointer<CFError>> error,
+  ffi.Pointer<CFData> ciphertext,
+  ffi.Pointer<ffi.Pointer<CFError>> error,
 ) {
-  final _result = _SecKeyCreateDecryptedData(key, algorithm, ciphertext, error);
-  arcAdd(_result);
-  return _result;
+  final result = _SecKeyCreateDecryptedData(key, algorithm, ciphertext, error);
+  arcAdd(result);
+  return result;
 }
 
 final _SecKeyCreateDecryptedData_Dart _SecKeyCreateDecryptedData =
     dlForSecurity.lookupFunction<_SecKeyCreateDecryptedData_C,
         _SecKeyCreateDecryptedData_Dart>(
-  "SecKeyCreateDecryptedData",
+  'SecKeyCreateDecryptedData',
 );
-typedef Pointer<CFData> _SecKeyCreateDecryptedData_C(
-  Pointer<SecKey> key,
-  IntPtr algorithm,
-  Pointer<CFData> ciphertext,
-  Pointer<Pointer<CFError>> error,
+typedef _SecKeyCreateDecryptedData_C = ffi.Pointer<CFData> Function(
+  ffi.Pointer<SecKey> key,
+  ffi.IntPtr algorithm,
+  ffi.Pointer<CFData> ciphertext,
+  ffi.Pointer<ffi.Pointer<CFError>> error,
 );
-typedef Pointer<CFData> _SecKeyCreateDecryptedData_Dart(
-  Pointer<SecKey> key,
+typedef _SecKeyCreateDecryptedData_Dart = ffi.Pointer<CFData> Function(
+  ffi.Pointer<SecKey> key,
   int algorithm,
-  Pointer<CFData> ciphertext,
-  Pointer<Pointer<CFError>> error,
+  ffi.Pointer<CFData> ciphertext,
+  ffi.Pointer<ffi.Pointer<CFError>> error,
 );
 
-/// C function 'SecKeyCreateEncryptedData'.
-Pointer<CFData> SecKeyCreateEncryptedData(
-  Pointer<SecKey> key,
+/// C function `SecKeyCreateEncryptedData`.
+ffi.Pointer<CFData> SecKeyCreateEncryptedData(
+  ffi.Pointer<SecKey> key,
   int algorithm,
-  Pointer<CFData> plaintext,
-  Pointer<Pointer<CFError>> error,
+  ffi.Pointer<CFData> plaintext,
+  ffi.Pointer<ffi.Pointer<CFError>> error,
 ) {
-  final _result = _SecKeyCreateEncryptedData(key, algorithm, plaintext, error);
-  arcAdd(_result);
-  return _result;
+  final result = _SecKeyCreateEncryptedData(key, algorithm, plaintext, error);
+  arcAdd(result);
+  return result;
 }
 
 final _SecKeyCreateEncryptedData_Dart _SecKeyCreateEncryptedData =
     dlForSecurity.lookupFunction<_SecKeyCreateEncryptedData_C,
         _SecKeyCreateEncryptedData_Dart>(
-  "SecKeyCreateEncryptedData",
+  'SecKeyCreateEncryptedData',
 );
-typedef Pointer<CFData> _SecKeyCreateEncryptedData_C(
-  Pointer<SecKey> key,
-  IntPtr algorithm,
-  Pointer<CFData> plaintext,
-  Pointer<Pointer<CFError>> error,
+typedef _SecKeyCreateEncryptedData_C = ffi.Pointer<CFData> Function(
+  ffi.Pointer<SecKey> key,
+  ffi.IntPtr algorithm,
+  ffi.Pointer<CFData> plaintext,
+  ffi.Pointer<ffi.Pointer<CFError>> error,
 );
-typedef Pointer<CFData> _SecKeyCreateEncryptedData_Dart(
-  Pointer<SecKey> key,
+typedef _SecKeyCreateEncryptedData_Dart = ffi.Pointer<CFData> Function(
+  ffi.Pointer<SecKey> key,
   int algorithm,
-  Pointer<CFData> plaintext,
-  Pointer<Pointer<CFError>> error,
+  ffi.Pointer<CFData> plaintext,
+  ffi.Pointer<ffi.Pointer<CFError>> error,
 );
 
-/// C function 'SecKeyCreateRandomKey'.
-Pointer<SecKey> SecKeyCreateRandomKey(
-  Pointer<CFDictionary> arg0,
-  Pointer<Pointer<CFError>> arg1,
+/// C function `SecKeyCreateRandomKey`.
+ffi.Pointer<SecKey> SecKeyCreateRandomKey(
+  ffi.Pointer<CFDictionary> arg0,
+  ffi.Pointer<ffi.Pointer<CFError>> arg1,
 ) {
-  final _result = _SecKeyCreateRandomKey(arg0, arg1);
-  arcAdd(_result);
-  return _result;
+  final result = _SecKeyCreateRandomKey(arg0, arg1);
+  arcAdd(result);
+  return result;
 }
 
 final _SecKeyCreateRandomKey_Dart _SecKeyCreateRandomKey = dlForSecurity
     .lookupFunction<_SecKeyCreateRandomKey_C, _SecKeyCreateRandomKey_Dart>(
-  "SecKeyCreateRandomKey",
+  'SecKeyCreateRandomKey',
 );
-typedef Pointer<SecKey> _SecKeyCreateRandomKey_C(
-  Pointer<CFDictionary> arg0,
-  Pointer<Pointer<CFError>> arg1,
+typedef _SecKeyCreateRandomKey_C = ffi.Pointer<SecKey> Function(
+  ffi.Pointer<CFDictionary> arg0,
+  ffi.Pointer<ffi.Pointer<CFError>> arg1,
 );
-typedef Pointer<SecKey> _SecKeyCreateRandomKey_Dart(
-  Pointer<CFDictionary> arg0,
-  Pointer<Pointer<CFError>> arg1,
+typedef _SecKeyCreateRandomKey_Dart = ffi.Pointer<SecKey> Function(
+  ffi.Pointer<CFDictionary> arg0,
+  ffi.Pointer<ffi.Pointer<CFError>> arg1,
 );
 
-/// C global 'kSecClass'.
-final Pointer<CFString> kSecClass = dlForSecurity
-    .lookup<Pointer<CFString>>(
-      "kSecClass",
+/// C global `kSecClass`.
+final ffi.Pointer<CFString> kSecClass = dlForSecurity
+    .lookup<ffi.Pointer<CFString>>(
+      'kSecClass',
     )
     .value;
 
-/// C global 'kSecPrivateKeyAttrs'.
-final Pointer<CFString> kSecPrivateKeyAttrs = dlForSecurity
-    .lookup<Pointer<CFString>>(
-      "kSecPrivateKeyAttrs",
+/// C global `kSecPrivateKeyAttrs`.
+final ffi.Pointer<CFString> kSecPrivateKeyAttrs = dlForSecurity
+    .lookup<ffi.Pointer<CFString>>(
+      'kSecPrivateKeyAttrs',
     )
     .value;
 
-/// C global 'kSecPublicKeyAttrs'.
-final Pointer<CFString> kSecPublicKeyAttrs = dlForSecurity
-    .lookup<Pointer<CFString>>(
-      "kSecPublicKeyAttrs",
+/// C global `kSecPublicKeyAttrs`.
+final ffi.Pointer<CFString> kSecPublicKeyAttrs = dlForSecurity
+    .lookup<ffi.Pointer<CFString>>(
+      'kSecPublicKeyAttrs',
     )
     .value;
 
-/// C global 'kSecValueData'.
-final Pointer<CFString> kSecValueData = dlForSecurity
-    .lookup<Pointer<CFString>>(
-      "kSecValueData",
+/// C global `kSecValueData`.
+final ffi.Pointer<CFString> kSecValueData = dlForSecurity
+    .lookup<ffi.Pointer<CFString>>(
+      'kSecValueData',
     )
     .value;
 
-/// C global 'kSecAttrAccessComment'.
-final Pointer<CFString> kSecAttrAccessComment = dlForSecurity
-    .lookup<Pointer<CFString>>(
-      "kSecAttrAccessComment",
+/// C global `kSecAttrAccessComment`.
+final ffi.Pointer<CFString> kSecAttrAccessComment = dlForSecurity
+    .lookup<ffi.Pointer<CFString>>(
+      'kSecAttrAccessComment',
     )
     .value;
 
-/// C global 'kSecAttrAccessControl'.
-final Pointer<CFString> kSecAttrAccessControl = dlForSecurity
-    .lookup<Pointer<CFString>>(
-      "kSecAttrAccessControl",
+/// C global `kSecAttrAccessControl`.
+final ffi.Pointer<CFString> kSecAttrAccessControl = dlForSecurity
+    .lookup<ffi.Pointer<CFString>>(
+      'kSecAttrAccessControl',
     )
     .value;
 
-/// C global 'kSecAttrAccessible'.
-final Pointer<CFString> kSecAttrAccessible = dlForSecurity
-    .lookup<Pointer<CFString>>(
-      "kSecAttrAccessible",
+/// C global `kSecAttrAccessible`.
+final ffi.Pointer<CFString> kSecAttrAccessible = dlForSecurity
+    .lookup<ffi.Pointer<CFString>>(
+      'kSecAttrAccessible',
     )
     .value;
 
-/// C global 'kSecAttrAccount'.
-final Pointer<CFString> kSecAttrAccount = dlForSecurity
-    .lookup<Pointer<CFString>>(
-      "kSecAttrAccount",
+/// C global `kSecAttrAccount`.
+final ffi.Pointer<CFString> kSecAttrAccount = dlForSecurity
+    .lookup<ffi.Pointer<CFString>>(
+      'kSecAttrAccount',
     )
     .value;
 
-/// C global 'kSecAttrApplicationTag'.
-final Pointer<CFString> kSecAttrApplicationTag = dlForSecurity
-    .lookup<Pointer<CFString>>(
-      "kSecAttrApplicationTag",
+/// C global `kSecAttrApplicationTag`.
+final ffi.Pointer<CFString> kSecAttrApplicationTag = dlForSecurity
+    .lookup<ffi.Pointer<CFString>>(
+      'kSecAttrApplicationTag',
     )
     .value;
 
-/// C global 'kSecAttrCanDecrypt'.
-final Pointer<CFString> kSecAttrCanDecrypt = dlForSecurity
-    .lookup<Pointer<CFString>>(
-      "kSecAttrCanDecrypt",
+/// C global `kSecAttrCanDecrypt`.
+final ffi.Pointer<CFString> kSecAttrCanDecrypt = dlForSecurity
+    .lookup<ffi.Pointer<CFString>>(
+      'kSecAttrCanDecrypt',
     )
     .value;
 
-/// C global 'kSecAttrCanDrive'.
-final Pointer<CFString> kSecAttrCanDrive = dlForSecurity
-    .lookup<Pointer<CFString>>(
-      "kSecAttrCanDrive",
+/// C global `kSecAttrCanDrive`.
+final ffi.Pointer<CFString> kSecAttrCanDrive = dlForSecurity
+    .lookup<ffi.Pointer<CFString>>(
+      'kSecAttrCanDrive',
     )
     .value;
 
-/// C global 'kSecAttrCanEncrypt'.
-final Pointer<CFString> kSecAttrCanEncrypt = dlForSecurity
-    .lookup<Pointer<CFString>>(
-      "kSecAttrCanEncrypt",
+/// C global `kSecAttrCanEncrypt`.
+final ffi.Pointer<CFString> kSecAttrCanEncrypt = dlForSecurity
+    .lookup<ffi.Pointer<CFString>>(
+      'kSecAttrCanEncrypt',
     )
     .value;
 
-/// C global 'kSecAttrCanSign'.
-final Pointer<CFString> kSecAttrCanSign = dlForSecurity
-    .lookup<Pointer<CFString>>(
-      "kSecAttrCanSign",
+/// C global `kSecAttrCanSign`.
+final ffi.Pointer<CFString> kSecAttrCanSign = dlForSecurity
+    .lookup<ffi.Pointer<CFString>>(
+      'kSecAttrCanSign',
     )
     .value;
 
-/// C global 'kSecAttrCanUnwrap'.
-final Pointer<CFString> kSecAttrCanUnwrap = dlForSecurity
-    .lookup<Pointer<CFString>>(
-      "kSecAttrCanUnwrap",
+/// C global `kSecAttrCanUnwrap`.
+final ffi.Pointer<CFString> kSecAttrCanUnwrap = dlForSecurity
+    .lookup<ffi.Pointer<CFString>>(
+      'kSecAttrCanUnwrap',
     )
     .value;
 
-/// C global 'kSecAttrCanWrap'.
-final Pointer<CFString> kSecAttrCanWrap = dlForSecurity
-    .lookup<Pointer<CFString>>(
-      "kSecAttrCanWrap",
+/// C global `kSecAttrCanWrap`.
+final ffi.Pointer<CFString> kSecAttrCanWrap = dlForSecurity
+    .lookup<ffi.Pointer<CFString>>(
+      'kSecAttrCanWrap',
     )
     .value;
 
-/// C global 'kSecAttrCertificateType'.
-final Pointer<CFString> kSecAttrCertificateType = dlForSecurity
-    .lookup<Pointer<CFString>>(
-      "kSecAttrCertificateType",
+/// C global `kSecAttrCertificateType`.
+final ffi.Pointer<CFString> kSecAttrCertificateType = dlForSecurity
+    .lookup<ffi.Pointer<CFString>>(
+      'kSecAttrCertificateType',
     )
     .value;
 
-/// C global 'kSecAttrDescription'.
-final Pointer<CFString> kSecAttrDescription = dlForSecurity
-    .lookup<Pointer<CFString>>(
-      "kSecAttrDescription",
+/// C global `kSecAttrDescription`.
+final ffi.Pointer<CFString> kSecAttrDescription = dlForSecurity
+    .lookup<ffi.Pointer<CFString>>(
+      'kSecAttrDescription',
     )
     .value;
 
-/// C global 'kSecAttrEffectiveKeySize'.
-final Pointer<CFString> kSecAttrEffectiveKeySize = dlForSecurity
-    .lookup<Pointer<CFString>>(
-      "kSecAttrEffectiveKeySize",
+/// C global `kSecAttrEffectiveKeySize`.
+final ffi.Pointer<CFString> kSecAttrEffectiveKeySize = dlForSecurity
+    .lookup<ffi.Pointer<CFString>>(
+      'kSecAttrEffectiveKeySize',
     )
     .value;
 
-/// C global 'kSecAttrIsPermanent'.
-final Pointer<CFString> kSecAttrIsPermanent = dlForSecurity
-    .lookup<Pointer<CFString>>(
-      "kSecAttrIsPermanent",
+/// C global `kSecAttrIsPermanent`.
+final ffi.Pointer<CFString> kSecAttrIsPermanent = dlForSecurity
+    .lookup<ffi.Pointer<CFString>>(
+      'kSecAttrIsPermanent',
     )
     .value;
 
-/// C global 'kSecAttrKeySizeInBits'.
-final Pointer<CFString> kSecAttrKeySizeInBits = dlForSecurity
-    .lookup<Pointer<CFString>>(
-      "kSecAttrKeySizeInBits",
+/// C global `kSecAttrKeySizeInBits`.
+final ffi.Pointer<CFString> kSecAttrKeySizeInBits = dlForSecurity
+    .lookup<ffi.Pointer<CFString>>(
+      'kSecAttrKeySizeInBits',
     )
     .value;
 
-/// C global 'kSecAttrKeyType'.
-final Pointer<CFString> kSecAttrKeyType = dlForSecurity
-    .lookup<Pointer<CFString>>(
-      "kSecAttrKeyType",
+/// C global `kSecAttrKeyType`.
+final ffi.Pointer<CFString> kSecAttrKeyType = dlForSecurity
+    .lookup<ffi.Pointer<CFString>>(
+      'kSecAttrKeyType',
     )
     .value;
 
-/// C global 'kSecAttrLabel'.
-final Pointer<CFString> kSecAttrLabel = dlForSecurity
-    .lookup<Pointer<CFString>>(
-      "kSecAttrLabel",
+/// C global `kSecAttrLabel`.
+final ffi.Pointer<CFString> kSecAttrLabel = dlForSecurity
+    .lookup<ffi.Pointer<CFString>>(
+      'kSecAttrLabel',
     )
     .value;
 
-/// C global 'kSecAttrModificationDate'.
-final Pointer<CFString> kSecAttrModificationDate = dlForSecurity
-    .lookup<Pointer<CFString>>(
-      "kSecAttrModificationDate",
+/// C global `kSecAttrModificationDate`.
+final ffi.Pointer<CFString> kSecAttrModificationDate = dlForSecurity
+    .lookup<ffi.Pointer<CFString>>(
+      'kSecAttrModificationDate',
     )
     .value;
 
-/// C global 'kSecAttrPRF'.
-final Pointer<CFString> kSecAttrPRF = dlForSecurity
-    .lookup<Pointer<CFString>>(
-      "kSecAttrPRF",
+/// C global `kSecAttrPRF`.
+final ffi.Pointer<CFString> kSecAttrPRF = dlForSecurity
+    .lookup<ffi.Pointer<CFString>>(
+      'kSecAttrPRF',
     )
     .value;
 
-/// C global 'kSecAttrProtocol'.
-final Pointer<CFString> kSecAttrProtocol = dlForSecurity
-    .lookup<Pointer<CFString>>(
-      "kSecAttrProtocol",
+/// C global `kSecAttrProtocol`.
+final ffi.Pointer<CFString> kSecAttrProtocol = dlForSecurity
+    .lookup<ffi.Pointer<CFString>>(
+      'kSecAttrProtocol',
     )
     .value;
 
-/// C global 'kSecAttrRounds'.
-final Pointer<CFString> kSecAttrRounds = dlForSecurity
-    .lookup<Pointer<CFString>>(
-      "kSecAttrRounds",
+/// C global `kSecAttrRounds`.
+final ffi.Pointer<CFString> kSecAttrRounds = dlForSecurity
+    .lookup<ffi.Pointer<CFString>>(
+      'kSecAttrRounds',
     )
     .value;
 
-/// C global 'kSecAttrSalt'.
-final Pointer<CFString> kSecAttrSalt = dlForSecurity
-    .lookup<Pointer<CFString>>(
-      "kSecAttrSalt",
+/// C global `kSecAttrSalt`.
+final ffi.Pointer<CFString> kSecAttrSalt = dlForSecurity
+    .lookup<ffi.Pointer<CFString>>(
+      'kSecAttrSalt',
     )
     .value;
 
-/// C global 'kSecAttrServer'.
-final Pointer<CFString> kSecAttrServer = dlForSecurity
-    .lookup<Pointer<CFString>>(
-      "kSecAttrServer",
+/// C global `kSecAttrServer`.
+final ffi.Pointer<CFString> kSecAttrServer = dlForSecurity
+    .lookup<ffi.Pointer<CFString>>(
+      'kSecAttrServer',
     )
     .value;
 
-/// C global 'kSecAttrSynchronizable'.
-final Pointer<CFString> kSecAttrSynchronizable = dlForSecurity
-    .lookup<Pointer<CFString>>(
-      "kSecAttrSynchronizable",
+/// C global `kSecAttrSynchronizable`.
+final ffi.Pointer<CFString> kSecAttrSynchronizable = dlForSecurity
+    .lookup<ffi.Pointer<CFString>>(
+      'kSecAttrSynchronizable',
     )
     .value;
 
-/// C global 'kSecAttrTokenID'.
-final Pointer<CFString> kSecAttrTokenID = dlForSecurity
-    .lookup<Pointer<CFString>>(
-      "kSecAttrTokenID",
+/// C global `kSecAttrTokenID`.
+final ffi.Pointer<CFString> kSecAttrTokenID = dlForSecurity
+    .lookup<ffi.Pointer<CFString>>(
+      'kSecAttrTokenID',
     )
     .value;
 
-/// C global 'kSecAttrTokenIDSecureEnclave'.
-final Pointer<CFString> kSecAttrTokenIDSecureEnclave = dlForSecurity
-    .lookup<Pointer<CFString>>(
-      "kSecAttrTokenIDSecureEnclave",
+/// C global `kSecAttrTokenIDSecureEnclave`.
+final ffi.Pointer<CFString> kSecAttrTokenIDSecureEnclave = dlForSecurity
+    .lookup<ffi.Pointer<CFString>>(
+      'kSecAttrTokenIDSecureEnclave',
     )
     .value;
 
-/// C global 'kSecAttrType'.
-final Pointer<CFString> kSecAttrType = dlForSecurity
-    .lookup<Pointer<CFString>>(
-      "kSecAttrType",
+/// C global `kSecAttrType`.
+final ffi.Pointer<CFString> kSecAttrType = dlForSecurity
+    .lookup<ffi.Pointer<CFString>>(
+      'kSecAttrType',
     )
     .value;
 
-/// C global 'kSecAttrAccessibleAfterFirstUnlock'.
-final Pointer<CFString> kSecAttrAccessibleAfterFirstUnlock = dlForSecurity
-    .lookup<Pointer<CFString>>(
-      "kSecAttrAccessibleAfterFirstUnlock",
+/// C global `kSecAttrAccessibleAfterFirstUnlock`.
+final ffi.Pointer<CFString> kSecAttrAccessibleAfterFirstUnlock = dlForSecurity
+    .lookup<ffi.Pointer<CFString>>(
+      'kSecAttrAccessibleAfterFirstUnlock',
     )
     .value;
 
-/// C global 'kSecAttrAccessibleAfterFirstUnlockThisDeviceOnly'.
-final Pointer<CFString> kSecAttrAccessibleAfterFirstUnlockThisDeviceOnly =
+/// C global `kSecAttrAccessibleAfterFirstUnlockThisDeviceOnly`.
+final ffi.Pointer<CFString> kSecAttrAccessibleAfterFirstUnlockThisDeviceOnly =
     dlForSecurity
-        .lookup<Pointer<CFString>>(
-          "kSecAttrAccessibleAfterFirstUnlockThisDeviceOnly",
+        .lookup<ffi.Pointer<CFString>>(
+          'kSecAttrAccessibleAfterFirstUnlockThisDeviceOnly',
         )
         .value;
 
-/// C global 'kSecAttrAccessibleWhenPasscodeSetThisDeviceOnly'.
-final Pointer<CFString> kSecAttrAccessibleWhenPasscodeSetThisDeviceOnly =
+/// C global `kSecAttrAccessibleWhenPasscodeSetThisDeviceOnly`.
+final ffi.Pointer<CFString> kSecAttrAccessibleWhenPasscodeSetThisDeviceOnly =
     dlForSecurity
-        .lookup<Pointer<CFString>>(
-          "kSecAttrAccessibleWhenPasscodeSetThisDeviceOnly",
+        .lookup<ffi.Pointer<CFString>>(
+          'kSecAttrAccessibleWhenPasscodeSetThisDeviceOnly',
         )
         .value;
 
-/// C global 'kSecAttrAccessibleWhenUnlocked'.
-final Pointer<CFString> kSecAttrAccessibleWhenUnlocked = dlForSecurity
-    .lookup<Pointer<CFString>>(
-      "kSecAttrAccessibleWhenUnlocked",
+/// C global `kSecAttrAccessibleWhenUnlocked`.
+final ffi.Pointer<CFString> kSecAttrAccessibleWhenUnlocked = dlForSecurity
+    .lookup<ffi.Pointer<CFString>>(
+      'kSecAttrAccessibleWhenUnlocked',
     )
     .value;
 
-/// C global 'kSecAttrAccessibleWhenUnlockedThisDeviceOnly'.
-final Pointer<CFString> kSecAttrAccessibleWhenUnlockedThisDeviceOnly =
+/// C global `kSecAttrAccessibleWhenUnlockedThisDeviceOnly`.
+final ffi.Pointer<CFString> kSecAttrAccessibleWhenUnlockedThisDeviceOnly =
     dlForSecurity
-        .lookup<Pointer<CFString>>(
-          "kSecAttrAccessibleWhenUnlockedThisDeviceOnly",
+        .lookup<ffi.Pointer<CFString>>(
+          'kSecAttrAccessibleWhenUnlockedThisDeviceOnly',
         )
         .value;
 
-/// C global 'kSecClassCertificate'.
-final Pointer<CFString> kSecClassCertificate = dlForSecurity
-    .lookup<Pointer<CFString>>(
-      "kSecClassCertificate",
+/// C global `kSecClassCertificate`.
+final ffi.Pointer<CFString> kSecClassCertificate = dlForSecurity
+    .lookup<ffi.Pointer<CFString>>(
+      'kSecClassCertificate',
     )
     .value;
 
-/// C global 'kSecClassGenericPassword'.
-final Pointer<CFString> kSecClassGenericPassword = dlForSecurity
-    .lookup<Pointer<CFString>>(
-      "kSecClassGenericPassword",
+/// C global `kSecClassGenericPassword`.
+final ffi.Pointer<CFString> kSecClassGenericPassword = dlForSecurity
+    .lookup<ffi.Pointer<CFString>>(
+      'kSecClassGenericPassword',
     )
     .value;
 
-/// C global 'kSecClassIdentity'.
-final Pointer<CFString> kSecClassIdentity = dlForSecurity
-    .lookup<Pointer<CFString>>(
-      "kSecClassIdentity",
+/// C global `kSecClassIdentity`.
+final ffi.Pointer<CFString> kSecClassIdentity = dlForSecurity
+    .lookup<ffi.Pointer<CFString>>(
+      'kSecClassIdentity',
     )
     .value;
 
-/// C global 'kSecClassInternetPassword'.
-final Pointer<CFString> kSecClassInternetPassword = dlForSecurity
-    .lookup<Pointer<CFString>>(
-      "kSecClassInternetPassword",
+/// C global `kSecClassInternetPassword`.
+final ffi.Pointer<CFString> kSecClassInternetPassword = dlForSecurity
+    .lookup<ffi.Pointer<CFString>>(
+      'kSecClassInternetPassword',
     )
     .value;
 
-/// C global 'kSecClassKey'.
-final Pointer<CFString> kSecClassKey = dlForSecurity
-    .lookup<Pointer<CFString>>(
-      "kSecClassKey",
+/// C global `kSecClassKey`.
+final ffi.Pointer<CFString> kSecClassKey = dlForSecurity
+    .lookup<ffi.Pointer<CFString>>(
+      'kSecClassKey',
     )
     .value;
 
-/// C global 'kSecAttrKeyType3DES'.
-final Pointer<CFString> kSecAttrKeyType3DES = dlForSecurity
-    .lookup<Pointer<CFString>>(
-      "kSecAttrKeyType3DES",
+/// C global `kSecAttrKeyType3DES`.
+final ffi.Pointer<CFString> kSecAttrKeyType3DES = dlForSecurity
+    .lookup<ffi.Pointer<CFString>>(
+      'kSecAttrKeyType3DES',
     )
     .value;
 
-/// C global 'kSecAttrKeyTypeAES'.
-final Pointer<CFString> kSecAttrKeyTypeAES = dlForSecurity
-    .lookup<Pointer<CFString>>(
-      "kSecAttrKeyTypeAES",
+/// C global `kSecAttrKeyTypeAES`.
+final ffi.Pointer<CFString> kSecAttrKeyTypeAES = dlForSecurity
+    .lookup<ffi.Pointer<CFString>>(
+      'kSecAttrKeyTypeAES',
     )
     .value;
 
-/// C global 'kSecAttrKeyTypeCAST'.
-final Pointer<CFString> kSecAttrKeyTypeCAST = dlForSecurity
-    .lookup<Pointer<CFString>>(
-      "kSecAttrKeyTypeCAST",
+/// C global `kSecAttrKeyTypeCAST`.
+final ffi.Pointer<CFString> kSecAttrKeyTypeCAST = dlForSecurity
+    .lookup<ffi.Pointer<CFString>>(
+      'kSecAttrKeyTypeCAST',
     )
     .value;
 
-/// C global 'kSecAttrKeyTypeDES'.
-final Pointer<CFString> kSecAttrKeyTypeDES = dlForSecurity
-    .lookup<Pointer<CFString>>(
-      "kSecAttrKeyTypeDES",
+/// C global `kSecAttrKeyTypeDES`.
+final ffi.Pointer<CFString> kSecAttrKeyTypeDES = dlForSecurity
+    .lookup<ffi.Pointer<CFString>>(
+      'kSecAttrKeyTypeDES',
     )
     .value;
 
-/// C global 'kSecAttrKeyTypeDSA'.
-final Pointer<CFString> kSecAttrKeyTypeDSA = dlForSecurity
-    .lookup<Pointer<CFString>>(
-      "kSecAttrKeyTypeDSA",
+/// C global `kSecAttrKeyTypeDSA`.
+final ffi.Pointer<CFString> kSecAttrKeyTypeDSA = dlForSecurity
+    .lookup<ffi.Pointer<CFString>>(
+      'kSecAttrKeyTypeDSA',
     )
     .value;
 
-/// C global 'kSecAttrTypeECDSA'.
-final Pointer<CFString> kSecAttrTypeECDSA = dlForSecurity
-    .lookup<Pointer<CFString>>(
-      "kSecAttrTypeECDSA",
+/// C global `kSecAttrTypeECDSA`.
+final ffi.Pointer<CFString> kSecAttrTypeECDSA = dlForSecurity
+    .lookup<ffi.Pointer<CFString>>(
+      'kSecAttrTypeECDSA',
     )
     .value;
 
-/// C global 'kSecAttrKeyTypeECSECPrimeRandom'.
-final Pointer<CFString> kSecAttrKeyTypeECSECPrimeRandom = dlForSecurity
-    .lookup<Pointer<CFString>>(
-      "kSecAttrKeyTypeECSECPrimeRandom",
+/// C global `kSecAttrKeyTypeECSECPrimeRandom`.
+final ffi.Pointer<CFString> kSecAttrKeyTypeECSECPrimeRandom = dlForSecurity
+    .lookup<ffi.Pointer<CFString>>(
+      'kSecAttrKeyTypeECSECPrimeRandom',
     )
     .value;
 
-/// C global 'kSecAttrKeyTypeRC2'.
-final Pointer<CFString> kSecAttrKeyTypeRC2 = dlForSecurity
-    .lookup<Pointer<CFString>>(
-      "kSecAttrKeyTypeRC2",
+/// C global `kSecAttrKeyTypeRC2`.
+final ffi.Pointer<CFString> kSecAttrKeyTypeRC2 = dlForSecurity
+    .lookup<ffi.Pointer<CFString>>(
+      'kSecAttrKeyTypeRC2',
     )
     .value;
 
-/// C global 'kSecAttrKeyTypeRC4'.
-final Pointer<CFString> kSecAttrKeyTypeRC4 = dlForSecurity
-    .lookup<Pointer<CFString>>(
-      "kSecAttrKeyTypeRC4",
+/// C global `kSecAttrKeyTypeRC4`.
+final ffi.Pointer<CFString> kSecAttrKeyTypeRC4 = dlForSecurity
+    .lookup<ffi.Pointer<CFString>>(
+      'kSecAttrKeyTypeRC4',
     )
     .value;
 
-/// C global 'kSecAttrKeyTypeRSA'.
-final Pointer<CFString> kSecAttrKeyTypeRSA = dlForSecurity
-    .lookup<Pointer<CFString>>(
-      "kSecAttrKeyTypeRSA",
+/// C global `kSecAttrKeyTypeRSA`.
+final ffi.Pointer<CFString> kSecAttrKeyTypeRSA = dlForSecurity
+    .lookup<ffi.Pointer<CFString>>(
+      'kSecAttrKeyTypeRSA',
     )
     .value;

@@ -1,4 +1,4 @@
-// Copyright (c) 2019 cupertino_ffi authors.
+// Copyright (c) 2019 terrier989@gmail.com.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -33,7 +33,7 @@ void generateSharedInternalsFile(ObjcBinding binding) {
   //
   final sb = StringBuffer();
   sb.writeln("""
-// Automatically generated. Do not edit.
+// AUTOMATICALLY GENERATED. DO NOT EDIT.
 
 import 'package:cupertino_ffi/objc.dart' as objc;
 import 'dart:ffi';
@@ -50,6 +50,7 @@ import 'dart:ffi';
     final identifierDart = "${identifier}_Dart";
     sb.writeln("""
 
+/// Calls variadic C function _objc_msgSend_ using _dart:ffi_.
 final $identifier = objc.dlForObjectiveC.lookupFunction<$identifierC,$identifierDart>(
   'objc_msgSend',
 );

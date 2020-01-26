@@ -1,4 +1,4 @@
-// Copyright (c) 2019 cupertino_ffi authors.
+// Copyright (c) 2019 terrier989@gmail.com.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -19,7 +19,6 @@
 // OR OTHER DEALINGS IN THE SOFTWARE.
 
 import 'package:cupertino_ffi/objc_helpers.dart';
-import 'package:cupertino_ffi/objc_ffi_generator.dart';
 
 /// A helper that we use to generate methods such as:
 ///

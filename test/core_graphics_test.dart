@@ -1,4 +1,4 @@
-// Copyright (c) 2019 cupertino_ffi authors.
+// Copyright (c) 2019 terrier989@gmail.com.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -18,10 +18,7 @@
 // OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE
 // OR OTHER DEALINGS IN THE SOFTWARE.
 
-import 'dart:ffi';
-
 import 'package:cupertino_ffi/core_foundation.dart';
-import 'package:cupertino_ffi/core_graphics.dart';
 import 'package:test/test.dart';
 
 void main() {
@@ -31,8 +28,8 @@ void main() {
       addTearDown(() => arcPop());
     });
 
-    test("dlForCoreGraphics: ", () {
-      expect(dlForCoreGraphics, isNotNull);
+    test("test", () {
+      // ...
     });
   });
 }

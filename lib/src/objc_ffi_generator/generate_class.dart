@@ -1,4 +1,4 @@
-// Copyright (c) 2019 cupertino_ffi authors.
+// Copyright (c) 2019 terrier989@gmail.com.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -29,14 +29,17 @@ void generateClassFile(
   final klass = libraryMirror.classes[className];
   final sb = StringBuffer();
   sb.writeln("""
-// Automatically generated. Do not edit.
+// AUTOMATICALLY GENERATED. DO NOT EDIT.
 
 part of ${libraryBinding.libraryName};
 
-/// Objective-C class _${className}_.
+/// Static methods for Objective-C class _${className}_.
+/// Instance methods are declared as extension methods in [${className}Pointer].
 class $className extends Struct {
 
   /// Allocates a new instance of $className.
+  ///
+  /// Instance methods are declared as extension methods in [${className}Pointer].
   static Pointer<$className> allocate() {
     _ensureDynamicLibraryHasBeenOpened();
     return _objc.allocateByClassName<$className>(\'$className\');
@@ -66,6 +69,7 @@ class $className extends Struct {
   sb.writeln("""
 }
 
+/// Instance methods for [$className] (Objective-C class _${className})_.
 extension ${className}Pointer on Pointer<$className> {
 """);
 
@@ -102,6 +106,7 @@ extension ${className}Pointer on Pointer<$className> {
 
 void _generateMethod(StringBuffer sb, String className, String methodName,
     List<ObjcMethodMirror> methods, ObjcMethodMirror method) {
+  sb.write('/// Objective-C method ${method.selector}\n');
   // Return type
   final returnType = method.returnType.toDartType();
 

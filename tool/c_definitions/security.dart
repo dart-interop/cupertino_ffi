@@ -1,4 +1,4 @@
-// Copyright (c) 2019 cupertino_ffi authors.
+// Copyright (c) 2019 terrier989@gmail.com.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -21,11 +21,11 @@
 import 'package:ffi_tool/c.dart';
 
 final libraryForSecurity = Library(
-  importedUris: [
-    "package:cupertino_ffi/core_foundation.dart",
-    "package:cupertino_ffi/security.dart",
-  ],
-  dynamicLibraryIdentifier: "dlForSecurity",
+  importedUris: {
+    ImportedUri("package:cupertino_ffi/core_foundation.dart"),
+    ImportedUri("package:cupertino_ffi/security.dart"),
+  },
+  dynamicLibraryIdentifier: 'dlForSecurity',
   dynamicLibraryPath:
       "/System/Library/Frameworks/Security.framework/Versions/Current/Security",
   elements: _elements,

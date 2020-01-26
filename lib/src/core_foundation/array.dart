@@ -1,4 +1,4 @@
-// Copyright (c) 2019 cupertino_ffi authors.
+// Copyright (c) 2019 terrier989@gmail.com.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -47,9 +47,7 @@ class CFArray extends Struct {
   static Pointer<CFArray> fromPointers(List<Pointer> pointers) {
     final ptr = allocate<Pointer<Pointer>>(count: pointers.length);
     for (var i = 0; i < pointers.length; i++) {
-      ptr
-          .elementAt(i)
-          .value = pointers[i];
+      ptr.elementAt(i).value = pointers[i];
     }
     return fromCPointers(ptr, pointers.length);
   }

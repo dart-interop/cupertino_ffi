@@ -3,5 +3,4 @@
 set -e
 cd `dirname $0`/..
 
-dartfmt --fix -w ./
-pub run test
+pub run tool/generate.dart

@@ -1,3 +1,8 @@
+# 0.2.0
+  * Moved automatically generated Objective-C APIs to the package [cupertino_ffi_generated](https://pub.dev/packages/cupertino_ffi_generated).
+  * Upgraded 'ffi_tool'.
+  * Fixes various small things.
+
 # 0.1.6
   * Support for Dart 2.6 and extension classes.
 

@@ -28,18 +28,23 @@ void generateClassFile(
 ) {
   final klass = libraryMirror.classes[className];
   final sb = StringBuffer();
-  sb.writeln("""
+  sb.write("""
 // AUTOMATICALLY GENERATED. DO NOT EDIT.
 
 part of ${libraryBinding.libraryName};
 
-/// Static methods for Objective-C class _${className}_.
-/// Instance methods are declared as extension methods in [${className}Pointer].
-class $className extends Struct {
+/// Static methods for Objective-C class `${className}`.
+/// See also instance methods in [${className}Pointer].
+""");
+  var url = libraryBinding.dynamicLibrary.url;
+  if (url != null) {
+    sb.write('///\n');
+    sb.write(
+        '/// Find detailed documentation at: [${_urlWithoutHttps(url)}]($url)\n');
+  }
+  sb.write("""class $className extends Struct {
 
   /// Allocates a new instance of $className.
-  ///
-  /// Instance methods are declared as extension methods in [${className}Pointer].
   static Pointer<$className> allocate() {
     _ensureDynamicLibraryHasBeenOpened();
     return _objc.allocateByClassName<$className>(\'$className\');
@@ -62,15 +67,28 @@ class $className extends Struct {
       if (!method.isClassMethod) {
         continue;
       }
-      _generateMethod(sb, className, methodName, methods, method);
+      _generateMethod(
+        sb,
+        libraryBinding,
+        className,
+        methodName,
+        methods,
+        method,
+      );
     }
   }
 
-  sb.writeln("""
+  sb.write("""
 }
 
-/// Instance methods for [$className] (Objective-C class _${className})_.
-extension ${className}Pointer on Pointer<$className> {
+/// Instance methods for [$className] (Objective-C class `${className}`).
+""");
+  if (url != null) {
+    sb.write('///\n');
+    sb.write(
+        '/// Find detailed documentation at: [${_urlWithoutHttps(url)}]($url)\n');
+  }
+  sb.write("""extension ${className}Pointer on Pointer<$className> {
 """);
 
   // Inject source code in the extension
@@ -93,7 +111,14 @@ extension ${className}Pointer on Pointer<$className> {
       if (methodName == "release" || methodName == "dealloc") {
         continue;
       }
-      _generateMethod(sb, className, methodName, methods, method);
+      _generateMethod(
+        sb,
+        libraryBinding,
+        className,
+        methodName,
+        methods,
+        method,
+      );
     }
   }
   sb.writeln("}");
@@ -104,9 +129,14 @@ extension ${className}Pointer on Pointer<$className> {
   saveDartFile(path, sb.toString());
 }
 
-void _generateMethod(StringBuffer sb, String className, String methodName,
-    List<ObjcMethodMirror> methods, ObjcMethodMirror method) {
-  sb.write('/// Objective-C method ${method.selector}\n');
+void _generateMethod(
+    StringBuffer sb,
+    ObjcLibraryBinding libraryBinding,
+    String className,
+    String methodName,
+    List<ObjcMethodMirror> methods,
+    ObjcMethodMirror method) {
+  sb.write('/// Objective-C method `${method.selector}`.\n');
   // Return type
   final returnType = method.returnType.toDartType();
 
@@ -249,4 +279,12 @@ void _generateMethod(StringBuffer sb, String className, String methodName,
 bool _isNamedParametersGoodChoice(ObjcMethodMirror method) {
   return method.parameters.length > 3 &&
       method.parameters.skip(3).every((p) => !p.name.startsWith("_"));
+}
+
+String _urlWithoutHttps(String s) {
+  const prefix = 'https://';
+  if (s.startsWith(prefix)) {
+    return s.substring(prefix.length);
+  }
+  return s;
 }

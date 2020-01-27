@@ -1,4 +1,5 @@
 [![Pub Package](https://img.shields.io/pub/v/cupertino_ffi.svg)](https://pub.dartlang.org/packages/cupertino_ffi)
+[![Build Status](https://travis-ci.org/dart-interop/cupertino_ffi.svg?branch=master)](https://travis-ci.org/dart-interop/cupertino_ffi)
 
 # Overview
 

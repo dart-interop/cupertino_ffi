@@ -1,0 +1,9 @@
+language: dart
+
+os: osx
+
+dart:
+  - dev
+
+branches:
+  only: [master]

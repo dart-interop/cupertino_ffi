@@ -1,4 +1,4 @@
-// Copyright (c) 2019 terrier989@gmail.com.
+// Copyright (c) 2019 cupertino_ffi authors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -28,28 +28,28 @@ void generateClassFile(
 ) {
   final klass = libraryMirror.classes[className];
   final sb = StringBuffer();
-  sb.write("""
+  sb.write('''
 // AUTOMATICALLY GENERATED. DO NOT EDIT.
 
 part of ${libraryBinding.libraryName};
 
 /// Static methods for Objective-C class `${className}`.
 /// See also instance methods in [${className}Pointer].
-""");
+''');
   var url = libraryBinding.dynamicLibrary.url;
   if (url != null) {
     sb.write('///\n');
     sb.write(
         '/// Find detailed documentation at: [${_urlWithoutHttps(url)}]($url)\n');
   }
-  sb.write("""class $className extends Struct {
+  sb.write('''class $className extends Struct {
 
   /// Allocates a new instance of $className.
   static Pointer<$className> allocate() {
     _ensureDynamicLibraryHasBeenOpened();
     return _objc.allocateByClassName<$className>(\'$className\');
   }
-""");
+''');
 
   // Inject source code in the class
   {
@@ -78,18 +78,18 @@ part of ${libraryBinding.libraryName};
     }
   }
 
-  sb.write("""
+  sb.write('''
 }
 
 /// Instance methods for [$className] (Objective-C class `${className}`).
-""");
+''');
   if (url != null) {
     sb.write('///\n');
     sb.write(
         '/// Find detailed documentation at: [${_urlWithoutHttps(url)}]($url)\n');
   }
-  sb.write("""extension ${className}Pointer on Pointer<$className> {
-""");
+  sb.write('''extension ${className}Pointer on Pointer<$className> {
+''');
 
   // Inject source code in the extension
   {
@@ -108,7 +108,7 @@ part of ${libraryBinding.libraryName};
         continue;
       }
       // Handle special cases
-      if (methodName == "release" || methodName == "dealloc") {
+      if (methodName == 'release' || methodName == 'dealloc') {
         continue;
       }
       _generateMethod(
@@ -121,11 +121,11 @@ part of ${libraryBinding.libraryName};
       );
     }
   }
-  sb.writeln("}");
+  sb.writeln('}');
 
   // Save Dart file
   final path =
-      libraryBinding.classPathPattern.replaceAll("{className}", className);
+      libraryBinding.classPathPattern.replaceAll('{className}', className);
   saveDartFile(path, sb.toString());
 }
 
@@ -141,11 +141,11 @@ void _generateMethod(
   final returnType = method.returnType.toDartType();
 
   // Method identifier
-  // (selector "x:y:z" --> identifier "x$y$z")
+  // (selector 'x:y:z' --> identifier 'x$y$z')
   var selector = method.selector;
 
   // Remove final ':' if it doesn't lead to a conflict with another method
-  if (selector.endsWith(":")) {
+  if (selector.endsWith(':')) {
     final newSelector = selector.substring(0, selector.length - 1);
     if (methods.every((m) => m.selector != newSelector)) {
       selector = newSelector;
@@ -153,7 +153,7 @@ void _generateMethod(
   }
 
   // Construct identifier
-  var identifier = selector.replaceAll(":", "\$");
+  var identifier = selector.replaceAll(':', '\$');
 
   // If we have 'x$y$z' and just 'x' would be unique, use 'x'.
   if (methods.length == 1) {
@@ -162,30 +162,30 @@ void _generateMethod(
 
   // Write annotation for debugging purposes
   if (method.isClassMethod) {
-    sb.writeln("  @ObjcMethodInfo.classMethod(");
-    sb.writeln("    selector: '${method.selector}',");
-    sb.writeln("    returnType: '${method.returnType.raw}',");
-    sb.write("    parameterTypes: [");
-    sb.write(method.parameters.map((p) => "'${p.type.raw}'").join(', '));
-    sb.writeln("],");
-    sb.writeln("  )");
+    sb.writeln('  @ObjcMethodInfo.classMethod(');
+    sb.writeln('    selector: \'${method.selector}\',');
+    sb.writeln('    returnType: \'${method.returnType.raw}\',');
+    sb.write('    parameterTypes: [');
+    sb.write(method.parameters.map((p) => '\'${p.type.raw}\'').join(', '));
+    sb.writeln('],');
+    sb.writeln('  )');
   } else {
-    sb.writeln("  @ObjcMethodInfo(");
-    sb.writeln("    selector: '${method.selector}',");
-    sb.writeln("    returnType: '${method.returnType.raw}',");
-    sb.write("    parameterTypes: [");
-    sb.write(method.parameters.map((p) => "'${p.type.raw}'").join(', '));
-    sb.writeln("],");
-    sb.writeln("  )");
+    sb.writeln('  @ObjcMethodInfo(');
+    sb.writeln('    selector: \'${method.selector}\',');
+    sb.writeln('    returnType: \'${method.returnType.raw}\',');
+    sb.write('    parameterTypes: [');
+    sb.write(method.parameters.map((p) => '\'${p.type.raw}\'').join(', '));
+    sb.writeln('],');
+    sb.writeln('  )');
   }
 
   // Write return type
   if (method.isClassMethod) {
-    sb.write("  static ");
+    sb.write('  static ');
   } else {
-    sb.write("  ");
+    sb.write('  ');
   }
-  sb.writeln("$returnType $identifier(");
+  sb.writeln('$returnType $identifier(');
 
   // Whether to use named parameters?
   //
@@ -209,15 +209,15 @@ void _generateMethod(
       final name = parameter.name;
 
       // Initial indentation
-      sb.write("      ");
+      sb.write('      ');
 
       // Is this inside curly brackets?
       if (isNamed) {
-        sb.write("@required ");
+        sb.write('@required ');
       }
 
       // Type and name
-      sb.write("$type $name,");
+      sb.write('$type $name,');
 
       // Write ' {' if
       //   * This is the first parameter and not the only one
@@ -225,7 +225,7 @@ void _generateMethod(
       if (useNamedParameters &&
           !isNamed &&
           2 + parameterIndex + 1 < method.parameters.length) {
-        sb.write(" {");
+        sb.write(' {');
         isNamed = true;
       }
 
@@ -237,48 +237,48 @@ void _generateMethod(
 
   // End parameters
   if (useNamedParameters) {
-    sb.writeln("  }) {");
+    sb.writeln('  }) {');
   } else {
-    sb.writeln("  ) {");
+    sb.writeln('  ) {');
   }
-  sb.writeln("    _ensureDynamicLibraryHasBeenOpened();");
-  sb.write("    ");
+  sb.writeln('    _ensureDynamicLibraryHasBeenOpened();');
+  sb.write('    ');
 
   // Return statement?
   if (!method.returnType.isVoid) {
-    sb.write("return ");
+    sb.write('return ');
   }
 
   // Library prefix for message dispatcher methods
-  sb.write("_objc_call.");
+  sb.write('_objc_call.');
 
   // Dispatch message
   sb.write(ObjcDispatcherGenerator.fromMirror(method).toMethodName());
-  sb.writeln("(");
+  sb.writeln('(');
 
   // Receiver
   if (method.isClassMethod) {
-    sb.writeln("      _objc.getClass('$className'),");
-    sb.writeln("      _objc.getSelector('${method.selector}',),");
+    sb.writeln('      _objc.getClass(\'$className\'),');
+    sb.writeln('      _objc.getSelector(\'${method.selector}\',),');
   } else if (method.isInstanceMethod) {
-    sb.writeln("      this,");
-    sb.writeln("      _objc.getSelector('${method.selector}',),");
+    sb.writeln('      this,');
+    sb.writeln('      _objc.getSelector(\'${method.selector}\',),');
   } else {
     throw UnimplementedError();
   }
 
   // Arguments
   for (var parameter in method.parameters.skip(2)) {
-    sb.writeln("      ${parameter.name},");
+    sb.writeln('      ${parameter.name},');
   }
-  sb.writeln("    );");
-  sb.writeln("  }");
+  sb.writeln('    );');
+  sb.writeln('  }');
 }
 
 /// Tells whether named parameters should be used when generating a method.
 bool _isNamedParametersGoodChoice(ObjcMethodMirror method) {
   return method.parameters.length > 3 &&
-      method.parameters.skip(3).every((p) => !p.name.startsWith("_"));
+      method.parameters.skip(3).every((p) => !p.name.startsWith('_'));
 }
 
 String _urlWithoutHttps(String s) {

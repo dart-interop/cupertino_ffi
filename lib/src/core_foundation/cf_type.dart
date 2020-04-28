@@ -1,4 +1,4 @@
-// Copyright (c) 2019 terrier989@gmail.com.
+// Copyright (c) 2019 cupertino_ffi authors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -50,6 +50,9 @@ class CFType extends Struct {
     if (value is Map) {
       return CFDictionary.fromDart(value).cast<CFType>();
     }
+    if (value is Pointer) {
+      return value.cast<CFType>();
+    }
     throw ArgumentError.value(value);
   }
 }
@@ -78,6 +81,6 @@ extension CFTypePointer on Pointer<CFType> {
     if (id == CFDictionaryTypeID) {
       return cast<CFDictionary>().toDart();
     }
-    throw UnsupportedError("Unsupported type ID: $id");
+    throw UnsupportedError('Unsupported type ID: $id');
   }
 }

@@ -1,4 +1,4 @@
-// Copyright (c) 2019 terrier989@gmail.com.
+// Copyright (c) 2019 cupertino_ffi authors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -19,170 +19,82 @@
 // OR OTHER DEALINGS IN THE SOFTWARE.
 
 import 'dart:ffi';
-import 'package:ffi/ffi.dart';
 
 import 'package:cupertino_ffi/core_foundation.dart';
+import 'package:ffi/ffi.dart';
 
-final List<Pointer<NativeType>> _arcPointers = <Pointer<NativeType>>[];
-final List<int> _arcPointersLengths = <int>[];
-
-Pointer<T> arcAllocate<T extends NativeType>() {
-  final pointer = allocate<T>();
-  arcAdd(pointer);
-  return pointer;
-}
-
-/// Adds the ARC pointer the ARC frame. The reference count will be decremented
-/// when [arcPop] is called.
+/// We will likely deprecate this.
 Pointer<R> arcAdd<R extends NativeType>(Pointer<R> pointer) {
-  // Check that someone up in the caller chain called 'arcPush'
-  if (_arcPointersLengths.isEmpty) {
-    throw StateError("Caller didn't call arcPush()");
-  }
-
-  // Check whether the argument is a tagged pointer
-  if (pointer.address % 4 != 0) {
-    return pointer;
-  }
-
-  // Handle null
-  if (pointer.address != 0) {
-    _arcPointers.add(pointer);
-  }
+  assert(pointer.address != 0 && CFGetRetainCount(pointer) > 0);
   return pointer;
 }
 
-/// Adds the non-ARC pointer to the list of released pointers in the current ARC
-/// frame.
-///
-/// The pointer will be released with `pointer.free()`.
-void arcAddNoARC<R extends NativeType>(Pointer<R> pointer) {
-  // Check that someone up in the caller chain called 'arcPush'
-  if (_arcPointersLengths.isEmpty) {
-    throw StateError("Caller didn't call arcPush()");
-  }
-
-  // Check whether the argument is a tagged pointer
-  if (pointer.address % 4 != 0) {
-    throw ArgumentError.value(
-      pointer.address,
-      "pointer",
-      "Found a tagged pointer",
-    );
-  }
-
-  final address = pointer.address;
-  if (address != 0) {
-    // We tag the pointer as 'no-ARC' pointer by using the lowest bit (+1)
-    _arcPointers.add(Pointer.fromAddress(address + 1));
-  }
+/// A helper for allocating an empty pointer.
+Pointer<Pointer<T>> allocatePointerTo<T extends NativeType>() {
+  final result = allocate<Pointer<T>>();
+  result.value = Pointer<T>.fromAddress(0);
+  return result;
 }
 
-/// Puts an ARC pointer into parent ARC frame.
+@deprecated
 Pointer<R> arcReturn<R extends NativeType>(Pointer<R> pointer) {
-  // Check that someone up in the caller chain called 'arcPush'
-  if (_arcPointersLengths.isEmpty) {
-    throw StateError("Caller didn't call arcPush()");
-  }
-
-  // Check that the argument is not some kind of tagged pointer
-  if (pointer.address % 4 != 0) {
-    return pointer;
-  }
-
-  // Handle null
-  if (pointer.address != 0) {
-    arcRetain(pointer);
-    final length = _arcPointersLengths.last;
-    _arcPointers[length - 1] = pointer;
-  }
   return pointer;
 }
 
-/// Pushes ARC stack frame.
-void arcPush() {
-  // Add space for possibly returned pointer.
-  _arcPointers.add(null);
+@deprecated
+void arcPush() {}
 
-  // Store old length of ARC stack.
-  _arcPointersLengths.add(_arcPointers.length);
-}
+@deprecated
+void arcPop() {}
 
-/// Pops ARC stack frame. Decrements reference count of every pointer in the
-/// frame.
-void arcPop() {
-  // Get old length of ARC stack
-  final length = _arcPointersLengths.removeLast();
-
-  // Release pointers
-  final pointers = _arcPointers;
-  while (pointers.length > length) {
-    final lastPointer = pointers.removeLast();
-    if (lastPointer != null) {
-      final address = lastPointer.address;
-      if (address != 0) {
-        if (address % 4 == 1) {
-          // Ordinary no-ARC pointer
-          free(Pointer.fromAddress(address - 1));
-        } else {
-          // ARC pointer
-          arcRelease(lastPointer);
-        }
-      }
-    }
-  }
-
-  // If we didn't return a pointer, remove the space we created
-  if (pointers.last == null) {
-    pointers.removeLast();
-  }
-}
-
-/// Increments reference counter if the reference is non-zero.
 Pointer<T> arcFieldGet<T extends NativeType>(Pointer<T> pointer) {
   if (pointer != null) {
+    assert(pointer.address == 0 || CFGetRetainCount(pointer) > 0);
     arcRetain(pointer);
     arcAdd(pointer);
   }
   return pointer;
 }
 
-/// Decrements reference counter of old value and increments reference counter
-/// of the value.
+/// Decrements reference count of the old value and increments reference count
+/// of the new value.
 Pointer<T> arcFieldSet<T extends NativeType>(
     Pointer<T> oldPointer, Pointer<T> newPointer) {
   if (oldPointer != newPointer) {
     if (newPointer != null) {
+      assert(newPointer.address == 0 || CFGetRetainCount(newPointer) > 0);
       arcRetain(newPointer);
     }
     if (oldPointer != null) {
+      assert(oldPointer.address == 0 || CFGetRetainCount(oldPointer) > 0);
       arcRelease(oldPointer);
     }
   }
   return newPointer;
 }
 
-/// Increments the reference count of the argument.
-///
-/// The reference count should be later decremented with [arcRelease].
+/// Increments reference count of the argument.
 void arcRetain<R extends NativeType>(Pointer<R> pointer) {
+  assert(CFGetRetainCount(pointer) > 0);
+  if (pointer.address % 8 != 0) {
+    throw StateError('Tagged pointer');
+  }
   _retain(pointer);
 }
 
-/// Decrements the reference count of the argument.
-///
-/// If it reaches zero, the memory is freed.
+/// Decrements reference count of the argument.
 void arcRelease<R extends NativeType>(Pointer<R> pointer) {
+  assert(CFGetRetainCount(pointer) > 0);
   _release(pointer);
 }
 
 final _release =
     dlForCoreFoundation.lookupFunction<_CFRelease_C, _CFRelease_Dart>(
-  "CFRelease",
+  'CFRelease',
 );
 
 final _retain = dlForCoreFoundation.lookupFunction<_CFRetain_C, _CFRetain_Dart>(
-  "CFRetain",
+  'CFRetain',
 );
 
 typedef _CFRelease_C = Void Function(Pointer cf);

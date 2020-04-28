@@ -1,4 +1,4 @@
-// Copyright (c) 2019 terrier989@gmail.com.
+// Copyright (c) 2019 cupertino_ffi authors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -21,6 +21,6 @@
 /// Helpers for working with Objective-C bindings.
 library cupertino_ffi.objective_c_helpers;
 
-export 'src/objc_helpers/system_mirror.dart';
 export 'src/objc_helpers/method_mirror.dart';
+export 'src/objc_helpers/system_mirror.dart';
 export 'src/objc_helpers/type_mirror.dart';

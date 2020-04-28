@@ -1,4 +1,4 @@
-// Copyright (c) 2019 terrier989@gmail.com.
+// Copyright (c) 2019 cupertino_ffi authors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -44,3 +44,9 @@ const kSecAccessControlUserPresence = 1 << 0,
     kSecAccessControlOr = 1 << 14,
     kSecAccessControlAnd = 1 << 15,
     kSecAccessControlPrivateKeyUsage = 1 << 30;
+
+// Default error codes
+const errSecSuccess = 0, errSecParam = -50, errSecBadReq = -909;
+
+// Key chain error codes
+const errSecReadOnly = -25292, errSecMissingEntitlement = -34018;

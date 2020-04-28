@@ -112,6 +112,24 @@ typedef _CFGetTypeID_Dart = int Function(
   ffi.Pointer arg0,
 );
 
+/// C function `CFGetRetainCount`.
+int CFGetRetainCount(
+  ffi.Pointer arg0,
+) {
+  return _CFGetRetainCount(arg0);
+}
+
+final _CFGetRetainCount_Dart _CFGetRetainCount = dlForCoreFoundation
+    .lookupFunction<_CFGetRetainCount_C, _CFGetRetainCount_Dart>(
+  'CFGetRetainCount',
+);
+typedef _CFGetRetainCount_C = ffi.IntPtr Function(
+  ffi.Pointer arg0,
+);
+typedef _CFGetRetainCount_Dart = int Function(
+  ffi.Pointer arg0,
+);
+
 /// C function `CFArrayCreate`.
 ffi.Pointer<CFArray> CFArrayCreate(
   ffi.Pointer<CFAllocator> allocator,
@@ -240,6 +258,32 @@ final ffi.Pointer<CFBoolean> kCFBooleanFalse = dlForCoreFoundation
       'kCFBooleanFalse',
     )
     .value;
+
+/// C function `CFDataCreate`.
+ffi.Pointer<CFData> CFDataCreate(
+  ffi.Pointer<CFAllocator> arg0,
+  ffi.Pointer<ffi.Uint8> arg1,
+  int arg2,
+) {
+  final result = _CFDataCreate(arg0, arg1, arg2);
+  arcAdd(result);
+  return result;
+}
+
+final _CFDataCreate_Dart _CFDataCreate =
+    dlForCoreFoundation.lookupFunction<_CFDataCreate_C, _CFDataCreate_Dart>(
+  'CFDataCreate',
+);
+typedef _CFDataCreate_C = ffi.Pointer<CFData> Function(
+  ffi.Pointer<CFAllocator> arg0,
+  ffi.Pointer<ffi.Uint8> arg1,
+  ffi.IntPtr arg2,
+);
+typedef _CFDataCreate_Dart = ffi.Pointer<CFData> Function(
+  ffi.Pointer<CFAllocator> arg0,
+  ffi.Pointer<ffi.Uint8> arg1,
+  int arg2,
+);
 
 /// C function `CFDataCreateWithBytesNoCopy`.
 ffi.Pointer<CFData> CFDataCreateWithBytesNoCopy(

@@ -1,4 +1,4 @@
-// Copyright (c) 2019 terrier989@gmail.com.
+// Copyright (c) 2019 cupertino_ffi authors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -29,66 +29,66 @@ class _ObjcNamedTypeMirror extends ObjcTypeMirror {
   @override
   String toCType({bool simple = false}) {
     switch (name.toLowerCase()) {
-      case "void":
-        return "Void";
-      case "int8":
-        return "Int8";
-      case "int16":
-        return "Int16";
-      case "int32":
-        return "Int32";
-      case "int64":
-        return "Int64";
-      case "uint8":
-        return "Uint8";
-      case "uint16":
-        return "Uint16";
-      case "uint32":
-        return "Uint32";
-      case "uint64":
-        return "Uint64";
-      case "float32":
-        return "Float";
-      case "float64":
-        return "Float";
-      case "utf8":
-        return "Utf8";
+      case 'void':
+        return 'Void';
+      case 'int8':
+        return 'Int8';
+      case 'int16':
+        return 'Int16';
+      case 'int32':
+        return 'Int32';
+      case 'int64':
+        return 'Int64';
+      case 'uint8':
+        return 'Uint8';
+      case 'uint16':
+        return 'Uint16';
+      case 'uint32':
+        return 'Uint32';
+      case 'uint64':
+        return 'Uint64';
+      case 'float32':
+        return 'Float';
+      case 'float64':
+        return 'Float';
+      case 'utf8':
+        return 'Utf8';
       default:
-        throw StateError("Unsupported name '$name'");
+        throw StateError('Unsupported name "$name"');
     }
   }
 
   @override
   String toDartType({bool simple = false}) {
     switch (name.toLowerCase()) {
-      case "void":
-        return "void";
-      case "*void":
-        return "Pointer";
-      case "int8":
-        return "int";
-      case "int16":
-        return "int";
-      case "int32":
-        return "int";
-      case "int64":
-        return "int";
-      case "uint8":
-        return "int";
-      case "uint16":
-        return "int";
-      case "uint32":
-        return "int";
-      case "uint64":
-        return "int";
-      case "float32":
-        return "double";
-      case "float64":
-        return "double";
-      case "utf8":
-        return "Utf8";
+      case 'void':
+        return 'void';
+      case '*void':
+        return 'Pointer';
+      case 'int8':
+        return 'int';
+      case 'int16':
+        return 'int';
+      case 'int32':
+        return 'int';
+      case 'int64':
+        return 'int';
+      case 'uint8':
+        return 'int';
+      case 'uint16':
+        return 'int';
+      case 'uint32':
+        return 'int';
+      case 'uint64':
+        return 'int';
+      case 'float32':
+        return 'double';
+      case 'float64':
+        return 'double';
+      case 'utf8':
+        return 'Utf8';
       default:
-        throw StateError("Unsupported name '$name'");
+        throw StateError('Unsupported name "$name"');
     }
   }
 
@@ -108,9 +108,9 @@ class _ObjcPointerTypeMirror extends ObjcTypeMirror {
   @override
   String toCType({bool simple = false}) {
     if (simple || type == null) {
-      return "Pointer";
+      return 'Pointer';
     }
-    return "Pointer<${type.toCType()}>";
+    return 'Pointer<${type.toCType()}>';
   }
 
   @override
@@ -119,10 +119,10 @@ class _ObjcPointerTypeMirror extends ObjcTypeMirror {
   }
 
   @override
-  String toMethodNamePart() => "ptr";
+  String toMethodNamePart() => 'ptr';
 
   @override
-  String toString() => "*${type ?? 'void'}";
+  String toString() => '*${type ?? 'void'}';
 }
 
 abstract class ObjcTypeMirror {
@@ -132,13 +132,13 @@ abstract class ObjcTypeMirror {
   final String raw;
 
   /// Returns true if this is void.
-  bool get isVoid => toDartType() == "void";
+  bool get isVoid => toDartType() == 'void';
 
-  /// Returns true if the type is "Class".
-  bool get isClass => raw == "#";
+  /// Returns true if the type is 'Class'.
+  bool get isClass => raw == '#';
 
-  /// Returns true if the type is "SEL".
-  bool get isSelector => raw == ":";
+  /// Returns true if the type is 'SEL'.
+  bool get isSelector => raw == ':';
 
   /// Returns 'dart:ffi' type.
   ///
@@ -152,7 +152,7 @@ abstract class ObjcTypeMirror {
   ///   * int
   String toDartType({bool simple = false});
 
-  /// Returns a string used as a part of method name (e.g. "ptr").
+  /// Returns a string used as a part of method name (e.g. 'ptr').
   String toMethodNamePart();
 
   @override
@@ -168,12 +168,12 @@ abstract class ObjcTypeMirror {
     fullRaw ??= raw;
 
     // Struct
-    if (raw.startsWith("{")) {
+    if (raw.startsWith('{')) {
       return null;
     }
 
     // Union
-    if (raw.startsWith("(")) {
+    if (raw.startsWith('(')) {
       return null;
     }
 
@@ -181,11 +181,11 @@ abstract class ObjcTypeMirror {
     //
     // Examples:
     //   [16C] = Uint8[16]
-    if (raw.startsWith("[")) {
+    if (raw.startsWith('[')) {
       return null;
     }
 
-    if (raw.startsWith("^")) {
+    if (raw.startsWith('^')) {
       // Pointer
       final rest = parse(
         raw.substring(1),
@@ -205,16 +205,16 @@ abstract class ObjcTypeMirror {
 
     // V   = oneway
     // r   = AutoreleasingUnsafeMutablePointer
-    // n   = seems to be "in"
+    // n   = seems to be 'in'
     // N   = inout
     // o   = out
     // O   = bycopy
-    if (raw.startsWith("V") ||
-        raw.startsWith("r") ||
-        raw.startsWith("n") ||
-        raw.startsWith("N") ||
-        raw.startsWith("o") ||
-        raw.startsWith("O")) {
+    if (raw.startsWith('V') ||
+        raw.startsWith('r') ||
+        raw.startsWith('n') ||
+        raw.startsWith('N') ||
+        raw.startsWith('o') ||
+        raw.startsWith('O')) {
       return parse(
         raw.substring(1),
         className: className,
@@ -225,95 +225,95 @@ abstract class ObjcTypeMirror {
     }
     switch (raw) {
       // Special
-      case "@": // any object
-        return _ObjcPointerTypeMirror(null, raw: "@");
-      case "@?": // ?
-        return _ObjcPointerTypeMirror(null, raw: "@?");
-      case "#": // Class
-        return _ObjcPointerTypeMirror(null, raw: "#");
-      case ":": // Selector
-        return const _ObjcPointerTypeMirror(null, raw: ":");
-      case "v": // void
-        return const _ObjcPointerTypeMirror(null, raw: "v");
-      case "*": // char*
-        return const _ObjcPointerTypeMirror(null, raw: "*");
-      case "B": // Block
-        return const _ObjcPointerTypeMirror(null, raw: "B");
+      case '@': // any object
+        return _ObjcPointerTypeMirror(null, raw: '@');
+      case '@?': // ?
+        return _ObjcPointerTypeMirror(null, raw: '@?');
+      case '#': // Class
+        return _ObjcPointerTypeMirror(null, raw: '#');
+      case ':': // Selector
+        return const _ObjcPointerTypeMirror(null, raw: ':');
+      case 'v': // void
+        return const _ObjcPointerTypeMirror(null, raw: 'v');
+      case '*': // char*
+        return const _ObjcPointerTypeMirror(null, raw: '*');
+      case 'B': // Block
+        return const _ObjcPointerTypeMirror(null, raw: 'B');
 
       // Signed integer types
-      case "c":
-        return const _ObjcNamedTypeMirror("Int8", raw: 'c');
-      case "s":
-        return const _ObjcNamedTypeMirror("Int16", raw: 's');
-      case "i":
-        return const _ObjcNamedTypeMirror("Int32", raw: 'i');
-      case "q":
-        return const _ObjcNamedTypeMirror("Int64", raw: 'q');
+      case 'c':
+        return const _ObjcNamedTypeMirror('Int8', raw: 'c');
+      case 's':
+        return const _ObjcNamedTypeMirror('Int16', raw: 's');
+      case 'i':
+        return const _ObjcNamedTypeMirror('Int32', raw: 'i');
+      case 'q':
+        return const _ObjcNamedTypeMirror('Int64', raw: 'q');
 
       // Unsigned integer types
-      case "C":
-        return const _ObjcNamedTypeMirror("Uint8", raw: 'C');
-      case "S":
-        return const _ObjcNamedTypeMirror("Uint16", raw: 'S');
-      case "I":
-        return const _ObjcNamedTypeMirror("Uint32", raw: 'I');
-      case "Q":
-        return const _ObjcNamedTypeMirror("Uint64", raw: 'Q');
+      case 'C':
+        return const _ObjcNamedTypeMirror('Uint8', raw: 'C');
+      case 'S':
+        return const _ObjcNamedTypeMirror('Uint16', raw: 'S');
+      case 'I':
+        return const _ObjcNamedTypeMirror('Uint32', raw: 'I');
+      case 'Q':
+        return const _ObjcNamedTypeMirror('Uint64', raw: 'Q');
 
       // Other integer types
-      case "l":
-        return const _ObjcNamedTypeMirror("Int32", raw: 'l');
-      case "L":
-        return const _ObjcNamedTypeMirror("Int32", raw: 'L');
+      case 'l':
+        return const _ObjcNamedTypeMirror('Int32', raw: 'l');
+      case 'L':
+        return const _ObjcNamedTypeMirror('Int32', raw: 'L');
 
       // Floating-point types
-      case "f":
-        return const _ObjcNamedTypeMirror("float32", raw: 'f');
-      case "d":
-        return const _ObjcNamedTypeMirror("float64", raw: 'd');
-      case "F":
-        return const _ObjcNamedTypeMirror("float32", raw: 'F');
-      case "D":
-        return const _ObjcNamedTypeMirror("float64", raw: 'D');
+      case 'f':
+        return const _ObjcNamedTypeMirror('float32', raw: 'f');
+      case 'd':
+        return const _ObjcNamedTypeMirror('float64', raw: 'd');
+      case 'F':
+        return const _ObjcNamedTypeMirror('float32', raw: 'F');
+      case 'D':
+        return const _ObjcNamedTypeMirror('float64', raw: 'D');
 
       // Bitfields
-      case "0":
-        return const _ObjcNamedTypeMirror("Uint8", raw: '0');
-      case "1":
-        return const _ObjcNamedTypeMirror("Uint8", raw: '1');
-      case "2":
-        return const _ObjcNamedTypeMirror("Uint8", raw: '2');
-      case "3":
-        return const _ObjcNamedTypeMirror("Uint8", raw: '3');
-      case "4":
-        return const _ObjcNamedTypeMirror("Uint8", raw: '4');
-      case "5":
-        return const _ObjcNamedTypeMirror("Uint8", raw: '5');
-      case "6":
-        return const _ObjcNamedTypeMirror("Uint8", raw: '6');
-      case "7":
-        return const _ObjcNamedTypeMirror("Uint8", raw: '7');
-      case "8":
-        return const _ObjcNamedTypeMirror("Uint8", raw: '8');
-      case "9":
-        return const _ObjcNamedTypeMirror("Uint8", raw: '9');
+      case '0':
+        return const _ObjcNamedTypeMirror('Uint8', raw: '0');
+      case '1':
+        return const _ObjcNamedTypeMirror('Uint8', raw: '1');
+      case '2':
+        return const _ObjcNamedTypeMirror('Uint8', raw: '2');
+      case '3':
+        return const _ObjcNamedTypeMirror('Uint8', raw: '3');
+      case '4':
+        return const _ObjcNamedTypeMirror('Uint8', raw: '4');
+      case '5':
+        return const _ObjcNamedTypeMirror('Uint8', raw: '5');
+      case '6':
+        return const _ObjcNamedTypeMirror('Uint8', raw: '6');
+      case '7':
+        return const _ObjcNamedTypeMirror('Uint8', raw: '7');
+      case '8':
+        return const _ObjcNamedTypeMirror('Uint8', raw: '8');
+      case '9':
+        return const _ObjcNamedTypeMirror('Uint8', raw: '9');
 
       // Unknown
       // TODO: Find documentation or skip methods that contain these
 
-      case "A": // ?
+      case 'A': // ?
         return null;
-      case "R":
+      case 'R':
         return null;
-      case "T":
+      case 'T':
         return null;
-      case "*r":
+      case '*r':
         return null;
-      case "?":
+      case '?':
         return null;
       default:
         throw ArgumentError(
-          "Class '$className' method '$methodName' parameter index $parameter has unsupported type encoding '$fullRaw' (what is '${raw}'?)",
+          'Class "$className" method "$methodName" parameter index $parameter has unsupported type encoding "$fullRaw" (what is "${raw}"?)',
         );
     }
   }

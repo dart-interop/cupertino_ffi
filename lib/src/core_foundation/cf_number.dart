@@ -1,4 +1,4 @@
-// Copyright (c) 2019 terrier989@gmail.com.
+// Copyright (c) 2019 cupertino_ffi authors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -19,9 +19,9 @@
 // OR OTHER DEALINGS IN THE SOFTWARE.
 
 import 'dart:ffi';
-import 'package:ffi/ffi.dart';
 
 import 'package:cupertino_ffi/core_foundation.dart';
+import 'package:ffi/ffi.dart';
 
 final int CFNumberTypeID = CFNumberGetTypeID();
 
@@ -45,26 +45,26 @@ class CFNumber extends Struct {
       if (type == kCFNumberSInt64Type) {
         final ptr = _int64Ptr;
         ptr.value = value;
-        return arcReturn(CFNumberCreate(
+        return CFNumberCreate(
           CFAllocator.getDefault(),
           kCFNumberSInt64Type,
           ptr,
-        ));
+        );
       } else {
-        throw ArgumentError.value(type, "type");
+        throw ArgumentError.value(type, 'type');
       }
     } else if (value is double) {
       type ??= kCFNumberFloat64Type;
       if (type == kCFNumberFloat64Type) {
         final ptr = _int64Ptr.cast<Double>();
         ptr.value = value;
-        return arcReturn(CFNumberCreate(
+        return CFNumberCreate(
           CFAllocator.getDefault(),
           kCFNumberFloat64Type,
           ptr,
-        ));
+        );
       } else {
-        throw ArgumentError.value(type, "type");
+        throw ArgumentError.value(type, 'type');
       }
     } else {
       throw ArgumentError.value(value);

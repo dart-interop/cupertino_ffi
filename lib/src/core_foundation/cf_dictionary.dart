@@ -1,4 +1,4 @@
-// Copyright (c) 2019 terrier989@gmail.com.
+// Copyright (c) 2019 cupertino_ffi authors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -19,9 +19,9 @@
 // OR OTHER DEALINGS IN THE SOFTWARE.
 
 import 'dart:ffi';
-import 'package:ffi/ffi.dart';
 
 import 'package:cupertino_ffi/core_foundation.dart';
+import 'package:ffi/ffi.dart';
 
 final int CFDictionaryTypeID = CFDictionaryGetTypeID();
 
@@ -35,57 +35,66 @@ class CFDictionary extends Struct {
     if (map == null) {
       return Pointer<CFDictionary>.fromAddress(0);
     }
-    return CFMutableDictionary.fromDart(map).cast();
+    return CFMutableDictionary.fromDart(map).cast<CFDictionary>();
   }
 
   static Pointer<CFDictionary> fromPointerMap(Map<Pointer, Pointer> map) {
     if (map == null) {
       return Pointer<CFDictionary>.fromAddress(0);
     }
-    return CFMutableDictionary.fromPointerMap(map).cast();
+    return CFMutableDictionary.fromPointerMap(map).cast<CFDictionary>();
   }
 }
 
-extension CFDictionaryPointer on Pointer<CFDictionary> {
-  Map toDart() {
+extension CFDictionaryPointer<K extends NativeType, V extends NativeType>
+    on Pointer<CFDictionary> {
+  Pointer<V> get(Pointer<K> key) {
+    return CFDictionaryGetValue(this, key);
+  }
+
+  Map<K, V> toDart<K, V>() {
     if (address == 0) {
       return null;
     }
-    final result = {};
+    final result = <K, V>{};
     for (var entry in getDictionaryEntries()) {
-      final key = entry.key.toDart();
-      final value = entry.value.toDart();
-      result[key] = value;
+      final key = entry.key.cast<CFType>().toDart();
+      final value = entry.value.cast<CFType>().toDart();
+      if (key is K) {
+        if (value is V) {
+          result[key] = value;
+        } else {
+          throw StateError('Value is not correct type: $value');
+        }
+      } else {
+        throw StateError('Key is not correct type: $key');
+      }
     }
     return result;
   }
 
   List<MapEntry<Pointer<CFType>, Pointer<CFType>>> getDictionaryEntries() {
-    arcPush();
-    try {
-      final length = CFDictionaryGetCount(this);
+    final length = CFDictionaryGetCount(this);
 
-      // Buffer for keys
-      final keysPtr = allocate<Pointer<CFType>>(count: length);
-      arcAddNoARC(keysPtr);
+    // Buffer for keys
+    final keysPtr = allocate<Pointer<CFType>>(count: length);
 
-      // Buffer for values
-      final valuesPtr = allocate<Pointer<CFType>>(count: length);
-      arcAddNoARC(valuesPtr);
+    // Buffer for values
+    final valuesPtr = allocate<Pointer<CFType>>(count: length);
 
-      CFDictionaryGetKeysAndValues(this, keysPtr, valuesPtr);
+    CFDictionaryGetKeysAndValues(this, keysPtr, valuesPtr);
 
-      // Result
-      final result = <MapEntry<Pointer<CFType>, Pointer<CFType>>>[];
-      for (var i = 0; i < length; i++) {
-        result.add(MapEntry(
-          arcReturn(keysPtr.elementAt(i).value),
-          arcReturn(valuesPtr.elementAt(i).value),
-        ));
-      }
-      return result;
-    } finally {
-      arcPop();
+    // Result
+    final result = <MapEntry<Pointer<CFType>, Pointer<CFType>>>[];
+    for (var i = 0; i < length; i++) {
+      final key = keysPtr.elementAt(i).value;
+      final value = valuesPtr.elementAt(i).value;
+      result.add(MapEntry<Pointer<CFType>, Pointer<CFType>>(
+        key,
+        value,
+      ));
     }
+
+    return result;
   }
 }

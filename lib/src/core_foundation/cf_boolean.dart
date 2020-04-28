@@ -1,4 +1,4 @@
-// Copyright (c) 2019 terrier989@gmail.com.
+// Copyright (c) 2019 cupertino_ffi authors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -22,33 +22,33 @@ import 'dart:ffi';
 
 import 'package:cupertino_ffi/core_foundation.dart';
 
+final CFBooleanTypeID = CFBooleanGetTypeID();
+
 @unsized
-class CFMutableArray extends Struct {
-  factory CFMutableArray._() {
-    throw UnimplementedError();
-  }
-
-  static Pointer<CFMutableArray> allocate({int capacity = 16}) {
-    return CFArrayCreateMutable(
-      CFAllocator.getDefault(),
-      capacity,
-      Pointer.fromAddress(0),
-    );
-  }
-
-  static Pointer<CFMutableArray> fromDart(List list) {
-    if (list == null) {
-      return Pointer<CFMutableArray>.fromAddress(0);
+class CFBoolean extends Struct {
+  static Pointer<CFBoolean> fromDart(bool value) {
+    if (value == null) {
+      return Pointer<CFBoolean>.fromAddress(0);
     }
-    arcPush();
-    try {
-      final pointer = allocate(capacity: list.length);
-      for (var item in list) {
-        CFArrayAppendValue(pointer, CFType.fromDart(item));
-      }
-      return arcReturn(pointer);
-    } finally {
-      arcPop();
+    if (value == false) {
+      return kCFBooleanFalse;
     }
+    return kCFBooleanTrue;
+  }
+}
+
+extension CFBooleanPointer on Pointer<CFBoolean> {
+  bool toDart() {
+    final address = this.address;
+    if (this.address == 0) {
+      return null;
+    }
+    if (address == kCFBooleanFalse.address) {
+      return false;
+    }
+    if (address == kCFBooleanTrue.address) {
+      return true;
+    }
+    throw ArgumentError.value(this);
   }
 }

@@ -1,4 +1,4 @@
-// Copyright (c) 2019 terrier989@gmail.com.
+// Copyright (c) 2019 cupertino_ffi authors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -19,9 +19,9 @@
 // OR OTHER DEALINGS IN THE SOFTWARE.
 
 import 'dart:ffi';
-import 'package:ffi/ffi.dart';
 
 import 'package:cupertino_ffi/core_foundation.dart';
+import 'package:ffi/ffi.dart';
 
 final int CFArrayTypeID = CFArrayGetTypeID();
 
@@ -53,26 +53,27 @@ class CFArray extends Struct {
   }
 }
 
-extension CFArrayPointer on Pointer<CFArray> {
+extension CFArrayPointer<V extends NativeType> on Pointer<CFArray> {
   List<T> toDart<T>() {
     if (address == 0) {
       return null;
     }
-    arcPush();
-    try {
-      final length = CFArrayGetCount(this);
-      final result = List<T>(length);
-      for (var i = 0; i < length; i++) {
-        final item = CFArrayGetValueAtIndex(this, i).cast<CFType>().toDart();
-        if (item == null || item is T) {
-          result[i] = item;
-        } else {
-          throw ArgumentError("Index $i is invalid: $item");
-        }
+    final length = CFArrayGetCount(this);
+    final result = List<T>(length);
+    for (var i = 0; i < length; i++) {
+      final item = CFArrayGetValueAtIndex(this, i).cast<CFType>().toDart();
+      if (item == null || item is T) {
+        result[i] = item;
+      } else {
+        throw ArgumentError('Index $i is invalid: $item');
       }
-      return result;
-    } finally {
-      arcPop();
     }
+    return result;
+  }
+
+  int get length => CFArrayGetCount(this);
+
+  Pointer<V> get(int index) {
+    return CFArrayGetValueAtIndex(this, index).cast<V>();
   }
 }

@@ -1,4 +1,4 @@
-// Copyright (c) 2019 terrier989@gmail.com.
+// Copyright (c) 2019 cupertino_ffi authors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -21,15 +21,6 @@
 import 'dart:ffi';
 
 @unsized
-class IMP extends Struct {}
-
-@unsized
-class Instance extends Struct {}
-
-@unsized
-class Klass extends Struct {}
-
-@unsized
 class Method extends Struct {}
 
 @unsized
@@ -40,3 +31,6 @@ class Protocol extends Struct {}
 
 @unsized
 class SEL extends Struct {}
+
+@unsized
+class IMP extends Struct {}

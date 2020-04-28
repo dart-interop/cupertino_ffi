@@ -1,4 +1,4 @@
-// Copyright (c) 2019 terrier989@gmail.com.
+// Copyright (c) 2019 cupertino_ffi authors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -42,42 +42,14 @@ class CFError extends Struct {
           value.failureReason,
         );
       }
-      return arcReturn(CFErrorCreate(
+      return CFErrorCreate(
         CFAllocator.getDefault(),
         CFString.fromDart(value.domain),
         value.code,
         CFDictionary.fromPointerMap(userInfo),
-      ));
-    }
-    return fromDart(CupertinoError(description: "Error: $value"));
-  }
-}
-
-extension CFErrorPointer on Pointer<CFError> {
-  CupertinoError toDart() {
-    if (address == 0) {
-      return null;
-    }
-    arcPush();
-    try {
-      final code = CFErrorGetCode(this);
-      final userInfo = CFErrorCopyUserInfo(this);
-      final description = CFDictionaryGetValue(
-        userInfo,
-        kCFErrorLocalizedDescriptionKey,
-      ).cast<CFString>().toDart();
-      final failureReason = CFDictionaryGetValue(
-        userInfo,
-        kCFErrorLocalizedFailureReasonKey,
-      ).cast<CFString>().toDart();
-      return CupertinoError(
-        code: code,
-        description: description,
-        failureReason: failureReason,
       );
-    } finally {
-      arcPop();
     }
+    return fromDart(CupertinoError(description: 'Error: $value'));
   }
 }
 
@@ -97,17 +69,40 @@ class CupertinoError extends Error {
   @override
   String toString() {
     final sb = StringBuffer();
-    sb.write("CupertinoError(\n  code:$code,\n");
+    sb.write('CupertinoError(\n  code:$code,\n');
     if (domain != null) {
-      sb.write("  description:\"domain\",\n");
+      sb.write('  description:\'domain\',\n');
     }
     if (description != null) {
-      sb.write("  description:\"$description\",\n");
+      sb.write('  description:\'$description\',\n');
     }
     if (failureReason != null) {
-      sb.write("  description:\"$failureReason\",\n");
+      sb.write('  description:\'$failureReason\',\n');
     }
-    sb.write(")");
+    sb.write(')');
     return sb.toString();
+  }
+}
+
+extension CFErrorPointer on Pointer<CFError> {
+  CupertinoError toDart() {
+    if (address == 0) {
+      return null;
+    }
+    final code = CFErrorGetCode(this);
+    final userInfo = CFErrorCopyUserInfo(this);
+    final description = CFDictionaryGetValue(
+      userInfo,
+      kCFErrorLocalizedDescriptionKey,
+    ).cast<CFString>().toDart();
+    final failureReason = CFDictionaryGetValue(
+      userInfo,
+      kCFErrorLocalizedFailureReasonKey,
+    ).cast<CFString>().toDart();
+    return CupertinoError(
+      code: code,
+      description: description,
+      failureReason: failureReason,
+    );
   }
 }

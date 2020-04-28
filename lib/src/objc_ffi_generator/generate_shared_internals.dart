@@ -1,4 +1,4 @@
-// Copyright (c) 2019 terrier989@gmail.com.
+// Copyright (c) 2019 cupertino_ffi authors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -20,25 +20,25 @@
 
 import 'package:cupertino_ffi/objc_ffi_generator.dart';
 
-/// Generates a file that contains functions such as "call_ptr_ptr_returns_ptr".
+/// Generates a file that contains functions such as 'call_ptr_ptr_returns_ptr'.
 ///
 /// These functions simply call 'objc_msgSend'. The return value is added into
 /// the ARC frame.
 void generateSharedInternalsFile(ObjcBinding binding) {
   // Begin
-  print("Generating '${binding.sharedInternalsPath}'");
+  print('Generating \'${binding.sharedInternalsPath}\'');
 
   //
   // Comments
   //
   final sb = StringBuffer();
-  sb.writeln("""
+  sb.writeln('''
 // AUTOMATICALLY GENERATED. DO NOT EDIT.
 
 import 'package:cupertino_ffi/objc.dart' as objc;
 import 'dart:ffi';
 
-""");
+''');
 
   //
   // For each message sender
@@ -46,9 +46,9 @@ import 'dart:ffi';
   final messageSenders = binding.messageSendersByIdentifier;
   for (var identifier in messageSenders.keys.toList()..sort()) {
     final messageSender = messageSenders[identifier];
-    final identifierC = "${identifier}_C";
-    final identifierDart = "${identifier}_Dart";
-    sb.writeln("""
+    final identifierC = '${identifier}_C';
+    final identifierDart = '${identifier}_Dart';
+    sb.writeln('''
 
 /// Calls variadic C function _objc_msgSend_ using _dart:ffi_.
 final $identifier = objc.dlForObjectiveC.lookupFunction<$identifierC,$identifierDart>(
@@ -56,13 +56,13 @@ final $identifier = objc.dlForObjectiveC.lookupFunction<$identifierC,$identifier
 );
 typedef $identifierC = ${messageSender.toCType(genericNames: true)};
 typedef $identifierDart = ${messageSender.toDartType(genericNames: true)};
-""");
+''');
   }
 
   // Save
   saveDartFile(binding.sharedInternalsPath, sb.toString());
 
   // End
-  print("Done");
-  print("");
+  print('Done');
+  print('');
 }

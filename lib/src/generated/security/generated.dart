@@ -144,6 +144,30 @@ typedef _SecKeyCopyPublicKey_Dart = ffi.Pointer<SecKey> Function(
   ffi.Pointer<SecKey> key,
 );
 
+/// C function `SecKeyCopyExternalRepresentation`.
+ffi.Pointer<CFData> SecKeyCopyExternalRepresentation(
+  ffi.Pointer<SecKey> key,
+  ffi.Pointer<ffi.Pointer<CFError>> error,
+) {
+  final result = _SecKeyCopyExternalRepresentation(key, error);
+  arcAdd(result);
+  return result;
+}
+
+final _SecKeyCopyExternalRepresentation_Dart _SecKeyCopyExternalRepresentation =
+    dlForSecurity.lookupFunction<_SecKeyCopyExternalRepresentation_C,
+        _SecKeyCopyExternalRepresentation_Dart>(
+  'SecKeyCopyExternalRepresentation',
+);
+typedef _SecKeyCopyExternalRepresentation_C = ffi.Pointer<CFData> Function(
+  ffi.Pointer<SecKey> key,
+  ffi.Pointer<ffi.Pointer<CFError>> error,
+);
+typedef _SecKeyCopyExternalRepresentation_Dart = ffi.Pointer<CFData> Function(
+  ffi.Pointer<SecKey> key,
+  ffi.Pointer<ffi.Pointer<CFError>> error,
+);
+
 /// C function `SecKeyCopyKeyExchangeResult`.
 ffi.Pointer<CFData> SecKeyCopyKeyExchangeResult(
   ffi.Pointer<SecKey> privateKey,
@@ -346,6 +370,13 @@ final ffi.Pointer<CFString> kSecAttrAccount = dlForSecurity
     )
     .value;
 
+/// C global `kSecAttrApplicationLabel`.
+final ffi.Pointer<CFString> kSecAttrApplicationLabel = dlForSecurity
+    .lookup<ffi.Pointer<CFString>>(
+      'kSecAttrApplicationLabel',
+    )
+    .value;
+
 /// C global `kSecAttrApplicationTag`.
 final ffi.Pointer<CFString> kSecAttrApplicationTag = dlForSecurity
     .lookup<ffi.Pointer<CFString>>(
@@ -395,6 +426,20 @@ final ffi.Pointer<CFString> kSecAttrCanWrap = dlForSecurity
     )
     .value;
 
+/// C global `kSecAttrComment`.
+final ffi.Pointer<CFString> kSecAttrComment = dlForSecurity
+    .lookup<ffi.Pointer<CFString>>(
+      'kSecAttrComment',
+    )
+    .value;
+
+/// C global `kSecAttrCreationDate`.
+final ffi.Pointer<CFString> kSecAttrCreationDate = dlForSecurity
+    .lookup<ffi.Pointer<CFString>>(
+      'kSecAttrCreationDate',
+    )
+    .value;
+
 /// C global `kSecAttrCertificateType`.
 final ffi.Pointer<CFString> kSecAttrCertificateType = dlForSecurity
     .lookup<ffi.Pointer<CFString>>(
@@ -406,6 +451,13 @@ final ffi.Pointer<CFString> kSecAttrCertificateType = dlForSecurity
 final ffi.Pointer<CFString> kSecAttrDescription = dlForSecurity
     .lookup<ffi.Pointer<CFString>>(
       'kSecAttrDescription',
+    )
+    .value;
+
+/// C global `kSecAttrGeneric`.
+final ffi.Pointer<CFString> kSecAttrGeneric = dlForSecurity
+    .lookup<ffi.Pointer<CFString>>(
+      'kSecAttrGeneric',
     )
     .value;
 
@@ -483,6 +535,13 @@ final ffi.Pointer<CFString> kSecAttrSalt = dlForSecurity
 final ffi.Pointer<CFString> kSecAttrServer = dlForSecurity
     .lookup<ffi.Pointer<CFString>>(
       'kSecAttrServer',
+    )
+    .value;
+
+/// C global `kSecAttrService`.
+final ffi.Pointer<CFString> kSecAttrService = dlForSecurity
+    .lookup<ffi.Pointer<CFString>>(
+      'kSecAttrService',
     )
     .value;
 

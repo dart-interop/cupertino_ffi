@@ -2,27 +2,27 @@ import 'package:cupertino_ffi/objc_helpers.dart';
 import 'package:test/test.dart';
 
 void main() {
-  group("LibraryMirror:", () {
+  group('LibraryMirror:', () {
     SystemMirror mirror;
     setUpAll(() {
       mirror = SystemMirror.get();
     });
 
     const path =
-        "/System/Library/Frameworks/Foundation.framework/Versions/C/Foundation";
+        '/System/Library/Frameworks/Foundation.framework/Versions/C/Foundation';
 
-    test("Contains libraries", () {
+    test('Contains libraries', () {
       expect(mirror.libraries, contains(path));
     });
 
-    test("Contains classes", () {
+    test('Contains classes', () {
       final library = mirror.libraries[path];
-      expect(library.classes, contains("NSString"));
+      expect(library.classes, contains('NSString'));
     });
 
-    test("Contains methods", () {
+    test('Contains methods', () {
       final library = mirror.libraries[path];
-      final klass = library.classes["NSString"];
+      final klass = library.classes['NSString'];
       expect(klass.methodsBySelector, hasLength(greaterThan(5)));
     });
   });

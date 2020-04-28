@@ -1,4 +1,4 @@
-// Copyright (c) 2019 terrier989@gmail.com.
+// Copyright (c) 2019 cupertino_ffi authors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -19,48 +19,15 @@
 // OR OTHER DEALINGS IN THE SOFTWARE.
 
 import 'dart:ffi';
-import 'dart:typed_data';
-import 'package:ffi/ffi.dart';
 
 import 'package:cupertino_ffi/core_foundation.dart';
 
-final int CFDataTypeID = CFDataGetTypeID();
+final _systemEncoding = CFStringGetSystemEncoding();
 
 @unsized
-class CFData extends Struct {
-  static Pointer<CFData> fromDart(List<int> data) {
-    if (data == null) {
-      return Pointer<CFData>.fromAddress(0);
-    }
-    final length = data.length;
-
-    // Allocate memory
-    final clonePtr = allocate<Uint8>(count: length);
-    final cloneUint8List = clonePtr.asTypedList(length);
-
-    // Write data
-    cloneUint8List.setAll(0, data);
-
-    // Call API
-    return arcReturn(CFDataCreateWithBytesNoCopy(
-      CFAllocator.getDefault(),
-      clonePtr,
-      length,
-      Pointer.fromAddress(0),
-    ));
-  }
-}
-
-extension CFDataPointer on Pointer<CFData> {
-  Uint8List toDart() {
-    if (address == 0) {
-      return null;
-    }
-    final length = CFDataGetLength(this);
-    final bufferPointer = CFDataGetBytePtr(this);
-    if (bufferPointer.address == 0) {
-      throw UnimplementedError();
-    }
-    return bufferPointer.asTypedList(length);
+class CFEncoding extends Struct {
+  static Pointer<CFEncoding> getSystemEncoding() => _systemEncoding;
+  factory CFEncoding._() {
+    throw UnimplementedError();
   }
 }

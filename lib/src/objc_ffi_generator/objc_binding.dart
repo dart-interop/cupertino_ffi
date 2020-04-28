@@ -1,4 +1,4 @@
-// Copyright (c) 2019 terrier989@gmail.com.
+// Copyright (c) 2019 cupertino_ffi authors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -31,13 +31,13 @@ class ObjcBinding {
 
   /// Path where various shared internals will be generated.
   ///
-  /// Default is "src/generated/internal.dart".
+  /// Default is 'src/generated/internal.dart'.
   final String sharedInternalsPath;
 
   ObjcBinding({
     @required this.packageName,
     @required this.libraries,
-    this.sharedInternalsPath = "src/generated/internal.dart",
+    this.sharedInternalsPath = 'src/generated/internal.dart',
   });
 
   Map<String, ObjcDispatcherGenerator> get messageSendersByIdentifier {
@@ -80,10 +80,10 @@ class ObjcLibraryBinding {
     this.directives = const [],
     this.injection,
     this.classes = const {},
-  })  : path = path ?? "$name.dart",
+  })  : path = path ?? '$name.dart',
         classPathPattern =
-            classPathPattern ?? "src/generated/$name/{className}.dart",
-        libraryName = libraryName ?? "cupertino_ffi.$name";
+            classPathPattern ?? 'src/generated/$name/{className}.dart',
+        libraryName = libraryName ?? 'cupertino_ffi.$name';
 
   Set<ObjcDispatcherGenerator> getCallTypes({LibraryMirror mirror}) {
     mirror ??= LibraryMirror.getForPath(dynamicLibrary.path);
@@ -98,9 +98,9 @@ class ObjcLibraryBinding {
 
   Set<String> get importUris {
     final result = <String>{
-      "dart:ffi",
-      "package:ffi/ffi.dart",
-      "package:meta/meta.dart",
+      'dart:ffi',
+      'package:ffi/ffi.dart',
+      'package:meta/meta.dart',
     };
     for (var classBinding in classes.values) {
       final importUris = classBinding.importUris;

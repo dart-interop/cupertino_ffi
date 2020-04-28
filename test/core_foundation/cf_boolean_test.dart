@@ -18,12 +18,25 @@
 // OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE
 // OR OTHER DEALINGS IN THE SOFTWARE.
 
-/// Generates Dart libraries that expose Objective-C libraries.
-library cupertino_ffi.objc_ffi_generator;
+import 'dart:ffi';
 
-export 'src/objc_ffi_generator/generate.dart';
-export 'src/objc_ffi_generator/generate_class.dart';
-export 'src/objc_ffi_generator/generate_shared_internals.dart';
-export 'src/objc_ffi_generator/generate_type.dart';
-export 'src/objc_ffi_generator/objc_binding.dart';
-export 'src/objc_ffi_generator/objc_dispatcher_generator.dart';
+import 'package:cupertino_ffi/core_foundation.dart';
+import 'package:test/test.dart';
+
+void main() {
+  group('CFBoolean: ', () {
+    test('GetTypeID(...) == CFBooleanTypeID', () {
+      expect(CFGetTypeID(kCFBooleanFalse), CFBooleanTypeID);
+    });
+
+    test('null, false, true', () {
+      expect(CFBoolean.fromDart(null), Pointer.fromAddress(0));
+      expect(CFBoolean.fromDart(false), kCFBooleanFalse);
+      expect(CFBoolean.fromDart(true), kCFBooleanTrue);
+
+      expect(Pointer.fromAddress(0).cast<CFBoolean>().toDart(), isNull);
+      expect(kCFBooleanFalse.toDart(), isFalse);
+      expect(kCFBooleanTrue.toDart(), isTrue);
+    });
+  });
+}

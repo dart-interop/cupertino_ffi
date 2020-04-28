@@ -1,4 +1,4 @@
-// Copyright (c) 2019 terrier989@gmail.com.
+// Copyright (c) 2019 cupertino_ffi authors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -18,21 +18,17 @@
 // OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE
 // OR OTHER DEALINGS IN THE SOFTWARE.
 
+import 'dart:convert';
 import 'dart:ffi';
 
 import 'package:cupertino_ffi/core_foundation.dart';
 import 'package:cupertino_ffi/security.dart';
+import 'package:ffi/ffi.dart';
 import 'package:test/test.dart';
 
 void main() {
-  group("Security", () {
-    setUp(() {
-      arcPush();
-    });
-    tearDown(() {
-      arcPop();
-    });
-    test("attributes ", () {
+  group('Security', () {
+    test('attributes ', () {
       final attrs = <Pointer<CFString>>[
         kSecAttrAccessible,
         kSecAttrKeyType,
@@ -43,31 +39,62 @@ void main() {
       }
     });
 
-    test("SecKeyCreateRandomKey (RSA)", () {
-      // Try to catch a randomly occurring segfault.
-      for (var i = 0; i < 10; i++) {
-        final errorPtrPtr = arcAllocate<Pointer<CFError>>();
-        errorPtrPtr.value = Pointer<CFError>.fromAddress(0);
-        expect(errorPtrPtr.cast<IntPtr>().value, 0);
+    test('SecKeyCreateRandomKey (EC)', () {
+      final errorPtrPtr = allocatePointerTo<CFError>();
+      final attributes = CFDictionary.fromDart({
+        kSecAttrKeyType: kSecAttrKeyTypeECSECPrimeRandom,
+        kSecAttrKeySizeInBits: CFNumber.fromDart(256),
+        kSecPrivateKeyAttrs: CFDictionary.fromPointerMap({
+          kSecAttrIsPermanent: CFBoolean.fromDart(true),
+          kSecAttrApplicationTag: CFData.fromDart(utf8.encode(
+            'Example of EC key',
+          )),
+        }),
+      });
 
-        final attributes = CFDictionary.fromPointerMap({
-          kSecAttrKeyType: kSecAttrKeyTypeRSA,
-          kSecAttrKeySizeInBits: CFNumber.fromDart(2048),
-          kSecPrivateKeyAttrs: CFDictionary.fromPointerMap({
-            kSecAttrIsPermanent: CFBoolean.fromDart(true),
-            kSecAttrApplicationTag: CFData.fromDart([65, 65, 65]),
-          }),
-        });
-
-        final secKey = SecKeyCreateRandomKey(attributes, errorPtrPtr);
-        final error = errorPtrPtr.value.toDart();
-        if (error != null) {
-          throw error;
-        }
-        if (secKey.address == 0) {
-          fail("Error");
-        }
+      final secKey = SecKeyCreateRandomKey(attributes.cast(), errorPtrPtr);
+      final error = errorPtrPtr.value.toDart();
+      if (error != null) {
+        throw error;
       }
+      if (secKey.address == 0) {
+        fail('');
+      }
+
+      addTearDown(() {
+        SecItemDelete(attributes);
+      });
+
+      final data = SecKeyCopyExternalRepresentation(secKey, errorPtrPtr);
+      expect(data.toDart(), hasLength(97));
+    });
+
+    test('SecKeyCreateRandomKey (RSA)', () {
+      final errorPtrPtr = allocate<Pointer<CFError>>();
+      errorPtrPtr.value = Pointer<CFError>.fromAddress(0);
+
+      final attributes = CFDictionary.fromDart({
+        kSecAttrKeyType: kSecAttrKeyTypeRSA,
+        kSecAttrKeySizeInBits: CFNumber.fromDart(2048),
+        kSecPrivateKeyAttrs: CFDictionary.fromPointerMap({
+          kSecAttrIsPermanent: CFBoolean.fromDart(true),
+          kSecAttrApplicationTag: CFData.fromDart(utf8.encode(
+            'Example of RSA key',
+          )),
+        }),
+      });
+      final secKey = SecKeyCreateRandomKey(attributes.cast(), errorPtrPtr);
+      final error = errorPtrPtr.value.toDart();
+      if (error != null) {
+        throw error;
+      }
+      if (secKey.address == 0) {
+        fail('');
+      }
+
+      addTearDown(() {
+        SecItemDelete(attributes);
+      });
     });
   });
 }

@@ -1,4 +1,4 @@
-// Copyright (c) 2019 terrier989@gmail.com.
+// Copyright (c) 2019 cupertino_ffi authors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -41,35 +41,28 @@ class CFMutableDictionary extends Struct {
     if (map == null) {
       return Pointer<CFMutableDictionary>.fromAddress(0);
     }
-    arcPush();
-    try {
-      final pointer = CFMutableDictionary.allocate(capacity: 2 * map.length);
-      for (var entry in map.entries) {
-        CFDictionarySetValue(
-          pointer,
-          CFType.fromDart(entry.key),
-          CFType.fromDart(entry.value),
-        );
-      }
-      return arcReturn(pointer);
-    } finally {
-      arcPop();
+    final pointer = CFMutableDictionary.allocate(capacity: 2 * map.length);
+    for (var entry in map.entries) {
+      final key = entry.key;
+      final value = entry.value;
+      CFDictionarySetValue(
+        pointer,
+        CFType.fromDart(key),
+        CFType.fromDart(value),
+      );
     }
+    return pointer;
   }
 
-  static Pointer<CFDictionary> fromPointerMap(Map<Pointer, Pointer> map) {
+  static Pointer<CFMutableDictionary> fromPointerMap(
+      Map<Pointer, Pointer> map) {
     if (map == null) {
-      return Pointer<CFDictionary>.fromAddress(0);
+      return Pointer<CFMutableDictionary>.fromAddress(0);
     }
-    arcPush();
-    try {
-      final result = CFMutableDictionary.allocate();
-      for (var entry in map.entries) {
-        CFDictionarySetValue(result, entry.key, entry.value);
-      }
-      return arcReturn(result.cast<CFDictionary>());
-    } finally {
-      arcPop();
+    final result = CFMutableDictionary.allocate();
+    for (var entry in map.entries) {
+      CFDictionarySetValue(result, entry.key, entry.value);
     }
+    return result.cast<CFMutableDictionary>();
   }
 }

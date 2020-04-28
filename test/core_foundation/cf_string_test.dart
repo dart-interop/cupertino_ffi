@@ -1,4 +1,4 @@
-// Copyright (c) 2019 terrier989@gmail.com.
+// Copyright (c) 2019 cupertino_ffi authors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -18,50 +18,39 @@
 // OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE
 // OR OTHER DEALINGS IN THE SOFTWARE.
 
-import 'package:ffi_tool/c.dart';
+import 'package:cupertino_ffi/core_foundation.dart';
+import 'package:test/test.dart';
 
-final libraryForCoreGraphics = Library(
-  importedUris: {
-    ImportedUri("package:cupertino_ffi/core_graphics.dart"),
-    ImportedUri("package:cupertino_ffi/core_foundation.dart"),
-  },
-  dynamicLibraryPath:
-      "/System/Library/Frameworks/CoreGraphics.framework/Versions/Current/CoreGraphics",
-  elements: _elements,
-);
+void main() {
+  group('CFString: ', () {
+    test('\'\'', () {
+      final pointer = CFString.fromDart('');
+      expect(pointer.toDart(), '');
+    });
 
-final _elements = <Element>[
-  //
-  // Type IDs
-  //
-  Func(
-    name: "CGImageCreate",
-    parameterTypes: [
-      "IntPtr",
-      "IntPtr",
-      "IntPtr",
-      "IntPtr",
-      "IntPtr",
-      "IntPtr",
-      "*void",
-      "*Double",
-      "Uint8",
-      "Int32"
-    ],
-    parameterNames: [
-      "width",
-      "height",
-      "bitPerComponent",
-      "bitsPerPixel",
-      "bytesPerRow",
-      "space",
-      "bitmapInfo",
-      "provider",
-      "decode",
-      "shouldInterpolate",
-      "intent",
-    ],
-    returnType: "*CFImage",
-    arc: true,
-  ),
-];
+    test('"abc"', () {
+      final pointer = CFString.fromDart('abc');
+      expect(pointer.toDart(), 'abc');
+    });
+
+    test('"12345678901234567890"', () {
+      final pointer = CFString.fromDart('12345678901234567890');
+      expect(pointer.toDart(), '12345678901234567890');
+    });
+
+    test('"€"', () {
+      final pointer = CFString.fromDart('€');
+      expect(pointer.toDart(), '€');
+    });
+
+    test('"𐍈" (𐍈 takes 4 bytes)', () {
+      final pointer = CFString.fromDart('𐍈𐍈𐍈𐍈');
+      expect(pointer.toDart(), '𐍈𐍈𐍈𐍈');
+    });
+
+    test('"𐍈𐍈𐍈𐍈" (𐍈 takes 4 bytes)', () {
+      final pointer = CFString.fromDart('𐍈𐍈𐍈𐍈');
+      expect(pointer.toDart(), '𐍈𐍈𐍈𐍈');
+    });
+  });
+}

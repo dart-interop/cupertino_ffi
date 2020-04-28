@@ -1,4 +1,4 @@
-// Copyright (c) 2019 terrier989@gmail.com.
+// Copyright (c) 2019 cupertino_ffi authors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -22,12 +22,12 @@ import 'package:ffi_tool/c.dart';
 
 final libraryForSecurity = Library(
   importedUris: {
-    ImportedUri("package:cupertino_ffi/core_foundation.dart"),
-    ImportedUri("package:cupertino_ffi/security.dart"),
+    ImportedUri('package:cupertino_ffi/core_foundation.dart'),
+    ImportedUri('package:cupertino_ffi/security.dart'),
   },
   dynamicLibraryIdentifier: 'dlForSecurity',
   dynamicLibraryPath:
-      "/System/Library/Frameworks/Security.framework/Versions/Current/Security",
+      '/System/Library/Frameworks/Security.framework/Versions/Current/Security',
   elements: _elements,
 );
 
@@ -36,114 +36,122 @@ final _elements = <Element>[
   // Functions
   //
   Func(
-    name: "SecAccessControlCreateWithFlags",
-    parameterTypes: ["*CFAllocator", "*void", "Int64", "**CFError"],
-    parameterNames: ["allocator", "protection", "flags", "error"],
-    returnType: "*SecAccessControl",
+    name: 'SecAccessControlCreateWithFlags',
+    parameterTypes: ['*CFAllocator', '*void', 'Int64', '**CFError'],
+    parameterNames: ['allocator', 'protection', 'flags', 'error'],
+    returnType: '*SecAccessControl',
     arc: true,
   ),
 
   Func(
-    name: "SecItemAdd",
-    parameterTypes: ["*CFDictionary", "**CFType"],
-    returnType: "IntPtr",
+    name: 'SecItemAdd',
+    parameterTypes: ['*CFDictionary', '**CFType'],
+    returnType: 'IntPtr',
   ),
 
   Func(
-    name: "SecItemCopyMatching",
-    parameterTypes: ["*CFDictionary", "**CFType"],
-    parameterNames: ["query", "result"],
-    returnType: "IntPtr",
+    name: 'SecItemCopyMatching',
+    parameterTypes: ['*CFDictionary', '**CFType'],
+    parameterNames: ['query', 'result'],
+    returnType: 'IntPtr',
   ),
 
   Func(
-    name: "SecItemUpdate",
-    parameterTypes: ["*CFDictionary", "*CFDictionary"],
-    returnType: "IntPtr",
+    name: 'SecItemUpdate',
+    parameterTypes: ['*CFDictionary', '*CFDictionary'],
+    returnType: 'IntPtr',
   ),
 
   Func(
-    name: "SecItemDelete",
-    parameterTypes: ["*CFDictionary"],
-    returnType: "IntPtr",
+    name: 'SecItemDelete',
+    parameterTypes: ['*CFDictionary'],
+    returnType: 'IntPtr',
   ),
 
   Func(
-    name: "SecKeyCopyPublicKey",
-    parameterTypes: ["*SecKey"],
-    parameterNames: ["key"],
-    returnType: "*SecKey",
+    name: 'SecKeyCopyPublicKey',
+    parameterTypes: ['*SecKey'],
+    parameterNames: ['key'],
+    returnType: '*SecKey',
     arc: true,
   ),
 
   Func(
-    name: "SecKeyCopyKeyExchangeResult",
+    name: 'SecKeyCopyExternalRepresentation',
+    parameterTypes: ['*SecKey', '**CFError'],
+    parameterNames: ['key', 'error'],
+    returnType: '*CFData',
+    arc: true,
+  ),
+
+  Func(
+    name: 'SecKeyCopyKeyExchangeResult',
     parameterTypes: [
-      "*SecKey",
-      "*CFString",
-      "*SecKey",
-      "*CFDictionary",
-      "**CFError"
+      '*SecKey',
+      '*CFString',
+      '*SecKey',
+      '*CFDictionary',
+      '**CFError'
     ],
     parameterNames: [
-      "privateKey",
-      "algorithm",
-      "publicKey",
-      "parameters",
-      "error",
+      'privateKey',
+      'algorithm',
+      'publicKey',
+      'parameters',
+      'error',
     ],
-    returnType: "*CFData",
+    returnType: '*CFData',
     arc: true,
   ),
 
   Func(
-    name: "SecKeyCreateSignature",
+    name: 'SecKeyCreateSignature',
     parameterTypes: [
-      "*SecKey",
-      "*CFString",
-      "*CFData",
-      "**CFError",
+      '*SecKey',
+      '*CFString',
+      '*CFData',
+      '**CFError',
     ],
     parameterNames: [
-      "key",
-      "algorithm",
-      "dataToSign",
-      "error",
+      'key',
+      'algorithm',
+      'dataToSign',
+      'error',
     ],
-    returnType: "*CFData",
+    returnType: '*CFData',
     arc: true,
   ),
 
   Func(
-    name: "SecKeyCreateDecryptedData",
+    name: 'SecKeyCreateDecryptedData',
     parameterTypes: [
-      "*SecKey",
-      "IntPtr",
-      "*CFData",
-      "**CFError",
+      '*SecKey',
+      'IntPtr',
+      '*CFData',
+      '**CFError',
     ],
     parameterNames: [
-      "key",
-      "algorithm",
-      "ciphertext",
-      "error",
+      'key',
+      'algorithm',
+      'ciphertext',
+      'error',
     ],
-    returnType: "*CFData",
+    returnType: '*CFData',
     arc: true,
   ),
 
   Func(
-    name: "SecKeyCreateEncryptedData",
-    parameterTypes: ["*SecKey", "IntPtr", "*CFData", "**CFError"],
-    parameterNames: ["key", "algorithm", "plaintext", "error"],
-    returnType: "*CFData",
+    name: 'SecKeyCreateEncryptedData',
+    parameterTypes: ['*SecKey', 'IntPtr', '*CFData', '**CFError'],
+    parameterNames: ['key', 'algorithm', 'plaintext', 'error'],
+    returnType: '*CFData',
     arc: true,
   ),
 
   Func(
-    name: "SecKeyCreateRandomKey",
-    parameterTypes: ["*CFDictionary", "**CFError"],
-    returnType: "*SecKey",
+    name: 'SecKeyCreateRandomKey',
+    parameterTypes: ['*CFDictionary', '**CFError'],
+    returnType: '*SecKey',
     arc: true,
   ),
 
@@ -152,23 +160,23 @@ final _elements = <Element>[
   //
 
   Global(
-    name: "kSecClass",
-    type: "*CFString",
+    name: 'kSecClass',
+    type: '*CFString',
   ),
 
   Global(
-    name: "kSecPrivateKeyAttrs",
-    type: "*CFString",
+    name: 'kSecPrivateKeyAttrs',
+    type: '*CFString',
   ),
 
   Global(
-    name: "kSecPublicKeyAttrs",
-    type: "*CFString",
+    name: 'kSecPublicKeyAttrs',
+    type: '*CFString',
   ),
 
   Global(
-    name: "kSecValueData",
-    type: "*CFString",
+    name: 'kSecValueData',
+    type: '*CFString',
   ),
 
   //
@@ -176,143 +184,168 @@ final _elements = <Element>[
   //
 
   Global(
-    name: "kSecAttrAccessComment",
-    type: "*CFString",
+    name: 'kSecAttrAccessComment',
+    type: '*CFString',
   ),
 
   Global(
-    name: "kSecAttrAccessControl",
-    type: "*CFString",
+    name: 'kSecAttrAccessControl',
+    type: '*CFString',
   ),
 
   Global(
-    name: "kSecAttrAccessible",
-    type: "*CFString",
+    name: 'kSecAttrAccessible',
+    type: '*CFString',
   ),
 
   Global(
-    name: "kSecAttrAccount",
-    type: "*CFString",
+    name: 'kSecAttrAccount',
+    type: '*CFString',
   ),
 
   Global(
-    name: "kSecAttrApplicationTag",
-    type: "*CFString",
+    name: 'kSecAttrApplicationLabel',
+    type: '*CFString',
   ),
 
   Global(
-    name: "kSecAttrCanDecrypt",
-    type: "*CFString",
+    name: 'kSecAttrApplicationTag',
+    type: '*CFString',
   ),
 
   Global(
-    name: "kSecAttrCanDrive",
-    type: "*CFString",
+    name: 'kSecAttrCanDecrypt',
+    type: '*CFString',
   ),
 
   Global(
-    name: "kSecAttrCanEncrypt",
-    type: "*CFString",
+    name: 'kSecAttrCanDrive',
+    type: '*CFString',
   ),
 
   Global(
-    name: "kSecAttrCanSign",
-    type: "*CFString",
+    name: 'kSecAttrCanEncrypt',
+    type: '*CFString',
   ),
 
   Global(
-    name: "kSecAttrCanUnwrap",
-    type: "*CFString",
+    name: 'kSecAttrCanSign',
+    type: '*CFString',
   ),
 
   Global(
-    name: "kSecAttrCanWrap",
-    type: "*CFString",
+    name: 'kSecAttrCanUnwrap',
+    type: '*CFString',
   ),
 
   Global(
-    name: "kSecAttrCertificateType",
-    type: "*CFString",
+    name: 'kSecAttrCanWrap',
+    type: '*CFString',
   ),
 
   Global(
-    name: "kSecAttrDescription",
-    type: "*CFString",
+    name: 'kSecAttrComment',
+    type: '*CFString',
   ),
 
   Global(
-    name: "kSecAttrEffectiveKeySize",
-    type: "*CFString",
+    name: 'kSecAttrCreationDate',
+    type: '*CFString',
   ),
 
   Global(
-    name: "kSecAttrIsPermanent",
-    type: "*CFString",
+    name: 'kSecAttrCertificateType',
+    type: '*CFString',
   ),
 
   Global(
-    name: "kSecAttrKeySizeInBits",
-    type: "*CFString",
+    name: 'kSecAttrDescription',
+    type: '*CFString',
   ),
 
   Global(
-    name: "kSecAttrKeyType",
-    type: "*CFString",
+    name: 'kSecAttrGeneric',
+    type: '*CFString',
   ),
 
   Global(
-    name: "kSecAttrLabel",
-    type: "*CFString",
+    name: 'kSecAttrEffectiveKeySize',
+    type: '*CFString',
   ),
 
   Global(
-    name: "kSecAttrModificationDate",
-    type: "*CFString",
+    name: 'kSecAttrIsPermanent',
+    type: '*CFString',
   ),
 
   Global(
-    name: "kSecAttrPRF",
-    type: "*CFString",
+    name: 'kSecAttrKeySizeInBits',
+    type: '*CFString',
   ),
 
   Global(
-    name: "kSecAttrProtocol",
-    type: "*CFString",
+    name: 'kSecAttrKeyType',
+    type: '*CFString',
   ),
 
   Global(
-    name: "kSecAttrRounds",
-    type: "*CFString",
+    name: 'kSecAttrLabel',
+    type: '*CFString',
   ),
 
   Global(
-    name: "kSecAttrSalt",
-    type: "*CFString",
+    name: 'kSecAttrModificationDate',
+    type: '*CFString',
   ),
 
   Global(
-    name: "kSecAttrServer",
-    type: "*CFString",
+    name: 'kSecAttrPRF',
+    type: '*CFString',
   ),
 
   Global(
-    name: "kSecAttrSynchronizable",
-    type: "*CFString",
+    name: 'kSecAttrProtocol',
+    type: '*CFString',
   ),
 
   Global(
-    name: "kSecAttrTokenID",
-    type: "*CFString",
+    name: 'kSecAttrRounds',
+    type: '*CFString',
   ),
 
   Global(
-    name: "kSecAttrTokenIDSecureEnclave",
-    type: "*CFString",
+    name: 'kSecAttrSalt',
+    type: '*CFString',
   ),
 
   Global(
-    name: "kSecAttrType",
-    type: "*CFString",
+    name: 'kSecAttrServer',
+    type: '*CFString',
+  ),
+
+  Global(
+    name: 'kSecAttrService',
+    type: '*CFString',
+  ),
+
+  Global(
+    name: 'kSecAttrSynchronizable',
+    type: '*CFString',
+  ),
+
+  Global(
+    name: 'kSecAttrTokenID',
+    type: '*CFString',
+  ),
+
+  Global(
+    name: 'kSecAttrTokenIDSecureEnclave',
+    type: '*CFString',
+  ),
+
+  Global(
+    name: 'kSecAttrType',
+    type: '*CFString',
   ),
 
   //
@@ -320,28 +353,28 @@ final _elements = <Element>[
   //
 
   Global(
-    name: "kSecAttrAccessibleAfterFirstUnlock",
-    type: "*CFString",
+    name: 'kSecAttrAccessibleAfterFirstUnlock',
+    type: '*CFString',
   ),
 
   Global(
-    name: "kSecAttrAccessibleAfterFirstUnlockThisDeviceOnly",
-    type: "*CFString",
+    name: 'kSecAttrAccessibleAfterFirstUnlockThisDeviceOnly',
+    type: '*CFString',
   ),
 
   Global(
-    name: "kSecAttrAccessibleWhenPasscodeSetThisDeviceOnly",
-    type: "*CFString",
+    name: 'kSecAttrAccessibleWhenPasscodeSetThisDeviceOnly',
+    type: '*CFString',
   ),
 
   Global(
-    name: "kSecAttrAccessibleWhenUnlocked",
-    type: "*CFString",
+    name: 'kSecAttrAccessibleWhenUnlocked',
+    type: '*CFString',
   ),
 
   Global(
-    name: "kSecAttrAccessibleWhenUnlockedThisDeviceOnly",
-    type: "*CFString",
+    name: 'kSecAttrAccessibleWhenUnlockedThisDeviceOnly',
+    type: '*CFString',
   ),
 
   //
@@ -349,28 +382,28 @@ final _elements = <Element>[
   //
 
   Global(
-    name: "kSecClassCertificate",
-    type: "*CFString",
+    name: 'kSecClassCertificate',
+    type: '*CFString',
   ),
 
   Global(
-    name: "kSecClassGenericPassword",
-    type: "*CFString",
+    name: 'kSecClassGenericPassword',
+    type: '*CFString',
   ),
 
   Global(
-    name: "kSecClassIdentity",
-    type: "*CFString",
+    name: 'kSecClassIdentity',
+    type: '*CFString',
   ),
 
   Global(
-    name: "kSecClassInternetPassword",
-    type: "*CFString",
+    name: 'kSecClassInternetPassword',
+    type: '*CFString',
   ),
 
   Global(
-    name: "kSecClassKey",
-    type: "*CFString",
+    name: 'kSecClassKey',
+    type: '*CFString',
   ),
 
   //
@@ -378,52 +411,52 @@ final _elements = <Element>[
   //
 
   Global(
-    name: "kSecAttrKeyType3DES",
-    type: "*CFString",
+    name: 'kSecAttrKeyType3DES',
+    type: '*CFString',
   ),
 
   Global(
-    name: "kSecAttrKeyTypeAES",
-    type: "*CFString",
+    name: 'kSecAttrKeyTypeAES',
+    type: '*CFString',
   ),
 
   Global(
-    name: "kSecAttrKeyTypeCAST",
-    type: "*CFString",
+    name: 'kSecAttrKeyTypeCAST',
+    type: '*CFString',
   ),
 
   Global(
-    name: "kSecAttrKeyTypeDES",
-    type: "*CFString",
+    name: 'kSecAttrKeyTypeDES',
+    type: '*CFString',
   ),
 
   Global(
-    name: "kSecAttrKeyTypeDSA",
-    type: "*CFString",
+    name: 'kSecAttrKeyTypeDSA',
+    type: '*CFString',
   ),
 
   Global(
-    name: "kSecAttrTypeECDSA",
-    type: "*CFString",
+    name: 'kSecAttrTypeECDSA',
+    type: '*CFString',
   ),
 
   Global(
-    name: "kSecAttrKeyTypeECSECPrimeRandom",
-    type: "*CFString",
+    name: 'kSecAttrKeyTypeECSECPrimeRandom',
+    type: '*CFString',
   ),
 
   Global(
-    name: "kSecAttrKeyTypeRC2",
-    type: "*CFString",
+    name: 'kSecAttrKeyTypeRC2',
+    type: '*CFString',
   ),
 
   Global(
-    name: "kSecAttrKeyTypeRC4",
-    type: "*CFString",
+    name: 'kSecAttrKeyTypeRC4',
+    type: '*CFString',
   ),
 
   Global(
-    name: "kSecAttrKeyTypeRSA",
-    type: "*CFString",
+    name: 'kSecAttrKeyTypeRSA',
+    type: '*CFString',
   ),
 ];

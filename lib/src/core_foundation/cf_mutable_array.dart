@@ -1,4 +1,4 @@
-// Copyright (c) 2019 terrier989@gmail.com.
+// Copyright (c) 2019 cupertino_ffi authors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -18,8 +18,32 @@
 // OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE
 // OR OTHER DEALINGS IN THE SOFTWARE.
 
-/// Bindings for _Core Graphics_ in iOS and Mac OS X.
-library cupertino_ffi.core_graphics;
+import 'dart:ffi';
 
-export 'src/core_graphics/image.dart';
-export 'src/generated/core_graphics/generated.dart';
+import 'package:cupertino_ffi/core_foundation.dart';
+
+@unsized
+class CFMutableArray extends Struct {
+  factory CFMutableArray._() {
+    throw UnimplementedError();
+  }
+
+  static Pointer<CFMutableArray> allocate({int capacity = 16}) {
+    return CFArrayCreateMutable(
+      CFAllocator.getDefault(),
+      capacity,
+      Pointer.fromAddress(0),
+    );
+  }
+
+  static Pointer<CFMutableArray> fromDart(List list) {
+    if (list == null) {
+      return Pointer<CFMutableArray>.fromAddress(0);
+    }
+    final pointer = allocate(capacity: list.length);
+    for (var item in list) {
+      CFArrayAppendValue(pointer, CFType.fromDart(item));
+    }
+    return pointer;
+  }
+}

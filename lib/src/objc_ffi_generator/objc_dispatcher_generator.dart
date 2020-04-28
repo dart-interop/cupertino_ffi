@@ -1,4 +1,4 @@
-// Copyright (c) 2019 terrier989@gmail.com.
+// Copyright (c) 2019 cupertino_ffi authors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -27,7 +27,7 @@ import 'package:cupertino_ffi/objc_helpers.dart';
 ///   call_ptr_ptr_returns_ptr_C,
 ///   call_ptr_ptr_returns_ptr_Dart
 /// >(
-///   "objc_msgSend",
+///   'objc_msgSend',
 /// );
 ///
 /// typedef Pointer _call_ptr_ptr_ptr_ptr_returns_ptr_C(
@@ -62,70 +62,70 @@ class ObjcDispatcherGenerator {
   /// Returns 'dart:ffi' type of the function.
   ///
   /// Examples:
-  ///   * "Uint32" --> Uint32
-  ///   * "*void" --> "Pointer"
-  ///   * "*Uint8" --> "Pointer<Uint8>
+  ///   * 'Uint32' --> Uint32
+  ///   * '*void' --> 'Pointer'
+  ///   * '*Uint8' --> 'Pointer<Uint8>
   String toCType({String name = 'Function', bool genericNames = false}) {
     final sb = StringBuffer();
     sb.write(method.returnType.toCType(simple: true));
-    sb.write(" ");
+    sb.write(' ');
     sb.write(name);
-    sb.write("(");
+    sb.write('(');
     var i = 0;
     for (var parameter in method.parameters) {
       if (i > 0) {
-        sb.write(", ");
+        sb.write(', ');
       }
       sb.write(parameter.type.toCType(simple: true));
-      sb.write(" ");
-      sb.write(genericNames ? "arg$i" : parameter.name);
+      sb.write(' ');
+      sb.write(genericNames ? 'arg$i' : parameter.name);
       i++;
     }
-    sb.write(")");
+    sb.write(')');
     return sb.toString();
   }
 
   /// Returns Dart type of the function.
   ///
   /// Examples:
-  ///   * "Uint32" --> int
-  ///   * "*void" --> "Pointer"
-  ///   * "*Uint8" --> "Pointer<Uint8>
+  ///   * 'Uint32' --> int
+  ///   * '*void' --> 'Pointer'
+  ///   * '*Uint8' --> 'Pointer<Uint8>
   String toDartType({String name = 'Function', bool genericNames = false}) {
     final sb = StringBuffer();
     sb.write(method.returnType.toDartType(simple: true));
-    sb.write(" ");
+    sb.write(' ');
     sb.write(name);
-    sb.write("(");
+    sb.write('(');
     var i = 0;
     for (var parameter in method.parameters) {
       if (i > 0) {
-        sb.write(", ");
+        sb.write(', ');
       }
       sb.write(parameter.type.toDartType(simple: true));
-      sb.write(" ");
-      sb.write(genericNames ? "arg$i" : parameter.name);
+      sb.write(' ');
+      sb.write(genericNames ? 'arg$i' : parameter.name);
       i++;
     }
-    sb.write(")");
+    sb.write(')');
     return sb.toString();
   }
 
-  /// Returns strings such as "call_ptr_ptr_returns_ptr".
+  /// Returns strings such as 'call_ptr_ptr_returns_ptr'.
   String toMethodName() => _identifier ??= _toMethodName();
 
   String _toMethodName() {
     final sb = StringBuffer();
-    sb.write("call");
+    sb.write('call');
 
     // Parameter types
     for (var parameter in method.parameters) {
-      sb.write("_");
+      sb.write('_');
       sb.write(parameter.type.toMethodNamePart());
     }
 
     // Return type
-    sb.write("_returns_");
+    sb.write('_returns_');
     sb.write(method.returnType.toMethodNamePart());
 
     return sb.toString();

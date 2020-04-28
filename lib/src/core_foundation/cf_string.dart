@@ -1,4 +1,4 @@
-// Copyright (c) 2019 terrier989@gmail.com.
+// Copyright (c) 2019 cupertino_ffi authors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -21,34 +21,54 @@
 import 'dart:ffi';
 
 import 'package:cupertino_ffi/core_foundation.dart';
+import 'package:ffi/ffi.dart';
 
-final CFBooleanTypeID = CFBooleanGetTypeID();
+final int CFStringTypeID = CFStringGetTypeID();
 
 @unsized
-class CFBoolean extends Struct {
-  static Pointer<CFBoolean> fromDart(bool value) {
+class CFString extends Struct {
+  static Pointer<CFString> fromDart(String value) {
     if (value == null) {
-      return Pointer<CFBoolean>.fromAddress(0);
+      return Pointer<CFString>.fromAddress(0);
     }
-    if (value == false) {
-      return kCFBooleanFalse;
-    }
-    return kCFBooleanTrue;
+    final cstringPointer = Utf8.toUtf8(value);
+    final result = CFStringCreateWithCString(
+      CFAllocator.getDefault(),
+      cstringPointer,
+      CFEncoding.getSystemEncoding(),
+    );
+    return result;
   }
 }
 
-extension CFBooleanPointer on Pointer<CFBoolean> {
-  bool toDart() {
-    final address = this.address;
-    if (this.address == 0) {
+extension CFStringPointer on Pointer<CFString> {
+  int get length => CFStringGetLength(this);
+
+  String toDart() {
+    if (address == 0) {
       return null;
     }
-    if (address == kCFBooleanFalse.address) {
-      return false;
+    final length = CFStringGetLength(this);
+    if (length == 0) {
+      return '';
     }
-    if (address == kCFBooleanTrue.address) {
-      return true;
+    var utf8Pointer = CFStringGetCStringPtr(this);
+    if (utf8Pointer.address != 0) {
+      return Utf8.fromUtf8(utf8Pointer);
     }
-    throw ArgumentError.value(this);
+    final bufferLength = 6 * (length + 1);
+    final bufferPointer = allocate<Utf8>(count: bufferLength);
+    final ok = CFStringGetCString(
+      this,
+      bufferPointer,
+      bufferLength,
+      CFEncoding.getSystemEncoding(),
+    );
+    if (ok != 0) {
+      final result = Utf8.fromUtf8(bufferPointer);
+      return result;
+    } else {
+      throw UnimplementedError();
+    }
   }
 }

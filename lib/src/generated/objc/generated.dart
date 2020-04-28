@@ -9,6 +9,33 @@ final ffi.DynamicLibrary dlForObjectiveC = ffi.DynamicLibrary.open(
   '/System/Library/Frameworks/Foundation.framework/Versions/Current/Foundation',
 );
 
+/// C function `class_addMethod`.
+void class_addMethod(
+  ffi.Pointer<Klass> arg0,
+  ffi.Pointer<SEL> arg1,
+  ffi.Pointer<IMP> arg2,
+  ffi.Pointer<ffi.Utf8> arg3,
+) {
+  _class_addMethod(arg0, arg1, arg2, arg3);
+}
+
+final _class_addMethod_Dart _class_addMethod =
+    dlForObjectiveC.lookupFunction<_class_addMethod_C, _class_addMethod_Dart>(
+  'class_addMethod',
+);
+typedef _class_addMethod_C = ffi.Void Function(
+  ffi.Pointer<Klass> arg0,
+  ffi.Pointer<SEL> arg1,
+  ffi.Pointer<IMP> arg2,
+  ffi.Pointer<ffi.Utf8> arg3,
+);
+typedef _class_addMethod_Dart = void Function(
+  ffi.Pointer<Klass> arg0,
+  ffi.Pointer<SEL> arg1,
+  ffi.Pointer<IMP> arg2,
+  ffi.Pointer<ffi.Utf8> arg3,
+);
+
 /// C function `class_addProtocol`.
 void class_addProtocol(
   ffi.Pointer<Klass> arg0,

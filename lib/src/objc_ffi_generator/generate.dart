@@ -1,4 +1,4 @@
-// Copyright (c) 2019 terrier989@gmail.com.
+// Copyright (c) 2019 cupertino_ffi authors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -20,8 +20,8 @@
 
 import 'dart:io';
 
-import 'package:cupertino_ffi/objc_helpers.dart';
 import 'package:cupertino_ffi/objc_ffi_generator.dart';
+import 'package:cupertino_ffi/objc_helpers.dart';
 import 'package:meta/meta.dart';
 
 /// Generates files for all the libraries.
@@ -33,25 +33,25 @@ void generateAll(ObjcBinding binding) {
   //
   // This means that we catch some errors early.
   print(
-      "Collecting reflection data about ${binding.libraries.length} libraries.");
+      'Collecting reflection data about ${binding.libraries.length} libraries.');
   final mirrors = <ObjcLibraryBinding, LibraryMirror>{};
   for (var library in binding.libraries) {
     // This will cache the mirror.
     final mirror = library.mirror;
     if (mirror == null) {
       throw StateError(
-        "Library '${library.dynamicLibrary.path}' could not be loaded",
+        'Library "${library.dynamicLibrary.path}" could not be loaded',
       );
     }
     if (mirror.classes.isEmpty) {
       throw StateError(
-        "Library '${library.dynamicLibrary.path}' does not have any classes",
+        'Library "${library.dynamicLibrary.path}" does not have any classes',
       );
     }
     mirrors[library] = mirror;
   }
-  print("Done.");
-  print("");
+  print('Done.');
+  print('');
 
   // Generate shared internals
   generateSharedInternalsFile(binding);
@@ -71,7 +71,7 @@ void _generate(
   LibraryMirror mirror, {
   @required String sharedInternalsPath,
 }) {
-  print("Generating '${binding.path}'.");
+  print('Generating "${binding.path}".');
 
   // Generate 'lib/example.dart'
   _generateLibraryFile(
@@ -86,8 +86,8 @@ void _generate(
     generateClassFile(binding, mirror, className);
   }
 
-  print("Done.");
-  print("");
+  print('Done.');
+  print('');
 }
 
 void _generateLibraryFile(
@@ -100,22 +100,22 @@ void _generateLibraryFile(
   final productName = binding.dynamicLibrary.name;
   final url = binding.dynamicLibrary.url;
   final libraryName = binding.libraryName;
-  sb.writeln("""
+  sb.writeln('''
 // Automatically generated. Do not edit.
 
 /// Automatically generated API for [$productName]($url).
 ///
 /// Generated with [cupertino_ffi](https://pub.dev/packages/cupertino_ffi).
 library $libraryName;
-""");
+''');
 
   // All imports
   for (var uri in binding.importUris.toList()..sort()) {
-    sb.writeln("import '$uri';");
+    sb.writeln('import \'$uri\';');
   }
 
   // Some named imports
-  sb.writeln("""
+  sb.writeln('''
 import 'package:cupertino_ffi/objc.dart' show ObjcMethodInfo;
 import 'package:cupertino_ffi/objc.dart' as _objc;
 import 'package:$packageName/$sharedInternalsPath' as _objc_call;
@@ -125,20 +125,20 @@ export 'package:cupertino_ffi/core_foundation.dart' show
   arcReturn,
   arcFieldGet,
   arcFieldSet;
-""");
+''');
 
   // Write 'part' directives.
   //
   // These look like:
   //   part 'lib/src/generated/example/className.dart';
   for (var className in mirror.classes.keys.toList()..sort()) {
-    sb.write("part '");
-    sb.write(binding.classPathPattern.replaceAll("{className}", className));
-    sb.writeln("';");
+    sb.write('part \'');
+    sb.write(binding.classPathPattern.replaceAll('{className}', className));
+    sb.writeln('\';');
   }
 
   // Write dynamic library
-  sb.write("""
+  sb.write('''
 bool _isDynamicLibraryOpened = false;
 
 /// Ensures that the Objective-C library has been loaded by the process.
@@ -148,25 +148,25 @@ void _ensureDynamicLibraryHasBeenOpened() {
   if (!_isDynamicLibraryOpened) {
     _isDynamicLibraryOpened = true;
     DynamicLibrary.open(
-      "${binding.dynamicLibrary.path}",
+      '${binding.dynamicLibrary.path}',
     );
   }
 }
-""");
+''');
 
   // Save and format
   saveDartFile(binding.path, sb.toString());
 }
 
 void saveDartFile(String path, String source) {
-  final file = File("lib/$path");
+  final file = File('lib/$path');
   file.parent.createSync(recursive: true);
   file.writeAsStringSync(source);
 
   // Run 'dartfmt --fix -w path'
-  final process = Process.runSync("dartfmt", ["--fix", "-w", file.path]);
+  final process = Process.runSync('dartfmt', ['--fix', '-w', file.path]);
   final err = process.stderr as String;
-  if (err != "") {
-    throw StateError("dartfmt error:\n${process.stdout}\n$err");
+  if (err != '') {
+    throw StateError('dartfmt error:\n${process.stdout}\n$err');
   }
 }

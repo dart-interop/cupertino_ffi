@@ -1,4 +1,4 @@
-// Copyright (c) 2019 terrier989@gmail.com.
+// Copyright (c) 2019 cupertino_ffi authors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -22,14 +22,11 @@ import 'package:cupertino_ffi/core_foundation.dart';
 import 'package:test/test.dart';
 
 void main() {
-  group("Core Graphics: ", () {
-    setUp(() {
-      arcPush();
-      addTearDown(() => arcPop());
-    });
-
-    test("test", () {
-      // ...
+  group('CFData: ', () {
+    test('[1,2,3]', () {
+      final pointer = CFData.fromDart([1, 2, 3]);
+      expect(pointer.address, isNot(0));
+      expect(pointer.toDart(), [1, 2, 3]);
     });
   });
 }

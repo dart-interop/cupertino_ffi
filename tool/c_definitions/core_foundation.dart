@@ -1,4 +1,4 @@
-// Copyright (c) 2019 terrier989@gmail.com.
+// Copyright (c) 2019 cupertino_ffi authors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -22,11 +22,11 @@ import 'package:ffi_tool/c.dart';
 
 final libraryForCoreFoundation = Library(
   importedUris: {
-    ImportedUri("package:cupertino_ffi/core_foundation.dart"),
+    ImportedUri('package:cupertino_ffi/core_foundation.dart'),
   },
   dynamicLibraryIdentifier: 'dlForCoreFoundation',
   dynamicLibraryPath:
-      "/System/Library/Frameworks/CoreFoundation.framework/Versions/Current/CoreFoundation",
+      '/System/Library/Frameworks/CoreFoundation.framework/Versions/Current/CoreFoundation',
   elements: _elements,
 );
 
@@ -35,54 +35,59 @@ final _elements = <Element>[
   // Type IDs
   //
   Func(
-    name: "CFArrayGetTypeID",
+    name: 'CFArrayGetTypeID',
     parameterTypes: [],
-    returnType: "Int64",
+    returnType: 'Int64',
   ),
 
   Func(
-    name: "CFBooleanGetTypeID",
+    name: 'CFBooleanGetTypeID',
     parameterTypes: [],
-    returnType: "Int64",
+    returnType: 'Int64',
   ),
 
   Func(
-    name: "CFDataGetTypeID",
+    name: 'CFDataGetTypeID',
     parameterTypes: [],
-    returnType: "Int64",
+    returnType: 'Int64',
   ),
 
   Func(
-    name: "CFDictionaryGetTypeID",
+    name: 'CFDictionaryGetTypeID',
     parameterTypes: [],
-    returnType: "Int64",
+    returnType: 'Int64',
   ),
 
   Func(
-    name: "CFErrorGetTypeID",
+    name: 'CFErrorGetTypeID',
     parameterTypes: [],
-    returnType: "Int64",
+    returnType: 'Int64',
   ),
 
   Func(
-    name: "CFNumberGetTypeID",
+    name: 'CFNumberGetTypeID',
     parameterTypes: [],
-    returnType: "Int64",
+    returnType: 'Int64',
   ),
 
   Func(
-    name: "CFStringGetTypeID",
+    name: 'CFStringGetTypeID',
     parameterTypes: [],
-    returnType: "Int64",
+    returnType: 'Int64',
   ),
 
   //
   // CFType
   //
   Func(
-    name: "CFGetTypeID",
-    parameterTypes: ["*void"],
-    returnType: "Int64",
+    name: 'CFGetTypeID',
+    parameterTypes: ['*void'],
+    returnType: 'Int64',
+  ),
+  Func(
+    name: 'CFGetRetainCount',
+    parameterTypes: ['*void'],
+    returnType: 'IntPtr',
   ),
 
   //
@@ -90,113 +95,119 @@ final _elements = <Element>[
   //
 
   Func(
-    name: "CFArrayCreate",
-    parameterTypes: ["*CFAllocator", "*void", "IntPtr", "*void"],
-    parameterNames: ["allocator", "pointer", "length", "callbacks"],
-    returnType: "*CFArray",
+    name: 'CFArrayCreate',
+    parameterTypes: ['*CFAllocator', '*void', 'IntPtr', '*void'],
+    parameterNames: ['allocator', 'pointer', 'length', 'callbacks'],
+    returnType: '*CFArray',
     arc: true,
   ),
 
   Func(
-    name: "CFArrayGetCount",
-    parameterTypes: ["*CFArray"],
-    returnType: "IntPtr",
+    name: 'CFArrayGetCount',
+    parameterTypes: ['*CFArray'],
+    returnType: 'IntPtr',
   ),
   Func(
-    name: "CFArrayGetValueAtIndex",
-    parameterTypes: ["*CFArray", "IntPtr"],
-    returnType: "*CFType",
+    name: 'CFArrayGetValueAtIndex',
+    parameterTypes: ['*CFArray', 'IntPtr'],
+    returnType: '*CFType',
     arc: true,
   ),
 
   Func(
-    name: "CFArrayCreateMutable",
-    parameterTypes: ["*CFAllocator", "IntPtr", "*void"],
-    returnType: "*CFMutableArray",
+    name: 'CFArrayCreateMutable',
+    parameterTypes: ['*CFAllocator', 'IntPtr', '*void'],
+    returnType: '*CFMutableArray',
   ),
 
   Func(
-    name: "CFArrayAppendValue",
-    parameterTypes: ["*CFMutableArray", "*void"],
-    returnType: "void",
+    name: 'CFArrayAppendValue',
+    parameterTypes: ['*CFMutableArray', '*void'],
+    returnType: 'void',
   ),
 
   //
   // CFBoolean
   //
   Global(
-    name: "kCFBooleanTrue",
-    type: "*CFBoolean",
+    name: 'kCFBooleanTrue',
+    type: '*CFBoolean',
   ),
 
   Global(
-    name: "kCFBooleanFalse",
-    type: "*CFBoolean",
+    name: 'kCFBooleanFalse',
+    type: '*CFBoolean',
   ),
 
   //
   // CFData
   //
-
   Func(
-    name: "CFDataCreateWithBytesNoCopy",
-    parameterTypes: ["*CFAllocator", "*Uint8", "IntPtr", "*void"],
-    returnType: "*CFData",
+    name: 'CFDataCreate',
+    parameterTypes: ['*CFAllocator', '*Uint8', 'IntPtr'],
+    returnType: '*CFData',
     arc: true,
   ),
 
   Func(
-    name: "CFDataGetBytePtr",
-    parameterTypes: ["*CFData"],
-    returnType: "*Uint8",
+    name: 'CFDataCreateWithBytesNoCopy',
+    parameterTypes: ['*CFAllocator', '*Uint8', 'IntPtr', '*void'],
+    returnType: '*CFData',
+    arc: true,
   ),
 
   Func(
-    name: "CFDataGetLength",
-    parameterTypes: ["*CFData"],
-    returnType: "IntPtr",
+    name: 'CFDataGetBytePtr',
+    parameterTypes: ['*CFData'],
+    returnType: '*Uint8',
+  ),
+
+  Func(
+    name: 'CFDataGetLength',
+    parameterTypes: ['*CFData'],
+    returnType: 'IntPtr',
   ),
   //
   // CFDictionary
   //
   Func(
-    name: "CFDictionaryCreateMutable",
-    parameterTypes: ["*void", "IntPtr", "*void", "*void"],
-    returnType: "*CFMutableDictionary",
+    name: 'CFDictionaryCreateMutable',
+    parameterTypes: ['*void', 'IntPtr', '*void', '*void'],
+    returnType: '*CFMutableDictionary',
     arc: true,
   ),
 
   Func(
-    name: "CFDictionarySetValue",
-    parameterTypes: ["*CFMutableDictionary", "*void", "*void"],
-    returnType: "void",
+    name: 'CFDictionarySetValue',
+    parameterTypes: ['*CFMutableDictionary', '*void', '*void'],
+    returnType: 'void',
   ),
 
   Func(
-    name: "CFDictionaryGetCount",
-    parameterTypes: ["*CFDictionary"],
-    returnType: "IntPtr",
+    name: 'CFDictionaryGetCount',
+    parameterTypes: ['*CFDictionary'],
+    returnType: 'IntPtr',
   ),
 
   Func(
-    name: "CFDictionaryGetKeysAndValues",
-    parameterTypes: ["*CFDictionary", "*void", "*void"],
-    returnType: "void",
+    name: 'CFDictionaryGetKeysAndValues',
+    parameterTypes: ['*CFDictionary', '*void', '*void'],
+    returnType: 'void',
   ),
 
   Func(
-    name: "CFDictionaryGetValue",
-    parameterTypes: ["*CFDictionary", "*void"],
-    returnType: "*void",
+    name: 'CFDictionaryGetValue',
+    parameterTypes: ['*CFDictionary', '*void'],
+    returnType: '*void',
   ),
 
   //
   // CFEncoding
   //
   Func(
-    name: "CFStringGetSystemEncoding",
+    name: 'CFStringGetSystemEncoding',
     parameterTypes: [],
-    returnType: "*CFEncoding",
+    returnType: '*CFEncoding',
   ),
 
   //
@@ -204,80 +215,80 @@ final _elements = <Element>[
   //
 
   Func(
-    name: "CFErrorCreate",
-    parameterTypes: ["*CFAllocator", "*CFString", "Int64", "*CFDictionary"],
-    parameterNames: ["allocator", "domain", "code", "userInfo"],
-    returnType: "*CFError",
+    name: 'CFErrorCreate',
+    parameterTypes: ['*CFAllocator', '*CFString', 'Int64', '*CFDictionary'],
+    parameterNames: ['allocator', 'domain', 'code', 'userInfo'],
+    returnType: '*CFError',
     arc: true,
   ),
 
   Func(
-    name: "CFErrorGetCode",
-    parameterTypes: ["*CFError"],
-    returnType: "Int64",
+    name: 'CFErrorGetCode',
+    parameterTypes: ['*CFError'],
+    returnType: 'Int64',
   ),
 
   Func(
-    name: "CFErrorCopyUserInfo",
-    parameterTypes: ["*CFError"],
-    returnType: "*CFDictionary",
+    name: 'CFErrorCopyUserInfo',
+    parameterTypes: ['*CFError'],
+    returnType: '*CFDictionary',
     arc: true,
   ),
 
   // CFError 'userInfo' keys
   Global(
-    name: "kCFErrorDescriptionKey",
-    type: "*CFString",
+    name: 'kCFErrorDescriptionKey',
+    type: '*CFString',
   ),
 
   Global(
-    name: "kCFErrorDomainCocoa",
-    type: "*CFString",
+    name: 'kCFErrorDomainCocoa',
+    type: '*CFString',
   ),
 
   Global(
-    name: "kCFErrorDomainMach",
-    type: "*CFString",
+    name: 'kCFErrorDomainMach',
+    type: '*CFString',
   ),
 
   Global(
-    name: "kCFErrorDomainOSStatus",
-    type: "*CFString",
+    name: 'kCFErrorDomainOSStatus',
+    type: '*CFString',
   ),
 
   Global(
-    name: "kCFErrorDomainPOSIX",
-    type: "*CFString",
+    name: 'kCFErrorDomainPOSIX',
+    type: '*CFString',
   ),
 
   Global(
-    name: "kCFErrorLocalizedDescriptionKey",
-    type: "*CFString",
+    name: 'kCFErrorLocalizedDescriptionKey',
+    type: '*CFString',
   ),
 
   Global(
-    name: "kCFErrorLocalizedFailureReasonKey",
-    type: "*CFString",
+    name: 'kCFErrorLocalizedFailureReasonKey',
+    type: '*CFString',
   ),
 
   Global(
-    name: "kCFErrorLocalizedRecoverySuggestionKey",
-    type: "*CFString",
+    name: 'kCFErrorLocalizedRecoverySuggestionKey',
+    type: '*CFString',
   ),
 
   Global(
-    name: "kCFErrorUnderlyingErrorKey",
-    type: "*CFString",
+    name: 'kCFErrorUnderlyingErrorKey',
+    type: '*CFString',
   ),
 
   Global(
-    name: "kCFErrorURLKey",
-    type: "*CFString",
+    name: 'kCFErrorURLKey',
+    type: '*CFString',
   ),
 
   Global(
-    name: "kCFErrorFilePathKey",
-    type: "*CFString",
+    name: 'kCFErrorFilePathKey',
+    type: '*CFString',
   ),
 
   //
@@ -285,22 +296,22 @@ final _elements = <Element>[
   //
 
   Func(
-    name: "CFNumberCreate",
-    parameterTypes: ["*CFAllocator", "IntPtr", "*void"],
-    returnType: "*CFNumber",
+    name: 'CFNumberCreate',
+    parameterTypes: ['*CFAllocator', 'IntPtr', '*void'],
+    returnType: '*CFNumber',
     arc: true,
   ),
 
   Func(
-    name: "CFNumberGetType",
-    parameterTypes: ["*CFNumber"],
-    returnType: "IntPtr",
+    name: 'CFNumberGetType',
+    parameterTypes: ['*CFNumber'],
+    returnType: 'IntPtr',
   ),
 
   Func(
-    name: "CFNumberGetValue",
-    parameterTypes: ["*CFNumber", "IntPtr", "*void"],
-    returnType: "Uint8", // Boolean?
+    name: 'CFNumberGetValue',
+    parameterTypes: ['*CFNumber', 'IntPtr', '*void'],
+    returnType: 'Uint8', // Boolean?
   ),
 
   //
@@ -308,26 +319,26 @@ final _elements = <Element>[
   //
 
   Func(
-    name: "CFStringCreateWithCString",
-    parameterTypes: ["*CFAllocator", "*Utf8", "*CFEncoding"],
-    returnType: "*CFString",
+    name: 'CFStringCreateWithCString',
+    parameterTypes: ['*CFAllocator', '*Utf8', '*CFEncoding'],
+    returnType: '*CFString',
     arc: true,
   ),
 
   Func(
-    name: "CFStringGetCString",
-    parameterTypes: ["*CFString", "*Utf8", "IntPtr", "*CFEncoding"],
-    returnType: "IntPtr",
+    name: 'CFStringGetCString',
+    parameterTypes: ['*CFString', '*Utf8', 'IntPtr', '*CFEncoding'],
+    returnType: 'IntPtr',
   ),
   Func(
-    name: "CFStringGetCStringPtr",
-    parameterTypes: ["*CFString"],
-    returnType: "*Utf8",
+    name: 'CFStringGetCStringPtr',
+    parameterTypes: ['*CFString'],
+    returnType: '*Utf8',
   ),
 
   Func(
-    name: "CFStringGetLength",
-    parameterTypes: ["*CFString"],
-    returnType: "IntPtr",
+    name: 'CFStringGetLength',
+    parameterTypes: ['*CFString'],
+    returnType: 'IntPtr',
   ),
 ];

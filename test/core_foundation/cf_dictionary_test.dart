@@ -1,4 +1,4 @@
-// Copyright (c) 2019 terrier989@gmail.com.
+// Copyright (c) 2019 cupertino_ffi authors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -18,26 +18,34 @@
 // OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE
 // OR OTHER DEALINGS IN THE SOFTWARE.
 
-import 'dart:ffi';
-
 import 'package:cupertino_ffi/core_foundation.dart';
+import 'package:test/test.dart';
 
-final _CFAllocatorGetDefault = dlForCoreFoundation
-    .lookupFunction<_CFAllocatorGetDefault_C, _CFAllocatorGetDefault_Dart>(
-  "CFAllocatorGetDefault",
-);
+void main() {
+  group('CFDictionary: ', () {
+    test('empty', () {
+      final pointer = CFDictionary.fromDart({});
+      expect(CFDictionaryGetCount(pointer), 0);
+      expect(pointer.getDictionaryEntries().toList().length, 0);
+      expect(pointer.toDart(), {});
+    });
 
-final Pointer<CFAllocator> _default = _CFAllocatorGetDefault();
+    test('two entries, many frames', () {
+      for (var i = 0; i < 10000; i++) {
+        final pointer = CFDictionary.fromDart({'k0': 'v0', 'k1': 'v1'});
+        expect(CFDictionaryGetCount(pointer), 2);
+        expect(pointer.getDictionaryEntries().toList().length, 2);
+        expect(pointer.toDart(), {'k0': 'v0', 'k1': 'v1'});
+      }
+    });
 
-typedef _CFAllocatorGetDefault_C = Pointer<CFAllocator> Function();
-
-typedef _CFAllocatorGetDefault_Dart = Pointer<CFAllocator> Function();
-
-@unsized
-class CFAllocator extends Struct {
-  factory CFAllocator._() {
-    throw UnimplementedError();
-  }
-
-  static Pointer<CFAllocator> getDefault() => _default;
+    test('two entries, one frame', () {
+      for (var i = 0; i < 10000; i++) {
+        final pointer = CFDictionary.fromDart({'k0': 'v0', 'k1': 'v1'});
+        expect(CFDictionaryGetCount(pointer), 2);
+        expect(pointer.getDictionaryEntries().toList().length, 2);
+        expect(pointer.toDart(), {'k0': 'v0', 'k1': 'v1'});
+      }
+    });
+  });
 }

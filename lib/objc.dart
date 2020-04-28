@@ -1,4 +1,4 @@
-// Copyright (c) 2019 terrier989@gmail.com.
+// Copyright (c) 2019 cupertino_ffi authors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -22,5 +22,6 @@
 library cupertino_ffi.objective_c;
 
 export 'src/generated/objc/generated.dart';
+export 'src/objc/klass.dart';
 export 'src/objc/classes.dart';
 export 'src/objc/runtime.dart';

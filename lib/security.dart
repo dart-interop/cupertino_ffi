@@ -1,4 +1,4 @@
-// Copyright (c) 2019 terrier989@gmail.com.
+// Copyright (c) 2019 cupertino_ffi authors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -21,5 +21,5 @@
 /// Bindings for _Security_ framework in iOS/Mac OS X.
 library cupertino_ffi.security;
 
-export 'src/security/classes.dart';
 export 'src/generated/security/generated.dart';
+export 'src/security/classes.dart';

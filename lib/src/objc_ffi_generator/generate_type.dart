@@ -1,4 +1,4 @@
-// Copyright (c) 2019 terrier989@gmail.com.
+// Copyright (c) 2019 cupertino_ffi authors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -19,41 +19,41 @@
 // OR OTHER DEALINGS IN THE SOFTWARE.
 
 String internalTypeToCType(String s, {bool simple = false}) {
-  if (s == "*void") {
-    return "Pointer";
+  if (s == '*void') {
+    return 'Pointer';
   }
-  if (s.startsWith("*")) {
+  if (s.startsWith('*')) {
     if (simple) {
-      return "Pointer";
+      return 'Pointer';
     }
     final rest = internalTypeToCType(s.substring(1));
-    return "Pointer<$rest>";
+    return 'Pointer<$rest>';
   }
   switch (s.toLowerCase()) {
-    case "void":
-      return "Void";
-    case "int8":
-      return "Int8";
-    case "int16":
-      return "Int16";
-    case "int32":
-      return "Int32";
-    case "int64":
-      return "Int64";
-    case "uint8":
-      return "Uint8";
-    case "uint16":
-      return "Uint16";
-    case "uint32":
-      return "Uint32";
-    case "uint64":
-      return "Uint64";
-    case "float32":
-      return "Float";
-    case "float64":
-      return "Float";
-    case "utf8":
-      return "Utf8";
+    case 'void':
+      return 'Void';
+    case 'int8':
+      return 'Int8';
+    case 'int16':
+      return 'Int16';
+    case 'int32':
+      return 'Int32';
+    case 'int64':
+      return 'Int64';
+    case 'uint8':
+      return 'Uint8';
+    case 'uint16':
+      return 'Uint16';
+    case 'uint32':
+      return 'Uint32';
+    case 'uint64':
+      return 'Uint64';
+    case 'float32':
+      return 'Float';
+    case 'float64':
+      return 'Float';
+    case 'utf8':
+      return 'Utf8';
     default:
       throw ArgumentError.value(s);
   }
@@ -61,43 +61,43 @@ String internalTypeToCType(String s, {bool simple = false}) {
 
 String internalTypeToDartType(String s, {bool simple = false}) {
   switch (s.toLowerCase()) {
-    case "void":
-      return "void";
-    case "*void":
-      return "Pointer";
-    case "int8":
-      return "int";
-    case "int16":
-      return "int";
-    case "int32":
-      return "int";
-    case "int64":
-      return "int";
-    case "uint8":
-      return "int";
-    case "uint16":
-      return "int";
-    case "uint32":
-      return "int";
-    case "uint64":
-      return "int";
-    case "float32":
-      return "double";
-    case "float64":
-      return "double";
-    case "utf8":
-      return "Utf8";
+    case 'void':
+      return 'void';
+    case '*void':
+      return 'Pointer';
+    case 'int8':
+      return 'int';
+    case 'int16':
+      return 'int';
+    case 'int32':
+      return 'int';
+    case 'int64':
+      return 'int';
+    case 'uint8':
+      return 'int';
+    case 'uint16':
+      return 'int';
+    case 'uint32':
+      return 'int';
+    case 'uint64':
+      return 'int';
+    case 'float32':
+      return 'double';
+    case 'float64':
+      return 'double';
+    case 'utf8':
+      return 'Utf8';
     default:
-      if (s.startsWith("*")) {
+      if (s.startsWith('*')) {
         // Is immediate type enough?
         if (simple) {
-          return "Pointer";
+          return 'Pointer';
         }
 
         // Note that we have to call _toCType, not _toDartType.
         final rest = internalTypeToCType(s.substring(1));
 
-        return "Pointer<$rest>";
+        return 'Pointer<$rest>';
       }
       throw ArgumentError.value(s);
   }

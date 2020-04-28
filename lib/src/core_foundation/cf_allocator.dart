@@ -1,4 +1,4 @@
-// Copyright (c) 2019 terrier989@gmail.com.
+// Copyright (c) 2019 cupertino_ffi authors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -22,12 +22,22 @@ import 'dart:ffi';
 
 import 'package:cupertino_ffi/core_foundation.dart';
 
-final _systemEncoding = CFStringGetSystemEncoding();
+final _CFAllocatorGetDefault = dlForCoreFoundation
+    .lookupFunction<_CFAllocatorGetDefault_C, _CFAllocatorGetDefault_Dart>(
+  'CFAllocatorGetDefault',
+);
+
+final Pointer<CFAllocator> _default = _CFAllocatorGetDefault();
+
+typedef _CFAllocatorGetDefault_C = Pointer<CFAllocator> Function();
+
+typedef _CFAllocatorGetDefault_Dart = Pointer<CFAllocator> Function();
 
 @unsized
-class CFEncoding extends Struct {
-  static Pointer<CFEncoding> getSystemEncoding() => _systemEncoding;
-  factory CFEncoding._() {
+class CFAllocator extends Struct {
+  factory CFAllocator._() {
     throw UnimplementedError();
   }
+
+  static Pointer<CFAllocator> getDefault() => _default;
 }

@@ -1,4 +1,4 @@
-// Copyright (c) 2019 terrier989@gmail.com.
+// Copyright (c) 2019 cupertino_ffi authors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -19,60 +19,48 @@
 // OR OTHER DEALINGS IN THE SOFTWARE.
 
 import 'dart:ffi';
+import 'dart:typed_data';
 
 import 'package:cupertino_ffi/core_foundation.dart';
 import 'package:ffi/ffi.dart';
 
-final int CFStringTypeID = CFStringGetTypeID();
+final int CFDataTypeID = CFDataGetTypeID();
 
 @unsized
-class CFString extends Struct {
-  static Pointer<CFString> fromDart(String value) {
-    if (value == null) {
-      return Pointer<CFString>.fromAddress(0);
+class CFData extends Struct {
+  static Pointer<CFData> fromDart(List<int> data) {
+    if (data == null) {
+      return Pointer<CFData>.fromAddress(0);
     }
-    final cstringPointer = Utf8.toUtf8(value);
-    arcAddNoARC(cstringPointer);
-    return arcReturn(CFStringCreateWithCString(
+    final length = data.length;
+
+    // Allocate memory
+    final clonePtr = allocate<Uint8>(count: length);
+    final cloneUint8List = clonePtr.asTypedList(length);
+
+    // Write data
+    cloneUint8List.setAll(0, data);
+
+    // Call API
+    final result = CFDataCreate(
       CFAllocator.getDefault(),
-      cstringPointer,
-      CFEncoding.getSystemEncoding(),
-    ));
+      clonePtr,
+      length,
+    );
+    return result;
   }
 }
 
-extension CFStringPointer on Pointer<CFString> {
-  String toDart() {
+extension CFDataPointer on Pointer<CFData> {
+  Uint8List toDart() {
     if (address == 0) {
       return null;
     }
-    arcPush();
-    try {
-      final length = CFStringGetLength(this);
-      if (length == 0) {
-        return "";
-      }
-      var utf8Pointer = CFStringGetCStringPtr(this);
-      if (utf8Pointer.address != 0) {
-        return Utf8.fromUtf8(utf8Pointer);
-      }
-      final bufferLength = 6 * (length + 1);
-      final bufferPointer = allocate<Utf8>(count: bufferLength);
-      arcAddNoARC(bufferPointer);
-      final ok = CFStringGetCString(
-        this,
-        bufferPointer,
-        bufferLength,
-        CFEncoding.getSystemEncoding(),
-      );
-      if (ok != 0) {
-        final result = Utf8.fromUtf8(bufferPointer);
-        return result;
-      } else {
-        throw UnimplementedError();
-      }
-    } finally {
-      arcPop();
+    final length = CFDataGetLength(this);
+    final bufferPointer = CFDataGetBytePtr(this);
+    if (bufferPointer.address == 0) {
+      throw UnimplementedError();
     }
+    return bufferPointer.asTypedList(length);
   }
 }

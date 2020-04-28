@@ -1,4 +1,4 @@
-// Copyright (c) 2019 terrier989@gmail.com.
+// Copyright (c) 2019 cupertino_ffi authors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -29,19 +29,19 @@ import 'package:meta/meta.dart';
 import 'type_mirror.dart';
 
 String _dartIdentifierFrom(String s) {
-  if (s.startsWith("\$")) {
+  if (s.startsWith('\$')) {
     final rest = _dartIdentifierFrom(s.substring(1));
-    return "\$\$$rest";
+    return '\$\$$rest';
   }
   switch (s) {
-    case "for":
-      return "\$for";
-    case "class":
-      return "\$class";
-    case "with":
-      return "\$with";
-    case "while":
-      return "\$while";
+    case 'for':
+      return '\$for';
+    case 'class':
+      return '\$class';
+    case 'with':
+      return '\$with';
+    case 'while':
+      return '\$while';
     default:
       return s;
   }
@@ -70,7 +70,7 @@ class ObjcMethodMirror {
   /// Returns 'x' when selector is 'x:y:z'.
   String get dartIdentifierWithoutParameters {
     final s = selector;
-    final i = s.indexOf(":");
+    final i = s.indexOf(':');
     if (i < 0) {
       return _dartIdentifierFrom(s);
     }
@@ -78,19 +78,19 @@ class ObjcMethodMirror {
   }
 
   /// Returns true if selector starts with '_' or '.'.
-  bool get isPrivate => selector.startsWith("_") || selector.startsWith(".");
+  bool get isPrivate => selector.startsWith('_') || selector.startsWith('.');
 
   /// Returns all parts of the selector.
   List<String> get selectorParts {
     final selector = this.selector;
 
     // Is this a selector without parameters?
-    if (!selector.endsWith(":")) {
+    if (!selector.endsWith(':')) {
       return [selector];
     }
 
     // No, split by ':'
-    return selector.substring(0, selector.length - 1).split(":");
+    return selector.substring(0, selector.length - 1).split(':');
   }
 
   /// Constructs [ObjcMethodMirror] from a method pointer.
@@ -103,10 +103,10 @@ class ObjcMethodMirror {
 
     // Is it private?
     if (!private &&
-        (selector.startsWith("_") ||
-            selector.startsWith("bs_") ||
-            selector.startsWith("CA_") ||
-            selector.startsWith("."))) {
+        (selector.startsWith('_') ||
+            selector.startsWith('bs_') ||
+            selector.startsWith('CA_') ||
+            selector.startsWith('.'))) {
       return null;
     }
 
@@ -170,15 +170,15 @@ class ObjcMethodMirror {
 
   /// Constructs parameter names based on selector and heuristics.
   static List<String> _parameterNamesFromSelector(String selector, int length) {
-    if (selector.endsWith(":")) {
+    if (selector.endsWith(':')) {
       selector = selector.substring(0, selector.length - 1);
     }
     final usedIdentifier = <String>{};
-    final result = List<String>.generate(length, (i) => "_arg$i");
-    final originalNames = selector.split(":").skip(1).toList();
+    final result = List<String>.generate(length, (i) => '_arg$i');
+    final originalNames = selector.split(':').skip(1).toList();
     for (var i = 0; i < originalNames.length; i++) {
       final originalName = originalNames[i];
-      if (originalName != "") {
+      if (originalName != '') {
         for (var nameIndex = 1; nameIndex < 10; nameIndex++) {
           // First time use the identifier,
           // Subsequent times append a number after the identifier.
@@ -186,7 +186,7 @@ class ObjcMethodMirror {
           if (nameIndex == 1) {
             dartIdentifier = _dartIdentifierFrom(originalName);
           } else {
-            dartIdentifier = _dartIdentifierFrom("name$nameIndex");
+            dartIdentifier = _dartIdentifierFrom('name$nameIndex');
           }
 
           // Does the identifier conflict with a previous identifier?
@@ -204,9 +204,9 @@ class ObjcMethodMirror {
     if (result.length >= 3) {
       final isNamedAfterFirstThree = result
           .skip(3)
-          .every((name) => !name.startsWith("_") && !result.contains("arg"));
+          .every((name) => !name.startsWith('_') && !result.contains('arg'));
       if (isNamedAfterFirstThree) {
-        result[2] = "arg";
+        result[2] = 'arg';
       }
     }
 
